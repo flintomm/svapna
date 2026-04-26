@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { historyUnits, curriculumPhases, library, homeQuote } from './content.js';
 
 export default function DreamYogaApp() {
   const [activeSection, setActiveSection] = useState('home');
@@ -289,6 +290,22 @@ function HomeSection({ goTo }) {
         </div>
       </div>
 
+      {/* PULL QUOTE */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Epigraph</span>
+        </div>
+        <div className="md:col-span-10 p-8 md:p-16 lg:p-20">
+          <p className="display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-tight italic">
+            &ldquo;{homeQuote.text}&rdquo;
+          </p>
+          <div className="mt-6 md:mt-10 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+            <span className="mono text-[10px] uppercase tracking-widest">— {homeQuote.attribution}</span>
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1 sm:mt-0">{homeQuote.citation}</span>
+          </div>
+        </div>
+      </div>
+
       {/* FEATURED */}
       <div className="grid grid-cols-1 md:grid-cols-3">
         <FeatureCard num="02" title="History" desc="Six units tracing the practice from the Upanishads to the sleep lab." onClick={() => goTo('history')} />
@@ -322,23 +339,14 @@ function FeatureCard({ num, title, desc, last, onClick }) {
 }
 
 function HistorySection() {
-  const units = [
-    { num: 'I', title: 'Ancient Origins', date: 'c. 800 BCE', desc: 'The Upanishads, the Rigveda, and the early Greek tradition.' },
-    { num: 'II', title: 'Tibetan Dream Yoga', date: 'c. 11th C.', desc: "Naropa's Six Yogas, the milam transmission, and the Bön lineage." },
-    { num: 'III', title: 'Other Traditions', date: 'Various', desc: 'Sufi khayāl, Daoist sleep practice, and indigenous dreamwork.' },
-    { num: 'IV', title: 'Western Rediscovery', date: '1867 — 1913', desc: 'Saint-Denys, van Eeden, Freud, Jung.' },
-    { num: 'V', title: 'The Sleep Laboratory', date: '1980 — Now', desc: 'LaBerge, Tholey, and the neuroscience of lucidity.' },
-    { num: 'VI', title: 'Convergence', date: 'Today', desc: 'Where contemplative and empirical traditions meet.' },
-  ];
-
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="A timeline in six movements, from the cave to the laboratory." />
+      <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia in six movements, from the cave to the laboratory." />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {units.map((u, i) => (
+        {historyUnits.map((u, i) => (
           <div
             key={i}
-            className="p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 min-h-[260px] md:min-h-[320px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group"
+            className="p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 min-h-[320px] md:min-h-[420px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
           >
             <div>
               <div className="flex justify-between items-baseline">
@@ -346,10 +354,11 @@ function HistorySection() {
                 <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{u.date}</span>
               </div>
               <h3 className="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight">{u.title}</h3>
+              <p className="text-sm leading-relaxed mt-5 md:mt-6 text-neutral-700">{u.blurb}</p>
             </div>
             <div className="hairline-t pt-4 mt-6">
-              <p className="text-sm leading-relaxed">{u.desc}</p>
-              <p className="mono text-[10px] uppercase tracking-widest mt-3 md:mt-4 text-neutral-500 group-hover:text-black transition-colors">Read →</p>
+              <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
+              <p className="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
             </div>
           </div>
         ))}
@@ -359,22 +368,13 @@ function HistorySection() {
 }
 
 function CurriculumSection() {
-  const weeks = [
-    { phase: 'I', title: 'Foundation', weeks: '01—02', focus: 'Dream recall. Journaling. Sleep hygiene.' },
-    { phase: 'II', title: 'Awareness', weeks: '03—04', focus: 'Reality checks. Mindfulness woven through the day.' },
-    { phase: 'III', title: 'Induction', weeks: '05—06', focus: 'MILD, WILD, WBTB. Throat-chakra visualization. Guru Yoga.' },
-    { phase: 'IV', title: 'Stabilization', weeks: '07—08', focus: 'Holding lucidity. The dialectic of control and surrender.' },
-    { phase: 'V', title: 'Deepening', weeks: '09—10', focus: 'Emptiness. Working with fear. Practicing virtue in the dream.' },
-    { phase: 'VI', title: 'Integration', weeks: '11—12', focus: 'Bardo teachings. Sleep yoga. The waking application.' },
-  ];
-
   return (
     <div className="fade-in">
       <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Twelve weeks. Six phases. Each lesson: a reading, a recording, a prompt." />
 
       {/* Mobile: stacked card layout */}
       <div className="md:hidden">
-        {weeks.map((w, i) => (
+        {curriculumPhases.map((w, i) => (
           <div key={i} className="p-6 hairline-b active:bg-neutral-100 transition-colors">
             <div className="flex justify-between items-baseline">
               <span className="display text-4xl italic">{w.phase}.</span>
@@ -382,29 +382,29 @@ function CurriculumSection() {
             </div>
             <h3 className="display text-3xl mt-4">{w.title}</h3>
             <p className="text-sm leading-relaxed mt-4 text-neutral-700">{w.focus}</p>
-            <p className="mono text-[10px] uppercase tracking-widest mt-5 text-neutral-500">Enter →</p>
+            <p className="mono text-[9px] uppercase tracking-widest mt-5 text-neutral-500">{w.practices.join(' · ')}</p>
           </div>
         ))}
       </div>
 
       {/* Desktop: row layout */}
       <div className="hidden md:block">
-        {weeks.map((w, i) => (
-          <div key={i} className="grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group cursor-pointer">
+        {curriculumPhases.map((w, i) => (
+          <div key={i} className="grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group">
             <div className="col-span-1 p-8 hairline-r flex items-center justify-center">
               <span className="display text-3xl italic">{w.phase}</span>
             </div>
             <div className="col-span-2 p-8 hairline-r flex items-center">
               <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
             </div>
-            <div className="col-span-4 p-8 hairline-r flex items-center">
+            <div className="col-span-3 p-8 hairline-r flex items-center">
               <h3 className="display text-4xl group-hover:italic transition-all">{w.title}</h3>
             </div>
             <div className="col-span-4 p-8 hairline-r flex items-center">
               <p className="text-sm leading-relaxed">{w.focus}</p>
             </div>
-            <div className="col-span-1 p-8 flex items-center justify-center">
-              <span className="mono text-[10px] uppercase tracking-widest group-hover:translate-x-1 transition-transform">→</span>
+            <div className="col-span-2 p-8 flex items-center">
+              <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 leading-relaxed">{w.practices.join(' · ')}</p>
             </div>
           </div>
         ))}
@@ -437,21 +437,13 @@ function CommunitySection() {
 }
 
 function LibrarySection() {
-  const items = [
-    { type: 'Text', title: 'Dream Yoga and the Practice of Natural Light', author: 'Namkhai Norbu', year: '1992' },
-    { type: 'Text', title: 'The Tibetan Yogas of Dream and Sleep', author: 'Tenzin Wangyal Rinpoche', year: '1998' },
-    { type: 'Text', title: 'Exploring the World of Lucid Dreaming', author: 'Stephen LaBerge', year: '1990' },
-    { type: 'Paper', title: 'Lucid dreaming verified by volitional communication', author: 'LaBerge et al.', year: '1981' },
-    { type: 'Primary', title: 'Mandukya Upanishad', author: 'Anonymous', year: 'c. 800 BCE' },
-    { type: 'Primary', title: 'Les Rêves et les Moyens de les Diriger', author: 'Saint-Denys', year: '1867' },
-  ];
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 05" kicker="Selected Readings" title="Library." sub="Primary sources, contemporary studies, and the books that built the field." />
+      <SectionHeader num="§ 05" kicker="Selected Readings" title="Library." sub="Primary sources, contemporary studies, and the papers that anchor the science." />
 
       {/* Mobile: stacked cards */}
       <div className="md:hidden">
-        {items.map((item, i) => (
+        {library.map((item, i) => (
           <div key={i} className="hairline-b p-5 active:bg-neutral-100 transition-colors">
             <div className="flex justify-between items-baseline">
               <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{item.type}</span>
@@ -471,10 +463,10 @@ function LibrarySection() {
           <div className="col-span-3">Author</div>
           <div className="col-span-1 text-right">Year</div>
         </div>
-        {items.map((item, i) => (
-          <div key={i} className="grid grid-cols-12 hairline-b py-6 px-8 hover:bg-neutral-50 transition-colors cursor-pointer">
+        {library.map((item, i) => (
+          <div key={i} className="grid grid-cols-12 hairline-b py-5 px-8 hover:bg-neutral-50 transition-colors">
             <div className="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{item.type}</div>
-            <div className="col-span-6 display text-2xl italic leading-tight">{item.title}</div>
+            <div className="col-span-6 display text-xl md:text-2xl italic leading-tight">{item.title}</div>
             <div className="col-span-3 text-sm pt-1">{item.author}</div>
             <div className="col-span-1 text-right mono text-xs pt-1">{item.year}</div>
           </div>
