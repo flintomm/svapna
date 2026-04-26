@@ -160,7 +160,7 @@ export default function DreamYogaApp() {
 
       {/* MAIN */}
       <main className="xl:pl-12 pt-14 md:pt-16">
-        {activeSection === 'home' && <HomeSection />}
+        {activeSection === 'home' && <HomeSection goTo={goTo} />}
         {activeSection === 'history' && <HistorySection />}
         {activeSection === 'curriculum' && <CurriculumSection />}
         {activeSection === 'community' && <CommunitySection />}
@@ -218,7 +218,7 @@ function SectionHeader({ num, kicker, title, sub }) {
   );
 }
 
-function HomeSection() {
+function HomeSection({ goTo }) {
   return (
     <div className="fade-in">
       {/* HERO */}
@@ -291,17 +291,21 @@ function HomeSection() {
 
       {/* FEATURED */}
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <FeatureCard num="02" title="History" desc="Six units tracing the practice from the Upanishads to the sleep lab." />
-        <FeatureCard num="03" title="Curriculum" desc="Eight to twelve weeks of progressive practice, from dream recall to the bardo." />
-        <FeatureCard num="04" title="Community" desc="Forums, dream circles, and practice partners. Peer-led, lightly moderated." last />
+        <FeatureCard num="02" title="History" desc="Six units tracing the practice from the Upanishads to the sleep lab." onClick={() => goTo('history')} />
+        <FeatureCard num="03" title="Curriculum" desc="Eight to twelve weeks of progressive practice, from dream recall to the bardo." onClick={() => goTo('curriculum')} />
+        <FeatureCard num="04" title="Community" desc="Forums, dream circles, and practice partners. Peer-led, lightly moderated." onClick={() => goTo('community')} last />
       </div>
     </div>
   );
 }
 
-function FeatureCard({ num, title, desc, last }) {
+function FeatureCard({ num, title, desc, last, onClick }) {
   return (
-    <div className={`p-8 md:p-12 ${!last ? 'md:hairline-r' : ''} hairline-b min-h-[280px] md:min-h-[400px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group`}>
+    <button
+      type="button"
+      onClick={onClick}
+      className={`text-left p-8 md:p-12 ${!last ? 'md:hairline-r' : ''} hairline-b min-h-[280px] md:min-h-[400px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group`}
+    >
       <div>
         <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">§ {num}</span>
         <h3 className="display text-5xl md:text-6xl mt-6 md:mt-8 group-hover:italic transition-all">{title}</h3>
@@ -313,7 +317,7 @@ function FeatureCard({ num, title, desc, last }) {
           <span className="group-hover:translate-x-2 transition-transform inline-block">→</span>
         </div>
       </div>
-    </div>
+    </button>
   );
 }
 
