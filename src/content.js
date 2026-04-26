@@ -143,3 +143,66 @@ export const homeQuote = {
   attribution: 'Tenzin Wangyal Rinpoche',
   citation: 'The Tibetan Yogas of Dream and Sleep, 1998',
 };
+
+// Cross-cutting thematic index — drawn from /reference-material/themes/themed_index.json.
+// Fourteen themes that appear across the primary texts. Use as a "browse by theme"
+// pivot complementing the citation-based Library list.
+export const themes = [
+  { id: 'four_states_of_consciousness', label: 'Four States of Consciousness', desc: 'Waking (jāgrat), dream (svapna), deep sleep (suṣupti), and the fourth (turīya). Central to the Māṇḍūkya Upaniṣad and resonant with Tibetan presentations of mind’s nature.', sources: 25 },
+  { id: 'om_pranava', label: 'Om / Praṇava', desc: 'The mystical syllable Om as both symbol and sound, and as the Ātman. The most-densely-attested theme across the corpus.', sources: 66 },
+  { id: 'witness_consciousness_atman', label: 'Witness Consciousness', desc: 'The witnessing awareness that knows the three states; Ātman as turīya. The contemplative bedrock of the Indian tradition.', sources: 62 },
+  { id: 'dream_yoga_practice', label: 'Dream Yoga Practice', desc: 'Formal practices of milam: visualization, induction, stabilization. The technical core of the Tibetan tradition.', sources: 40 },
+  { id: 'illusory_body_emptiness', label: 'Illusory Body & Emptiness', desc: 'All phenomena, waking and dreaming, as appearances of mind; śūnyatā as a foundation for dream practice.', sources: 39 },
+  { id: 'sleep_yoga_clear_light', label: 'Sleep Yoga / Clear Light', desc: 'Practice of awareness in dreamless sleep; recognition of the clear light (‘od gsal).', sources: 38 },
+  { id: 'obstacles', label: 'Obstacles to Practice', desc: 'Common obstacles: forgetting, drowsiness, agitation, attachment.', sources: 36 },
+  { id: 'rigpa_kunzhi', label: 'Rigpa, Kunzhi, Mind’s Nature', desc: 'Dzogchen presentations: rigpa (innate awareness), kunzhi (base), and the recognition of mind’s nature.', sources: 35 },
+  { id: 'energy_body_chakras', label: 'Energy Body & Channels', desc: 'Subtle anatomy: tsa / lung / tiglé, chakras, prāṇa, channels.', sources: 32 },
+  { id: 'karma_traces', label: 'Karma & Karmic Traces', desc: 'Karmic imprints (vāsanās / bag chags) shaping experience in waking and dream.', sources: 29 },
+  { id: 'lucidity_in_dream', label: 'Lucidity in Dream', desc: 'Recognition that one is dreaming while in the dream state.', sources: 28 },
+  { id: 'bardo_death', label: 'Bardo & Death', desc: 'Dream practice as preparation for the bardo and the moment of death.', sources: 28 },
+  { id: 'compassion_bodhicitta', label: 'Compassion / Bodhicitta', desc: 'The ethical and motivational ground of Buddhist dream practice.', sources: 22 },
+  { id: 'dream_recall_journaling', label: 'Dream Recall & Journaling', desc: 'Practical foundations: remembering dreams, keeping a dream journal.', sources: 8 },
+];
+
+// About-page sub-sections — wired to footer "Index" links.
+// Each is its own simple content page, reachable from the footer.
+export const aboutPages = {
+  colophon: {
+    title: 'Colophon',
+    kicker: 'On the Making of This Site',
+    paragraphs: [
+      'Svapna is built in the editorial-minimalist register: white field, hairline rules, no rounded edges, generous negative space. The visual language is meant to recede so the reading can come forward.',
+      'Display type is set in Cormorant Garamond, a contemporary revival of the Garamond family by Christian Thalmann. Labels and metadata are set in JetBrains Mono. Roman numerals and editorial marks (Vol. I / Iss. I / MMXXVI) are set as-is in the display face.',
+      'The site is a single-page React application, built with Vite and styled with Tailwind. Source is open at github.com/flintomm/svapna. Hosted on GitHub Pages, deployed automatically on each push to main. No analytics, no tracking, no advertising. Ever.',
+    ],
+  },
+  conduct: {
+    title: 'Code of Conduct',
+    kicker: 'How We Hold the Practice Together',
+    paragraphs: [
+      'This community is rooted in respect for personal experience, cultural traditions, and the vulnerability of sharing dream content. Three commitments hold throughout.',
+      'First — witness without interpretation, unless interpretation is invited. The dream is the dreamer’s. Even a kindly-meant analysis can colonize the experience before the dreamer has had time with it.',
+      'Second — treat the contemplative traditions on their own terms. The Indian, Tibetan, Bön, Sufi, Daoist, Japanese, and Western lineages here did not exist for our convenience and are not interchangeable. Quote responsibly. Cite the source. Do not pluck a technique out of its lineage and re-sell it.',
+      'Third — no proselytizing, no advice-giving without consent, no using the platform to recruit for any other practice or product. Disagreements are welcome; contempt is not. Volunteer moderators draw from advanced students once the community matures, with a light touch.',
+    ],
+  },
+  acknowledgments: {
+    title: 'Acknowledgments',
+    kicker: 'Sources, Teachers, and the Lineages Behind the Work',
+    paragraphs: [
+      'The course material draws principally from two primary texts: Swami Krishnananda’s 1968 lecture series on the Māṇḍūkya Upaniṣad (Divine Life Society), and Tenzin Wangyal Rinpoche’s The Tibetan Yogas of Dream and Sleep (Snow Lion, 1998), edited by Mark Dahlby. Both sources are gratefully acknowledged.',
+      'Background research is grounded in the contemporary integrative literature: Francisco Varela ed., Sleeping, Dreaming, and Dying (1997); Evan Thompson, Waking, Dreaming, Being (2015); B. Alan Wallace, Dreaming Yourself Awake (2012); Andrew Holecek, Dream Yoga (2016); the lucid-dreaming research line from Stephen LaBerge through Voss, Dresler, and Aspy.',
+      'The cross-tradition history was developed with reference to the standard scholarship in each field: Patrick Olivelle on the Upaniṣads; Brook Ziporyn on Zhuangzi; William Chittick on Ibn al-ʿArabī; Tanahashi on Dōgen; Nicholas Fry on Saint-Denys. Errors and infelicities in synthesis are ours.',
+      'The site is built on the work of the open-source community: React, Vite, Tailwind CSS, and the typography projects already named. We owe each of them.',
+    ],
+  },
+  contact: {
+    title: 'Contact',
+    kicker: 'Reach Us',
+    paragraphs: [
+      'For questions about the course, the source materials, or the project: open an issue at github.com/flintomm/svapna or write to hello@svapna.example. We read everything; replies arrive when they arrive.',
+      'For corrections — typos, mistranslations, citation errors, mis-attributed lineages — please flag them. Accuracy matters more here than tone.',
+      'For permission to translate, adapt, or republish material from this site: yes, in advance, under the terms outlined on the Support page. Please tell us what you made so we can link to it.',
+    ],
+  },
+};

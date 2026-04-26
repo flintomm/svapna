@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { historyUnits, curriculumPhases, library, homeQuote } from './content.js';
+import { historyUnits, curriculumPhases, library, homeQuote, themes, aboutPages } from './content.js';
+import timelineData from './data/timeline.json';
+import quotesData from './data/quotes.json';
 
 export default function DreamYogaApp() {
   const [activeSection, setActiveSection] = useState('home');
@@ -167,6 +169,7 @@ export default function DreamYogaApp() {
         {activeSection === 'community' && <CommunitySection />}
         {activeSection === 'library' && <LibrarySection />}
         {activeSection === 'support' && <SupportSection />}
+        {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
       </main>
 
       {/* FOOTER */}
@@ -181,10 +184,10 @@ export default function DreamYogaApp() {
           <div className="md:col-span-3 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
             <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Index</p>
             <ul className="space-y-2 text-sm">
-              <li>Colophon</li>
-              <li>Code of Conduct</li>
-              <li>Acknowledgments</li>
-              <li>Contact</li>
+              <li><button onClick={() => goTo('about-colophon')} className="text-left hover:italic transition-all">Colophon</button></li>
+              <li><button onClick={() => goTo('about-conduct')} className="text-left hover:italic transition-all">Code of Conduct</button></li>
+              <li><button onClick={() => goTo('about-acknowledgments')} className="text-left hover:italic transition-all">Acknowledgments</button></li>
+              <li><button onClick={() => goTo('about-contact')} className="text-left hover:italic transition-all">Contact</button></li>
             </ul>
           </div>
           <div className="md:col-span-3 p-8 md:p-12">
@@ -338,33 +341,119 @@ function FeatureCard({ num, title, desc, last, onClick }) {
   );
 }
 
+// Map roman num "I"–"VI" → integer 1–6, used for filtering quotes & timeline.
+const ROMAN_TO_INT = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6 };
+
+function pickQuoteForUnit(unitNum) {
+  // Return a representative quote for a given history unit (1–6).
+  const matches = quotesData.quotes.filter(q => q.unit === unitNum);
+  return matches[0] || null;
+}
+
 function HistorySection() {
+  const [activeUnit, setActiveUnit] = useState('all');
+  const sortedTimeline = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key);
+  const visibleTimeline = activeUnit === 'all'
+    ? sortedTimeline
+    : sortedTimeline.filter(e => e.unit === activeUnit);
+
   return (
     <div className="fade-in">
       <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia in six movements, from the cave to the laboratory." />
+
+      {/* UNIT CARDS — each carries a representative quote */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {historyUnits.map((u, i) => (
-          <div
-            key={i}
-            className="p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 min-h-[320px] md:min-h-[420px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
-          >
-            <div>
-              <div className="flex justify-between items-baseline">
-                <span className="display text-4xl md:text-5xl italic">{u.num}.</span>
-                <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{u.date}</span>
+        {historyUnits.map((u, i) => {
+          const unitInt = ROMAN_TO_INT[u.num];
+          const quote = pickQuoteForUnit(unitInt);
+          return (
+            <div
+              key={i}
+              className="p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+            >
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <span className="display text-4xl md:text-5xl italic">{u.num}.</span>
+                  <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{u.date}</span>
+                </div>
+                <h3 className="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight">{u.title}</h3>
+                <p className="text-sm leading-relaxed mt-5 md:mt-6 text-neutral-700">{u.blurb}</p>
               </div>
-              <h3 className="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight">{u.title}</h3>
-              <p className="text-sm leading-relaxed mt-5 md:mt-6 text-neutral-700">{u.blurb}</p>
+              {quote && (
+                <div className="hairline-t pt-4 mt-6">
+                  <p className="display text-base md:text-lg italic leading-snug text-neutral-800">&ldquo;{truncate(quote.text, 180)}&rdquo;</p>
+                  <p className="mono text-[9px] uppercase tracking-widest mt-3 text-neutral-500">— {quote.attribution}</p>
+                </div>
+              )}
+              <div className="hairline-t pt-4 mt-4">
+                <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
+                <p className="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
+              </div>
             </div>
-            <div className="hairline-t pt-4 mt-6">
-              <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
-              <p className="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
+          );
+        })}
+      </div>
+
+      {/* TIMELINE */}
+      <div className="hairline-b">
+        <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
+          <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Timeline.</h2>
+          <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+            {timelineData.entries.length} dated events across the six units. Filter by unit.
+          </p>
+        </div>
+        <div className="px-5 md:px-12 py-4 hairline-t flex flex-wrap gap-2">
+          <UnitFilterChip active={activeUnit === 'all'} onClick={() => setActiveUnit('all')} label="All" />
+          {[1, 2, 3, 4, 5, 6].map(n => (
+            <UnitFilterChip
+              key={n}
+              active={activeUnit === n}
+              onClick={() => setActiveUnit(n)}
+              label={`${['I','II','III','IV','V','VI'][n-1]}. ${timelineData.units[n]}`}
+            />
+          ))}
+        </div>
+        <div>
+          {visibleTimeline.map((entry, i) => (
+            <div key={i} className="grid grid-cols-12 hairline-t py-4 md:py-5 px-5 md:px-12 hover:bg-neutral-50 transition-colors">
+              <div className="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
+              <div className="col-span-12 md:col-span-2 mono text-[9px] uppercase tracking-widest text-neutral-400 mb-1 md:mb-0">
+                {timelineData.units[entry.unit]}
+              </div>
+              <div className="col-span-12 md:col-span-8">
+                <p className="display text-lg md:text-xl leading-tight">{entry.title}</p>
+                <p className="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
+}
+
+function UnitFilterChip({ active, onClick, label }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-2 transition-colors ${
+        active ? 'bg-black text-white' : 'text-neutral-600 hover:bg-neutral-100'
+      }`}
+      style={{ border: '0.5px solid #000' }}
+    >
+      {label}
+    </button>
+  );
+}
+
+function truncate(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  // Cut at last word boundary before maxLen
+  const slice = text.slice(0, maxLen);
+  const lastSpace = slice.lastIndexOf(' ');
+  return slice.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd() + '…';
 }
 
 function CurriculumSection() {
@@ -440,6 +529,16 @@ function LibrarySection() {
   return (
     <div className="fade-in">
       <SectionHeader num="§ 05" kicker="Selected Readings" title="Library." sub="Primary sources, contemporary studies, and the papers that anchor the science." />
+      <BibliographyBlock />
+      <ThemesBlock />
+      <PullQuotesBlock />
+    </div>
+  );
+}
+
+function BibliographyBlock() {
+  return (
+    <div>
 
       {/* Mobile: stacked cards */}
       <div className="md:hidden">
@@ -469,6 +568,78 @@ function LibrarySection() {
             <div className="col-span-6 display text-xl md:text-2xl italic leading-tight">{item.title}</div>
             <div className="col-span-3 text-sm pt-1">{item.author}</div>
             <div className="col-span-1 text-right mono text-xs pt-1">{item.year}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ThemesBlock() {
+  return (
+    <div className="hairline-b">
+      <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Themes.</h2>
+        <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          Fourteen cross-cutting concerns that recur across the corpus. Each appears in dozens of sections across the primary texts.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 hairline-t">
+        {themes.map((t, i) => (
+          <div
+            key={t.id}
+            className="p-6 md:p-8 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+1)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(even)]:border-r-0"
+          >
+            <div className="flex justify-between items-baseline">
+              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {String(i + 1).padStart(2, '0')}</span>
+              <span className="mono text-[9px] uppercase tracking-widest text-neutral-400">{t.sources} sources</span>
+            </div>
+            <h3 className="display text-2xl md:text-3xl mt-4 leading-tight">{t.label}</h3>
+            <p className="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{t.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PullQuotesBlock() {
+  // Show all 30 quotes, filterable by tradition.
+  const traditions = Array.from(new Set(quotesData.quotes.map(q => q.tradition))).sort();
+  const [activeTradition, setActiveTradition] = useState('all');
+  const visible = activeTradition === 'all'
+    ? quotesData.quotes
+    : quotesData.quotes.filter(q => q.tradition === activeTradition);
+
+  return (
+    <div>
+      <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 04</p>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Pull-quotes.</h2>
+        <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          {quotesData.quotes.length} curated passages from the corpus, with citations. Filter by tradition.
+        </p>
+      </div>
+      <div className="px-5 md:px-12 py-4 hairline-t hairline-b flex flex-wrap gap-2">
+        <UnitFilterChip active={activeTradition === 'all'} onClick={() => setActiveTradition('all')} label="All" />
+        {traditions.map(t => (
+          <UnitFilterChip
+            key={t}
+            active={activeTradition === t}
+            onClick={() => setActiveTradition(t)}
+            label={t}
+          />
+        ))}
+      </div>
+      <div>
+        {visible.map((q) => (
+          <div key={q.id} className="hairline-b px-5 md:px-12 py-8 md:py-10">
+            <p className="display text-lg md:text-2xl italic leading-snug md:leading-relaxed text-neutral-800">&ldquo;{q.text}&rdquo;</p>
+            <div className="mt-4 md:mt-6 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+              <span className="mono text-[10px] uppercase tracking-widest">— {q.attribution}</span>
+              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{q.citation}</span>
+            </div>
           </div>
         ))}
       </div>
@@ -522,6 +693,47 @@ function SupportSection() {
               <p className="mt-2 md:mt-3 text-sm leading-relaxed">Translation into other languages.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AboutSection({ page, goTo }) {
+  const data = aboutPages[page];
+  if (!data) return null;
+  const tabs = [
+    { id: 'colophon', label: 'Colophon' },
+    { id: 'conduct', label: 'Code of Conduct' },
+    { id: 'acknowledgments', label: 'Acknowledgments' },
+    { id: 'contact', label: 'Contact' },
+  ];
+  return (
+    <div className="fade-in">
+      <SectionHeader num="§ —" kicker={data.kicker} title={`${data.title}.`} />
+      <div className="px-5 md:px-12 py-3 hairline-b flex flex-wrap gap-2">
+        {tabs.map(t => (
+          <button
+            key={t.id}
+            type="button"
+            onClick={() => goTo(`about-${t.id}`)}
+            className={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-2 transition-colors ${
+              page === t.id ? 'bg-black text-white' : 'text-neutral-600 hover:bg-neutral-100'
+            }`}
+            style={{ border: '0.5px solid #000' }}
+          >
+            {t.label}
+          </button>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{data.title}</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-6 md:space-y-8">
+          {data.paragraphs.map((p, i) => (
+            <p key={i} className="text-base md:text-lg leading-loose">{p}</p>
+          ))}
         </div>
       </div>
     </div>
