@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { historyUnits, curriculumPhases, library, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
+import { historyUnits, curriculumModules, library, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
+import { lessonsByModule, getLesson, welcomeLesson } from './lessons.js';
 import timelineData from './data/timeline.json';
 import quotesData from './data/quotes.json';
 
@@ -164,13 +165,19 @@ export default function DreamYogaApp() {
       {/* MAIN */}
       <main className="xl:pl-12 pt-14 md:pt-16">
         {activeSection === 'home' && <HomeSection goTo={goTo} />}
-        {activeSection === 'history' && <HistorySection />}
+        {activeSection === 'history' && <HistorySection goTo={goTo} />}
         {activeSection === 'curriculum' && <CurriculumSection goTo={goTo} />}
         {activeSection === 'community' && <CommunitySection />}
         {activeSection === 'library' && <LibrarySection goTo={goTo} />}
         {activeSection === 'support' && <SupportSection />}
         {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
-        {activeSection.startsWith('curriculum-') && <PhaseDetail phaseIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
+        {activeSection.startsWith('curriculum-') && <ModuleDetail moduleIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
+        {activeSection === 'lesson-welcome' && <WelcomeLessonPage goTo={goTo} />}
+        {activeSection.startsWith('lesson-') && activeSection !== 'lesson-welcome' && (() => {
+          const rest = activeSection.slice(7); // 'M-L', e.g. '1-3'
+          const [m, l] = rest.split('-');
+          return <LessonDetail moduleNum={m} lessonNum={l} goTo={goTo} />;
+        })()}
         {activeSection.startsWith('reader-') && (() => {
           const rest = activeSection.slice(7); // e.g. 'mandukya' or 'mandukya:mandukya_07'
           const colonIdx = rest.indexOf(':');
@@ -179,7 +186,6 @@ export default function DreamYogaApp() {
           return <Reader source={source} targetSectionId={target} goTo={goTo} />;
         })()}
         {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
-        {activeSection.startsWith('discuss-') && <DiscussionPage moduleNum={activeSection.slice(8)} goTo={goTo} />}
       </main>
 
       {/* FOOTER */}
@@ -322,7 +328,7 @@ function HomeSection({ goTo }) {
       {/* FEATURED */}
       <div className="grid grid-cols-1 md:grid-cols-3">
         <FeatureCard num="02" title="History" desc="Six units tracing the practice from the Upanishads to the sleep lab." onClick={() => goTo('history')} />
-        <FeatureCard num="03" title="Curriculum" desc="Eight to twelve weeks of progressive practice, from dream recall to the bardo." onClick={() => goTo('curriculum')} />
+        <FeatureCard num="03" title="Curriculum" desc="Six modules, forty-seven short lessons. The history and the science of the practice. Self-paced." onClick={() => goTo('curriculum')} />
         <FeatureCard num="04" title="Community" desc="Forums, dream circles, and practice partners. Peer-led, lightly moderated." onClick={() => goTo('community')} last />
       </div>
     </div>
@@ -360,7 +366,7 @@ function pickQuoteForUnit(unitNum) {
   return matches[0] || null;
 }
 
-function HistorySection() {
+function HistorySection({ goTo }) {
   const [activeUnit, setActiveUnit] = useState('all');
   const sortedTimeline = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key);
   const visibleTimeline = activeUnit === 'all'
@@ -371,22 +377,25 @@ function HistorySection() {
     <div className="fade-in">
       <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia in six movements, from the cave to the laboratory." />
 
-      {/* UNIT CARDS — each carries a representative quote */}
+      {/* UNIT CARDS — each carries a representative quote and links to its
+          curriculum module (history unit N maps to curriculum module N). */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {historyUnits.map((u, i) => {
           const unitInt = ROMAN_TO_INT[u.num];
           const quote = pickQuoteForUnit(unitInt);
           return (
-            <div
+            <button
               key={i}
-              className="p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+              type="button"
+              onClick={() => goTo(`curriculum-${unitInt}`)}
+              className="text-left p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
             >
               <div>
                 <div className="flex justify-between items-baseline">
                   <span className="display text-4xl md:text-5xl italic">{u.num}.</span>
                   <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{u.date}</span>
                 </div>
-                <h3 className="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight">{u.title}</h3>
+                <h3 className="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight group-hover:italic transition-all">{u.title}</h3>
                 <p className="text-sm leading-relaxed mt-5 md:mt-6 text-neutral-700">{u.blurb}</p>
               </div>
               {quote && (
@@ -395,11 +404,14 @@ function HistorySection() {
                   <p className="mono text-[9px] uppercase tracking-widest mt-3 text-neutral-500">— {quote.attribution}</p>
                 </div>
               )}
-              <div className="hairline-t pt-4 mt-4">
-                <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
-                <p className="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
+              <div className="hairline-t pt-4 mt-4 flex items-end justify-between gap-3">
+                <div>
+                  <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
+                  <p className="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
+                </div>
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform shrink-0">Module →</span>
               </div>
-            </div>
+            </button>
           );
         })}
       </div>
@@ -466,9 +478,9 @@ function truncate(text, maxLen) {
   return slice.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd() + '…';
 }
 
-// localStorage hook for module-completion progress.
-// Returns [completed: Set<string>, toggle: (moduleNum) => void].
-function useModuleProgress() {
+// localStorage hook for lesson-completion progress.
+// Each lesson is keyed `${moduleNum}-${lessonNum}` (e.g. '1-3').
+function useLessonProgress() {
   const [completed, setCompleted] = useState(() => {
     if (typeof window === 'undefined') return new Set();
     try {
@@ -476,10 +488,10 @@ function useModuleProgress() {
       return new Set(raw ? JSON.parse(raw) : []);
     } catch { return new Set(); }
   });
-  const toggle = (moduleNum) => {
+  const toggle = (key) => {
     setCompleted(prev => {
       const next = new Set(prev);
-      if (next.has(moduleNum)) next.delete(moduleNum); else next.add(moduleNum);
+      if (next.has(key)) next.delete(key); else next.add(key);
       try { window.localStorage.setItem('svapna_progress', JSON.stringify([...next])); } catch {}
       return next;
     });
@@ -488,33 +500,45 @@ function useModuleProgress() {
 }
 
 function CurriculumSection({ goTo }) {
-  const [completed] = useModuleProgress();
-  const phaseProgress = (phase) => {
-    const done = phase.modules.filter(m => completed.has(m.num)).length;
-    return { done, total: phase.modules.length };
+  const [completed] = useLessonProgress();
+  const moduleProgress = (m) => {
+    const lessons = lessonsByModule[String(parseInt(m.num, 10))] || [];
+    const done = lessons.filter(l => completed.has(`${l.moduleNum}-${l.lessonNum}`)).length;
+    return { done, total: lessons.length };
   };
   const enter = (i) => goTo(`curriculum-${i + 1}`);
 
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Twelve weeks. Six phases. Each lesson: a reading, a practice, a prompt." />
+      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Six modules. Forty-seven short lessons. The history and the science of the practice. Self-paced." />
 
-      {/* Mobile: stacked card buttons */}
+      {/* Welcome / orientation */}
+      <button
+        type="button"
+        onClick={() => goTo('lesson-welcome')}
+        className="w-full text-left p-6 md:p-10 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+      >
+        <div className="flex justify-between items-baseline">
+          <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 00 · Orientation</span>
+          <span className="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform">Read →</span>
+        </div>
+        <h3 className="display text-3xl md:text-4xl mt-3 group-hover:italic transition-all">Welcome — How to read this course.</h3>
+        <p className="text-sm leading-relaxed mt-3 text-neutral-700 max-w-3xl">An orientation before the work begins. What the course is, how it is built, and how it would like to be read.</p>
+      </button>
+
+      {/* Mobile: stacked module cards */}
       <div className="md:hidden">
-        {curriculumPhases.map((w, i) => {
-          const p = phaseProgress(w);
+        {curriculumModules.map((m, i) => {
+          const p = moduleProgress(m);
           return (
-            <button key={i} type="button" onClick={() => enter(i)} className="w-full text-left p-6 hairline-b active:bg-neutral-100 transition-colors">
+            <button key={m.num} type="button" onClick={() => enter(i)} className="w-full text-left p-6 hairline-b active:bg-neutral-100 transition-colors">
               <div className="flex justify-between items-baseline">
-                <span className="display text-4xl italic">{w.phase}.</span>
-                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
+                <span className="display text-4xl italic">{m.roman}.</span>
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{m.lessonCount} lessons</span>
               </div>
-              <h3 className="display text-3xl mt-4">{w.title}</h3>
-              <p className="text-sm leading-relaxed mt-4 text-neutral-700">{w.focus}</p>
+              <h3 className="display text-3xl mt-4 leading-tight">{m.title}</h3>
+              <p className="text-sm leading-relaxed mt-4 text-neutral-700">{m.blurb}</p>
               <div className="mt-5 flex justify-between items-baseline">
-                <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">{w.practices.join(' · ')}</p>
-              </div>
-              <div className="mt-3 flex justify-between items-baseline">
                 <span className="mono text-[9px] uppercase tracking-widest text-neutral-500">{p.done} of {p.total} complete</span>
                 <span className="mono text-[10px] uppercase tracking-widest">Enter →</span>
               </div>
@@ -525,21 +549,21 @@ function CurriculumSection({ goTo }) {
 
       {/* Desktop: row buttons */}
       <div className="hidden md:block">
-        {curriculumPhases.map((w, i) => {
-          const p = phaseProgress(w);
+        {curriculumModules.map((m, i) => {
+          const p = moduleProgress(m);
           return (
-            <button key={i} type="button" onClick={() => enter(i)} className="w-full text-left grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group">
+            <button key={m.num} type="button" onClick={() => enter(i)} className="w-full text-left grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group">
               <div className="col-span-1 p-8 hairline-r flex items-center justify-center">
-                <span className="display text-3xl italic">{w.phase}</span>
+                <span className="display text-3xl italic">{m.roman}</span>
               </div>
               <div className="col-span-2 p-8 hairline-r flex items-center">
-                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{m.lessonCount} lessons</span>
               </div>
               <div className="col-span-3 p-8 hairline-r flex items-center">
-                <h3 className="display text-4xl group-hover:italic transition-all">{w.title}</h3>
+                <h3 className="display text-3xl group-hover:italic transition-all leading-tight">{m.title}</h3>
               </div>
               <div className="col-span-4 p-8 hairline-r flex items-center">
-                <p className="text-sm leading-relaxed">{w.focus}</p>
+                <p className="text-sm leading-relaxed">{m.blurb}</p>
               </div>
               <div className="col-span-2 p-8 flex items-center justify-between gap-4">
                 <span className="mono text-[9px] uppercase tracking-widest text-neutral-500">{p.done}/{p.total}</span>
@@ -553,13 +577,16 @@ function CurriculumSection({ goTo }) {
   );
 }
 
-function PhaseDetail({ phaseIndex, goTo }) {
-  const phase = curriculumPhases[phaseIndex];
-  const [completed, toggle] = useModuleProgress();
-  if (!phase) return null;
+function ModuleDetail({ moduleIndex, goTo }) {
+  const mod = curriculumModules[moduleIndex];
+  const [completed, toggle] = useLessonProgress();
+  if (!mod) return null;
+  const lessons = lessonsByModule[String(parseInt(mod.num, 10))] || [];
+  const deep = moduleDeepening[mod.num];
+  const themeLookup = Object.fromEntries(themes.map(t => [t.id, t]));
 
-  const prevIndex = phaseIndex > 0 ? phaseIndex - 1 : null;
-  const nextIndex = phaseIndex < curriculumPhases.length - 1 ? phaseIndex + 1 : null;
+  const prevIndex = moduleIndex > 0 ? moduleIndex - 1 : null;
+  const nextIndex = moduleIndex < curriculumModules.length - 1 ? moduleIndex + 1 : null;
 
   return (
     <div className="fade-in">
@@ -569,188 +596,142 @@ function PhaseDetail({ phaseIndex, goTo }) {
           ← Curriculum
         </button>
         <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
-          Phase {phase.phase} of VI · Wk. {phase.weeks}
+          Module {mod.roman} of VI · {mod.lessonCount} lessons
         </span>
       </div>
 
       {/* Header */}
       <div className="grid grid-cols-12 hairline-b">
         <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {phase.phase}</span>
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {mod.roman}</span>
         </div>
         <div className="col-span-9 md:col-span-10 p-5 md:p-8">
-          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Phase {phase.phase} · {phase.weeks}</p>
-          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{phase.title}.</h1>
-          <p className="mt-6 md:mt-10 text-base md:text-lg leading-loose max-w-3xl">{phase.synthesis}</p>
-          <div className="mt-6 md:mt-8 flex flex-wrap gap-2">
-            {phase.practices.map(p => (
-              <span key={p} className="mono text-[9px] uppercase tracking-widest px-3 py-2 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{p}</span>
-            ))}
-          </div>
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Module {mod.roman} · {mod.lessonCount} lessons</p>
+          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{mod.title}.</h1>
+          <p className="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">{mod.blurb}</p>
         </div>
       </div>
 
-      {/* Modules */}
-      {phase.modules.map(m => (
-        <ModuleCard key={m.num} module={m} done={completed.has(m.num)} onToggle={() => toggle(m.num)} goTo={goTo} />
-      ))}
-
-      {/* Phase nav */}
-      <div className="hairline-b grid grid-cols-2">
-        <div className="hairline-r p-5 md:p-8">
-          {prevIndex !== null ? (
-            <button type="button" onClick={() => goTo(`curriculum-${prevIndex + 1}`)} className="text-left w-full hover:italic transition-all">
-              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous</p>
-              <p className="display text-xl md:text-2xl mt-2">{curriculumPhases[prevIndex].title}</p>
-            </button>
-          ) : (
-            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
-          )}
+      {/* Module overview */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Overview</span>
         </div>
-        <div className="p-5 md:p-8 text-right">
-          {nextIndex !== null ? (
-            <button type="button" onClick={() => goTo(`curriculum-${nextIndex + 1}`)} className="text-right w-full hover:italic transition-all">
-              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next →</p>
-              <p className="display text-xl md:text-2xl mt-2">{curriculumPhases[nextIndex].title}</p>
-            </button>
-          ) : (
-            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
-          )}
+        <div className="md:col-span-10 p-6 md:p-12">
+          <p className="text-base md:text-lg leading-loose max-w-3xl">{mod.overview}</p>
         </div>
       </div>
-    </div>
-  );
-}
 
-function ModuleCard({ module: m, done, onToggle, goTo }) {
-  const deep = moduleDeepening[m.num];
-  const themeLookup = Object.fromEntries(themes.map(t => [t.id, t]));
-
-  return (
-    <article className="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      {/* Module number rail */}
-      <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0 flex md:flex-col justify-between md:justify-start gap-3">
-        <div>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Module</p>
-          <p className="display text-5xl md:text-6xl mt-1 md:mt-2">{m.num}</p>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2 md:mt-3">{m.week}</p>
+      {/* Lesson list */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lessons</span>
         </div>
-        <button
-          type="button"
-          onClick={onToggle}
-          className={`mono text-[9px] uppercase tracking-widest px-3 py-2 transition-colors ${done ? 'bg-black text-white' : 'text-neutral-700 hover:bg-neutral-100'} md:self-start`}
-          style={{ border: '0.5px solid #000' }}
-          aria-pressed={done}
-        >
-          {done ? '✓ Complete' : 'Mark complete'}
-        </button>
-      </div>
-
-      {/* Module body */}
-      <div className="md:col-span-10 p-6 md:p-12 space-y-8 md:space-y-10">
-        <h2 className="display text-3xl sm:text-4xl md:text-5xl leading-tight">{m.title}</h2>
-
-        {/* Background essay */}
-        {deep?.background && (
-          <div>
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Background</p>
-            <p className="text-base md:text-lg leading-loose max-w-3xl">{deep.background}</p>
-          </div>
-        )}
-
-        {/* Objectives */}
-        <div>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Learning Objectives</p>
-          <ol className="space-y-2 md:space-y-3">
-            {m.objectives.map((o, i) => (
-              <li key={i} className="text-base leading-relaxed flex gap-4">
-                <span className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-1.5 shrink-0 w-6">{String(i + 1).padStart(2, '0')}</span>
-                <span>{o}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        {/* Readings */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
-          <div>
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Primary Reading</p>
-            <p className="display text-lg italic leading-snug">{m.primary_reading}</p>
-          </div>
-          {m.secondary_reading && (
-            <div>
-              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Secondary Reading</p>
-              <p className="display text-lg italic leading-snug">{m.secondary_reading}</p>
-            </div>
-          )}
-        </div>
-
-        {/* Read in the Reader (deep-links into Reader at specific section) */}
-        {deep?.reader_passages && deep.reader_passages.length > 0 && (
-          <div>
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Read in the Reader</p>
-            <div className="space-y-0 hairline-t hairline-b">
-              {deep.reader_passages.map((p, i) => (
+        <div className="md:col-span-10">
+          {lessons.map((l, i) => {
+            const key = `${l.moduleNum}-${l.lessonNum}`;
+            const done = completed.has(key);
+            return (
+              <div key={key} className="grid grid-cols-12 hairline-b">
                 <button
-                  key={i}
                   type="button"
-                  onClick={() => goTo(`reader-${p.source}:${p.section_id}`)}
-                  className="w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-3 md:px-4 hover:bg-neutral-50 transition-colors group"
+                  onClick={() => goTo(`lesson-${l.moduleNum}-${l.lessonNum}`)}
+                  className="col-span-10 md:col-span-11 text-left px-5 md:px-8 py-5 md:py-6 hover:bg-neutral-50 transition-colors group flex items-baseline gap-4 md:gap-6"
                 >
-                  <div className="col-span-12 sm:col-span-3 md:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
-                    {p.source === 'mandukya' ? 'Māṇḍūkya' : 'Tibetan Yogas'}
-                  </div>
-                  <div className="col-span-12 sm:col-span-8 md:col-span-8 display text-base md:text-lg italic leading-snug">{p.label}</div>
-                  <div className="col-span-12 sm:col-span-1 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
+                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-400 w-8 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="flex-1 min-w-0">
+                    <span className="display text-lg md:text-2xl leading-snug block group-hover:italic transition-all">{l.title}</span>
+                    {l.kicker && (
+                      <span className="display text-sm md:text-base text-neutral-500 leading-snug block mt-1">
+                        {renderInline(l.kicker, `klk-${l.moduleNum}-${l.lessonNum}`)}
+                      </span>
+                    )}
+                  </span>
+                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform hidden md:inline">→</span>
                 </button>
-              ))}
-            </div>
+                <button
+                  type="button"
+                  onClick={() => toggle(key)}
+                  className={`col-span-2 md:col-span-1 hairline-l flex items-center justify-center mono text-sm transition-colors ${done ? 'bg-black text-white' : 'text-neutral-400 hover:bg-neutral-100'}`}
+                  aria-pressed={done}
+                  aria-label={done ? 'Mark incomplete' : 'Mark complete'}
+                >
+                  {done ? '✓' : '○'}
+                </button>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Reader cross-links */}
+      {deep?.reader_passages && deep.reader_passages.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Read in the Reader</span>
           </div>
-        )}
-
-        {/* Practice */}
-        <div>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Practice</p>
-          <p className="text-base leading-loose">{m.practice}</p>
+          <div className="md:col-span-10">
+            {deep.reader_passages.map((p, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => goTo(`reader-${p.source}:${p.section_id}`)}
+                className="w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+              >
+                <div className="col-span-12 sm:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
+                  {p.source === 'mandukya' ? 'Māṇḍūkya' : 'Tibetan Yogas'}
+                </div>
+                <div className="col-span-12 sm:col-span-8 display text-base md:text-lg italic leading-snug">{p.label}</div>
+                <div className="col-span-12 sm:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
+              </button>
+            ))}
+          </div>
         </div>
+      )}
 
-        {/* Discussion question + community link */}
-        <div className="hairline-t pt-6 md:pt-8">
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Discussion Question</p>
-          <p className="display text-lg md:text-xl italic leading-relaxed text-neutral-800">&ldquo;{m.prompt}&rdquo;</p>
-          {goTo && (
-            <button
-              type="button"
-              onClick={() => goTo(`discuss-${m.num}`)}
-              className="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
-              style={{ border: '0.5px solid #000' }}
-            >
-              <span>Join the discussion</span>
-              <span>→</span>
-            </button>
-          )}
+      {/* Primary sources */}
+      {mod.primary_sources && mod.primary_sources.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Primary Sources</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 max-w-3xl">
+            <ul className="space-y-2 md:space-y-3">
+              {mod.primary_sources.map((s, i) => (
+                <li key={i} className="display text-base md:text-lg italic leading-snug text-neutral-700">— {s}</li>
+              ))}
+            </ul>
+          </div>
         </div>
+      )}
 
-        {/* Further reading (annotated) */}
-        {deep?.further_reading && deep.further_reading.length > 0 && (
-          <div className="hairline-t pt-6 md:pt-8">
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Further Reading</p>
-            <ul className="space-y-4 md:space-y-5">
+      {/* Further reading (annotated) */}
+      {deep?.further_reading && deep.further_reading.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Further Reading</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12">
+            <ul className="space-y-5 md:space-y-6 max-w-3xl">
               {deep.further_reading.map((r, i) => (
                 <li key={i}>
                   <p className="display text-base md:text-lg italic leading-snug">{r.title}</p>
                   <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1">{r.author}</p>
-                  <p className="text-sm leading-relaxed text-neutral-600 mt-2 max-w-3xl">{r.note}</p>
+                  <p className="text-sm leading-relaxed text-neutral-600 mt-2">{r.note}</p>
                 </li>
               ))}
             </ul>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Theme cross-links */}
-        {deep?.theme_links && deep.theme_links.length > 0 && goTo && (
-          <div className="hairline-t pt-6">
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Themes Engaged</p>
+      {/* Themes engaged */}
+      {deep?.theme_links && deep.theme_links.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Themes Engaged</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12">
             <div className="flex flex-wrap gap-2">
               {deep.theme_links.map(id => {
                 const t = themeLookup[id];
@@ -769,19 +750,309 @@ function ModuleCard({ module: m, done, onToggle, goTo }) {
               })}
             </div>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* Key terms */}
-        <div className="hairline-t pt-6">
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Key Terms</p>
-          <div className="flex flex-wrap gap-2">
-            {m.key_terms.map(t => (
-              <span key={t} className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{t}</span>
-            ))}
-          </div>
+      {/* Module nav */}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prevIndex !== null ? (
+            <button type="button" onClick={() => goTo(`curriculum-${prevIndex + 1}`)} className="text-left w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous Module</p>
+              <p className="display text-xl md:text-2xl mt-2">{curriculumModules[prevIndex].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {nextIndex !== null ? (
+            <button type="button" onClick={() => goTo(`curriculum-${nextIndex + 1}`)} className="text-right w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next Module →</p>
+              <p className="display text-xl md:text-2xl mt-2">{curriculumModules[nextIndex].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+          )}
         </div>
       </div>
-    </article>
+    </div>
+  );
+}
+
+// Tiny markdown renderer covering the lesson-file dialect: paragraphs,
+// `## Subheading`, `*italic*`, `**bold**`, `_italic_`, and `> blockquote`.
+// Bold takes priority over italic to handle `**...**` correctly.
+function renderInline(text, keyPrefix) {
+  const out = [];
+  let i = 0;
+  let buf = '';
+  let key = 0;
+  const flush = () => { if (buf) { out.push(buf); buf = ''; } };
+  while (i < text.length) {
+    if (text[i] === '*' && text[i + 1] === '*') {
+      const end = text.indexOf('**', i + 2);
+      if (end > i + 2) {
+        flush();
+        out.push(React.createElement('strong', { key: `${keyPrefix}-${key++}` }, text.slice(i + 2, end)));
+        i = end + 2;
+        continue;
+      }
+    }
+    if (text[i] === '*') {
+      const end = text.indexOf('*', i + 1);
+      if (end > i + 1 && text[end + 1] !== '*') {
+        flush();
+        out.push(React.createElement('em', { key: `${keyPrefix}-${key++}` }, text.slice(i + 1, end)));
+        i = end + 1;
+        continue;
+      }
+    }
+    if (text[i] === '_') {
+      const end = text.indexOf('_', i + 1);
+      if (end > i + 1) {
+        flush();
+        out.push(React.createElement('em', { key: `${keyPrefix}-${key++}` }, text.slice(i + 1, end)));
+        i = end + 1;
+        continue;
+      }
+    }
+    buf += text[i];
+    i++;
+  }
+  flush();
+  return out;
+}
+
+function MarkdownBody({ text }) {
+  const blocks = text.split(/\n\s*\n/);
+  return (
+    <div className="max-w-3xl space-y-5 md:space-y-6">
+      {blocks.map((raw, i) => {
+        const block = raw.trim();
+        if (!block) return null;
+        if (block.startsWith('## ')) {
+          return (
+            <h3 key={i} className="display text-2xl md:text-3xl leading-tight pt-4 md:pt-6">
+              {renderInline(block.slice(3), `h-${i}`)}
+            </h3>
+          );
+        }
+        if (block.startsWith('# ')) {
+          return (
+            <h2 key={i} className="display text-3xl md:text-4xl leading-tight pt-4 md:pt-6">
+              {renderInline(block.slice(2), `h-${i}`)}
+            </h2>
+          );
+        }
+        if (block.startsWith('> ')) {
+          const inner = block.split('\n').map(l => l.replace(/^>\s?/, '')).join(' ').trim();
+          return (
+            <blockquote key={i} className="pl-4 md:pl-5 my-2 italic text-neutral-700" style={{ borderLeft: '0.5px solid #000' }}>
+              {renderInline(inner, `bq-${i}`)}
+            </blockquote>
+          );
+        }
+        return (
+          <p key={i} className="text-base md:text-lg leading-loose">
+            {renderInline(block, `p-${i}`)}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
+function LessonDetail({ moduleNum, lessonNum, goTo }) {
+  const lesson = getLesson(moduleNum, lessonNum);
+  const mod = curriculumModules.find(m => parseInt(m.num, 10) === parseInt(moduleNum, 10));
+  const lessons = lessonsByModule[String(parseInt(moduleNum, 10))] || [];
+  const idx = lessons.findIndex(l => parseInt(l.lessonNum, 10) === parseInt(lessonNum, 10));
+  const prev = idx > 0 ? lessons[idx - 1] : null;
+  const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
+  const [completed, toggle] = useLessonProgress();
+
+  if (!lesson || !mod) {
+    return (
+      <div className="p-12">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Lesson not found.</p>
+        <button type="button" onClick={() => goTo('curriculum')} className="mono text-[10px] uppercase tracking-widest mt-4 underline">← Curriculum</button>
+      </div>
+    );
+  }
+
+  const moduleIndex = curriculumModules.indexOf(mod);
+  const key = `${lesson.moduleNum}-${lesson.lessonNum}`;
+  const done = completed.has(key);
+
+  return (
+    <div className="fade-in">
+      {/* Crumbs */}
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo(`curriculum-${moduleIndex + 1}`)} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Module {mod.roman} · {mod.title}
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
+          Lesson {lesson.lessonNum} of {lessons.length}
+        </span>
+      </div>
+
+      {/* Header */}
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {mod.roman}.{lesson.lessonNum}</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Module {mod.roman} · Lesson {lesson.lessonNum}</p>
+          <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{lesson.title}</h1>
+          {lesson.kicker && (
+            <p className="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+              {renderInline(lesson.kicker, `lk-${lesson.moduleNum}-${lesson.lessonNum}`)}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Body */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0 flex md:flex-col items-baseline md:items-start gap-3">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lesson</span>
+          <button
+            type="button"
+            onClick={() => toggle(key)}
+            className={`mono text-[9px] uppercase tracking-widest px-3 py-2 transition-colors md:mt-2 ${done ? 'bg-black text-white' : 'text-neutral-700 hover:bg-neutral-100'}`}
+            style={{ border: '0.5px solid #000' }}
+            aria-pressed={done}
+          >
+            {done ? '✓ Complete' : 'Mark complete'}
+          </button>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <MarkdownBody text={lesson.body} />
+        </div>
+      </div>
+
+      {/* Discussion prompt */}
+      {lesson.prompt && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 max-w-3xl">
+            <p className="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;{renderInline(lesson.prompt, `lp-${lesson.moduleNum}-${lesson.lessonNum}`)}&rdquo;</p>
+            <button
+              type="button"
+              onClick={() => goTo('community')}
+              className="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+              style={{ border: '0.5px solid #000' }}
+            >
+              <span>Join the discussion</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Prev/next within module + module hand-off */}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prev ? (
+            <button type="button" onClick={() => goTo(`lesson-${prev.moduleNum}-${prev.lessonNum}`)} className="text-left w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Lesson {prev.lessonNum}</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{prev.title}</p>
+            </button>
+          ) : (
+            <button type="button" onClick={() => goTo(`curriculum-${moduleIndex + 1}`)} className="text-left w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Module {mod.roman}</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{mod.title}</p>
+            </button>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {next ? (
+            <button type="button" onClick={() => goTo(`lesson-${next.moduleNum}-${next.lessonNum}`)} className="text-right w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Lesson {next.lessonNum} →</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{next.title}</p>
+            </button>
+          ) : curriculumModules[moduleIndex + 1] ? (
+            <button type="button" onClick={() => goTo(`curriculum-${moduleIndex + 2}`)} className="text-right w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next Module →</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{curriculumModules[moduleIndex + 1].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WelcomeLessonPage({ goTo }) {
+  if (!welcomeLesson) {
+    return <div className="p-12">Welcome lesson unavailable.</div>;
+  }
+  return (
+    <div className="fade-in">
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo('curriculum')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Curriculum
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Orientation</span>
+      </div>
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 00</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Before the work begins</p>
+          <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{welcomeLesson.title}.</h1>
+          {welcomeLesson.kicker && (
+            <p className="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+              {renderInline(welcomeLesson.kicker, 'wk')}
+            </p>
+          )}
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Welcome</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <MarkdownBody text={welcomeLesson.body} />
+        </div>
+      </div>
+      {welcomeLesson.prompt && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 max-w-3xl">
+            <p className="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;{renderInline(welcomeLesson.prompt, 'wp')}&rdquo;</p>
+            <button
+              type="button"
+              onClick={() => goTo('community')}
+              className="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+              style={{ border: '0.5px solid #000' }}
+            >
+              <span>Join the discussion</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      )}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          <button type="button" onClick={() => goTo('lesson-1-1')} className="text-right w-full hover:italic transition-all">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Begin Module I →</p>
+            <p className="display text-base md:text-xl mt-2 leading-snug italic">Why we begin here</p>
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -1358,131 +1629,3 @@ function ThemeDetail({ themeId, goTo }) {
   );
 }
 
-// ----- DISCUSSION PAGE ---------------------------------------------------
-// One per module (discuss-01 through discuss-12). The week's discussion
-// question stays the spine of the page; the forum thread is a placeholder
-// until the community backend is wired up.
-
-function DiscussionPage({ moduleNum, goTo }) {
-  // Find the module + its phase
-  let module = null;
-  let phase = null;
-  for (const p of curriculumPhases) {
-    const m = p.modules.find(mm => mm.num === moduleNum);
-    if (m) { module = m; phase = p; break; }
-  }
-  if (!module || !phase) {
-    return <div className="p-12">Discussion not found.</div>;
-  }
-  const phaseIndex = curriculumPhases.indexOf(phase);
-
-  return (
-    <div className="fade-in">
-      {/* Crumbs */}
-      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
-        <button type="button" onClick={() => goTo(`curriculum-${phaseIndex + 1}`)} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
-          ← Module {module.num}
-        </button>
-        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
-          Phase {phase.phase} · {phase.title} · {module.week}
-        </span>
-      </div>
-
-      {/* Header */}
-      <div className="grid grid-cols-12 hairline-b">
-        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 04 · {module.num}</span>
-        </div>
-        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
-          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Discussion · {module.title}</p>
-          <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight">The Question.</h1>
-          <p className="mt-6 md:mt-10 display text-xl md:text-2xl lg:text-3xl italic leading-relaxed text-neutral-800 max-w-4xl">
-            &ldquo;{module.prompt}&rdquo;
-          </p>
-        </div>
-      </div>
-
-      {/* Forum framing */}
-      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
-        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">How we discuss</span>
-        </div>
-        <div className="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-5 md:space-y-6">
-          <p className="text-base md:text-lg leading-loose">
-            This question seeds the week&rsquo;s conversation with the cohort. Read what others have written. Reply when you have something to add, not because you feel you should.
-          </p>
-          <p className="text-base md:text-lg leading-loose">
-            Witnessing without interpretation, unless interpretation is invited. Cite the source if you quote a tradition. Disagreements are welcome; contempt is not. The full code of conduct is in the Community section.
-          </p>
-        </div>
-      </div>
-
-      {/* Forum thread placeholder */}
-      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
-        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Thread</span>
-        </div>
-        <div className="md:col-span-10 p-6 md:p-12">
-          <div className="hairline-t hairline-b py-10 md:py-16 px-4 md:px-8 text-center">
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Forums opening soon</p>
-            <p className="display text-2xl md:text-3xl italic leading-relaxed text-neutral-700 mt-4 md:mt-5 max-w-2xl mx-auto">
-              The forum backend is being built. Until it ships, the conversation lives in the Community section — quietly, by hand, person to person.
-            </p>
-            <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-3">
-              <button
-                type="button"
-                onClick={() => goTo('community')}
-                className="mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
-                style={{ border: '0.5px solid #000' }}
-              >
-                Community →
-              </button>
-              <button
-                type="button"
-                onClick={() => goTo('about-contact')}
-                className="mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
-                style={{ border: '0.5px solid #000' }}
-              >
-                Contact →
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Adjacent modules — quick nav */}
-      <div className="hairline-b grid grid-cols-2">
-        {(() => {
-          const all = curriculumPhases.flatMap(p => p.modules.map(mm => ({ ...mm, phase: p })));
-          const idx = all.findIndex(mm => mm.num === module.num);
-          const prev = idx > 0 ? all[idx - 1] : null;
-          const next = idx < all.length - 1 ? all[idx + 1] : null;
-          return (
-            <>
-              <div className="hairline-r p-5 md:p-8">
-                {prev ? (
-                  <button type="button" onClick={() => goTo(`discuss-${prev.num}`)} className="text-left w-full hover:italic transition-all">
-                    <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Module {prev.num}</p>
-                    <p className="display text-base md:text-xl mt-2 italic">{prev.title}</p>
-                  </button>
-                ) : (
-                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning of course</span>
-                )}
-              </div>
-              <div className="p-5 md:p-8 text-right">
-                {next ? (
-                  <button type="button" onClick={() => goTo(`discuss-${next.num}`)} className="text-right w-full hover:italic transition-all">
-                    <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Module {next.num} →</p>
-                    <p className="display text-base md:text-xl mt-2 italic">{next.title}</p>
-                  </button>
-                ) : (
-                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
-                )}
-              </div>
-            </>
-          );
-        })()}
-      </div>
-    </div>
-  );
-}
