@@ -1,0 +1,16 @@
+{
+  "name": "Svapna — Editorial",
+  "version": 1,
+  "colors": {
+    "primary": "000000",
+    "secondary": "FFFFFF",
+    "tertiary": "000000",
+    "quaternary": "000000",
+    "header_background": "FFFFFF",
+    "header_primary": "000000",
+    "highlight": "FAF8F4",
+    "danger": "000000",
+    "success": "000000",
+    "love": "000000"
+  }
+}
