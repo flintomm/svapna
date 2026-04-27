@@ -155,38 +155,334 @@ export const curriculumModules = [
   },
 ];
 
+// The Library is a citation index. For each text we hold a short editorial
+// summary plus a "reference" pointer noting where the source is held in the
+// project's reference-material folder, so a careful reader can trace the
+// citation back to its file. Full primary text is no longer hosted in-page;
+// the long-form treatment of each text now lives in the Articles below.
 export const library = [
   // Primary sources — chronological
-  { type: 'Primary', title: 'Bṛhadāraṇyaka Upaniṣad', author: 'Anonymous', year: 'c. 700 BCE' },
-  { type: 'Primary', title: 'Chāndogya Upaniṣad', author: 'Anonymous', year: 'c. 700 BCE' },
-  { type: 'Primary', title: 'Māṇḍūkya Upaniṣad', author: 'Anonymous', year: 'c. 500 BCE' },
-  { type: 'Primary', title: 'Zhuangzi (Inner Chapters)', author: 'Zhuang Zhou', year: 'c. 4th c. BCE' },
-  { type: 'Primary', title: 'Milindapañha', author: 'attrib. Nāgasena', year: 'c. 1st c. BCE' },
-  { type: 'Primary', title: 'Oneirocritica', author: 'Artemidorus of Daldis', year: 'c. 2nd c. CE' },
-  { type: 'Primary', title: 'Viṃśatikā', author: 'Vasubandhu', year: 'c. 4th c. CE' },
-  { type: 'Primary', title: 'Māṇḍūkya-Kārikā', author: 'Gauḍapāda', year: 'c. 7th c. CE' },
-  { type: 'Primary', title: 'Bodhicaryāvatāra', author: 'Śāntideva', year: 'c. 8th c. CE' },
-  { type: 'Primary', title: 'Fuṣūṣ al-Ḥikam', author: 'Ibn al-ʿArabī', year: 'c. 1229' },
-  { type: 'Primary', title: 'Bardo Thödol cycle', author: 'rev. Karma Lingpa', year: '14th c.' },
-  { type: 'Primary', title: 'Les rêves et les moyens de les diriger', author: 'Hervey de Saint-Denys', year: '1867' },
-  { type: 'Primary', title: 'A Study of Dreams', author: 'Frederik van Eeden', year: '1913' },
-  { type: 'Primary', title: 'Studies in Dreams', author: 'Mary Arnold-Forster', year: '1921' },
+  {
+    type: 'Primary',
+    title: 'Bṛhadāraṇyaka Upaniṣad',
+    author: 'Anonymous',
+    year: 'c. 700 BCE',
+    summary:
+      "The longest and oldest of the principal Upaniṣads. Yājñavalkya's dialogue with King Janaka in Book IV is the foundational Indian text on dream-construction: the dreamer fashions the dream from impressions of the waking day, and the same self witnesses both states.",
+    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998); reference-material/01_ancient_origins/01_hindu_vedanta/olivelle_1998_early_upanisads.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Chāndogya Upaniṣad',
+    author: 'Anonymous',
+    year: 'c. 700 BCE',
+    summary:
+      "An early prose Upaniṣad whose treatment of speech, breath, and the syllable Om frames the contemplative grammar the Māṇḍūkya will compress to twelve verses. Its instruction on the deep self (ātman) anchors the four-state schema in lived practice.",
+    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998); reference-material/01_ancient_origins/01_hindu_vedanta/olivelle_1998_early_upanisads.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Māṇḍūkya Upaniṣad',
+    author: 'Anonymous',
+    year: 'c. 500 BCE',
+    summary:
+      'Twelve verses; the philosophical bedrock for almost every later Asian discussion of consciousness across states. Lays out waking, dreaming, deep sleep, and the witnessing turīya, and maps them onto the four moments of Om.',
+    reference: 'reference-material/01_ancient_origins/01_hindu_vedanta/Mandukya_Upanishad.txt; Krishnananda lecture series, 1968.',
+  },
+  {
+    type: 'Primary',
+    title: 'Zhuangzi (Inner Chapters)',
+    author: 'Zhuang Zhou',
+    year: 'c. 4th c. BCE',
+    summary:
+      "The butterfly passage and the surrounding Inner Chapters give Daoism its central image for the porousness of waking and dream — and shift the question from which state is real to what changes when one passes between them.",
+    reference: 'Ziporyn, Zhuangzi: The Complete Writings (Hackett, 2020); reference-material/03_other_asian_traditions/01_chinese_daoist/ziporyn_zhuangzi_complete_writings.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Milindapañha',
+    author: 'attrib. Nāgasena',
+    year: 'c. 1st c. BCE',
+    summary:
+      "Nāgasena's analysis for King Milinda distinguishes four causes of dream-experience without granting them epistemic authority — the early Indian Buddhist taxonomy that the later Mahāyāna and tantric traditions will quietly inherit.",
+    reference: 'Mendis, The Questions of King Milinda (Buddhist Publication Society); reference-material/01_ancient_origins/02_indian_buddhist/mendis_questions_of_king_milinda.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Oneirocritica',
+    author: 'Artemidorus of Daldis',
+    year: 'c. 2nd c. CE',
+    summary:
+      'The most complete classical handbook of dream interpretation; five books cataloguing dream-images and the principles for reading them. The reference text for the Greco-Roman interpretive tradition the medieval Latin world will inherit.',
+    reference: 'Discussed in Beare, Aristotle: Parva Naturalia (Oxford, 1908); reference-material/01_ancient_origins/03_greco_roman/works_of_aristotle_oxford_smith_ross.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Viṃśatikā',
+    author: 'Vasubandhu',
+    year: 'c. 4th c. CE',
+    summary:
+      'Twenty verses defending the Yogācāra claim that experience is appearance-only. Vasubandhu deploys dream as the central illustration: if the dream-world is vivid without an external object, the waking world need not be otherwise.',
+    reference: 'Anacker, Seven Works of Vasubandhu (Motilal Banarsidass, 1984).',
+  },
+  {
+    type: 'Primary',
+    title: 'Māṇḍūkya-Kārikā',
+    author: 'Gauḍapāda',
+    year: 'c. 7th c. CE',
+    summary:
+      "Gauḍapāda's commentary on the Māṇḍūkya. The first systematic Advaita Vedānta — and the bridge between the Upaniṣadic four-state schema and the Buddhist analyses of mind that surround it.",
+    reference: 'Reference: Krishnananda, The Māṇḍūkya Upaniṣad (Divine Life Society, 1968).',
+  },
+  {
+    type: 'Primary',
+    title: 'Bodhicaryāvatāra',
+    author: 'Śāntideva',
+    year: 'c. 8th c. CE',
+    summary:
+      "The Mahāyāna's central practice manual. Śāntideva uses dream as the working figure for the philosophical claim that all phenomena are appearance-only — the source the Tibetan tradition will most absorb.",
+    reference: 'Padmakara Translation Group, The Way of the Bodhisattva (Shambhala, 2006); reference-material/01_ancient_origins/04_bodhicitta_mahayana/shantideva_way_of_bodhisattva_padmakara.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Fuṣūṣ al-Ḥikam',
+    author: 'Ibn al-ʿArabī',
+    year: 'c. 1229',
+    summary:
+      "The 'Bezels of Wisdom'. Ibn al-ʿArabī's mature presentation of the imaginal world (ʿālam al-mithāl) and the ontology of khayāl — the most philosophically developed pre-modern treatment of dream in any tradition.",
+    reference: 'Chittick, The Sufi Path of Knowledge (SUNY, 1989); reference-material/03_other_asian_traditions/02_sufi_islamic/chittick_sufi_path_of_knowledge.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Bardo Thödol cycle',
+    author: 'rev. Karma Lingpa',
+    year: '14th c.',
+    summary:
+      "The 'Tibetan Book of the Dead' and its companion bardo texts. Frames dream practice as preparation for the intermediate states between death and rebirth — the larger architecture in which milam (dream yoga) takes its sense.",
+    reference: 'Fremantle & Trungpa, The Tibetan Book of the Dead (Shambhala, 1975); reference-material/02_tibetan_dream_yoga/01_bardo_thodol/fremantle_trungpa_tibetan_book_of_the_dead.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Les rêves et les moyens de les diriger',
+    author: 'Hervey de Saint-Denys',
+    year: '1867',
+    summary:
+      'Twenty years and nearly two thousand dreams, journaled by patient self-observation. Saint-Denys describes the methods that anticipate nearly every modern lucid-dreaming induction technique — the foundation stone of the modern empirical study of dreaming.',
+    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/saintdenys_les_reves_french_1867.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'A Study of Dreams',
+    author: 'Frederik van Eeden',
+    year: '1913',
+    summary:
+      "The 1913 Society for Psychical Research paper that coins 'lucid dream' in its present meaning. Short, clear, available in full in the Society's archive.",
+    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/van_eeden_study_of_dreams_1913.txt',
+  },
+  {
+    type: 'Primary',
+    title: 'Studies in Dreams',
+    author: 'Mary Arnold-Forster',
+    year: '1921',
+    summary:
+      "The first practical instructional manual in the empirical tradition. Arnold-Forster's protocols anticipate MILD by sixty years.",
+    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/arnold_forster_studies_in_dreams_1921.txt',
+  },
   // Modern texts — chronological
-  { type: 'Text', title: 'Exploring the World of Lucid Dreaming', author: 'LaBerge & Rheingold', year: '1990' },
-  { type: 'Text', title: 'Dream Yoga and the Practice of Natural Light', author: 'Namkhai Norbu', year: '1992' },
-  { type: 'Text', title: 'Sleeping, Dreaming, and Dying', author: 'Francisco Varela (ed.)', year: '1997' },
-  { type: 'Text', title: 'The Tibetan Yogas of Dream and Sleep', author: 'Tenzin Wangyal Rinpoche', year: '1998' },
-  { type: 'Text', title: 'Dreaming Yourself Awake', author: 'B. Alan Wallace', year: '2012' },
-  { type: 'Text', title: 'Waking, Dreaming, Being', author: 'Evan Thompson', year: '2015' },
-  { type: 'Text', title: 'Dream Yoga', author: 'Andrew Holecek', year: '2016' },
-  { type: 'Text', title: 'When Brains Dream', author: 'Stickgold & Zadra', year: '2021' },
+  {
+    type: 'Text',
+    title: 'Exploring the World of Lucid Dreaming',
+    author: 'LaBerge & Rheingold',
+    year: '1990',
+    summary:
+      'The foundational accessible synthesis of the LaBerge research program; the entry point to the modern scientific era and the source of the MILD protocol as practitioners now know it.',
+    reference: 'reference-material/05_modern_scientific_era/03_practical_synthesis/laberge_rheingold_exploring_world_lucid_dreaming.txt',
+  },
+  {
+    type: 'Text',
+    title: 'Dream Yoga and the Practice of Natural Light',
+    author: 'Namkhai Norbu',
+    year: '1992',
+    summary:
+      "The foundational modern Dzogchen text in English on dream and natural-light practice. Pairs naturally with Tenzin Wangyal as a second lineage view.",
+    reference: 'reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/namkhai_norbu_dream_yoga_natural_light.txt',
+  },
+  {
+    type: 'Text',
+    title: 'Sleeping, Dreaming, and Dying',
+    author: 'Francisco Varela (ed.)',
+    year: '1997',
+    summary:
+      "Records the 1992 Mind and Life dialogue. The Dalai Lama's discussion of sleep yoga and clear light is the most accessible primary-source statement of the tradition's most advanced claim.",
+    reference: 'Wisdom Publications, 1997. Discussed at length in unit 06.',
+  },
+  {
+    type: 'Text',
+    title: 'The Tibetan Yogas of Dream and Sleep',
+    author: 'Tenzin Wangyal Rinpoche',
+    year: '1998',
+    summary:
+      'The course primary text on the Bön Dzogchen presentation of dream and sleep yoga; the most accessible technically complete treatment in English.',
+    reference: 'Snow Lion, 1998. reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/tibetan_yogas_dream_sleep_full.txt',
+  },
+  {
+    type: 'Text',
+    title: 'Dreaming Yourself Awake',
+    author: 'B. Alan Wallace',
+    year: '2012',
+    summary:
+      'The single most-developed contemplative-scientific bridge text. The right book to build the convergence around.',
+    reference: 'Shambhala, 2012. reference-material/06_contemporary_convergence/wallace_dreaming_yourself_awake.txt',
+  },
+  {
+    type: 'Text',
+    title: 'Waking, Dreaming, Being',
+    author: 'Evan Thompson',
+    year: '2015',
+    summary:
+      'The most rigorous contemporary philosophical treatment; the book that most successfully holds the contemplative and scientific framings together without collapsing one into the other.',
+    reference: 'Columbia, 2015. Discussed at length in unit 06.',
+  },
+  {
+    type: 'Text',
+    title: 'Dream Yoga',
+    author: 'Andrew Holecek',
+    year: '2016',
+    summary:
+      'The most accessible contemporary integration of the Six Yogas tradition with the Western lucid-dreaming literature.',
+    reference: 'Sounds True, 2016. reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/holecek_dream_yoga.txt',
+  },
+  {
+    type: 'Text',
+    title: 'When Brains Dream',
+    author: 'Stickgold & Zadra',
+    year: '2021',
+    summary:
+      'The most recent accessible scientific synthesis. Substantial coverage of lucid dreaming and contemporary therapeutic applications.',
+    reference: 'Norton, 2021. Discussed in unit 05.',
+  },
   // Papers — chronological
-  { type: 'Paper', title: 'Regularly occurring periods of eye motility, and concomitant phenomena, during sleep', author: 'Aserinsky & Kleitman', year: '1953' },
-  { type: 'Paper', title: 'Lucid dreaming verified by volitional communication during REM sleep', author: 'LaBerge et al.', year: '1981' },
-  { type: 'Paper', title: 'Lucid dreaming: a state of consciousness with features of both waking and non-lucid dreaming', author: 'Voss et al.', year: '2009' },
-  { type: 'Paper', title: 'Neural correlates of dream lucidity obtained from contrasting lucid versus non-lucid REM sleep', author: 'Dresler et al.', year: '2012' },
-  { type: 'Paper', title: 'Reality testing and the mnemonic induction of lucid dreams', author: 'Aspy et al.', year: '2017' },
-  { type: 'Paper', title: 'Pre-sleep treatment with galantamine stimulates lucid dreaming', author: 'LaBerge, LaMarca & Baird', year: '2018' },
+  {
+    type: 'Paper',
+    title: 'Regularly occurring periods of eye motility, and concomitant phenomena, during sleep',
+    author: 'Aserinsky & Kleitman',
+    year: '1953',
+    summary:
+      'The two-page paper that founded the modern science of dreaming. Made the dreaming brain visible in the laboratory.',
+    reference: 'Science 118:3062 (1953): 273–274. reference-material/05_modern_scientific_era/01_foundational_rem_research/aserinsky_kleitman_1953_regular_eye_motility.txt',
+  },
+  {
+    type: 'Paper',
+    title: 'Lucid dreaming verified by volitional communication during REM sleep',
+    author: 'LaBerge et al.',
+    year: '1981',
+    summary:
+      "The eye-signal demonstration. The contemplative tradition's central empirical claim, finally registered on an instrument outside the practitioner's body.",
+    reference: 'Perceptual and Motor Skills 52 (1981): 727–732.',
+  },
+  {
+    type: 'Paper',
+    title: 'Lucid dreaming: a state of consciousness with features of both waking and non-lucid dreaming',
+    author: 'Voss et al.',
+    year: '2009',
+    summary:
+      'EEG study showing the lucid-dream state has signatures of both waking and REM sleep — the first neurophysiological correlates of lucidity.',
+    reference: 'Sleep 32:9 (2009): 1191–1200.',
+  },
+  {
+    type: 'Paper',
+    title: 'Neural correlates of dream lucidity obtained from contrasting lucid versus non-lucid REM sleep',
+    author: 'Dresler et al.',
+    year: '2012',
+    summary:
+      'Combined EEG and fMRI evidence locating prefrontal activity that distinguishes lucid from non-lucid REM. The neuroimaging follow-up to the Voss work.',
+    reference: 'Sleep 35:7 (2012): 1017–1020.',
+  },
+  {
+    type: 'Paper',
+    title: 'Reality testing and the mnemonic induction of lucid dreams',
+    author: 'Aspy et al.',
+    year: '2017',
+    summary:
+      'The largest controlled trial of the MILD protocol; provides quantitative evidence for an effect contemplatives had taken on faith for centuries.',
+    reference: 'Dreaming 27:3 (2017): 206–231.',
+  },
+  {
+    type: 'Paper',
+    title: 'Pre-sleep treatment with galantamine stimulates lucid dreaming',
+    author: 'LaBerge, LaMarca & Baird',
+    year: '2018',
+    summary:
+      'The substantial dose-response effect for galantamine. A result the field is still working out the practical and ethical implications of.',
+    reference: 'PLOS ONE 13:8 (2018). reference-material/05_modern_scientific_era/02_lucid_dreaming_neuroscience/laberge_2018_galantamine_plosone.txt',
+  },
+];
+
+// Articles — substantial long-form treatments of each tradition, drawn from
+// reference-material/09_research/. Loaded on demand from data/articles.json.
+// Each entry is the metadata used to render the Library cards; the body is
+// fetched lazily when a user opens a particular article.
+export const articles = [
+  {
+    id: 'ancient_origins',
+    num: '01',
+    label: 'Ancient Origins',
+    title: 'Roots of the practice as a problem worth thinking about.',
+    blurb:
+      'Vedic and Upaniṣadic Hinduism, Indian Buddhism, the Mahāyāna, and Greco-Roman dream science. Four bodies of source material, none of them yet dream yoga, each contributing something the later tradition could not have done without.',
+    word_count: 8400,
+    source: 'reference-material/09_research/unit_01_ancient_origins.md',
+  },
+  {
+    id: 'tibetan_dream_yoga',
+    num: '02',
+    label: 'Tibetan Dream Yoga',
+    title: 'A thousand-year continuous transmission.',
+    blurb:
+      'Sitting at the intersection of tantric yoga, the bardo teachings, Mahāmudrā, and Dzogchen. The discipline whose stated point is the recognition of the illusory nature of all experience and the stabilization of awareness through every transition.',
+    word_count: 7100,
+    source: 'reference-material/09_research/unit_02_tibetan_dream_yoga.md',
+  },
+  {
+    id: 'other_asian_traditions',
+    num: '03',
+    label: 'Other Asian Traditions',
+    title: 'Daoist sleep cultivation and Sufi imagination.',
+    blurb:
+      "The Zhuangzi's butterfly, Quanzhen sleep cultivation, Ibn al-ʿArabī's khayāl. Two parallel contemplative answers to the same question the Indian and Greek traditions also asked, with vocabularies the Tibetan synthesis quietly converses with.",
+    word_count: 6500,
+    source: 'reference-material/09_research/unit_03_other_asian_traditions.md',
+  },
+  {
+    id: 'western_rediscovery',
+    num: '04',
+    label: 'Western Rediscovery',
+    title: 'The empirical-introspective programme that recovered dream cultivation.',
+    blurb:
+      'Saint-Denys, van Eeden, Arnold-Forster — and the depth-psychological treatment of the dream in Jung, with Hillman\'s archetypal pushback. A century of European dream science worth taking seriously on its own terms.',
+    word_count: 6700,
+    source: 'reference-material/09_research/unit_04_western_rediscovery.md',
+  },
+  {
+    id: 'modern_scientific_era',
+    num: '05',
+    label: 'Modern Scientific Era',
+    title: 'From REM sleep to the eye-signal verification of lucid dreaming.',
+    blurb:
+      "Aserinsky and Kleitman in 1953; LaBerge at Stanford in 1980; the induction-technique literature; the 2018 galantamine trial; the neuroscience of the 2010s. The science finally catches up to a tradition the contemplatives have been working in for two and a half millennia.",
+    word_count: 6500,
+    source: 'reference-material/09_research/unit_05_modern_scientific_era.md',
+  },
+  {
+    id: 'contemporary_convergence',
+    num: '06',
+    label: 'Contemporary Convergence',
+    title: 'Where the contemplative and scientific traditions meet.',
+    blurb:
+      "Wallace's bridge, Holecek and Wangyal's contemporary teaching, the Mind & Life dialogue, Thompson's philosophical infrastructure. An integration that is real and unfinished, with the practice itself as the place the two have to keep meeting.",
+    word_count: 7900,
+    source: 'reference-material/09_research/unit_06_convergence.md',
+  },
 ];
 
 // A single curated quote for the home page. Drawn from quote_bank.json.
@@ -217,17 +513,14 @@ export const themes = [
   { id: 'dream_recall_journaling', label: 'Dream Recall & Journaling', desc: 'Practical foundations: remembering dreams, keeping a dream journal.', sources: 8 },
 ];
 
-// Per-module deepening: reader cross-links into the in-page Reader, annotated
-// further reading, and theme links. Keyed by curriculumModules[].num. The
-// background essay lives on the curriculumModules[].overview field; this
-// object holds only the cross-links and bibliographic apparatus.
+// Per-module deepening: a cross-link to the corresponding long-form article in
+// the Library, annotated further reading, and theme links. Keyed by
+// curriculumModules[].num. The background essay lives on
+// curriculumModules[].overview; this object holds only the cross-links and
+// bibliographic apparatus.
 export const moduleDeepening = {
   '01': {
-    reader_passages: [
-      { source: 'mandukya', section_id: 'mandukya_04', label: "Invocation and Verses — Krishnananda's reading of the twelve verses, pp. 9–14" },
-      { source: 'mandukya', section_id: 'mandukya_06', label: 'The Individual and the Absolute — the four-state schema and its philosophical stakes, pp. 30–46' },
-      { source: 'mandukya', section_id: 'mandukya_08', label: 'The Mystery of Dream and Sleep — Krishnananda on svapna and suṣupti, pp. 64–79' },
-    ],
+    article_link: { id: 'ancient_origins', label: 'Read the long-form article: Ancient Origins' },
     further_reading: [
       { author: 'Olivelle, Patrick', title: 'The Early Upaniṣads: Annotated Text and Translation (Oxford, 1998)', note: "The standard scholarly translation, indispensable for the Bṛhadāraṇyaka's Book IV — the Yājñavalkya–Janaka dialogue that is the foundational Indian text on dream-construction." },
       { author: "Doniger O'Flaherty, Wendy", title: 'Dreams, Illusion, and Other Realities (Chicago, 1984)', note: 'The canonical comparative study; chapters 1–3 establish the broader Indian background within which the Māṇḍūkya sits.' },
@@ -238,14 +531,7 @@ export const moduleDeepening = {
     theme_links: ['four_states_of_consciousness', 'witness_consciousness_atman', 'illusory_body_emptiness'],
   },
   '02': {
-    reader_passages: [
-      { source: 'tibetan_yogas', section_id: 'tibetan_05_chapter', label: "Dream and Reality — Tenzin Wangyal's opening on the parity of waking and dream" },
-      { source: 'tibetan_yogas', section_id: 'tibetan_06_chapter', label: 'How Experience Arises — the construction of experience in waking and dream' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_16_chapter', label: 'Vision, Action, Dream, Death — the four bardo-analogous states framing dream practice' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_19_chapter', label: 'Preparation for the Night — the evening sequence preceding dream-yoga' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_20_chapter', label: 'The Main Practice — the staged practice of dream yoga proper' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_21_chapter', label: 'Lucidity — what recognition looks like and what stabilizes it' },
-    ],
+    article_link: { id: 'tibetan_dream_yoga', label: 'Read the long-form article: Tibetan Dream Yoga' },
     further_reading: [
       { author: 'Mullin, Glenn, trans.', title: "Tsongkhapa's Six Yogas of Naropa (Snow Lion, 2005)", note: 'The standard accessible scholarly treatment of the Geluk recension; rigorous on the technical vocabulary the popular literature often elides.' },
       { author: 'Namkhai Norbu', title: 'Dream Yoga and the Practice of Natural Light (Snow Lion, revised 2002)', note: 'The foundational modern Dzogchen text in English on dream and natural-light practice; pairs naturally with Tenzin Wangyal as a second lineage view.' },
@@ -256,7 +542,7 @@ export const moduleDeepening = {
     theme_links: ['dream_yoga_practice', 'rigpa_kunzhi', 'sleep_yoga_clear_light', 'bardo_death', 'energy_body_chakras'],
   },
   '03': {
-    reader_passages: [],
+    article_link: { id: 'other_asian_traditions', label: 'Read the long-form article: Other Asian Traditions' },
     further_reading: [
       { author: 'Ziporyn, Brook, trans.', title: 'Zhuangzi: The Complete Writings (Hackett, 2020)', note: 'The best contemporary rendering of the Zhuangzi, with notes that illuminate the butterfly passage and its central position in world dream-philosophy.' },
       { author: 'Wong, Eva', title: 'Cultivating Stillness: A Taoist Manual for Transforming Body and Mind (Shambhala, 1992)', note: 'Foundational Quanzhen Daoist meditation text translated with extensive introductions; the right entry point for the framework within which Daoist sleep cultivation operates.' },
@@ -267,7 +553,7 @@ export const moduleDeepening = {
     theme_links: ['illusory_body_emptiness', 'witness_consciousness_atman', 'energy_body_chakras'],
   },
   '04': {
-    reader_passages: [],
+    article_link: { id: 'western_rediscovery', label: 'Read the long-form article: Western Rediscovery' },
     further_reading: [
       { author: 'Saint-Denys, Hervey de', title: 'Dreams and How to Guide Them, trans. Nicholas Fry (Duckworth, 1982; orig. French 1867)', note: 'The foundational text of the modern Western dream-cultivation tradition; the methods Saint-Denys describes anticipate nearly every modern lucid-dreaming induction technique and remain worth reading first-hand.' },
       { author: 'van Eeden, Frederik', title: '"A Study of Dreams," Proceedings of the Society for Psychical Research 26 (1913): 431–461', note: 'The 1913 paper that coins "lucid dream" in its present meaning; short, clear, available in full in the Society\'s archive.' },
@@ -279,7 +565,7 @@ export const moduleDeepening = {
     theme_links: ['lucidity_in_dream', 'dream_recall_journaling'],
   },
   '05': {
-    reader_passages: [],
+    article_link: { id: 'modern_scientific_era', label: 'Read the long-form article: Modern Scientific Era' },
     further_reading: [
       { author: 'Aserinsky, Eugene & Kleitman, Nathaniel', title: '"Regularly occurring periods of eye motility, and concomitant phenomena, during sleep," Science 118:3062 (1953): 273–274', note: 'The two-page paper that founded the modern science of dreaming.' },
       { author: 'LaBerge, Stephen, et al.', title: '"Lucid dreaming verified by volitional communication during REM sleep," Perceptual and Motor Skills 52 (1981): 727–732', note: 'The eye-signal demonstration; the contemplative tradition\'s central empirical claim, registered on an instrument outside the practitioner\'s body.' },
@@ -290,11 +576,7 @@ export const moduleDeepening = {
     theme_links: ['lucidity_in_dream', 'dream_recall_journaling'],
   },
   '06': {
-    reader_passages: [
-      { source: 'tibetan_yogas', section_id: 'tibetan_25_chapter', label: 'Integration — the practice as a quality of attention through the day' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_27_chapter', label: 'Sleep and Falling Asleep — the transition into clear light' },
-      { source: 'tibetan_yogas', section_id: 'tibetan_42_chapter', label: 'Mind and Rigpa — the awareness that survives the transition' },
-    ],
+    article_link: { id: 'contemporary_convergence', label: 'Read the long-form article: Contemporary Convergence' },
     further_reading: [
       { author: 'Wallace, B. Alan', title: 'Dreaming Yourself Awake: Lucid Dreaming and Tibetan Dream Yoga for Insight and Transformation (Shambhala, 2012)', note: 'The single most-developed contemplative-scientific bridge text. The right book to build the convergence around.' },
       { author: 'Holecek, Andrew', title: 'Dream Yoga: Illuminating Your Life Through Lucid Dreaming and the Tibetan Yogas of Sleep (Sounds True, 2016)', note: 'The most accessible contemporary integration of the Six Yogas tradition with the Western lucid-dreaming literature.' },

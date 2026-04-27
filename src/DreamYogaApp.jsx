@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { historyUnits, curriculumModules, library, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
+import { historyUnits, curriculumModules, library, articles, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
 import { lessonsByModule, getLesson, welcomeLesson } from './lessons.js';
 import timelineData from './data/timeline.json';
 import quotesData from './data/quotes.json';
@@ -178,12 +178,9 @@ export default function DreamYogaApp() {
           const [m, l] = rest.split('-');
           return <LessonDetail moduleNum={m} lessonNum={l} goTo={goTo} />;
         })()}
-        {activeSection.startsWith('reader-') && (() => {
-          const rest = activeSection.slice(7); // e.g. 'mandukya' or 'mandukya:mandukya_07'
-          const colonIdx = rest.indexOf(':');
-          const source = colonIdx >= 0 ? rest.slice(0, colonIdx) : rest;
-          const target = colonIdx >= 0 ? rest.slice(colonIdx + 1) : null;
-          return <Reader source={source} targetSectionId={target} goTo={goTo} />;
+        {activeSection.startsWith('article-') && (() => {
+          const id = activeSection.slice(8);
+          return <ArticleReader articleId={id} goTo={goTo} />;
         })()}
         {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
       </main>
@@ -664,27 +661,24 @@ function ModuleDetail({ moduleIndex, goTo }) {
         </div>
       </div>
 
-      {/* Reader cross-links */}
-      {deep?.reader_passages && deep.reader_passages.length > 0 && (
+      {/* Article cross-link */}
+      {deep?.article_link && (
         <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
           <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Read in the Reader</span>
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Article</span>
           </div>
           <div className="md:col-span-10">
-            {deep.reader_passages.map((p, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => goTo(`reader-${p.source}:${p.section_id}`)}
-                className="w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
-              >
-                <div className="col-span-12 sm:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
-                  {p.source === 'mandukya' ? 'Māṇḍūkya' : 'Tibetan Yogas'}
-                </div>
-                <div className="col-span-12 sm:col-span-8 display text-base md:text-lg italic leading-snug">{p.label}</div>
-                <div className="col-span-12 sm:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
-              </button>
-            ))}
+            <button
+              type="button"
+              onClick={() => goTo(`article-${deep.article_link.id}`)}
+              className="w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+            >
+              <div className="col-span-12 sm:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
+                Library · Articles
+              </div>
+              <div className="col-span-12 sm:col-span-8 display text-base md:text-lg italic leading-snug">{deep.article_link.label}</div>
+              <div className="col-span-12 sm:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
+            </button>
           </div>
         </div>
       )}
@@ -1082,8 +1076,8 @@ function CommunitySection() {
 function LibrarySection({ goTo }) {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 05" kicker="Selected Readings" title="Library." sub="Primary sources, contemporary studies, and the papers that anchor the science." />
-      <ReaderEntryBlock goTo={goTo} />
+      <SectionHeader num="§ 05" kicker="Articles, Summaries, and References" title="Library." sub="Long-form articles on each tradition, short summaries of every text, and the citations that anchor the work." />
+      <ArticlesBlock goTo={goTo} />
       <BibliographyBlock />
       <ThemesBlock goTo={goTo} />
       <PullQuotesBlock />
@@ -1091,72 +1085,95 @@ function LibrarySection({ goTo }) {
   );
 }
 
-function ReaderEntryBlock({ goTo }) {
-  const cards = [
-    { source: 'mandukya', title: 'The Māṇḍūkya Upaniṣad', author: 'Swami Krishnananda (1968)', desc: 'The twelve-verse Upaniṣad with Krishnananda’s lecture commentary on the four states. ~33,000 words across ten reading sections.' },
-    { source: 'tibetan_yogas', title: 'The Tibetan Yogas of Dream and Sleep', author: 'Tenzin Wangyal Rinpoche (1998)', desc: 'The full Bön-tradition treatment of dream and sleep yoga. ~66,000 words across six parts and forty-six chapters.' },
-  ];
+// Six long-form articles drawn from /reference-material/09_research/. Each
+// opens an in-page reader (ArticleReader) that lazy-loads the article body.
+function ArticlesBlock({ goTo }) {
   return (
     <div className="hairline-b">
       <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
         <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
-        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Reader.</h2>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Articles.</h2>
         <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          Both primary texts available in full, in-page. No footnotes to chase.
+          Six long-form essays — one per tradition — drawn from the project research files. Where the texts in the bibliography below come from, what they argue, and how they meet.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 hairline-t">
-        {cards.map((c, i) => (
-          <button
-            key={c.source}
-            type="button"
-            onClick={() => goTo(`reader-${c.source === 'tibetan_yogas' ? 'tibetan_yogas' : 'mandukya'}`)}
-            className={`text-left p-6 sm:p-8 md:p-10 hairline-b ${i === 0 ? 'md:hairline-r md:border-b-0' : 'md:border-b-0'} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group`}
-          >
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {String(i + 1).padStart(2, '0')}</p>
-            <h3 className="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight">{c.title}</h3>
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2">{c.author}</p>
-            <p className="text-sm leading-relaxed mt-4 md:mt-5 text-neutral-700">{c.desc}</p>
-            <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Read →</p>
-          </button>
-        ))}
+        {articles.map((a, i) => {
+          const isLastRow = i >= articles.length - (articles.length % 2 === 0 ? 2 : 1);
+          const isLeft = i % 2 === 0;
+          return (
+            <button
+              key={a.id}
+              type="button"
+              onClick={() => goTo(`article-${a.id}`)}
+              className={`text-left p-6 sm:p-8 md:p-10 hairline-b ${isLeft ? 'md:hairline-r' : ''} ${isLastRow ? 'md:border-b-0' : ''} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group`}
+            >
+              <div className="flex justify-between items-baseline">
+                <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {a.num}</p>
+                <p className="mono text-[9px] uppercase tracking-widest text-neutral-400">~{(a.word_count / 1000).toFixed(1)}k words</p>
+              </div>
+              <h3 className="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight">{a.label}</h3>
+              <p className="display text-base md:text-lg italic text-neutral-600 mt-2 md:mt-3 leading-snug">{a.title}</p>
+              <p className="text-sm leading-relaxed mt-4 md:mt-5 text-neutral-700">{a.blurb}</p>
+              <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Read →</p>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
 }
 
+// Each library entry now carries an editorial summary plus a 'reference'
+// pointer to where the source lives in the project's reference-material folder.
+// The block prints them as a citation-style annotated list.
 function BibliographyBlock() {
   return (
-    <div>
+    <div className="hairline-b">
+      <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Summaries &amp; References.</h2>
+        <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          A short editorial summary of every text in the corpus, with the citation and the reference-material location that anchors it.
+        </p>
+      </div>
 
       {/* Mobile: stacked cards */}
-      <div className="md:hidden">
+      <div className="md:hidden hairline-t">
         {library.map((item, i) => (
-          <div key={i} className="hairline-b p-5 active:bg-neutral-100 transition-colors">
+          <div key={i} className="hairline-b p-5">
             <div className="flex justify-between items-baseline">
               <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{item.type}</span>
               <span className="mono text-[10px] text-neutral-500">{item.year}</span>
             </div>
             <h3 className="display text-xl italic leading-tight mt-2">{item.title}</h3>
-            <p className="text-sm mt-2 text-neutral-700">{item.author}</p>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1">{item.author}</p>
+            {item.summary && (
+              <p className="text-sm mt-3 text-neutral-700 leading-relaxed">{item.summary}</p>
+            )}
+            {item.reference && (
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3 break-words">{item.reference}</p>
+            )}
           </div>
         ))}
       </div>
 
-      {/* Desktop: table */}
-      <div className="hidden md:block hairline-b">
-        <div className="grid grid-cols-12 hairline-b mono text-[10px] uppercase tracking-widest text-neutral-500 py-4 px-8">
-          <div className="col-span-2">Type</div>
-          <div className="col-span-6">Title</div>
-          <div className="col-span-3">Author</div>
-          <div className="col-span-1 text-right">Year</div>
-        </div>
+      {/* Desktop: annotated list */}
+      <div className="hidden md:block hairline-t">
         {library.map((item, i) => (
-          <div key={i} className="grid grid-cols-12 hairline-b py-5 px-8 hover:bg-neutral-50 transition-colors">
+          <div key={i} className="grid grid-cols-12 hairline-b py-6 px-8 hover:bg-neutral-50 transition-colors">
             <div className="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{item.type}</div>
-            <div className="col-span-6 display text-xl md:text-2xl italic leading-tight">{item.title}</div>
-            <div className="col-span-3 text-sm pt-1">{item.author}</div>
-            <div className="col-span-1 text-right mono text-xs pt-1">{item.year}</div>
+            <div className="col-span-9">
+              <div className="display text-xl md:text-2xl italic leading-tight">{item.title}</div>
+              <div className="text-sm pt-1 text-neutral-700">{item.author}</div>
+              {item.summary && (
+                <p className="text-sm md:text-base mt-3 leading-relaxed text-neutral-700 max-w-3xl">{item.summary}</p>
+              )}
+              {item.reference && (
+                <p className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3 break-words">{item.reference}</p>
+              )}
+            </div>
+            <div className="col-span-1 text-right mono text-xs pt-1 text-neutral-500">{item.year}</div>
           </div>
         ))}
       </div>
@@ -1207,7 +1224,7 @@ function PullQuotesBlock() {
   return (
     <div>
       <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 04</p>
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 05</p>
         <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Pull-quotes.</h2>
         <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
           {quotesData.quotes.length} curated passages from the corpus, with citations. Filter by tradition.
@@ -1242,14 +1259,14 @@ function PullQuotesBlock() {
 function SupportSection() {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 06" kicker="Dāna — The Practice of Generosity" title="Support." sub="Everything is free. If it serves you, you may pass something forward." />
+      <SectionHeader num="§ 06" kicker="Dāna — The Practice of Generosity" title="Support." sub="A footnote. If the work has been useful, you may pass something forward." />
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-7 p-6 sm:p-10 md:p-12 hairline-b md:hairline-r">
           <p className="display text-xl sm:text-2xl md:text-3xl italic leading-relaxed">
             The dream-yoga traditions were never sold. They were transmitted, hand to hand, in exchange for whatever the student could offer — sometimes nothing.
           </p>
           <p className="mt-6 md:mt-8 leading-loose text-neutral-700 text-sm md:text-base">
-            We keep that arrangement. The course, the history, the community — open to anyone. No tiers, no premium, no paywall, no scarcity. If the work has been useful, you can buy us a coffee. Once we are sustainable, your contribution rolls forward as a coffee for someone else — though access was never withheld in the first place. The gesture is what matters: <em>I received, and now I give.</em>
+            We keep that arrangement. The course, the history, the community — open to anyone. If the work has been useful, you can buy us a coffee. Once we are sustainable, your contribution rolls forward as a coffee for someone else — though access was never withheld in the first place. The gesture is what matters: <em>I received, and now I give.</em>
           </p>
         </div>
         <div className="md:col-span-5 p-6 sm:p-10 md:p-12 hairline-b flex flex-col justify-between gap-10">
@@ -1332,67 +1349,42 @@ function AboutSection({ page, goTo }) {
   );
 }
 
-// ----- READER ------------------------------------------------------------
-// Reads structured JSON of the two primary texts. Dynamic-imported so the
-// ~200KB / 400KB payloads aren't in the main bundle.
+// ----- ARTICLE READER ----------------------------------------------------
+// Lazy-loads the long-form research articles compiled from
+// /reference-material/09_research/. Each article is rendered as a sequence of
+// typed blocks (h2/h3, paragraphs, blockquotes, lists, rules) so we can keep
+// editorial typography without depending on a markdown runtime.
 
-const READER_SOURCES = {
-  mandukya: {
-    file: 'mandukya',
-    title: 'The Māṇḍūkya Upaniṣad',
-    author: 'Swami Krishnananda',
-    note: 'Lecture series on the Māṇḍūkya, delivered 1968 at the Divine Life Society.',
-    skipKinds: [], // include all
-    skipFront: ['Front Matter', 'Publishers', 'Title'],
-  },
-  tibetan_yogas: {
-    file: 'tibetan_yogas',
-    title: 'The Tibetan Yogas of Dream and Sleep',
-    author: 'Tenzin Wangyal Rinpoche',
-    note: 'Edited by Mark Dahlby. Snow Lion, 1998.',
-    skipKinds: [],
-    skipFront: ['Title, Copyright', 'Acknowledgments'],
-  },
-};
-
-function Reader({ source, targetSectionId, goTo }) {
-  const config = READER_SOURCES[source];
+function ArticleReader({ articleId, goTo }) {
+  const meta = articles.find(a => a.id === articleId);
   const [data, setData] = useState(null);
-  const [selectedIndex, setSelectedIndex] = useState(0);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
     setData(null);
-    setSelectedIndex(0);
     setError(null);
-    if (!config) {
-      setError('Unknown source.');
+    if (!meta) {
+      setError('Unknown article.');
       return;
     }
-    // Dynamic import so the JSON is a separate chunk loaded on demand.
-    const loader = source === 'mandukya'
-      ? () => import('./data/mandukya.json')
-      : () => import('./data/tibetan_yogas.json');
-    loader()
+    import('./data/articles.json')
       .then(mod => {
         if (cancelled) return;
-        const sections = (mod.default.sections || []).filter(s => {
-          if (!s.text || s.text.length < 100) return false; // skip stub sections
-          if ((config.skipFront || []).some(prefix => (s.title || '').includes(prefix))) return false;
-          return true;
-        });
-        setData({ ...mod.default, sections });
-        if (targetSectionId) {
-          const idx = sections.findIndex(s => s.section_id === targetSectionId);
-          if (idx >= 0) setSelectedIndex(idx);
-        }
+        const found = (mod.default.articles || []).find(a => a.id === articleId);
+        if (!found) setError('Article not found in articles.json.');
+        else setData(found);
       })
       .catch(err => { if (!cancelled) setError(String(err)); });
     return () => { cancelled = true; };
-  }, [source, targetSectionId]);
+  }, [articleId, meta]);
 
-  if (!config) return <div className="p-12">Unknown source.</div>;
+  if (!meta) return <div className="p-12">Unknown article.</div>;
+
+  // Prev / next navigation across the six articles.
+  const idx = articles.findIndex(a => a.id === articleId);
+  const prev = idx > 0 ? articles[idx - 1] : null;
+  const next = idx < articles.length - 1 ? articles[idx + 1] : null;
 
   return (
     <div className="fade-in">
@@ -1401,142 +1393,93 @@ function Reader({ source, targetSectionId, goTo }) {
         <button type="button" onClick={() => goTo('library')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
           ← Library
         </button>
-        <div className="flex gap-2">
-          <ReaderToggle active={source === 'mandukya'} onClick={() => goTo('reader-mandukya')} label="Māṇḍūkya" />
-          <ReaderToggle active={source === 'tibetan_yogas'} onClick={() => goTo('reader-tibetan_yogas')} label="Tibetan Yogas" />
-        </div>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Article № {meta.num}</span>
       </div>
 
       {/* Header */}
       <div className="grid grid-cols-12 hairline-b">
         <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Reader</span>
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Article</span>
         </div>
         <div className="col-span-9 md:col-span-10 p-5 md:p-8">
-          <h1 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{config.title}</h1>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-3 md:mt-4">{config.author}</p>
-          <p className="text-sm md:text-base text-neutral-600 mt-2 italic">{config.note}</p>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {meta.num} · {meta.label}</p>
+          <h1 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mt-3 md:mt-4">{meta.title}</h1>
+          <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl leading-snug">{meta.blurb}</p>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-4 md:mt-5">Source: {meta.source}</p>
         </div>
       </div>
 
-      {error && <div className="p-12 text-red-700">Error loading text: {error}</div>}
+      {error && <div className="p-12 text-red-700">Error loading article: {error}</div>}
       {!data && !error && (
         <div className="p-12 mono text-[10px] uppercase tracking-widest text-neutral-500">Loading…</div>
       )}
 
-      {data && <ReaderBody sections={data.sections} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />}
-    </div>
-  );
-}
+      {data && <ArticleBody article={data} />}
 
-function ReaderToggle({ active, onClick, label }) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-1.5 transition-colors ${active ? 'bg-black text-white' : 'text-neutral-700 hover:bg-neutral-100'}`}
-      style={{ border: '0.5px solid #000' }}
-    >
-      {label}
-    </button>
-  );
-}
-
-function ReaderBody({ sections, selectedIndex, setSelectedIndex }) {
-  const section = sections[selectedIndex];
-  const next = selectedIndex < sections.length - 1 ? selectedIndex + 1 : null;
-  const prev = selectedIndex > 0 ? selectedIndex - 1 : null;
-
-  // Group sections by part (for Tibetan; Mandukya has no parts)
-  const grouped = {};
-  sections.forEach((s, i) => {
-    const key = s.part || '—';
-    if (!grouped[key]) grouped[key] = [];
-    grouped[key].push({ s, i });
-  });
-
-  const handleSelect = (i) => {
-    setSelectedIndex(i);
-    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  return (
-    <div>
-      {/* TOC */}
-      <div className="hairline-b">
-        <div className="px-5 md:px-12 py-4">
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Contents · {sections.length} sections</p>
-        </div>
-        <div className="hairline-t">
-          {Object.entries(grouped).map(([part, items]) => (
-            <div key={part}>
-              {part !== '—' && (
-                <div className="px-5 md:px-12 py-2 mono text-[9px] uppercase tracking-widest text-neutral-500 hairline-b" style={{ background: '#fafafa' }}>{part}</div>
-              )}
-              {items.map(({ s, i }) => (
-                <button
-                  key={s.section_id}
-                  type="button"
-                  onClick={() => handleSelect(i)}
-                  className={`w-full text-left grid grid-cols-12 hairline-b px-5 md:px-12 py-3 transition-colors ${i === selectedIndex ? 'bg-black text-white' : 'hover:bg-neutral-50'}`}
-                >
-                  <div className={`col-span-2 md:col-span-1 mono text-[9px] md:text-[10px] uppercase tracking-widest ${i === selectedIndex ? 'text-white/70' : 'text-neutral-500'}`}>
-                    {String(i + 1).padStart(2, '0')}
-                  </div>
-                  <div className={`col-span-7 md:col-span-9 display text-base md:text-lg italic leading-snug ${i === selectedIndex ? '' : ''}`}>
-                    {s.title}
-                  </div>
-                  <div className={`col-span-3 md:col-span-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-right ${i === selectedIndex ? 'text-white/70' : 'text-neutral-500'}`}>
-                    pp. {s.page_start}{s.page_end !== s.page_start ? `–${s.page_end}` : ''}
-                  </div>
-                </button>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Selected section body */}
-      {section && (
-        <div className="hairline-b">
-          <div className="px-5 md:px-12 py-8 md:py-12">
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2 md:mb-3">
-              Section {String(selectedIndex + 1).padStart(2, '0')} · pp. {section.page_start}{section.page_end !== section.page_start ? `–${section.page_end}` : ''} · {section.word_count?.toLocaleString() || '?'} words
-            </p>
-            <h2 className="display text-3xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{section.title}</h2>
-          </div>
-          <div className="px-5 md:px-12 pb-12 md:pb-16">
-            <div className="max-w-3xl space-y-5 md:space-y-6">
-              {(section.text || '').split(/\n\s*\n/).map((para, i) => (
-                <p key={i} className="text-base md:text-lg leading-loose whitespace-pre-line">{para.trim()}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Prev/next */}
+      {/* Prev / next */}
       <div className="hairline-b grid grid-cols-2">
         <div className="hairline-r p-5 md:p-8">
-          {prev !== null ? (
-            <button type="button" onClick={() => handleSelect(prev)} className="text-left w-full hover:italic transition-all">
+          {prev ? (
+            <button type="button" onClick={() => goTo(`article-${prev.id}`)} className="text-left w-full hover:italic transition-all">
               <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous</p>
-              <p className="display text-base md:text-xl mt-2 leading-snug italic">{sections[prev].title}</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{prev.label}</p>
             </button>
           ) : (
             <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
           )}
         </div>
         <div className="p-5 md:p-8 text-right">
-          {next !== null ? (
-            <button type="button" onClick={() => handleSelect(next)} className="text-right w-full hover:italic transition-all">
+          {next ? (
+            <button type="button" onClick={() => goTo(`article-${next.id}`)} className="text-right w-full hover:italic transition-all">
               <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next →</p>
-              <p className="display text-base md:text-xl mt-2 leading-snug italic">{sections[next].title}</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{next.label}</p>
             </button>
           ) : (
             <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End</span>
           )}
         </div>
+      </div>
+    </div>
+  );
+}
+
+function ArticleBody({ article }) {
+  return (
+    <div className="px-5 md:px-12 py-10 md:py-16">
+      <div className="max-w-3xl space-y-5 md:space-y-6">
+        {(article.blocks || []).map((b, i) => {
+          if (b.kind === 'rule') {
+            return <div key={i} className="hairline-t my-4 md:my-6" />;
+          }
+          if (b.kind === 'h2') {
+            return (
+              <h2 key={i} className="display text-2xl md:text-3xl leading-tight mt-8 md:mt-12 mb-2">{b.text}</h2>
+            );
+          }
+          if (b.kind === 'h3') {
+            return (
+              <h3 key={i} className="display text-xl md:text-2xl italic leading-snug mt-6 md:mt-8 mb-1 text-neutral-800">{b.text}</h3>
+            );
+          }
+          if (b.kind === 'quote') {
+            return (
+              <blockquote key={i} className="hairline-l pl-5 md:pl-6 display text-lg md:text-xl italic leading-relaxed text-neutral-700">
+                {b.text}
+              </blockquote>
+            );
+          }
+          if (b.kind === 'list') {
+            return (
+              <ul key={i} className="list-disc pl-6 space-y-2 text-base md:text-lg leading-loose">
+                {(b.items || []).map((item, j) => <li key={j}>{item}</li>)}
+              </ul>
+            );
+          }
+          // 'p' (default)
+          return (
+            <p key={i} className="text-base md:text-lg leading-loose">{b.text}</p>
+          );
+        })}
       </div>
     </div>
   );
