@@ -344,7 +344,7 @@ function FeatureCard({ num, title, desc, last, onClick }) {
     >
       <div>
         <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">§ {num}</span>
-        <h3 className="display text-5xl md:text-6xl mt-6 md:mt-8 group-hover:italic transition-all">{title}</h3>
+        <h3 className="display text-5xl md:text-5xl lg:text-6xl mt-6 md:mt-8 group-hover:italic transition-all break-words leading-[0.95]">{title}</h3>
       </div>
       <div className="mt-8">
         <p className="text-sm leading-relaxed text-neutral-700 mb-5 md:mb-6">{desc}</p>
