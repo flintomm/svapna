@@ -165,11 +165,12 @@ export default function DreamYogaApp() {
       <main className="xl:pl-12 pt-14 md:pt-16">
         {activeSection === 'home' && <HomeSection goTo={goTo} />}
         {activeSection === 'history' && <HistorySection />}
-        {activeSection === 'curriculum' && <CurriculumSection />}
+        {activeSection === 'curriculum' && <CurriculumSection goTo={goTo} />}
         {activeSection === 'community' && <CommunitySection />}
         {activeSection === 'library' && <LibrarySection />}
         {activeSection === 'support' && <SupportSection />}
         {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
+        {activeSection.startsWith('curriculum-') && <PhaseDetail phaseIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
       </main>
 
       {/* FOOTER */}
@@ -456,49 +457,237 @@ function truncate(text, maxLen) {
   return slice.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd() + '…';
 }
 
-function CurriculumSection() {
+// localStorage hook for module-completion progress.
+// Returns [completed: Set<string>, toggle: (moduleNum) => void].
+function useModuleProgress() {
+  const [completed, setCompleted] = useState(() => {
+    if (typeof window === 'undefined') return new Set();
+    try {
+      const raw = window.localStorage.getItem('svapna_progress');
+      return new Set(raw ? JSON.parse(raw) : []);
+    } catch { return new Set(); }
+  });
+  const toggle = (moduleNum) => {
+    setCompleted(prev => {
+      const next = new Set(prev);
+      if (next.has(moduleNum)) next.delete(moduleNum); else next.add(moduleNum);
+      try { window.localStorage.setItem('svapna_progress', JSON.stringify([...next])); } catch {}
+      return next;
+    });
+  };
+  return [completed, toggle];
+}
+
+function CurriculumSection({ goTo }) {
+  const [completed] = useModuleProgress();
+  const phaseProgress = (phase) => {
+    const done = phase.modules.filter(m => completed.has(m.num)).length;
+    return { done, total: phase.modules.length };
+  };
+  const enter = (i) => goTo(`curriculum-${i + 1}`);
+
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Twelve weeks. Six phases. Each lesson: a reading, a recording, a prompt." />
+      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Twelve weeks. Six phases. Each lesson: a reading, a practice, a prompt." />
 
-      {/* Mobile: stacked card layout */}
+      {/* Mobile: stacked card buttons */}
       <div className="md:hidden">
-        {curriculumPhases.map((w, i) => (
-          <div key={i} className="p-6 hairline-b active:bg-neutral-100 transition-colors">
-            <div className="flex justify-between items-baseline">
-              <span className="display text-4xl italic">{w.phase}.</span>
-              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
-            </div>
-            <h3 className="display text-3xl mt-4">{w.title}</h3>
-            <p className="text-sm leading-relaxed mt-4 text-neutral-700">{w.focus}</p>
-            <p className="mono text-[9px] uppercase tracking-widest mt-5 text-neutral-500">{w.practices.join(' · ')}</p>
-          </div>
-        ))}
+        {curriculumPhases.map((w, i) => {
+          const p = phaseProgress(w);
+          return (
+            <button key={i} type="button" onClick={() => enter(i)} className="w-full text-left p-6 hairline-b active:bg-neutral-100 transition-colors">
+              <div className="flex justify-between items-baseline">
+                <span className="display text-4xl italic">{w.phase}.</span>
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
+              </div>
+              <h3 className="display text-3xl mt-4">{w.title}</h3>
+              <p className="text-sm leading-relaxed mt-4 text-neutral-700">{w.focus}</p>
+              <div className="mt-5 flex justify-between items-baseline">
+                <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">{w.practices.join(' · ')}</p>
+              </div>
+              <div className="mt-3 flex justify-between items-baseline">
+                <span className="mono text-[9px] uppercase tracking-widest text-neutral-500">{p.done} of {p.total} complete</span>
+                <span className="mono text-[10px] uppercase tracking-widest">Enter →</span>
+              </div>
+            </button>
+          );
+        })}
       </div>
 
-      {/* Desktop: row layout */}
+      {/* Desktop: row buttons */}
       <div className="hidden md:block">
-        {curriculumPhases.map((w, i) => (
-          <div key={i} className="grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group">
-            <div className="col-span-1 p-8 hairline-r flex items-center justify-center">
-              <span className="display text-3xl italic">{w.phase}</span>
-            </div>
-            <div className="col-span-2 p-8 hairline-r flex items-center">
-              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
-            </div>
-            <div className="col-span-3 p-8 hairline-r flex items-center">
-              <h3 className="display text-4xl group-hover:italic transition-all">{w.title}</h3>
-            </div>
-            <div className="col-span-4 p-8 hairline-r flex items-center">
-              <p className="text-sm leading-relaxed">{w.focus}</p>
-            </div>
-            <div className="col-span-2 p-8 flex items-center">
-              <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 leading-relaxed">{w.practices.join(' · ')}</p>
-            </div>
-          </div>
-        ))}
+        {curriculumPhases.map((w, i) => {
+          const p = phaseProgress(w);
+          return (
+            <button key={i} type="button" onClick={() => enter(i)} className="w-full text-left grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group">
+              <div className="col-span-1 p-8 hairline-r flex items-center justify-center">
+                <span className="display text-3xl italic">{w.phase}</span>
+              </div>
+              <div className="col-span-2 p-8 hairline-r flex items-center">
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Wk. {w.weeks}</span>
+              </div>
+              <div className="col-span-3 p-8 hairline-r flex items-center">
+                <h3 className="display text-4xl group-hover:italic transition-all">{w.title}</h3>
+              </div>
+              <div className="col-span-4 p-8 hairline-r flex items-center">
+                <p className="text-sm leading-relaxed">{w.focus}</p>
+              </div>
+              <div className="col-span-2 p-8 flex items-center justify-between gap-4">
+                <span className="mono text-[9px] uppercase tracking-widest text-neutral-500">{p.done}/{p.total}</span>
+                <span className="mono text-[10px] uppercase tracking-widest group-hover:translate-x-1 transition-transform">→</span>
+              </div>
+            </button>
+          );
+        })}
       </div>
     </div>
+  );
+}
+
+function PhaseDetail({ phaseIndex, goTo }) {
+  const phase = curriculumPhases[phaseIndex];
+  const [completed, toggle] = useModuleProgress();
+  if (!phase) return null;
+
+  const prevIndex = phaseIndex > 0 ? phaseIndex - 1 : null;
+  const nextIndex = phaseIndex < curriculumPhases.length - 1 ? phaseIndex + 1 : null;
+
+  return (
+    <div className="fade-in">
+      {/* Crumbs / back link */}
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between">
+        <button type="button" onClick={() => goTo('curriculum')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Curriculum
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
+          Phase {phase.phase} of VI · Wk. {phase.weeks}
+        </span>
+      </div>
+
+      {/* Header */}
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {phase.phase}</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Phase {phase.phase} · {phase.weeks}</p>
+          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{phase.title}.</h1>
+          <p className="mt-6 md:mt-10 text-base md:text-lg leading-loose max-w-3xl">{phase.synthesis}</p>
+          <div className="mt-6 md:mt-8 flex flex-wrap gap-2">
+            {phase.practices.map(p => (
+              <span key={p} className="mono text-[9px] uppercase tracking-widest px-3 py-2 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{p}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Modules */}
+      {phase.modules.map(m => (
+        <ModuleCard key={m.num} module={m} done={completed.has(m.num)} onToggle={() => toggle(m.num)} />
+      ))}
+
+      {/* Phase nav */}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prevIndex !== null ? (
+            <button type="button" onClick={() => goTo(`curriculum-${prevIndex + 1}`)} className="text-left w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous</p>
+              <p className="display text-xl md:text-2xl mt-2">{curriculumPhases[prevIndex].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {nextIndex !== null ? (
+            <button type="button" onClick={() => goTo(`curriculum-${nextIndex + 1}`)} className="text-right w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next →</p>
+              <p className="display text-xl md:text-2xl mt-2">{curriculumPhases[nextIndex].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ModuleCard({ module: m, done, onToggle }) {
+  return (
+    <article className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      {/* Module number rail */}
+      <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0 flex md:flex-col justify-between md:justify-start gap-3">
+        <div>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Module</p>
+          <p className="display text-5xl md:text-6xl mt-1 md:mt-2">{m.num}</p>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2 md:mt-3">{m.week}</p>
+        </div>
+        <button
+          type="button"
+          onClick={onToggle}
+          className={`mono text-[9px] uppercase tracking-widest px-3 py-2 transition-colors ${done ? 'bg-black text-white' : 'text-neutral-700 hover:bg-neutral-100'} md:self-start`}
+          style={{ border: '0.5px solid #000' }}
+          aria-pressed={done}
+        >
+          {done ? '✓ Complete' : 'Mark complete'}
+        </button>
+      </div>
+
+      {/* Module body */}
+      <div className="md:col-span-10 p-6 md:p-12 space-y-8 md:space-y-10">
+        <h2 className="display text-3xl sm:text-4xl md:text-5xl leading-tight">{m.title}</h2>
+
+        {/* Objectives */}
+        <div>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Learning Objectives</p>
+          <ol className="space-y-2 md:space-y-3">
+            {m.objectives.map((o, i) => (
+              <li key={i} className="text-base leading-relaxed flex gap-4">
+                <span className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-1.5 shrink-0 w-6">{String(i + 1).padStart(2, '0')}</span>
+                <span>{o}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        {/* Readings */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+          <div>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Primary Reading</p>
+            <p className="display text-lg italic leading-snug">{m.primary_reading}</p>
+          </div>
+          {m.secondary_reading && (
+            <div>
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Secondary Reading</p>
+              <p className="display text-lg italic leading-snug">{m.secondary_reading}</p>
+            </div>
+          )}
+        </div>
+
+        {/* Practice */}
+        <div>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Practice</p>
+          <p className="text-base leading-loose">{m.practice}</p>
+        </div>
+
+        {/* Prompt */}
+        <div className="hairline-t pt-6 md:pt-8">
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Journal Prompt</p>
+          <p className="display text-lg md:text-xl italic leading-relaxed text-neutral-800">&ldquo;{m.prompt}&rdquo;</p>
+        </div>
+
+        {/* Key terms */}
+        <div className="hairline-t pt-6">
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Key Terms</p>
+          <div className="flex flex-wrap gap-2">
+            {m.key_terms.map(t => (
+              <span key={t} className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{t}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </article>
   );
 }
 
