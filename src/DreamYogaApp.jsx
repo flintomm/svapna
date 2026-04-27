@@ -167,10 +167,12 @@ export default function DreamYogaApp() {
         {activeSection === 'history' && <HistorySection />}
         {activeSection === 'curriculum' && <CurriculumSection goTo={goTo} />}
         {activeSection === 'community' && <CommunitySection />}
-        {activeSection === 'library' && <LibrarySection />}
+        {activeSection === 'library' && <LibrarySection goTo={goTo} />}
         {activeSection === 'support' && <SupportSection />}
         {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
         {activeSection.startsWith('curriculum-') && <PhaseDetail phaseIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
+        {activeSection.startsWith('reader-') && <Reader source={activeSection.slice(7)} goTo={goTo} />}
+        {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
       </main>
 
       {/* FOOTER */}
@@ -714,13 +716,48 @@ function CommunitySection() {
   );
 }
 
-function LibrarySection() {
+function LibrarySection({ goTo }) {
   return (
     <div className="fade-in">
       <SectionHeader num="§ 05" kicker="Selected Readings" title="Library." sub="Primary sources, contemporary studies, and the papers that anchor the science." />
+      <ReaderEntryBlock goTo={goTo} />
       <BibliographyBlock />
-      <ThemesBlock />
+      <ThemesBlock goTo={goTo} />
       <PullQuotesBlock />
+    </div>
+  );
+}
+
+function ReaderEntryBlock({ goTo }) {
+  const cards = [
+    { source: 'mandukya', title: 'The Māṇḍūkya Upaniṣad', author: 'Swami Krishnananda (1968)', desc: 'The twelve-verse Upaniṣad with Krishnananda’s lecture commentary on the four states. ~33,000 words across ten reading sections.' },
+    { source: 'tibetan_yogas', title: 'The Tibetan Yogas of Dream and Sleep', author: 'Tenzin Wangyal Rinpoche (1998)', desc: 'The full Bön-tradition treatment of dream and sleep yoga. ~66,000 words across six parts and forty-six chapters.' },
+  ];
+  return (
+    <div className="hairline-b">
+      <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Reader.</h2>
+        <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          Both primary texts available in full, in-page. No footnotes to chase.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 hairline-t">
+        {cards.map((c, i) => (
+          <button
+            key={c.source}
+            type="button"
+            onClick={() => goTo(`reader-${c.source === 'tibetan_yogas' ? 'tibetan_yogas' : 'mandukya'}`)}
+            className={`text-left p-6 sm:p-8 md:p-10 hairline-b ${i === 0 ? 'md:hairline-r md:border-b-0' : 'md:border-b-0'} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group`}
+          >
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {String(i + 1).padStart(2, '0')}</p>
+            <h3 className="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight">{c.title}</h3>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2">{c.author}</p>
+            <p className="text-sm leading-relaxed mt-4 md:mt-5 text-neutral-700">{c.desc}</p>
+            <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Read →</p>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
@@ -764,29 +801,32 @@ function BibliographyBlock() {
   );
 }
 
-function ThemesBlock() {
+function ThemesBlock({ goTo }) {
   return (
     <div className="hairline-b">
       <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 04</p>
         <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Themes.</h2>
         <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          Fourteen cross-cutting concerns that recur across the corpus. Each appears in dozens of sections across the primary texts.
+          Fourteen cross-cutting concerns that recur across the corpus. Click any theme to see actual passages from the primary texts.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 hairline-t">
         {themes.map((t, i) => (
-          <div
+          <button
             key={t.id}
-            className="p-6 md:p-8 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+1)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(even)]:border-r-0"
+            type="button"
+            onClick={() => goTo(`theme-${t.id}`)}
+            className="text-left p-6 md:p-8 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+1)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(even)]:border-r-0 active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
           >
             <div className="flex justify-between items-baseline">
               <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {String(i + 1).padStart(2, '0')}</span>
               <span className="mono text-[9px] uppercase tracking-widest text-neutral-400">{t.sources} sources</span>
             </div>
-            <h3 className="display text-2xl md:text-3xl mt-4 leading-tight">{t.label}</h3>
+            <h3 className="display text-2xl md:text-3xl mt-4 leading-tight group-hover:italic transition-all">{t.label}</h3>
             <p className="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{t.desc}</p>
-          </div>
+            <p className="mono text-[10px] uppercase tracking-widest mt-4 md:mt-5 text-neutral-500 group-hover:text-black group-hover:translate-x-1 transition-all inline-block">Browse passages →</p>
+          </button>
         ))}
       </div>
     </div>
@@ -925,6 +965,299 @@ function AboutSection({ page, goTo }) {
           ))}
         </div>
       </div>
+    </div>
+  );
+}
+
+// ----- READER ------------------------------------------------------------
+// Reads structured JSON of the two primary texts. Dynamic-imported so the
+// ~200KB / 400KB payloads aren't in the main bundle.
+
+const READER_SOURCES = {
+  mandukya: {
+    file: 'mandukya',
+    title: 'The Māṇḍūkya Upaniṣad',
+    author: 'Swami Krishnananda',
+    note: 'Lecture series on the Māṇḍūkya, delivered 1968 at the Divine Life Society.',
+    skipKinds: [], // include all
+    skipFront: ['Front Matter', 'Publishers', 'Title'],
+  },
+  tibetan_yogas: {
+    file: 'tibetan_yogas',
+    title: 'The Tibetan Yogas of Dream and Sleep',
+    author: 'Tenzin Wangyal Rinpoche',
+    note: 'Edited by Mark Dahlby. Snow Lion, 1998.',
+    skipKinds: [],
+    skipFront: ['Title, Copyright', 'Acknowledgments'],
+  },
+};
+
+function Reader({ source, goTo }) {
+  const config = READER_SOURCES[source];
+  const [data, setData] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setData(null);
+    setSelectedIndex(0);
+    setError(null);
+    if (!config) {
+      setError('Unknown source.');
+      return;
+    }
+    // Dynamic import so the JSON is a separate chunk loaded on demand.
+    const loader = source === 'mandukya'
+      ? () => import('./data/mandukya.json')
+      : () => import('./data/tibetan_yogas.json');
+    loader()
+      .then(mod => {
+        if (cancelled) return;
+        const sections = (mod.default.sections || []).filter(s => {
+          if (!s.text || s.text.length < 100) return false; // skip stub sections
+          if ((config.skipFront || []).some(prefix => (s.title || '').includes(prefix))) return false;
+          return true;
+        });
+        setData({ ...mod.default, sections });
+      })
+      .catch(err => { if (!cancelled) setError(String(err)); });
+    return () => { cancelled = true; };
+  }, [source]);
+
+  if (!config) return <div className="p-12">Unknown source.</div>;
+
+  return (
+    <div className="fade-in">
+      {/* Crumb / back */}
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo('library')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Library
+        </button>
+        <div className="flex gap-2">
+          <ReaderToggle active={source === 'mandukya'} onClick={() => goTo('reader-mandukya')} label="Māṇḍūkya" />
+          <ReaderToggle active={source === 'tibetan_yogas'} onClick={() => goTo('reader-tibetan_yogas')} label="Tibetan Yogas" />
+        </div>
+      </div>
+
+      {/* Header */}
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Reader</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <h1 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{config.title}</h1>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-3 md:mt-4">{config.author}</p>
+          <p className="text-sm md:text-base text-neutral-600 mt-2 italic">{config.note}</p>
+        </div>
+      </div>
+
+      {error && <div className="p-12 text-red-700">Error loading text: {error}</div>}
+      {!data && !error && (
+        <div className="p-12 mono text-[10px] uppercase tracking-widest text-neutral-500">Loading…</div>
+      )}
+
+      {data && <ReaderBody sections={data.sections} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />}
+    </div>
+  );
+}
+
+function ReaderToggle({ active, onClick, label }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-1.5 transition-colors ${active ? 'bg-black text-white' : 'text-neutral-700 hover:bg-neutral-100'}`}
+      style={{ border: '0.5px solid #000' }}
+    >
+      {label}
+    </button>
+  );
+}
+
+function ReaderBody({ sections, selectedIndex, setSelectedIndex }) {
+  const section = sections[selectedIndex];
+  const next = selectedIndex < sections.length - 1 ? selectedIndex + 1 : null;
+  const prev = selectedIndex > 0 ? selectedIndex - 1 : null;
+
+  // Group sections by part (for Tibetan; Mandukya has no parts)
+  const grouped = {};
+  sections.forEach((s, i) => {
+    const key = s.part || '—';
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push({ s, i });
+  });
+
+  const handleSelect = (i) => {
+    setSelectedIndex(i);
+    if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <div>
+      {/* TOC */}
+      <div className="hairline-b">
+        <div className="px-5 md:px-12 py-4">
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Contents · {sections.length} sections</p>
+        </div>
+        <div className="hairline-t">
+          {Object.entries(grouped).map(([part, items]) => (
+            <div key={part}>
+              {part !== '—' && (
+                <div className="px-5 md:px-12 py-2 mono text-[9px] uppercase tracking-widest text-neutral-500 hairline-b" style={{ background: '#fafafa' }}>{part}</div>
+              )}
+              {items.map(({ s, i }) => (
+                <button
+                  key={s.section_id}
+                  type="button"
+                  onClick={() => handleSelect(i)}
+                  className={`w-full text-left grid grid-cols-12 hairline-b px-5 md:px-12 py-3 transition-colors ${i === selectedIndex ? 'bg-black text-white' : 'hover:bg-neutral-50'}`}
+                >
+                  <div className={`col-span-2 md:col-span-1 mono text-[9px] md:text-[10px] uppercase tracking-widest ${i === selectedIndex ? 'text-white/70' : 'text-neutral-500'}`}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <div className={`col-span-7 md:col-span-9 display text-base md:text-lg italic leading-snug ${i === selectedIndex ? '' : ''}`}>
+                    {s.title}
+                  </div>
+                  <div className={`col-span-3 md:col-span-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-right ${i === selectedIndex ? 'text-white/70' : 'text-neutral-500'}`}>
+                    pp. {s.page_start}{s.page_end !== s.page_start ? `–${s.page_end}` : ''}
+                  </div>
+                </button>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Selected section body */}
+      {section && (
+        <div className="hairline-b">
+          <div className="px-5 md:px-12 py-8 md:py-12">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2 md:mb-3">
+              Section {String(selectedIndex + 1).padStart(2, '0')} · pp. {section.page_start}{section.page_end !== section.page_start ? `–${section.page_end}` : ''} · {section.word_count?.toLocaleString() || '?'} words
+            </p>
+            <h2 className="display text-3xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{section.title}</h2>
+          </div>
+          <div className="px-5 md:px-12 pb-12 md:pb-16">
+            <div className="max-w-3xl space-y-5 md:space-y-6">
+              {(section.text || '').split(/\n\s*\n/).map((para, i) => (
+                <p key={i} className="text-base md:text-lg leading-loose whitespace-pre-line">{para.trim()}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Prev/next */}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prev !== null ? (
+            <button type="button" onClick={() => handleSelect(prev)} className="text-left w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{sections[prev].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {next !== null ? (
+            <button type="button" onClick={() => handleSelect(next)} className="text-right w-full hover:italic transition-all">
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Next →</p>
+              <p className="display text-base md:text-xl mt-2 leading-snug italic">{sections[next].title}</p>
+            </button>
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End</span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ----- THEME DETAIL ------------------------------------------------------
+
+function ThemeDetail({ themeId, goTo }) {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setData(null);
+    setError(null);
+    import('./data/themed_passages.json')
+      .then(mod => {
+        if (cancelled) return;
+        setData(mod.default[themeId] || null);
+      })
+      .catch(err => { if (!cancelled) setError(String(err)); });
+    return () => { cancelled = true; };
+  }, [themeId]);
+
+  return (
+    <div className="fade-in">
+      <div className="hairline-b px-5 md:px-12 py-4">
+        <button type="button" onClick={() => goTo('library')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Library · Themes
+        </button>
+      </div>
+
+      {error && <div className="p-12 text-red-700">Error: {error}</div>}
+      {!data && !error && (
+        <div className="p-12 mono text-[10px] uppercase tracking-widest text-neutral-500">Loading…</div>
+      )}
+
+      {data === null && !error && (
+        <div className="p-12">Theme not found.</div>
+      )}
+
+      {data && (
+        <>
+          {/* Header */}
+          <div className="grid grid-cols-12 hairline-b">
+            <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+              <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Theme</span>
+            </div>
+            <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+              <h1 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{data.label}.</h1>
+              <p className="mt-4 md:mt-6 text-base md:text-lg leading-relaxed text-neutral-700 max-w-3xl">{data.description}</p>
+              <div className="mt-5 md:mt-6 flex flex-wrap gap-2">
+                <span className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{data.entries.length} sources</span>
+                <span className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}>{data.total_passage_hits} passage hits</span>
+              </div>
+              {data.keywords && data.keywords.length > 0 && (
+                <div className="mt-5 md:mt-6">
+                  <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2">Keywords</p>
+                  <p className="text-sm leading-relaxed text-neutral-600">{data.keywords.join(' · ')}</p>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Source entries with passages */}
+          {data.entries.map((entry, i) => (
+            <div key={i} className="hairline-b">
+              <div className="px-5 md:px-12 py-6 md:py-8">
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                  <h2 className="display text-xl md:text-2xl italic leading-tight">{entry.source_title}{entry.section_title ? ` — ${entry.section_title}` : ''}</h2>
+                  <span className="mono text-[9px] uppercase tracking-widest text-neutral-500">{entry.match_count} matches</span>
+                </div>
+                <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2">{entry.tradition}{entry.page_range ? ` · pp. ${entry.page_range[0]}–${entry.page_range[1]}` : ''}</p>
+              </div>
+              {entry.passages && entry.passages.length > 0 && (
+                <div className="px-5 md:px-12 pb-6 md:pb-8 space-y-4">
+                  {entry.passages.map((p, j) => (
+                    <div key={j} className="hairline-t pt-4">
+                      <p className="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">… {p.keyword}</p>
+                      <p className="text-sm md:text-base leading-relaxed text-neutral-700 italic">…{p.snippet}…</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }
