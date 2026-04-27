@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { historyUnits, curriculumPhases, library, homeQuote, themes, aboutPages } from './content.js';
+import { historyUnits, curriculumPhases, library, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
 import timelineData from './data/timeline.json';
 import quotesData from './data/quotes.json';
 
@@ -171,7 +171,13 @@ export default function DreamYogaApp() {
         {activeSection === 'support' && <SupportSection />}
         {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
         {activeSection.startsWith('curriculum-') && <PhaseDetail phaseIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
-        {activeSection.startsWith('reader-') && <Reader source={activeSection.slice(7)} goTo={goTo} />}
+        {activeSection.startsWith('reader-') && (() => {
+          const rest = activeSection.slice(7); // e.g. 'mandukya' or 'mandukya:mandukya_07'
+          const colonIdx = rest.indexOf(':');
+          const source = colonIdx >= 0 ? rest.slice(0, colonIdx) : rest;
+          const target = colonIdx >= 0 ? rest.slice(colonIdx + 1) : null;
+          return <Reader source={source} targetSectionId={target} goTo={goTo} />;
+        })()}
         {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
       </main>
 
@@ -585,7 +591,7 @@ function PhaseDetail({ phaseIndex, goTo }) {
 
       {/* Modules */}
       {phase.modules.map(m => (
-        <ModuleCard key={m.num} module={m} done={completed.has(m.num)} onToggle={() => toggle(m.num)} />
+        <ModuleCard key={m.num} module={m} done={completed.has(m.num)} onToggle={() => toggle(m.num)} goTo={goTo} />
       ))}
 
       {/* Phase nav */}
@@ -615,7 +621,10 @@ function PhaseDetail({ phaseIndex, goTo }) {
   );
 }
 
-function ModuleCard({ module: m, done, onToggle }) {
+function ModuleCard({ module: m, done, onToggle, goTo }) {
+  const deep = moduleDeepening[m.num];
+  const themeLookup = Object.fromEntries(themes.map(t => [t.id, t]));
+
   return (
     <article className="grid grid-cols-1 md:grid-cols-12 hairline-b">
       {/* Module number rail */}
@@ -639,6 +648,14 @@ function ModuleCard({ module: m, done, onToggle }) {
       {/* Module body */}
       <div className="md:col-span-10 p-6 md:p-12 space-y-8 md:space-y-10">
         <h2 className="display text-3xl sm:text-4xl md:text-5xl leading-tight">{m.title}</h2>
+
+        {/* Background essay */}
+        {deep?.background && (
+          <div>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Background</p>
+            <p className="text-base md:text-lg leading-loose max-w-3xl">{deep.background}</p>
+          </div>
+        )}
 
         {/* Objectives */}
         <div>
@@ -667,6 +684,29 @@ function ModuleCard({ module: m, done, onToggle }) {
           )}
         </div>
 
+        {/* Read in the Reader (deep-links into Reader at specific section) */}
+        {deep?.reader_passages && deep.reader_passages.length > 0 && (
+          <div>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Read in the Reader</p>
+            <div className="space-y-0 hairline-t hairline-b">
+              {deep.reader_passages.map((p, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => goTo(`reader-${p.source}:${p.section_id}`)}
+                  className="w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-3 md:px-4 hover:bg-neutral-50 transition-colors group"
+                >
+                  <div className="col-span-12 sm:col-span-3 md:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
+                    {p.source === 'mandukya' ? 'Māṇḍūkya' : 'Tibetan Yogas'}
+                  </div>
+                  <div className="col-span-12 sm:col-span-8 md:col-span-8 display text-base md:text-lg italic leading-snug">{p.label}</div>
+                  <div className="col-span-12 sm:col-span-1 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Practice */}
         <div>
           <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Practice</p>
@@ -678,6 +718,46 @@ function ModuleCard({ module: m, done, onToggle }) {
           <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Journal Prompt</p>
           <p className="display text-lg md:text-xl italic leading-relaxed text-neutral-800">&ldquo;{m.prompt}&rdquo;</p>
         </div>
+
+        {/* Further reading (annotated) */}
+        {deep?.further_reading && deep.further_reading.length > 0 && (
+          <div className="hairline-t pt-6 md:pt-8">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Further Reading</p>
+            <ul className="space-y-4 md:space-y-5">
+              {deep.further_reading.map((r, i) => (
+                <li key={i}>
+                  <p className="display text-base md:text-lg italic leading-snug">{r.title}</p>
+                  <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1">{r.author}</p>
+                  <p className="text-sm leading-relaxed text-neutral-600 mt-2 max-w-3xl">{r.note}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Theme cross-links */}
+        {deep?.theme_links && deep.theme_links.length > 0 && goTo && (
+          <div className="hairline-t pt-6">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">Themes Engaged</p>
+            <div className="flex flex-wrap gap-2">
+              {deep.theme_links.map(id => {
+                const t = themeLookup[id];
+                if (!t) return null;
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => goTo(`theme-${id}`)}
+                    className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                    style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}
+                  >
+                    {t.label} →
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Key terms */}
         <div className="hairline-t pt-6">
@@ -992,7 +1072,7 @@ const READER_SOURCES = {
   },
 };
 
-function Reader({ source, goTo }) {
+function Reader({ source, targetSectionId, goTo }) {
   const config = READER_SOURCES[source];
   const [data, setData] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -1020,10 +1100,14 @@ function Reader({ source, goTo }) {
           return true;
         });
         setData({ ...mod.default, sections });
+        if (targetSectionId) {
+          const idx = sections.findIndex(s => s.section_id === targetSectionId);
+          if (idx >= 0) setSelectedIndex(idx);
+        }
       })
       .catch(err => { if (!cancelled) setError(String(err)); });
     return () => { cancelled = true; };
-  }, [source]);
+  }, [source, targetSectionId]);
 
   if (!config) return <div className="p-12">Unknown source.</div>;
 
