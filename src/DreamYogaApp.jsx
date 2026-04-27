@@ -179,6 +179,7 @@ export default function DreamYogaApp() {
           return <Reader source={source} targetSectionId={target} goTo={goTo} />;
         })()}
         {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
+        {activeSection.startsWith('discuss-') && <DiscussionPage moduleNum={activeSection.slice(8)} goTo={goTo} />}
       </main>
 
       {/* FOOTER */}
@@ -713,10 +714,21 @@ function ModuleCard({ module: m, done, onToggle, goTo }) {
           <p className="text-base leading-loose">{m.practice}</p>
         </div>
 
-        {/* Prompt */}
+        {/* Discussion question + community link */}
         <div className="hairline-t pt-6 md:pt-8">
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Journal Prompt</p>
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Discussion Question</p>
           <p className="display text-lg md:text-xl italic leading-relaxed text-neutral-800">&ldquo;{m.prompt}&rdquo;</p>
+          {goTo && (
+            <button
+              type="button"
+              onClick={() => goTo(`discuss-${m.num}`)}
+              className="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+              style={{ border: '0.5px solid #000' }}
+            >
+              <span>Join the discussion</span>
+              <span>→</span>
+            </button>
+          )}
         </div>
 
         {/* Further reading (annotated) */}
@@ -1342,6 +1354,135 @@ function ThemeDetail({ themeId, goTo }) {
           ))}
         </>
       )}
+    </div>
+  );
+}
+
+// ----- DISCUSSION PAGE ---------------------------------------------------
+// One per module (discuss-01 through discuss-12). The week's discussion
+// question stays the spine of the page; the forum thread is a placeholder
+// until the community backend is wired up.
+
+function DiscussionPage({ moduleNum, goTo }) {
+  // Find the module + its phase
+  let module = null;
+  let phase = null;
+  for (const p of curriculumPhases) {
+    const m = p.modules.find(mm => mm.num === moduleNum);
+    if (m) { module = m; phase = p; break; }
+  }
+  if (!module || !phase) {
+    return <div className="p-12">Discussion not found.</div>;
+  }
+  const phaseIndex = curriculumPhases.indexOf(phase);
+
+  return (
+    <div className="fade-in">
+      {/* Crumbs */}
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo(`curriculum-${phaseIndex + 1}`)} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Module {module.num}
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
+          Phase {phase.phase} · {phase.title} · {module.week}
+        </span>
+      </div>
+
+      {/* Header */}
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 04 · {module.num}</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Discussion · {module.title}</p>
+          <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight">The Question.</h1>
+          <p className="mt-6 md:mt-10 display text-xl md:text-2xl lg:text-3xl italic leading-relaxed text-neutral-800 max-w-4xl">
+            &ldquo;{module.prompt}&rdquo;
+          </p>
+        </div>
+      </div>
+
+      {/* Forum framing */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">How we discuss</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-5 md:space-y-6">
+          <p className="text-base md:text-lg leading-loose">
+            This question seeds the week&rsquo;s conversation with the cohort. Read what others have written. Reply when you have something to add, not because you feel you should.
+          </p>
+          <p className="text-base md:text-lg leading-loose">
+            Witnessing without interpretation, unless interpretation is invited. Cite the source if you quote a tradition. Disagreements are welcome; contempt is not. The full code of conduct is in the Community section.
+          </p>
+        </div>
+      </div>
+
+      {/* Forum thread placeholder */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Thread</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <div className="hairline-t hairline-b py-10 md:py-16 px-4 md:px-8 text-center">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Forums opening soon</p>
+            <p className="display text-2xl md:text-3xl italic leading-relaxed text-neutral-700 mt-4 md:mt-5 max-w-2xl mx-auto">
+              The forum backend is being built. Until it ships, the conversation lives in the Community section — quietly, by hand, person to person.
+            </p>
+            <div className="mt-6 md:mt-8 flex flex-wrap justify-center gap-3">
+              <button
+                type="button"
+                onClick={() => goTo('community')}
+                className="mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+                style={{ border: '0.5px solid #000' }}
+              >
+                Community →
+              </button>
+              <button
+                type="button"
+                onClick={() => goTo('about-contact')}
+                className="mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+                style={{ border: '0.5px solid #000' }}
+              >
+                Contact →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Adjacent modules — quick nav */}
+      <div className="hairline-b grid grid-cols-2">
+        {(() => {
+          const all = curriculumPhases.flatMap(p => p.modules.map(mm => ({ ...mm, phase: p })));
+          const idx = all.findIndex(mm => mm.num === module.num);
+          const prev = idx > 0 ? all[idx - 1] : null;
+          const next = idx < all.length - 1 ? all[idx + 1] : null;
+          return (
+            <>
+              <div className="hairline-r p-5 md:p-8">
+                {prev ? (
+                  <button type="button" onClick={() => goTo(`discuss-${prev.num}`)} className="text-left w-full hover:italic transition-all">
+                    <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">← Module {prev.num}</p>
+                    <p className="display text-base md:text-xl mt-2 italic">{prev.title}</p>
+                  </button>
+                ) : (
+                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning of course</span>
+                )}
+              </div>
+              <div className="p-5 md:p-8 text-right">
+                {next ? (
+                  <button type="button" onClick={() => goTo(`discuss-${next.num}`)} className="text-right w-full hover:italic transition-all">
+                    <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Module {next.num} →</p>
+                    <p className="display text-base md:text-xl mt-2 italic">{next.title}</p>
+                  </button>
+                ) : (
+                  <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+                )}
+              </div>
+            </>
+          );
+        })()}
+      </div>
     </div>
   );
 }
