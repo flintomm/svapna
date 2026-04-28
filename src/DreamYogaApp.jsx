@@ -430,18 +430,28 @@ function HistorySection({ goTo }) {
           ))}
         </div>
         <div>
-          {visibleTimeline.map((entry, i) => (
-            <div key={i} className="grid grid-cols-12 hairline-t py-4 md:py-5 px-5 md:px-12 hover:bg-neutral-50 transition-colors">
-              <div className="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
-              <div className="col-span-12 md:col-span-2 mono text-[9px] uppercase tracking-widest text-neutral-400 mb-1 md:mb-0">
-                {timelineData.units[entry.unit]}
-              </div>
-              <div className="col-span-12 md:col-span-8">
-                <p className="display text-lg md:text-xl leading-tight">{entry.title}</p>
-                <p className="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
-              </div>
-            </div>
-          ))}
+          {visibleTimeline.map((entry, i) => {
+            const article = articles[entry.unit - 1];
+            return (
+              <button
+                key={i}
+                type="button"
+                onClick={() => article && goTo(`article-${article.id}`)}
+                disabled={!article}
+                className="w-full text-left grid grid-cols-12 hairline-t py-4 md:py-5 px-5 md:px-12 hover:bg-neutral-50 transition-colors group"
+              >
+                <div className="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
+                <div className="col-span-12 md:col-span-2 mono text-[9px] uppercase tracking-widest text-neutral-400 mb-1 md:mb-0">
+                  {timelineData.units[entry.unit]}
+                </div>
+                <div className="col-span-11 md:col-span-7">
+                  <p className="display text-lg md:text-xl leading-tight group-hover:italic transition-all">{entry.title}</p>
+                  <p className="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
+                </div>
+                <div className="col-span-1 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 group-hover:text-black group-hover:translate-x-1 transition-all text-right self-start">→</div>
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>
