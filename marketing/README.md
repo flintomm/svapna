@@ -114,7 +114,7 @@ SVG outputs are self-contained (text converted to `<path>`), so they render iden
 |---|---|
 | Display type | Cormorant Garamond, regular for headlines, italic for emphasis |
 | UI / metadata type | JetBrains Mono, regular, tracked +0.18em |
-| Logomark | Mandukya four-states rings — *jāgrat* (outer hairline) / *svapna* (second ring, emphasized 2.4× stroke) / *suṣupti* (inner hairline) / *turīya* (filled center). Position dot at top of *svapna* ring. |
+| Logomark | The ∴ tridot — three filled dots in an equilateral triangle, apex up. Three solid black dots, equal weight. Reads at every scale from 16×16 favicon up. |
 | Hairline weight | 0.5–1.5px on a 64-canvas favicon, scaled proportionally on bigger canvases |
 | Corners | None. Square corners everywhere. |
 | Palette | `#FFFFFF` paper · `#FAF8F4` paper-warm · `#000000` ink · `#0F0F12` ink-soft. No accent. |

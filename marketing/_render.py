@@ -123,36 +123,110 @@ def text_width_px(text, font_path, size_px, tracking_em=0.0):
 
 # ---------- SVG geometry helpers ----------
 
-def four_states_svg(cx, cy, R, *, jagrat_w=1, svapna_w=2, susupti_w=1,
-                    dot_r=2.4, marker_r=1.6, color=INK):
-    """Return SVG string for the four-states ring stack centered at (cx, cy)
-    with outer radius R."""
-    r_jag = R
-    r_sva = R * 0.62
-    r_sus = R * 0.32
-    return (
-        f'<g fill="none" stroke="{color}" stroke-linecap="round">'
-        f'<circle cx="{cx}" cy="{cy}" r="{r_jag}" stroke-width="{jagrat_w}"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="{r_sva}" stroke-width="{svapna_w}"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="{r_sus}" stroke-width="{susupti_w}"/>'
-        f'</g>'
-        f'<circle cx="{cx}" cy="{cy - r_sva}" r="{marker_r}" fill="{color}"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="{dot_r}" fill="{color}"/>'
-    )
+def four_states_svg(cx, cy, R, *, dot_r=None, color=INK, **_ignored):
+    """Return SVG string for the ∴ tridot mark — three solid dots arranged
+    in an equilateral triangle, apex up (one top, two bottom).
+
+    The function name is preserved for call-site compatibility; it now
+    renders the new mark. R is the circumscribed-circle radius — distance
+    from the geometric center to each dot's center. dot_r defaults to
+    R × 0.22 which holds visual weight at every supported scale.
+
+    Extra kwargs from the previous ring-stack signature are accepted and
+    ignored (jagrat_w, svapna_w, susupti_w, marker_r).
+    """
+    if dot_r is None:
+        dot_r = R * 0.30
+    shift = R / 4
+    h_factor = 0.74
+    # Three positions, each labelled with which edges face OUTWARD from the
+    # triangle's centroid. Outward edges are rendered as straight lines so the
+    # composite outer border reads as a triangle. Inward edges keep the
+    # sparkle curve at k=0.87.
+    # Edge keys: tr (top→right), rb (right→bottom), bl (bottom→left), lt (left→top).
+    arrangements = [
+        # (cx_off, cy_off, flat_edges)
+        (0,                 -R + shift,        {"lt", "tr"}),         # apex
+        (-R * h_factor,     R * 0.5 + shift,   {"lt", "bl"}),         # bottom-left
+        (R * h_factor,      R * 0.5 + shift,   {"tr", "rb"}),         # bottom-right
+    ]
+    k = 0.87  # control-point reach toward the bounding-square corners
+
+    def _seg(end_x, end_y, ctrl_x, ctrl_y, flat):
+        if flat:
+            return f"L {end_x:.3f} {end_y:.3f} "
+        return f"Q {ctrl_x:.3f} {ctrl_y:.3f} {end_x:.3f} {end_y:.3f} "
+
+    paths = []
+    for cx_off, cy_off, flat in arrangements:
+        x = cx + cx_off
+        y = cy + cy_off
+        c_tr = (x + k * dot_r, y - k * dot_r)
+        c_rb = (x + k * dot_r, y + k * dot_r)
+        c_bl = (x - k * dot_r, y + k * dot_r)
+        c_lt = (x - k * dot_r, y - k * dot_r)
+        d = (
+            f"M {x:.3f} {y - dot_r:.3f} "
+            + _seg(x + dot_r, y,         c_tr[0], c_tr[1], "tr" in flat)
+            + _seg(x,         y + dot_r, c_rb[0], c_rb[1], "rb" in flat)
+            + _seg(x - dot_r, y,         c_bl[0], c_bl[1], "bl" in flat)
+            + _seg(x,         y - dot_r, c_lt[0], c_lt[1], "lt" in flat)
+            + "Z"
+        )
+        paths.append(f'<path d="{d}" fill="{color}"/>')
+    return "".join(paths)
 
 
 # ---------- Pillow geometry helpers ----------
 
-def four_states_px(draw, cx, cy, R, *, jagrat_w=1, svapna_w=2, susupti_w=1,
-                   dot_r=2.4, marker_r=1.6, color=INK_RGB):
-    r_jag = R
-    r_sva = R * 0.62
-    r_sus = R * 0.32
-    for r, w in [(r_jag, jagrat_w), (r_sva, svapna_w), (r_sus, susupti_w)]:
-        draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=color, width=w)
-    draw.ellipse([cx - marker_r, cy - r_sva - marker_r,
-                  cx + marker_r, cy - r_sva + marker_r], fill=color)
-    draw.ellipse([cx - dot_r, cy - dot_r, cx + dot_r, cy + dot_r], fill=color)
+def four_states_px(draw, cx, cy, R, *, dot_r=None, color=INK_RGB, **_ignored):
+    """Pillow renderer for the ∴ tridot mark — three filled dots in an
+    equilateral triangle. R is circumscribed-circle radius; dot_r defaults
+    to R × 0.22. Old kwargs (jagrat_w, svapna_w, susupti_w, marker_r) are
+    accepted and ignored so callers don't have to change."""
+    if dot_r is None:
+        dot_r = R * 0.30
+    shift = R / 4
+    h_factor = 0.74
+    arrangements = [
+        (0,             -R + shift,        {"lt", "tr"}),
+        (-R * h_factor, R * 0.5 + shift,   {"lt", "bl"}),
+        (R * h_factor,  R * 0.5 + shift,   {"tr", "rb"}),
+    ]
+    def _qbez(p0, p1, p2, n=14):
+        pts = []
+        for i in range(n + 1):
+            t = i / n
+            u = 1 - t
+            x = u * u * p0[0] + 2 * u * t * p1[0] + t * t * p2[0]
+            y = u * u * p0[1] + 2 * u * t * p1[1] + t * t * p2[1]
+            pts.append((x, y))
+        return pts
+
+    k = 0.87
+    for cx_off, cy_off, flat in arrangements:
+        x = cx + cx_off
+        y = cy + cy_off
+        v_top    = (x,         y - dot_r)
+        v_right  = (x + dot_r, y)
+        v_bottom = (x,         y + dot_r)
+        v_left   = (x - dot_r, y)
+        c_tr = (x + k * dot_r, y - k * dot_r)
+        c_rb = (x + k * dot_r, y + k * dot_r)
+        c_bl = (x - k * dot_r, y + k * dot_r)
+        c_lt = (x - k * dot_r, y - k * dot_r)
+
+        def _edge(p_start, p_end, ctrl, is_flat):
+            if is_flat:
+                return [p_start, p_end]
+            return _qbez(p_start, ctrl, p_end)
+
+        polyline = []
+        polyline += _edge(v_top,    v_right,  c_tr, "tr" in flat)[:-1]
+        polyline += _edge(v_right,  v_bottom, c_rb, "rb" in flat)[:-1]
+        polyline += _edge(v_bottom, v_left,   c_bl, "bl" in flat)[:-1]
+        polyline += _edge(v_left,   v_top,    c_lt, "lt" in flat)[:-1]
+        draw.polygon(polyline, fill=color)
 
 
 def f(path, size):
@@ -210,11 +284,9 @@ def render_logo_svg():
     W, H = 1200, 300
     parts = []
 
-    # mark
-    cx, cy, R = 150, 150, 100
-    parts.append(four_states_svg(cx, cy, R,
-                                 jagrat_w=1, svapna_w=2.8, susupti_w=1,
-                                 dot_r=4.5, marker_r=3))
+    # mark — ∴ at R=80 with default dot_r (R×0.4 = 32) sits comfortably in the 200×200 left panel
+    cx, cy, R = 150, 150, 80
+    parts.append(four_states_svg(cx, cy, R))
 
     # divider
     parts.append(f'<line x1="300" y1="50" x2="300" y2="250" '
@@ -239,10 +311,8 @@ def render_logo_small_svg():
     """200×200, transparent, mark only — Discourse `logo_small`."""
     W = H = 200
     cx = cy = 100
-    R = 84
-    body = four_states_svg(cx, cy, R,
-                           jagrat_w=1, svapna_w=2.4, susupti_w=1,
-                           dot_r=4, marker_r=2.6)
+    # R=70 fits the mark within the 200-square with a comfortable margin.
+    body = four_states_svg(cx, cy, 70)
     write_text(ROOT / "logos" / "logo-small.svg", svg_doc(W, H, body))
 
 
@@ -250,10 +320,8 @@ def render_logo_mobile_svg():
     """800×200, transparent — Discourse `mobile_logo`."""
     W, H = 800, 200
     parts = []
-    cx, cy, R = 100, 100, 70
-    parts.append(four_states_svg(cx, cy, R,
-                                 jagrat_w=1, svapna_w=2.4, susupti_w=1,
-                                 dot_r=3.4, marker_r=2.4))
+    cx, cy, R = 100, 100, 60
+    parts.append(four_states_svg(cx, cy, R))
     parts.append(f'<line x1="200" y1="40" x2="200" y2="160" '
                  f'stroke="{INK}" stroke-width="0.6"/>')
     # eyebrow
@@ -267,20 +335,16 @@ def render_logo_mobile_svg():
 
 def render_favicon_svg():
     """64×64, transparent — Discourse `favicon`, site `public/favicon.svg`.
-    Strokes proportional to the 64-unit canvas. Inner suṣupti ring kept.
-    """
+    The ∴ tridot, sized to remain readable down to 16×16. Bigger dots
+    relative to the canvas because at favicon scale we need every glyph
+    to read from across the room."""
     W = H = 64
     cx = cy = 32
-    parts = [
-        f'<g fill="none" stroke="{INK}" stroke-linecap="round">'
-        f'<circle cx="{cx}" cy="{cy}" r="26" stroke-width="1.5"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="16" stroke-width="3.5"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="8" stroke-width="1.5"/>'
-        f'</g>'
-        f'<circle cx="{cx}" cy="{cy - 16}" r="2.2" fill="{INK}"/>'
-        f'<circle cx="{cx}" cy="{cy}" r="2.8" fill="{INK}"/>'
-    ]
-    write_text(ROOT / "logos" / "favicon.svg", svg_doc(W, H, "\n".join(parts)))
+    # R = 18 puts dots ~18px from center; dot_r = 7 gives ~14px diameter,
+    # which survives 4× downscale to 16×16 (≈3.5px dots — still visible).
+    # R=18, default dot_r=7.2 — survives 4× downscale to 16×16 (~3.6px dots).
+    body = four_states_svg(cx, cy, 18)
+    write_text(ROOT / "logos" / "favicon.svg", svg_doc(W, H, body))
 
 
 # ---------- ASSETS: Raster ----------
@@ -292,10 +356,8 @@ def render_apple_touch_icon():
     img = Image.new("RGB", (W, H), PAPER_WARM)
     d = ImageDraw.Draw(img)
     cx = cy = 90 * s
-    R = 56 * s
-    four_states_px(d, cx, cy - 12 * s, R,
-                   jagrat_w=2, svapna_w=5, susupti_w=2,
-                   dot_r=3.5 * s, marker_r=2.4 * s, color=INK_SOFT)
+    R = 44 * s
+    four_states_px(d, cx, cy - 14 * s, R, color=INK_SOFT)
     # tiny wordmark below
     wm_font = f(CORMORANT_REG, 22 * s)
     txt = "Svapna"
@@ -312,10 +374,8 @@ def render_android_chrome_192():
     img = Image.new("RGB", (W, H), PAPER_WARM)
     d = ImageDraw.Draw(img)
     cx = cy = 96 * s
-    R = 60 * s
-    four_states_px(d, cx, cy - 14 * s, R,
-                   jagrat_w=2, svapna_w=5, susupti_w=2,
-                   dot_r=3.7 * s, marker_r=2.6 * s, color=INK_SOFT)
+    R = 48 * s
+    four_states_px(d, cx, cy - 14 * s, R, color=INK_SOFT)
     wm_font = f(CORMORANT_REG, 24 * s)
     txt = "Svapna"
     bb = d.textbbox((0, 0), txt, font=wm_font)
@@ -331,10 +391,8 @@ def render_email_logo():
     img = Image.new("RGB", (W, H), WHITE_RGB)
     d = ImageDraw.Draw(img)
     # mark
-    cx, cy, R = 80 * s, 75 * s, 50 * s
-    four_states_px(d, cx, cy, R,
-                   jagrat_w=2, svapna_w=5, susupti_w=2,
-                   dot_r=3 * s, marker_r=2 * s, color=INK_RGB)
+    cx, cy, R = 80 * s, 75 * s, 38 * s
+    four_states_px(d, cx, cy, R, color=INK_RGB)
     # divider
     hairline_px(d, 156 * s, 36 * s, 156 * s, 114 * s, w=2)
     # wordmark
@@ -371,18 +429,16 @@ def _composed_card(W, H, *, scale=2):
                 W * s - margin - 28 * s, margin + 60 * s, w=max(1, s // 2 or 1))
 
     # mark
-    mark_cx = margin + 220 * s
+    mark_cx = margin + 200 * s
     mark_cy = (H * s) // 2 + 10 * s
-    R = 150 * s
-    four_states_px(d, mark_cx, mark_cy, R,
-                   jagrat_w=max(1, s), svapna_w=max(2, int(3 * s)),
-                   susupti_w=max(1, s), dot_r=8 * s, marker_r=5 * s)
-    hairline_px(d, mark_cx + R + 80 * s, margin + 100 * s,
-                mark_cx + R + 80 * s, H * s - margin - 100 * s,
+    R = 100 * s
+    four_states_px(d, mark_cx, mark_cy, R)
+    hairline_px(d, mark_cx + 170 * s, margin + 100 * s,
+                mark_cx + 170 * s, H * s - margin - 100 * s,
                 w=max(1, s // 2 or 1))
 
     # right column
-    text_x = mark_cx + R + 120 * s
+    text_x = mark_cx + 210 * s
     sub_font = f(JBM_REG, 14 * s)
     draw_tracked(d, (text_x, mark_cy - 130 * s),
                  "DREAM YOGA  ·  LUCID DREAMING",
@@ -447,14 +503,12 @@ def render_login_splash_jpg():
 
     cx = int(W * 0.30)
     cy = H // 2
-    R = 200 * s
-    four_states_px(d, cx, cy, R,
-                   jagrat_w=max(1, s), svapna_w=max(2, int(3 * s)),
-                   susupti_w=max(1, s), dot_r=10 * s, marker_r=6 * s)
-    hairline_px(d, cx + R + 120 * s, margin + 160 * s,
-                cx + R + 120 * s, H - margin - 160 * s, w=max(1, s // 2 or 1))
+    R = 150 * s
+    four_states_px(d, cx, cy, R)
+    hairline_px(d, cx + 220 * s, margin + 160 * s,
+                cx + 220 * s, H - margin - 160 * s, w=max(1, s // 2 or 1))
 
-    tx = cx + R + 160 * s
+    tx = cx + 260 * s
     draw_tracked(d, (tx, cy - 220 * s),
                  "VOL. I  ·  ISS. I", eb, INK_RGB, tracking_px=int(4 * s))
     big = f(CORMORANT_REG, 124 * s)
@@ -525,9 +579,7 @@ def render_category_banners():
         # right side: tiny mark
         mcx = W - margin - 90 * s
         mcy = H // 2
-        four_states_px(d, mcx, mcy, 56 * s,
-                       jagrat_w=max(1, s), svapna_w=max(2, int(2.4 * s)),
-                       susupti_w=max(1, s), dot_r=3 * s, marker_r=2 * s)
+        four_states_px(d, mcx, mcy, 44 * s)
         # bottom rule + meta
         hairline_px(d, margin + 232 * s, H - margin - 60 * s,
                     W - margin - 200 * s, H - margin - 60 * s,
@@ -567,21 +619,12 @@ def write_colors_json():
 # ---------- Favicon raster fallbacks (PNG + ICO) ----------
 
 def render_favicon_pngs():
-    """Render PNG/ICO fallbacks at 16/32/48 from favicon.svg geometry directly."""
+    """Render PNG/ICO fallbacks at 16/32/48/64 — same ∴ tridot geometry as the SVG."""
     s = 8
     W = H = 64 * s
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    cx = cy = 32 * s
-    # Use the same geometry as render_favicon_svg
-    for r, w in [(26 * s, max(1, int(1.5 * s))),
-                 (16 * s, max(2, int(3.5 * s))),
-                 (8  * s, max(1, int(1.5 * s)))]:
-        d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=INK_RGB, width=w)
-    mr = int(2.2 * s)
-    d.ellipse([cx - mr, cy - 16 * s - mr, cx + mr, cy - 16 * s + mr], fill=INK_RGB)
-    cr = int(2.8 * s)
-    d.ellipse([cx - cr, cy - cr, cx + cr, cy + cr], fill=INK_RGB)
+    four_states_px(d, 32 * s, 32 * s, 18 * s)
 
     img64 = img.resize((64, 64), Image.LANCZOS)
     img32 = img.resize((32, 32), Image.LANCZOS)

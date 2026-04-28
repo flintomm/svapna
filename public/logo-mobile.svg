@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-label="Svapna">
 
-<g fill="none" stroke="#000000" stroke-linecap="round"><circle cx="100" cy="100" r="70" stroke-width="1"/><circle cx="100" cy="100" r="43.4" stroke-width="2.4"/><circle cx="100" cy="100" r="22.400000000000002" stroke-width="1"/></g><circle cx="100" cy="56.6" r="2.4" fill="#000000"/><circle cx="100" cy="100" r="3.4" fill="#000000"/>
+<path d="M 100.000 37.000 L 118.000 55.000 Q 115.660 70.660 100.000 73.000 Q 84.340 70.660 82.000 55.000 L 100.000 37.000 Z" fill="#000000"/><path d="M 55.600 127.000 Q 71.260 129.340 73.600 145.000 Q 71.260 160.660 55.600 163.000 L 37.600 145.000 L 55.600 127.000 Z" fill="#000000"/><path d="M 144.400 127.000 L 162.400 145.000 L 144.400 163.000 Q 128.740 160.660 126.400 145.000 Q 128.740 129.340 144.400 127.000 Z" fill="#000000"/>
 <line x1="200" y1="40" x2="200" y2="160" stroke="#000000" stroke-width="0.6"/>
 <g fill="#000000" stroke="none">
 <path d="M238 0 50 730H143L267 234Q280 182 289.0 137.5Q298 93 302 70Q306 93 314.5 137.5Q323 182 336 234L459 730H550L361 0Z" transform="translate(232.000 66.000) scale(0.0110 -0.0110)"/>

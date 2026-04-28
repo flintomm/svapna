@@ -10,7 +10,7 @@ The course is a contemplative, editorial-minimalist project. The palette reflect
 
 The decision: **editorial black-on-white**, with a single warm paper tier (used sparingly on app icons and email backgrounds where pure white reads cold) and a near-black ink that lets us drop a hair away from `#000` when surfaces benefit from it.
 
-We are intentionally not introducing a deep-indigo or warm-gold accent. The Mandukya rings are the visual identity. Color would compete with them.
+We are intentionally not introducing a deep-indigo or warm-gold accent. The ∴ tridot mark and the Cormorant wordmark are the visual identity. Color would compete with them.
 
 ---
 
