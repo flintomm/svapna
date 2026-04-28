@@ -593,11 +593,11 @@ export const moduleDeepening = {
 export const aboutPages = {
   conduct: {
     title: 'Code of Conduct',
-    kicker: 'How We Hold the Practice Together',
+    kicker: 'Three commitments',
     paragraphs: [
       'This community is rooted in respect for personal experience, cultural traditions, and the vulnerability of sharing dream content. Three commitments hold throughout.',
-      'First — witness without interpretation, unless interpretation is invited. The dream is the dreamer’s. Even a kindly-meant analysis can colonize the experience before the dreamer has had time with it.',
-      'Second — treat the contemplative traditions on their own terms. The Indian, Tibetan, Bön, Sufi, Daoist, Japanese, and Western lineages here did not exist for our convenience and are not interchangeable. Quote responsibly. Cite the source. Do not pluck a technique out of its lineage and re-sell it.',
+      'First — the dream is witnessed without interpretation, unless interpretation is invited. The dream is the dreamer’s. Even a kindly-meant analysis can colonize the experience before the dreamer has had time with it.',
+      'Second — contemplative traditions are taken on their own terms. The Indian, Tibetan, Bön, Sufi, Daoist, Japanese, and Western lineages here are not interchangeable, and were never assembled for easy borrowing. Sources are quoted responsibly, with citations preserved; a technique plucked out of its lineage and re-sold is the wrong shape.',
       'Third — no proselytizing, no advice-giving without consent, no using the platform to recruit for any other practice or product. Disagreements are welcome; contempt is not. Volunteer moderators draw from advanced students once the community matures, with a light touch.',
     ],
   },
@@ -605,10 +605,10 @@ export const aboutPages = {
     title: 'Acknowledgments',
     kicker: 'Sources, Teachers, and the Lineages Behind the Work',
     paragraphs: [
-      "The course material draws principally from two primary texts: Swami Krishnananda’s 1968 lecture series on the Māṇḍūkya Upaniṣad (Divine Life Society), and Tenzin Wangyal Rinpoche’s The Tibetan Yogas of Dream and Sleep (Snow Lion, 1998), edited by Mark Dahlby. Both sources are gratefully acknowledged.",
+      "The work draws principally from two primary texts: Swami Krishnananda’s 1968 lecture series on the Māṇḍūkya Upaniṣad (Divine Life Society), and Tenzin Wangyal Rinpoche’s The Tibetan Yogas of Dream and Sleep (Snow Lion, 1998), edited by Mark Dahlby. Both sources are gratefully acknowledged.",
       'Background research is grounded in the contemporary integrative literature: Francisco Varela ed., Sleeping, Dreaming, and Dying (1997); Evan Thompson, Waking, Dreaming, Being (2015); B. Alan Wallace, Dreaming Yourself Awake (2012); Andrew Holecek, Dream Yoga (2016); the lucid-dreaming research line from Stephen LaBerge through Voss, Dresler, and Aspy.',
-      'The cross-tradition history was developed with reference to the standard scholarship in each field: Patrick Olivelle on the Upaniṣads; Brook Ziporyn on Zhuangzi; William Chittick on Ibn al-ʿArabī; Tanahashi on Dōgen; Nicholas Fry on Saint-Denys. Errors and infelicities in synthesis are ours.',
-      'The site is built on the work of the open-source community: React, Vite, Tailwind CSS, and the typography projects already named. We owe each of them.',
+      "The cross-tradition history was developed with reference to the standard scholarship in each field: Patrick Olivelle on the Upaniṣads; Brook Ziporyn on Zhuangzi; William Chittick on Ibn al-ʿArabī; Tanahashi on Dōgen; Nicholas Fry on Saint-Denys. Any errors of synthesis are the work’s own.",
+      'The site is built on open-source labor: React, Vite, Tailwind CSS, and the typography projects already named. The debt is acknowledged.',
     ],
   },
   contact: {
