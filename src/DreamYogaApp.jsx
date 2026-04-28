@@ -204,9 +204,9 @@ export default function DreamYogaApp() {
             </ul>
           </div>
           <div className="md:col-span-3 p-8 md:p-12">
-            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Offered Freely</p>
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Dāna</p>
             <p className="text-sm leading-relaxed">
-              In the tradition of dāna. Take what serves you. Give if you can.
+              In the tradition of giving. Take what serves. Pass forward when able.
             </p>
           </div>
         </div>
@@ -247,7 +247,7 @@ function HomeSection({ goTo }) {
               Awaken<br /><span className="italic">within</span><br />the dream.
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-10 md:mt-16 pt-6 md:pt-8 hairline-t">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-10 md:mt-16 pt-6 md:pt-8 hairline-t">
             <div>
               <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">I.</p>
               <p className="text-sm mt-2 leading-snug">Ancient practice<br />from the Himalayan tantras</p>
@@ -255,10 +255,6 @@ function HomeSection({ goTo }) {
             <div>
               <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">II.</p>
               <p className="text-sm mt-2 leading-snug">Modern science<br />from the sleep laboratory</p>
-            </div>
-            <div>
-              <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">III.</p>
-              <p className="text-sm mt-2 leading-snug">Offered freely<br />to anyone who will listen</p>
             </div>
           </div>
         </div>
@@ -301,7 +297,7 @@ function HomeSection({ goTo }) {
             For three millennia, contemplatives have entered the dream knowingly — not to escape waking life, but to understand its nature.
           </p>
           <p className="text-base leading-loose">
-            This course gathers what they learned. It draws from the Tibetan tradition of <em>milam</em>, from Bön sleep yoga, from Hindu commentaries on the four states, and from the modern laboratory work begun at Stanford in the 1980s. It asks nothing of you but attention. It costs nothing. It is what was given to us, passed forward.
+            This course gathers what they learned. It draws from the Tibetan tradition of <em>milam</em>, from Bön sleep yoga, from Hindu commentaries on the four states, and from the modern laboratory work begun at Stanford in the 1980s. It asks for nothing but attention. The work was given to us, and it passes forward.
           </p>
         </div>
       </div>
@@ -326,7 +322,7 @@ function HomeSection({ goTo }) {
       <div className="grid grid-cols-1 md:grid-cols-3">
         <FeatureCard num="02" title="History" desc="Six units tracing the practice from the Upanishads to the sleep lab." onClick={() => goTo('history')} />
         <FeatureCard num="03" title="Curriculum" desc="Six modules, forty-seven short lessons. The history and the science of the practice. Self-paced." onClick={() => goTo('curriculum')} />
-        <FeatureCard num="04" title="Community" desc="Forums, dream circles, and practice partners. Peer-led, lightly moderated." onClick={() => goTo('community')} last />
+        <FeatureCard num="04" title="Community" desc="An asynchronous forum with dream-sharing circles. Peer-led, lightly moderated." onClick={() => goTo('community')} last />
       </div>
     </div>
   );
@@ -1059,7 +1055,7 @@ function CommunitySection() {
   ];
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 04" kicker="Together, Asynchronously" title="Community." sub="Peer-led. Lightly moderated. Built to outlive its founders." />
+      <SectionHeader num="§ 04" kicker="Together, Asynchronously" title="Community." sub="Peer-led and lightly moderated. Built to outlive its founders." />
       <div className="grid grid-cols-1 md:grid-cols-2">
         {items.map((it, i) => (
           <div key={i} className={`p-6 sm:p-8 md:p-12 hairline-b ${i % 2 === 0 ? 'md:hairline-r' : ''}`}>
@@ -1076,7 +1072,7 @@ function CommunitySection() {
 function LibrarySection({ goTo }) {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 05" kicker="Articles, Summaries, and References" title="Library." sub="Long-form articles on each tradition, short summaries of every text, and the citations that anchor the work." />
+      <SectionHeader num="§ 05" kicker="Articles and Citations" title="Library." sub="Long-form articles on the traditions, with the citations that anchor the reading." />
       <ArticlesBlock goTo={goTo} />
       <BibliographyBlock />
       <ThemesBlock goTo={goTo} />
@@ -1134,7 +1130,7 @@ function BibliographyBlock() {
         <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
         <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Summaries &amp; References.</h2>
         <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          A short editorial summary of every text in the corpus, with the citation and the reference-material location that anchors it.
+          A short editorial summary of each text in the corpus, with its citation and reference-material location.
         </p>
       </div>
 
@@ -1259,7 +1255,7 @@ function PullQuotesBlock() {
 function SupportSection() {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 06" kicker="Dāna — The Practice of Generosity" title="Support." sub="A footnote. If the work has been useful, you may pass something forward." />
+      <SectionHeader num="§ 06" kicker="Dāna — The Practice of Generosity" title="Support." sub="A footnote. If the work has been useful, pass it forward." />
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-7 p-6 sm:p-10 md:p-12 hairline-b md:hairline-r">
           <p className="display text-xl sm:text-2xl md:text-3xl italic leading-relaxed">
