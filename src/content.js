@@ -614,8 +614,9 @@ export const aboutPages = {
   contact: {
     title: 'Contact',
     kicker: 'Reach Us',
+    email: 'admin@svapnaproject.org',
     paragraphs: [
-      'For questions about the course, the source materials, or the project: open an issue at github.com/flintomm/svapna or write to hello@svapna.example. We read everything; replies arrive when they arrive.',
+      'Write with questions about the course, the source materials, or the project. We read everything; replies arrive when they arrive.',
       'For corrections — typos, mistranslations, citation errors, mis-attributed lineages — please flag them. Accuracy matters more here than tone.',
       'For permission to translate, adapt, or republish material from this site: yes, in advance, under the terms outlined on the Support page. Please tell us what you made so we can link to it.',
     ],
