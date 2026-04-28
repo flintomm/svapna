@@ -20,13 +20,12 @@
       "Prajna"
     ],
     "total_section_hits": 25,
-    "total_passage_hits": 213,
+    "total_passage_hits": 87,
     "entries": [
       {
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 60,
         "passages": [
           {
@@ -123,7 +122,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 14,
         "passages": [
           {
@@ -220,7 +218,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 9,
         "passages": [
           {
@@ -283,7 +280,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 7,
         "passages": [
           {
@@ -483,7 +479,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 5,
         "passages": [
           {
@@ -535,27 +530,6 @@
         ]
       },
       {
-        "source_id": "04_project__README",
-        "source_title": "Svapna Project README",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/README.md",
-        "match_count": 3,
-        "passages": [
-          {
-            "keyword": "jāgrat",
-            "snippet": "hamburger menu, scaled typography, touch-friendly tap targets, single-column stacks under `md:`  ---  ## Sections Built  1. Home — hero with the four-states (jāgrat / svapna / suṣupti / turīya) diagram from the Mandukya Upanishad 2. History — six-unit timeline grid 3. Curriculum — twelve-week, six-phase course"
-          },
-          {
-            "keyword": "svapna",
-            "snippet": "Svapna  A free, donation-supported course on dream yoga and lucid dreaming. *\"Awaken within the dream.\"*  ---  ## Contents  - **`OUTLINE.md`** — full project"
-          },
-          {
-            "keyword": "svapna",
-            "snippet": "The `.jsx` file is a single self-contained React component. To run it locally you'll want a Vite + React + Tailwind setup:  ```bash npm create vite@latest svapna -- --template react cd svapna npm install npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p ```  Then drop `dream-yoga-app.jsx`"
-          }
-        ]
-      },
-      {
         "source_id": "tibetan_yogas_dream_sleep",
         "source_title": "Tibetan Yogas of Dream and Sleep",
         "tradition": "Tibetan Buddhist / Bön (Dzogchen)",
@@ -598,23 +572,6 @@
           {
             "keyword": "fourth",
             "snippet": "find no question to be asked or answered. Being in profound non-dual presence satisfies all questions. Knowing this one thing cuts all doubt. This is the fourth period, in which conventional and ultimate truth are equalized in the unity of clarity and emptiness.  Internal Unification: Integrating the Clear"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 2,
-        "passages": [
-          {
-            "keyword": "svapna",
-            "snippet": "Svapna — Dream Yoga & Lucid Dreaming Course  A lean-launch outline for a free, donation-supported course on dream yoga and lucid dreaming.  ---  ## Site"
-          },
-          {
-            "keyword": "svapna",
-            "snippet": "presented as an interactive timeline.  ### Unit 1: Ancient Origins - Hindu Upanishads (Mandukya, ~800–500 BCE) — the four states of consciousness, including *svapna* (dream) - Early references in the Rigveda to dream awareness - Greek and Roman dream traditions (Aristotle's *On Dreams*, Galen)  ### Unit 2: Tibetan"
           }
         ]
       },
@@ -696,7 +653,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 1,
         "passages": [
           {
@@ -719,13 +675,12 @@
       "Om "
     ],
     "total_section_hits": 66,
-    "total_passage_hits": 593,
+    "total_passage_hits": 240,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 50,
         "passages": [
           {
@@ -788,7 +743,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 41,
         "passages": [
           {
@@ -852,7 +806,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 28,
         "passages": [
           {
@@ -984,7 +937,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 22,
         "passages": [
           {
@@ -1152,7 +1104,6 @@
         "source_id": "03_course_materials__04_final_project_guide",
         "source_title": "Final Project Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/04_final_project_guide.md",
         "match_count": 13,
         "passages": [
           {
@@ -1181,7 +1132,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 13,
         "passages": [
           {
@@ -1486,7 +1436,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 8,
         "passages": [
           {
@@ -1865,7 +1814,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 5,
         "passages": [
           {
@@ -2179,7 +2127,6 @@
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 3,
         "passages": [
           {
@@ -2424,23 +2371,6 @@
         ]
       },
       {
-        "source_id": "04_project__README",
-        "source_title": "Svapna Project README",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/README.md",
-        "match_count": 2,
-        "passages": [
-          {
-            "keyword": "Om ",
-            "snippet": "tap targets, single-column stacks under `md:`  ---  ## Sections Built  1. Home — hero with the four-states (jāgrat / svapna / suṣupti / turīya) diagram from the Mandukya Upanishad 2. History — six-unit timeline grid 3. Curriculum — twelve-week, six-phase course structure 4. Community — forums, dream circles,"
-          },
-          {
-            "keyword": "Om ",
-            "snippet": "cd svapna npm install npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p ```  Then drop `dream-yoga-app.jsx` into `src/`, import it from `App.jsx`, and configure Tailwind's `content` paths.  ---  ## Philosophy  The course, the history, the community — open to anyone. No tiers, no premium, no"
-          }
-        ]
-      },
-      {
         "source_id": "tibetan_yogas_dream_sleep",
         "source_title": "Tibetan Yogas of Dream and Sleep",
         "tradition": "Tibetan Buddhist / Bön (Dzogchen)",
@@ -2591,19 +2521,6 @@
             "snippet": "subject nor object in kunzhi, nor any other duality or distinction. When the sun goes down in the evening, we say that darkness falls. This is darkness from the perceiver's point of view. Space is always clear and pervasive, it does not change when the sun rises or sets; there is not dark space and light space."
           }
         ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "Om ",
-            "snippet": "conduct** rooted in respect for personal experience, cultural traditions, and the vulnerability of sharing dream content - **Volunteer moderators** drawn from advanced students once the community matures  Light-touch moderation. No live events to staff.  ---  ## Resources & Library  - Reading list, glossary of"
-          }
-        ]
       }
     ]
   },
@@ -2618,13 +2535,12 @@
       "awareness in dream"
     ],
     "total_section_hits": 28,
-    "total_passage_hits": 140,
+    "total_passage_hits": 76,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 28,
         "passages": [
           {
@@ -2653,7 +2569,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 17,
         "passages": [
           {
@@ -2752,7 +2667,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 8,
         "passages": [
           {
@@ -2781,7 +2695,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 7,
         "passages": [
           {
@@ -2810,7 +2723,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 6,
         "passages": [
           {
@@ -2867,35 +2779,6 @@
           {
             "keyword": "lucid",
             "snippet": "the practitioner fully integrates with the clear light, dreaming stops. When waking experience is directly seen to be a dream, grasping ceases. The greater lucidity that has to have been developed to progress to this point is naturally brought into the dreams of night. When lucidity is developed and stabilized in"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 5,
-        "passages": [
-          {
-            "keyword": "lucid",
-            "snippet": "Svapna — Dream Yoga & Lucid Dreaming Course  A lean-launch outline for a free, donation-supported course on dream yoga and lucid dreaming.  ---  ## Site Architecture  1. **Landing"
-          },
-          {
-            "keyword": "lucid",
-            "snippet": "---  ## Site Architecture  1. **Landing Page** — hero, value proposition, curriculum preview, CTA 2. **About / Philosophy** — what dream yoga is vs. Western lucid dreaming, who the course is for, teacher bio and lineage acknowledgments 3. **History Module** 4. **Course Curriculum** 5. **Community** 6. **Resources"
-          },
-          {
-            "keyword": "lucid",
-            "snippet": "- Daoist sleep practices  ### Unit 4: Western Rediscovery - Marquis d'Hervey de Saint-Denys (1867) — first systematic study - Frederik van Eeden coining \"lucid dream\" (1913) - Freud and Jung's dream frameworks  ### Unit 5: Modern Scientific Era - Stephen LaBerge's Stanford research (1980s) — first lab-verified"
-          },
-          {
-            "keyword": "lucid",
-            "snippet": "MILD, WILD, WBTB techniques alongside traditional Tibetan methods (visualization of the throat chakra, Guru Yoga before sleep) - **Stabilization** — staying lucid, dream control vs. surrender - **Deepening** — dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state -"
-          },
-          {
-            "keyword": "awareness in dream",
-            "snippet": "— dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state - **Integration** — bardo teachings, sleep yoga (awareness in dreamless sleep), waking-life application  Each lesson combines video, text, audio guidance, and a journaling prompt.  ---  ## Community"
           }
         ]
       },
@@ -2996,7 +2879,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 4,
         "passages": [
           {
@@ -3273,7 +3155,6 @@
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 1,
         "passages": [
           {
@@ -3286,25 +3167,11 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 1,
         "passages": [
           {
             "keyword": "lucid",
             "snippet": "dream applies to the waking state because both are conditions of the same awareness. The Asian dream traditions all assume the second framing. The Western lucid dreaming literature is unsure which framing it operates from, which is part of why its results are so variable.  Why Turīya Matters  Turīya is the most"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__README",
-        "source_title": "Svapna Project README",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/README.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "lucid",
-            "snippet": "Svapna  A free, donation-supported course on dream yoga and lucid dreaming. *\"Awaken within the dream.\"*  ---  ## Contents  - **`OUTLINE.md`** — full project outline (architecture, curriculum, community, support model,"
           }
         ]
       }
@@ -3323,13 +3190,12 @@
       "Guru Yoga"
     ],
     "total_section_hits": 40,
-    "total_passage_hits": 242,
+    "total_passage_hits": 101,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 48,
         "passages": [
           {
@@ -3358,7 +3224,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 43,
         "passages": [
           {
@@ -3387,7 +3252,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 29,
         "passages": [
           {
@@ -3451,7 +3315,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 13,
         "passages": [
           {
@@ -3585,7 +3448,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 5,
         "passages": [
           {
@@ -3700,31 +3562,6 @@
           {
             "keyword": "Guru Yoga",
             "snippet": "PRACTICES BEFORE SLEEP  Nine Purifications Breathing Sitting in meditation posture before lying down to sleep, do the nine purification breaths.  Guru Yoga Practice guru yoga. Generate strong devotion, then merge your mind with the pure awareness of the master, the ultimate master that is the primordial"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 4,
-        "passages": [
-          {
-            "keyword": "dream yoga",
-            "snippet": "Svapna — Dream Yoga & Lucid Dreaming Course  A lean-launch outline for a free, donation-supported course on dream yoga and lucid dreaming.  ---  ## Site Architecture"
-          },
-          {
-            "keyword": "dream yoga",
-            "snippet": "yoga and lucid dreaming.  ---  ## Site Architecture  1. **Landing Page** — hero, value proposition, curriculum preview, CTA 2. **About / Philosophy** — what dream yoga is vs. Western lucid dreaming, who the course is for, teacher bio and lineage acknowledgments 3. **History Module** 4. **Course Curriculum** 5."
-          },
-          {
-            "keyword": "dream yoga",
-            "snippet": "(dream) - Early references in the Rigveda to dream awareness - Greek and Roman dream traditions (Aristotle's *On Dreams*, Galen)  ### Unit 2: Tibetan Dream Yoga - Origins in Indian Buddhist tantra, transmitted to Tibet (~8th–11th century) - Naropa's Six Yogas — *milam* (dream yoga) as one of the six - The"
-          },
-          {
-            "keyword": "dream yoga",
-            "snippet": "methods (visualization of the throat chakra, Guru Yoga before sleep) - **Stabilization** — staying lucid, dream control vs. surrender - **Deepening** — dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state - **Integration** — bardo teachings, sleep yoga (awareness"
           }
         ]
       },
@@ -4028,7 +3865,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 2,
         "passages": [
           {
@@ -4273,25 +4109,11 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 1,
         "passages": [
           {
             "keyword": "dream yoga",
             "snippet": "Guide so you know what is coming.  Days 3–4: Acquire Materials  1.  Obtain the required texts (Tenzin Wangyal, Tibetan Yogas of Dream and Sleep; Holecek, Dream Yoga). Library access is fine; the books need not be purchased.  2.  Acquire a bound notebook for the dream journal. Place it on the bedside table with"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__README",
-        "source_title": "Svapna Project README",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/README.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "dream yoga",
-            "snippet": "Svapna  A free, donation-supported course on dream yoga and lucid dreaming. *\"Awaken within the dream.\"*  ---  ## Contents  - **`OUTLINE.md`** — full project outline (architecture, curriculum, community,"
           }
         ]
       }
@@ -4309,13 +4131,12 @@
       "Salgye Du Dalma"
     ],
     "total_section_hits": 38,
-    "total_passage_hits": 257,
+    "total_passage_hits": 131,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 37,
         "passages": [
           {
@@ -4344,7 +4165,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 35,
         "passages": [
           {
@@ -4443,7 +4263,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 14,
         "passages": [
           {
@@ -4577,7 +4396,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 10,
         "passages": [
           {
@@ -4606,7 +4424,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 8,
         "passages": [
           {
@@ -4915,7 +4732,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 5,
         "passages": [
           {
@@ -5145,7 +4961,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 2,
         "passages": [
           {
@@ -5346,19 +5161,6 @@
             "snippet": "preparation and the main practice is to maintain presence as consistently as possible throughout the day and the night. This is the essence of both dream and sleep"
           }
         ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "sleep yoga",
-            "snippet": "- **Deepening** — dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state - **Integration** — bardo teachings, sleep yoga (awareness in dreamless sleep), waking-life application  Each lesson combines video, text, audio guidance, and a journaling prompt.  ---  ##"
-          }
-        ]
       }
     ]
   },
@@ -5378,13 +5180,12 @@
       "dream-like"
     ],
     "total_section_hits": 39,
-    "total_passage_hits": 149,
+    "total_passage_hits": 103,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 26,
         "passages": [
           {
@@ -5413,7 +5214,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 11,
         "passages": [
           {
@@ -5582,7 +5382,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 8,
         "passages": [
           {
@@ -5681,7 +5480,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 5,
         "passages": [
           {
@@ -5802,7 +5600,6 @@
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 4,
         "passages": [
           {
@@ -6027,7 +5824,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 2,
         "passages": [
           {
@@ -6270,7 +6066,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 1,
         "passages": [
           {
@@ -6283,7 +6078,6 @@
         "source_id": "03_course_materials__04_final_project_guide",
         "source_title": "Final Project Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/04_final_project_guide.md",
         "match_count": 1,
         "passages": [
           {
@@ -6296,25 +6090,11 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 1,
         "passages": [
           {
             "keyword": "illusion",
             "snippet": "between Gauḍapāda's commentary and contemporary Buddhist thought, relevant for the connections to Tibetan dream tradition.  -   Wendy Doniger, Dreams, Illusion, and Other Realities (University of Chicago Press, 1984). Comparative study of dream theories across Indian sources, situates the Māṇḍūkya in its"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "emptiness",
-            "snippet": "the throat chakra, Guru Yoga before sleep) - **Stabilization** — staying lucid, dream control vs. surrender - **Deepening** — dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state - **Integration** — bardo teachings, sleep yoga (awareness in dreamless sleep),"
           }
         ]
       }
@@ -6332,7 +6112,7 @@
       "imprint"
     ],
     "total_section_hits": 29,
-    "total_passage_hits": 124,
+    "total_passage_hits": 72,
     "entries": [
       {
         "source_id": "tibetan_yogas_dream_sleep",
@@ -6408,7 +6188,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 13,
         "passages": [
           {
@@ -6783,7 +6562,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 2,
         "passages": [
           {
@@ -7056,7 +6834,7 @@
       "tsa "
     ],
     "total_section_hits": 32,
-    "total_passage_hits": 214,
+    "total_passage_hits": 89,
     "entries": [
       {
         "source_id": "tibetan_yogas_dream_sleep",
@@ -7097,7 +6875,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 34,
         "passages": [
           {
@@ -7406,7 +7183,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 5,
         "passages": [
           {
@@ -7497,7 +7273,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 4,
         "passages": [
           {
@@ -7856,19 +7631,6 @@
             "snippet": "You lose your memories. You lose your senses. Where is your self? Is it your body? What if you lose your arms and legs, live with a mechanical heart and a lung machine, suffer brain damage and lose mental functions. At what point do you stop being a self? If you keep peeling away layers of identity and"
           }
         ]
-      },
-      {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "chakra",
-            "snippet": "checks, mindfulness throughout the day - **Induction** — MILD, WILD, WBTB techniques alongside traditional Tibetan methods (visualization of the throat chakra, Guru Yoga before sleep) - **Stabilization** — staying lucid, dream control vs. surrender - **Deepening** — dream yoga proper: recognizing emptiness,"
-          }
-        ]
       }
     ]
   },
@@ -7883,13 +7645,12 @@
       "after death"
     ],
     "total_section_hits": 28,
-    "total_passage_hits": 189,
+    "total_passage_hits": 103,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 40,
         "passages": [
           {
@@ -7918,7 +7679,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 21,
         "passages": [
           {
@@ -7947,7 +7707,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 16,
         "passages": [
           {
@@ -7976,7 +7735,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 13,
         "passages": [
           {
@@ -8320,7 +8078,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 5,
         "passages": [
           {
@@ -8442,7 +8199,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 4,
         "passages": [
           {
@@ -8493,7 +8249,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 3,
         "passages": [
           {
@@ -8602,23 +8357,6 @@
         ]
       },
       {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 2,
-        "passages": [
-          {
-            "keyword": "bardo",
-            "snippet": "(Tenzin Wangyal Rinpoche's lineage) - Core aim: recognizing dreams as a path to recognizing the illusory nature of waking reality and preparing for the bardo  ### Unit 3: Other Contemplative Traditions - Sufi *khayal* and dream practices - Indigenous dreamwork (Senoi, Aboriginal Australian, Iroquois) - Daoist"
-          },
-          {
-            "keyword": "bardo",
-            "snippet": "vs. surrender - **Deepening** — dream yoga proper: recognizing emptiness, working with fear, practicing virtues in the dream state - **Integration** — bardo teachings, sleep yoga (awareness in dreamless sleep), waking-life application  Each lesson combines video, text, audio guidance, and a journaling"
-          }
-        ]
-      },
-      {
         "source_id": "mandukya_upanishad",
         "source_title": "The Mandukya Upanishad",
         "tradition": "Hindu / Advaita Vedanta",
@@ -8689,7 +8427,7 @@
       "Brahman"
     ],
     "total_section_hits": 62,
-    "total_passage_hits": 510,
+    "total_passage_hits": 219,
     "entries": [
       {
         "source_id": "mandukya_upanishad",
@@ -8797,7 +8535,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 37,
         "passages": [
           {
@@ -8826,7 +8563,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 31,
         "passages": [
           {
@@ -8924,7 +8660,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 18,
         "passages": [
           {
@@ -8953,7 +8688,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 17,
         "passages": [
           {
@@ -9190,7 +8924,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 10,
         "passages": [
           {
@@ -9392,7 +9125,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 6,
         "passages": [
           {
@@ -9421,7 +9153,6 @@
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 6,
         "passages": [
           {
@@ -9729,7 +9460,6 @@
         "source_id": "03_course_materials__04_final_project_guide",
         "source_title": "Final Project Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/04_final_project_guide.md",
         "match_count": 5,
         "passages": [
           {
@@ -10163,23 +9893,6 @@
         ]
       },
       {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 2,
-        "passages": [
-          {
-            "keyword": "witness",
-            "snippet": "- **Discussion forums** organized by topic and by experience level - **Dream sharing circles** — small opt-in groups (8–12 people), asynchronous, witnessing without interpretation unless invited - **Practice partners** matching system for accountability - **Regional meetups** — discoverable through the"
-          },
-          {
-            "keyword": "Self",
-            "snippet": "yoga (awareness in dreamless sleep), waking-life application  Each lesson combines video, text, audio guidance, and a journaling prompt.  ---  ## Community (Self-Sustaining)  Designed to run with minimal staff oversight — peer-driven rather than teacher-driven.  - **Discussion forums** organized by topic and by"
-          }
-        ]
-      },
-      {
         "source_id": "mandukya_upanishad",
         "source_title": "The Mandukya Upanishad",
         "tradition": "Hindu / Advaita Vedanta",
@@ -10409,25 +10122,11 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 1,
         "passages": [
           {
             "keyword": "Self",
             "snippet": "387 / PHIL 387**  **DREAMING AS PRACTICE**  *Asian Traditions of Lucid Dreaming*  Syllabus and Course Guide  *12-Week Self-Paced Course*  *Estimated 6–8 hours per week*  A Note from the Instructor  This course is structured the way I would teach it in a small seminar —"
-          }
-        ]
-      },
-      {
-        "source_id": "04_project__README",
-        "source_title": "Svapna Project README",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/README.md",
-        "match_count": 1,
-        "passages": [
-          {
-            "keyword": "Self",
-            "snippet": "studies, papers 6. Support — *dāna*-rooted \"buy a coffee\" / \"buy someone a coffee\" model  ---  ## Running the React Component  The `.jsx` file is a single self-contained React component. To run it locally you'll want a Vite + React + Tailwind setup:  ```bash npm create vite@latest svapna -- --template react cd"
           }
         ]
       }
@@ -10444,7 +10143,7 @@
       "Dzogchen"
     ],
     "total_section_hits": 35,
-    "total_passage_hits": 208,
+    "total_passage_hits": 122,
     "entries": [
       {
         "source_id": "tibetan_yogas_dream_sleep",
@@ -10520,7 +10219,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 19,
         "passages": [
           {
@@ -10934,7 +10632,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 5,
         "passages": [
           {
@@ -11191,7 +10888,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 3,
         "passages": [
           {
@@ -11212,7 +10908,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 3,
         "passages": [
           {
@@ -11302,7 +10997,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 2,
         "passages": [
           {
@@ -11442,13 +11136,12 @@
       "journal"
     ],
     "total_section_hits": 8,
-    "total_passage_hits": 76,
+    "total_passage_hits": 28,
     "entries": [
       {
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 20,
         "passages": [
           {
@@ -11477,7 +11170,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 16,
         "passages": [
           {
@@ -11506,7 +11198,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 15,
         "passages": [
           {
@@ -11535,7 +11226,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 15,
         "passages": [
           {
@@ -11564,7 +11254,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 5,
         "passages": [
           {
@@ -11593,7 +11282,6 @@
         "source_id": "03_course_materials__04_final_project_guide",
         "source_title": "Final Project Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/04_final_project_guide.md",
         "match_count": 2,
         "passages": [
           {
@@ -11607,27 +11295,9 @@
         ]
       },
       {
-        "source_id": "04_project__OUTLINE",
-        "source_title": "Svapna Project Outline",
-        "tradition": "Svapna Project (the user's site/app)",
-        "file_path": "04_project/OUTLINE.md",
-        "match_count": 2,
-        "passages": [
-          {
-            "keyword": "dream recall",
-            "snippet": "traditional and scientific approaches inform each other today  ---  ## Course Curriculum (8–12 weeks)  Structured as progressive levels:  - **Foundation** — dream recall, journaling, sleep hygiene - **Awareness** — reality checks, mindfulness throughout the day - **Induction** — MILD, WILD, WBTB techniques"
-          },
-          {
-            "keyword": "journal",
-            "snippet": "— bardo teachings, sleep yoga (awareness in dreamless sleep), waking-life application  Each lesson combines video, text, audio guidance, and a journaling prompt.  ---  ## Community (Self-Sustaining)  Designed to run with minimal staff oversight — peer-driven rather than teacher-driven.  -"
-          }
-        ]
-      },
-      {
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 1,
         "passages": [
           {
@@ -11649,7 +11319,7 @@
       "distraction"
     ],
     "total_section_hits": 36,
-    "total_passage_hits": 92,
+    "total_passage_hits": 78,
     "entries": [
       {
         "source_id": "tibetan_yogas_dream_sleep",
@@ -11690,7 +11360,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 9,
         "passages": [
           {
@@ -12098,7 +11767,6 @@
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 2,
         "passages": [
           {
@@ -12471,7 +12139,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 1,
         "passages": [
           {
@@ -12492,13 +12159,12 @@
       "loving-kindness"
     ],
     "total_section_hits": 22,
-    "total_passage_hits": 90,
+    "total_passage_hits": 50,
     "entries": [
       {
         "source_id": "03_course_materials__02_lesson_plans",
         "source_title": "Lesson Plans",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/02_lesson_plans.md",
         "match_count": 29,
         "passages": [
           {
@@ -12527,7 +12193,6 @@
         "source_id": "03_course_materials__dreaming_as_practice_course",
         "source_title": "Dreaming as Practice (Course Doc)",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/dreaming_as_practice_course.md",
         "match_count": 15,
         "passages": [
           {
@@ -12591,7 +12256,6 @@
         "source_id": "02_tibetan_buddhist__tenzin_wangyal_companion",
         "source_title": "Tenzin Wangyal Companion",
         "tradition": "Tibetan Buddhist / Bön (modern course commentary)",
-        "file_path": "02_tibetan_buddhist/tenzin_wangyal_companion.md",
         "match_count": 7,
         "passages": [
           {
@@ -12620,7 +12284,6 @@
         "source_id": "03_course_materials__05_reading_list",
         "source_title": "Reading List",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/05_reading_list.md",
         "match_count": 6,
         "passages": [
           {
@@ -12649,7 +12312,6 @@
         "source_id": "03_course_materials__01_syllabus",
         "source_title": "Syllabus",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/01_syllabus.md",
         "match_count": 3,
         "passages": [
           {
@@ -12670,7 +12332,6 @@
         "source_id": "03_course_materials__04_final_project_guide",
         "source_title": "Final Project Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/04_final_project_guide.md",
         "match_count": 3,
         "passages": [
           {
@@ -12737,7 +12398,6 @@
         "source_id": "03_course_materials__03_dream_journal",
         "source_title": "Dream Journal Guide",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/03_dream_journal.md",
         "match_count": 2,
         "passages": [
           {
@@ -12754,7 +12414,6 @@
         "source_id": "01_hindu_vedanta__mandukya_modernized",
         "source_title": "Mandukya Modernized",
         "tradition": "Hindu / Advaita Vedanta (modern course commentary)",
-        "file_path": "01_hindu_vedanta/mandukya_modernized.md",
         "match_count": 2,
         "passages": [
           {
@@ -12961,7 +12620,6 @@
         "source_id": "03_course_materials__00_student_handbook",
         "source_title": "Student Handbook",
         "tradition": "Course Materials",
-        "file_path": "03_course_materials/00_student_handbook.md",
         "match_count": 1,
         "passages": [
           {

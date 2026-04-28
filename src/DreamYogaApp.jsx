@@ -1140,7 +1140,7 @@ function BibliographyBlock() {
         <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
         <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Summaries &amp; References.</h2>
         <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          A short editorial summary of each text in the corpus, with its citation and reference-material location.
+          A short editorial summary of each text in the corpus, with its working citation.
         </p>
       </div>
 
@@ -1411,7 +1411,6 @@ function ArticleReader({ articleId, goTo }) {
           <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {meta.num} · {meta.label}</p>
           <h1 className="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mt-3 md:mt-4">{meta.title}</h1>
           <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl leading-snug">{meta.blurb}</p>
-          <p className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-4 md:mt-5">Source: {meta.source}</p>
         </div>
       </div>
 

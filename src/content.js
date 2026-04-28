@@ -169,7 +169,7 @@ export const library = [
     year: 'c. 700 BCE',
     summary:
       "The longest and oldest of the principal Upaniṣads. Yājñavalkya's dialogue with King Janaka in Book IV is the foundational Indian text on dream-construction: the dreamer fashions the dream from impressions of the waking day, and the same self witnesses both states.",
-    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998); reference-material/01_ancient_origins/01_hindu_vedanta/olivelle_1998_early_upanisads.txt',
+    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998).',
   },
   {
     type: 'Primary',
@@ -178,7 +178,7 @@ export const library = [
     year: 'c. 700 BCE',
     summary:
       "An early prose Upaniṣad whose treatment of speech, breath, and the syllable Om frames the contemplative grammar the Māṇḍūkya will compress to twelve verses. Its instruction on the deep self (ātman) anchors the four-state schema in lived practice.",
-    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998); reference-material/01_ancient_origins/01_hindu_vedanta/olivelle_1998_early_upanisads.txt',
+    reference: 'Olivelle, The Early Upaniṣads (Oxford, 1998).',
   },
   {
     type: 'Primary',
@@ -187,7 +187,7 @@ export const library = [
     year: 'c. 500 BCE',
     summary:
       'Twelve verses; the philosophical bedrock for almost every later Asian discussion of consciousness across states. Lays out waking, dreaming, deep sleep, and the witnessing turīya, and maps them onto the four moments of Om.',
-    reference: 'reference-material/01_ancient_origins/01_hindu_vedanta/Mandukya_Upanishad.txt; Krishnananda lecture series, 1968.',
+    reference: 'Krishnananda, The Māṇḍūkya Upaniṣad (Divine Life Society, 1968).',
   },
   {
     type: 'Primary',
@@ -196,7 +196,7 @@ export const library = [
     year: 'c. 4th c. BCE',
     summary:
       "The butterfly passage and the surrounding Inner Chapters give Daoism its central image for the porousness of waking and dream — and shift the question from which state is real to what changes when one passes between them.",
-    reference: 'Ziporyn, Zhuangzi: The Complete Writings (Hackett, 2020); reference-material/03_other_asian_traditions/01_chinese_daoist/ziporyn_zhuangzi_complete_writings.txt',
+    reference: 'Ziporyn, Zhuangzi: The Complete Writings (Hackett, 2020).',
   },
   {
     type: 'Primary',
@@ -205,7 +205,7 @@ export const library = [
     year: 'c. 1st c. BCE',
     summary:
       "Nāgasena's analysis for King Milinda distinguishes four causes of dream-experience without granting them epistemic authority — the early Indian Buddhist taxonomy that the later Mahāyāna and tantric traditions will quietly inherit.",
-    reference: 'Mendis, The Questions of King Milinda (Buddhist Publication Society); reference-material/01_ancient_origins/02_indian_buddhist/mendis_questions_of_king_milinda.txt',
+    reference: 'Mendis, The Questions of King Milinda (Buddhist Publication Society).',
   },
   {
     type: 'Primary',
@@ -214,7 +214,7 @@ export const library = [
     year: 'c. 2nd c. CE',
     summary:
       'The most complete classical handbook of dream interpretation; five books cataloguing dream-images and the principles for reading them. The reference text for the Greco-Roman interpretive tradition the medieval Latin world will inherit.',
-    reference: 'Discussed in Beare, Aristotle: Parva Naturalia (Oxford, 1908); reference-material/01_ancient_origins/03_greco_roman/works_of_aristotle_oxford_smith_ross.txt',
+    reference: 'Discussed in Beare, Aristotle: Parva Naturalia (Oxford, 1908).',
   },
   {
     type: 'Primary',
@@ -241,7 +241,7 @@ export const library = [
     year: 'c. 8th c. CE',
     summary:
       "The Mahāyāna's central practice manual. Śāntideva uses dream as the working figure for the philosophical claim that all phenomena are appearance-only — the source the Tibetan tradition will most absorb.",
-    reference: 'Padmakara Translation Group, The Way of the Bodhisattva (Shambhala, 2006); reference-material/01_ancient_origins/04_bodhicitta_mahayana/shantideva_way_of_bodhisattva_padmakara.txt',
+    reference: 'Padmakara Translation Group, The Way of the Bodhisattva (Shambhala, 2006).',
   },
   {
     type: 'Primary',
@@ -250,7 +250,7 @@ export const library = [
     year: 'c. 1229',
     summary:
       "The 'Bezels of Wisdom'. Ibn al-ʿArabī's mature presentation of the imaginal world (ʿālam al-mithāl) and the ontology of khayāl — the most philosophically developed pre-modern treatment of dream in any tradition.",
-    reference: 'Chittick, The Sufi Path of Knowledge (SUNY, 1989); reference-material/03_other_asian_traditions/02_sufi_islamic/chittick_sufi_path_of_knowledge.txt',
+    reference: 'Chittick, The Sufi Path of Knowledge (SUNY, 1989).',
   },
   {
     type: 'Primary',
@@ -259,7 +259,7 @@ export const library = [
     year: '14th c.',
     summary:
       "The 'Tibetan Book of the Dead' and its companion bardo texts. Frames dream practice as preparation for the intermediate states between death and rebirth — the larger architecture in which milam (dream yoga) takes its sense.",
-    reference: 'Fremantle & Trungpa, The Tibetan Book of the Dead (Shambhala, 1975); reference-material/02_tibetan_dream_yoga/01_bardo_thodol/fremantle_trungpa_tibetan_book_of_the_dead.txt',
+    reference: 'Fremantle & Trungpa, The Tibetan Book of the Dead (Shambhala, 1975).',
   },
   {
     type: 'Primary',
@@ -268,7 +268,7 @@ export const library = [
     year: '1867',
     summary:
       'Twenty years and nearly two thousand dreams, journaled by patient self-observation. Saint-Denys describes the methods that anticipate nearly every modern lucid-dreaming induction technique — the foundation stone of the modern empirical study of dreaming.',
-    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/saintdenys_les_reves_french_1867.txt',
+    reference: 'Hervey de Saint-Denys, Les rêves et les moyens de les diriger (Paris: Amyot, 1867).',
   },
   {
     type: 'Primary',
@@ -277,7 +277,7 @@ export const library = [
     year: '1913',
     summary:
       "The 1913 Society for Psychical Research paper that coins 'lucid dream' in its present meaning. Short, clear, available in full in the Society's archive.",
-    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/van_eeden_study_of_dreams_1913.txt',
+    reference: 'Frederik van Eeden, "A Study of Dreams," Proceedings of the Society for Psychical Research 26 (1913): 431–461.',
   },
   {
     type: 'Primary',
@@ -286,7 +286,7 @@ export const library = [
     year: '1921',
     summary:
       "The first practical instructional manual in the empirical tradition. Arnold-Forster's protocols anticipate MILD by sixty years.",
-    reference: 'reference-material/04_western_rediscovery/01_saintdenys_van_eeden_arnold_forster/arnold_forster_studies_in_dreams_1921.txt',
+    reference: 'Mary Arnold-Forster, Studies in Dreams (London: Allen & Unwin, 1921).',
   },
   // Modern texts — chronological
   {
@@ -296,7 +296,7 @@ export const library = [
     year: '1990',
     summary:
       'The foundational accessible synthesis of the LaBerge research program; the entry point to the modern scientific era and the source of the MILD protocol as practitioners now know it.',
-    reference: 'reference-material/05_modern_scientific_era/03_practical_synthesis/laberge_rheingold_exploring_world_lucid_dreaming.txt',
+    reference: 'Stephen LaBerge & Howard Rheingold, Exploring the World of Lucid Dreaming (Ballantine, 1990).',
   },
   {
     type: 'Text',
@@ -305,7 +305,7 @@ export const library = [
     year: '1992',
     summary:
       "The foundational modern Dzogchen text in English on dream and natural-light practice. Pairs naturally with Tenzin Wangyal as a second lineage view.",
-    reference: 'reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/namkhai_norbu_dream_yoga_natural_light.txt',
+    reference: 'Chögyal Namkhai Norbu, Dream Yoga and the Practice of Natural Light (Snow Lion, 1992).',
   },
   {
     type: 'Text',
@@ -323,7 +323,7 @@ export const library = [
     year: '1998',
     summary:
       'The course primary text on the Bön Dzogchen presentation of dream and sleep yoga; the most accessible technically complete treatment in English.',
-    reference: 'Snow Lion, 1998. reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/tibetan_yogas_dream_sleep_full.txt',
+    reference: 'Snow Lion, 1998.',
   },
   {
     type: 'Text',
@@ -332,7 +332,7 @@ export const library = [
     year: '2012',
     summary:
       'The single most-developed contemplative-scientific bridge text. The right book to build the convergence around.',
-    reference: 'Shambhala, 2012. reference-material/06_contemporary_convergence/wallace_dreaming_yourself_awake.txt',
+    reference: 'Shambhala, 2012.',
   },
   {
     type: 'Text',
@@ -350,7 +350,7 @@ export const library = [
     year: '2016',
     summary:
       'The most accessible contemporary integration of the Six Yogas tradition with the Western lucid-dreaming literature.',
-    reference: 'Sounds True, 2016. reference-material/02_tibetan_dream_yoga/03_dream_and_sleep_yoga/holecek_dream_yoga.txt',
+    reference: 'Sounds True, 2016.',
   },
   {
     type: 'Text',
@@ -369,7 +369,7 @@ export const library = [
     year: '1953',
     summary:
       'The two-page paper that founded the modern science of dreaming. Made the dreaming brain visible in the laboratory.',
-    reference: 'Science 118:3062 (1953): 273–274. reference-material/05_modern_scientific_era/01_foundational_rem_research/aserinsky_kleitman_1953_regular_eye_motility.txt',
+    reference: 'Science 118:3062 (1953): 273–274.',
   },
   {
     type: 'Paper',
@@ -414,7 +414,7 @@ export const library = [
     year: '2018',
     summary:
       'The substantial dose-response effect for galantamine. A result the field is still working out the practical and ethical implications of.',
-    reference: 'PLOS ONE 13:8 (2018). reference-material/05_modern_scientific_era/02_lucid_dreaming_neuroscience/laberge_2018_galantamine_plosone.txt',
+    reference: 'PLOS ONE 13:8 (2018).',
   },
 ];
 
