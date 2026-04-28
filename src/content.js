@@ -613,12 +613,12 @@ export const aboutPages = {
   },
   contact: {
     title: 'Contact',
-    kicker: 'Reach Us',
+    kicker: 'Questions, corrections, permissions',
     email: 'admin@svapnaproject.org',
     paragraphs: [
-      'Write with questions about the course, the source materials, or the project. We read everything; replies arrive when they arrive.',
-      'For corrections — typos, mistranslations, citation errors, mis-attributed lineages — please flag them. Accuracy matters more here than tone.',
-      'For permission to translate, adapt, or republish material from this site: yes, in advance, under the terms outlined on the Support page. Please tell us what you made so we can link to it.',
+      'Mail about the work, the source materials, or the project lands at admin@svapnaproject.org. Replies arrive when they arrive.',
+      'Corrections — typos, mistranslations, citation errors, mis-attributed lineages — go to the same place. Accuracy matters more here than tone.',
+      'Permission to translate, adapt, or republish material from this site: granted in advance, under the terms outlined on the Support page. Notice of any such adaptation is welcomed at the same address.',
     ],
   },
 };
