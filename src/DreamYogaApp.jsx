@@ -368,7 +368,7 @@ function HistorySection({ goTo }) {
 
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia in six movements, from the cave to the laboratory." />
+      <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia, in six movements." />
 
       {/* UNIT CARDS — each carries a representative quote and links to its
           curriculum module (history unit N maps to curriculum module N). */}
@@ -513,7 +513,7 @@ function CurriculumSection({ goTo }) {
 
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Six modules. Forty-seven short lessons. The history and the science of the practice. Self-paced." />
+      <SectionHeader num="§ 03" kicker="The Course" title="Curriculum." sub="Six modules, forty-seven short lessons. Self-paced." />
 
       {/* Welcome / orientation */}
       <button
@@ -1056,23 +1056,130 @@ function WelcomeLessonPage({ goTo }) {
   );
 }
 
+const FORUM_URL = 'https://community.svapnaproject.org';
+
+const FORUM_CATEGORIES = [
+  { num: 'I',    name: 'Foundations',           slug: 'foundations',           blurb: 'Practice itself: dream journaling, sleep hygiene, attention through the day. Specific techniques (MILD, WILD, recognition by inquiry) belong here. Beginners welcome — no question wasted.' },
+  { num: 'II',   name: 'History',               slug: 'history',               blurb: 'The lineages the course traces — Vedic, Upaniṣadic, Indian Buddhist, Mahāyāna, Tibetan, Daoist, Sufi, Western. Discuss a primary text, a translator’s choice, a teacher’s place in the broader story.' },
+  { num: 'III',  name: 'Curriculum',            slug: 'curriculum',            blurb: 'One thread per lesson, anchored to the course material. New lessons get their threads as you move through them. Old threads stay open; coming back months later is one of the gifts.' },
+  { num: 'IV',   name: 'Community',             slug: 'community',             blurb: 'The town square. Introductions, announcements, gentle conversation that doesn’t fit elsewhere. Welcome posts go here on your first day; we read them.' },
+  { num: 'V',    name: 'Library',               slug: 'library',               blurb: 'Books, papers, films, podcasts, primary sources. Recommendations, summaries, critical readings, reading-group threads.' },
+  { num: 'VI',   name: 'Support',               slug: 'support',               blurb: 'Help with practice, with technical issues on the site, with life situations affecting your practice. Volunteers lend their time; nothing here is treated as therapy or medical advice.' },
+  { num: 'VII',  name: 'Dream-Sharing Circles', slug: 'dream-sharing-circles', blurb: 'Small opt-in groups where members share dreams. Witnessing without interpretation, unless interpretation is invited. Circles cap at twelve.' },
+  { num: 'VIII', name: 'Practice Partners',     slug: 'practice-partners',     blurb: '1:1 mutual accountability for a specific practice. Post what you’re working on; other members reply or DM. Either of you can step away.' },
+  { num: 'IX',   name: 'Experiences',           slug: 'experiences',           blurb: 'Personal dream reports, lucidity reports, reports from the threshold. The community’s job is to witness. Interpretation only when the poster invites it.' },
+  { num: 'X',    name: 'Lineage and Teachers',  slug: 'lineage-and-teachers',  blurb: 'Specific teachers, specific transmissions, specific schools. Where a teaching the course covered shows up in someone you’ve actually studied with.' },
+  { num: 'XI',   name: 'Meta',                  slug: 'meta',                  blurb: 'The forum about the forum. Feature requests, code-of-conduct interpretations, moderation questions, accessibility issues.' },
+  { num: 'XII',  name: 'Off-Topic',             slug: 'off-topic',             blurb: 'Everything else. Music, food, gardening, what you’re reading. Anything that doesn’t have a home in the categories above.' },
+];
+
 function CommunitySection() {
-  const items = [
-    { num: 'i.', title: 'Forums', body: 'Organized by topic — induction, interpretation, tradition, science — and by experience level. Beginners and adepts have separate rooms by default, with a shared commons.' },
-    { num: 'ii.', title: 'Dream Circles', body: 'Small opt-in groups of eight to twelve. Members share dreams. Witnessing without interpretation, unless invited. Asynchronous, so time zones do not separate us.' },
-    { num: 'iii.', title: 'Practice Partners', body: 'A matching system that pairs members working on similar techniques. Accountability without obligation. Either of you can step away.' },
-    { num: 'iv.', title: 'Code of Conduct', body: 'Respect for personal experience, cultural traditions, and the vulnerability of sharing dreams. No interpretation without invitation. No proselytizing. No advice unless asked.' },
+  const pillars = [
+    { num: 'i.',   title: 'Forums',             body: 'Organized by topic and lineage. Twelve categories, from Foundations to Off-Topic — each with its own conversation. Listed in full below.', href: `${FORUM_URL}/categories` },
+    { num: 'ii.',  title: 'Dream Circles',      body: 'Small opt-in groups of eight to twelve. Members share dreams. Witnessing without interpretation, unless invited. Asynchronous, so time zones do not separate us.', href: `${FORUM_URL}/c/dream-sharing-circles` },
+    { num: 'iii.', title: 'Practice Partners',  body: 'A bulletin board for 1:1 partners working on similar techniques. Accountability without obligation. Either of you can step away.', href: `${FORUM_URL}/c/practice-partners` },
+    { num: 'iv.',  title: 'Code of Conduct',    body: 'Respect for personal experience, cultural traditions, and the vulnerability of sharing dreams. No interpretation without invitation. No proselytizing. No advice unless asked.', href: `${FORUM_URL}/guidelines` },
   ];
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 04" kicker="Together, Asynchronously" title="Community." sub="Peer-led and lightly moderated. Built to outlive its founders." />
+      <SectionHeader num="§ 04" kicker="Together, Asynchronously" title="Community." sub={<>The forum lives at <span className="not-italic mono text-base md:text-lg">community.svapnaproject.org</span>. Peer-led, lightly moderated.</>} />
+
+      {/* Visit-the-forum CTA */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">The Forum</span>
+        </div>
+        <div className="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
+          <p className="display text-2xl md:text-3xl leading-snug italic text-neutral-800">
+            An asynchronous Discourse community. Free to read, free to join, no advertising, no tracking.
+          </p>
+          <a
+            href={FORUM_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 md:mt-8 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+            style={{ border: '0.5px solid #000' }}
+          >
+            <span>Visit community.svapnaproject.org</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Pillars — each opens a destination on the forum */}
       <div className="grid grid-cols-1 md:grid-cols-2">
-        {items.map((it, i) => (
-          <div key={i} className={`p-6 sm:p-8 md:p-12 hairline-b ${i % 2 === 0 ? 'md:hairline-r' : ''}`}>
+        {pillars.map((it, i) => (
+          <a
+            key={i}
+            href={it.href}
+            target="_blank"
+            rel="noreferrer"
+            className={`block p-6 sm:p-8 md:p-12 hairline-b ${i % 2 === 0 ? 'md:hairline-r' : ''} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group`}
+          >
             <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{it.num}</span>
-            <h3 className="display text-4xl md:text-5xl mt-3 md:mt-4">{it.title}</h3>
+            <h3 className="display text-4xl md:text-5xl mt-3 md:mt-4 group-hover:italic transition-all">{it.title}</h3>
             <p className="mt-5 md:mt-6 leading-relaxed text-neutral-700 text-sm md:text-base">{it.body}</p>
-          </div>
+            <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Open ↗</p>
+          </a>
+        ))}
+      </div>
+
+      {/* All twelve categories */}
+      <CategoriesBlock />
+    </div>
+  );
+}
+
+function CategoriesBlock() {
+  return (
+    <div className="hairline-b">
+      <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
+        <h2 className="display text-4xl md:text-6xl mt-2 md:mt-3">Categories.</h2>
+        <p className="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          The full list. Each opens its category on the forum.
+        </p>
+      </div>
+
+      {/* Mobile: stacked cards */}
+      <div className="md:hidden hairline-t">
+        {FORUM_CATEGORIES.map((c) => (
+          <a
+            key={c.slug}
+            href={`${FORUM_URL}/c/${c.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            className="block hairline-b p-5 active:bg-neutral-100 transition-colors"
+          >
+            <div className="flex justify-between items-baseline">
+              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{c.num}</span>
+              <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">/c/{c.slug}</span>
+            </div>
+            <h3 className="display text-xl italic leading-tight mt-2">{c.name}</h3>
+            <p className="text-sm mt-3 text-neutral-700 leading-relaxed">{c.blurb}</p>
+            <p className="mono text-[10px] uppercase tracking-widest mt-3 text-neutral-500">Open ↗</p>
+          </a>
+        ))}
+      </div>
+
+      {/* Desktop: annotated list */}
+      <div className="hidden md:block hairline-t">
+        {FORUM_CATEGORIES.map((c) => (
+          <a
+            key={c.slug}
+            href={`${FORUM_URL}/c/${c.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            className="grid grid-cols-12 hairline-b py-6 px-8 hover:bg-neutral-50 transition-colors group"
+          >
+            <div className="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{c.num}</div>
+            <div className="col-span-9">
+              <div className="display text-xl md:text-2xl italic leading-tight group-hover:translate-x-1 transition-transform">{c.name}</div>
+              <p className="text-sm md:text-base mt-3 leading-relaxed text-neutral-700 max-w-3xl">{c.blurb}</p>
+              <p className="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3">/c/{c.slug}</p>
+            </div>
+            <div className="col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 text-right">↗</div>
+          </a>
         ))}
       </div>
     </div>
@@ -1082,7 +1189,7 @@ function CommunitySection() {
 function LibrarySection({ goTo }) {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 05" kicker="Articles and Citations" title="Library." sub="Long-form articles on the traditions, with the citations that anchor the reading." />
+      <SectionHeader num="§ 05" kicker="Articles and Citations" title="Library." sub="Long-form articles on the traditions, with the citations behind them." />
       <ArticlesBlock goTo={goTo} />
       <BibliographyBlock />
       <ThemesBlock goTo={goTo} />
@@ -1265,14 +1372,11 @@ function PullQuotesBlock() {
 function SupportSection() {
   return (
     <div className="fade-in">
-      <SectionHeader num="§ 06" kicker="Dāna — The Practice of Generosity" title="Support." sub="A footnote. If the work has been useful, pass it forward." />
+      <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="If it's been useful, pass it on." />
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-7 p-6 sm:p-10 md:p-12 hairline-b md:hairline-r">
           <p className="display text-xl sm:text-2xl md:text-3xl italic leading-relaxed">
-            The dream-yoga traditions were never sold. They were transmitted, hand to hand, in exchange for whatever the student could offer — sometimes nothing.
-          </p>
-          <p className="mt-6 md:mt-8 leading-loose text-neutral-700 text-sm md:text-base">
-            We keep that arrangement. The course, the history, the community — open to anyone. If the work has been useful, you can buy us a coffee. Once we are sustainable, your contribution rolls forward as a coffee for someone else — though access was never withheld in the first place. The gesture is what matters: <em>I received, and now I give.</em>
+            The course, the history, the community — open to anyone. If it's helped, buy us a coffee. Or buy one for someone else.
           </p>
         </div>
         <div className="md:col-span-5 p-6 sm:p-10 md:p-12 hairline-b flex flex-col justify-between gap-10">
