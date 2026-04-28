@@ -788,8 +788,10 @@ function ModuleDetail({ moduleIndex, goTo }) {
 
 // Tiny markdown renderer covering the lesson-file dialect: paragraphs,
 // `## Subheading`, `*italic*`, `**bold**`, `_italic_`, and `> blockquote`.
+// Also recognizes `[Module N, Lesson M]` and emits a clickable button when
+// goTo is provided (used by the glossary's lesson references).
 // Bold takes priority over italic to handle `**...**` correctly.
-function renderInline(text, keyPrefix) {
+function renderInline(text, keyPrefix, goTo) {
   const out = [];
   let i = 0;
   let buf = '';
@@ -823,6 +825,26 @@ function renderInline(text, keyPrefix) {
         continue;
       }
     }
+    if (text[i] === '[' && goTo) {
+      const m = text.slice(i).match(/^\[Module (\d+), Lesson (\d+)\]/);
+      if (m) {
+        const mod = m[1];
+        const les = m[2];
+        flush();
+        out.push(React.createElement(
+          'button',
+          {
+            key: `${keyPrefix}-${key++}`,
+            type: 'button',
+            onClick: () => goTo(`lesson-${mod}-${les}`),
+            className: 'underline-offset-2 hover:italic transition-all',
+          },
+          m[0]
+        ));
+        i += m[0].length;
+        continue;
+      }
+    }
     buf += text[i];
     i++;
   }
@@ -830,7 +852,7 @@ function renderInline(text, keyPrefix) {
   return out;
 }
 
-function MarkdownBody({ text }) {
+function MarkdownBody({ text, goTo }) {
   const blocks = text.split(/\n\s*\n/);
   return (
     <div className="max-w-3xl space-y-5 md:space-y-6">
@@ -840,14 +862,14 @@ function MarkdownBody({ text }) {
         if (block.startsWith('## ')) {
           return (
             <h3 key={i} className="display text-2xl md:text-3xl leading-tight pt-4 md:pt-6">
-              {renderInline(block.slice(3), `h-${i}`)}
+              {renderInline(block.slice(3), `h-${i}`, goTo)}
             </h3>
           );
         }
         if (block.startsWith('# ')) {
           return (
             <h2 key={i} className="display text-3xl md:text-4xl leading-tight pt-4 md:pt-6">
-              {renderInline(block.slice(2), `h-${i}`)}
+              {renderInline(block.slice(2), `h-${i}`, goTo)}
             </h2>
           );
         }
@@ -855,13 +877,13 @@ function MarkdownBody({ text }) {
           const inner = block.split('\n').map(l => l.replace(/^>\s?/, '')).join(' ').trim();
           return (
             <blockquote key={i} className="pl-4 md:pl-5 my-2 italic text-neutral-700" style={{ borderLeft: '0.5px solid #000' }}>
-              {renderInline(inner, `bq-${i}`)}
+              {renderInline(inner, `bq-${i}`, goTo)}
             </blockquote>
           );
         }
         return (
           <p key={i} className="text-base md:text-lg leading-loose">
-            {renderInline(block, `p-${i}`)}
+            {renderInline(block, `p-${i}`, goTo)}
           </p>
         );
       })}
@@ -935,7 +957,7 @@ function LessonDetail({ moduleNum, lessonNum, goTo }) {
           </button>
         </div>
         <div className="md:col-span-10 p-6 md:p-12">
-          <MarkdownBody text={lesson.body} />
+          <MarkdownBody text={lesson.body} goTo={goTo} />
         </div>
       </div>
 
@@ -1026,7 +1048,7 @@ function WelcomeLessonPage({ goTo }) {
           <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Welcome</span>
         </div>
         <div className="md:col-span-10 p-6 md:p-12">
-          <MarkdownBody text={welcomeLesson.body} />
+          <MarkdownBody text={welcomeLesson.body} goTo={goTo} />
         </div>
       </div>
       {welcomeLesson.prompt && (
@@ -1099,7 +1121,7 @@ function GlossaryPage({ goTo }) {
           <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Glossary</span>
         </div>
         <div className="md:col-span-10 p-6 md:p-12">
-          <MarkdownBody text={glossary.body} />
+          <MarkdownBody text={glossary.body} goTo={goTo} />
         </div>
       </div>
     </div>
