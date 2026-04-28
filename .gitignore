@@ -26,9 +26,13 @@ dist-ssr
 # Local-only working files
 .claude/
 
-# reference-material/ is mostly local-only working files, but the Welcome
-# lesson is shipped with the build and so must be tracked.
+# reference-material/ is mostly local-only working files, but the
+# 11_online lesson markdown is shipped with the build and so must be
+# tracked.
 reference-material/*
 !reference-material/11_online
 reference-material/11_online/*
 !reference-material/11_online/00_welcome.md
+!reference-material/11_online/module_*/
+reference-material/11_online/module_*/*
+!reference-material/11_online/module_*/*.md
