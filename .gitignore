@@ -33,6 +33,7 @@ reference-material/*
 !reference-material/11_online
 reference-material/11_online/*
 !reference-material/11_online/00_welcome.md
+!reference-material/11_online/glossary.md
 !reference-material/11_online/module_*/
 reference-material/11_online/module_*/*
 !reference-material/11_online/module_*/*.md

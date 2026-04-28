@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { historyUnits, curriculumModules, library, articles, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
-import { lessonsByModule, getLesson, welcomeLesson } from './lessons.js';
+import { lessonsByModule, getLesson, welcomeLesson, glossary } from './lessons.js';
 import timelineData from './data/timeline.json';
 import quotesData from './data/quotes.json';
 
@@ -173,6 +173,7 @@ export default function DreamYogaApp() {
         {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
         {activeSection.startsWith('curriculum-') && <ModuleDetail moduleIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
         {activeSection === 'lesson-welcome' && <WelcomeLessonPage goTo={goTo} />}
+        {activeSection === 'glossary' && <GlossaryPage goTo={goTo} />}
         {activeSection.startsWith('lesson-') && activeSection !== 'lesson-welcome' && (() => {
           const rest = activeSection.slice(7); // 'M-L', e.g. '1-3'
           const [m, l] = rest.split('-');
@@ -197,7 +198,7 @@ export default function DreamYogaApp() {
           <div className="md:col-span-3 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
             <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Index</p>
             <ul className="space-y-2 text-sm">
-              <li><button onClick={() => goTo('about-colophon')} className="text-left hover:italic transition-all">Colophon</button></li>
+              <li><button onClick={() => goTo('glossary')} className="text-left hover:italic transition-all">Glossary</button></li>
               <li><button onClick={() => goTo('about-conduct')} className="text-left hover:italic transition-all">Code of Conduct</button></li>
               <li><button onClick={() => goTo('about-acknowledgments')} className="text-left hover:italic transition-all">Acknowledgments</button></li>
               <li><button onClick={() => goTo('about-contact')} className="text-left hover:italic transition-all">Contact</button></li>
@@ -1062,6 +1063,49 @@ function WelcomeLessonPage({ goTo }) {
   );
 }
 
+function GlossaryPage({ goTo }) {
+  if (!glossary) {
+    return (
+      <div className="p-12 max-w-2xl">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-6">Glossary in preparation</p>
+        <button type="button" onClick={() => goTo('home')} className="mono text-[10px] uppercase tracking-widest underline">← Home</button>
+      </div>
+    );
+  }
+  return (
+    <div className="fade-in">
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo('home')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Home
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Reference</span>
+      </div>
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Five languages</p>
+          <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{glossary.title}.</h1>
+          {glossary.kicker && (
+            <p className="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+              {renderInline(glossary.kicker, 'gk')}
+            </p>
+          )}
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-12">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Glossary</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <MarkdownBody text={glossary.body} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const FORUM_URL = 'https://community.svapnaproject.org';
 
 const FORUM_CATEGORIES = [
@@ -1428,7 +1472,6 @@ function AboutSection({ page, goTo }) {
   const data = aboutPages[page];
   if (!data) return null;
   const tabs = [
-    { id: 'colophon', label: 'Colophon' },
     { id: 'conduct', label: 'Code of Conduct' },
     { id: 'acknowledgments', label: 'Acknowledgments' },
     { id: 'contact', label: 'Contact' },

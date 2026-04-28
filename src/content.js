@@ -591,15 +591,6 @@ export const moduleDeepening = {
 // About-page sub-sections — wired to footer "Index" links.
 // Each is its own simple content page, reachable from the footer.
 export const aboutPages = {
-  colophon: {
-    title: 'Colophon',
-    kicker: 'On the Making of This Site',
-    paragraphs: [
-      'Svapna is built in the editorial-minimalist register: white field, hairline rules, no rounded edges, generous negative space. The visual language is meant to recede so the reading can come forward.',
-      'Display type is set in Cormorant Garamond, a contemporary revival of the Garamond family by Christian Thalmann. Labels and metadata are set in JetBrains Mono. Roman numerals and editorial marks (Vol. I / Iss. I / MMXXVI) are set as-is in the display face.',
-      'The site is a single-page React application, built with Vite and styled with Tailwind. Source is open at github.com/flintomm/svapna. Hosted on GitHub Pages, deployed automatically on each push to main. No analytics, no tracking, no advertising. Ever.',
-    ],
-  },
   conduct: {
     title: 'Code of Conduct',
     kicker: 'How We Hold the Practice Together',

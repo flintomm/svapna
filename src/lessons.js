@@ -15,6 +15,11 @@ const WELCOME_FILES = import.meta.glob(
   { query: '?raw', import: 'default', eager: true }
 );
 
+const GLOSSARY_FILES = import.meta.glob(
+  '../reference-material/11_online/glossary.md',
+  { query: '?raw', import: 'default', eager: true }
+);
+
 function splitOnHr(raw) {
   // Split on a horizontal rule line ("---" with optional surrounding whitespace).
   return raw.split(/\r?\n---\s*\r?\n/);
@@ -106,4 +111,16 @@ export const welcomeLesson = (() => {
     ? promptMatch[1].replace(/^>\s*/gm, '').replace(/\s+/g, ' ').trim()
     : '';
   return { title, kicker, body, prompt };
+})();
+
+export const glossary = (() => {
+  const raw = Object.values(GLOSSARY_FILES)[0];
+  if (!raw) return null;
+  const parts = splitOnHr(raw);
+  const head = parts[0] || '';
+  const body = (parts[1] || '').trim();
+  const titleMatch = head.match(/^#\s+(.+?)$/m);
+  const title = titleMatch ? titleMatch[1].trim() : 'Glossary';
+  const kicker = extractKicker(head);
+  return { title, kicker, body };
 })();
