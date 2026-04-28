@@ -116,9 +116,12 @@ export const welcomeLesson = (() => {
 export const glossary = (() => {
   const raw = Object.values(GLOSSARY_FILES)[0];
   if (!raw) return null;
+  // The glossary uses `---` between every language section. Take parts[0] as
+  // the head (title + kicker) and everything from parts[1] onward as the body,
+  // joined with blank lines so the H2 section headers do the visual work.
   const parts = splitOnHr(raw);
   const head = parts[0] || '';
-  const body = (parts[1] || '').trim();
+  const body = parts.slice(1).join('\n\n').trim();
   const titleMatch = head.match(/^#\s+(.+?)$/m);
   const title = titleMatch ? titleMatch[1].trim() : 'Glossary';
   const kicker = extractKicker(head);
