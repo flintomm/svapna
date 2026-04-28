@@ -631,6 +631,11 @@ function ModuleDetail({ moduleIndex, goTo }) {
           <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lessons</span>
         </div>
         <div className="md:col-span-10">
+          {lessons.length === 0 && (
+            <div className="p-6 md:p-12">
+              <p className="display text-lg md:text-xl italic text-neutral-600 leading-snug">Lessons in preparation.</p>
+            </div>
+          )}
           {lessons.map((l, i) => {
             const key = `${l.moduleNum}-${l.lessonNum}`;
             const done = completed.has(key);
@@ -874,9 +879,10 @@ function LessonDetail({ moduleNum, lessonNum, goTo }) {
 
   if (!lesson || !mod) {
     return (
-      <div className="p-12">
-        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Lesson not found.</p>
-        <button type="button" onClick={() => goTo('curriculum')} className="mono text-[10px] uppercase tracking-widest mt-4 underline">← Curriculum</button>
+      <div className="p-12 max-w-2xl">
+        <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-6">Lesson in preparation</p>
+        <p className="display text-xl md:text-2xl italic text-neutral-600 leading-snug mb-8">The lesson text is being readied for publication.</p>
+        <button type="button" onClick={() => goTo('curriculum')} className="mono text-[10px] uppercase tracking-widest underline">← Curriculum</button>
       </div>
     );
   }
