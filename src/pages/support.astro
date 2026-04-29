@@ -8,39 +8,28 @@ import SubscribeSection from '../components/SubscribeSection.astro';
   <div class="fade-in">
     <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="If it's been useful, pass it on." />
     <div class="grid grid-cols-1 md:grid-cols-12">
-      <div class="md:col-span-7 p-6 sm:p-10 md:p-12 hairline-b md:hairline-r">
+      <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b">
         <p class="display text-xl sm:text-2xl md:text-3xl italic leading-relaxed">
           The course, the history, the community — open to anyone. If it's helped, buy us a coffee. Or buy one for someone else.
         </p>
       </div>
-      <div class="md:col-span-5 p-6 sm:p-10 md:p-12 hairline-b flex flex-col justify-between gap-10">
-        <div>
-          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Running Total</p>
-          <p class="display text-6xl md:text-7xl mt-3 md:mt-4">$ 0</p>
-          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2">contributed to date</p>
-        </div>
-        <div class="space-y-3">
-          <a
-            href="https://buymeacoffee.com/svapna"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-full py-4 px-5 md:px-6 mono text-[10px] uppercase tracking-widest active:bg-black active:text-white md:hover:bg-black md:hover:text-white transition-colors text-left flex justify-between items-center"
-            style="border: 0.5px solid #000"
-          >
-            <span>Buy a coffee</span>
-            <span>→</span>
-          </a>
-          <a
-            href="https://buymeacoffee.com/svapna?gift=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-full py-4 px-5 md:px-6 mono text-[10px] uppercase tracking-widest active:bg-black active:text-white md:hover:bg-black md:hover:text-white transition-colors text-left flex justify-between items-center"
-            style="border: 0.5px solid #000"
-          >
-            <span>Buy someone a coffee</span>
-            <span>→</span>
-          </a>
-        </div>
+      <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b flex justify-center">
+        <a
+          href="https://buymeacoffee.com/svapna"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Buy a coffee"
+          class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white"
+          style="border: 0.5px solid #000;"
+        >
+          <svg width="26" height="26" viewBox="0 0 24 24" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 9h13l-1 9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3L4 9z" fill="white" />
+            <ellipse cx="10.5" cy="9" rx="6.5" ry="1.4" fill="#6F4E37" stroke="none" />
+            <path d="M17 12h1a2 2 0 0 1 0 4h-1" fill="none" />
+            <path d="M9 4c-1 1 1 2 0 3" fill="none" />
+            <path d="M13 4c-1 1 1 2 0 3" fill="none" />
+          </svg>
+        </a>
       </div>
       <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b">
         <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-5 md:mb-6">Where contributions go</p>
