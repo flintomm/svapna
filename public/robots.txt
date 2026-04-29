@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://svapnaproject.org/sitemap-index.xml

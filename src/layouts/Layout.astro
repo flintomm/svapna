@@ -71,6 +71,7 @@ function isActive(href: string) {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={twitterImageAbs} />
+    <link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />
     {allSchemas.map(schema => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
