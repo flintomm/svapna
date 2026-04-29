@@ -48,7 +48,7 @@ export async function GET(context) {
   }
 
   return rss({
-    title: 'Svapna — Dream Yoga & Lucid Dreaming',
+    title: 'Svapna Project - Dream Yoga & Lucid Dreaming',
     description:
       'A free, donation-supported course on dream yoga and lucid dreaming. Mandukya, Tibetan milam, modern lucid-dreaming science.',
     site: context.site,
