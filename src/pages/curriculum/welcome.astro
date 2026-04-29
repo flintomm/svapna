@@ -3,11 +3,30 @@ import Layout from '../../layouts/Layout.astro';
 import MarkdownBody from '../../components/MarkdownBody.astro';
 import InlineMarkdown from '../../components/InlineMarkdown.astro';
 import { welcomeLesson, lessonsByModule } from '../../lib/lessons.js';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 const firstLesson = (lessonsByModule['1'] || [])[0];
+
+const siteUrl = Astro.site.href;
+const url = new URL('/curriculum/welcome', siteUrl).href;
+const articleLd = articleSchema({
+  url,
+  headline: welcomeLesson.title,
+  description: 'An orientation before the work begins. What the course is, how it is built, and how it would like to be read.',
+  section: 'Curriculum / Orientation',
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Curriculum', path: '/curriculum' },
+  { name: 'Welcome', path: '/curriculum/welcome' },
+]));
 ---
 
-<Layout title="Welcome — Svapna" description="An orientation before the work begins.">
+<Layout
+  title="Welcome — Svapna"
+  description="An orientation before the work begins."
+  ogType="article"
+  jsonLd={[articleLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
       <a href="/curriculum" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Curriculum</a>

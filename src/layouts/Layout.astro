@@ -1,15 +1,35 @@
 ---
 import '../styles/global.css';
+import { organizationSchema, websiteSchema } from '../lib/seo.js';
 
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
+  ogType?: string;
+  jsonLd?: object | object[];
 }
 
 const {
   title = 'Svapna — Dream Yoga & Lucid Dreaming',
   description = 'A course in dream yoga and lucid dreaming — Mandukya, Tibetan milam, modern lucid-dreaming science. History, practice, community.',
+  ogImage = '/og.jpg',
+  ogType = 'website',
+  jsonLd,
 } = Astro.props;
+
+const siteUrl = Astro.site ? Astro.site.href.replace(/\/$/, '') + '/' : 'https://svapnaproject.org/';
+const canonical = new URL(Astro.url.pathname, siteUrl).href.replace(/\/$/, '') || siteUrl;
+const ogImageAbs = new URL(ogImage, siteUrl).href;
+const twitterImageAbs = new URL('/twitter-card.jpg', siteUrl).href;
+
+// Site-wide schema is always emitted; per-page schemas are appended.
+const allSchemas = [organizationSchema(siteUrl), websiteSchema(siteUrl)];
+if (Array.isArray(jsonLd)) {
+  for (const s of jsonLd) if (s) allSchemas.push(s);
+} else if (jsonLd) {
+  allSchemas.push(jsonLd);
+}
 
 const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
 
@@ -40,12 +60,20 @@ function isActive(href: string) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/og.jpg" />
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImageAbs} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="Svapna" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/twitter-card.jpg" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={twitterImageAbs} />
+    {allSchemas.map(schema => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
   </head>
   <body>
     {/* CSS-only mobile menu controller. Toggled by the hamburger label. */}

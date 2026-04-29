@@ -5,6 +5,7 @@ import InlineMarkdown from '../../../components/InlineMarkdown.astro';
 import { LessonProgressButton } from '../../../components/react/LessonProgressToggle.jsx';
 import { curriculumModules } from '../../../lib/content.js';
 import { lessonsByModule } from '../../../lib/lessons.js';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../../lib/seo.js';
 
 export function getStaticPaths() {
   const paths = [];
@@ -30,11 +31,28 @@ const moduleIndex = curriculumModules.indexOf(mod);
 const nextMod = curriculumModules[moduleIndex + 1];
 const nextModPad = nextMod ? String(parseInt(nextMod.num, 10)).padStart(2, '0') : null;
 const progressKey = `${lesson.moduleNum}-${lesson.lessonNum}`;
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/curriculum/module-${padded}/${lesson.urlSlug}`, siteUrl).href;
+const lessonDescription = lesson.kicker?.replace(/[*_]/g, '').slice(0, 180) || lesson.title;
+const articleLd = articleSchema({
+  url,
+  headline: lesson.title,
+  description: lessonDescription,
+  section: `Curriculum / Module ${mod.roman} — ${mod.title}`,
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Curriculum', path: '/curriculum' },
+  { name: `Module ${mod.roman}`, path: `/curriculum/module-${padded}` },
+  { name: lesson.title, path: `/curriculum/module-${padded}/${lesson.urlSlug}` },
+]));
 ---
 
 <Layout
   title={`${lesson.title} — Module ${mod.roman} — Svapna`}
-  description={lesson.kicker?.replace(/[*_]/g, '').slice(0, 180) || lesson.title}
+  description={lessonDescription}
+  ogType="article"
+  jsonLd={[articleLd, crumbsLd]}
 >
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">

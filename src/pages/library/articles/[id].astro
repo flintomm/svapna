@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { articles } from '../../../lib/content.js';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../../lib/seo.js';
 import articlesData from '../../../data/articles.json';
 
 export function getStaticPaths() {
@@ -14,9 +15,27 @@ const { meta, article } = Astro.props;
 const idx = articles.findIndex(a => a.id === meta.id);
 const prev = idx > 0 ? articles[idx - 1] : null;
 const next = idx < articles.length - 1 ? articles[idx + 1] : null;
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/library/articles/${meta.id}`, siteUrl).href;
+const articleLd = articleSchema({
+  url,
+  headline: meta.title,
+  description: meta.blurb,
+  section: `Library / Article № ${meta.num}`,
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Library', path: '/library' },
+  { name: meta.label, path: `/library/articles/${meta.id}` },
+]));
 ---
 
-<Layout title={`${meta.label} — ${meta.title} — Svapna Library`} description={meta.blurb.slice(0, 180)}>
+<Layout
+  title={`${meta.label} — ${meta.title} — Svapna Library`}
+  description={meta.blurb.slice(0, 180)}
+  ogType="article"
+  jsonLd={[articleLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
       <a href="/library" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Library</a>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { themes } from '../../../lib/content.js';
+import { breadcrumbSchema, buildCrumbs, SITE_LEGAL_NAME } from '../../../lib/seo.js';
 import themedPassages from '../../../data/themed_passages.json';
 
 export function getStaticPaths() {
@@ -11,9 +12,32 @@ export function getStaticPaths() {
 }
 
 const { theme, data } = Astro.props;
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/library/themes/${theme.id}`, siteUrl).href;
+const collectionLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': url,
+  url,
+  name: `${theme.label} — Themes`,
+  description: theme.desc,
+  isPartOf: { '@type': 'WebSite', name: 'Svapna', url: siteUrl },
+  about: { '@type': 'Thing', name: theme.label, description: theme.desc },
+  publisher: { '@type': 'Organization', name: SITE_LEGAL_NAME },
+};
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Library', path: '/library' },
+  { name: 'Themes', path: '/library' },
+  { name: theme.label, path: `/library/themes/${theme.id}` },
+]));
 ---
 
-<Layout title={`${theme.label} — Svapna Themes`} description={theme.desc}>
+<Layout
+  title={`${theme.label} — Svapna Themes`}
+  description={theme.desc}
+  jsonLd={[collectionLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4">
       <a href="/library" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Library · Themes</a>

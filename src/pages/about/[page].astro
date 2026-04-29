@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import ContactForm from '../../components/react/ContactForm.jsx';
 import { aboutPages } from '../../lib/content.js';
+import { breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return Object.keys(aboutPages).map(key => ({ params: { page: key } }));
@@ -16,9 +17,18 @@ const tabs = [
   { id: 'acknowledgments', label: 'Acknowledgments' },
   { id: 'contact', label: 'Contact' },
 ];
+
+const siteUrl = Astro.site.href;
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: data.title, path: `/about/${page}` },
+]));
 ---
 
-<Layout title={`${data.title} — Svapna`} description={data.kicker}>
+<Layout
+  title={`${data.title} — Svapna`}
+  description={data.kicker}
+  jsonLd={[crumbsLd]}
+>
   <div class="fade-in">
     <SectionHeader num="§ —" kicker={data.kicker} title={`${data.title}.`} />
 

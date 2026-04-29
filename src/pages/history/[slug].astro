@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { historyUnits, curriculumModules, articles } from '../../lib/content.js';
 import { lessonsByModule } from '../../lib/lessons.js';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 import timelineData from '../../data/timeline.json';
 import quotesData from '../../data/quotes.json';
 
@@ -25,9 +26,27 @@ const idx = historyUnits.indexOf(unit);
 const prev = idx > 0 ? historyUnits[idx - 1] : null;
 const next = idx < historyUnits.length - 1 ? historyUnits[idx + 1] : null;
 const padded = String(parseInt(unit.moduleNum, 10)).padStart(2, '0');
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/history/${unit.slug}`, siteUrl).href;
+const articleLd = articleSchema({
+  url,
+  headline: `${unit.title} — ${unit.date}`,
+  description: unit.blurb,
+  section: 'History',
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'History', path: '/history' },
+  { name: unit.title, path: `/history/${unit.slug}` },
+]));
 ---
 
-<Layout title={`${unit.title} — Svapna History`} description={unit.blurb.slice(0, 180)}>
+<Layout
+  title={`${unit.title} — Svapna History`}
+  description={unit.blurb.slice(0, 180)}
+  ogType="article"
+  jsonLd={[articleLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
       <a href="/history" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← History</a>

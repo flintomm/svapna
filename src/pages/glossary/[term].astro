@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import InlineMarkdown from '../../components/InlineMarkdown.astro';
 import { glossaryTerms, getLesson } from '../../lib/lessons.js';
+import { definedTermSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return glossaryTerms.map(t => ({ params: { term: t.slug }, props: { entry: t } }));
@@ -14,11 +15,29 @@ const siblings = glossaryTerms.filter(t => t.language === entry.language && t.sl
 const idx = glossaryTerms.findIndex(t => t.slug === entry.slug);
 const prev = idx > 0 ? glossaryTerms[idx - 1] : null;
 const next = idx >= 0 && idx < glossaryTerms.length - 1 ? glossaryTerms[idx + 1] : null;
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/glossary/${entry.slug}`, siteUrl).href;
+const glossaryUrl = new URL('/glossary', siteUrl).href;
+const termLd = definedTermSchema({
+  url,
+  name: entry.term,
+  description: entry.definition,
+  termCode: entry.slug,
+  language: entry.language,
+  inDefinedTermSet: glossaryUrl,
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Glossary', path: '/glossary' },
+  { name: entry.term, path: `/glossary/${entry.slug}` },
+]));
 ---
 
 <Layout
   title={`${entry.term} — Svapna Glossary`}
   description={entry.definition.slice(0, 180)}
+  ogType="article"
+  jsonLd={[termLd, crumbsLd]}
 >
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">

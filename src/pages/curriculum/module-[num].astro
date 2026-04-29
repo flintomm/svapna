@@ -4,6 +4,7 @@ import InlineMarkdown from '../../components/InlineMarkdown.astro';
 import { LessonCheckbox } from '../../components/react/LessonProgressToggle.jsx';
 import { curriculumModules, themes, moduleDeepening } from '../../lib/content.js';
 import { lessonsByModule } from '../../lib/lessons.js';
+import { courseSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return curriculumModules.map(m => {
@@ -22,9 +23,27 @@ const next = moduleIndex < curriculumModules.length - 1 ? curriculumModules[modu
 const prevPad = prev ? String(parseInt(prev.num, 10)).padStart(2, '0') : null;
 const nextPad = next ? String(parseInt(next.num, 10)).padStart(2, '0') : null;
 const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/curriculum/module-${padded}`, siteUrl).href;
+const courseLd = courseSchema({
+  url,
+  name: `${mod.title} — Module ${mod.roman}`,
+  description: mod.overview || mod.blurb,
+  lessonCount: mod.lessonCount,
+  providerUrl: siteUrl,
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Curriculum', path: '/curriculum' },
+  { name: `Module ${mod.roman} — ${mod.title}`, path: `/curriculum/module-${padded}` },
+]));
 ---
 
-<Layout title={`${mod.title} — Module ${mod.roman} — Svapna`} description={mod.blurb.slice(0, 180)}>
+<Layout
+  title={`${mod.title} — Module ${mod.roman} — Svapna`}
+  description={mod.blurb.slice(0, 180)}
+  jsonLd={[courseLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between">
       <a href="/curriculum" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Curriculum</a>

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import MarkdownBody from '../../components/MarkdownBody.astro';
 import InlineMarkdown from '../../components/InlineMarkdown.astro';
 import { glossary, glossaryTerms } from '../../lib/lessons.js';
+import { definedTermSetSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 const byLanguage = {};
 for (const t of glossaryTerms) {
@@ -10,9 +11,24 @@ for (const t of glossaryTerms) {
   byLanguage[t.language].push(t);
 }
 const languages = Object.keys(byLanguage);
+
+const siteUrl = Astro.site.href;
+const url = new URL('/glossary', siteUrl).href;
+const setLd = definedTermSetSchema({
+  url,
+  name: 'Svapna Glossary',
+  description: `${glossaryTerms.length} terms in ${languages.length} languages drawn from the course's primary sources.`,
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Glossary', path: '/glossary' },
+]));
 ---
 
-<Layout title="Glossary — Svapna" description="Five languages, sixty-one terms drawn from the source material.">
+<Layout
+  title="Glossary — Svapna"
+  description={`Five languages, ${glossaryTerms.length} terms drawn from the source material.`}
+  jsonLd={[setLd, crumbsLd]}
+>
   <div class="fade-in">
     <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
       <a href="/" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Home</a>
