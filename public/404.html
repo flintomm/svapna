@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Svapna</title>
+    <script>
+      // GitHub Pages SPA shim. When a client-side route is loaded as a direct
+      // URL (e.g. /history/tibetan-dream-yoga), GitHub Pages serves this
+      // 404.html. We redirect to "/" with the original path stuffed into the
+      // query string. index.html unpacks it back into the URL on first paint
+      // so React Router can pick up where the request meant to go.
+      (function () {
+        var l = window.location;
+        var path = l.pathname.replace(/^\/+/, '/');
+        var redirect = '/?p=' + encodeURIComponent(path) +
+          (l.search ? '&q=' + encodeURIComponent(l.search.slice(1)) : '') +
+          l.hash;
+        l.replace(redirect);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

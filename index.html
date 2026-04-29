@@ -19,6 +19,22 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Counterpart to public/404.html. If we landed here via the SPA
+      // redirect (?p=/history/tibetan-dream-yoga), restore the original path
+      // before React mounts so React Router sees the right URL.
+      (function () {
+        var u = new URL(window.location.href);
+        var p = u.searchParams.get('p');
+        if (p) {
+          u.searchParams.delete('p');
+          var q = u.searchParams.get('q');
+          u.searchParams.delete('q');
+          var search = q ? '?' + q : '';
+          window.history.replaceState(null, '', p + search + u.hash);
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

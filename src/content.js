@@ -4,6 +4,9 @@
 export const historyUnits = [
   {
     num: 'I',
+    slug: 'ancient-origins',
+    moduleNum: '01',
+    articleId: 'ancient_origins',
     title: 'Ancient Origins',
     date: 'c. 1500 BCE — c. 200 CE',
     blurb:
@@ -12,6 +15,9 @@ export const historyUnits = [
   },
   {
     num: 'II',
+    slug: 'tibetan-dream-yoga',
+    moduleNum: '02',
+    articleId: 'tibetan_dream_yoga',
     title: 'Tibetan Dream Yoga',
     date: 'c. 8th — 21st c.',
     blurb:
@@ -20,6 +26,9 @@ export const historyUnits = [
   },
   {
     num: 'III',
+    slug: 'other-asian-traditions',
+    moduleNum: '03',
+    articleId: 'other_asian_traditions',
     title: 'Other Asian Traditions',
     date: 'c. 4th c. BCE — present',
     blurb:
@@ -28,6 +37,9 @@ export const historyUnits = [
   },
   {
     num: 'IV',
+    slug: 'western-rediscovery',
+    moduleNum: '04',
+    articleId: 'western_rediscovery',
     title: 'Western Rediscovery',
     date: '1860 — 1970',
     blurb:
@@ -36,6 +48,9 @@ export const historyUnits = [
   },
   {
     num: 'V',
+    slug: 'modern-scientific-era',
+    moduleNum: '05',
+    articleId: 'modern_scientific_era',
     title: 'The Modern Scientific Era',
     date: '1953 — present',
     blurb:
@@ -44,6 +59,9 @@ export const historyUnits = [
   },
   {
     num: 'VI',
+    slug: 'convergence',
+    moduleNum: '06',
+    articleId: 'contemporary_convergence',
     title: 'Convergence',
     date: '1987 — present',
     blurb:

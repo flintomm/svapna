@@ -1,13 +1,62 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation, useNavigate, useParams, Navigate } from 'react-router-dom';
 import { historyUnits, curriculumModules, library, articles, homeQuote, themes, aboutPages, moduleDeepening } from './content.js';
-import { lessonsByModule, getLesson, welcomeLesson, glossary } from './lessons.js';
+import { lessonsByModule, getLesson, getLessonByUrlSlug, welcomeLesson, glossary, glossaryTerms, getGlossaryTerm } from './lessons.js';
 import timelineData from './data/timeline.json';
 import quotesData from './data/quotes.json';
 
+// Translates the legacy `activeSection` IDs that subcomponents still pass to
+// `goTo()` into real URLs. Keeping this shim means existing call sites
+// (`goTo('history')`, `goTo('lesson-1-3')`, `goTo('article-ancient_origins')`)
+// continue to work while the router takes over what the section state used to
+// do. Anything that doesn't map falls through to root.
+function idToPath(id) {
+  if (!id || id === 'home') return '/';
+  if (id === 'history') return '/history';
+  if (id === 'curriculum') return '/curriculum';
+  if (id === 'community') return '/community';
+  if (id === 'library') return '/library';
+  if (id === 'support') return '/support';
+  if (id === 'glossary') return '/glossary';
+  if (id === 'lesson-welcome') return '/curriculum/welcome';
+  if (id.startsWith('curriculum-')) {
+    const idx = parseInt(id.slice(11), 10);
+    if (Number.isFinite(idx) && idx >= 1) {
+      return `/curriculum/module-${String(idx).padStart(2, '0')}`;
+    }
+  }
+  if (id.startsWith('lesson-')) {
+    const rest = id.slice(7); // 'M-L'
+    const [m, l] = rest.split('-');
+    const lesson = getLesson(m, l);
+    if (lesson) {
+      return `/curriculum/module-${String(parseInt(m, 10)).padStart(2, '0')}/${lesson.urlSlug}`;
+    }
+  }
+  if (id.startsWith('article-')) return `/library/articles/${id.slice(8)}`;
+  if (id.startsWith('theme-')) return `/library/themes/${id.slice(6)}`;
+  if (id.startsWith('about-')) return `/about/${id.slice(6)}`;
+  return '/';
+}
+
+// Inverse of idToPath: which legacy section ID, if any, the current URL
+// represents. Used only for highlighting top-nav items.
+function pathToActiveNav(pathname) {
+  if (pathname === '/' || pathname === '') return 'home';
+  if (pathname.startsWith('/history')) return 'history';
+  if (pathname.startsWith('/curriculum')) return 'curriculum';
+  if (pathname.startsWith('/community')) return 'community';
+  if (pathname.startsWith('/library')) return 'library';
+  if (pathname.startsWith('/support')) return 'support';
+  return null;
+}
+
 export default function DreamYogaApp() {
-  const [activeSection, setActiveSection] = useState('home');
   const [scrollY, setScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const activeNav = pathToActiveNav(location.pathname);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -20,6 +69,12 @@ export default function DreamYogaApp() {
     return () => { document.body.style.overflow = ''; };
   }, [menuOpen]);
 
+  // Scroll back to the top on every route change. The mobile menu is closed
+  // by the navigation handlers themselves, so it doesn't need an effect.
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
   const nav = [
     { id: 'home', label: 'Home', num: '01' },
     { id: 'history', label: 'History', num: '02' },
@@ -30,9 +85,8 @@ export default function DreamYogaApp() {
   ];
 
   const goTo = (id) => {
-    setActiveSection(id);
     setMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigate(idToPath(id));
   };
 
   return (
@@ -101,7 +155,7 @@ export default function DreamYogaApp() {
                 key={item.id}
                 onClick={() => goTo(item.id)}
                 className={`mono text-[10px] uppercase tracking-widest transition-colors ${
-                  activeSection === item.id ? 'text-black' : 'text-neutral-400 hover:text-black'
+                  activeNav === item.id ? 'text-black' : 'text-neutral-400 hover:text-black'
                 }`}
               >
                 <span className="mr-1.5 opacity-50">{item.num}</span>
@@ -138,7 +192,7 @@ export default function DreamYogaApp() {
             >
               <div className="flex items-baseline gap-5">
                 <span className="mono text-[10px] uppercase tracking-widest text-neutral-400 w-6">{item.num}</span>
-                <span className={`display text-4xl ${activeSection === item.id ? 'italic' : ''}`}>{item.label}</span>
+                <span className={`display text-4xl ${activeNav === item.id ? 'italic' : ''}`}>{item.label}</span>
               </div>
               <span className="mono text-[10px] text-neutral-400">→</span>
             </button>
@@ -164,26 +218,24 @@ export default function DreamYogaApp() {
 
       {/* MAIN */}
       <main className="xl:pl-12 pt-14 md:pt-16">
-        {activeSection === 'home' && <HomeSection goTo={goTo} />}
-        {activeSection === 'history' && <HistorySection goTo={goTo} />}
-        {activeSection === 'curriculum' && <CurriculumSection goTo={goTo} />}
-        {activeSection === 'community' && <CommunitySection />}
-        {activeSection === 'library' && <LibrarySection goTo={goTo} />}
-        {activeSection === 'support' && <SupportSection />}
-        {activeSection.startsWith('about-') && <AboutSection page={activeSection.slice(6)} goTo={goTo} />}
-        {activeSection.startsWith('curriculum-') && <ModuleDetail moduleIndex={parseInt(activeSection.slice(11), 10) - 1} goTo={goTo} />}
-        {activeSection === 'lesson-welcome' && <WelcomeLessonPage goTo={goTo} />}
-        {activeSection === 'glossary' && <GlossaryPage goTo={goTo} />}
-        {activeSection.startsWith('lesson-') && activeSection !== 'lesson-welcome' && (() => {
-          const rest = activeSection.slice(7); // 'M-L', e.g. '1-3'
-          const [m, l] = rest.split('-');
-          return <LessonDetail moduleNum={m} lessonNum={l} goTo={goTo} />;
-        })()}
-        {activeSection.startsWith('article-') && (() => {
-          const id = activeSection.slice(8);
-          return <ArticleReader articleId={id} goTo={goTo} />;
-        })()}
-        {activeSection.startsWith('theme-') && <ThemeDetail themeId={activeSection.slice(6)} goTo={goTo} />}
+        <Routes>
+          <Route path="/" element={<HomeSection goTo={goTo} />} />
+          <Route path="/history" element={<HistorySection goTo={goTo} />} />
+          <Route path="/history/:slug" element={<HistoryUnitDetail goTo={goTo} />} />
+          <Route path="/curriculum" element={<CurriculumSection goTo={goTo} />} />
+          <Route path="/curriculum/welcome" element={<WelcomeLessonPage goTo={goTo} />} />
+          <Route path="/curriculum/module-:num" element={<ModuleDetailRoute goTo={goTo} />} />
+          <Route path="/curriculum/module-:num/:lessonSlug" element={<LessonDetailRoute goTo={goTo} />} />
+          <Route path="/community" element={<CommunitySection />} />
+          <Route path="/library" element={<LibrarySection goTo={goTo} />} />
+          <Route path="/library/articles/:id" element={<ArticleReaderRoute goTo={goTo} />} />
+          <Route path="/library/themes/:id" element={<ThemeDetailRoute goTo={goTo} />} />
+          <Route path="/glossary" element={<GlossaryPage goTo={goTo} />} />
+          <Route path="/glossary/:term" element={<GlossaryTermPage goTo={goTo} />} />
+          <Route path="/support" element={<SupportSection />} />
+          <Route path="/about/:page" element={<AboutRoute goTo={goTo} />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
 
       {/* FOOTER */}
@@ -362,6 +414,7 @@ function pickQuoteForUnit(unitNum) {
 
 function HistorySection({ goTo }) {
   const [activeUnit, setActiveUnit] = useState('all');
+  const navigate = useNavigate();
   const sortedTimeline = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key);
   const visibleTimeline = activeUnit === 'all'
     ? sortedTimeline
@@ -371,8 +424,8 @@ function HistorySection({ goTo }) {
     <div className="fade-in">
       <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia, in six movements." />
 
-      {/* UNIT CARDS — each carries a representative quote and links to its
-          curriculum module (history unit N maps to curriculum module N). */}
+      {/* UNIT CARDS — each carries a representative quote and opens its own
+          history-unit page at /history/<slug>. */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {historyUnits.map((u, i) => {
           const unitInt = ROMAN_TO_INT[u.num];
@@ -381,7 +434,7 @@ function HistorySection({ goTo }) {
             <button
               key={i}
               type="button"
-              onClick={() => goTo(`curriculum-${unitInt}`)}
+              onClick={() => navigate(`/history/${u.slug}`)}
               className="text-left p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
             >
               <div>
@@ -1086,6 +1139,7 @@ function WelcomeLessonPage({ goTo }) {
 }
 
 function GlossaryPage({ goTo }) {
+  const navigate = useNavigate();
   if (!glossary) {
     return (
       <div className="p-12 max-w-2xl">
@@ -1094,6 +1148,16 @@ function GlossaryPage({ goTo }) {
       </div>
     );
   }
+
+  // Group terms by language for the citation index. Each chip links to the
+  // term's permanent URL at /glossary/<slug>.
+  const byLanguage = {};
+  for (const t of glossaryTerms) {
+    if (!byLanguage[t.language]) byLanguage[t.language] = [];
+    byLanguage[t.language].push(t);
+  }
+  const languages = Object.keys(byLanguage);
+
   return (
     <div className="fade-in">
       <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
@@ -1107,7 +1171,7 @@ function GlossaryPage({ goTo }) {
           <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
         </div>
         <div className="col-span-9 md:col-span-10 p-5 md:p-8">
-          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Five languages</p>
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Five languages · {glossaryTerms.length} terms</p>
           <h1 className="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{glossary.title}.</h1>
           {glossary.kicker && (
             <p className="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
@@ -1116,9 +1180,39 @@ function GlossaryPage({ goTo }) {
           )}
         </div>
       </div>
+
+      {/* Per-term citation index. Each term is its own URL. */}
+      {languages.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Index</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 space-y-6 md:space-y-8">
+            {languages.map(lang => (
+              <div key={lang}>
+                <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">{lang}</p>
+                <div className="flex flex-wrap gap-2">
+                  {byLanguage[lang].map(t => (
+                    <button
+                      key={t.slug}
+                      type="button"
+                      onClick={() => navigate(`/glossary/${t.slug}`)}
+                      className="mono text-[10px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                      style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}
+                    >
+                      {t.term}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Glossary</span>
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Full glossary</span>
         </div>
         <div className="md:col-span-10 p-6 md:p-12">
           <MarkdownBody text={glossary.body} goTo={goTo} />
@@ -1895,6 +1989,372 @@ function ThemeDetail({ themeId, goTo }) {
           ))}
         </>
       )}
+    </div>
+  );
+}
+
+// ----- ROUTE WRAPPERS ----------------------------------------------------
+// Each thin wrapper unpacks the route's URL parameters and hands them off to
+// the existing page component, which still works in the legacy
+// (moduleNum, lessonNum) shape.
+
+function ModuleDetailRoute({ goTo }) {
+  const { num } = useParams();
+  const moduleIndex = parseInt(num, 10) - 1;
+  if (!Number.isFinite(moduleIndex) || !curriculumModules[moduleIndex]) {
+    return <Navigate to="/curriculum" replace />;
+  }
+  return <ModuleDetail moduleIndex={moduleIndex} goTo={goTo} />;
+}
+
+function LessonDetailRoute({ goTo }) {
+  const { num, lessonSlug } = useParams();
+  const moduleNum = String(parseInt(num, 10));
+  const lesson = getLessonByUrlSlug(moduleNum, lessonSlug);
+  if (!lesson) {
+    return <LessonDetail moduleNum={moduleNum} lessonNum="" goTo={goTo} />;
+  }
+  return <LessonDetail moduleNum={moduleNum} lessonNum={lesson.lessonNum} goTo={goTo} />;
+}
+
+function ArticleReaderRoute({ goTo }) {
+  const { id } = useParams();
+  return <ArticleReader articleId={id} goTo={goTo} />;
+}
+
+function ThemeDetailRoute({ goTo }) {
+  const { id } = useParams();
+  return <ThemeDetail themeId={id} goTo={goTo} />;
+}
+
+function AboutRoute({ goTo }) {
+  const { page } = useParams();
+  if (!aboutPages[page]) return <Navigate to="/about/conduct" replace />;
+  return <AboutSection page={page} goTo={goTo} />;
+}
+
+// ----- HISTORY UNIT DETAIL ----------------------------------------------
+// One permanent page per history unit. Distinct from the curriculum module
+// page (which lists lessons): this is the unit's overview, figures, primary
+// sources, and the cross-links into the lesson sequence and the long-form
+// article. Citable as `/history/<slug>`.
+function HistoryUnitDetail({ goTo }) {
+  const { slug } = useParams();
+  const unit = historyUnits.find(u => u.slug === slug);
+  if (!unit) return <Navigate to="/history" replace />;
+
+  const unitInt = ROMAN_TO_INT[unit.num];
+  const mod = curriculumModules.find(m => m.num === unit.moduleNum);
+  const article = articles.find(a => a.id === unit.articleId);
+  const lessons = (lessonsByModule[String(parseInt(unit.moduleNum, 10))] || []);
+  const unitTimeline = [...timelineData.entries]
+    .filter(e => e.unit === unitInt)
+    .sort((a, b) => a.sort_key - b.sort_key);
+  const repQuote = pickQuoteForUnit(unitInt);
+
+  const idx = historyUnits.indexOf(unit);
+  const prev = idx > 0 ? historyUnits[idx - 1] : null;
+  const next = idx < historyUnits.length - 1 ? historyUnits[idx + 1] : null;
+
+  return (
+    <div className="fade-in">
+      {/* Crumb */}
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo('history')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← History
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">
+          Unit {unit.num} of VI
+        </span>
+      </div>
+
+      {/* Header */}
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 02 · {unit.num}</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{unit.date}</p>
+          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{unit.title}.</h1>
+          <p className="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">{unit.blurb}</p>
+        </div>
+      </div>
+
+      {/* Figures */}
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Figures</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <p className="display text-xl md:text-2xl italic leading-snug text-neutral-700 max-w-3xl">{unit.figures.join(' · ')}</p>
+        </div>
+      </div>
+
+      {/* Representative quote */}
+      {repQuote && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Voice</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 max-w-3xl">
+            <p className="display text-xl md:text-3xl italic leading-snug text-neutral-800">&ldquo;{repQuote.text}&rdquo;</p>
+            <div className="mt-4 md:mt-6 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+              <span className="mono text-[10px] uppercase tracking-widest">— {repQuote.attribution}</span>
+              <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{repQuote.citation}</span>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Cross-links: corresponding curriculum module + long-form article */}
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        {mod && (
+          <button
+            type="button"
+            onClick={() => goTo(`curriculum-${unitInt}`)}
+            className="text-left p-6 sm:p-8 md:p-12 hairline-b md:hairline-r active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+          >
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Curriculum · Module {mod.roman}</span>
+            <h3 className="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight group-hover:italic transition-all">{mod.title}</h3>
+            <p className="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{mod.blurb}</p>
+            <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">
+              {mod.lessonCount} lessons →
+            </p>
+          </button>
+        )}
+        {article && (
+          <button
+            type="button"
+            onClick={() => goTo(`article-${article.id}`)}
+            className="text-left p-6 sm:p-8 md:p-12 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+          >
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">Library · Article № {article.num}</span>
+            <h3 className="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight group-hover:italic transition-all">{article.title}</h3>
+            <p className="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{article.blurb}</p>
+            <p className="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">
+              ~{(article.word_count / 1000).toFixed(1)}k words · Read →
+            </p>
+          </button>
+        )}
+      </div>
+
+      {/* Lessons in this unit's module */}
+      {lessons.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lessons</span>
+          </div>
+          <div className="md:col-span-10">
+            {lessons.map((l, i) => (
+              <button
+                key={`${l.moduleNum}-${l.lessonNum}`}
+                type="button"
+                onClick={() => goTo(`lesson-${l.moduleNum}-${l.lessonNum}`)}
+                className="w-full text-left grid grid-cols-12 hairline-b py-4 md:py-5 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+              >
+                <span className="col-span-2 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400">{String(i + 1).padStart(2, '0')}</span>
+                <span className="col-span-9 md:col-span-10 display text-lg md:text-xl leading-snug group-hover:italic transition-all">{l.title}</span>
+                <span className="col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 group-hover:text-black group-hover:translate-x-1 transition-all text-right">→</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Timeline events restricted to this unit */}
+      {unitTimeline.length > 0 && (
+        <div className="hairline-b">
+          <div className="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+            <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Timeline</p>
+            <h2 className="display text-3xl md:text-5xl mt-2 md:mt-3">{unitTimeline.length} dated events.</h2>
+          </div>
+          <div className="hairline-t">
+            {unitTimeline.map((entry, i) => (
+              <div key={i} className="grid grid-cols-12 hairline-b py-4 md:py-5 px-5 md:px-12">
+                <div className="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
+                <div className="col-span-12 md:col-span-10">
+                  <p className="display text-lg md:text-xl leading-tight">{entry.title}</p>
+                  <p className="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Prev / next unit */}
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prev ? (
+            <PrevNextLink to={`/history/${prev.slug}`} label={`← Unit ${prev.num}`} title={prev.title} align="left" />
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {next ? (
+            <PrevNextLink to={`/history/${next.slug}`} label={`Unit ${next.num} →`} title={next.title} align="right" />
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End of history</span>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PrevNextLink({ to, label, title, align }) {
+  const navigate = useNavigate();
+  return (
+    <button
+      type="button"
+      onClick={() => navigate(to)}
+      className={`${align === 'right' ? 'text-right' : 'text-left'} w-full hover:italic transition-all`}
+    >
+      <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">{label}</p>
+      <p className="display text-base md:text-xl mt-2 leading-snug italic">{title}</p>
+    </button>
+  );
+}
+
+// ----- GLOSSARY TERM PAGE -----------------------------------------------
+// One permanent page per glossary term, citable as `/glossary/<slug>`.
+function GlossaryTermPage({ goTo }) {
+  const { term: termSlug } = useParams();
+  const entry = getGlossaryTerm(termSlug);
+  const navigate = useNavigate();
+
+  if (!entry) {
+    return (
+      <div className="fade-in">
+        <div className="hairline-b px-5 md:px-12 py-4">
+          <button type="button" onClick={() => goTo('glossary')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+            ← Glossary
+          </button>
+        </div>
+        <div className="p-12 max-w-2xl">
+          <p className="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-6">Term not found</p>
+          <p className="display text-xl md:text-2xl italic text-neutral-600 leading-snug">No glossary entry matches “{termSlug}”.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Lesson reference like "Module 1, Lesson 2" or compound forms.
+  const lessonRefs = (entry.lessonRef || '').split(';').map(s => s.trim()).filter(Boolean);
+
+  // Sibling terms in the same language for in-page browsing.
+  const siblings = glossaryTerms.filter(t => t.language === entry.language && t.slug !== entry.slug);
+  const idx = glossaryTerms.indexOf(entry);
+  const prev = idx > 0 ? glossaryTerms[idx - 1] : null;
+  const next = idx >= 0 && idx < glossaryTerms.length - 1 ? glossaryTerms[idx + 1] : null;
+
+  return (
+    <div className="fade-in">
+      <div className="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+        <button type="button" onClick={() => goTo('glossary')} className="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+          ← Glossary
+        </button>
+        <span className="mono text-[10px] uppercase tracking-widest text-neutral-500">{entry.language || 'Term'}</span>
+      </div>
+
+      <div className="grid grid-cols-12 hairline-b">
+        <div className="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
+        </div>
+        <div className="col-span-9 md:col-span-10 p-5 md:p-8">
+          {entry.languageTag && (
+            <p className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{entry.languageTag}</p>
+          )}
+          <h1 className="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight italic">
+            {entry.term}
+          </h1>
+          {entry.aliases.length > 0 && (
+            <p className="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+              also: {entry.aliases.join(' / ')}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Definition</span>
+        </div>
+        <div className="md:col-span-10 p-6 md:p-12">
+          <p className="text-base md:text-lg leading-loose max-w-3xl">
+            {renderInline(entry.definition, `gt-${entry.slug}`, goTo)}
+          </p>
+        </div>
+      </div>
+
+      {lessonRefs.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Introduced in</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-3">
+            {lessonRefs.map((ref, i) => {
+              const m = ref.match(/Module\s+(\d+),\s*Lesson\s+(\d+)/);
+              if (!m) return <p key={i} className="text-base md:text-lg leading-loose">{ref}</p>;
+              const mod = m[1];
+              const les = m[2];
+              const lesson = getLesson(mod, les);
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => goTo(`lesson-${mod}-${les}`)}
+                  className="text-left w-full hover:italic transition-all"
+                >
+                  <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Module {mod}, Lesson {les}</p>
+                  {lesson && <p className="display text-lg md:text-xl mt-1 leading-snug italic">{lesson.title}</p>}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {siblings.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-12 hairline-b">
+          <div className="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+            <span className="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Other {entry.language} terms</span>
+          </div>
+          <div className="md:col-span-10 p-6 md:p-12">
+            <div className="flex flex-wrap gap-2">
+              {siblings.map(s => (
+                <button
+                  key={s.slug}
+                  type="button"
+                  onClick={() => navigate(`/glossary/${s.slug}`)}
+                  className="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                  style={{ border: '0.5px solid rgba(0,0,0,0.3)' }}
+                >
+                  {s.term}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <div className="hairline-b grid grid-cols-2">
+        <div className="hairline-r p-5 md:p-8">
+          {prev ? (
+            <PrevNextLink to={`/glossary/${prev.slug}`} label="← Previous term" title={prev.term} align="left" />
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+          )}
+        </div>
+        <div className="p-5 md:p-8 text-right">
+          {next ? (
+            <PrevNextLink to={`/glossary/${next.slug}`} label="Next term →" title={next.term} align="right" />
+          ) : (
+            <span className="mono text-[10px] uppercase tracking-widest text-neutral-400">End</span>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
