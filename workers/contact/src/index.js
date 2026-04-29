@@ -147,14 +147,16 @@ async function handleSubscribe(request, env, origin) {
     body: JSON.stringify({ email_address: email }),
   });
 
-  // Buttondown returns 201 on create. Already-subscribed emails return a 4xx
-  // with code "email_already_exists" — treat those as success so the form
-  // doesn't reveal whether the address was already on the list.
+  // Buttondown returns 201 on create. Several 4xx outcomes are treated as
+  // success so the form never reveals subscriber-list state to the caller:
+  //   - email_already_exists — address is already on the list
+  //   - subscriber_blocked   — address tripped the account firewall
+  // Genuine failures (auth, network, schema) still surface as 502.
   if (send.ok) {
     return jsonResponse({ ok: true }, 200, origin);
   }
   const bodyText = await send.text().catch(() => '');
-  if (/already|exists|duplicate/i.test(bodyText)) {
+  if (/already|exists|duplicate|blocked|firewall/i.test(bodyText)) {
     return jsonResponse({ ok: true }, 200, origin);
   }
   console.error('Buttondown subscribe failed', send.status, bodyText.slice(0, 500));
