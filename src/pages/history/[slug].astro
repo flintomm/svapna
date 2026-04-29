@@ -1,0 +1,164 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { historyUnits, curriculumModules, articles } from '../../lib/content.js';
+import { lessonsByModule } from '../../lib/lessons.js';
+import timelineData from '../../data/timeline.json';
+import quotesData from '../../data/quotes.json';
+
+export function getStaticPaths() {
+  return historyUnits.map(u => ({ params: { slug: u.slug }, props: { unit: u } }));
+}
+
+const { unit } = Astro.props;
+
+const ROMAN_TO_INT = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6 };
+const unitInt = ROMAN_TO_INT[unit.num];
+const mod = curriculumModules.find(m => m.num === unit.moduleNum);
+const article = articles.find(a => a.id === unit.articleId);
+const lessons = lessonsByModule[String(parseInt(unit.moduleNum, 10))] || [];
+const unitTimeline = [...timelineData.entries]
+  .filter(e => e.unit === unitInt)
+  .sort((a, b) => a.sort_key - b.sort_key);
+const repQuote = quotesData.quotes.find(q => q.unit === unitInt) || null;
+
+const idx = historyUnits.indexOf(unit);
+const prev = idx > 0 ? historyUnits[idx - 1] : null;
+const next = idx < historyUnits.length - 1 ? historyUnits[idx + 1] : null;
+const padded = String(parseInt(unit.moduleNum, 10)).padStart(2, '0');
+---
+
+<Layout title={`${unit.title} — Svapna History`} description={unit.blurb.slice(0, 180)}>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/history" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← History</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Unit {unit.num} of VI</span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 02 · {unit.num}</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{unit.date}</p>
+        <h1 class="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{unit.title}.</h1>
+        <p class="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">{unit.blurb}</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Figures</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <p class="display text-xl md:text-2xl italic leading-snug text-neutral-700 max-w-3xl">{unit.figures.join(' · ')}</p>
+      </div>
+    </div>
+
+    {repQuote && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Voice</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
+          <p class="display text-xl md:text-3xl italic leading-snug text-neutral-800">&ldquo;{repQuote.text}&rdquo;</p>
+          <div class="mt-4 md:mt-6 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
+            <span class="mono text-[10px] uppercase tracking-widest">— {repQuote.attribution}</span>
+            <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{repQuote.citation}</span>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      {mod && (
+        <a
+          href={`/curriculum/module-${padded}`}
+          class="text-left p-6 sm:p-8 md:p-12 hairline-b md:hairline-r active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group block"
+        >
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Curriculum · Module {mod.roman}</span>
+          <h3 class="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight group-hover:italic transition-all">{mod.title}</h3>
+          <p class="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{mod.blurb}</p>
+          <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">
+            {mod.lessonCount} lessons →
+          </p>
+        </a>
+      )}
+      {article && (
+        <a
+          href={`/library/articles/${article.id}`}
+          class="text-left p-6 sm:p-8 md:p-12 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group block"
+        >
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Library · Article № {article.num}</span>
+          <h3 class="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight group-hover:italic transition-all">{article.title}</h3>
+          <p class="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{article.blurb}</p>
+          <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">
+            ~{(article.word_count / 1000).toFixed(1)}k words · Read →
+          </p>
+        </a>
+      )}
+    </div>
+
+    {lessons.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lessons</span>
+        </div>
+        <div class="md:col-span-10">
+          {lessons.map((l, i) => (
+            <a
+              href={`/curriculum/module-${padded}/${l.urlSlug}`}
+              class="w-full text-left grid grid-cols-12 hairline-b py-4 md:py-5 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+            >
+              <span class="col-span-2 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400">{String(i + 1).padStart(2, '0')}</span>
+              <span class="col-span-9 md:col-span-10 display text-lg md:text-xl leading-snug group-hover:italic transition-all">{l.title}</span>
+              <span class="col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 group-hover:text-black group-hover:translate-x-1 transition-all text-right">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {unitTimeline.length > 0 && (
+      <div class="hairline-b">
+        <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Timeline</p>
+          <h2 class="display text-3xl md:text-5xl mt-2 md:mt-3">{unitTimeline.length} dated events.</h2>
+        </div>
+        <div class="hairline-t">
+          {unitTimeline.map(entry => (
+            <div class="grid grid-cols-12 hairline-b py-4 md:py-5 px-5 md:px-12">
+              <div class="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
+              <div class="col-span-12 md:col-span-10">
+                <p class="display text-lg md:text-xl leading-tight">{entry.title}</p>
+                <p class="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {prev ? (
+          <a href={`/history/${prev.slug}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Unit {prev.num}</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{prev.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {next ? (
+          <a href={`/history/${next.slug}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Unit {next.num} →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{next.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End of history</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

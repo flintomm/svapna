@@ -1,0 +1,28 @@
+---
+interface Props {
+  num: string;
+  kicker: string;
+  title: string;
+  sub?: string;
+}
+
+const { num, kicker, title, sub } = Astro.props;
+const hasSubSlot = Astro.slots.has('sub');
+---
+
+<div class="grid grid-cols-12 hairline-b fade-in">
+  <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+    <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{num}</span>
+  </div>
+  <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+    <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{kicker}</p>
+    <h1 class="display text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tight">{title}</h1>
+    {hasSubSlot ? (
+      <p class="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-2xl">
+        <slot name="sub" />
+      </p>
+    ) : sub ? (
+      <p class="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-2xl">{sub}</p>
+    ) : null}
+  </div>
+</div>

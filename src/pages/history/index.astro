@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import Filter from '../../components/react/Filter.jsx';
+import { historyUnits } from '../../lib/content.js';
+import timelineData from '../../data/timeline.json';
+import quotesData from '../../data/quotes.json';
+
+const ROMAN_TO_INT = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6 };
+function pickQuoteForUnit(unitNum) {
+  return quotesData.quotes.find(q => q.unit === unitNum) || null;
+}
+function truncate(text, maxLen) {
+  if (text.length <= maxLen) return text;
+  const slice = text.slice(0, maxLen);
+  const lastSpace = slice.lastIndexOf(' ');
+  return slice.slice(0, lastSpace > 0 ? lastSpace : maxLen).trimEnd() + '…';
+}
+
+const sortedTimeline = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key);
+const filterOptions = [1, 2, 3, 4, 5, 6].map(n => ({
+  value: String(n),
+  label: `${['I', 'II', 'III', 'IV', 'V', 'VI'][n - 1]}. ${timelineData.units[n]}`,
+}));
+---
+
+<Layout
+  title="History — Svapna"
+  description="Three millennia of dream and sleep practice across the contemplative traditions, in six movements."
+>
+  <div class="fade-in">
+    <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia, in six movements." />
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      {historyUnits.map(u => {
+        const unitInt = ROMAN_TO_INT[u.num];
+        const quote = pickQuoteForUnit(unitInt);
+        return (
+          <a
+            href={`/history/${u.slug}`}
+            class="text-left p-6 sm:p-8 md:p-10 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+          >
+            <div>
+              <div class="flex justify-between items-baseline">
+                <span class="display text-4xl md:text-5xl italic">{u.num}.</span>
+                <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{u.date}</span>
+              </div>
+              <h3 class="display text-2xl md:text-3xl mt-6 md:mt-8 leading-tight group-hover:italic transition-all">{u.title}</h3>
+              <p class="text-sm leading-relaxed mt-5 md:mt-6 text-neutral-700">{u.blurb}</p>
+            </div>
+            {quote && (
+              <div class="hairline-t pt-4 mt-6">
+                <p class="display text-base md:text-lg italic leading-snug text-neutral-800">&ldquo;{truncate(quote.text, 180)}&rdquo;</p>
+                <p class="mono text-[9px] uppercase tracking-widest mt-3 text-neutral-500">— {quote.attribution}</p>
+              </div>
+            )}
+            <div class="hairline-t pt-4 mt-4 flex items-end justify-between gap-3">
+              <div>
+                <p class="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">Figures</p>
+                <p class="text-xs leading-relaxed text-neutral-600">{u.figures.join(' · ')}</p>
+              </div>
+              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform shrink-0">Unit →</span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <div class="hairline-b">
+      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
+        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Timeline.</h2>
+        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          {timelineData.entries.length} dated events across the six units. Filter by unit.
+        </p>
+      </div>
+      <div class="px-5 md:px-12 py-4 hairline-t">
+        <Filter id="timeline" options={filterOptions} client:load />
+      </div>
+      <div data-filter-root="timeline">
+        {sortedTimeline.map(entry => (
+          <div data-filter-value={String(entry.unit)} class="grid grid-cols-12 hairline-t py-4 md:py-5 px-5 md:px-12">
+            <div class="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-600 mb-1 md:mb-0">{entry.date}</div>
+            <div class="col-span-12 md:col-span-2 mono text-[9px] uppercase tracking-widest text-neutral-400 mb-1 md:mb-0">
+              {timelineData.units[entry.unit]}
+            </div>
+            <div class="col-span-12 md:col-span-8">
+              <p class="display text-lg md:text-xl leading-tight">{entry.title}</p>
+              <p class="text-xs md:text-sm leading-relaxed text-neutral-600 mt-1 md:mt-2">{entry.summary}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

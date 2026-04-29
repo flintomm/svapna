@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MarkdownBody from '../../components/MarkdownBody.astro';
+import InlineMarkdown from '../../components/InlineMarkdown.astro';
+import { glossary, glossaryTerms } from '../../lib/lessons.js';
+
+const byLanguage = {};
+for (const t of glossaryTerms) {
+  if (!byLanguage[t.language]) byLanguage[t.language] = [];
+  byLanguage[t.language].push(t);
+}
+const languages = Object.keys(byLanguage);
+---
+
+<Layout title="Glossary — Svapna" description="Five languages, sixty-one terms drawn from the source material.">
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Home</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Reference</span>
+    </div>
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">
+          Five languages · {glossaryTerms.length} terms
+        </p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          {glossary.title}.
+        </h1>
+        {glossary.kicker && (
+          <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+            <InlineMarkdown text={glossary.kicker} />
+          </p>
+        )}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Index</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12 space-y-6 md:space-y-8">
+        {languages.map(lang => (
+          <div>
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-3">{lang}</p>
+            <div class="flex flex-wrap gap-2">
+              {byLanguage[lang].map(t => (
+                <a
+                  href={`/glossary/${t.slug}`}
+                  class="mono text-[10px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                  style="border: 0.5px solid rgba(0,0,0,0.3)"
+                >
+                  {t.term}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Full glossary</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <MarkdownBody text={glossary.body} />
+      </div>
+    </div>
+  </div>
+</Layout>

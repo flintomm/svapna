@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import { curriculumModules } from '../../lib/content.js';
+import { lessonsByModule } from '../../lib/lessons.js';
+
+// Module progress is fetched client-side from localStorage; the server-rendered
+// page shows totals only.
+const moduleTotals = curriculumModules.map(m => {
+  const lessons = lessonsByModule[String(parseInt(m.num, 10))] || [];
+  return { num: m.num, total: lessons.length };
+});
+---
+
+<Layout title="Curriculum — Svapna" description="Six modules, forty-seven short lessons. Self-paced.">
+  <div class="fade-in">
+    <SectionHeader
+      num="§ 03"
+      kicker="The Course"
+      title="Curriculum."
+      sub="Six modules, forty-seven short lessons. Self-paced."
+    />
+
+    <a
+      href="/curriculum/welcome"
+      class="block w-full text-left p-6 md:p-10 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+    >
+      <div class="flex justify-between items-baseline">
+        <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 00 · Orientation</span>
+        <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform">Read →</span>
+      </div>
+      <h3 class="display text-3xl md:text-4xl mt-3 group-hover:italic transition-all">Welcome — How to read this course.</h3>
+      <p class="text-sm leading-relaxed mt-3 text-neutral-700 max-w-3xl">An orientation before the work begins. What the course is, how it is built, and how it would like to be read.</p>
+    </a>
+
+    <div class="md:hidden">
+      {curriculumModules.map(m => {
+        const padded = String(parseInt(m.num, 10)).padStart(2, '0');
+        const total = moduleTotals.find(t => t.num === m.num)?.total ?? 0;
+        return (
+          <a
+            href={`/curriculum/module-${padded}`}
+            class="block w-full text-left p-6 hairline-b active:bg-neutral-100 transition-colors"
+          >
+            <div class="flex justify-between items-baseline">
+              <span class="display text-4xl italic">{m.roman}.</span>
+              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{m.lessonCount} lessons</span>
+            </div>
+            <h3 class="display text-3xl mt-4 leading-tight">{m.title}</h3>
+            <p class="text-sm leading-relaxed mt-4 text-neutral-700">{m.blurb}</p>
+            <div class="mt-5 flex justify-between items-baseline">
+              <span class="mono text-[9px] uppercase tracking-widest text-neutral-500" data-module-progress={m.num} data-module-total={total}>0 of {total} complete</span>
+              <span class="mono text-[10px] uppercase tracking-widest">Enter →</span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+    <div class="hidden md:block">
+      {curriculumModules.map(m => {
+        const padded = String(parseInt(m.num, 10)).padStart(2, '0');
+        const total = moduleTotals.find(t => t.num === m.num)?.total ?? 0;
+        return (
+          <a
+            href={`/curriculum/module-${padded}`}
+            class="block w-full text-left grid grid-cols-12 hairline-b hover:bg-neutral-50 transition-colors group"
+          >
+            <div class="col-span-1 p-8 hairline-r flex items-center justify-center">
+              <span class="display text-3xl italic">{m.roman}</span>
+            </div>
+            <div class="col-span-2 p-8 hairline-r flex items-center">
+              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{m.lessonCount} lessons</span>
+            </div>
+            <div class="col-span-3 p-8 hairline-r flex items-center">
+              <h3 class="display text-3xl group-hover:italic transition-all leading-tight">{m.title}</h3>
+            </div>
+            <div class="col-span-4 p-8 hairline-r flex items-center">
+              <p class="text-sm leading-relaxed">{m.blurb}</p>
+            </div>
+            <div class="col-span-2 p-8 flex items-center justify-between gap-4">
+              <span class="mono text-[9px] uppercase tracking-widest text-neutral-500" data-module-progress={m.num} data-module-total={total}>0/{total}</span>
+              <span class="mono text-[10px] uppercase tracking-widest group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <script is:inline define:vars={{ lessonsByModule: Object.fromEntries(Object.entries(lessonsByModule).map(([k, v]) => [k, v.map(l => `${l.moduleNum}-${l.lessonNum}`)])) }}>
+    // Hydrate module progress from localStorage. Pure DOM, no React.
+    (function () {
+      var raw;
+      try { raw = JSON.parse(localStorage.getItem('svapna_progress') || '[]'); } catch (e) { raw = []; }
+      var done = new Set(raw);
+      document.querySelectorAll('[data-module-progress]').forEach(function (el) {
+        var num = el.getAttribute('data-module-progress');
+        var total = parseInt(el.getAttribute('data-module-total'), 10) || 0;
+        var keys = lessonsByModule[String(parseInt(num, 10))] || [];
+        var count = keys.filter(function (k) { return done.has(k); }).length;
+        if (el.textContent.includes(' of ')) {
+          el.textContent = count + ' of ' + total + ' complete';
+        } else {
+          el.textContent = count + '/' + total;
+        }
+      });
+    })();
+  </script>
+</Layout>

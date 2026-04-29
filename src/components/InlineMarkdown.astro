@@ -1,0 +1,12 @@
+---
+import { renderInline } from '../lib/markdown.js';
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const html = renderInline(text || '');
+---
+
+<Fragment set:html={html} />

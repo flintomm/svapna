@@ -1,0 +1,167 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Svapna — Dream Yoga & Lucid Dreaming',
+  description = 'A course in dream yoga and lucid dreaming — Mandukya, Tibetan milam, modern lucid-dreaming science. History, practice, community.',
+} = Astro.props;
+
+const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
+const nav = [
+  { href: '/', label: 'Home', num: '01' },
+  { href: '/history', label: 'History', num: '02' },
+  { href: '/curriculum', label: 'Curriculum', num: '03' },
+  { href: '/community', label: 'Community', num: '04' },
+  { href: '/library', label: 'Library', num: '05' },
+  { href: '/support', label: 'Support', num: '06' },
+];
+
+function isActive(href: string) {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href + '/');
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/twitter-card.jpg" />
+  </head>
+  <body>
+    {/* CSS-only mobile menu controller. Toggled by the hamburger label. */}
+    <input type="checkbox" id="menu-toggle" aria-hidden="true" />
+
+    <header class="fixed top-0 left-0 right-0 bg-white z-50 hairline-b">
+      <div class="flex items-center justify-between px-5 md:px-8 py-3.5 md:py-4">
+        <div class="flex items-center gap-3 md:gap-6">
+          <a href="/" class="mono text-[10px] uppercase tracking-widest">∴ Svapna</a>
+          <div class="mono text-[10px] uppercase tracking-widest text-neutral-400 hidden sm:block">Est. MMXXVI</div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-6">
+          {nav.map(item => (
+            <a
+              href={item.href}
+              class={`mono text-[10px] uppercase tracking-widest transition-colors ${isActive(item.href) ? 'text-black' : 'text-neutral-400 hover:text-black'}`}
+            >
+              <span class="mr-1.5 opacity-50">{item.num}</span>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <label
+          for="menu-toggle"
+          class="lg:hidden flex flex-col justify-center items-end gap-1.5 w-10 h-10 -mr-2 cursor-pointer"
+          aria-label="Menu"
+        >
+          <span class="hamburger-line l1"></span>
+          <span class="hamburger-line l2"></span>
+          <span class="hamburger-line l3"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="menu-overlay fixed inset-0 z-40 bg-white pt-16 lg:hidden menu-slide overflow-y-auto">
+      <div class="hairline-b px-5 py-4">
+        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Index</p>
+      </div>
+      {nav.map((item, i) => (
+        <a
+          href={item.href}
+          class="menu-item w-full text-left hairline-b px-5 py-6 flex items-baseline justify-between active:bg-neutral-100 transition-colors"
+          style={`animation-delay: ${i * 60}ms`}
+        >
+          <span class="flex items-baseline gap-5">
+            <span class="mono text-[10px] uppercase tracking-widest text-neutral-400 w-6">{item.num}</span>
+            <span class={`display text-4xl ${isActive(item.href) ? 'italic' : ''}`}>{item.label}</span>
+          </span>
+          <span class="mono text-[10px] text-neutral-400">→</span>
+        </a>
+      ))}
+      <div class="px-5 py-8">
+        <p class="display text-xl italic text-neutral-500 leading-relaxed">
+          "All that we see or seem<br />is but a dream within a dream."
+        </p>
+        <p class="mono text-[9px] uppercase tracking-widest mt-4 text-neutral-400">— E. A. Poe, 1849</p>
+      </div>
+    </div>
+
+    <div class="fixed left-0 top-0 bottom-0 w-12 hairline-r z-40 flex-col items-center justify-between py-20 hidden xl:flex">
+      <div class="vert-text mono text-[9px] uppercase tracking-[0.3em] text-neutral-500">
+        A study in dream and dissolution
+      </div>
+      <div id="scroll-counter" class="mono text-[9px] text-neutral-400">00</div>
+    </div>
+
+    <main class="xl:pl-12 pt-14 md:pt-16">
+      <slot />
+    </main>
+
+    <footer class="xl:ml-12 hairline-t mt-20 md:mt-32">
+      <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="md:col-span-6 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
+          <p class="display text-2xl md:text-3xl italic leading-tight">
+            "All that we see or seem<br />is but a dream within a dream."
+          </p>
+          <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 text-neutral-500">— E. A. Poe, 1849</p>
+        </div>
+        <div class="md:col-span-3 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Index</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/glossary" class="hover:italic transition-all">Glossary</a></li>
+            <li><a href="/about/conduct" class="hover:italic transition-all">Code of Conduct</a></li>
+            <li><a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a></li>
+            <li><a href="/about/contact" class="hover:italic transition-all">Contact</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3 p-8 md:p-12">
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Dāna</p>
+          <p class="text-sm leading-relaxed">
+            In the tradition of giving. Take what serves. Pass forward when able.
+          </p>
+        </div>
+      </div>
+      <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
+        <span>© Svapna Project</span>
+        <span>Vol. I / Iss. I</span>
+        <span>MMXXVI</span>
+      </div>
+    </footer>
+
+    <script is:inline>
+      // Side-rail scroll counter. Tiny enough to inline; runs only on screens
+      // wide enough to show the rail.
+      (function () {
+        var el = document.getElementById('scroll-counter');
+        if (!el) return;
+        var update = function () {
+          var n = Math.min(99, Math.floor(window.scrollY / 20));
+          el.textContent = String(n).padStart(2, '0');
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+      })();
+    </script>
+  </body>
+</html>

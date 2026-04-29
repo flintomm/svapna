@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionHeader from '../../components/SectionHeader.astro';
+import ContactForm from '../../components/react/ContactForm.jsx';
+import { aboutPages } from '../../lib/content.js';
+
+export function getStaticPaths() {
+  return Object.keys(aboutPages).map(key => ({ params: { page: key } }));
+}
+
+const { page } = Astro.params;
+const data = aboutPages[page];
+
+const tabs = [
+  { id: 'conduct', label: 'Code of Conduct' },
+  { id: 'acknowledgments', label: 'Acknowledgments' },
+  { id: 'contact', label: 'Contact' },
+];
+---
+
+<Layout title={`${data.title} — Svapna`} description={data.kicker}>
+  <div class="fade-in">
+    <SectionHeader num="§ —" kicker={data.kicker} title={`${data.title}.`} />
+
+    <div class="px-5 md:px-12 py-3 hairline-b flex flex-wrap gap-2">
+      {tabs.map(t => (
+        <a
+          href={`/about/${t.id}`}
+          class={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-2 transition-colors ${page === t.id ? 'bg-black text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
+          style="border: 0.5px solid #000"
+        >
+          {t.label}
+        </a>
+      ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{data.title}</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-6 md:space-y-8">
+        {data.paragraphs.map(p => (
+          <p class="text-base md:text-lg leading-loose">{p}</p>
+        ))}
+        {page === 'contact' && <ContactForm email={data.email} client:load />}
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -6,17 +6,17 @@
 // as plain JS so the React layer can render them without further I/O.
 
 const LESSON_FILES = import.meta.glob(
-  '../reference-material/11_online/module_*/*.md',
+  '../../reference-material/11_online/module_*/*.md',
   { query: '?raw', import: 'default', eager: true }
 );
 
 const WELCOME_FILES = import.meta.glob(
-  '../reference-material/11_online/00_welcome.md',
+  '../../reference-material/11_online/00_welcome.md',
   { query: '?raw', import: 'default', eager: true }
 );
 
 const GLOSSARY_FILES = import.meta.glob(
-  '../reference-material/11_online/glossary.md',
+  '../../reference-material/11_online/glossary.md',
   { query: '?raw', import: 'default', eager: true }
 );
 

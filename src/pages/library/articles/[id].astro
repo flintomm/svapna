@@ -1,0 +1,95 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { articles } from '../../../lib/content.js';
+import articlesData from '../../../data/articles.json';
+
+export function getStaticPaths() {
+  return articles.map(meta => {
+    const article = (articlesData.articles || []).find(a => a.id === meta.id) || null;
+    return { params: { id: meta.id }, props: { meta, article } };
+  });
+}
+
+const { meta, article } = Astro.props;
+const idx = articles.findIndex(a => a.id === meta.id);
+const prev = idx > 0 ? articles[idx - 1] : null;
+const next = idx < articles.length - 1 ? articles[idx + 1] : null;
+---
+
+<Layout title={`${meta.label} — ${meta.title} — Svapna Library`} description={meta.blurb.slice(0, 180)}>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/library" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Library</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Article № {meta.num}</span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Article</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {meta.num} · {meta.label}</p>
+        <h1 class="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mt-3 md:mt-4">{meta.title}</h1>
+        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl leading-snug">{meta.blurb}</p>
+      </div>
+    </div>
+
+    {article ? (
+      <div class="px-5 md:px-12 py-10 md:py-16">
+        <div class="max-w-3xl space-y-5 md:space-y-6">
+          {(article.blocks || []).map(b => {
+            if (b.kind === 'rule') {
+              return <div class="hairline-t my-4 md:my-6"></div>;
+            }
+            if (b.kind === 'h2') {
+              return <h2 class="display text-2xl md:text-3xl leading-tight mt-8 md:mt-12 mb-2">{b.text}</h2>;
+            }
+            if (b.kind === 'h3') {
+              return <h3 class="display text-xl md:text-2xl italic leading-snug mt-6 md:mt-8 mb-1 text-neutral-800">{b.text}</h3>;
+            }
+            if (b.kind === 'quote') {
+              return (
+                <blockquote class="hairline-l pl-5 md:pl-6 display text-lg md:text-xl italic leading-relaxed text-neutral-700">
+                  {b.text}
+                </blockquote>
+              );
+            }
+            if (b.kind === 'list') {
+              return (
+                <ul class="list-disc pl-6 space-y-2 text-base md:text-lg leading-loose">
+                  {(b.items || []).map(item => <li>{item}</li>)}
+                </ul>
+              );
+            }
+            return <p class="text-base md:text-lg leading-loose">{b.text}</p>;
+          })}
+        </div>
+      </div>
+    ) : (
+      <div class="p-12 mono text-[10px] uppercase tracking-widest text-neutral-500">Article body unavailable.</div>
+    )}
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {prev ? (
+          <a href={`/library/articles/${prev.id}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{prev.label}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {next ? (
+          <a href={`/library/articles/${next.id}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Next →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{next.label}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

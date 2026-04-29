@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-radius: 0 !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overscroll-behavior-y: none;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #fff;
+  color: #000;
+}
+
+.display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.05em;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+@media (min-width: 768px) {
+  .grid-bg {
+    background-size: 80px 80px;
+  }
+}
+
+.vert-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-slide {
+  animation: menuSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes menuSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-item {
+  animation: menuItemFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+@keyframes menuItemFade {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hairline-b {
+  border-bottom: 0.5px solid #000;
+}
+
+.hairline-t {
+  border-top: 0.5px solid #000;
+}
+
+.hairline-r {
+  border-right: 0.5px solid #000;
+}
+
+.hairline-l {
+  border-left: 0.5px solid #000;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* CSS-only mobile menu. The hidden checkbox sits inside the layout; its
+   :checked state morphs the hamburger into an X, reveals the overlay, and
+   locks body scroll via :has(). Zero JS required. */
+#menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-overlay {
+  display: none;
+}
+
+#menu-toggle:checked ~ .menu-overlay {
+  display: block;
+}
+
+html:has(#menu-toggle:checked) body {
+  overflow: hidden;
+}
+
+.hamburger-line {
+  display: block;
+  height: 1px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.hamburger-line.l1 {
+  width: 1.5rem;
+}
+
+.hamburger-line.l2 {
+  width: 1rem;
+}
+
+.hamburger-line.l3 {
+  width: 1.5rem;
+}
+
+#menu-toggle:checked ~ label .hamburger-line.l1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ label .hamburger-line.l2 {
+  width: 0;
+}
+
+#menu-toggle:checked ~ label .hamburger-line.l3 {
+  transform: translateY(-7px) rotate(-45deg);
+}

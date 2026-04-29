@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+
+const FORUM_URL = 'https://community.svapnaproject.org';
+
+const FORUM_CATEGORIES = [
+  { num: 'I',    name: 'Foundations',           slug: 'foundations',           blurb: 'Practice itself: dream journaling, sleep hygiene, attention through the day. Specific techniques (MILD, WILD, recognition by inquiry) belong here. Beginners welcome — no question wasted.' },
+  { num: 'II',   name: 'History',               slug: 'history',               blurb: "The lineages the course traces — Vedic, Upaniṣadic, Indian Buddhist, Mahāyāna, Tibetan, Daoist, Sufi, Western. Discuss a primary text, a translator’s choice, a teacher’s place in the broader story." },
+  { num: 'III',  name: 'Curriculum',            slug: 'curriculum',            blurb: 'One thread per lesson, anchored to the course material. New lessons get their threads as you move through them. Old threads stay open; coming back months later is one of the gifts.' },
+  { num: 'IV',   name: 'Community',             slug: 'community',             blurb: "The town square. Introductions, announcements, gentle conversation that doesn’t fit elsewhere. Welcome posts go here on your first day; we read them." },
+  { num: 'V',    name: 'Library',               slug: 'library',               blurb: 'Books, papers, films, podcasts, primary sources. Recommendations, summaries, critical readings, reading-group threads.' },
+  { num: 'VI',   name: 'Support',               slug: 'support',               blurb: 'Help with practice, with technical issues on the site, with life situations affecting your practice. Volunteers lend their time; nothing here is treated as therapy or medical advice.' },
+  { num: 'VII',  name: 'Dream-Sharing Circles', slug: 'dream-sharing-circles', blurb: 'Small opt-in groups where members share dreams. Witnessing without interpretation, unless interpretation is invited. Circles cap at twelve.' },
+  { num: 'VIII', name: 'Practice Partners',     slug: 'practice-partners',     blurb: '1:1 mutual accountability for a specific practice. Post what you’re working on; other members reply or DM. Either of you can step away.' },
+  { num: 'IX',   name: 'Experiences',           slug: 'experiences',           blurb: "Personal dream reports, lucidity reports, reports from the threshold. The community’s job is to witness. Interpretation only when the poster invites it." },
+  { num: 'X',    name: 'Lineage and Teachers',  slug: 'lineage-and-teachers',  blurb: "Specific teachers, specific transmissions, specific schools. Where a teaching the course covered shows up in someone you’ve actually studied with." },
+  { num: 'XI',   name: 'Meta',                  slug: 'meta',                  blurb: 'The forum about the forum. Feature requests, code-of-conduct interpretations, moderation questions, accessibility issues.' },
+  { num: 'XII',  name: 'Off-Topic',             slug: 'off-topic',             blurb: "Everything else. Music, food, gardening, what you’re reading. Anything that doesn’t have a home in the categories above." },
+];
+
+const pillars = [
+  { num: 'i.',   title: 'Forums',             body: 'Organized by topic and lineage. Twelve categories, from Foundations to Off-Topic — each with its own conversation. Listed in full below.', href: `${FORUM_URL}/categories` },
+  { num: 'ii.',  title: 'Dream Circles',      body: 'Small opt-in groups of eight to twelve. Members share dreams. Witnessing without interpretation, unless invited. Asynchronous, so time zones do not separate us.', href: `${FORUM_URL}/c/dream-sharing-circles` },
+  { num: 'iii.', title: 'Practice Partners',  body: 'A bulletin board for 1:1 partners working on similar techniques. Accountability without obligation. Either of you can step away.', href: `${FORUM_URL}/c/practice-partners` },
+  { num: 'iv.',  title: 'Code of Conduct',    body: 'Respect for personal experience, cultural traditions, and the vulnerability of sharing dreams. No interpretation without invitation. No proselytizing. No advice unless asked.', href: `${FORUM_URL}/guidelines` },
+];
+---
+
+<Layout title="Community — Svapna" description="An asynchronous Discourse community for the Svapna course. Free to read, free to join.">
+  <div class="fade-in">
+    <SectionHeader num="§ 04" kicker="Together, Asynchronously" title="Community.">
+      <Fragment slot="sub">
+        The forum lives at <span class="not-italic mono text-base md:text-lg">community.svapnaproject.org</span>. Peer-led, lightly moderated.
+      </Fragment>
+    </SectionHeader>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">The Forum</span>
+      </div>
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
+        <p class="display text-2xl md:text-3xl leading-snug italic text-neutral-800">
+          An asynchronous Discourse community. Free to read, free to join, no advertising, no tracking.
+        </p>
+        <a
+          href={FORUM_URL}
+          target="_blank"
+          rel="noreferrer"
+          class="mt-6 md:mt-8 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+          style="border: 0.5px solid #000"
+        >
+          <span>Visit community.svapnaproject.org</span>
+          <span>↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      {pillars.map((it, i) => (
+        <a
+          href={it.href}
+          target="_blank"
+          rel="noreferrer"
+          class={`block p-6 sm:p-8 md:p-12 hairline-b ${i % 2 === 0 ? 'md:hairline-r' : ''} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group`}
+        >
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{it.num}</span>
+          <h3 class="display text-4xl md:text-5xl mt-3 md:mt-4 group-hover:italic transition-all">{it.title}</h3>
+          <p class="mt-5 md:mt-6 leading-relaxed text-neutral-700 text-sm md:text-base">{it.body}</p>
+          <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Open ↗</p>
+        </a>
+      ))}
+    </div>
+
+    <div class="hairline-b">
+      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
+        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
+        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Categories.</h2>
+        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
+          The full list. Each opens its category on the forum.
+        </p>
+      </div>
+
+      <div class="md:hidden hairline-t">
+        {FORUM_CATEGORIES.map((c) => (
+          <a
+            href={`${FORUM_URL}/c/${c.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            class="block hairline-b p-5 active:bg-neutral-100 transition-colors"
+          >
+            <div class="flex justify-between items-baseline">
+              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{c.num}</span>
+              <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">/c/{c.slug}</span>
+            </div>
+            <h3 class="display text-xl italic leading-tight mt-2">{c.name}</h3>
+            <p class="text-sm mt-3 text-neutral-700 leading-relaxed">{c.blurb}</p>
+            <p class="mono text-[10px] uppercase tracking-widest mt-3 text-neutral-500">Open ↗</p>
+          </a>
+        ))}
+      </div>
+
+      <div class="hidden md:block hairline-t">
+        {FORUM_CATEGORIES.map((c) => (
+          <a
+            href={`${FORUM_URL}/c/${c.slug}`}
+            target="_blank"
+            rel="noreferrer"
+            class="grid grid-cols-12 hairline-b py-6 px-8 hover:bg-neutral-50 transition-colors group"
+          >
+            <div class="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{c.num}</div>
+            <div class="col-span-9">
+              <div class="display text-xl md:text-2xl italic leading-tight group-hover:translate-x-1 transition-transform">{c.name}</div>
+              <p class="text-sm md:text-base mt-3 leading-relaxed text-neutral-700 max-w-3xl">{c.blurb}</p>
+              <p class="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3">/c/{c.slug}</p>
+            </div>
+            <div class="col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 text-right">↗</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

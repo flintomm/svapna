@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import InlineMarkdown from '../../components/InlineMarkdown.astro';
+import { LessonCheckbox } from '../../components/react/LessonProgressToggle.jsx';
+import { curriculumModules, themes, moduleDeepening } from '../../lib/content.js';
+import { lessonsByModule } from '../../lib/lessons.js';
+
+export function getStaticPaths() {
+  return curriculumModules.map(m => {
+    const padded = String(parseInt(m.num, 10)).padStart(2, '0');
+    return { params: { num: padded }, props: { mod: m } };
+  });
+}
+
+const { mod } = Astro.props;
+const lessons = lessonsByModule[String(parseInt(mod.num, 10))] || [];
+const deep = moduleDeepening[mod.num];
+const themeLookup = Object.fromEntries(themes.map(t => [t.id, t]));
+const moduleIndex = curriculumModules.indexOf(mod);
+const prev = moduleIndex > 0 ? curriculumModules[moduleIndex - 1] : null;
+const next = moduleIndex < curriculumModules.length - 1 ? curriculumModules[moduleIndex + 1] : null;
+const prevPad = prev ? String(parseInt(prev.num, 10)).padStart(2, '0') : null;
+const nextPad = next ? String(parseInt(next.num, 10)).padStart(2, '0') : null;
+const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+---
+
+<Layout title={`${mod.title} — Module ${mod.roman} — Svapna`} description={mod.blurb.slice(0, 180)}>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between">
+      <a href="/curriculum" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Curriculum</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">
+        Module {mod.roman} of VI · {mod.lessonCount} lessons
+      </span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {mod.roman}</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Module {mod.roman} · {mod.lessonCount} lessons</p>
+        <h1 class="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight">{mod.title}.</h1>
+        <p class="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">{mod.blurb}</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Overview</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <p class="text-base md:text-lg leading-loose max-w-3xl">{mod.overview}</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lessons</span>
+      </div>
+      <div class="md:col-span-10">
+        {lessons.length === 0 && (
+          <div class="p-6 md:p-12">
+            <p class="display text-lg md:text-xl italic text-neutral-600 leading-snug">Lessons in preparation.</p>
+          </div>
+        )}
+        {lessons.map((l, i) => {
+          const key = `${l.moduleNum}-${l.lessonNum}`;
+          return (
+            <div class="grid grid-cols-12 hairline-b">
+              <a
+                href={`/curriculum/module-${padded}/${l.urlSlug}`}
+                class="col-span-10 md:col-span-11 text-left px-5 md:px-8 py-5 md:py-6 hover:bg-neutral-50 transition-colors group flex items-baseline gap-4 md:gap-6"
+              >
+                <span class="mono text-[10px] uppercase tracking-widest text-neutral-400 w-8 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                <span class="flex-1 min-w-0">
+                  <span class="display text-lg md:text-2xl leading-snug block group-hover:italic transition-all">{l.title}</span>
+                  {l.kicker && (
+                    <span class="display text-sm md:text-base text-neutral-500 leading-snug block mt-1">
+                      <InlineMarkdown text={l.kicker} />
+                    </span>
+                  )}
+                </span>
+                <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform hidden md:inline">→</span>
+              </a>
+              <div class="col-span-2 md:col-span-1 hairline-l">
+                <LessonCheckbox progressKey={key} client:visible />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    {deep?.article_link && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Article</span>
+        </div>
+        <div class="md:col-span-10">
+          <a
+            href={`/library/articles/${deep.article_link.id}`}
+            class="block w-full text-left grid grid-cols-12 hairline-b py-3 md:py-4 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+          >
+            <div class="col-span-12 sm:col-span-3 mono text-[9px] uppercase tracking-widest text-neutral-500 mb-1 sm:mb-0">
+              Library · Articles
+            </div>
+            <div class="col-span-12 sm:col-span-8 display text-base md:text-lg italic leading-snug">{deep.article_link.label}</div>
+            <div class="col-span-12 sm:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-500 group-hover:translate-x-1 transition-transform sm:text-right">→</div>
+          </a>
+        </div>
+      </div>
+    )}
+
+    {mod.primary_sources && mod.primary_sources.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Primary Sources</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
+          <ul class="space-y-2 md:space-y-3">
+            {mod.primary_sources.map(s => (
+              <li class="display text-base md:text-lg italic leading-snug text-neutral-700">— {s}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    {deep?.further_reading && deep.further_reading.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Further Reading</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12">
+          <ul class="space-y-5 md:space-y-6 max-w-3xl">
+            {deep.further_reading.map(r => (
+              <li>
+                <p class="display text-base md:text-lg italic leading-snug">{r.title}</p>
+                <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1">{r.author}</p>
+                <p class="text-sm leading-relaxed text-neutral-600 mt-2">{r.note}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    {deep?.theme_links && deep.theme_links.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Themes Engaged</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12">
+          <div class="flex flex-wrap gap-2">
+            {deep.theme_links.map(id => {
+              const t = themeLookup[id];
+              if (!t) return null;
+              return (
+                <a
+                  href={`/library/themes/${id}`}
+                  class="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                  style="border: 0.5px solid rgba(0,0,0,0.3)"
+                >
+                  {t.label} →
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    )}
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {prev ? (
+          <a href={`/curriculum/module-${prevPad}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous Module</p>
+            <p class="display text-xl md:text-2xl mt-2">{prev.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {next ? (
+          <a href={`/curriculum/module-${nextPad}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Next Module →</p>
+            <p class="display text-xl md:text-2xl mt-2">{next.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

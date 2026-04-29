@@ -1,0 +1,72 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { themes } from '../../../lib/content.js';
+import themedPassages from '../../../data/themed_passages.json';
+
+export function getStaticPaths() {
+  return themes.map(t => ({
+    params: { id: t.id },
+    props: { theme: t, data: themedPassages[t.id] || null },
+  }));
+}
+
+const { theme, data } = Astro.props;
+---
+
+<Layout title={`${theme.label} — Svapna Themes`} description={theme.desc}>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4">
+      <a href="/library" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Library · Themes</a>
+    </div>
+
+    {data ? (
+      <Fragment>
+        <div class="grid grid-cols-12 hairline-b">
+          <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+            <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Theme</span>
+          </div>
+          <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+            <h1 class="display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">{data.label}.</h1>
+            <p class="mt-4 md:mt-6 text-base md:text-lg leading-relaxed text-neutral-700 max-w-3xl">{data.description}</p>
+            <div class="mt-5 md:mt-6 flex flex-wrap gap-2">
+              <span class="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style="border: 0.5px solid rgba(0,0,0,0.3)">{data.entries.length} sources</span>
+              <span class="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700" style="border: 0.5px solid rgba(0,0,0,0.3)">{data.total_passage_hits} passage hits</span>
+            </div>
+            {data.keywords && data.keywords.length > 0 && (
+              <div class="mt-5 md:mt-6">
+                <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2">Keywords</p>
+                <p class="text-sm leading-relaxed text-neutral-600">{data.keywords.join(' · ')}</p>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {data.entries.map(entry => (
+          <div class="hairline-b">
+            <div class="px-5 md:px-12 py-6 md:py-8">
+              <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                <h2 class="display text-xl md:text-2xl italic leading-tight">{entry.source_title}{entry.section_title ? ` — ${entry.section_title}` : ''}</h2>
+                <span class="mono text-[9px] uppercase tracking-widest text-neutral-500">{entry.match_count} matches</span>
+              </div>
+              <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-2">
+                {entry.tradition}{entry.page_range ? ` · pp. ${entry.page_range[0]}–${entry.page_range[1]}` : ''}
+              </p>
+            </div>
+            {entry.passages && entry.passages.length > 0 && (
+              <div class="px-5 md:px-12 pb-6 md:pb-8 space-y-4">
+                {entry.passages.map(p => (
+                  <div class="hairline-t pt-4">
+                    <p class="mono text-[9px] uppercase tracking-widest text-neutral-500 mb-2">… {p.keyword}</p>
+                    <p class="text-sm md:text-base leading-relaxed text-neutral-700 italic">…{p.snippet}…</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </Fragment>
+    ) : (
+      <div class="p-12">Theme not found.</div>
+    )}
+  </div>
+</Layout>

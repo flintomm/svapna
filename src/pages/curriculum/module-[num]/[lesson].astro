@@ -1,0 +1,124 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import MarkdownBody from '../../../components/MarkdownBody.astro';
+import InlineMarkdown from '../../../components/InlineMarkdown.astro';
+import { LessonProgressButton } from '../../../components/react/LessonProgressToggle.jsx';
+import { curriculumModules } from '../../../lib/content.js';
+import { lessonsByModule } from '../../../lib/lessons.js';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const mod of curriculumModules) {
+    const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+    const lessons = lessonsByModule[String(parseInt(mod.num, 10))] || [];
+    for (const l of lessons) {
+      paths.push({
+        params: { num: padded, lesson: l.urlSlug },
+        props: { mod, lesson: l, lessons },
+      });
+    }
+  }
+  return paths;
+}
+
+const { mod, lesson, lessons } = Astro.props;
+const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+const idx = lessons.findIndex(l => l.urlSlug === lesson.urlSlug);
+const prev = idx > 0 ? lessons[idx - 1] : null;
+const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
+const moduleIndex = curriculumModules.indexOf(mod);
+const nextMod = curriculumModules[moduleIndex + 1];
+const nextModPad = nextMod ? String(parseInt(nextMod.num, 10)).padStart(2, '0') : null;
+const progressKey = `${lesson.moduleNum}-${lesson.lessonNum}`;
+---
+
+<Layout
+  title={`${lesson.title} — Module ${mod.roman} — Svapna`}
+  description={lesson.kicker?.replace(/[*_]/g, '').slice(0, 180) || lesson.title}
+>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href={`/curriculum/module-${padded}`} class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
+        ← Module {mod.roman} · {mod.title}
+      </a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">
+        Lesson {lesson.lessonNum} of {lessons.length}
+      </span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 03 · {mod.roman}.{lesson.lessonNum}</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Module {mod.roman} · Lesson {lesson.lessonNum}</p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{lesson.title}</h1>
+        {lesson.kicker && (
+          <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+            <InlineMarkdown text={lesson.kicker} />
+          </p>
+        )}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0 flex md:flex-col items-baseline md:items-start gap-3">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Lesson</span>
+        <LessonProgressButton progressKey={progressKey} client:load />
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <MarkdownBody text={lesson.body} />
+      </div>
+    </div>
+
+    {lesson.prompt && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
+          <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;<InlineMarkdown text={lesson.prompt} />&rdquo;</p>
+          <a
+            href="/community"
+            class="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+            style="border: 0.5px solid #000"
+          >
+            <span>Join the discussion</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    )}
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {prev ? (
+          <a href={`/curriculum/module-${padded}/${prev.urlSlug}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Lesson {prev.lessonNum}</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{prev.title}</p>
+          </a>
+        ) : (
+          <a href={`/curriculum/module-${padded}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Module {mod.roman}</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{mod.title}</p>
+          </a>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {next ? (
+          <a href={`/curriculum/module-${padded}/${next.urlSlug}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Lesson {next.lessonNum} →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{next.title}</p>
+          </a>
+        ) : nextMod ? (
+          <a href={`/curriculum/module-${nextModPad}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Next Module →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{nextMod.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

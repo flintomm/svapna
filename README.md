@@ -8,7 +8,8 @@ A free, donation-supported course on dream yoga and lucid dreaming.
 ## Contents
 
 - **`OUTLINE.md`** — full project outline (architecture, curriculum, community, support model, design notes, launch priorities)
-- **`dream-yoga-app.jsx`** — React component, the working bones of the site/app. Mobile-optimized, white background, hairline rules, no rounded edges, editorial-minimalist aesthetic
+- **`src/`** — Astro + React source. Static prerendered pages with small React islands for the contact form, lesson-progress checkboxes, and tradition filters
+- **`reference-material/11_online/`** — the lesson markdown shipped with the build
 - **`README.md`** — this file
 
 ---
@@ -35,19 +36,20 @@ A free, donation-supported course on dream yoga and lucid dreaming.
 
 ---
 
-## Running the React Component
-
-The `.jsx` file is a single self-contained React component. To run it locally you'll want a Vite + React + Tailwind setup:
+## Running locally
 
 ```bash
-npm create vite@latest svapna -- --template react
-cd svapna
 npm install
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+npm run dev      # astro dev — http://localhost:4321/
+npm run build    # astro build — outputs to dist/
+npm run preview  # astro preview — serves dist/
 ```
 
-Then drop `dream-yoga-app.jsx` into `src/`, import it from `App.jsx`, and configure Tailwind's `content` paths.
+The build prerenders every URL — every section, lesson, history unit, glossary
+term, article, and theme — to static HTML. Most pages ship zero JavaScript.
+Pages with interactive bits (the contact form, the lesson "Mark complete"
+button, the tradition filter chips on Library and History) hydrate React
+islands on demand.
 
 ---
 

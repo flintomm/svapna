@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import InlineMarkdown from '../../components/InlineMarkdown.astro';
+import { glossaryTerms, getLesson } from '../../lib/lessons.js';
+
+export function getStaticPaths() {
+  return glossaryTerms.map(t => ({ params: { term: t.slug }, props: { entry: t } }));
+}
+
+const { entry } = Astro.props;
+
+const lessonRefs = (entry.lessonRef || '').split(';').map(s => s.trim()).filter(Boolean);
+const siblings = glossaryTerms.filter(t => t.language === entry.language && t.slug !== entry.slug);
+const idx = glossaryTerms.findIndex(t => t.slug === entry.slug);
+const prev = idx > 0 ? glossaryTerms[idx - 1] : null;
+const next = idx >= 0 && idx < glossaryTerms.length - 1 ? glossaryTerms[idx + 1] : null;
+---
+
+<Layout
+  title={`${entry.term} — Svapna Glossary`}
+  description={entry.definition.slice(0, 180)}
+>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/glossary" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Glossary</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{entry.language || 'Term'}</span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        {entry.languageTag && (
+          <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{entry.languageTag}</p>
+        )}
+        <h1 class="display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight italic">
+          {entry.term}
+        </h1>
+        {entry.aliases.length > 0 && (
+          <p class="display text-lg md:text-2xl italic mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+            also: {entry.aliases.join(' / ')}
+          </p>
+        )}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Definition</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <p class="text-base md:text-lg leading-loose max-w-3xl">
+          <InlineMarkdown text={entry.definition} />
+        </p>
+      </div>
+    </div>
+
+    {lessonRefs.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Introduced in</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-3">
+          {lessonRefs.map(ref => {
+            const m = ref.match(/Module\s+(\d+),\s*Lesson\s+(\d+)/);
+            if (!m) return <p class="text-base md:text-lg leading-loose">{ref}</p>;
+            const mod = m[1];
+            const les = m[2];
+            const lesson = getLesson(mod, les);
+            const padded = String(parseInt(mod, 10)).padStart(2, '0');
+            const href = lesson ? `/curriculum/module-${padded}/${lesson.urlSlug}` : null;
+            return href ? (
+              <a href={href} class="text-left w-full block hover:italic transition-all">
+                <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Module {mod}, Lesson {les}</p>
+                {lesson && <p class="display text-lg md:text-xl mt-1 leading-snug italic">{lesson.title}</p>}
+              </a>
+            ) : (
+              <p class="text-base md:text-lg leading-loose">{ref}</p>
+            );
+          })}
+        </div>
+      </div>
+    )}
+
+    {siblings.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Other {entry.language} terms</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12">
+          <div class="flex flex-wrap gap-2">
+            {siblings.map(s => (
+              <a
+                href={`/glossary/${s.slug}`}
+                class="mono text-[9px] uppercase tracking-widest px-2.5 py-1.5 text-neutral-700 hover:bg-black hover:text-white transition-colors"
+                style="border: 0.5px solid rgba(0,0,0,0.3)"
+              >
+                {s.term}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {prev ? (
+          <a href={`/glossary/${prev.slug}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← Previous term</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{prev.term}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {next ? (
+          <a href={`/glossary/${next.slug}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Next term →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{next.term}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

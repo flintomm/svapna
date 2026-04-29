@@ -1,0 +1,12 @@
+---
+import { renderMarkdownBody } from '../lib/markdown.js';
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const html = renderMarkdownBody(text);
+---
+
+<Fragment set:html={html} />

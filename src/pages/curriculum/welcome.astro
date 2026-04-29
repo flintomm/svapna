@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MarkdownBody from '../../components/MarkdownBody.astro';
+import InlineMarkdown from '../../components/InlineMarkdown.astro';
+import { welcomeLesson, lessonsByModule } from '../../lib/lessons.js';
+
+const firstLesson = (lessonsByModule['1'] || [])[0];
+---
+
+<Layout title="Welcome — Svapna" description="An orientation before the work begins.">
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/curriculum" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Curriculum</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Orientation</span>
+    </div>
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 00</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Before the work begins</p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{welcomeLesson.title}.</h1>
+        {welcomeLesson.kicker && (
+          <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+            <InlineMarkdown text={welcomeLesson.kicker} />
+          </p>
+        )}
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Welcome</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <MarkdownBody text={welcomeLesson.body} />
+      </div>
+    </div>
+    {welcomeLesson.prompt && (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
+          <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;<InlineMarkdown text={welcomeLesson.prompt} />&rdquo;</p>
+          <a
+            href="/community"
+            class="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+            style="border: 0.5px solid #000"
+          >
+            <span>Join the discussion</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    )}
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {firstLesson && (
+          <a href={`/curriculum/module-01/${firstLesson.urlSlug}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Begin Module I →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{firstLesson.title}</p>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>
