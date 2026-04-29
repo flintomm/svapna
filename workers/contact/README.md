@@ -64,6 +64,6 @@ curl -X POST http://localhost:8787/subscribe \
 CORS allows POSTs from:
 - `https://svapnaproject.org`
 - `https://www.svapnaproject.org`
-- `http://localhost:5173` (Vite dev server)
+- `http://localhost:4321` (Astro dev server)
 
 Adjust `ALLOWED_ORIGINS` in `src/index.js` to add or remove origins.

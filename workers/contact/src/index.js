@@ -11,7 +11,7 @@
 const ALLOWED_ORIGINS = new Set([
   'https://svapnaproject.org',
   'https://www.svapnaproject.org',
-  'http://localhost:5173',
+  'http://localhost:4321',
 ]);
 
 const TO_ADDRESS = 'admin@svapnaproject.org';
