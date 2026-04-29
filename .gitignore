@@ -30,6 +30,7 @@ dist-ssr
 # 11_online lesson markdown is shipped with the build and so must be
 # tracked.
 reference-material/*
+!reference-material/_voice-rules.md
 !reference-material/11_online
 reference-material/11_online/*
 !reference-material/11_online/00_welcome.md
