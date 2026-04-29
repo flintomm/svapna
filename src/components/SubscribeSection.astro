@@ -1,0 +1,15 @@
+---
+import SubscribeForm from './react/SubscribeForm.jsx';
+---
+
+<div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+  <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+    <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Notify</span>
+  </div>
+  <div class="md:col-span-10 p-6 md:p-12 max-w-2xl">
+    <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800 mb-5 md:mb-6">
+      Word goes out when new work publishes. About one note a month.
+    </p>
+    <SubscribeForm client:load />
+  </div>
+</div>
