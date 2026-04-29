@@ -2,53 +2,146 @@
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import SubscribeSection from '../components/SubscribeSection.astro';
+import LibraryPitchForm from '../components/react/LibraryPitchForm.jsx';
+import ShareButton from '../components/react/ShareButton.jsx';
 ---
 
-<Layout title="Support — Svapna" description="Donation-supported. In the spirit of dāna. Buy a coffee, or buy someone else's.">
+<Layout title="Support — Svapna" description="Donation-supported, in the spirit of dāna. Contributions cover hosting and infrastructure.">
   <div class="fade-in">
     <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="If it's been useful, pass it on." />
-    <div class="grid grid-cols-1 md:grid-cols-12">
-      <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b">
-        <p class="display text-xl sm:text-2xl md:text-3xl italic leading-relaxed">
-          The course, the history, the community — open to anyone. If it's helped, buy us a coffee. Or buy one for someone else.
+
+    {/* On Dāna — the why of donation-funding, lifted from the homepage's voice */}
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">On Dāna</span>
+      </div>
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
+        <p class="display text-2xl md:text-3xl italic leading-relaxed text-neutral-800">
+          The work was given to us, and it passes forward.
+        </p>
+        <p class="mt-5 md:mt-6 text-base leading-loose text-neutral-700">
+          Dāna — generosity, in the Sanskrit. Not transaction; circulation. The course, the history, the library, the community — open to anyone. If it has served you, the way to thank the work is to keep it open for the next person.
         </p>
       </div>
-      <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b flex justify-center">
-        <a
-          href="https://buymeacoffee.com/svapna"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Buy a coffee"
-          class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white"
-          style="border: 0.5px solid #000;"
-        >
-          <svg width="26" height="26" viewBox="0 0 24 24" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 9h13l-1 9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3L4 9z" fill="white" />
-            <ellipse cx="10.5" cy="9" rx="6.5" ry="1.4" fill="#6F4E37" stroke="none" />
-            <path d="M17 12h1a2 2 0 0 1 0 4h-1" fill="none" />
-            <path d="M9 4c-1 1 1 2 0 3" fill="none" />
-            <path d="M13 4c-1 1 1 2 0 3" fill="none" />
-          </svg>
-        </a>
+    </div>
+
+    {/* Give — coffee glyph (Fig. 06) paired with a labeled, hover-stated CTA */}
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Give</span>
       </div>
-      <div class="md:col-span-12 p-6 sm:p-10 md:p-12 hairline-b">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-5 md:mb-6">Where contributions go</p>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-6 md:mb-8">Fig. 06</p>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+          <a
+            href="https://buymeacoffee.com/svapna"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Buy a coffee"
+            data-bmc-trigger
+            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white hover:bg-neutral-50 transition-colors shrink-0"
+            style="border: 0.5px solid #000;"
+          >
+            <svg width="26" height="26" viewBox="0 0 24 24" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 9h13l-1 9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3L4 9z" fill="white" />
+              <ellipse cx="10.5" cy="9" rx="6.5" ry="1.4" fill="#6F4E37" stroke="none" />
+              <path d="M17 12h1a2 2 0 0 1 0 4h-1" fill="none" />
+              <path d="M9 4c-1 1 1 2 0 3" fill="none" />
+              <path d="M13 4c-1 1 1 2 0 3" fill="none" />
+            </svg>
+          </a>
+          <a
+            href="https://buymeacoffee.com/svapna"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-bmc-trigger
+            class="inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
+            style="border: 0.5px solid #000;"
+          >
+            <span>Buy a coffee — buymeacoffee.com/svapna</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* Where it goes — one honest line. Donations only fund hosting today. */}
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Where it goes</span>
+      </div>
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
+        <p class="display text-2xl md:text-3xl italic leading-relaxed text-neutral-800">
+          Hosting and infrastructure.
+        </p>
+      </div>
+    </div>
+
+    {/* Other Ways — non-monetary dāna. Forum-based options come later. */}
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Other Ways</span>
+      </div>
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 max-w-3xl">
           <div>
-            <p class="display text-3xl md:text-4xl">i.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Hosting and infrastructure.</p>
+            <p class="display text-2xl md:text-3xl">i.</p>
+            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Write a Library article.</p>
+            <LibraryPitchForm client:load />
           </div>
           <div>
-            <p class="display text-3xl md:text-4xl">ii.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Audio and video production.</p>
-          </div>
-          <div>
-            <p class="display text-3xl md:text-4xl">iii.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Translation into other languages.</p>
+            <p class="display text-2xl md:text-3xl">ii.</p>
+            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Share the course with someone who would use it.</p>
+            <ShareButton client:load />
           </div>
         </div>
       </div>
     </div>
+
+    {/* Who — be plain about the recipient and tax status */}
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Who</span>
+      </div>
+      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
+        <p class="text-base leading-loose text-neutral-700">
+          Svapna is the work of an independent researcher. Not a registered nonprofit; contributions are not tax-deductible. <a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a>.
+        </p>
+      </div>
+    </div>
+
     <SubscribeSection />
   </div>
+
+  {/* BMC overlay modal — hide the auto-injected floating button and route the
+      page's inline coffee buttons through the widget's modal trigger. The
+      buttons keep target="_blank" as a fallback for JS-disabled visitors. */}
+  <style is:global>
+    #bmc-wbtn { display: none !important; }
+  </style>
+
+  <script
+    is:inline
+    data-name="BMC-Widget"
+    data-cfasync="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="svapna"
+    data-description="Support me on Buy me a coffee!"
+    data-message="Thank you!"
+    data-color="#40DCA5"
+    data-position="Right"
+    data-x_margin="18"
+    data-y_margin="18"
+  ></script>
+
+  <script is:inline>
+    document.addEventListener('click', (event) => {
+      const trigger = event.target.closest('[data-bmc-trigger]');
+      if (!trigger) return;
+      const bmcBtn = document.getElementById('bmc-wbtn');
+      if (!bmcBtn) return;
+      event.preventDefault();
+      bmcBtn.click();
+    });
+  </script>
 </Layout>
