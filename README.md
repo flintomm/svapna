@@ -6,7 +6,6 @@ A study of dream yoga and lucid dreaming — the practice of becoming aware with
 
 ## Contents
 
-- **`OUTLINE.md`** — full project outline (architecture, curriculum, community, support model, design notes, launch priorities)
 - **`src/`** — Astro + React source. Static prerendered pages with small React islands for the contact form, lesson-progress checkboxes, and tradition filters
 - **`reference-material/11_online/`** — the lesson markdown shipped with the build
 - **`reference-material/_voice-rules.md`** — the editorial voice the site is written in; the rules every visible string is held to
