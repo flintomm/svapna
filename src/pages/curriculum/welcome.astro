@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import MarkdownBody from '../../components/MarkdownBody.astro';
 import InlineMarkdown from '../../components/InlineMarkdown.astro';
-import SubscribeSection from '../../components/SubscribeSection.astro';
 import { welcomeLesson, lessonsByModule } from '../../lib/lessons.js';
 import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
@@ -73,7 +72,6 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
         </div>
       </div>
     )}
-    <SubscribeSection />
 
     <div class="hairline-b grid grid-cols-2">
       <div class="hairline-r p-5 md:p-8">

@@ -1,25 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
-import SubscribeSection from '../components/SubscribeSection.astro';
-
-const CATEGORIES = [
-  { num: 'I',    name: 'Foundations',           blurb: 'Practice itself: dream journaling, sleep hygiene, attention through the day. Specific techniques (MILD, WILD, recognition by inquiry) belong here. Beginners welcome — no question wasted.' },
-  { num: 'II',   name: 'History',               blurb: "The lineages the course traces — Vedic, Upaniṣadic, Indian Buddhist, Mahāyāna, Tibetan, Daoist, Sufi, Western. Discuss a primary text, a translator’s choice, a teacher’s place in the broader story." },
-  { num: 'III',  name: 'Curriculum',            blurb: 'One thread per lesson, anchored to the course material. New lessons get their threads as you move through them. Old threads stay open; coming back months later is one of the gifts.' },
-  { num: 'IV',   name: 'Community',             blurb: "The town square. Introductions, announcements, gentle conversation that doesn’t fit elsewhere. Welcome posts go here on your first day; we read them." },
-  { num: 'V',    name: 'Library',               blurb: 'Books, papers, films, podcasts, primary sources. Recommendations, summaries, critical readings, reading-group threads.' },
-  { num: 'VI',   name: 'Support',               blurb: 'Help with practice, with technical issues on the site, with life situations affecting your practice. Volunteers lend their time; nothing here is treated as therapy or medical advice.' },
-  { num: 'VII',  name: 'Dream-Sharing Circles', blurb: 'Small opt-in groups where members share dreams. Witnessing without interpretation, unless interpretation is invited. Circles cap at twelve.' },
-  { num: 'VIII', name: 'Practice Partners',     blurb: '1:1 mutual accountability for a specific practice. Post what you’re working on; other members reply or DM. Either of you can step away.' },
-  { num: 'IX',   name: 'Experiences',           blurb: "Personal dream reports, lucidity reports, reports from the threshold. The community’s job is to witness. Interpretation only when the poster invites it." },
-  { num: 'X',    name: 'Lineage and Teachers',  blurb: "Specific teachers, specific transmissions, specific schools. Where a teaching the course covered shows up in someone you’ve actually studied with." },
-  { num: 'XI',   name: 'Meta',                  blurb: 'The forum about the forum. Feature requests, code-of-conduct interpretations, moderation questions, accessibility issues.' },
-  { num: 'XII',  name: 'Off-Topic',             blurb: "Everything else. Music, food, gardening, what you’re reading. Anything that doesn’t have a home in the categories above." },
-];
 
 const pillars = [
-  { num: 'i.',   title: 'Forums',            body: 'Organized by topic and lineage. Twelve categories, from Foundations to Off-Topic — each with its own conversation. Listed in full below.' },
+  { num: 'i.',   title: 'Lesson Discussion', body: 'Threaded comments anchored to each lesson. New lessons get their threads as you move through; old ones stay open. Coming back months later is one of the gifts.' },
   { num: 'ii.',  title: 'Dream Circles',     body: 'Small opt-in groups of eight to twelve. Members share dreams. Witnessing without interpretation, unless invited. Asynchronous, so time zones do not separate us.' },
   { num: 'iii.', title: 'Practice Partners', body: 'A bulletin board for 1:1 partners working on similar techniques. Accountability without obligation. Either of you can step away.' },
   { num: 'iv.',  title: 'Code of Conduct',   body: 'Respect for personal experience, cultural traditions, and the vulnerability of sharing dreams. No interpretation without invitation. No proselytizing. No advice unless asked.' },
@@ -44,10 +28,10 @@ const pillars = [
       </div>
       <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
         <p class="display text-2xl md:text-3xl leading-snug italic text-neutral-800">
-          An asynchronous community for the course. Free to read, free to join when it opens — no advertising, no tracking.
+          A dreaming community.
         </p>
         <p class="mt-5 md:mt-6 text-sm md:text-base leading-relaxed text-neutral-700">
-          What follows is the shape of the thing: four pillars, twelve categories. Subscribe at the bottom of the page and we’ll write when it opens.
+          What follows is the shape of the thing: four pillars. Subscribe at the bottom of the page and we’ll write when it opens.
         </p>
       </div>
     </div>
@@ -72,39 +56,5 @@ const pillars = [
         );
       })}
     </div>
-
-    <div class="hairline-b">
-      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
-        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Categories.</h2>
-        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          The full list, planned. Twelve topic homes for the work.
-        </p>
-      </div>
-
-      <div class="md:hidden hairline-t">
-        {CATEGORIES.map((c) => (
-          <div class="block hairline-b p-5">
-            <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{c.num}</span>
-            <h3 class="display text-xl italic leading-tight mt-2">{c.name}</h3>
-            <p class="text-sm mt-3 text-neutral-700 leading-relaxed">{c.blurb}</p>
-          </div>
-        ))}
-      </div>
-
-      <div class="hidden md:block hairline-t">
-        {CATEGORIES.map((c) => (
-          <div class="grid grid-cols-12 hairline-b py-6 px-8">
-            <div class="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{c.num}</div>
-            <div class="col-span-10">
-              <div class="display text-xl md:text-2xl italic leading-tight">{c.name}</div>
-              <p class="text-sm md:text-base mt-3 leading-relaxed text-neutral-700 max-w-3xl">{c.blurb}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <SubscribeSection />
   </div>
 </Layout>
