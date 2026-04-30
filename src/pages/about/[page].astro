@@ -12,9 +12,17 @@ export function getStaticPaths() {
 const { page } = Astro.params;
 const data = aboutPages[page];
 
+// privacy and terms exist as aboutPages entries but are NOT in this list
+// while their content carries [OPERATOR LEGAL NAME], [OPERATOR HOME JURISDICTION],
+// and [EFFECTIVE DATE] placeholders. Once the operator fills those, add the
+// rows below. The static-paths generator already builds /about/privacy and
+// /about/terms because it iterates Object.keys(aboutPages).
+//   { id: 'privacy', label: 'Privacy' },
+//   { id: 'terms', label: 'Terms' },
 const tabs = [
   { id: 'conduct', label: 'Code of Conduct' },
   { id: 'acknowledgments', label: 'Acknowledgments' },
+  { id: 'disclaimer', label: 'Medical Disclaimer' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -52,6 +60,19 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
         {data.paragraphs.map(p => (
           <p class="text-base md:text-lg leading-loose">{p}</p>
         ))}
+        {data.sections && data.sections.map(s => (
+          <section class="space-y-4 md:space-y-5 pt-4 md:pt-6 hairline-t">
+            <h2 class="mono text-[10px] md:text-[11px] uppercase tracking-widest text-neutral-700">{s.name}</h2>
+            {s.paragraphs.map(p => (
+              <p class="text-base md:text-lg leading-loose">{p}</p>
+            ))}
+          </section>
+        ))}
+        {data.effective && (
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 pt-4 md:pt-6 hairline-t">
+            Effective: {data.effective}
+          </p>
+        )}
         {page === 'contact' && <ContactForm email={data.email} client:load />}
       </div>
     </div>

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
+import ConsentBanner from '../components/ConsentBanner.astro';
 
 interface Props {
   title?: string;
@@ -12,7 +13,7 @@ interface Props {
 
 const {
   title = 'Svapna Project - Dream Yoga & Lucid Dreaming',
-  description = 'A course in dream yoga and lucid dreaming — Mandukya, Tibetan milam, modern lucid-dreaming science. History, practice, community.',
+  description = 'The work, drawing on Mandukya, Tibetan milam, and modern lucid-dreaming science. History, practice, community.',
   ogImage = '/og.jpg',
   ogType = 'website',
   jsonLd,
@@ -75,7 +76,10 @@ function isActive(href: string) {
     {allSchemas.map(schema => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
+    {/* Umami analytics is loaded only after consent. The injection lives in
+        ConsentBanner.astro (first-visit Accept) and in the inline returning-
+        visitor loader at the end of <body>. Kept out of the static HTML so
+        no third-party request fires before consent. */}
   </head>
   <body>
     {/* CSS-only mobile menu controller. Toggled by the hamburger label. */}
@@ -162,7 +166,17 @@ function isActive(href: string) {
             <li><a href="/glossary" class="hover:italic transition-all">Glossary</a></li>
             <li><a href="/about/conduct" class="hover:italic transition-all">Code of Conduct</a></li>
             <li><a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a></li>
+            <li><a href="/about/disclaimer" class="hover:italic transition-all">Medical Disclaimer</a></li>
             <li><a href="/about/contact" class="hover:italic transition-all">Contact</a></li>
+            <li>
+              <button
+                type="button"
+                data-consent-reset
+                class="text-left hover:italic transition-all"
+              >
+                Cookie preferences
+              </button>
+            </li>
           </ul>
         </div>
         <div class="md:col-span-3 p-8 md:p-12">
@@ -173,13 +187,58 @@ function isActive(href: string) {
         </div>
       </div>
       <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
-        <span>© Svapna Project</span>
+        <span>© 2026 [OPERATOR LEGAL NAME] · Editorial content licensed under CC BY 4.0</span>
         <span>Vol. I / Iss. I</span>
         <span>MMXXVI</span>
       </div>
     </footer>
 
-<script is:inline>
+    <ConsentBanner />
+
+    <script is:inline>
+      // Returning-visitor consent loader. If the user accepted on a prior
+      // visit, inject Umami (site-wide) and BMC (on /support).
+      // First-visit Accept goes through ConsentBanner.astro's own handler.
+      (function () {
+        var KEY = 'svapna-consent';
+        var v;
+        try { v = localStorage.getItem(KEY); } catch (e) { return; }
+        if (v !== 'accepted') return;
+        function inject(src, attrs) {
+          var s = document.createElement('script');
+          s.src = src;
+          for (var k in attrs) s.setAttribute(k, attrs[k]);
+          document.body.appendChild(s);
+        }
+        inject('https://cloud.umami.is/script.js', {
+          defer: '',
+          'data-website-id': 'ce803793-d5c7-4cef-9e9e-bf173d3bc6e1',
+          'data-domains': 'svapnaproject.org',
+        });
+        if (location.pathname.replace(/\/+$/, '') === '/support') {
+          inject('https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js', {
+            'data-name': 'BMC-Widget', 'data-cfasync': 'false', 'data-id': 'svapna',
+            'data-description': 'Support the Svapna project on Buy Me a Coffee.', 'data-message': 'Thank you!',
+            'data-color': '#5F7FFF', 'data-position': 'Right',
+            'data-x_margin': '18', 'data-y_margin': '18',
+          });
+        }
+      })();
+    </script>
+
+    <script is:inline>
+      // Cookie preferences reset. Clears the consent flag and reloads.
+      (function () {
+        var btn = document.querySelector('[data-consent-reset]');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          try { localStorage.removeItem('svapna-consent'); } catch (e) {}
+          location.reload();
+        });
+      })();
+    </script>
+
+    <script is:inline>
       // Side-rail scroll counter. Tiny enough to inline; runs only on screens
       // wide enough to show the rail.
       (function () {

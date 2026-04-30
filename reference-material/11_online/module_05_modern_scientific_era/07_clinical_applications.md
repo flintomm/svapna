@@ -4,6 +4,8 @@
 
 ---
 
+> *A note before the clinical material.* The lesson below describes published protocols for the use of lucid-dream training in chronic nightmares and post-traumatic dreams. Where these methods have been shown to help — in trials by Spoormaker, Holzinger, Krakow and others — they have helped as adjuncts to professional care, alongside Imagery Rehearsal Therapy and standard cognitive-behavioral approaches. They are not a substitute for treatment by a qualified clinician. A reader currently working with PTSD, chronic nightmares, or any acute distress is encouraged to consult a clinician. See the [medical disclaimer](/about/disclaimer) for the longer note.
+
 ## The seed in chapter 10
 
 The clinical use of lucid-dreaming techniques for chronic nightmares and PTSD-associated dreams is now a substantial research area.
@@ -28,15 +30,15 @@ The frame they propose is behavioral. Nightmares are "the result of maladaptive 
 
 > Research on behavior modification treatment for phobias shows that *it is not enough for a person to know intellectually that the object of their fear is harmless*. Snake phobics may "know" perfectly well that garter snakes are harmless, but they will still be afraid to handle one. *The way to learn to overcome fear is to face it — to approach the fearsome object or situation little by little.* Each time you encounter the feared thing without harm you learn by experience that it cannot hurt you. This is the kind of approach we propose for overcoming nightmares. (LaBerge and Rheingold)
 
-## The structured protocol
+## The structured protocol, as the chapter describes it
 
-The chapter then describes a structured protocol.
+The chapter then describes a structured protocol, addressed to the lucid-dream researcher and the experienced practitioner working with their own dream material.
 
-The practitioner cultivates lucidity (using MILD or one of the other techniques from the earlier chapters). Within the lucid nightmare, the practitioner is required to *not* escape — LaBerge's own personal rule, after the famous Idries Shah dream that he recounts in the chapter, is that on becoming lucid he asks himself "*Am I now or have I been running away from anything in the dream?*", and if so, he resolves to face it.
+In the chapter's account, the practitioner cultivates lucidity (using MILD or one of the other techniques from the earlier chapters). Within the lucid nightmare, the practitioner — in LaBerge and Rheingold's framing — is asked *not* to escape. LaBerge's own personal rule, after the famous Idries Shah dream he recounts in the chapter, is that on becoming lucid he asks himself "*Am I now or have I been running away from anything in the dream?*", and if so, he resolves to face it.
 
-The practitioner approaches the threatening figure or situation with calm or friendly attention. LaBerge cites Tholey's research, which "has reported that *when the dream ego looks courageously and openly at hostile dream figures, the appearance of the figures often becomes less threatening*."
+The protocol then has the practitioner approach the threatening figure or situation with calm or friendly attention. LaBerge cites Tholey's research, which "has reported that *when the dream ego looks courageously and openly at hostile dream figures, the appearance of the figures often becomes less threatening*."
 
-The dream is then either resolved within the lucid state or, in some cases, redreamed in subsequent sessions until the underlying anxiety pattern is dissolved.
+In the dream-letters the chapter collects, the dream is then either resolved within the lucid state or, in some cases, redreamed in subsequent sessions until the underlying anxiety pattern dissolves.
 
 ## Convergence with the Tibetan instruction
 
@@ -46,7 +48,7 @@ The third stage of the classical four-stage Tibetan progression (Lesson 4) — *
 
 The Evans-Wentz / Kazi Dawa-Samdup rendering: "abandon all feeling of fear" toward dream phenomena, "trample upon the fire," and through repeated demonstration come to understand "*that nothing within the Sangsara is or can be other than unreal like dreams*."
 
-Mullin's Tsongkhapa version: "whenever anything of a threatening or traumatic nature occurs in a dream, such as drowning in water or being burned by fire, recognize the dream as a dream and ask yourself, '*How can dream water or dream fire possibly harm me?*' Make yourself jump or fall into the water or fire in the dream."
+Mullin's Tsongkhapa version, in its instructional voice to the contemplative practitioner: "whenever anything of a threatening or traumatic nature occurs in a dream, such as drowning in water or being burned by fire, recognize the dream as a dream and ask yourself, '*How can dream water or dream fire possibly harm me?*' Make yourself jump or fall into the water or fire in the dream."
 
 The convergence between the 1990 LaBerge-Rheingold protocol and the centuries-old Tibetan instruction is real and worth marking.
 
@@ -66,13 +68,13 @@ The contemporary clinical consensus, drawn from the secondary literature, is tha
 
 Imagery Rehearsal Therapy itself is worth a brief description, even though the primary literature is not in the bundle.
 
-IRT is a behavioral intervention developed primarily by Krakow and colleagues in the 1990s and 2000s for the treatment of chronic post-traumatic nightmares. The protocol asks the patient to write down a recurring nightmare, then to write a new ending to the dream — one that the patient finds tolerable, or even satisfying — and then to rehearse the rewritten dream in waking, daily, over a period of weeks.
+IRT is a clinician-administered behavioral intervention developed primarily by Krakow and colleagues in the 1990s and 2000s for the treatment of chronic post-traumatic nightmares. In the published protocol, the patient — under a clinician's care — writes down a recurring nightmare, then writes a new ending to the dream that they find tolerable, or even satisfying, and rehearses the rewritten dream in waking, daily, over a period of weeks.
 
 The mechanism is roughly behavioral: the rehearsed alternative ending eventually competes with the original nightmare's ending in sleep, and (for many patients) the nightmare frequency decreases.
 
 **IRT is one of the better-supported interventions in the post-traumatic nightmare literature, with several controlled trials showing reductions in nightmare frequency and PTSD symptom severity.**
 
-The lucid-dreaming-augmented variants developed by Holzinger and others integrate IRT's daytime rehearsal with lucid-dream training, on the theory that the patient who can become lucid in the actual nightmare can perform the rewriting *in the dream*, where the affective stakes are higher and the integration may be deeper.
+The lucid-dreaming-augmented variants developed by Holzinger and others integrate IRT's daytime rehearsal with lucid-dream training in a clinical setting, on the theory that a patient who can become lucid in the actual nightmare can perform the rewriting *in the dream*, where the affective stakes are higher and the integration may be deeper.
 
 ## What the bundle does not support
 
@@ -92,7 +94,7 @@ Wallace and Holecek both make this distinction directly in Module 6: **the conte
 
 Both are legitimate. Both are real. They are not the same.
 
-The contemporary practitioner who comes to dream practice through the clinical door — wanting to break a recurring nightmare, wanting relief from post-traumatic dreams — is doing something defensible and useful.
+The contemporary practitioner who comes to dream practice through the clinical door — wanting to break a recurring nightmare, wanting relief from post-traumatic dreams, typically with a clinician already in the picture — is doing something defensible and useful.
 
 The same techniques may, with time and the right framing, become the on-ramp to a deeper practice. They may also stay where they are, doing exactly the work the patient came for. Either is fine. The technique is the same; the aim varies.
 

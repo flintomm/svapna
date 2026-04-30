@@ -88,6 +88,10 @@ export default function ContactForm({ email }) {
           {status === 'error' && (
             <p className="mono text-[10px] uppercase tracking-widest text-red-700">{error}</p>
           )}
+          <p className="mono text-[9px] uppercase tracking-widest text-neutral-500">
+            Sending the message routes name, email, and content through the site's privacy{' '}
+            <a href="/about/privacy" className="underline underline-offset-4 hover:text-black">policy</a>.
+          </p>
           <button
             type="submit"
             disabled={status === 'sending'}

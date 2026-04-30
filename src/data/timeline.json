@@ -11,88 +11,752 @@
     "6": "Convergence"
   },
   "entries": [
-    {"sort_key": -1500, "date": "c. 1500 BCE", "unit": 1, "tradition": "Vedic", "kind": "text", "title": "Ṛgveda composed", "summary": "Early Vedic dream references, principally apotropaic verses against bad dreams (RV 10.36.4, 8.47.14–18). Establishes dream as a real domain of ritual concern in Vedic India."},
-    {"sort_key": -1200, "date": "c. 1200 BCE", "unit": 1, "tradition": "Chinese (pre-Daoist)", "kind": "text", "title": "Shang oracle bones with dream divinations", "summary": "Late Shang dynasty scapulimancy includes systematic royal dream-questions. State-level dream divination established in China."},
-    {"sort_key": -1000, "date": "c. 1000 BCE", "unit": 1, "tradition": "Vedic", "kind": "text", "title": "Atharvaveda dream-omen passages", "summary": "Atharvaveda 6.46, 7.100, 16.5 systematize dream-omens with ritual responses for bad dreams."},
-    {"sort_key": -800, "date": "c. 800 BCE", "unit": 1, "tradition": "Greek", "kind": "text", "title": "Homer, Iliad and Odyssey", "summary": "Earliest Greek treatments of dream as message from the gods. Penelope's gates of horn and ivory (Od. 19.560–569) introduce the epistemic problem of dream."},
-    {"sort_key": -700, "date": "c. 700 BCE", "unit": 1, "tradition": "Hindu / Vedanta", "kind": "text", "title": "Bṛhadāraṇyaka Upaniṣad composed", "summary": "Yājñavalkya–Janaka dialogue (Book IV) — the dreamer 'fashions for itself' the dream from waking impressions. First sustained Indian philosophy of dream."},
-    {"sort_key": -600, "date": "c. 600 BCE", "unit": 1, "tradition": "Hindu / Vedanta", "kind": "text", "title": "Chāndogya Upaniṣad composed", "summary": "First clear treatment of deep sleep (suṣupti) as a state of consciousness in its own right (CU 6.8 — the bird-and-string analogy)."},
-    {"sort_key": -500, "date": "c. 500 BCE", "unit": 1, "tradition": "Hindu / Vedanta", "kind": "text", "title": "Māṇḍūkya Upaniṣad composed", "summary": "Twelve verses establishing the four-state model (jāgrat / svapna / suṣupti / turīya) and pairing each state with the syllable Om. The philosophical bedrock for nearly all later Asian discussion of consciousness across states."},
-    {"sort_key": -400, "date": "c. 400 BCE", "unit": 1, "tradition": "Daoist", "kind": "text", "title": "Zhuangzi composed", "summary": "Zhuang Zhou (369–286 BCE). The butterfly passage in Inner Chapters 2 — the most-cited Chinese text on dream. Reframes the dream–waking question around 'the transformation of things' (wu hua)."},
-    {"sort_key": -350, "date": "c. 350 BCE", "unit": 1, "tradition": "Greek", "kind": "text", "title": "Aristotle's On Sleep, On Dreams, On Divination through Sleep", "summary": "The Parva Naturalia — first systematic Greek philosophy of dream. Naturalistic, skeptical of most prophetic dreams, treats dream as residual perceptual activity."},
-    {"sort_key": -300, "date": "c. 300 BCE", "unit": 1, "tradition": "Chinese (pre-Daoist)", "kind": "text", "title": "Zhouli describes the zhanmeng office", "summary": "Court official charged with dream-interpretation, with a six-fold classification (ordinary, surprise, thinking, waking, joyful, fearful dreams)."},
-    {"sort_key": -100, "date": "c. 100 BCE", "unit": 1, "tradition": "Indian Buddhist", "kind": "text", "title": "Milindapañha composed", "summary": "The dialogues of Nāgasena and the Bactrian Greek king Menander (Pāli: Milinda). Book IV's dream passages establish the four-cause typology (vāta, pitta, kapha, perceptual residues) influential across centuries of Buddhist scholasticism."},
-    {"sort_key": -50, "date": "c. 60 BCE", "unit": 1, "tradition": "Roman", "kind": "text", "title": "Cicero, De Divinatione", "summary": "Sustained skeptical critique of dream-prophecy and Roman divination tradition. An unusually rigorous ancient treatment of the epistemology of dream-revelation."},
-    {"sort_key": 150, "date": "c. 150 CE", "unit": 1, "tradition": "Greek", "kind": "text", "title": "Artemidorus, Oneirocritica", "summary": "Five-book interpretive manual — the most complete Greek dream-book to survive. The structural ancestor of every dream-dictionary published since."},
-    {"sort_key": 180, "date": "c. 180 CE", "unit": 1, "tradition": "Greek", "kind": "text", "title": "Galen, On Diagnosis from Dreams", "summary": "Hippocratic-Galenic medical tradition's developed treatment of dream as diagnostic indicator. Will dominate Mediterranean and Islamic medical thinking about dream into early modern period."},
-    {"sort_key": 350, "date": "c. 350 CE", "unit": 3, "tradition": "Daoist", "kind": "text", "title": "Liezi compiled", "summary": "Includes Chapter 3 'King Mu of Zhou' — most developed early Daoist dream theory. Spirit-cultivation framework: dream-state and waking-state in bidirectional feedback through cultivation of qi and shen."},
-    {"sort_key": 400, "date": "c. 400 CE", "unit": 1, "tradition": "Indian Buddhist", "kind": "person", "title": "Asaṅga and Vasubandhu found Yogācāra", "summary": "Brothers who develop Vijñānavāda Buddhism. Vasubandhu's Viṃśatikā becomes locus classicus for Buddhist analysis of dream as illustrating the constructed character of all experience (vijñapti-mātra)."},
-    {"sort_key": 410, "date": "c. 410 CE", "unit": 1, "tradition": "Roman", "kind": "text", "title": "Macrobius, Commentary on the Dream of Scipio", "summary": "Five-fold dream classification (somnium, visio, oraculum, insomnium, visum) becomes canonical in medieval European tradition for the next millennium."},
-    {"sort_key": 430, "date": "c. 430 CE", "unit": 3, "tradition": "Theravāda Buddhist", "kind": "text", "title": "Buddhaghosa's Visuddhimagga", "summary": "Theravāda commentarial tradition's framework for dream — four causes (refining the Milindapañha scheme). Treats dream as illustration of conditioned experience rather than as object of specific cultivation."},
-    {"sort_key": 622, "date": "c. 622", "unit": 3, "tradition": "Japanese (early)", "kind": "person", "title": "Shōtoku Taishi (574–622)", "summary": "Foundational figure of Buddhist statecraft in Japan; associated with the yume-dono (dream-hall) tradition at Hōryū-ji."},
-    {"sort_key": 650, "date": "c. 650 CE", "unit": 1, "tradition": "Hindu / Vedanta", "kind": "person", "title": "Gauḍapāda's Māṇḍūkya-Kārikā", "summary": "Verse commentary on the Mandukya. Chapter 3 develops the philosophical argument that waking and dream have parallel logical status — the engine that the Tibetan illusory-body tradition will later operationalize."},
-    {"sort_key": 700, "date": "c. 700 CE", "unit": 3, "tradition": "Islamic", "kind": "person", "title": "Muḥammad Ibn Sirin (c. 654–728)", "summary": "Basran scholar associated with the systematic Islamic dream-interpretation tradition. The textual corpus bearing his name is the foundation of the dream-science (ilm tafsīr al-ru'yā) for the Islamic world."},
-    {"sort_key": 750, "date": "c. 750 CE", "unit": 2, "tradition": "Tibetan Buddhist (Nyingma)", "kind": "person", "title": "Padmasambhava and the early transmission", "summary": "Tantric teacher from Oḍḍiyāna brought to Tibet under King Trisong Detsen. Foundational figure for the Nyingma tradition; the early translation period (snga 'gyur) begins with his work."},
-    {"sort_key": 820, "date": "c. 820 CE", "unit": 3, "tradition": "Japanese (Shingon)", "kind": "person", "title": "Kūkai / Kōbō Daishi (774–835)", "summary": "Brings esoteric Buddhism to Japan from Tang China. Sokushin Jōbutsu Gi establishes framework of three mysteries (sanmitsu) within which Shingon dream practice operates."},
-    {"sort_key": 850, "date": "c. 850 CE", "unit": 3, "tradition": "Daoist", "kind": "text", "title": "Tang dynasty chuanqi dream-tales flourish", "summary": "Shen Jiji's Pillow Story (c. 781) crystallizes the huang liang yi meng (yellow-millet dream) trope: an entire life experienced in a dream during the time it takes to cook a pot of millet."},
-    {"sort_key": 900, "date": "c. 900 CE", "unit": 3, "tradition": "Daoist", "kind": "person", "title": "Chen Tuan (c. 871–989)", "summary": "Daoist master associated with Mount Hua and the sleep-cultivation tradition. The Twenty-Four Sleep Exercises (Mian gong er-shi-si shi) develop a structured Daoist sleep-yoga, preserved later in the Quanzhen lineage."},
-    {"sort_key": 988, "date": "988", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "Tilopa (988–1069)", "summary": "Indian mahāsiddha who synthesized teachings from multiple Indian sources into what would become the Six Yogas. First link in the Kagyu transmission chain."},
-    {"sort_key": 1000, "date": "c. 1000 CE", "unit": 3, "tradition": "Daoist", "kind": "tradition", "title": "Inner alchemy (neidan) tradition matures", "summary": "Tang–Song development of jing/qi/shen cultivation, the reversal of natural flow, and the embryo of immortality. The framework within which Chen Tuan's sleep practices are situated."},
-    {"sort_key": 1041, "date": "1041", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "Nāropa (956–1041)", "summary": "Tilopa's principal disciple. Systematizes Tilopa's teachings into the Six Yogas of Naropa: tummo, illusory body, dream, clear light, bardo, transference."},
-    {"sort_key": 1097, "date": "1097", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "Marpa the Translator (1012–1097)", "summary": "Travels to India three times, studies with Nāropa, brings the Six Yogas back to Tibet. Founding figure of the Kagyu lineage."},
-    {"sort_key": 1100, "date": "c. 1100 CE", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "tradition", "title": "Second diffusion (phyi dar) consolidates", "summary": "Tibetan students travel to India; Indian masters invited to Tibet; new translations produced. Institutional framework for the four major schools begins to take shape."},
-    {"sort_key": 1117, "date": "1117", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "person", "title": "Padampa Sangye (d. 1117)", "summary": "Indian master who transmitted zhi byed (pacifying) and the gcod (chöd) tradition to Tibet, including distinctive dream practices."},
-    {"sort_key": 1123, "date": "1123", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "Milarepa (c. 1040–1123)", "summary": "Marpa's principal disciple. The great yogi-poet whose songs (mgur 'bum) include some of the most beautiful Tibetan literature on dream and sleep practice."},
-    {"sort_key": 1140, "date": "c. 1140", "unit": 2, "tradition": "Tibetan Buddhist (Shangpa)", "kind": "person", "title": "Khyungpo Naljor and the Niguma transmission", "summary": "Founder of the Shangpa Kagyu. Brings back the Six Yogas of Niguma — a parallel transmission to the Nāropa lineage."},
-    {"sort_key": 1149, "date": "1149", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "person", "title": "Machig Labdrön (1055–1149)", "summary": "Female master who systematized chöd practice. The chöd dream-practice (offering the dream-body to dream-beings) is a distinctive Tibetan contribution."},
-    {"sort_key": 1153, "date": "1153", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "Gampopa (1079–1153)", "summary": "Milarepa's principal disciple. Unites the Kagyu yogic tradition with the Kadampa monastic tradition. Author of Jewel Ornament of Liberation."},
-    {"sort_key": 1191, "date": "1191", "unit": 3, "tradition": "Sufi / Islamic", "kind": "person", "title": "Suhrawardī (1154–1191)", "summary": "Persian philosopher of illuminationism (ḥikmat al-ishrāq). Develops the framework of the 'ālam al-mithāl al-mutlaq (absolute imaginal world). Executed at thirty-seven."},
-    {"sort_key": 1193, "date": "1193", "unit": 2, "tradition": "Tibetan Buddhist (Kagyu)", "kind": "person", "title": "First Karmapa, Düsum Khyenpa (1110–1193)", "summary": "Founder of the Karma Kagyu lineage — the first formally-recognized tulku (reincarnated teacher) lineage in Tibet."},
-    {"sort_key": 1232, "date": "1232", "unit": 3, "tradition": "Japanese Buddhist (Kegon-Shingon)", "kind": "person", "title": "Myōe Kōben (1173–1232) and his dream diary", "summary": "The Yume no Ki — a continuous dream-record kept for nearly forty years, among the longest sustained dream-records in any pre-modern tradition. Treats dream as continuous with waking practice and as a field of devotional encounter."},
-    {"sort_key": 1240, "date": "1240", "unit": 3, "tradition": "Sufi / Islamic", "kind": "person", "title": "Ibn al-ʿArabī (1165–1240)", "summary": "The Andalusian Sufi master ('al-Shaykh al-Akbar'). Develops the metaphysics of imagination and the doctrine of the 'ālam al-mithāl (imaginal world) as a real ontological domain. Futūḥāt al-Makkiyya and Fuṣūṣ al-Ḥikam are the principal works."},
-    {"sort_key": 1242, "date": "1242", "unit": 3, "tradition": "Japanese Buddhist (Sōtō Zen)", "kind": "text", "title": "Dōgen composes 'Mu chū setsu mu'", "summary": "The Shōbōgenzō fascicle 'Within a Dream Expressing the Dream'. Among the most philosophically sophisticated treatments of dream in any tradition. Reframes the dream/reality distinction as the activity of buddha-nature."},
-    {"sort_key": 1253, "date": "1253", "unit": 3, "tradition": "Japanese Buddhist (Sōtō Zen)", "kind": "person", "title": "Dōgen (1200–1253) dies", "summary": "Founder of Sōtō Zen in Japan. The Shōbōgenzō stands as his masterwork and the most sophisticated Zen treatment of dream and waking."},
-    {"sort_key": 1325, "date": "c. 1325", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "tradition", "title": "Bardo Thödol cycle revealed by Karma Lingpa (14th century)", "summary": "The 'Tibetan Book of the Dead' tradition — termas attributed to Padmasambhava but revealed by the tertön Karma Lingpa. Includes the dream-bardo passages central to the Tibetan dream-yoga inheritance."},
-    {"sort_key": 1366, "date": "c. 1366", "unit": 3, "tradition": "Sufi / Islamic", "kind": "tradition", "title": "Naqshbandī Sufi order founded", "summary": "Central Asian Sufi order known for distinctive dream practices, including structured engagement with dreams of the deceased master."},
-    {"sort_key": 1419, "date": "1419", "unit": 2, "tradition": "Tibetan Buddhist (Geluk)", "kind": "person", "title": "Tsongkhapa (1357–1419)", "summary": "Founder of the Geluk school. His commentaries on the Six Yogas of Nāropa are among the most rigorous Tibetan treatments of dream practice."},
-    {"sort_key": 1640, "date": "1640", "unit": 3, "tradition": "Sufi / Islamic", "kind": "person", "title": "Mullā Ṣadrā (1571–1640)", "summary": "Great Safavid-era Persian philosopher. Integrates the Akbarian (Ibn al-ʿArabī) framework with peripatetic philosophy and the Shi'ite tradition."},
-    {"sort_key": 1867, "date": "1867", "unit": 4, "tradition": "Western (French)", "kind": "text", "title": "Hervey de Saint-Denys, Les rêves et les moyens de les diriger", "summary": "First systematic Western study of deliberate dream-cultivation. Based on a 1,946-night dream journal. Develops induction methods that anticipate nearly every modern lucid-dreaming technique."},
-    {"sort_key": 1899, "date": "1899", "unit": 4, "tradition": "Western (Austrian)", "kind": "text", "title": "Freud, Die Traumdeutung (The Interpretation of Dreams)", "summary": "Establishes the depth-psychological framework that will dominate Western thinking about dream for most of the twentieth century. Treats dream as coded message to be analyzed, not as a state in which one practices."},
-    {"sort_key": 1899, "date": "1899", "unit": 2, "tradition": "Tibetan Buddhist (Rimé)", "kind": "person", "title": "Jamgon Kongtrul Lodrö Thaye (1813–1899)", "summary": "Great non-sectarian (ris med) compiler of the nineteenth century. Treasury of Knowledge and Treasury of Spiritual Instructions are encyclopedic compilations including substantial Six Yogas materials across multiple lineages."},
-    {"sort_key": 1913, "date": "1913", "unit": 4, "tradition": "Western (Dutch)", "kind": "text", "title": "Frederik van Eeden, 'A Study of Dreams'", "summary": "Lecture to the Society for Psychical Research, December 19, 1913; published 1914. Coins the term 'lucid dream' (Dutch: helder bewust droom) as a technical category. Based on van Eeden's own dream journal (1898–1912)."},
-    {"sort_key": 1921, "date": "1921", "unit": 4, "tradition": "Western (British)", "kind": "text", "title": "Mary Arnold-Forster, Studies in Dreams", "summary": "First book-length English-language treatment of deliberate dream cultivation aimed at general readers. Develops the flying technique for dream-stabilization."},
-    {"sort_key": 1924, "date": "1924", "unit": 4, "tradition": "Western (French)", "kind": "tradition", "title": "Breton, Manifeste du surréalisme", "summary": "Surrealist movement places dream at the center of avant-garde artistic project. Develops techniques (automatic writing, sleep-induced composition) for cultivating dream-like states in waking creative work."},
-    {"sort_key": 1931, "date": "1931", "unit": 4, "tradition": "Western (Russian)", "kind": "text", "title": "Ouspensky, A New Model of the Universe", "summary": "Chapter 6 'Experimental Mysticism' describes 'half-dream state' experiments — essentially a wake-initiated lucid dreaming (WILD) technique. Bridges empirical and contemplative-philosophical traditions."},
-    {"sort_key": 1935, "date": "1935", "unit": 4, "tradition": "Tibetan Buddhist / Western reception", "kind": "text", "title": "Evans-Wentz, Tibetan Yoga and Secret Doctrines", "summary": "First English translation of Six Yogas of Naropa material. Editorially flawed (theosophical contamination) but the first sustained Western access to the Tibetan dream-yoga tradition."},
-    {"sort_key": 1953, "date": "1953", "unit": 5, "tradition": "Western science", "kind": "discovery", "title": "Aserinsky and Kleitman discover REM sleep", "summary": "'Regularly Occurring Periods of Eye Motility' (Science 118: 273–274). Establishes that the sleeping brain cycles through distinct states with distinct neurophysiological signatures. Founds the modern science of sleep."},
-    {"sort_key": 1959, "date": "1959", "unit": 5, "tradition": "Western science (German)", "kind": "person", "title": "Paul Tholey begins lucid-dream research", "summary": "Frankfurt sport scientist and Gestalt psychologist. Develops the reflection technique (Reflexionstechnik) — the cultivation of habitual reality-testing in waking that transfers into dream. Most empirically validated induction method."},
-    {"sort_key": 1959, "date": "1959", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "event", "title": "Dalai Lama and senior teachers flee Tibet", "summary": "Chinese occupation forces emigration of Tibetan religious leadership. Unintended consequence: Tibetan teachers come into contact with Western students at scale for the first time."},
-    {"sort_key": 1960, "date": "1960", "unit": 2, "tradition": "Tibetan Buddhist (Dzogchen)", "kind": "person", "title": "Namkhai Norbu settles in Italy", "summary": "Begins what will become the Dzogchen Community — the principal Western institutional channel for Dzogchen dream-yoga teaching."},
-    {"sort_key": 1963, "date": "1963", "unit": 2, "tradition": "Tibetan Buddhist", "kind": "person", "title": "Chögyam Trungpa Rinpoche arrives in England", "summary": "Karma Kagyu and Nyingma trained; among the first Tibetan teachers to settle in the West and teach openly to Western students. Moves to North America in 1970."},
-    {"sort_key": 1969, "date": "1969", "unit": 4, "tradition": "Sufi / Western reception", "kind": "text", "title": "Henry Corbin, Creative Imagination in the Sufism of Ibn 'Arabi", "summary": "Foundational Western treatment of the Sufi imaginal-world tradition. Translates 'ālam al-mithāl as mundus imaginalis. Opens the Western reception of Ibn al-ʿArabī's framework."},
-    {"sort_key": 1975, "date": "1975-04-12", "unit": 5, "tradition": "Western science (UK)", "kind": "discovery", "title": "Hearne records the first lucid-dream eye-movement signal", "summary": "University of Hull. Alan Worsley, in confirmed REM sleep, executes the agreed left-right-left-right eye-movement sequence — the first objective verification that a sleeping person can communicate with the waking world during a dream."},
-    {"sort_key": 1980, "date": "1980", "unit": 5, "tradition": "Western science (US)", "kind": "discovery", "title": "LaBerge's Stanford verification", "summary": "Stephen LaBerge independently verifies lucid dreaming at Stanford using the eye-movement signal paradigm. Published 1981 in Perceptual and Motor Skills. The paper that opens the modern scientific era for the broader research community."},
-    {"sort_key": 1985, "date": "1985", "unit": 5, "tradition": "Western science (US)", "kind": "text", "title": "LaBerge, Lucid Dreaming", "summary": "First popular book on the science. Begins the cultural diffusion of the modern lucid-dreaming framework."},
-    {"sort_key": 1987, "date": "1987", "unit": 6, "tradition": "Convergence", "kind": "institution", "title": "Mind and Life Institute founded", "summary": "Francisco Varela, Adam Engle, and the Dalai Lama. Establishes the principal venue for sustained dialogue between Buddhist contemplatives and Western scientists. Will produce the foundational integrative texts of the convergence."},
-    {"sort_key": 1988, "date": "1988", "unit": 5, "tradition": "Western science (US)", "kind": "institution", "title": "LaBerge founds The Lucidity Institute", "summary": "Institutionalizes lucid-dreaming research and education. Will be the principal Western lucid-dreaming research center for the following decades."},
-    {"sort_key": 1990, "date": "1990", "unit": 5, "tradition": "Western science (US)", "kind": "text", "title": "LaBerge and Rheingold, Exploring the World of Lucid Dreaming", "summary": "Becomes the standard introductory text for the contemplative-scientific reception of lucid dreaming. The course's Module 12 reading."},
-    {"sort_key": 1991, "date": "1991", "unit": 6, "tradition": "Convergence", "kind": "text", "title": "Varela, Thompson, Rosch, The Embodied Mind", "summary": "Foundational integrative text bringing Buddhist philosophy into dialogue with cognitive science. The framework within which the contemporary contemplative-scientific synthesis develops."},
-    {"sort_key": 1992, "date": "1992", "unit": 2, "tradition": "Bön (Mother Tantra)", "kind": "institution", "title": "Tenzin Wangyal Rinpoche founds Ligmincha International", "summary": "Principal Western institutional channel for the Bön Mother Tantra dream-yoga tradition."},
-    {"sort_key": 1992, "date": "1992", "unit": 6, "tradition": "Convergence (Mind and Life)", "kind": "event", "title": "Mind and Life dialogue on sleep, dreaming, dying", "summary": "Held with the Dalai Lama and a group of senior scientists and contemplatives. Will produce Sleeping, Dreaming, and Dying (1997)."},
-    {"sort_key": 1997, "date": "1997", "unit": 6, "tradition": "Convergence", "kind": "text", "title": "Varela ed., Sleeping, Dreaming, and Dying", "summary": "The Mind and Life dialogue volume. The single best entry point to the contemplative-scientific integration on dream practice. Essential reading."},
-    {"sort_key": 1998, "date": "1998", "unit": 2, "tradition": "Bön (Mother Tantra)", "kind": "text", "title": "Tenzin Wangyal, Tibetan Yogas of Dream and Sleep", "summary": "The most-read English text on dream-yoga practice. The course's Modules 2, 3, and 7 primary reading."},
-    {"sort_key": 2002, "date": "2002", "unit": 2, "tradition": "Tibetan Buddhist (Dzogchen)", "kind": "text", "title": "Namkhai Norbu, Dream Yoga and the Practice of Natural Light (revised edition)", "summary": "Primary modern Dzogchen treatment of dream practice in English. The course's Module 3 secondary reading."},
-    {"sort_key": 2009, "date": "2009", "unit": 5, "tradition": "Western science (German)", "kind": "discovery", "title": "Voss et al., 'Lucid Dreaming: A State of Consciousness with Features of Both Waking and Non-Lucid Dreaming'", "summary": "Sleep 32: 1191–1200. High-resolution EEG study establishing that lucid dreaming exhibits a hybrid neural signature — gamma activity of waking plus REM substrate. Major step in the maturation of the science."},
-    {"sort_key": 2012, "date": "2012", "unit": 5, "tradition": "Western science (German)", "kind": "discovery", "title": "Dresler et al., dorsolateral prefrontal cortex activation in lucid REM", "summary": "Sleep 35: 1017–1020. Combined EEG/fMRI localizes the lucid-dreaming signature to the dorsolateral prefrontal cortex — the metacognitive monitoring region whose activity is suppressed in ordinary REM sleep."},
-    {"sort_key": 2012, "date": "2012", "unit": 6, "tradition": "Convergence (US)", "kind": "text", "title": "B. Alan Wallace, Dreaming Yourself Awake", "summary": "Most-developed contemplative-scientific bridge text for dream-yoga. Integrates the Tibetan tradition with contemporary cognitive science."},
-    {"sort_key": 2014, "date": "2014", "unit": 5, "tradition": "Western science (German)", "kind": "discovery", "title": "Voss et al., gamma-tACS induction study", "summary": "Nature Neuroscience 17: 810–812. Transcranial alternating current stimulation at 25 and 40 Hz applied during REM sleep increases lucid-dream rates. Controversial; mixed replication."},
-    {"sort_key": 2015, "date": "2015", "unit": 6, "tradition": "Convergence", "kind": "text", "title": "Evan Thompson, Waking, Dreaming, Being", "summary": "Most rigorous contemporary philosophical treatment of consciousness across the four states. Successor volume to Sleeping, Dreaming, and Dying."},
-    {"sort_key": 2015, "date": "2015", "unit": 5, "tradition": "Western science (German)", "kind": "discovery", "title": "Filevich et al., metacognition–lucid-dreaming structural correlation", "summary": "Journal of Neuroscience 35: 1082–1088. Frequent lucid dreamers show enhanced gray matter volume in anterior prefrontal cortex — the brain region central to metacognitive monitoring. Ties lucid dreaming to general metacognitive capacity."},
-    {"sort_key": 2016, "date": "2016", "unit": 6, "tradition": "Convergence", "kind": "text", "title": "Andrew Holecek, Dream Yoga", "summary": "Accessible integration of the Tibetan tradition with contemporary lucid-dreaming science. The course's Module 5 secondary reading."},
-    {"sort_key": 2017, "date": "2017", "unit": 5, "tradition": "Western science (Australia)", "kind": "discovery", "title": "Aspy et al., reality-testing + MILD induction study", "summary": "Dreaming 27: 206–231. National Australian Lucid Dream Induction Study — establishes comparative effectiveness of major induction techniques (WBTB + MILD + reality-testing) in a substantial sample."},
-    {"sort_key": 2018, "date": "2018", "unit": 5, "tradition": "Western science (US)", "kind": "discovery", "title": "LaBerge et al., galantamine pharmacological induction study", "summary": "PLOS ONE 13: e0201246. Double-blind placebo-controlled trial — 8 mg pre-sleep galantamine produces ~4× increase in lucid-dream rates. The first robustly-replicated pharmacological lucid-dream induction."},
-    {"sort_key": 2018, "date": "2018", "unit": 2, "tradition": "Tibetan Buddhist (Dzogchen)", "kind": "person", "title": "Namkhai Norbu (1938–2018) dies", "summary": "Senior figure of Western Dzogchen transmission for the second half of the twentieth century. Continues through the Dzogchen Community."},
-    {"sort_key": 2020, "date": "2020", "unit": 5, "tradition": "Western science (Austria)", "kind": "discovery", "title": "Holzinger et al., lucid-dream treatment for nightmares (clinical)", "summary": "Behavioral Sleep Medicine 18: 462–474. Clinical study establishing lucid-dreaming-based intervention as an effective therapeutic tool for chronic nightmare disorder, particularly when integrated with imagery rehearsal therapy."},
-    {"sort_key": 2021, "date": "2021", "unit": 5, "tradition": "Western science", "kind": "text", "title": "Stickgold and Zadra, When Brains Dream", "summary": "Most recent accessible synthesis of the contemporary science of dreaming, including lucid dreaming."}
+    {
+      "sort_key": -1500,
+      "date": "c. 1500 BCE",
+      "unit": 1,
+      "tradition": "Vedic",
+      "kind": "text",
+      "title": "Ṛgveda composed",
+      "summary": "Early Vedic dream references, principally apotropaic verses against bad dreams (RV 10.36.4, 8.47.14–18). Establishes dream as a real domain of ritual concern in Vedic India."
+    },
+    {
+      "sort_key": -1200,
+      "date": "c. 1200 BCE",
+      "unit": 1,
+      "tradition": "Chinese (pre-Daoist)",
+      "kind": "text",
+      "title": "Shang oracle bones with dream divinations",
+      "summary": "Late Shang dynasty scapulimancy includes systematic royal dream-questions. State-level dream divination established in China."
+    },
+    {
+      "sort_key": -1000,
+      "date": "c. 1000 BCE",
+      "unit": 1,
+      "tradition": "Vedic",
+      "kind": "text",
+      "title": "Atharvaveda dream-omen passages",
+      "summary": "Atharvaveda 6.46, 7.100, 16.5 systematize dream-omens with ritual responses for bad dreams."
+    },
+    {
+      "sort_key": -800,
+      "date": "c. 800 BCE",
+      "unit": 1,
+      "tradition": "Greek",
+      "kind": "text",
+      "title": "Homer, Iliad and Odyssey",
+      "summary": "Earliest Greek treatments of dream as message from the gods. Penelope's gates of horn and ivory (Od. 19.560–569) introduce the epistemic problem of dream."
+    },
+    {
+      "sort_key": -700,
+      "date": "c. 700 BCE",
+      "unit": 1,
+      "tradition": "Hindu / Vedanta",
+      "kind": "text",
+      "title": "Bṛhadāraṇyaka Upaniṣad composed",
+      "summary": "Yājñavalkya–Janaka dialogue (Book IV) — the dreamer 'fashions for itself' the dream from waking impressions. First sustained Indian philosophy of dream."
+    },
+    {
+      "sort_key": -600,
+      "date": "c. 600 BCE",
+      "unit": 1,
+      "tradition": "Hindu / Vedanta",
+      "kind": "text",
+      "title": "Chāndogya Upaniṣad composed",
+      "summary": "First clear treatment of deep sleep (suṣupti) as a state of consciousness in its own right (CU 6.8 — the bird-and-string analogy)."
+    },
+    {
+      "sort_key": -500,
+      "date": "c. 500 BCE",
+      "unit": 1,
+      "tradition": "Hindu / Vedanta",
+      "kind": "text",
+      "title": "Māṇḍūkya Upaniṣad composed",
+      "summary": "Twelve verses establishing the four-state model (jāgrat / svapna / suṣupti / turīya) and pairing each state with the syllable Om. The philosophical bedrock for nearly all later Asian discussion of consciousness across states."
+    },
+    {
+      "sort_key": -400,
+      "date": "c. 400 BCE",
+      "unit": 1,
+      "tradition": "Daoist",
+      "kind": "text",
+      "title": "Zhuangzi composed",
+      "summary": "Zhuang Zhou (369–286 BCE). The butterfly passage in Inner Chapters 2 — the most-cited Chinese text on dream. Reframes the dream–waking question around 'the transformation of things' (wu hua)."
+    },
+    {
+      "sort_key": -350,
+      "date": "c. 350 BCE",
+      "unit": 1,
+      "tradition": "Greek",
+      "kind": "text",
+      "title": "Aristotle's On Sleep, On Dreams, On Divination through Sleep",
+      "summary": "The Parva Naturalia — first systematic Greek philosophy of dream. Naturalistic, skeptical of most prophetic dreams, treats dream as residual perceptual activity."
+    },
+    {
+      "sort_key": -300,
+      "date": "c. 300 BCE",
+      "unit": 1,
+      "tradition": "Chinese (pre-Daoist)",
+      "kind": "text",
+      "title": "Zhouli describes the zhanmeng office",
+      "summary": "Court official charged with dream-interpretation, with a six-fold classification (ordinary, surprise, thinking, waking, joyful, fearful dreams)."
+    },
+    {
+      "sort_key": -100,
+      "date": "c. 100 BCE",
+      "unit": 1,
+      "tradition": "Indian Buddhist",
+      "kind": "text",
+      "title": "Milindapañha composed",
+      "summary": "The dialogues of Nāgasena and the Bactrian Greek king Menander (Pāli: Milinda). Book IV's dream passages establish the four-cause typology (vāta, pitta, kapha, perceptual residues) influential across centuries of Buddhist scholasticism."
+    },
+    {
+      "sort_key": -50,
+      "date": "c. 60 BCE",
+      "unit": 1,
+      "tradition": "Roman",
+      "kind": "text",
+      "title": "Cicero, De Divinatione",
+      "summary": "Sustained skeptical critique of dream-prophecy and Roman divination tradition. An unusually rigorous ancient treatment of the epistemology of dream-revelation."
+    },
+    {
+      "sort_key": 150,
+      "date": "c. 150 CE",
+      "unit": 1,
+      "tradition": "Greek",
+      "kind": "text",
+      "title": "Artemidorus, Oneirocritica",
+      "summary": "Five-book interpretive manual — the most complete Greek dream-book to survive. The structural ancestor of every dream-dictionary published since."
+    },
+    {
+      "sort_key": 180,
+      "date": "c. 180 CE",
+      "unit": 1,
+      "tradition": "Greek",
+      "kind": "text",
+      "title": "Galen, On Diagnosis from Dreams",
+      "summary": "Hippocratic-Galenic medical tradition's developed treatment of dream as diagnostic indicator. Will dominate Mediterranean and Islamic medical thinking about dream into early modern period."
+    },
+    {
+      "sort_key": 350,
+      "date": "c. 350 CE",
+      "unit": 3,
+      "tradition": "Daoist",
+      "kind": "text",
+      "title": "Liezi compiled",
+      "summary": "Includes Chapter 3 'King Mu of Zhou' — most developed early Daoist dream theory. Spirit-cultivation framework: dream-state and waking-state in bidirectional feedback through cultivation of qi and shen."
+    },
+    {
+      "sort_key": 400,
+      "date": "c. 400 CE",
+      "unit": 1,
+      "tradition": "Indian Buddhist",
+      "kind": "person",
+      "title": "Asaṅga and Vasubandhu found Yogācāra",
+      "summary": "Brothers who develop Vijñānavāda Buddhism. Vasubandhu's Viṃśatikā becomes locus classicus for Buddhist analysis of dream as illustrating the constructed character of all experience (vijñapti-mātra)."
+    },
+    {
+      "sort_key": 410,
+      "date": "c. 410 CE",
+      "unit": 1,
+      "tradition": "Roman",
+      "kind": "text",
+      "title": "Macrobius, Commentary on the Dream of Scipio",
+      "summary": "Five-fold dream classification (somnium, visio, oraculum, insomnium, visum) becomes canonical in medieval European tradition for the next millennium."
+    },
+    {
+      "sort_key": 430,
+      "date": "c. 430 CE",
+      "unit": 3,
+      "tradition": "Theravāda Buddhist",
+      "kind": "text",
+      "title": "Buddhaghosa's Visuddhimagga",
+      "summary": "Theravāda commentarial tradition's framework for dream — four causes (refining the Milindapañha scheme). Treats dream as illustration of conditioned experience rather than as object of specific cultivation."
+    },
+    {
+      "sort_key": 622,
+      "date": "c. 622",
+      "unit": 3,
+      "tradition": "Japanese (early)",
+      "kind": "person",
+      "title": "Shōtoku Taishi (574–622)",
+      "summary": "Foundational figure of Buddhist statecraft in Japan; associated with the yume-dono (dream-hall) tradition at Hōryū-ji."
+    },
+    {
+      "sort_key": 650,
+      "date": "c. 650 CE",
+      "unit": 1,
+      "tradition": "Hindu / Vedanta",
+      "kind": "person",
+      "title": "Gauḍapāda's Māṇḍūkya-Kārikā",
+      "summary": "Verse commentary on the Mandukya. Chapter 3 develops the philosophical argument that waking and dream have parallel logical status — the engine that the Tibetan illusory-body tradition will later operationalize."
+    },
+    {
+      "sort_key": 700,
+      "date": "c. 700 CE",
+      "unit": 3,
+      "tradition": "Islamic",
+      "kind": "person",
+      "title": "Muḥammad Ibn Sirin (c. 654–728)",
+      "summary": "Basran scholar associated with the systematic Islamic dream-interpretation tradition. The textual corpus bearing his name is the foundation of the dream-science (ilm tafsīr al-ru'yā) for the Islamic world."
+    },
+    {
+      "sort_key": 750,
+      "date": "c. 750 CE",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Nyingma)",
+      "kind": "person",
+      "title": "Padmasambhava and the early transmission",
+      "summary": "Tantric teacher from Oḍḍiyāna brought to Tibet under King Trisong Detsen. Foundational figure for the Nyingma tradition; the early translation period (snga 'gyur) begins with his work."
+    },
+    {
+      "sort_key": 820,
+      "date": "c. 820 CE",
+      "unit": 3,
+      "tradition": "Japanese (Shingon)",
+      "kind": "person",
+      "title": "Kūkai / Kōbō Daishi (774–835)",
+      "summary": "Brings esoteric Buddhism to Japan from Tang China. Sokushin Jōbutsu Gi establishes framework of three mysteries (sanmitsu) within which Shingon dream practice operates."
+    },
+    {
+      "sort_key": 850,
+      "date": "c. 850 CE",
+      "unit": 3,
+      "tradition": "Daoist",
+      "kind": "text",
+      "title": "Tang dynasty chuanqi dream-tales flourish",
+      "summary": "Shen Jiji's Pillow Story (c. 781) crystallizes the huang liang yi meng (yellow-millet dream) trope: an entire life experienced in a dream during the time it takes to cook a pot of millet."
+    },
+    {
+      "sort_key": 900,
+      "date": "c. 900 CE",
+      "unit": 3,
+      "tradition": "Daoist",
+      "kind": "person",
+      "title": "Chen Tuan (c. 871–989)",
+      "summary": "Daoist master associated with Mount Hua and the sleep-cultivation tradition. The Twenty-Four Sleep Exercises (Mian gong er-shi-si shi) develop a structured Daoist sleep-yoga, preserved later in the Quanzhen lineage."
+    },
+    {
+      "sort_key": 988,
+      "date": "988",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "Tilopa (988–1069)",
+      "summary": "Indian mahāsiddha who synthesized teachings from multiple Indian sources into what would become the Six Yogas. First link in the Kagyu transmission chain."
+    },
+    {
+      "sort_key": 1000,
+      "date": "c. 1000 CE",
+      "unit": 3,
+      "tradition": "Daoist",
+      "kind": "tradition",
+      "title": "Inner alchemy (neidan) tradition matures",
+      "summary": "Tang–Song development of jing/qi/shen cultivation, the reversal of natural flow, and the embryo of immortality. The framework within which Chen Tuan's sleep practices are situated."
+    },
+    {
+      "sort_key": 1041,
+      "date": "1041",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "Nāropa (956–1041)",
+      "summary": "Tilopa's principal disciple. Systematizes Tilopa's teachings into the Six Yogas of Naropa: tummo, illusory body, dream, clear light, bardo, transference."
+    },
+    {
+      "sort_key": 1097,
+      "date": "1097",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "Marpa the Translator (1012–1097)",
+      "summary": "Travels to India three times, studies with Nāropa, brings the Six Yogas back to Tibet. Founding figure of the Kagyu lineage."
+    },
+    {
+      "sort_key": 1100,
+      "date": "c. 1100 CE",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "tradition",
+      "title": "Second diffusion (phyi dar) consolidates",
+      "summary": "Tibetan students travel to India; Indian masters invited to Tibet; new translations produced. Institutional framework for the four major schools begins to take shape."
+    },
+    {
+      "sort_key": 1117,
+      "date": "1117",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "person",
+      "title": "Padampa Sangye (d. 1117)",
+      "summary": "Indian master who transmitted zhi byed (pacifying) and the gcod (chöd) tradition to Tibet, including distinctive dream practices."
+    },
+    {
+      "sort_key": 1123,
+      "date": "1123",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "Milarepa (c. 1040–1123)",
+      "summary": "Marpa's principal disciple. The great yogi-poet whose songs (mgur 'bum) include some of the most beautiful Tibetan literature on dream and sleep practice."
+    },
+    {
+      "sort_key": 1140,
+      "date": "c. 1140",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Shangpa)",
+      "kind": "person",
+      "title": "Khyungpo Naljor and the Niguma transmission",
+      "summary": "Founder of the Shangpa Kagyu. Brings back the Six Yogas of Niguma — a parallel transmission to the Nāropa lineage."
+    },
+    {
+      "sort_key": 1149,
+      "date": "1149",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "person",
+      "title": "Machig Labdrön (1055–1149)",
+      "summary": "Female master who systematized chöd practice. The chöd dream-practice (offering the dream-body to dream-beings) is a distinctive Tibetan contribution."
+    },
+    {
+      "sort_key": 1153,
+      "date": "1153",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "Gampopa (1079–1153)",
+      "summary": "Milarepa's principal disciple. Unites the Kagyu yogic tradition with the Kadampa monastic tradition. Author of Jewel Ornament of Liberation."
+    },
+    {
+      "sort_key": 1191,
+      "date": "1191",
+      "unit": 3,
+      "tradition": "Sufi / Islamic",
+      "kind": "person",
+      "title": "Suhrawardī (1154–1191)",
+      "summary": "Persian philosopher of illuminationism (ḥikmat al-ishrāq). Develops the framework of the 'ālam al-mithāl al-mutlaq (absolute imaginal world). Executed at thirty-seven."
+    },
+    {
+      "sort_key": 1193,
+      "date": "1193",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Kagyu)",
+      "kind": "person",
+      "title": "First Karmapa, Düsum Khyenpa (1110–1193)",
+      "summary": "Founder of the Karma Kagyu lineage — the first formally-recognized tulku (reincarnated teacher) lineage in Tibet."
+    },
+    {
+      "sort_key": 1232,
+      "date": "1232",
+      "unit": 3,
+      "tradition": "Japanese Buddhist (Kegon-Shingon)",
+      "kind": "person",
+      "title": "Myōe Kōben (1173–1232) and his dream diary",
+      "summary": "The Yume no Ki — a continuous dream-record kept for nearly forty years, among the longest sustained dream-records in any pre-modern tradition. Treats dream as continuous with waking practice and as a field of devotional encounter."
+    },
+    {
+      "sort_key": 1240,
+      "date": "1240",
+      "unit": 3,
+      "tradition": "Sufi / Islamic",
+      "kind": "person",
+      "title": "Ibn al-ʿArabī (1165–1240)",
+      "summary": "The Andalusian Sufi master ('al-Shaykh al-Akbar'). Develops the metaphysics of imagination and the doctrine of the 'ālam al-mithāl (imaginal world) as a real ontological domain. Futūḥāt al-Makkiyya and Fuṣūṣ al-Ḥikam are the principal works."
+    },
+    {
+      "sort_key": 1242,
+      "date": "1242",
+      "unit": 3,
+      "tradition": "Japanese Buddhist (Sōtō Zen)",
+      "kind": "text",
+      "title": "Dōgen composes 'Mu chū setsu mu'",
+      "summary": "The Shōbōgenzō fascicle 'Within a Dream Expressing the Dream'. Among the most philosophically sophisticated treatments of dream in any tradition. Reframes the dream/reality distinction as the activity of buddha-nature."
+    },
+    {
+      "sort_key": 1253,
+      "date": "1253",
+      "unit": 3,
+      "tradition": "Japanese Buddhist (Sōtō Zen)",
+      "kind": "person",
+      "title": "Dōgen (1200–1253) dies",
+      "summary": "Founder of Sōtō Zen in Japan. The Shōbōgenzō stands as his masterwork and the most sophisticated Zen treatment of dream and waking."
+    },
+    {
+      "sort_key": 1325,
+      "date": "c. 1325",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "tradition",
+      "title": "Bardo Thödol cycle revealed by Karma Lingpa (14th century)",
+      "summary": "The 'Tibetan Book of the Dead' tradition — termas attributed to Padmasambhava but revealed by the tertön Karma Lingpa. Includes the dream-bardo passages central to the Tibetan dream-yoga inheritance."
+    },
+    {
+      "sort_key": 1366,
+      "date": "c. 1366",
+      "unit": 3,
+      "tradition": "Sufi / Islamic",
+      "kind": "tradition",
+      "title": "Naqshbandī Sufi order founded",
+      "summary": "Central Asian Sufi order known for distinctive dream practices, including structured engagement with dreams of the deceased master."
+    },
+    {
+      "sort_key": 1419,
+      "date": "1419",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Geluk)",
+      "kind": "person",
+      "title": "Tsongkhapa (1357–1419)",
+      "summary": "Founder of the Geluk school. His commentaries on the Six Yogas of Nāropa are among the most rigorous Tibetan treatments of dream practice."
+    },
+    {
+      "sort_key": 1640,
+      "date": "1640",
+      "unit": 3,
+      "tradition": "Sufi / Islamic",
+      "kind": "person",
+      "title": "Mullā Ṣadrā (1571–1640)",
+      "summary": "Great Safavid-era Persian philosopher. Integrates the Akbarian (Ibn al-ʿArabī) framework with peripatetic philosophy and the Shi'ite tradition."
+    },
+    {
+      "sort_key": 1867,
+      "date": "1867",
+      "unit": 4,
+      "tradition": "Western (French)",
+      "kind": "text",
+      "title": "Hervey de Saint-Denys, Les rêves et les moyens de les diriger",
+      "summary": "First systematic Western study of deliberate dream-cultivation. Based on a 1,946-night dream journal. Develops induction methods that anticipate nearly every modern lucid-dreaming technique."
+    },
+    {
+      "sort_key": 1899,
+      "date": "1899",
+      "unit": 4,
+      "tradition": "Western (Austrian)",
+      "kind": "text",
+      "title": "Freud, Die Traumdeutung (The Interpretation of Dreams)",
+      "summary": "Establishes the depth-psychological framework that will dominate Western thinking about dream for most of the twentieth century. Treats dream as coded message to be analyzed, not as a state in which one practices."
+    },
+    {
+      "sort_key": 1899,
+      "date": "1899",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Rimé)",
+      "kind": "person",
+      "title": "Jamgon Kongtrul Lodrö Thaye (1813–1899)",
+      "summary": "Great non-sectarian (ris med) compiler of the nineteenth century. Treasury of Knowledge and Treasury of Spiritual Instructions are encyclopedic compilations including substantial Six Yogas materials across multiple lineages."
+    },
+    {
+      "sort_key": 1913,
+      "date": "1913",
+      "unit": 4,
+      "tradition": "Western (Dutch)",
+      "kind": "text",
+      "title": "Frederik van Eeden, 'A Study of Dreams'",
+      "summary": "Lecture to the Society for Psychical Research, December 19, 1913; published 1914. Coins the term 'lucid dream' (Dutch: helder bewust droom) as a technical category. Based on van Eeden's own dream journal (1898–1912)."
+    },
+    {
+      "sort_key": 1921,
+      "date": "1921",
+      "unit": 4,
+      "tradition": "Western (British)",
+      "kind": "text",
+      "title": "Mary Arnold-Forster, Studies in Dreams",
+      "summary": "First book-length English-language treatment of deliberate dream cultivation aimed at general readers. Develops the flying technique for dream-stabilization."
+    },
+    {
+      "sort_key": 1924,
+      "date": "1924",
+      "unit": 4,
+      "tradition": "Western (French)",
+      "kind": "tradition",
+      "title": "Breton, Manifeste du surréalisme",
+      "summary": "Surrealist movement places dream at the center of avant-garde artistic project. Develops techniques (automatic writing, sleep-induced composition) for cultivating dream-like states in waking creative work."
+    },
+    {
+      "sort_key": 1931,
+      "date": "1931",
+      "unit": 4,
+      "tradition": "Western (Russian)",
+      "kind": "text",
+      "title": "Ouspensky, A New Model of the Universe",
+      "summary": "Chapter 6 'Experimental Mysticism' describes 'half-dream state' experiments — essentially a wake-initiated lucid dreaming (WILD) technique. Bridges empirical and contemplative-philosophical traditions."
+    },
+    {
+      "sort_key": 1935,
+      "date": "1935",
+      "unit": 4,
+      "tradition": "Tibetan Buddhist / Western reception",
+      "kind": "text",
+      "title": "Evans-Wentz, Tibetan Yoga and Secret Doctrines",
+      "summary": "First English translation of Six Yogas of Naropa material. Editorially flawed (theosophical contamination) but the first sustained Western access to the Tibetan dream-yoga tradition."
+    },
+    {
+      "sort_key": 1953,
+      "date": "1953",
+      "unit": 5,
+      "tradition": "Western science",
+      "kind": "discovery",
+      "title": "Aserinsky and Kleitman discover REM sleep",
+      "summary": "'Regularly Occurring Periods of Eye Motility' (Science 118: 273–274). Establishes that the sleeping brain cycles through distinct states with distinct neurophysiological signatures. Founds the modern science of sleep."
+    },
+    {
+      "sort_key": 1959,
+      "date": "1959",
+      "unit": 5,
+      "tradition": "Western science (German)",
+      "kind": "person",
+      "title": "Paul Tholey begins lucid-dream research",
+      "summary": "Frankfurt sport scientist and Gestalt psychologist. Develops the reflection technique (Reflexionstechnik) — the cultivation of habitual reality-testing in waking that transfers into dream. Most empirically validated induction method."
+    },
+    {
+      "sort_key": 1959,
+      "date": "1959",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "event",
+      "title": "Dalai Lama and senior teachers flee Tibet",
+      "summary": "Chinese occupation forces emigration of Tibetan religious leadership. Unintended consequence: Tibetan teachers come into contact with Western students at scale for the first time."
+    },
+    {
+      "sort_key": 1960,
+      "date": "1960",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Dzogchen)",
+      "kind": "person",
+      "title": "Namkhai Norbu settles in Italy",
+      "summary": "Begins what will become the Dzogchen Community — the principal Western institutional channel for Dzogchen dream-yoga teaching."
+    },
+    {
+      "sort_key": 1963,
+      "date": "1963",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist",
+      "kind": "person",
+      "title": "Chögyam Trungpa Rinpoche arrives in England",
+      "summary": "Karma Kagyu and Nyingma trained; among the first Tibetan teachers to settle in the West and teach openly to Western students. Moves to North America in 1970."
+    },
+    {
+      "sort_key": 1969,
+      "date": "1969",
+      "unit": 4,
+      "tradition": "Sufi / Western reception",
+      "kind": "text",
+      "title": "Henry Corbin, Creative Imagination in the Sufism of Ibn 'Arabi",
+      "summary": "Foundational Western treatment of the Sufi imaginal-world tradition. Translates 'ālam al-mithāl as mundus imaginalis. Opens the Western reception of Ibn al-ʿArabī's framework."
+    },
+    {
+      "sort_key": 1975,
+      "date": "1975-04-12",
+      "unit": 5,
+      "tradition": "Western science (UK)",
+      "kind": "discovery",
+      "title": "Hearne records the first lucid-dream eye-movement signal",
+      "summary": "University of Hull. Alan Worsley, in confirmed REM sleep, executes the agreed left-right-left-right eye-movement sequence — the first objective verification that a sleeping person can communicate with the waking world during a dream."
+    },
+    {
+      "sort_key": 1980,
+      "date": "1980",
+      "unit": 5,
+      "tradition": "Western science (US)",
+      "kind": "discovery",
+      "title": "LaBerge's Stanford verification",
+      "summary": "Stephen LaBerge independently verifies lucid dreaming at Stanford using the eye-movement signal paradigm. Published 1981 in Perceptual and Motor Skills. The paper that opens the modern scientific era for the broader research community."
+    },
+    {
+      "sort_key": 1985,
+      "date": "1985",
+      "unit": 5,
+      "tradition": "Western science (US)",
+      "kind": "text",
+      "title": "LaBerge, Lucid Dreaming",
+      "summary": "First popular book on the science. Begins the cultural diffusion of the modern lucid-dreaming framework."
+    },
+    {
+      "sort_key": 1987,
+      "date": "1987",
+      "unit": 6,
+      "tradition": "Convergence",
+      "kind": "institution",
+      "title": "Mind and Life Institute founded",
+      "summary": "Francisco Varela, Adam Engle, and the Dalai Lama. Establishes the principal venue for sustained dialogue between Buddhist contemplatives and Western scientists. Will produce the foundational integrative texts of the convergence."
+    },
+    {
+      "sort_key": 1988,
+      "date": "1988",
+      "unit": 5,
+      "tradition": "Western science (US)",
+      "kind": "institution",
+      "title": "LaBerge founds The Lucidity Institute",
+      "summary": "Institutionalizes lucid-dreaming research and education. Will be the principal Western lucid-dreaming research center for the following decades."
+    },
+    {
+      "sort_key": 1990,
+      "date": "1990",
+      "unit": 5,
+      "tradition": "Western science (US)",
+      "kind": "text",
+      "title": "LaBerge and Rheingold, Exploring the World of Lucid Dreaming",
+      "summary": "Becomes the standard introductory text for the contemplative-scientific reception of lucid dreaming. Foundational reading in the modern-scientific module."
+    },
+    {
+      "sort_key": 1991,
+      "date": "1991",
+      "unit": 6,
+      "tradition": "Convergence",
+      "kind": "text",
+      "title": "Varela, Thompson, Rosch, The Embodied Mind",
+      "summary": "Foundational integrative text bringing Buddhist philosophy into dialogue with cognitive science. The framework within which the contemporary contemplative-scientific synthesis develops."
+    },
+    {
+      "sort_key": 1992,
+      "date": "1992",
+      "unit": 2,
+      "tradition": "Bön (Mother Tantra)",
+      "kind": "institution",
+      "title": "Tenzin Wangyal Rinpoche founds Ligmincha International",
+      "summary": "Principal Western institutional channel for the Bön Mother Tantra dream-yoga tradition."
+    },
+    {
+      "sort_key": 1992,
+      "date": "1992",
+      "unit": 6,
+      "tradition": "Convergence (Mind and Life)",
+      "kind": "event",
+      "title": "Mind and Life dialogue on sleep, dreaming, dying",
+      "summary": "Held with the Dalai Lama and a group of senior scientists and contemplatives. Will produce Sleeping, Dreaming, and Dying (1997)."
+    },
+    {
+      "sort_key": 1997,
+      "date": "1997",
+      "unit": 6,
+      "tradition": "Convergence",
+      "kind": "text",
+      "title": "Varela ed., Sleeping, Dreaming, and Dying",
+      "summary": "The Mind and Life dialogue volume. The single best entry point to the contemplative-scientific integration on dream practice. Essential reading."
+    },
+    {
+      "sort_key": 1998,
+      "date": "1998",
+      "unit": 2,
+      "tradition": "Bön (Mother Tantra)",
+      "kind": "text",
+      "title": "Tenzin Wangyal, Tibetan Yogas of Dream and Sleep",
+      "summary": "The most-read English text on dream-yoga practice. Primary reading in the Tibetan-tradition module."
+    },
+    {
+      "sort_key": 2002,
+      "date": "2002",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Dzogchen)",
+      "kind": "text",
+      "title": "Namkhai Norbu, Dream Yoga and the Practice of Natural Light (revised edition)",
+      "summary": "Primary modern Dzogchen treatment of dream practice in English. Secondary reading in the Tibetan-tradition module."
+    },
+    {
+      "sort_key": 2009,
+      "date": "2009",
+      "unit": 5,
+      "tradition": "Western science (German)",
+      "kind": "discovery",
+      "title": "Voss et al., 'Lucid Dreaming: A State of Consciousness with Features of Both Waking and Non-Lucid Dreaming'",
+      "summary": "Sleep 32: 1191–1200. High-resolution EEG study establishing that lucid dreaming exhibits a hybrid neural signature — gamma activity of waking plus REM substrate. Major step in the maturation of the science."
+    },
+    {
+      "sort_key": 2012,
+      "date": "2012",
+      "unit": 5,
+      "tradition": "Western science (German)",
+      "kind": "discovery",
+      "title": "Dresler et al., dorsolateral prefrontal cortex activation in lucid REM",
+      "summary": "Sleep 35: 1017–1020. Combined EEG/fMRI localizes the lucid-dreaming signature to the dorsolateral prefrontal cortex — the metacognitive monitoring region whose activity is suppressed in ordinary REM sleep."
+    },
+    {
+      "sort_key": 2012,
+      "date": "2012",
+      "unit": 6,
+      "tradition": "Convergence (US)",
+      "kind": "text",
+      "title": "B. Alan Wallace, Dreaming Yourself Awake",
+      "summary": "Most-developed contemplative-scientific bridge text for dream-yoga. Integrates the Tibetan tradition with contemporary cognitive science."
+    },
+    {
+      "sort_key": 2014,
+      "date": "2014",
+      "unit": 5,
+      "tradition": "Western science (German)",
+      "kind": "discovery",
+      "title": "Voss et al., gamma-tACS induction study",
+      "summary": "Nature Neuroscience 17: 810–812. Transcranial alternating current stimulation at 25 and 40 Hz applied during REM sleep increases lucid-dream rates. Controversial; mixed replication."
+    },
+    {
+      "sort_key": 2015,
+      "date": "2015",
+      "unit": 6,
+      "tradition": "Convergence",
+      "kind": "text",
+      "title": "Evan Thompson, Waking, Dreaming, Being",
+      "summary": "Most rigorous contemporary philosophical treatment of consciousness across the four states. Successor volume to Sleeping, Dreaming, and Dying."
+    },
+    {
+      "sort_key": 2015,
+      "date": "2015",
+      "unit": 5,
+      "tradition": "Western science (German)",
+      "kind": "discovery",
+      "title": "Filevich et al., metacognition–lucid-dreaming structural correlation",
+      "summary": "Journal of Neuroscience 35: 1082–1088. Frequent lucid dreamers show enhanced gray matter volume in anterior prefrontal cortex — the brain region central to metacognitive monitoring. Ties lucid dreaming to general metacognitive capacity."
+    },
+    {
+      "sort_key": 2016,
+      "date": "2016",
+      "unit": 6,
+      "tradition": "Convergence",
+      "kind": "text",
+      "title": "Andrew Holecek, Dream Yoga",
+      "summary": "Accessible integration of the Tibetan tradition with contemporary lucid-dreaming science. Secondary reading in the convergence module."
+    },
+    {
+      "sort_key": 2017,
+      "date": "2017",
+      "unit": 5,
+      "tradition": "Western science (Australia)",
+      "kind": "discovery",
+      "title": "Aspy et al., reality-testing + MILD induction study",
+      "summary": "Dreaming 27: 206–231. National Australian Lucid Dream Induction Study — establishes comparative effectiveness of major induction techniques (WBTB + MILD + reality-testing) in a substantial sample."
+    },
+    {
+      "sort_key": 2018,
+      "date": "2018",
+      "unit": 5,
+      "tradition": "Western science (US)",
+      "kind": "discovery",
+      "title": "LaBerge et al., galantamine pharmacological induction study",
+      "summary": "PLOS ONE 13: e0201246. Double-blind placebo-controlled trial — 8 mg pre-sleep galantamine produces ~4× increase in lucid-dream rates. The first robustly-replicated pharmacological lucid-dream induction."
+    },
+    {
+      "sort_key": 2018,
+      "date": "2018",
+      "unit": 2,
+      "tradition": "Tibetan Buddhist (Dzogchen)",
+      "kind": "person",
+      "title": "Namkhai Norbu (1938–2018) dies",
+      "summary": "Senior figure of Western Dzogchen transmission for the second half of the twentieth century. Continues through the Dzogchen Community."
+    },
+    {
+      "sort_key": 2020,
+      "date": "2020",
+      "unit": 5,
+      "tradition": "Western science (Austria)",
+      "kind": "discovery",
+      "title": "Holzinger et al., lucid-dream treatment for nightmares (clinical)",
+      "summary": "Behavioral Sleep Medicine 18: 462–474. Clinical study establishing lucid-dreaming-based intervention as an effective therapeutic tool for chronic nightmare disorder, particularly when integrated with imagery rehearsal therapy."
+    },
+    {
+      "sort_key": 2021,
+      "date": "2021",
+      "unit": 5,
+      "tradition": "Western science",
+      "kind": "text",
+      "title": "Stickgold and Zadra, When Brains Dream",
+      "summary": "Most recent accessible synthesis of the contemporary science of dreaming, including lucid dreaming."
+    }
   ]
 }

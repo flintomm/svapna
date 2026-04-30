@@ -83,7 +83,7 @@ export const curriculumModules = [
     blurb:
       'Vedic, Upaniṣadic, Indian Buddhist, Greco-Roman. Four bodies of source material, none of them yet dream yoga, each containing something the later tradition could not have done without.',
     overview:
-      "The earliest contemplative engagements with the dream do not ask what the dream means but what the dream reveals about the structure of consciousness itself. The Vedic seers had already noted that the same person who walks abroad by day wanders elsewhere by night; the Bṛhadāraṇyaka's Yājñavalkya, in dialogue with King Janaka, made the more radical claim that the dreamer fashions the dream from impressions of the waking day. By the time of the Māṇḍūkya Upaniṣad, twelve compressed verses laid out a four-state schema — waking, dreaming, deep sleep, and the witnessing turīya — that would become the philosophical bedrock for almost every later Asian tradition of dream practice. The Buddhist tradition that emerged from the same intellectual environment developed its own analysis: the Milindapañha's Nāgasena distinguishes four causes of dream-experience without granting them epistemic authority; the Mahāyāna's Śāntideva, in the Bodhicaryāvatāra, deploys dream as the working figure for the philosophical claim that all phenomena are appearance-only. Across the Mediterranean, Plato treats dream as the soul revealing itself in undefended form, Aristotle gives it a careful naturalistic account in the Parva Naturalia, and Cicero produces the most rigorous classical critique of dream-prophecy that survives. Four parallel inheritances; together, the ground the rest of the course is built on.",
+      "The earliest contemplative engagements with the dream do not ask what the dream means but what the dream reveals about the structure of consciousness itself. The Vedic seers had already noted that the same person who walks abroad by day wanders elsewhere by night; the Bṛhadāraṇyaka's Yājñavalkya, in dialogue with King Janaka, made the more radical claim that the dreamer fashions the dream from impressions of the waking day. By the time of the Māṇḍūkya Upaniṣad, twelve compressed verses laid out a four-state schema — waking, dreaming, deep sleep, and the witnessing turīya — that would become the philosophical bedrock for almost every later Asian tradition of dream practice. The Buddhist tradition that emerged from the same intellectual environment developed its own analysis: the Milindapañha's Nāgasena distinguishes four causes of dream-experience without granting them epistemic authority; the Mahāyāna's Śāntideva, in the Bodhicaryāvatāra, deploys dream as the working figure for the philosophical claim that all phenomena are appearance-only. Across the Mediterranean, Plato treats dream as the soul revealing itself in undefended form, Aristotle gives it a careful naturalistic account in the Parva Naturalia, and Cicero produces the most rigorous classical critique of dream-prophecy that survives. Four parallel inheritances; together, the ground the rest of the work is built on.",
     primary_sources: [
       "Olivelle's Early Upaniṣads",
       "Padmakara's Way of the Bodhisattva",
@@ -164,7 +164,7 @@ export const curriculumModules = [
     blurb:
       'Where the contemplative and scientific traditions meet, and where they refuse to. The Wallace bridge; what dream yoga adds to the lucid-dreaming program; what the science adds to the tradition; the contemporary teaching landscape; and the parts of the dialogue that hold and the parts that fray.',
     overview:
-      "The contemplative and scientific traditions have, in the last forty years, finally come into sustained contact. B. Alan Wallace's Dreaming Yourself Awake (2012) is the central book that builds the bridge — a Tibetan-trained scholar-practitioner who, having practiced dream yoga in long retreat, takes the Western lucid-dreaming literature on its own terms and re-frames it with what the Tibetan tradition contributes: an aim beyond lucidity, the daytime practice of illusory body, the cultivation of awareness in dreamless sleep, and the bardo as the structural framework that gives the whole practice its weight. Andrew Holecek's Dream Yoga (2016) and Tenzin Wangyal's The Tibetan Yogas of Dream and Sleep (1998) work the same convergence in different registers, for different audiences. The Mind and Life Institute's dialogues, beginning in 1987, supply the institutional venue. Evan Thompson's Waking, Dreaming, Being (2015) supplies the philosophical infrastructure. What the next generation inherits is an integration that is real and unfinished — the contemplative and scientific frames neither collapsed into each other nor allowed to drift apart, with the practice itself as the place where the two have to keep meeting. The course ends; the practice does not.",
+      "The contemplative and scientific traditions have, in the last forty years, finally come into sustained contact. B. Alan Wallace's Dreaming Yourself Awake (2012) is the central book that builds the bridge — a Tibetan-trained scholar-practitioner who, having practiced dream yoga in long retreat, takes the Western lucid-dreaming literature on its own terms and re-frames it with what the Tibetan tradition contributes: an aim beyond lucidity, the daytime practice of illusory body, the cultivation of awareness in dreamless sleep, and the bardo as the structural framework that gives the whole practice its weight. Andrew Holecek's Dream Yoga (2016) and Tenzin Wangyal's The Tibetan Yogas of Dream and Sleep (1998) work the same convergence in different registers, for different audiences. The Mind and Life Institute's dialogues, beginning in 1987, supply the institutional venue. Evan Thompson's Waking, Dreaming, Being (2015) supplies the philosophical infrastructure. What the next generation inherits is an integration that is real and unfinished — the contemplative and scientific frames neither collapsed into each other nor allowed to drift apart, with the practice itself as the place where the two have to keep meeting. The work ends; the practice does not.",
     primary_sources: [
       "Wallace's Dreaming Yourself Awake",
       "Holecek's Dream Yoga",
@@ -340,7 +340,7 @@ export const library = [
     author: 'Tenzin Wangyal Rinpoche',
     year: '1998',
     summary:
-      'The course primary text on the Bön Dzogchen presentation of dream and sleep yoga; the most accessible technically complete treatment in English.',
+      'The primary text on the Bön Dzogchen presentation of dream and sleep yoga; the most accessible technically complete treatment in English.',
     reference: 'Snow Lion, 1998.',
   },
   {
@@ -553,7 +553,7 @@ export const moduleDeepening = {
     further_reading: [
       { author: 'Mullin, Glenn, trans.', title: "Tsongkhapa's Six Yogas of Naropa (Snow Lion, 2005)", note: 'The standard accessible scholarly treatment of the Geluk recension; rigorous on the technical vocabulary the popular literature often elides.' },
       { author: 'Namkhai Norbu', title: 'Dream Yoga and the Practice of Natural Light (Snow Lion, revised 2002)', note: 'The foundational modern Dzogchen text in English on dream and natural-light practice; pairs naturally with Tenzin Wangyal as a second lineage view.' },
-      { author: 'Tenzin Wangyal Rinpoche', title: 'The Tibetan Yogas of Dream and Sleep (Snow Lion, 1998)', note: 'The course primary text on the Bön Dzogchen presentation; the most accessible technically complete treatment in English.' },
+      { author: 'Tenzin Wangyal Rinpoche', title: 'The Tibetan Yogas of Dream and Sleep (Snow Lion, 1998)', note: 'The primary text on the Bön Dzogchen presentation; the most accessible technically complete treatment in English.' },
       { author: 'Padmasambhava (Karma Lingpa terma)', title: 'The Tibetan Book of the Dead, trans. Gyurme Dorje (Penguin, 2005)', note: 'The most complete contemporary English translation of the Bardo Thödol cycle; the framing within which the Tibetan tradition takes dream practice with the seriousness it does.' },
       { author: 'Khenchen Thrangu Rinpoche', title: 'Journey of the Mind: Putting the Teachings on the Bardo into Effective Practice (Namo Buddha, 2002)', note: 'Clear contemporary teaching on dream and sleep yoga from a senior Kagyu lineage holder; less technical than Mullin, more practical.' },
     ],
@@ -629,6 +629,17 @@ export const aboutPages = {
       'The site is built on open-source labor: React, Vite, Tailwind CSS, and the typography projects already named. The debt is acknowledged.',
     ],
   },
+  disclaimer: {
+    title: 'Aside on the Work, Medically',
+    kicker: 'A note on history, science, and clinical care',
+    paragraphs: [
+      'The Svapna Project is a study in dream yoga and lucid dreaming — historical, philosophical, and educational. It draws on the Upaniṣadic, Tibetan, Bön, Sufi, Daoist, Japanese, and Western contemplative traditions, and on the published research literature in dream and sleep science. It describes what those traditions and that literature say. It is not a clinical service.',
+      'Nothing on this site is medical, psychological, or psychiatric advice, and nothing on this site is a substitute for care from a qualified clinician. The lessons describe practices, protocols, and findings as a matter of historical and scientific record. They do not prescribe and they do not diagnose.',
+      'Several of the conditions touched on in the lessons — post-traumatic stress, chronic nightmares, recurrent traumatic dreams, sleep disorders, and any acute mental-health crisis — are conditions for which professional care is the appropriate first step. The contemplative and lucid-dreaming methods discussed here have, in some clinical trials, shown value as adjuncts to such care. They are not replacements for it.',
+      "Where a prescription medication is named in the course of describing the published research — galantamine, in Module 5, is the principal example — the description is historical and scientific. Galantamine is a prescription drug in many jurisdictions and an over-the-counter supplement in others; in either case it is not to be taken without the supervision of a physician familiar with the user's medical history, current medications, and contraindications. The same applies to any other regulated substance the work happens to discuss.",
+      'A reader who is uncertain whether a given practice is appropriate for their situation is encouraged to consult a clinician, not the work. Questions, corrections, and clarifications about anything written here can be sent to admin@svapnaproject.org. Replies arrive when they arrive.',
+    ],
+  },
   contact: {
     title: 'Contact',
     kicker: 'Questions, corrections, permissions',
@@ -636,7 +647,331 @@ export const aboutPages = {
     paragraphs: [
       'Mail about the work, the source materials, or the project lands at admin@svapnaproject.org. Replies arrive when they arrive.',
       'Corrections — typos, mistranslations, citation errors, mis-attributed lineages — go to the same place. Accuracy matters more here than tone.',
-      'Permission to translate, adapt, or republish material from this site: granted in advance, under the terms outlined on the Support page. Notice of any such adaptation is welcomed at the same address.',
+      'Editorial material on this site — lessons, glossary, library entries, history copy — is offered under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Translation, adaptation, and republication are granted in advance, with attribution to Svapna Project and a link back to svapnaproject.org. Permissions outside the license — commercial bundling that strips attribution, or use of the project name and marks beyond fair reference — go to admin@svapnaproject.org. Notice of any adaptation is welcomed at the same address.',
+    ],
+  },
+  // privacy and terms are STAGED — placeholders are intentionally visible.
+  // Not surfaced in the about-tabs strip or the footer Index until the
+  // operator fills [OPERATOR LEGAL NAME], [OPERATOR HOME JURISDICTION],
+  // [EFFECTIVE DATE], and the [TO VERIFY] DPF status markers. See
+  // /legal-drafts/policies/INTEGRATION.md for the wiring steps.
+  privacy: {
+    title: 'Privacy',
+    kicker: 'What is collected, where it travels, how long it stays',
+    effective: '[EFFECTIVE DATE]',
+    paragraphs: [
+      'The Svapna Project is a free, donation-supported educational site about dream yoga and lucid dreaming. The site is read-mostly. Where it accepts data — three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
+      'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
+    ],
+    sections: [
+      {
+        name: 'Who runs the site',
+        paragraphs: [
+          'The data controller is [OPERATOR LEGAL NAME], an independent researcher operating the site at svapnaproject.org. Mail about anything in this policy — questions, corrections, requests under the rights enumerated below — lands at admin@svapnaproject.org. Replies arrive when they arrive.',
+          'The operator is not at present a registered legal entity. The placeholder above is filled on publication. The site has no GDPR Article 27 EU representative; whether one is required is an open question for the operator and turns on the eventual scale of EU-resident traffic to the community surface, when it ships.',
+        ],
+      },
+      {
+        name: 'What is collected, and why',
+        paragraphs: [
+          'Three forms, one analytics request, and one donation widget. Each is described below.',
+          'Newsletter subscription — a single field, email address, submitted from the homepage subscribe form. The address is forwarded by the site’s Cloudflare Worker to Buttondown, which stores it on the subscriber list and uses it to deliver future newsletter dispatches. No name, no preferences, no behavioural metadata. Used only to send the newsletter.',
+          'Contact form — four fields: name, email, subject, message. Submitted from the Contact page. The submission is forwarded by the Worker through Resend and delivered as email to admin@svapnaproject.org. Used to read and reply to the message.',
+          'Library pitch form — three fields: name, email, message. Submitted from the Support page. Delivered by the same path as the contact form, with the subject line prefixed [Library] Pitch for inbox routing. Used to evaluate, and where appropriate develop, the editorial pitch.',
+          'Pageview analytics, if consented — a single anonymous pageview event per page visited, sent to Umami Cloud after the visitor grants consent through the banner shown on first visit. No cookies, no cross-site identifiers, no fingerprinting beyond what Umami does by default. Refused consent means no analytics request is fired at all.',
+          'Donation widget, if engaged — the Support page loads the Buy Me a Coffee donation widget after consent. The widget itself, until clicked, is a script and a small visual bubble; opening it loads the BMC interface, where a donation can be made. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details.',
+          'No account system, no comment system, no behavioural advertising, no data sold to anyone, ever. The community surface described in the project’s spec is in build and not yet live; when it ships, this policy is updated to describe the additional data it processes (display name, post content, moderation history) before the surface accepts a single submission.',
+        ],
+      },
+      {
+        name: 'How long it is kept',
+        paragraphs: [
+          'Contact-form messages and library pitches: up to 24 months in the inbox at admin@svapnaproject.org, then archived or deleted at the operator’s discretion. Earlier deletion on request.',
+          'Newsletter subscribers: until unsubscribe. Every dispatch carries a one-click unsubscribe link; unsubscribed addresses are removed from Buttondown’s active list and retained only as a suppression record so the address is not re-added by accident.',
+          'Analytics events: per Umami Cloud’s defaults, currently a rolling retention window the operator confirms against umami.is/docs before publishing.',
+          'Donation records: held by Buy Me a Coffee under BMC’s own retention schedule; the operator sees only the small amount BMC surfaces in the creator dashboard (donor handle, message, amount).',
+          'Community-surface content, when shipped: per the retention rules in the eventual community policy; this policy is updated before that surface accepts data.',
+        ],
+      },
+      {
+        name: 'Who it is shared with',
+        paragraphs: [
+          'Five third parties carry data on the site’s behalf. None receives data for purposes beyond the function described.',
+          'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Privacy policy: cloudflare.com/privacypolicy. Current DPF status: [TO VERIFY].',
+          'Umami Cloud — pageview analytics, loaded only after consent. Privacy-friendly by design: no cookies, no cross-site identifiers. Privacy policy: umami.is/privacy. Current DPF status: [TO VERIFY].',
+          'Buy Me a Coffee — donation processor and widget host, loaded only after consent. Privacy policy: [BMC PRIVACY POLICY URL — TO VERIFY]. Current DPF status: [TO VERIFY].',
+          'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Privacy policy: buttondown.com/privacy. Current DPF status: [TO VERIFY].',
+          'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Privacy policy: resend.com/legal/privacy-policy. Current DPF status: [TO VERIFY].',
+        ],
+      },
+      {
+        name: 'International transfers',
+        paragraphs: [
+          'All five processors are headquartered in the United States or the European Union. A submission from outside the processor’s home region is, in legal terms, an international transfer of personal data.',
+          'For transfers from the UK or EEA to the United States, the operative mechanisms are the European Commission’s Standard Contractual Clauses (SCCs) where the processor offers them in its data-processing agreement, and — where the processor is self-certified — the EU-US Data Privacy Framework (DPF) and its UK extension. The DPF status of each processor is recorded as [TO VERIFY] until the operator confirms it on the relevant company’s certification listing at publication.',
+          'Where SCCs and DPF self-certification are both unavailable, the transfer is made on the basis of necessity for the contract the visitor enters into when submitting a form, with the additional safeguards the processor operates under its own privacy programme.',
+        ],
+      },
+      {
+        name: 'Cookies and storage',
+        paragraphs: [
+          'Non-essential storage is loaded only after explicit consent via the banner shown on first visit.',
+          'The site itself uses no cookies for its own purposes — no login, no preferences, no session state. The two third-party scripts that may set cookies or otherwise touch the visitor’s device — Umami Cloud and the Buy Me a Coffee widget — are gated behind the consent banner and load only after consent is granted. Refusing consent means neither script is fetched and no third-party storage is written.',
+          'Consent is revocable at any time through the Cookie preferences link in the footer. Withdrawing consent removes the relevant local-storage flag and prevents the scripts from loading on subsequent navigation.',
+        ],
+      },
+      {
+        name: 'Rights of the data subject',
+        paragraphs: [
+          'The rights below apply to anyone who has submitted data to the site. To exercise any of them, mail admin@svapnaproject.org from the address used at submission, or include enough detail to make the record identifiable. Replies arrive when they arrive, and in any event within the timeframes the applicable law requires.',
+          'Under the GDPR and UK GDPR (Articles 15–22) — access (a copy of the data and the categories, sources, recipients, and retention applicable to it); rectification (correction of inaccurate data); erasure (deletion, subject to the narrow exceptions the law preserves); restriction (a pause on processing during a dispute); portability (a machine-readable copy where processing is automated and based on consent or contract); objection (in practice equivalent to a request for erasure here, since no processing rests on legitimate interest); automated decision-making (none takes place; Article 22 is satisfied trivially); complaint (the right to complain to the supervisory authority in the data subject’s country of residence — in the UK, the ICO at ico.org.uk).',
+          'Under the CCPA and CPRA, for California residents — know (the categories and specific pieces of personal information collected and the categories of third parties with whom it is shared); delete (deletion, subject to the statutory exceptions); correct (correction of inaccurate information); opt-out of sale or sharing (the site does not sell or share for cross-context behavioural advertising; the right is satisfied trivially and a "Do Not Sell or Share" link is therefore not required); limit use of sensitive personal information (none is collected; the right is satisfied trivially); non-discrimination (exercising any of these rights does not change the access, content, or quality of the site offered to the requester).',
+        ],
+      },
+      {
+        name: 'Children',
+        paragraphs: [
+          'The site is not directed at children under the age of 16, and no knowing collection of children’s personal data takes place. Where a submission discloses that the submitter is under 16, the data is deleted and no reply is issued except to confirm the deletion. The community surface in build is gated at 16 or 18 depending on the jurisdictional analysis the operator completes before launch.',
+        ],
+      },
+      {
+        name: 'Changes',
+        paragraphs: [
+          'The operator may update this policy. Material changes — additions of new processors, expansions of data collection, changes to retention or to the rights enumerated above — are flagged on the home page or in a newsletter dispatch before they take effect. Non-material changes are made silently, with the effective date below updated.',
+        ],
+      },
+      {
+        name: 'Contact',
+        paragraphs: [
+          'Mail about this policy, requests to exercise any right, or notice of a suspected breach lands at admin@svapnaproject.org. The data controller of record is [OPERATOR LEGAL NAME].',
+        ],
+      },
+    ],
+  },
+  terms: {
+    title: 'Terms',
+    kicker: 'A working set of rules that match how the project actually behaves',
+    effective: '[EFFECTIVE DATE]',
+    paragraphs: [
+      'These terms govern use of the Svapna Project site at svapnaproject.org. The site is a free, donation-supported educational project about dream yoga and lucid dreaming, run by an independent researcher. The terms are kept short on purpose; the goal is a working set of rules that match how the project actually behaves.',
+    ],
+    sections: [
+      {
+        name: '1. Acceptance',
+        paragraphs: [
+          'Use of the site constitutes acceptance of these terms. Continued use after a material change to these terms constitutes acceptance of the change. Disagreement with the terms is grounds for not using the site.',
+        ],
+      },
+      {
+        name: '2. What the site is',
+        paragraphs: [
+          'A reading site, with a newsletter, a small set of contact forms, and a donation route. Editorial content draws from primary sources in the Indian, Tibetan, Bön, Sufi, Daoist, Japanese, and Western traditions, plus the contemporary lucid-dreaming research literature. The site is not a clinical service, not a credentialing body, and not a commercial product offering.',
+        ],
+      },
+      {
+        name: '3. License to read and share',
+        paragraphs: [
+          'The editorial content of the site — articles, lessons, history pages, the library — is published under the Creative Commons Attribution 4.0 International licence (CC BY 4.0). The full licence text is in LICENSE in the site repository and at creativecommons.org/licenses/by/4.0.',
+          'The licence covers reading, copying, redistributing, and adapting the content for any purpose, including commercial, on the condition that attribution is preserved. Attribution that names the Svapna Project and links back to the source page is sufficient.',
+          'Two carve-outs — trademarks, the wordmark "Svapna Project", and the site’s design system are not covered by the CC BY 4.0 licence; they are reserved. Quoted material from third-party primary sources is reproduced under fair-use / fair-dealing analysis or under the originating publisher’s permission; re-distributors are responsible for their own analysis.',
+          'Use beyond what CC BY 4.0 grants — for example, removal of attribution, or use of the wordmark — requires written permission. Mail admin@svapnaproject.org.',
+        ],
+      },
+      {
+        name: '4. User-submitted content',
+        paragraphs: [
+          'Three forms accept content from the public: the newsletter subscribe form (email only), the contact form (name, email, subject, message), and the library pitch form (name, email, message).',
+          'By submitting, the submitter grants the operator a non-exclusive, worldwide, royalty-free licence to read, store, reply to, and — for library pitches specifically — develop the submission into editorial work for the site, with credit where the submission becomes the seed of a published piece. The submitter retains ownership of the content of the submission and is free to use it elsewhere.',
+          'The submitter represents that the submission is the submitter’s own work or that the submitter has the right to grant the licence above; that the submission is not unlawful, defamatory, or infringing of any third party’s rights; and that the submitter is at least 16 years of age.',
+        ],
+      },
+      {
+        name: '5. Donations',
+        paragraphs: [
+          'Donations are processed by Buy Me a Coffee under BMC’s own terms of service and privacy policy. Donations are made to an independent researcher operating without a registered charitable status; donations are not tax-deductible in any jurisdiction.',
+          'A donation is a gift in the spirit of dāna — generosity, circulation. It is not the purchase of a product or service, not a subscription, and not refund-eligible except where BMC’s own terms or applicable consumer-protection law requires a refund. Editorial content of the site is open to donors and non-donors on identical terms.',
+        ],
+      },
+      {
+        name: '6. Acceptable use',
+        paragraphs: [
+          'In the spirit of the Code of Conduct, and as a matter of contract under these terms, the following are not permitted — harassment, abuse, or threats directed at the operator, contributors, or any other user; impersonation of any person, including the operator; automated access or scraping that disrupts the site or evades a clear technical signal that the access is unwelcome (polite, well-rate-limited reading by archivers and search-engine crawlers is welcome); submission of unlawful content, malware, or content that infringes third-party rights; use of the site, the forms, the newsletter, or the eventual community surface to recruit for any other practice, organisation, or product, or to advertise commercial services; circumvention of access controls or security features.',
+        ],
+      },
+      {
+        name: '7. Health and educational content',
+        paragraphs: [
+          'The site discusses contemplative practice and dream phenomena and includes summaries of psychological and neurological research. The site is not medical, psychological, or psychiatric advice. It does not diagnose, treat, or cure any condition. Where a reader’s circumstances suggest medical or mental-health relevance — sleep disorders, dissociative phenomena, substance use intersecting with sleep, ongoing psychiatric care — the right next step is a qualified clinician, not a website. The fuller disclaimer is at /about/disclaimer.',
+        ],
+      },
+      {
+        name: '8. No warranties',
+        paragraphs: [
+          'The site is provided as is and as available. The operator does not warrant that the content is free of error, that translations or paraphrases of primary sources match the originals in every nuance, that citations are exhaustive, that research summaries reflect the current state of every literature touched, or that the site will be available without interruption. Readers are encouraged to consult the cited primary sources before relying on any specific claim.',
+          'To the maximum extent permitted by applicable law, all implied warranties (merchantability, fitness for a particular purpose, non-infringement, accuracy) are disclaimed.',
+        ],
+      },
+      {
+        name: '9. Limitation of liability',
+        paragraphs: [
+          'To the maximum extent permitted by applicable law, the operator’s aggregate liability arising out of or related to use of the site is limited to the lesser of (a) one hundred US dollars (USD 100) or (b) the total amount, if any, the user contributed to the project in the twelve months preceding the event giving rise to the claim. The operator is not liable for indirect, incidental, special, consequential, exemplary, or punitive damages, including lost profits, lost data, or reputational harm, even if advised of the possibility of such damages.',
+          'Some jurisdictions do not allow the exclusion or limitation of certain warranties or damages. Where that is the case, the limitations above apply only to the extent permitted in the relevant jurisdiction, and the user retains the rights the local law grants.',
+        ],
+      },
+      {
+        name: '10. Indemnity',
+        paragraphs: [
+          'The user agrees to indemnify and hold harmless the operator from claims, damages, and reasonable costs (including reasonable legal fees) arising out of (a) the user’s breach of these terms or (b) content the user submitted to the site that is unlawful or infringes a third party’s rights. The indemnity is narrow on purpose; ordinary use of the site does not trigger it.',
+        ],
+      },
+      {
+        name: '11. Termination',
+        paragraphs: [
+          'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 8, 9, 10, and 12 survive termination.',
+        ],
+      },
+      {
+        name: '12. Governing law and forum',
+        paragraphs: [
+          'These terms are governed by the laws of [OPERATOR HOME JURISDICTION], without regard to conflict-of-laws rules. Disputes arising out of or related to these terms or use of the site are subject to the exclusive jurisdiction of the courts of [OPERATOR HOME JURISDICTION], except where a mandatory consumer-protection rule of the user’s country of residence grants the user a non-waivable right to bring an action locally.',
+        ],
+      },
+      {
+        name: '13. Changes',
+        paragraphs: [
+          'The operator may update these terms. Material changes are flagged on the home page or in a newsletter dispatch before they take effect. Non-material changes are made silently, with the effective date below updated.',
+        ],
+      },
+      {
+        name: '14. Contact',
+        paragraphs: [
+          'Mail about these terms, requests for permission beyond CC BY 4.0, and notices of any kind land at admin@svapnaproject.org.',
+        ],
+      },
+    ],
+  },
+  // accessibility carries only an [EFFECTIVE DATE] placeholder. The page can
+  // be surfaced as soon as the operator triages the items in the parallel
+  // assessment doc and either fixes or honestly discloses each one.
+  accessibility: {
+    title: 'Accessibility',
+    kicker: 'Where the work stands, and where it is going',
+    effective: '[EFFECTIVE DATE]',
+    paragraphs: [
+      'The Svapna Project is a free educational site, offered in the spirit of dāna. It should be readable by anyone who comes to it. The site aims for the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA, as a working target — not a closed claim. Where the site falls short, the gap is named below; where the site meets the standard, the work is recent and the next pass will go further.',
+    ],
+    sections: [
+      {
+        name: 'What is in place',
+        paragraphs: [
+          'The site is text-first by design, which removes a great many of the accessibility hazards of richer surfaces.',
+          'The pages are built from semantic HTML — a single header, navigation, main, and footer per page; one h1 per page and ordered headings beneath; lists rendered as lists; links rendered as links and buttons as buttons.',
+          'The document declares its language. Every form input has a real, programmatically associated label; the email, name, and message fields carry the appropriate autocomplete hints; required fields are marked as such; error messages render in the same flow as the form rather than in pop-ups.',
+          'The site presents no images in its editorial body. There is no decorative imagery to mis-label and no informational imagery whose meaning could be lost to a non-sighted reader.',
+          'The site uses no cookies for its own purposes, no login, no comment thread, no CAPTCHA. The two third-party scripts that may set storage are gated behind an explicit consent strip; refusal keeps the page fully usable. The cookie-consent strip carries a region role and an accessible name. The mobile menu trigger carries an accessible name.',
+        ],
+      },
+      {
+        name: 'Known limitations',
+        paragraphs: [
+          'The statement is honest about what is not yet done.',
+          'The site uses 0.5-pixel hairline borders as a deliberate part of its visual language. The contrast is high (black on white), but at certain zoom levels or on certain displays the strokes may render inconsistently or appear thinner than intended. The aesthetic is load-bearing for the project; the trade-off is named here rather than denied.',
+          'A skip-to-main-content link is not yet present. Keyboard and screen-reader users currently move through the header on every page.',
+          'The mobile menu is implemented as a CSS-only pattern. The trigger is reachable by keyboard, but the open and closed state is not announced to assistive technology, and the Escape key does not close the overlay. A scripted replacement is on the road map.',
+          'A small set of monospace meta labels — index numbers beside nav links, dateline stamps — uses a light grey that does not meet the 4.5:1 contrast ratio for normal text. The body text and primary navigation labels do meet it. The lighter labels are to be revised.',
+          'Focus indicators on form inputs are subtle. A clearer focus ring is on the road map.',
+          'Page transition animations run unconditionally. A prefers-reduced-motion rule is to be added.',
+          'The site has not yet been tested with screen readers (NVDA, VoiceOver, JAWS, TalkBack) or with voice-control software (Dragon, Voice Control). The structural work above is the prerequisite for that testing; the testing is the next pass.',
+        ],
+      },
+      {
+        name: 'What is being worked on',
+        paragraphs: [
+          'In order — a skip-to-main-content link; a prefers-reduced-motion media query covering the site’s keyframe animations; visible focus indicators on inputs and buttons; a contrast revision on the lighter monospace labels; a scripted mobile menu with aria-expanded, aria-controls, and Escape-to-close; a first round of screen-reader testing, and the corrections it produces.',
+        ],
+      },
+      {
+        name: 'Compatibility',
+        paragraphs: [
+          'The site is built against current versions of Chrome, Firefox, Safari, and Edge on desktop and mobile, and against the platform default rendering on iOS and Android. It has not been tested in a structured way with assistive technology; reports from readers using screen readers, magnifiers, switch devices, or voice control are welcomed and will be acted on.',
+        ],
+      },
+      {
+        name: 'Reporting a problem',
+        paragraphs: [
+          'Mail accessibility reports — pages that did not work, controls that could not be reached, content that was not announced — to admin@svapnaproject.org. Please include the page address, the assistive technology and browser in use, and a short description of what happened. Replies arrive when they arrive, and accessibility reports are read first.',
+        ],
+      },
+    ],
+  },
+  // copyright is STAGED — the page will not be surfaced in the public tab
+  // strip or footer Index until the operator registers a designated agent
+  // with the US Copyright Office and fills [AGENT NAME], [AGENT ADDRESS],
+  // [AGENT EMAIL], [AGENT PHONE], [REGISTRATION NUMBER], and [EFFECTIVE DATE].
+  // Required before the /community/* surface accepts a single submission.
+  copyright: {
+    title: 'Copyright and takedown',
+    kicker: 'A working procedure for copyright complaints about community content',
+    effective: '[EFFECTIVE DATE]',
+    paragraphs: [
+      "The community surface at svapnaproject.org/community is a small, lightly moderated space where members post lesson comments, share dreams in invitation-based circles, and post practice-partner listings. Members own what they write. Where a member's post reproduces work that belongs to someone else, the rights-holder has a route to ask for that material to be removed.",
+      'This page describes that route — what a complaint should contain, what the operator does with it, and how a member whose post was removed can dispute the removal. The procedure follows the United States Digital Millennium Copyright Act (DMCA, 17 U.S.C. § 512) and is written so that it also serves the analogous notice-and-action regimes in the United Kingdom and the European Union.',
+    ],
+    sections: [
+      {
+        name: 'If a post is believed to infringe a copyright',
+        paragraphs: [
+          'A complaint is sent to the designated copyright agent named at the foot of this page. A complaint is most useful when it contains the following.',
+          'Identification of the copyrighted work claimed to have been infringed. Where several works are involved, a representative list is acceptable.',
+          'Identification of the material on the site claimed to be infringing, with enough specificity that the operator can find it — a direct URL to the comment, post, or listing is the surest route.',
+          "The complainant's name, postal address, telephone number, and email address.",
+          "A statement that the complainant has a good-faith belief that the use of the material in the manner complained of is not authorised by the copyright owner, the owner's agent, or the law.",
+          "A statement that the information in the complaint is accurate, and — under penalty of perjury — that the complainant is the copyright owner or is authorised to act on the owner's behalf.",
+          'A physical or electronic signature.',
+          'The five elements above are the substance of § 512(c)(3); a complaint that omits any of them may be set aside as deficient. A complaint that meets the form is acted on as described in the next section.',
+        ],
+      },
+      {
+        name: 'What happens next',
+        paragraphs: [
+          'A complaint that arrives in the inbox is reviewed on receipt. Where the complaint is well-formed and identifies content that is plausibly infringing, the material is removed or disabled promptly — typically within three business days, sometimes faster, occasionally slower where the operator is travelling or where the complaint requires a closer reading.',
+          'The member whose content was removed is notified at the email address on file, with a copy of the complaint and a description of the material that was taken down. The notification names the route to file a counter-notice if the member believes the removal was wrong.',
+          'A complaint that is plainly deficient — missing the work identification, missing the good-faith statement, sent from an address that does not appear to belong to the rights-holder or an authorised agent — is returned to the sender with a note describing what is missing, and no action is taken on the underlying content until a sufficient complaint is received.',
+        ],
+      },
+      {
+        name: 'Counter-notice',
+        paragraphs: [
+          'A member who believes that their material was removed in error, or as a result of misidentification, may file a counter-notice with the same designated agent. The counter-notice is most useful when it contains the following, drawn from § 512(g)(3).',
+          "The member's name, postal address, telephone number, and email address.",
+          'Identification of the material that was removed, and the location at which it appeared before removal.',
+          'A statement under penalty of perjury that the member has a good-faith belief that the material was removed as a result of mistake or misidentification.',
+          'A statement consenting to the jurisdiction of the United States federal district court for the judicial district in which the member resides — or, where the member is outside the United States, any judicial district in which the operator may be found — and agreeing to accept service of process from the original complainant or the complainant’s agent.',
+          'A physical or electronic signature.',
+          'A well-formed counter-notice is forwarded to the original complainant. The removed material is restored not less than ten and not more than fourteen business days after the counter-notice is forwarded, unless the original complainant notifies the operator in that window that an action has been filed seeking a court order to keep the material down. This is the schedule § 512(g)(2) sets out, and the operator follows it.',
+        ],
+      },
+      {
+        name: 'Repeat infringers',
+        paragraphs: [
+          "The operator terminates the accounts of members who, in the operator's judgement, are the subject of repeated substantiated complaints. The threshold is qualitative rather than numeric — a single egregious case may warrant termination, while a small number of marginal complaints may not — and is applied case by case, with notice to the member where notice is possible.",
+        ],
+      },
+      {
+        name: 'Outside the United States',
+        paragraphs: [
+          "The same complaint route serves notice-and-action requests under the United Kingdom’s Copyright, Designs and Patents Act 1988 and the European Union’s Digital Services Act, Article 16. The DSA is more flexible than the DMCA on form, and the CDPA’s framework is similar in substance. A complaint that meets the elements listed above will be acted on under the same process, with the statutory references substituted as appropriate.",
+        ],
+      },
+      {
+        name: 'Designated copyright agent',
+        paragraphs: [
+          "Complaints and counter-notices are sent to the operator's designated agent.",
+          'Name: [AGENT NAME]. Postal address: [AGENT ADDRESS]. Email: [AGENT EMAIL]. Telephone: [AGENT PHONE].',
+          "The agent is registered with the United States Copyright Office under registration number [REGISTRATION NUMBER]. Registration is renewed every three years; the renewal date appears in the operator's internal calendar.",
+          'A complaint that arrives at admin@svapnaproject.org rather than the agent address is forwarded; arrival at the agent address is faster.',
+        ],
+      },
     ],
   },
 };

@@ -12,7 +12,7 @@ const url = new URL('/curriculum/welcome', siteUrl).href;
 const articleLd = articleSchema({
   url,
   headline: welcomeLesson.title,
-  description: 'An orientation before the work begins. What the course is, how it is built, and how it would like to be read.',
+  description: 'An orientation before the work begins. What the work is, how it is built, and how it would like to be read.',
   section: 'Curriculum / Orientation',
 });
 const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
@@ -57,7 +57,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
     {welcomeLesson.prompt && (
       <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
         <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Question for the community</span>
         </div>
         <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
           <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;<InlineMarkdown text={welcomeLesson.prompt} />&rdquo;</p>
@@ -66,7 +66,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
             class="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
             style="border: 0.5px solid #000"
           >
-            <span>Join the discussion</span>
+            <span>Community discussion</span>
             <span>→</span>
           </a>
         </div>
@@ -80,7 +80,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
       <div class="p-5 md:p-8 text-right">
         {firstLesson && (
           <a href={`/curriculum/module-01/${firstLesson.urlSlug}`} class="block text-right w-full hover:italic transition-all">
-            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Begin Module I →</p>
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Module I →</p>
             <p class="display text-base md:text-xl mt-2 leading-snug italic">{firstLesson.title}</p>
           </a>
         )}

@@ -7,7 +7,7 @@ import ShareButton from '../components/react/ShareButton.jsx';
 
 <Layout title="Support — Svapna" description="Donation-supported, in the spirit of dāna. Contributions cover hosting and infrastructure.">
   <div class="fade-in">
-    <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="If it's been useful, pass it on." />
+    <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="Donation-supported, in the spirit of dāna." />
 
     {/* On Dāna — the why of donation-funding, lifted from the homepage's voice.
         The donate affordance itself is the BMC floating bubble loaded at the
@@ -18,10 +18,10 @@ import ShareButton from '../components/react/ShareButton.jsx';
       </div>
       <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
         <p class="display text-2xl md:text-3xl italic leading-relaxed text-neutral-800">
-          The work was given to us, and it passes forward.
+          The work was given freely, and passes forward.
         </p>
         <p class="mt-5 md:mt-6 text-base leading-loose text-neutral-700">
-          Dāna — generosity, in the Sanskrit. Not transaction; circulation. The course, the history, the library, the community — open to anyone. If it has served you, the way to thank the work is to keep it open for the next person.
+          Dāna — generosity, in the Sanskrit. Not transaction; circulation. The work, the history, the library, the community — open to anyone. The way to thank the work, if it has served, is to keep it open for the next person.
         </p>
       </div>
     </div>
@@ -35,12 +35,12 @@ import ShareButton from '../components/react/ShareButton.jsx';
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 max-w-3xl">
           <div>
             <p class="display text-2xl md:text-3xl">i.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Write a Library article.</p>
+            <p class="mt-2 md:mt-3 text-sm leading-relaxed">A Library article.</p>
             <LibraryPitchForm client:load />
           </div>
           <div>
             <p class="display text-2xl md:text-3xl">ii.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">Share the course with someone who would use it.</p>
+            <p class="mt-2 md:mt-3 text-sm leading-relaxed">The work, shared with someone who would use it.</p>
             <ShareButton client:load />
           </div>
         </div>
@@ -61,17 +61,8 @@ import ShareButton from '../components/react/ShareButton.jsx';
 
   </div>
 
-  {/* Buy Me a Coffee floating widget — donate bubble, /support only. */}
-  <script
-    data-name="BMC-Widget"
-    data-cfasync="false"
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="svapna"
-    data-description="Support me on Buy me a coffee!"
-    data-message="Thank you!"
-    data-color="#5F7FFF"
-    data-position="Right"
-    data-x_margin="18"
-    data-y_margin="18"
-  ></script>
+  {/* The Buy Me a Coffee widget is no longer loaded directly here — Layout's
+      consent flow injects it on /support after the visitor accepts the
+      storage banner. See ConsentBanner.astro and the loader at the end of
+      Layout.astro. */}
 </Layout>

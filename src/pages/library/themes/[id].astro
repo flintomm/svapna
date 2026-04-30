@@ -1,7 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { themes } from '../../../lib/content.js';
-import { breadcrumbSchema, buildCrumbs, SITE_LEGAL_NAME } from '../../../lib/seo.js';
+import { breadcrumbSchema, buildCrumbs, SITE_NAME } from '../../../lib/seo.js';
 import themedPassages from '../../../data/themed_passages.json';
 
 export function getStaticPaths() {
@@ -24,7 +24,7 @@ const collectionLd = {
   description: theme.desc,
   isPartOf: { '@type': 'WebSite', name: 'Svapna', url: siteUrl },
   about: { '@type': 'Thing', name: theme.label, description: theme.desc },
-  publisher: { '@type': 'Organization', name: SITE_LEGAL_NAME },
+  publisher: { '@type': 'Organization', name: SITE_NAME },
 };
 const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
   { name: 'Library', path: '/library' },

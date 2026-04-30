@@ -5,7 +5,10 @@
 // Astro.site + Astro.url.pathname and pass them down.
 
 export const SITE_NAME = 'Svapna';
-export const SITE_LEGAL_NAME = 'Svapna Project';
+// SITE_LEGAL_NAME removed — there is no registered legal entity behind the
+// site, and asserting one in JSON-LD legalName claims a fact that does not
+// exist. Reintroduce as `SITE_LEGAL_NAME = '<entity name>'` and add
+// `legalName: SITE_LEGAL_NAME` back to the schemas once an entity is formed.
 export const SITE_DESCRIPTION =
   'A free, donation-supported course on dream yoga and lucid dreaming. Mandukya, Tibetan milam, modern lucid-dreaming science.';
 export const SITE_LOGO_PATH = '/logo.svg';
@@ -15,8 +18,7 @@ export function organizationSchema(siteUrl) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: SITE_LEGAL_NAME,
-    alternateName: SITE_NAME,
+    name: SITE_NAME,
     url: siteUrl,
     logo: new URL(SITE_LOGO_PATH, siteUrl).href,
     description: SITE_DESCRIPTION,
@@ -32,7 +34,7 @@ export function websiteSchema(siteUrl) {
     description: SITE_DESCRIPTION,
     publisher: {
       '@type': 'Organization',
-      name: SITE_LEGAL_NAME,
+      name: SITE_NAME,
     },
     inLanguage: 'en',
   };
@@ -67,7 +69,7 @@ export function courseSchema({ url, name, description, lessonCount, providerUrl 
     numberOfCredits: lessonCount,
     provider: {
       '@type': 'Organization',
-      name: SITE_LEGAL_NAME,
+      name: SITE_NAME,
       url: providerUrl,
     },
     offers: {
@@ -96,11 +98,11 @@ export function articleSchema({ url, headline, description, image, datePublished
     isAccessibleForFree: true,
     author: {
       '@type': 'Organization',
-      name: author || SITE_LEGAL_NAME,
+      name: author || SITE_NAME,
     },
     publisher: {
       '@type': 'Organization',
-      name: SITE_LEGAL_NAME,
+      name: SITE_NAME,
     },
     mainEntityOfPage: url,
   };

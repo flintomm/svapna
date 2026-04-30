@@ -17,7 +17,7 @@ const url = new URL('/glossary', siteUrl).href;
 const setLd = definedTermSetSchema({
   url,
   name: 'Svapna Glossary',
-  description: `${glossaryTerms.length} terms in ${languages.length} languages drawn from the course's primary sources.`,
+  description: `${glossaryTerms.length} terms in ${languages.length} languages drawn from the work's primary sources.`,
 });
 const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
   { name: 'Glossary', path: '/glossary' },

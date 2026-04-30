@@ -92,7 +92,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
     {lesson.prompt && (
       <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
         <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Take it to the community</span>
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Question for the community</span>
         </div>
         <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
           <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;<InlineMarkdown text={lesson.prompt} />&rdquo;</p>
@@ -101,7 +101,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
             class="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
             style="border: 0.5px solid #000"
           >
-            <span>Join the discussion</span>
+            <span>Community discussion</span>
             <span>→</span>
           </a>
         </div>
@@ -134,7 +134,7 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
             <p class="display text-base md:text-xl mt-2 leading-snug italic">{nextMod.title}</p>
           </a>
         ) : (
-          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End of course</span>
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">End of the work</span>
         )}
       </div>
     </div>

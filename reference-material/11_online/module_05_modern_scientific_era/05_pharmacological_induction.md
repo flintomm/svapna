@@ -4,6 +4,8 @@
 
 ---
 
+> *A note before the science.* Galantamine is a prescription acetylcholinesterase inhibitor approved for Alzheimer's disease. Its sale and use are regulated in many jurisdictions; it interacts with beta-blockers, anti-cholinergics, and other medications, and is contraindicated in asthma, certain cardiac arrhythmias, and serious mental illness. The lesson below describes the published research and is not a recommendation to use the drug. Anyone considering it does so under the supervision of a physician. See the [medical disclaimer](/about/disclaimer) for the longer note.
+
 ## The 2018 paper
 
 The pharmacological line of research has run alongside the cognitive-behavioral one since the late 1990s, with much of the early work conducted at the Lucidity Institute in Hawaii under LaBerge's direction.

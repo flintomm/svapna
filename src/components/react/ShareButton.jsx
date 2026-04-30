@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const SHARE_URL = 'https://svapnaproject.org';
-const SHARE_TITLE = 'Svapna — a course in dream yoga';
+const SHARE_TITLE = 'Svapna — dream yoga, lucid dreaming, and the work that joins them';
 
 export default function ShareButton() {
   const [status, setStatus] = useState('idle'); // idle | shared | copied | error
