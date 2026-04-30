@@ -1,6 +1,6 @@
 # Svapna
 
-A free, donation-supported course on dream yoga and lucid dreaming.
+A free, donation-supported study of dream yoga and lucid dreaming.
 *"Awaken within the dream."*
 
 ---
@@ -10,6 +10,7 @@ A free, donation-supported course on dream yoga and lucid dreaming.
 - **`OUTLINE.md`** — full project outline (architecture, curriculum, community, support model, design notes, launch priorities)
 - **`src/`** — Astro + React source. Static prerendered pages with small React islands for the contact form, lesson-progress checkboxes, and tradition filters
 - **`reference-material/11_online/`** — the lesson markdown shipped with the build
+- **`reference-material/_voice-rules.md`** — the editorial voice the site is written in; the rules every visible string is held to
 - **`README.md`** — this file
 
 ---
@@ -29,10 +30,20 @@ A free, donation-supported course on dream yoga and lucid dreaming.
 
 1. Home — hero with the four-states (jāgrat / svapna / suṣupti / turīya) diagram from the Mandukya Upanishad
 2. History — six-unit timeline grid
-3. Curriculum — twelve-week, six-phase course structure
+3. Curriculum — twelve-week, six-phase structure
 4. Community — forums, dream circles, practice partners, code of conduct
 5. Library — primary sources, contemporary studies, papers
 6. Support — *dāna*-rooted "buy a coffee" / "buy someone a coffee" model
+
+---
+
+## Voice
+
+All user-facing copy on the site is written in a detached, declarative voice — describing the work, not addressing the reader. The welcome lesson at [`reference-material/11_online/00_welcome.md`](reference-material/11_online/00_welcome.md) is the canonical example to model new content on. The full rules — scope, the eight constraints, and the verification commands that sweep for violations — live at [`reference-material/_voice-rules.md`](reference-material/_voice-rules.md).
+
+In short: no second-person, no first-person (including the editorial *we*), no use of "course", no negatives about the work itself, no bold claims about project behavior, no reader instruction. Direct quotations from primary sources stay verbatim.
+
+Editorial sweeps over the lesson markdown and `src/content.js` should return nothing — or only false positives like translator initials, Roman-numeral citation references, and "course" used in non-website senses (the dream's *course* as trajectory).
 
 ---
 
@@ -55,6 +66,6 @@ islands on demand.
 
 ## Philosophy
 
-The course, the history, the community — open to anyone. No tiers, no premium, no paywall, no scarcity. The dream-yoga traditions were never sold; they were transmitted hand to hand, in exchange for whatever the student could offer, sometimes nothing. We keep that arrangement.
+The work, the history, the community — open to anyone. Freely given. The dream-yoga traditions were never sold; they were transmitted hand to hand, in exchange for whatever the student could offer, sometimes nothing. The arrangement holds.
 
-*I received, and now I give.*
+*Received, and now given.*
