@@ -1,7 +1,6 @@
 # Svapna
 
-A free, donation-supported study of dream yoga and lucid dreaming.
-*"Awaken within the dream."*
+A study of dream yoga and lucid dreaming — the practice of becoming aware within the dream state, and the lineage of teachers who passed it down.
 
 ---
 
