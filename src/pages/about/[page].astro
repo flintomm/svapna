@@ -12,13 +12,10 @@ export function getStaticPaths() {
 const { page } = Astro.params;
 const data = aboutPages[page];
 
-// privacy and terms exist as aboutPages entries but are NOT in this list
-// while their content carries [OPERATOR LEGAL NAME], [OPERATOR HOME JURISDICTION],
-// and [EFFECTIVE DATE] placeholders. Once the operator fills those, add the
-// rows below. The static-paths generator already builds /about/privacy and
-// /about/terms because it iterates Object.keys(aboutPages).
-//   { id: 'privacy', label: 'Privacy' },
-//   { id: 'terms', label: 'Terms' },
+// privacy and terms are not surfaced in the tab strip on purpose — they
+// remain reachable by direct URL and through the consent strip's "Read
+// more" link on /support. The static-paths generator builds them because
+// it iterates Object.keys(aboutPages).
 const tabs = [
   { id: 'conduct', label: 'Code of Conduct' },
   { id: 'acknowledgments', label: 'Acknowledgments' },

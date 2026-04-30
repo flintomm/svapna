@@ -650,15 +650,13 @@ export const aboutPages = {
       'Editorial material on this site — lessons, glossary, library entries, history copy — is offered under the Creative Commons Attribution 4.0 International License (CC BY 4.0). Translation, adaptation, and republication are granted in advance, with attribution to Svapna Project and a link back to svapnaproject.org. Permissions outside the license — commercial bundling that strips attribution, or use of the project name and marks beyond fair reference — go to admin@svapnaproject.org. Notice of any adaptation is welcomed at the same address.',
     ],
   },
-  // privacy and terms are STAGED — placeholders are intentionally visible.
-  // Not surfaced in the about-tabs strip or the footer Index until the
-  // operator fills [OPERATOR LEGAL NAME], [OPERATOR HOME JURISDICTION],
-  // [EFFECTIVE DATE], and the [TO VERIFY] DPF status markers. See
-  // /legal-drafts/policies/INTEGRATION.md for the wiring steps.
+  // privacy and terms are reachable by direct URL and through the consent
+  // strip's "Read more" link on /support. They are not surfaced in the
+  // about-page tab strip on purpose.
   privacy: {
     title: 'Privacy',
     kicker: 'What is collected, where it travels, how long it stays',
-    effective: '[EFFECTIVE DATE]',
+    effective: '2026-04-29',
     paragraphs: [
       'The Svapna Project is a free, donation-supported educational site about dream yoga and lucid dreaming. The site is read-mostly. Where it accepts data — three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
       'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
@@ -667,8 +665,8 @@ export const aboutPages = {
       {
         name: 'Who runs the site',
         paragraphs: [
-          'The data controller is [OPERATOR LEGAL NAME], an independent researcher operating the site at svapnaproject.org. Mail about anything in this policy — questions, corrections, requests under the rights enumerated below — lands at admin@svapnaproject.org. Replies arrive when they arrive.',
-          'The operator is not at present a registered legal entity. The placeholder above is filled on publication. The site has no GDPR Article 27 EU representative; whether one is required is an open question for the operator and turns on the eventual scale of EU-resident traffic to the community surface, when it ships.',
+          'The data controller is the steward of Svapna Project, an independent researcher operating the site at svapnaproject.org. Mail about anything in this policy — questions, corrections, requests under the rights enumerated below — lands at admin@svapnaproject.org. Replies arrive when they arrive.',
+          'The operator is not at present a registered legal entity. The site has no GDPR Article 27 EU representative; whether one is required is an open question for the operator and turns on the eventual scale of EU-resident traffic to the community surface, when it ships.',
         ],
       },
       {
@@ -678,8 +676,8 @@ export const aboutPages = {
           'Newsletter subscription — a single field, email address, submitted from the homepage subscribe form. The address is forwarded by the site’s Cloudflare Worker to Buttondown, which stores it on the subscriber list and uses it to deliver future newsletter dispatches. No name, no preferences, no behavioural metadata. Used only to send the newsletter.',
           'Contact form — four fields: name, email, subject, message. Submitted from the Contact page. The submission is forwarded by the Worker through Resend and delivered as email to admin@svapnaproject.org. Used to read and reply to the message.',
           'Library pitch form — three fields: name, email, message. Submitted from the Support page. Delivered by the same path as the contact form, with the subject line prefixed [Library] Pitch for inbox routing. Used to evaluate, and where appropriate develop, the editorial pitch.',
-          'Pageview analytics, if consented — a single anonymous pageview event per page visited, sent to Umami Cloud after the visitor grants consent through the banner shown on first visit. No cookies, no cross-site identifiers, no fingerprinting beyond what Umami does by default. Refused consent means no analytics request is fired at all.',
-          'Donation widget, if engaged — the Support page loads the Buy Me a Coffee donation widget after consent. The widget itself, until clicked, is a script and a small visual bubble; opening it loads the BMC interface, where a donation can be made. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details.',
+          'Pageview analytics — a single anonymous pageview event per page visited, sent to Umami Cloud. No cookies, no cross-site identifiers, no fingerprinting beyond what Umami does by default. Umami collects no personally identifiable information; it loads site-wide by default rather than behind a consent gate.',
+          'Donation widget — the Support page loads the Buy Me a Coffee donation widget. The widget itself, until clicked, is a script and a small visual bubble; opening it loads the BMC interface, where a donation can be made. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details. The widget script sets browser storage on load; no other page of the site loads BMC.',
           'No account system, no comment system, no behavioural advertising, no data sold to anyone, ever. The community surface described in the project’s spec is in build and not yet live; when it ships, this policy is updated to describe the additional data it processes (display name, post content, moderation history) before the surface accepts a single submission.',
         ],
       },
@@ -698,8 +696,8 @@ export const aboutPages = {
         paragraphs: [
           'Five third parties carry data on the site’s behalf. None receives data for purposes beyond the function described.',
           'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Privacy policy: cloudflare.com/privacypolicy. Current DPF status: [TO VERIFY].',
-          'Umami Cloud — pageview analytics, loaded only after consent. Privacy-friendly by design: no cookies, no cross-site identifiers. Privacy policy: umami.is/privacy. Current DPF status: [TO VERIFY].',
-          'Buy Me a Coffee — donation processor and widget host, loaded only after consent. Privacy policy: [BMC PRIVACY POLICY URL — TO VERIFY]. Current DPF status: [TO VERIFY].',
+          'Umami Cloud — pageview analytics, loaded site-wide by default. Privacy-friendly by design: no cookies, no cross-site identifiers, no PII. Privacy policy: umami.is/privacy. Current DPF status: [TO VERIFY].',
+          'Buy Me a Coffee — donation processor and widget host. The widget loads on /support and sets browser storage. No other page of the site loads BMC. Privacy policy: [BMC PRIVACY POLICY URL — TO VERIFY]. Current DPF status: [TO VERIFY].',
           'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Privacy policy: buttondown.com/privacy. Current DPF status: [TO VERIFY].',
           'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Privacy policy: resend.com/legal/privacy-policy. Current DPF status: [TO VERIFY].',
         ],
@@ -715,9 +713,8 @@ export const aboutPages = {
       {
         name: 'Cookies and storage',
         paragraphs: [
-          'Non-essential storage is loaded only after explicit consent via the banner shown on first visit.',
-          'The site itself uses no cookies for its own purposes — no login, no preferences, no session state. The two third-party scripts that may set cookies or otherwise touch the visitor’s device — Umami Cloud and the Buy Me a Coffee widget — are gated behind the consent banner and load only after consent is granted. Refusing consent means neither script is fetched and no third-party storage is written.',
-          'Consent is revocable at any time through the Cookie preferences link in the footer. Withdrawing consent removes the relevant local-storage flag and prevents the scripts from loading on subsequent navigation.',
+          'The site itself uses no cookies for its own purposes — no login, no preferences, no session state.',
+          'Two third-party scripts may touch the visitor’s device. Umami Cloud, the analytics endpoint, is cookieless and collects no personally identifiable information; it loads site-wide. The Buy Me a Coffee donation widget loads on the Support page and sets browser storage on load; no other page of the site loads BMC.',
         ],
       },
       {
@@ -743,7 +740,7 @@ export const aboutPages = {
       {
         name: 'Contact',
         paragraphs: [
-          'Mail about this policy, requests to exercise any right, or notice of a suspected breach lands at admin@svapnaproject.org. The data controller of record is [OPERATOR LEGAL NAME].',
+          'Mail about this policy, requests to exercise any right, or notice of a suspected breach lands at admin@svapnaproject.org. The data controller of record is the steward of Svapna Project.',
         ],
       },
     ],
@@ -751,7 +748,7 @@ export const aboutPages = {
   terms: {
     title: 'Terms',
     kicker: 'A working set of rules that match how the project actually behaves',
-    effective: '[EFFECTIVE DATE]',
+    effective: '2026-04-29',
     paragraphs: [
       'These terms govern use of the Svapna Project site at svapnaproject.org. The site is a free, donation-supported educational project about dream yoga and lucid dreaming, run by an independent researcher. The terms are kept short on purpose; the goal is a working set of rules that match how the project actually behaves.',
     ],
@@ -827,36 +824,27 @@ export const aboutPages = {
       {
         name: '11. Termination',
         paragraphs: [
-          'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 8, 9, 10, and 12 survive termination.',
+          'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 8, 9, and 10 survive termination.',
         ],
       },
       {
-        name: '12. Governing law and forum',
-        paragraphs: [
-          'These terms are governed by the laws of [OPERATOR HOME JURISDICTION], without regard to conflict-of-laws rules. Disputes arising out of or related to these terms or use of the site are subject to the exclusive jurisdiction of the courts of [OPERATOR HOME JURISDICTION], except where a mandatory consumer-protection rule of the user’s country of residence grants the user a non-waivable right to bring an action locally.',
-        ],
-      },
-      {
-        name: '13. Changes',
+        name: '12. Changes',
         paragraphs: [
           'The operator may update these terms. Material changes are flagged on the home page or in a newsletter dispatch before they take effect. Non-material changes are made silently, with the effective date below updated.',
         ],
       },
       {
-        name: '14. Contact',
+        name: '13. Contact',
         paragraphs: [
           'Mail about these terms, requests for permission beyond CC BY 4.0, and notices of any kind land at admin@svapnaproject.org.',
         ],
       },
     ],
   },
-  // accessibility carries only an [EFFECTIVE DATE] placeholder. The page can
-  // be surfaced as soon as the operator triages the items in the parallel
-  // assessment doc and either fixes or honestly discloses each one.
   accessibility: {
     title: 'Accessibility',
     kicker: 'Where the work stands, and where it is going',
-    effective: '[EFFECTIVE DATE]',
+    effective: '2026-04-29',
     paragraphs: [
       'The Svapna Project is a free educational site, offered in the spirit of dāna. It should be readable by anyone who comes to it. The site aims for the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA, as a working target — not a closed claim. Where the site falls short, the gap is named below; where the site meets the standard, the work is recent and the next pass will go further.',
     ],
@@ -868,7 +856,7 @@ export const aboutPages = {
           'The pages are built from semantic HTML — a single header, navigation, main, and footer per page; one h1 per page and ordered headings beneath; lists rendered as lists; links rendered as links and buttons as buttons.',
           'The document declares its language. Every form input has a real, programmatically associated label; the email, name, and message fields carry the appropriate autocomplete hints; required fields are marked as such; error messages render in the same flow as the form rather than in pop-ups.',
           'The site presents no images in its editorial body. There is no decorative imagery to mis-label and no informational imagery whose meaning could be lost to a non-sighted reader.',
-          'The site uses no cookies for its own purposes, no login, no comment thread, no CAPTCHA. The two third-party scripts that may set storage are gated behind an explicit consent strip; refusal keeps the page fully usable. The cookie-consent strip carries a region role and an accessible name. The mobile menu trigger carries an accessible name.',
+          'The site uses no cookies for its own purposes, no login, no comment thread, no CAPTCHA. A single third-party script — the Buy Me a Coffee donation widget — sets browser storage when the Support page is visited; no other page of the site loads it. The mobile menu trigger carries an accessible name.',
         ],
       },
       {
@@ -904,74 +892,14 @@ export const aboutPages = {
       },
     ],
   },
-  // copyright is STAGED — the page will not be surfaced in the public tab
-  // strip or footer Index until the operator registers a designated agent
-  // with the US Copyright Office and fills [AGENT NAME], [AGENT ADDRESS],
-  // [AGENT EMAIL], [AGENT PHONE], [REGISTRATION NUMBER], and [EFFECTIVE DATE].
-  // Required before the /community/* surface accepts a single submission.
   copyright: {
     title: 'Copyright and takedown',
-    kicker: 'A working procedure for copyright complaints about community content',
-    effective: '[EFFECTIVE DATE]',
+    kicker: 'A working procedure for copyright complaints',
+    effective: '2026-04-29',
     paragraphs: [
       "The community surface at svapnaproject.org/community is a small, lightly moderated space where members post lesson comments, share dreams in invitation-based circles, and post practice-partner listings. Members own what they write. Where a member's post reproduces work that belongs to someone else, the rights-holder has a route to ask for that material to be removed.",
-      'This page describes that route — what a complaint should contain, what the operator does with it, and how a member whose post was removed can dispute the removal. The procedure follows the United States Digital Millennium Copyright Act (DMCA, 17 U.S.C. § 512) and is written so that it also serves the analogous notice-and-action regimes in the United Kingdom and the European Union.',
-    ],
-    sections: [
-      {
-        name: 'If a post is believed to infringe a copyright',
-        paragraphs: [
-          'A complaint is sent to the designated copyright agent named at the foot of this page. A complaint is most useful when it contains the following.',
-          'Identification of the copyrighted work claimed to have been infringed. Where several works are involved, a representative list is acceptable.',
-          'Identification of the material on the site claimed to be infringing, with enough specificity that the operator can find it — a direct URL to the comment, post, or listing is the surest route.',
-          "The complainant's name, postal address, telephone number, and email address.",
-          "A statement that the complainant has a good-faith belief that the use of the material in the manner complained of is not authorised by the copyright owner, the owner's agent, or the law.",
-          "A statement that the information in the complaint is accurate, and — under penalty of perjury — that the complainant is the copyright owner or is authorised to act on the owner's behalf.",
-          'A physical or electronic signature.',
-          'The five elements above are the substance of § 512(c)(3); a complaint that omits any of them may be set aside as deficient. A complaint that meets the form is acted on as described in the next section.',
-        ],
-      },
-      {
-        name: 'What happens next',
-        paragraphs: [
-          'A complaint that arrives in the inbox is reviewed on receipt. Where the complaint is well-formed and identifies content that is plausibly infringing, the material is removed or disabled promptly — typically within three business days, sometimes faster, occasionally slower where the operator is travelling or where the complaint requires a closer reading.',
-          'The member whose content was removed is notified at the email address on file, with a copy of the complaint and a description of the material that was taken down. The notification names the route to file a counter-notice if the member believes the removal was wrong.',
-          'A complaint that is plainly deficient — missing the work identification, missing the good-faith statement, sent from an address that does not appear to belong to the rights-holder or an authorised agent — is returned to the sender with a note describing what is missing, and no action is taken on the underlying content until a sufficient complaint is received.',
-        ],
-      },
-      {
-        name: 'Counter-notice',
-        paragraphs: [
-          'A member who believes that their material was removed in error, or as a result of misidentification, may file a counter-notice with the same designated agent. The counter-notice is most useful when it contains the following, drawn from § 512(g)(3).',
-          "The member's name, postal address, telephone number, and email address.",
-          'Identification of the material that was removed, and the location at which it appeared before removal.',
-          'A statement under penalty of perjury that the member has a good-faith belief that the material was removed as a result of mistake or misidentification.',
-          'A statement consenting to the jurisdiction of the United States federal district court for the judicial district in which the member resides — or, where the member is outside the United States, any judicial district in which the operator may be found — and agreeing to accept service of process from the original complainant or the complainant’s agent.',
-          'A physical or electronic signature.',
-          'A well-formed counter-notice is forwarded to the original complainant. The removed material is restored not less than ten and not more than fourteen business days after the counter-notice is forwarded, unless the original complainant notifies the operator in that window that an action has been filed seeking a court order to keep the material down. This is the schedule § 512(g)(2) sets out, and the operator follows it.',
-        ],
-      },
-      {
-        name: 'Repeat infringers',
-        paragraphs: [
-          "The operator terminates the accounts of members who, in the operator's judgement, are the subject of repeated substantiated complaints. The threshold is qualitative rather than numeric — a single egregious case may warrant termination, while a small number of marginal complaints may not — and is applied case by case, with notice to the member where notice is possible.",
-        ],
-      },
-      {
-        name: 'Outside the United States',
-        paragraphs: [
-          "The same complaint route serves notice-and-action requests under the United Kingdom’s Copyright, Designs and Patents Act 1988 and the European Union’s Digital Services Act, Article 16. The DSA is more flexible than the DMCA on form, and the CDPA’s framework is similar in substance. A complaint that meets the elements listed above will be acted on under the same process, with the statutory references substituted as appropriate.",
-        ],
-      },
-      {
-        name: 'Designated copyright agent',
-        paragraphs: [
-          "Complaints and counter-notices are sent to the operator's designated agent.",
-          'Name: [AGENT NAME]. Postal address: [AGENT ADDRESS]. Email: [AGENT EMAIL]. Telephone: [AGENT PHONE].',
-          "The agent is registered with the United States Copyright Office under registration number [REGISTRATION NUMBER]. Registration is renewed every three years; the renewal date appears in the operator's internal calendar.",
-          'A complaint that arrives at admin@svapnaproject.org rather than the agent address is forwarded; arrival at the agent address is faster.',
-        ],
-      },
+      'Notices of suspected copyright infringement, counter-notices, and any other concern about content on the site are sent to admin@svapnaproject.org. A useful notice identifies the work claimed to be infringed, identifies the material on the site believed to be infringing (with a direct URL where possible), and includes contact details and a good-faith statement that the use is not authorised. Material that is plausibly infringing is removed promptly on receipt; the member who posted it is notified and may respond.',
+      "The same address handles the analogous notice-and-action requests under the United Kingdom's Copyright, Designs and Patents Act 1988 and the European Union's Digital Services Act, Article 16.",
     ],
   },
 };

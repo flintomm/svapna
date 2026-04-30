@@ -61,8 +61,17 @@ import ShareButton from '../components/react/ShareButton.jsx';
 
   </div>
 
-  {/* The Buy Me a Coffee widget is no longer loaded directly here — Layout's
-      consent flow injects it on /support after the visitor accepts the
-      storage banner. See ConsentBanner.astro and the loader at the end of
-      Layout.astro. */}
+  <script
+    is:inline
+    data-name="BMC-Widget"
+    data-cfasync="false"
+    data-id="svapna"
+    data-description="Support the Svapna project on Buy Me a Coffee."
+    data-message="Thank you!"
+    data-color="#5F7FFF"
+    data-position="Right"
+    data-x_margin="18"
+    data-y_margin="18"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  ></script>
 </Layout>
