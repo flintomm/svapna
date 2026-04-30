@@ -503,13 +503,16 @@ export const articles = [
   },
 ];
 
-// A single curated quote for the home page. Drawn from quote_bank.json.
-export const homeQuote = {
-  text:
-    'The dreamer who recognizes the dream within the dream is preparing to recognize the larger dream we usually take for waking.',
-  attribution: 'Tenzin Wangyal Rinpoche',
-  citation: 'The Tibetan Yogas of Dream and Sleep, 1998',
-};
+// Quote bank for the home-page Epigraph. Drawn from data/quotes.json,
+// trimmed to the three fields the rendering uses. The page picks one at
+// build time for SSR and re-picks one client-side on each load.
+import quotesData from '../data/quotes.json';
+
+export const quoteBank = quotesData.quotes.map(q => ({
+  text: q.text,
+  attribution: q.attribution,
+  citation: q.citation,
+}));
 
 // Cross-cutting thematic index — drawn from /reference-material/themes/themed_index.json.
 // Fourteen themes that appear across the primary texts. Use as a "browse by theme"

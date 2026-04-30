@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SubscribeSection from '../components/SubscribeSection.astro';
-import { homeQuote } from '../lib/content.js';
+import { quoteBank } from '../lib/content.js';
+
+// Build-time pick for SSR. The inline script at the bottom of this file
+// re-picks one on each page load so visitors see a different epigraph
+// each visit.
+const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
 ---
 
 <Layout>
@@ -73,12 +78,12 @@ import { homeQuote } from '../lib/content.js';
         <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Epigraph</span>
       </div>
       <div class="md:col-span-10 p-8 md:p-16 lg:p-20">
-        <p class="display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-tight italic">
+        <p class="display text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug md:leading-tight italic" data-epigraph-text>
           &ldquo;{homeQuote.text}&rdquo;
         </p>
         <div class="mt-6 md:mt-10 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
-          <span class="mono text-[10px] uppercase tracking-widest">— {homeQuote.attribution}</span>
-          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1 sm:mt-0">{homeQuote.citation}</span>
+          <span class="mono text-[10px] uppercase tracking-widest" data-epigraph-attribution>— {homeQuote.attribution}</span>
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1 sm:mt-0" data-epigraph-citation>{homeQuote.citation}</span>
         </div>
       </div>
     </div>
@@ -127,4 +132,16 @@ import { homeQuote } from '../lib/content.js';
 
     <SubscribeSection />
   </div>
+
+  <script is:inline define:vars={{ bank: quoteBank }}>
+    (function () {
+      var pick = bank[Math.floor(Math.random() * bank.length)];
+      var t = document.querySelector('[data-epigraph-text]');
+      var a = document.querySelector('[data-epigraph-attribution]');
+      var c = document.querySelector('[data-epigraph-citation]');
+      if (t) t.textContent = '“' + pick.text + '”';
+      if (a) a.textContent = '— ' + pick.attribution;
+      if (c) c.textContent = pick.citation;
+    })();
+  </script>
 </Layout>
