@@ -10,9 +10,7 @@
 
 Hillman writes from inside the Jungian tradition, but the book's purpose is to push back on the use to which that tradition had begun to put the dream by the late 1970s.
 
-**The pushback is announced in the choice of title:**
-
-> Among the possible titles for this work have been "The Dream Bridge," or "The Dream Between World and Underworld." Freud had already used a similar metaphor; he called the dream a royal road, the via regia to the unconscious. *But because this via regia, in most psychotherapy since his time, has become a straight one-way street of all morning traffic, moving out of the unconscious toward the ego's city, I have chosen to face the other way.* Hence my title, which is a directional signpost for a different one-way movement, let us say vesperal, into the dark. (Hillman, *The Dream and the Underworld*, "Bridge")
+The pushback is announced in Hillman's account of the title. The candidate titles he considered — "The Dream Bridge," "The Dream Between World and Underworld" — gestured at a connecting metaphor Freud had already deployed when he called the dream a *via regia* to the unconscious. Hillman's complaint is that, in most psychotherapy since Freud, this royal road had become a straight one-way street of morning traffic, running out of the unconscious toward the ego's city. The chosen title therefore points the other way — a directional signpost for a movement Hillman calls "*vesperal*," toward the dark rather than toward the day (Hillman, *The Dream and the Underworld*, "Bridge").
 
 The complaint is that depth psychology, for all its talk of taking the dream seriously, has used the dream as a piece of evidence in service of the ego's own purposes — as a means of gaining "more consciousness about living."
 

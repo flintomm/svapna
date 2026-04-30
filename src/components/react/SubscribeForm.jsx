@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 // Posts to the svapna-contact Worker's /subscribe route, which adds the
 // address to the Buttondown subscriber list. Source: workers/contact/.
-const SUBSCRIBE_ENDPOINT = 'https://svapna-contact.tphch.workers.dev/subscribe';
+// Routed through the same-origin /api/contact path (see wrangler.toml).
+const SUBSCRIBE_ENDPOINT = '/api/contact/subscribe';
 
 export default function SubscribeForm() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
@@ -23,6 +24,7 @@ export default function SubscribeForm() {
       if (res.ok) {
         setStatus('sent');
         form.reset();
+        if (typeof window !== 'undefined' && window.umami) window.umami.track('home_subscribe_submit');
       } else {
         const body = await res.json().catch(() => ({}));
         setError(body?.error || 'Something went wrong.');

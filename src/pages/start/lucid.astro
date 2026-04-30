@@ -1,0 +1,140 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
+
+const siteUrl = Astro.site ? Astro.site.href : 'https://svapnaproject.org/';
+const url = new URL('/start/lucid', siteUrl).href;
+
+const title = 'How to Lucid Dream — A Working Technique and the Tradition Behind It';
+const description =
+  'A working induction technique for lucid dreaming — MILD, the reflection method, and a brief account of the empirical tradition that produced them.';
+const datePublished = '2026-04-30';
+
+const articleLd = articleSchema({
+  url,
+  headline: title,
+  description,
+  datePublished,
+  section: 'Start / Lucid Dreaming',
+});
+
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Start', path: '/start' },
+  { name: 'Lucid Dreaming', path: '/start/lucid' },
+]));
+---
+
+<Layout
+  title={title}
+  description={description}
+  ogType="article"
+  ogImage="/og-lucid.jpg"
+  jsonLd={[articleLd, crumbsLd]}
+>
+  <article class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Svapna</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Start · Lucid Dreaming</span>
+    </div>
+
+    <header class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ Entry</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">An entry essay</p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          How to lucid dream.
+        </h1>
+        <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug italic">
+          A working technique, and the empirical tradition that produced it.
+        </p>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Essay</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12 max-w-3xl prose-svapna">
+        <p>
+          The simplest working technique is <strong>MILD</strong> — Mnemonic Induction of Lucid Dreams,
+          codified by Stephen LaBerge at Stanford in 1980. The mechanism is prospective memory: the
+          same faculty that lets a person remember to buy stamps after a meeting, redirected toward
+          remembering, while inside a dream, that the dream is a dream. The protocol runs as follows.
+          On waking from a dream during the night, hold the dream in attention and try to recall its
+          texture. While returning to sleep, repeat the formula <em>next time I am dreaming, I will
+          remember that I am dreaming</em>, slowly, with intent. At the same time, picture the dream
+          just left, but this time noticing some odd detail in it and recognizing that detail as a
+          dreamsign. Repeat until intent is set, and let sleep return.
+        </p>
+        <p>
+          A second technique, useful as a daytime support, is the <strong>reflection method</strong>
+          developed by Paul Tholey in Frankfurt in the late 1950s. Several times a day — five to ten
+          times is the figure Tholey gave — the practitioner pauses and asks, with genuine attention,
+          <em>am I dreaming?</em> A reality test follows: read a line of text, look away, and read it
+          again; or attempt to push a finger through the opposite palm. In waking life the text is
+          stable and the hand resists. In a dream, the text reliably shifts and the hand reliably
+          gives way. The habit is what matters. The question, asked often enough in waking life,
+          eventually arises inside a dream — and there, the same reality test produces a different
+          answer, and lucidity opens.
+        </p>
+        <p>
+          These two techniques, combined with a single structural adjustment to sleep timing called
+          <strong>WBTB</strong> (Wake Back to Bed) — sleeping for several hours, waking, staying up
+          for thirty to ninety minutes engaged in something quiet, then returning to bed — make up the
+          standard induction protocol of the modern laboratory literature. Subsequent work, including
+          the Aspy, Delfabbro, Proeve and Mohr trial of 2017, has confirmed that the combined protocol
+          reliably increases lucid-dream frequency in motivated subjects. None of it requires any
+          equipment. None of it requires belief in anything. The mechanism is patient repetition of a
+          remembered intention, set against a sleep schedule that puts the practitioner inside the
+          long REM episodes of late-night sleep, where lucidity is more likely to arise on its own.
+        </p>
+        <p>
+          A note on what to expect. Lucid dreams under this protocol are typically brief at first — a
+          flash of recognition, a few seconds of awareness, a sudden wake. Stability is its own skill,
+          built over weeks. The early dream-yoga literature has a great deal to say about that
+          stability, and the laboratory work has begun to catch up to it. Both literatures agree that
+          the recognition is the gate; what is done after the gate is the practice.
+        </p>
+        <p>
+          The technique presented above did not arrive in one piece. The MILD protocol was published
+          in 1980, but the underlying mechanism — pre-sleep intention, embedded in a memorable
+          formula, internalized through patient repetition — had been worked out by an Englishwoman
+          named Mary Arnold-Forster in <em>Studies in Dreams</em>, published by George Allen and
+          Unwin in 1921. Arnold-Forster was not framing the method as an induction technique. The
+          stated aim was the elimination of recurring distressing dreams. The mechanism is
+          general, and the structural identity with what LaBerge would later codify is exact.
+          Three independent traditions — the British amateur self-observer, the German experimental
+          psychologist, and the American sleep researcher — converged on the same instruction.
+        </p>
+        <p>
+          Behind that convergence sits a longer empirical record. The Marquis d'Hervey de Saint-Denys
+          published <em>Les Rêves et les moyens de les diriger</em> in 1867, after twenty years of
+          patient self-observation. Frederik van Eeden, in a paper read to the Society for Psychical
+          Research in 1913, gave the term <em>lucid dream</em> its modern meaning, drawn from a
+          collection of three hundred and fifty-two instances kept across fifteen years. By the time
+          the Stanford laboratory began its eye-signal experiments in the late 1970s, the empirical
+          literature on which the experiments would draw was already a century old.
+        </p>
+        <p>
+          The work below picks up that story in detail.
+        </p>
+      </div>
+    </div>
+
+    <nav class="grid grid-cols-1 md:grid-cols-12 hairline-b" aria-label="Continue reading">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Continue</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <a href="/curriculum/module-04" class="block group">
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Module IV — Western Rediscovery →</p>
+          <p class="display text-2xl md:text-3xl mt-3 leading-snug group-hover:italic transition-all">
+            Saint-Denys, van Eeden, Arnold-Forster, Jung. The empirical tradition behind the modern technique, in seven lessons.
+          </p>
+        </a>
+      </div>
+    </nav>
+  </article>
+</Layout>

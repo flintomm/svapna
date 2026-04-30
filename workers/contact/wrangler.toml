@@ -5,3 +5,88 @@ compatibility_date = "2026-04-28"
 # Resend API key is stored as a secret, not in this file.
 # Set it once with:
 #   npx wrangler secret put RESEND_KEY
+#
+# Buttondown API key (for the /subscribe route) is also a secret:
+#   npx wrangler secret put BUTTONDOWN_KEY
+
+# ---------------------------------------------------------------------------
+# Routing
+# ---------------------------------------------------------------------------
+#
+# The Worker is being migrated from the leaky `svapna-contact.tphch.workers.dev`
+# subdomain (the operator's handle "tphch" appears in the URL the site posts
+# to — flagged by counsel as the single biggest identity leak in the source
+# tree) onto a same-origin path on the main site: `/api/contact*`.
+#
+# During the migration window we keep BOTH endpoints live:
+#   1. The zone route below (svapnaproject.org/api/contact*) — preferred,
+#      same-origin, no operator handle in the URL.
+#   2. The default workers.dev subdomain — preserved as a fallback so
+#      anything still pointing at the old URL keeps working until the
+#      cutover is verified end-to-end.
+#
+# TODO: After the same-origin route is verified live in production
+# (forms posting to /api/contact and /api/contact/subscribe both succeed),
+# disable the workers.dev fallback by setting `workers_dev = false` below
+# and redeploy. Track this in feature-planning sprint checklist.
+
+# Same-origin route on the svapnaproject.org zone.
+# The Worker's internal router (src/index.js) dispatches on URL pathname:
+#   POST /api/contact            -> contact form (Resend)
+#   POST /api/contact/subscribe  -> newsletter capture (Buttondown)
+# The pattern below catches both, plus the OPTIONS preflight.
+#
+# NOTE: src/index.js currently routes on `/` and `/subscribe`. It must be
+# updated in lockstep with this change so the pathnames under `/api/contact`
+# resolve to the same handlers. (Tracked separately — the form-action URLs
+# in SubscribeSection.astro / ContactForm.jsx / SubscribeForm.jsx are being
+# migrated by a parallel agent.)
+routes = [
+  { pattern = "svapnaproject.org/api/contact*", zone_name = "svapnaproject.org" },
+  { pattern = "www.svapnaproject.org/api/contact*", zone_name = "svapnaproject.org" },
+]
+
+# Keep the workers.dev fallback alive during the migration window.
+# Flip to `false` once /api/contact is verified live.
+workers_dev = true
+
+# ---------------------------------------------------------------------------
+# Manual steps required in the Cloudflare dashboard
+# ---------------------------------------------------------------------------
+#
+# `wrangler deploy` will create the zone routes above automatically IF the
+# `svapnaproject.org` zone is already attached to the same Cloudflare account
+# the Worker is deployed under. If it's not, or if the zone is freshly added,
+# do the following ONCE in the Cloudflare dashboard before deploying:
+#
+#   1. Confirm the `svapnaproject.org` zone exists on this account
+#      (Websites -> svapnaproject.org). If missing, add it and complete
+#      the nameserver migration first.
+#
+#   2. DNS: ensure there is a proxied (orange-cloud) record at the apex
+#      (`svapnaproject.org`) and `www`. The site is hosted on Cloudflare
+#      Pages, so a CNAME to the Pages project (or the existing Pages
+#      custom-domain binding) is what makes Worker routes attachable.
+#      Routes will not match unless traffic flows through Cloudflare's
+#      proxy.
+#
+#   3. Workers & Pages -> svapna-contact -> Settings -> Triggers:
+#      after deploy, verify both route patterns appear and resolve to
+#      the `svapnaproject.org` zone. If `wrangler deploy` reports
+#      "route already exists" against a different worker, remove the
+#      conflicting route in the dashboard first.
+#
+#   4. Deploy:
+#        cd workers/contact
+#        npx wrangler deploy
+#
+#   5. Smoke test:
+#        curl -X POST https://svapnaproject.org/api/contact \
+#          -F 'name=Test' -F 'email=test@example.com' -F 'message=hi'
+#        curl -X POST https://svapnaproject.org/api/contact/subscribe \
+#          -F 'email=test@example.com'
+#      Both should return `{"ok":true}` (200).
+#
+#   6. Once both endpoints are confirmed live and the site forms have
+#      cut over to the same-origin URLs, set `workers_dev = false` and
+#      redeploy to retire the leaky subdomain.

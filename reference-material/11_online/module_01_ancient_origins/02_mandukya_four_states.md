@@ -14,7 +14,7 @@ The first quarter is *Vaiśvānara*, the universal in waking form. "Its field is
 
 **The second quarter, *taijasa*, names the awareness present in dream:**
 
-> "Its field is the dream state. Its consciousness is *inward-turned*. It is seven-limbed and nineteen-mouthed. It enjoys subtle objects." (verse 4, Mandukya_Upanishad.txt)
+> "Its field is the dream state. Its consciousness is *inward-turned*. It is seven-limbed and nineteen-mouthed. It enjoys subtle objects." (Māṇḍūkya v. 4, trans. Swami Krishnananda, *The Māṇḍūkya Upaniṣad*, Divine Life Society; same translation used for verse 7 below)
 
 What the verse establishes — and what the entire later tradition will build on — is that the dream state has the same architecture as the waking state. Many limbs, many openings, a world of objects to engage with. The difference is what kind of object: *gross* in waking, *subtle* in dream.
 
@@ -28,7 +28,7 @@ The Sanskrit name means "the knower"; it is given here even though there is, in 
 
 **The fourth quarter — the verse to which the entire text builds — is the most carefully written:**
 
-> "That is known as the fourth quarter: neither inward-turned nor outward-turned consciousness, nor the two together; not an undifferentiated mass of consciousness; neither knowing, nor unknowing; invisible, ineffable, intangible, devoid of characteristics, inconceivable, indefinable, its sole essence being the consciousness of its own Self; the coming to rest of all relative existence; utterly quiet; peaceful; blissful: without a second: *this is the Ātman, the Self; this is to be realised*." (verse 7)
+> "That is known as the fourth quarter: neither inward-turned nor outward-turned consciousness, nor the two together; not an undifferentiated mass of consciousness; neither knowing, nor unknowing; invisible, ineffable, intangible, devoid of characteristics, inconceivable, indefinable, its sole essence being the consciousness of its own Self; the coming to rest of all relative existence; utterly quiet; peaceful; blissful: without a second: *this is the Ātman, the Self; this is to be realised*." (Māṇḍūkya v. 7, Krishnananda trans.)
 
 The Sanskrit is a sequence of negations: *na antaḥ-prajñam, na bahiṣ-prajñam, nobhayataḥ-prajñam …* The negations are not technicalities. Each cancels a possible misreading.
 

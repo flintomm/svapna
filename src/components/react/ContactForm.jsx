@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 // Posts to the svapna-contact Cloudflare Worker, which forwards via Resend
 // to admin@svapnaproject.org. Source: workers/contact/.
-const CONTACT_ENDPOINT = 'https://svapna-contact.tphch.workers.dev';
+// Routed through the same-origin /api/contact path (see wrangler.toml).
+const CONTACT_ENDPOINT = '/api/contact';
 
 export default function ContactForm({ email }) {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error

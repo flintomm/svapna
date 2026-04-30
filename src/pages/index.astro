@@ -1,12 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SubscribeSection from '../components/SubscribeSection.astro';
-import { quoteBank } from '../lib/content.js';
+import { quoteBank, curriculumModules } from '../lib/content.js';
+import { lessonsByModule } from '../lib/lessons.js';
 
 // Build-time pick for SSR. The inline script at the bottom of this file
 // re-picks one on each page load so visitors see a different epigraph
 // each visit.
 const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
+
+// Compact module → lessons map embedded into the Continue card's inline
+// script via define:vars. Each lesson carries the progress-set key shape
+// ("${moduleNum}-${lessonNum}") used by LessonProgressToggle plus the
+// permalink the card should resolve to.
+const continueModules = curriculumModules.map((mod) => {
+  const n = String(parseInt(mod.num, 10));
+  const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+  const lessons = (lessonsByModule[n] || []).map((l) => ({
+    key: `${l.moduleNum}-${l.lessonNum}`,
+    href: `/curriculum/module-${padded}/${l.urlSlug}`,
+  }));
+  return { num: n, roman: mod.roman, lessons };
+});
 ---
 
 <Layout>
@@ -18,6 +33,9 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
           <h1 class="display text-[3.5rem] sm:text-7xl md:text-8xl lg:text-[10rem] leading-[0.85] tracking-tight">
             Awaken<br /><span class="italic">within</span><br />the dream.
           </h1>
+          <p class="text-base sm:text-lg leading-relaxed mt-8 md:mt-10 max-w-xl text-neutral-700">
+            The work in six modules and forty-seven lessons. Dream yoga and lucid dreaming, drawing on Tibetan milam and modern sleep science. Free. Self-paced.
+          </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-10 md:mt-16 pt-6 md:pt-8 hairline-t">
           <div>
@@ -68,9 +86,59 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
           For three millennia, contemplatives have entered the dream knowingly — not to escape waking life, but to understand its nature.
         </p>
         <p class="text-base leading-loose">
-          The work gathers what they learned. It draws from the Tibetan tradition of <em>milam</em>, from Bön sleep yoga, from Hindu commentaries on the four states, and from the modern laboratory work begun at Stanford in the 1980s. It asks for nothing but attention. The work was given freely, and passes forward.
+          The work gathers what they learned. It asks for nothing but attention. The work was given freely, and passes forward.
         </p>
       </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Two Entry Points</span>
+      </div>
+      <div class="md:col-span-10 grid grid-cols-1 md:grid-cols-2">
+        <a href="/start/lucid" data-home-start-lucid class="block p-6 md:p-12 hairline-b md:hairline-r md:border-b-0 active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group">
+          <p class="display text-xl md:text-2xl leading-relaxed italic">
+            Module IV opens the Western and scientific tradition; lucid-dreaming techniques begin there <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
+          </p>
+        </a>
+        <a href="/start/contemplative" data-home-start-contemplative class="block p-6 md:p-12 active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group">
+          <p class="display text-xl md:text-2xl leading-relaxed italic">
+            Module II carries the Tibetan dream-yoga lineage; the contemplative path begins there <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    {/*
+      Returning-visitor "Continue" card. SSR'd hidden; the inline script at
+      the bottom of the file reads `localStorage.svapna_progress`, computes
+      the most-progressed module and the next incomplete lesson in it, fills
+      the slots, and reveals the card. First-time visitors see nothing.
+    */}
+    <a
+      href="/curriculum"
+      data-home-continue-card
+      data-home-continue-href="/curriculum"
+      style="display:none"
+      class="grid grid-cols-1 md:grid-cols-12 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group"
+    >
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Where the work paused</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12 flex flex-col md:flex-row md:items-baseline md:justify-between gap-4">
+        <p class="display text-xl md:text-2xl leading-relaxed italic">
+          <span data-home-continue-module>Module —</span>
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500 not-italic ml-2 md:ml-4" data-home-continue-progress>— of — lessons read</span>
+        </p>
+        <span class="mono text-[10px] uppercase tracking-widest flex items-center gap-2 md:justify-end">
+          <span>Continue</span>
+          <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
+        </span>
+      </div>
+    </a>
+
+    <div data-home-subscribe>
+      <SubscribeSection />
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
@@ -88,8 +156,27 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3">
-      <a href="/history" class="text-left p-8 md:p-12 md:hairline-r hairline-b min-h-[280px] md:min-h-[400px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
+    <a href="/curriculum" data-home-curriculum-cta class="text-left p-8 md:p-16 lg:p-20 hairline-b min-h-[320px] md:min-h-[480px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
+      <div>
+        <div class="flex items-center gap-4 flex-wrap">
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 03</span>
+          <span class="mono text-[10px] uppercase tracking-widest border border-black px-2 py-1">47 lessons · self-paced · free.</span>
+        </div>
+        <h3 class="display text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] mt-6 md:mt-10 group-hover:italic transition-all break-words leading-[0.9]">Curriculum</h3>
+      </div>
+      <div class="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-end">
+        <p class="md:col-span-8 text-base md:text-lg leading-relaxed text-neutral-700 max-w-2xl">
+          Six modules, forty-seven short lessons. The history and the science of the practice. Self-paced.
+        </p>
+        <div class="md:col-span-4 flex items-center gap-2 mono text-[11px] uppercase tracking-widest md:justify-end">
+          <span>Begin</span>
+          <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <a href="/history" class="text-left p-8 md:p-12 md:hairline-r hairline-b min-h-[240px] md:min-h-[320px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
         <div>
           <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 02</span>
           <h3 class="display text-5xl md:text-5xl lg:text-6xl mt-6 md:mt-8 group-hover:italic transition-all break-words leading-[0.95]">History</h3>
@@ -102,20 +189,7 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
           </div>
         </div>
       </a>
-      <a href="/curriculum" class="text-left p-8 md:p-12 md:hairline-r hairline-b min-h-[280px] md:min-h-[400px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
-        <div>
-          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 03</span>
-          <h3 class="display text-5xl md:text-5xl lg:text-6xl mt-6 md:mt-8 group-hover:italic transition-all break-words leading-[0.95]">Curriculum</h3>
-        </div>
-        <div class="mt-8">
-          <p class="text-sm leading-relaxed text-neutral-700 mb-5 md:mb-6">Six modules, forty-seven short lessons. The history and the science of the practice. Self-paced.</p>
-          <div class="flex items-center gap-2 mono text-[10px] uppercase tracking-widest">
-            <span>Enter</span>
-            <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
-          </div>
-        </div>
-      </a>
-      <a href="/community" class="text-left p-8 md:p-12 hairline-b min-h-[280px] md:min-h-[400px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
+      <a href="/community" class="text-left p-8 md:p-12 hairline-b min-h-[240px] md:min-h-[320px] flex flex-col justify-between active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group block">
         <div>
           <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">§ 04</span>
           <h3 class="display text-5xl md:text-5xl lg:text-6xl mt-6 md:mt-8 group-hover:italic transition-all break-words leading-[0.95]">Community</h3>
@@ -129,8 +203,6 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
         </div>
       </a>
     </div>
-
-    <SubscribeSection />
   </div>
 
   <script is:inline define:vars={{ bank: quoteBank }}>
@@ -142,6 +214,136 @@ const homeQuote = quoteBank[Math.floor(Math.random() * quoteBank.length)];
       if (t) t.textContent = '“' + pick.text + '”';
       if (a) a.textContent = '— ' + pick.attribution;
       if (c) c.textContent = pick.citation;
+    })();
+  </script>
+
+  <script is:inline define:vars={{ continueModules }}>
+    // Returning-visitor "Continue" card. Reads the same localStorage shape
+    // that LessonProgressToggle writes (a JSON array of "${mod}-${lesson}"
+    // keys), finds the highest-numbered module with at least one read
+    // lesson, and points the card at the next incomplete lesson within it.
+    // Falls forward to the next module if the most-progressed module is
+    // already fully read. Hides on any parse error or empty progress.
+    (function () {
+      var card = document.querySelector('[data-home-continue-card]');
+      if (!card) return;
+      var raw;
+      try {
+        raw = window.localStorage.getItem('svapna_progress');
+      } catch (_) {
+        return;
+      }
+      if (!raw) return;
+      var parsed;
+      try {
+        parsed = JSON.parse(raw);
+      } catch (_) {
+        return;
+      }
+      if (!Array.isArray(parsed) || parsed.length === 0) return;
+      var done = {};
+      for (var i = 0; i < parsed.length; i++) {
+        if (typeof parsed[i] === 'string') done[parsed[i]] = true;
+      }
+
+      // Walk modules from highest to lowest; first one with any read lesson
+      // wins. If that module is fully read, walk forward from it to find the
+      // next module with at least one unread lesson.
+      var mods = continueModules.slice().sort(function (a, b) {
+        return parseInt(b.num, 10) - parseInt(a.num, 10);
+      });
+      var anchor = null;
+      for (var m = 0; m < mods.length; m++) {
+        var mod = mods[m];
+        for (var j = 0; j < mod.lessons.length; j++) {
+          if (done[mod.lessons[j].key]) { anchor = mod; break; }
+        }
+        if (anchor) break;
+      }
+      if (!anchor) return;
+
+      function readCount(mod) {
+        var c = 0;
+        for (var k = 0; k < mod.lessons.length; k++) {
+          if (done[mod.lessons[k].key]) c++;
+        }
+        return c;
+      }
+      function firstUnread(mod) {
+        for (var k = 0; k < mod.lessons.length; k++) {
+          if (!done[mod.lessons[k].key]) return mod.lessons[k];
+        }
+        return null;
+      }
+
+      var target = anchor;
+      var nextLesson = firstUnread(anchor);
+      if (!nextLesson) {
+        // Anchor module fully read — find the next module with any unread
+        // lesson, in ascending order from anchor+1.
+        var ordered = continueModules.slice().sort(function (a, b) {
+          return parseInt(a.num, 10) - parseInt(b.num, 10);
+        });
+        var anchorN = parseInt(anchor.num, 10);
+        for (var p = 0; p < ordered.length; p++) {
+          if (parseInt(ordered[p].num, 10) <= anchorN) continue;
+          var unread = firstUnread(ordered[p]);
+          if (unread) { target = ordered[p]; nextLesson = unread; break; }
+        }
+      }
+      if (!nextLesson) return; // Whole work read — nothing left to continue.
+
+      var WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten'];
+      function num(n) { return WORDS[n] || String(n); }
+
+      var read = readCount(target);
+      var total = target.lessons.length;
+      var modSlot = card.querySelector('[data-home-continue-module]');
+      var progSlot = card.querySelector('[data-home-continue-progress]');
+      if (modSlot) modSlot.textContent = 'Module ' + target.roman;
+      if (progSlot) progSlot.textContent = num(read) + ' of ' + num(total) + ' lessons read';
+      card.setAttribute('href', nextLesson.href);
+      card.style.display = '';
+
+      card.addEventListener('click', function () {
+        var track = window.trackUmami || function () {};
+        track('home_continue_module_click');
+      });
+    })();
+  </script>
+
+  <script is:inline>
+    // Homepage analytics wiring. The trackUmami helper is defined in
+    // Layout.astro and is a no-op when the loader is absent.
+    (function () {
+      var track = window.trackUmami || function () {};
+
+      // 1) Curriculum CTA click — fires before navigation. Umami's track call
+      //    is synchronous client-side, so a same-tab navigation will still
+      //    record the event.
+      var cta = document.querySelector('[data-home-curriculum-cta]');
+      if (cta) {
+        cta.addEventListener('click', function () {
+          track('home_cta_curriculum_click');
+        });
+      }
+
+      // 2) Subscribe section enters viewport — fire once per page view.
+      var sub = document.querySelector('[data-home-subscribe]');
+      if (sub && 'IntersectionObserver' in window) {
+        var fired = false;
+        var io = new IntersectionObserver(function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting && !fired) {
+              fired = true;
+              track('home_subscribe_view');
+              io.disconnect();
+              break;
+            }
+          }
+        }, { threshold: 0.25 });
+        io.observe(sub);
+      }
     })();
   </script>
 </Layout>

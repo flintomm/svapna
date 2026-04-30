@@ -120,6 +120,45 @@ export function getLesson(moduleNum, lessonNum) {
   return list.find(l => parseInt(l.lessonNum, 10) === parseInt(lessonNum, 10)) || null;
 }
 
+// Strip markdown noise (fenced code blocks, inline code, blockquote markers,
+// link/image syntax, headings, emphasis, list bullets) and return the count of
+// whitespace-separated tokens in the lesson body.
+function countWords(markdown) {
+  if (!markdown) return 0;
+  const stripped = markdown
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`[^`]*`/g, ' ')
+    .replace(/^>.*$/gm, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/^#+\s+/gm, '')
+    .replace(/[*_~]+/g, ' ')
+    .replace(/^\s*[-+*]\s+/gm, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!stripped) return 0;
+  return stripped.split(' ').length;
+}
+
+export function wordCount(slugOrLesson) {
+  let lesson = slugOrLesson;
+  if (typeof slugOrLesson === 'string') {
+    lesson = allLessons.find(l => l.slug === slugOrLesson || l.urlSlug === slugOrLesson);
+  }
+  if (!lesson) return 0;
+  return countWords(lesson.body);
+}
+
+// Total module read time in minutes, rounded to the nearest 5, assuming 200 wpm.
+export function moduleReadTime(moduleNum) {
+  const list = lessonsByModule[String(parseInt(moduleNum, 10))] || [];
+  const words = list.reduce((sum, l) => sum + countWords(l.body), 0);
+  if (words === 0) return 0;
+  const minutes = words / 200;
+  const rounded = Math.round(minutes / 5) * 5;
+  return Math.max(5, rounded);
+}
+
 export function getLessonByUrlSlug(moduleNum, urlSlug) {
   const list = lessonsByModule[String(parseInt(moduleNum, 10))];
   if (!list) return null;

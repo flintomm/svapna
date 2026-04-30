@@ -52,7 +52,20 @@ export default {
       return jsonResponse({ error: 'Method not allowed' }, 405, origin);
     }
 
-    if (url.pathname === '/subscribe') {
+    // Dual-path support during the workers.dev → same-origin migration:
+    //   - Legacy:    https://svapna-contact.tphch.workers.dev/{,subscribe}
+    //   - New (same-origin): https://svapnaproject.org/api/contact{,/subscribe}
+    // Strip the `/api/contact` prefix so existing dispatch on `/` and
+    // `/subscribe` keeps working for both. Once the workers.dev URL is
+    // retired, this normalization (and the legacy paths it maps to) can go.
+    let pathname = url.pathname;
+    if (pathname === '/api/contact' || pathname === '/api/contact/') {
+      pathname = '/';
+    } else if (pathname.startsWith('/api/contact/')) {
+      pathname = pathname.slice('/api/contact'.length);
+    }
+
+    if (pathname === '/subscribe') {
       return handleSubscribe(request, env, origin);
     }
     return handleContact(request, env, origin);

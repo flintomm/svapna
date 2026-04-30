@@ -8,7 +8,7 @@
 
 **Chögyal Namkhai Norbu, in *Dream Yoga and the Practice of Natural Light*, makes the distinction explicit at the start of his second chapter:**
 
-> When someone says "practice of the night" we usually think of the practice of lucid dreaming. There are many explanations of lucid dreaming. *But in the Dzogchen teaching, the practice of dream work, and development of lucidity, is not fundamental. It is a secondary practice.* In the case of dream practice, secondary means that this practice can arise spontaneously or automatically from doing the principal practice, which is called the "practice of natural light."
+> When someone says "practice of the night" we usually think of the practice of lucid dreaming. There are many explanations of lucid dreaming. *But in the Dzogchen teaching, the practice of dream work, and development of lucidity, is not fundamental. It is a secondary practice.* In the case of dream practice, secondary means that this practice can arise spontaneously or automatically from doing the principal practice, which is called the "practice of natural light." (Chögyal Namkhai Norbu, *Dream Yoga and the Practice of Natural Light*, trans. Michael Katz, Snow Lion 1992/2002; this edition is the source of the four Namkhai Norbu passages quoted in this lesson.)
 
 The "practice of natural light" — Tibetan *ösel* — operates earlier than the dream. It works the *transition* into sleep itself.
 
@@ -46,7 +46,7 @@ The classical Tibetan prayer that frames the night, given in Namkhai Norbu's boo
 > Do not lie in ignorance like a corpse.
 > *Enter the natural sphere of unwavering attentiveness.*
 > Recognize your dreams and transform illusion into luminosity.
-> Do not sleep like an animal. Do the practice which mixes sleep and reality.
+> Do not sleep like an animal. Do the practice which mixes sleep and reality. (root verse of the bardo of dreams, as given in Namkhai Norbu, Katz trans.)
 
 The same prayer appears in Fremantle and Trungpa's *Tibetan Book of the Dead* in nearly identical wording, as one of the "main verses of the six bardos":
 

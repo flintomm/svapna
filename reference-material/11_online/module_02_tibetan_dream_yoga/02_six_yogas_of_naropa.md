@@ -24,7 +24,7 @@ Mullin, paraphrasing Tsongkhapa's *A Book of Three Inspirations*, describes the 
 
 **Tsongkhapa puts the relation crisply, in Mullin's translation:**
 
-> "*Only when progress in dream yoga has been made firm can one effectively work with the bardo yogas.* Thus here again [with the bardo yogas] the foundation stone is the power achieved through the inner heat" (Mullin, paraphrasing Tsongkhapa).
+> "*Only when progress in dream yoga has been made firm can one effectively work with the bardo yogas.* Thus here again [with the bardo yogas] the foundation stone is the power achieved through the inner heat" (Glenn H. Mullin, trans., *The Six Yogas of Naropa*, Snow Lion; Tsongkhapa's *A Book of Three Inspirations*).
 
 The system has, in other words, a logic. The energetic foundation enables the contemplative recognitions; the recognitions worked out in the daytime body become available in the nighttime body; the recognitions worked out in the nighttime body become available in the bardo of dying.
 
@@ -52,7 +52,7 @@ Until that point, Naropa had stipulated in his *Vajra Verses of the Whispered Tr
 
 The original sources, Tsongkhapa explains and Mullin translates, are tantric scriptures attributed to the Buddha himself:
 
-> "The instruction on the inner heat yoga comes to us through Tilopa, who commented that this was the transmission of the mahasiddha Krishnacharya... which fuses [the teachings on inner heat yoga found in] the Hevajra Tantra and the Heruka Chakrasamvara Tantra. *The illusory body and the clear light doctrines are derived from the oral tradition teachings of the Guhyasamaja Tantra.*"
+> "The instruction on the inner heat yoga comes to us through Tilopa, who commented that this was the transmission of the mahasiddha Krishnacharya... which fuses [the teachings on inner heat yoga found in] the Hevajra Tantra and the Heruka Chakrasamvara Tantra. *The illusory body and the clear light doctrines are derived from the oral tradition teachings of the Guhyasamaja Tantra.*" (Mullin trans., *The Six Yogas of Naropa*, Snow Lion)
 
 Dream yoga, treated as a stage of illusory body in Tsongkhapa's structure, draws on these same sources together with what Tsongkhapa calls *The Five Stages* and *The Four Seats*.
 

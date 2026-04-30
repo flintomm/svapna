@@ -18,7 +18,7 @@ The waking world is no less a projection than the night's dream; it is only that
 
 **Tsongkhapa, again paraphrasing through Mullin:**
 
-> "*merely recognizing that the horses, elephants and so forth that are seen in dreams are illusions will not give rise to the wisdom of emptiness*, in the same way that realizing something to be an illusion in the waking state, such as one's reflection in a mirror, does not give rise to realization of emptiness. One must combine the technique of dream yoga with the instructions on the methods of ascertaining the meaning of emptiness."
+> "*merely recognizing that the horses, elephants and so forth that are seen in dreams are illusions will not give rise to the wisdom of emptiness*, in the same way that realizing something to be an illusion in the waking state, such as one's reflection in a mirror, does not give rise to realization of emptiness. One must combine the technique of dream yoga with the instructions on the methods of ascertaining the meaning of emptiness." (Mullin trans., *The Six Yogas of Naropa*, Snow Lion)
 
 The recognition that one is dreaming — what the Western lucid-dream literature calls *lucidity*, the basic precondition of the practice — is not, by itself, the practice. It is the entry.
 

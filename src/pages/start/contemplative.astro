@@ -1,0 +1,125 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
+
+const siteUrl = Astro.site.href;
+const url = new URL('/start/contemplative', siteUrl).href;
+
+const pageTitle = 'The Fourth, and the Three It Contains — Svapna';
+const pageDescription =
+  'An entry essay on the Māṇḍūkya Upaniṣad’s four states — waking, dreaming, deep sleep, and the witnessing fourth — and on the Tibetan tradition that took the dream as the most accessible site for recognizing what is awake through all of them.';
+
+const articleLd = articleSchema({
+  url,
+  headline: 'The Fourth, and the Three It Contains',
+  description: pageDescription,
+  section: 'Entry / For the Contemplative Reader',
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Start', path: '/start/contemplative' },
+  { name: 'For the Contemplative Reader', path: '/start/contemplative' },
+]));
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  ogType="article"
+  ogImage="/og-contemplative.jpg"
+  jsonLd={[articleLd, crumbsLd]}
+>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Svapna</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Entry / For the contemplative reader</span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ B</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">An entry essay</p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">The fourth, and the three it contains.</h1>
+        <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug italic">
+          On the Māṇḍūkya&rsquo;s four states, and on a thousand-year practice tradition that took the dream as the most accessible site for recognizing what is awake through all of them.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Essay</span>
+      </div>
+      <article class="md:col-span-10 p-6 md:p-12 max-w-3xl prose-essay">
+        <p>
+          The shortest of the principal Upaniṣads, composed somewhere between the eighth and fifth centuries BCE, lays out a map of consciousness in twelve verses. The map has four quarters. <em>Jāgrat</em> is the waking state &mdash; outward-turned awareness engaged with what the Sanskrit calls gross objects, the world of solid things. <em>Svapna</em> is the dream state &mdash; the same awareness, now inward-turned, engaged with subtle objects that have the architecture of a world but are made of mind. <em>Suṣupti</em> is deep sleep &mdash; awareness without object, undifferentiated, the condition in which one neither desires anything nor beholds any dream. And <em>turīya</em>, literally &ldquo;the fourth,&rdquo; is the awareness in which the other three appear: not waking, not dreaming, not deep sleep, not the three taken together; described in the Māṇḍūkya only by negations, then by four positive words &mdash; <em>śānta, śiva, advaita,</em> and the coming-to-rest of all multiplicity.
+        </p>
+
+        <p>
+          The Māṇḍūkya&rsquo;s claim, the one every later Indian tradition either accepts or argues against, is that the same single awareness runs through all four. Waking does not generate it. Dream does not interrupt it. Deep sleep does not extinguish it. Turīya is not a fifth state added to the others; it is what the others have been instances of all along. Wendy Doniger renders the structural point: turīya is &ldquo;in a sense, &lsquo;the first three all in all,&rsquo; the true state toward which the other three point&rdquo; (Doniger, <em>Dreams, Illusion, and Other Realities</em>, 1984).
+        </p>
+
+        <p>
+          This is the bedrock on which most of what follows in Asian contemplative thought is built. Mahāyāna Buddhism&rsquo;s &ldquo;all form is like a dream,&rdquo; transmitted through Śāntideva and the long Madhyamaka commentarial tradition, presupposes the framework even where it disputes the metaphysics. The Tibetan synthesis &mdash; the work of figures like Tilopa, Naropa, Marpa, and Tsongkhapa, consolidated over the eleventh through fourteenth centuries &mdash; takes the four-state architecture and turns it into a contemplative discipline.
+        </p>
+
+        <p>
+          That discipline is <em>milam</em>, dream yoga. It does not arrive in Tibet as a freestanding technique. It arrives inside a much larger framework: the Six Yogas of Naropa, the bardo teachings, and the larger contemplative views of Mahāmudrā in the Kagyu lineages and Dzogchen in the Nyingma and Bön. Inside that frame, the dream is not interesting because lucidity is interesting. The dream is interesting because it is the most accessible site for recognizing experientially &mdash; in a state where the dream-body and dream-environment are visibly mind-made &mdash; that all experience has the same character. The waking world, on the lineage view, is no less a projection than the night&rsquo;s dream; it is only that the karmic traces stabilizing it are denser, and the projection runs at a slower frame rate.
+        </p>
+
+        <p>
+          The classical four-stage structure of the practice is laid out, with minor variations, across Geluk, Kagyu, Nyingma, and Bön sources. <em>Comprehension</em> is what the Western literature would call learning to become lucid &mdash; the daytime intention, the throat-syllable visualization at sleep onset, the held attention that carries through the threshold. <em>Transformation</em> is the use of the lucid dream to demonstrate, in a state where the demonstration is unanswerable, that perception is plastic. <em>Illusion</em> is the training in which the dream-as-māyā teaching ceases to be an intellectual claim and becomes a felt fact; one trains in dream-fire and dream-water until the analogous waking-fears begin to lose their density. <em>Suchness</em> is the dissolution of dream-appearance into clear light &mdash; the recognition of the awareness that has been dreaming all along, the awareness the Māṇḍūkya called turīya.
+        </p>
+
+        <p>
+          This is the place where the contemporary practitioner approaching the material from the Western lucid-dreaming literature most often misreads the tradition. The Western literature has, by historical accident, treated lucidity as the destination &mdash; state checks, dream-signs, MILD, WBTB, the entire technical apparatus organized around production of the lucid moment, and applications (dream-creativity, dream-flying, dream-rehearsal) downstream of it. Tsongkhapa, paraphrased through Glenn Mullin&rsquo;s translation, is explicit about why this is too small a frame: &ldquo;merely recognizing that the horses, elephants and so forth that are seen in dreams are illusions will not give rise to the wisdom of emptiness.&rdquo; The recognition is necessary; it is not sufficient. Lucidity, in this older frame, is the entry condition, not the prize.
+        </p>
+
+        <p>
+          What the lineage tradition contributes that the contemporary lucid-dreaming science cannot, then, is threefold. An <em>aim</em> &mdash; the recognition of mind&rsquo;s nature, and the stabilization of awareness through every transition: waking, dreaming, dying. A <em>frame</em> &mdash; waking, dreaming, deep sleep, and the bardos as continuous states of the same single consciousness. And an <em>ethical and relational holding</em> &mdash; the bodhicitta orientation that keeps the practice from collapsing into dream-pyrotechnics or self-display. The technical apparatus the science has produced is real and is gratefully received. The aim, the frame, and the holding come from elsewhere.
+        </p>
+
+        <p>
+          The convergence of these two streams &mdash; the contemplative tradition the Māṇḍūkya seeded twenty-five hundred years ago, and the laboratory verification of lucid dreaming that began with Hearne in 1975 and LaBerge in 1980 &mdash; is the substance of the contemporary practice landscape. B. Alan Wallace, Andrew Holecek, Tenzin Wangyal Rinpoche; Stephen LaBerge; Evan Thompson. Most of these figures are still teaching. The convergence is roughly thirty-five years old and its long-term outcome is not yet visible. What follows from here, on this site, is an attempt to lay the convergence out in the order it actually happened &mdash; the traditions taken seriously on their own terms first, and the meeting only after each has been heard out.
+        </p>
+
+        <p>
+          For the reader who already has a contemplative practice and is meeting dream yoga for the first time, the natural entry point is Module II.
+        </p>
+      </article>
+    </div>
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Continue</span>
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        <a href="/curriculum/module-02" class="block text-right w-full hover:italic transition-all">
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Module II →</p>
+          <p class="display text-base md:text-xl mt-2 leading-snug italic">Tibetan Dream Yoga.</p>
+          <p class="text-sm leading-relaxed mt-2 text-neutral-700">Ten lessons. The lineage, the Six Yogas, the four classical stages, the bardo connection, the Western reception.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .prose-essay :global(p) {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    color: rgb(38 38 38);
+  }
+  @media (min-width: 768px) {
+    .prose-essay :global(p) {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .prose-essay :global(em) {
+    font-style: italic;
+  }
+</style>

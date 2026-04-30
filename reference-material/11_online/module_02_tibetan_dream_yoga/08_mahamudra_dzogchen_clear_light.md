@@ -16,9 +16,7 @@ This is the place where the Tibetan tradition's vocabulary becomes most overwhel
 
 ## Twenty-four names for one recognition
 
-**Khenchen Thrangu, teaching the *Journey of the Mind* cycle in 1997, lays out the working synonymy explicitly:**
-
-> the terms emptiness, ultimate bodhicitta, absolute truth, prajnaparamita, clear light, radiant clarity, cognitive lucidity, cognitive clarity, luminosity, luminosity of the ground, mother luminosity, dharmata, dharmadhatu, dharmakaya, basic nature, true nature, true nature of mind, true nature of reality, primordial wisdom, primordial awareness, primordial purity, great non-conceptual wisdom and rigpa, while not totally synonymous, are simply various ways of referring to and conceptualizing from a dualistic perspective *the same ineffable truth that transcends dualistic and varying perceptions and conceptuality and is the essence or true nature of everything*. (Thrangu, *Journey of the Mind*)
+Khenchen Thrangu, teaching the *Journey of the Mind* cycle in 1997, lays out the working synonymy explicitly. The list he runs through is deliberately long — emptiness, ultimate bodhicitta, absolute truth, prajñāpāramitā, clear light, radiant clarity, cognitive lucidity, luminosity, luminosity of the ground, mother luminosity, *dharmatā*, *dharmadhātu*, *dharmakāya*, basic nature, true nature of mind, true nature of reality, primordial wisdom, primordial awareness, primordial purity, great non-conceptual wisdom, and *rigpa* — and the rhetorical purpose of its length is exactly that. The terms are not, on Thrangu's account, fully synonymous; each carries the texture of the textual tradition in which it is used. They are nevertheless various ways of referring, from a dualistic standpoint, to *the same ineffable truth that is the essence or true nature of everything* (Thrangu, *Journey of the Mind*).
 
 The list is unwieldy on purpose. It is meant to disable the tendency to imagine that one of these terms names a different thing from the others.
 
@@ -30,9 +28,7 @@ The Tibetan tradition is not embarrassed about the redundancy. It is, in some wa
 
 The "mother light / son light" formulation that Tsongkhapa, Namkhai Norbu, and Thrangu all use is the operative metaphor for understanding how clear light works across the practice.
 
-**Namkhai Norbu's gloss is the clearest:**
-
-> This knowledge is spoken of as the "son" knowledge, in comparison to the "mother" knowledge or full experience. When we practice, we try to develop this son knowledge. This knowledge is the son of the mother.... *If you have become knowledgeable of, or have awareness of, the state of natural light, you will also have that awareness and presence in the moment of dying.* If you are capable of dying with presence and awareness, it means you are knowledgeable about the manifestations of light. In this case you will have no difficulty recognizing the mother light. (Namkhai Norbu, *Dream Yoga and the Practice of Natural Light*)
+Namkhai Norbu's gloss is the clearest. The "son" knowledge is what the practitioner cultivates: the partial, repeatable recognition of the state of natural light glimpsed in the small dissolutions of practice. The "mother" knowledge is the full experience, which the dying being meets at the moment when the conditioned apparatus of perception falls away. Practice consists in developing the son so that, at the moment of dying, awareness and presence remain available — and on the strength of that availability, recognition of the mother is possible. The practitioner who has become familiar with the manifestations of light through training is the practitioner for whom the mother light is recognizable rather than strange (Namkhai Norbu, *Dream Yoga and the Practice of Natural Light*, trans. Michael Katz).
 
 The "son light" is what the practitioner cultivates in life — every glimpse of awareness recognizing itself in the gap between sleep and dream, between thought and thought, between the dissolution of one moment of perception and the arising of the next.
 

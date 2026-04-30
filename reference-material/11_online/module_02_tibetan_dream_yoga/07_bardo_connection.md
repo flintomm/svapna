@@ -12,11 +12,9 @@ The Tibetan tradition treats the transitions of consciousness as analogous. Fall
 
 Tsongkhapa puts the principle directly, in Mullin's translation:
 
-> "*if one is able to recognize the clear light of sleep during one's lifetime practice, then at the time of death one will be able to recognize the clear light of the moment of death.* Moreover, if one is able to control the subtle energies in the dream state, one will be able to control them in the bardo."
+> "*if one is able to recognize the clear light of sleep during one's lifetime practice, then at the time of death one will be able to recognize the clear light of the moment of death.* Moreover, if one is able to control the subtle energies in the dream state, one will be able to control them in the bardo." (Mullin trans., *The Six Yogas of Naropa*, Snow Lion)
 
-**Khenchen Thrangu, in *Journey of the Mind*, makes the same point in plainer Mahāmudrā register, addressing the lay practitioner directly:**
-
-> It has been said by many mahasiddhas that what happens in the dream state and the bardo state depends primarily upon the momentum of one's habits and upon one's resolve or resolution. For example, if before I go to sleep I say to myself, "I must wake up at 3 a.m.," and if I really mean it and I really want to, then I will probably wake up at 3 a.m. Somehow the momentum of the intention is carried through the unconsciousness and the dream state and so on. As another example, if I resolve that I very much want to have lucid dreams and I say to myself before I go to sleep, "Tonight I will recognize a dream as a dream while I am dreaming it," then I probably will.... *The preparation for the bardo of becoming is the same.* (Thrangu, *Journey of the Mind*)
+Khenchen Thrangu, in *Journey of the Mind*, develops the same point in plainer Mahāmudrā register. What happens in the dream-state and the bardo-state, on the testimony of the mahasiddhas, runs primarily on two factors: the momentum of accumulated habit and the strength of the practitioner's resolve. The everyday illustration Thrangu reaches for is the resolution to wake at a particular hour — the intention, sincerely held before sleep, carries through the dissolution of consciousness and surfaces the body at the appointed time. The same mechanism applies to the resolution to recognize a dream as a dream while it is being dreamt. Thrangu draws the bardo conclusion plainly: "*the preparation for the bardo of becoming is the same*" (Thrangu, *Journey of the Mind*).
 
 The practice and the bardo are tied by the simple fact that both run on momentum of habit. What the practitioner trains in the bardo of dreams is a strengthened tendency that becomes available in the bardo of dying.
 
@@ -37,7 +35,7 @@ The bardo of dreams is one stop on a list whose other stops are the death-proces
 > and let my thoughts enter their natural state without distraction;
 > *controlling and transforming dreams in luminosity*,
 > I will not sleep like any animal
-> but unify completely sleep and practice.
+> but unify completely sleep and practice. (trans. Francesca Fremantle and Chögyam Trungpa, *The Tibetan Book of the Dead*; same edition for the bardo-of-dharmatā verse and the prose passage that follow.)
 
 The verse for the bardo of dharmatā that follows uses, deliberately, the same orientation:
 
@@ -53,7 +51,7 @@ The instruction to *recognize whatever appears as my projection* is, structurall
 
 Fremantle and Trungpa's prose passage at the moment of dharmatā makes the equivalence explicit, addressed to the dying person:
 
-> "whatever sounds, colors and rays of light occur, they cannot hurt you and you cannot die. *It is enough simply to recognize them as your projections.* Know this to be the bardo state."
+> "whatever sounds, colors and rays of light occur, they cannot hurt you and you cannot die. *It is enough simply to recognize them as your projections.* Know this to be the bardo state." (Fremantle and Trungpa, *The Tibetan Book of the Dead*)
 
 The dream-yoga practitioner, in life, is rehearsing exactly this recognition.
 
@@ -65,9 +63,7 @@ This is what is at stake when the Tibetan tradition speaks of dream yoga as a pr
 
 A practitioner approaching the material from a contemporary Western frame may find this the part of the tradition that is hardest to inhabit. The bardo doctrine — that consciousness continues after the dissolution of the brain, that there is an intermediate state, that the conditions of that state are determined in part by the practitioner's prior training — is not a claim that contemporary Western science can adjudicate.
 
-**Wallace, in the bridge text Module 6 returns to, is direct about this:**
-
-> "There is, in the standard scientific apparatus, no way to evaluate the claim that dream practice prepares for the bardo. *The most a careful scientist of good will can do is acknowledge the claim as a contemplative report and refrain from inflating or deflating it.*"
+Wallace, in the bridge text Module 6 returns to, is direct about this. The standard scientific apparatus has no procedure for adjudicating the claim that dream practice prepares for the bardo. The most a careful scientist of good will can do is hold the claim as a contemplative report — registering it as such, and refraining from either inflating or deflating it.
 
 The contemporary practitioner therefore has to decide how to hold the question. Three positions are visible in the contemporary teaching landscape, and each is defensible.
 

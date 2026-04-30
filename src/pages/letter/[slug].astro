@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MarkdownBody from '../../components/MarkdownBody.astro';
+import InlineMarkdown from '../../components/InlineMarkdown.astro';
+import { allLetters } from '../../lib/letters.js';
+import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
+
+export function getStaticPaths() {
+  return allLetters.map(letter => ({
+    params: { slug: letter.slug },
+    props: { letter },
+  }));
+}
+
+const { letter } = Astro.props;
+const idx = allLetters.findIndex(l => l.slug === letter.slug);
+// `allLetters` is sorted newest-first. "Previous" in editorial reading order
+// is the older letter (next in the array); "Next" is the newer one (prior).
+const newer = idx > 0 ? allLetters[idx - 1] : null;
+const older = idx < allLetters.length - 1 ? allLetters[idx + 1] : null;
+
+const siteUrl = Astro.site.href;
+const url = new URL(`/letter/${letter.slug}`, siteUrl).href;
+const description = (letter.excerpt || letter.title).slice(0, 180);
+const articleLd = articleSchema({
+  url,
+  headline: letter.title,
+  description,
+  section: 'Letter',
+});
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Letter', path: '/letter' },
+  { name: letter.title, path: `/letter/${letter.slug}` },
+]));
+---
+
+<Layout
+  title={`${letter.title} — Letter — Svapna`}
+  description={description}
+  ogType="article"
+  jsonLd={[articleLd, crumbsLd]}
+>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/letter" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Letter</a>
+      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{letter.displayDate}</span>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Letter</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">{letter.displayDate}</p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{letter.title}</h1>
+        {letter.kicker && (
+          <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+            <InlineMarkdown text={letter.kicker} />
+          </p>
+        )}
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Body</span>
+      </div>
+      <div class="md:col-span-10 p-6 md:p-12">
+        <MarkdownBody text={letter.body} />
+      </div>
+    </div>
+
+    <div class="hairline-b grid grid-cols-2">
+      <div class="hairline-r p-5 md:p-8">
+        {older ? (
+          <a href={`/letter/${older.slug}`} class="block text-left w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">← {older.displayDate}</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{older.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">First letter</span>
+        )}
+      </div>
+      <div class="p-5 md:p-8 text-right">
+        {newer ? (
+          <a href={`/letter/${newer.slug}`} class="block text-right w-full hover:italic transition-all">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">{newer.displayDate} →</p>
+            <p class="display text-base md:text-xl mt-2 leading-snug italic">{newer.title}</p>
+          </a>
+        ) : (
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Most recent</span>
+        )}
+      </div>
+    </div>
+  </div>
+</Layout>

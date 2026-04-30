@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 // Posts to the svapna-contact Worker (same endpoint as the contact form),
 // with subject forced to "[Library] Pitch" so the inbox can route it.
-const ENDPOINT = 'https://svapna-contact.tphch.workers.dev';
+// Routed through the same-origin /api/contact path (see wrangler.toml).
+const ENDPOINT = '/api/contact';
 
 export default function LibraryPitchForm() {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error

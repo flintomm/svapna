@@ -659,7 +659,7 @@ export const aboutPages = {
   privacy: {
     title: 'Privacy',
     kicker: 'What is collected, where it travels, how long it stays',
-    effective: '2026-04-29',
+    effective: '2026-04-30',
     paragraphs: [
       'The Svapna Project is a free, donation-supported educational site about dream yoga and lucid dreaming. The site is read-mostly. Where it accepts data — three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
       'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
@@ -668,8 +668,8 @@ export const aboutPages = {
       {
         name: 'Who runs the site',
         paragraphs: [
-          'The data controller is the steward of Svapna Project, an independent researcher operating the site at svapnaproject.org. Mail about anything in this policy — questions, corrections, requests under the rights enumerated below — lands at admin@svapnaproject.org. Replies arrive when they arrive.',
-          'The operator is not at present a registered legal entity. The site has no GDPR Article 27 EU representative; whether one is required is an open question for the operator and turns on the eventual scale of EU-resident traffic to the community surface, when it ships.',
+          'The data controller is Svapna Project, an independent educational project operating the site at svapnaproject.org. Contact: admin@svapnaproject.org. Mail about anything in this policy — questions, corrections, requests under the rights enumerated below — lands at that address. Replies arrive when they arrive.',
+          'The site has no GDPR Article 27 EU representative; whether one is required is an open question for the operator and turns on the eventual scale of EU-resident traffic to the community surface, when it ships.',
         ],
       },
       {
@@ -698,11 +698,11 @@ export const aboutPages = {
         name: 'Who it is shared with',
         paragraphs: [
           'Five third parties carry data on the site’s behalf. None receives data for purposes beyond the function described.',
-          'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Privacy policy: cloudflare.com/privacypolicy.',
-          'Umami Cloud — pageview analytics, loaded site-wide by default. Privacy-friendly by design: no cookies, no cross-site identifiers, no PII. Privacy policy: umami.is/privacy.',
-          'Buy Me a Coffee — donation processor and widget host. The widget loads on /support and sets browser storage. No other page of the site loads BMC. Privacy policy: buymeacoffee.com/privacy-policy.',
-          'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Privacy policy: buttondown.com/privacy.',
-          'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Privacy policy: resend.com/legal/privacy-policy.',
+          'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Cloudflare is certified under the EU-US Data Privacy Framework. Privacy policy: cloudflare.com/privacypolicy.',
+          'Umami Cloud — pageview analytics, loaded site-wide by default. Privacy-friendly by design: no cookies, no cross-site identifiers, no PII. Umami Software, Inc. is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: umami.is/privacy.',
+          'Buy Me a Coffee — donation processor and widget host. The widget loads on /support and sets browser storage. No other page of the site loads BMC. Buy Me a Coffee is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buymeacoffee.com/privacy-policy.',
+          'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Buttondown is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buttondown.com/privacy.',
+          'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Resend is certified under the EU-US Data Privacy Framework. Privacy policy: resend.com/legal/privacy-policy.',
         ],
       },
       {
@@ -743,7 +743,7 @@ export const aboutPages = {
       {
         name: 'Contact',
         paragraphs: [
-          'Mail about this policy, requests to exercise any right, or notice of a suspected breach lands at admin@svapnaproject.org. The data controller of record is the steward of Svapna Project.',
+          'Mail about this policy, requests to exercise any right, or notice of a suspected breach lands at admin@svapnaproject.org. The data controller of record is Svapna Project.',
         ],
       },
     ],
@@ -751,7 +751,7 @@ export const aboutPages = {
   terms: {
     title: 'Terms',
     kicker: 'A working set of rules that match how the project actually behaves',
-    effective: '2026-04-29',
+    effective: '2026-04-30',
     paragraphs: [
       'These terms govern use of the Svapna Project site at svapnaproject.org. The site is a free, donation-supported educational project about dream yoga and lucid dreaming, run by an independent researcher. The terms are kept short on purpose; the goal is a working set of rules that match how the project actually behaves.',
     ],
@@ -831,13 +831,19 @@ export const aboutPages = {
         ],
       },
       {
-        name: '12. Changes',
+        name: '12. Governing law',
+        paragraphs: [
+          'These terms are governed by the laws of the State of Delaware, United States, without regard to its conflict-of-laws provisions. Mandatory consumer-protection rights and other non-waivable rights granted by the user’s local law are not displaced by this clause; where the user’s home jurisdiction reserves exclusive jurisdiction over a particular dispute, that reservation is honoured.',
+        ],
+      },
+      {
+        name: '13. Changes',
         paragraphs: [
           'The operator may update these terms. Material changes are flagged on the home page or in a newsletter dispatch before they take effect. Non-material changes are made silently, with the effective date below updated.',
         ],
       },
       {
-        name: '13. Contact',
+        name: '14. Contact',
         paragraphs: [
           'Mail about these terms, requests for permission beyond CC BY 4.0, and notices of any kind land at admin@svapnaproject.org.',
         ],

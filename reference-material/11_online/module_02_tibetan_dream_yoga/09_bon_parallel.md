@@ -26,9 +26,7 @@ Tenzin Wangyal's mother, his teacher Lopon Tenzin Namdak, and the older monks at
 
 For the practices the broader Svapna curriculum will eventually teach, the differences between Bön and Buddhist Tibetan dream yoga are smaller than the surface differences in vocabulary suggest.
 
-**The companion notes to *Tibetan Yogas of Dream and Sleep* state the relation clearly:**
-
-> "to a non-specialist eye they can look very similar — both have lineages of masters, formal monastic institutions, tantric practices, and Dzogchen teachings. *The differences are real but are mostly differences of historical pedigree and ritual specifics rather than philosophical content for the practices we are studying*" (companion notes, project archive).
+To a non-specialist eye the two traditions look very similar. Both carry lineages of masters, formal monastic institutions, tantric practices, and Dzogchen teachings. The differences are real, but for the practices the work is taking up they are mostly differences of historical pedigree and ritual specifics rather than differences of philosophical content.
 
 Where Buddhist practitioners visualize Padmasambhava or Vajrayoginī, Bön practitioners visualize Tapihritsa or Shenla Odker, or use the dakini Salgye Du Dalma in the sleep-yoga visualization.
 

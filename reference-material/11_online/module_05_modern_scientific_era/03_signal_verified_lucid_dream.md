@@ -8,11 +8,9 @@
 
 The contemplative tradition's claim that dream-awareness is real and trainable had not been tested in a laboratory because it was not, in the 1970s, generally believed in the laboratory.
 
-**LaBerge writes plainly about the climate in which he started his dissertation work at Stanford, and the passage is worth quoting because it captures the position in a single sentence:**
+LaBerge, beginning Ph.D. work at Stanford in the late 1970s, has described the climate plainly in *Exploring the World of Lucid Dreaming* (Stephen LaBerge and Howard Rheingold, Ballantine 1990): the experts of the period held that dreaming with the awareness that one was dreaming was a contradiction in terms and therefore impossible. Philosophical reasoning of that kind, LaBerge notes, could not convince a researcher who had himself had lucid dreams.
 
-> In the late 1970s, when I began my Ph.D. study on lucid dreams at Stanford, I found myself challenged by a seemingly even more hopeless task: proving that lucid dreaming is real. *The experts at the time were convinced that dreaming with consciousness that you were dreaming was a contradiction in terms and therefore impossible.* Such philosophical reasoning could not convince me, since I had experienced lucid dreams — impossible or not. (LaBerge and Rheingold, *Exploring the World of Lucid Dreaming*)
-
-The objection LaBerge mentions — that consciousness within sleep is a contradiction in terms — was widely held in the dream-research community of the 1970s.
+The objection — that consciousness within sleep is a contradiction in terms — was widely held in the dream-research community of the 1970s.
 
 It had its sources both in the dominant Hobson-McCarley activation-synthesis framework, which held that REM dreaming was driven by random pontine activation that the cortex synthesized into apparent narrative without higher-order monitoring, and in the older clinical tradition that treated lucidity reports as confabulation, brief micro-awakenings, or pathology.
 
@@ -46,19 +44,13 @@ Hearne's claim to scientific priority is firm. The fact that for several decades
 
 ## LaBerge at Stanford
 
-LaBerge's own demonstration came in 1980 and is described in considerable detail in *Exploring the World of Lucid Dreaming*.
+LaBerge's own demonstration came in 1980 and is described in considerable detail in *Exploring the World of Lucid Dreaming*. The relevant passage opens with a poetic challenge — Coleridge's flower brought back from heaven — and then redescribes the challenge in operational terms. Reporting lucidity after waking, LaBerge writes, would not prove that the lucidity had occurred while the body was actually asleep:
 
-The relevant passage opens with what LaBerge calls a poetic challenge — Coleridge's flower brought back from heaven — and then redescribes the challenge in operational terms:
+> I had no doubt that lucid dreaming was a reality, but how could I prove it to anyone else? … Simply reporting I had been lucid in a dream after awakening wouldn't prove that the lucidity had occurred while I was actually asleep. I needed some way to mark the time of the lucid dream on a record showing that I had been asleep. … It occurred to me that I ought to be able to signal by moving my eyes in a pre-arranged, recognizable pattern. (LaBerge and Rheingold)
 
-> I had no doubt that lucid dreaming was a reality, but how could I prove it to anyone else? *To do so I needed to bring back evidence from the dream world as proof that I had really known I was dreaming during sleep.* Simply reporting I had been lucid in a dream after awakening wouldn't prove that the lucidity had occurred while I was actually asleep. I needed some way to mark the time of the lucid dream on a record showing that I had been asleep. (LaBerge and Rheingold)
+The insight rested on a fact already established in the literature: during ordinary REM, dreamers' physical eye movements were known to correspond, at least sometimes, with the direction in which the dreamer was looking within the dream. The extraocular muscles were not paralyzed by REM atonia. A practitioner aware enough to use them, and free to look anywhere within the dream, ought to be able to send a pre-arranged pattern out to the polygraph.
 
-**The insight that solved the problem was the recognition that REM eye movements were not paralyzed and that some of those eye movements during ordinary REM had previously been shown — in work by Dement and others — to correspond in direction with the gaze of the dreamer in the dream:**
-
-> I knew that earlier studies had demonstrated that the direction of dreamers' physical eye movements during REM was sometimes exactly the same as the direction that they reported looking in their dreams. In one remarkable example reported by pioneer sleep and dream researcher Dr. William Dement, a dreamer was awakened from REM sleep after making a series of about two dozen regular left-right-left-right eye movements. He reported that he was dreaming about a table tennis game; just before awakening he had been watching a long volley with his dream gaze. *I also knew from my own experience that I could look in any direction I wished while in a lucid dream, so it occurred to me that I ought to be able to signal while I was having a lucid dream by moving my eyes in a pre-arranged, recognizable pattern.* (LaBerge and Rheingold)
-
-LaBerge spent the night at the Stanford Sleep Laboratory, wired with electrodes that "measured my brain waves, eye movements, and muscle tone, which my colleague Dr. Lynn Nagel monitored on a polygraph while I slept."
-
-During that night LaBerge had a lucid dream "*in which I moved my eyes left-right-left-right*." The next morning the polygraph record was found to contain the eye-movement signals "*in the middle of a REM period*."
+LaBerge spent the night at the Stanford Sleep Laboratory, wired with electrodes that recorded brain waves, eye movements, and muscle tone while his colleague Lynn Nagel monitored the polygraph. During that night he had a lucid dream in which, as agreed, he moved his eyes in a left-right-left-right sequence. The polygraph record, examined the next morning, contained the signals in the middle of a confirmed REM period.
 
 The result was published as LaBerge, Nagel, Dement, and Zarcone, "Lucid Dreaming Verified by Volitional Communication during REM Sleep," *Perceptual and Motor Skills* 52 (1981): 727–732 — the first peer-reviewed publication of an objectively verified lucid dream in a major journal. LaBerge's 1980 Stanford dissertation, *Lucid Dreaming: An Exploratory Study of Consciousness during Sleep*, is the foundational scientific document.
 
@@ -66,9 +58,7 @@ The result was published as LaBerge, Nagel, Dement, and Zarcone, "Lucid Dreaming
 
 The demonstration's importance is more than the establishment of a single fact. Once the eye-signal paradigm was working, it became the methodological key to a research program.
 
-**As LaBerge writes:**
-
-> This method of communication from the dream world has proven to be of inestimable value in the continued study of lucid dreams and dream physiology. *The fact that lucid dreamers could remember to perform previously agreed upon actions in their dreams and that they could signal to the waking world made an entirely new approach to dream research possible.* By using trained lucid dreamers, we were able to develop the eye movement signaling technique into a powerful methodology. (LaBerge and Rheingold)
+The protocol's value, in LaBerge and Rheingold's account, is that lucid dreamers could remember to perform previously agreed-upon actions inside the dream and signal that performance to the waking world. With trained subjects, the eye-movement technique could be developed into a general methodology — a new approach to dream research that earlier work, lacking any from-inside marker, had not made available.
 
 ### Follow-on experiments the methodology made possible
 

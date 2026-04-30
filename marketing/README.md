@@ -7,7 +7,7 @@ marketing/
 ├── README.md                      (this file)
 ├── _render.py                     (Pillow + fontTools renderer — single pass)
 │
-├── discourse/                     ★ canonical, upload-ready ★
+├── community/                     ★ canonical, upload-ready ★
 │   ├── logo.svg                   1200 × 300   transparent
 │   ├── logo-small.svg              200 × 200   transparent, mark only
 │   ├── logo-mobile.svg             800 × 200   transparent
@@ -45,12 +45,12 @@ marketing/
 │   ├── 02-welcome-topic.md        pinned welcome post for Discourse
 │   └── 04-category-descriptions.md   12 forum categories — name, tagline, description
 │
-├── logos/                         (renderer working dir — same files as discourse/)
+├── logos/                         (renderer working dir — same files as community/)
 ├── social/
 └── email/
 ```
 
-The `discourse/` folder is the source of truth — every file there is at the exact canvas, format, and filename Discourse expects. Drag-and-drop into Admin → Customize → Branding.
+The `community/` folder is the source of truth — every file there is at the exact canvas, format, and filename Discourse expects. Drag-and-drop into Admin → Customize → Branding.
 
 ---
 
@@ -58,18 +58,18 @@ The `discourse/` folder is the source of truth — every file there is at the ex
 
 | Setting | File |
 |---|---|
-| Logo | `discourse/logo.svg` |
-| Logo Small | `discourse/logo-small.svg` |
-| Mobile Logo | `discourse/logo-mobile.svg` |
-| Favicon | `discourse/favicon.svg` |
-| Apple Touch Icon | `discourse/apple-touch-icon.png` |
-| Push Notifications Icon | `discourse/android-chrome-192.png` |
-| OpenGraph Image | `discourse/og.jpg` |
-| Twitter Summary Large Image | `discourse/twitter-card.jpg` |
-| Email Digest Logo | `discourse/email-logo.png` |
-| Login Required Splash (CSS background) | `discourse/login-splash.jpg` |
-| Color Scheme Import | `discourse/svapna-colors.json` |
-| Category Banners (custom theme component) | `discourse/category-banners/*.jpg` |
+| Logo | `community/logo.svg` |
+| Logo Small | `community/logo-small.svg` |
+| Mobile Logo | `community/logo-mobile.svg` |
+| Favicon | `community/favicon.svg` |
+| Apple Touch Icon | `community/apple-touch-icon.png` |
+| Push Notifications Icon | `community/android-chrome-192.png` |
+| OpenGraph Image | `community/og.jpg` |
+| Twitter Summary Large Image | `community/twitter-card.jpg` |
+| Email Digest Logo | `community/email-logo.png` |
+| Login Required Splash (CSS background) | `community/login-splash.jpg` |
+| Color Scheme Import | `community/svapna-colors.json` |
+| Category Banners (custom theme component) | `community/category-banners/*.jpg` |
 
 Categories: create the twelve in `copy/04-category-descriptions.md` in order. The leading Roman numerals are intentional — they place the categories in the editorial order without a custom sort plugin. Each banner filename matches its slug.
 
@@ -92,7 +92,7 @@ The previous Vite favicon is preserved at `/public/favicon-OLD-vite.svg.bak` —
 
 ## Re-rendering
 
-Geometry, type sizes, and proportions live in `_render.py`. Single command rebuilds every asset and re-installs canonical filenames into `discourse/` and `/public/`:
+Geometry, type sizes, and proportions live in `_render.py`. Single command rebuilds every asset and re-installs canonical filenames into `community/` and `/public/`:
 
 ```bash
 cd marketing

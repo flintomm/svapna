@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { allLetters } from '../../lib/letters.js';
+import { breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
+
+const siteUrl = Astro.site.href;
+const url = new URL('/letter', siteUrl).href;
+const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
+  { name: 'Letter', path: '/letter' },
+]));
+---
+
+<Layout
+  title="Letter — Svapna"
+  description="The Svapna Project newsletter archive."
+  jsonLd={[crumbsLd]}
+>
+  <div class="fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+      <a href="/" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Home</a>
+      <a href="/letter.xml" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">RSS →</a>
+    </div>
+
+    <div class="grid grid-cols-12 hairline-b">
+      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
+        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ —</span>
+      </div>
+      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
+        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">
+          The newsletter archive
+        </p>
+        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+          Past letters.
+        </h1>
+        <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
+          A letter goes out when new work publishes. About one a month. Each is kept here.
+        </p>
+      </div>
+    </div>
+
+    {allLetters.length === 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Index</span>
+        </div>
+        <div class="md:col-span-10 p-6 md:p-12">
+          <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-600 max-w-2xl">
+            The first letter is in preparation.
+          </p>
+        </div>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
+        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Index</span>
+        </div>
+        <div class="md:col-span-10">
+          {allLetters.map(letter => (
+            <a
+              href={`/letter/${letter.slug}`}
+              class="block w-full text-left grid grid-cols-12 hairline-b py-6 md:py-8 px-5 md:px-8 hover:bg-neutral-50 transition-colors group"
+            >
+              <span class="col-span-12 md:col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2 md:mb-0">
+                {letter.displayDate}
+              </span>
+              <div class="col-span-12 md:col-span-9">
+                <h2 class="display text-xl md:text-2xl leading-snug group-hover:italic transition-all">{letter.title}</h2>
+                {letter.excerpt && (
+                  <p class="text-sm md:text-base leading-relaxed mt-2 md:mt-3 text-neutral-700 max-w-3xl">{letter.excerpt}</p>
+                )}
+              </div>
+              <span class="col-span-12 md:col-span-1 mono text-[10px] uppercase tracking-widest text-neutral-400 group-hover:text-black group-hover:translate-x-1 transition-all md:text-right mt-2 md:mt-0">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>

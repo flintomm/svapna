@@ -14,9 +14,7 @@ The bundle's primary text on this question is **LaBerge and Rheingold's** chapte
 
 What the LaBerge-Rheingold chapter does, however, is establish the underlying logic by which lucid-dreaming techniques can be deployed therapeutically for chronic nightmares — a logic that the subsequent clinical literature would test in controlled trials and that contemporary clinical practice would refine into IRT and its variants.
 
-**The chapter opens with a dream-letter from a correspondent that lays out the approach in a single passage:**
-
-> I began to try to recognize my dreams as products of my mind, even as I dreamed them. The breakthrough came one night soon after a nightmare. I decided I could not live fully while I let my fears roam about on their own power, so to speak. *I entered the dream state determined not to yield. I had read somewhere that a fear could only be dissipated by friendliness and trust.* … The dream evolved, and I barely had time to remind myself to smile before the nightmare began. This time it was an almost childish nightmare, in which my collective fears took the shape of a large, nebulous but very scary monster. I quailed and almost turned tail, but by sheer will (I was really scared) I stayed and let it approach. I said to myself "it's my dream, and if I forget this, have to go through it again," and I smiled as sincerely as I could. … I said something like "*I'm not afraid. I want to be friends. You're welcome to my dream!*" and almost as soon as I said it, the monster became friendly, delightedly so. I was ecstatic. (LaBerge and Rheingold, *Exploring the World of Lucid Dreaming*, chapter 10)
+The chapter opens with a dream-letter from a correspondent who, after a nightmare, entered the dream state determined not to yield, having read that "*a fear could only be dissipated by friendliness and trust*." When the fear returned as a monstrous figure, the correspondent stood, smiled, and said, "*I'm not afraid. I want to be friends.*" The figure, almost at once, became friendly. (LaBerge and Rheingold, *Exploring the World of Lucid Dreaming*, chapter 10)
 
 ## The behavioral frame
 

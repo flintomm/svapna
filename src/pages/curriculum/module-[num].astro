@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import InlineMarkdown from '../../components/InlineMarkdown.astro';
 import { LessonCheckbox } from '../../components/react/LessonProgressToggle.jsx';
 import { curriculumModules, themes, moduleDeepening } from '../../lib/content.js';
-import { lessonsByModule } from '../../lib/lessons.js';
+import { lessonsByModule, moduleReadTime } from '../../lib/lessons.js';
 import { courseSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
@@ -23,6 +23,9 @@ const next = moduleIndex < curriculumModules.length - 1 ? curriculumModules[modu
 const prevPad = prev ? String(parseInt(prev.num, 10)).padStart(2, '0') : null;
 const nextPad = next ? String(parseInt(next.num, 10)).padStart(2, '0') : null;
 const padded = String(parseInt(mod.num, 10)).padStart(2, '0');
+const readMinutes = moduleReadTime(mod.num);
+const firstLesson = lessons[0] || null;
+const firstLessonHref = firstLesson ? `/curriculum/module-${padded}/${firstLesson.urlSlug}` : null;
 
 const siteUrl = Astro.site.href;
 const url = new URL(`/curriculum/module-${padded}`, siteUrl).href;
@@ -68,7 +71,19 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
         <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Overview</span>
       </div>
       <div class="md:col-span-10 p-6 md:p-12">
+        {readMinutes > 0 && (
+          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4 md:mb-5">~{readMinutes} minutes total</p>
+        )}
         <p class="text-base md:text-lg leading-loose max-w-3xl">{mod.overview}</p>
+        {firstLessonHref && (
+          <a
+            href={firstLessonHref}
+            class="mono text-[10px] uppercase tracking-widest mt-6 md:mt-8 inline-flex items-center gap-2 hover:italic transition-all group"
+          >
+            <span>Begin with Lesson 1</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        )}
       </div>
     </div>
 

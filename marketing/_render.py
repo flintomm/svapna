@@ -484,6 +484,122 @@ def render_twitter_jpg():
         ROOT / "social" / "twitter-card.jpg", "JPEG", quality=90, optimize=True)
 
 
+def _door_card(W, H, *, eyebrow_left, eyebrow_right, kicker,
+               headline_top, headline_bottom_italic,
+               sub_top, sub_bottom, scale=2):
+    """OG-card composition tuned for the Door variants.
+
+    Mirrors the editorial layout of `_composed_card` — same paper-white
+    ground, same hairline frame, same ∴ tridot mark on the left, same
+    JBM eyebrow / Cormorant headline / Cormorant Light body — but lets the
+    caller substitute the per-door strings. Produced at supersampled size;
+    caller resizes & saves.
+    """
+    img = Image.new("RGB", (W * scale, H * scale), WHITE_RGB)
+    d = ImageDraw.Draw(img)
+    s = scale
+    margin = 60 * s
+    d.rectangle([margin, margin, W * s - margin, H * s - margin],
+                outline=INK_RGB, width=max(1, s // 2 or 1))
+
+    # eyebrow row
+    eb = f(JBM_REG, 18 * s)
+    draw_tracked(d, (margin + 28 * s, margin + 22 * s),
+                 eyebrow_left, eb, INK_RGB, tracking_px=int(4 * s))
+    rw = text_w_px(d, eyebrow_right, eb, tracking_px=int(4 * s))
+    draw_tracked(d, (W * s - margin - 28 * s - rw, margin + 22 * s),
+                 eyebrow_right, eb, INK_RGB, tracking_px=int(4 * s))
+    hairline_px(d, margin + 28 * s, margin + 60 * s,
+                W * s - margin - 28 * s, margin + 60 * s, w=max(1, s // 2 or 1))
+
+    # mark
+    mark_cx = margin + 200 * s
+    mark_cy = (H * s) // 2 + 10 * s
+    R = 100 * s
+    four_states_px(d, mark_cx, mark_cy, R)
+    hairline_px(d, mark_cx + 170 * s, margin + 100 * s,
+                mark_cx + 170 * s, H * s - margin - 100 * s,
+                w=max(1, s // 2 or 1))
+
+    # right column
+    text_x = mark_cx + 210 * s
+    sub_font = f(JBM_REG, 14 * s)
+    draw_tracked(d, (text_x, mark_cy - 130 * s),
+                 kicker, sub_font, INK_RGB, tracking_px=int(3 * s))
+
+    # headline — tighten when the line is long so it stays in-frame
+    avail_w = W * s - margin - 28 * s - text_x
+    h_size = 96 * s
+    h_font = f(CORMORANT_REG, h_size)
+    h_italic = f(CORMORANT_ITALIC, h_size)
+    while h_size > 48 * s and (
+        text_w_px(d, headline_top, h_font) > avail_w
+        or text_w_px(d, headline_bottom_italic, h_italic) > avail_w
+    ):
+        h_size -= 4 * s
+        h_font = f(CORMORANT_REG, h_size)
+        h_italic = f(CORMORANT_ITALIC, h_size)
+
+    d.text((text_x - 6 * s, mark_cy - 100 * s),
+           headline_top, font=h_font, fill=INK_RGB)
+    d.text((text_x - 6 * s, mark_cy + 0 * s),
+           headline_bottom_italic, font=h_italic, fill=INK_RGB)
+
+    body = f(CORMORANT_LIGHT, 28 * s) if Path(CORMORANT_LIGHT).exists() else f(CORMORANT_REG, 28 * s)
+    d.text((text_x, mark_cy + 110 * s), sub_top, font=body, fill=INK_RGB)
+    d.text((text_x, mark_cy + 144 * s), sub_bottom, font=body, fill=INK_RGB)
+
+    # bottom rule + meta
+    hairline_px(d, margin + 28 * s, H * s - margin - 60 * s,
+                W * s - margin - 28 * s, H * s - margin - 60 * s,
+                w=max(1, s // 2 or 1))
+    bottom_left = "JĀGRAT · SVAPNA · SUṢUPTI · TURĪYA"
+    draw_tracked(d, (margin + 28 * s, H * s - margin - 38 * s),
+                 bottom_left, eb, INK_RGB, tracking_px=int(4 * s))
+    bottom_right = "SVAPNA.SCHOOL"
+    brw = text_w_px(d, bottom_right, eb, tracking_px=int(4 * s))
+    draw_tracked(d, (W * s - margin - 28 * s - brw, H * s - margin - 38 * s),
+                 bottom_right, eb, INK_RGB, tracking_px=int(4 * s))
+
+    return img
+
+
+def render_og_lucid_jpg():
+    """1200×630 JPG q90 — Door A (/start/lucid). Headline echoes the page
+    H1 'How to lucid dream.' and the italic subtitle beneath it."""
+    img = _door_card(
+        1200, 630,
+        eyebrow_left  = "SVAPNA  ·  ENTRY  ·  DOOR A",
+        eyebrow_right = "MMXXVI",
+        kicker        = "ENTRY  ·  LUCID DREAMING",
+        headline_top  = "How to lucid",
+        headline_bottom_italic = "dream.",
+        sub_top    = "A working technique, and the empirical",
+        sub_bottom = "tradition that produced it.",
+        scale=2,
+    )
+    img.resize((1200, 630), Image.LANCZOS).save(
+        ROOT / "social" / "og-lucid.jpg", "JPEG", quality=90, optimize=True)
+
+
+def render_og_contemplative_jpg():
+    """1200×630 JPG q90 — Door B (/start/contemplative). Headline echoes
+    the page H1 'The fourth, and the three it contains.'"""
+    img = _door_card(
+        1200, 630,
+        eyebrow_left  = "SVAPNA  ·  ENTRY  ·  DOOR B",
+        eyebrow_right = "MMXXVI",
+        kicker        = "ENTRY  ·  CONTEMPLATIVE",
+        headline_top  = "The fourth, and the",
+        headline_bottom_italic = "three it contains.",
+        sub_top    = "On the Māṇḍūkya's four states, and the",
+        sub_bottom = "thousand-year practice tradition.",
+        scale=2,
+    )
+    img.resize((1200, 630), Image.LANCZOS).save(
+        ROOT / "social" / "og-contemplative.jpg", "JPEG", quality=90, optimize=True)
+
+
 def render_login_splash_jpg():
     """1920×1080 JPG q90 — same composition as before, JPG export."""
     s = 2
@@ -553,7 +669,7 @@ def render_category_banners():
     """1500×400 each, JPG q90, white bg, hairline frame."""
     s = 2
     W, H = 1500 * s, 400 * s
-    out_dir = ROOT / "discourse" / "category-banners"
+    out_dir = ROOT / "community" / "category-banners"
     out_dir.mkdir(exist_ok=True)
     for roman, title, kicker in CATEGORY_BANNERS:
         img = Image.new("RGB", (W, H), WHITE_RGB)
@@ -612,7 +728,7 @@ def write_colors_json():
             "love":               "000000",
         },
     }
-    write_text(ROOT / "discourse" / "svapna-colors.json",
+    write_text(ROOT / "community" / "svapna-colors.json",
                json.dumps(colors, indent=2) + "\n")
 
 
@@ -642,14 +758,14 @@ def render_favicon_pngs():
 # ---------- Wire canonical filenames ----------
 
 PUBLIC = Path("/sessions/focused-zen-allen/mnt/svapna/public")
-DISCOURSE = ROOT / "discourse"
+COMMUNITY = ROOT / "community"
 
 def install_canonical():
-    """Copy/rename final outputs into marketing/discourse/ and /public so the
-    Discourse upload + the live site can pick them up directly."""
-    DISCOURSE.mkdir(exist_ok=True)
+    """Copy/rename final outputs into marketing/community/ and /public so the
+    in-house community surface + the live site can pick them up directly."""
+    COMMUNITY.mkdir(exist_ok=True)
     pairs = [
-        # (source under marketing/, destination under discourse/, also-to-public?)
+        # (source under marketing/, destination under community/, also-to-public?)
         ("logos/logo.svg",                 "logo.svg",                  True),
         ("logos/logo-small.svg",           "logo-small.svg",            True),
         ("logos/logo-mobile.svg",          "logo-mobile.svg",           True),
@@ -661,6 +777,8 @@ def install_canonical():
         ("logos/android-chrome-192.png",   "android-chrome-192.png",    True),
         ("email/email-logo.png",           "email-logo.png",            False),
         ("social/og.jpg",                  "og.jpg",                    True),
+        ("social/og-lucid.jpg",            "og-lucid.jpg",              True),
+        ("social/og-contemplative.jpg",    "og-contemplative.jpg",      True),
         ("social/twitter-card.jpg",        "twitter-card.jpg",          True),
         ("social/login-splash.jpg",        "login-splash.jpg",          False),
     ]
@@ -670,29 +788,65 @@ def install_canonical():
         if not src_p.exists():
             print(f"  MISSING: {src}")
             continue
-        shutil.copy2(src_p, DISCOURSE / dst)
+        shutil.copy2(src_p, COMMUNITY / dst)
         if to_public:
             shutil.copy2(src_p, PUBLIC / dst)
-    # colors json lives only in discourse/
-    if (DISCOURSE / "svapna-colors.json").exists():
+    # colors json lives only in community/
+    if (COMMUNITY / "svapna-colors.json").exists():
         pass
 
 
 # ---------- main ----------
 
-if __name__ == "__main__":
-    print("logo.svg…");          render_logo_svg()
-    print("logo-small.svg…");    render_logo_small_svg()
-    print("logo-mobile.svg…");   render_logo_mobile_svg()
-    print("favicon.svg…");       render_favicon_svg()
-    print("favicon PNGs/ICO…");  render_favicon_pngs()
-    print("apple-touch-icon…");  render_apple_touch_icon()
-    print("android-chrome…");    render_android_chrome_192()
-    print("email-logo…");        render_email_logo()
-    print("og.jpg…");            render_og_jpg()
-    print("twitter-card.jpg…");  render_twitter_jpg()
-    print("login-splash.jpg…");  render_login_splash_jpg()
-    print("category banners…");  render_category_banners()
-    print("svapna-colors.json…"); write_colors_json()
-    print("install canonical…"); install_canonical()
+# Targets dispatchable from the CLI. Each entry is (name, callable, label).
+# `all` (the default when no args are given) runs the full canonical pass.
+TARGETS = {
+    "logo":              (render_logo_svg,          "logo.svg"),
+    "logo-small":        (render_logo_small_svg,    "logo-small.svg"),
+    "logo-mobile":       (render_logo_mobile_svg,   "logo-mobile.svg"),
+    "favicon":           (render_favicon_svg,       "favicon.svg"),
+    "favicon-pngs":      (render_favicon_pngs,      "favicon PNGs/ICO"),
+    "apple-touch-icon":  (render_apple_touch_icon,  "apple-touch-icon"),
+    "android-chrome":    (render_android_chrome_192,"android-chrome"),
+    "email-logo":        (render_email_logo,        "email-logo"),
+    "og":                (render_og_jpg,            "og.jpg"),
+    "og-lucid":          (render_og_lucid_jpg,      "og-lucid.jpg"),
+    "og-contemplative":  (render_og_contemplative_jpg, "og-contemplative.jpg"),
+    "twitter":           (render_twitter_jpg,       "twitter-card.jpg"),
+    "login-splash":      (render_login_splash_jpg,  "login-splash.jpg"),
+    "category-banners":  (render_category_banners,  "category banners"),
+    "colors":            (write_colors_json,        "svapna-colors.json"),
+    "install":           (install_canonical,        "install canonical"),
+}
+
+# Order used by the default `all` pass.
+DEFAULT_ORDER = [
+    "logo", "logo-small", "logo-mobile", "favicon", "favicon-pngs",
+    "apple-touch-icon", "android-chrome", "email-logo",
+    "og", "og-lucid", "og-contemplative",
+    "twitter", "login-splash", "category-banners", "colors", "install",
+]
+
+
+def main(argv):
+    if not argv or argv == ["all"]:
+        names = DEFAULT_ORDER
+    else:
+        names = []
+        for a in argv:
+            if a not in TARGETS:
+                print(f"unknown target: {a}")
+                print(f"available: all, {', '.join(DEFAULT_ORDER)}")
+                return 2
+            names.append(a)
+    for name in names:
+        fn, label = TARGETS[name]
+        print(f"{label}…")
+        fn()
     print("done.")
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main(sys.argv[1:]))

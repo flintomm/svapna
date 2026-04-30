@@ -32,7 +32,7 @@ The practitioner who has stabilized in shamatha and has a working dream practice
 
 **Tenzin Wangyal is unusually candid about how rare these are:**
 
-> "Gyalshen Milu Samleg, the author of important commentaries on the Mother Tantra, wrote that *he practiced consistently for nine years before he began to have clear light dreams*."
+> "Gyalshen Milu Samleg, the author of important commentaries on the Mother Tantra, wrote that *he practiced consistently for nine years before he began to have clear light dreams*." (Tenzin Wangyal Rinpoche, *The Tibetan Yogas of Dream and Sleep*, Snow Lion)
 
 This is a working teacher's honest statement about the timeline of advanced practice. Nine years of consistent practice. Not a weekend retreat, not a six-week module, not a year of dabbling.
 
@@ -62,7 +62,7 @@ Most of what is ordinarily called dream falls in this register. The mind is acti
 
 **Tenzin Wangyal's definition of clear light is quoted nearly word-for-word from the older sources:**
 
-> "*Clear light is defined in most texts as the unity of emptiness and clarity.* It is the pure, empty awareness that is the base of the individual. 'Clear' refers to emptiness, the mother, the base, *kunzhi*. 'Light' refers to clarity, the son, *rigpa*, pure innate awareness."
+> "*Clear light is defined in most texts as the unity of emptiness and clarity.* It is the pure, empty awareness that is the base of the individual. 'Clear' refers to emptiness, the mother, the base, *kunzhi*. 'Light' refers to clarity, the son, *rigpa*, pure innate awareness." (Tenzin Wangyal Rinpoche, *The Tibetan Yogas of Dream and Sleep*, Snow Lion)
 
 The mother–son distinction here is the standard Tibetan framing, and it will return in later lessons. The mother is the empty base; the son is the awareness that recognizes itself in that base.
 
@@ -72,7 +72,7 @@ They are two aspects, conceptually distinguishable but ontologically inseparable
 
 **The distinction between dream yoga and sleep yoga is then as Tenzin Wangyal frames it:**
 
-> Dream yoga develops lucidity in relationship to the dream images. But in sleep yoga there is no film and no projection. *Sleep yoga is imageless. The practice is the direct recognition of awareness by awareness, light illuminating itself.*
+> Dream yoga develops lucidity in relationship to the dream images. But in sleep yoga there is no film and no projection. *Sleep yoga is imageless. The practice is the direct recognition of awareness by awareness, light illuminating itself.* (Tenzin Wangyal Rinpoche, *The Tibetan Yogas of Dream and Sleep*, Snow Lion)
 
 This is a different difficulty from dream-lucidity, and a deeper one. Dream yoga has dreams to work with. Sleep yoga has nothing. That is precisely the point.
 

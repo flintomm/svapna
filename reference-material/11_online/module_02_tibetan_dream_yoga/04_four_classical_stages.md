@@ -36,7 +36,7 @@ This is the classical Tibetan version of what the Western lucid-dream literature
 
 The second stage is using the lucid dream to scramble the dream's appearances. The instruction in the Evans-Wentz material is unusually direct:
 
-> "*if the dream be of fire, transform the fire into water, the antidote of fire.* And if the dream be of minute objects, transform them into large objects; or if the dream be of large objects, transform them into small objects: thereby one comprehendeth the nature of dimensions."
+> "*if the dream be of fire, transform the fire into water, the antidote of fire.* And if the dream be of minute objects, transform them into large objects; or if the dream be of large objects, transform them into small objects: thereby one comprehendeth the nature of dimensions." (Evans-Wentz, *Tibetan Yoga and Secret Doctrines*, trans. Kazi Dawa-Samdup)
 
 Mullin's Tsongkhapa version expands on this. The practitioner trains in flying, in projection to "celestial realms" and *buddhafields* such as Sukhāvatī, in multiplying the objects of the dream "from one to two, from two to four, and so on, until hundreds and even thousands."
 
@@ -52,7 +52,7 @@ The third stage goes one step deeper. The Evans-Wentz text states it baldly: the
 
 **Mullin's Tsongkhapa frames this as overcoming fear in dreams and training in the illusory nature of dreams:**
 
-> "whenever anything of a threatening or traumatic nature occurs in a dream, such as drowning in water or being burned by fire, recognize the dream as a dream and ask yourself, '*How can dream water or dream fire possibly harm me?*' Make yourself jump or fall into the water or fire in the dream."
+> "whenever anything of a threatening or traumatic nature occurs in a dream, such as drowning in water or being burned by fire, recognize the dream as a dream and ask yourself, '*How can dream water or dream fire possibly harm me?*' Make yourself jump or fall into the water or fire in the dream." (Mullin trans., *The Six Yogas of Naropa*, Snow Lion)
 
 The instruction sounds dramatic until what it is doing comes into focus. The dream-fear is a microcosm of waking-fear.
 
@@ -66,11 +66,11 @@ This is the third stage's specifically Mahāyāna content. The dream-as-māyā t
 
 The fourth stage is abiding in the empty, luminous nature of the dream-state itself. The Evans-Wentz translation:
 
-> "By concentrating the mind upon the forms of the deities seen in the dream-state, and by keeping the mind free of thoughts, in the quiescent condition, the forms of the deities are attuned to the non-thought condition of mind; *and thereby dawneth the Clear Light, of which the essence is of the Voidness*."
+> "By concentrating the mind upon the forms of the deities seen in the dream-state, and by keeping the mind free of thoughts, in the quiescent condition, the forms of the deities are attuned to the non-thought condition of mind; *and thereby dawneth the Clear Light, of which the essence is of the Voidness*." (Evans-Wentz, *Tibetan Yoga and Secret Doctrines*, trans. Kazi Dawa-Samdup)
 
 **Mullin gives the same teaching in a more practical Geluk register:**
 
-> "meditate upon yourself as the manifest radiant form of the mandala deity. The mantric syllable HUM shines with a great light from your heart. This light melts the animate and inanimate dream objects into light, which is absorbed into yourself. Your body then also melts into light... The HUM then melts into unapprehendable clear light. *Rest the mind unwaveringly within this light.*"
+> "meditate upon yourself as the manifest radiant form of the mandala deity. The mantric syllable HUM shines with a great light from your heart. This light melts the animate and inanimate dream objects into light, which is absorbed into yourself. Your body then also melts into light... The HUM then melts into unapprehendable clear light. *Rest the mind unwaveringly within this light.*" (Mullin trans., *The Six Yogas of Naropa*, Snow Lion)
 
 **This is the actual aim of the practice — the dissolution of the dream into clear light, and through it the recognition of the awareness that has been dreaming all along.**
 

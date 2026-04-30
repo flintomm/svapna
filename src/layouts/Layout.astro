@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
+import { allLetters } from '../lib/letters.js';
 
 interface Props {
   title?: string;
@@ -21,7 +22,13 @@ const {
 const siteUrl = Astro.site ? Astro.site.href.replace(/\/$/, '') + '/' : 'https://svapnaproject.org/';
 const canonical = new URL(Astro.url.pathname, siteUrl).href.replace(/\/$/, '') || siteUrl;
 const ogImageAbs = new URL(ogImage, siteUrl).href;
-const twitterImageAbs = new URL('/twitter-card.jpg', siteUrl).href;
+// Twitter card image follows ogImage when overridden; falls back to the
+// site-wide /twitter-card.jpg only when the default ogImage is in use, so
+// the 2:1 Twitter canvas can still ship for the home page while per-page
+// 1.91:1 OG cards (e.g. the Door variants) reach the Twitter validator too.
+const twitterImageAbs = ogImage === '/og.jpg'
+  ? new URL('/twitter-card.jpg', siteUrl).href
+  : ogImageAbs;
 
 // Site-wide schema is always emitted; per-page schemas are appended.
 const allSchemas = [organizationSchema(siteUrl), websiteSchema(siteUrl)];
@@ -46,6 +53,20 @@ function isActive(href: string) {
   if (href === '/') return pathname === '/';
   return pathname === href || pathname.startsWith(href + '/');
 }
+
+// Latest published item shown in the footer strip. Lessons carry no dates,
+// so newsletter letters are the canonical "most recent" source. `allLetters`
+// is sorted newest-first; if the letters folder is empty the strip is
+// omitted entirely.
+const latestLetter = allLetters[0] || null;
+const latestPublished = latestLetter
+  ? {
+      title: latestLetter.title,
+      date: latestLetter.displayDate,
+      href: `/letter/${latestLetter.slug}`,
+      label: 'Letter',
+    }
+  : null;
 ---
 
 <!doctype html>
@@ -164,6 +185,8 @@ function isActive(href: string) {
             <li><a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a></li>
             <li><a href="/about/disclaimer" class="hover:italic transition-all">Medical Disclaimer</a></li>
             <li><a href="/about/contact" class="hover:italic transition-all">Contact</a></li>
+            <li><a href="/about/privacy" class="hover:italic transition-all">Privacy</a></li>
+            <li><a href="/about/terms" class="hover:italic transition-all">Terms</a></li>
           </ul>
         </div>
         <div class="md:col-span-3 p-8 md:p-12">
@@ -173,12 +196,45 @@ function isActive(href: string) {
           </p>
         </div>
       </div>
+      <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
+        {latestPublished ? (
+          <span class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+            <span>Latest published</span>
+            <span class="text-neutral-400">·</span>
+            <a href={latestPublished.href} class="text-neutral-700 hover:text-black hover:italic transition-all normal-case tracking-normal">{latestPublished.title}</a>
+            <span class="text-neutral-400">—</span>
+            <span>{latestPublished.date}</span>
+          </span>
+        ) : (
+          <span>Latest published · forthcoming</span>
+        )}
+        <a href="/rss.xml" class="flex items-center gap-1.5 hover:text-black transition-colors" aria-label="RSS feed">
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" aria-hidden="true">
+            <path d="M5 3a1 1 0 0 0 0 2 14 14 0 0 1 14 14 1 1 0 1 0 2 0A16 16 0 0 0 5 3zm0 5a1 1 0 0 0 0 2 9 9 0 0 1 9 9 1 1 0 1 0 2 0A11 11 0 0 0 5 8zm1.5 8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
+          </svg>
+          <span>RSS</span>
+        </a>
+      </div>
       <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
         <span>© 2026 Svapna Project</span>
         <span>Vol. I / Iss. I</span>
         <span>MMXXVI</span>
       </div>
     </footer>
+
+    <script is:inline>
+      // Site-wide Umami helper. Tolerates the loader being absent (blocked,
+      // offline, or still pending) so call sites never need to guard the call.
+      window.trackUmami = function (name) {
+        try {
+          if (window.umami && typeof window.umami.track === 'function') {
+            window.umami.track(name);
+          }
+        } catch (e) {
+          /* swallow — analytics must never break a page */
+        }
+      };
+    </script>
 
     <script is:inline>
       // Side-rail scroll counter. Tiny enough to inline; runs only on screens

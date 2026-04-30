@@ -29,6 +29,4 @@ The tradition's instruction in five words. Pair this with the title in headers, 
 
 > Svapna is a study of dream yoga and lucid dreaming — the contemplative art of becoming aware within the dream state, and the ancient lineage of teachers who passed it down.
 >
-> The curriculum draws together threads that rarely meet: the four states of consciousness from the Mandukya Upanishad, the Tibetan *milam* practices of Naropa's Six Yogas, the Bön sleep teachings of Tenzin Wangyal Rinpoche, the Senoi and Iroquois dreamwork traditions, the European rediscovery of lucid dreaming through Hervey de Saint-Denys and Frederik van Eeden, and the lab-verified science that began with Stephen LaBerge at Stanford in the 1980s.
->
 > Open to anyone.

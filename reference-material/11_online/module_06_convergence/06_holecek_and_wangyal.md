@@ -95,9 +95,7 @@ The integration, on Wangyal's framing, is real. The differences in emphasis betw
 
 **The practices are absorbable in both directions.**
 
-What is not negotiable, on Wangyal's framing — and the companion text in the source bundle makes this even more explicit — is the practice's framing within bodhicitta orientation, ethical conduct, and the larger view of liberation:
-
-> *The framing the practice asks for is not optional. It is the practice's actual character.*
+What is not negotiable, on Wangyal's framing, is the practice's framing within bodhicitta orientation, ethical conduct, and the larger view of liberation. The framing the practice asks for is not optional. It is the practice's actual character.
 
 This is the same edge Wallace's book holds. Holecek holds it more lightly. Wangyal holds it as a lineage holder. Wallace holds it as a polemicist.
 
