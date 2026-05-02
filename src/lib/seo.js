@@ -10,7 +10,7 @@ export const SITE_NAME = 'Svapna';
 // exist. Reintroduce as `SITE_LEGAL_NAME = '<entity name>'` and add
 // `legalName: SITE_LEGAL_NAME` back to the schemas once an entity is formed.
 export const SITE_DESCRIPTION =
-  'A free, donation-supported course on dream yoga and lucid dreaming. Mandukya, Tibetan milam, modern lucid-dreaming science.';
+  'A free, donation-supported study of dream yoga and lucid dreaming. Mandukya, Tibetan milam, modern lucid-dreaming science.';
 export const SITE_LOGO_PATH = '/logo.svg';
 
 // Site-wide Organization + WebSite. Emitted on every page from Layout.astro.

@@ -6,7 +6,7 @@ A brief for whoever is generating illustrations for this project.
 
 ## What Svapna is
 
-A free, donation-supported online course on **dream yoga and lucid dreaming**, drawing from the Mandukya Upanishad, Tibetan Buddhist tantra (Naropa's Six Yogas), Bön, Sufi *khayal*, indigenous dreamwork, and modern lab science (LaBerge, Tholey).
+A free, donation-supported online study of **dream yoga and lucid dreaming**, drawing from the Mandukya Upanishad, Tibetan Buddhist tantra (Naropa's Six Yogas), Bön, Sufi *khayal*, indigenous dreamwork, and modern lab science (LaBerge, Tholey).
 
 Tagline: *"Awaken within the dream."*
 Spirit: *dāna* (generosity) — never sold, transmitted hand to hand.

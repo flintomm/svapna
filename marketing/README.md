@@ -1,6 +1,6 @@
 # Svapna — Marketing Assets
 
-Brand assets for the Svapna course (dream yoga & lucid dreaming) — every file at the canvas Discourse expects, named so it can be uploaded directly. Editorial black-on-white, Cormorant Garamond + JetBrains Mono, four-states (Mandukya) ring as the primary mark.
+Brand assets for the Svapna project (dream yoga & lucid dreaming) — every file at the canvas Discourse expects, named so it can be uploaded directly. Editorial black-on-white, Cormorant Garamond + JetBrains Mono, four-states (Mandukya) ring as the primary mark.
 
 ```
 marketing/

@@ -56,7 +56,7 @@ export default function ContactForm({ email }) {
         <div className="p-6 md:p-8" style={inputStyle}>
           <p className="mono text-[10px] uppercase tracking-widest text-neutral-500">Message received</p>
           <p className="display text-2xl md:text-3xl italic mt-2 leading-snug">
-            Thank you. A reply will follow.
+            Thank you. Replies arrive when they arrive.
           </p>
         </div>
       ) : (

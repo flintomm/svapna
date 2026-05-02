@@ -18,7 +18,7 @@ The "practice of natural light" — Tibetan *ösel* — operates earlier than th
 
 The Dzogchen claim is that if the practitioner can carry awareness through that transition — meet the moment when the senses dissolve and the mind has not yet reactivated — then lucidity in the dream that follows arises by itself, "spontaneously."
 
-The practitioner does not need to chase the dream; the awareness is already present in the dream because it never lapsed.
+On this account, the practitioner does not need to chase the dream; the awareness is already present in the dream because it never lapsed.
 
 **Namkhai Norbu's formulation:**
 

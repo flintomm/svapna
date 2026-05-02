@@ -28,6 +28,30 @@ Form-state UI strings (button labels like "Send message", confirmations like "Th
 7. **Drop "Take it to the community" prompt blocks** in lesson markdown. Delete the trailing `---` separator and the `> **Take it to the community.** …` blockquote at the end of each lesson. The React chrome's `lesson.prompt && (…)` gate at [`src/DreamYogaApp.jsx`](../src/DreamYogaApp.jsx) hides the section automatically when no prompt is parsed.
 8. **Preserve direct quotations verbatim.** `>` blockquotes and italicised wordings from primary sources stay untouched, even when they contain "you/we/I". The work is committed to quoting where quotation is possible.
 
+## Epistemic stance
+
+The rules above govern person, register, and reader-relation. They do not address how the project's own prose handles contemplative or metaphysical claims. The site's voice describes traditions and attributes claims; it does not endorse them.
+
+The mechanism is paragraph-local attribution. Wherever the prose asserts a contemplative or metaphysical claim, the same paragraph or sentence marks the source: a tradition ("On the Dzogchen view…", "The Geluk treatment teaches…", "The Māṇḍūkya makes the claim that…"), a named teacher ("Namkhai Norbu's account is…", "Wallace holds that…"), or a primary text ("verse 7 says…", "the verse establishes…"). Direct quotation is the cleanest case and is preferred where available.
+
+**Patterns to avoid in project voice:**
+
+- Sweeping epochal claims ("For three millennia, contemplatives have entered the dream knowingly…").
+- Bare metaphysical assertions ("the awareness is already present", "the projection runs at a slower frame rate").
+- Cross-tradition equivalences asserted by the prose itself ("the awareness the Māṇḍūkya called turīya" used to identify a referent rather than to describe a term).
+- Devotional register ("It asks for nothing but attention. The work was given freely, and passes forward.").
+
+**Patterns that work:**
+
+- Tradition-internal framing in the same sentence as the claim.
+- Quotation, with translator named on first occurrence.
+- Historical and structural statements ("Every later Indian dream-tradition either accepts this framework, modifies it, or argues against it.") — these describe texts and traditions, not metaphysics.
+- Hedged scientific summaries ("on the present scientific record", "the laboratory work has begun to catch up to it").
+
+**The test:** a sceptical reader who disagrees with Vajrayana metaphysics should be able to read a project-voice paragraph without feeling argued at. Tradition-internal claims they see attributed; they do not see the project endorsing them.
+
+Direct quotation in `>` blockquotes can use any register the source uses. The constraint is on the project's own prose.
+
 ## Title format constraint
 
 The parser at [`src/lessons.js`](../src/lessons.js) needs lesson titles to keep the `# Module N, Lesson M — Title` prefix exactly (em-dash). Only the Title portion gets edited.
@@ -53,3 +77,15 @@ grep -nE '\byou\b|\byour\b|\bwe\b|\bus\b|\bour\b|\bcourse\b' \
 ```
 
 Editorial sweeps should return nothing — or only false positives like translator initials ("J.I. Beare"), Roman-numeral citation references ("(I 304.16)"), and "course" used in non-website senses ("the dream's course" = trajectory). The JSX/JS sweep needs human judgement (matches inside code, comments, or transactional strings are fine).
+
+## Epistemic-stance sweep
+
+A second sweep flags candidates for unmarked metaphysical claims in project voice. The terms hit do not violate the rule by themselves — the question is whether the same paragraph attributes the claim to a tradition, teacher, or text:
+
+```bash
+F=path/to/file.md
+grep -nv '^>' "$F" \
+  | grep -iE 'pristine awareness|primordial consciousness|mind'\''s nature|self-transcendence|liberation|enlighten|awaken(ed|ing)?|the awareness that|the dream itself'
+```
+
+Hits inside attribution clauses are fine ("On Wallace's view…", "the Dzogchen claim is that…", "Namkhai Norbu calls this…"). Hits in bare project-voice prose are candidates for either attribution or rewording. Quoted material in `>` blockquotes is excluded by the leading filter.

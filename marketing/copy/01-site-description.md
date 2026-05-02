@@ -27,6 +27,6 @@ The tradition's instruction in five words. Pair this with the title in headers, 
 
 ## Long description (for the About page and app-store listings)
 
-> Svapna is a study of dream yoga and lucid dreaming — the contemplative art of becoming aware within the dream state, and the ancient lineage of teachers who passed it down.
+> Svapna is a study of dream yoga and lucid dreaming — the contemplative art of becoming aware within the dream state, and the practitioners and teachers, across two and a half millennia, who developed and transmitted it.
 >
 > Open to anyone.

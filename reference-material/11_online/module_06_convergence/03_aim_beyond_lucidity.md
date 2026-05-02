@@ -44,7 +44,7 @@ The sleeping-partners image is Holecek's, and the casual register is his alone. 
 
 > Dream yoga "*seeks to gradually penetrate to primordial consciousness by way of realizing that everything, oneself included, emerges from and is of the nature of this primordial, enlightened ground*" (Wallace, Introduction).
 
-The aim is the recognition of pristine awareness — what Tenzin Wangyal calls *rigpa* and what the Māṇḍūkya called *turīya* (Module 2 made the equivalence explicit). Lucidity in dream is one stage in a longer arc.
+The aim, on Wallace's account, is the recognition of pristine awareness — what Tenzin Wangyal calls *rigpa* and what the Māṇḍūkya names *turīya* (Module 2 made the equivalence explicit). Lucidity in dream is, on this view, one stage in a longer arc.
 
 The arc proceeds through stabilization, through the four classical stages of recognition / transformation / illusion / suchness, through the integration with sleep yoga and clear-light practice, and ultimately to the stabilization of pristine awareness through the entire architecture of consciousness — waking, dreaming, deep sleep, and the bardo.
 

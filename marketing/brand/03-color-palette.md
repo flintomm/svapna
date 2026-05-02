@@ -6,11 +6,11 @@ applies_to: site, Discourse theme, marketing assets, email templates
 
 # Color palette
 
-The course is a contemplative, editorial-minimalist project. The palette reflects that: paper, ink, hairlines. There is no mystical-clickbait aesthetic and no productivity-app aesthetic. It is the palette of a well-made book.
+The work is a contemplative, editorial-minimalist project. The palette reflects that: paper, ink, hairlines. There is no mystical-clickbait aesthetic and no productivity-app aesthetic. It is the palette of a well-made book.
 
-The decision: **editorial black-on-white**, with a single warm paper tier (used sparingly on app icons and email backgrounds where pure white reads cold) and a near-black ink that lets us drop a hair away from `#000` when surfaces benefit from it.
+The decision: **editorial black-on-white**, with a single warm paper tier (used sparingly on app icons and email backgrounds where pure white reads cold) and a near-black ink that allows a hair's drop away from `#000` where surfaces benefit from it.
 
-We are intentionally not introducing a deep-indigo or warm-gold accent. The ∴ tridot mark and the Cormorant wordmark are the visual identity. Color would compete with them.
+No deep-indigo or warm-gold accent is introduced. The ∴ tridot mark and the Cormorant wordmark are the visual identity. Color would compete with them.
 
 ---
 
