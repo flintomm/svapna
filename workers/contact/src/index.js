@@ -1,8 +1,9 @@
-// Cloudflare Worker for the Svapna site. Handles two routes:
+// Cloudflare Worker for the Svapna site. Mounted at /api/contact* on
+// svapnaproject.org (see wrangler.toml). Handles two routes:
 //
-//   POST /          — contact form. Validates and emails admin@ via Resend.
-//   POST /subscribe — email capture. Adds the address to the Buttondown
-//                     subscriber list so it can receive future broadcasts.
+//   POST /api/contact            — contact form. Emails admin@ via Resend.
+//   POST /api/contact/subscribe  — newsletter capture. Adds the address
+//                                  to Buttondown.
 //
 // Secrets (set with `wrangler secret put`):
 //   RESEND_KEY     — Resend API key (contact form)
@@ -52,20 +53,7 @@ export default {
       return jsonResponse({ error: 'Method not allowed' }, 405, origin);
     }
 
-    // Dual-path support during the workers.dev → same-origin migration:
-    //   - Legacy:    https://svapna-contact.tphch.workers.dev/{,subscribe}
-    //   - New (same-origin): https://svapnaproject.org/api/contact{,/subscribe}
-    // Strip the `/api/contact` prefix so existing dispatch on `/` and
-    // `/subscribe` keeps working for both. Once the workers.dev URL is
-    // retired, this normalization (and the legacy paths it maps to) can go.
-    let pathname = url.pathname;
-    if (pathname === '/api/contact' || pathname === '/api/contact/') {
-      pathname = '/';
-    } else if (pathname.startsWith('/api/contact/')) {
-      pathname = pathname.slice('/api/contact'.length);
-    }
-
-    if (pathname === '/subscribe') {
+    if (url.pathname === '/api/contact/subscribe') {
       return handleSubscribe(request, env, origin);
     }
     return handleContact(request, env, origin);
