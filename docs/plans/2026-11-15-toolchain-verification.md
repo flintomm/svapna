@@ -2,38 +2,44 @@
 
 ## Runtime and migration boundary
 
-Node **22.22.3** and npm **10.9.8** are unchanged. Tailwind remains **3.4.19**. No system Python, content, routes, visual-design source, Workers, DNS, deployment workflow, or production changes were made.
+The project now requires **Node >=22.23.4 <23** in `package.json`. The repo-owned `.node-version` and GitHub Actions `setup-node` configuration both pin **22.23.4**, so local version managers and production builds select the qualified Node 22 patch release. The workflow's only change is this runtime pin; deployment behavior is otherwise unchanged.
 
-Live npm registry metadata was checked rather than relying on an outdated-package snapshot. Astro **7.4.1** and `@astrojs/react` **7.1.0** are the newest stable releases compatible with this fixed Node runtime. Astro 7.4.2–7.4.12 and React integration 7.1.1–7.1.9 require Node **>=22.23.4**. Direct versions are exact pins so a subsequent install cannot silently cross this runtime boundary. The other direct dependencies were updated within their existing major versions; current versions of Tailwind, `@eslint/js`, and `eslint-plugin-react-hooks` were retained.
+Qualification used the official **Node 22.23.4 / npm 10.9.9** macOS ARM64 distribution extracted into `/Users/flint/.hermes/cache/scratch/svapna-node-22.23.4`, outside the repository. Its archive SHA-256 was verified against Node's published `SHASUMS256.txt`. Its `bin` directory was prepended to PATH only for the verification shell. Hermes's bundled `/Users/flint/.hermes/node/bin/node` was checked before and after and remains **v22.22.3**, as expected. No Hermes/system runtime, system Python, global tooling, shell profile, or `~/.local/bin` was modified.
 
-Reviewed the [Astro 7 migration guide](https://docs.astro.build/en/guides/upgrade-to/v7/): Vite 8, Rust compiler, Sätteri Markdown, experimental flags, reserved fetch file, removed APIs, and whitespace handling. The only required configuration change is `compressHTML: true`, preserving Astro 6's inline whitespace semantics instead of adopting Astro 7's JSX whitespace default. No source migration was needed; this site's lesson renderer remains unchanged.
+Live npm registry metadata identified **Astro 7.4.12** and **@astrojs/react 7.1.9** as the current stable releases, both requiring Node **>=22.23.4**. These are exact direct pins, and the lockfile was updated under the raised runtime with engine checks enabled. Tailwind remains **3.4.19**; all unrelated direct dependency choices are unchanged. No content, routes, visual-design source, Workers, DNS, or production changes were made. Nothing was pushed or deployed.
 
-## Audit result and explicit open exceptions
+The earlier Astro 7 migration review covered Vite 8, Rust compiler, Sätteri Markdown, experimental flags, reserved fetch file, removed APIs, and whitespace handling. The existing `compressHTML: true` setting continues to preserve Astro 6's inline whitespace semantics instead of adopting Astro 7's JSX whitespace default. No additional source migration was needed; this site's lesson renderer remains unchanged.
 
-| Audit | Before | After |
-| --- | --- | --- |
-| `npm audit` | 23 (3 low, 6 moderate, 13 high, 1 critical) | 1 moderate package finding |
-| `npm audit --omit=dev` | 18 (3 low, 2 moderate, 12 high, 1 critical) | 1 moderate package finding |
+## Audit result — no open exceptions
 
-Both final audit commands exit **1**, not zero. npm groups the following **two advisories** under the single installed `astro@7.4.1` finding:
+| Audit | Before Milestone 3 | Before runtime-floor completion | Final |
+| --- | --- | --- | --- |
+| `npm audit` | 23 (3 low, 6 moderate, 13 high, 1 critical) | 1 moderate package finding | **0 vulnerabilities; exit 0** |
+| `npm audit --omit=dev` | 18 (3 low, 2 moderate, 12 high, 1 critical) | 1 moderate package finding | **0 vulnerabilities; exit 0** |
 
-1. **[GHSA-mh32-jxcr-mh9f](https://github.com/advisories/GHSA-mh32-jxcr-mh9f)** / CVE-2026-126361 — low, XSS via attribute injection in dynamic tag names. Affects Astro <=7.4.4; patched in **7.4.5**. Exploitation requires untrusted input to choose an element name. This build generates fixed HTML from repository-controlled templates/content; source inspection found no untrusted-input-selected dynamic tag names. GitHub Pages does not run Astro to render requests. This does not make the dependency patched: do not introduce untrusted element names or treat static hosting as sanitization of untrusted build inputs.
-2. **[GHSA-r3h5-4585-7x3w](https://github.com/advisories/GHSA-r3h5-4585-7x3w)** / CVE-2026-126364 — moderate, image endpoint can read a case-variant sibling output directory. Affects Astro >=5.14.3 through 7.4.6; patched in **7.4.7**. Exploitation requires on-demand rendering using `@astrojs/node`, a case-sensitive server filesystem, and a case-variant sibling directory. This project uses `output: 'static'`, has no `@astrojs/node` dependency, and serves generated files through GitHub Pages, not an Astro image endpoint. That runtime attack path is absent from this deployment.
+The former single `astro@7.4.1` finding grouped two advisories. Both are resolved by installed **Astro 7.4.12**:
 
-**Patched releases do exist**, but none support the explicitly retained Node 22.22.3 runtime. These are runtime-compatibility exceptions, not claims that the registry has no fixes. No force fix, engine bypass, or incompatible dependency override was used. Resolving the last finding requires authorization to raise Node to at least 22.23.4 and then upgrade Astro to a patched release (currently 7.4.12) and its React integration, with renewed qualification.
+1. **[GHSA-mh32-jxcr-mh9f](https://github.com/advisories/GHSA-mh32-jxcr-mh9f)** / CVE-2026-126361 — low, XSS via attribute injection in dynamic tag names; patched in **7.4.5**.
+2. **[GHSA-r3h5-4585-7x3w](https://github.com/advisories/GHSA-r3h5-4585-7x3w)** / CVE-2026-126364 — moderate, image endpoint can read a case-variant sibling output directory; patched in **7.4.7**.
+
+The authorized project runtime-floor increase removes the previous compatibility blocker. There is no accepted advisory exception. No force fix, engine bypass, or dependency override was used.
 
 ## Verification
 
-- `npm ci --engine-strict`: passes under Node 22.22.3/npm 10.9.8.
-- `npm run test:markdown`: **10/10** pass.
+All npm commands below ran with **Node 22.23.4 / npm 10.9.9**, not Hermes's bundled Node:
+
+- `npm install --save-exact --engine-strict astro@7.4.12 @astrojs/react@7.1.9`: passes; updates manifest and lockfile.
+- `npm ci --engine-strict`: clean install passes; 388 packages installed, 389 audited, zero vulnerabilities.
+- `npm audit`: **0 vulnerabilities**, exit **0**.
+- `npm audit --omit=dev`: **0 vulnerabilities**, exit **0**.
+- `npm run test:markdown`: **10/10** pass; zero failed or skipped.
 - `npm run lint`: passes.
-- `npm run build`: passes, reports **160 pages**; independently counted **160 HTML files**.
+- `npm run build`: passes, reports **160 pages**; independently counted **160 HTML files** with Python `Path('dist').rglob('*.html')`.
 - `git diff --check`: passes.
-- `xmllint --noout`: passes for `dist/sitemap-index.xml`, `dist/sitemap-0.xml`, `dist/rss.xml`, and `dist/letter.xml`.
-- Built HTML exists and contains HTML and H1 elements for home, curriculum, `curriculum/module-01/brhadaranyaka-dreamer-as-creator`, history, library, glossary, and **`about/privacy`**. An initial probe of `legal/privacy` failed because that is not this site's route; the existing privacy route is `/about/privacy`, which passed. No route was added or renamed.
+- `xmllint --noout dist/sitemap-index.xml dist/sitemap-0.xml dist/rss.xml dist/letter.xml`: passes for all four XML outputs.
+- Python built-artifact checks pass for HTML and H1 elements at `/`, `/curriculum`, `/curriculum/module-01/brhadaranyaka-dreamer-as-creator`, `/history`, `/library`, `/glossary`, and `/about/privacy`. These are generated-file checks, not a claim of a new deployment or browser visual review. No route was added or renamed.
+- `/Users/flint/.hermes/node/bin/node --version`: still **v22.22.3**, intentionally unchanged.
 
 ## Lockfile review
 
-Reviewed the lockfile's changed package trees and dependency parents. There is one tree each for Astro, its React integration, Vite, React, React DOM, PostCSS, Tailwind, Sharp, and Zod; no old Astro/Vite major remains. The new duplicate major trees are expected transitive requirements: `hookified` 1/2 via ESLint's cache packages, and `@emnapi/core`, `@emnapi/runtime`, and `@emnapi/wasi-threads` 1/2 via optional Astro/Sätteri/Rolldown WASM bindings. No overrides were introduced. The optional Rolldown WASM dependency explicitly requests the upstream `@emnapi` 2.0.0-beta.2 releases; this is not a direct prerelease upgrade.
-
-On this macOS install npm labels eight optional WASM-support packages as `extraneous` in `npm ls --depth=0`, including after a fresh `npm ci --engine-strict`. They are represented in the lockfile's optional platform dependency trees, not unexpected direct manifest dependencies. The clean install, tests, and build succeed; no manual lockfile deletion or unsupported deduplication was used to suppress these labels.
+Compared the lockfile package map against baseline `dbafc04`. Changes are the requested Astro/React integration upgrades and their dependency trees: updated Astro helpers, Sätteri, and `p-queue`; added Astro renderer/runtime/Vite-plugin packages and `mri`; removed superseded `eventemitter3`, `p-timeout`, and `yargs-parser` packages. npm consolidated Rolldown's duplicate tree onto **1.2.19** and its matching platform bindings, removing the nested Vite copy. No overrides or unrelated direct upgrades were introduced. Programmatic comparison confirms every other production direct pin and the complete `devDependencies` map are unchanged.
