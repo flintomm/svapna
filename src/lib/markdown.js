@@ -86,36 +86,64 @@ export function renderInline(text) {
   return out;
 }
 
-// Block pass: paragraphs, `## subheading`, `# heading`, `> blockquote`.
+// Explicit lesson blocks, not general Markdown: headings, paragraphs, flat
+// numbered lists (one line per item), and quoted versions of those blocks.
+// A legacy `#` in a lesson body stays h2: the page already supplies its h1.
+const headingPattern = /^(#{1,3})\s+(.+)$/;
+const itemPattern = /^(\d+)\.\s+(.+)$/;
+const quotePattern = /^>(?:\s|$)/;
+
+function renderBlocks(lines) {
+  const html = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i].trim();
+    if (!line) {
+      i++;
+      continue;
+    }
+    const heading = line.match(headingPattern);
+    if (heading) {
+      const level = heading[1].length === 3 ? 3 : 2;
+      const size = level === 3 ? 'text-2xl md:text-3xl' : 'text-3xl md:text-4xl';
+      html.push(`<h${level} class="display ${size} leading-tight pt-4 md:pt-6">${renderInline(heading[2])}</h${level}>`);
+      i++;
+      continue;
+    }
+    if (quotePattern.test(line)) {
+      const quoted = [];
+      while (i < lines.length && quotePattern.test(lines[i].trim())) {
+        quoted.push(lines[i++].trim().replace(/^>\s?/, ''));
+      }
+      html.push(`<blockquote class="pl-4 md:pl-5 my-2 italic text-neutral-700" style="border-left: 0.5px solid #000">${renderBlocks(quoted)}</blockquote>`);
+      continue;
+    }
+    const firstItem = line.match(itemPattern);
+    if (firstItem) {
+      const items = [];
+      let item;
+      while (i < lines.length && (item = lines[i].trim().match(itemPattern))) {
+        items.push(`<li>${renderInline(item[2])}</li>`);
+        i++;
+      }
+      const start = Number(firstItem[1]);
+      const startAttribute = start === 1 ? '' : ` start="${start}"`;
+      html.push(`<ol${startAttribute} class="list-decimal pl-6 space-y-2 text-base md:text-lg leading-loose">${items.join('')}</ol>`);
+      continue;
+    }
+    const paragraph = [];
+    while (i < lines.length) {
+      const next = lines[i].trim();
+      if (!next || headingPattern.test(next) || quotePattern.test(next) || itemPattern.test(next)) break;
+      paragraph.push(lines[i++]);
+    }
+    html.push(`<p class="text-base md:text-lg leading-loose">${renderInline(paragraph.join('\n').trim())}</p>`);
+  }
+  return html.join('');
+}
+
 export function renderMarkdownBody(text) {
   if (!text) return '';
-  const blocks = text.split(/\n\s*\n/);
-  const html = [];
-  for (const raw of blocks) {
-    const block = raw.trim();
-    if (!block) continue;
-    if (block.startsWith('## ')) {
-      html.push(
-        `<h3 class="display text-2xl md:text-3xl leading-tight pt-4 md:pt-6">${renderInline(block.slice(3))}</h3>`
-      );
-      continue;
-    }
-    if (block.startsWith('# ')) {
-      html.push(
-        `<h2 class="display text-3xl md:text-4xl leading-tight pt-4 md:pt-6">${renderInline(block.slice(2))}</h2>`
-      );
-      continue;
-    }
-    if (block.startsWith('> ')) {
-      const inner = block.split('\n').map(l => l.replace(/^>\s?/, '')).join(' ').trim();
-      html.push(
-        `<blockquote class="pl-4 md:pl-5 my-2 italic text-neutral-700" style="border-left: 0.5px solid #000">${renderInline(inner)}</blockquote>`
-      );
-      continue;
-    }
-    html.push(
-      `<p class="text-base md:text-lg leading-loose">${renderInline(block)}</p>`
-    );
-  }
-  return `<div class="max-w-3xl space-y-5 md:space-y-6">${html.join('')}</div>`;
+  const html = renderBlocks(text.replace(/\r\n?/g, '\n').split('\n'));
+  return `<div class="max-w-3xl space-y-5 md:space-y-6">${html}</div>`;
 }
