@@ -125,9 +125,9 @@ Allowed files:
 
 Acceptance:
 
-- [ ] Opening plainly states that Svapna is a source-led reading course about the history, philosophy, and science around dreaming—not a substitute for a teacher, clinical care, or sleep treatment.
+- [ ] Opening plainly presents Svapna as a source-led study of the history, philosophy, and science around dreaming; its scope excludes guided practice, clinical care, and sleep treatment without using alarmist or self-defensive copy.
 - [ ] Counts are truthful: 47 lessons in six modules, plus the introduction.
-- [ ] Reader sees what the modules cover, how to choose a path, how terms/citations work, and the exact next step without decoding poetic labels.
+- [ ] The page plainly states the module structure, available paths, treatment of terms/citations, and the exact next step without poetic labels carrying essential meaning.
 - [ ] Dense history-name chains and the false implication that separate practice modules exist are removed.
 - [ ] Time-sensitive claims about living teachers are removed rather than silently updated with unsupported facts.
 - [ ] Traditions are not flattened into equivalents; quotation, interpretation, historical claim, and empirical evidence remain distinct.
