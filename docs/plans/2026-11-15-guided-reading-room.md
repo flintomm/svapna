@@ -113,15 +113,35 @@ Acceptance:
 - [ ] RSS and sitemap files are emitted and parse as XML; representative homepage, curriculum, lesson, history, library, glossary, and legal routes exist in `dist`.
 - [ ] No content, visual design, Workers, DNS, or deployment changes.
 
+## Milestone 4 — Make the orientation understandable
+
+Rewrite and restructure only the welcome/orientation so a newcomer can understand the product before entering the curriculum. This is an editorial pilot for the contract above, not a corpus-wide rewrite.
+
+Allowed files:
+
+- `reference-material/11_online/00_welcome.md`
+- `src/pages/curriculum/welcome.astro`
+- focused tests only if needed
+
+Acceptance:
+
+- [ ] Opening plainly states that Svapna is a source-led reading course about the history, philosophy, and science around dreaming—not a substitute for a teacher, clinical care, or sleep treatment.
+- [ ] Counts are truthful: 47 lessons in six modules, plus the introduction.
+- [ ] Reader sees what the modules cover, how to choose a path, how terms/citations work, and the exact next step without decoding poetic labels.
+- [ ] Dense history-name chains and the false implication that separate practice modules exist are removed.
+- [ ] Time-sensitive claims about living teachers are removed rather than silently updated with unsupported facts.
+- [ ] Traditions are not flattened into equivalents; quotation, interpretation, historical claim, and empirical evidence remain distinct.
+- [ ] Orientation uses short sections and a compact at-a-glance presentation rather than one long wall of prose.
+- [ ] The first-lesson action is explicit, visible, keyboard-accessible, and unchanged in destination.
+- [ ] Markdown tests, lint, 160-page build, and `git diff --check` pass; phone and desktop orientation screenshots are inspected.
+
 ## Later milestones
 
-1. Restructure the welcome page and truthfully explain 47 lessons plus the introduction, what the curriculum covers, and how to choose a starting point.
-2. Pilot the editorial contract on one module, then one lesson; obtain subject-matter review for substantive claims before corpus-wide rollout.
-3. Separate curated library/theme explanations from raw keyword matches; deduplicate source counts and make citations visually primary.
-4. Replace the mobile menu; add skip navigation, focus restoration, reduced-motion behavior, and heading hierarchy checks.
-5. Triage dependency advisories; upgrade deliberately; add Astro-aware, route, asset, and focused journey checks to CI.
-6. Make community availability truthful; fix missing OG assets and `/start` breadcrumbs; add a resilient direct donation link.
-7. Fix progress semantics around last position, local persistence failures, and completion/next navigation.
-8. Harden contact/newsletter Worker routes, bounds, rate limits, timeouts, tests, and accessible form feedback.
-9. With owner authorization, verify the GitHub custom domain and TLS/redirect posture, then document deployment and rollback.
-10. Measure cold mobile performance, optimize fonts only where justified, and run final physical-phone plus desktop qualification.
+1. Pilot the editorial contract on one module, then one lesson; obtain subject-matter review for substantive claims before corpus-wide rollout.
+2. Separate curated library/theme explanations from raw keyword matches; deduplicate source counts and make citations visually primary.
+3. Replace the mobile menu; add skip navigation, focus restoration, reduced-motion behavior, and heading hierarchy checks.
+4. Make community availability truthful; fix missing OG assets and `/start` breadcrumbs; add a resilient direct donation link.
+5. Fix progress semantics around last position, local persistence failures, and completion/next navigation.
+6. Harden contact/newsletter Worker routes, bounds, rate limits, timeouts, tests, and accessible form feedback.
+7. With owner authorization, verify the GitHub custom domain and TLS/redirect posture, then document deployment and rollback.
+8. Measure cold mobile performance, optimize fonts only where justified, and run final physical-phone plus desktop qualification.
