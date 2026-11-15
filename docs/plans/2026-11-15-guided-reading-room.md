@@ -63,13 +63,50 @@ git diff --check
 git diff --stat
 ```
 
+## Editorial and information-design contract
+
+The main comprehension problem is structural, not merely sentence length. Every reading page should answer:
+
+1. What is this page about?
+2. What will I understand after reading it?
+3. Where should I go next?
+
+Use **summary → explanation → evidence → next step**. Name the claimant (`In Wallace's account…`, `This study found…`) and separate textual teaching, editorial interpretation, historical claim, and empirical finding. Introduce necessary terms locally without treating distinct traditions as interchangeable. Keep quotations exact and citations visible. Delete repeated framing before deleting nuance.
+
+Present introductory cards as title + one-sentence purpose + small useful metadata + clear link. Use ordered lists for sequences, definition lists for term/meaning pairs, and tables only for genuine comparisons. Raw extraction counts, keyword hits, and internal identifiers are research metadata—not headline reader content.
+
+Do not make substantive doctrinal, historical, medical, clinical, legal, privacy, or practice-safety rewrites without the appropriate subject-matter review.
+
+## Milestone 2 — Restore semantic lesson structure
+
+Repair the demonstrated renderer defect before rewriting prose.
+
+Allowed files:
+
+- `src/lib/markdown.js`
+- `test/markdown.test.js`
+- `package.json` (test script only)
+
+Acceptance:
+
+- [ ] `##` renders as `<h2>` and `###` renders as `<h3>` beneath the page-level `<h1>`.
+- [ ] Ordinary numbered sequences render as semantic `<ol><li>` lists.
+- [ ] Numbered sequences inside blockquotes remain distinct semantic list items inside the quotation.
+- [ ] Van Eeden's nine categories remain nine items.
+- [ ] MILD and WBTB five-step protocols remain five items.
+- [ ] No literal `###` survives in rendered lesson HTML.
+- [ ] Existing paragraphs, quotations, inline emphasis, citations, and permanent lesson links remain intact.
+- [ ] Focused Node tests, lint, build, and `git diff --check` pass; static page count remains 160.
+
 ## Later milestones
 
-1. Replace the mobile menu; add skip navigation, focus restoration, reduced-motion behavior, and heading hierarchy checks.
-2. Triage dependency advisories; upgrade deliberately; add Astro-aware, route, asset, and focused journey checks to CI.
-3. Make community availability truthful; fix missing OG assets and `/start` breadcrumbs; add a resilient direct donation link.
-4. Fix progress semantics around last position, local persistence failures, and completion/next navigation.
-5. Harden contact/newsletter Worker routes, bounds, rate limits, timeouts, tests, and accessible form feedback.
-6. Conduct qualified editorial review of actionable claims and citations; publish honest authorship/review policy and local safety context.
-7. With owner authorization, verify the GitHub custom domain and TLS/redirect posture, then document deployment and rollback.
-8. Measure cold mobile performance, optimize fonts only where justified, and run final physical-phone plus desktop qualification.
+1. Restructure the welcome page and truthfully explain 47 lessons plus the introduction, what the curriculum covers, and how to choose a starting point.
+2. Pilot the editorial contract on one module, then one lesson; obtain subject-matter review for substantive claims before corpus-wide rollout.
+3. Separate curated library/theme explanations from raw keyword matches; deduplicate source counts and make citations visually primary.
+4. Replace the mobile menu; add skip navigation, focus restoration, reduced-motion behavior, and heading hierarchy checks.
+5. Triage dependency advisories; upgrade deliberately; add Astro-aware, route, asset, and focused journey checks to CI.
+6. Make community availability truthful; fix missing OG assets and `/start` breadcrumbs; add a resilient direct donation link.
+7. Fix progress semantics around last position, local persistence failures, and completion/next navigation.
+8. Harden contact/newsletter Worker routes, bounds, rate limits, timeouts, tests, and accessible form feedback.
+9. With owner authorization, verify the GitHub custom domain and TLS/redirect posture, then document deployment and rollback.
+10. Measure cold mobile performance, optimize fonts only where justified, and run final physical-phone plus desktop qualification.
