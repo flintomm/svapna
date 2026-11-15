@@ -11,6 +11,8 @@ import sitemap from '@astrojs/sitemap';
 // Console / Bing Webmaster Tools.
 export default defineConfig({
   site: 'https://svapnaproject.org',
+  // Preserve Astro 6's inline whitespace behavior after the Astro 7 migration.
+  compressHTML: true,
   integrations: [
     react(),
     sitemap({
