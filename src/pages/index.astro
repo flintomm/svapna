@@ -36,6 +36,14 @@ const continueModules = curriculumModules.map((mod) => {
           <p class="text-base sm:text-lg leading-relaxed mt-8 md:mt-10 max-w-xl text-neutral-700">
             The work in six modules and forty-seven lessons. Dream yoga and lucid dreaming, drawing on Tibetan milam and modern sleep science. Free. Self-paced.
           </p>
+          <div class="home-start-actions flex flex-wrap items-center gap-3 mt-6">
+            <a href="/curriculum/welcome" class="bg-black text-white border border-black px-5 py-3 text-sm hover:bg-neutral-800">
+              Begin with the orientation <span aria-hidden="true">→</span>
+            </a>
+            <a href="/curriculum" class="px-3 py-3 text-sm underline underline-offset-4 hover:text-neutral-600">
+              Browse the curriculum
+            </a>
+          </div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-10 md:mt-16 pt-6 md:pt-8 hairline-t">
           <div>
@@ -347,3 +355,10 @@ const continueModules = curriculumModules.map((mod) => {
     })();
   </script>
 </Layout>
+
+<style>
+  .home-start-actions a:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 4px;
+  }
+</style>
