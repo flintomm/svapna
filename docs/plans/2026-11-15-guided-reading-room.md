@@ -98,6 +98,21 @@ Acceptance:
 - [ ] Existing paragraphs, quotations, inline emphasis, citations, and permanent lesson links remain intact.
 - [ ] Focused Node tests, lint, build, and `git diff --check` pass; static page count remains 160.
 
+## Milestone 3 — Modernize the Astro toolchain safely
+
+Keep Node 22. Do not replace macOS system Python; this project has no Python runtime dependency.
+
+Starting audit: 23 advisories total (3 low, 6 moderate, 13 high, 1 critical), including 18 in the production dependency graph. Direct packages needing attention include Astro, `@astrojs/rss`, and PostCSS. Use explicit compatible versions and migration review—never `npm audit fix --force`.
+
+Acceptance:
+
+- [ ] Upgrade Astro and its integrations to currently patched compatible releases; apply only required migration changes.
+- [ ] Upgrade remaining direct dependencies within compatible ranges where safe, but do not combine Tailwind 4 migration or unrelated redesign work.
+- [ ] `npm audit` reports zero known vulnerabilities, or every unavoidable remainder is documented with advisory, exposure, and reason it cannot yet be fixed.
+- [ ] Markdown tests, lint, and static build pass under Node 22; build remains 160 pages.
+- [ ] RSS and sitemap files are emitted and parse as XML; representative homepage, curriculum, lesson, history, library, glossary, and legal routes exist in `dist`.
+- [ ] No content, visual design, Workers, DNS, or deployment changes.
+
 ## Later milestones
 
 1. Restructure the welcome page and truthfully explain 47 lessons plus the introduction, what the curriculum covers, and how to choose a starting point.
