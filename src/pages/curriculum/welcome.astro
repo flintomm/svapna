@@ -6,85 +6,77 @@ import { welcomeLesson, lessonsByModule } from '../../lib/lessons.js';
 import { articleSchema, breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 const firstLesson = (lessonsByModule['1'] || [])[0];
+const modules = Object.values(lessonsByModule);
+const lessonCount = modules.reduce((total, lessons) => total + lessons.length, 0);
+const description = 'A source-led study of the history, philosophy, textual traditions, and science around dreaming. Scope, module structure, and sources.';
 
 const siteUrl = Astro.site.href;
 const url = new URL('/curriculum/welcome', siteUrl).href;
 const articleLd = articleSchema({
   url,
   headline: welcomeLesson.title,
-  description: 'An orientation before the work begins. What the work is, how it is built, and how it would like to be read.',
+  description,
   section: 'Curriculum / Orientation',
 });
 const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
   { name: 'Curriculum', path: '/curriculum' },
-  { name: 'Welcome', path: '/curriculum/welcome' },
+  { name: 'Orientation', path: '/curriculum/welcome' },
 ]));
 ---
 
 <Layout
-  title="Welcome — Svapna"
-  description="An orientation before the work begins."
+  title="Orientation — Svapna"
+  description={description}
   ogType="article"
   jsonLd={[articleLd, crumbsLd]}
 >
-  <div class="fade-in">
-    <div class="hairline-b px-5 md:px-12 py-4 flex items-center justify-between flex-wrap gap-3">
+  <div class="orientation fade-in">
+    <div class="hairline-b px-5 md:px-12 py-4">
       <a href="/curriculum" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">← Curriculum</a>
-      <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Orientation</span>
     </div>
-    <div class="grid grid-cols-12 hairline-b">
-      <div class="col-span-3 md:col-span-2 p-5 md:p-8 hairline-r flex items-start">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">§ 00</span>
-      </div>
-      <div class="col-span-9 md:col-span-10 p-5 md:p-8">
-        <p class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500 mb-3 md:mb-4">Before the work begins</p>
-        <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">{welcomeLesson.title}.</h1>
-        {welcomeLesson.kicker && (
-          <p class="display text-lg md:text-2xl mt-4 md:mt-6 text-neutral-600 max-w-3xl leading-snug">
-            <InlineMarkdown text={welcomeLesson.kicker} />
-          </p>
-        )}
-      </div>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Welcome</span>
-      </div>
-      <div class="md:col-span-10 p-6 md:p-12">
-        <MarkdownBody text={welcomeLesson.body} />
-      </div>
-    </div>
-    {welcomeLesson.prompt && (
-      <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-        <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-          <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Question for the community</span>
+    <header class="px-6 py-8 md:px-12 md:py-12 hairline-b">
+      <h1 class="display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight">{welcomeLesson.title}</h1>
+      {welcomeLesson.kicker && (
+        <p class="display text-xl md:text-2xl mt-4 md:mt-6 text-neutral-700 max-w-3xl leading-snug">
+          <InlineMarkdown text={welcomeLesson.kicker} />
+        </p>
+      )}
+    </header>
+    <section aria-labelledby="at-a-glance" class="px-6 py-5 md:px-12 hairline-b">
+      <h2 id="at-a-glance" class="mono text-xs uppercase tracking-widest mb-4">At a glance</h2>
+      <dl class="grid grid-cols-3 max-w-3xl">
+        <div class="hairline-r pr-3">
+          <dt class="mono text-[10px] uppercase tracking-widest text-neutral-600">Lessons</dt>
+          <dd class="display text-3xl mt-1">{lessonCount}</dd>
         </div>
-        <div class="md:col-span-10 p-6 md:p-12 max-w-3xl">
-          <p class="display text-lg md:text-2xl italic leading-relaxed text-neutral-800">&ldquo;<InlineMarkdown text={welcomeLesson.prompt} />&rdquo;</p>
-          <a
-            href="/community"
-            class="mt-5 md:mt-6 inline-flex items-center gap-2 mono text-[10px] uppercase tracking-widest px-4 py-3 hover:bg-black hover:text-white transition-colors"
-            style="border: 0.5px solid #000"
-          >
-            <span>Community discussion</span>
-            <span>→</span>
-          </a>
+        <div class="hairline-r px-3 md:px-6">
+          <dt class="mono text-[10px] uppercase tracking-widest text-neutral-600">Modules</dt>
+          <dd class="display text-3xl mt-1">{modules.length}</dd>
         </div>
+        <div class="pl-3 md:pl-6">
+          <dt class="mono text-[10px] uppercase tracking-widest text-neutral-600">Introduction</dt>
+          <dd class="display text-3xl mt-1">+ 1</dd>
+        </div>
+      </dl>
+    </section>
+    <div class="px-6 py-6 md:px-12 md:py-8 hairline-b">
+      <MarkdownBody text={welcomeLesson.body} />
+    </div>
+    {firstLesson && (
+      <div class="px-6 py-6 md:px-12 md:py-8 hairline-b">
+        <a href={`/curriculum/module-01/${firstLesson.urlSlug}`} class="inline-block px-5 py-4 hover:bg-black hover:text-white transition-colors" style="border: 0.5px solid #000">
+          <span class="mono text-xs uppercase tracking-widest">First lesson →</span>
+          <span class="display block text-xl md:text-2xl mt-2 leading-snug">{firstLesson.title}</span>
+          <span class="mono block text-[10px] uppercase tracking-widest mt-3">Module 1 · Lesson 1</span>
+        </a>
       </div>
     )}
-
-    <div class="hairline-b grid grid-cols-2">
-      <div class="hairline-r p-5 md:p-8">
-        <span class="mono text-[10px] uppercase tracking-widest text-neutral-400">Beginning</span>
-      </div>
-      <div class="p-5 md:p-8 text-right">
-        {firstLesson && (
-          <a href={`/curriculum/module-01/${firstLesson.urlSlug}`} class="block text-right w-full hover:italic transition-all">
-            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Module I →</p>
-            <p class="display text-base md:text-xl mt-2 leading-snug italic">{firstLesson.title}</p>
-          </a>
-        )}
-      </div>
-    </div>
   </div>
 </Layout>
+
+<style>
+  .orientation a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+</style>
