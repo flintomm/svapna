@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore how thinkers understood the self through dated places and passages.">
+<meta name="theme-color" content="#101523">
+<link rel="canonical" href="https://svapnaproject.org/globe-of-thought/">
+<title>What is the self? · Globe of Thought</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%231d2a44' stroke='%23f4c47d' stroke-width='2'/%3E%3Cpath d='M3 16h26M16 3c-6 7-6 19 0 26M16 3c6 7 6 19 0 26' fill='none' stroke='%23f4c47d' stroke-width='1.3'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/globe-of-thought/style.css">
+<script defer src="/globe-of-thought/d3.min.js"></script>
+<script defer src="/globe-of-thought/land.js"></script>
+<script defer src="/globe-of-thought/evidence.js"></script>
+<script defer src="/globe-of-thought/app.js"></script>
+</head>
+<body>
+<main>
+  <header class="mast">
+    <div class="wordmark"><span class="orbmark" aria-hidden="true">✧</span> Globe of Thought</div>
+    <span class="edition">FIELD STUDY <span class="rule"></span> 01</span>
+  </header>
+
+  <div class="intro">
+    <div>
+      <p class="eyebrow">A QUESTION ACROSS TIME</p>
+      <h1>What is <em>the self?</em></h1>
+      <p id="question" class="subhead">How much do relationships shape who you are?</p>
+      <div id="questions" class="questions" role="group" aria-label="Choose a question"></div>
+      <p id="stats" class="stats"></p>
+    </div>
+    <details class="method">
+      <summary>How the scale works</summary>
+      <p>Each question has its own scale. Each pin shows a reading of a specific passage, not a verdict on a thinker’s entire work. Color marks the position; it does not measure confidence or trace influence.</p>
+      <ul id="rubric"></ul>
+    </details>
+  </div>
+
+  <div class="toolbar">
+    <div class="tabs" role="tablist" aria-label="Choose a view">
+      <button id="tab-globe" type="button" role="tab" aria-controls="panel-globe">Globe</button>
+      <button id="tab-spectrum" type="button" role="tab" aria-controls="panel-spectrum">Spectrum</button>
+    </div>
+    <div id="filters" class="filters" role="group" aria-label="Show positions"></div>
+  </div>
+
+  <div class="workspace">
+    <section class="explore" aria-label="Explore the passages by place and time">
+      <div class="maphead"><span id="map-status" role="status"></span><span id="hint" class="gesture"></span></div>
+
+      <div id="panel-globe" class="stage" role="tabpanel" aria-labelledby="tab-globe">
+        <canvas tabindex="0" role="application" aria-label="Globe. Arrow keys rotate it; plus and minus zoom. Every passage is also listed under All passages."></canvas>
+        <div id="pins" class="pins"></div>
+        <div class="mapkeys">
+          <button id="zoom-in" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+          <button id="zoom-out" type="button" title="Zoom out" aria-label="Zoom out">−</button>
+          <button id="refocus" type="button" title="Center selected pin" aria-label="Center selected pin">◎</button>
+        </div>
+      </div>
+
+      <div id="panel-spectrum" class="spectrum" role="tabpanel" aria-labelledby="tab-spectrum" hidden>
+        <div id="plot" class="plot">
+          <div id="lanes" class="lanes" aria-hidden="true"></div>
+          <div id="dots" class="dots"></div>
+          <div id="axis" class="axis" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timehead">
+          <label for="when">View through <output id="shown-year"></output></label>
+          <div class="step">
+            <button id="prev" type="button" aria-label="Previous evidence date">‹</button>
+            <button id="next" type="button" aria-label="Next evidence date">›</button>
+          </div>
+        </div>
+        <input id="when" type="range" aria-label="Evidence timeline">
+        <div id="ticks" class="ticks" aria-hidden="true"></div>
+        <div id="ends" class="ends" aria-hidden="true"></div>
+      </div>
+      <p class="mapnote">Glows mark nearby scored evidence, not regional beliefs. An outlined pin is unscored. A numbered pin stands for several passages close together; select it to zoom in or list them. Europe and North America supply most of the passages, partly because the atlas relies on texts that are freely readable online.</p>
+    </section>
+
+    <section class="read" aria-label="Read the passage">
+      <div class="overline">
+        <span>THE PASSAGE</span>
+        <span class="readnav">
+          <button id="earlier" type="button" aria-label="Earlier passage">‹</button>
+          <span id="reader-index"></span>
+          <button id="later" type="button" aria-label="Later passage">›</button>
+        </span>
+      </div>
+      <article id="passage" aria-live="polite"></article>
+    </section>
+  </div>
+
+  <section class="index" aria-labelledby="index-title">
+    <h2 id="index-title" class="index-title">All passages</h2>
+    <div id="choices" class="rows"></div>
+  </section>
+
+  <footer><span class="home"><a href="/">Svapna</a> · Globe of Thought</span> <span>Coastlines: Natural Earth, public domain. Simplified for this map.</span></footer>
+</main>
+</body>
+</html>
