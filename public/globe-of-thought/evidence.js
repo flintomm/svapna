@@ -985,6 +985,51 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "cicero",
+      "name": "Marcus Tullius Cicero",
+      "short": "Cicero",
+      "work": "On Duties (De Officiis), Book I, §22",
+      "excerpt": "we are not born for ourselves alone, but our country claims a share of our being, and our friends a share",
+      "period": "44 BCE",
+      "dateShort": "44 BCE",
+      "dateFull": "44 BCE",
+      "sortYear": -44,
+      "sourceLabel": "Walter Miller translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/7/0/0/47001/47001-0.txt",
+      "locator": "Book I, section 22.",
+      "place": "Rome, Italy",
+      "lat": 41.89,
+      "lng": 12.48,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Cicero wrote the work in the last months of 44 BCE, moving between Rome and his country villas. The pin marks Rome and still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/7/0/0/47001/47001-0.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Whose we are",
+          "why": "Cicero, citing Plato and the Stoics, says a person’s very being is partly owed to country and friends, and that people are born for one another’s sake.",
+          "limit": "An argument about duty and justice addressed to his son. It concerns what we owe, drawn from a view of human nature, and not how a personality is formed. Reading drawn from the project’s research catalogue."
+        },
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Whose we are",
+          "why": "People are born for the sake of one another.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        },
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Whose we are",
+          "why": "Country and friends each claim a share of our being.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
+      }
+    },
+    {
       "id": "hillel",
       "name": "Hillel the Elder",
       "short": "Hillel",
@@ -1921,6 +1966,45 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "langri-thangpa",
+      "name": "Langri Thangpa Dorje Senge",
+      "short": "Langri Thangpa",
+      "work": "Eight Verses of Training the Mind, verse 2",
+      "excerpt": "Whenever I’m in the company of others, I will regard myself as the lowest among all, And from the depths of my heart Cherish others as supreme.",
+      "period": "c. 1100",
+      "dateShort": "c. 1100",
+      "dateFull": "c. 1100",
+      "sortYear": 1100.2,
+      "sourceLabel": "Translation by Rigpa Translations, Lotsawa House",
+      "sourceUrl": "https://www.lotsawahouse.org/tibetan-masters/geshe-langri-thangpa/eight-verses-training-mind",
+      "locator": "Verse 2.",
+      "place": "Central Tibet (Penpo region, north of Lhasa)",
+      "lat": 29.95,
+      "lng": 91.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Langri Thangpa founded a monastery in the Penpo region of central Tibet. The linked page does not say where the verses were composed; the place and the translator credit still need an editor’s confirmation.",
+      "placeSource": "https://www.lotsawahouse.org/tibetan-masters/geshe-langri-thangpa/eight-verses-training-mind",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Training the mind",
+          "why": "The verses make other people the material of one’s own training: character is reshaped by how one regards and treats them.",
+          "limit": "A practice text for monks. It uses relations with others as a discipline; it does not say others make the self, and it ends by calling all phenomena illusion-like. Reading drawn from the project’s research catalogue."
+        },
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Training the mind",
+          "why": "He resolves to cherish others as supreme and rank himself lowest.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
       }
     },
     {
@@ -3859,6 +3943,51 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ho-xuan-huong",
+      "name": "Hồ Xuân Hương",
+      "short": "Hồ Xuân Hương",
+      "work": "“The Floating Cake” (Bánh trôi)",
+      "excerpt": "Whatever way hands may shape me, at center my heart is red and true.",
+      "period": "c. 1800",
+      "dateShort": "c. 1800",
+      "dateFull": "c. 1800",
+      "sortYear": 1800,
+      "sourceLabel": "John Balaban translation, Vietnamese Nôm Preservation Foundation",
+      "sourceUrl": "https://www.nomfoundation.org/nom-project/Ho-Xuan-Huong/Ho-Xuan-Huong-of-poems/8-The%20Floating%20Cake?uiLang=en",
+      "locator": "Final line.",
+      "place": "Hanoi (Thăng Long), Vietnam",
+      "lat": 21.03,
+      "lng": 105.85,
+      "anchorType": "Traditional association",
+      "placeNote": "Hồ Xuân Hương is associated with Thăng Long, present-day Hanoi; little about her life is certain. The place and date still need an editor’s confirmation.",
+      "placeSource": "https://www.nomfoundation.org/nom-project/Ho-Xuan-Huong/Ho-Xuan-Huong-of-poems/8-The%20Floating%20Cake?uiLang=en",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "What stays one’s own",
+          "why": "Speaking as a rice cake kneaded by other hands, the poet says that however others shape her, her core remains her own.",
+          "limit": "A short poem with a double meaning, in a modern English translation. It speaks of a woman’s constancy under others’ power, not of selfhood in general. Reading drawn from the project’s research catalogue."
+        },
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "What stays one’s own",
+          "why": "A core remains the same however the outside is shaped.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        },
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "What stays one’s own",
+          "why": "Whatever hands shape her, her heart at the centre stays true.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
+      }
+    },
+    {
       "id": "gwf-hegel",
       "name": "G. W. F. Hegel",
       "short": "Hegel",
@@ -4609,6 +4738,51 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "miguel-de-unamuno",
+      "name": "Miguel de Unamuno",
+      "short": "Unamuno",
+      "work": "The Tragic Sense of Life, ch. 1",
+      "excerpt": "Another might fulfil my function in society? Yes, but it would not be I.",
+      "period": "1912; this translation 1921",
+      "dateShort": "1912",
+      "dateFull": "1912",
+      "sortYear": 1912,
+      "sourceLabel": "J. E. Crawford Flitch translation (1921), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "locator": "Chapter I, “The Man of Flesh and Bone”.",
+      "place": "Salamanca, Spain",
+      "lat": 40.96,
+      "lng": -5.66,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Unamuno was rector of the University of Salamanca. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Being this one person",
+          "why": "Unamuno insists that what matters is the concrete individual ‘of flesh and bone’, who cannot be replaced by anyone who fills the same social role.",
+          "limit": "He is protesting against sacrificing the individual to abstractions such as Humanity. He does not deny that he lives for his neighbours and children; he denies that this is all he is. Reading drawn from the project’s research catalogue."
+        },
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Being this one person",
+          "why": "He speaks of an ‘I’ that no replacement could be.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        },
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Being this one person",
+          "why": "No one who took over his role in society would be him.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
       }
     },
     {
@@ -5509,6 +5683,45 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "elie-wiesel",
+      "name": "Elie Wiesel",
+      "short": "Wiesel",
+      "work": "Nobel Peace Prize acceptance speech",
+      "excerpt": "Our lives no longer belong to us alone; they belong to all those who need us desperately.",
+      "period": "1986",
+      "dateShort": "1986",
+      "dateFull": "1986",
+      "sortYear": 1986,
+      "sourceLabel": "Speech text, The Elie Wiesel Foundation for Humanity",
+      "sourceUrl": "https://eliewieselfoundation.org/about-elie-wiesel/nobel-prize-speech/",
+      "locator": "Closing paragraph.",
+      "place": "Oslo, Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "anchorType": "Documented lecture location",
+      "placeNote": "The speech was delivered in Oslo on receiving the Nobel Peace Prize in December 1986.",
+      "placeSource": "https://eliewieselfoundation.org/about-elie-wiesel/nobel-prize-speech/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Whose our lives are",
+          "why": "Speaking as a survivor, Wiesel says a life is not only its owner’s: it is claimed by everyone who suffers and needs a witness.",
+          "limit": "A moral appeal in a public speech, grounded in the memory of the Holocaust. It is a claim about responsibility, not an account of how a self is formed. Reading drawn from the project’s research catalogue."
+        },
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Whose our lives are",
+          "why": "Our lives belong to all who need us.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
+      }
+    },
+    {
       "id": "thich-nhat-hanh",
       "name": "Thích Nhất Hạnh",
       "short": "Nhất Hạnh",
@@ -5922,6 +6135,90 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tenzin-palmo",
+      "name": "Jetsunma Tenzin Palmo",
+      "short": "Tenzin Palmo",
+      "work": "Teaching on the Eight Verses of Mind Training, verse 8",
+      "excerpt": "As long as we see ourselves as something solid, self-existent and separate from the rest of creation around us then we are going to suffer",
+      "period": "Talk, early 21st century; date to be checked",
+      "dateShort": "c. 2010",
+      "dateFull": "c. 2010",
+      "sortYear": 2010,
+      "sourceLabel": "Transcript, tenzinpalmo.com",
+      "sourceUrl": "https://tenzinpalmo.com/archive/transcripts/eight-verses/ultimate-bodhichitta/",
+      "locator": "Search for “solid, self-existent and separate”.",
+      "place": "Dongyu Gatsal Ling Nunnery, Himachal Pradesh, India",
+      "lat": 32.05,
+      "lng": 76.7,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Tenzin Palmo founded and lives at Dongyu Gatsal Ling Nunnery. The linked page does not say where this talk was given; the place and date still need an editor’s confirmation.",
+      "placeSource": "https://tenzinpalmo.com/archive/transcripts/eight-verses/ultimate-bodhichitta/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Seeing oneself rightly",
+          "why": "Tenzin Palmo teaches that the sense of being a solid self set apart from everyone and everything else is a mistake, and the root of suffering.",
+          "limit": "A transcribed Buddhist teaching; its date should be checked. What we are not separate from is the whole of creation, not other people only, and the underlying claim is that there is no self-existent self at all. Reading drawn from the project’s research catalogue."
+        },
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Seeing oneself rightly",
+          "why": "Seeing oneself as solid and self-existent is named as the mistake.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
+      }
+    },
+    {
+      "id": "albert-refiti",
+      "name": "Albert L. Refiti",
+      "short": "Refiti",
+      "work": "Mavae and Tofiga: Spatial Exposition of the Samoan Cosmogony and Architecture",
+      "excerpt": "each person is a composite of substances and actions of others, which means that each person encompasses multiple constituent things and relations received from other people",
+      "period": "2014",
+      "dateShort": "2014",
+      "dateFull": "2014",
+      "sortYear": 2014.5,
+      "sourceLabel": "Doctoral thesis, Auckland University of Technology open repository",
+      "sourceUrl": "https://openrepository.aut.ac.nz/server/api/core/bitstreams/33cf1a81-c3e0-4e5b-af87-7e02b4c854bc/content",
+      "locator": "Search for “dividual nature of the person”.",
+      "place": "Auckland, Aotearoa New Zealand",
+      "lat": -36.85,
+      "lng": 174.77,
+      "anchorType": "Documented institutional location",
+      "placeNote": "The thesis was submitted at Auckland University of Technology, where Refiti teaches.",
+      "placeSource": "https://openrepository.aut.ac.nz/server/api/core/bitstreams/33cf1a81-c3e0-4e5b-af87-7e02b4c854bc/content",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "What a person is made of",
+          "why": "Refiti describes the Samoan person as ‘dividual’: made up of what has been received from parents, ancestors and community, and held in relationships (vā).",
+          "limit": "A doctoral thesis on Samoan architecture and cosmology. In this sentence he is applying an anthropologist’s concept to the Samoan case. Reading drawn from the project’s research catalogue."
+        },
+        "lasting-self": {
+          "score": "changing",
+          "facet": "What a person is made of",
+          "why": "Each person is a composite of what has been received from others.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        },
+        "given-or-made": {
+          "score": "made",
+          "facet": "What a person is made of",
+          "why": "A person is composed of the substances and actions of others.",
+          "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
+      }
+    },
+    {
       "id": "kyle-whyte",
       "name": "Kyle Powys Whyte",
       "short": "Whyte",
@@ -5952,6 +6249,39 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "moana-jackson",
+      "name": "Moana Jackson",
+      "short": "Jackson",
+      "work": "“Decolonisation and the stories in the land”",
+      "excerpt": "It is a relational law based on an ethic of restoration that seeks balance in all relationships, including the primal relationship of love for and with Papatūānuku.",
+      "period": "2020",
+      "dateShort": "2020",
+      "dateFull": "2020",
+      "sortYear": 2020,
+      "sourceLabel": "Author’s essay, E-Tangata",
+      "sourceUrl": "https://e-tangata.co.nz/comment-and-analysis/moana-jackson-decolonisation-and-the-stories-in-the-land/",
+      "locator": "Search for “relational law”.",
+      "place": "Wellington, Aotearoa New Zealand",
+      "lat": -41.29,
+      "lng": 174.78,
+      "anchorType": "Approximate home association",
+      "placeNote": "Jackson, of Ngāti Kahungunu, Rongomaiwahine and Ngāti Porou, worked from Wellington. The linked page does not say where the essay was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://e-tangata.co.nz/comment-and-analysis/moana-jackson-decolonisation-and-the-stories-in-the-land/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Law and right relationship",
+          "why": "Jackson describes Māori law as built on keeping relationships in balance, among people and with the earth, so that how one stands with others is the measure of right.",
+          "limit": "The subject is law and decolonisation, not the self, and the relationships include the land itself. One Māori lawyer’s account, from a 2020 essay. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-22"
       }
     }
   ]
