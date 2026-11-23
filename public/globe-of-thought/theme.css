@@ -38,6 +38,8 @@
 .atlas .lane span { background: #fff; color: #000; }
 
 /* Switches: question, view and filter. */
+.atlas .qgroup { font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; margin-top: 14px; }
+.atlas .qgroup:first-child { margin-top: 0; }
 .atlas .qtab, .atlas .chip, .atlas .tabs, .atlas .tabs button { border: .5px solid #000; background: #fff; color: #000; }
 .atlas .tabs { padding: 0; }
 .atlas .tabs button { border-width: 0; min-height: 40px; }
