@@ -1,6 +1,5 @@
 ---
 import DanaNote from '../components/DanaNote.astro';
-import Instruments from '../components/Instruments.astro';
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 // The atlas body is generated from the Globe of Thought repository by scripts/sync-globe.mjs.
@@ -30,12 +29,11 @@ const theme = {
 >
   <section>
     <SectionHeader
-      num="Annex"
-      kicker="An atlas of answers"
+      num="§ 07"
+      kicker="A companion atlas"
       title="Globe of Thought"
-      sub="The questions seekers ask, and what thinkers wrote in answer. Passages placed by where and when they were written."
+      sub="Beyond the dream: the wider questions about consciousness and a life, and what thinkers wrote in answer. Passages placed by where and when they were written."
     />
-    <Instruments current="globe" />
     <link rel="stylesheet" href="/globe-of-thought/atlas.css" />
     <link rel="stylesheet" href="/globe-of-thought/theme.css" />
     <script is:inline define:vars={{ theme }}>window.ATLAS_THEME = theme;</script>

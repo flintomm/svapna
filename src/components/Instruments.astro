@@ -1,5 +1,5 @@
 ---
-// The five instruments: one row that ties the interactive pages together. `current` marks the page it sits on.
+// The four instruments of the dream work: one row that ties the interactive pages together. `current` marks the page it sits on.
 interface Props { current?: string }
 const { current = '' } = Astro.props;
 const items = [
@@ -7,13 +7,12 @@ const items = [
   { id: 'history', href: '/history', label: 'The River', sub: 'Three millennia, ten lanes', d: 'M2 6 H46 M2 13 H46 M2 20 H46 M8 6 v0 M14 13 v0 M30 20 v0', dots: [[8, 6], [20, 13], [26, 6], [34, 20], [40, 13]] },
   { id: 'curriculum', href: '/curriculum', label: 'The Path', sub: 'Forty-seven lessons', squares: true },
   { id: 'library', href: '/library', label: 'The Concordance', sub: 'Themes across the texts', grid: true },
-  { id: 'globe', href: '/globe-of-thought', label: 'The Globe', sub: 'Answers to seekers’ questions', globe: true },
 ];
 ---
 
 <nav class="instruments hairline-b" aria-label="Instruments">
-  <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 px-5 md:px-8 pt-4">Five instruments</p>
-  <div class="grid grid-cols-2 md:grid-cols-5 mt-3 hairline-t">
+  <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 px-5 md:px-8 pt-4">Four instruments</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 mt-3 hairline-t">
     {items.map(it => (
       <a href={it.href} aria-current={it.id === current ? 'page' : undefined}
         class={`group p-5 md:p-6 hairline-b md:border-b-0 [border-right:0.5px_solid_#000] last:[border-right:0] transition-colors ${it.id === current ? 'bg-black text-white' : 'md:hover:bg-neutral-50'}`}>
@@ -22,7 +21,6 @@ const items = [
           {it.dots && it.dots.map(([x, y]) => <rect x={x - 2} y={y - 2} width="4" height="4" fill="currentColor" transform={`rotate(45 ${x} ${y})`} />)}
           {it.squares && [0, 1, 2, 3, 4, 5].map(i => <rect x={2 + i * 7.5} y="9" width="5.5" height="5.5" fill={i < 3 ? 'currentColor' : 'none'} />)}
           {it.grid && [0, 1, 2].flatMap(r => [0, 1, 2, 3, 4].map(c => <rect x={2 + c * 8} y={2 + r * 8} width="6.5" height="6.5" stroke="none" fill="currentColor" opacity={[0.9, 0.2, 0.5, 0.1, 0.7, 0.3, 1, 0.15, 0.6, 0.25, 0.1, 0.45, 0.8, 0.2, 0.55][r * 5 + c]} />))}
-          {it.globe && <><circle cx="24" cy="13" r="11.5" /><ellipse cx="24" cy="13" rx="11.5" ry="4" /><ellipse cx="24" cy="13" rx="4.5" ry="11.5" /></>}
         </svg>
         <span class="display text-2xl md:text-[1.7rem] leading-none block mt-4 group-hover:italic">{it.label}</span>
         <span class={`mono text-[9px] uppercase tracking-widest block mt-2 ${it.id === current ? 'text-neutral-300' : 'text-neutral-500'}`}>{it.sub}</span>
