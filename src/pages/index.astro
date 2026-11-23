@@ -211,6 +211,37 @@ const continueModules = curriculumModules.map((mod) => {
         </div>
       </a>
     </div>
+
+    <a href="/globe-of-thought" class="grid grid-cols-1 md:grid-cols-12 hairline-b active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors cursor-pointer group">
+      <div class="md:col-span-8 p-8 md:p-12 flex flex-col justify-between min-h-[240px] md:min-h-[320px]">
+        <div>
+          <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">Annex</span>
+          <h3 class="display text-5xl md:text-5xl lg:text-6xl mt-6 md:mt-8 group-hover:italic transition-all break-words leading-[0.95]">Globe of Thought</h3>
+        </div>
+        <div class="mt-8">
+          <p class="text-sm leading-relaxed text-neutral-700 mb-5 md:mb-6 max-w-xl">An atlas of what thinkers wrote about the self, placed by where and when it was written.</p>
+          <div class="flex items-center gap-2 mono text-[10px] uppercase tracking-widest">
+            <span>Enter</span>
+            <span class="group-hover:translate-x-2 transition-transform inline-block">→</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:col-span-4 md:[border-left:0.5px_solid_#000] p-8 md:p-12 hidden md:flex items-center justify-center" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="w-full max-w-[220px]" fill="none" stroke="#000" stroke-width="0.5">
+          <circle cx="100" cy="100" r="92" />
+          <ellipse cx="100" cy="100" rx="92" ry="30" />
+          <ellipse cx="100" cy="100" rx="92" ry="62" />
+          <ellipse cx="100" cy="100" rx="30" ry="92" />
+          <ellipse cx="100" cy="100" rx="62" ry="92" />
+          <line x1="8" y1="100" x2="192" y2="100" />
+          <line x1="100" y1="8" x2="100" y2="192" />
+          <rect x="128" y="62" width="7" height="7" fill="#000" />
+          <rect x="74" y="88" width="7" height="7" fill="#fff" />
+          <rect x="112" y="118" width="7" height="7" fill="#000" />
+          <rect x="58" y="126" width="7" height="7" fill="#fff" />
+        </svg>
+      </div>
+    </a>
   </div>
 
   <script is:inline define:vars={{ bank: quoteBank }}>

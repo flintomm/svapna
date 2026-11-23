@@ -1,0 +1,107 @@
+/* Svapna's look for the Globe of Thought atlas. Loaded after atlas.css (generated), which carries layout.
+   Black on white, hairlines, Cormorant for display, JetBrains Mono for labels, no colour and no curves:
+   a position on a scale is shown by how much of a square is filled. */
+.atlas {
+  color-scheme: light;
+  --bg: #fff; --ink: #000; --muted: #404040; --quiet: #737373; --line: #000; --accent: #000;
+  --low: #000; --mid: #000; --high: #000; --none: #000;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: Georgia, 'Times New Roman', serif;
+  --mono: 'JetBrains Mono', monospace;
+  background: #fff; color: #000; min-height: 0; max-width: none; margin: 0; padding: 0 1.25rem 1px;
+  font-family: var(--sans);
+}
+@media (min-width: 768px) { .atlas { padding: 0 2rem 1px; } }
+
+/* The page header already names the atlas. */
+.atlas .eyebrow, .atlas h1 { display: none; }
+.atlas .intro { padding: 1.75rem 0 1.25rem; align-items: flex-start; }
+.atlas .subhead { margin: 0; font: italic 400 clamp(1.6rem, 3.2vw, 2.5rem)/1.1 var(--serif); color: #000; }
+.atlas .stats { font: 400 10px/1.6 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; margin-top: 1rem; }
+
+/* Labels in the site's small mono capitals. */
+.atlas .maphead, .atlas .overline, .atlas .timehead label, .atlas .index-title, .atlas .ends, .atlas .axis span, .atlas .row-date,
+.atlas .method summary, .atlas .draft, .atlas .lane span {
+  font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373;
+}
+.atlas .gesture { font: inherit; letter-spacing: inherit; text-transform: inherit; }
+.atlas #map-status, .atlas #reader-index, .atlas .timehead output { color: #000; font: inherit; letter-spacing: inherit; text-transform: uppercase; }
+
+/* Hairlines. Tailwind's reset gives every element a solid zero-width border, so each side is named. */
+.atlas .toolbar, .atlas .maphead, .atlas .read, .atlas .index, .atlas .mapnote, .atlas .location, .atlas .elsewhere, .atlas .lane, .atlas .axis {
+  border: 0 solid #000; border-top-width: .5px;
+}
+.atlas .row { border: 0 solid #000; border-bottom-width: .5px; }
+.atlas .excerpt { border: 0 solid #000; border-left-width: .5px; }
+.atlas .menu, .atlas .draft { border: .5px solid #000; }
+.atlas .lane.none { border-top-style: dashed; }
+.atlas .lane span { background: #fff; color: #000; }
+
+/* Switches: question, view and filter. */
+.atlas .qtab, .atlas .chip, .atlas .tabs, .atlas .tabs button { border: .5px solid #000; background: #fff; color: #000; }
+.atlas .tabs { padding: 0; }
+.atlas .tabs button { border-width: 0; min-height: 40px; }
+.atlas .qtab, .atlas .chip, .atlas .tabs button { font: 400 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; min-height: 40px; }
+.atlas .qtab:hover, .atlas .chip:hover, .atlas .tabs button:hover { background: #f5f5f5; color: #000; border-color: #000; }
+.atlas .qtab[aria-pressed=true], .atlas .chip[aria-pressed=true], .atlas .tabs button[aria-selected=true] { background: #000; color: #fff; }
+.atlas .chip .count { color: inherit; opacity: .6; }
+.atlas .method[open] { background: #fff; border: .5px solid #000; box-shadow: none; }
+.atlas .method ul { list-style: disc; }
+.atlas .method p, .atlas .method li { color: #404040; }
+
+/* Markers: an empty square, a half-filled square, a filled square; dotted where the passage does not settle it. */
+.atlas .pin::before, .atlas .dot::before, .atlas .chip::before, .atlas .position::before, .atlas .tone::before, .atlas .menu-item::before {
+  background: #fff; border: 1px solid #000; box-shadow: none; outline-color: #000;
+}
+.atlas .pin::before, .atlas .dot::before, .atlas .chip::before, .atlas .position::before, .atlas .tone::before, .atlas .menu-item::before,
+.atlas .ticks span, .atlas .cluster, .atlas .pin, .atlas .mapkeys button, .atlas .step button, .atlas .readnav button { border-radius: 0; }
+.atlas .mid::before { background: linear-gradient(135deg, #000 50%, #fff 50%); }
+.atlas .high::before { background: #000; }
+.atlas .none::before { background: #fff; border-style: dotted; }
+.atlas .chip[aria-pressed=true]::before { border-color: #fff; }
+.atlas .chip.high[aria-pressed=true]::before { background: #fff; }
+.atlas .chip.mid[aria-pressed=true]::before { background: linear-gradient(135deg, #fff 50%, #000 50%); }
+.atlas .chip.low[aria-pressed=true]::before, .atlas .chip.none[aria-pressed=true]::before { background: #000; }
+.atlas .pin::after, .atlas .dot::after { background: #fff; color: #000; border: .5px solid #000; font: 400 10px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.atlas .cluster { background: #fff; color: #000; border: .5px solid #000; box-shadow: none; font: 400 10px/1 var(--mono); }
+.atlas .cluster:hover { background: #000; color: #fff; }
+.atlas .menu { background: #fff; box-shadow: none; }
+.atlas .menu-item:hover, .atlas .menu-item:focus-visible { background: #f5f5f5; }
+.atlas .dot.later::before { opacity: .25; }
+.atlas .mapkeys button { color: #000; }
+.atlas .mapkeys button:hover:enabled, .atlas .mapkeys button:focus-visible { background: #000; color: #fff; }
+
+/* Timeline. */
+.atlas .timeline input { accent-color: #000; }
+.atlas .ticks { gap: 0; padding: 6px 0 0; }
+.atlas .ticks span { flex: 1 1 0; min-width: 0; height: 2px; border: 0; background: #d4d4d4; opacity: 1; outline: 0; }
+.atlas .ticks span.past, .atlas .ticks span.none.past { background: #000; }
+.atlas .ticks span.now { outline: 0; height: 8px; margin-top: -3px; }
+.atlas .step button, .atlas .readnav button { color: #000; }
+.atlas .step button:hover:enabled, .atlas .readnav button:hover:enabled { background: #000; color: #fff; }
+
+/* Reader. */
+.atlas .read, .atlas .explore { scroll-margin-top: 76px; }
+.atlas .position { color: #000; font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.atlas h2 { font: 400 clamp(2.5rem, 4.6vw, 4.25rem)/.95 var(--serif); letter-spacing: -.01em; color: #000; }
+.atlas .meta, .atlas .check, .atlas .check.matched, .atlas .elsewhere, .atlas .pin-note, .atlas .mapnote { color: #737373; }
+.atlas .excerpt { font: italic 400 clamp(1.5rem, 2.4vw, 2.15rem)/1.2 var(--serif); color: #000; }
+.atlas .translation { color: #404040; font-family: var(--serif); }
+.atlas .rationale, .atlas .limit { color: #262626; }
+.atlas .rationale strong, .atlas .limit strong { font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; }
+.atlas a { color: #000; text-decoration: underline; text-underline-offset: 4px; }
+.atlas a:hover { font-style: italic; }
+.atlas .draft { color: #737373; }
+.atlas .share, .atlas .back { color: #000; border-bottom: .5px solid #000; font: 400 10px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.atlas .location summary { color: #000; }
+
+/* Index of passages. */
+.atlas .row { color: #404040; }
+.atlas .row:hover { background: #fafafa; color: #000; }
+.atlas .row[aria-pressed=true] { background: #f5f5f5; color: #000; box-shadow: inset 2px 0 0 #000; }
+.atlas .row-name { font: 400 1.35rem/1.1 var(--serif); color: #000; }
+.atlas .row:hover .row-name { font-style: italic; }
+.atlas .row-place, .atlas .future { color: #737373; }
+.atlas .row .tone { font: 400 10px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #000; }
+
+.atlas button:focus-visible, .atlas input:focus-visible, .atlas summary:focus-visible, .atlas a:focus-visible, .atlas .stage canvas:focus-visible { outline: 1px solid #000; outline-offset: 3px; }

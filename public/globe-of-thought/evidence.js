@@ -4,7 +4,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "relationships",
       "short": "Relationships",
-      "question": "How much do relationships shape who you are?",
+      "question": "How much do relationships shape who a person is?",
       "scale": [
         {
           "id": "not_constitutive",
@@ -82,7 +82,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "given-or-made",
       "short": "Given or made?",
-      "question": "Is who you are given or made?",
+      "question": "Is a person given or made?",
       "scale": [
         {
           "id": "given",
@@ -121,7 +121,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "inward-or-others",
       "short": "Inward or through others?",
-      "question": "Do you find yourself by looking inward or through others?",
+      "question": "Is the self found by looking inward or through others?",
       "scale": [
         {
           "id": "inward",
@@ -199,7 +199,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "self-or-others-first",
       "short": "Self or others first?",
-      "question": "Whose good comes first: your own or other people’s?",
+      "question": "Whose good comes first: one’s own or other people’s?",
       "scale": [
         {
           "id": "self",
@@ -340,7 +340,7 @@ window.PILOT_EVIDENCE={
           "score": "contributory",
           "facet": "A farmer’s livelihood",
           "why": "Hesiod treats the people next door as one of the main things that make a household thrive or fail.",
-          "limit": "This is practical advice about farming life and reciprocity. It says others affect how you fare, not what you are."
+          "limit": "This is practical advice about farming life and reciprocity. It says others affect how a household fares, not what a person is."
         },
         "solitude-or-company": {
           "score": "company",
@@ -567,7 +567,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "both",
           "facet": "How to regard others",
-          "why": "Love your neighbour as yourself: self-regard is the measure given to others.",
+          "why": "The neighbour is to be loved as oneself: self-regard is the measure given to others.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -813,7 +813,7 @@ window.PILOT_EVIDENCE={
         "given-or-made": {
           "score": "given",
           "facet": "The moral endowment",
-          "why": "The four virtues are ‘not infused into us from without’; we are ‘furnished with them’.",
+          "why": "The four virtues are ‘not infused into us from without’; people are ‘furnished with them’.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -1007,20 +1007,20 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Whose we are",
+          "facet": "To whom a person belongs",
           "why": "Cicero, citing Plato and the Stoics, says a person’s very being is partly owed to country and friends, and that people are born for one another’s sake.",
-          "limit": "An argument about duty and justice addressed to his son. It concerns what we owe, drawn from a view of human nature, and not how a personality is formed. Reading drawn from the project’s research catalogue."
+          "limit": "An argument about duty and justice addressed to his son. It concerns what is owed to others, drawn from a view of human nature, and not how a personality is formed. Reading drawn from the project’s research catalogue."
         },
         "solitude-or-company": {
           "score": "company",
-          "facet": "Whose we are",
+          "facet": "To whom a person belongs",
           "why": "People are born for the sake of one another.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "self-or-others-first": {
           "score": "others",
-          "facet": "Whose we are",
-          "why": "Country and friends each claim a share of our being.",
+          "facet": "To whom a person belongs",
+          "why": "Country and friends each claim a share of a person’s being.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -1052,20 +1052,20 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "contributory",
-          "facet": "What I am, for myself and for others",
-          "why": "The saying holds two things together: I must stand up for myself, and a self that is only for itself falls short of being something.",
-          "limit": "It is an ethical maxim, open to many readings, and reaches us through later compilation and translation. It does not say that others make the self, only that self-concern alone is not enough."
+          "facet": "Being for oneself and for others",
+          "why": "The saying holds two things together: a person must stand up for themselves, and a self that is only for itself falls short of being something.",
+          "limit": "It is an ethical maxim, open to many readings, and survives through later compilation and translation. It does not say that others make the self, only that self-concern alone is not enough."
         },
         "inward-or-others": {
           "score": "both",
-          "facet": "What I am, for myself and for others",
-          "why": "I must be for myself, and I am not much if I am only for myself.",
+          "facet": "Being for oneself and for others",
+          "why": "A person must be for themselves, and is not much if only for themselves.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "self-or-others-first": {
           "score": "both",
-          "facet": "What I am, for myself and for others",
-          "why": "If I am not for myself, who is? And if I am for myself alone, what am I?",
+          "facet": "Being for oneself and for others",
+          "why": "Being for oneself and not for oneself alone are both required.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -1149,7 +1149,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "both",
           "facet": "Living well",
-          "why": "You must live for your neighbour if you would live for yourself.",
+          "why": "Living for one’s neighbour is the condition of living for oneself.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -1220,7 +1220,7 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "What you are",
+          "facet": "What a person is",
           "why": "Asked what a person is, Epictetus answers: a part of a larger whole, with duties that follow from being a part.",
           "limit": "Compare his handbook, also in this atlas, which warns against needing anyone’s approval. Being part of the world-city is a claim about role and duty, recorded by a student."
         }
@@ -1294,7 +1294,7 @@ window.PILOT_EVIDENCE={
           "score": "not_constitutive",
           "facet": "Living as a philosopher",
           "why": "The passage says that wanting other people’s approval wrecks the life he recommends, and adds that appearing a philosopher to yourself is enough.",
-          "limit": "It is about whose approval you should need, not about whether a person could grow up or live without others. Elsewhere the handbook treats duties to family and city as real."
+          "limit": "It is about whose approval a person should need, not about whether anyone could grow up or live without others. Elsewhere the handbook treats duties to family and city as real."
         },
         "inward-or-others": {
           "score": "inward",
@@ -1848,7 +1848,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "self",
           "facet": "Liberation",
-          "why": "Others can lift a load from your head, but only you can end your own hunger or bondage.",
+          "why": "Others can lift a load from someone’s head, but only that person can end their own hunger or bondage.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -2356,7 +2356,7 @@ window.PILOT_EVIDENCE={
           "score": "constitutive",
           "facet": "Deserving to be called human",
           "why": "Saadi pictures humankind as limbs of one body and says a person unmoved by others’ suffering does not deserve the name of human.",
-          "limit": "This is moral verse addressed to a ruler, about what humanity demands of us. It is not an account of how an individual self comes to be."
+          "limit": "This is moral verse addressed to a ruler, about what humanity demands of each person. It is not an account of how an individual self comes to be."
         },
         "solitude-or-company": {
           "score": "company",
@@ -2438,13 +2438,13 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Human nature and what we owe each other",
+          "facet": "Human nature and what people owe each other",
           "why": "Aquinas takes it as given that being human means living with others, and derives duties such as truthfulness from that fact.",
-          "limit": "The passage uses our social nature as a premise for an argument about truthfulness. It is not an account of how a self is formed, and Aquinas also holds that each person has an individual rational soul."
+          "limit": "The passage uses humanity’s social nature as a premise for an argument about truthfulness. It is not an account of how a self is formed, and Aquinas also holds that each person has an individual rational soul."
         },
         "self-or-others-first": {
           "score": "others",
-          "facet": "Human nature and what we owe each other",
+          "facet": "Human nature and what people owe each other",
           "why": "One person naturally owes another what the preservation of society requires.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
@@ -2768,19 +2768,19 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "What I am before God",
+          "facet": "What a soul is before God",
           "why": "Julian says that taken alone she is nothing; she is something only in ‘oneness of charity’ with all her fellow Christians.",
           "limit": "The ‘oneness’ is the community of the saved, held together by love of God, not society at large. The chapter number should be checked against the book."
         },
         "inward-or-others": {
           "score": "others",
-          "facet": "What I am before God",
+          "facet": "What a soul is before God",
           "why": "Looked at singly she is nothing; she is something only in oneness with others.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "solitude-or-company": {
           "score": "company",
-          "facet": "What I am before God",
+          "facet": "What a soul is before God",
           "why": "Alone she is nothing; her life is in oneness with others.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
@@ -3135,7 +3135,7 @@ window.PILOT_EVIDENCE={
         "solitude-or-company": {
           "score": "both",
           "facet": "Inner liberty",
-          "why": "Have wife, children and goods, but keep a room of the mind that is wholly your own.",
+          "why": "Wife, children and goods are to be had, with a room of the mind kept wholly one’s own.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -3284,13 +3284,13 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "unscored",
-          "facet": "Certainty that I exist",
-          "why": "The passage asks what makes my own existence certain, not whether relationships shape who I become.",
-          "limit": "Being able to establish that I exist without appealing to others does not show that my identity developed independently of them."
+          "facet": "Certainty of one’s own existence",
+          "why": "The passage asks what makes the thinker’s own existence certain, not whether relationships shape who a person becomes.",
+          "limit": "Being able to establish one’s existence without appealing to others does not show that one’s identity developed independently of them."
         },
         "inward-or-others": {
           "score": "inward",
-          "facet": "Certainty that I exist",
+          "facet": "Certainty of one’s own existence",
           "why": "Certainty about oneself is found in one’s own thinking, with no appeal to anyone else.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
@@ -3448,7 +3448,7 @@ window.PILOT_EVIDENCE={
           "score": "unscored",
           "facet": "Personal identity",
           "why": "Locke grounds being the same self in consciousness. The passage neither affirms nor denies a role for relationships.",
-          "limit": "Silence is not denial: saying identity consists in consciousness does not tell us whether that consciousness is formed with or without other people."
+          "limit": "Silence is not denial: saying identity consists in consciousness leaves open whether that consciousness is formed with or without other people."
         }
       },
       "check": {
@@ -3519,19 +3519,19 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "constitutive",
           "facet": "What human nature is for",
-          "why": "Butler argues that human nature points towards others as plainly as it points towards our own good.",
-          "limit": "He says the two go together: we are made both for society and for our own private good, and neither is reduced to the other."
+          "why": "Butler argues that human nature points towards others as plainly as it points towards a person’s own good.",
+          "limit": "He says the two go together: people are made both for society and for their own private good, and neither is reduced to the other."
         },
         "solitude-or-company": {
           "score": "company",
           "facet": "What human nature is for",
-          "why": "We were made for society and to do good to our fellow-creatures.",
+          "why": "People were made for society and to do good to their fellow-creatures.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "self-or-others-first": {
           "score": "both",
           "facet": "What human nature is for",
-          "why": "We were made for society as truly as to care for our own private good.",
+          "why": "People were made for society as truly as to care for their own private good.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -3564,7 +3564,7 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "contributory",
           "facet": "Passions and opinions",
-          "why": "Hume says our feelings and opinions are reflected back and forth between people, so what we feel is partly made by what others feel.",
+          "why": "Hume says feelings and opinions are reflected back and forth between people, so what one person feels is partly made by what others feel.",
           "limit": "This concerns emotions and esteem, not personal identity, which Hume treats separately as a bundle of perceptions without reference to other people."
         },
         "inward-or-others": {
@@ -3726,13 +3726,13 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "contributory",
           "facet": "Seeing what is right",
-          "why": "Dai Zhen holds that we find the right pattern for action by putting ourselves in others’ place, so moral understanding is worked out through other people.",
+          "why": "Dai Zhen holds that the right pattern for action is found by putting oneself in others’ place, so moral understanding is worked out through other people.",
           "limit": "Quoted in translation from a secondary source. It is a method for moral judgment that starts from one’s own feelings; it does not say others make the self. Reading drawn from the project’s research catalogue."
         },
         "self-or-others-first": {
           "score": "both",
           "facet": "Seeing what is right",
-          "why": "Ask whether you could bear what you demand of others.",
+          "why": "The test is whether one could bear what one demands of others.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -4050,7 +4050,7 @@ window.PILOT_EVIDENCE={
         "inward-or-others": {
           "score": "inward",
           "facet": "Acting on one’s own judgment",
-          "why": "What I must do concerns me, ‘not what the people think’.",
+          "why": "What a person must do is their own concern, ‘not what the people think’.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "solitude-or-company": {
@@ -4062,7 +4062,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "self",
           "facet": "Acting on one’s own judgment",
-          "why": "What I must do is my concern, not what people think.",
+          "why": "What a person must do is their own concern, not what people think.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -4127,14 +4127,14 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "not_constitutive",
-          "facet": "What matters to me",
+          "facet": "What matters to the individual",
           "why": "Stirner rejects every cause above the individual, whether God, humanity or society, and declares himself his own only concern.",
           "limit": "This is a claim about what has authority over a person, not about how a person comes to exist. Stirner goes on to allow voluntary association with others for one’s own ends."
         },
         "self-or-others-first": {
           "score": "self",
-          "facet": "What matters to me",
-          "why": "Nothing is more to me than myself.",
+          "facet": "What matters to the individual",
+          "why": "Nothing counts for more, to the speaker, than himself.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -4167,7 +4167,7 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "constitutive",
           "facet": "The human essence",
-          "why": "Marx denies that what makes us human sits inside each individual and locates it in social relations instead.",
+          "why": "Marx denies that what makes people human sits inside each individual and locates it in social relations instead.",
           "limit": "‘Human essence’ here is a claim about humanity in general, made in a set of private notes against Feuerbach. It is not a psychology of how a particular self develops."
         }
       },
@@ -4608,13 +4608,13 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "contributory",
           "facet": "Moral standards in a democracy",
-          "why": "Addams says we set standards of conduct ‘largely for each other’, so a person’s moral condition rises or falls with the community’s.",
-          "limit": "The passage concerns shared responsibility for political corruption. It says others shape our moral life, not that they are what makes a self."
+          "why": "Addams says standards of conduct are set ‘largely for each other’, so a person’s moral condition rises or falls with the community’s.",
+          "limit": "The passage concerns shared responsibility for political corruption. It says others shape a person’s moral life, not that they are what makes a self."
         },
         "self-or-others-first": {
           "score": "others",
           "facet": "Moral standards in a democracy",
-          "why": "We move forward or backward together; none of us can stand aside.",
+          "why": "People move forward or backward together; no one can stand aside.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -4647,7 +4647,7 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "contributory",
           "facet": "Self-consciousness across the colour line",
-          "why": "Du Bois describes a self-awareness shaped by how a hostile society sees you, alongside a self that strives to be its own.",
+          "why": "Du Bois describes a self-awareness shaped by how a hostile society sees a person, alongside a self that strives to be its own.",
           "limit": "This is a condition imposed on Black Americans, not a general theory of the self, and Du Bois presents it as a burden to be overcome rather than the way a self should form."
         },
         "inward-or-others": {
@@ -5243,14 +5243,14 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Knowing what I am",
-          "why": "Sartre says I cannot be anything, or know any truth about myself, except through another person’s recognition.",
+          "facet": "Knowing what one is",
+          "why": "Sartre says a person cannot be anything, or know any truth about themselves, except through another person’s recognition.",
           "limit": "This is a popular lecture that Sartre later had reservations about, and it sits uneasily with his stress on individual freedom elsewhere."
         },
         "inward-or-others": {
           "score": "others",
-          "facet": "Knowing what I am",
-          "why": "Any knowledge I can have of myself comes through another person.",
+          "facet": "Knowing what one is",
+          "why": "Any knowledge a person can have of themselves comes through another person.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -5445,7 +5445,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "others",
           "facet": "Being a person",
-          "why": "I am because we are.",
+          "why": "The individual’s being follows from the community’s.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -5517,7 +5517,7 @@ window.PILOT_EVIDENCE={
         "relationships": {
           "score": "unscored",
           "facet": "What a human being is",
-          "why": "Ajahn Chah teaches that what we label a ‘human being’ is a collection of elements, none of which is a self.",
+          "why": "Ajahn Chah teaches that what is labelled a ‘human being’ is a collection of elements, none of which is a self.",
           "limit": "Unscored: a teaching on not-self, not on relationships. It was given as a talk to a monk’s visiting parents, and survives as an edited English version. Reading drawn from the project’s research catalogue."
         },
         "lasting-self": {
@@ -5555,8 +5555,8 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Who we take ourselves to be",
-          "why": "Sandel says we understand ourselves through attachments we did not choose, so a self stripped of them is not the self we actually are.",
+          "facet": "How people understand themselves",
+          "why": "Sandel says people understand themselves through attachments they did not choose, so a self stripped of them is not the self anyone actually is.",
           "limit": "The quotation comes from a secondary source and is a fragment of a longer sentence. Sandel’s target is a particular theory of justice; critics reply that people can and do revise such attachments."
         }
       },
@@ -5705,14 +5705,14 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Whose our lives are",
+          "facet": "To whom a life belongs",
           "why": "Speaking as a survivor, Wiesel says a life is not only its owner’s: it is claimed by everyone who suffers and needs a witness.",
           "limit": "A moral appeal in a public speech, grounded in the memory of the Holocaust. It is a claim about responsibility, not an account of how a self is formed. Reading drawn from the project’s research catalogue."
         },
         "self-or-others-first": {
           "score": "others",
-          "facet": "Whose our lives are",
-          "why": "Our lives belong to all who need us.",
+          "facet": "To whom a life belongs",
+          "why": "A life belongs to all who need it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -6012,7 +6012,7 @@ window.PILOT_EVIDENCE={
         "self-or-others-first": {
           "score": "both",
           "facet": "Being human",
-          "why": "My humanity is caught up in yours.",
+          "why": "Each person’s humanity is caught up in that of others.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -6079,20 +6079,20 @@ window.PILOT_EVIDENCE={
       "readings": {
         "relationships": {
           "score": "constitutive",
-          "facet": "Who I am",
+          "facet": "Who a person is",
           "why": "Efi explains who he is through what he shares with family, village and nation: ‘I belong to my family and my family belongs to me.’",
           "limit": "One Samoan leader’s public account, given to a policy audience; it is not a statement for every Samoan. He also speaks of a spiritual kinship beyond people. Reading drawn from the project’s research catalogue."
         },
         "inward-or-others": {
           "score": "others",
-          "facet": "Who I am",
+          "facet": "Who a person is",
           "why": "He explains who he is through family, village and nation.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         },
         "self-or-others-first": {
           "score": "others",
-          "facet": "Who I am",
-          "why": "I belong to my family, my village and my nation.",
+          "facet": "Who a person is",
+          "why": "The speaker belongs to family, village and nation.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
         }
       },
@@ -6159,7 +6159,7 @@ window.PILOT_EVIDENCE={
           "score": "constitutive",
           "facet": "Seeing oneself rightly",
           "why": "Tenzin Palmo teaches that the sense of being a solid self set apart from everyone and everything else is a mistake, and the root of suffering.",
-          "limit": "A transcribed Buddhist teaching; its date should be checked. What we are not separate from is the whole of creation, not other people only, and the underlying claim is that there is no self-existent self at all. Reading drawn from the project’s research catalogue."
+          "limit": "A transcribed Buddhist teaching; its date should be checked. What a person is said not to be separate from is the whole of creation, not other people only, and the underlying claim is that there is no self-existent self at all. Reading drawn from the project’s research catalogue."
         },
         "lasting-self": {
           "score": "no_self",

@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionHeader from '../components/SectionHeader.astro';
+// The atlas body is generated from the Globe of Thought repository by scripts/sync-globe.mjs.
+import atlasBody from '../generated/globe-of-thought.html?raw';
+
+// The globe is drawn on a canvas, so its colours are handed to the atlas script, not set in CSS.
+const theme = {
+  ocean: ['#ffffff', '#ffffff', '#fdfdfd', '#f7f7f7'],
+  halo: '#00000000',
+  haloBlur: 0,
+  edge: '#000000',
+  graticule: '#00000012',
+  land: ['#ececec', '#e4e4e4', '#dadada'],
+  coast: '#00000070',
+  rim: ['#000000', '#000000', '#000000', '#000000'],
+  glow: ['12', '08', '00'],
+  tones: { low: '#000000', mid: '#000000', high: '#000000', none: '#000000' },
+};
+---
+
+<Layout
+  title="Globe of Thought - Svapna Project"
+  description="An atlas of what thinkers wrote about the self. Passages placed by where and when they were written, and by where they stand on six questions."
+>
+  <section>
+    <SectionHeader
+      num="Annex"
+      kicker="An atlas of the self"
+      title="Globe of Thought"
+      sub="What is the self? Passages from twenty-four centuries, placed by where and when they were written."
+    />
+    <link rel="stylesheet" href="/globe-of-thought/atlas.css" />
+    <link rel="stylesheet" href="/globe-of-thought/theme.css" />
+    <script is:inline define:vars={{ theme }}>window.ATLAS_THEME = theme;</script>
+    <div class="atlas" set:html={atlasBody} />
+    <script is:inline defer src="/globe-of-thought/d3.min.js"></script>
+    <script is:inline defer src="/globe-of-thought/land.js"></script>
+    <script is:inline defer src="/globe-of-thought/evidence.js"></script>
+    <script is:inline defer src="/globe-of-thought/app.js"></script>
+  </section>
+</Layout>

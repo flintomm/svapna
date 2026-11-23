@@ -23,6 +23,10 @@ const sphere = { type: 'Sphere' };
 const graticule = d3.geoGraticule10();
 const projection = d3.geoOrthographic().clipAngle(90).precision(.65);
 const path = d3.geoPath(projection, ctx);
+// A host page may restyle the globe by setting window.ATLAS_THEME before this script runs.
+const theme = { ocean: ['#2f3d5a', '#1d2a44', '#121e36', '#0a142b'], halo: '#8caaff56', haloBlur: 27, edge: '#92add9', graticule: '#b5c9ff3b',
+  land: ['#9eacc8', '#617596', '#263853'], coast: '#b7cbedad', rim: ['#d1dcf8', '#8199ca', '#4b6598', '#314975'], glow: ['b5', '62', '00'], tones: {},
+  ...(window.ATLAS_THEME || {}) };
 const TILT = .83, MIN_ZOOM = 1, MAX_ZOOM = 8, CLUSTER_PX = 24;
 const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
 
@@ -209,7 +213,7 @@ function refresh() {
   const globe = view === 'globe';
   $('tab-globe').setAttribute('aria-selected', String(globe)); $('tab-spectrum').setAttribute('aria-selected', String(!globe));
   stage.hidden = !globe; $('panel-spectrum').hidden = globe;
-  $('hint').textContent = globe ? 'Drag to turn · Tap a pin' : 'Earliest at left · Tap a dot';
+  $('hint').textContent = globe ? 'Drag turns the globe · A pin opens its passage' : 'Earliest at left · A dot opens its passage';
   $('map-status').textContent = visible + ' of ' + cards.length + ' passages shown';
   $('reader-index').textContent = (active + 1) + ' / ' + cards.length;
   if (!globe) {
@@ -264,7 +268,7 @@ function renderPassage(card) {
   const parts = [mark, heading, info, quote, why, limit, link, sourceMeta, check, where, share, back];
   if (elsewhere.children.length) parts.splice(6, 0, elsewhere);
   // A passage quoted in its original language carries the atlas's own English rendering beneath it.
-  if (card.translation) parts.splice(4, 0, node('p', 'translation', 'In English (our translation): “' + card.translation + '”'));
+  if (card.translation) parts.splice(4, 0, node('p', 'translation', 'In English (the atlas’s own translation): “' + card.translation + '”'));
   if (card.review === 'draft') parts.splice(3, 0, node('p', 'draft', 'Draft reading · not yet reviewed by an editor'));
   $('passage').replaceChildren(...parts);
 }
@@ -299,15 +303,15 @@ function paint() {
   const face = projection.invert([x, y]);
   const isNear = point => d3.geoDistance(point, face) < Math.PI * .486;
   const ocean = ctx.createRadialGradient(x - r * .31, y - r * .4, 0, x, y, r);
-  ocean.addColorStop(0, '#2f3d5a'); ocean.addColorStop(.58, '#1d2a44'); ocean.addColorStop(.87, '#121e36'); ocean.addColorStop(1, '#0a142b');
+  [0, .58, .87, 1].forEach((stop, i) => ocean.addColorStop(stop, theme.ocean[i]));
   ctx.save();
-  ctx.shadowColor = '#8caaff56'; ctx.shadowBlur = 27;
-  drawShape(sphere, ocean, '#92add9', 1.05);
+  ctx.shadowColor = theme.halo; ctx.shadowBlur = theme.haloBlur;
+  drawShape(sphere, ocean, theme.edge, 1.05);
   ctx.restore();
-  drawShape(graticule, null, '#b5c9ff3b', .6);
+  drawShape(graticule, null, theme.graticule, .6);
   const landFill = ctx.createLinearGradient(x - r * .45, y - r, x + r * .45, y + r * .85);
-  landFill.addColorStop(0, '#9eacc8'); landFill.addColorStop(.48, '#617596'); landFill.addColorStop(1, '#263853');
-  drawShape(land, landFill, '#b7cbedad', .72);
+  [0, .48, 1].forEach((stop, i) => landFill.addColorStop(stop, theme.land[i]));
+  drawShape(land, landFill, theme.coast, .72);
 
   // Where each shown passage lands on screen.
   const placed = [];
@@ -321,13 +325,13 @@ function paint() {
   const size = Math.max(17, Math.min(w, h) * .085 * Math.sqrt(zoom));
   for (const { card, px, py } of placed) {
     if (card.score === 'unscored') continue;
-    const color = scores[card.score].color, g = ctx.createRadialGradient(px, py, 0, px, py, size);
-    g.addColorStop(0, color + 'b5'); g.addColorStop(.42, color + '62'); g.addColorStop(1, color + '00');
+    const score = scores[card.score], color = theme.tones[score.tone] || score.color, g = ctx.createRadialGradient(px, py, 0, px, py, size);
+    [0, .42, 1].forEach((stop, i) => g.addColorStop(stop, color + theme.glow[i]));
     ctx.fillStyle = g; ctx.fillRect(px - size, py - size, size * 2, size * 2);
   }
   ctx.restore();
   const rim = ctx.createLinearGradient(x - r, y - r, x + r, y + r);
-  rim.addColorStop(0, '#d1dcf8'); rim.addColorStop(.4, '#8199ca'); rim.addColorStop(.75, '#4b6598'); rim.addColorStop(1, '#314975');
+  [0, .4, .75, 1].forEach((stop, i) => rim.addColorStop(stop, theme.rim[i]));
   drawShape(sphere, null, rim, .9);
 
   // Pins that would sit on top of each other merge into one numbered pin; the selected pin always stands alone.

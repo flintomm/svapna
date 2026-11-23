@@ -26,7 +26,11 @@ A study of dream yoga and lucid dreaming — the practice of becoming aware with
 
 ## Globe of Thought
 
-`public/globe-of-thought/` is a self-contained static page served at `/globe-of-thought/`: an atlas of what thinkers wrote about the self. It is not part of the Astro build and has its own styles and scripts. The files are copied from the `dist/` folder of [flintomm/Globe-of-Thought](https://github.com/flintomm/Globe-of-Thought), where the data, build tool and tests live; edit it there and copy `dist/` across again. The copy here differs in three small ways that must be reapplied after copying: a canonical link and absolute asset paths (`/globe-of-thought/…`) in `index.html`, a link back to Svapna in its footer, and two footer rules at the end of `style.css`.
+`/globe-of-thought` is an atlas of what thinkers wrote about the self, linked from the home page as an annex. Its data, build tool and tests live in [flintomm/Globe-of-Thought](https://github.com/flintomm/Globe-of-Thought); this repository holds a themed copy.
+
+- `scripts/sync-globe.mjs` brings a build across: `node scripts/sync-globe.mjs ../Globe-of-Thought/dist`. It copies the scripts and data to `public/globe-of-thought/`, writes the page body to `src/generated/globe-of-thought.html`, and generates `public/globe-of-thought/atlas.css` by scoping the atlas stylesheet to `.atlas` and turning its dark palette into black on white. None of those files is edited by hand.
+- `public/globe-of-thought/theme.css` is hand-written: Svapna's type, hairlines and square markers, where a position on a scale is shown by how much of a square is filled.
+- `src/pages/globe-of-thought.astro` wraps the body in the site layout and passes the globe's canvas colours to the atlas script.
 
 ---
 
