@@ -1,4 +1,6 @@
 ---
+import Instruments from '../../components/Instruments.astro';
+import TimeRiver from '../../components/TimeRiver.astro';
 import Layout from '../../layouts/Layout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import Filter from '../../components/react/Filter.jsx';
@@ -30,6 +32,8 @@ const filterOptions = [1, 2, 3, 4, 5, 6].map(n => ({
 >
   <div class="fade-in">
     <SectionHeader num="§ 02" kicker="Roots of the Practice" title="History." sub="Three millennia, in six movements." />
+    <Instruments current="history" />
+    <TimeRiver />
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {historyUnits.map(u => {

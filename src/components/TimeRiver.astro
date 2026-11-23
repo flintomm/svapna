@@ -1,0 +1,123 @@
+---
+// The River: the history timeline as lanes of tradition across three millennia. Same grammar as The Night.
+import timelineData from '../data/timeline.json';
+import quotesData from '../data/quotes.json';
+import { historyUnits } from '../lib/content.js';
+
+const lanes = ['India', 'Buddhist India', 'Tibet', 'China', 'Japan', 'Islam', 'Greece & Rome', 'Europe', 'Laboratory', 'Convergence'];
+const family = t => {
+  if (/^Western science/.test(t)) return 'Laboratory';
+  if (/^Convergence/.test(t)) return 'Convergence';
+  if (/^(Tibetan|Bön)/.test(t)) return 'Tibet';
+  if (/^(Sufi|Islamic)/.test(t)) return 'Islam';
+  if (/^(Greek|Roman)/.test(t)) return 'Greece & Rome';
+  if (/^Japanese/.test(t)) return 'Japan';
+  if (/^(Chinese|Daoist)/.test(t)) return 'China';
+  if (/^(Indian Buddhist|Theravāda)/.test(t)) return 'Buddhist India';
+  if (/^(Vedic|Hindu)/.test(t)) return 'India';
+  return 'Europe';
+};
+// Time is uneven: most of the record is recent. The axis is stretched in pieces so every era is legible.
+const stops = [[-1500, 0], [0, 0.2], [1000, 0.42], [1850, 0.6], [1950, 0.72], [2021, 1]];
+const pos = y => {
+  for (let i = 1; i < stops.length; i++) if (y <= stops[i][0]) {
+    const [y0, f0] = stops[i - 1], [y1, f1] = stops[i];
+    return f0 + (f1 - f0) * (y - y0) / (y1 - y0);
+  }
+  return 1;
+};
+const entries = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).map(e => {
+  const unit = historyUnits[e.unit - 1];
+  const q = quotesData.quotes.find(x => x.unit === e.unit && x.tradition.split(' ')[0] === e.tradition.split(' ')[0]) || quotesData.quotes.find(x => x.unit === e.unit);
+  return { date: e.date, title: e.title, tradition: e.tradition, kind: e.kind, summary: e.summary, lane: lanes.indexOf(family(e.tradition)), x: pos(e.sort_key),
+    unit: unit ? { label: `Unit ${unit.num} · ${unit.title}`, href: `/history/${unit.slug}` } : null,
+    quote: q ? { text: q.text, by: q.attribution } : null };
+});
+const ticks = [[-1500, '1500 BCE'], [0, '1 CE'], [1000, '1000'], [1850, '1850'], [1950, '1950'], [2021, 'Now']].map(([y, l]) => ({ x: pos(y), l }));
+---
+
+<div class="fig river" id="river" data-river={JSON.stringify({ entries, lanes })}>
+  <div class="fig-bar">
+    <p class="fig-big"><span id="river-date"></span><small id="river-lane"></small></p>
+    <div class="fig-controls">
+      <button type="button" id="river-prev" aria-label="Earlier entry">←</button>
+      <button type="button" id="river-play" aria-pressed="false">Time passes ▸</button>
+      <button type="button" id="river-next" aria-label="Later entry">→</button>
+    </div>
+  </div>
+  <div class="river-chart">
+    <div class="fig-lanes river-lanes" aria-hidden="true">{lanes.map(l => <span>{l}</span>)}</div>
+    <div class="river-plot" id="river-plot">
+      {lanes.map((_, i) => <i class="river-line" style={`top:${(i + 0.5) / lanes.length * 100}%`}></i>)}
+      {ticks.map(t => <i class="river-tick" style={`left:${t.x * 100}%`}></i>)}
+      <i id="river-cursor"></i>
+    </div>
+    <div class="fig-axis river-axis" aria-hidden="true">{ticks.map(t => <span style={`left:${t.x * 100}%`}>{t.l}</span>)}</div>
+  </div>
+  <article class="fig-plate" id="river-plate" aria-live="polite">
+    <p class="fig-label" id="river-meta"></p>
+    <h2 id="river-title"></h2>
+    <p class="fig-lede" id="river-summary"></p>
+    <blockquote class="fig-quote" id="river-quote"></blockquote>
+    <a class="fig-go" id="river-unit" href="/history"></a>
+  </article>
+</div>
+
+<script is:inline>
+  (function () {
+    var root = document.getElementById('river'); if (!root) return;
+    var data = JSON.parse(root.dataset.river), E = data.entries, L = data.lanes;
+    var $ = function (id) { return document.getElementById(id); };
+    var plot = $('river-plot'), cur = -1, timer = null, marks = [];
+    E.forEach(function (e, i) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'fig-mark'; b.title = e.date + ' · ' + e.title; b.setAttribute('aria-label', e.date + ', ' + e.title);
+      b.style.left = (e.x * 100) + '%'; b.style.top = ((e.lane + 0.5) / L.length * 100) + '%';
+      b.addEventListener('click', function () { stop(); show(i); });
+      plot.appendChild(b); marks.push(b);
+    });
+    function show(i) {
+      i = Math.max(0, Math.min(E.length - 1, i)); if (i === cur) return;
+      if (cur >= 0) marks[cur].classList.remove('on');
+      cur = i; var e = E[i]; marks[i].classList.add('on');
+      $('river-cursor').style.left = (e.x * 100) + '%';
+      $('river-date').textContent = e.date.replace(/^(\d{4})-\d\d-\d\d$/, '$1');
+      $('river-lane').textContent = L[e.lane];
+      $('river-meta').textContent = e.tradition + ' · ' + e.kind + ' · ' + (i + 1) + ' / ' + E.length;
+      $('river-title').textContent = e.title;
+      $('river-summary').textContent = e.summary;
+      var q = $('river-quote'); q.hidden = !e.quote; if (e.quote) q.textContent = '“' + e.quote.text + '” — ' + e.quote.by;
+      var u = $('river-unit'); u.hidden = !e.unit; if (e.unit) { u.href = e.unit.href; u.textContent = e.unit.label + ' →'; }
+      var p = $('river-plate'); p.classList.remove('in'); void p.offsetWidth; p.classList.add('in');
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } $('river-play').setAttribute('aria-pressed', 'false'); $('river-play').textContent = 'Time passes ▸'; }
+    $('river-prev').addEventListener('click', function () { stop(); show(cur - 1); });
+    $('river-next').addEventListener('click', function () { stop(); show(cur + 1); });
+    $('river-play').addEventListener('click', function () {
+      if (timer) return stop();
+      if (cur >= E.length - 1) show(0);
+      $('river-play').setAttribute('aria-pressed', 'true'); $('river-play').textContent = 'Pause ❙❙';
+      timer = setInterval(function () { if (cur >= E.length - 1) return stop(); show(cur + 1); }, 2600);
+    });
+    root.addEventListener('keydown', function (ev) {
+      if (ev.key === 'ArrowRight') { stop(); show(cur + 1); ev.preventDefault(); }
+      if (ev.key === 'ArrowLeft') { stop(); show(cur - 1); ev.preventDefault(); }
+    });
+    show(0);
+  })();
+</script>
+
+<style is:global>
+  .river-chart { display: grid; grid-template-columns: 6.5rem 1fr; margin-top: 1.5rem; }
+  .river-lanes { display: grid; grid-template-rows: repeat(10, 1fr); height: 280px; }
+  .river-lanes span { display: flex; align-items: center; white-space: nowrap; overflow: hidden; }
+  .river-plot { position: relative; height: 280px; border-left: 0.5px solid #000; border-bottom: 0.5px solid #000; }
+  .river-line { position: absolute; left: 0; right: 0; height: 0; border-top: 0.5px solid rgba(0, 0, 0, 0.14); }
+  .river-tick { position: absolute; top: 0; bottom: 0; width: 0; border-left: 0.5px solid rgba(0, 0, 0, 0.14); }
+  #river-cursor { position: absolute; top: 0; bottom: 0; width: 0; border-left: 1px solid #000; transition: left 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+  .river-axis { grid-column: 2; position: relative; height: 1.6rem; }
+  .river-axis span { position: absolute; top: 6px; transform: translateX(-50%); white-space: nowrap; }
+  .river-axis span:first-child { transform: none; }
+  .river-axis span:last-child { transform: translateX(-100%); }
+  @media (max-width: 640px) { .river-chart { grid-template-columns: 4.6rem 1fr; } .river-lanes { font-size: 8px; } .river-axis span:nth-child(2), .river-axis span:nth-child(5) { display: none; } }
+</style>

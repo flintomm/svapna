@@ -1,4 +1,6 @@
 ---
+import Instruments from '../../components/Instruments.astro';
+import LessonPath from '../../components/LessonPath.astro';
 import Layout from '../../layouts/Layout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import { curriculumModules } from '../../lib/content.js';
@@ -20,6 +22,8 @@ const moduleTotals = curriculumModules.map(m => {
       title="Curriculum."
       sub="Six modules, forty-seven short lessons. Self-paced."
     />
+    <Instruments current="curriculum" />
+    <LessonPath />
 
     <a
       href="/curriculum/welcome"

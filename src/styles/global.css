@@ -163,3 +163,29 @@ html:has(#menu-toggle:checked) body {
 #menu-toggle:checked ~ label .hamburger-line.l3 {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+/* Figures: the shared grammar of the site's interactive instruments (a chart above, a plate beneath). */
+.fig { position: relative; padding: 1.5rem 1.25rem 2.5rem; border-bottom: 0.5px solid #000; }
+@media (min-width: 768px) { .fig { padding: 2rem 2rem 3.5rem; } }
+.fig-label, .fig-controls button, .fig-axis, .fig-lanes, .fig-count, .fig-foot li span, .fig-meta {
+  font: 400 10px/1.5 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #737373;
+}
+.fig-bar { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.fig-big { font: 300 clamp(2.6rem, 8vw, 5rem)/0.9 'Cormorant Garamond', Georgia, serif; font-variant-numeric: tabular-nums; margin: 0; }
+.fig-big small { font: 400 10px/1.5 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #737373; margin-left: 1rem; }
+.fig-controls { display: flex; }
+.fig-controls button { color: #000; border: 0.5px solid #000; background: transparent; min-height: 40px; padding: 0 14px; margin-left: -0.5px; cursor: pointer; }
+.fig-controls button:hover, .fig-controls button[aria-pressed='true'] { background: #000; color: #fff; }
+.fig-mark { position: absolute; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; padding: 0; border: 1px solid #000; background: #fff; transform: rotate(45deg); cursor: pointer; }
+.fig-mark::after { content: ''; position: absolute; inset: -8px; }
+.fig-mark:hover, .fig-mark.on { background: #000; z-index: 2; }
+.fig-plate { margin-top: 2.25rem; max-width: 60rem; }
+.fig-plate.in { animation: figIn 0.45s ease both; }
+@keyframes figIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .fig-plate.in { animation: none; } }
+.fig-plate h2 { font: 400 clamp(2.2rem, 5.5vw, 4.5rem)/0.95 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.01em; margin: 0.4rem 0 0; }
+.fig-lede { font-size: 1rem; line-height: 1.75; color: #404040; max-width: 44rem; margin: 1rem 0 0; }
+.fig-quote { font: italic 400 clamp(1.25rem, 2.2vw, 1.7rem)/1.3 'Cormorant Garamond', Georgia, serif; margin: 1.5rem 0 0; padding-left: 1.1rem; border-left: 0.5px solid #000; max-width: 44rem; }
+.fig-go { display: inline-block; margin-top: 1.5rem; font: 400 10px/1 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: #000; border-bottom: 0.5px solid #000; padding-bottom: 4px; }
+.fig-go:hover { font-style: italic; }
+.fig button:focus-visible, .fig a:focus-visible { outline: 1px solid #000; outline-offset: 3px; }

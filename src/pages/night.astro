@@ -1,4 +1,5 @@
 ---
+import Instruments from '../components/Instruments.astro';
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import DanaNote from '../components/DanaNote.astro';
@@ -16,6 +17,7 @@ import NightAtlas from '../components/NightAtlas.astro';
       title="The Night"
       sub="One night of sleep, from lying down to morning. At each depth: what the traditions and the laboratory found there."
     />
+    <Instruments current="night" />
     <NightAtlas />
     <div class="grid grid-cols-1 md:grid-cols-12 hairline-b hairline-t">
       <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">

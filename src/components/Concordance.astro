@@ -1,0 +1,91 @@
+---
+// The Concordance: fourteen themes against the eleven texts of the corpus. A cell is darker the more
+// passages on that theme the text holds, measured against that text's own fullest theme.
+import themedPassages from '../data/themed_passages.json';
+import { themes } from '../lib/content.js';
+
+const totals = {};
+for (const t of themes) for (const e of themedPassages[t.id]?.entries || []) totals[e.source_title] = (totals[e.source_title] || 0) + e.passages.length;
+const sources = Object.keys(totals).sort((a, b) => totals[b] - totals[a]);
+const clean = s => s.replace(/[*_#>`]+/g, '').replace(/\s+/g, ' ').trim();
+let peak = 1;
+const rows = themes.map(t => {
+  const by = {};
+  for (const e of themedPassages[t.id]?.entries || []) {
+    const slot = by[e.source_title] ||= { tradition: e.tradition, passages: [] };
+    slot.passages.push(...e.passages);
+  }
+  return { id: t.id, label: t.label, desc: t.desc, cells: sources.map(s => {
+    const e = by[s]; if (!e || !e.passages.length) return null;
+    peak = Math.max(peak, e.passages.length);
+    return { n: e.passages.length, tradition: e.tradition, bits: e.passages.slice(0, 2).map(p => clean(p.snippet)) };
+  }) };
+});
+const colPeak = sources.map((_, ci) => Math.max(1, ...rows.map(r => r.cells[ci]?.n || 0)));
+const cells = rows.reduce((n, r) => n + r.cells.filter(Boolean).length, 0);
+const passages = Object.values(totals).reduce((a, b) => a + b, 0);
+---
+
+<div class="fig conc" id="conc" data-conc={JSON.stringify({ rows, sources, peak })}>
+  <div class="fig-bar">
+    <p class="fig-big">{passages.toLocaleString('en')}<small>passages · {themes.length} themes · {sources.length} texts</small></p>
+    <p class="fig-label conc-key"><span>Few</span><i></i><span>Many, within each text</span></p>
+  </div>
+  <div class="conc-scroll">
+    <table class="conc-table">
+      <thead><tr><th></th>{sources.map((s, i) => <th scope="col"><span>{s}</span></th>)}</tr></thead>
+      <tbody>
+        {rows.map((r, ri) => (
+          <tr>
+            <th scope="row"><a href={`/library/themes/${r.id}`}>{r.label}</a></th>
+            {r.cells.map((c, ci) => <td>{c ? <button type="button" class="conc-cell" data-r={ri} data-c={ci} style={`--k:${(0.08 + 0.92 * Math.sqrt(c.n / colPeak[ci])).toFixed(3)}`} aria-label={`${r.label} in ${sources[ci]}: ${c.n} passages`}></button> : <i class="conc-none"></i>}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <article class="fig-plate" id="conc-plate" aria-live="polite">
+    <p class="fig-label" id="conc-meta"></p>
+    <h2 id="conc-title"></h2>
+    <p class="fig-lede" id="conc-desc"></p>
+    <div id="conc-bits"></div>
+    <a class="fig-go" id="conc-go" href="/library"></a>
+  </article>
+</div>
+
+<script is:inline>
+  (function () {
+    var root = document.getElementById('conc'); if (!root) return;
+    var D = JSON.parse(root.dataset.conc), $ = function (id) { return document.getElementById(id); }, on = null;
+    function show(btn) {
+      var r = D.rows[+btn.dataset.r], ci = +btn.dataset.c, c = r.cells[ci];
+      if (on) on.classList.remove('on'); on = btn; btn.classList.add('on');
+      $('conc-meta').textContent = D.sources[ci] + ' · ' + c.tradition + ' · ' + c.n + (c.n === 1 ? ' passage' : ' passages');
+      $('conc-title').textContent = r.label;
+      $('conc-desc').textContent = r.desc;
+      var box = $('conc-bits'); box.textContent = '';
+      c.bits.forEach(function (b) { var q = document.createElement('blockquote'); q.className = 'fig-quote conc-bit'; q.textContent = '… ' + b + ' …'; box.appendChild(q); });
+      var go = $('conc-go'); go.href = '/library/themes/' + r.id; go.textContent = 'All passages on this theme →';
+      var p = $('conc-plate'); p.classList.remove('in'); void p.offsetWidth; p.classList.add('in');
+    }
+    var cells = root.querySelectorAll('.conc-cell');
+    Array.prototype.forEach.call(cells, function (b) { b.addEventListener('click', function () { show(b); }); });
+    if (cells.length) show(cells[0]);
+  })();
+</script>
+
+<style is:global>
+  .conc-key { display: flex; align-items: center; gap: 8px; margin: 0; }
+  .conc-key i { width: 110px; height: 8px; border: 0.5px solid #000; background: linear-gradient(90deg, #fff, #000); }
+  .conc-scroll { overflow-x: auto; margin-top: 1.5rem; }
+  .conc-table { border-collapse: collapse; min-width: 620px; width: 100%; max-width: 62rem; }
+  .conc-table thead th { height: 9.5rem; vertical-align: bottom; padding: 0 0 8px; font-weight: 400; }
+  .conc-table thead th span { display: block; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; margin: 0 auto; font: 400 10px/1.2 'JetBrains Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #737373; max-height: 9rem; overflow: hidden; }
+  .conc-table tbody th { text-align: left; font: 400 1.05rem/1.1 'Cormorant Garamond', Georgia, serif; padding: 0 1rem 0 0; white-space: nowrap; border-top: 0.5px solid rgba(0, 0, 0, 0.2); }
+  .conc-table tbody th a:hover { font-style: italic; }
+  .conc-table td { padding: 2px; border-top: 0.5px solid rgba(0, 0, 0, 0.2); }
+  .conc-cell { display: block; width: 100%; height: 26px; min-width: 26px; padding: 0; border: 0; cursor: pointer; background: color-mix(in srgb, #000 calc(var(--k) * 100%), #fff); }
+  .conc-cell:hover, .conc-cell.on { outline: 1px solid #000; outline-offset: 2px; }
+  .conc-none { display: block; height: 26px; }
+  .conc-bit { font-size: 1.15rem; }
+</style>

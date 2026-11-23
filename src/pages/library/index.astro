@@ -1,4 +1,6 @@
 ---
+import Instruments from '../../components/Instruments.astro';
+import Concordance from '../../components/Concordance.astro';
 import Layout from '../../layouts/Layout.astro';
 import SectionHeader from '../../components/SectionHeader.astro';
 import Filter from '../../components/react/Filter.jsx';
@@ -17,6 +19,8 @@ const traditionOptions = traditions.map(t => ({ value: t, label: t }));
       title="Library."
       sub="Long-form articles on the traditions, with the citations behind them."
     />
+    <Instruments current="library" />
+    <Concordance />
 
     <div class="hairline-b">
       <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
