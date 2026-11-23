@@ -1,4 +1,5 @@
 ---
+import DanaNote from '../../../components/DanaNote.astro';
 import Layout from '../../../layouts/Layout.astro';
 import { themes } from '../../../lib/content.js';
 import { breadcrumbSchema, buildCrumbs, SITE_NAME } from '../../../lib/seo.js';
@@ -93,4 +94,5 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
       <div class="p-12">Theme not found.</div>
     )}
   </div>
+  <DanaNote />
 </Layout>

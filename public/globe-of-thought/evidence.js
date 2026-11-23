@@ -234,6 +234,318 @@ window.PILOT_EVIDENCE={
           "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
         }
       ]
+    },
+    {
+      "id": "death",
+      "short": "What happens at death?",
+      "question": "What happens at death?",
+      "scale": [
+        {
+          "id": "ends",
+          "label": "It ends",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says the person ends at death, or that nothing of them goes on."
+        },
+        {
+          "id": "unknown",
+          "label": "Open or unknowable",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says what follows death cannot be known, or deliberately leaves it open."
+        },
+        {
+          "id": "continues",
+          "label": "It continues",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says something of the person goes on: a soul, rebirth, resurrection or union."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "free-will",
+      "short": "Free to choose?",
+      "question": "Is a person free to choose?",
+      "scale": [
+        {
+          "id": "determined",
+          "label": "Determined",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says what a person does is fixed by fate, God, nature or prior causes."
+        },
+        {
+          "id": "limited",
+          "label": "Free within limits",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage gives a person some real choice inside conditions they did not choose."
+        },
+        {
+          "id": "free",
+          "label": "Free",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says a person’s choices are their own and could have been otherwise."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "ultimate-reality",
+      "short": "God or ultimate reality?",
+      "question": "Is there a God or an ultimate reality?",
+      "scale": [
+        {
+          "id": "no-ultimate",
+          "label": "No",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage denies a God or any ultimate reality behind the world."
+        },
+        {
+          "id": "beyond-saying",
+          "label": "Beyond saying",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says the question cannot be answered, or that the ultimate cannot be described or known."
+        },
+        {
+          "id": "ultimate-real",
+          "label": "Yes",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage affirms a God or an ultimate reality."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "suffering",
+      "short": "Does suffering have a purpose?",
+      "question": "Does suffering have a purpose?",
+      "scale": [
+        {
+          "id": "no-purpose",
+          "label": "No purpose",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage treats suffering as something to be ended or endured, with no purpose of its own."
+        },
+        {
+          "id": "can-be-used",
+          "label": "It can be put to use",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says suffering has no built-in purpose but can teach, strengthen or awaken."
+        },
+        {
+          "id": "has-meaning",
+          "label": "It has meaning",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says suffering is meant: deserved, sent, or part of a larger good."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "happiness",
+      "short": "Where does happiness lie?",
+      "question": "Does happiness depend on circumstances or on oneself?",
+      "scale": [
+        {
+          "id": "on-fortune",
+          "label": "On circumstances",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says happiness needs external goods, luck or other people."
+        },
+        {
+          "id": "on-both",
+          "label": "On both",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says happiness needs inner work and some outer goods."
+        },
+        {
+          "id": "on-oneself",
+          "label": "On oneself",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says happiness lies within a person’s own power, whatever happens."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "desire",
+      "short": "What to do with desire?",
+      "question": "What should be done with desire?",
+      "scale": [
+        {
+          "id": "give-up",
+          "label": "Give it up",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says desire is to be renounced or extinguished."
+        },
+        {
+          "id": "train",
+          "label": "Train it",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says desire is to be moderated, educated or redirected."
+        },
+        {
+          "id": "follow",
+          "label": "Follow it",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says desire is to be trusted, affirmed or fulfilled."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "meaning",
+      "short": "Is life’s meaning given?",
+      "question": "Is the meaning of a life given or made?",
+      "scale": [
+        {
+          "id": "no-meaning",
+          "label": "There is none",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says life has no meaning or purpose."
+        },
+        {
+          "id": "meaning-made",
+          "label": "Made",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says meaning is something a person makes or chooses."
+        },
+        {
+          "id": "meaning-given",
+          "label": "Given",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says life has a purpose given by God, nature or the order of things."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
+    },
+    {
+      "id": "truth",
+      "short": "Can the truth be known?",
+      "question": "Can the deepest truth be known?",
+      "scale": [
+        {
+          "id": "not-knowable",
+          "label": "No",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage says the deepest truth is beyond human knowing."
+        },
+        {
+          "id": "partly-knowable",
+          "label": "In part",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says it can be approached but not grasped whole, or known only by some."
+        },
+        {
+          "id": "knowable",
+          "label": "Yes",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says it can be known, by reason, revelation or direct experience."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ]
     }
   ],
   "cards": [
@@ -257,6 +569,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ptahhotep is traditionally a vizier of the Old Kingdom court at Memphis. The pin marks the area approximately and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/0/5/0/30508/30508.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -296,6 +609,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Amenemhet I ruled from a residence near el-Lisht. The pin marks the area approximately and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/0/5/0/30508/30508.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -335,6 +649,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Hesiod says in the poem that his father settled at Ascra near Mount Helicon. The pin marks the area approximately.",
       "placeSource": "https://gutenberg.pglaf.org/3/4/348/348.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -374,6 +689,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The collection is traditionally tied to the royal court at Jerusalem. This is a conventional anchor for a compiled text and still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Proverbs",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -407,6 +723,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The dialogues of Yajnavalkya are set at the court of Videha. Where the text was composed is unknown; the pin is a rough marker and still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/upanishads02ml/upanishads02ml_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -446,6 +763,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The early Upanishads are usually placed in the upper Ganges plain. The linked source confirms the date range only; the region still needs an editor’s confirmation, and the pin marks it very roughly.",
       "placeSource": "https://iep.utm.edu/upanisad/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -485,6 +803,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition has Aesop a slave on Samos who met his death at Delphi. Very little about him is secure; the pin marks Delphi and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/2/21/21-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -518,6 +837,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "A conventional anchor for a text compiled over a long period, partly in exile in Babylon. It still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Genesis",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -557,6 +877,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "A conventional anchor for a priestly text whose place of composition is debated. It still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Leviticus",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -596,6 +917,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Heraclitus is traditionally of Ephesus. The linked page gives the text only; the place still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Fragments_of_Heraclitus",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -635,6 +957,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Confucius is traditionally associated with the state of Lu. The pin marks Qufu approximately; it is not a claim about where this saying was spoken or written down.",
       "placeSource": "https://plato.stanford.edu/entries/confucius/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -680,6 +1003,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The discourse opens by placing itself at Benares, in the Deer Park at Isipatana. That is the text’s own setting, not independent evidence of where it was first spoken.",
       "placeSource": "https://accesstoinsight.org/tipitaka/sn/sn22/sn22.059.nymo.html",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -719,6 +1043,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica treats it as established that Plato presided over the Academy until his death. The pin marks it approximately and is not a claim about where this dialogue was written.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Plato",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -741,7 +1066,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-23"
       }
     },
     {
@@ -764,6 +1089,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Aristotle set up his school at the Lyceum after returning to Athens in 335 BCE. The Politics is usually linked to his teaching there; where and when this book was composed is not known.",
       "placeSource": "https://plato.stanford.edu/entries/aristotle/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -781,6 +1107,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "epicurus-death",
+      "question": "death",
+      "name": "Epicurus",
+      "short": "Epicurus",
+      "work": "Letter to Menoeceus",
+      "excerpt": "Death, therefore, the most awful of evils, is nothing to us",
+      "period": "c. 300 BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Robert Drew Hicks translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Epicurus/menoec.html",
+      "locator": "Paragraph beginning “Accustom thyself to believe that death is nothing to us”.",
+      "place": "The Garden, Athens, Greece",
+      "lat": 37.98,
+      "lng": 23.72,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://classics.mit.edu/Epicurus/menoec.html",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Fear of death",
+          "why": "Epicurus argues that death is the end of sensation, so there is no one left for whom it could be bad.",
+          "limit": "The letter is advice on living without fear, in a nineteenth-century translation. It argues from the claim that the soul disperses at death, which the passage assumes and does not prove."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-23"
       }
     },
     {
@@ -803,6 +1163,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Mencius is said to have been born in the state of Zou. He travelled between courts, and where this exchange took place or was recorded is unknown.",
       "placeSource": "https://plato.stanford.edu/entries/mencius/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -842,6 +1203,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Han-era biographers speculated that Zhuangzi came from Meng; little about his life is secure. The modern location of Meng still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/zhuangzi/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -875,6 +1237,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition sets much of the Buddha’s teaching at Shravasti. This is a conventional anchor for a collected text, not a claim about where the verse was composed, and it still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/buddha/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -920,6 +1283,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Traditional association with studying and teaching at the Jixia Academy; not a claim that this chapter was written there or that the pin locates the academy precisely.",
       "placeSource": "https://scholarworks.iu.edu/iuswrrest/api/core/bitstreams/67af3706-c510-449d-8bd2-6681ec43aa1c/content",
       "review": "reviewed",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -959,6 +1323,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The poem is set on the battlefield of Kurukshetra. Where and when it was composed is unknown, and neither the date range nor the setting is confirmed by the linked source; both still need an editor’s confirmation.",
       "placeSource": "https://iep.utm.edu/bhagavad-gita/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1004,6 +1369,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Cicero wrote the work in the last months of 44 BCE, moving between Rome and his country villas. The pin marks Rome and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/4/7/0/0/47001/47001-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1049,6 +1415,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The linked entry says Hillel, of Babylonian origin, lived and taught at Jerusalem in the time of King Herod. The pin marks the city.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Hillel",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1071,7 +1438,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-23"
       }
     },
     {
@@ -1094,6 +1461,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The letter is usually said to have been written at Ephesus. The linked page gives the text only; the place still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1133,6 +1501,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Seneca wrote the letters in retirement near the end of his life, in and around Rome and Campania. The pin marks Rome and still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_48",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1178,6 +1547,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The gospel is often thought to have been written at Antioch, but this is uncertain and still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Matthew",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1217,6 +1587,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Epictetus ran his school at Nicopolis until his death around 135.",
       "placeSource": "https://plato.stanford.edu/entries/epictetus/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1250,6 +1621,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ben Zoma belonged to the generation of sages gathered at Yavne. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/8/5/4/8547/8547.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1289,6 +1661,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Epictetus ran his school at Nicopolis until his death around 135. The handbook was compiled by Arrian from that teaching, so the wording is at one remove.",
       "placeSource": "https://plato.stanford.edu/entries/epictetus/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1334,6 +1707,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "This translation closes Book II with the note “This in Carnuntum”, a Roman camp on the Danube. Editors disagree about which book the note belongs to, and the pin marks the site only approximately.",
       "placeSource": "https://classics.mit.edu/Antoninus/meditations.2.two.html",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1379,6 +1753,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition links Nāgārjuna with the Andhra region of southern India; his biography is uncertain. The pin is a rough marker and still needs an editor’s confirmation.",
       "placeSource": "https://www.wisdomlib.org/buddhism/book/mulamadhyamaka-karika-english/d/doc79732.html",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -1418,6 +1793,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Augustine was bishop of Hippo when he wrote the Confessions. The linked page gives the text only; the place still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_I/Volume_I/Confessions/Book_I/Chapter_1",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -1457,6 +1833,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tao Qian retired to farm at his home near Mount Lu. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/4/2/2/9/42290/42290-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1502,6 +1879,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Augustine was bishop of Hippo when he wrote the City of God. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/4/5/3/0/45305/45305-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1541,6 +1919,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Boethius is traditionally said to have written the book in prison at Pavia. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1586,6 +1965,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition has Benedict writing the Rule at Monte Cassino. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/5/0/0/4/50040/50040-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1631,6 +2011,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The court of Empress Suiko was in the Asuka region. The linked text does not state this in the passage; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/nihongi2asto/nihongi2asto_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1670,6 +2051,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "This sura is traditionally assigned to the Meccan period. The linked text does not confirm this directly; it still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1715,6 +2097,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "This sura is traditionally assigned to the Medina period. The linked text does not confirm this directly; it still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1748,6 +2131,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition makes Shantideva a monk of the monastery at Nalanda. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -1793,6 +2177,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Li Bai was at the imperial court in Chang’an in the early 740s. The linked text does not confirm where this poem was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/worksoflipochine00libauoft/worksoflipochine00libauoft_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -1832,6 +2217,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition links Shankara with the monastery at Sringeri. This is a conventional anchor for a text of uncertain authorship and still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/vivekachudamanio00sankrich/vivekachudamanio00sankrich_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1877,6 +2263,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says al-Farabi went to Baghdad to study, and he is said to have begun this book there before finishing it in Syria. Where and when the book was written still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/F%C4%81r%C4%81b%C4%AB",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1910,6 +2297,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The poem survives in an Icelandic manuscript; where its verses were first composed, in Norway or Iceland, is unknown. The pin is a rough marker and still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/The_Poetic_Edda_(tr._Bellows)/Hovamol",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -1949,6 +2337,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Khayyam was of Nishapur. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -1988,6 +2377,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Langri Thangpa founded a monastery in the Penpo region of central Tibet. The linked page does not say where the verses were composed; the place and the translator credit still need an editor’s confirmation.",
       "placeSource": "https://www.lotsawahouse.org/tibetan-masters/geshe-langri-thangpa/eight-verses-training-mind",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -2027,6 +2417,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition makes Rāmānuja head of the temple community at Srirangam. The linked page gives the text only; the place still needs an editor’s confirmation.",
       "placeSource": "https://www.ibiblio.org/sripedia/ebooks/sbe48/sbe48286.htm",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -2066,6 +2457,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Al-Ghazali wrote the book late in life after returning to his home region; the retreat it describes was in Damascus and Jerusalem. The place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/TheConfessionsOfAlGhazzali/The-confessions-of-al-ghazzali_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2111,6 +2503,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Halevi lived in the cities of Muslim and Christian Spain, Córdoba among them. Where the book was written still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/KitabAlKhazari/Kitab%20al%20Khazari%20-%20The%20Story%20Behind%20Khazar%20Conversion%20to%20Todays%20Jews_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2156,6 +2549,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ibn Tufayl served at the Almohad court, whose capital was Marrakesh. Where the tale was written is not known and the place still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Ibn_%E1%B9%ACufail",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2195,6 +2589,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Zhu Xi taught for many years at academies in northern Fujian. The linked page does not say where the preface was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://afe.easia.columbia.edu/main_pop/ps/ps_china-zhuxi-learning.htm",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2234,6 +2629,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Maimonides lived and worked at Fustat. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/guideforperplexe00maimiala/guideforperplexe00maimiala_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2273,6 +2669,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Dōgen founded Kōshō-ji in 1233, the year this essay is dated. Whether it was written there, and for whom, still needs an editor’s confirmation.",
       "placeSource": "https://terebess.hu/zen/dogen/index.html",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -2318,6 +2715,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The letter is dated to Shinran’s eighty-third year, when he is generally said to have been living in Kyoto. The linked page does not state the place; it still needs an editor’s confirmation.",
       "placeSource": "https://shinranworks.com/letters/letters-of-the-tradition/you-should-not-disparage/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -2351,6 +2749,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica dates the Gulistan to 1258 and says it was dedicated to the reigning ruler of Saadi’s home region. The pin marks Shiraz, the city named on this edition’s title page.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Sa%E2%80%98d%C4%AB",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2396,6 +2795,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Rumi lived and taught at Konya. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -2435,6 +2835,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica has Aquinas lecturing in Paris again in 1271, the period to which this part of the Summa is usually dated. The pin marks the university quarter approximately.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Aquinas,_Thomas",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2474,6 +2875,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The saga is set in the south of Iceland and is thought to have been written there by an unknown author. The pin is a rough marker and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/7/9/1/17919/17919.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2513,6 +2915,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Dante wrote the Banquet in exile from Florence, moving between northern Italian courts. Verona is one of them; where this treatise was written still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/2/8/6/12867/12867-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2552,6 +2955,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Eckhart preached in Strasbourg and Cologne in his last years. The linked text does not confirm where this sermon was given; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/in.ernet.dli.2015.31707/2015.31707.Meister-Eckhart--Vol-1_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2603,6 +3007,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Kenkō lived in retirement on the outskirts of Kyoto. The linked text’s introduction gives dates but not this place; it still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/miscellanyofjapa00yosh/miscellanyofjapa00yosh_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2648,6 +3053,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The author is unknown; the dialect is usually placed in the English East Midlands. The pin is a rough marker and still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/TheCloudOfUnknowing_201808/The%20Cloud%20of%20Unknowing_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2687,6 +3093,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ibn Khaldun is generally said to have written the Muqaddimah in 1377 while living in retreat at this fortress. The linked page gives the text only; the place and date still need an editor’s confirmation.",
       "placeSource": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter1/Ch_1_01.htm",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2726,6 +3133,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Catherine dictated the Dialogue in and around Siena. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/dialogueofseraph00cath/dialogueofseraph00cath_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2765,6 +3173,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Julian lived as an anchoress in a cell at St Julian’s Church, Norwich, as the edition’s introduction records.",
       "placeSource": "https://gutenberg.pglaf.org/5/2/9/5/52958/52958-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -2810,6 +3219,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tsongkhapa taught in central Tibet and founded Ganden monastery near Lhasa. The linked page does not say where this text was composed; the place still needs an editor’s confirmation.",
       "placeSource": "https://www.lotsawahouse.org/tibetan-masters/tsongkhapa/three-principal-aspects",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2861,6 +3271,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica has Thomas writing the chronicle of the monastery of Mount St Agnes, where he spent his life as a canon. That the Imitation was written there, and its exact date, still need an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thomas_%C3%A0_Kempis",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2906,6 +3317,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Kabir is traditionally a weaver of Varanasi. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -2945,6 +3357,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The surviving copies were printed in London. Where the play was written, and whether it was adapted from a Dutch original, is uncertain and still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/9/4/8/19481/19481-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -2984,6 +3397,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Luther was teaching at Wittenberg in 1520. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/9/1/1911/1911.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3029,6 +3443,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tradition has Nanak settle at Kartarpur in his later years. Where and when the Japji was composed is not known; the place still needs an editor’s confirmation.",
       "placeSource": "https://sikhnet.com/files/Banis/Japji%20-%20Eng-Translation%20%5BDr.%20Sant%20Singh%20Khalsa%5D.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3074,6 +3489,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Wang taught in his home region around Shaoxing in his last years. The linked text does not confirm where this conversation took place; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/thephilosophyofw00henkuoft/thephilosophyofw00henkuoft_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -3119,6 +3535,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Montaigne retired to his family castle in 1571 and wrote the Essays there. The pin marks the estate approximately.",
       "placeSource": "https://plato.stanford.edu/entries/montaigne/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3164,6 +3581,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Garcilaso was born in Cusco and wrote the Commentaries late in life in Andalusia. The pin follows the atlas rule of marking where a text was written, not the society it describes; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/royalcommentarie00vega_1/royalcommentarie00vega_1_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3203,6 +3621,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Donne, by then Dean of St Paul’s in London, wrote the Devotions while recovering from a dangerous illness in late 1623. The pin marks St Paul’s approximately.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Donne,_John",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3242,6 +3661,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Bacon lived in and near London in his last years. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/5/7/575/575.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3281,6 +3701,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Mostly living around Santpoort while composing the work; the exact location of writing this sentence is unknown. First published in Paris.",
       "placeSource": "https://assets.cambridge.org/97805212/88088/excerpt/9780521288088_excerpt.pdf",
       "review": "reviewed",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -3320,6 +3741,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Hobbes wrote Leviathan while living in exile in Paris. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3359,6 +3781,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Pascal lived in Paris in his last years. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3404,6 +3827,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The Stanford Encyclopedia says Spinoza was still at work in The Hague when he died there in 1677, having begun the Ethics years earlier at Voorburg just outside it. The pin marks the city.",
       "placeSource": "https://plato.stanford.edu/entries/spinoza/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3443,6 +3867,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Locke took up residence at the manor house of Otes in Essex, the Masham family seat, in spring 1691, which covers the 1694 second edition. That this chapter was first added in that edition should still be checked against the book’s publication history.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Locke,_John",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -3476,6 +3901,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Leibniz stayed in Vienna until 1714 and wrote the Monadology that year for Prince Eugene of Savoy. The pin marks the city.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Leibnitz,_Gottfried_Wilhelm",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3515,6 +3941,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The sermons were preached at the Rolls Chapel in London, as their title records.",
       "placeSource": "https://gutenberg.pglaf.org/3/1/5/3150/3150.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3560,6 +3987,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Hume settled at La Flèche and that his ideas were worked into the Treatise during his three years in France. The pin marks the town.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Hume,_David",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3599,6 +4027,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The Stanford Encyclopedia says Rousseau moved to Paris on a more permanent basis from 1744 and published the Discourse in 1755. The pin marks the city; exactly where he drafted it is not recorded there.",
       "placeSource": "https://plato.stanford.edu/entries/rousseau/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3638,6 +4067,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Smith held the chair of moral philosophy at Glasgow from 1752 for nearly twelve years, which covers the book’s 1759 publication. The pin marks the city, not a building.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Smith,_Adam",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3683,6 +4113,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ferguson was professor at Edinburgh. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/8/6/4/8646/8646-8.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3722,6 +4153,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Dai Zhen spent his last years in Beijing working on an imperial compilation. The linked source does not confirm where this work was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/dai-zhen/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3761,6 +4193,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Kant lived and taught at Königsberg all his life. The linked page gives the text only; the place still needs an editor’s confirmation.",
       "placeSource": "https://en.wikisource.org/wiki/What_is_Enlightenment%3F",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3806,6 +4239,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Im Yunjidang is associated with Wonju in the late Joseon period. The linked article does not confirm this in the passage; the place and date still need an editor’s confirmation.",
       "placeSource": "https://jcpc.skku.edu/xml/44394/44394.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3845,6 +4279,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Burke’s home was at Beaconsfield. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/5/6/7/15679/15679-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -3884,6 +4319,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Wollstonecraft was living and writing in London when the book appeared. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -3923,6 +4359,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Paine was in London when Part II was published. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/7/4/3742/3742.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -3962,6 +4399,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Hồ Xuân Hương is associated with Thăng Long, present-day Hanoi; little about her life is certain. The place and date still need an editor’s confirmation.",
       "placeSource": "https://www.nomfoundation.org/nom-project/Ho-Xuan-Huong/Ho-Xuan-Huong-of-poems/8-The%20Floating%20Cake?uiLang=en",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4007,6 +4445,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Hegel moved to Jena in 1801 and was completing the manuscript there when Napoleon’s troops occupied the town. The pin marks the town, not a building.",
       "placeSource": "https://plato.stanford.edu/entries/hegel/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4040,6 +4479,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Emerson lived and wrote in Concord. The linked source confirms his connection with the town, not where this essay was drafted.",
       "placeSource": "https://plato.stanford.edu/entries/emerson/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4091,6 +4531,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Feuerbach lived for decades as an independent scholar in the village of Bruckberg. The pin marks the village approximately.",
       "placeSource": "https://plato.stanford.edu/entries/ludwig-feuerbach/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4124,6 +4565,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The Stanford Encyclopedia says Stirner returned to Berlin in 1832 and trained and worked there as a teacher in the years before the book. The pin marks the city.",
       "placeSource": "https://plato.stanford.edu/entries/max-stirner/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4163,6 +4605,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Marx moved to Brussels after being ordered out of France, which fits the spring 1845 date. The pin marks the city, not a building.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Marx,_Heinrich_Karl",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4196,6 +4639,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Fuller moved to New York in 1844 to write for the Tribune; the book appeared the following year. The pin marks the city.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Fuller,_Margaret",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4235,6 +4679,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The book describes Thoreau’s two years living beside Walden Pond. It was finished and published some years later, so the pin marks the setting, not necessarily where this sentence was written.",
       "placeSource": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4280,6 +4725,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Mill lived in London (Blackheath). The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/4/9/0/34901/34901-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4319,6 +4765,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Nietzsche is generally said to have written the first part at Rapallo in early 1883. The linked text does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4364,6 +4811,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "James taught psychology and philosophy at Harvard in the years before the book appeared. The pin marks the campus, not where this sentence was written.",
       "placeSource": "https://plato.stanford.edu/entries/james/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4403,6 +4851,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The Stanford Encyclopedia says Cooper spent many years teaching at M Street High School in Washington, D.C. The pin marks the city; the 1886 date of the original address still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/anna-julia-cooper/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4442,6 +4891,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Abai lived and wrote in the steppe near Semey (Semipalatinsk). The linked text does not confirm this in the passage; the place still needs an editor’s confirmation.",
       "placeSource": "https://old.abai.institute/assets/pdf/1f1246e8b0a7a6a6f8f5a47144996d77.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4481,6 +4931,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The letter is headed from Japara (Jepara), where Kartini lived in her father’s household.",
       "placeSource": "https://en.wikisource.org/wiki/Letters_of_a_Javanese_princess/Chapter_1",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4520,6 +4971,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The Internet Encyclopedia of Philosophy places Rodó in Uruguay; that he lived and published in Montevideo still needs an editor’s confirmation. The pin sits slightly inland of the city to stay on the simplified coastline.",
       "placeSource": "https://iep.utm.edu/latin-am/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4565,6 +5017,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The memoir describes her childhood on the Yankton Sioux reservation. She wrote it years later in the eastern United States, so the pin marks the setting, not where it was written.",
       "placeSource": "https://gutenberg.pglaf.org/1/0/3/7/10376/10376-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4604,6 +5057,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The 1911 Encyclopædia Britannica says Addams co-founded the Hull House settlement in Chicago in 1889 and became its head worker. The pin marks the settlement approximately.",
       "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Addams,_Jane",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4643,6 +5097,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Du Bois was professor of history and economics at Atlanta University when the book appeared. The pin marks the city, not a building.",
       "placeSource": "https://plato.stanford.edu/entries/dubois/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4682,6 +5137,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Cooley taught at the University of Michigan. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/socialorganizati0000char/socialorganizati0000char_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4721,6 +5177,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Eastman, a Santee Dakota born in what is now Minnesota, was living in Massachusetts when he wrote the book. The pin follows the atlas rule of marking where a text was written, not the people it describes; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4760,6 +5217,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Unamuno was rector of the University of Salamanca. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4805,6 +5263,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The author’s preface says these papers were drawn from discourses given to his students at his school at Bolpur in Bengal; most were then read at Harvard University.",
       "placeSource": "https://gutenberg.pglaf.org/6/8/4/6842/6842.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4838,6 +5297,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Ortega taught at the University of Madrid when the book appeared. The linked source does not confirm where it was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/gasset/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -4871,6 +5331,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Iqbal lived and practised law in Lahore. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/cu31924026904841/cu31924026904841_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -4916,6 +5377,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Follett lived and worked in Boston. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/in.ernet.dli.2015.213417/2015.213417.New-State_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -4961,6 +5423,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Wittgenstein was Viennese and finished the book while on leave from the Austrian army in 1918. Where it was completed still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/tractatuslogicop1971witt/tractatuslogicop1971witt_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -4994,6 +5457,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Jung lived and practised at Küsnacht on Lake Zürich. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/psychological_types/psychological_types_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5039,6 +5503,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Freud lived and worked in Vienna in 1923. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://archive.org/stream/freud-1927-id/Freud_1927_Id_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5084,6 +5549,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Map points to campus, not an exact classroom or date for this sentence. The book was assembled and released posthumously.",
       "placeSource": "https://www.lib.uchicago.edu/e/scrc/findingaids/view.php?eadid=ICU.SPCL.MEAD",
       "review": "reviewed",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5129,6 +5595,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The book’s preface says it is based on lectures given at the People’s Institute in Vienna.",
       "placeSource": "https://archive.org/stream/dli.ernet.247260/247260-Understanding%20Human%20Nature_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5168,6 +5635,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Watsuji was teaching in Tokyo in the mid-1930s. The linked source does not confirm where this work was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/watsuji-tetsuro/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -5201,6 +5669,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The research catalogue records that the address was prepared for a 1936 conference in Lahore and published after its cancellation. Ambedkar was based in Bombay; the place still needs an editor’s confirmation. The pin sits slightly inland to stay on the simplified coastline.",
       "placeSource": "https://archive.org/stream/PARI.dr-babasaheb-ambedkar-writings-and-speeches-vol-1/dr-babasaheb-ambedkar-writings-and-speeches-vol-1_djvu.txt",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -5240,6 +5709,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Delivered as a public lecture in Paris at the end of 1945. The pin marks the city, not the hall.",
       "placeSource": "https://plato.stanford.edu/entries/sartre/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5279,6 +5749,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Beauvoir lived and worked in Paris. The linked source confirms the 1949 date and her Paris life, not where the book was written; the pin is offset slightly so it does not sit on top of other Paris pins.",
       "placeSource": "https://plato.stanford.edu/entries/beauvoir/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5318,6 +5789,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Rand lived in New York when the novel appeared. The linked source does not confirm where it was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/ayn-rand/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -5357,6 +5829,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Arendt lived in New York in the 1950s. The linked source does not confirm where the book was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/arendt/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5396,6 +5869,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The linked page says the paper was read at the Africa Seminar held in Cairo. Nkrumah, formerly president of Ghana, was living in exile at the time, so where he wrote it is a separate question.",
       "placeSource": "https://www.marxists.org/subject/africa/nkrumah/1967/african-socialism-revisited.htm",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -5435,6 +5909,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Mbiti, who was Kenyan, is associated with Makerere University in the years the book appeared. The linked source does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://iep.utm.edu/hunhu-ubuntu-southern-african-thought/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5474,6 +5949,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Nozick taught at Harvard. The linked source does not confirm where the book was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/nozick-political/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "not_constitutive",
@@ -5513,6 +5989,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The research catalogue records that the 1977 address is attributed to Ajahn Chah by his monastery, Wat Nong Pah Pong.",
       "placeSource": "https://www.ajahnchah.org/book/Gift_Dhamma1.php",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -5552,6 +6029,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Sandel teaches at Harvard. The linked source does not confirm where the book was written; the place and date still need an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/communitarianism/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5585,6 +6063,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Menkiti, a Nigerian philosopher, taught at Wellesley College. The pin follows the atlas rule of marking where a text was written or taught, not the societies it describes. The linked source confirms only that he was from Nigeria; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/african-ethics/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5624,6 +6103,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Taylor is associated with McGill University in Montreal. The linked source does not confirm where the essay was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/communitarianism/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5657,6 +6137,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Baier taught at the University of Pittsburgh. The linked source does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/feminism-autonomy/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5702,6 +6183,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The speech was delivered in Oslo on receiving the Nobel Peace Prize in December 1986.",
       "placeSource": "https://eliewieselfoundation.org/about-elie-wiesel/nobel-prize-speech/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5741,6 +6223,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Nhất Hạnh taught from the Plum Village community in France during his exile from Vietnam. The linked article does not confirm where this teaching was first given; the place and date still need an editor’s confirmation.",
       "placeSource": "https://scholarworks.iu.edu/iupjournals/index.php/jwp/article/download/4914/349/21680",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5780,6 +6263,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Nedelsky taught at the University of Toronto. The linked source does not confirm this; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/feminism-autonomy/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5819,6 +6303,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Gyekye taught at the University of Ghana. The linked source does not confirm this directly; the place still needs an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/akan-person/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -5858,6 +6343,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Wiredu, a Ghanaian philosopher, was teaching at the University of South Florida when the volume appeared. The pin follows the atlas rule of marking where a text was written, not the society it describes; the place still needs an editor’s confirmation.",
       "placeSource": "https://www.crvp.org/publications/Series-II/1-Contents.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5891,6 +6377,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The research catalogue records that Hauʻofa, born in Papua New Guinea to Tongan parents, worked at the University of the South Pacific in Suva.",
       "placeSource": "https://www.hawaii.edu/cpis/wp-content/uploads/Epeli-Hauofa-Our-Sea-of-Islands.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -5924,6 +6411,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Senghor was Senegal’s first president and lived much of his later life in France. Where this text was written is not known; the place and date still need an editor’s confirmation.",
       "placeSource": "https://plato.stanford.edu/entries/negritude/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -5963,6 +6451,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The research catalogue records Graham’s Kombumerri affiliation and her connection with the University of Queensland. Where the essay was written still needs an editor’s confirmation.",
       "placeSource": "https://australianhumanitiesreview.org/2008/11/01/some-thoughts-about-the-philosophical-underpinnings-of-aboriginal-worldviews/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -6002,6 +6491,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The lecture was given in Sydney on receiving the 1999 Sydney Peace Prize. Tutu’s life and work were in South Africa; the pin follows the atlas rule of marking where a text was delivered.",
       "placeSource": "https://sydneypeacefoundation.org.au/wp-content/uploads/2011/11/1999-SPP_-Desmond-Tutu2.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -6042,6 +6532,7 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0052785.pdf",
       "review": "draft",
       "translation": "We are a part of nature, our elders say, and it is a belonging in the sense of the greatest tenderness",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "unscored",
@@ -6076,6 +6567,7 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/journals-and-magazines/social-policy-journal/spj20/20-pages49-63.pdf",
       "review": "draft",
       "smallIsland": true,
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -6121,6 +6613,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The article gives Thaman’s affiliation as the University of the South Pacific.",
       "placeSource": "https://repository.usp.ac.fj/id/eprint/8556/1/thaman.Towards_Cultural_Democracy_in_Teaching_and_Learning.pdf",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -6154,6 +6647,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Tenzin Palmo founded and lives at Dongyu Gatsal Ling Nunnery. The linked page does not say where this talk was given; the place and date still need an editor’s confirmation.",
       "placeSource": "https://tenzinpalmo.com/archive/transcripts/eight-verses/ultimate-bodhichitta/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -6193,6 +6687,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "The thesis was submitted at Auckland University of Technology, where Refiti teaches.",
       "placeSource": "https://openrepository.aut.ac.nz/server/api/core/bitstreams/33cf1a81-c3e0-4e5b-af87-7e02b4c854bc/content",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "constitutive",
@@ -6238,6 +6733,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Whyte, a member of the Citizen Potawatomi Nation, taught at Michigan State University in these years. The linked page does not confirm where the essay was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://humansandnature.org/earth-ethic-kyle-powys-whyte/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",
@@ -6271,6 +6767,7 @@ window.PILOT_EVIDENCE={
       "placeNote": "Jackson, of Ngāti Kahungunu, Rongomaiwahine and Ngāti Porou, worked from Wellington. The linked page does not say where the essay was written; the place still needs an editor’s confirmation.",
       "placeSource": "https://e-tangata.co.nz/comment-and-analysis/moana-jackson-decolonisation-and-the-stories-in-the-land/",
       "review": "draft",
+      "question": "relationships",
       "readings": {
         "relationships": {
           "score": "contributory",

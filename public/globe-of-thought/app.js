@@ -7,7 +7,8 @@ const $ = id => document.getElementById(id);
 // scale, and only passages that have been read for that question appear under it.
 const atlas = window.PILOT_EVIDENCE;
 const asked = new URLSearchParams(window.location?.search || '').get('q');
-const question = atlas.questions.find(q => q.id === asked) || atlas.questions[0];
+const placedOn = q => atlas.cards.some(card => card.readings[q.id]);
+const question = atlas.questions.find(q => q.id === asked && placedOn(q)) || atlas.questions[0];
 const scale = question.scale;
 const cards = atlas.cards.filter(card => card.readings[question.id]).map(card => ({ ...card, ...card.readings[question.id] }));
 const scores = Object.fromEntries(scale.map(s => [s.id, s]));
@@ -106,7 +107,10 @@ $('stats').textContent = cards.length + (cards.length < atlas.cards.length ? ' o
 $('question').textContent = question.question;
 // Switching question reloads the page on the same passage where that passage is placed on the new question.
 const questionUrl = (q, passageId) => '?q=' + q.id + (passageId ? '#p=' + passageId : '');
-for (const q of atlas.questions) {
+// Questions are offered in their groups, each group under its own small heading.
+let shownGroup = '';
+for (const q of atlas.questions.filter(placedOn)) {
+  if (q.group && q.group !== shownGroup) { shownGroup = q.group; $('questions').append(node('span', 'qgroup', q.group)); }
   const tab = button('qtab', q.short);
   tab.setAttribute('aria-pressed', String(q === question));
   tab.title = q.question;
@@ -294,6 +298,52 @@ function drawShape(geo, fill, stroke, width = 1) {
   if (fill) { ctx.fillStyle = fill; ctx.fill(); }
   if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = width; ctx.stroke(); }
 }
+// The scale as a colour ramp: position 0 (first step) to 1 (last scored step).
+const scored = scale.filter(step => step.tone !== 'none');
+const heatStops = (theme.heat || scored.map(step => theme.tones[step.tone] || step.color)).map(hex => [1, 3, 5].map(k => parseInt(hex.slice(k, k + 2), 16)));
+const heatValue = Object.fromEntries(scored.map((step, i) => [step.id, scored.length > 1 ? i / (scored.length - 1) : .5]));
+function ramp(v) {
+  const span = v * (heatStops.length - 1), i = Math.min(heatStops.length - 2, Math.floor(span)), f = span - i;
+  return heatStops[i].map((c, k) => c + (heatStops[i + 1][k] - c) * f);
+}
+const HEAT_CELL = 4, heatCanvas = document.createElement('canvas');
+function paintHeat(placed, size) {
+  const hctx = heatCanvas.getContext && heatCanvas.getContext('2d');
+  if (!hctx || !hctx.createImageData) return;
+  const cols = Math.ceil(w / HEAT_CELL), rows = Math.ceil(h / HEAT_CELL);
+  if (cols < 2 || rows < 2) return;
+  const weight = new Float32Array(cols * rows), value = new Float32Array(cols * rows);
+  const sigma = size / HEAT_CELL / 2.2, reach = Math.ceil(sigma * 2.6), k = 1 / (2 * sigma * sigma);
+  for (const { card, px, py } of placed) {
+    const v = heatValue[card.score];
+    if (v === undefined) continue;
+    const cx = px / HEAT_CELL, cy = py / HEAT_CELL;
+    for (let gy = Math.max(0, Math.floor(cy - reach)); gy <= Math.min(rows - 1, Math.ceil(cy + reach)); gy++) {
+      for (let gx = Math.max(0, Math.floor(cx - reach)); gx <= Math.min(cols - 1, Math.ceil(cx + reach)); gx++) {
+        const d = (gx - cx) * (gx - cx) + (gy - cy) * (gy - cy), wt = Math.exp(-d * k);
+        if (wt < .02) continue;
+        weight[gy * cols + gx] += wt; value[gy * cols + gx] += wt * v;
+      }
+    }
+  }
+  heatCanvas.width = cols; heatCanvas.height = rows;
+  const image = hctx.createImageData(cols, rows), strength = theme.heatAlpha ?? .78;
+  for (let i = 0; i < weight.length; i++) {
+    if (weight[i] < .02) continue;
+    const [r, g, b] = ramp(value[i] / weight[i]);
+    image.data[i * 4] = r; image.data[i * 4 + 1] = g; image.data[i * 4 + 2] = b;
+    image.data[i * 4 + 3] = 255 * strength * Math.min(1, weight[i]);
+  }
+  hctx.putImageData(image, 0, 0);
+  ctx.save(); ctx.beginPath(); path(land); ctx.clip();
+  ctx.imageSmoothingEnabled = true; ctx.drawImage(heatCanvas, 0, 0, w, h);
+  ctx.restore();
+}
+{ const key = $('heatkey');
+  if (key && scored.length > 1) {
+    key.children[0].textContent = scored[0].label; key.children[2].textContent = scored[scored.length - 1].label;
+    key.children[1].style.background = 'linear-gradient(90deg, ' + heatStops.map(c => 'rgb(' + c.join(',') + ')').join(', ') + ')';
+  } }
 function paint() {
   if (view !== 'globe') return;
   const r = Math.min(w * .467, h * .474) * zoom, x = w * .5, y = h * .499;
@@ -320,16 +370,10 @@ function paint() {
     el.hidden = !shown(i) || !isNear(point) || px < 0 || py < 0 || px > w || py > h;
     if (!el.hidden) placed.push({ el, i, card, px, py });
   }
-  // Capped kernels are clipped against the land polygon. They show local evidence, not populations.
-  ctx.save(); ctx.beginPath(); path(land); ctx.clip();
-  const size = Math.max(17, Math.min(w, h) * .085 * Math.sqrt(zoom));
-  for (const { card, px, py } of placed) {
-    if (card.score === 'unscored') continue;
-    const score = scores[card.score], color = theme.tones[score.tone] || score.color, g = ctx.createRadialGradient(px, py, 0, px, py, size);
-    [0, .42, 1].forEach((stop, i) => g.addColorStop(stop, color + theme.glow[i]));
-    ctx.fillStyle = g; ctx.fillRect(px - size, py - size, size * 2, size * 2);
-  }
-  ctx.restore();
+  // Heat layer: around the passages, colour runs along the scale's gradient by the weighted mean of nearby positions,
+  // and fades with distance. It is clipped to land and shows local evidence, not populations.
+  const size = Math.max(22, Math.min(w, h) * .1 * Math.sqrt(zoom));
+  paintHeat(placed, size);
   const rim = ctx.createLinearGradient(x - r, y - r, x + r, y + r);
   [0, .4, .75, 1].forEach((stop, i) => rim.addColorStop(stop, theme.rim[i]));
   drawShape(sphere, null, rim, .9);

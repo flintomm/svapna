@@ -1,4 +1,5 @@
 ---
+import DanaNote from '../../../components/DanaNote.astro';
 import Layout from '../../../layouts/Layout.astro';
 import MarkdownBody from '../../../components/MarkdownBody.astro';
 import InlineMarkdown from '../../../components/InlineMarkdown.astro';
@@ -139,4 +140,5 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
       </div>
     </div>
   </div>
+  <DanaNote />
 </Layout>

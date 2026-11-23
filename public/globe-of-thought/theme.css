@@ -1,6 +1,6 @@
 /* Svapna's look for the Globe of Thought atlas. Loaded after atlas.css (generated), which carries layout.
-   Black on white, hairlines, Cormorant for display, JetBrains Mono for labels, no colour and no curves:
-   a position on a scale is shown by how much of a square is filled. */
+   Black on white, hairlines, Cormorant for display, JetBrains Mono for labels, no curves. Colour appears only
+   for a position on a scale: cool to warm, on the markers and in the heat layer of the globe. */
 .atlas {
   color-scheme: light;
   --bg: #fff; --ink: #000; --muted: #404040; --quiet: #737373; --line: #000; --accent: #000;
@@ -57,13 +57,11 @@
 }
 .atlas .pin::before, .atlas .dot::before, .atlas .chip::before, .atlas .position::before, .atlas .tone::before, .atlas .menu-item::before,
 .atlas .ticks span, .atlas .cluster, .atlas .pin, .atlas .mapkeys button, .atlas .step button, .atlas .readnav button { border-radius: 0; }
-.atlas .mid::before { background: linear-gradient(135deg, #000 50%, #fff 50%); }
-.atlas .high::before { background: #000; }
+.atlas .low::before { background: #2f5aa8; }
+.atlas .mid::before { background: #e2b53a; }
+.atlas .high::before { background: #c2371f; }
 .atlas .none::before { background: #fff; border-style: dotted; }
 .atlas .chip[aria-pressed=true]::before { border-color: #fff; }
-.atlas .chip.high[aria-pressed=true]::before { background: #fff; }
-.atlas .chip.mid[aria-pressed=true]::before { background: linear-gradient(135deg, #fff 50%, #000 50%); }
-.atlas .chip.low[aria-pressed=true]::before, .atlas .chip.none[aria-pressed=true]::before { background: #000; }
 .atlas .pin::after, .atlas .dot::after { background: #fff; color: #000; border: .5px solid #000; font: 400 10px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 .atlas .cluster { background: #fff; color: #000; border: .5px solid #000; box-shadow: none; font: 400 10px/1 var(--mono); }
 .atlas .cluster:hover { background: #000; color: #fff; }
@@ -107,3 +105,7 @@
 .atlas .row .tone { font: 400 10px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #000; }
 
 .atlas button:focus-visible, .atlas input:focus-visible, .atlas summary:focus-visible, .atlas a:focus-visible, .atlas .stage canvas:focus-visible { outline: 1px solid #000; outline-offset: 3px; }
+
+/* Key to the heat layer. */
+.atlas .heatkey { font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; }
+.atlas .heatkey i { height: 6px; border: .5px solid #000; }

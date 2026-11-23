@@ -55,6 +55,10 @@
 
 .atlas .questions { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; }
 
+.atlas .qgroup { flex-basis: 100%; margin: 8px 0 0; font: 600 .74rem/1.4 var(--mono); letter-spacing: .11em; text-transform: uppercase; color: var(--quiet); }
+
+.atlas .qgroup:first-child { margin-top: 0; }
+
 .atlas .qtab { min-height: 38px; padding: 0 14px; border: 1px solid var(--line); border-radius: 999px; background: none; color: var(--muted); font-size: .875rem; }
 
 .atlas .qtab:hover { border-color: var(--quiet); color: #090909; }
@@ -392,4 +396,8 @@
 @media (prefers-reduced-motion: reduce) {
 .atlas * { scroll-behavior: auto !important; }
  }
+
+.atlas .heatkey { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; font-size: .74rem; color: var(--quiet); }
+
+.atlas .heatkey i { flex: 1 1 auto; max-width: 260px; height: 8px; border-radius: 4px; }
 

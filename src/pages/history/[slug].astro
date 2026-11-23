@@ -1,4 +1,5 @@
 ---
+import DanaNote from '../../components/DanaNote.astro';
 import Layout from '../../layouts/Layout.astro';
 import { historyUnits, curriculumModules, articles } from '../../lib/content.js';
 import { lessonsByModule } from '../../lib/lessons.js';
@@ -180,4 +181,5 @@ const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
       </div>
     </div>
   </div>
+  <DanaNote />
 </Layout>

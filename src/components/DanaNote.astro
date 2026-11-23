@@ -1,0 +1,32 @@
+---
+// A quiet closing strip for long reads: the work is free, and a coffee keeps it open.
+// The link goes to the project's Buy Me a Coffee page; /support explains dāna.
+interface Props {
+  line?: string;
+}
+const { line = 'Given freely, in the spirit of dāna. A coffee keeps the work open for the next reader.' } = Astro.props;
+---
+
+<aside class="grid grid-cols-1 md:grid-cols-12 hairline-b hairline-t" aria-label="Support the project" data-dana-note>
+  <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
+    <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Dāna</span>
+  </div>
+  <div class="md:col-span-10 p-6 sm:p-8 md:px-12 md:py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+    <p class="display text-xl md:text-2xl italic leading-snug text-neutral-800 max-w-xl">{line}</p>
+    <div class="flex items-center gap-5 shrink-0">
+      <a
+        href="https://www.buymeacoffee.com/svapna"
+        target="_blank"
+        rel="noopener"
+        data-umami-event="coffee_click"
+        class="dana-cup mono text-[10px] uppercase tracking-widest border border-black px-4 py-3 inline-flex items-center gap-2.5 hover:bg-black hover:text-white transition-colors"
+      >
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" /><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17" /><path d="M8 3c-1 1.2 1 2 0 3.5M12 3c-1 1.2 1 2 0 3.5" />
+        </svg>
+        Buy a coffee
+      </a>
+      <a href="/support" class="mono text-[10px] uppercase tracking-widest text-neutral-500 hover:text-black hover:italic transition-all">Why dāna →</a>
+    </div>
+  </div>
+</aside>

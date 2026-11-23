@@ -1,4 +1,5 @@
 ---
+import DanaNote from '../components/DanaNote.astro';
 import Layout from '../layouts/Layout.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 // The atlas body is generated from the Globe of Thought repository by scripts/sync-globe.mjs.
@@ -16,6 +17,9 @@ const theme = {
   rim: ['#000000', '#000000', '#000000', '#000000'],
   glow: ['12', '08', '00'],
   tones: { low: '#000000', mid: '#000000', high: '#000000', none: '#000000' },
+  // The one place the site uses colour: a position on the scale, cool to warm.
+  heat: ['#2f5aa8', '#e2b53a', '#c2371f'],
+  heatAlpha: 0.72,
 };
 ---
 
@@ -39,4 +43,5 @@ const theme = {
     <script is:inline defer src="/globe-of-thought/evidence.js"></script>
     <script is:inline defer src="/globe-of-thought/app.js"></script>
   </section>
+  <DanaNote />
 </Layout>
