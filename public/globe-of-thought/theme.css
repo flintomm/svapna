@@ -109,3 +109,8 @@
 /* Key to the heat layer. */
 .atlas .heatkey { font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; }
 .atlas .heatkey i { height: 6px; border: .5px solid #000; }
+
+/* Era chart and play control. */
+.atlas .era { font: 400 10px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #737373; }
+.atlas .era-bar { border-radius: 0; height: 8px; border: .5px solid #000; }
+.atlas .step button#play { font-size: .8rem; }

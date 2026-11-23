@@ -401,3 +401,15 @@
 
 .atlas .heatkey i { flex: 1 1 auto; max-width: 260px; height: 8px; border-radius: 4px; }
 
+.atlas .eras { margin: 14px 0 0; display: grid; gap: 4px; }
+
+.atlas .era { display: grid; grid-template-columns: 7.5rem 1fr 2rem; align-items: center; gap: 10px; font-size: .72rem; color: var(--quiet); }
+
+.atlas .era.later { opacity: .35; }
+
+.atlas .era-bar { display: flex; height: 9px; border-radius: 4px; overflow: hidden; }
+
+.atlas .era-bar i { display: block; min-width: 2px; }
+
+.atlas .era-n { text-align: right; }
+

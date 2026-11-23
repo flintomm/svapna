@@ -149,12 +149,12 @@ function pick(i, { center: shouldCenter = false, jump = false } = {}) {
     document.querySelector('.read').scrollIntoView({ block: 'start', behavior: 'auto' });
   }
 }
-function setMoment(value) {
+function setMoment(value, still) {
   const i = Number(value);
   if (!Number.isInteger(i) || i < 0 || i >= cards.length || i === moment) return refresh();
   moment = i; active = i;
   if (filter && cards[i].score !== filter) filter = '';
-  center(cards[i]);
+  if (!still) center(cards[i]);
   refresh();
 }
 // Earlier/later in the reader walks the passages currently shown, in date order.
@@ -189,6 +189,7 @@ function writeAddress() {
   if (window.location.hash !== hash) window.history.replaceState(null, '', hash);
 }
 function refresh() {
+  drawEras();
   slider.value = moment;
   slider.setAttribute('aria-valuetext', cards[moment].dateFull);
   $('shown-year').textContent = cards[moment].dateFull;
@@ -344,6 +345,26 @@ function paintHeat(placed, size) {
     key.children[0].textContent = scored[0].label; key.children[2].textContent = scored[scored.length - 1].label;
     key.children[1].style.background = 'linear-gradient(90deg, ' + heatStops.map(c => 'rgb(' + c.join(',') + ')').join(', ') + ')';
   } }
+// Era chart: for each stretch of history, how the scored passages divide along the scale.
+const ERAS = [[-Infinity, 'Before 500 BCE'], [-500, '500–1 BCE'], [0, '1–500'], [500, '500–1000'], [1000, '1000–1500'], [1500, '1500–1800'], [1800, '1800–1900'], [1900, 'Since 1900']];
+const eraOf = year => { let k = 0; ERAS.forEach(([from], i) => { if (year >= from) k = i; }); return k; };
+const toneColor = step => step.tone === 'none' ? '#9a9a9a' : 'rgb(' + ramp(heatValue[step.id]).map(Math.round).join(',') + ')';
+function drawEras() {
+  const box = $('eras');
+  if (!box) return;
+  const rows = ERAS.map(([, label]) => ({ label, counts: Object.fromEntries(scale.map(s => [s.id, 0])), n: 0, live: 0 }));
+  cards.forEach((card, i) => { const row = rows[eraOf(card.sortYear)]; row.counts[card.score]++; row.n++; if (i <= moment) row.live++; });
+  box.replaceChildren(...rows.filter(row => row.n).map(row => {
+    const line = node('div', 'era' + (row.live ? '' : ' later')), bar = node('span', 'era-bar');
+    for (const step of scale) {
+      if (!row.counts[step.id]) continue;
+      const part = node('i', ''); part.style.flex = row.counts[step.id] + ' 0 0'; part.style.background = toneColor(step);
+      part.title = step.label + ': ' + row.counts[step.id]; bar.append(part);
+    }
+    line.append(node('span', 'era-name', row.label), bar, node('span', 'era-n', String(row.n)));
+    return line;
+  }));
+}
 function paint() {
   if (view !== 'globe') return;
   const r = Math.min(w * .467, h * .474) * zoom, x = w * .5, y = h * .499;
@@ -428,8 +449,18 @@ function makeCluster() {
 // ---- controls ---------------------------------------------------------------
 slider.min = 0; slider.max = cards.length - 1; slider.step = 1;
 slider.addEventListener('input', () => setMoment(Number(slider.value)));
-$('prev').addEventListener('click', () => setMoment(moment - 1));
-$('next').addEventListener('click', () => setMoment(moment + 1));
+// Play through time: passages appear in date order while the globe holds still.
+let playing = 0;
+function stopPlay() { if (playing) clearInterval(playing); playing = 0; const b = $('play'); if (b) { b.textContent = '▶'; b.setAttribute('aria-pressed', 'false'); } }
+if ($('play')) $('play').addEventListener('click', () => {
+  if (playing) return stopPlay();
+  if (moment >= cards.length - 1) setMoment(0, true);
+  $('play').textContent = '❚❚'; $('play').setAttribute('aria-pressed', 'true');
+  const pace = Math.max(120, Math.min(700, 30000 / cards.length));
+  playing = setInterval(() => { if (moment >= cards.length - 1) return stopPlay(); setMoment(moment + 1, true); }, pace);
+});
+$('prev').addEventListener('click', () => { stopPlay(); setMoment(moment - 1); });
+$('next').addEventListener('click', () => { stopPlay(); setMoment(moment + 1); });
 $('earlier').addEventListener('click', () => { const i = neighbour(-1); if (i >= 0) pick(i, { center: true }); });
 $('later').addEventListener('click', () => { const i = neighbour(1); if (i >= 0) pick(i, { center: true }); });
 $('refocus').addEventListener('click', () => center(cards[active]));
