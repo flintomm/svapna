@@ -274,7 +274,7 @@ const night = { segments, stations };
       // Darkness eases between stages so the page does not flash at each step.
       function darkAt(t) {
         var sum = 0, n = 0;
-        for (var d = -0.12; d <= 0.12; d += 0.03) { sum += dark[stageAt(Math.max(0, Math.min(HOURS - 0.001, t + d)))]; n++; }
+        for (var d = -0.06; d <= 0.061; d += 0.02) { sum += dark[stageAt(Math.max(0, Math.min(HOURS - 0.001, t + d)))]; n++; }
         return sum / n;
       }
       function clock(t) {
