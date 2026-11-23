@@ -1,0 +1,473 @@
+---
+// The Night: one idealised night of sleep as an interactive chart. Used on the home page and at /night.
+import quotesData from '../data/quotes.json';
+import timelineData from '../data/timeline.json';
+import { themes } from '../lib/content.js';
+import { getLesson, getGlossaryTerm } from '../lib/lessons.js';
+
+// One idealised night, eleven at night to seven in the morning, as a sleep laboratory would chart it.
+// Each segment: [start hour, end hour, stage]. Stages: W wake, N1, N2, N3, R (REM).
+const segments = [
+  [0, 0.2, 'W'], [0.2, 0.35, 'N1'], [0.35, 0.7, 'N2'], [0.7, 1.45, 'N3'], [1.45, 1.6, 'N2'], [1.6, 1.8, 'R'],
+  [1.8, 2.3, 'N2'], [2.3, 2.95, 'N3'], [2.95, 3.15, 'N2'], [3.15, 3.5, 'R'],
+  [3.5, 4.2, 'N2'], [4.2, 4.5, 'N3'], [4.5, 4.7, 'N2'], [4.7, 5.25, 'R'],
+  [5.25, 5.4, 'W'], [5.4, 5.5, 'N1'], [5.5, 6.0, 'N2'], [6.0, 7.2, 'R'],
+  [7.2, 7.5, 'N2'], [7.5, 7.75, 'R'], [7.75, 8, 'W'],
+];
+
+// The stations of the night. Every quotation, lesson, theme and date below is drawn from the site's own corpus.
+const stationSpec = [
+  {
+    id: 'waking', t: 0.08, name: 'Lying down', state: 'Waking',
+    line: 'The day has not yet let go. Every tradition begins its night here, with what is carried across the threshold.',
+    tongues: [
+      ['Upaniṣads', 'jāgrat', 'The waking state, the first quarter of the self: consciousness turned outward.', 'jagrat'],
+      ['Tibet', 'the day practice', 'Waking life held as a dream through the day, so that the habit crosses into sleep.', 'milam'],
+      ['Laboratory', 'wakefulness', 'Intention is set before sleep. State checks rehearsed by day recur by night.', 'state-check'],
+    ],
+    quotes: ['q023', 'q004', 'q017'], lessons: [[1, 2], [5, 4]], themes: ['four_states_of_consciousness', 'obstacles'], dates: [6, 54],
+  },
+  {
+    id: 'threshold', t: 0.28, name: 'The threshold', state: 'Falling asleep',
+    line: 'Images arrive unbidden while the body is still felt. A narrow strait between two countries.',
+    tongues: [
+      ['Sufism', 'barzakh', 'The isthmus: a place that belongs to both of the things it divides.', 'barzakh'],
+      ['Tibet', 'falling asleep with awareness', 'The moment of dissolution is the entrance to sleep yoga.', 'osel'],
+      ['Laboratory', 'stage N1, hypnagogia', 'A few minutes of drifting imagery. A wake-initiated lucid dream begins from here.', 'wild'],
+    ],
+    quotes: ['q006', 'q027'], lessons: [[3, 5], [5, 4]], themes: ['sleep_yoga_clear_light'], dates: [38, 35],
+  },
+  {
+    id: 'deep', t: 1.05, name: 'Deep sleep', state: 'Dreamless sleep',
+    line: 'No images, no story, no one to tell it. Where the laboratory finds slow waves, two traditions find the ground itself.',
+    tongues: [
+      ['Upaniṣads', 'suṣupti', 'The third quarter: a single mass of knowing, with nothing desired and nothing dreamt.', 'susupti'],
+      ['Tibet', 'ösel, the clear light', 'Sleep yoga: awareness that does not go out when the dream and the dreamer do.', 'osel'],
+      ['Laboratory', 'stage N3, slow-wave sleep', 'The deepest sleep, gathered in the first half of the night.', null],
+    ],
+    quotes: ['q027', 'q009', 'q021'], lessons: [[2, 8], [2, 6], [6, 4]], themes: ['sleep_yoga_clear_light', 'rigpa_kunzhi'], dates: [6, 70, 69],
+  },
+  {
+    id: 'first-dream', t: 1.7, name: 'The first dream', state: 'Dreaming',
+    line: 'Ninety minutes in, the eyes begin to move beneath their lids. A world appears with no one outside it.',
+    tongues: [
+      ['Upaniṣads', 'svapna', 'The second quarter: the dreamer makes chariots, roads and joys by an inner light.', 'svapna'],
+      ['Greece', 'phantastikon', 'Aristotle: the dream as the residue of perception, moving after the senses have closed.', 'phantastikon'],
+      ['Laboratory', 'REM sleep', 'Rapid eye movement, found in Chicago in 1953. The first period is brief.', 'rem'],
+    ],
+    quotes: ['q001', 'q022', 'q019', 'q018'], lessons: [[1, 3], [1, 7], [5, 2]], themes: ['witness_consciousness_atman', 'karma_traces'], dates: [4, 8, 53],
+  },
+  {
+    id: 'long-dreams', t: 4.95, name: 'The long dreams', state: 'Dreaming, unrecognised',
+    line: 'Towards morning the dreams lengthen and thicken with plot. Most pass unrecognised, taken wholly for the world.',
+    tongues: [
+      ['Tibet', 'samsaric dreams', 'Dreams driven by karmic traces: the day’s grasping, replayed.', 'milam'],
+      ['Buddhist India', 'supina', 'Nāgasena lists the causes of dreams, and grants only one of them any truth.', 'supina'],
+      ['Laboratory', 'late REM', 'REM periods lengthen through the night. Memory is recombined into new associations.', 'rem'],
+    ],
+    quotes: ['q008', 'q029', 'q024', 'q025'], lessons: [[2, 6], [1, 5], [1, 4]], themes: ['karma_traces', 'dream_recall_journaling'], dates: [10, 37, 82],
+  },
+  {
+    id: 'stirring', t: 5.32, name: 'A brief waking', state: 'Awake in the night',
+    line: 'The sleeper surfaces for a few minutes before dawn. Experimenters learned to use the gap.',
+    tongues: [
+      ['France, 1867', 'conscience en dormant', 'Saint-Denys trains attention by day and journal by night until the dream is known as a dream.', 'conscience-en-dormant'],
+      ['Laboratory', 'wake back to bed', 'A short waking before the longest REM period raises the odds of lucidity.', 'wbtb'],
+      ['Laboratory', 'MILD', 'An intention rehearsed on the way back to sleep: next time, to remember.', 'mild'],
+    ],
+    quotes: ['q010', 'q013'], lessons: [[5, 4], [4, 2], [5, 5]], themes: ['lucidity_in_dream'], dates: [45, 78, 79],
+  },
+  {
+    id: 'lucid', t: 6.45, name: 'Knowing it is a dream', state: 'Lucid dreaming',
+    line: 'In the middle of the dream, the dreamer knows. Nothing in the scene changes, and everything does.',
+    tongues: [
+      ['Tibet', 'recognising the dream', 'The first of the classical stages of milam: to apprehend the dream as dream.', 'milam'],
+      ['Netherlands, 1913', 'lucid dream', 'Van Eeden names the state and reports three hundred and fifty-two of them.', 'lucid-dream'],
+      ['Laboratory', 'signal-verified lucidity', 'Eye movements agreed in advance, sent from inside REM: Hull 1975, Stanford 1980.', 'dreamsign'],
+    ],
+    quotes: ['q011', 'q014', 'q012', 'q013'], lessons: [[4, 4], [5, 3], [5, 6], [2, 4]], themes: ['lucidity_in_dream', 'dream_yoga_practice'], dates: [48, 59, 60, 71],
+  },
+  {
+    id: 'transforming', t: 6.95, name: 'Working with the dream', state: 'Dream yoga',
+    line: 'For the laboratory, lucidity is the finding. For the yogas it is where the work starts.',
+    tongues: [
+      ['Tibet', 'transforming and multiplying', 'The later stages of milam: changing the dream, then seeing through it.', 'milam'],
+      ['Tibet', 'gyulü, the illusory body', 'What is learned in the dream is turned on waking life, and on dying.', 'gyulu'],
+      ['Zen', 'a dream within a dream', 'Dōgen: expounding the dream inside the dream is itself the awakened activity.', null],
+    ],
+    quotes: ['q007', 'q005', 'q015', 'q028', 'q017'], lessons: [[2, 4], [2, 7], [6, 3], [6, 4]], themes: ['dream_yoga_practice', 'illusory_body_emptiness', 'bardo_death', 'compassion_bodhicitta'], dates: [27, 39, 43, 73],
+  },
+  {
+    id: 'fourth', t: 7.35, name: 'The fourth', state: 'Beneath all three',
+    line: 'Not a stage on the chart. The Māṇḍūkya calls it the fourth only because three were counted first.',
+    tongues: [
+      ['Upaniṣads', 'turīya', 'Neither waking, dreaming nor sleeping: what is present to all of them.', 'turiya'],
+      ['Tibet', 'rigpa', 'Pristine awareness, recognised rather than produced.', 'rigpa'],
+      ['Laboratory', 'no reading', 'The instruments chart the three states. Whether anything underlies them is not theirs to say.', null],
+    ],
+    quotes: ['q002', 'q021', 'q016', 'q020'], lessons: [[1, 2], [2, 8], [6, 5]], themes: ['witness_consciousness_atman', 'om_pranava', 'rigpa_kunzhi'], dates: [6, 19, 75],
+  },
+  {
+    id: 'morning', t: 7.9, name: 'Morning', state: 'Waking again',
+    line: 'The dream scatters as the first thoughts of the day arrive. What is kept depends on what is written.',
+    tongues: [
+      ['Daoism', 'wù huà', 'The transformation of things: Zhuang Zhou, the butterfly, and no way to say which.', 'wu-hua'],
+      ['France, 1867', 'the journal', 'One thousand nine hundred and forty-six nights recorded by Saint-Denys.', null],
+      ['Laboratory', 'dream recall', 'Recall falls away within minutes of waking unless it is rehearsed or written.', null],
+    ],
+    quotes: ['q003', 'q026', 'q030'], lessons: [[3, 2], [4, 2], [6, 8]], themes: ['dream_recall_journaling', 'obstacles'], dates: [7, 45, 77],
+  },
+];
+
+const quoteById = Object.fromEntries(quotesData.quotes.map(q => [q.id, q]));
+const themeById = Object.fromEntries(themes.map(t => [t.id, t]));
+const pad = n => String(n).padStart(2, '0');
+
+const stations = stationSpec.map(s => ({
+  ...s,
+  tongues: s.tongues.map(([who, term, gloss, slug]) => ({ who, term, gloss, href: slug && getGlossaryTerm(slug) ? `/glossary/${getGlossaryTerm(slug).slug}` : null })),
+  quotes: s.quotes.map(id => quoteById[id]).filter(Boolean).map(q => ({ text: q.text, by: q.attribution, cite: q.citation, translator: q.translator })),
+  lessons: s.lessons.map(([m, l]) => { const x = getLesson(m, l); return x ? { title: x.title, href: `/curriculum/module-${pad(m)}/${x.urlSlug}`, tag: `${pad(m)}.${pad(l)}` } : null; }).filter(Boolean),
+  themes: s.themes.map(id => themeById[id]).filter(Boolean).map(t => ({ label: t.label, href: `/library/themes/${t.id}` })),
+  dates: s.dates.map(i => timelineData.entries[i]).filter(Boolean).map(e => ({ date: e.date, title: e.title, tradition: e.tradition })),
+}));
+
+const voices = stations.reduce((n, s) => n + s.quotes.length, 0);
+const night = { segments, stations };
+---
+
+    <div class="night" id="night" data-night={JSON.stringify(night)}>
+      <div class="night-sky" aria-hidden="true"><canvas id="night-stars"></canvas></div>
+
+      <div class="night-inner">
+        <div class="night-bar">
+          <p class="night-clock"><span id="night-time">23:00</span><span id="night-stage">Awake</span></p>
+          <div class="night-controls">
+            <button type="button" id="night-prev" aria-label="Earlier station">←</button>
+            <button type="button" id="night-play" aria-pressed="false">Night passes ▸</button>
+            <button type="button" id="night-next" aria-label="Later station">→</button>
+          </div>
+        </div>
+
+        <div class="night-chart">
+          <div class="night-rows" aria-hidden="true">
+            <span>Awake</span><span>REM</span><span>N1</span><span>N2</span><span>N3</span>
+          </div>
+          <div class="night-plot">
+            <svg id="night-svg" viewBox="0 0 800 200" preserveAspectRatio="none" role="img" aria-label="Sleep stages across one night">
+              <g id="night-grid"></g>
+              <path id="night-rem" />
+              <path id="night-line" />
+              <path id="night-done" />
+            </svg>
+            <div id="night-marks"></div>
+            <div id="night-moon" aria-hidden="true"></div>
+            <input id="night-range" type="range" min="0" max="8" step="0.01" value="0.08" aria-label="Hour of the night" />
+          </div>
+          <div class="night-hours" aria-hidden="true">
+            <span>23</span><span>00</span><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span>
+          </div>
+        </div>
+
+        <article class="night-plate" id="night-plate" aria-live="polite">
+          <header>
+            <p class="night-label" id="night-state"></p>
+            <h2 id="night-name"></h2>
+            <p class="night-lede" id="night-lede"></p>
+          </header>
+          <div class="night-tongues" id="night-tongues"></div>
+          <div class="night-voice">
+            <blockquote id="night-quote"></blockquote>
+            <p class="night-cite" id="night-cite"></p>
+            <div class="night-voicenav">
+              <button type="button" id="night-voice-next">Another voice</button>
+              <span id="night-voice-count"></span>
+            </div>
+          </div>
+          <div class="night-foot">
+            <div><p class="night-label">First set down</p><ul id="night-dates"></ul></div>
+            <div><p class="night-label">Lessons</p><ul id="night-lessons"></ul></div>
+            <div><p class="night-label">Passages by theme</p><ul id="night-themes"></ul></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <noscript>
+      <div class="p-6 md:p-12">
+        {stations.map(s => (
+          <div class="mb-10 max-w-3xl">
+            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">{s.state}</p>
+            <h2 class="display text-4xl">{s.name}</h2>
+            <p class="mt-2">{s.line}</p>
+            {s.quotes.map(q => <p class="display italic text-xl mt-3">“{q.text}” <span class="mono text-[10px] not-italic">{q.by}</span></p>)}
+          </div>
+        ))}
+      </div>
+    </noscript>
+
+  <script is:inline>
+    (function () {
+      var root = document.getElementById('night');
+      if (!root) return;
+      var data = JSON.parse(root.dataset.night);
+      var segs = data.segments, stations = data.stations;
+      var $ = function (id) { return document.getElementById(id); };
+      var W = 800, H = 200, HOURS = 8;
+      var level = { W: 0, R: 1, N1: 2, N2: 3, N3: 4 };
+      var stageName = { W: 'Awake', R: 'REM · dreaming', N1: 'N1 · drifting', N2: 'N2 · light sleep', N3: 'N3 · deep sleep' };
+      var dark = { W: 0.0, N1: 0.35, N2: 0.72, N3: 1, R: 0.86 };
+      var x = function (t) { return t / HOURS * W; };
+      var y = function (stage) { return 18 + level[stage] * 41; };
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // The stepped line of the hypnogram, and the dreaming periods as heavier bars.
+      function pathUntil(limit) {
+        var d = '';
+        for (var i = 0; i < segs.length; i++) {
+          var s = segs[i]; if (s[0] >= limit) break;
+          var end = Math.min(s[1], limit);
+          d += (i ? ' L' : 'M') + x(s[0]).toFixed(1) + ' ' + y(s[2]) + ' L' + x(end).toFixed(1) + ' ' + y(s[2]);
+        }
+        return d;
+      }
+      $('night-line').setAttribute('d', pathUntil(HOURS));
+      $('night-rem').setAttribute('d', segs.filter(function (s) { return s[2] === 'R'; }).map(function (s) {
+        return 'M' + x(s[0]).toFixed(1) + ' ' + y('R') + ' L' + x(s[1]).toFixed(1) + ' ' + y('R');
+      }).join(' '));
+      var grid = '';
+      ['W', 'R', 'N1', 'N2', 'N3'].forEach(function (k) { grid += '<line x1="0" x2="' + W + '" y1="' + y(k) + '" y2="' + y(k) + '"/>'; });
+      for (var h = 0; h <= HOURS; h++) grid += '<line class="hour" x1="' + x(h) + '" x2="' + x(h) + '" y1="0" y2="' + H + '"/>';
+      $('night-grid').innerHTML = grid;
+
+      function stageAt(t) {
+        for (var i = 0; i < segs.length; i++) if (t >= segs[i][0] && t < segs[i][1]) return segs[i][2];
+        return 'W';
+      }
+      // Darkness eases between stages so the page does not flash at each step.
+      function darkAt(t) {
+        var sum = 0, n = 0;
+        for (var d = -0.06; d <= 0.061; d += 0.02) { sum += dark[stageAt(Math.max(0, Math.min(HOURS - 0.001, t + d)))]; n++; }
+        return sum / n;
+      }
+      function clock(t) {
+        var m = Math.round((23 * 60 + t * 60)) % (24 * 60);
+        return ('0' + Math.floor(m / 60)).slice(-2) + ':' + ('0' + (m % 60)).slice(-2);
+      }
+      function stationAt(t) {
+        var best = 0;
+        for (var i = 0; i < stations.length; i++) if (Math.abs(stations[i].t - t) < Math.abs(stations[best].t - t)) best = i;
+        return best;
+      }
+
+      // Station marks on the chart.
+      var marks = $('night-marks');
+      stations.forEach(function (s, i) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'night-mark'; b.title = s.name;
+        b.setAttribute('aria-label', s.name + ', ' + clock(s.t));
+        b.style.left = (s.t / HOURS * 100) + '%';
+        b.style.top = (y(stageAt(s.t)) / H * 100) + '%';
+        if (s.id === 'fourth') { b.style.top = '100%'; b.classList.add('under'); }
+        b.addEventListener('click', function () { go(i, true); });
+        marks.appendChild(b);
+      });
+
+      var touched = false; root.addEventListener('pointerdown', function () { touched = true; }); root.addEventListener('keydown', function () { touched = true; });
+      var range = $('night-range'), current = -1, voice = 0, t = stations[0].t, playing = null, glide = null;
+      var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+      var list = function (items, fn) { return items.length ? items.map(fn).join('') : '<li class="none">—</li>'; };
+
+      function showVoice() {
+        var s = stations[current], q = s.quotes[voice % s.quotes.length];
+        $('night-quote').textContent = '“' + q.text + '”';
+        $('night-cite').textContent = q.by + ' · ' + q.cite + (q.translator && q.translator !== 'Various' ? ' · ' + q.translator : '');
+        $('night-voice-count').textContent = (voice % s.quotes.length + 1) + ' / ' + s.quotes.length;
+        $('night-voice-next').hidden = s.quotes.length < 2;
+      }
+      function showStation(i) {
+        if (i === current) return;
+        current = i; voice = 0;
+        var s = stations[i], plate = $('night-plate');
+        plate.classList.remove('in'); void plate.offsetWidth; plate.classList.add('in');
+        $('night-state').textContent = s.state + ' · ' + clock(s.t);
+        $('night-name').textContent = s.name;
+        $('night-lede').textContent = s.line;
+        $('night-tongues').innerHTML = s.tongues.map(function (g) {
+          var term = g.href ? '<a href="' + g.href + '">' + esc(g.term) + '</a>' : esc(g.term);
+          return '<div><p class="night-label">' + esc(g.who) + '</p><p class="night-term">' + term + '</p><p class="night-gloss">' + esc(g.gloss) + '</p></div>';
+        }).join('');
+        $('night-dates').innerHTML = list(s.dates, function (d) { return '<li><span>' + esc(d.date) + '</span> ' + esc(d.title) + '</li>'; });
+        $('night-lessons').innerHTML = list(s.lessons, function (l) { return '<li><span>' + l.tag + '</span> <a href="' + l.href + '">' + esc(l.title) + '</a></li>'; });
+        $('night-themes').innerHTML = list(s.themes, function (l) { return '<li><a href="' + l.href + '">' + esc(l.label) + '</a></li>'; });
+        Array.prototype.forEach.call(marks.children, function (b, k) { b.classList.toggle('on', k === i); });
+        showVoice();
+        if (touched && history.replaceState) history.replaceState(null, '', '#' + s.id);
+      }
+
+      function render() {
+        var stage = stageAt(Math.min(t, HOURS - 0.001)), d = darkAt(t);
+        root.style.setProperty('--dark', d.toFixed(3));
+        root.classList.toggle('is-dark', d > 0.5);
+        $('night-time').textContent = clock(t);
+        $('night-stage').textContent = stageName[stage];
+        $('night-done').setAttribute('d', pathUntil(t));
+        var moon = $('night-moon');
+        moon.style.left = (t / HOURS * 100) + '%';
+        moon.style.top = (y(stage) / H * 100) + '%';
+        range.value = t;
+        range.setAttribute('aria-valuetext', clock(t) + ', ' + stageName[stage]);
+        showStation(stationAt(t));
+        drawStars(d);
+      }
+
+      function stop() { if (playing) { cancelAnimationFrame(playing); playing = null; } $('night-play').setAttribute('aria-pressed', 'false'); $('night-play').textContent = 'Night passes ▸'; }
+      function go(i, animate) {
+        stop(); if (glide) cancelAnimationFrame(glide);
+        i = Math.max(0, Math.min(stations.length - 1, i));
+        var from = t, to = stations[i].t, start = null;
+        if (!animate || reduce) { t = to; render(); return; }
+        var dur = 300 + Math.min(900, Math.abs(to - from) * 260);
+        glide = requestAnimationFrame(function step(ts) {
+          if (!start) start = ts;
+          var p = Math.min(1, (ts - start) / dur), e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+          t = from + (to - from) * e; render();
+          if (p < 1) glide = requestAnimationFrame(step);
+        });
+      }
+
+      range.addEventListener('input', function () { stop(); if (glide) cancelAnimationFrame(glide); t = parseFloat(range.value); render(); });
+      $('night-prev').addEventListener('click', function () { go(current - 1, true); });
+      $('night-next').addEventListener('click', function () { go(current + 1, true); });
+      $('night-voice-next').addEventListener('click', function () { voice++; showVoice(); });
+      $('night-play').addEventListener('click', function () {
+        if (playing) { stop(); return; }
+        if (glide) cancelAnimationFrame(glide);
+        if (t > HOURS - 0.15) t = 0;
+        $('night-play').setAttribute('aria-pressed', 'true'); $('night-play').textContent = 'Pause ❙❙';
+        var last = null;
+        playing = requestAnimationFrame(function tick(ts) {
+          if (last === null) last = ts;
+          t = Math.min(HOURS, t + (ts - last) / 1000 * (HOURS / 80)); last = ts; // the whole night in eighty seconds
+          render();
+          if (t >= HOURS) { stop(); return; }
+          playing = requestAnimationFrame(tick);
+        });
+      });
+      root.addEventListener('keydown', function (e) {
+        if (e.target === range) return;
+        if (e.key === 'ArrowRight') { go(current + 1, true); e.preventDefault(); }
+        if (e.key === 'ArrowLeft') { go(current - 1, true); e.preventDefault(); }
+      });
+
+      // Stars come out as the sleeper goes under.
+      var canvas = $('night-stars'), ctx = canvas.getContext && canvas.getContext('2d'), stars = [];
+      function sizeStars() {
+        var r = root.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+        canvas.width = r.width * dpr; canvas.height = r.height * dpr;
+        var seed = 7; var rnd = function () { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+        stars = [];
+        var n = Math.round(r.width * r.height / 5200);
+        for (var i = 0; i < n; i++) stars.push([rnd() * canvas.width, rnd() * canvas.height, (0.4 + rnd() * 1.1) * dpr, rnd()]);
+      }
+      function drawStars(d) {
+        if (!ctx) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var a = Math.max(0, (d - 0.45) / 0.55);
+        if (a <= 0) return;
+        for (var i = 0; i < stars.length; i++) {
+          var s = stars[i];
+          ctx.globalAlpha = a * (0.25 + 0.75 * s[3]);
+          ctx.fillStyle = '#fff';
+          ctx.fillRect(s[0], s[1], s[2], s[2]);
+        }
+        ctx.globalAlpha = 1;
+      }
+      sizeStars();
+      window.addEventListener('resize', function () { sizeStars(); render(); });
+
+      var wanted = stations.findIndex(function (s) { return '#' + s.id === location.hash; });
+      t = stations[wanted > 0 ? wanted : 0].t;
+      render();
+      if ('ResizeObserver' in window) new ResizeObserver(function () { sizeStars(); drawStars(darkAt(t)); }).observe(root);
+    })();
+  </script>
+
+<style is:global>
+  .night {
+    --dark: 0;
+    --paper: color-mix(in srgb, #000 calc(var(--dark) * 100%), #fff);
+    --ink: #000; --soft: #525252; --faint: #737373; --rule: #000;
+    position: relative; background: var(--paper); color: var(--ink);
+    border-bottom: 0.5px solid #000; overflow: hidden;
+  }
+  .night.is-dark { --ink: #fff; --soft: #d4d4d4; --faint: #a3a3a3; --rule: #fff; }
+  .night-sky { position: absolute; inset: 0; pointer-events: none; }
+  .night-sky canvas { width: 100%; height: 100%; display: block; }
+  .night-inner { position: relative; padding: 1.5rem 1.25rem 2.5rem; }
+  @media (min-width: 768px) { .night-inner { padding: 2rem 2rem 3.5rem; } }
+
+  .night-label, .night-clock span:last-child, .night-rows, .night-hours, .night-controls button, .night-cite, .night-voicenav, .night-foot li span {
+    font: 400 10px/1.5 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint);
+  }
+  .night-bar { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .night-clock { display: flex; align-items: baseline; gap: 1rem; margin: 0; }
+  .night-clock span:first-child { font: 300 clamp(3rem, 9vw, 5.5rem)/0.9 'Cormorant Garamond', Georgia, serif; font-variant-numeric: tabular-nums; }
+  .night-controls { display: flex; gap: 0; }
+  .night-controls button { color: var(--ink); border: 0.5px solid var(--rule); background: transparent; min-height: 40px; padding: 0 14px; margin-left: -0.5px; cursor: pointer; }
+  .night-controls button:hover, .night-controls button[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
+
+  .night-chart { display: grid; grid-template-columns: 3.2rem 1fr; margin-top: 1.5rem; }
+  .night-rows { display: grid; grid-template-rows: repeat(5, 1fr); height: 200px; padding: 9px 0 17px; }
+  .night-rows span { display: flex; align-items: center; height: 100%; }
+  .night-plot { position: relative; height: 200px; border-left: 0.5px solid var(--rule); border-bottom: 0.5px solid var(--rule); }
+  .night-plot svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  #night-grid line { stroke: var(--rule); stroke-width: 0.5; opacity: 0.14; vector-effect: non-scaling-stroke; }
+  #night-line { fill: none; stroke: var(--ink); stroke-width: 1; opacity: 0.35; vector-effect: non-scaling-stroke; }
+  #night-done { fill: none; stroke: var(--ink); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+  #night-rem { fill: none; stroke: var(--ink); stroke-width: 5; opacity: 0.9; vector-effect: non-scaling-stroke; }
+  #night-marks { position: absolute; inset: 0; pointer-events: none; }
+  .night-mark { position: absolute; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; padding: 0; border: 1px solid var(--ink); background: var(--paper); transform: rotate(45deg); cursor: pointer; pointer-events: auto; z-index: 2; }
+  .night-mark::after { content: ''; position: absolute; inset: -12px; }
+  .night-mark:hover, .night-mark.on { background: var(--ink); }
+  .night-mark.under { border-style: dotted; }
+  #night-moon { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border: 1px solid var(--ink); border-radius: 50% !important; background: radial-gradient(circle at 35% 35%, #fff 0 45%, #d4d4d4 100%); box-shadow: 0 0 0 5px color-mix(in srgb, var(--ink) 10%, transparent); pointer-events: none; z-index: 1; }
+  #night-range { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+  #night-range:focus-visible + * { outline: none; }
+  .night-plot:focus-within { outline: 1px solid var(--ink); outline-offset: 4px; }
+  .night-hours { grid-column: 2; display: flex; justify-content: space-between; padding-top: 6px; }
+
+  .night-plate { margin-top: 2.5rem; max-width: 72rem; }
+  .night-plate.in { animation: nightIn 0.5s ease both; }
+  @keyframes nightIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .night-plate.in { animation: none; } }
+  .night-plate h2 { font: 400 clamp(3rem, 8vw, 6.5rem)/0.92 'Cormorant Garamond', Georgia, serif; letter-spacing: -0.01em; margin: 0.4rem 0 0; }
+  .night-lede { font: italic 400 clamp(1.2rem, 2.2vw, 1.6rem)/1.35 'Cormorant Garamond', Georgia, serif; color: var(--soft); max-width: 44rem; margin: 1rem 0 0; }
+
+  .night-tongues { display: grid; grid-template-columns: 1fr; margin-top: 2rem; border-top: 0.5px solid var(--rule); }
+  .night-tongues > div { padding: 1.1rem 0; border-bottom: 0.5px solid var(--rule); }
+  @media (min-width: 768px) {
+    .night-tongues { grid-template-columns: repeat(3, 1fr); border-bottom: 0.5px solid var(--rule); }
+    .night-tongues > div { padding: 1.25rem 1.5rem 1.5rem 0; border-bottom: 0; }
+    .night-tongues > div + div { padding-left: 1.5rem; border-left: 0.5px solid var(--rule); }
+  }
+  .night-term { font: italic 400 1.9rem/1.1 'Cormorant Garamond', Georgia, serif; margin: 0.35rem 0 0.4rem; }
+  .night-term a { text-decoration: underline; text-decoration-thickness: 0.5px; text-underline-offset: 5px; }
+  .night-gloss { font-size: 0.92rem; line-height: 1.6; color: var(--soft); margin: 0; }
+
+  .night-voice { margin-top: 2.5rem; padding-left: 1.25rem; border-left: 0.5px solid var(--rule); max-width: 52rem; }
+  .night-voice blockquote { font: italic 400 clamp(1.5rem, 3vw, 2.4rem)/1.2 'Cormorant Garamond', Georgia, serif; margin: 0; }
+  .night-cite { margin: 1rem 0 0; }
+  .night-voicenav { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
+  .night-voicenav button { font: inherit; letter-spacing: inherit; text-transform: inherit; color: var(--ink); background: none; border: 0; border-bottom: 0.5px solid var(--rule); padding: 0 0 3px; cursor: pointer; }
+  .night-voicenav button:hover { font-style: italic; }
+
+  .night-foot { display: grid; grid-template-columns: 1fr; gap: 1.75rem; margin-top: 2.75rem; padding-top: 1.25rem; border-top: 0.5px solid var(--rule); }
+  @media (min-width: 768px) { .night-foot { grid-template-columns: 1.2fr 1fr 1fr; gap: 2.5rem; } }
+  .night-foot ul { list-style: none; margin: 0.6rem 0 0; padding: 0; }
+  .night-foot li { font-size: 0.9rem; line-height: 1.5; padding: 0.3rem 0; color: var(--soft); }
+  .night-foot li span { margin-right: 0.5rem; }
+  .night-foot a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 0.5px; text-underline-offset: 4px; }
+  .night-foot a:hover, .night-term a:hover { font-style: italic; }
+  .night button:focus-visible, .night a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
+</style>
