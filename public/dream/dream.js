@@ -1,4 +1,4 @@
-// Dreaming: a descent through one night. Scrolling sets the depth; the depth sets the light, the clock and the sound.
+// Dreaming: a descent through one night. Scrolling sets the depth; the depth sets the light and the clock.
 (function () {
   const $ = id => document.getElementById(id);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -31,8 +31,6 @@
   // Which rows have a dark background, so the words turn light.
   const DARK = { night: [1, 1, 1, 1, 1, 1, 1, 1, 1, 0], light: [0, 0, 0, 1, 0, 0, 0, 0, 0, 0] };
   const MIN = [0, 0, 20, 65, 100, 385, 415, 440, 480, 490];      // minutes after 23:00
-  const TONE = [110, 110, 98, 49, 147, 220, 196, 65, 131, 165];  // hertz, for the optional sound
-  const LOUD = [.8, .8, .7, .22, 1, .9, 1, .5, .8, .6];
 
   let pref = null; try { pref = localStorage.getItem('svapna_mode'); } catch (e) { /* private mode */ }
   let mode = pref === 'light' || pref === 'night' ? pref : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night');
@@ -103,7 +101,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
   const fallScene = (function () {
     const cv3 = $('fall'), T = window.THREE; if (!T || !cv3) return null;
     let renderer; try { renderer = new T.WebGLRenderer({ canvas: cv3, antialias: true, alpha: true }); } catch (e) { return null; }
-    renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1));
+    renderer.setPixelRatio(Math.min(innerWidth < 820 ? 1.5 : 1.75, devicePixelRatio || 1));
     const scene = new T.Scene(), cam = new T.PerspectiveCamera(55, 1, .1, 400);
     const night = () => mode === 'night';
     const add = () => (night() ? T.AdditiveBlending : T.NormalBlending);
@@ -118,6 +116,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     const N = 5200, mp = new Float32Array(N * 3);
     for (let i = 0; i < N; i++) { const a = rnd() * 6.283, r = 3 + rnd() * 26; mp[i * 3] = Math.cos(a) * r; mp[i * 3 + 1] = 14 - rnd() * (UNIT * 9.6 + 28); mp[i * 3 + 2] = -6 - Math.abs(Math.sin(a)) * r - rnd() * 30; }
     const mg = new T.BufferGeometry(); mg.setAttribute('position', new T.BufferAttribute(mp, 3));
+    if (innerWidth < 820) mg.setDrawRange(0, Math.round(N * .5));
     const motes = new T.Points(mg, new T.PointsMaterial({ size: .5, map: dotTex, transparent: true, depthWrite: false, sizeAttenuation: true })); scene.add(motes);
 
     // 0 Awake: restless, sharp strokes.
@@ -135,12 +134,19 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     const WN = 160, wp = new Float32Array(WN * 3), wg = new T.BufferGeometry(); wg.setAttribute('position', new T.BufferAttribute(wp, 3));
     const wave = new T.Line(wg, new T.LineBasicMaterial({ color: 0x8090c8, transparent: true })); scene.add(wave);
 
-    // 3-5 The dream: shards that swirl (dreaming), lock into a lattice (lucid), then answer the pointer (working).
-    const M = 900, shardGeo = new T.TetrahedronGeometry(.27), shards = new T.InstancedMesh(shardGeo, new T.MeshBasicMaterial({ transparent: true }), M);
-    const sh = [], dreamCols = ['#ff4fd8', '#31d8ff', '#ffd24a', '#a070ff', '#3df0c0'].map(c => new T.Color(c)), clearA = new T.Color('#bff6ff'), clearB = new T.Color('#ffffff'), tmpC = new T.Color();
-    const G = Math.ceil(Math.cbrt(M));
-    for (let i = 0; i < M; i++) { const gx = i % G, gy = Math.floor(i / G) % G, gz = Math.floor(i / (G * G));
-      sh.push({ r: 1.5 + rnd() * 8.5, a: rnd() * 6.283, h: (rnd() - .5) * 20, sp: (.25 + rnd() * .9) * (rnd() < .5 ? -1 : 1), wob: rnd() * 6.283, c: dreamCols[i % 5], lx: (gx - (G - 1) / 2) * 1.2, ly: (gy - (G - 1) / 2) * 1.2, lz: (gz - (G - 1) / 2) * 1.2, s: .6 + rnd() * 1.2, late: i > M * .45 }); }
+    // 3-5 The dream: petals of light that storm (dreaming), close into a lotus (lucid), then open and turn to the pointer (working).
+    const petalTex = (function () { const c = document.createElement('canvas'); c.width = 96; c.height = 256; const x = c.getContext('2d');
+      const g = x.createLinearGradient(0, 256, 0, 0); g.addColorStop(0, 'rgba(255,255,255,.15)'); g.addColorStop(.35, 'rgba(255,255,255,.95)'); g.addColorStop(1, 'rgba(255,255,255,.55)');
+      x.fillStyle = g; x.beginPath(); x.moveTo(48, 254); x.bezierCurveTo(-18, 170, 2, 60, 48, 2); x.bezierCurveTo(94, 60, 114, 170, 48, 254); x.fill();
+      const v = x.createLinearGradient(0, 0, 96, 0); v.addColorStop(0, 'rgba(0,0,0,.28)'); v.addColorStop(.5, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.28)'); x.globalCompositeOperation = 'source-atop'; x.fillStyle = v; x.fillRect(0, 0, 96, 256);
+      const t2 = new T.CanvasTexture(c); t2.anisotropy = 4; return t2; })();
+    const petalGeo = new T.PlaneGeometry(.62, 1.9); petalGeo.translate(0, .95, 0);
+    const RINGS = 14, CORE = 9, ringN = k => 10 + k * 8; let M = 0; for (let k = 0; k < RINGS; k++) M += ringN(k);
+    const shards = new T.InstancedMesh(petalGeo, new T.MeshBasicMaterial({ map: petalTex, transparent: true, side: T.DoubleSide, depthWrite: false }), M);
+    const sh = [], dreamCols = ['#ff4fd8', '#31d8ff', '#ffd24a', '#a070ff', '#3df0c0'].map(c => new T.Color(c)), clearA = new T.Color('#4fc8ff'), clearB = new T.Color('#d8f6ff'), tmpC = new T.Color();
+    for (let k = 0, i = 0; k < RINGS; k++) for (let j = 0; j < ringN(k); j++, i++) {
+      sh.push({ r: 1.5 + rnd() * 8.5, a: rnd() * 6.283, h: (rnd() - .5) * 20, sp: (.25 + rnd() * .9) * (rnd() < .5 ? -1 : 1), wob: rnd() * 6.283, c: dreamCols[i % 5], s: .7 + rnd() * .9,
+        k, th: j / ringN(k) * 6.283 + k * .31, rad: .55 + k * .92, late: k >= CORE, ax: new T.Vector3(rnd() - .5, rnd() - .5, rnd() - .5).normalize() }); }
     shards.instanceColor = new T.InstancedBufferAttribute(new Float32Array(M * 3), 3); scene.add(shards);
     const flare = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: 0xffffff, transparent: true, depthWrite: false })); scene.add(flare);
 
@@ -150,7 +156,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     // 7 Morning: light coming up from below.
     const sun = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: 0xffc98a, transparent: true, depthWrite: false })); scene.add(sun);
 
-    const o = new T.Object3D(), AXIS = new T.Vector3(.5, .7, .3).normalize(), ptr = new T.Vector3(), colA = new T.Color('#0a84d8'), colB = new T.Color('#0b2a6a');
+    const o = new T.Object3D(), qA = new T.Quaternion(), qB = new T.Quaternion(), eu = new T.Euler(), ptr = new T.Vector3(), colA = new T.Color('#0a84d8'), colB = new T.Color('#0b2a6a');
     let Ls = 0, tAcc = 0, lastSnap = 0, wasLucid = false, push = 0;
     return {
       size() { renderer.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); },
@@ -161,7 +167,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
         const w0 = 1 - step(.35, 1.05, d), w1 = bell(d, 1, .95), w2 = bell(d, 2, .8), wd = step(2.45, 3, d) * (1 - step(5.5, 6.1, d)), w6 = bell(d, 6, .95), w7 = step(6.5, 7.1, d);
         const lucid = step(3.5, 3.72, d), work = step(4.55, 5, d) * (1 - step(5.5, 6, d));
         Ls += (lucid - Ls) * Math.min(1, dt / 150);                 // the snap is quick
-        if (lucid > .5 && !wasLucid && performance.now() - lastSnap > 1500) { lastSnap = performance.now(); const f = $('flash'); f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); if (audio && audio.on) chime(); }
+        if (lucid > .5 && !wasLucid && performance.now() - lastSnap > 1500) { lastSnap = performance.now(); const f = $('flash'); f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); }
         wasLucid = lucid > .5;
         push += ((inChamber ? 1 : 0) - push) * Math.min(1, dt / 500);
 
@@ -190,22 +196,27 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
         // The dream.
         shards.visible = wd > .01;
         if (shards.visible) {
-          const nar = innerWidth < 820, cyC = -UNIT * Math.max(3, Math.min(5.3, d)) + (nar ? 13 : 0), cz = nar ? -42 : -19, spin = t * .06;
+          const nar = innerWidth < 820, cyC = -UNIT * Math.max(3, Math.min(5.3, d)) + (nar ? 12 : 0), cz = nar ? -40 : -19, size = nar ? .78 : 1;
           ptr.set(x0 + mouse[0] * 26 - 4, cyC + mouse[1] * 14, cz);
-          for (let i = 0; i < M; i++) { const p = sh[i], a = p.a + t * p.sp * (1 - Ls * .97);
-            // swirling
-            let px = x0 + Math.cos(a) * p.r, py = cyC + p.h + Math.sin(t * .6 + p.wob) * 1.2, pz = cz + Math.sin(a) * p.r * .7;
-            // lattice, turning slowly as one body
-            const lx = p.lx * Math.cos(spin) - p.lz * Math.sin(spin), lz = p.lx * Math.sin(spin) + p.lz * Math.cos(spin);
-            const e = Ls * Ls * (3 - 2 * Ls); px += (x0 + lx - px) * e; py += (cyC + p.ly - py) * e; pz += (cz + lz - pz) * e;
-            let sc = p.s * wd * (p.late ? Math.max(1 - Ls, work) : 1);   // the later half vanish at lucidity and return, multiplied, when the dream is worked
-            if (work > 0) { const dx = px - ptr.x, dy = py - ptr.y, dist = Math.hypot(dx, dy) + .001, f = work * Math.max(0, 1 - dist / 7); px += dx / dist * f * 2.4; py += dy / dist * f * 2.4; pz += f * 2.5; sc *= 1 + f * 1.1; }
-            o.position.set(px, py, pz); o.quaternion.setFromAxisAngle(AXIS, a * (1 - Ls) + p.wob); o.scale.setScalar(Math.max(.0001, sc)); o.updateMatrix(); shards.setMatrixAt(i, o.matrix);
-            tmpC.copy(p.c); if (!n) tmpC.multiplyScalar(.8); tmpC.lerp(n ? (i % 3 ? clearA : clearB) : (i % 3 ? colA : colB), e * (1 - work));
-            if (work > 0) tmpC.offsetHSL(work * (.15 * Math.sin(t * .7 + p.wob) + (px - x0) * .012), 0, 0);
+          const e = Ls * Ls * (3 - 2 * Ls), breathe = 1 + .03 * Math.sin(t * .8);
+          for (let i = 0; i < M; i++) { const p = sh[i], a = p.a + t * p.sp;
+            // the storm: tumbling round the axis
+            let px = x0 + Math.cos(a) * p.r * size, py = cyC + p.h * size + Math.sin(t * .6 + p.wob) * 1.2, pz = cz + Math.sin(a) * p.r * .7;
+            qA.setFromAxisAngle(p.ax, a * 1.7 + p.wob);
+            // the lotus: rings of petals pointing outward, alternate rings turning opposite ways once the dream is worked
+            const th = p.th + (p.k % 2 ? -1 : 1) * (t * .02 + work * t * .09), rr = p.rad * (nar ? .78 : .7) * breathe * (1 + work * .12 * Math.sin(t * .9 + p.k));
+            const tx = x0 + Math.cos(th) * rr, ty = cyC + Math.sin(th) * rr;
+            let lift = .32 + p.k * .035;                                    // petals lean toward the viewer, more at the rim
+            let sc = p.s * wd * (p.late ? Math.max(1 - Ls, work) : 1);      // the outer rings fall away at lucidity and return, multiplied, when the dream is worked
+            if (work > 0) { const dist = Math.hypot(tx - ptr.x, ty - ptr.y), f = work * Math.max(0, 1 - dist / 6.5); lift += f * 1.1; sc *= 1 + f * .7; }
+            eu.set(lift, 0, th - Math.PI / 2, 'ZXY'); qB.setFromEuler(eu);
+            px += (tx - px) * e; py += (ty - py) * e; pz += (cz - p.k * .12 - pz) * e;
+            o.position.set(px, py, pz); o.quaternion.copy(qA).slerp(qB, e); o.scale.setScalar(Math.max(.0001, sc * size * (1 + e * (-.12 + p.k * .03)))); o.updateMatrix(); shards.setMatrixAt(i, o.matrix);
+            tmpC.copy(p.c); if (!n) tmpC.multiplyScalar(.85); tmpC.lerp(n ? (p.k % 2 ? clearA : clearB) : (p.k % 2 ? colA : colB), e * (1 - work));
+            if (work > 0) tmpC.offsetHSL(work * (.5 + .5 * Math.sin(t * .35 + p.k * .7)) * .22, 0, 0);
             shards.setColorAt(i, tmpC); }
-          shards.instanceMatrix.needsUpdate = true; shards.instanceColor.needsUpdate = true; shards.material.opacity = Math.min(1, wd * 1.2) * (n ? .9 - work * .35 : .9); shards.material.blending = n ? T.AdditiveBlending : T.NormalBlending;
-          const since = (performance.now() - lastSnap) / 1000; flare.visible = Ls > .02 && wd > .1; flare.position.set(x0, cyC, cz); flare.scale.setScalar(10 + 60 * Math.exp(-since * 2.2)); flare.material.opacity = Ls * wd * (.25 + .7 * Math.exp(-since * 2)) * (1 - work * .6); flare.material.blending = ad; flare.material.color.set(n ? '#dffaff' : '#8fd8ff');
+          shards.instanceMatrix.needsUpdate = true; shards.instanceColor.needsUpdate = true; shards.material.opacity = Math.min(1, wd * 1.2) * (n ? .78 + e * .14 : .86); shards.material.blending = n && e < .5 ? T.AdditiveBlending : T.NormalBlending;
+          const since = (performance.now() - lastSnap) / 1000; flare.visible = Ls > .02 && wd > .1; flare.position.set(x0, cyC, cz - 2); flare.scale.setScalar(7 + 60 * Math.exp(-since * 2.2)); flare.material.opacity = Ls * wd * (.22 + .78 * Math.exp(-since * 2)) * (1 - work * .5); flare.material.blending = ad; flare.material.color.set(n ? '#dffaff' : '#8fd8ff');
         } else flare.visible = false;
 
         ring.visible = vast.visible = w6 > .01; ring.position.set(x0, -6 * UNIT - 3, -30); ring.rotation.z = t * .01; ring.material.opacity = w6 * (n ? .5 : .6); ring.material.color.set(n ? '#aab4ff' : '#3a3fa0');
@@ -216,28 +227,6 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     };
   })();
 
-  // ---- optional sound, off until asked for: a drone and breath of noise that follow the depth, a chime at lucidity ----
-  let audio = null;
-  function chime() {
-    const c = audio.ctx, t = c.currentTime;
-    [880, 1318.5, 1760].forEach((f, i) => { const o = c.createOscillator(), g = c.createGain(); o.type = 'sine'; o.frequency.value = f; g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.05 / (i + 1), t + .02 + i * .06); g.gain.exponentialRampToValueAtTime(.0001, t + 2.6); o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + 2.8); });
-  }
-  $('sound').addEventListener('click', () => {
-    if (!audio) {
-      const A = window.AudioContext || window.webkitAudioContext; if (!A) return;
-      const ctx = new A(), out = ctx.createGain(), lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 600; out.gain.value = 0;
-      const o1 = ctx.createOscillator(), o2 = ctx.createOscillator(), o3 = ctx.createOscillator(), g2 = ctx.createGain(), g3 = ctx.createGain(); o1.type = 'sine'; o2.type = 'sine'; o3.type = 'triangle'; g2.gain.value = .35; g3.gain.value = .12;
-      // a breath of filtered noise, like air moving
-      const len = ctx.sampleRate * 2, buf = ctx.createBuffer(1, len, ctx.sampleRate), ch = buf.getChannelData(0); for (let i = 0; i < len; i++) ch[i] = Math.random() * 2 - 1;
-      const noise = ctx.createBufferSource(); noise.buffer = buf; noise.loop = true; const nf = ctx.createBiquadFilter(); nf.type = 'bandpass'; nf.Q.value = .7; const ng = ctx.createGain(); ng.gain.value = 0;
-      noise.connect(nf); nf.connect(ng); ng.connect(out);
-      o1.connect(lp); o2.connect(g2); g2.connect(lp); o3.connect(g3); g3.connect(lp); lp.connect(out); out.connect(ctx.destination); o1.start(); o2.start(); o3.start(); noise.start();
-      audio = { ctx, out, lp, o1, o2, o3, nf, ng, on: false };
-    }
-    audio.on = !audio.on; if (audio.on) audio.ctx.resume();
-    $('sound').textContent = audio.on ? 'Sound on' : 'Sound off'; $('sound').setAttribute('aria-pressed', String(audio.on));
-  });
-
   // ---- frame ----
   let last = 0, ph = 0, shown = 99, inChamber = false;
   function frame(ts) {
@@ -246,7 +235,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     const tbl = mode === 'light' ? LIGHT : NIGHT, k = row(tbl, depth);
     ph += dt / 1000 * k.n[1] * (reduce ? .2 : 1);
     m[0] += (mouse[0] - m[0]) * .05; m[1] += (mouse[1] - m[1]) * .05;
-    if (fallScene) fallScene.render(dt, depth, m, inChamber);
+    if (fallScene && !document.hidden) fallScene.render(dt, depth, m, inChamber);
     if (U) {
       gl.uniform2f(U.r, cv.width, cv.height); gl.uniform2fv(U.m, m); gl.uniform1f(U.ph, ph); gl.uniform1f(U.amt, k.n[0] * (fallScene ? .5 : 1)); gl.uniform1f(U.sharp, k.n[2]); gl.uniform1f(U.rise, k.n[3]); gl.uniform1f(U.ptr, k.n[4]);
       gl.uniform1f(U.nar, innerWidth < 820 ? 1 : 0); gl.uniform1f(U.dk, mode === 'night' ? 1 : 0); gl.uniform1f(U.seed, ts % 97);
@@ -263,12 +252,6 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     }
     const mins = Math.round(lerpList(MIN, depth)) + 23 * 60, hh = Math.floor(mins / 60) % 24, mm = mins % 60;
     $('clock').textContent = ('0' + hh).slice(-2) + ':' + ('0' + mm).slice(-2);
-    if (audio) {
-      const t = audio.ctx.currentTime, f = lerpList(TONE, depth);
-      audio.o1.frequency.setTargetAtTime(f, t, .6); audio.o2.frequency.setTargetAtTime(f * 1.498, t, .6);
-      audio.o3.frequency.setTargetAtTime(f * 2.005, t, .6); audio.nf.frequency.setTargetAtTime(300 + 1800 * k.n[1], t, .8); audio.ng.gain.setTargetAtTime(.5 * (1 - Math.max(0, 1 - Math.abs(depth - 2) / 1.1)) * k.n[0], t, .8);
-      audio.lp.frequency.setTargetAtTime(200 + 1400 * k.n[0], t, .6); audio.out.gain.setTargetAtTime(audio.on ? .07 * lerpList(LOUD, depth) : 0, t, .4);
-    }
     requestAnimationFrame(frame);
   }
 

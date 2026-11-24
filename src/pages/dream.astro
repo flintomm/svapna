@@ -4,6 +4,7 @@ import quotesData from '../data/quotes.json';
 import timelineData from '../data/timeline.json';
 import shorts from '../data/dream_shorts.json';
 import { getLesson, getGlossaryTerm } from '../lib/lessons.js';
+import { curriculumModules } from '../lib/content.js';
 
 const pad = n => String(n).padStart(2, '0');
 const Q = Object.fromEntries(quotesData.quotes.map(q => [q.id, q]));
@@ -38,7 +39,7 @@ const layers = spec.map(l => ({
   ...l,
   terms: l.terms.map(([who, term, slug]) => ({ who, term, href: slug && getGlossaryTerm(slug) ? `/glossary/${getGlossaryTerm(slug).slug}` : null })),
   quotes: l.quotes.map(id => Q[id]).filter(Boolean).map(q => ({ text: q.text, by: q.attribution, cite: q.citation })),
-  ideas: shorts.filter(s => s.layer === l.id).map(s => { const x = getLesson(s.module, s.lesson); return { title: s.title, short: s.short, href: x ? `/curriculum/module-${pad(s.module)}/${x.urlSlug}` : null }; }),
+  ideas: shorts.filter(s => s.layer === l.id).map(s => { const x = getLesson(s.module, s.lesson); return { title: /^(What This|Why We Begin)/i.test(s.title) ? `${(curriculumModules[s.module - 1] || {}).title || 'The work'}, in brief` : s.title, short: s.short, href: x ? `/curriculum/module-${pad(s.module)}/${x.urlSlug}` : null }; }),
 }));
 const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).map(e => ({ date: e.date.replace(/^(\d{4})-\d\d-\d\d$/, '$1'), title: e.title, tradition: e.tradition, summary: e.summary }));
 ---
@@ -65,7 +66,6 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <header class="top">
   <a class="mark" href="/">∴ Svapna</a>
   <div class="top-right">
-    <button id="sound" type="button" aria-pressed="false">Sound off</button>
     <button id="mode" type="button">Light</button>
     <button id="open-dates" type="button">By date</button>
     <a href="/">Questions</a>
