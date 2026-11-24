@@ -43891,5 +43891,320 @@ window.PILOT_EVIDENCE={
         "date": "2026-11-24"
       }
     }
+  ],
+  "links": [
+    {
+      "id": "nov22-africa-wiredu-disagrees-with-gyekye-about-dualism",
+      "from": [
+        "Kwasi Wiredu"
+      ],
+      "to": [
+        "Kwame Gyekye"
+      ],
+      "verb": "disputes a reading by",
+      "year": 1992,
+      "topic": "metaphysical reading of the traditional conception of a person",
+      "summary": "Wiredu calls Gyekye’s interpretation somewhat Cartesian and dualistic; he presents his own reading as quasi-monistic.",
+      "caveat": "The analogy is Wiredu’s characterization of Gyekye’s interpretation, not Gyekye’s self-description, a Descartes influence claim or an analogy to Wiredu’s own view."
+    },
+    {
+      "id": "nov22-africa-cesaire-credits-hegel",
+      "from": [
+        "Aimé Césaire"
+      ],
+      "to": [
+        "G. W. F. Hegel"
+      ],
+      "verb": "cites",
+      "year": 1987,
+      "topic": "universality",
+      "summary": "Césaire credits Hegel for a route to universality through deepened singularity.",
+      "caveat": "Césaire’s reading; no Hegel passage specified."
+    },
+    {
+      "id": "nov22-africa-cesaire-names-senghor",
+      "from": [
+        "Aimé Césaire"
+      ],
+      "to": [
+        "Léopold Sédar Senghor"
+      ],
+      "verb": "cites",
+      "year": 1987,
+      "topic": "universality",
+      "summary": "Césaire names universality as dear to Senghor while criticizing European reductionism.",
+      "caveat": "The criticism targets European reductionism, not Senghor."
+    },
+    {
+      "id": "nov22-yi-hwang-quotes-zhu-xi-questions",
+      "from": [
+        "Yi Hwang (Toegye)"
+      ],
+      "to": [
+        "Zhu Xi"
+      ],
+      "verb": "cites",
+      "year": 1988,
+      "topic": "Two stages of learning",
+      "summary": "Yi quotes Zhu Xi’s Questions and Answers on the Great Learning to explain how two stages of learning fit.",
+      "caveat": "One excerpt, not a general influence claim."
+    },
+    {
+      "id": "nov22-tusi-acknowledges-miskawayh",
+      "from": [
+        "Naṣīr al-Dīn Ṭūsī"
+      ],
+      "to": [
+        "Ibn Miskawayh"
+      ],
+      "verb": "acknowledges a method from",
+      "year": null,
+      "topic": "A source for his ethics",
+      "summary": "Ṭūsī presents his ethical discourse as condensing Miskawayh’s work rather than simply translating it.",
+      "caveat": "This does not trace individual doctrines."
+    },
+    {
+      "id": "nov23-stein-qualifies-james-social-self",
+      "from": [
+        "Edith Stein"
+      ],
+      "to": [
+        "William James"
+      ],
+      "verb": "disputes a term used by",
+      "year": 1917,
+      "topic": "Social self",
+      "summary": "Stein allows multiple viewpoints but rejects James’s label “social self”.",
+      "caveat": "Naming dispute, not influence."
+    },
+    {
+      "id": "nov23-aguon-reports-using-lorde-insight",
+      "from": [
+        "Julian Aguon"
+      ],
+      "to": [
+        "Audre Lorde"
+      ],
+      "verb": "reports drawing on",
+      "year": 2022,
+      "topic": "Personal experience and politics",
+      "summary": "Aguon says he tried to put a feminist insight he attributes to Lorde into practice.",
+      "caveat": "He names no Lorde work in that answer. No claim about who coined the phrase or about broader influence."
+    },
+    {
+      "id": "nov23-cardoso-recalls-reading-fanon",
+      "from": [
+        "Luís Cardoso"
+      ],
+      "to": [
+        "Frantz Fanon"
+      ],
+      "verb": "reports reading",
+      "year": 2021,
+      "topic": "Named reading in Timor",
+      "summary": "Cardoso recalls reading Fanon’s Pele negra, máscaras brancas in Timor.",
+      "caveat": "No exact reading date, contact or influence established."
+    },
+    {
+      "id": "nov23-reid-critiques-locke-personal-identity",
+      "from": [
+        "Thomas Reid"
+      ],
+      "to": [
+        "John Locke"
+      ],
+      "verb": "criticises",
+      "year": 1785,
+      "topic": "Remembering and staying the same",
+      "summary": "Reid challenges Locke’s account through the officer example.",
+      "caveat": "Reid’s reading; no contact inferred."
+    },
+    {
+      "id": "nov23-hooks-acknowledges-thich-nhat-hanh-pedagogy",
+      "from": [
+        "bell hooks"
+      ],
+      "to": [
+        "Thich Nhat Hanh",
+        "Thích Nhất Hạnh"
+      ],
+      "verb": "acknowledges a method from",
+      "year": 1994,
+      "topic": "Teaching the whole person",
+      "summary": "hooks credits Thích Nhất Hạnh’s engaged Buddhism with helping her see teachers and students as whole people, not just participants in book learning.",
+      "caveat": "Her account of using his ideas, not a report of meeting or agreement on the nature of self."
+    },
+    {
+      "id": "nov24-thich-nhat-hanh-open-letter-to-king",
+      "from": [
+        "Thich Nhat Hanh",
+        "Thích Nhất Hạnh"
+      ],
+      "to": [
+        "Martin Luther King Jr."
+      ],
+      "verb": "addressed an open letter to",
+      "year": 1965,
+      "topic": "People and prejudice",
+      "summary": "Nhất Hạnh addresses King in an open letter, arguing that the enemies of a just struggle are hatred and discrimination, not people.",
+      "caveat": "An open address, not proof King replied."
+    },
+    {
+      "id": "nov24-king-nominates-thich-nhat-hanh",
+      "from": [
+        "Martin Luther King Jr."
+      ],
+      "to": [
+        "Thich Nhat Hanh",
+        "Thích Nhất Hạnh"
+      ],
+      "verb": "nominated",
+      "year": 1967,
+      "topic": "Peace Prize nomination",
+      "summary": "King proposes Nhất Hạnh for the Nobel Peace Prize.",
+      "caveat": "Addressed to the Nobel Institute, not Nhất Hạnh; writing does not establish receipt or award."
+    },
+    {
+      "id": "nov24-king-thich-nhat-hanh-issue-joint-statement",
+      "from": [
+        "Martin Luther King Jr."
+      ],
+      "to": [
+        "Thich Nhat Hanh",
+        "Thích Nhất Hạnh"
+      ],
+      "verb": "issued a joint statement with",
+      "year": 1966,
+      "topic": "Joint nonviolence statement",
+      "summary": "In a joint statement, King and Nhất Hạnh explicitly quote Nhất Hạnh’s 1965 letter to King and jointly distinguish people from prejudice and violence.",
+      "caveat": "Proof of one appeal’s reuse, not proof that the letter caused King’s broader position on the war. Nyack is the statement’s dateline, not a meeting venue."
+    },
+    {
+      "id": "nov24-king-applies-buber-to-segregation",
+      "from": [
+        "Martin Luther King Jr."
+      ],
+      "to": [
+        "Martin Buber"
+      ],
+      "verb": "cites",
+      "year": 1963,
+      "topic": "Buber’s distinction applied to segregation",
+      "summary": "King explicitly invokes Martin Buber’s I–Thou and I–It distinction to argue that segregation reduces people to things.",
+      "caveat": "King applies Buber’s terms; this does not establish contact or Buber’s position on the campaign."
+    },
+    {
+      "id": "nov24-king-recounts-use-of-gandhian-nonviolence",
+      "from": [
+        "Martin Luther King Jr."
+      ],
+      "to": [
+        "Mohandas K. Gandhi"
+      ],
+      "verb": "reports drawing on",
+      "year": 1960,
+      "topic": "Nonviolent method and the Montgomery boycott",
+      "summary": "King recounts drawing on Gandhi’s method alongside Christian teachings in Montgomery. He says the boycott experience also deepened his understanding.",
+      "caveat": "King’s retrospective account of the method, not a claim that he read Hind Swaraj, met Gandhi, or that Gandhi alone produced the movement’s strategy."
+    },
+    {
+      "id": "nov24-merton-describes-nhat-hanh-as-brother",
+      "from": [
+        "Thomas Merton"
+      ],
+      "to": [
+        "Thich Nhat Hanh",
+        "Thích Nhất Hạnh"
+      ],
+      "verb": "wrote about",
+      "year": 1966,
+      "topic": "Solidarity across religious and national boundaries",
+      "summary": "Merton calls Nhất Hạnh his brother and appeals for his safety, treating shared monastic life and opposition to the war as ties beyond nationality.",
+      "caveat": "Merton’s characterization and advocacy, not evidence of agreement on every doctrine or proof of influence."
+    },
+    {
+      "id": "nov24-king-names-bhave-as-prompt-for-disarmament-suggestion",
+      "from": [
+        "Martin Luther King Jr."
+      ],
+      "to": [
+        "Vinoba Bhave"
+      ],
+      "verb": "cites",
+      "year": 1959,
+      "topic": "King credits conversations about disarmament",
+      "summary": "King credits conversations with Bhave for his suggestion that India lead on disarmament. King reports that Bhave thought a country might act alone.",
+      "caveat": "King’s attribution rather than Bhave’s own transcript, proof of sole influence, or evidence India adopted the proposal."
+    },
+    {
+      "id": "nov24-bhave-credits-gandhi-for-bhoodan",
+      "from": [
+        "Vinoba Bhave"
+      ],
+      "to": [
+        "Mohandas K. Gandhi"
+      ],
+      "verb": "cites",
+      "year": 1994,
+      "topic": "Bhave credits Gandhi for Bhoodan",
+      "summary": "Bhave names Gandhi as an inspiration for the Bhoodan land-gift movement.",
+      "caveat": "Bhave’s retrospective attribution, not evidence Gandhi participated in the movement or that particular gifts were transferred."
+    },
+    {
+      "id": "nov24-ambedkar-letter-to-du-bois",
+      "from": [
+        "B. R. Ambedkar"
+      ],
+      "to": [
+        "W. E. B. Du Bois"
+      ],
+      "verb": "wrote to",
+      "year": 1946,
+      "topic": "A comparison and request for a UN petition",
+      "summary": "Ambedkar tells Du Bois why he thinks the treatment of Dalits in India makes it important to study Black Americans’ experience. He requests copies of a UN petition as Dalits consider making a similar appeal.",
+      "caveat": "Ambedkar draws a comparison, not an equivalence. The letter does not show that a Dalit petition was filed or that the two men coordinated one."
+    },
+    {
+      "id": "nov24-du-bois-letter-to-ambedkar",
+      "from": [
+        "W. E. B. Du Bois"
+      ],
+      "to": [
+        "B. R. Ambedkar"
+      ],
+      "verb": "wrote to",
+      "year": 1946,
+      "topic": "A reply with the National Negro Congress statement",
+      "summary": "Du Bois replies that he is enclosing the National Negro Congress statement. He expresses sympathy for Dalits and offers to send a separate NAACP statement if it is later submitted.",
+      "caveat": "The letter reports the enclosure and a conditional offer; it does not establish receipt, a later mailing, or joint petition work."
+    },
+    {
+      "id": "nov24-du-bois-cites-tagore-in-the-crisis",
+      "from": [
+        "W. E. B. Du Bois"
+      ],
+      "to": [
+        "Rabindranath Tagore"
+      ],
+      "verb": "cites",
+      "year": 1929,
+      "topic": "Du Bois publishes and responds to Tagore’s message",
+      "summary": "After presenting Tagore’s message, Du Bois reads it as an appeal beyond racial and national boundaries and asks American readers to face their own narrow outlook.",
+      "caveat": "Du Bois’s editorial interpretation, not Tagore’s entire political position. No claim they met, agreed on everything, or influenced particular American readers."
+    },
+    {
+      "id": "nov24-leibniz-characterizes-rites-honoring-confucius",
+      "from": [
+        "Gottfried Wilhelm Leibniz"
+      ],
+      "to": [
+        "Confucius"
+      ],
+      "verb": "wrote about",
+      "year": null,
+      "topic": "Leibniz considers the rites honoring Confucius",
+      "summary": "Leibniz discusses ceremonies honoring Confucius and other distinguished dead. He argues that outward signs resembling religious worship can carry different meanings.",
+      "caveat": "Leibniz’s interpretation of rites honoring Confucius, not a statement by Confucius, a citation of the Analects, or evidence of influence."
+    }
   ]
 };

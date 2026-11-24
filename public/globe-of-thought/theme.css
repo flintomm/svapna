@@ -114,3 +114,8 @@
 .atlas .era { font: 400 10px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #737373; }
 .atlas .era-bar { border-radius: 0; height: 8px; border: .5px solid #000; }
 .atlas .step button#play { font-size: .8rem; }
+
+/* Documented connections between thinkers. */
+.atlas .ties { border: 0 solid #000; border-top-width: .5px; }
+.atlas .ties-title { font: 400 10px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: #737373; }
+.atlas .tie { color: #000; } .atlas .tie-note { color: #525252; }

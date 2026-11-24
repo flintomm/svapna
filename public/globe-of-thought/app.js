@@ -106,6 +106,16 @@ $('stats').textContent = cards.length + (cards.length < atlas.cards.length ? ' o
   + cards[0].dateShort + ' to ' + cards.at(-1).dateShort + (drafts ? ' · ' + drafts + ' draft readings awaiting review' : '');
 $('question').textContent = question.question;
 // Switching question reloads the page on the same passage where that passage is placed on the new question.
+// Documented connections: a thinker's links, looked up by the name on the passage.
+const linksOf = name => (atlas.links || []).flatMap(link => {
+  const out = link.from.includes(name), back = link.to.includes(name);
+  if (!out && !back) return [];
+  const others = out ? link.to : link.from;
+  // The other thinker's passage on this question if there is one, else any passage of theirs.
+  const here = cards.find(c => others.includes(c.name));
+  const anywhere = here || atlas.cards.find(c => others.includes(c.name));
+  return anywhere ? [{ link, out, other: anywhere, here: Boolean(here) }] : [];
+});
 const questionUrl = (q, passageId) => '?q=' + q.id + (passageId ? '#p=' + passageId : '');
 // Questions are offered in their groups, each group under its own small heading.
 let shownGroup = '';
@@ -272,6 +282,20 @@ function renderPassage(card) {
   }
   const parts = [mark, heading, info, quote, why, limit, link, sourceMeta, check, where, share, back];
   if (elsewhere.children.length) parts.splice(6, 0, elsewhere);
+  const ties = linksOf(card.name);
+  if (ties.length) {
+    const box = node('div', 'ties');
+    box.append(node('p', 'ties-title', 'Documented connections'));
+    for (const { link, out, other, here } of ties) {
+      const row = node('p', 'tie'), jump = node('a', '', other.name);
+      jump.href = here ? '#p=' + other.id : questionUrl(atlas.questions.find(q => q.id === other.question) || question, other.id);
+      if (here) jump.addEventListener('click', event => { event.preventDefault(); pick(cards.findIndex(c => c.id === other.id), { center: true }); });
+      const lead = out ? [card.short + ' ' + link.verb + ' ', jump] : [jump, ' ' + link.verb + ' ' + card.short];
+      row.append(...lead, (link.year ? ' (' + link.year + ')' : '') + '. ', node('span', 'tie-note', link.summary + (link.caveat ? ' ' + link.caveat : '')));
+      box.append(row);
+    }
+    parts.splice(parts.indexOf(elsewhere) >= 0 ? parts.indexOf(elsewhere) + 1 : 6, 0, box);
+  }
   // A passage quoted in its original language carries the atlas's own English rendering beneath it.
   if (card.translation) parts.splice(4, 0, node('p', 'translation', 'In English (the atlas’s own translation): “' + card.translation + '”'));
   if (card.review === 'draft') parts.splice(3, 0, node('p', 'draft', 'Draft reading · not yet reviewed by an editor'));
@@ -395,6 +419,14 @@ function paint() {
   // and fades with distance. It is clipped to land and shows local evidence, not populations.
   const size = Math.max(22, Math.min(w, h) * .1 * Math.sqrt(zoom));
   paintHeat(placed, size);
+  // Arcs from the selected passage to the thinkers it is documented as citing, answering or writing to.
+  const from = cards[active];
+  for (const { other } of linksOf(from.name)) {
+    ctx.beginPath(); path({ type: 'LineString', coordinates: [[from.lng, from.lat], [other.lng, other.lat]] });
+    ctx.strokeStyle = theme.link || '#ffffffcc'; ctx.lineWidth = 1.4; ctx.setLineDash([5, 4]); ctx.stroke(); ctx.setLineDash([]);
+    const [ox, oy] = projection([other.lng, other.lat]);
+    if (isNear([other.lng, other.lat])) { ctx.beginPath(); ctx.arc(ox, oy, 4, 0, Math.PI * 2); ctx.fillStyle = theme.link || '#ffffffcc'; ctx.fill(); }
+  }
   const rim = ctx.createLinearGradient(x - r, y - r, x + r, y + r);
   [0, .4, .75, 1].forEach((stop, i) => rim.addColorStop(stop, theme.rim[i]));
   drawShape(sphere, null, rim, .9);

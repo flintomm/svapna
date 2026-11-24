@@ -413,3 +413,11 @@
 
 .atlas .era-n { text-align: right; }
 
+.atlas .ties { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
+
+.atlas .ties-title { margin: 0 0 6px; font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--quiet); }
+
+.atlas .tie { margin: 0 0 8px; font-size: .92rem; line-height: 1.5; }
+
+.atlas .tie-note { color: var(--muted); }
+
