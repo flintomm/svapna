@@ -441,7 +441,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     $('voice-who').textContent = c.name;
     $('voice-where').textContent = `${c.place} · ${c.dateShort}${c.work ? ' · ' + c.work : ''}`;
     $('voice-source').href = c.sourceUrl;
-    $('voice-atlas').href = `/globe-of-thought?q=${q.id}#p=${c.id}`;
+    $('voice-atlas').href = '/thinkers/' + c.name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '#' + c.id;
     $('when').textContent = c.dateShort;
     face(c); drawStrip();
   }

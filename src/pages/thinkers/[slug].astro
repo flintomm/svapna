@@ -1,0 +1,52 @@
+---
+import Read from '../../layouts/Read.astro';
+import { thinkers, thinkerOf } from '../../lib/atlas.js';
+export function getStaticPaths() { return thinkers.map(t => ({ params: { slug: t.slug }, props: { t } })); }
+const { t } = Astro.props;
+const n = t.own.length, qs = [...new Set(t.passages.map(p => p.question.plain))];
+const lead = t.own[0];
+const desc = `${t.name} in ${n === 1 ? 'their own words' : `${n} passages`}, ${t.when}, ${t.where}: “${lead.excerpt.slice(0, 110)}${lead.excerpt.length > 110 ? '…' : ''}” On ${qs.slice(0, 3).join(' ').toLowerCase()}`;
+const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: `https://svapnaproject.org/thinkers/${t.slug}`, mainEntity: { '@type': 'Person', name: t.name, description: `Passages by ${t.name} on ${qs.length} of life’s big questions.` } };
+---
+<Read title={`${t.name}: in their own words — Svapna`} description={desc} path={`/thinkers/${t.slug}`} crumbs={[{ name: 'Thinkers', path: '/thinkers' }, { name: t.name, path: `/thinkers/${t.slug}` }]} jsonLd={jsonLd}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/thinkers">Thinkers</a></p>
+  <h1>{t.name}</h1>
+  <p class="lede">{t.where} · {t.when}{n > 1 ? ` · ${n} passages` : ''}. {qs.length === 1 ? 'One question answered' : `${qs.length} questions answered`}, in this voice’s own words.</p>
+
+  <div class="rows" style="margin-top:56px">
+    {t.own.map(c => {
+      const places = t.passages.filter(p => p.card.id === c.id), home = places.find(p => p.home) || places[0];
+      return (
+        <article class="row" id={c.id}>
+          <div>
+            <blockquote>“{c.excerpt}”</blockquote>
+            {c.translation && <p class="tr">{c.translation}</p>}
+            {places.map(p => (
+              <div style="margin-top:22px">
+                <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}#${c.id}`}>{p.question.plain}</a> {p.step.plain}</p>
+                <p class="why">{p.why}</p>
+              </div>
+            ))}
+            <p class="why"><b>What it doesn’t show.</b> {home.limit}</p>
+          </div>
+          <div class="who">
+            <p>{c.work}</p><p>{c.dateFull || c.dateShort}</p><p>{c.place}</p><p>{c.sourceLabel}</p>
+            <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+            <a class="src" href={`/#${home.question.id}`}>See it on the world →</a>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+
+  {t.ties.length > 0 && (
+    <section>
+      <h2>Documented connections</h2>
+      <div class="ties">
+        {t.ties.map(l => (
+          <p>{l.out ? <>{t.name} {l.verb} {thinkerOf(l.other) ? <a href={`/thinkers/${l.otherSlug}`}>{l.other}</a> : l.other}</> : <>{thinkerOf(l.other) ? <a href={`/thinkers/${l.otherSlug}`}>{l.other}</a> : l.other} {l.verb} {t.name}</>}{l.year ? ` (${l.year})` : ''}. <span>{l.summary} {l.caveat}</span></p>
+        ))}
+      </div>
+    </section>
+  )}
+</Read>

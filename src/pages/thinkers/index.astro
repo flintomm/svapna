@@ -1,0 +1,18 @@
+---
+import Read from '../../layouts/Read.astro';
+import { thinkers } from '../../lib/atlas.js';
+const letters = [...new Set(thinkers.map(t => (t.sort[0] || '#').toUpperCase()))];
+---
+<Read title={`${thinkers.length} thinkers and texts — Svapna`} description={`Every thinker and text in the atlas, from the Pyramid Texts to today: ${thinkers.length} voices from every continent, each with their own words on life’s big questions.`} path="/thinkers" crumbs={[{ name: 'Thinkers', path: '/thinkers' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · Thinkers</p>
+  <h1>{thinkers.length} <em>voices.</em></h1>
+  <p class="lede">Every thinker and text in the atlas, from about 2400 BCE to today. Each page gathers that voice’s own words on the questions, where they were written, and where to read them.</p>
+  <div class="index">
+    {letters.map(L => (
+      <>
+        <p class="letter">{L}</p>
+        {thinkers.filter(t => (t.sort[0] || '#').toUpperCase() === L).map(t => <a href={`/thinkers/${t.slug}`}>{t.name}<span>{t.when}</span></a>)}
+      </>
+    ))}
+  </div>
+</Read>

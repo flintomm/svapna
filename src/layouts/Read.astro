@@ -1,0 +1,53 @@
+---
+// The reading layout: the new look for pages meant to be read and found by search.
+import { organizationSchema, breadcrumbSchema, buildCrumbs } from '../lib/seo.js';
+interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null }
+const { title, description, path, crumbs = [], jsonLd = null } = Astro.props;
+const siteUrl = 'https://svapnaproject.org/';
+const canonical = siteUrl.replace(/\/$/, '') + path;
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />
+{crumbs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(buildCrumbs(siteUrl, crumbs)))} />}
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+<script is:inline>
+  (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/read/read.css" />
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/">∴ Svapna</a>
+  <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><button id="mode" type="button">Mode</button></nav>
+</header>
+<main><slot /></main>
+<footer class="foot">
+  <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a></p>
+  <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
+  <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale is a draft reading, not yet reviewed by an editor.</p>
+</footer>
+<script is:inline>
+  (function () { var b = document.getElementById('mode'), r = document.documentElement; function paint() { b.textContent = r.dataset.mode === 'light' ? 'Night' : 'Light'; }
+    b.addEventListener('click', function () { r.dataset.mode = r.dataset.mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', r.dataset.mode); } catch (e) {} paint(); }); paint(); })();
+</script>
+</body>
+</html>

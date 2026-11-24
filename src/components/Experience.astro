@@ -11,7 +11,7 @@ const title = 'Svapna — the big questions, answered across 4,000 years';
 const description = 'Answer one of life’s big questions and see the world light up with everyone who agreed: over 1,200 passages from thinkers on every continent, each checked at its source. A study of consciousness, from dreaming to death.';
 // Search engines and readers without scripts get the questions and a sample of passages as plain text.
 const atlas = JSON.parse(evidence.slice(evidence.indexOf('{'), evidence.lastIndexOf('}') + 1));
-const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.filter(c => c.readings[q.id]).slice(0, 3) }));
+const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas.cards.filter(c => c.readings[q.id]).slice(0, 3) }));
 ---
 <!doctype html>
 <html lang="en">
@@ -101,6 +101,8 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
   <ol id="menu-list"></ol>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
+    <li><a href="/questions">All fourteen questions, to read</a></li>
+    <li><a href="/thinkers">Every thinker and text</a></li>
     <li><a href="/dream">Dreaming · sink through one night</a></li>
     <li><a href="/history">History of dream practice</a></li>
     <li><a href="/curriculum">Lessons</a></li>
@@ -122,11 +124,11 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
     <p>{description}</p>
     {sample.map(s => (
       <section>
-        <h2>{s.q}</h2>
+        <h2><a href={`/questions/${s.id}`}>{s.q}</a></h2>
         {s.cards.map(c => <p>“{c.excerpt}” — {c.name}, {c.place}, {c.dateShort}. <a href={c.sourceUrl}>Source</a></p>)}
       </section>
     ))}
-    <p><a href="/globe-of-thought">All passages</a> · <a href="/dream">Dreaming</a> · <a href="/history">History</a> · <a href="/library">Library</a> · <a href="/support">Support</a></p>
+    <p><a href="/questions">All questions</a> · <a href="/thinkers">All thinkers</a> · <a href="/dream">Dreaming</a> · <a href="/history">History</a> · <a href="/library">Library</a> · <a href="/support">Support</a></p>
   </div>
 </noscript>
 </body>
