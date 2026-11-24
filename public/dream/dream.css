@@ -96,3 +96,16 @@ main::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 @media(max-width:820px){section.layer{align-items:flex-end;padding-top:46vh}.layer h2{font-size:clamp(38px,11vw,60px)}.voice blockquote{font-size:clamp(22px,6.2vw,30px)}}
 
 @media(max-width:820px){main::before{background:linear-gradient(0deg,color-mix(in srgb,var(--inv) 90%,transparent) 0%,color-mix(in srgb,var(--inv) 78%,transparent) 50%,transparent 68%)}section.layer{padding-top:52vh}}
+
+/* ---- controls without capsules: words and a hairline, arrows with no ring ---- */
+.pill{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:0 0 7px;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;font:500 15px/1 'Inter Tight',sans-serif;letter-spacing:-.01em;transition:border-color .25s,opacity .25s;opacity:.85}
+.pill::after{content:' →';display:inline-block;margin-left:.45em;transition:transform .25s}
+.pill:hover{background:none;color:inherit;border-color:var(--ink);opacity:1}.pill:hover::after{transform:translateX(5px)}
+.intro .pill::after{content:' ↓'}.intro .pill:hover::after{transform:translateY(4px)}
+.more[open] summary .pill{background:none;color:inherit;border-color:var(--ink)}
+.down{border:0;border-radius:0;width:auto;height:auto;font-size:22px;margin:0 0 0 26px;opacity:.7;vertical-align:baseline}
+.down:hover{opacity:1}
+.ends{gap:14px 34px}
+.chamber-nav button{border:0;border-radius:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;width:44px;height:44px;font-size:24px;opacity:.75}
+.chamber-nav button:hover{background:none;color:inherit;opacity:1}
+#chamber-close{border-bottom:1px solid var(--line);padding-bottom:6px}

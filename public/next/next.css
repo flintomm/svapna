@@ -149,3 +149,18 @@ body[data-v=aurora] .menu-links a,body[data-v=paper] .menu-links a,body[data-v=f
 /* ---- day: the same 3D world, brightly lit ---- */
 body[data-three] #w3{display:block}
 body[data-v=aurora][data-three] #sky{display:none}
+
+/* ---- controls without capsules: words and a hairline, arrows with no ring ---- */
+body:not([data-v=night]) .answers{gap:14px 40px;font:500 clamp(20px,2.1vw,32px)/1.1 var(--sans);letter-spacing:-.03em}
+body:not([data-v=night]) .answers button,body[data-v=aurora] .answers button,body[data-v=cine] .answers button{border:0;border-bottom:1px solid currentColor;border-radius:0;padding:0 0 8px;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;opacity:.9;transition:color .25s,border-color .25s,opacity .25s}
+body:not([data-v=night]) .answers button:hover,body[data-v=cine] .answers button:hover{background:none;color:var(--c);border-color:var(--c);transform:none;opacity:1}
+body:not([data-v=night]) .answers button:hover i,body[data-v=cine] .answers button:hover i{background:var(--c)}
+body:not([data-v=night]) #voice-pos,body[data-v=cine] #voice-pos{background:none;color:var(--c);border-radius:0;padding:0;font-weight:600}
+body:not([data-v=night]) #voice-pos::before{content:'';display:inline-block;width:.6em;height:.6em;border-radius:50%;background:var(--c);margin-right:.55em}
+body:not([data-v=night]) .dock-row>button,body[data-v=aurora] .dock-row>button,body[data-v=cine] .dock-row>button{border:0;border-radius:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;width:40px;height:40px;font-size:24px;opacity:.75}
+body:not([data-v=night]) .dock-row>button:hover{opacity:1}
+body:not([data-v=night]) #drift,body[data-v=aurora] #drift,body[data-v=cine] #drift{border:0;border-bottom:1px solid transparent;border-radius:0;padding:0 0 5px;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;font-size:13px;opacity:.5;width:auto;height:auto}
+body:not([data-v=night]) #drift[aria-pressed=true],body[data-v=aurora] #drift[aria-pressed=true],body[data-v=cine] #drift[aria-pressed=true]{background:none;color:inherit;opacity:1;border-bottom-color:currentColor}
+body:not([data-v=night]) .who-filter,body[data-v=aurora] .who-filter,body[data-v=cine] .who-filter{background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-radius:0;padding:0;gap:22px}
+body:not([data-v=night]) .who-filter button,body[data-v=cine] .who-filter button{border-radius:0;padding:0 0 5px;border-bottom:1px solid transparent;opacity:.5}
+body:not([data-v=night]) .who-filter button[aria-pressed=true],body[data-v=aurora] .who-filter button[aria-pressed=true],body[data-v=cine] .who-filter button[aria-pressed=true]{background:none;color:inherit;opacity:1;border-bottom-color:currentColor}
