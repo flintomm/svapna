@@ -33,7 +33,7 @@ create policy "own answers: all" on public.answers for all using (auth.uid() = u
 revoke all on public.profiles from anon, authenticated;
 grant select on public.profiles to authenticated;
 grant update (display_name, country, done) on public.profiles to authenticated;
-revoke all on public.answers from anon;
+revoke all on public.answers from anon, authenticated;
 grant select, insert, update, delete on public.answers to authenticated;
 
 -- Every new account gets an empty profile. The name from the sign-in provider is not copied.
