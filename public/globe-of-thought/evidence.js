@@ -21243,6 +21243,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nezahualcoyotl-death",
+      "question": "death",
+      "name": "Nezahualcoyotl (attributed), song in the Cantares Mexicanos",
+      "short": "Nezahualcoyotl",
+      "work": "Song of the Prince Nezahualcoyotl, Cantares Mexicanos, no. XXIII",
+      "excerpt": "but for a little while do we enjoy the prince Nezahualcoyotl, nor a second time will he come to his house on earth; no second time will he rejoice on earth",
+      "period": "Attributed to the 15th century; manuscript c. 1550–1600; translated 1887",
+      "dateShort": "15th c.",
+      "dateFull": "15th century",
+      "sortYear": 1470,
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), English translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "locator": "Song XXIII, “Songs of the Prince Nezahualcoyotl”, verse 6.",
+      "place": "Texcoco, Valley of Mexico, Mexico",
+      "lat": 19.51,
+      "lng": -98.88,
+      "anchorType": "Traditional association",
+      "placeNote": "The song is attributed to Nezahualcoyotl, ruler of Texcoco (reigned 1431–1472). The linked page gives the song and Brinton’s note on its attribution; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "No second time on earth",
+          "why": "The song speaks in the prince’s voice of his coming death: his life on earth is brief and he will not return to it or rejoice there a second time. The words give death as the end of his presence on earth.",
+          "limit": "A sixteenth-century manuscript transcription of a song attributed to the fifteenth-century ruler, in Brinton’s 1887 English version; its last verse is by a later singer and the attribution is uncertain. The song names Mictlan, the place of the dead, so it does not say that nothing remains."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "nezahualcoyotl-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Nezahualcoyotl (attributed), song in the Cantares Mexicanos",
+      "short": "Nezahualcoyotl",
+      "work": "Song of the Prince Nezahualcoyotl, Cantares Mexicanos, no. XXIII",
+      "excerpt": "my God, the Giver of Life, thou commandest me, that I go forth, that I be lost",
+      "period": "Attributed to the 15th century; manuscript c. 1550–1600; translated 1887",
+      "dateShort": "15th c.",
+      "dateFull": "15th century",
+      "sortYear": 1470,
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), English translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "locator": "Song XXIII, “Songs of the Prince Nezahualcoyotl”, verse 3.",
+      "place": "Texcoco, Valley of Mexico, Mexico",
+      "lat": 19.51,
+      "lng": -98.88,
+      "anchorType": "Traditional association",
+      "placeNote": "The song is attributed to Nezahualcoyotl, ruler of Texcoco (reigned 1431–1472). The linked page gives the song and Brinton’s note on its attribution; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Giver of Life",
+          "why": "The singer addresses a God, the Giver of Life, who commands his departure at death. The words treat a supreme giver of life as real and as the one who rules life and death.",
+          "limit": "A sixteenth-century manuscript copy of a song attributed to the fifteenth-century ruler, in Brinton’s 1887 English version; Brinton notes that copyists may have substituted Spanish words for the native term for divinity, and the last verse is by a later singer."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "sourceLabel": "Edward FitzGerald's verse rendering (1856), Fitzgerald Centenary Edition, Project Gutenberg mirror",
       "sourceUrl": "https://gutenberg.pglaf.org/2/2/5/3/22535/22535-0.txt",
       "period": "c. 1480, Persian original; FitzGerald 1856",
@@ -21450,6 +21518,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "cantares-mexicanos-flower-song-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Anonymous Nahuatl flower song, Cantares Mexicanos",
+      "short": "Nahuatl flower song",
+      "work": "Xochicuicatl, a flower song, Cantares Mexicanos, no. XVII",
+      "excerpt": "though one knows not the dwelling of the Giver of Life, one knows not whether he is on earth.",
+      "period": "Pre-conquest origin; manuscript c. 1550–1600; translated 1887",
+      "dateShort": "c. 1500",
+      "dateFull": "about 1500, manuscript of the later sixteenth century",
+      "sortYear": 1500,
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), English translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "locator": "Song XVII, “A Flower Song”, verse 6.",
+      "place": "Huexotzinco, Puebla, Mexico",
+      "lat": 19.17,
+      "lng": -98.4,
+      "anchorType": "Traditional association",
+      "placeNote": "Brinton’s notes link this song to the Huexotzinco group of the collection; the linked page does not fix a place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/2/1/12219/12219-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "One who knows not the Giver of Life’s dwelling",
+          "why": "The song names the Giver of Life as the one god the nobles seek to please, yet says that his dwelling, and whether he is on earth at all, cannot be known. The ultimate is honoured but placed beyond human knowledge.",
+          "limit": "A sixteenth-century manuscript copy of a song of uncertain date and authorship, in Brinton’s 1887 English version, which is a nineteenth-century rendering of difficult Nahuatl; copyists may have altered divine names."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -24756,6 +24858,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sor-juana-given-or-made",
+      "question": "given-or-made",
+      "name": "Sor Juana Inés de la Cruz",
+      "short": "Sor Juana",
+      "work": "Respuesta a sor Filotea de la Cruz",
+      "excerpt": "ni ajenas reprensiones --que he tenido muchas--, ni propias reflejas --que he hecho no pocas--, han bastado a que deje de seguir este natural impulso que Dios puso en mí",
+      "translation": "neither others’ reproaches, of which I have had many, nor my own reflections, of which I have made not a few, have been enough to make me stop following this natural impulse that God put in me",
+      "period": "Written 1691",
+      "dateShort": "1691",
+      "dateFull": "1691",
+      "sortYear": 1691,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "locator": "Paragraph beginning “Lo que sí es verdad que no negaré”.",
+      "place": "Convent of San Jerónimo, Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana wrote the Respuesta in March 1691 as a nun of the convent of San Jerónimo in Mexico City. The linked page gives the text; the location rests on her known residence there, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "A natural impulse put there by God",
+          "why": "Sor Juana says her inclination to letters, from the first light of reason, was a natural impulse that God put in her, one that neither others’ rebukes nor her own second thoughts could turn aside. She treats her bent as an endowment she follows, which places the passage at the given end.",
+          "limit": "A self-defence written to a bishop in 1691, in which she also describes years of study and teaching herself; the passage speaks of the origin of her inclination and does not say that nothing was made by effort. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "sor-juana-ines-de-la-cruz-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Sor Juana Inés de la Cruz",
@@ -25172,6 +25309,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "isaac-newton-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Isaac Newton",
+      "short": "Newton",
+      "work": "Principia, General Scholium",
+      "excerpt": "This most beautiful system of the sun, planets, and comets, could only proceed from the counsel and dominion of an intelligent and powerful Being.",
+      "period": "1713 (second edition)",
+      "dateShort": "1713",
+      "dateFull": "1713 (General Scholium added to the second edition of the Principia)",
+      "sortYear": 1713,
+      "sourceLabel": "Andrew Motte translation (1846 edition), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/newtonspmathema00newtrich/newtonspmathema00newtrich_djvu.txt",
+      "locator": "General Scholium, paragraph beginning “The six primary planets are revolved about the sun”. The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.1,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The General Scholium was written for the second edition (1713), prepared while Newton was Master of the Mint in London and Roger Cotes edited at Cambridge. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/newtonspmathema00newtrich/newtonspmathema00newtrich_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as lord of the system",
+          "why": "Newton argues from the order of the planetary system to a single intelligent and powerful Being who governs all things. That places the passage with those affirming an ultimate reality, here a personal Lord.",
+          "limit": "The sentence is an argument from design added to the second edition of the Principia, in Andrew Motte’s eighteenth-century translation. Newton himself says that God is known only through attributes and not in his substance, which the passage does not mention."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -27815,6 +27986,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "laplace-free-will",
+      "question": "free-will",
+      "name": "Pierre-Simon Laplace",
+      "short": "Laplace",
+      "work": "A Philosophical Essay on Probabilities",
+      "excerpt": "We ought then to regard the present state of the universe as the effect of its anterior state and as the cause of the one which is to follow.",
+      "period": "1814",
+      "dateShort": "1814",
+      "dateFull": "1814 (introduction to the Essai philosophique sur les probabilités)",
+      "sortYear": 1814,
+      "sourceLabel": "Truscott and Emory translation (1902), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/philosophicaless00lapliala/philosophicaless00lapliala_djvu.txt",
+      "locator": "Introduction, paragraph beginning “The curve described by a simple molecule of air”, shortly after the discussion of the will. The scanned text contains recognition errors.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.35,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Laplace lived and worked in Paris when the Essai was published in 1814. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/philosophicaless00lapliala/philosophicaless00lapliala_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Causal determinism",
+          "why": "Laplace says each state of the universe is the effect of the one before and the cause of the next, so that a sufficiently vast intelligence would see past and future alike. That puts the passage with those who hold choices to be fully determined.",
+          "limit": "The sentence leads into the famous image of the intelligence and is a statement about physical prediction. Laplace treats the feeling of choosing as an illusion of ignorance of motives, but the passage itself speaks of the universe and not directly of human choice. The English is a 1902 translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "nguyen-du-free-will",
       "question": "free-will",
       "name": "Nguyễn Du",
@@ -28088,6 +28293,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "mary-somerville-death",
+      "question": "death",
+      "name": "Mary Somerville",
+      "short": "Somerville",
+      "work": "Personal Recollections, letter of October 1823",
+      "excerpt": "the full assurance that no good disposition can be lost but must be brought to perfection in a better world.",
+      "period": "October 1823",
+      "dateShort": "Oct 1823",
+      "dateFull": "October 1823",
+      "sortYear": 1823,
+      "sourceLabel": "Personal Recollections (1873), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/personalrecollec00someuoft/personalrecollec00someuoft_djvu.txt",
+      "locator": "Chapter X, letter “Mrs. Somerville to the Rev. Dr. Somerville”, London, October 1823. The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.5,
+      "lng": -0.15,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is headed London, October 1823, when the family lived in London after the death of her daughter Margaret. The place of the exact house is not given.",
+      "placeSource": "https://archive.org/stream/personalrecollec00someuoft/personalrecollec00someuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Consolation after a child’s death",
+          "why": "Writing after the death of her eldest daughter, Somerville says the consolation is the assurance that goodness is perfected in a better world where the bereaved will be reunited with the dead. That places her with those who hold that life continues after death.",
+          "limit": "The words are a private letter of grief to her father, quoted by her daughter Martha in the Personal Recollections, and are an expression of faith, not an argument. Somerville’s scientific writings do not rest on this belief."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -30011,6 +30250,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-henry-huxley-happiness",
+      "question": "happiness",
+      "name": "Thomas Henry Huxley",
+      "short": "Huxley",
+      "work": "Letter to Charles Kingsley, 23 September 1860",
+      "excerpt": "follow humbly wherever and to whatever abysses nature leads, or you shall learn nothing. I have only begun to learn content and peace of mind since I have resolved at all risks to do this.",
+      "period": "23 September 1860",
+      "dateShort": "1860",
+      "dateFull": "23 September 1860",
+      "sortYear": 1860,
+      "sourceLabel": "Leonard Huxley, Life and Letters of Thomas Henry Huxley (1900), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/0/8/5084/5084.txt",
+      "locator": "Volume 1, letter to Charles Kingsley of 23 September 1860, in the paragraph containing “Sit down before fact as a little child”.",
+      "place": "14 Waverley Place, St John’s Wood, London, England",
+      "lat": 51.53,
+      "lng": -0.17,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is headed 14, Waverley Place, September 23, 1860, in the linked text, which also says the sympathy letter followed the death of Huxley’s young son.",
+      "placeSource": "https://gutenberg.pglaf.org/5/0/8/5084/5084.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Content from honesty before facts",
+          "why": "Huxley, writing after his young son’s death, says his peace of mind began only when he resolved to follow the facts wherever they led. That locates happiness in an inward discipline of honesty.",
+          "limit": "The words come from a private letter written in grief and lead into his refusal to accept immortality without evidence. Huxley does not discuss external misfortune here beyond the loss that prompts the letter."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "thomas-henry-huxley-lasting-self",
+      "question": "lasting-self",
+      "name": "Thomas Henry Huxley",
+      "short": "Huxley",
+      "work": "Letter to Charles Kingsley, 23 September 1860",
+      "excerpt": "I cannot conceive of my personality as a thing apart from the phenomena of my life. When I try to form such a conception I discover that, as Coleridge would have said, I only hypostatise a word",
+      "period": "23 September 1860",
+      "dateShort": "1860",
+      "dateFull": "23 September 1860",
+      "sortYear": 1860,
+      "sourceLabel": "Leonard Huxley, Life and Letters of Thomas Henry Huxley (1900), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/0/8/5084/5084.txt",
+      "locator": "Volume 1, letter to Charles Kingsley of 23 September 1860, paragraph containing “I cannot conceive of my personality as a thing apart”.",
+      "place": "14 Waverley Place, St John’s Wood, London, England",
+      "lat": 51.53,
+      "lng": -0.17,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is headed 14, Waverley Place, September 23, 1860, in the linked text.",
+      "placeSource": "https://gutenberg.pglaf.org/5/0/8/5084/5084.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Personality as the phenomena of a life",
+          "why": "Huxley says he cannot conceive of a personality separate from the phenomena of his life and that the attempt only turns a word into a thing. That treats the self as real but as nothing beyond the course of experience.",
+          "limit": "The remark is a private letter written in grief, in a passage arguing that immortality has no evidence, and Huxley allows that the personality may be “the surest thing I know”. He does not develop a theory of the self."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "ernestine-rose-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Ernestine L. Rose",
@@ -30375,6 +30682,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "burton-oji-proverb-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Oji (Akan) proverb, in Richard Burton’s Wit and Wisdom from West Africa",
+      "short": "Oji proverb",
+      "work": "Wit and Wisdom from West Africa, Proverbs in the Oji Tongue, no. 214",
+      "excerpt": "A man alone is no hero.",
+      "period": "Collected before 1865; published 1865",
+      "dateShort": "1865",
+      "dateFull": "1865",
+      "sortYear": 1865,
+      "sourceLabel": "Richard F. Burton, Wit and Wisdom from West Africa (1865), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/witandwisdomfro00burtgoog/witandwisdomfro00burtgoog_djvu.txt",
+      "locator": "Part III, Proverbs in the Oji Tongue, no. 214.",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Burton gives Oji (Twi) as the language of the Ashante empire. The linked page names no town; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/witandwisdomfro00burtgoog/witandwisdomfro00burtgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "A man alone is no hero",
+          "why": "The proverb says one person alone achieves nothing great and that the efforts of many are needed. It values company and treats standing alone as a limit.",
+          "limit": "An anonymous proverb in an English rendering by a Victorian collector who relied on missionary sources; Burton’s own gloss is the source of the sense given. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "emily-dickinson-meaning",
       "question": "meaning",
       "name": "Emily Dickinson",
@@ -30477,6 +30818,108 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "maria-mitchell-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Maria Mitchell",
+      "short": "Mitchell",
+      "work": "Maria Mitchell: Life, Letters, and Journals, address to her students (1866)",
+      "excerpt": "Every formula which expresses a law of nature is a hymn of praise to God.",
+      "period": "1866",
+      "dateShort": "1866",
+      "dateFull": "1866 (address to students at Vassar College, printed 1896)",
+      "sortYear": 1866,
+      "sourceLabel": "Project Gutenberg mirror, text of the 1896 edition compiled by Phebe Mitchell Kendall",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/2/0/10202/10202-0.txt",
+      "locator": "Chapter IX, extracts headed “1866. To her students”.",
+      "place": "Vassar College, Poughkeepsie, New York, United States",
+      "lat": 41.69,
+      "lng": -73.89,
+      "anchorType": "Documented teaching location",
+      "placeNote": "The extract is headed 1866 and addressed to her students, and Mitchell was professor of astronomy at Vassar College in Poughkeepsie from 1865. The exact room is not stated.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/2/0/10202/10202-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Natural law as praise of God",
+          "why": "The astronomer Maria Mitchell treats the laws of nature, as written in mathematical formulas, as an expression of reverence for God. That puts her with those affirming that there is a God behind the order studied by science.",
+          "limit": "The sentence is a single remembered line from teaching at Vassar, recorded in the 1896 memoir compiled by her sister, and is not part of a developed argument. Her diaries in the same book show periods of doubt about belief in an afterlife."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "africanus-horton-given-or-made",
+      "question": "given-or-made",
+      "name": "James Africanus Horton",
+      "short": "Horton",
+      "work": "West African Countries and Peoples, Part I",
+      "excerpt": "This treatment had the most degrading and destructive influence on their mental capacity",
+      "period": "Preface dated December 1867; published 1868",
+      "dateShort": "1867",
+      "dateFull": "December 1867",
+      "sortYear": 1867,
+      "sourceLabel": "J. A. B. Horton, West African Countries and Peoples (1868), Internet Archive full text of the 1969 reprint",
+      "sourceUrl": "https://archive.org/stream/westafricancount0000jame/westafricancount0000jame_djvu.txt",
+      "locator": "Part I, the discussion of the effects of the slave trade, the paragraph quoting “Treat men like beasts and you will make them such”.",
+      "place": "Royal Victoria Hospital, Netley, England",
+      "lat": 50.88,
+      "lng": -1.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "The preface is signed from the Royal Victoria Hospital, Netley, December 1867, where Horton was serving as staff assistant surgeon. The linked page gives this sign-off; the exact spot of writing the rest of the book is not stated.",
+      "placeSource": "https://archive.org/stream/westafricancount0000jame/westafricancount0000jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Treated like beasts, made so",
+          "why": "Horton answers European claims of innate African inferiority by arguing that centuries of brutal treatment damaged mental capacity. A people’s capacities are formed by how they are treated, which places the passage at the made end.",
+          "limit": "A polemical reply to racial science of the 1860s, arguing about a group; it speaks of mental capacity and does not describe individual formation in general. The text is a 1969 reprint of the 1868 edition, and the scan contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-death",
+      "question": "death",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part I (Unkulunkulu), account of the amadhlozi",
+      "excerpt": "he had gone to unite with the rest of the dead, that they might make a strong rampart around us which shall not be penetrated even by death.",
+      "period": "Dictated before 1868; published 1868",
+      "dateShort": "1868",
+      "dateFull": "1868",
+      "sortYear": 1868,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1868), English translation, Internet Archive full text (University of Toronto copy)",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the Zulu account of the Amadhlozi; the passage beginning “And now we have turned the back one on the other”, signed by Umpengula Mbanda.",
+      "place": "Springvale mission station, Natal, South Africa",
+      "lat": -30.25,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway collected these accounts from Zulu informants, including Umpengula Mbanda, at his Springvale mission in Natal in the 1850s and 1860s. The linked page does not give the exact spot; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead as a rampart",
+          "why": "The informant describes how the bereaved come to think that the dead man has gone to join the other dead, who then guard the living against death. The words place something of the person as going on and acting for the family.",
+          "limit": "Callaway’s English is a missionary’s translation of a Zulu dictation, and the speaker presents this as what people say, adding that they do not fully understand it and that the Amadhlozi are not fully trusted. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "francis-galton-given-or-made",
       "question": "given-or-made",
       "name": "Francis Galton",
@@ -30554,6 +30997,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "adam-lindsay-gordon-death",
+      "question": "death",
+      "name": "Adam Lindsay Gordon",
+      "short": "Gordon",
+      "work": "“The Sick Stockrider”, in Bush Ballads and Galloping Rhymes",
+      "excerpt": "I should live the same life over, if I had to live again; And the chances are I go where most men go.",
+      "period": "1870",
+      "dateShort": "1870",
+      "dateFull": "1870",
+      "sortYear": 1870,
+      "sourceLabel": "Project Gutenberg text of Poems of Adam Lindsay Gordon",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/258/258.txt",
+      "locator": "“The Sick Stockrider”, stanza beginning “I’ve had my share of pastime”.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Gordon published Bush Ballads and Galloping Rhymes in Melbourne in 1870 and was then living in Victoria; the poem itself names no place. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/5/258/258.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "A dying stockrider’s guess",
+          "why": "The dying stockrider claims no knowledge of what follows death and says only that he will probably go where most men go. The passage leaves the question open.",
+          "limit": "A dramatic monologue spoken by a dying fictional horseman, not the poet’s statement of belief; the phrase “where most men go” is deliberately vague. Gordon himself died by suicide in 1870, a fact the poem does not mention."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -30769,6 +31246,108 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "diakwain-death",
+      "question": "death",
+      "name": "Diä!kwain (ǀXam narrator, recorded by Wilhelm Bleek and Lucy Lloyd)",
+      "short": "Diä!kwain",
+      "work": "Specimens of Bushman Folklore, “The Origin of Death”",
+      "excerpt": "go away ; while they do not again living return. For the hare was the one who thus spoke ; he said that his mother would not again living return.",
+      "period": "Dictated in 1875",
+      "dateShort": "1875",
+      "dateFull": "1875",
+      "sortYear": 1875,
+      "sourceLabel": "Bleek and Lloyd, Specimens of Bushman Folklore (1911), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/specimensofbushm00blee/specimensofbushm00blee_djvu.txt",
+      "locator": "Part II, section 22, “The Origin of Death”, footnote to the Moon’s curse on the Hare.",
+      "place": "Mowbray, near Cape Town, South Africa",
+      "lat": -33.95,
+      "lng": 18.47,
+      "anchorType": "Documented dictation location",
+      "placeNote": "The ǀXam narrators from the Katkop area, Diä!kwain among them, dictated to Bleek and Lloyd at Bleek’s house at Mowbray, Cape Town. The linked page does not name the house; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/specimensofbushm00blee/specimensofbushm00blee_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Why the dead do not return",
+          "why": "In the ǀXam account of the Moon and the Hare, people when they die go away altogether and do not come back, as the Moon does, because the Hare insisted that his mother would not return. The words give death as final for people.",
+          "limit": "A myth dictated in 1875 as the story of how death began, in a close interlinear English translation by non-native speakers; the footnote is the editors’ gloss. The narrative also prefaces a prayer to the new Moon asking to be like it. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "charles-darwin-death",
+      "question": "death",
+      "name": "Charles Darwin",
+      "short": "Darwin",
+      "work": "Autobiographical chapter on religion, in Life and Letters",
+      "excerpt": "Believing as I do that man in the distant future will be a far more perfect creature than he now is, it is an intolerable thought that he and all other sentient beings are doomed to complete annihilation",
+      "period": "1876",
+      "dateShort": "1876",
+      "dateFull": "1876 (autobiographical recollections)",
+      "sortYear": 1876,
+      "sourceLabel": "Francis Darwin, ed., The Life and Letters of Charles Darwin, volume 1, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/8/2087/2087.txt",
+      "locator": "Volume 1, Darwin’s autobiographical recollections, the religion section: the paragraph on the sun growing too cold for life, shortly before “Another source of conviction in the existence of God”.",
+      "place": "Down House, Kent, England",
+      "lat": 51.33,
+      "lng": 0.05,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Darwin wrote his autobiographical recollections at Down House in Kent in 1876. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/8/2087/2087.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "The thought of annihilation",
+          "why": "Darwin says that annihilation of all sentient beings after long progress is an intolerable thought, while declining in the same section to claim knowledge either way. That leaves what happens at death open and names only his feeling about it.",
+          "limit": "The sentence expresses a feeling, not a belief that death is not the end. Darwin wrote it in a private reminiscence for his family, and the surrounding passage rests on the physicists’ prediction that the sun will grow cold."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "charles-darwin-happiness",
+      "question": "happiness",
+      "name": "Charles Darwin",
+      "short": "Darwin",
+      "work": "Autobiography",
+      "excerpt": "The loss of these tastes is a loss of happiness, and may possibly be injurious to the intellect, and more probably to the moral character, by enfeebling the emotional part of our nature.",
+      "period": "1876 (written at Down)",
+      "dateShort": "1876",
+      "dateFull": "1876 (written 1876, published 1887)",
+      "sortYear": 1876,
+      "sourceLabel": "Project Gutenberg mirror, edition of the Autobiography edited by Francis Darwin",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/1/2010/2010-0.txt",
+      "locator": "Paragraph beginning “This curious and lamentable loss of the higher aesthetic tastes”.",
+      "place": "Down House, Kent, England",
+      "lat": 51.33,
+      "lng": 0.05,
+      "anchorType": "Documented writing location",
+      "placeNote": "Darwin wrote the Autobiography in 1876 at Down House, his home in Kent. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/1/2010/2010-0.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "Loss of tastes as loss of happiness",
+          "why": "Darwin says the decay of his taste for poetry, music and pictures cost him happiness, and that he should have kept those tastes in use by regular reading and listening. Happiness is shown to depend both on what happens to one’s brain and on what one does to keep up one’s tastes.",
+          "limit": "The sentence is a private self-assessment written for his family in old age, not a general theory of happiness. Darwin blames the narrowing effect of scientific work and also says he cannot account for the change."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "charles-darwin-suffering",
       "question": "suffering",
       "name": "Charles Darwin",
@@ -30840,6 +31419,75 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "gill-mangaia-death",
+      "question": "death",
+      "name": "William Wyatt Gill (recording Mangaian belief)",
+      "short": "Gill, Mangaia",
+      "work": "Myths and Songs from the South Pacific, ch. VIII, “Hades; or, the Doctrine of Spirit-World”",
+      "excerpt": "Those who die a natural death were said \"to go to night, or darkness (aere ki te po), implying that they are doomed to be cooked and eaten by Miru, i.e. annihilated.",
+      "period": "1876",
+      "dateShort": "1876",
+      "dateFull": "1876",
+      "sortYear": 1876,
+      "sourceLabel": "Internet Archive scan of the 1876 edition (Henry S. King)",
+      "sourceUrl": "https://archive.org/stream/mythssongsfromso00gill/mythssongsfromso00gill_djvu.txt",
+      "locator": "Chapter VIII, paragraph on warrior spirits and those who die a natural death. The scanned text contains recognition errors.",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.93,
+      "lng": -157.94,
+      "smallIsland": true,
+      "anchorType": "Documented residence",
+      "placeNote": "Gill lived as a missionary on Mangaia in the 1850s and 1860s and gathered the material there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythssongsfromso00gill/mythssongsfromso00gill_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Natural death as annihilation in Miru’s oven",
+          "why": "Gill records that on Mangaia the spirits of ordinary people dying naturally were said to go to darkness and be eaten by the goddess Miru, which he glosses as annihilation. The passage places the ordinary dead at the end of existence.",
+          "limit": "A missionary collector’s 1876 report of Mangaian belief, with the gloss “annihilated” his own. The same page says slain warriors were held to be immortal, so Mangaian belief was not uniform, and the passage records the belief of others rather than a named speaker."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "marcus-clarke-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Marcus Clarke",
+      "short": "Clarke",
+      "work": "Preface to Poems of Adam Lindsay Gordon (1876), on Australian scenery",
+      "excerpt": "the dweller in the wilderness acknowledges the subtle charm of this fantastic land of monstrosities. He becomes familiar with the beauty of loneliness.",
+      "period": "1876",
+      "dateShort": "1876",
+      "dateFull": "1876",
+      "sortYear": 1876,
+      "sourceLabel": "Project Gutenberg text of Poems of Adam Lindsay Gordon, with Clarke’s preface",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/258/258.txt",
+      "locator": "Clarke’s preface, “Loneliness”, paragraph beginning “There is a poem in every form of tree or flower”.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Clarke lived and worked in Melbourne when he wrote the preface for the 1876 edition of Gordon’s poems. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/5/258/258.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "The beauty of loneliness in the bush",
+          "why": "Clarke calls the forest solitude desolation, then says that one who lives in the wilderness comes to find beauty in loneliness. Being alone is both a danger and, with time, a value, so the passage sits between solitude and company.",
+          "limit": "A preface about landscape and poetry by a Melbourne journalist and novelist, not an argument about how to live. It does not mention company, and the first half of the passage, on desolation, is as emphatic as the second."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -31047,6 +31695,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charles-darwin-truth",
+      "question": "truth",
+      "name": "Charles Darwin",
+      "short": "Darwin",
+      "work": "Letter to William Graham, 3 July 1881",
+      "excerpt": "the horrid doubt always arises whether the convictions of man's mind, which has been developed from the mind of the lower animals, are of any value or at all trustworthy.",
+      "period": "3 July 1881",
+      "dateShort": "1881",
+      "dateFull": "3 July 1881",
+      "sortYear": 1881,
+      "sourceLabel": "Francis Darwin, ed., The Life and Letters of Charles Darwin, volume 1, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/8/2087/2087.txt",
+      "locator": "Volume 1, the section on Darwin’s religious views, letter to W. Graham of 3 July 1881.",
+      "place": "Down House, Kent, England",
+      "lat": 51.33,
+      "lng": 0.05,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is headed Down, July 3rd, 1881, and Down House in Kent was Darwin’s home. The linked page gives no more precise location than Down.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/8/2087/2087.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "Doubt about the trustworthiness of the mind",
+          "why": "Darwin says he is troubled by a doubt whether convictions held by a mind that evolved from animal minds can be trusted on large questions such as whether the universe has a purpose. That leans towards the deepest truth being out of reach.",
+          "limit": "The sentence is a private doubt in a polite letter to a stranger, and Darwin adds that he is no practised reasoner and may be “all astray”. It does not settle the matter, and he elsewhere trusts scientific inference."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "machado-de-assis-meaning",
       "question": "meaning",
       "name": "Joaquim Maria Machado de Assis",
@@ -31113,6 +31795,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "louis-pasteur-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Louis Pasteur",
+      "short": "Pasteur",
+      "work": "Reception speech for Littré, Académie française",
+      "excerpt": "the notion of the Infinite presents that double character that it forces itself upon us and yet is incomprehensible. When this notion seizes upon our understanding, we can but kneel.",
+      "period": "27 April 1882",
+      "dateShort": "1882",
+      "dateFull": "27 April 1882",
+      "sortYear": 1882,
+      "sourceLabel": "René Vallery-Radot, The Life of Pasteur, English translation by Mrs. R. L. Devonshire, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/lifeofpasteur00vall_0/lifeofpasteur00vall_0_djvu.txt",
+      "locator": "Quotation of the speech on receiving Littré’s seat, paragraph beginning “He who proclaims the existence of the Infinite”. The scanned text contains recognition errors.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.34,
+      "anchorType": "Documented delivery location",
+      "placeNote": "Pasteur delivered the speech on his reception at the Académie française in Paris on 27 April 1882, as dated in standard accounts. The linked page quotes it without giving the building; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/lifeofpasteur00vall_0/lifeofpasteur00vall_0_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "The notion of the Infinite",
+          "why": "Pasteur says the idea of the Infinite is unavoidable and yet cannot be comprehended, and that the idea of God is a form of it. That places the passage at an ultimate reality that is affirmed but beyond saying.",
+          "limit": "The words are quoted in René Vallery-Radot’s 1902 biography in an English translation, not read in Pasteur’s own publication. They come from a ceremonial speech praising Émile Littré, an avowed positivist."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -31469,6 +32185,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "turner-samoa-death",
+      "question": "death",
+      "name": "George Turner (recording Samoan belief)",
+      "short": "Turner, Samoa",
+      "work": "Samoa, a Hundred Years Ago and Long Before, ch. III, “A Future State”",
+      "excerpt": "the soul as distinct from the body, and which at death was supposed to go away from the body and proceed to the hadean regions under the ocean, which they called Pulotu",
+      "period": "1884",
+      "dateShort": "1884",
+      "dateFull": "1884",
+      "sortYear": 1884,
+      "sourceLabel": "Project Gutenberg text of the 1884 edition (Macmillan)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/2/2/14224/14224-0.txt",
+      "locator": "Chapter III, “A Future State—Religion, etc.”, opening paragraph.",
+      "place": "Malua, Upolu, Samoa",
+      "lat": -13.83,
+      "lng": -171.77,
+      "smallIsland": true,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Turner taught at the London Missionary Society’s training institution at Malua on Upolu from 1844 to 1882 and drew the book from those years. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/2/2/14224/14224-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul and Pulotu",
+          "why": "The missionary George Turner reports that Samoans distinguished a soul from the body and held that at death it departs for Pulotu beneath the ocean. The soul is described as outliving the body, so the passage sits at continuing.",
+          "limit": "A Scottish missionary’s 1884 record of what Samoans believed before Christianity, written in English and at second hand; Turner says he knew little more of their ideas of a future state. It reports a general belief and does not give a named Samoan speaker."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "turner-samoa-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "George Turner (recording Samoan custom)",
+      "short": "Turner, Samoa",
+      "work": "Samoa, a Hundred Years Ago and Long Before, chapter on the people’s customs",
+      "excerpt": "A man cannot bear to be called stingy or disobliging. If he has what is asked, he will either give it, or adopt the worse course of telling a lie about it",
+      "period": "1884",
+      "dateShort": "1884",
+      "dateFull": "1884",
+      "sortYear": 1884,
+      "sourceLabel": "Project Gutenberg text of the 1884 edition (Macmillan)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/2/2/14224/14224-0.txt",
+      "locator": "Chapter on the people’s customs, paragraph on the common interest in each other’s property, beginning “The system of a common interest in each other’s property”.",
+      "place": "Malua, Upolu, Samoa",
+      "lat": -13.83,
+      "lng": -171.77,
+      "smallIsland": true,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Turner taught at the London Missionary Society’s training institution at Malua on Upolu from 1844 to 1882 and drew the book from those years. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/2/2/14224/14224-0.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Shared property and the fear of being called stingy",
+          "why": "Turner reports that among Samoans a person asked for something belonging to him gives it, or lies to avoid refusing, because being thought stingy is intolerable. The claims of kin and clan on one’s goods come before one’s own, so the passage sits at others.",
+          "limit": "A missionary’s account of the customs of an entire people, written at second hand, and Turner goes on to call the system a hindrance to the industrious, so the framing is his. It describes a norm and its pressure, not what any Samoan said of it."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "william-james-free-will",
       "question": "free-will",
       "name": "William James",
@@ -31707,6 +32493,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henry-lawson-suffering",
+      "question": "suffering",
+      "name": "Henry Lawson",
+      "short": "Lawson",
+      "work": "“Faces in the Street”, in In the Days When the World was Wide and Other Verses",
+      "excerpt": "When God demands a reason for the sorrows of the street",
+      "period": "1888, collected 1896",
+      "dateShort": "1888, collected 1896",
+      "dateFull": "1888, collected 1896",
+      "sortYear": 1888,
+      "sourceLabel": "Wikisource, In the Days When the World was Wide and Other Verses (1896)",
+      "sourceUrl": "https://en.wikisource.org/wiki/In_the_Days_When_the_World_was_Wide_and_Other_Verses/Faces_in_the_Street",
+      "locator": "Stanza beginning “I wonder would the apathy of wealthy men endure”, final line.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.1,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem is set at a city window where the suburb and the city proper meet, and Lawson lived in Sydney when it appeared in The Bulletin in 1888. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/In_the_Days_When_the_World_was_Wide_and_Other_Verses/Faces_in_the_Street",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "The sorrows of the city poor",
+          "why": "Lawson’s poem treats the want and weariness of the city poor as a wrong for which the comfortable owe an account to God. Suffering here has no justifying purpose; it is an injustice awaiting a reckoning.",
+          "limit": "A poem of social protest in which the speaker also imagines a revolutionary army as the remedy. It speaks of poverty in a colonial city, not of suffering in general."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "kalakaua-death",
       "question": "death",
       "name": "Kalākaua",
@@ -31769,6 +32589,40 @@ window.PILOT_EVIDENCE={
           "facet": "Kane the creator in a Hawaiian chant",
           "why": "The chant quoted by King Kalākaua names Kane, with Ku and Lono, as Lord and Father who brought forth heaven and earth and created humankind. It affirms divine creators as the source of the world.",
           "limit": "The English chant is a rendering given in an 1888 book by a Hawaiian king, prepared with an editor, R. M. Daggett, and written with Christian parallels; its wording and order may have been shaped for English readers. The chant itself is of older, oral origin."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "banjo-paterson-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Banjo Paterson",
+      "short": "Paterson",
+      "work": "“Clancy of the Overflow”, in The Man from Snowy River and Other Verses",
+      "excerpt": "And the hurrying people daunt me, and their pallid faces haunt me As they shoulder one another in their rush and nervous haste",
+      "period": "1889, collected 1895",
+      "dateShort": "1889, collected 1895",
+      "dateFull": "1889, collected 1895",
+      "sortYear": 1889,
+      "sourceLabel": "Wikisource, The Man from Snowy River and Other Verses (1908 edition)",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Man_from_Snowy_River_and_Other_Verses/Clancy_of_The_Overflow",
+      "locator": "Third stanza of the poem, beginning “And the hurrying people daunt me”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.1,
+      "anchorType": "Documented working city",
+      "placeNote": "Paterson wrote the poem while working as a solicitor in Sydney; it first appeared in The Bulletin in December 1889. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Man_from_Snowy_River_and_Other_Verses/Clancy_of_The_Overflow",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "City crowds against the open bush",
+          "why": "The clerk who speaks the poem finds the city crowd oppressive and envies the droving life in open country. Crowds are treated as a burden and the bush as the better place to live, so the passage leans to solitude.",
+          "limit": "A poem, spoken by a fictional city clerk who admits he is only fancying another life; the drover is not alone but has the bush “friends” the poem names. The poem is a mood, not an argument, and the speaker doubts Clancy would suit the office."
         }
       },
       "check": {
@@ -31842,6 +32696,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "edward-wilmot-blyden-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Edward Wilmot Blyden",
+      "short": "Blyden",
+      "work": "The African Problem and the Method of Its Solution",
+      "excerpt": "If we live and move and have our being in Him, God also lives, and moves and has His being in us.",
+      "period": "Delivered 19 January 1890",
+      "dateShort": "1890",
+      "dateFull": "19 January 1890",
+      "sortYear": 1890,
+      "sourceLabel": "E. W. Blyden, The African Problem (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/africanproblemme00blyd/africanproblemme00blyd_djvu.txt",
+      "locator": "Paragraph beginning “Now it cannot be supposed that in the types and races which have already displayed themselves”.",
+      "place": "Church of the Covenant, Washington, D.C., United States",
+      "lat": 38.9,
+      "lng": -77.04,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The title page of the printed discourse names the Church of the Covenant, Washington, D.C., and the date. The linked page gives this.",
+      "placeSource": "https://archive.org/stream/africanproblemme00blyd/africanproblemme00blyd_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God acting through persons",
+          "why": "Blyden affirms God as the ground in whom people live, and adds that God also acts in them and shows his character through the various races. This puts the passage firmly on the side of an ultimate reality.",
+          "limit": "A sermon-like address to an American audience of the Colonization Society, used here to argue that slavery spoils the image of God and that each race has its own work; the theology is Christian and is not argued from evidence."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -32092,6 +32980,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "jose-marti-lasting-self",
+      "question": "lasting-self",
+      "name": "José Martí",
+      "short": "Martí",
+      "work": "Nuestra América",
+      "excerpt": "El alma emana, igual y eterna, de los cuerpos diversos en forma y en color.",
+      "translation": "The soul issues, equal and eternal, from bodies of diverse form and colour.",
+      "period": "Published January 1891",
+      "dateShort": "1891",
+      "dateFull": "January 1891",
+      "sortYear": 1891,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Nuestra_Am%C3%A9rica",
+      "locator": "Paragraph beginning “No hay odio de razas, porque no hay razas”.",
+      "place": "New York, United States",
+      "lat": 40.75,
+      "lng": -73.98,
+      "anchorType": "Documented writing location",
+      "placeNote": "Martí wrote the essay in New York, where it appeared in La Revista Ilustrada on 1 January 1891. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Nuestra_Am%C3%A9rica",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "One soul in diverse bodies",
+          "why": "Martí says the soul issues, equal and eternal, from bodies of every form and colour. The words affirm a soul that is the same and lasting in every person.",
+          "limit": "A line in a political essay against racial hatred, where the claim serves the argument that there are no races; it is asserted, not argued, and says little about a single person’s continuity through time. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "jose-marti-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "José Martí",
+      "short": "Martí",
+      "work": "Versos sencillos, III",
+      "excerpt": "Con los pobres de la tierra Quiero yo mi suerte echar:",
+      "translation": "With the poor of the earth I want to cast my lot.",
+      "period": "Written 1890, published in New York in 1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Versos_sencillos/III",
+      "locator": "Poem III, second stanza.",
+      "place": "Haines Falls, Catskill Mountains, New York, United States",
+      "lat": 42.2,
+      "lng": -74.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Martí says in the book’s prologue that the verses were written after a doctor sent him to the mountains in 1890; biographers place this at Haines Falls in the Catskills. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Versos_sencillos/III",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Casting one’s lot with the poor",
+          "why": "The poet chooses to cast his own lot with the poor of the earth, tying his fortune to theirs instead of putting his own advantage first or giving himself up to them. The pairing places the lines in the middle.",
+          "limit": "A lyric stanza in an exile’s voice, followed by lines preferring the mountain stream to the sea and the forest to gold; it states a preference and does not set out a duty. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -32927,6 +33885,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "liliuokalani-given-or-made",
+      "question": "given-or-made",
+      "name": "Liliʻuokalani",
+      "short": "Liliʻuokalani",
+      "work": "Hawaii’s Story by Hawaii’s Queen, chapter on Hawaiian music",
+      "excerpt": "this gift of nature, never having been suffered to fall into disuse, remains a source of the greatest consolation to this day",
+      "period": "1898",
+      "dateShort": "1898",
+      "dateFull": "1898",
+      "sortYear": 1898,
+      "sourceLabel": "Internet Archive scan of the 1898 edition (Lee and Shepard, Boston)",
+      "sourceUrl": "https://archive.org/stream/hawaiisstorybyh00lili/hawaiisstorybyh00lili_djvu.txt",
+      "locator": "Chapter on Hawaiian music and a ducal guest, paragraph beginning “To compose was as natural to me as to breathe”. The scanned text contains recognition errors.",
+      "place": "Washington, D.C., United States",
+      "lat": 38.9,
+      "lng": -77.03,
+      "anchorType": "Documented writing location",
+      "placeNote": "Liliʻuokalani wrote the book in Washington in 1897, where she was lobbying against the annexation treaty; the book was published in Boston in 1898. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hawaiisstorybyh00lili/hawaiisstorybyh00lili_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "A gift for composing kept alive by use",
+          "why": "Liliʻuokalani calls her ease in composing a gift of nature and adds that it has stayed with her because she never let it fall into disuse. A natural endowment is held to need continual use, so the passage sits at both.",
+          "limit": "An autobiography written in English in 1897-98 while the author was campaigning in the United States against annexation, with a Boston publisher. It speaks of one talent, music, and not of a person as a whole."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "manuel-gonzalez-prada-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Manuel González Prada",
@@ -32992,7 +33984,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -33033,6 +34025,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "machado-de-assis-lasting-self",
+      "question": "lasting-self",
+      "name": "Machado de Assis",
+      "short": "Machado",
+      "work": "Dom Casmurro, chapter II",
+      "excerpt": "Em tudo, se o rosto é egual, a physionomia é differente. Se só me faltassem os outros, vá; um homem consola-se mais ou menos das pessoas que perde; mas falto eu mesmo, e esta lacuna é tudo.",
+      "translation": "In everything, if the face is the same, the physiognomy is different. If only others were missing, so be it; a man consoles himself more or less for the people he loses; but I myself am missing, and this gap is everything.",
+      "period": "Published 1899",
+      "dateShort": "1899",
+      "dateFull": "1899",
+      "sortYear": 1899,
+      "sourceLabel": "Portuguese text (original spelling), Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Dom_Casmurro/II",
+      "locator": "Chapter II, “Do livro”, paragraph beginning “O meu fim evidente era atar as duas pontas da vida”.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.2,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The novel is set in Rio de Janeiro, where Machado de Assis lived and wrote it. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Dom_Casmurro/II",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "The self that is missing",
+          "why": "The narrator, trying to rebuild his youth in old age, finds that he cannot recover what he was: the face is the same and the character different, and the lack that matters is himself. The self is real but has changed over time.",
+          "limit": "The speaker is a fictional narrator, an old man remembering, and his tone is rueful and unreliable; the passage reports his own experience and is not Machado’s doctrine. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rainer-maria-rilke-meaning",
+      "question": "meaning",
+      "name": "Rainer Maria Rilke",
+      "short": "Rilke",
+      "work": "Das Stunden-Buch, Das Buch vom mönchischen Leben",
+      "excerpt": "Ich lebe mein Leben in wachsenden Ringen, die sich über die Dinge ziehn. Ich werde den letzten vielleicht nicht vollbringen, aber versuchen will ich ihn.",
+      "translation": "I live my life in growing rings that stretch across the things. I may not complete the last one, but I will try it.",
+      "period": "1899",
+      "dateShort": "1899",
+      "dateFull": "September 1899 (Book of Monastic Life)",
+      "sortYear": 1899,
+      "sourceLabel": "Das Stunden-Buch, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "locator": "Das Buch vom mönchischen Leben, poem beginning “Ich lebe mein Leben in wachsenden Ringen”.",
+      "place": "Berlin-Schmargendorf, Germany",
+      "lat": 52.47,
+      "lng": 13.29,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Rilke lived in Schmargendorf near Berlin in 1899 and wrote the first book of the Stundenbuch there; the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "A life as widening rings",
+          "why": "The speaker describes a life as a series of widening circles drawn over things, which may never be completed but are still attempted. That places meaning in the continuing effort of living, not in a given purpose.",
+          "limit": "The lines are a poem in the voice of a young monk painter, not Rilke’s own statement of doctrine, and the next lines turn to circling around God. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rainer-maria-rilke-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Rainer Maria Rilke",
+      "short": "Rilke",
+      "work": "Das Stunden-Buch, Das Buch vom mönchischen Leben",
+      "excerpt": "Was wirst du tun, Gott, wenn ich sterbe? Ich bin dein Krug (wenn ich zerscherbe?) Ich bin dein Trank (wenn ich verderbe?) Bin dein Gewand und dein Gewerbe, mit mir verlierst du deinen Sinn.",
+      "translation": "What will you do, God, if I die? I am your jug (if I break?). I am your drink (if I spoil?). I am your garment and your trade; with me you lose your meaning.",
+      "period": "1899",
+      "dateShort": "1899",
+      "dateFull": "September 1899 (Book of Monastic Life)",
+      "sortYear": 1899,
+      "sourceLabel": "Das Stunden-Buch, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "locator": "Das Buch vom mönchischen Leben, the poem beginning “Was wirst du tun, Gott, wenn ich sterbe?”.",
+      "place": "Berlin-Schmargendorf, Germany",
+      "lat": 52.47,
+      "lng": 13.29,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Rilke lived in Schmargendorf near Berlin in 1899 and wrote the first book of the Stundenbuch there; the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God who needs the one who prays",
+          "why": "The speaker addresses God directly as someone real who would lose his meaning if the speaker died, because the speaker is his jug, his drink and his garment. That treats God as a real presence, one dependent on creatures.",
+          "limit": "The lines are a poem in the voice of a monk, and the dependence of God on the human is a poetic reversal, not a doctrine Rilke held in these terms. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -33107,6 +34204,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "george-santayana-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "George Santayana",
+      "short": "Santayana",
+      "work": "Interpretations of Poetry and Religion, Preface",
+      "excerpt": "Poetry is called religion when it intervenes in life, and religion, when it merely supervenes upon life, is seen to be nothing but poetry.",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "Project Gutenberg mirror, 1900 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/8/5/6/48563/48563-0.txt",
+      "locator": "Preface, first paragraph.",
+      "place": "Cambridge, Massachusetts, United States",
+      "lat": 42.37,
+      "lng": -71.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Santayana taught philosophy at Harvard University in Cambridge, Massachusetts when the book was published in 1900. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/8/5/6/48563/48563-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "Religion as poetry",
+          "why": "Santayana holds that religion and poetry are identical in essence, and that religious doctrines should give up claiming to report matters of fact. That treats talk of God as an ideal expressed in imagery and not as knowledge of an ultimate reality.",
+          "limit": "Santayana valued religion as moral and imaginative expression and did not argue that its symbols were worthless. The passage is about religious doctrine and does not directly deny that something ultimate exists."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -33367,6 +34498,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "helen-keller-relationships",
+      "question": "relationships",
+      "name": "Helen Keller",
+      "short": "Keller",
+      "work": "The Story of My Life",
+      "excerpt": "All the best of me belongs to her--there is not a talent, or an aspiration or a joy in me that has not been awakened by her loving touch.",
+      "period": "1902",
+      "dateShort": "1902",
+      "dateFull": "1902 (published 1903)",
+      "sortYear": 1902,
+      "sourceLabel": "Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/9/2397/2397-0.txt",
+      "locator": "Chapter VII, closing paragraph.",
+      "place": "Cambridge, Massachusetts, United States",
+      "lat": 42.38,
+      "lng": -71.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Keller wrote the book while studying at Radcliffe College in Cambridge, Massachusetts, according to standard biographies. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/9/2397/2397-0.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "A teacher inseparable from the self",
+          "why": "Keller says that every talent, aspiration and joy in her was awakened by her teacher Anne Sullivan, and that all the best of her belongs to the teacher. That makes the relationship necessary to the self she became.",
+          "limit": "The statement is a devoted student’s tribute written at about twenty-two, shortly before publication, and partly expresses gratitude; Keller also credits her own effort and other friends elsewhere in the book."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "jane-addams",
       "name": "Jane Addams",
       "short": "Addams",
@@ -33569,6 +34734,40 @@ window.PILOT_EVIDENCE={
           "facet": "Mutual aid as each one’s safety",
           "why": "Kropotkin argues from the study of animals and early peoples that mutual aid gives each and all the best chance of life and progress. One’s own safety and that of others are joined, so the passage sits at both.",
           "limit": "The claim is a biologist’s argument about species and social life, written against a ‘struggle of each against all’ reading of Darwin, and it is not a rule for individual choice. The text is the 1902 English original."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "william-james-happiness",
+      "question": "happiness",
+      "name": "William James",
+      "short": "James",
+      "work": "The Varieties of Religious Experience, Lecture IV",
+      "excerpt": "In many persons, happiness is congenital and irreclaimable. “Cosmic emotion” inevitably takes in them the form of enthusiasm and freedom.",
+      "period": "1901-1902",
+      "dateShort": "1901–02",
+      "dateFull": "1901–1902 (Gifford Lectures, Edinburgh)",
+      "sortYear": 1902,
+      "sourceLabel": "Project Gutenberg mirror, text of the 1902 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/2/621/621-0.txt",
+      "locator": "Lecture IV “The Religion of Healthy-Mindedness”, paragraph beginning “In the hour immediately before us”.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.19,
+      "anchorType": "Documented delivery location",
+      "placeNote": "James gave the Gifford Lectures at the University of Edinburgh in 1901–02, as the book’s title page says; the linked page does not give the hall.",
+      "placeSource": "https://gutenberg.pglaf.org/6/2/621/621-0.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Congenital happiness",
+          "why": "James says that some people are happy by temperament, and refuse to feel unhappiness even amid hardship. That puts happiness in the person’s own constitution and not in circumstances, though the cause is inborn and not chosen.",
+          "limit": "The point is a description of one type of religious temperament, the healthy-minded, from lectures that also describe the “sick soul”, whose unhappiness James treats as equally real. He does not claim that everyone can choose happiness."
         }
       },
       "check": {
@@ -33923,6 +35122,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "rainer-maria-rilke-death",
+      "question": "death",
+      "name": "Rainer Maria Rilke",
+      "short": "Rilke",
+      "work": "Das Stunden-Buch, Das Buch von der Armut und vom Tode",
+      "excerpt": "O Herr, gib jedem seinen eignen Tod, das Sterben, das aus jenem Leben geht, darin er Liebe hatte, Sinn und Not.",
+      "translation": "O Lord, give each one his own death, the dying that comes out of that life in which he had love, meaning and need.",
+      "period": "1903",
+      "dateShort": "1903",
+      "dateFull": "April 1903 (Book of Poverty and Death)",
+      "sortYear": 1903,
+      "sourceLabel": "Das Stunden-Buch, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "locator": "Das Buch von der Armut und vom Tode, the lines beginning “O Herr, gib jedem seinen eignen Tod”, after the stanzas on people dying near hospitals.",
+      "place": "Viareggio, Italy",
+      "lat": 43.9,
+      "lng": 10.3,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The third book of the Stundenbuch is generally said to have been written in Italy in spring 1903, but the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/4/2/8/24288/24288-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "A death of one’s own",
+          "why": "The speaker prays that each person be given a death of their own, growing out of the life in which they had love, meaning and need, and calls the great death within each person the fruit around which life turns. The passage treats what dying is like and not what follows it.",
+          "limit": "The passage is a prayer in the voice of a poet writing of poverty and death. It leaves open whether anything follows. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "russell-meaning",
       "question": "meaning",
       "name": "Bertrand Russell",
@@ -33983,6 +35217,40 @@ window.PILOT_EVIDENCE={
           "facet": "Seeing oneself through others’ eyes",
           "why": "Du Bois describes double consciousness as a sense of seeing oneself only through the eyes of a world that looks on in contempt. The self is known through others, though in distortion, so the passage sits at through others.",
           "limit": "It describes a condition imposed on Black Americans, not a recommended way to find oneself, and it is a literary account and not an argument. The text uses the curly quotation marks of the source."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "web-du-bois-death",
+      "question": "death",
+      "name": "W. E. B. Du Bois",
+      "short": "Du Bois",
+      "work": "The Souls of Black Folk, “Of the Passing of the First-Born”",
+      "excerpt": "I, far more ignorant, and blind by the web of mine own weaving, sit alone winding words and muttering, “If still he be, and he be There, and there be a There, let him be happy, O Fate!”",
+      "period": "1903",
+      "dateShort": "1903",
+      "dateFull": "1903 (about the death of his son in 1899)",
+      "sortYear": 1903,
+      "sourceLabel": "Project Gutenberg mirror, Souls of Black Folk (1903)",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/0/408/408-0.txt",
+      "locator": "Chapter XI “Of the Passing of the First-Born”, near the end, after the burial.",
+      "place": "Atlanta, Georgia, United States",
+      "lat": 33.75,
+      "lng": -84.41,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Du Bois’s son Burghardt died in Atlanta in 1899, where Du Bois taught at Atlanta University; the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/0/408/408-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "If still he be, and there be a There",
+          "why": "Du Bois, after his infant son’s death, contrasts his wife’s certainty that the child will be happy “There” with his own conditional prayer: if the boy still exists, and there is a place for him. That leaves survival open.",
+          "limit": "The words are a grieving father’s writing in an autobiographical essay of 1903, shaped by loss and by the burden of racism he sees the child escaping. They state doubt, not a considered view of death."
         }
       },
       "check": {
@@ -34106,6 +35374,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "web-du-bois-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "W. E. B. Du Bois",
+      "short": "Du Bois",
+      "work": "Darkwater: Voices from Within the Veil, “Credo”",
+      "excerpt": "I believe in God, who made of one blood all nations that on earth do dwell. I believe that all men, black and brown and white, are brothers",
+      "period": "1904 (reprinted 1920)",
+      "dateShort": "1904",
+      "dateFull": "1904 (reprinted in Darkwater, 1920)",
+      "sortYear": 1904,
+      "sourceLabel": "Project Gutenberg mirror, text of Darkwater (1920)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/5/2/1/15210/15210-0.txt",
+      "locator": "“Credo”, opening paragraph.",
+      "place": "Atlanta, Georgia, United States",
+      "lat": 33.75,
+      "lng": -84.41,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Du Bois taught at Atlanta University when the Credo was first published in 1904. The linked page gives the text of the 1920 reprint only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/5/2/1/15210/15210-0.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Credo",
+          "why": "Du Bois opens his creed by affirming God as the maker of all nations and bases the brotherhood of all peoples on that. That counts as affirming an ultimate reality, understood as a personal creator.",
+          "limit": "The Credo is a declaration of faith in a rhetorical, liturgical form, first published in 1904, and Du Bois’s later writings are more sceptical about church religion than this opening suggests."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "abdul-baha-free-will",
       "question": "free-will",
       "name": "ʿAbdu’l-Bahá",
@@ -34137,6 +35439,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "alfred-russel-wallace-free-will",
+      "question": "free-will",
+      "name": "Alfred Russel Wallace",
+      "short": "Wallace",
+      "work": "My Life: A Record of Events and Opinions",
+      "excerpt": "or education ; or to claim, on the other hand, that it is wholly and absolutely determined by them — seem to me to be propositions which are alike essentially unthinkable and also entirely opposed to experience.",
+      "period": "1905",
+      "dateShort": "1905",
+      "dateFull": "1905",
+      "sortYear": 1905,
+      "sourceLabel": "Internet Archive full text of the 1905 edition",
+      "sourceUrl": "https://archive.org/stream/myliferecordofev01walluoft/myliferecordofev01walluoft_djvu.txt",
+      "locator": "Volume 1, chapter VI “London workers, secularists, etc.”, paragraph on Owen at New Lanark. The scanned text contains recognition errors.",
+      "place": "Broadstone, Dorset, England",
+      "lat": 50.76,
+      "lng": -1.99,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Wallace wrote My Life while living at Broadstone in Dorset, according to standard biographies; the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/myliferecordofev01walluoft/myliferecordofev01walluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Will, character and environment",
+          "why": "Wallace rejects both the view that the will is untouched by character and environment and the view that it is wholly determined by them, and holds that both factors enter into conduct. That places him with those who see the will as limited rather than simply free or simply determined.",
+          "limit": "The sentence is part of his account of Robert Owen’s social experiments, written in old age, and is an appeal to experience rather than an argument from first principles. The excerpt starts mid-sentence because of a page break."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "henri-poincare-truth",
+      "question": "truth",
+      "name": "Henri Poincaré",
+      "short": "Poincaré",
+      "work": "The Value of Science",
+      "excerpt": "not only science can not teach us the nature of things; but nothing is capable of teaching it to us, and if any god knew it, he could not find words to express it.",
+      "period": "1905",
+      "dateShort": "1905",
+      "dateFull": "1905 (The Value of Science, Part III)",
+      "sortYear": 1905,
+      "sourceLabel": "George Bruce Halsted translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/9/7/1/39713/39713-h/39713-h.htm",
+      "locator": "The Value of Science, chapter XI, section 6 “Objectivity of Science”, last paragraphs.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Poincaré taught at the Sorbonne in Paris when he wrote The Value of Science. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/9/7/1/39713/39713-h/39713-h.htm",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "What science can know",
+          "why": "Poincaré holds that science reaches the true relations between things but not their inner nature, and that nothing else could reach that nature either. That puts the passage at partly knowable: relations are known, the thing in itself is not.",
+          "limit": "The claim is about the objective value of physical science, as a mathematician’s argument against both scepticism and naive realism. It concerns the nature of things, not truth in ethics or religion. The English is George Bruce Halsted’s translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -34455,6 +35825,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henri-bergson-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Henri Bergson",
+      "short": "Bergson",
+      "work": "Creative Evolution",
+      "excerpt": "God thus defined, has nothing of the already made; He is unceasing life, action, freedom.",
+      "period": "1907",
+      "dateShort": "1907",
+      "dateFull": "1907 (French original); English translation 1911",
+      "sortYear": 1907,
+      "sourceLabel": "Arthur Mitchell translation (1911), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/6/1/6/26163/26163.txt",
+      "locator": "Chapter III, the paragraph that defines God as the centre from which worlds shoot out like rockets.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Bergson taught at the Collège de France in Paris when L’Évolution créatrice appeared in 1907. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/6/1/6/26163/26163.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as unceasing life",
+          "why": "Bergson defines God as the centre from which worlds keep shooting out, a continuous creative activity and not a finished thing. That affirms an ultimate reality, understood as life and freedom.",
+          "limit": "The sentence comes at the end of an argument about the vital impetus, and Bergson presents it as the God that philosophy can point to, not a revealed or personal God. The English is Arthur Mitchell’s 1911 translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "chesterton-free-will",
       "question": "free-will",
       "name": "G. K. Chesterton",
@@ -34662,6 +36066,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "emma-goldman-free-will",
+      "question": "free-will",
+      "name": "Emma Goldman",
+      "short": "Goldman",
+      "work": "Anarchism and Other Essays, “Prisons: A Social Crime and Failure”",
+      "excerpt": "the idea that man is at all times a free agent for good or evil; if he chooses the latter, he must be made to pay the price. Although this theory has long been exploded, and thrown upon the dustheap",
+      "period": "1910",
+      "dateShort": "1910",
+      "dateFull": "1910 (collected in Anarchism and Other Essays)",
+      "sortYear": 1910,
+      "sourceLabel": "Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/1/6/2162/2162.txt",
+      "locator": "Essay “Prisons: A Social Crime and Failure”, the paragraph containing the question “What is the real basis of punishment, however?”.",
+      "place": "New York, United States",
+      "lat": 40.73,
+      "lng": -73.99,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Goldman lived and published Mother Earth in New York City when the essays were collected in 1910. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/1/6/2162/2162.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "The free-will theory of punishment",
+          "why": "Goldman describes the doctrine that a person is always a free agent for good or evil as the basis of punishment and calls it long exploded. That treats conduct as shaped by conditions and not as freely chosen.",
+          "limit": "The passage is a polemic against punishment, aimed at the legal use of free will, and does not set out a philosophical account of determinism. Goldman elsewhere stresses the power of individuals to change themselves."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35053,6 +36491,75 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "antonio-machado-meaning",
+      "question": "meaning",
+      "name": "Antonio Machado",
+      "short": "Machado",
+      "work": "Campos de Castilla, “Proverbios y cantares” XXIX",
+      "excerpt": "Caminante, son tus huellas el camino, y nada más; caminante, no hay camino: se hace camino al andar.",
+      "translation": "Walker, your footprints are the road, and nothing more; walker, there is no road: the road is made by walking.",
+      "period": "1912",
+      "dateShort": "1912",
+      "dateFull": "1912 (Campos de Castilla)",
+      "sortYear": 1912,
+      "sourceLabel": "Wikisource (Spanish), “Proverbios y cantares (Campos de Castilla)”",
+      "sourceUrl": "https://es.wikisource.org/wiki/Proverbios_y_cantares_(Campos_de_Castilla)",
+      "locator": "Poem XXIX, first stanza.",
+      "place": "Baeza, Spain",
+      "lat": 37.99,
+      "lng": -3.47,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Machado taught French in Baeza from 1912 to 1919, where he is generally said to have written much of this sequence, but the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Proverbios_y_cantares_(Campos_de_Castilla)",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "The road made by walking",
+          "why": "The poem tells the walker that there is no ready road, only one’s own footprints, and that the road is made by walking. That puts meaning in what a person makes through action and not in a given course.",
+          "limit": "The lines are a short poem and a proverb-like image, not an argued position, and they speak of a path and not directly of the meaning of a life. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "miguel-de-unamuno-desire",
+      "question": "desire",
+      "name": "Miguel de Unamuno",
+      "short": "Unamuno",
+      "work": "Tragic Sense of Life",
+      "excerpt": "To be, to be for ever, to be without ending! thirst of being, thirst of being more! hunger of God! thirst of love eternalizing and eternal! to be for ever! to be God!",
+      "period": "1912",
+      "dateShort": "1912",
+      "dateFull": "1912 (Spanish original); English translation 1921",
+      "sortYear": 1912,
+      "sourceLabel": "J. E. Crawford Flitch translation (1921), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "locator": "Chapter III “The Hunger of Immortality”, the passage on the thirst of being, after the discussion of Spinoza.",
+      "place": "Salamanca, Spain",
+      "lat": 40.96,
+      "lng": -5.66,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Unamuno was rector of the University of Salamanca when Del sentimiento trágico de la vida appeared in 1912. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "The hunger of immortality",
+          "why": "Unamuno names the craving to exist for ever as the root of religion and of his own thinking, and puts it forward as something to be lived with and acted on, not trained away. That places the passage at following desire.",
+          "limit": "This is a rhetorical outburst in an essay that goes on to argue that reason cannot satisfy the craving; Unamuno recommends living in the conflict, not simply indulging the wish. The English is J. E. Crawford Flitch’s 1921 translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "miguel-de-unamuno-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Miguel de Unamuno",
@@ -35198,6 +36705,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "delmira-agustini-desire",
+      "question": "desire",
+      "name": "Delmira Agustini",
+      "short": "Agustini",
+      "work": "Los cálices vacíos (1913), “Otra estirpe”",
+      "excerpt": "Eros, yo quiero guiarte, Padre ciego... pido a tus manos todopoderosas ¡su cuerpo excelso derramado en fuego sobre mi cuerpo desmayado en rosas!",
+      "translation": "Eros, I want to guide you, blind Father... I ask of your almighty hands his sublime body poured out in fire over my body swooning in roses!",
+      "period": "Published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Otra_estirpe",
+      "locator": "First quatrain of the sonnet.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.8,
+      "lng": -56.2,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Agustini lived and wrote in Montevideo. The linked page gives the poem only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Otra_estirpe",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "A body offered to Eros",
+          "why": "The speaker calls on Eros and asks outright for the lover’s body poured out like fire over her own, and goes on to offer herself as soil for a new race. Desire is claimed, affirmed and fulfilled, not renounced or moderated.",
+          "limit": "The sonnet speaks in a poetic persona, in the heightened imagery of the early twentieth-century modernist movement, and wishes rather than reasons. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35703,6 +37245,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "katherine-mansfield-death",
+      "question": "death",
+      "name": "Katherine Mansfield",
+      "short": "Mansfield",
+      "work": "Journal of Katherine Mansfield, entry of October 29, 1915",
+      "excerpt": "because he is not here, and I long to join him.",
+      "period": "October 1915",
+      "dateShort": "October 1915",
+      "dateFull": "October 1915",
+      "sortYear": 1915,
+      "sourceLabel": "Internet Archive scan of Journal of Katherine Mansfield, ed. J. Middleton Murry (1927)",
+      "sourceUrl": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "locator": "Entry headed “October 29” in the 1915 section, sentence beginning “I believe in immortality” (the excerpt is its second half, which the scan breaks across a line). The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.18,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mansfield lived in London in October 1915, when her brother Leslie was killed in France; the entry itself names no place. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Immortality because a brother has died",
+          "why": "Writing weeks after her brother’s death in the war, Mansfield gives her wish to join him as the ground of a belief in immortality, stated in the words just before the excerpt. A wish to rejoin the dead presupposes that he goes on, so the passage sits at continues.",
+          "limit": "A private journal entry written in fresh grief; the belief is stated as a feeling that follows from loss, not as an argued doctrine, and she wrote elsewhere in the journal of the fear of death. It was edited and published after her death by J. Middleton Murry."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "muhammad-iqbal-desire",
       "question": "desire",
       "name": "Muhammad Iqbal",
@@ -35817,6 +37393,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ashanti-proverbs-given-or-made",
+      "question": "given-or-made",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "work": "Ashanti Proverbs, no. 15 (Nnipa nhina ye Onyame mma)",
+      "excerpt": "All men are the children of the Supreme Being, no one is a child of the earth.",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "locator": "Chapter on proverbs, no. 15.",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Children of the Supreme Being",
+          "why": "The proverb says every person is a child of the Supreme Being and none belongs to the earth alone. What a person is comes from God, which places the saying at the given end.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist in 1916; it speaks of origin and kinship, not of how character is formed. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "ashanti-proverbs-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Ashanti proverbs collected by R. S. Rattray",
@@ -35911,6 +37521,40 @@ window.PILOT_EVIDENCE={
           "facet": "Everything as a dream",
           "why": "Satan tells the narrator that God, the universe and heaven are a dream and that nothing exists but the dreamer. The words deny any God or reality behind the world.",
           "limit": "The speaker is Satan in a fantasy, and the ending was added by editors of the 1916 edition from Twain’s drafts, so it cannot be taken as Twain’s settled belief. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "oliver-lodge-death",
+      "question": "death",
+      "name": "Oliver Lodge",
+      "short": "Lodge",
+      "work": "Raymond, or Life and Death",
+      "excerpt": "I am as convinced of continued existence, on the other side of death, as I am of existence here.",
+      "period": "1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "Project Gutenberg mirror, text of the 1916 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/1/0/8/51086/51086-0.txt",
+      "locator": "Paragraph containing “Moreover, he wants me to speak out; and I shall.”",
+      "place": "Birmingham, England",
+      "lat": 52.46,
+      "lng": -1.93,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Lodge was Principal of the University of Birmingham when the book appeared in 1916. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/1/0/8/51086/51086-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Conviction of life after death",
+          "why": "The physicist Oliver Lodge states that he is as sure of life after death as of life now, on the strength of communications he believes came from his dead son. That places him with those who say existence continues.",
+          "limit": "The claim rests on sittings with mediums and on Lodge’s own judgment of the evidence, which many scientists of the time and later rejected. The book was written in grief after his son Raymond’s death in the First World War."
         }
       },
       "check": {
@@ -36016,6 +37660,41 @@ window.PILOT_EVIDENCE={
           "facet": "Perfect happiness in theory",
           "why": "Kafka locates the one possible perfect happiness in a person’s own belief in what is indestructible within. No outer good is named.",
           "limit": "The word “theoretically” signals that Kafka doubts this happiness can be reached in practice, so the passage marks a possibility, not an achievement. The English is the atlas’s own unreviewed translation. The aphorisms are numbered notebook entries, not an argued essay, and the numbering follows the Wikisource page."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "franz-kafka-lasting-self",
+      "question": "lasting-self",
+      "name": "Franz Kafka",
+      "short": "Kafka",
+      "work": "Zürau aphorisms, “Betrachtungen über Sünde, Leid, Hoffnung und den wahren Weg”",
+      "excerpt": "Der Mensch kann nicht leben ohne ein dauerndes Vertrauen zu etwas Unzerstörbarem in sich, wobei sowohl das Unzerstörbare als auch das Vertrauen ihm dauernd verborgen bleiben können.",
+      "translation": "A human being cannot live without a lasting trust in something indestructible within, though both the indestructible and the trust may remain permanently hidden from him.",
+      "period": "1917-1918",
+      "dateShort": "1917–18",
+      "dateFull": "winter 1917 to early 1918",
+      "sortYear": 1918,
+      "sourceLabel": "Projekt Gutenberg (projekt-gutenberg.org), “Franz Kafka: Aphorismen”",
+      "sourceUrl": "https://projekt-gutenberg.org/authors/franz-kafka/books/franz-kafka-aphorismen/chapter/4",
+      "locator": "Zürau aphorisms, passage beginning “Der Mensch kann nicht leben ohne ein dauerndes Vertrauen”.",
+      "place": "Zürau (Siřem), Bohemia, Czech Republic",
+      "lat": 50.35,
+      "lng": 13.7,
+      "anchorType": "Documented writing location",
+      "placeNote": "Kafka wrote these aphorisms while staying with his sister at Zürau in Bohemia from autumn 1917 to spring 1918, according to standard biographies. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://projekt-gutenberg.org/authors/franz-kafka/books/franz-kafka-aphorismen/chapter/4",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The indestructible within",
+          "why": "Kafka says a person cannot live without lasting trust in something indestructible within, though both the indestructible and the trust may stay hidden. That affirms something in a person that endures, while denying that it can be seen.",
+          "limit": "The aphorism is one of a numbered set written in private notebooks and not published in his lifetime as a doctrine, and it does not say what the indestructible element is. The English is the atlas’s own unreviewed translation."
         }
       },
       "check": {
@@ -36209,6 +37888,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "george-santayana-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "George Santayana",
+      "short": "Santayana",
+      "work": "Soliloquies in England and Later Soliloquies, “Society and Solitude”",
+      "excerpt": "Thus it is evident that the beatific solitude of Saint Bernard was filled with a kind of society; he devoted it to communion with the Trinity, or to composing fervent compliments to the Virgin Mary.",
+      "period": "1918-1921",
+      "dateShort": "1918–21",
+      "dateFull": "1918–1921 (Later Soliloquies)",
+      "sortYear": 1920,
+      "sourceLabel": "Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/8/4/2/48429/48429-0.txt",
+      "locator": "Later Soliloquies, section 28 “Society and Solitude”, second paragraph.",
+      "place": "Oxford, England",
+      "lat": 51.75,
+      "lng": -1.25,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Santayana lived in England, mostly Oxford and Cambridge, during these years. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/8/4/2/48429/48429-0.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Solitude filled with imagined company",
+          "why": "Santayana argues that even the hermit’s solitude is peopled by imagined society, since human beings are rooted in company, while allowing that living among ideas can be a sign of moral vigour. That holds both together.",
+          "limit": "The essay is a short soliloquy by a philosopher who lived much of his life alone in lodgings, and it weighs Saint Bernard’s praise of solitude against the Hegelian praise of society. The passage is one step in that weighing."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "katherine-mansfield-suffering",
+      "question": "suffering",
+      "name": "Katherine Mansfield",
+      "short": "Mansfield",
+      "work": "Journal of Katherine Mansfield, “The Confession”",
+      "excerpt": "Everything in life that we really accept undergoes a change. So suffering must become Love. This is the mystery.",
+      "period": "c. 1920",
+      "dateShort": "c. 1920",
+      "dateFull": "c. 1920",
+      "sortYear": 1920,
+      "sourceLabel": "Internet Archive scan of Journal of Katherine Mansfield, ed. J. Middleton Murry (1927)",
+      "sourceUrl": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "locator": "Entry headed “Suffering” (running head “The Confession”), in the 1920 section, paragraph beginning “One must submit.” The scanned text contains recognition errors.",
+      "place": "Menton, France",
+      "lat": 43.8,
+      "lng": 7.5,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mansfield spent the winter of 1920 to 1921 in Menton on the Riviera, but the scanned entry itself does not name a place. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Accepting suffering until it becomes love",
+          "why": "Mansfield writes that suffering is not escaped by passing beyond it but by accepting it fully, and that what is accepted is changed into love. Suffering is something to be worked on and transformed, which places it at can be used.",
+          "limit": "A private journal entry written by a woman in severe illness, edited and published after her death; the hope is stated as something she must do, not as something she had achieved. The entry also says that suffering is boundless and that the present agony may kill."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "lu-xun-meaning",
       "question": "meaning",
       "name": "Lu Xun",
@@ -36397,6 +38144,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "d-h-lawrence-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "D. H. Lawrence",
+      "short": "Lawrence",
+      "work": "Fantasia of the Unconscious",
+      "excerpt": "But to be still, and to ignore the false fine frenzy of the seething world. To turn away, now, each one into the stillness and solitude of his own soul.",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/6/5/20654/20654.txt",
+      "locator": "Chapter XIII “Cosmological”, paragraph beginning “It isn’t our business to live anybody’s life”.",
+      "place": "Taormina, Sicily, Italy",
+      "lat": 37.86,
+      "lng": 15.28,
+      "anchorType": "Foreword dated location",
+      "placeNote": "The foreword is dated Taormina, 8 October 1921, but the book was written in several places, so Taormina is the dated site and not necessarily where this chapter was written. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/6/5/20654/20654.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Turning to the stillness of one’s soul",
+          "why": "Lawrence urges each person to turn away from the frenzy of the world into the stillness and solitude of the soul, and there to find stability. That commends being alone, and warns against the world’s company.",
+          "limit": "The advice is a polemical aside in a book of speculative psychology, written in a hectoring comic voice, and elsewhere in the book Lawrence stresses bonds between man and woman and between leader and follower. He does not mean solitude as isolation from all living things."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "gabriela-mistral-suffering",
       "question": "suffering",
       "name": "Gabriela Mistral",
@@ -36492,6 +38273,74 @@ window.PILOT_EVIDENCE={
           "facet": "Habits as the self",
           "why": "Dewey says the self is formed from habits, which are acquired ways of acting. A self made of habits is real but built up over time, so the passage is placed at changing.",
           "limit": "The line is a short claim in a psychology of conduct; Dewey does not discuss survival after death or personal identity in the metaphysical sense here. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "katherine-mansfield-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Katherine Mansfield",
+      "short": "Mansfield",
+      "work": "Journal of Katherine Mansfield, entry beginning “Now, Katherine, what do you mean by health?”",
+      "excerpt": "I want, by understanding myself, to understand others.",
+      "period": "autumn 1922",
+      "dateShort": "autumn 1922",
+      "dateFull": "autumn 1922",
+      "sortYear": 1922,
+      "sourceLabel": "Internet Archive scan of Journal of Katherine Mansfield, ed. J. Middleton Murry (1927)",
+      "sourceUrl": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "locator": "1922 section, entry on health, paragraph beginning “By health I mean the power to live a full, adult, living, breathing life”. The scanned text contains recognition errors.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The entry sits among notes from October 1922, when Mansfield was in Paris and then Fontainebleau, but it names no place. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Understanding oneself in order to understand others",
+          "why": "Mansfield, asking herself what health is for, states a wish to understand herself as the route to understanding other people. The inward turn and the turn to others are held together in one sentence, so the passage sits at both.",
+          "limit": "A private journal entry from her last months, edited and published after her death; it is a statement of aim, not an account of how selves are known. The context is her search for a cure for tuberculosis."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "katherine-mansfield-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Katherine Mansfield",
+      "short": "Mansfield",
+      "work": "Journal of Katherine Mansfield, entry of June 1922 from Randogne, Switzerland",
+      "excerpt": "Should I be as happy with anyone at my side? No. I'd begin to talk, and it's far nicer not to talk.",
+      "period": "June 1922",
+      "dateShort": "June 1922",
+      "dateFull": "June 1922",
+      "sortYear": 1922,
+      "sourceLabel": "Internet Archive scan of Journal of Katherine Mansfield, ed. J. Middleton Murry (1927)",
+      "sourceUrl": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "locator": "Entry headed “June. Randogne, Switzerland”, in the 1922 section. The scanned text contains recognition errors.",
+      "place": "Randogne, Valais, Switzerland",
+      "lat": 46.31,
+      "lng": 7.48,
+      "anchorType": "Documented writing location",
+      "placeNote": "The entry is headed Randogne, Switzerland, where Mansfield stayed in 1922 while seeking treatment for tuberculosis. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/journalofkatheri00mans/journalofkatheri00mans_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Content alone under a tree",
+          "why": "Mansfield, ill and writing in a mountain village, asks whether company would add to her happiness and answers that it would not. Being alone is preferred to having someone at her side, so the passage sits at solitude.",
+          "limit": "A private journal entry from the last year of a consumptive writer’s life, edited and published after her death by J. Middleton Murry. The same entry calls the rapture of solitude hard to understand, and the preference is a mood, not a general rule."
         }
       },
       "check": {
@@ -37070,6 +38919,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "virginia-woolf-death",
+      "question": "death",
+      "name": "Virginia Woolf",
+      "short": "Woolf",
+      "work": "Mrs. Dalloway",
+      "excerpt": "since our apparitions, the part of us which appears, are so momentary compared with the other, the unseen part of us, which spreads wide, the unseen might survive, be recovered somehow",
+      "period": "1925",
+      "dateShort": "1925",
+      "dateFull": "1925",
+      "sortYear": 1925,
+      "sourceLabel": "Internet Archive full text of Mrs. Dalloway (1925)",
+      "sourceUrl": "https://archive.org/stream/mrsdalloway00wool/mrsdalloway00wool_djvu.txt",
+      "locator": "Section in which Clarissa recalls her friendship with Peter Walsh, paragraph containing “the unseen part of us, which spreads wide”. The scanned text contains recognition errors.",
+      "place": "Richmond, London, England",
+      "lat": 51.46,
+      "lng": -0.31,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Woolf wrote the novel in 1923–24 while living at Hogarth House, Richmond, according to standard biographies. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mrsdalloway00wool/mrsdalloway00wool_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "The unseen part of a person",
+          "why": "Clarissa Dalloway half-believes that the unseen part of a person, spread wide beyond the momentary appearance, might survive death. The passage ends in “perhaps — perhaps”, which leaves the question open.",
+          "limit": "The thought belongs to a fictional character reflecting on her friendship with Peter Walsh, not to Woolf as author, and it is tentative. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "alfred-north-whitehead-solitude-or-company",
       "question": "solitude-or-company",
       "name": "Alfred North Whitehead",
@@ -37185,6 +39068,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jbs-haldane-truth",
+      "question": "truth",
+      "name": "J. B. S. Haldane",
+      "short": "Haldane",
+      "work": "Possible Worlds and Other Essays, “Possible Worlds”",
+      "excerpt": "Now, my own suspicion is that the universe is not only queerer than we suppose, but queerer than we can suppose.",
+      "period": "1927",
+      "dateShort": "1927",
+      "dateFull": "1927",
+      "sortYear": 1927,
+      "sourceLabel": "Internet Archive full text of the 1927 edition",
+      "sourceUrl": "https://archive.org/stream/possibleworldsot00hald/possibleworldsot00hald_djvu.txt",
+      "locator": "Closing paragraph of the title essay “Possible Worlds”, before “Man’s Destiny”. The scanned text contains recognition errors.",
+      "place": "Cambridge, England",
+      "lat": 52.2,
+      "lng": 0.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Haldane was Reader in Biochemistry at Cambridge when the essays were collected. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/possibleworldsot00hald/possibleworldsot00hald_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "The universe queerer than supposed",
+          "why": "Haldane doubts that any systematic account of the universe can be complete, and says reality may exceed what can be imagined. That places the passage with those who think the deepest truth cannot be known.",
+          "limit": "The line is a playful aside in a speculative essay by a biologist and is a suspicion, not an argument. Haldane goes on to urge looking at the world from many points of view, which allows partial knowledge."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "martin-heidegger-death",
       "question": "death",
       "name": "Martin Heidegger",
@@ -37253,6 +39170,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "w-b-yeats-desire",
+      "question": "desire",
+      "name": "W. B. Yeats",
+      "short": "Yeats",
+      "work": "The Tower, “Sailing to Byzantium”",
+      "excerpt": "Consume my heart away; sick with desire And fastened to a dying animal It knows not what it is; and gather me Into the artifice of eternity.",
+      "period": "1926-1928",
+      "dateShort": "1926–28",
+      "dateFull": "written 1926, published 1927–1928",
+      "sortYear": 1927,
+      "sourceLabel": "Wikisource, text of The Tower (1928)",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Tower_(Yeats)/Sailing_to_Byzantium",
+      "locator": "Poem “Sailing to Byzantium”, stanza III.",
+      "place": "Dublin, Ireland",
+      "lat": 53.34,
+      "lng": -6.26,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Yeats lived in Dublin and at Thoor Ballylee in County Galway in the 1920s, and the linked page does not say where the poem was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Tower_(Yeats)/Sailing_to_Byzantium",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Heart sick with desire",
+          "why": "The speaker asks the sages to burn away his heart, which is sick with desire and tied to a dying body, and to gather him into an eternal artifice. That asks for desire to be consumed and left behind.",
+          "limit": "The speaker is a poetic persona who has sailed to a city of art, and the wish may be read as irony about old age. Yeats’s other poems often praise desire and passion, so this is one voice among several."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "alfred-adler",
       "name": "Alfred Adler",
       "short": "Adler",
@@ -37290,6 +39241,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "arthur-eddington-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Arthur Eddington",
+      "short": "Eddington",
+      "work": "The Nature of the Physical World",
+      "excerpt": "To put the conclusion crudely — the stuff of the world is mind-stuff. As is often the way with crude statements, I shall have to explain that by \"mind\" I do not here exactly mean mind",
+      "period": "1928",
+      "dateShort": "1928",
+      "dateFull": "1928 (Gifford Lectures, Edinburgh 1927)",
+      "sortYear": 1928,
+      "sourceLabel": "Internet Archive full text of the 1928 edition",
+      "sourceUrl": "https://archive.org/stream/natureofphysical00eddi/natureofphysical00eddi_djvu.txt",
+      "locator": "Chapter XIV “Reality”, section “Mind-Stuff”. The scanned text contains recognition errors.",
+      "place": "Cambridge, England",
+      "lat": 52.2,
+      "lng": 0.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Eddington was Plumian Professor at Cambridge when he wrote the book from his Edinburgh lectures. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/natureofphysical00eddi/natureofphysical00eddi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Mind-stuff",
+          "why": "Eddington concludes that the physical world is a symbolic description of something more like mind than matter. That makes ultimate reality something real and mental rather than material, though not a personal God.",
+          "limit": "Eddington hedges the claim at once and calls it a glimpse; it is a physicist’s speculation from the Gifford Lectures, not a theology. He does not identify mind-stuff with God."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -37500,6 +39485,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "fernando-pessoa-lasting-self",
+      "question": "lasting-self",
+      "name": "Fernando Pessoa",
+      "short": "Pessoa",
+      "work": "“Não sei quantas almas tenho”",
+      "excerpt": "Não sei quantas almas tenho. Cada momento mudei. Continuamente me estranho. Nunca me vi nem acabei.",
+      "translation": "I do not know how many souls I have. I have changed at every moment. I constantly find myself strange. I never saw myself or finished myself.",
+      "period": "1930",
+      "dateShort": "1930",
+      "dateFull": "1930",
+      "sortYear": 1930,
+      "sourceLabel": "Wikisource (Portuguese)",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Não_sei_quantas_almas_tenho",
+      "locator": "Poem “Não sei quantas almas tenho”, first stanza.",
+      "place": "Lisbon, Portugal",
+      "lat": 38.73,
+      "lng": -9.15,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Pessoa lived and worked in Lisbon all his adult life; the linked page gives no place or date for the poem, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Não_sei_quantas_almas_tenho",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Many souls, a self never complete",
+          "why": "The speaker says he does not know how many souls he has, that he has changed at every moment, and that he has never seen or finished himself. That treats the self as real but multiple and always in the making.",
+          "limit": "The text is a poem, and the Wikisource page lists it under the heteronym Alberto Caeiro, while it is usually attributed to Pessoa under his own name, so the attribution needs an editor’s check. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -37977,6 +39997,41 @@ window.PILOT_EVIDENCE={
           "facet": "A composite of body, soul and spirit",
           "why": "Stein says a human being is made of body, soul and spirit together. A real self that is composite is placed at changing.",
           "limit": "The entry elsewhere describes Stein’s view that the soul is more than momentary, so this line does not settle whether she thinks the self lasts. It is a statement of structure, not of persistence. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "cesar-vallejo-free-will",
+      "question": "free-will",
+      "name": "César Vallejo",
+      "short": "Vallejo",
+      "work": "Poemas humanos, “Piedra negra sobre una piedra blanca”",
+      "excerpt": "Me moriré en París con aguacero, un día del cual tengo ya el recuerdo.",
+      "translation": "I will die in Paris in a downpour, on a day I already remember.",
+      "period": "Written 1936–1937; published 1939",
+      "dateShort": "1939",
+      "dateFull": "1939 (posthumous)",
+      "sortYear": 1937,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Piedra_negra_sobre_una_piedra_blanca",
+      "locator": "Opening stanza of the sonnet.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem names Paris as the place of the speaker’s death; Vallejo lived in Paris in exile when he wrote the Poemas humanos. The linked page gives the poem only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Piedra_negra_sobre_una_piedra_blanca",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "A death already remembered",
+          "why": "The poet foretells the place, the weather and the day of his own death as something he already remembers, a fixed event that he can only await. This places the lines at the determined end.",
+          "limit": "A poem about death foretold, in which fate is a figure of speech and a mood; the lines do not argue that all choices are fixed. The English is the atlas’s own unreviewed translation."
         }
       },
       "check": {
@@ -39798,6 +41853,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nelson-mandela-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Nelson Mandela",
+      "short": "Mandela",
+      "work": "Statement from the dock, Rivonia Trial (“I am prepared to die”)",
+      "excerpt": "It is an ideal which I hope to live for and to achieve. But if needs be, it is an ideal for which I am prepared to die.",
+      "period": "Delivered 20 April 1964",
+      "dateShort": "1964",
+      "dateFull": "20 April 1964",
+      "sortYear": 1964,
+      "sourceLabel": "The O’Malley Archives, Nelson Mandela Foundation",
+      "sourceUrl": "https://omalley.nelsonmandela.org/index.php/site/q/03lv01538/04lv01600/05lv01630/06lv01631.htm",
+      "locator": "Closing paragraph of the statement.",
+      "place": "Palace of Justice, Pretoria, South Africa",
+      "lat": -25.75,
+      "lng": 28.19,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The statement was delivered from the dock of the Pretoria Supreme Court on 20 April 1964; the linked page gives the date and court, and the exact building is from general knowledge, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://omalley.nelsonmandela.org/index.php/site/q/03lv01538/04lv01600/05lv01630/06lv01631.htm",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "An ideal worth dying for",
+          "why": "Mandela puts a shared ideal of a free society above his own life, saying he hopes to live for it but will die for it if needed. The common good takes priority over his own claims.",
+          "limit": "A defence statement made in court facing a possible death sentence, which gives it a rhetorical purpose beyond a general ethic. The Foundation notes that he varied from the prepared text when he spoke; this is the O’Malley Archives transcription."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "cabral-happiness",
       "question": "happiness",
       "name": "Amílcar Cabral",
@@ -40313,6 +42402,40 @@ window.PILOT_EVIDENCE={
           "facet": "Speaking from within a community",
           "why": "Deloria says that an Indian who speaks finds it hard to separate himself from his community, because others at once hear him as speaking for it. The community shapes how he is heard and what he can say, though the passage does not say he could not exist apart from it.",
           "limit": "A political essay about who may speak for tribes, in a 1970 pamphlet, with no theory of personal identity. The sentence begins “When an Indian speaks” in the original capitals. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "pablo-neruda-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Pablo Neruda",
+      "short": "Neruda",
+      "work": "Nobel Lecture, “Towards the Splendid City”",
+      "excerpt": "There is no insurmountable solitude. All paths lead to the same goal: to convey to others what we are. And we must pass through solitude and difficulty, isolation and silence",
+      "period": "Delivered 13 December 1971",
+      "dateShort": "1971",
+      "dateFull": "13 December 1971",
+      "sortYear": 1971,
+      "sourceLabel": "Nobel Lecture, English translation, nobelprize.org",
+      "sourceUrl": "https://www.nobelprize.org/prizes/literature/1971/neruda/lecture/",
+      "locator": "Paragraph beginning “From all this, my friends, there arises an insight”.",
+      "place": "Stockholm, Sweden",
+      "lat": 59.33,
+      "lng": 18.06,
+      "anchorType": "Documented delivery location",
+      "placeNote": "Nobel lectures are given in Stockholm; the linked page gives the date and the lecture text.",
+      "placeSource": "https://www.nobelprize.org/prizes/literature/1971/neruda/lecture/",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "No insurmountable solitude",
+          "why": "Neruda says every path ends in communication with others, so solitude is never final, yet he keeps solitude and silence as the ground that must be crossed. That holds company and being alone together.",
+          "limit": "A poet’s prize lecture speaking of the writer’s task, in the Nobel Foundation’s English translation; it says what solitude is for rather than whether a person is better off alone."
         }
       },
       "check": {
@@ -41663,6 +43786,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "nadine-gordimer-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Nadine Gordimer",
+      "short": "Gordimer",
+      "work": "Nobel Lecture, “Writing and Being”",
+      "excerpt": "writing is always and at once an exploration of self and of the world; of individual and collective being.",
+      "period": "Delivered 7 December 1991",
+      "dateShort": "1991",
+      "dateFull": "7 December 1991",
+      "sortYear": 1991,
+      "sourceLabel": "Nobel Lecture, nobelprize.org",
+      "sourceUrl": "https://www.nobelprize.org/prizes/literature/1991/gordimer/lecture/",
+      "locator": "Paragraph beginning “It is in this sense, this inextricable, ineffable participation”.",
+      "place": "Stockholm, Sweden",
+      "lat": 59.33,
+      "lng": 18.06,
+      "anchorType": "Documented delivery location",
+      "placeNote": "Nobel lectures are given in Stockholm; the linked page gives the lecture text and the date.",
+      "placeSource": "https://www.nobelprize.org/prizes/literature/1991/gordimer/lecture/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Exploring self and world",
+          "why": "Gordimer says writing explores the self and the world together, individual and collective being at once. The passage holds the inward turn and the turn to others together.",
+          "limit": "A novelist describing what writing does, in a prize lecture; it speaks of the writer’s practice and does not claim that every self is found this way."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
