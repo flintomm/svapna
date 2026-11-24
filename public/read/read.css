@@ -89,3 +89,6 @@ h1.h-read{font-size:clamp(38px,5.6vw,88px);max-width:16ch}
 .you-bar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:6;max-width:calc(100vw - 36px);padding:13px 20px;background:var(--ink);color:var(--bg);font:600 14px/1.25 'Inter Tight',sans-serif;letter-spacing:-.01em;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .you-bar[hidden]{display:none}
 html{scroll-behavior:smooth}#result{scroll-margin-top:90px}
+.coffee{margin-top:90px;padding-top:26px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 44px;align-items:baseline;justify-content:space-between;max-width:60rem}
+.coffee p{margin:0}.coffee p:first-child{font:400 clamp(20px,2.1vw,28px)/1.15 'Instrument Serif',Georgia,serif;font-style:italic}
+.coffee .go{margin:0 26px 0 0}.coffee .go.quiet{border-color:transparent;opacity:.6}.coffee .go.quiet:hover{opacity:1;border-color:var(--line)}

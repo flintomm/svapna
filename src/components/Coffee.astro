@@ -1,0 +1,9 @@
+---
+// A quiet closing line for pages that have just given the reader something: Svapna is free, and a coffee keeps it open.
+interface Props { line?: string }
+const { line = 'Svapna is free, and kept open by the people who use it.' } = Astro.props;
+---
+<aside class="coffee" aria-label="Support Svapna">
+  <p>{line}</p>
+  <p><a class="go" href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-umami-event="coffee_click">Buy a coffee ↗</a><a class="go quiet" href="/support">Other ways to help →</a></p>
+</aside>

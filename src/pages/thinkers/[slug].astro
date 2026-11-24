@@ -1,4 +1,5 @@
 ---
+import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
 import { thinkers, thinkerOf } from '../../lib/atlas.js';
 export function getStaticPaths() { return thinkers.map(t => ({ params: { slug: t.slug }, props: { t } })); }
@@ -49,4 +50,5 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
       </div>
     </section>
   )}
+  <Coffee />
 </Read>

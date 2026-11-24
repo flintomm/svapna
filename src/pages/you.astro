@@ -1,6 +1,7 @@
 ---
 // You: answer the questions and see which thinkers think most like you, and which least.
 // Answers are kept on the visitor's own device (localStorage 'svapna_answers'); nothing is sent anywhere.
+import Coffee from '../components/Coffee.astro';
 import Read from '../layouts/Read.astro';
 import { questions, thinkers } from '../lib/atlas.js';
 
@@ -46,6 +47,7 @@ const T = thinkers.map(t => {
     <p style="margin-top:26px"><button type="button" class="go" id="clear">Clear my answers</button></p>
   </section>
 
+  <Coffee line="If your matches surprised you, a coffee keeps Svapna open." />
   <a id="you-bar" class="you-bar" href="#result" hidden></a>
 
   <script is:inline type="application/json" id="you-data" set:html={JSON.stringify({ Q, T })}></script>

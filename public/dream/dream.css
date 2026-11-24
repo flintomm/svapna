@@ -116,3 +116,4 @@ main::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 @keyframes vt-out{to{opacity:0}}@keyframes vt-in{from{opacity:0}}
 body{animation:arrive .9s ease both}@keyframes arrive{from{opacity:0}}
 @media(prefers-reduced-motion:reduce){body{animation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
+.thanks{font:400 clamp(20px,2vw,28px)/1.2 var(--serif);font-style:italic;margin:44px 0 0;max-width:30em}.thanks a{text-decoration-thickness:1px;text-underline-offset:5px}

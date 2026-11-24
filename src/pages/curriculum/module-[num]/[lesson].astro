@@ -1,5 +1,6 @@
 ---
 // A full lesson, in the reading look. Lessons belong to a depth of the night in Dreaming.
+import Coffee from '../../../components/Coffee.astro';
 import Read from '../../../layouts/Read.astro';
 import MarkdownBody from '../../../components/MarkdownBody.astro';
 import InlineMarkdown from '../../../components/InlineMarkdown.astro';
@@ -44,4 +45,5 @@ const jsonLd = articleSchema({ url: 'https://svapnaproject.org' + path, headline
       : nextModFirst ? <a class="r" href={`/curriculum/module-${pad(nextMod.num)}/${nextModFirst.urlSlug}`}><span class="small">Next · {nextMod.title}</span>{nextModFirst.title}</a> : <span></span>}
   </nav>
   {short && <a class="go" href={`/dream#${short.layer}`}>Back into the night at “{LAYER[short.layer]}” →</a>}
+  <Coffee line="If this lesson was worth reading, a coffee keeps Svapna open." />
 </Read>
