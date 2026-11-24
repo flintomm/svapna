@@ -14,7 +14,16 @@
     ink: { rgb: { low: [120, 160, 255], mid: [255, 220, 90], high: [200, 255, 60], none: [130, 130, 130] }, dots: true, blend: 'lighter', land: '255,255,255', ring: '#fff' },
   }[V] || null;
   const L = LOOK || { rgb: { low: [36, 76, 255], mid: [255, 170, 0], high: [255, 61, 46], none: [120, 120, 120] }, dots: true, blend: 'multiply', land: '20,20,20', ring: '#111' };
-  const RGB = L.rgb;
+  // Palettes for the aurora look: ?c=tide (default), dusk, glacier, ember, rose (the first one).
+  const PALETTES = {
+    tide: { low: [38, 84, 255], mid: [255, 178, 0], high: [0, 184, 148] },
+    dusk: { low: [124, 92, 255], mid: [255, 170, 120], high: [0, 178, 200] },
+    glacier: { low: [20, 60, 240], mid: [0, 200, 230], high: [170, 230, 0] },
+    ember: { low: [64, 64, 210], mid: [255, 196, 64], high: [255, 112, 32] },
+    rose: { low: [46, 91, 255], mid: [255, 176, 0], high: [255, 43, 112] },
+  };
+  const C = new URLSearchParams(location.search).get('c') || 'tide';
+  const RGB = V === 'aurora' && PALETTES[C] ? { ...PALETTES[C], none: [110, 110, 120] } : L.rgb;
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
   let landDots = null;
@@ -68,8 +77,8 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
  vec2 s=q+.35*vec2(fbm(q*1.7+t*.05+3.),fbm(q*1.7-t*.04+21.));
  float a=smoothstep(.42,.78,fbm(s*1.15+vec2(0.,t*.02)))*w.x;
  float b=smoothstep(.44,.8,fbm(s*1.15+vec2(31.,-t*.025)))*w.y;
- float d=smoothstep(.4,.76,fbm(s*1.15+vec2(-17.,t*.03)+5.))*w.z;
- vec3 col=vec3(1.);col=mix(col,c0,a*.92);col=mix(col,c1,b*.9);col=mix(col,c2,d*.95);
+ float d=smoothstep(.46,.82,fbm(s*1.15+vec2(-17.,t*.03)+5.))*w.z;
+ vec3 col=vec3(1.);col=mix(col,c2,d*.9);col=mix(col,c1,b*.82);col=mix(col,c0,a*.86);
  float keep=mix(smoothstep(-.95,.25,p.x),smoothstep(-.1,.55,p.y),nar);
  col=mix(vec3(1.),col,.16+.84*keep);
  col+=(h(gl_FragCoord.xy+t)-.5)*.035;
