@@ -1,7 +1,6 @@
 ---
 import DanaNote from '../components/DanaNote.astro';
 import Layout from '../layouts/Layout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
 // The atlas body is generated from the Globe of Thought repository by scripts/sync-globe.mjs.
 import atlasBody from '../generated/globe-of-thought.html?raw';
 
@@ -29,12 +28,10 @@ const theme = {
   description="An atlas of what thinkers wrote in answer to the questions seekers ask: the self, death, freedom, suffering, happiness, desire, meaning and truth. Passages placed by where and when they were written."
 >
   <section>
-    <SectionHeader
-      num="§ 07"
-      kicker="A companion atlas"
-      title="Globe of Thought"
-      sub="Beyond the dream: the wider questions about consciousness and a life, and what thinkers wrote in answer. Passages placed by where and when they were written."
-    />
+    <div class="hairline-b px-5 md:px-8 py-5 md:py-6 flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 fade-in">
+      <h1 class="display text-4xl md:text-5xl leading-none">Globe of Thought</h1>
+      <p class="display italic text-base md:text-lg text-neutral-600 max-w-xl md:text-right">What thinkers wrote in answer to the wider questions, placed by where and when.</p>
+    </div>
     <link rel="stylesheet" href="/globe-of-thought/atlas.css" />
     <link rel="stylesheet" href="/globe-of-thought/theme.css" />
     <script is:inline define:vars={{ theme }}>window.ATLAS_THEME = theme;</script>

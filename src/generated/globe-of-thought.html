@@ -3,6 +3,7 @@
       <p class="eyebrow">A QUESTION ACROSS TIME</p>
       <h1>What is <em>the self?</em></h1>
       <p id="question" class="subhead">How much do relationships shape who a person is?</p>
+      <label class="qpick"><span>Question</span><select id="question-select" aria-label="Choose a question"></select></label>
       <div id="questions" class="questions" role="group" aria-label="Choose a question"></div>
       <p id="stats" class="stats"></p>
     </div>
@@ -12,6 +13,12 @@
       <ul id="rubric"></ul>
     </details>
   </div>
+
+  <ol class="howto" aria-label="How to use the atlas">
+    <li><b>1</b> Choose a question</li>
+    <li><b>2</b> Turn the globe and open a pin</li>
+    <li><b>3</b> Read the passage, then check it at its source</li>
+  </ol>
 
   <div class="toolbar">
     <div class="tabs" role="tablist" aria-label="Choose a view">
@@ -75,6 +82,8 @@
   </div>
 
   <section class="index" aria-labelledby="index-title">
-    <h2 id="index-title" class="index-title">All passages</h2>
-    <div id="choices" class="rows"></div>
+    <details class="index-fold">
+      <summary><h2 id="index-title" class="index-title">All passages</h2></summary>
+      <div id="choices" class="rows"></div>
+    </details>
   </section>

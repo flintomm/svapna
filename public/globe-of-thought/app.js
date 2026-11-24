@@ -102,8 +102,9 @@ for (const [i, card] of cards.entries()) {
 }
 $('ends').append(node('span', '', cards[0].dateShort), node('span', '', cards.at(-1).dateShort));
 const drafts = cards.filter(card => card.review === 'draft').length;
-$('stats').textContent = cards.length + (cards.length < atlas.cards.length ? ' of ' + atlas.cards.length : '') + ' passages placed · '
-  + cards[0].dateShort + ' to ' + cards.at(-1).dateShort + (drafts ? ' · ' + drafts + ' draft readings awaiting review' : '');
+$('stats').textContent = cards.length + ' passages answer this question' + (cards.length < atlas.cards.length ? ' (' + atlas.cards.length + ' in the atlas)' : '') + ' · '
+  + cards[0].dateShort + ' to ' + cards.at(-1).dateShort + (drafts ? ' · placements are drafts, not yet reviewed' : '');
+if ($('index-title')) $('index-title').textContent = 'All ' + cards.length + ' passages on this question';
 $('question').textContent = question.question;
 // Switching question reloads the page on the same passage where that passage is placed on the new question.
 // Documented connections: a thinker's links, looked up by the name on the passage.
@@ -130,6 +131,17 @@ for (const q of atlas.questions.filter(placedOn)) {
   });
   $('questions').append(tab);
 }
+// On a narrow screen the same choice is one menu, so the globe is not pushed down by fourteen buttons.
+{ const menu = $('question-select');
+  if (menu) {
+    for (const q of atlas.questions.filter(placedOn)) {
+      const option = node('option', '', q.question); option.value = q.id; option.selected = q === question; menu.append(option);
+    }
+    menu.addEventListener('change', () => {
+      const q = atlas.questions.find(item => item.id === menu.value), here = atlas.cards.find(card => card.id === cards[active].id);
+      window.location.assign(questionUrl(q, here.readings[q.id] ? here.id : ''));
+    });
+  } }
 
 // ---- state ------------------------------------------------------------------
 // At zoom 1 the selected place sits a little above centre; zooming in closes that offset so it stays in view.

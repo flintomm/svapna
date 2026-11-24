@@ -421,3 +421,33 @@
 
 .atlas .tie-note { color: var(--muted); }
 
+.atlas .qpick { display: none; }
+
+.atlas .qpick span { display: block; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--quiet); margin-bottom: 6px; }
+
+.atlas .qpick select { width: 100%; min-height: 46px; padding: 0 12px; font: inherit; color: inherit; background: transparent; border: 1px solid var(--line); border-radius: 8px; }
+
+.atlas .howto { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 22px; margin: 0 0 14px; padding: 0; font-size: .86rem; color: var(--muted); }
+
+.atlas .howto b { display: inline-block; min-width: 1.4em; font-weight: 600; color: var(--accent); }
+
+.atlas .index-fold > summary { cursor: pointer; list-style: none; }
+
+.atlas .index-fold > summary::-webkit-details-marker { display: none; }
+
+.atlas .index-fold > summary h2 { display: inline; }
+
+.atlas .index-fold > summary::after { content: ' — show'; color: var(--quiet); font-size: .8rem; }
+
+.atlas .index-fold[open] > summary::after { content: ' — hide'; }
+
+@media (max-width: 760px) {
+.atlas .qpick { display: block; }
+
+.atlas .questions { display: none; }
+ }
+
+@media (max-width: 760px) {
+.atlas .intro .subhead { display: none; }
+ }
+
