@@ -13489,6 +13489,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "eznik-of-kolb-free-will",
+      "question": "free-will",
+      "name": "Eznik of Kołb",
+      "short": "Eznik",
+      "work": "Against the Sects (De Deo)",
+      "excerpt": "Mais Dieu a voulu honorer ainsi l’homme, que pour qu’il devienne instruit du bien, il lui a donné le libre arbitre, à l’aide duquel l’homme puisse faire ce qu’il voudra",
+      "translation": "But God wished to honour man in this way: so that he might be taught the good, he gave him free will, by which man may do what he wishes.",
+      "period": "c. 450 CE",
+      "dateShort": "c. 450",
+      "dateFull": "circa 450 CE",
+      "sortYear": 450,
+      "sourceLabel": "French translation of the Armenian text, Wikisource",
+      "sourceUrl": "https://fr.wikisource.org/wiki/R%C3%A9futation_des_sectes/Texte_entier",
+      "locator": "Passage on free will and the origin of evil, beginning “Mais Dieu a voulu honorer ainsi l’homme”.",
+      "place": "Vagharshapat, Armenia",
+      "lat": 40.16,
+      "lng": 44.29,
+      "anchorType": "Approximate association",
+      "placeNote": "Eznik is traditionally linked with the Armenian church centre near Vagharshapat; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://fr.wikisource.org/wiki/R%C3%A9futation_des_sectes/Texte_entier",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Free will as God’s gift to humans",
+          "why": "Eznik says that God gave humans free will so that they could learn the good and act as they wish. That puts the person as free to choose, by God’s gift.",
+          "limit": "The Armenian original of the fifth century is read here in a nineteenth-century French translation on Wikisource, so the wording is the translator’s. The English is the atlas’s own unreviewed translation, and Eznik is arguing against the claim that evil is God’s doing. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "tirukkural-happiness",
       "question": "happiness",
       "name": "Tiruvalluvar (Tirukkural)",
@@ -14529,6 +14564,41 @@ window.PILOT_EVIDENCE={
           "facet": "Human diversity",
           "why": "The verse gives a purpose to human difference: peoples exist so that they may come to know each other.",
           "limit": "The verse immediately ranks people by piety, which is individual. It speaks of peoples and tribes, not of how a person is formed."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "wonhyo-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Wonhyo",
+      "short": "Wonhyo",
+      "work": "Commentary on the Awakening of Faith (Kisillon so)",
+      "excerpt": "雖起六道之浪。不出一心之海。",
+      "translation": "Though waves of the six paths arise, they do not leave the sea of the One Mind.",
+      "period": "Seventh century CE",
+      "dateShort": "7th c.",
+      "dateFull": "seventh century CE",
+      "sortYear": 670,
+      "sourceLabel": "Taisho text, SAT Daizokyo Text Database, University of Tokyo",
+      "sourceUrl": "https://21dzk.l.u-tokyo.ac.jp/SAT/ddb-sat2.php?mode=detail&s=&useid=1844_,01",
+      "locator": "Fascicle 1, the passage on establishing the doctrine of the One Mind, at T1844 page 204b.",
+      "place": "Gyeongju, Korea (Silla)",
+      "lat": 35.84,
+      "lng": 129.21,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Wonhyo taught in the Silla capital and its temples; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://21dzk.l.u-tokyo.ac.jp/SAT/ddb-sat2.php?mode=detail&s=&useid=1844_,01",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "One Mind as the sea of all things",
+          "why": "Wonhyo says that the six realms of rebirth are waves that never leave the sea of the One Mind. He treats the One Mind as the single reality that all appearances arise within.",
+          "limit": "A passage from a Literary Chinese commentary, taken from a database transcription with line markers around it, so the cut is short. The English is the atlas’s own unreviewed translation, and the One Mind is a Buddhist teaching that is not a creator God. Reading drawn from the project’s research catalogue."
         }
       },
       "check": {
@@ -17422,6 +17492,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "basavanna-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Basavaṇṇa",
+      "short": "Basavaṇṇa",
+      "work": "Vachana “ಉಳ್ಳವರು ಶಿವಾಲಯ ಮಾಡಿಹರು”",
+      "excerpt": "ಎನ್ನ ಕಾಲೇ ಕಂಬ, ದೇಹವೇ ದೇಗುಲ, ಶಿರ ಹೊನ್ನ ಕಲಶವಯ್ಯಾ. ಕೂಡಲಸಂಗಮದೇವಾ, ಕೇಳಯ್ಯಾ ಸ್ಥಾವರಕ್ಕಳಿವುಂಟು, ಜಂಗಮಕ್ಕಳಿವಿಲ್ಲ.",
+      "translation": "My legs are the pillars, my body the shrine, my head the golden finial. Lord of the Meeting Rivers, hear: the standing temple perishes, the moving one does not.",
+      "period": "12th century",
+      "dateShort": "12th c.",
+      "dateFull": "twelfth century CE",
+      "sortYear": 1150,
+      "sourceLabel": "Kannada Wikisource",
+      "sourceUrl": "https://kn.wikisource.org/wiki/%E0%B2%89%E0%B2%B3%E0%B3%8D%E0%B2%B3%E0%B2%B5%E0%B2%B0%E0%B3%81_%E0%B2%B6%E0%B2%BF%E0%B2%B5%E0%B2%BE%E0%B2%B2%E0%B2%AF_%E0%B2%AE%E0%B2%BE%E0%B2%A1%E0%B2%BF%E0%B2%B9%E0%B2%B0%E0%B3%81",
+      "locator": "The whole vachana, second and third sentences.",
+      "place": "Kalyāṇa (Basavakalyan), Karnataka, India",
+      "lat": 17.87,
+      "lng": 76.95,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition places Basavaṇṇa at the court of Kalyāṇa in the twelfth century; the linked page gives only the text, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://kn.wikisource.org/wiki/%E0%B2%89%E0%B2%B3%E0%B3%8D%E0%B2%B3%E0%B2%B5%E0%B2%B0%E0%B3%81_%E0%B2%B6%E0%B2%BF%E0%B2%B5%E0%B2%BE%E0%B2%B2%E0%B2%AF_%E0%B2%AE%E0%B2%BE%E0%B2%A1%E0%B2%BF%E0%B2%B9%E0%B2%B0%E0%B3%81",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The living body as shrine",
+          "why": "The poet answers rich patrons' stone temples by calling his own body the shrine of Shiva and saying the fixed temple perishes while the living, moving devotee does not, so the divine is held to be real and present in people.",
+          "limit": "The English is the atlas's own unreviewed translation. A twelfth-century vachana of the Lingayat movement, transmitted orally and attributed to Basavaṇṇa, with a signature line to Kūḍalasaṅgamadēva; the date and wording of the received text are not secure. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "geshe-chekawa-suffering",
       "question": "suffering",
       "name": "Geshe Chekawa Yeshe Dorje",
@@ -17629,6 +17734,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "farid-al-din-attar-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Farid al-Din ʿAttar",
+      "short": "ʿAttar",
+      "work": "Manṭiq al-ṭayr (The Conference of the Birds)",
+      "excerpt": "هر که آید خویشتن بیند درو جان و تن هم جان و تن بیند درو",
+      "translation": "Whoever comes sees himself in it; he sees soul and body in it, too.",
+      "period": "c. 1177",
+      "dateShort": "c. 1177",
+      "dateFull": "circa 1177",
+      "sortYear": 1177,
+      "sourceLabel": "Persian verse transcription, Ganjoor",
+      "sourceUrl": "https://ganjoor.net/attar/manteghotteyr/30-morgh/sh4",
+      "locator": "Section of the poem where the thirty birds reach the Simorgh, the couplets after “کاینه‌ست این حضرت چون آفتاب”.",
+      "place": "Nishapur, Iran",
+      "lat": 36.21,
+      "lng": 58.8,
+      "anchorType": "Traditional association",
+      "placeNote": "ʿAttar is traditionally associated with Nishapur; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://ganjoor.net/attar/manteghotteyr/30-morgh/sh4",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The divine presence as a mirror",
+          "why": "In the poem the Simorgh, the divine presence, answers the birds that it is a mirror in which each seeker sees himself. The ultimate is real and is met in the seeker’s own self.",
+          "limit": "A couplet from a Sufi allegory spoken by a character, in a Persian text that a Persian-language site transcribes. The English is the atlas’s own unreviewed translation, and readings differ on how far self and divine are identified. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -18057,6 +18197,40 @@ window.PILOT_EVIDENCE={
           "facet": "What God does not will does not happen",
           "why": "A character states that nothing happens which God does not will. That puts events under divine will and leaves no room for an outcome that He has not willed.",
           "limit": "A romantic epic, so the words belong to a character in a court poem and not to Rustaveli in his own voice; the 1912 prose translation is old. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rustaveli-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Shota Rustaveli",
+      "short": "Rustaveli",
+      "work": "The Man in the Panther’s Skin, chapter 21 (Avtandil’s testament)",
+      "excerpt": "A wise man cannot abandon his beloved friend.",
+      "period": "c. 1200 CE; English version 1912",
+      "dateShort": "c. 1200",
+      "dateFull": "circa 1200 CE",
+      "sortYear": 1200,
+      "sourceLabel": "Marjory Wardrop translation, English Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Man_in_the_Panther%27s_Skin/Chapter_21",
+      "locator": "Stanza 770, in Avtandil’s testament to King Rostevan.",
+      "place": "Tbilisi, Georgia",
+      "lat": 41.72,
+      "lng": 44.79,
+      "anchorType": "Traditional association",
+      "placeNote": "The poem is traditionally linked to the court of Queen Tamar in Georgia around 1200. The linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Man_in_the_Panther%27s_Skin/Chapter_21",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Loyalty to a friend",
+          "why": "Avtandil tells his king he must leave in search of his friend, and says no wise man could abandon one he loves. The friend’s need ranks above his own comfort and the king’s command.",
+          "limit": "The line is spoken by a knight in a medieval epic and is made to justify his breaking the king’s order. Marjory Wardrop’s 1912 English prose is a century-old rendering. Reading drawn from the project’s research catalogue."
         }
       },
       "check": {
@@ -19197,6 +19371,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "tran-nhan-tong-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Trần Nhân Tông",
+      "short": "Trần Nhân Tông",
+      "work": "Cư trần lạc đạo phú (closing verse)",
+      "excerpt": "Gia trung hữu bảo hưu tầm mích",
+      "translation": "There is a treasure in the house; stop searching.",
+      "period": "c. 1300 CE",
+      "dateShort": "c. 1300",
+      "dateFull": "circa 1300 CE",
+      "sortYear": 1300,
+      "sourceLabel": "Complete works of Trần Nhân Tông, library edition (qlgd.edu.vn)",
+      "sourceUrl": "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/838/UserFiles/Toan-tap-tran-nhan-tong-2fdd6098-7836-4b9a-b878-7d33b0ead799.pdf",
+      "locator": "Verse beginning “Cư trần lạc đạo thả tùy duyên”, at the end of the phú. The scanned text may contain recognition errors.",
+      "place": "Yên Tử mountain, Quảng Ninh, Vietnam",
+      "lat": 21.17,
+      "lng": 106.72,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition places the emperor’s later teaching at Yên Tử mountain. The linked page does not state where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://medialib.qlgd.edu.vn/Uploads/THU_VIEN/shn/2/838/UserFiles/Toan-tap-tran-nhan-tong-2fdd6098-7836-4b9a-b878-7d33b0ead799.pdf",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "The treasure at home",
+          "why": "The closing verse tells the reader that the treasure is already in the house and to stop looking elsewhere. In Chan reading the house is the mind, so the search is turned inward.",
+          "limit": "The English is the atlas’s own unreviewed translation. The verse is attributed to the emperor-monk in a received text, and the ‘house’ is a Chan metaphor, so the line is not advice to avoid others. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -20837,6 +21046,41 @@ window.PILOT_EVIDENCE={
           "facet": "The devout life",
           "why": "The greatest saints avoided the company of men.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "zeami-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Zeami",
+      "short": "Zeami",
+      "work": "Kakyo (A Mirror to the Flower)",
+      "excerpt": "見所より見る所の風姿は、我離見也。然れば、我眼の見る所は、我見なり。離見の見にはあらず。",
+      "translation": "The figure seen from the audience’s seat is my detached view. So what my own eyes see is my own view, and not the detached view.",
+      "period": "c. 1424",
+      "dateShort": "c. 1424",
+      "dateFull": "circa 1424",
+      "sortYear": 1424,
+      "sourceLabel": "Edited transcription of Kakyo, muhenko.com",
+      "sourceUrl": "https://muhenko.com/zeamijurokubushu/kakyo_6_3.htm",
+      "locator": "Section 3 of the chapter on voice and dance as root, paragraph beginning “又、舞に目前心後と云事あり”.",
+      "place": "Kyoto, Japan",
+      "lat": 35.01,
+      "lng": 135.77,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Zeami performed and taught in the Muromachi capital, Kyoto; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://muhenko.com/zeamijurokubushu/kakyo_6_3.htm",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Seeing one’s own form as the audience sees it",
+          "why": "Zeami holds that a performer sees their true form only through the viewpoint of the audience, and that what their own eyes see is a different and limited view. Self-knowledge here comes by taking the place of others.",
+          "limit": "A passage of stage training in a fifteenth-century treatise in Japanese, quoted from an edited modern transcription. The English is the atlas’s own unreviewed translation, and the point concerns performance and not the self in general. Reading drawn from the project’s research catalogue."
         }
       },
       "check": {
@@ -22539,6 +22783,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "michel-de-montaigne-lasting-self",
+      "question": "lasting-self",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, Book 3, Chapter 2, “On Repentance”",
+      "excerpt": "I cannot fix my object; ’tis always tottering and reeling by a natural giddiness; I take it as it is at the instant I consider it; I do not paint its being, I paint its passage",
+      "period": "Written 1580s, published 1588",
+      "dateShort": "1588",
+      "dateFull": "published in 1588",
+      "sortYear": 1588,
+      "sourceLabel": "Charles Cotton translation, revised by W. Carew Hazlitt, HyperEssays",
+      "sourceUrl": "https://www.hyperessays.net/essays/on-repentance/",
+      "locator": "Opening paragraphs of Book 3, Chapter 2.",
+      "place": "Château de Montaigne, Dordogne, France",
+      "lat": 44.84,
+      "lng": 0.76,
+      "anchorType": "Traditional writing association",
+      "placeNote": "Montaigne wrote the Essays largely in the tower of his château near Bordeaux. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.hyperessays.net/essays/on-repentance/",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "A self known only in passage",
+          "why": "Montaigne says that the self he portrays cannot be held still and can be shown only as it passes from moment to moment. That treats the self as real but always in motion.",
+          "limit": "Charles Cotton’s seventeenth-century translation, revised by Hazlitt. Montaigne is describing his own essay-writing, and elsewhere in the same chapter he also speaks of a master form in each person. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -24339,6 +24617,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kim-man-jung-lasting-self",
+      "question": "lasting-self",
+      "name": "Kim Man-jung",
+      "short": "Kim Man-jung",
+      "work": "The Cloud Dream of the Nine (Kuunmong)",
+      "excerpt": "You, Song-jin, now think yourself reality, and your past life a dream only; you do not reckon yourself one and the same as the dream. Which shall I label the dream, you Song-jin, or you So-yoo?",
+      "period": "c. 1689; English version 1922",
+      "dateShort": "c. 1689",
+      "dateFull": "circa 1689",
+      "sortYear": 1689,
+      "sourceLabel": "English translation of 1922, Eldritch Press (ibiblio.org)",
+      "sourceUrl": "https://www.ibiblio.org/eldritch/kim/cloud9.html",
+      "locator": "Final chapter, the Teacher’s reply to Song-jin after the dream.",
+      "place": "Namhae Island, South Korea",
+      "lat": 34.84,
+      "lng": 127.89,
+      "smallIsland": true,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition says Kim wrote the novel in exile on Namhae island around 1689. The linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.ibiblio.org/eldritch/kim/cloud9.html",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "unscored",
+          "facet": "Which life is the dream",
+          "why": "The Teacher asks the monk Song-jin whether he or his dream self So-yoo is the real one, and refuses to say. The passage unsettles any fixed answer about which life or self is lasting without giving a replacement.",
+          "limit": "This is a novel’s ending in an early twentieth-century English version (1922), and the speaker is a fictional teacher. The text should not be read as the author’s own doctrine. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "locke-truth",
       "question": "truth",
       "name": "John Locke",
@@ -24647,6 +24960,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "gottfried-leibniz-lasting-self",
+      "question": "lasting-self",
+      "name": "Gottfried Wilhelm Leibniz",
+      "short": "Leibniz",
+      "work": "Nouveaux essais sur l’entendement humain, book II, chapter 27",
+      "excerpt": "l’identité d'une même substance individuelle ne peut être maintenue que par la conservation de la même âme; car le corps est dans un flux continuel",
+      "translation": "the identity of one and the same individual substance can be maintained only by the preservation of the same soul; for the body is in continual flux",
+      "period": "c. 1704; published 1765",
+      "dateShort": "c. 1704",
+      "dateFull": "circa 1704 (published 1765)",
+      "sortYear": 1704,
+      "sourceLabel": "French text of the 1921 edition, French Wikisource",
+      "sourceUrl": "https://fr.wikisource.org/wiki/Nouveaux_Essais_sur_l%E2%80%99entendement_humain/II/XXVII",
+      "locator": "Theophilus’s reply, section 6 of the chapter, beginning “Il y a ici question de nom et question de chose”.",
+      "place": "Hanover, Germany",
+      "lat": 52.37,
+      "lng": 9.73,
+      "anchorType": "Documented writing location",
+      "placeNote": "Leibniz worked at Hanover when he wrote the book around 1703 to 1705. The linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://fr.wikisource.org/wiki/Nouveaux_Essais_sur_l%E2%80%99entendement_humain/II/XXVII",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Identity kept by the same soul",
+          "why": "Leibniz (as Theophilus) says that sameness of an individual depends on keeping the same soul, since the body is always changing. That affirms an enduring self beneath bodily change.",
+          "limit": "The English is the atlas’s own unreviewed translation. The words are spoken by Theophilus in a dialogue with a stand-in for Locke, and the book circulated only after Leibniz’s death. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -25953,6 +26301,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "skovoroda-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Hryhorii Skovoroda",
+      "short": "Skovoroda",
+      "work": "Narcissus: A Dialogue on the Theme “Know Thyself”",
+      "excerpt": "хощеши ли быть доволен собою и влюбиться в самаго себе? Узнай же себе!",
+      "translation": "Do you wish to be content with yourself and fall in love with your very self? Then know yourself!",
+      "period": "1769-1770",
+      "dateShort": "1769",
+      "dateFull": "1769 to 1770",
+      "sortYear": 1769,
+      "sourceLabel": "Institutional edition (Ukrainian state archive), PDF",
+      "sourceUrl": "https://skovoroda.man.gov.ua/storage/files/narkiss-razglagol-o-tom-uznaj-sebe.pdf",
+      "locator": "Prologue to the dialogue, in the paragraph on the figure of Narcissus.",
+      "place": "Kharkiv, Ukraine",
+      "lat": 49.99,
+      "lng": 36.23,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Skovoroda taught at the Kharkiv collegium around the time of writing, but the linked edition's introduction dates the work only roughly; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://skovoroda.man.gov.ua/storage/files/narkiss-razglagol-o-tom-uznaj-sebe.pdf",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Know yourself",
+          "why": "Skovoroda answers the wish to be content with oneself by telling the reader to examine oneself, so the direction given is inward.",
+          "limit": "The English is the atlas's own unreviewed translation. An eighteenth-century Russian-Slavonic dialogue whose self-knowledge is also religious, and the sentence does not say whether others help. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -32151,6 +32534,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "emilio-jacinto-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Emilio Jacinto",
+      "short": "Jacinto",
+      "work": "Kartilya of the Katipunan",
+      "excerpt": "A good deed that springs from self-interest, and not from a sincere wish to do good, is not virtue.",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Tagalog text with institutional English revision, Philippine Folklife Museum Foundation",
+      "sourceUrl": "https://www.philippinefolklifemuseum.org/exhibitions/andres-bonifacio/",
+      "locator": "Kartilya, second rule, in the section on the Kartilya.",
+      "place": "Manila, Philippines",
+      "lat": 14.62,
+      "lng": 121,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The Kartilya circulated among the Katipunan in Manila in 1896; the linked page does not state where Jacinto wrote it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.philippinefolklifemuseum.org/exhibitions/andres-bonifacio/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Good done from sincere wish, not self-interest",
+          "why": "The Kartilya says that a good deed done for one’s own gain does not count as virtue and that real goodness needs a sincere wish to do good. That puts the good of others ahead of self-interest as the measure of right action.",
+          "limit": "A rule from a primer written for new members of a revolutionary society, not a worked argument. The English is the museum’s credited revision beside the Tagalog, and authorship is attributed to Jacinto rather than certain. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "jose-rizal-death",
       "question": "death",
       "name": "José Rizal",
@@ -32331,6 +32748,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "narayana-guru-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Narayana Guru",
+      "short": "Narayana Guru",
+      "work": "Atmopadesa Satakam (One hundred verses on Self Instruction)",
+      "excerpt": "Knowledge, the object of knowledge, and one's cognition of both are in fact only variations of a beginningless Being.",
+      "period": "c. 1897 (conventional date of composition)",
+      "dateShort": "c. 1897",
+      "dateFull": "circa 1897",
+      "sortYear": 1897,
+      "sourceLabel": "Parallel English rendering, translator unidentified, SNDP Yogam website",
+      "sourceUrl": "https://www.sndp.org/html/atmopadesaSatakam",
+      "locator": "Opening verses of the hundred, in the section after the invocation.",
+      "place": "Aruvippuram, Kerala, India",
+      "lat": 8.9,
+      "lng": 76.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The verses are traditionally linked with Narayana Guru’s ashram at Aruvippuram; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.sndp.org/html/atmopadesaSatakam",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "One beginningless Being behind knowing",
+          "why": "The verse says that the knower, the known and the act of knowing are all variations of one Being without beginning. That places a single ultimate reality under all that is known.",
+          "limit": "A devotional-philosophical verse in an English rendering by an unidentified translator, from a Malayalam text. The Advaita-leaning reading is the translator’s wording, not a claim about the original’s every term. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36699,6 +37150,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jane-nardal-given-or-made",
+      "question": "given-or-made",
+      "name": "Jane Nardal",
+      "short": "Nardal",
+      "work": "Lettre à Alain Locke (27 December 1927)",
+      "excerpt": "avant de découvrir, tant au fond du creuset, l’esprit de race, entièrement enseveli sous l’éducation et l’instruction françaises qui m’avaient été données",
+      "translation": "before discovering, deep in the crucible, the spirit of race, entirely buried under the French education and schooling that had been given to me",
+      "period": "27 December 1927",
+      "dateShort": "1927",
+      "dateFull": "27 December 1927",
+      "sortYear": 1927,
+      "sourceLabel": "Letter in the Alain Locke archive, Howard University; web edition by Éditions Ròt-Bò-Krik",
+      "sourceUrl": "https://www.rot-bo-krik.com/ressources/lettre-de-jane-nardal-a-alain-locke-1927",
+      "locator": "Second paragraph of the letter, beginning “Ce serait abuser de votre attention”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Presumed writing location",
+      "placeNote": "Nardal was a student in Paris in 1927 and refers to Paris publishers in the letter. The page does not give the place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.rot-bo-krik.com/ressources/lettre-de-jane-nardal-a-alain-locke-1927",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "A buried racial spirit",
+          "why": "Nardal says an inborn racial spirit lay buried under the schooling she was given and had to be discovered through a series of experiences. Both what was given at birth and what education made of her are named.",
+          "limit": "The English is the atlas’s own unreviewed translation. The sentence is autobiographical, in a letter to an editor, and speaks of ‘race’ in the language of its day. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "martin-heidegger-death",
       "question": "death",
       "name": "Martin Heidegger",
@@ -37499,6 +37985,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "leon-gontran-damas-given-or-made",
+      "question": "given-or-made",
+      "name": "Léon-Gontran Damas",
+      "short": "Damas",
+      "work": "Hoquet, in Pigments",
+      "excerpt": "Ma mère voulant un fils très bonnes manières à table Les mains sur la table le pain ne se coupe pas le pain se rompt le pain ne se gaspille pas",
+      "translation": "My mother wanting a son with very good table manners: hands on the table, bread is not cut, bread is broken, bread is not wasted.",
+      "period": "1937",
+      "dateShort": "1937",
+      "dateFull": "1937",
+      "sortYear": 1937,
+      "sourceLabel": "Pigments, Éditions Panfleto edition (PDF)",
+      "sourceUrl": "https://www.edpanfleto.com/edpanfleto/publicados/pigments.pdf",
+      "locator": "Opening lines of the poem “Hoquet”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Approximate publication place",
+      "placeNote": "Pigments was published in Paris in 1937; the linked file does not say where the poem was written, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://www.edpanfleto.com/edpanfleto/publicados/pigments.pdf",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "A child shaped by a mother's rules",
+          "why": "The poem shows a child being formed by a mother's rules of manners and speech, so what the speaker has become is made by upbringing, though the poem resents it.",
+          "limit": "The English is the atlas's own unreviewed translation. A poem of 1937 spoken in a resentful voice that recalls a colonial, assimilating upbringing, so its stance on formation is critical and not a statement of doctrine. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "mao-zedong-truth",
       "question": "truth",
       "name": "Mao Zedong",
@@ -37594,6 +38115,41 @@ window.PILOT_EVIDENCE={
           "facet": "Rejecting an afterlife",
           "why": "Camus refuses the hope of another life and treats death as a shut door. Within these words death ends the person, and the only life to live is the present one.",
           "limit": "The line comes from a lyrical early essay, not a systematic argument, and states a refusal to believe rather than a proof. The entry cites it as Nuptials page 76; the English wording is the entry author’s choice of translation. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "julia-de-burgos-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Julia de Burgos",
+      "short": "de Burgos",
+      "work": "A Julia de Burgos",
+      "excerpt": "En mí no, que en mí manda mi solo corazón, mi solo pensamiento; quien manda en mí soy yo.",
+      "translation": "Not in me: in me only my own heart rules, only my own thought; the one who rules in me is I.",
+      "period": "1938",
+      "dateShort": "1938",
+      "dateFull": "1938 (Poema en 20 surcos)",
+      "sortYear": 1938,
+      "sourceLabel": "Poem excerpt in an AP Spanish Literature examination, College Board",
+      "sourceUrl": "https://secure-media.collegeboard.org/ap/pdf/ap-spanish-literature-frq-2017.pdf",
+      "locator": "Stanza beginning “Ya las gentes murmuran”, near the end of the poem; the excerpt marks an omission after the lines quoted.",
+      "place": "San Juan, Puerto Rico",
+      "lat": 18.4,
+      "lng": -66.06,
+      "anchorType": "Approximate association",
+      "placeNote": "De Burgos lived in San Juan in the 1930s and the poem was collected in 1938. The linked page does not state where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://secure-media.collegeboard.org/ap/pdf/ap-spanish-literature-frq-2017.pdf",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Ruling oneself",
+          "why": "The poem’s speaker tells her social double that her own heart and thought alone govern her, and that she is her own ruler. Final authority over her life is placed in herself, against convention and what others will say.",
+          "limit": "The English is the atlas’s own unreviewed translation. The speaker is a poetic voice addressing a conventional double of herself, and the line is a claim of independence from social expectation, not a doctrine about duty to others. Reading drawn from the project’s research catalogue."
         }
       },
       "check": {
@@ -38432,6 +38988,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "maurice-merleau-ponty-relationships",
+      "question": "relationships",
+      "name": "Maurice Merleau-Ponty",
+      "short": "Merleau-Ponty",
+      "work": "Phénoménologie de la perception",
+      "excerpt": "Il faut que les Pour-Soi, - moi pour moi-même et autrui pour lui-même, - se détachent sur un fond de Pour Autrui, - moi pour autrui et autrui pour moi-même.",
+      "translation": "The For-itselves, myself for myself and the other for himself, must stand out against a background of For-others, myself for the other and the other for me.",
+      "period": "1945",
+      "dateShort": "1945",
+      "dateFull": "1945",
+      "sortYear": 1945,
+      "sourceLabel": "French text, Les classiques des sciences sociales (UQAC), electronic transcription",
+      "sourceUrl": "https://classiques.uqam.ca/classiques/merleau_ponty_maurice/phonomenologie_de_la_perception/phonomenologie_de_la_perception.pdf",
+      "locator": "Part 3, chapter 3 (“La liberté”), paragraph around the page marker [512].",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.35,
+      "anchorType": "Place of publication",
+      "placeNote": "Phénoménologie de la perception appeared in Paris in 1945. The linked file does not state where this chapter was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://classiques.uqam.ca/classiques/merleau_ponty_maurice/phonomenologie_de_la_perception/phonomenologie_de_la_perception.pdf",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The being-for-others background",
+          "why": "Merleau-Ponty says each person’s own being-for-self must stand out against a ground of being for others. Relation to others is therefore the background that makes the self possible.",
+          "limit": "The English is the atlas’s own unreviewed translation. The sentence is a step in a technical argument about freedom and intersubjectivity, using his terms, and one hyphen layout is that of the electronic transcription. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "sartre-meaning",
       "question": "meaning",
       "name": "Jean-Paul Sartre",
@@ -38615,6 +39206,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ki-ageng-suryomentaram-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Ki Ageng Suryomentaram",
+      "short": "Suryomentaram",
+      "work": "Pangawikan Pribadi",
+      "excerpt": "Tiyang anggenipun nyumerepi awakipun piyambak, punika wonten nggen lelawanan. Tiyang punika lelawanan kaliyan barang-barang, kaliyan tiyang sanes, lan kaliyan gagasanipun piyambak utawi raosipun piyambak.",
+      "translation": "A person's knowing of himself takes place in an encounter. A person is in encounter with things, with other people, and with his own thoughts or feelings.",
+      "period": "c. 1930s to 1960",
+      "dateShort": "c. 1950",
+      "dateFull": "circa 1930s to 1960",
+      "sortYear": 1950,
+      "sourceLabel": "Dewantara Magazine (Javanese text of the teaching)",
+      "sourceUrl": "https://dewantaramagazine.blogspot.com/2015/03/pangawikan-pribadi-ki-ageng.html",
+      "locator": "Opening paragraph of the text.",
+      "place": "Yogyakarta, Indonesia",
+      "lat": -7.8,
+      "lng": 110.37,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Suryomentaram taught in and around Yogyakarta; the linked page does not date or place this talk, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://dewantaramagazine.blogspot.com/2015/03/pangawikan-pribadi-ki-ageng.html",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Knowing oneself in encounter",
+          "why": "The Javanese teacher says self-knowledge happens in a meeting that includes other people and also the person's own thoughts and feelings, so it is neither purely inward nor purely through others.",
+          "limit": "The English is the atlas's own unreviewed translation, and the Javanese term lelawanan is rendered loosely as encounter. The text is a transcription of Kawruh Jiwa teaching in Javanese, reposted on a magazine site. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "albert-camus-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Albert Camus",
@@ -38641,6 +39267,40 @@ window.PILOT_EVIDENCE={
           "facet": "From individual revolt to community",
           "why": "Camus links one person’s act of revolt directly to a shared human community, in a formula of five words. Neither the individual nor the group is placed first, which gives the position both.",
           "limit": "The line is a compressed formula; the entry notes it is paradoxical and spends a section asking how an individual act yields a solidarity. The English is a standard translation of the French. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "vinoba-bhave-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Vinoba Bhave",
+      "short": "Bhave",
+      "work": "Moved by Love: The Memoirs of Vinoba Bhave, “On foot through India”",
+      "excerpt": "I know of no other source of strength by which my work may be done-except this, the name of the Lord.",
+      "period": "Recalled in memoirs; the walk began April 1951",
+      "dateShort": "1951",
+      "dateFull": "the walk began in April 1951",
+      "sortYear": 1951,
+      "sourceLabel": "English translation of the memoirs, mkgandhi.org",
+      "sourceUrl": "https://www.mkgandhi.org/movedbylove/chap11.php",
+      "locator": "Section “The ‘Ganga’ of Bhoodan: its Source”, paragraph beginning “People did ask me how my work would benefit”.",
+      "place": "Hyderabad region, Telangana, India",
+      "lat": 17.4,
+      "lng": 78.45,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The memoir names the Sarvodaya Conference at Shivaramapalli near Hyderabad as the walk’s destination. The linked page does not name the translator or give the exact site of the reply, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.mkgandhi.org/movedbylove/chap11.php",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God’s name as the source of strength",
+          "why": "Bhave says that the name of the Lord is the only source of strength for his work. That treats God as a real, active ground of what he does.",
+          "limit": "A recollection of a reply to questioners before the 1951 walk, in an English translation of memoirs first given in Marathi. It states his devotion, not an argument, and the passage is about his work more than about the nature of God. Reading drawn from the project’s research catalogue."
         }
       },
       "check": {
@@ -39036,6 +39696,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "martin-luther-king-jr-relationships",
+      "question": "relationships",
+      "name": "Martin Luther King Jr.",
+      "short": "King",
+      "work": "Letter from Birmingham Jail",
+      "excerpt": "We are caught in an inescapable network of mutuality, tied in a single garment of destiny. Whatever affects one directly, affects all indirectly.",
+      "period": "16 April 1963",
+      "dateShort": "1963",
+      "dateFull": "16 April 1963",
+      "sortYear": 1963,
+      "sourceLabel": "Letter from Birmingham Jail, Civil Rights Movement Archive (Duke University Libraries mirror)",
+      "sourceUrl": "https://crmvet.lib.duke.edu/info/bhamjail.html",
+      "locator": "Paragraph beginning “I am cognizant of the interrelatedness of all communities and states”.",
+      "place": "Birmingham City Jail, Alabama, USA",
+      "lat": 33.52,
+      "lng": -86.8,
+      "anchorType": "Documented writing location",
+      "placeNote": "King wrote the letter in the Birmingham city jail in April 1963, as the text is headed. The precise cell and building are not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://crmvet.lib.duke.edu/info/bhamjail.html",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Shared destiny",
+          "why": "King says that people are bound together in a single web of mutual dependence, so that what touches one touches all. Others are woven into each person’s fate, though the sentence does not claim they make the self.",
+          "limit": "The sentence argues for moral and political solidarity against segregation, not about how identity forms. It was written as an open letter in reply to clergy critics. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "martin-luther-king-jr-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Martin Luther King Jr.",
+      "short": "King",
+      "work": "Letter from Birmingham Jail",
+      "excerpt": "Injustice anywhere is a threat to justice everywhere.",
+      "period": "16 April 1963",
+      "dateShort": "1963",
+      "dateFull": "16 April 1963",
+      "sortYear": 1963,
+      "sourceLabel": "Letter from Birmingham Jail, Civil Rights Movement Archive (Duke University Libraries mirror)",
+      "sourceUrl": "https://crmvet.lib.duke.edu/info/bhamjail.html",
+      "locator": "Paragraph beginning “I am cognizant of the interrelatedness of all communities and states”.",
+      "place": "Birmingham City Jail, Alabama, USA",
+      "lat": 33.52,
+      "lng": -86.8,
+      "anchorType": "Documented writing location",
+      "placeNote": "King wrote the letter in the Birmingham city jail in April 1963, as the text is headed. The precise cell and building are not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://crmvet.lib.duke.edu/info/bhamjail.html",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Injustice anywhere",
+          "why": "King says a wrong done to anyone threatens justice for everyone, so his own cause and other people’s cannot be separated. One’s good and the good of others are tied together.",
+          "limit": "The sentence is a reason given to critics for acting in Birmingham, in an open letter from jail. It concerns justice and shared political fate, not personal choices between one’s own and another’s interest. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "nelson-mandela-meaning",
       "question": "meaning",
       "name": "Nelson Mandela",
@@ -39139,6 +39867,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bessie-head-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Bessie Head",
+      "short": "Head",
+      "work": "Why Do I Write?",
+      "excerpt": "All who know me know that in everyday waking reality I am an absolutely solitary person. Friends walk through my life, talk, smile and shake hands, but no one is near me.",
+      "period": "Essay, 1960s",
+      "dateShort": "1960s",
+      "dateFull": "written in the 1960s",
+      "sortYear": 1966,
+      "sourceLabel": "Reproduced in the Impepho Press Why We Write reader",
+      "sourceUrl": "https://www.impephopress.co.za/wp-content/uploads/2025/02/Why-We-Write-Manifesto-Ukuthula-Reading-Book-Version-2.pdf",
+      "locator": "Paragraph beginning “All who know me know”, in the essay “Why Do I Write?”.",
+      "place": "Serowe, Botswana",
+      "lat": -22.39,
+      "lng": 26.71,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Head lived in Serowe in the period of the essay according to general knowledge; the linked reader does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.impephopress.co.za/wp-content/uploads/2025/02/Why-We-Write-Manifesto-Ukuthula-Reading-Book-Version-2.pdf",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "unscored",
+          "facet": "Solitary days, a crowded dream world",
+          "why": "Head states that she lives alone in waking life while friends pass by without coming near. She neither commends nor condemns this, and the next lines set a crowded dream world against it, so the passage describes a state more than it ranks solitude over company.",
+          "limit": "A writer’s self-description in an essay about her work, with no argument about whether people are better off alone. The text comes from a copy of the essay in a publisher’s workshop reader. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "hannah-arendt-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Hannah Arendt",
@@ -39204,6 +39966,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "thomas-merton-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Thomas Merton",
+      "short": "Merton",
+      "work": "Solitary Life in the Shadow of a Cistercian Monastery",
+      "excerpt": "the greatest blessings and strength are found precisely by remaining in silence and solitude and not being troubled",
+      "period": "October 1966",
+      "dateShort": "1966",
+      "dateFull": "October 1966",
+      "sortYear": 1966,
+      "sourceLabel": "The Merton Seasonal, Thomas Merton Center (first English publication)",
+      "sourceUrl": "https://merton.org/ITMS/Seasonal/37/37-4Merton.pdf",
+      "locator": "Paragraph beginning “Yet one comes to understand”, in the section on life at the hermitage.",
+      "place": "Abbey of Gethsemani, Kentucky, USA",
+      "lat": 37.86,
+      "lng": -85.51,
+      "anchorType": "Documented writing location",
+      "placeNote": "Merton lived in a hermitage in the woods near Gethsemani in 1966, as the essay itself describes. The exact spot is not given on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://merton.org/ITMS/Seasonal/37/37-4Merton.pdf",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Blessing found in solitude",
+          "why": "Merton writes that, whatever the hardships of hermit life, the greatest blessing and strength come from staying in silence and solitude. That places solitude as the source of what he values most.",
+          "limit": "The sentence comes straight after he stresses that the hermit still belongs to his monastic community and relies on its prayers, so the essay as a whole keeps a place for company. It is also advice from a monk about one vocation, not a general rule. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -39386,6 +40182,212 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "aleksandr-solzhenitsyn-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Aleksandr Solzhenitsyn",
+      "short": "Solzhenitsyn",
+      "work": "Nobel Lecture",
+      "excerpt": "art transmits from one person to another the entire accumulated burden of another being’s life experience, with all its hardships, colors, and flavors; it recreates—lifelike—the experience of others, and allows us to assimilate it as our own.",
+      "period": "Written 1970, published 1972",
+      "dateShort": "1970",
+      "dateFull": "written in 1970, published in 1972",
+      "sortYear": 1970,
+      "sourceLabel": "Alexis Klimoff translation, Aleksandr Solzhenitsyn Center",
+      "sourceUrl": "https://www.solzhenitsyncenter.org/nobel-lecture",
+      "locator": "Section on art and literature, paragraph beginning “Yet, fortunately, there does exist a means to this end in the world”.",
+      "place": "Near Moscow, Russia",
+      "lat": 55.65,
+      "lng": 37.35,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Solzhenitsyn wrote the lecture in 1970 while living near Moscow and was unable to deliver it in Stockholm; the exact site is not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.solzhenitsyncenter.org/nobel-lecture",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Taking on other people’s experience",
+          "why": "Solzhenitsyn says that art carries one person’s whole experience to another, who can then make it their own. On this account what a person comes to know comes largely through other people’s lives.",
+          "limit": "The passage is about what art does, within a lecture on literature and moral knowledge, and does not treat the self directly, so the placement is an inference from its words. The English is Alexis Klimoff’s translation of a text written in Russian. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "kee-nanayon-desire",
+      "question": "desire",
+      "name": "Upāsikā Kee Nanayon",
+      "short": "Kee Nanayon",
+      "work": "An Unentangled Knowing: The Teachings of a Thai Buddhist Lay Woman",
+      "excerpt": "You have to listen to the Buddha—the Buddha who tells you to let go of craving.",
+      "period": "c. 1960s to 1980s (talks)",
+      "dateShort": "c. 1970",
+      "dateFull": "circa 1960s to 1980s",
+      "sortYear": 1970,
+      "sourceLabel": "Ṭhānissaro Bhikkhu translation, dhammatalks.org (Creative Commons BY-NC)",
+      "sourceUrl": "https://www.dhammatalks.org/Archive/Writings/Ebooks/AnUnentangledKnowing_181215.pdf",
+      "locator": "Passage on craving painting over things, in the talks on training the mind.",
+      "place": "Khao Suan Luang, Ratchaburi, Thailand",
+      "lat": 13.5,
+      "lng": 99.8,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "She taught at her practice center Khao Suan Luang near Ratchaburi, according to the introduction of the linked book; the coordinates are approximate and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://www.dhammatalks.org/Archive/Writings/Ebooks/AnUnentangledKnowing_181215.pdf",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Letting go of craving",
+          "why": "The Thai lay teacher tells practitioners to follow the Buddha's instruction to let go of craving, which places desire as something to relinquish.",
+          "limit": "A talk to practitioners translated from Thai by Ṭhānissaro Bhikkhu. It rests on the authority of the Buddha's teaching and does not argue for it. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "kee-nanayon-lasting-self",
+      "question": "lasting-self",
+      "name": "Upāsikā Kee Nanayon",
+      "short": "Kee Nanayon",
+      "work": "An Unentangled Knowing: The Teachings of a Thai Buddhist Lay Woman",
+      "excerpt": "there’s no “self” to any of it or to any of the mental phenomena we sense with every moment.",
+      "period": "c. 1960s to 1980s (talks)",
+      "dateShort": "c. 1970",
+      "dateFull": "circa 1960s to 1980s",
+      "sortYear": 1970,
+      "sourceLabel": "Ṭhānissaro Bhikkhu translation, dhammatalks.org (Creative Commons BY-NC)",
+      "sourceUrl": "https://www.dhammatalks.org/Archive/Writings/Ebooks/AnUnentangledKnowing_181215.pdf",
+      "locator": "Passage on contemplating the requisites, ending “every moment”.",
+      "place": "Khao Suan Luang, Ratchaburi, Thailand",
+      "lat": 13.5,
+      "lng": 99.8,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "She taught at her practice center Khao Suan Luang near Ratchaburi, according to the introduction of the linked book; the exact coordinates are approximate and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://www.dhammatalks.org/Archive/Writings/Ebooks/AnUnentangledKnowing_181215.pdf",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "No self in body or mind",
+          "why": "The Thai lay teacher says contemplation of the body and of mental events shows no self in any of them, which puts the passage at the denial of a self.",
+          "limit": "A talk given to practitioners and translated from Thai by Ṭhānissaro Bhikkhu, a Theravāda teaching rather than an argument. The sentence is part of instruction in contemplating the requisites. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "vine-deloria-jr-relationships",
+      "question": "relationships",
+      "name": "Vine Deloria Jr.",
+      "short": "Deloria",
+      "work": "Indian and Other Tribes",
+      "excerpt": "it is difficult for him to extract himself from his community in order to raise issues that appear to have overwhelming importance for the many groups of Americans.",
+      "period": "1970",
+      "dateShort": "1970",
+      "dateFull": "1970",
+      "sortYear": 1970,
+      "sourceLabel": "Essay in a Southwest Intergroup Relations Council pamphlet, ERIC full text",
+      "sourceUrl": "https://files.eric.ed.gov/fulltext/ED045266.pdf",
+      "locator": "Opening paragraph of “Indian and Other Tribes”. The scanned text contains recognition errors.",
+      "place": "California, USA (publisher’s region)",
+      "lat": 34.05,
+      "lng": -118.24,
+      "anchorType": "Approximate publication association",
+      "placeNote": "The pamphlet was published by the Southwest Intergroup Relations Council and discusses California events; the linked file does not state where Deloria wrote it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://files.eric.ed.gov/fulltext/ED045266.pdf",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Speaking from within a community",
+          "why": "Deloria says that an Indian who speaks finds it hard to separate himself from his community, because others at once hear him as speaking for it. The community shapes how he is heard and what he can say, though the passage does not say he could not exist apart from it.",
+          "limit": "A political essay about who may speak for tribes, in a 1970 pamphlet, with no theory of personal identity. The sentence begins “When an Indian speaks” in the original capitals. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "amadou-hampate-ba-given-or-made",
+      "question": "given-or-made",
+      "name": "Amadou Hampâté Bâ",
+      "short": "Hampâté Bâ",
+      "work": "La notion de personne en Afrique noire (Fulbe and Bambara traditions)",
+      "excerpt": "est évolutive à partir d'un capital premier qui est son potentiel propre. Celui-ci va se développer tout au long de la phase ascendante de sa vie, en fonction du terrain et des circonstances rencontrées.",
+      "translation": "is evolving from an initial capital which is its own potential. This will develop throughout the rising phase of life, according to the ground and the circumstances met.",
+      "period": "Colloquium paper, 1970s",
+      "dateShort": "1970s",
+      "dateFull": "1970s",
+      "sortYear": 1972,
+      "sourceLabel": "Author’s text, web transcription (webpulaaku.site)",
+      "sourceUrl": "https://www.webpulaaku.site/defte/ahb/aspects/personne.html",
+      "locator": "Paragraph beginning “La personne humaine, telle la graine végétale”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.35,
+      "anchorType": "Presumed venue of the colloquium",
+      "placeNote": "The paper belongs to a CNRS colloquium on the notion of person in Black Africa, published in 1973. The linked page does not state where it was delivered, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.webpulaaku.site/defte/ahb/aspects/personne.html",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "A seed that needs its ground",
+          "why": "The person is compared to a seed that carries its own potential but develops according to soil and circumstance. An endowment exists and has to be developed, which is the middle position.",
+          "limit": "The English is the atlas’s own unreviewed translation. The passage summarises Fulbe and Bambara teaching as the author understood it, and the quoted clause begins mid-sentence. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "amadou-hampate-ba-relationships",
+      "question": "relationships",
+      "name": "Amadou Hampâté Bâ",
+      "short": "Hampâté Bâ",
+      "work": "La notion de personne en Afrique noire (Fulbe and Bambara traditions)",
+      "excerpt": "Au premier chef, la personne est reliée à ses semblables. On ne saurait la concevoir isolée ou indépendante.",
+      "translation": "First of all, the person is linked to fellow human beings. One cannot conceive of the person as isolated or independent.",
+      "period": "Colloquium paper, 1970s",
+      "dateShort": "1970s",
+      "dateFull": "1970s",
+      "sortYear": 1972,
+      "sourceLabel": "Author’s text, web transcription (webpulaaku.site)",
+      "sourceUrl": "https://www.webpulaaku.site/defte/ahb/aspects/personne.html",
+      "locator": "Section “La Personne”, paragraph beginning “Comme on a pu s’apercevoir”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.35,
+      "anchorType": "Presumed venue of the colloquium",
+      "placeNote": "The paper belongs to a CNRS colloquium on the notion of person in Black Africa, published in 1973. The linked page does not state where it was delivered, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.webpulaaku.site/defte/ahb/aspects/personne.html",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The person tied to others",
+          "why": "Hampâté Bâ states that in the Fulbe and Bambara traditions the person cannot be thought of apart from others. Connection to fellow humans is part of what a person is.",
+          "limit": "The English is the atlas’s own unreviewed translation. The text is a scholar’s summary of oral traditions he knew, from a colloquium paper, and it speaks of two named traditions, not all of Africa. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -39705,6 +40707,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "audre-lorde-relationships",
+      "question": "relationships",
+      "name": "Audre Lorde",
+      "short": "Lorde",
+      "work": "The Transformation of Silence into Language and Action",
+      "excerpt": "it was the concern and caring of all those women which gave me strength and enabled me to scrutinize the essentials of my living.",
+      "period": "1977 (address); collected in Sister Outsider, 1984",
+      "dateShort": "1977",
+      "dateFull": "1977, collected in Sister Outsider in 1984",
+      "sortYear": 1977,
+      "sourceLabel": "Penguin Classics print sample of Your Silence Will Not Protect You, Penguin Books UK",
+      "sourceUrl": "https://cdn.penguin.co.uk/dam-assets/books/9780241473153/9780241473153-sample.pdf",
+      "locator": "Paragraph beginning “I was going to die, if not sooner then later”.",
+      "place": "Chicago, Illinois, USA",
+      "lat": 41.88,
+      "lng": -87.7,
+      "anchorType": "Delivery location named in the published text",
+      "placeNote": "Lorde first delivered the paper on a panel at the Modern Language Association meeting in Chicago in December 1977; this comes from general knowledge and the linked sample does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://cdn.penguin.co.uk/dam-assets/books/9780241473153/9780241473153-sample.pdf",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Strength drawn from other women",
+          "why": "Lorde says that the care of the women with whom she made contact through speech gave her the strength to examine what mattered in her life. Relationships help her reflect, but the passage does not say they make her who she is.",
+          "limit": "An address on speaking out after a cancer diagnosis, given from personal experience rather than as a general theory of the self. The passage comes from a publisher’s print sample of the collection. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -40123,6 +41159,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "paja-thao-given-or-made",
+      "question": "given-or-made",
+      "name": "Paja Thao",
+      "short": "Paja Thao",
+      "work": "I Am a Shaman: A Hmong Life Story",
+      "excerpt": "I became a shaman not because it was my will But because it was the will of my shaman spirits The shaman spirits came to me To make me a shaman",
+      "period": "1980s (recorded)",
+      "dateShort": "1980s",
+      "dateFull": "1980s, published 1989",
+      "sortYear": 1985,
+      "sourceLabel": "University of Minnesota Immigration History Research Center edition, UMN Conservancy",
+      "sourceUrl": "https://conservancy.umn.edu/server/api/core/bitstreams/e71077b8-c763-4dfd-974d-299c43790f4e/content",
+      "locator": "Paragraph in the chapter on the shaman's calling, beginning “The shaman Paja Thao explains from personal experience”.",
+      "place": "Saint Paul, Minnesota, United States",
+      "lat": 44.95,
+      "lng": -93.1,
+      "anchorType": "Approximate recording location",
+      "placeNote": "The speaker lived among Hmong resettled in Minnesota; the linked edition does not give the exact recording place, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://conservancy.umn.edu/server/api/core/bitstreams/e71077b8-c763-4dfd-974d-299c43790f4e/content",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "A calling that is not chosen",
+          "why": "The Hmong shaman says his vocation came from his spirits and not from his own will, so who he is was assigned to him, not made by his choice.",
+          "limit": "Words of a ritual practitioner recorded and edited into a published life story in the United States. The passage concerns the role of shaman, not a whole self, and a long apprenticeship follows the call. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "annette-baier",
       "name": "Annette Baier",
       "short": "Baier",
@@ -40281,6 +41351,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "harold-napoleon-given-or-made",
+      "question": "given-or-made",
+      "name": "Harold Napoleon",
+      "short": "Napoleon",
+      "work": "Yu’Ya’Raq: The Way of the Human Being",
+      "excerpt": "He was ruled by the customs, traditions, and spiritual beliefs of his people, and was shaped by these and his environment",
+      "period": "c. 1989; reprinted 1992",
+      "dateShort": "c. 1989",
+      "dateFull": "circa 1989",
+      "sortYear": 1989,
+      "sourceLabel": "Conference paper in Self-Sufficiency in Northern Justice Issues, ERIC",
+      "sourceUrl": "https://files.eric.ed.gov/fulltext/ED350135.pdf",
+      "locator": "Section “YU’YA’RAQ”, first paragraph. The scanned text contains recognition errors.",
+      "place": "Fairbanks Correctional Center, Alaska, USA",
+      "lat": 64.84,
+      "lng": -147.72,
+      "anchorType": "Documented writing location",
+      "placeNote": "Napoleon says in the paper that he wrote it in the Fairbanks Correctional Centre. The exact date is inferred from his statement of five years in prison, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://files.eric.ed.gov/fulltext/ED350135.pdf",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Shaped by custom and land",
+          "why": "Napoleon writes that the Yupiq person, before Western contact, was ruled and shaped by the customs and beliefs of his people and by his surroundings. A person is formed by tradition and place.",
+          "limit": "The sentence describes the old Yupiq world as the author, an Alaska Native writer, presents it in a paper about alcoholism. It is generalised and written in the past tense, and the source is an OCR scan with recognition errors. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -40494,6 +41598,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bell-hooks-suffering",
+      "question": "suffering",
+      "name": "bell hooks",
+      "short": "hooks",
+      "work": "Theory as Liberatory Practice",
+      "excerpt": "Fundamentally, I learned from this experience that theory could be a healing place.",
+      "period": "1991 (keynote address, article published 1991)",
+      "dateShort": "1991",
+      "dateFull": "1991",
+      "sortYear": 1991,
+      "sourceLabel": "Yale Journal of Law and Feminism, vol. 4, issue 1; copy hosted by the Institute for Advanced Study",
+      "sourceUrl": "https://www.ias.edu/sites/default/files/sss/pdfs/Crisis-and-Critique-2018-19/hooks_theory.pdf",
+      "locator": "Early paragraphs, after the account of her childhood; the paragraph ending “theory could be a healing place”.",
+      "place": "Oberlin, Ohio, USA",
+      "lat": 41.29,
+      "lng": -82.22,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The article notes that she taught at Oberlin College when it was published; the keynote’s location is not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.ias.edu/sites/default/files/sss/pdfs/Crisis-and-Critique-2018-19/hooks_theory.pdf",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Theory as a place of healing",
+          "why": "hooks says that her childhood hurt led her to theorizing, and that this taught her theory could heal. The pain is not justified, but it becomes the starting point for work that helps.",
+          "limit": "A personal account from a keynote address, with no claim that suffering has a purpose in general. The passage comes from a copy of the article hosted by the Institute for Advanced Study. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "dalai-lama-suffering",
       "question": "suffering",
       "name": "Tenzin Gyatso, the Fourteenth Dalai Lama",
@@ -40525,6 +41663,142 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "nhia-yer-yang-death",
+      "question": "death",
+      "name": "Nhia Yer Yang",
+      "short": "Nhia Yer Yang",
+      "work": "The work of a shaman (oral history, Becoming Minnesotan)",
+      "excerpt": "We believe like Christianity, that the person’s soul goes to heaven or hell.",
+      "period": "Interview of 15 November 1991",
+      "dateShort": "1991",
+      "dateFull": "15 November 1991",
+      "sortYear": 1991,
+      "sourceLabel": "English reading of Hmong interview, Minnesota Historical Society, Becoming Minnesotan",
+      "sourceUrl": "https://mnhs.gitlab.io/archive/becoming-minnesotan/education.mnhs.org/immigration/narrators/hmong/nhia-yer-yang/the-work-of-a-shaman.html",
+      "locator": "Chapter 2, narrator’s account of playing music at funerals.",
+      "place": "Saint Paul, Minnesota, USA",
+      "lat": 44.95,
+      "lng": -93.1,
+      "anchorType": "Approximate interview association",
+      "placeNote": "The Minnesota Historical Society collected the interview; the linked page does not give the interview venue, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://mnhs.gitlab.io/archive/becoming-minnesotan/education.mnhs.org/immigration/narrators/hmong/nhia-yer-yang/the-work-of-a-shaman.html",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul after death",
+          "why": "Nhia Yer Yang, a Hmong shaman, says that the soul of the dead person goes on to heaven or hell, which is why a song is played at funerals for the soul.",
+          "limit": "An oral-history excerpt first spoken in Hmong and read in English by a translator, so the wording belongs to the translation. He compares Hmong belief to Christianity, and Hmong traditions on the soul vary. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sayadaw-u-pandita-desire",
+      "question": "desire",
+      "name": "Sayādaw U Paṇḍita",
+      "short": "U Paṇḍita",
+      "work": "In This Very Life: The Liberation Teachings of the Buddha",
+      "excerpt": "Beings cannot become contented by following the dictates of desire, chasing after objects. Desire can never satisfy desire.",
+      "period": "1991 (published talks)",
+      "dateShort": "1991",
+      "dateFull": "1991, English edition of retreat talks",
+      "sortYear": 1991,
+      "sourceLabel": "Wisdom Publications edition, hosted by Aimwell",
+      "sourceUrl": "https://aimwell.org/inthisverylife.html",
+      "locator": "Passage beginning “Beings cannot become contented”, in the chapter on the armies of Māra.",
+      "place": "Panditarama Meditation Center, Yangon, Myanmar",
+      "lat": 16.87,
+      "lng": 96.14,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "U Paṇḍita taught at the Panditarama center in Yangon, but the linked page does not state where these particular talks were given; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://aimwell.org/inthisverylife.html",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Contentment and craving",
+          "why": "The Burmese teacher says that obeying desire never brings contentment, so the passage points to ending the pursuit rather than feeding or training desire.",
+          "limit": "A modern Theravāda teacher addressing meditators, in the English edition of his talks. The sentence belongs to a larger plea not to become a slave of craving and is not an argument. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sayadaw-u-pandita-lasting-self",
+      "question": "lasting-self",
+      "name": "Sayādaw U Paṇḍita",
+      "short": "U Paṇḍita",
+      "work": "In This Very Life: The Liberation Teachings of the Buddha",
+      "excerpt": "Anatta refers to all impermanent phenomena which possess no self-essence — in other words, every single element of mind and matter.",
+      "period": "1991 (published talks)",
+      "dateShort": "1991",
+      "dateFull": "1991, English edition of retreat talks",
+      "sortYear": 1991,
+      "sourceLabel": "Wisdom Publications edition, hosted by Aimwell",
+      "sourceUrl": "https://aimwell.org/inthisverylife.html",
+      "locator": "Passage beginning “Anatta refers to all impermanent phenomena”.",
+      "place": "Panditarama Meditation Center, Yangon, Myanmar",
+      "lat": 16.87,
+      "lng": 96.14,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "U Paṇḍita taught at the Panditarama center in Yangon, but the linked page does not state where these particular talks were given; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://aimwell.org/inthisverylife.html",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Absence of self-essence",
+          "why": "The Burmese meditation teacher glosses anatta as the lack of any self-essence in every element of mind and matter, so no part of a person is a lasting self.",
+          "limit": "A modern teacher's exposition for meditators in the Theravāda tradition, in English from his Dhamma talks, not a primary scripture. It states a doctrinal position and does not argue for it. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "derek-walcott-suffering",
+      "question": "suffering",
+      "name": "Derek Walcott",
+      "short": "Walcott",
+      "work": "The Antilles: Fragments of Epic Memory (Nobel lecture)",
+      "excerpt": "Break a vase, and the love that reassembles the fragments is stronger than that love which took its symmetry for granted when it was whole.",
+      "period": "1992",
+      "dateShort": "1992",
+      "dateFull": "8 December 1992",
+      "sortYear": 1992,
+      "sourceLabel": "Nobel lecture, institutional reprint (Dallas Baptist University)",
+      "sourceUrl": "https://dbuweb.dbu.edu/dbu/engl2302/the-antilles.pdf",
+      "locator": "Paragraph numbered [11].",
+      "place": "Stockholm, Sweden",
+      "lat": 59.33,
+      "lng": 18.06,
+      "anchorType": "Place of delivery",
+      "placeNote": "Walcott gave the Nobel lecture in Stockholm in December 1992. The linked reprint does not state the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://dbuweb.dbu.edu/dbu/engl2302/the-antilles.pdf",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Love that mends the broken",
+          "why": "Walcott says that breakage calls forth a love stronger than the love that took wholeness for granted. Loss is given no purpose of its own, but the work of repair is made to mean more because of it.",
+          "limit": "The vase is an image for the broken histories of the Caribbean and the art that gathers them, not a claim about personal pain. The lecture is a prize speech and is poetic rather than argued. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -40599,6 +41873,109 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "pramoedya-ananta-toer-given-or-made",
+      "question": "given-or-made",
+      "name": "Pramoedya Ananta Toer",
+      "short": "Pramoedya",
+      "work": "My Apologies, in the Name of Experience",
+      "excerpt": "I myself am of Javanese ethnic origin, and so I was educated from birth to become a Javanese, guided by the social-ethnic mechanism toward Javanese ideals, culture, and civilization.",
+      "period": "1992",
+      "dateShort": "1992",
+      "dateFull": "1992",
+      "sortYear": 1992,
+      "sourceLabel": "Alex G. Bardsley translation, Cornell eCommons",
+      "sourceUrl": "https://ecommons.cornell.edu/server/api/core/bitstreams/7a6b0906-cc79-4b0a-9995-2f91155a72eb/content",
+      "locator": "Opening paragraph of the essay.",
+      "place": "Jakarta, Indonesia",
+      "lat": -6.2,
+      "lng": 106.83,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Pramoedya lived in Jakarta in the early 1990s, but the linked page does not state where the essay was written; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://ecommons.cornell.edu/server/api/core/bitstreams/7a6b0906-cc79-4b0a-9995-2f91155a72eb/content",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Education into an ethnicity",
+          "why": "The novelist describes becoming Javanese as something done to him by education from birth, so his identity is formed by training and not simply received.",
+          "limit": "An essay of 1992 translated by Alex G. Bardsley, written to criticise Javanese feudal culture. The wider piece also says he later freed himself from it, which the passage alone does not show. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "pramoedya-ananta-toer-relationships",
+      "question": "relationships",
+      "name": "Pramoedya Ananta Toer",
+      "short": "Pramoedya",
+      "work": "My Apologies, in the Name of Experience",
+      "excerpt": "writing is a personal activity—even though the personal is also a product of the whole of society, present and past—the consequences have to be endured alone.",
+      "period": "1992",
+      "dateShort": "1992",
+      "dateFull": "1992",
+      "sortYear": 1992,
+      "sourceLabel": "Alex G. Bardsley translation, Cornell eCommons",
+      "sourceUrl": "https://ecommons.cornell.edu/server/api/core/bitstreams/7a6b0906-cc79-4b0a-9995-2f91155a72eb/content",
+      "locator": "Paragraph beginning “And because writing is a personal activity”.",
+      "place": "Jakarta, Indonesia",
+      "lat": -6.2,
+      "lng": 106.83,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Pramoedya lived in Jakarta in the early 1990s, but the linked page does not state where the essay was written; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://ecommons.cornell.edu/server/api/core/bitstreams/7a6b0906-cc79-4b0a-9995-2f91155a72eb/content",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The personal as a product of society",
+          "why": "The novelist says the personal is a product of the whole of society, past and present, which makes society's formation of a person necessary even where the consequences fall on one person alone.",
+          "limit": "An essay of 1992 in Alex G. Bardsley's translation, discussing a writer's responsibility after years of political detention. The sentence concedes that consequences are borne alone, and the claim about society is made in passing. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "walis-nokan-given-or-made",
+      "question": "given-or-made",
+      "name": "Walis Nokan",
+      "short": "Walis Nokan",
+      "work": "出生禱詞 (Prayer at birth), in Yineng zai tacha",
+      "excerpt": "自母親的靈魂底層， 成為一個人（Atayal）",
+      "translation": "from the bottom of the mother’s soul, becoming a person (Atayal)",
+      "period": "1992 (poem); museum page 2021",
+      "dateShort": "1992",
+      "dateFull": "1992",
+      "sortYear": 1992,
+      "sourceLabel": "National Museum of Natural Science (Taiwan), exhibition page",
+      "sourceUrl": "https://web3.nmns.edu.tw/Exhibits/110/WalisNokan/works.html",
+      "locator": "Final line of the poem 出生禱詞 on the works page.",
+      "place": "Taichung, Taiwan",
+      "lat": 24.15,
+      "lng": 120.67,
+      "anchorType": "Approximate association",
+      "placeNote": "The poem first appeared in the China Times supplement in 1992, and the poet lived in central Taiwan. The linked page does not state where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://web3.nmns.edu.tw/Exhibits/110/WalisNokan/works.html",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "A person from the mother’s soul",
+          "why": "The poem’s closing line has the newborn arrive from the depth of the mother’s soul as an Atayal person. Personhood is treated as a gift at birth.",
+          "limit": "The English is the atlas’s own unreviewed translation. A poem’s image and not an argument, it sits beside lines about the grandparents who prepare a knife and a loom for the child, so the later shaping is also present. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -40707,6 +42084,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "luis-villoro-lasting-self",
+      "question": "lasting-self",
+      "name": "Luis Villoro",
+      "short": "Villoro",
+      "work": "Sobre la identidad de los pueblos",
+      "excerpt": "El individuo tiene, a lo largo de su vida, muchas representaciones de sí, según las circunstancias cambiantes y los roles variados que se le adjudican.",
+      "translation": "Over the course of his life the individual has many representations of himself, according to changing circumstances and the varied roles assigned to him.",
+      "period": "late twentieth century",
+      "dateShort": "c. 1990s",
+      "dateFull": "circa the 1990s",
+      "sortYear": 1995,
+      "sourceLabel": "Universidad Autónoma Metropolitana course reading (PDF)",
+      "sourceUrl": "https://envia3.xoc.uam.mx/site/uploads/lecturas_TID/unidad2/Villoro_identidad.pdf",
+      "locator": "Paragraph on the diversity of a person's relations with others, in the first part on personal identity.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate institutional association",
+      "placeNote": "Villoro worked at UNAM in Mexico City; the linked reading does not state where the essay was written, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://envia3.xoc.uam.mx/site/uploads/lecturas_TID/unidad2/Villoro_identidad.pdf",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Many images of oneself",
+          "why": "Villoro says a person holds many shifting self-images across a life and must work to unify them, so the self is real but composite and always in the making.",
+          "limit": "The English is the atlas's own unreviewed translation. The essay then argues that the person can build an inner unity, and it treats identity mainly as a matter of images and roles, not of a metaphysical self. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "luis-villoro-relationships",
+      "question": "relationships",
+      "name": "Luis Villoro",
+      "short": "Villoro",
+      "work": "Sobre la identidad de los pueblos",
+      "excerpt": "La mirada ajena nos determina, nos otorga una personalidad (en el sentido etimológico de “máscara”)",
+      "translation": "The gaze of others determines us, gives us a personality (in the etymological sense of “mask”).",
+      "period": "late twentieth century",
+      "dateShort": "c. 1990s",
+      "dateFull": "circa the 1990s",
+      "sortYear": 1995,
+      "sourceLabel": "Universidad Autónoma Metropolitana course reading (PDF)",
+      "sourceUrl": "https://envia3.xoc.uam.mx/site/uploads/lecturas_TID/unidad2/Villoro_identidad.pdf",
+      "locator": "Paragraph on the diversity of a person's relations with others, in the first part on personal identity.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate institutional association",
+      "placeNote": "Villoro worked at UNAM in Mexico City; the linked reading does not state where the essay was written, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://envia3.xoc.uam.mx/site/uploads/lecturas_TID/unidad2/Villoro_identidad.pdf",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "The gaze of others",
+          "why": "Villoro says that how others see a person assigns that person a social personality, so relationships help form the self presented to the world.",
+          "limit": "The English is the atlas's own unreviewed translation. The essay goes on to say that a person can set an own gaze against the gaze of others, so others shape the self without fully making it. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -40893,6 +42340,75 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "angayuqaq-oscar-kawagley-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Angayuqaq Oscar Kawagley",
+      "short": "Kawagley",
+      "work": "Spirit, Knowledge, and Vision from our First Nations’ Sages",
+      "excerpt": "a love for self, a love for others, and a love for place, giving one the sense and responsibility to take care of oneself, to care for others and the environment that one lives in.",
+      "period": "2001",
+      "dateShort": "2001",
+      "dateFull": "2001",
+      "sortYear": 2001,
+      "sourceLabel": "Author’s talk, Canadian Journal of Native Education 25(2), Alaska Native Knowledge Network",
+      "sourceUrl": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Spirit_-Knowledge-an1819F7.pdf",
+      "locator": "Paragraph on the loon, beginning “Another strength of the loon”.",
+      "place": "University of Alaska Fairbanks, Alaska, USA",
+      "lat": 64.86,
+      "lng": -147.85,
+      "anchorType": "Author’s institution at publication",
+      "placeNote": "The talk was published through the Alaska Native Knowledge Network at the University of Alaska Fairbanks. Where it was given is not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Spirit_-Knowledge-an1819F7.pdf",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Love for self, others and place",
+          "why": "Kawagley describes one love that gives responsibility to care for oneself, for others and for the land together. No one of the three is ranked above the others.",
+          "limit": "The words describe what he draws from the loon’s example in a talk, as a lesson for living, not a ranking of claims in a conflict. The talk was published in a journal in 2001. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "gioconda-belli-given-or-made",
+      "question": "given-or-made",
+      "name": "Gioconda Belli",
+      "short": "Belli",
+      "work": "El país bajo mi piel: Memorias de amor y guerra",
+      "excerpt": "uno llega a la vida con un ovillo de hilos en la mano. Nadie conoce el diseño final de la tela que tejerá, pero en cierto momento del bordado uno puede mirar hacia atrás",
+      "translation": "One arrives in life with a ball of threads in hand. No one knows the final design of the cloth they will weave, but at some point in the embroidery one can look back.",
+      "period": "Memoir first published 2001",
+      "dateShort": "2001",
+      "dateFull": "2001",
+      "sortYear": 2001,
+      "sourceLabel": "Publisher preview of the Spanish edition, Planeta (Proassets cdn)",
+      "sourceUrl": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros_contenido/arxius/56/55525_El_pais_bajo_mi_piel.pdf",
+      "locator": "End of the opening chapter, paragraph beginning “¿Quién habría podido predecir a mi hermano y a mí”.",
+      "place": "Havana, Cuba",
+      "lat": 23.1,
+      "lng": -82.38,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The passage is set at her conversation with Fidel Castro in Havana; the memoir was written years later, so this marks the scene and the place of writing still needs an editor’s confirmation.",
+      "placeSource": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros_contenido/arxius/56/55525_El_pais_bajo_mi_piel.pdf",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "A life as thread received and woven",
+          "why": "Belli says that a person arrives with a ball of threads already in hand, and then weaves it into a pattern not known at the start. The threads are given and the cloth is made.",
+          "limit": "A memoirist’s image offered in a reflection on how she came to meet Fidel Castro, not a considered argument. The English is the atlas’s own unreviewed translation, and the text comes from a publisher’s preview. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "kwame-anthony-appiah-relationships",
       "question": "relationships",
       "name": "Kwame Anthony Appiah",
@@ -40924,6 +42440,108 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "yvonne-vera-relationships",
+      "question": "relationships",
+      "name": "Yvonne Vera",
+      "short": "Vera",
+      "work": "“The Place of the Woman is the Place of the Imagination” (interview with Ranka Primorac)",
+      "excerpt": "accept it and love it, before someone says to you, you are like this, you are like a flower, you know. So that you have strength, and your strength is not dependent on another being.",
+      "period": "25 January 2001",
+      "dateShort": "2001",
+      "dateFull": "25 January 2001",
+      "sortYear": 2001,
+      "sourceLabel": "Interview by Ranka Primorac, Weaver Press (publisher’s page)",
+      "sourceUrl": "https://weaverpresszimbabwe.com/reviews/11-writing-still-new-stories-from-zimbabwe",
+      "locator": "Vera’s answer about the character Phephelaphi, near the end of the interview.",
+      "place": "Bulawayo, Zimbabwe",
+      "lat": -20.15,
+      "lng": 28.58,
+      "anchorType": "Documented interview location",
+      "placeNote": "The interview’s introduction states it was conducted in Vera’s house in Bulawayo on 25 January 2001. The precise address is not given.",
+      "placeSource": "https://weaverpresszimbabwe.com/reviews/11-writing-still-new-stories-from-zimbabwe",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Strength not dependent on another",
+          "why": "Vera says a woman should know and love her own body before anyone tells her what she is, so that her strength does not depend on another being. The passage denies that others are needed for this part of the self.",
+          "limit": "She is describing a character’s wish in her novel and a stance for women as writers, in one interview. The sentence is about strength and self-acceptance, not about how identity forms in general. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "angayuqaq-oscar-kawagley-happiness",
+      "question": "happiness",
+      "name": "Angayuqaq Oscar Kawagley",
+      "short": "Kawagley",
+      "work": "Alaska Native Education Research: Reaching into the profound silence of self",
+      "excerpt": "They will have reached into the profound silence of self to attain happiness and harmony in a world of their own making.",
+      "period": "2002",
+      "dateShort": "2002",
+      "dateFull": "2002",
+      "sortYear": 2002,
+      "sourceLabel": "Author’s paper, Alaska Native Knowledge Network, University of Alaska Fairbanks",
+      "sourceUrl": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Profound-Silence-of-Self.pdf",
+      "locator": "Closing paragraph of the paper.",
+      "place": "University of Alaska Fairbanks, Alaska, USA",
+      "lat": 64.86,
+      "lng": -147.85,
+      "anchorType": "Author’s institution at publication",
+      "placeNote": "The paper was published by the Alaska Native Knowledge Network at the University of Alaska Fairbanks. It was first read in Rovaniemi, Finland, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Profound-Silence-of-Self.pdf",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happiness from the silence of self",
+          "why": "Kawagley says Alaska Native people will attain happiness and harmony by reaching into the profound silence of self. The source of happiness lies within, and the world is one of their own making.",
+          "limit": "The sentence is the paper’s closing hope for Alaska Native communities, not a general claim about all people. Elsewhere the same paper defines the self as including belonging to community and nature, so ‘self’ is not purely private. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "angayuqaq-oscar-kawagley-relationships",
+      "question": "relationships",
+      "name": "Angayuqaq Oscar Kawagley",
+      "short": "Kawagley",
+      "work": "Alaska Native Education Research: Reaching into the profound silence of self",
+      "excerpt": "The self is the profound silence, it is spiritual, it is love, it is a sense of belonging to a tribe, belonging to the universe, belonging to something greater than itself.",
+      "period": "2002",
+      "dateShort": "2002",
+      "dateFull": "2002",
+      "sortYear": 2002,
+      "sourceLabel": "Author’s paper, Alaska Native Knowledge Network, University of Alaska Fairbanks",
+      "sourceUrl": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Profound-Silence-of-Self.pdf",
+      "locator": "Paragraph beginning “In each instance there is a drawing force in the center”.",
+      "place": "University of Alaska Fairbanks, Alaska, USA",
+      "lat": 64.86,
+      "lng": -147.85,
+      "anchorType": "Author’s institution at publication",
+      "placeNote": "The paper was published by the Alaska Native Knowledge Network at the University of Alaska Fairbanks. It was first read in Rovaniemi, Finland, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.uaf.edu/ankn/publications/collective-works-of-angay/Profound-Silence-of-Self.pdf",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The self as belonging",
+          "why": "Kawagley defines the self in the Yupiaq view as including love and a sense of belonging to a tribe and to the universe. Belonging is part of what the self is, not an addition to it.",
+          "limit": "The sentence states a Native worldview as the author presents it, in a conference paper about education research. The footnote mark that follows it in the source shows the line was added after the paper was first read aloud. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -41039,6 +42657,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "ama-ata-aidoo-given-or-made",
+      "question": "given-or-made",
+      "name": "Ama Ata Aidoo",
+      "short": "Aidoo",
+      "work": "Negotiating with the Diaspora: An Interview with Ama Ata Aidoo",
+      "excerpt": "I was born a Fante. Having been born and bred in a Fante background, what else can I be but a Fante writer?",
+      "period": "Interview, autumn 2005",
+      "dateShort": "2005",
+      "dateFull": "autumn 2005",
+      "sortYear": 2005,
+      "sourceLabel": "Interview by Nafeesah Allen, Scholar & Feminist Online, Barnard Center for Research on Women",
+      "sourceUrl": "https://sfonline.barnard.edu/africana/aidoo_01.htm",
+      "locator": "Answer beginning “I’m not sure what that means either”, page 1 of the interview.",
+      "place": "Brown University, Providence, Rhode Island, USA",
+      "lat": 41.83,
+      "lng": -71.4,
+      "anchorType": "Documented interview location",
+      "placeNote": "The introduction says the interview took place at her office at Brown University in fall 2005.",
+      "placeSource": "https://sfonline.barnard.edu/africana/aidoo_01.htm",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Birth and upbringing as a writer",
+          "why": "Aidoo names both birth and upbringing (born and bred) as what makes her a Fante writer, so the passage gives a part to endowment and a part to formation.",
+          "limit": "An interview answer about a label applied to her writing, not a theory of how persons come to be. She adds that this is not the most significant aspect of her work, and she answers a prompt that carries the label. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -41271,6 +42923,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thaddeus-metz-relationships",
+      "question": "relationships",
+      "name": "Thaddeus Metz",
+      "short": "Metz",
+      "work": "Ubuntu as a moral theory and human rights in South Africa",
+      "excerpt": "A human being lives a genuinely human way of life to the extent that she prizes identity and solidarity with other human beings",
+      "period": "2011",
+      "dateShort": "2011",
+      "dateFull": "2011",
+      "sortYear": 2011,
+      "sourceLabel": "Author’s article, African Human Rights Law Journal (University of Pretoria)",
+      "sourceUrl": "https://www.ahrlj.up.ac.za/metz-t",
+      "locator": "Section 2.2, paragraph beginning “To sum up, the maxim”.",
+      "place": "University of Johannesburg, South Africa",
+      "lat": -26.18,
+      "lng": 28,
+      "anchorType": "Author’s affiliation at publication",
+      "placeNote": "The article names the University of Johannesburg as the author’s institution. The exact place of writing is not stated, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.ahrlj.up.ac.za/metz-t",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Personhood through community",
+          "why": "Metz reads the maxim that a person is a person through other persons as claiming that living a fully human life depends on prizing identity and solidarity with others. Being human in the full sense is placed in relationship.",
+          "limit": "This is a scholar’s interpretation of an African maxim, offered within an ethical theory, and he gives several readings. The words speak of a human way of life, not of how the self first forms. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "youk-chhang-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Youk Chhang",
+      "short": "Chhang",
+      "work": "On reconciliation, memory and justice in Cambodia: Interview with Youk Chhang",
+      "excerpt": "We like to move on to compete for success, to go to school, but then help others if possible. So that’s my inspiration. By doing this for others, I’m also helping myself.",
+      "period": "Interview published 26 September 2013",
+      "dateShort": "2013",
+      "dateFull": "26 September 2013",
+      "sortYear": 2013,
+      "sourceLabel": "Interview by Suluck Lamubol, Prachatai English",
+      "sourceUrl": "https://prachataienglish.com/node/3703",
+      "locator": "Answer beginning “To be honest, I come to this work in the first place not for reconciliation but for revenge”.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.52,
+      "anchorType": "Interview location",
+      "placeNote": "The interview’s introduction says Prachatai talked to him during a brief visit to Bangkok; the linked page does not give the exact venue.",
+      "placeSource": "https://prachataienglish.com/node/3703",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Helping others and oneself together",
+          "why": "Chhang describes his work for other survivors as also a work of his own healing, so his own good and others’ good are held together.",
+          "limit": "An interview answer about his own motives, from a survivor who first came to the work seeking revenge, as he says nearby. It speaks for him, not for other survivors. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "leanne-betasamosake-simpson-relationships",
       "question": "relationships",
       "name": "Leanne Betasamosake Simpson",
@@ -41487,6 +43207,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mai-neng-moua-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Mai Neng Moua",
+      "short": "Moua",
+      "work": "Q & A on The Bride Price: A Hmong Wedding Story",
+      "excerpt": "I am challenging them to deeply understand who they are and why they believe what they believe. If they do not know, they should talk to their parents or elders.",
+      "period": "March 2017",
+      "dateShort": "2017",
+      "dateFull": "6 March 2017",
+      "sortYear": 2017,
+      "sourceLabel": "Minnesota Historical Society Press blog (archived)",
+      "sourceUrl": "https://mnhs.gitlab.io/archive/10000-books-blog/discussions.mnhs.org/10000books/2017/03/06/q-a-with-mai-neng-moua-author-of-the-bride-price-a-hmong-wedding-story/index.html",
+      "locator": "Answer to “Why did you decide to write a book about the bride price?”.",
+      "place": "Saint Paul, Minnesota, USA",
+      "lat": 44.95,
+      "lng": -93.09,
+      "anchorType": "Publisher’s location",
+      "placeNote": "The Minnesota Historical Society Press is in Saint Paul. The page does not say where the interview was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://mnhs.gitlab.io/archive/10000-books-blog/discussions.mnhs.org/10000books/2017/03/06/q-a-with-mai-neng-moua-author-of-the-bride-price-a-hmong-wedding-story/index.html",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Knowing who one is",
+          "why": "Moua asks young Hmong Americans to work out who they are and what they believe, and tells those who do not know to ask their parents or elders. Self-understanding is pursued by one’s own effort together with others.",
+          "limit": "The words are advice to young readers in a publisher’s interview about one memoir, not a general theory of the self. They concern Hmong American identity and cultural practice in particular. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "denis-mukwege-suffering",
       "question": "suffering",
       "name": "Denis Mukwege",
@@ -41518,6 +43272,109 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "witi-ihimaera-given-or-made",
+      "question": "given-or-made",
+      "name": "Witi Ihimaera",
+      "short": "Ihimaera",
+      "work": "By Way of Circularities: an interview with Witi Ihimaera",
+      "excerpt": "I think I decided who I was and what my persona would be — what I would represent — and learnt how to negotiate all those attempts at defining or derailing me by being street smart.",
+      "period": "Interview published 4 November 2019",
+      "dateShort": "2019",
+      "dateFull": "4 November 2019",
+      "sortYear": 2019,
+      "sourceLabel": "Interview by Brannavan Gnanalingam, Sydney Review of Books",
+      "sourceUrl": "https://sydneyreviewofbooks.com/interviews/interview-witi-ihimaera",
+      "locator": "Answer to the question “What do you do meantime?”.",
+      "place": "Auckland, New Zealand",
+      "lat": -36.9,
+      "lng": 174.77,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Ihimaera lives in Aotearoa New Zealand and the interview’s place is not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://sydneyreviewofbooks.com/interviews/interview-witi-ihimaera",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Deciding who one will be",
+          "why": "Ihimaera says that he decided who he was and what he would represent, and learned how to deal with others’ attempts to define him. The passage places his public identity as a writer in his own making.",
+          "limit": "An interview answer about a career and a public persona, not about the whole self. He also credits his iwi and place elsewhere in the interview as the source of his work. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "witi-ihimaera-relationships",
+      "question": "relationships",
+      "name": "Witi Ihimaera",
+      "short": "Ihimaera",
+      "work": "By Way of Circularities: an interview with Witi Ihimaera",
+      "excerpt": "Without them I wouldn’t exist. The genealogy of my work can be traced back to Waituhi, my father’s kin place.",
+      "period": "Interview published 4 November 2019",
+      "dateShort": "2019",
+      "dateFull": "4 November 2019",
+      "sortYear": 2019,
+      "sourceLabel": "Interview by Brannavan Gnanalingam, Sydney Review of Books",
+      "sourceUrl": "https://sydneyreviewofbooks.com/interviews/interview-witi-ihimaera",
+      "locator": "Answer to the question on literary whakapapa, beginning “Māori culture is the taonga, the treasure vault from which I source my inspiration”.",
+      "place": "Auckland, New Zealand",
+      "lat": -36.9,
+      "lng": 174.77,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Ihimaera lives in Aotearoa New Zealand and the interview’s place is not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://sydneyreviewofbooks.com/interviews/interview-witi-ihimaera",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "A writer’s dependence on his people and their stories",
+          "why": "Ihimaera says that without the people and stories of the iwi he would not exist as the writer he is, and he traces his work to his father’s kin place. The ties are necessary to this kind of self.",
+          "limit": "An interview answer about his work and his Māori self, and “exist” is meant in that sense, not in a literal one. He answers a question about literary whakapapa, and the passage does not treat selves of other kinds. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "luis-cardoso-lasting-self",
+      "question": "lasting-self",
+      "name": "Luís Cardoso",
+      "short": "Cardoso",
+      "work": "Entrevista a Luís Cardoso",
+      "excerpt": "Agora que envergo a pele do escritor, continuo a ser o Takas que transporta aos ombros um escritor, chamado Luís Cardoso, e que gostaria de ser julgado apenas pelos seus livros.",
+      "translation": "Now that I wear the skin of the writer, I go on being Takas, who carries on his shoulders a writer called Luís Cardoso and who would like to be judged only by his books.",
+      "period": "2020 (interview, published 2021)",
+      "dateShort": "2020",
+      "dateFull": "2020, published 2021",
+      "sortYear": 2020,
+      "sourceLabel": "Colloquium proceedings Timor-Leste: A Ilha e o Mundo, Timor Leste Studies Association (PDF)",
+      "sourceUrl": "https://2020.tlsa.pt/images/uploads/volume1-tomo1.pdf",
+      "locator": "Interview by Teresa Sousa de Almeida, Chapter III, answer beginning “Cabe-me falar de Timor-Leste e de literatura”.",
+      "place": "Lisbon, Portugal",
+      "lat": 38.74,
+      "lng": -9.15,
+      "anchorType": "Approximate residence association",
+      "placeNote": "The interview says he lives in Lisbon, but the linked page does not state where the interview was recorded; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://2020.tlsa.pt/images/uploads/volume1-tomo1.pdf",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "One person behind the writer",
+          "why": "The Timorese novelist says that under the public role of writer he remains the same person, Takas, so the passage affirms one continuing self beneath the roles.",
+          "limit": "The English is the atlas's own unreviewed translation. A spoken, edited interview that separates a private name from a public persona, not a philosophical claim about the self, and it speaks of roles more than of what persists over time. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -41589,6 +43446,108 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "selina-tusitala-marsh-given-or-made",
+      "question": "given-or-made",
+      "name": "Selina Tusitala Marsh",
+      "short": "Marsh",
+      "work": "Interview, Contemporary Pasifika Poetry in Aotearoa New Zealand",
+      "excerpt": "kinds of identity storylines you can pull on if you want to because they are all part of your whakapapa, of your lineage.",
+      "period": "Interview, published online March 2020",
+      "dateShort": "2020",
+      "dateFull": "published online in March 2020",
+      "sortYear": 2020,
+      "sourceLabel": "Interview by P. Fresno-Calleja and J. M. Wilson, University of Auckland blog repository",
+      "sourceUrl": "https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/3/939/files/2023/07/Contemporary-Pasifika-Poetry-in-Aotearoa-New-Zealand-An-interview-with-Selina-Tusitala-Marsh.pdf",
+      "locator": "Answer discussing Mophead and afakasi identity. The scanned text contains recognition errors.",
+      "place": "Auckland, New Zealand",
+      "lat": -36.9,
+      "lng": 174.77,
+      "anchorType": "Approximate working association",
+      "placeNote": "Marsh teaches at the University of Auckland, but the linked interview does not state where it was held, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/3/939/files/2023/07/Contemporary-Pasifika-Poetry-in-Aotearoa-New-Zealand-An-interview-with-Selina-Tusitala-Marsh.pdf",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Identity stories drawn from lineage",
+          "why": "Marsh says that the identities a person can draw on are part of their whakapapa, which is given, and that a person chooses which to pull on. The passage gives a share to inheritance and a share to choice.",
+          "limit": "An interview answer about how she hopes young readers will see themselves, taken from a page that begins mid-sentence after a page header. It reflects one poet’s hope for children and not a theory of the person. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "agustinus-wibowo-lasting-self",
+      "question": "lasting-self",
+      "name": "Agustinus Wibowo",
+      "short": "Wibowo",
+      "work": "A New World, A New Self",
+      "excerpt": "We humans are creatures in constant change while perpetually looking for a new balance.",
+      "period": "2021",
+      "dateShort": "2021",
+      "dateFull": "2021 (published January 2022)",
+      "sortYear": 2021,
+      "sourceLabel": "Ninus Andarnuswari translation, Japan Foundation Asia Center",
+      "sourceUrl": "https://asiawa.jpf.go.jp/en/culture/features/f-yomu-indonesia-agustinus-wibowo/",
+      "locator": "Paragraph beginning “Besides change, the essence of life is also truly about balance”.",
+      "place": "Jakarta, Indonesia",
+      "lat": -6.2,
+      "lng": 106.83,
+      "anchorType": "Documented residence",
+      "placeNote": "The linked page describes him as a Jakarta-based travel writer and mentions his apartment.",
+      "review": "draft",
+      "placeSource": "https://asiawa.jpf.go.jp/en/culture/features/f-yomu-indonesia-agustinus-wibowo/",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Humans in constant change",
+          "why": "The writer describes people as always changing and always seeking a new balance, so the self is real but never fixed.",
+          "limit": "A personal essay on life in the pandemic, translated into English by Ninus Andarnuswari. The sentence is a general remark about people, and the essay does not discuss what persists through change. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "agustinus-wibowo-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Agustinus Wibowo",
+      "short": "Wibowo",
+      "work": "A New World, A New Self",
+      "excerpt": "I missed handshakes and vibrant human touch. I felt there was something deeply wrong with me when I started talking to myself to break the silence of my apartment room that lacked human voice.",
+      "period": "2021",
+      "dateShort": "2021",
+      "dateFull": "2021 (published January 2022)",
+      "sortYear": 2021,
+      "sourceLabel": "Ninus Andarnuswari translation, Japan Foundation Asia Center",
+      "sourceUrl": "https://asiawa.jpf.go.jp/en/culture/features/f-yomu-indonesia-agustinus-wibowo/",
+      "locator": "Paragraph beginning “However, we humans were not intended to live in confinement”.",
+      "place": "Jakarta, Indonesia",
+      "lat": -6.2,
+      "lng": 106.83,
+      "anchorType": "Documented residence",
+      "placeNote": "The linked page describes him as a Jakarta-based travel writer and mentions his apartment.",
+      "review": "draft",
+      "placeSource": "https://asiawa.jpf.go.jp/en/culture/features/f-yomu-indonesia-agustinus-wibowo/",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Missing human contact",
+          "why": "The writer reports that months of isolation left him longing for other people and uneasy at hearing only his own voice, treating being alone as a lack.",
+          "limit": "A personal essay about pandemic confinement, translated into English by Ninus Andarnuswari. It reports one person's lockdown experience and does not discuss chosen solitude. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "tsitsi-dangarembga-relationships",
       "question": "relationships",
       "name": "Tsitsi Dangarembga",
@@ -41657,6 +43616,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "humberto-akabal-happiness",
+      "question": "happiness",
+      "name": "Humberto Ak’abal",
+      "short": "Ak’abal",
+      "work": "“Soy un poeta bicéfalo” (interview with Francisco José Cruz)",
+      "excerpt": "Aprendí que la felicidad no depende de la pobreza ni de la abundancia.",
+      "translation": "I learned that happiness depends neither on poverty nor on abundance.",
+      "period": "Interview, reprinted 2023",
+      "dateShort": "2023 reprint",
+      "dateFull": "Reprinted September 2023",
+      "sortYear": 2023,
+      "sourceLabel": "Interview, Latin American Literature Today",
+      "sourceUrl": "https://latinamericanliteraturetoday.org/es/2023/09/humberto-akabal-soy-un-poeta-bicefalo/",
+      "locator": "Answer beginning “Cuando yo era pequeño no tenía conciencia de nuestra pobreza”.",
+      "place": "Momostenango, Guatemala",
+      "lat": 15.04,
+      "lng": -91.41,
+      "anchorType": "Poet’s home town",
+      "placeNote": "Ak’abal lived in Momostenango. The page does not say where the interview took place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://latinamericanliteraturetoday.org/es/2023/09/humberto-akabal-soy-un-poeta-bicefalo/",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happiness apart from wealth",
+          "why": "Ak’abal says that experience taught him happiness does not depend on being poor or being well off. By his own account happiness is not settled by outward circumstances.",
+          "limit": "The English is the atlas’s own unreviewed translation. It is one remark in an interview about his childhood and work, and the date of the conversation is not stated on the linked page. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "narges-mohammadi-suffering",
       "question": "suffering",
       "name": "Narges Mohammadi",
@@ -41688,6 +43682,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "sakinu-ahronglong-given-or-made",
+      "question": "given-or-made",
+      "name": "Sakinu Ahronglong",
+      "short": "Sakinu",
+      "work": "撒可努這樣說 (Sakinu responds)",
+      "excerpt": "我常常沒寫作業就不上學，跑去祖父的田地跟著他、聽他說、和他講話⋯⋯當我回顧這些，我才知道那是我書寫的養分，也成就了日後的我",
+      "translation": "I often skipped school without doing my homework and went to my grandfather's fields to follow him, listen to him and talk with him. Looking back, I realized it fed my writing and also made the person I later became.",
+      "period": "2023",
+      "dateShort": "2023",
+      "dateFull": "April 2023",
+      "sortYear": 2023,
+      "sourceLabel": "人本教育札記 (Humanistic Education Notes), Humanistic Education Foundation",
+      "sourceUrl": "https://living.hef.org.tw/notes/detail/241",
+      "locator": "Second paragraph of the reply.",
+      "place": "Taitung, Taiwan",
+      "lat": 22.76,
+      "lng": 121.14,
+      "anchorType": "Approximate home association",
+      "placeNote": "The author is Paiwan and writes of growing up in the mountains of southern Taiwan; the linked page does not name where the reply was written, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://living.hef.org.tw/notes/detail/241",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Shaped by time with his grandfather",
+          "why": "The Paiwan writer says time spent with his grandfather formed the person he became, which places him on the side of a self made through experience and the teaching of others.",
+          "limit": "The English is the atlas's own unreviewed translation. A reply to a teacher's classroom essay in Taiwan, recalling childhood; it does not say what he brought into those years. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sakinu-ahronglong-relationships",
+      "question": "relationships",
+      "name": "Sakinu Ahronglong",
+      "short": "Sakinu",
+      "work": "撒可努這樣說 (Sakinu responds)",
+      "excerpt": "成就我可以擁有的這樣的童年，有幾個很重要的要件：我在山裡長大，我有自己專屬的海洋，我是外公外婆帶大的孩子",
+      "translation": "Several important conditions made the childhood I could have: I grew up in the mountains, I had my own private sea, I was a child raised by my maternal grandparents.",
+      "period": "2023",
+      "dateShort": "2023",
+      "dateFull": "April 2023",
+      "sortYear": 2023,
+      "sourceLabel": "人本教育札記 (Humanistic Education Notes), Humanistic Education Foundation",
+      "sourceUrl": "https://living.hef.org.tw/notes/detail/241",
+      "locator": "Second paragraph of the reply.",
+      "place": "Taitung, Taiwan",
+      "lat": 22.76,
+      "lng": 121.14,
+      "anchorType": "Approximate home association",
+      "placeNote": "The author is Paiwan and writes of growing up in the mountains of southern Taiwan; the linked page does not name where the reply was written, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://living.hef.org.tw/notes/detail/241",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Grandparents, father and mountain",
+          "why": "The Paiwan writer lists the people and places that formed his childhood, grandparents among them, so his relatives help shape who he became alongside the land.",
+          "limit": "The English is the atlas's own unreviewed translation. A reply to a teacher's classroom essay in Taiwan, in which he lists several conditions; the sentence does not claim that relatives alone made him. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -41725,6 +43789,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "julian-aguon-suffering",
+      "question": "suffering",
+      "name": "Julian Aguon",
+      "short": "Aguon",
+      "work": "Interview with Grist",
+      "excerpt": "I feel like my grief has been a bridge that I’ve walked across to get to other people.",
+      "period": "2024",
+      "dateShort": "2024",
+      "dateFull": "December 2024",
+      "sortYear": 2024,
+      "sourceLabel": "Grist news article quoting an interview",
+      "sourceUrl": "https://grist.org/indigenous/julian-aguon-indigenous-attorney-fighting-climate-justice-worlds-highest-court-icj/",
+      "locator": "Paragraph beginning “Grief so often has an isolating effect that it need not have”.",
+      "place": "Hagåtña, Guam",
+      "lat": 13.47,
+      "lng": 144.75,
+      "anchorType": "Approximate home association",
+      "placeNote": "Aguon is a Chamorro writer and lawyer from Guam, according to the linked article; where the interview took place is not stated, and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "placeSource": "https://grist.org/indigenous/julian-aguon-indigenous-attorney-fighting-climate-justice-worlds-highest-court-icj/",
+      "smallIsland": true,
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Grief as a bridge",
+          "why": "The Chamorro lawyer and writer says his grief became the way he reached other people, so suffering is turned to use and not left to isolate.",
+          "limit": "A line quoted in a news interview, not a worked argument. He speaks of his own grief and of his work for Indigenous communities, and the quotation does not claim that suffering has a purpose in itself. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "mogobe-ramose-relationships",
       "question": "relationships",
       "name": "Mogobe Ramose",
@@ -41756,6 +43855,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "katerina-teaiwa-relationships",
+      "question": "relationships",
+      "name": "Katerina Teaiwa",
+      "short": "Teaiwa",
+      "work": "“To Be a Banaban Is to Be of the Rock” (interview, Logic)",
+      "excerpt": "In pre-Christian Indigenous Banaban thinking, you belong to the land, and you’re born of the land—to be a Banaban is to be of the rock.",
+      "period": "Interview published 2025",
+      "dateShort": "2025",
+      "dateFull": "2025",
+      "sortYear": 2025,
+      "sourceLabel": "Interview, Logic magazine (publisher’s page)",
+      "sourceUrl": "https://logicmag.io/land/to-be-a-banaban-is-to-be-of-the-rock-with-katerina-teaiwa/",
+      "locator": "Answer beginning “In pre-Christian Indigenous Banaban thinking”.",
+      "place": "Australian National University, Canberra, Australia",
+      "lat": -35.28,
+      "lng": 149.12,
+      "anchorType": "Author’s institution",
+      "placeNote": "Teaiwa is associated with the Australian National University. The linked interview does not state where it was given, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://logicmag.io/land/to-be-a-banaban-is-to-be-of-the-rock-with-katerina-teaiwa/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Belonging to the land",
+          "why": "Teaiwa says that in older Banaban thinking a person belongs to the land and is born of it, so that being Banaban means being of the rock. Identity is defined through a relation to land and ancestors.",
+          "limit": "The tie described is to land and ancestors more than to living people, and Teaiwa reports a pre-Christian view as a scholar, not as her own creed. It comes from an interview given in connection with an exhibition. Reading drawn from the project’s research catalogue."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     }
   ]
