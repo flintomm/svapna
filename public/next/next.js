@@ -22,7 +22,19 @@
     ember: { low: [64, 64, 210], mid: [255, 196, 64], high: [255, 112, 32] },
     rose: { low: [46, 91, 255], mid: [255, 176, 0], high: [255, 43, 112] },
   };
-  const C = new URLSearchParams(location.search).get('c') || 'tide';
+  // Each visit gets the next palette in turn. It holds for the whole visit and changes on the next one;
+  // ?c=name picks one outright.
+  const ROTATION = ['tide', 'dusk', 'glacier', 'ember'];
+  const C = new URLSearchParams(location.search).get('c') || (function () {
+    try {
+      let now = sessionStorage.getItem('svapna_palette');
+      if (!now) {
+        const n = (parseInt(localStorage.getItem('svapna_palette_turn') || '-1', 10) + 1) % ROTATION.length;
+        localStorage.setItem('svapna_palette_turn', String(n)); now = ROTATION[n]; sessionStorage.setItem('svapna_palette', now);
+      }
+      return now;
+    } catch (e) { return ROTATION[Math.floor(Date.now() / 864e5) % ROTATION.length]; }
+  })();
   const RGB = V === 'aurora' && PALETTES[C] ? { ...PALETTES[C], none: [110, 110, 120] } : L.rgb;
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
