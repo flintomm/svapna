@@ -44,3 +44,26 @@ h2 .dot{width:.42em;height:.42em;vertical-align:.18em}
 a:focus-visible,button:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
 @media(max-width:760px){.top{padding:16px 18px}.top nav{gap:14px;font-size:13px}main{padding:26px 18px 70px}.row{grid-template-columns:1fr;gap:16px}.foot{padding:28px 18px 50px}h2{margin-top:64px}}
 @media(prefers-reduced-motion:reduce){body{animation:none}}
+
+/* ---- long reads: lessons and the glossary ---- */
+h1.h-read{font-size:clamp(38px,5.6vw,88px);max-width:16ch}
+.prose{max-width:42rem;margin-top:54px;font-size:18px;line-height:1.72}
+.prose>div{max-width:none}
+.prose p{margin:0 0 1.25em;color:color-mix(in srgb,var(--ink) 88%,transparent)}
+.prose h2{font:600 clamp(24px,2.6vw,36px)/1.08 'Inter Tight',sans-serif;letter-spacing:-.04em;margin:2.2em 0 .7em}
+.prose h3{font:600 20px/1.2 'Inter Tight',sans-serif;letter-spacing:-.03em;margin:1.8em 0 .5em}
+.prose blockquote{font:400 clamp(22px,2.2vw,30px)/1.2 'Instrument Serif',Georgia,serif;font-style:italic;margin:1.4em 0;padding-left:1.1em;border-left:1px solid var(--line)}
+.prose blockquote p{color:var(--ink);margin:0 0 .5em}
+.prose ul,.prose ol{padding-left:1.3em;margin:0 0 1.25em}.prose li{margin:.35em 0}
+.prose em{font-style:italic}.prose strong{font-weight:600}
+.prose hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
+.prompt{max-width:36rem;margin:60px 0 0;padding-top:26px;border-top:1px solid var(--line);font:400 clamp(22px,2.3vw,32px)/1.18 'Instrument Serif',Georgia,serif;font-style:italic}
+.turn{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:70px;padding-top:24px;border-top:1px solid var(--line);max-width:60rem}
+.turn a{text-decoration:none;font:600 clamp(18px,1.8vw,24px)/1.15 'Inter Tight',sans-serif;letter-spacing:-.03em}.turn a:hover{text-decoration:underline}
+.turn a .small{display:block;margin-bottom:6px;font-weight:500;letter-spacing:0}.turn .r{text-align:right}
+.row.term{grid-template-columns:16rem minmax(0,1fr);padding:22px 0;align-items:baseline}
+.term-name{font:400 clamp(24px,2.4vw,34px)/1.05 'Instrument Serif',Georgia,serif;font-style:italic;text-decoration:none}.term-name:hover{text-decoration:underline}
+.term-def{margin:0;color:var(--soft);max-width:46em}
+.def-big{color:var(--ink);font-size:clamp(20px,2vw,28px);max-width:32em}
+.small-list a{font-size:clamp(20px,2.2vw,30px)}
+@media(max-width:760px){.row.term{grid-template-columns:1fr}.turn{grid-template-columns:1fr}.turn .r{text-align:left}.prose{font-size:17px}}
