@@ -1,7 +1,7 @@
 // Accounts for Svapna. Until the public key is set in config.js this does nothing, and everything stays on the device.
 // With it: sign in with Google, keep answers and stickers in the account, and carry over what the device already holds.
 (function () {
-  var cfg = window.SVAPNA_ACCOUNT || {}, ready = Boolean(cfg.url && cfg.key && window.supabase);
+  var cfg = window.SVAPNA_ACCOUNT || {}, ready = Boolean(cfg.live && cfg.url && cfg.key && window.supabase);
   var client = ready ? window.supabase.createClient(cfg.url, cfg.key) : null;
   var read = function (k, d) { try { return JSON.parse(localStorage.getItem(k) || 'null') || d; } catch (e) { return d; } };
   var write = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* private mode */ } };
