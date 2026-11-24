@@ -1,0 +1,135 @@
+---
+// Dreaming: a descent through one night of sleep, layer by layer. Prototype; unlisted and not indexed.
+import quotesData from '../data/quotes.json';
+import timelineData from '../data/timeline.json';
+import shorts from '../data/dream_shorts.json';
+import { getLesson, getGlossaryTerm } from '../lib/lessons.js';
+
+const pad = n => String(n).padStart(2, '0');
+const Q = Object.fromEntries(quotesData.quotes.map(q => [q.id, q]));
+// Eight layers of a night. `body` says what is happening there; the voices come from the site's quote bank.
+const spec = [
+  { id: 'awake', clock: '23:00', name: 'Awake', feel: 'The last of the day',
+    body: 'The body is still and the mind is not. With the eyes closed, the brain’s fast, irregular activity begins to settle into a slower rhythm. Every tradition of dream practice starts here, with what is carried across into sleep.',
+    terms: [['Upaniṣads', 'jāgrat', 'jagrat'], ['Tibet', 'the day practice', 'milam'], ['Laboratory', 'wakefulness', null]], quotes: ['q004', 'q023', 'q017'] },
+  { id: 'drifting', clock: '23:20', name: 'Drifting', feel: 'Edges soften',
+    body: 'Within minutes, thought loosens into images that arrive unbidden: faces, landscapes, fragments of the day. Sleep researchers call this stage N1 and its imagery hypnagogic. It lasts only a few minutes, and it belongs to both waking and sleep.',
+    terms: [['Sufism', 'barzakh', 'barzakh'], ['Laboratory', 'stage N1', null], ['Tibet', 'falling asleep with awareness', 'osel']], quotes: ['q006', 'q027'] },
+  { id: 'deep', clock: '00:05', name: 'Deep sleep', feel: 'Almost nothing',
+    body: 'The brain’s activity slows into long, rolling waves. There is little or no dream to report, and waking someone from here is hard. Most deep sleep comes in the first half of the night.',
+    terms: [['Upaniṣads', 'suṣupti', 'susupti'], ['Tibet', 'ösel, the clear light', 'osel'], ['Laboratory', 'stage N3, slow-wave sleep', null]], quotes: ['q027', 'q009', 'q021'] },
+  { id: 'dreaming', clock: '00:40', name: 'Dreaming', feel: 'A world with no outside',
+    body: 'About ninety minutes in, the eyes begin to move beneath their lids. The brain becomes nearly as active as when awake while the body’s muscles are held still. This is REM sleep, where the most vivid dreams occur, and its periods lengthen towards morning.',
+    terms: [['Upaniṣads', 'svapna', 'svapna'], ['Greece', 'phantastikon', 'phantastikon'], ['Laboratory', 'REM sleep', 'rem']], quotes: ['q001', 'q022', 'q019', 'q018', 'q008', 'q029', 'q024'] },
+  { id: 'lucid', clock: '05:25', name: 'Knowing it is a dream', feel: 'Sudden clarity',
+    body: 'Sometimes, in the middle of a dream, the dreamer realises it is a dream, and the dream goes on. In 1975 and again in 1980, sleepers in laboratories signalled that moment from inside REM sleep, using eye movements agreed beforehand.',
+    terms: [['Netherlands, 1913', 'lucid dream', 'lucid-dream'], ['Tibet', 'recognising the dream', 'milam'], ['France, 1867', 'conscience en dormant', 'conscience-en-dormant']], quotes: ['q011', 'q014', 'q010', 'q013', 'q012'] },
+  { id: 'working', clock: '05:55', name: 'Working with the dream', feel: 'The dream answers back',
+    body: 'For the sleep laboratory, lucidity was the finding. For the Tibetan yogas of dream it is where the work begins: the dream is changed, multiplied and finally seen through, as training for seeing waking life, and dying, the same way.',
+    terms: [['Tibet', 'milam, dream yoga', 'milam'], ['Tibet', 'gyulü, the illusory body', 'gyulu'], ['Zen', 'a dream within a dream', null]], quotes: ['q007', 'q005', 'q015', 'q028'] },
+  { id: 'ground', clock: '06:20', name: 'The ground beneath', feel: 'Vast and quiet',
+    body: 'Several traditions describe something beneath waking, dreaming and deep sleep alike: an awareness present through all three. The Māṇḍūkya Upaniṣad calls it simply the fourth. No instrument measures it, and the laboratory does not claim to.',
+    terms: [['Upaniṣads', 'turīya, the fourth', 'turiya'], ['Tibet', 'rigpa', 'rigpa'], ['Laboratory', 'no reading', null]], quotes: ['q002', 'q016', 'q020'] },
+  { id: 'morning', clock: '07:00', name: 'Morning', feel: 'Surfacing',
+    body: 'Dreams fade within minutes of waking. What is kept is what is told or written down. Hervey de Saint-Denys kept his dream journal for 1,946 nights; Zhuang Zhou woke unsure which side of the dream he was on.',
+    terms: [['Daoism', 'wù huà, the transformation of things', 'wu-hua'], ['France, 1867', 'the dream journal', null], ['Laboratory', 'dream recall', null]], quotes: ['q003', 'q026', 'q030'] },
+];
+const layers = spec.map(l => ({
+  ...l,
+  terms: l.terms.map(([who, term, slug]) => ({ who, term, href: slug && getGlossaryTerm(slug) ? `/glossary/${getGlossaryTerm(slug).slug}` : null })),
+  quotes: l.quotes.map(id => Q[id]).filter(Boolean).map(q => ({ text: q.text, by: q.attribution, cite: q.citation })),
+  ideas: shorts.filter(s => s.layer === l.id).map(s => { const x = getLesson(s.module, s.lesson); return { title: s.title, short: s.short, href: x ? `/curriculum/module-${pad(s.module)}/${x.urlSlug}` : null }; }),
+}));
+const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).map(e => ({ date: e.date.replace(/^(\d{4})-\d\d-\d\d$/, '$1'), title: e.title, tradition: e.tradition, summary: e.summary }));
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Dreaming — Svapna</title>
+<meta name="description" content="Sink through one night of sleep, from awake to morning, and hear what three and a half thousand years of dreamers found at each depth." />
+<meta name="theme-color" content="#03040a" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/dream/dream.css" />
+</head>
+<body>
+<canvas id="abyss" aria-hidden="true"></canvas>
+
+<header class="top">
+  <a class="mark" href="/">∴ Svapna</a>
+  <div class="top-right">
+    <button id="sound" type="button" aria-pressed="false">Sound off</button>
+    <button id="mode" type="button">Light</button>
+    <button id="open-dates" type="button">By date</button>
+    <a href="/">Questions</a>
+  </div>
+</header>
+
+<nav class="gauge" aria-label="Depth">
+  <span id="clock">23:00</span>
+  <ol>{layers.map((l, i) => <li><a href={`#${l.id}`} data-i={i} title={l.name}><span>{l.name}</span></a></li>)}</ol>
+</nav>
+
+<main id="night">
+  <section class="intro" id="top" data-depth="-1">
+    <p class="small">Dreaming</p>
+    <h1>Sink through <em>one night.</em></h1>
+    <p class="lede">Eight depths, from lying down to morning. At each one, what people found there over three and a half thousand years.</p>
+    <a class="pill" href="#awake">Begin ↓</a>
+  </section>
+
+  {layers.map((l, i) => (
+    <section class="layer" id={l.id} data-depth={i}>
+      <div class="plate">
+        <p class="small"><span class="clock">{l.clock}</span> · {l.feel}</p>
+        <h2>{l.name}</h2>
+        <p class="body">{l.body}</p>
+        {l.quotes[0] && (
+          <figure class="voice">
+            <blockquote>“{l.quotes[0].text}”</blockquote>
+            <figcaption>{l.quotes[0].by} · {l.quotes[0].cite}</figcaption>
+          </figure>
+        )}
+        <details class="more">
+          <summary><span class="pill">Go deeper here</span></summary>
+          <div class="more-in">
+            <div class="terms">
+              {l.terms.map(t => <p><span class="small">{t.who}</span>{t.href ? <a href={t.href}>{t.term}</a> : <span>{t.term}</span>}</p>)}
+            </div>
+            {l.quotes.slice(1).map(q => (
+              <figure class="voice minor"><blockquote>“{q.text}”</blockquote><figcaption>{q.by} · {q.cite}</figcaption></figure>
+            ))}
+            {l.ideas.length > 0 && <p class="small ideas-title">What was learned here</p>}
+            {l.ideas.map(x => (
+              <div class="idea"><h3>{x.title}</h3><p>{x.short}</p>{x.href && <a href={x.href}>Read the full lesson</a>}</div>
+            ))}
+          </div>
+        </details>
+        {i < layers.length - 1 && <a class="down" href={`#${layers[i + 1].id}`} aria-label={`Sink to ${layers[i + 1].name}`}>↓</a>}
+      </div>
+    </section>
+  ))}
+
+  <section class="outro" id="end" data-depth="8">
+    <p class="small">07:10 · Awake again</p>
+    <h2>The night is <em>over.</em></h2>
+    <p class="lede">Every night passes through these depths, noticed or not.</p>
+    <p class="ends"><a class="pill" href="#top">Go through it again</a><a class="pill" href="/">Answer a question</a><button class="pill" id="open-dates-2" type="button">See it all by date</button></p>
+    <p class="fine">Not medical advice. <a href="/about/disclaimer">Disclaimer</a> · <a href="/support">Support Svapna</a></p>
+  </section>
+</main>
+
+<div id="dates" class="sheet" hidden>
+  <button id="close-dates" type="button">Close</button>
+  <p class="small">Three and a half thousand years, in order</p>
+  <ol>{dates.map(d => <li><span class="when">{d.date}</span><div><h3>{d.title}</h3><p class="small">{d.tradition}</p><p>{d.summary}</p></div></li>)}</ol>
+</div>
+
+<script is:inline src="/dream/dream.js"></script>
+</body>
+</html>

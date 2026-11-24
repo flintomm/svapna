@@ -16,7 +16,7 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: page => !page.includes('/404') && !/\/(next|classic)\/?$/.test(page),
+      filter: page => !page.includes('/404') && !/\/(next|classic|dream)\/?$/.test(page),
       changefreq: 'monthly',
       priority: 0.7,
       // Boost the home page and the section indexes; lessons and glossary
