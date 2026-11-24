@@ -45,5 +45,6 @@ const jsonLd = articleSchema({ url: 'https://svapnaproject.org' + path, headline
       : nextModFirst ? <a class="r" href={`/curriculum/module-${pad(nextMod.num)}/${nextModFirst.urlSlug}`}><span class="small">Next · {nextMod.title}</span>{nextModFirst.title}</a> : <span></span>}
   </nav>
   {short && <a class="go" href={`/dream#${short.layer}`}>Back into the night at “{LAYER[short.layer]}” →</a>}
+  <script is:inline>try { var F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; F.lesson = 1; localStorage.setItem('svapna_done', JSON.stringify(F)); } catch (e) {}</script>
   <Coffee line="If this lesson was worth reading, a coffee keeps Svapna open." />
 </Read>

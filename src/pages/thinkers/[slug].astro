@@ -40,6 +40,14 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
     })}
   </div>
 
+  {t.circles.length > 0 && (
+    <section>
+      <h2>Circles</h2>
+      <p class="def">Where these passages, taken together, place this voice.</p>
+      <div class="qlist small-list">{t.circles.map(c => <a href={`/circles/${c.id}`}>{c.name}<span>from {c.n} answers →</span></a>)}</div>
+    </section>
+  )}
+
   {t.ties.length > 0 && (
     <section>
       <h2>Documented connections</h2>
@@ -51,4 +59,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
     </section>
   )}
   <Coffee />
+  <script is:inline define:vars={{ slug: t.slug }}>
+    try { var F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; F.thinkers = F.thinkers || []; if (F.thinkers.indexOf(slug) < 0 && F.thinkers.length < 40) { F.thinkers.push(slug); localStorage.setItem('svapna_done', JSON.stringify(F)); } } catch (e) {}
+  </script>
 </Read>

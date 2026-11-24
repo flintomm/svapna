@@ -229,6 +229,8 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
 
   // ---- frame ----
   let last = 0, ph = 0, shown = 99, inChamber = false;
+  let doneNight = false;
+  function mark(key) { try { const F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; F[key] = 1; localStorage.setItem('svapna_done', JSON.stringify(F)); } catch (e) { /* private mode */ } }
   function frame(ts) {
     const dt = Math.min(64, ts - last || 16); last = ts;
     const want = readDepth(); depth += (want - depth) * (reduce ? 1 : Math.min(1, dt / 260));
@@ -245,6 +247,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     // Words are dark on a light ground and light on a dark one.
     const lum = .2126 * k.base[0] + .7152 * k.base[1] + .0722 * k.base[2];
     document.body.classList.toggle('light-now', lum > .5);
+    if (depth > 7.7 && !doneNight) { doneNight = true; mark('night'); }
     const near = Math.round(depth);
     if (near !== shown) {
       shown = near; links.forEach(a => a.classList.toggle('on', +a.dataset.i === near));
@@ -280,6 +283,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     items = [{ kind: 'names', label: L.name + ' · what it has been called', terms: L.terms }]
       .concat(L.quotes.map((v, i) => ({ kind: 'say', label: L.name + ' · voice ' + (i + 1) + ' of ' + L.quotes.length, text: v.text, by: v.by + ' · ' + v.cite })))
       .concat(L.ideas.map(x => ({ kind: 'idea', label: L.name + ' · what was learned here', title: x.title, text: x.short, href: x.href })));
+    mark('deeper');
     inChamber = true; document.body.classList.add('in-chamber'); chamber.hidden = false; showItem(1 < items.length ? 1 : 0);
   }
   function closeChamber() { inChamber = false; document.body.classList.remove('in-chamber'); chamber.hidden = true; }

@@ -1,0 +1,55 @@
+---
+import Read from '../../layouts/Read.astro';
+import Coffee from '../../components/Coffee.astro';
+import { circles, questions } from '../../lib/atlas.js';
+export function getStaticPaths() { return circles.map(c => ({ params: { id: c.id }, props: { c } })); }
+const { c } = Astro.props;
+const qs = c.axis.qs.map(id => questions.find(q => q.id === id)).filter(Boolean);
+// A voice for the circle on each of its questions: the member who speaks to it most squarely in this circle's direction.
+const voices = qs.map(q => {
+  const want = c.band / 2;
+  const best = c.members.map(m => m.t.passages.filter(p => p.question.id === q.id && p.step && p.step.tone !== 'none').map(p => ({ p, t: m.t }))).flat()
+    .map(x => ({ ...x, d: Math.abs((q.steps.filter(s => s.tone !== 'none').findIndex(s => s.id === x.p.step.id) / 2) - want) })).sort((a, b) => a.d - b.d)[0];
+  return best && best.d < .3 ? { q, ...best } : null;
+}).filter(Boolean);
+const names = c.members.slice(0, 6).map(m => m.t.name).join(', ');
+---
+<Read title={`${c.name}: ${c.members.length} thinkers — Svapna`} description={`${c.name}. ${c.line} ${c.members.length} thinkers whose own words lean this way, among them ${names}.`} path={`/circles/${c.id}`} crumbs={[{ name: 'Circles', path: '/circles' }, { name: c.name, path: `/circles/${c.id}` }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/circles">Circles</a> · {c.axis.name}</p>
+  <h1 data-circle={c.id}>{c.name}</h1>
+  <p class="lede">{c.line}</p>
+  <p class="small" id="mine" hidden style="margin-top:22px">On your answers so far, you lean toward this circle.</p>
+  <p style="display:flex;flex-wrap:wrap;gap:6px 30px">
+    <a class="go" href="/you">Find your own circles →</a>
+    {c.facing && <a class="go" href={`/circles/${c.facing.id}`}>The circle facing this one: {c.facing.name} →</a>}
+  </p>
+
+  {voices.length > 0 && (
+    <section>
+      <h2>In their words</h2>
+      <div class="rows">
+        {voices.map(v => (
+          <article class="row">
+            <div><p class="pos" style={`--c:var(--${v.p.step.tone})`}><span class="dot"></span><a href={`/questions/${v.q.id}`}>{v.q.plain}</a> {v.p.step.plain}</p><blockquote>“{v.p.card.excerpt}”</blockquote></div>
+            <div class="who"><a class="name" href={`/thinkers/${v.t.slug}#${v.p.card.id}`}>{v.t.name}</a><p>{v.p.card.place}</p><p>{v.p.card.dateShort}</p></div>
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section>
+    <h2>{c.members.length} in this circle</h2>
+    <p class="def">Ordered by how many of the circle’s questions each has spoken to. Membership rests on draft readings of a few passages, not on a thinker’s whole work.</p>
+    <div class="index">{c.members.map(m => <a href={`/thinkers/${m.t.slug}`}>{m.t.name}<span>{m.t.when}</span></a>)}</div>
+  </section>
+
+  <section>
+    <h2>The other circles on “{c.axis.name.toLowerCase()}”</h2>
+    <div class="qlist small-list">{c.siblings.map(s => <a href={`/circles/${s.id}`}>{s.name}<span>→</span></a>)}</div>
+  </section>
+  <Coffee />
+  <script is:inline define:vars={{ id: c.id }}>
+    try { var mine = JSON.parse(localStorage.getItem('svapna_circles') || '[]'); if (mine.indexOf(id) >= 0) document.getElementById('mine').hidden = false; } catch (e) {}
+  </script>
+</Read>

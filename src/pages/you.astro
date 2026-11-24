@@ -3,7 +3,8 @@
 // Answers are kept on the visitor's own device (localStorage 'svapna_answers'); nothing is sent anywhere.
 import Coffee from '../components/Coffee.astro';
 import Read from '../layouts/Read.astro';
-import { questions, thinkers } from '../lib/atlas.js';
+import { questions, thinkers, AXES } from '../lib/atlas.js';
+const AX = AXES.map(a => ({ id: a.id, name: a.name, qs: a.qs, tone: a.tone, circles: a.circles }));
 
 const value = (q, id) => { const s = q.steps.filter(x => x.tone !== 'none'); const i = s.findIndex(x => x.id === id); return i < 0 ? null : (s.length > 1 ? i / (s.length - 1) : .5); };
 const Q = questions.map(q => ({ id: q.id, plain: q.plain, steps: q.steps.filter(s => s.tone !== 'none').map(s => ({ id: s.id, plain: s.plain, tone: s.tone })) }));
@@ -35,6 +36,12 @@ const T = thinkers.map(t => {
   <p class="lede" id="need">Answer three questions to see your matches.</p>
 
   <section>
+    <h2>Your stickers</h2>
+    <p class="def">Leanings come from your answers and change as you answer more. Fourteen answers are not a philosophy; take them as an invitation to see who stands near you. The rest are for exploring.</p>
+    <div class="stickers" id="stickers"></div>
+  </section>
+
+  <section>
     <h2 id="count">Your answers</h2>
     <div class="rows" id="qs">
       {Q.map(q => (
@@ -50,7 +57,7 @@ const T = thinkers.map(t => {
   <Coffee line="If your matches surprised you, a coffee keeps Svapna open." />
   <a id="you-bar" class="you-bar" href="#result" hidden></a>
 
-  <script is:inline type="application/json" id="you-data" set:html={JSON.stringify({ Q, T })}></script>
+  <script is:inline type="application/json" id="you-data" set:html={JSON.stringify({ Q, T, AX })}></script>
   <script is:inline>
     (function () {
       var D = JSON.parse(document.getElementById('you-data').textContent), Q = D.Q, T = D.T, KEY = 'svapna_answers';
@@ -83,10 +90,32 @@ const T = thinkers.map(t => {
         var a = el('a', 'go', 'All of ' + r.t.n + '’s passages →'); a.href = '/thinkers/' + r.t.s; box.append(a);
         return box;
       }
+      var SEAL = { ring: '<circle cx="27" cy="27" r="24" fill="none" stroke="currentColor" stroke-width="1.5"/>', low: '<circle cx="27" cy="27" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>', mid: '<path d="M27 18a9 9 0 0 1 0 18z" fill="currentColor"/><circle cx="27" cy="27" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>', high: '<circle cx="27" cy="27" r="9" fill="currentColor"/>', star: '<path d="M27 15l3.4 8 8.6.8-6.5 5.7 2 8.5L27 33.500l-7.500 4.500 2-8.500-6.500-5.700 8.600-.800z" fill="currentColor"/>' };
+      function sticker(name, line, glyph, on, href, tone) {
+        var a = el(href && on ? 'a' : 'div', 'sticker' + (on ? '' : ' off')); if (href && on) a.href = href; if (tone) a.style.setProperty('--c', 'var(--' + tone + ')');
+        a.innerHTML = '<svg viewBox="0 0 54 54" aria-hidden="true">' + SEAL.ring + SEAL[glyph] + '</svg>'; var d = el('div'); d.append(el('b', '', name), el('span', '', line)); a.append(d); return a;
+      }
+      function stickers(n) {
+        var box = document.getElementById('stickers'), mine = []; box.textContent = '';
+        D.AX.forEach(function (ax) {
+          var vals = ax.qs.filter(function (k) { return A[k] && val[k] && val[k][A[k]] != null; }).map(function (k) { return val[k][A[k]]; });
+          if (vals.length < 2) { box.append(sticker(ax.name, 'Answer ' + (2 - vals.length) + ' more of its ' + ax.qs.length + ' questions to find your leaning.', 'low', false)); return; }
+          var m = vals.reduce(function (a, b) { return a + b; }, 0) / vals.length, b = m < .34 ? 0 : m > .66 ? 2 : 1, c = ax.circles[b]; mine.push(c[0]);
+          box.append(sticker('You lean toward ' + c[1], c[2], ['low', 'mid', 'high'][b], true, '/circles/' + c[0], ax.tone[b]));
+        });
+        try { localStorage.setItem('svapna_circles', JSON.stringify(mine)); } catch (e) {}
+        var F = {}; try { F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; } catch (e) {}
+        var met = (F.thinkers || []).length;
+        [['First answer', 'Answer one question.', n >= 1], ['Halfway', 'Answer seven questions.', n >= 7], ['All fourteen', 'Answer every question.', n >= Q.length],
+          ['Through the night', 'Reach morning in Dreaming.', !!F.night, '/dream'], ['Went deeper', 'Open a depth of the night.', !!F.deeper, '/dream'],
+          ['Close reader', 'Read a full lesson.', !!F.lesson, '/glossary'], ['Ten voices', 'Visit ten thinkers’ pages (' + Math.min(met, 10) + ' of 10).', met >= 10, '/thinkers']]
+          .forEach(function (x) { box.append(sticker(x[0], x[1], 'star', x[2], x[3])); });
+      }
       function paint() {
         var n = 0;
         document.querySelectorAll('.you-q').forEach(function (row) { var q = row.dataset.q; if (A[q]) n++; row.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(A[q] === b.dataset.a)); }); });
         document.getElementById('count').textContent = 'Your answers · ' + n + ' of ' + Q.length;
+        stickers(n);
         var res = document.getElementById('result'), need = document.getElementById('need');
         if (n < 3) { document.getElementById('you-bar').hidden = true; res.hidden = true; need.hidden = false; need.textContent = n ? 'Answer ' + (3 - n) + ' more to see your matches.' : 'Answer three questions to see your matches.'; return; }
         var r = rank(); need.hidden = true; res.hidden = false;

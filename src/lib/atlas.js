@@ -58,3 +58,42 @@ export const thinkers = [...bySlug.values()].map(t => {
 }).sort((a, b) => a.sort.localeCompare(b.sort));
 export const thinkerOf = name => bySlug.get(slugify(name));
 export const TONE = { low: '#2654ff', mid: '#ffb200', high: '#00b894', none: '#8a8fa3' };
+
+// ---- circles: three questions-behind-the-questions, each with three leanings. A thinker (or a visitor)
+// belongs to a circle when at least two of their answers on that axis average out to its leaning.
+export const AXES = [
+  { id: 'beyond', name: 'What lies beyond', qs: ['death', 'ultimate-reality', 'meaning', 'truth', 'suffering', 'lasting-self'], tone: ['low', 'mid', 'high'],
+    circles: [['earthbound', 'The Earthbound', 'This world is the whole of it, and that is enough to live by.'],
+      ['open-handed', 'The Open-handed', 'The largest questions stay open. Certainty either way is more than can be had.'],
+      ['far-sighted', 'The Far-sighted', 'There is more than what is seen: something continues, something grounds, something means.']] },
+  { id: 'hands', name: 'What is in our hands', qs: ['free-will', 'happiness', 'given-or-made'], tone: ['low', 'mid', 'high'],
+    circles: [['carried', 'The Carried', 'A life is mostly shaped by what it is given: nature, fortune, the world.'],
+      ['steerers', 'The Steerers', 'There is a current, and within it one can still steer.'],
+      ['makers', 'The Makers', 'A person makes themselves. Freedom and happiness are their own work.']] },
+  { id: 'together', name: 'Alone or together', qs: ['relationships', 'inward-or-others', 'solitude-or-company', 'self-or-others-first'], tone: ['low', 'mid', 'high'],
+    circles: [['solitary', 'The Solitary', 'The self is found inward and stands best alone.'],
+      ['go-betweens', 'The Go-betweens', 'Solitude and company each have their place, and a life needs both.'],
+      ['kindred', 'The Kindred', 'We become ourselves through other people.']] },
+];
+const stepValue = (q, id) => { const s = q.steps.filter(x => x.tone !== 'none'), i = s.findIndex(x => x.id === id); return i < 0 ? null : (s.length > 1 ? i / (s.length - 1) : .5); };
+export const band = v => (v < .34 ? 0 : v > .66 ? 2 : 1);
+for (const t of thinkers) {
+  t.pos = {};
+  for (const q of questions) {
+    const mine = t.passages.filter(p => p.question.id === q.id && p.step && p.step.tone !== 'none');
+    if (mine.length) t.pos[q.id] = mine.reduce((n, p) => n + stepValue(q, p.step.id), 0) / mine.length;
+  }
+  t.circles = [];
+  for (const ax of AXES) {
+    const vals = ax.qs.filter(k => t.pos[k] != null).map(k => t.pos[k]);
+    if (vals.length < 2) continue;
+    const mean = vals.reduce((a, b) => a + b, 0) / vals.length, b = band(mean);
+    t.circles.push({ axis: ax.id, id: ax.circles[b][0], name: ax.circles[b][1], mean, n: vals.length });
+  }
+}
+export const circles = AXES.flatMap(ax => ax.circles.map(([id, name, line], b) => {
+  const members = thinkers.filter(t => t.circles.some(c => c.id === id)).map(t => ({ t, c: t.circles.find(c => c.id === id) }))
+    .sort((x, y) => y.c.n - x.c.n || (b === 0 ? x.c.mean - y.c.mean : b === 2 ? y.c.mean - x.c.mean : Math.abs(x.c.mean - .5) - Math.abs(y.c.mean - .5)));
+  const facing = b === 1 ? null : ax.circles[2 - b];
+  return { id, name, line, axis: ax, band: b, tone: ax.tone[b], members, facing: facing ? { id: facing[0], name: facing[1] } : null, siblings: ax.circles.filter(c => c[0] !== id).map(c => ({ id: c[0], name: c[1] })) };
+}));
