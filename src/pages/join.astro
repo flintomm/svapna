@@ -1,0 +1,23 @@
+---
+import Read from '../layouts/Read.astro';
+---
+<Read title="Sign in — Svapna" description="Sign in to Svapna to keep your answers, stickers and circles across your devices." path="/join" crumbs={[{ name: 'Sign in', path: '/join' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · Sign in</p>
+  <h1>Keep what <em>you’ve answered.</em></h1>
+  <p class="lede">Signing in keeps your answers, stickers and circles in an account, so they follow you from one device to another. Without an account they stay on this device only.</p>
+  <div id="join-on" hidden>
+    <p style="margin-top:44px"><button type="button" class="go big" id="google">Continue with Google →</button></p>
+    <p class="fine" style="margin-top:26px;max-width:40em">Svapna stores your answers, the stickers you have earned and a display name you choose. Your Google name and picture are not shown or copied. You can delete your account, and everything in it, at any time from your page. <a href="/about/privacy">Privacy</a></p>
+  </div>
+  <p class="lede" id="join-off" hidden>Sign-in is being set up and will open soon. Until then, <a href="/you">your answers</a> are kept on this device.</p>
+  <script is:inline src="/account/supabase.js"></script>
+  <script is:inline src="/account/config.js"></script>
+  <script is:inline src="/account/account.js"></script>
+  <script is:inline>
+    (function () { var A = window.SvapnaAccount;
+      if (!A.ready) { document.getElementById('join-off').hidden = false; return; }
+      A.start().then(function (u) { if (u) { location.replace('/you'); return; } document.getElementById('join-on').hidden = false; });
+      document.getElementById('google').addEventListener('click', function () { A.signIn(); });
+    })();
+  </script>
+</Read>

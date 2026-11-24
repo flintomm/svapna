@@ -103,3 +103,9 @@ html{scroll-behavior:smooth}#result{scroll-margin-top:90px}
 .sticker span{display:block;font-size:14px;line-height:1.4;color:var(--soft);margin-top:4px}
 .sticker.off{opacity:.32}.sticker.off svg{color:var(--ink)}
 a.sticker:hover b{text-decoration:underline}
+
+/* ---- account ---- */
+.go.big{font-size:clamp(20px,2.2vw,30px);font-weight:600;letter-spacing:-.03em;padding-bottom:10px;border-color:var(--ink)}
+.acct{margin-top:34px}.acct p{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:baseline;margin:8px 0 0}
+.acct input{font:500 18px/1.2 'Inter Tight',sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);padding:6px 0;min-width:16rem;outline:0}.acct input:focus{border-color:var(--ink)}
+.acct .go{margin-top:0}.go.quiet{border-color:transparent;opacity:.6}.go.quiet:hover{opacity:1;border-color:var(--line)}

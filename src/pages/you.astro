@@ -24,7 +24,15 @@ const T = thinkers.map(t => {
 <Read title="You: which thinkers think like you? — Svapna" description={`Answer fourteen of life’s big questions and see which of ${T.length} thinkers from four thousand years agree with you most, and which oppose you most, each in their own words.`} path="/you" crumbs={[{ name: 'You', path: '/you' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · You</p>
   <h1>Who thinks <em>like you?</em></h1>
-  <p class="lede">Answer as many of the fourteen questions as you like. The more you answer, the truer the match. Your answers stay on this device.</p>
+  <p class="lede">Answer as many of the fourteen questions as you like. The more you answer, the truer the match. <span id="where">Your answers stay on this device.</span></p>
+  <div id="acct" class="acct" hidden>
+    <p id="acct-out" hidden><a class="go" href="/join">Sign in to keep them across devices →</a></p>
+    <div id="acct-in" hidden>
+      <label class="small" for="name">Your display name</label>
+      <p><input id="name" maxlength="40" placeholder="Choose a name" autocomplete="off" /><button type="button" class="go" id="name-save">Save</button><span class="small" id="name-ok"></span></p>
+      <p><button type="button" class="go quiet" id="out">Sign out</button><button type="button" class="go quiet" id="del">Delete my account</button></p>
+    </div>
+  </div>
 
   <section id="result" class="you-result" hidden>
     <div class="you-cols">
@@ -57,9 +65,13 @@ const T = thinkers.map(t => {
   <Coffee line="If your matches surprised you, a coffee keeps Svapna open." />
   <a id="you-bar" class="you-bar" href="#result" hidden></a>
 
+  <script is:inline src="/account/supabase.js"></script>
+  <script is:inline src="/account/config.js"></script>
+  <script is:inline src="/account/account.js"></script>
   <script is:inline type="application/json" id="you-data" set:html={JSON.stringify({ Q, T, AX })}></script>
   <script is:inline>
     (function () {
+      var Acct = window.SvapnaAccount || { ready: false };
       var D = JSON.parse(document.getElementById('you-data').textContent), Q = D.Q, T = D.T, KEY = 'svapna_answers';
       var A = {}; try { A = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { A = {}; }
       var val = {}; Q.forEach(function (q) { val[q.id] = {}; q.steps.forEach(function (s, i) { val[q.id][s.id] = q.steps.length > 1 ? i / (q.steps.length - 1) : .5; }); });
@@ -127,10 +139,23 @@ const T = thinkers.map(t => {
       }
       document.getElementById('qs').addEventListener('click', function (e) {
         var b = e.target.closest('button[data-a]'); if (!b) return; var q = b.closest('.you-q').dataset.q;
-        if (A[q] === b.dataset.a) delete A[q]; else A[q] = b.dataset.a; save(); paint();
+        if (A[q] === b.dataset.a) delete A[q]; else A[q] = b.dataset.a; save(); paint(); if (Acct.user) Acct.saveAnswer(q, A[q]);
       });
-      document.getElementById('clear').addEventListener('click', function () { A = {}; save(); paint(); });
+      document.getElementById('clear').addEventListener('click', function () { var had = Object.keys(A); A = {}; save(); paint(); if (Acct.user) had.forEach(function (q) { Acct.saveAnswer(q, null); }); });
       paint();
+      // With an account: the device and the account are brought into step, then the page shows the result.
+      if (Acct.ready) {
+        document.getElementById('acct').hidden = false;
+        Acct.start().then(function (u) {
+          if (!u) { document.getElementById('acct-out').hidden = false; return; }
+          try { A = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+          paint(); document.getElementById('acct-in').hidden = false; document.getElementById('where').textContent = 'Your answers are kept in your account.';
+          var name = document.getElementById('name'); name.value = (Acct.profile && Acct.profile.display_name) || '';
+          document.getElementById('name-save').addEventListener('click', function () { Acct.saveProfile({ display_name: name.value.trim().slice(0, 40) || null }).then(function (r) { document.getElementById('name-ok').textContent = r && r.error ? ' Could not save.' : ' Saved.'; }); });
+          document.getElementById('out').addEventListener('click', function () { Acct.signOut(); });
+          document.getElementById('del').addEventListener('click', function () { if (confirm('Delete your account and everything stored in it? This cannot be undone.')) Acct.remove().then(function () { location.href = '/'; }).catch(function () { alert('The account could not be deleted. Please try again.'); }); });
+        });
+      }
     })();
   </script>
 </Read>
