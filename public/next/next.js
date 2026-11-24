@@ -3,7 +3,27 @@
 (function () {
   const atlas = window.PILOT_EVIDENCE, land = window.PILOT_LAND;
   const $ = id => document.getElementById(id);
-  const RGB = { low: [91, 140, 255], mid: [240, 199, 94], high: [255, 107, 74], none: [154, 163, 184] };
+  // Looks: ?v=paper (default), ?v=field, ?v=ink, ?v=night (the first prototype).
+  const V = new URLSearchParams(location.search).get('v') || 'paper';
+  document.body.dataset.v = V;
+  const LOOK = {
+    night: { rgb: { low: [91, 140, 255], mid: [240, 199, 94], high: [255, 107, 74], none: [154, 163, 184] }, dots: false, blend: 'lighter', land: '255,255,255', ring: '#fff' },
+    paper: { rgb: { low: [36, 76, 255], mid: [255, 170, 0], high: [255, 61, 46], none: [120, 120, 120] }, dots: true, blend: 'multiply', land: '20,20,20', ring: '#111' },
+    field: { rgb: { low: [40, 60, 255], mid: [255, 180, 0], high: [255, 45, 85], none: [90, 90, 90] }, dots: true, blend: 'source-over', land: '20,10,40', ring: '#111' },
+    ink: { rgb: { low: [120, 160, 255], mid: [255, 220, 90], high: [200, 255, 60], none: [130, 130, 130] }, dots: true, blend: 'lighter', land: '255,255,255', ring: '#fff' },
+  }[V] || null;
+  const L = LOOK || { rgb: { low: [36, 76, 255], mid: [255, 170, 0], high: [255, 61, 46], none: [120, 120, 120] }, dots: true, blend: 'multiply', land: '20,20,20', ring: '#111' };
+  const RGB = L.rgb;
+  for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
+  // Land as a field of dots: a grid of points kept where they fall on land.
+  let landDots = null;
+  function makeDots() {
+    landDots = [];
+    for (let lat = -58; lat <= 82; lat += 2.4) {
+      const step = 2.4 / Math.max(.25, Math.cos(lat * Math.PI / 180));
+      for (let lng = -180; lng < 180; lng += step) if (d3.geoContains(land, [lng, lat])) landDots.push([lng, lat]);
+    }
+  }
   const css = tone => `rgb(${RGB[tone]})`;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const questions = atlas.questions.filter(q => atlas.cards.some(c => c.readings[q.id]));
@@ -24,29 +44,43 @@
     R = narrow ? Math.min(W * .62, H * .34) : Math.min(H * .46, W * .3);
     cx = narrow ? W * .5 : W * .72; cy = narrow ? H * .3 : H * .5;
     projection.translate([cx, cy]).scale(R);
-    // Stars are drawn once per size.
     sx.clearRect(0, 0, W, H);
-    const g = sx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * .9);
-    g.addColorStop(0, '#121b3d'); g.addColorStop(.55, '#070b1a'); g.addColorStop(1, '#04060d');
-    sx.fillStyle = g; sx.fillRect(0, 0, W, H);
-    let seed = 11; const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
-    for (let i = 0; i < W * H / 4200; i++) { sx.globalAlpha = .15 + rnd() * .55; sx.fillStyle = '#fff'; const s = rnd() < .08 ? 1.6 : .8; sx.fillRect(rnd() * W, rnd() * H, s, s); }
-    sx.globalAlpha = 1;
+    if (V === 'night') {
+      const g = sx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * .9);
+      g.addColorStop(0, '#121b3d'); g.addColorStop(.55, '#070b1a'); g.addColorStop(1, '#04060d');
+      sx.fillStyle = g; sx.fillRect(0, 0, W, H);
+      let seed = 11; const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
+      for (let i = 0; i < W * H / 4200; i++) { sx.globalAlpha = .15 + rnd() * .55; sx.fillStyle = '#fff'; const s = rnd() < .08 ? 1.6 : .8; sx.fillRect(rnd() * W, rnd() * H, s, s); }
+      sx.globalAlpha = 1;
+    }
     drawStrip();
   }
 
   function paint() {
     projection.rotate(rot);
     wx.clearRect(0, 0, W, H);
-    const g = wx.createRadialGradient(cx - R * .35, cy - R * .4, 0, cx, cy, R);
-    g.addColorStop(0, '#1c2854'); g.addColorStop(.7, '#0a1024'); g.addColorStop(1, '#060a18');
-    wx.save(); wx.shadowColor = 'rgba(91,140,255,.35)'; wx.shadowBlur = 80;
-    wx.beginPath(); path({ type: 'Sphere' }); wx.fillStyle = g; wx.fill(); wx.restore();
-    wx.beginPath(); path(grat); wx.strokeStyle = 'rgba(255,255,255,.06)'; wx.lineWidth = .6; wx.stroke();
-    wx.beginPath(); path(land); wx.fillStyle = 'rgba(255,255,255,.05)'; wx.fill(); wx.strokeStyle = 'rgba(255,255,255,.22)'; wx.lineWidth = .7; wx.stroke();
+    if (L.dots) {
+      if (!landDots) makeDots();
+      const face0 = projection.invert([cx, cy]), d = Math.max(1.1, R / 210);
+      wx.fillStyle = `rgba(${L.land},.5)`;
+      for (const pt of landDots) {
+        const a = d3.geoDistance(pt, face0); if (a > 1.5) continue;
+        const [x, y] = projection(pt), k = Math.cos(a) * .9 + .1;
+        wx.globalAlpha = .25 + .75 * k; wx.beginPath(); wx.arc(x, y, d * (.55 + .45 * k), 0, 7); wx.fill();
+      }
+      wx.globalAlpha = 1;
+      wx.beginPath(); path({ type: 'Sphere' }); wx.strokeStyle = `rgba(${L.land},.16)`; wx.lineWidth = 1; wx.stroke();
+    } else {
+      const g = wx.createRadialGradient(cx - R * .35, cy - R * .4, 0, cx, cy, R);
+      g.addColorStop(0, '#1c2854'); g.addColorStop(.7, '#0a1024'); g.addColorStop(1, '#060a18');
+      wx.save(); wx.shadowColor = 'rgba(91,140,255,.35)'; wx.shadowBlur = 80;
+      wx.beginPath(); path({ type: 'Sphere' }); wx.fillStyle = g; wx.fill(); wx.restore();
+      wx.beginPath(); path(grat); wx.strokeStyle = 'rgba(255,255,255,.06)'; wx.lineWidth = .6; wx.stroke();
+      wx.beginPath(); path(land); wx.fillStyle = 'rgba(255,255,255,.05)'; wx.fill(); wx.strokeStyle = 'rgba(255,255,255,.22)'; wx.lineWidth = .7; wx.stroke();
+    }
     if (!cards) return;
     const face = projection.invert([cx, cy]);
-    wx.save(); wx.beginPath(); path({ type: 'Sphere' }); wx.clip(); wx.globalCompositeOperation = 'lighter';
+    wx.save(); wx.beginPath(); path({ type: 'Sphere' }); wx.clip(); wx.globalCompositeOperation = L.blend;
     const now = mode === 'voice' ? shown[at] : null;
     for (const c of cards) {
       if (d3.geoDistance([c.lng, c.lat], face) > 1.52) continue;
@@ -56,15 +90,15 @@
       const k = lit * (inTime ? 1 : .12) * (mine ? 1 : .32);
       const big = R * (mine ? .15 : .09);
       const h = wx.createRadialGradient(x, y, 0, x, y, big);
-      h.addColorStop(0, `rgba(${rgb},${.17 * k})`); h.addColorStop(1, `rgba(${rgb},0)`);
+      h.addColorStop(0, `rgba(${rgb},${(V === 'night' ? .17 : .3) * k})`); h.addColorStop(1, `rgba(${rgb},0)`);
       wx.fillStyle = h; wx.fillRect(x - big, y - big, big * 2, big * 2);
-      wx.beginPath(); wx.arc(x, y, mine ? 2.2 : 1.4, 0, 7); wx.fillStyle = `rgba(${rgb},${.95 * Math.max(k, .12)})`; wx.fill();
+      wx.beginPath(); wx.arc(x, y, (mine ? 2.2 : 1.4) * (V === 'night' ? 1 : 1.9), 0, 7); wx.fillStyle = `rgba(${rgb},${.95 * Math.max(k, .12)})`; wx.fill();
     }
     wx.restore();
     if (now && d3.geoDistance([now.lng, now.lat], face) < 1.52) {
       const [x, y] = projection([now.lng, now.lat]), pulse = 9 + 4 * Math.sin(performance.now() / 420);
       wx.beginPath(); wx.arc(x, y, pulse, 0, 7); wx.strokeStyle = css(tones[now.score]); wx.lineWidth = 1.2; wx.stroke();
-      wx.beginPath(); wx.arc(x, y, 3.4, 0, 7); wx.fillStyle = '#fff'; wx.fill();
+      wx.beginPath(); wx.arc(x, y, 3.4, 0, 7); wx.fillStyle = L.ring; wx.fill();
     }
   }
 
@@ -95,7 +129,7 @@
       const x = stripX(i, r.width), rgb = RGB[tones[c.score]], cur = i === at, past = i <= at;
       const g = tx.createLinearGradient(0, 0, 0, r.height);
       g.addColorStop(0, `rgba(${rgb},${past ? .95 : .3})`); g.addColorStop(1, `rgba(${rgb},${past ? .15 : .05})`);
-      tx.fillStyle = cur ? '#fff' : g; tx.fillRect(x - (cur ? 1.5 : 1), cur ? 0 : 12, cur ? 3 : 2, r.height - (cur ? 0 : 12));
+      tx.fillStyle = cur ? L.ring : g; tx.fillRect(x - (cur ? 1.5 : 1), cur ? 0 : 12, cur ? 3 : 2, r.height - (cur ? 0 : 12));
     });
   }
   strip.addEventListener('click', e => {
