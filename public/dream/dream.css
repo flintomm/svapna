@@ -109,3 +109,10 @@ main::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 .chamber-nav button{border:0;border-radius:0;background:none;backdrop-filter:none;-webkit-backdrop-filter:none;width:44px;height:44px;font-size:24px;opacity:.75}
 .chamber-nav button:hover{background:none;color:inherit;opacity:1}
 #chamber-close{border-bottom:1px solid var(--line);padding-bottom:6px}
+
+/* Arrival and the crossing between the two spaces. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vt-out .45s ease both}::view-transition-new(root){animation:vt-in .7s ease both}
+@keyframes vt-out{to{opacity:0}}@keyframes vt-in{from{opacity:0}}
+body{animation:arrive .9s ease both}@keyframes arrive{from{opacity:0}}
+@media(prefers-reduced-motion:reduce){body{animation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}

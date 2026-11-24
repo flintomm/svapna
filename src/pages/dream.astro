@@ -1,10 +1,14 @@
 ---
-// Dreaming: a descent through one night of sleep, layer by layer. Prototype; unlisted and not indexed.
+// Dreaming: a descent through one night of sleep, layer by layer.
 import quotesData from '../data/quotes.json';
 import timelineData from '../data/timeline.json';
 import shorts from '../data/dream_shorts.json';
 import { getLesson, getGlossaryTerm } from '../lib/lessons.js';
 import { curriculumModules } from '../lib/content.js';
+import { organizationSchema, breadcrumbSchema, buildCrumbs } from '../lib/seo.js';
+const siteUrl = 'https://svapnaproject.org/';
+const pageTitle = 'Dreaming — sink through one night of sleep | Svapna';
+const pageDesc = 'Sink through one night of sleep, from lying down to morning: what the Upaniṣads, Tibetan dream yoga, Sufism, Daoism and the sleep laboratory each found in drifting off, deep sleep, dreaming and lucid dreaming.';
 
 const pad = n => String(n).padStart(2, '0');
 const Q = Object.fromEntries(quotesData.quotes.map(q => [q.id, q]));
@@ -48,15 +52,25 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="robots" content="noindex, nofollow" />
-<title>Dreaming — Svapna</title>
-<meta name="description" content="Sink through one night of sleep, from awake to morning, and hear what three and a half thousand years of dreamers found at each depth." />
+<link rel="canonical" href={siteUrl + 'dream'} />
+<title>{pageTitle}</title>
+<meta name="description" content={pageDesc} />
+<meta property="og:type" content="article" />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={pageDesc} />
+<meta property="og:url" content={siteUrl + 'dream'} />
+<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(buildCrumbs(siteUrl, [{ name: 'Dreaming', path: '/dream' }])))} />
 <meta name="theme-color" content="#03040a" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/dream/dream.css" />
+<link rel="prefetch" href="/" />
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
 </head>
 <body>
 <canvas id="abyss" aria-hidden="true"></canvas>
@@ -141,7 +155,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 </div>
 
 <script is:inline type="application/json" id="layers" set:html={JSON.stringify(layers.map(l => ({ name: l.name, terms: l.terms, quotes: l.quotes, ideas: l.ideas })))}></script>
-<script is:inline src="/next/three.min.js"></script>
-<script is:inline src="/dream/dream.js"></script>
+<script is:inline defer src="/next/three.min.js"></script>
+<script is:inline defer src="/dream/dream.js"></script>
 </body>
 </html>

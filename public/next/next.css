@@ -164,3 +164,10 @@ body:not([data-v=night]) #drift[aria-pressed=true],body[data-v=aurora] #drift[ar
 body:not([data-v=night]) .who-filter,body[data-v=aurora] .who-filter,body[data-v=cine] .who-filter{background:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-radius:0;padding:0;gap:22px}
 body:not([data-v=night]) .who-filter button,body[data-v=cine] .who-filter button{border-radius:0;padding:0 0 5px;border-bottom:1px solid transparent;opacity:.5}
 body:not([data-v=night]) .who-filter button[aria-pressed=true],body[data-v=aurora] .who-filter button[aria-pressed=true],body[data-v=cine] .who-filter button[aria-pressed=true]{background:none;color:inherit;opacity:1;border-bottom-color:currentColor}
+
+/* Arrival and the crossing between the two spaces. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vt-out .45s ease both}::view-transition-new(root){animation:vt-in .7s ease both}
+@keyframes vt-out{to{opacity:0}}@keyframes vt-in{from{opacity:0}}
+body{animation:arrive .9s ease both}@keyframes arrive{from{opacity:0}}
+@media(prefers-reduced-motion:reduce){body{animation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}

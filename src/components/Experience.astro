@@ -38,6 +38,7 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@400&family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/next/next.css" />
+<link rel="prefetch" href="/dream" />
 <script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
 </head>
 <body>
@@ -51,7 +52,7 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
   <div class="top-right">
     <button id="mode" class="mono" type="button">Night</button>
     <button id="open-menu" class="mono" type="button">Menu</button>
-    <a class="mono" href="/night">Dreaming</a>
+    <a class="mono" href="/dream">Dreaming</a>
   </div>
 </header>
 
@@ -100,7 +101,7 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
   <ol id="menu-list"></ol>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
-    <li><a href="/night">Dreaming · the night, hour by hour</a></li>
+    <li><a href="/dream">Dreaming · sink through one night</a></li>
     <li><a href="/history">History of dream practice</a></li>
     <li><a href="/curriculum">Lessons</a></li>
     <li><a href="/library">Library and glossary</a></li>
@@ -109,11 +110,11 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
   </ul>
 </div>
 
-<script is:inline src="/globe-of-thought/d3.min.js"></script>
-<script is:inline src="/globe-of-thought/land.js"></script>
-<script is:inline src="/globe-of-thought/evidence.js"></script>
-<script is:inline src="/next/three.min.js"></script>
-<script is:inline src="/next/next.js"></script>
+<script is:inline defer src="/globe-of-thought/d3.min.js"></script>
+<script is:inline defer src="/globe-of-thought/land.js"></script>
+<script is:inline defer src="/next/data.js"></script>
+<script is:inline defer src="/next/three.min.js"></script>
+<script is:inline defer src="/next/next.js"></script>
 
 <noscript>
   <div class="plain">
@@ -125,7 +126,7 @@ const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.fil
         {s.cards.map(c => <p>“{c.excerpt}” — {c.name}, {c.place}, {c.dateShort}. <a href={c.sourceUrl}>Source</a></p>)}
       </section>
     ))}
-    <p><a href="/globe-of-thought">All passages</a> · <a href="/night">Dreaming</a> · <a href="/history">History</a> · <a href="/library">Library</a> · <a href="/support">Support</a></p>
+    <p><a href="/globe-of-thought">All passages</a> · <a href="/dream">Dreaming</a> · <a href="/history">History</a> · <a href="/library">Library</a> · <a href="/support">Support</a></p>
   </div>
 </noscript>
 </body>

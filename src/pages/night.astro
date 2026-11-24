@@ -1,34 +1,14 @@
 ---
-import Instruments from '../components/Instruments.astro';
-import Layout from '../layouts/Layout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
-import DanaNote from '../components/DanaNote.astro';
-import NightAtlas from '../components/NightAtlas.astro';
+// The Night has become Dreaming. This address forwards there.
 ---
-
-<Layout
-  title="The Night - Svapna Project"
-  description="One night of sleep, hour by hour: what the Upaniṣads, the Tibetan yogas, the Sufis, the Daoists and the sleep laboratory each find in waking, dreaming, deep sleep and lucidity."
->
-  <section>
-    <SectionHeader
-      num="Annex"
-      kicker="A night, hour by hour"
-      title="The Night"
-      sub="One night of sleep, from lying down to morning. At each depth: what the traditions and the laboratory found there."
-    />
-    <Instruments current="night" />
-    <NightAtlas />
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b hairline-t">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">On the chart</span>
-      </div>
-      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
-        <p class="text-base leading-loose text-neutral-700">
-          The line is a hypnogram: the shape of an ordinary night as a sleep laboratory records it, idealised. Deep sleep gathers early; the dreaming periods lengthen towards morning. The ten stations and the voices set along it come from the <a href="/library" class="underline underline-offset-4 hover:italic">Library</a>’s quote bank, the <a href="/history" class="underline underline-offset-4 hover:italic">History</a> timeline and the <a href="/curriculum" class="underline underline-offset-4 hover:italic">Curriculum</a>. The pairing of a tradition’s term with an hour of the night is an editorial reading, not a claim that the traditions describe the same thing. Not medical advice: <a href="/about/disclaimer" class="underline underline-offset-4 hover:italic">disclaimer</a>.
-        </p>
-      </div>
-    </div>
-    <DanaNote />
-  </section>
-</Layout>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=/dream" />
+<link rel="canonical" href="https://svapnaproject.org/dream" />
+<meta name="robots" content="noindex" />
+<title>Dreaming — Svapna</title>
+</head>
+<body><p><a href="/dream">Dreaming has moved here.</a></p><script is:inline>location.replace('/dream' + location.hash);</script></body>
+</html>
