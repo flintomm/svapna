@@ -4,10 +4,11 @@
   const atlas = window.PILOT_EVIDENCE, land = window.PILOT_LAND;
   const $ = id => document.getElementById(id);
   // Looks: ?v=paper (default), ?v=field, ?v=ink, ?v=night (the first prototype).
-  const V = new URLSearchParams(location.search).get('v') || 'aurora';
+  const V = new URLSearchParams(location.search).get('v') || 'cine';
   document.body.dataset.v = V;
   const LOOK = {
     night: { rgb: { low: [91, 140, 255], mid: [240, 199, 94], high: [255, 107, 74], none: [154, 163, 184] }, dots: false, blend: 'lighter', land: '255,255,255', ring: '#fff' },
+    cine: { rgb: { low: [70, 120, 255], mid: [255, 190, 40], high: [0, 220, 170], none: [150, 150, 165] }, dots: true, blend: 'lighter', land: '255,255,255', ring: '#fff', through: true },
     aurora: { rgb: { low: [46, 91, 255], mid: [255, 176, 0], high: [255, 43, 112], none: [110, 110, 120] }, dots: true, blend: 'source-over', land: '10,10,24', ring: '#000', through: true },
     paper: { rgb: { low: [36, 76, 255], mid: [255, 170, 0], high: [255, 61, 46], none: [120, 120, 120] }, dots: true, blend: 'multiply', land: '20,20,20', ring: '#111' },
     field: { rgb: { low: [40, 60, 255], mid: [255, 180, 0], high: [255, 45, 85], none: [90, 90, 90] }, dots: true, blend: 'source-over', land: '20,10,40', ring: '#111' },
@@ -35,7 +36,8 @@
       return now;
     } catch (e) { return ROTATION[Math.floor(Date.now() / 864e5) % ROTATION.length]; }
   })();
-  const RGB = V === 'aurora' && PALETTES[C] ? { ...PALETTES[C], none: [110, 110, 120] } : L.rgb;
+  const CINE = V === 'cine';
+  const RGB = (V === 'aurora' || CINE) && PALETTES[C] ? { ...PALETTES[C], none: [110, 110, 120] } : L.rgb;
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
   let landDots = null;
@@ -77,10 +79,10 @@
 
   // ---- colour field (aurora look): a slow fluid of the three answer colours, drawn by a shader ----
   const field = (function () {
-    const c = $('gl'); if (!c || V !== 'aurora') return null;
+    const c = $('gl'); if (!c || (V !== 'aurora' && !CINE)) return null;
     const g = c.getContext('webgl', { antialias: false, alpha: false }); if (!g) return null;
     const vs = 'attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}';
-    const fs = `precision highp float;uniform vec2 r;uniform float t,nar;uniform vec3 c0,c1,c2,w;uniform vec2 m;
+    const fs = `precision highp float;uniform vec2 r;uniform float t,nar,dk;uniform vec3 c0,c1,c2,w;uniform vec2 m;
 float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
 float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
 float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n(p);p=p*2.03+vec2(11.3,7.1);a*=.5;}return v;}
@@ -90,9 +92,11 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
  float a=smoothstep(.42,.78,fbm(s*1.15+vec2(0.,t*.02)))*w.x;
  float b=smoothstep(.44,.8,fbm(s*1.15+vec2(31.,-t*.025)))*w.y;
  float d=smoothstep(.46,.82,fbm(s*1.15+vec2(-17.,t*.03)+5.))*w.z;
- vec3 col=vec3(1.);col=mix(col,c2,d*.9);col=mix(col,c1,b*.82);col=mix(col,c0,a*.86);
+ vec3 base=mix(vec3(1.),vec3(.012,.014,.03),dk);float amt=mix(1.,.42,dk);
+ vec3 col=base;col=mix(col,c2,d*.9*amt);col=mix(col,c1,b*.82*amt);col=mix(col,c0,a*.86*amt);
  float keep=mix(smoothstep(-.95,.25,p.x),smoothstep(-.1,.55,p.y),nar);
- col=mix(vec3(1.),col,.16+.84*keep);
+ col=mix(base,col,.16+.84*keep);
+ col*=mix(1.,1.-.55*smoothstep(.35,1.05,length(p*vec2(.8,1.))),dk);
  col+=(h(gl_FragCoord.xy+t)-.5)*.035;
  gl_FragColor=vec4(col,1.);}`;
     const sh = (type, src) => { const o = g.createShader(type); g.shaderSource(o, src); g.compileShader(o); return o; };
@@ -101,14 +105,14 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     g.useProgram(pr);
     g.bindBuffer(g.ARRAY_BUFFER, g.createBuffer()); g.bufferData(g.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), g.STATIC_DRAW);
     const loc = g.getAttribLocation(pr, 'a'); g.enableVertexAttribArray(loc); g.vertexAttribPointer(loc, 2, g.FLOAT, false, 0, 0);
-    const U = Object.fromEntries(['r', 't', 'nar', 'c0', 'c1', 'c2', 'w', 'm'].map(n => [n, g.getUniformLocation(pr, n)]));
+    const U = Object.fromEntries(['r', 't', 'nar', 'dk', 'c0', 'c1', 'c2', 'w', 'm'].map(n => [n, g.getUniformLocation(pr, n)]));
     const w = [.85, .85, .85], m = [0, 0];
     return {
       size() { c.width = Math.round(innerWidth * .5); c.height = Math.round(innerHeight * .5); g.viewport(0, 0, c.width, c.height); },
       draw(t, want, mouse) {
         for (let i = 0; i < 3; i++) w[i] += (want[i] - w[i]) * .03;
         m[0] += (mouse[0] - m[0]) * .04; m[1] += (mouse[1] - m[1]) * .04;
-        g.uniform2f(U.r, c.width, c.height); g.uniform1f(U.t, t); g.uniform1f(U.nar, innerWidth < 820 ? 1 : 0);
+        g.uniform2f(U.r, c.width, c.height); g.uniform1f(U.t, t); g.uniform1f(U.nar, innerWidth < 820 ? 1 : 0); g.uniform1f(U.dk, CINE ? 1 : 0);
         g.uniform3fv(U.c0, RGB.low.map(v => v / 255)); g.uniform3fv(U.c1, RGB.mid.map(v => v / 255)); g.uniform3fv(U.c2, RGB.high.map(v => v / 255));
         g.uniform3fv(U.w, w); g.uniform2fv(U.m, m);
         g.drawArrays(g.TRIANGLES, 0, 3);
@@ -122,6 +126,95 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const tone = mode === 'voice' && shown && shown[at] ? tones[shown[at].score] : answer ? tones[answer] : null;
     return ['low', 'mid', 'high'].map(k => (tone ? (k === tone ? 1.25 : .28) : .85));
   }
+
+  // ---- the world in three dimensions (cine look): solid continents, light rising where people answered ----
+  const w3 = (function () {
+    const cv = $('w3'); if (!CINE || !cv || !window.THREE) return null;
+    const T = window.THREE; let renderer;
+    try { renderer = new T.WebGLRenderer({ canvas: cv, antialias: true, alpha: true }); } catch (e) { return null; }
+    renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1));
+    const scene = new T.Scene(), cam = new T.PerspectiveCamera(32, 1, .1, 100);
+    const tilt = new T.Group(), turn = new T.Group(); tilt.add(turn); scene.add(tilt);
+    const P = (lat, lng, r) => { const a = lat * Math.PI / 180, b = lng * Math.PI / 180; return new T.Vector3(Math.cos(a) * Math.cos(b), Math.sin(a), -Math.cos(a) * Math.sin(b)).multiplyScalar(r || 1); };
+    // The map is painted once: deep water, clear land, a hairline coast.
+    const tw = 4096, th = 2048, tc = document.createElement('canvas'); tc.width = tw; tc.height = th;
+    const tx2 = tc.getContext('2d'), eq = d3.geoEquirectangular().translate([tw / 2, th / 2]).scale(tw / (2 * Math.PI)), pth = d3.geoPath(eq, tx2);
+    tx2.fillStyle = '#060b1a'; tx2.fillRect(0, 0, tw, th);
+    tx2.beginPath(); pth(d3.geoGraticule10()); tx2.strokeStyle = 'rgba(255,255,255,.05)'; tx2.lineWidth = 1.5; tx2.stroke();
+    tx2.beginPath(); pth(land); tx2.fillStyle = '#2b3554'; tx2.fill(); tx2.strokeStyle = '#8fa0cf'; tx2.lineWidth = 2; tx2.stroke();
+    const tex = new T.CanvasTexture(tc); tex.anisotropy = 8;
+    const globe = new T.Mesh(new T.SphereGeometry(1, 96, 64), new T.MeshStandardMaterial({ map: tex, roughness: .9, metalness: 0, emissive: new T.Color('#0b1430'), emissiveIntensity: .35 }));
+    turn.add(globe);
+    // Air around the world, tinted by the answer in play.
+    const air = new T.Mesh(new T.SphereGeometry(1.16, 64, 48), new T.ShaderMaterial({
+      uniforms: { c: { value: new T.Color('#6aa0ff') } }, transparent: true, side: T.BackSide, blending: T.AdditiveBlending, depthWrite: false,
+      vertexShader: 'varying vec3 n;void main(){n=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+      fragmentShader: 'uniform vec3 c;varying vec3 n;void main(){float k=pow(.72-dot(n,vec3(0.,0.,1.)),3.2);gl_FragColor=vec4(c,1.)*k*.75;}' }));
+    scene.add(air);
+    scene.add(new T.AmbientLight(0xffffff, .5));
+    const sun = new T.DirectionalLight(0xffffff, .95); sun.position.set(-2.4, 1.6, 2.2); scene.add(sun);
+    // Lights for the passages: a point on the ground and a beam rising from it.
+    const beams = new T.Group(); turn.add(beams);
+    const beamGeo = new T.CylinderGeometry(.0012, .0048, 1, 8, 1, true); beamGeo.translate(0, .5, 0);
+    const dotGeo = new T.SphereGeometry(.011, 10, 8), up = new T.Vector3(0, 1, 0);
+    let items = [];
+    function setCards(list, toneOf) {
+      while (beams.children.length) beams.remove(beams.children[0]);
+      items = list.map(c => {
+        const col = new T.Color(`rgb(${RGB[toneOf[c.score]]})`), at0 = P(c.lat, c.lng, 1.002);
+        const dot = new T.Mesh(dotGeo, new T.MeshBasicMaterial({ color: col, transparent: true }));
+        const beam = new T.Mesh(beamGeo, new T.MeshBasicMaterial({ color: col, transparent: true, opacity: .5, blending: T.AdditiveBlending, depthWrite: false }));
+        dot.position.copy(at0); beam.position.copy(at0); beam.quaternion.setFromUnitVectors(up, at0.clone().normalize()); beam.scale.y = .001;
+        beams.add(dot, beam); return { c, dot, beam, h: 0 };
+      });
+    }
+    // The marker on the voice being heard, and the path flown to reach it.
+    const ring = new T.Mesh(new T.RingGeometry(.028, .034, 48), new T.MeshBasicMaterial({ color: 0xffffff, transparent: true, side: T.DoubleSide, depthWrite: false })); turn.add(ring); ring.visible = false;
+    const arcGeo = new T.BufferGeometry(); arcGeo.setAttribute('position', new T.BufferAttribute(new Float32Array(64 * 3), 3));
+    const arc = new T.Line(arcGeo, new T.LineBasicMaterial({ color: 0xffffff, transparent: true })); turn.add(arc); arc.visible = false;
+    function flight(a, b, col) {
+      const va = P(a.lat, a.lng), vb = P(b.lat, b.lng), ang = va.angleTo(vb), pos = arcGeo.attributes.position;
+      for (let i = 0; i < 64; i++) { const k = i / 63, v = va.clone().lerp(vb, k).normalize().multiplyScalar(1.004 + Math.sin(Math.PI * k) * Math.min(.34, ang * .16)); pos.setXYZ(i, v.x, v.y, v.z); }
+      pos.needsUpdate = true; arc.material.color.set(col); arc.visible = true; arc.userData.t = performance.now();
+    }
+    const shot = { d: 5.4, x: 1.32, y: 0 }, ray = new T.Raycaster(), zAxis = new T.Vector3(0, 0, 1), xAxis = new T.Vector3(1, 0, 0), qx = new T.Quaternion();
+    return {
+      setCards, flight,
+      size() { renderer.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); },
+      // Tap: the place on the world under the pointer, as [lng, lat].
+      invert(x, y) {
+        ray.setFromCamera(new T.Vector2(x / innerWidth * 2 - 1, 1 - y / innerHeight * 2), cam);
+        const hit = ray.intersectObject(globe)[0]; if (!hit) return null;
+        const v = turn.worldToLocal(hit.point.clone()).normalize();
+        return [Math.atan2(-v.z, v.x) * 180 / Math.PI, Math.asin(v.y) * 180 / Math.PI];
+      },
+      render(dt, st) {
+        // Framing: a wide shot for the question, a slow push in once the world answers, close for a single voice.
+        const narrow = innerWidth < 820, want = st.mode === 'ask' ? { d: narrow ? 5.6 : 4.9, x: narrow ? 0 : 1.32, y: narrow ? .62 : 0 }
+          : st.mode === 'echo' ? { d: narrow ? 4.9 : 3.9, x: narrow ? 0 : 1.12, y: narrow ? .6 : 0 } : { d: narrow ? 4.1 : 3.0, x: narrow ? 0 : .7, y: narrow ? .62 : -.04 };
+        const e = reduce ? 1 : 1 - Math.pow(.02, dt / 1000);
+        for (const k of ['d', 'x', 'y']) shot[k] += (want[k] - shot[k]) * e;
+        cam.position.set(st.mouse[0] * .18, st.mouse[1] * .12, shot.d); cam.lookAt(0, 0, 0);
+        tilt.position.set(shot.x, shot.y, 0); air.position.copy(tilt.position);
+        // The chosen place is turned to face the camera itself, not straight ahead, since the world sits off-centre.
+        turn.rotation.y = (st.rot[0] - 90) * Math.PI / 180;
+        const toCam = cam.position.clone().sub(tilt.position).normalize();
+        tilt.quaternion.setFromUnitVectors(zAxis, toCam).multiply(qx.setFromAxisAngle(xAxis, -st.rot[1] * Math.PI / 180));
+        const now = st.now, tone = now ? st.tones[now.score] : st.answer ? st.tones[st.answer] : null;
+        air.material.uniforms.c.value.lerp(new T.Color(tone ? `rgb(${RGB[tone]})` : '#7fa6ff'), .04);
+        for (const it of items) {
+          const mine = st.answer ? it.c.score === st.answer : true, inTime = !now || it.c.sortYear <= now.sortYear, cur = it.c === now;
+          const h = st.lit * (inTime ? 1 : 0) * (cur ? .5 : mine ? .16 : .045);
+          it.h += (h - it.h) * Math.min(1, dt / 500); it.beam.scale.y = Math.max(.001, it.h); it.beam.scale.x = it.beam.scale.z = cur ? 2.6 : 1;
+          it.beam.material.opacity = cur ? .95 : mine ? .55 : .3; it.dot.material.opacity = inTime ? (mine ? 1 : .55) : .16; it.dot.scale.setScalar(cur ? 1.9 : mine ? 1 : .7);
+        }
+        ring.visible = Boolean(now);
+        if (now) { const p0 = P(now.lat, now.lng, 1.004); ring.position.copy(p0); ring.lookAt(p0.clone().multiplyScalar(2)); const s0 = 1 + .35 * Math.sin(performance.now() / 380); ring.scale.setScalar(s0); ring.material.opacity = .9; }
+        if (arc.visible) { const k = (performance.now() - arc.userData.t) / 1500; arcGeo.setDrawRange(0, Math.max(2, Math.min(64, Math.round(k * 64)))); arc.material.opacity = Math.max(0, Math.min(1, 3.2 - k * .8)); if (arc.material.opacity <= 0) arc.visible = false; }
+        renderer.render(scene, cam);
+      },
+    };
+  })();
 
   // ---- sky and globe -----------------------------------------------------------------------
   const sky = $('sky'), world = $('world'), wx = world.getContext('2d'), sx = sky.getContext('2d');
@@ -139,6 +232,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     cx = narrow ? W * .5 : W * .72; cy = narrow ? H * .3 : H * .5;
     projection.translate([cx, cy]).scale(R);
     if (field) field.size();
+    if (w3) w3.size();
     sx.clearRect(0, 0, W, H);
     if (V === 'night') {
       const g = sx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * .9);
@@ -154,6 +248,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   function paint() {
     projection.rotate(rot);
     wx.clearRect(0, 0, W, H);
+    if (w3) return;
     if (L.dots) {
       if (!landDots) makeDots();
       const face0 = projection.invert([cx, cy]), d = Math.max(1.1, R / 210);
@@ -226,6 +321,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const want = mode === 'ask' ? .35 : 1;
     lit += (want - lit) * (reduce ? 1 : Math.min(1, dt / 700));
     paint();
+    if (w3) w3.render(dt, { mode, rot, mouse, lit, answer, tones: tones || {}, now: mode === 'voice' && shown ? shown[at] : null });
     requestAnimationFrame(frame);
   }
   const face = c => { goal = [-c.lng, Math.max(-55, Math.min(55, -c.lat * .8)), 0]; spin = false; };
@@ -265,6 +361,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     q = next; scale = q.scale; tones = Object.fromEntries(scale.map(s => [s.id, s.tone]));
     cards = atlas.cards.filter(c => c.readings[q.id]).map(c => ({ ...c, ...c.readings[q.id] })).sort((a, b) => a.sortYear - b.sortYear);
     answer = null; filter = 'all'; shown = cards; at = 0; spin = true; goal = null;
+    if (w3) w3.setCards(cards, tones);
     clearTimeout(driftTimer);
     $('ask-count').textContent = first ? 'Welcome. Start with a question.' : `Question ${questions.indexOf(q) + 1} of ${questions.length}`; first = false;
     // The last clause of the question is set in italics.
@@ -319,6 +416,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const before = mode === 'voice' && shown[at] ? shown[at] : null;
     at = Math.max(0, Math.min(shown.length - 1, i));
     if (before && before !== shown[at]) trail = { from: before, t: performance.now() + 500 };
+    if (w3 && before && before !== shown[at]) w3.flight(before, shown[at], `rgb(${RGB[tones[shown[at].score]]})`);
     const c = shown[at], step = scale.find(s => s.id === c.score), v = $('voice');
     v.style.setProperty('--c', css(step.tone));
     v.style.animation = 'none'; void v.offsetWidth; v.style.animation = '';
@@ -365,7 +463,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   });
   world.addEventListener('pointerup', e => {
     if (drag && !drag.moved && cards) {
-      const p = projection.invert([e.clientX, e.clientY]);
+      const p = w3 ? w3.invert(e.clientX, e.clientY) : projection.invert([e.clientX, e.clientY]);
       if (p) {
         const pool = mode === 'voice' ? shown : cards;
         let best = -1, d = .12;
