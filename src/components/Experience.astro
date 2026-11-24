@@ -1,0 +1,131 @@
+---
+// The Svapna experience: a question, the world lit by everyone who answered it, and their words one at a time.
+// Used as the home page and, unlisted, at /next for comparing looks.
+import { organizationSchema, websiteSchema } from '../lib/seo.js';
+import evidence from '../../public/globe-of-thought/evidence.js?raw';
+
+interface Props { indexable?: boolean }
+const { indexable = false } = Astro.props;
+const siteUrl = 'https://svapnaproject.org/';
+const title = 'Svapna — the big questions, answered across 4,000 years';
+const description = 'Answer one of life’s big questions and see the world light up with everyone who agreed: over 1,200 passages from thinkers on every continent, each checked at its source. A study of consciousness, from dreaming to death.';
+// Search engines and readers without scripts get the questions and a sample of passages as plain text.
+const atlas = JSON.parse(evidence.slice(evidence.indexOf('{'), evidence.lastIndexOf('}') + 1));
+const sample = atlas.questions.map(q => ({ q: q.question, cards: atlas.cards.filter(c => c.readings[q.id]).slice(0, 3) }));
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+{indexable ? <link rel="canonical" href={siteUrl} /> : <meta name="robots" content="noindex, nofollow" />}
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={siteUrl} />
+<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#03040a" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />
+{indexable && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />}
+{indexable && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema(siteUrl))} />}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@400&family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/next/next.css" />
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="w3" aria-hidden="true"></canvas>
+<canvas id="world" aria-label="The world, lit where people answered"></canvas>
+
+<header class="top">
+  <a class="mark" href="/" aria-label="Svapna home">∴ Svapna</a>
+  <div class="top-right">
+    <button id="open-menu" class="mono" type="button">Menu</button>
+    <a class="mono" href="/night">Dreaming</a>
+  </div>
+</header>
+
+<main id="stage" aria-live="polite">
+  <section id="ask" class="scene">
+    <p class="mono dim" id="ask-count"></p>
+    <h1 id="ask-q"></h1>
+    <div id="ask-answers" class="answers"></div>
+    <button id="ask-skip" class="mono link" type="button">Just show me the world</button>
+  </section>
+
+  <section id="echo" class="scene" hidden>
+    <p class="mono dim" id="echo-label"></p>
+    <p id="echo-line" class="big"></p>
+    <button id="echo-go" class="mono link" type="button">Hear them →</button>
+  </section>
+
+  <section id="voice" class="scene" hidden>
+    <p class="mono" id="voice-pos"></p>
+    <blockquote id="voice-text"></blockquote>
+    <p id="voice-tr" class="tr"></p>
+    <p id="voice-who"></p>
+    <p class="mono dim" id="voice-where"></p>
+    <p class="voice-links mono">
+      <a id="voice-source" target="_blank" rel="noopener">Read it at the source ↗</a>
+      <a id="voice-atlas">Why it sits here</a>
+    </p>
+  </section>
+</main>
+
+<footer class="dock" id="dock" hidden>
+  <div class="dock-row">
+    <button id="prev" type="button" aria-label="Earlier voice">←</button>
+    <div class="who-filter mono" id="filter"></div>
+    <button id="drift" class="mono" type="button" aria-pressed="true">Drifting</button>
+    <button id="next" type="button" aria-label="Later voice">→</button>
+  </div>
+  <canvas id="strip" aria-label="Every passage on this question, placed in time"></canvas>
+  <div class="dock-foot mono"><span id="t0"></span><span id="when"></span><span id="t1"></span></div>
+  <button id="again" class="mono link" type="button">Another question →</button>
+</footer>
+
+<div id="menu" class="menu" hidden>
+  <button id="close-menu" class="mono" type="button">Close</button>
+  <p class="mono dim">Fourteen questions</p>
+  <ol id="menu-list"></ol>
+  <p class="mono dim menu-more">The rest of Svapna</p>
+  <ul class="menu-links">
+    <li><a href="/night">Dreaming · the night, hour by hour</a></li>
+    <li><a href="/history">History of dream practice</a></li>
+    <li><a href="/curriculum">Lessons</a></li>
+    <li><a href="/library">Library and glossary</a></li>
+    <li><a href="/community">Community</a></li>
+    <li><a href="/support">Support · buy a coffee</a></li>
+  </ul>
+</div>
+
+<script is:inline src="/globe-of-thought/d3.min.js"></script>
+<script is:inline src="/globe-of-thought/land.js"></script>
+<script is:inline src="/globe-of-thought/evidence.js"></script>
+<script is:inline src="/next/three.min.js"></script>
+<script is:inline src="/next/next.js"></script>
+
+<noscript>
+  <div class="plain">
+    <h1>Svapna: the big questions, answered across four thousand years</h1>
+    <p>{description}</p>
+    {sample.map(s => (
+      <section>
+        <h2>{s.q}</h2>
+        {s.cards.map(c => <p>“{c.excerpt}” — {c.name}, {c.place}, {c.dateShort}. <a href={c.sourceUrl}>Source</a></p>)}
+      </section>
+    ))}
+    <p><a href="/globe-of-thought">All passages</a> · <a href="/night">Dreaming</a> · <a href="/history">History</a> · <a href="/library">Library</a> · <a href="/support">Support</a></p>
+  </div>
+</noscript>
+</body>
+</html>

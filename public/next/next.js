@@ -4,7 +4,8 @@
   const atlas = window.PILOT_EVIDENCE, land = window.PILOT_LAND;
   const $ = id => document.getElementById(id);
   // Looks: ?v=paper (default), ?v=field, ?v=ink, ?v=night (the first prototype).
-  const V = new URLSearchParams(location.search).get('v') || 'cine';
+  const V0 = new URLSearchParams(location.search).get('v') || 'cine', DAY = V0 === 'day', V = DAY ? 'aurora' : V0;
+  if (DAY) document.body.dataset.three = '1';
   document.body.dataset.v = V;
   const LOOK = {
     night: { rgb: { low: [91, 140, 255], mid: [240, 199, 94], high: [255, 107, 74], none: [154, 163, 184] }, dots: false, blend: 'lighter', land: '255,255,255', ring: '#fff' },
@@ -36,7 +37,7 @@
       return now;
     } catch (e) { return ROTATION[Math.floor(Date.now() / 864e5) % ROTATION.length]; }
   })();
-  const CINE = V === 'cine';
+  const CINE = V === 'cine' || DAY;
   const RGB = (V === 'aurora' || CINE) && PALETTES[C] ? { ...PALETTES[C], none: [110, 110, 120] } : L.rgb;
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
@@ -112,7 +113,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       draw(t, want, mouse) {
         for (let i = 0; i < 3; i++) w[i] += (want[i] - w[i]) * .03;
         m[0] += (mouse[0] - m[0]) * .04; m[1] += (mouse[1] - m[1]) * .04;
-        g.uniform2f(U.r, c.width, c.height); g.uniform1f(U.t, t); g.uniform1f(U.nar, innerWidth < 820 ? 1 : 0); g.uniform1f(U.dk, CINE ? 1 : 0);
+        g.uniform2f(U.r, c.width, c.height); g.uniform1f(U.t, t); g.uniform1f(U.nar, innerWidth < 820 ? 1 : 0); g.uniform1f(U.dk, CINE && !DAY ? 1 : 0);
         g.uniform3fv(U.c0, RGB.low.map(v => v / 255)); g.uniform3fv(U.c1, RGB.mid.map(v => v / 255)); g.uniform3fv(U.c2, RGB.high.map(v => v / 255));
         g.uniform3fv(U.w, w); g.uniform2fv(U.m, m);
         g.drawArrays(g.TRIANGLES, 0, 3);
@@ -139,19 +140,19 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     // The map is painted once: deep water, clear land, a hairline coast.
     const tw = 4096, th = 2048, tc = document.createElement('canvas'); tc.width = tw; tc.height = th;
     const tx2 = tc.getContext('2d'), eq = d3.geoEquirectangular().translate([tw / 2, th / 2]).scale(tw / (2 * Math.PI)), pth = d3.geoPath(eq, tx2);
-    tx2.fillStyle = '#060b1a'; tx2.fillRect(0, 0, tw, th);
-    tx2.beginPath(); pth(d3.geoGraticule10()); tx2.strokeStyle = 'rgba(255,255,255,.05)'; tx2.lineWidth = 1.5; tx2.stroke();
-    tx2.beginPath(); pth(land); tx2.fillStyle = '#2b3554'; tx2.fill(); tx2.strokeStyle = '#8fa0cf'; tx2.lineWidth = 2; tx2.stroke();
+    tx2.fillStyle = DAY ? '#eef2fb' : '#060b1a'; tx2.fillRect(0, 0, tw, th);
+    tx2.beginPath(); pth(d3.geoGraticule10()); tx2.strokeStyle = DAY ? 'rgba(10,20,60,.07)' : 'rgba(255,255,255,.05)'; tx2.lineWidth = 1.5; tx2.stroke();
+    tx2.beginPath(); pth(land); tx2.fillStyle = DAY ? '#1d2440' : '#2b3554'; tx2.fill(); tx2.strokeStyle = DAY ? '#0b1026' : '#8fa0cf'; tx2.lineWidth = 2; tx2.stroke();
     const tex = new T.CanvasTexture(tc); tex.anisotropy = 8;
-    const globe = new T.Mesh(new T.SphereGeometry(1, 96, 64), new T.MeshStandardMaterial({ map: tex, roughness: .9, metalness: 0, emissive: new T.Color('#0b1430'), emissiveIntensity: .35 }));
+    const globe = new T.Mesh(new T.SphereGeometry(1, 96, 64), new T.MeshStandardMaterial({ map: tex, roughness: .9, metalness: 0, emissive: new T.Color(DAY ? '#ffffff' : '#0b1430'), emissiveIntensity: DAY ? .16 : .35, emissiveMap: DAY ? tex : null }));
     turn.add(globe);
     // Air around the world, tinted by the answer in play.
     const air = new T.Mesh(new T.SphereGeometry(1.16, 64, 48), new T.ShaderMaterial({
-      uniforms: { c: { value: new T.Color('#6aa0ff') } }, transparent: true, side: T.BackSide, blending: T.AdditiveBlending, depthWrite: false,
+      uniforms: { c: { value: new T.Color('#6aa0ff') } }, transparent: true, side: T.BackSide, blending: DAY ? T.NormalBlending : T.AdditiveBlending, depthWrite: false,
       vertexShader: 'varying vec3 n;void main(){n=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
-      fragmentShader: 'uniform vec3 c;varying vec3 n;void main(){float k=pow(.72-dot(n,vec3(0.,0.,1.)),3.2);gl_FragColor=vec4(c,1.)*k*.75;}' }));
+      fragmentShader: 'uniform vec3 c;varying vec3 n;void main(){float k=pow(.72-dot(n,vec3(0.,0.,1.)),3.2);gl_FragColor=' + (DAY ? 'vec4(c,clamp(k*.9,0.,1.))' : 'vec4(c,1.)*k*.75') + ';}' }));
     scene.add(air);
-    scene.add(new T.AmbientLight(0xffffff, .5));
+    scene.add(new T.AmbientLight(0xffffff, DAY ? 1.05 : .5));
     const sun = new T.DirectionalLight(0xffffff, .95); sun.position.set(-2.4, 1.6, 2.2); scene.add(sun);
     // Lights for the passages: a point on the ground and a beam rising from it.
     const beams = new T.Group(); turn.add(beams);
@@ -163,13 +164,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       items = list.map(c => {
         const col = new T.Color(`rgb(${RGB[toneOf[c.score]]})`), at0 = P(c.lat, c.lng, 1.002);
         const dot = new T.Mesh(dotGeo, new T.MeshBasicMaterial({ color: col, transparent: true }));
-        const beam = new T.Mesh(beamGeo, new T.MeshBasicMaterial({ color: col, transparent: true, opacity: .5, blending: T.AdditiveBlending, depthWrite: false }));
+        const beam = new T.Mesh(beamGeo, new T.MeshBasicMaterial({ color: col, transparent: true, opacity: .5, blending: DAY ? T.NormalBlending : T.AdditiveBlending, depthWrite: false }));
         dot.position.copy(at0); beam.position.copy(at0); beam.quaternion.setFromUnitVectors(up, at0.clone().normalize()); beam.scale.y = .001;
         beams.add(dot, beam); return { c, dot, beam, h: 0 };
       });
     }
     // The marker on the voice being heard, and the path flown to reach it.
-    const ring = new T.Mesh(new T.RingGeometry(.028, .034, 48), new T.MeshBasicMaterial({ color: 0xffffff, transparent: true, side: T.DoubleSide, depthWrite: false })); turn.add(ring); ring.visible = false;
+    const ring = new T.Mesh(new T.RingGeometry(.028, .034, 48), new T.MeshBasicMaterial({ color: DAY ? 0x05060c : 0xffffff, transparent: true, side: T.DoubleSide, depthWrite: false })); turn.add(ring); ring.visible = false;
     const arcGeo = new T.BufferGeometry(); arcGeo.setAttribute('position', new T.BufferAttribute(new Float32Array(64 * 3), 3));
     const arc = new T.Line(arcGeo, new T.LineBasicMaterial({ color: 0xffffff, transparent: true })); turn.add(arc); arc.visible = false;
     function flight(a, b, col) {
