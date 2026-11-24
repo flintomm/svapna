@@ -27,8 +27,31 @@
   }
   const css = tone => `rgb(${RGB[tone]})`;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const questions = atlas.questions.filter(q => atlas.cards.some(c => c.readings[q.id]));
+  // The experience speaks plainly and warmly: its own wording for each question and answer, and an order
+  // that opens gently and reaches the heavier questions later. The atlas's own wording is unchanged.
+  const WARM = {
+    happiness: ['Where does happiness come from?', ['The life around me', 'A bit of both', 'Within me']],
+    'solitude-or-company': ['Are we better alone or together?', ['Alone', 'Both have a place', 'Together']],
+    relationships: ['How much do the people around us make us who we are?', ['Not much', 'They help', 'Completely']],
+    'inward-or-others': ['Do we find ourselves by looking inward, or through others?', ['Inward', 'Both', 'Through others']],
+    'given-or-made': ['Are we born who we are, or do we become it?', ['Born', 'Both', 'We become it']],
+    meaning: ['Is the meaning of a life found or made?', ['There is none', 'We make it', 'It is given']],
+    'self-or-others-first': ['Whose good comes first: mine or other people’s?', ['Mine', 'They are bound together', 'Other people’s']],
+    desire: ['What should we do with what we want?', ['Let it go', 'Train it', 'Follow it']],
+    'free-will': ['Are we free to choose?', ['No', 'Within limits', 'Yes']],
+    truth: ['Can the deepest truth be known?', ['No', 'In part', 'Yes']],
+    'lasting-self': ['Is there a lasting “me”?', ['No', 'A changing one', 'Yes']],
+    'ultimate-reality': ['Is there a God, or something ultimate?', ['No', 'Beyond words', 'Yes']],
+    suffering: ['Does suffering have a purpose?', ['None', 'It can be used', 'It has meaning']],
+    death: ['What happens when we die?', ['It ends', 'We cannot know', 'Something continues']],
+  };
+  const ORDER = Object.keys(WARM), GENTLE = 6;
+  const questions = atlas.questions.filter(q => atlas.cards.some(c => c.readings[q.id]))
+    .sort((a, b) => (ORDER.indexOf(a.id) + 99) % 99 - (ORDER.indexOf(b.id) + 99) % 99);
+  const ask_ = q => (WARM[q.id] ? WARM[q.id][0] : q.question);
+  const say = (q, step) => { const i = q.scale.filter(x => x.tone !== 'none').indexOf(step); return WARM[q.id] && i >= 0 ? WARM[q.id][1][i] : step.label; };
 
+  let first = true;
   let q, scale, tones, cards, shown, answer = null, filter = 'all', at = 0, mode = 'ask', drifting = true, driftTimer = 0;
 
   // ---- colour field (aurora look): a slow fluid of the three answer colours, drawn by a shader ----
@@ -222,9 +245,9 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     cards = atlas.cards.filter(c => c.readings[q.id]).map(c => ({ ...c, ...c.readings[q.id] })).sort((a, b) => a.sortYear - b.sortYear);
     answer = null; filter = 'all'; shown = cards; at = 0; spin = true; goal = null;
     clearTimeout(driftTimer);
-    $('ask-count').textContent = `Question ${questions.indexOf(q) + 1} of ${questions.length}`;
+    $('ask-count').textContent = first ? 'Welcome. Start with a question.' : `Question ${questions.indexOf(q) + 1} of ${questions.length}`; first = false;
     // The last clause of the question is set in italics.
-    const parts = q.question.split(' '), cut = Math.max(1, parts.length - 3);
+    const parts = ask_(q).split(' '), cut = Math.max(1, parts.length - 3);
     $('ask-q').textContent = ''; const lead = document.createElement('span'), em = document.createElement('em');
     words(lead, parts.slice(0, cut).join(' '), 70); words(em, parts.slice(cut).join(' '), 70);
     em.querySelectorAll('.w').forEach((n, i) => { n.style.animationDelay = (cut + i) * 70 + 'ms'; });
@@ -232,7 +255,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const box = $('ask-answers'); box.textContent = '';
     for (const s of scale.filter(s => s.tone !== 'none')) {
       const b = document.createElement('button'); b.type = 'button'; b.style.setProperty('--c', css(s.tone));
-      b.append(document.createElement('i'), s.label); b.addEventListener('click', () => echo(s)); box.append(b);
+      b.append(document.createElement('i'), say(q, s)); b.addEventListener('click', () => echo(s)); box.append(b);
     }
     history.replaceState(null, '', '#' + q.id);
     scene('ask');
@@ -241,7 +264,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   function echo(step) {
     answer = step.id; filter = 'agree';
     const same = cards.filter(c => c.score === answer), first = same[0];
-    $('echo-label').textContent = q.question;
+    $('echo-label').textContent = ask_(q);
     const line = $('echo-line'); line.style.setProperty('--c', css(step.tone)); line.textContent = '';
     const b = document.createElement('b'), n = document.createElement('span'), rest = document.createElement('span');
     b.append(n, ` of ${cards.length}`); countUp(n, same.length);
@@ -278,7 +301,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const c = shown[at], step = scale.find(s => s.id === c.score), v = $('voice');
     v.style.setProperty('--c', css(step.tone));
     v.style.animation = 'none'; void v.offsetWidth; v.style.animation = '';
-    $('voice-pos').textContent = `${step.label} · ${at + 1} of ${shown.length}`;
+    $('voice-pos').textContent = `${say(q, step)} · ${at + 1} of ${shown.length}`;
     words($('voice-text'), '“' + c.excerpt + '”', 26);
     $('voice-tr').textContent = c.translation || '';
     $('voice-who').textContent = c.name;
@@ -335,7 +358,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   // Menu of questions.
   for (const item of questions) {
     const li = document.createElement('li'), b = document.createElement('button');
-    b.type = 'button'; b.textContent = item.question; b.addEventListener('click', () => { $('menu').hidden = true; ask(item); });
+    b.type = 'button'; b.textContent = ask_(item); b.addEventListener('click', () => { $('menu').hidden = true; ask(item); });
     li.append(b); $('menu-list').append(li);
   }
   $('open-menu').addEventListener('click', () => { $('menu').hidden = false; });
@@ -343,8 +366,9 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
 
   addEventListener('resize', size);
   const wanted = questions.find(item => '#' + item.id === location.hash);
-  // A different question greets each day.
-  ask(wanted || questions[Math.floor(Date.now() / 864e5) % questions.length]);
+  // A first visit opens on the gentlest question; later visits rotate through the gentle ones, a new one each day.
+  let seen = false; try { seen = localStorage.getItem('svapna_next_seen') === '1'; localStorage.setItem('svapna_next_seen', '1'); } catch (e) { /* private mode */ }
+  ask(wanted || (seen ? questions[Math.floor(Date.now() / 864e5) % GENTLE] : questions[0]));
   size();
   requestAnimationFrame(frame);
 })();
