@@ -6522,8 +6522,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.63,
       "lng": 110.92,
       "anchorType": "Traditional association",
-      "placeNote": "Legend has Laozi write the book at the western pass before leaving China. The story is not historical evidence and the linked text names no place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/1/216/216.txt",
+      "placeNote": "Wikipedia relates Sima Qian's account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi's historicity is debated and no contemporary record exists.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
       "review": "draft",
       "readings": {
         "desire": {
@@ -6535,7 +6535,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6556,8 +6556,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.63,
       "lng": 110.92,
       "anchorType": "Traditional association",
-      "placeNote": "Legend, first told by Sima Qian, has Laozi write the book for the keeper of a western pass, commonly identified as Hangu Pass. The legend is not history and the linked text does not state it; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/1/216/216.txt",
+      "placeNote": "Wikipedia relates Sima Qian's account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi's historicity is debated and no contemporary record exists.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
       "review": "draft",
       "readings": {
         "truth": {
@@ -6575,7 +6575,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7415,8 +7415,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.63,
       "lng": 110.92,
       "anchorType": "Traditional association",
-      "placeNote": "Legend has Laozi write the book at the western pass on leaving the Zhou realm; the story is not historical evidence. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/1/216/216.txt",
+      "placeNote": "Wikipedia relates Sima Qian's account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi's historicity is debated and no contemporary record exists.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -7428,7 +7428,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14195,8 +14195,8 @@ window.PILOT_EVIDENCE={
       "lat": 21.42,
       "lng": 39.83,
       "anchorType": "Traditional association",
-      "placeNote": "This sura is traditionally assigned to the Meccan period. The linked text does not confirm this directly; it still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "placeNote": "Wikipedia describes Surah Fatir as an earlier Meccan surah, believed to have been revealed in Mecca rather than later in Medina. Verse-level place of revelation is not recorded, so the pin follows the surah's classification.",
+      "placeSource": "https://en.wikipedia.org/wiki/Fatir",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -14221,7 +14221,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14350,8 +14350,8 @@ window.PILOT_EVIDENCE={
       "lat": 21.42,
       "lng": 39.83,
       "anchorType": "Traditional association",
-      "placeNote": "Muslim tradition counts Surah 18 among the chapters revealed at Mecca before the emigration to Medina; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Holy_Qur%27an_(Maulana_Muhammad_Ali)/18._The_Cave",
+      "placeNote": "Wikipedia describes Surah Al-Kahf as an earlier Meccan surah, revealed before Muhammad's hijra to Medina.",
+      "placeSource": "https://en.wikipedia.org/wiki/Surah_Al-Kahf",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -14363,7 +14363,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14384,8 +14384,8 @@ window.PILOT_EVIDENCE={
       "lat": 21.42,
       "lng": 39.83,
       "anchorType": "Traditional association",
-      "placeNote": "Muslim tradition counts this sura among those revealed at Mecca before the emigration to Medina, though some verses are assigned to Medina. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "placeNote": "Wikipedia describes Surah Al-Ankabut as a Meccan surah, believed to have been revealed in Mecca rather than later in Medina. Individual verses may be assigned differently, so the pin follows the surah's classification.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ankabut",
       "review": "draft",
       "readings": {
         "death": {
@@ -14397,7 +14397,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14519,8 +14519,8 @@ window.PILOT_EVIDENCE={
       "lat": 24.47,
       "lng": 39.61,
       "anchorType": "Traditional association",
-      "placeNote": "This sura is traditionally assigned to the Medina period. The linked text does not confirm this directly; it still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "placeNote": "Wikipedia describes Surah Al-Hujurat as a Medinan sura, revealed in 9 AH (630 CE), and links some of its verses to a Banu Tamim delegation visiting Muhammad in Medina.",
+      "placeSource": "https://en.wikipedia.org/wiki/Surah_Al-Hujurat",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -14533,7 +14533,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22278,9 +22278,9 @@ window.PILOT_EVIDENCE={
       "place": "Château de Montaigne, Dordogne, France",
       "lat": 44.88,
       "lng": 0.03,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Montaigne wrote the Essays in the tower library of his family château. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that by 1571 Montaigne had retired to the tower of the Château de Montaigne and, sealed in his library there, began the writings later compiled into the Essais, first published in 1580. The article does not date each essay, so the château marks the base of the whole work.",
+      "placeSource": "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
       "review": "draft",
       "readings": {
         "truth": {
@@ -22298,7 +22298,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22393,8 +22393,8 @@ window.PILOT_EVIDENCE={
       "lat": 44.84,
       "lng": 0.04,
       "anchorType": "Documented writing location",
-      "placeNote": "Montaigne wrote the early Essays in the tower library of his château; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "placeNote": "Wikipedia states that by 1571 Montaigne had retired to the tower of the Château de Montaigne and, sealed in his library there, began the writings later compiled into the Essais, first published in 1580. The article does not date each essay, so the château marks the base of the whole work.",
+      "placeSource": "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -22473,8 +22473,8 @@ window.PILOT_EVIDENCE={
       "lat": 44.88,
       "lng": 0.03,
       "anchorType": "Documented writing location",
-      "placeNote": "Montaigne wrote the Essays in the tower library of his estate in Périgord. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "placeNote": "Wikipedia states that by 1571 Montaigne had retired to the tower of the Château de Montaigne and, sealed in his library there, began the writings later compiled into the Essais, first published in 1580. The article does not date each essay, so the château marks the base of the whole work.",
+      "placeSource": "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -22498,7 +22498,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26623,8 +26623,8 @@ window.PILOT_EVIDENCE={
       "lat": 6,
       "lng": 7.1,
       "anchorType": "Setting named in the text",
-      "placeNote": "The chapter describes the beliefs of “Essaka”, the Igbo village Equiano names as his birthplace, which has not been securely identified; the book itself was written and published in London. The pin is a general point in Igboland; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "placeNote": "Wikipedia states that, according to his 1789 memoir, Equiano was born around 1745 in the village of Essaka, thought to be Isseke in today's Anambra State, Nigeria, though the identification is debated. The pin is a general point in Igboland, the setting the chapter describes.",
+      "placeSource": "https://en.wikipedia.org/wiki/Olaudah_Equiano",
       "review": "draft",
       "readings": {
         "death": {
@@ -26636,7 +26636,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26656,9 +26656,9 @@ window.PILOT_EVIDENCE={
       "place": "London, England",
       "lat": 51.51,
       "lng": -0.12,
-      "anchorType": "Documented writing location",
-      "placeNote": "Equiano wrote and published the Narrative in London in 1789; the episode recalled took place in the West Indies in the 1760s. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Equiano settled in London, where he became active in the abolitionist movement in the 1780s, and that his Narrative was first published in London in 1789. The article does not name the house where it was written, so the London pin rests on his residence and the place of publication.",
+      "placeSource": "https://en.wikipedia.org/wiki/Olaudah_Equiano",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -26670,7 +26670,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26690,9 +26690,9 @@ window.PILOT_EVIDENCE={
       "place": "London, England",
       "lat": 51.51,
       "lng": -0.12,
-      "anchorType": "Documented writing location",
-      "placeNote": "The Narrative was written and first published in London in 1789. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Equiano settled in London, where he became active in the abolitionist movement in the 1780s, and that his Narrative was first published in London in 1789. The article does not name the house where it was written, so the London pin rests on his residence and the place of publication.",
+      "placeSource": "https://en.wikipedia.org/wiki/Olaudah_Equiano",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -26704,7 +26704,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26724,9 +26724,9 @@ window.PILOT_EVIDENCE={
       "place": "London, England",
       "lat": 51.51,
       "lng": -0.12,
-      "anchorType": "Documented writing location",
-      "placeNote": "The Narrative was written and first published in London in 1789; the belief it describes is that of “Essaka”, an Igbo village in what is now south-eastern Nigeria. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Equiano settled in London, where he became active in the abolitionist movement in the 1780s, and that his Narrative was first published in London in 1789. The article does not name the house where it was written, so the London pin rests on his residence and the place of publication.",
+      "placeSource": "https://en.wikipedia.org/wiki/Olaudah_Equiano",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -26738,7 +26738,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26867,8 +26867,8 @@ window.PILOT_EVIDENCE={
       "lat": 51.51,
       "lng": -0.1,
       "anchorType": "Documented writing location",
-      "placeNote": "Wollstonecraft wrote the Vindication in London in 1791 and 1792 while working for the publisher Joseph Johnson. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "placeNote": "Wikipedia states that Wollstonecraft moved to London, where Joseph Johnson helped her find a place to live and work, and that she left for Paris in December 1792, having just written A Vindication of the Rights of Woman (1792). The book was therefore written in London, though the article gives no street address.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
       "review": "draft",
       "readings": {
         "desire": {
@@ -26886,7 +26886,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26907,8 +26907,8 @@ window.PILOT_EVIDENCE={
       "lat": 51.52,
       "lng": -0.12,
       "anchorType": "Documented writing location",
-      "placeNote": "Wollstonecraft wrote the book in London in six weeks in 1792; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "placeNote": "Wikipedia states that Wollstonecraft moved to London, where Joseph Johnson helped her find a place to live and work, and that she left for Paris in December 1792, having just written A Vindication of the Rights of Woman (1792). The book was therefore written in London, though the article gives no street address.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -26941,8 +26941,8 @@ window.PILOT_EVIDENCE={
       "lat": 51.51,
       "lng": -0.1,
       "anchorType": "Documented writing location",
-      "placeNote": "Wollstonecraft wrote the Vindication in London in 1791 and 1792 while working for the publisher Joseph Johnson. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "placeNote": "Wikipedia states that Wollstonecraft moved to London, where Joseph Johnson helped her find a place to live and work, and that she left for Paris in December 1792, having just written A Vindication of the Rights of Woman (1792). The book was therefore written in London, though the article gives no street address.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -26954,7 +26954,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26974,9 +26974,9 @@ window.PILOT_EVIDENCE={
       "place": "London, England",
       "lat": 51.52,
       "lng": -0.13,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Wollstonecraft wrote the book in London in late 1791, while living in Store Street, Bloomsbury. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Wollstonecraft moved to London, where Joseph Johnson helped her find a place to live and work, and that she left for Paris in December 1792, having just written A Vindication of the Rights of Woman (1792). The book was therefore written in London, though the article gives no street address.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -26988,7 +26988,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -27007,9 +27007,9 @@ window.PILOT_EVIDENCE={
       "place": "London, England",
       "lat": 51.53,
       "lng": -0.12,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Wollstonecraft was living and writing in London when the book appeared. The linked text does not confirm this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Wollstonecraft moved to London, where Joseph Johnson helped her find a place to live and work, and that she left for Paris in December 1792, having just written A Vindication of the Rights of Woman (1792). The book was therefore written in London, though the article gives no street address.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -27028,7 +27028,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -34162,9 +34162,9 @@ window.PILOT_EVIDENCE={
       "place": "At sea aboard the Kildonan Castle, between Britain and South Africa",
       "lat": -33.9,
       "lng": 18.6,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Gandhi wrote the book in November 1909 on the steamer Kildonan Castle while returning from London to South Africa; the pin is set near Cape Town, the ship’s destination, so that it falls on land. The scan’s passage does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/hindswarajorindi00ganduoft/hindswarajorindi00ganduoft_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Gandhi wrote Hind Swaraj in Gujarati while travelling from London to South Africa on board the SS Kildonan Castle, in 1909. The ship's position is not a fixed place, so the pin is set on land at Cape Town, the voyage's destination.",
+      "placeSource": "https://en.wikipedia.org/wiki/Hind_Swaraj",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -34176,7 +34176,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -34619,8 +34619,8 @@ window.PILOT_EVIDENCE={
       "lat": 40.97,
       "lng": -5.66,
       "anchorType": "Documented writing location",
-      "placeNote": "Unamuno was rector of the University of Salamanca when he wrote the book. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "placeNote": "Wikipedia states that Unamuno was professor of Greek at the University of Salamanca from 1891 and its rector from 1900 to 1924, and dates his major essay Tragic Sense of Life to 1913. The book therefore falls within his years at Salamanca, though the article does not name the room or month of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Miguel_de_Unamuno",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -34651,9 +34651,9 @@ window.PILOT_EVIDENCE={
       "place": "Salamanca, Spain",
       "lat": 40.96,
       "lng": -5.66,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Unamuno was rector of the University of Salamanca. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Unamuno was professor of Greek at the University of Salamanca from 1891 and its rector from 1900 to 1924, and dates his major essay Tragic Sense of Life to 1913. The book therefore falls within his years at Salamanca, though the article does not name the room or month of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Miguel_de_Unamuno",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -34678,7 +34678,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-22"
+        "date": "2026-11-24"
       }
     },
     {
@@ -34801,8 +34801,8 @@ window.PILOT_EVIDENCE={
       "lat": 40.97,
       "lng": -5.66,
       "anchorType": "Documented writing location",
-      "placeNote": "Unamuno wrote the book in Salamanca, where he was rector of the university. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/6/3/14636/14636-0.txt",
+      "placeNote": "Wikipedia states that Unamuno was professor of Greek at the University of Salamanca from 1891 and its rector from 1900 to 1924, and dates his major essay Tragic Sense of Life to 1913. The book therefore falls within his years at Salamanca, though the article does not name the room or month of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Miguel_de_Unamuno",
       "review": "draft",
       "readings": {
         "death": {
@@ -34814,7 +34814,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -35269,8 +35269,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.55,
       "lng": 74.34,
       "anchorType": "Approximate writing location",
-      "placeNote": "Iqbal lived and practised law in Lahore, where the poem was first published in 1915. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/7/3/1/57317/57317-0.txt",
+      "placeNote": "Wikipedia states that Iqbal returned to Lahore in 1908, established a law practice there and produced poetic compositions including Asrar-e-Khudi. The article does not name the room or month of composition, so Lahore marks his home and working base in those years.",
+      "placeSource": "https://en.wikipedia.org/wiki/Muhammad_Iqbal",
       "review": "draft",
       "readings": {
         "desire": {
@@ -35282,7 +35282,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -35301,9 +35301,9 @@ window.PILOT_EVIDENCE={
       "place": "Lahore (present-day Pakistan)",
       "lat": 31.55,
       "lng": 74.34,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Iqbal lived and practised law in Lahore. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/cu31924026904841/cu31924026904841_djvu.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Iqbal returned to Lahore in 1908, established a law practice there and produced poetic compositions including Asrar-e-Khudi. The article does not name the room or month of composition, so Lahore marks his home and working base in those years.",
+      "placeSource": "https://en.wikipedia.org/wiki/Muhammad_Iqbal",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -35328,7 +35328,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -36133,9 +36133,9 @@ window.PILOT_EVIDENCE={
       "place": "New York City, USA",
       "lat": 40.73,
       "lng": -73.95,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Gibran was born in Bsharri, Lebanon, and wrote The Prophet while living in New York, where it was published in 1923. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Gibran settled in New York in 1911 and that, by 1918, writing of The Prophet was underway while he lived there; the book was published by Knopf in 1923. The article gives no street address for the composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kahlil_Gibran",
       "review": "draft",
       "readings": {
         "death": {
@@ -36147,7 +36147,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -36168,8 +36168,8 @@ window.PILOT_EVIDENCE={
       "lat": 40.73,
       "lng": -73.99,
       "anchorType": "Documented writing location",
-      "placeNote": "Gibran, born in Bsharri in Lebanon, wrote and published The Prophet while living in his studio in New York. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "placeNote": "Wikipedia states that Gibran settled in New York in 1911 and that, by 1918, writing of The Prophet was underway while he lived there; the book was published by Knopf in 1923. The article gives no street address for the composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kahlil_Gibran",
       "review": "draft",
       "readings": {
         "desire": {
@@ -36181,7 +36181,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -36202,8 +36202,8 @@ window.PILOT_EVIDENCE={
       "lat": 40.73,
       "lng": -73.99,
       "anchorType": "Documented writing location",
-      "placeNote": "Gibran, born in Bsharri in Lebanon, wrote and published The Prophet while living in his studio in Greenwich Village, New York. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "placeNote": "Wikipedia states that Gibran settled in New York in 1911 and that, by 1918, writing of The Prophet was underway while he lived there; the book was published by Knopf in 1923. The article gives no street address for the composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kahlil_Gibran",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -36215,7 +36215,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -36236,8 +36236,8 @@ window.PILOT_EVIDENCE={
       "lat": 40.73,
       "lng": -73.99,
       "anchorType": "Documented writing location",
-      "placeNote": "Gibran, born in Bsharri in Lebanon, wrote and published The Prophet while living in his studio in Greenwich Village, New York. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "placeNote": "Wikipedia states that Gibran settled in New York in 1911 and that, by 1918, writing of The Prophet was underway while he lived there; the book was published by Knopf in 1923. The article gives no street address for the composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kahlil_Gibran",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -36255,7 +36255,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
