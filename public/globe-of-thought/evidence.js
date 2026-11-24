@@ -564,6 +564,40 @@ window.PILOT_EVIDENCE={
   ],
   "cards": [
     {
+      "id": "instructions-of-shuruppak-desire",
+      "question": "desire",
+      "name": "Instructions of Shuruppak",
+      "short": "Shuruppak",
+      "work": "The instructions of Shuruppak",
+      "excerpt": "Nothing at all is to be valued, but life should be sweet. You should not serve things; things should serve you.",
+      "period": "c. 2500 BCE (composition; copies from c. 2600 to c. 1700 BCE)",
+      "dateShort": "c. 2500 BCE",
+      "dateFull": "circa 2500 BCE",
+      "sortYear": -2500,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section5/tr561.htm",
+      "locator": "Lines 242-244 of the composite text.",
+      "place": "Shuruppak (Tell Fara), Iraq",
+      "lat": 31.77,
+      "lng": 45.52,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The text names Shuruppak, son of Ubara-Tutu, as the speaker and the city of Shuruppak as his home. The surviving copies come from several Sumerian cities, so the pin marks the setting named in the poem, not a place of writing.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section5/tr561.htm",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Mastering possessions",
+          "why": "The passage holds that nothing is worth being valued for itself and that wanting things must not turn a person into their servant. Desire for goods is placed under the person who owns them, which is education of desire rather than its renunciation or free indulgence.",
+          "limit": "A father's advice to his son in a Sumerian wisdom text, mixed with practical rules about donkeys and fields. ETCSL marks the sense of some neighbouring lines as unclear, and the text survives in many copies of differing date."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "ptahhotep-desire",
       "question": "desire",
       "name": "Ptahhotep",
@@ -595,6 +629,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "ptahhotep-happiness",
+      "question": "happiness",
+      "name": "Ptahhotep",
+      "short": "Ptahhotep",
+      "work": "The Teaching of Ptah-hetep, in Budge’s translation",
+      "excerpt": "If thou wouldst have thy lot as a leader a happy one, guard thyself against every evil deed",
+      "period": "c. 2400 BCE (Old Kingdom composition; surviving copies Middle Kingdom)",
+      "dateShort": "c. 2400 BCE",
+      "dateFull": "circa 2400 BCE",
+      "sortYear": -2400,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan, translation of the Teaching of Ptah-hetep",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Saying XIX of the Teaching of Ptah-hetep. The scanned text contains recognition errors.",
+      "place": "Memphis, Egypt",
+      "lat": 29.85,
+      "lng": 31.25,
+      "anchorType": "Traditional association",
+      "placeNote": "Ptahhotep is traditionally a vizier of the Fifth Dynasty at the court near Memphis. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "A happy lot through conduct",
+          "why": "The teacher says that a happy lot depends on guarding oneself against wrongdoing and greed. Well-being is made to rest on the person’s own conduct.",
+          "limit": "Budge’s early translation of a Middle Kingdom copy of an Old Kingdom instruction, addressed to a man in authority. The text elsewhere treats prosperity as given by God, and the advice is for officials, not for everyone."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -706,6 +774,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "pyramid-texts-death",
+      "question": "death",
+      "name": "Pyramid Texts",
+      "short": "Pyramid Texts",
+      "work": "Pyramid Texts of King Unis (Unas), as quoted by Breasted",
+      "excerpt": "Ho! King Unis! Thou didst not depart dead, thou didst depart living",
+      "period": "c. 2350 BCE (Fifth Dynasty, pyramid of Unas)",
+      "dateShort": "c. 2350 BCE",
+      "dateFull": "circa 2350 BCE",
+      "sortYear": -2350,
+      "sourceLabel": "James Henry Breasted, Development of Religion and Thought in Ancient Egypt (1912), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "locator": "Lecture II, the paragraph beginning “Over and over again we hear the indomitable assurance that the dead lives”. The scanned text contains recognition errors.",
+      "place": "Saqqara, Egypt",
+      "lat": 29.87,
+      "lng": 31.21,
+      "anchorType": "Documented inscription site",
+      "placeNote": "The texts of Unas are carved in his pyramid at Saqqara. The linked page is a scholar’s book that does not give the coordinates; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The king does not die",
+          "why": "The utterance tells the dead king that he has not died but gone on living, and the texts repeat the claim in many forms. Death is denied as an ending for the king, who continues in the sky.",
+          "limit": "A royal funerary ritual in Breasted’s 1912 translation, quoted from one of several similar utterances, and it concerns the king rather than ordinary people. The Pyramid Texts were later extended to non-royal burials."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "death-of-ur-namma-death",
+      "question": "death",
+      "name": "The death of Ur-Namma",
+      "short": "Death of Ur-Namma",
+      "work": "The death of Ur-Namma (Ur-Namma A, Sumerian poem)",
+      "excerpt": "The food of the nether world is bitter, the water of the nether world is brackish.",
+      "period": "c. 2100 BCE (composition soon after the death of Ur-Namma)",
+      "dateShort": "c. 2100 BCE",
+      "dateFull": "circa 2100 BCE",
+      "sortYear": -2100,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section2/tr2411.htm",
+      "locator": "Lines 76-87 of the composite text.",
+      "place": "Ur, Iraq",
+      "lat": 30.96,
+      "lng": 46.1,
+      "anchorType": "Setting named in the text",
+      "placeNote": "Ur-Namma ruled from Urim (Ur) and the poem mourns his death there. The linked page gives the translation only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section2/tr2411.htm",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The king in the nether world",
+          "why": "The dead king descends to the nether world, gives offerings to its gods and is received there. The dead go on in a grim place with its own food and water, so death is a change of place and not an end.",
+          "limit": "A Sumerian court poem about a king, with gaps, and it describes the fate of a ruler who has gifts and ritual to protect him. The same poem ends in lament that his death was a sudden disaster for Sumer."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "merikare-death",
       "question": "death",
       "name": "Instruction for King Merikare",
@@ -766,6 +902,108 @@ window.PILOT_EVIDENCE={
           "facet": "God’s care for his herd",
           "why": "The king is told that a single God made heaven and earth for humankind and tends them as a herd, so an ultimate maker and carer is affirmed.",
           "limit": "A royal instruction in Erman’s 1927 translation, surviving only in a later copy. The same passage says God also punishes, and the Egyptian word may be read as a god or as the divine."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "death-of-gilgamesh-death",
+      "question": "death",
+      "name": "The death of Gilgamesh",
+      "short": "Death of Gilgamesh",
+      "work": "The death of Gilgamesh (Sumerian poem)",
+      "excerpt": "will provide light for him in the nether world, the place of darkness.",
+      "period": "c. 2000 BCE (composition; copies from c. 1800 BCE)",
+      "dateShort": "c. 2000 BCE",
+      "dateFull": "circa 2000 BCE",
+      "sortYear": -2000,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section1/tr1813.htm",
+      "locator": "Segment E, lines 1-11 (Nibru version).",
+      "place": "Uruk, Iraq",
+      "lat": 31.32,
+      "lng": 45.64,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem is set in Unug (Uruk), the city of Gilgamesh. Copies come from Nippur and Me-Turan, so the pin marks the setting and not the place of writing.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section1/tr1813.htm",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead in the nether world",
+          "why": "The dying king is told that he is destined for kingship, not eternal life, but that the god Sisig will light his way in the nether world and he will be honoured among the dead. The person goes on, in a dark place and as a ghost.",
+          "limit": "A Sumerian narrative poem with many fragmentary lines, and the speaker of this passage is lost in the break. The same passage says the king cannot escape death, and the afterlife it describes is a shadowy one."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "dispute-man-ba-suffering",
+      "question": "suffering",
+      "name": "A Dispute over Suicide (The Dialogue of a Man with his Ba)",
+      "short": "Man and his Ba",
+      "work": "Dialogue of a Man with his Ba, in Breasted’s translation",
+      "excerpt": "To whom do I speak to-day? Evil smites the land, It hath no end.",
+      "period": "c. 2000 BCE (Middle Kingdom)",
+      "dateShort": "c. 2000 BCE",
+      "dateFull": "circa 2000 BCE",
+      "sortYear": -2000,
+      "sourceLabel": "James Henry Breasted, Development of Religion and Thought in Ancient Egypt (1912), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "locator": "Lecture VI, the poem “The Corruption of Men”, last lines. The scanned text contains recognition errors.",
+      "place": "Memphis, Egypt",
+      "lat": 29.85,
+      "lng": 31.25,
+      "anchorType": "Approximate association",
+      "placeNote": "The poem is conventionally dated to the Middle Kingdom, when the royal court sat near Memphis and Itj-tawy. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Despair at the world’s evil",
+          "why": "A man weary of life tells his soul that evil strikes the land without end and that no one is faithful. His misery is presented as a burden with no purpose, from which death offers the only relief.",
+          "limit": "Breasted’s 1912 translation of an obscure Middle Kingdom poem, and the “Misanthrope” title is his. The speaker is a literary figure in a dialogue with his own soul, and the poem does not rest in this despair."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "gilgamesh-enkidu-netherworld-death",
+      "question": "death",
+      "name": "Gilgamesh, Enkidu and the nether world",
+      "short": "Gilgamesh and the nether world",
+      "work": "Gilgamesh, Enkidu and the nether world (Sumerian poem)",
+      "excerpt": "\"Did you see him who had seven sons? How does he fare?\" \"As a companion of the gods he sits on a throne and listens to judgments.\"",
+      "period": "c. 2000 BCE (composition; copies from c. 1800 BCE)",
+      "dateShort": "c. 2000 BCE",
+      "dateFull": "circa 2000 BCE",
+      "sortYear": -2000,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section1/tr1814.htm",
+      "locator": "Segment B, lines 1-28 (the questions to Enkidu).",
+      "place": "Uruk, Iraq",
+      "lat": 31.32,
+      "lng": 45.64,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem is set in Unug (Uruk). Surviving copies come from scribal schools such as Nippur, so the pin marks the setting and not the place of writing.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section1/tr1814.htm",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The lot of the dead",
+          "why": "Enkidu returns from the nether world and reports to Gilgamesh how the dead fare. The dead keep a condition after death, and it depends on how many sons they left to honour them.",
+          "limit": "A Sumerian narrative poem, not a doctrine. The report is told as a dialogue in a story and is broken by gaps, and it describes a gloomy existence for most of the dead."
         }
       },
       "check": {
@@ -848,6 +1086,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "lament-for-sumer-and-urim-suffering",
+      "question": "suffering",
+      "name": "The lament for Sumer and Urim",
+      "short": "Lament for Sumer and Urim",
+      "work": "The lament for Sumer and Urim (Sumerian city lament)",
+      "excerpt": "My son, the city built for you in joy and prosperity was given to you as your reign. The destroyed city, the great wall, the walls with broken battlements: all this too is part of that reign.",
+      "period": "c. 2000 BCE (composition after the fall of Ur; copies from c. 1800 BCE)",
+      "dateShort": "c. 2000 BCE",
+      "dateFull": "circa 2000 BCE",
+      "sortYear": -2000,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section2/tr223.htm",
+      "locator": "Lines 460-474 of the composite text.",
+      "place": "Ur, Iraq",
+      "lat": 30.96,
+      "lng": 46.1,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The lament mourns Urim (Ur) and its temple of Nanna. Surviving copies come from Nippur and other scribal schools, so the pin marks the city mourned and not the place of writing.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section2/tr223.htm",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Ruin as part of a divine reign",
+          "why": "After the fall of Urim, the god Enlil answers his son Suen that the ruined city and its broken walls belong to the same reign that once gave the city joy. The suffering is treated as sent by the gods and included in their plan.",
+          "limit": "A literary lament written after the fall of Ur around 2004 BCE, and the reply is put in a god’s mouth, so it reflects scribal theology and not the experience of those who suffered. The text is large and partly broken."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "amenemhet",
       "name": "Amenemhet I (attributed)",
       "short": "Amenemhet",
@@ -922,6 +1194,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "enki-and-ninmah-meaning",
+      "question": "meaning",
+      "name": "Enki and Ninmah",
+      "short": "Enki and Ninmah",
+      "work": "Enki and Ninmah (Sumerian creation poem)",
+      "excerpt": "My mother, the creature you planned will really come into existence. Impose on him the work of carrying baskets.",
+      "period": "c. 1800 BCE (Old Babylonian copies of an older composition)",
+      "dateShort": "c. 1800 BCE",
+      "dateFull": "circa 1800 BCE",
+      "sortYear": -1800,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section1/tr112.htm",
+      "locator": "Lines 24-37 of the composite text.",
+      "place": "Eridu, Iraq",
+      "lat": 30.82,
+      "lng": 46,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem places the creation in the abzu of Enki at Eridu. The surviving copies come from Nippur and other cities, so the pin marks the setting only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section1/tr112.htm",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Humans made to carry the gods’ toil",
+          "why": "The minor gods are worn out digging canals, and the god Enki answers by having humans created and set to carrying baskets in their place. The purpose of human life is assigned by the gods at creation, which is a given meaning.",
+          "limit": "A myth of origins, not a reflection on the individual life, and the later part of the poem concerns the fates of disabled people. The creation of humans to serve the gods is stated as a story, not argued."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "epic-of-gilgamesh-death",
       "question": "death",
       "name": "Epic of Gilgamesh",
@@ -953,6 +1259,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "man-and-his-god-suffering",
+      "question": "suffering",
+      "name": "A man and his god",
+      "short": "Man and his god",
+      "work": "A man and his god (Sumerian lament)",
+      "excerpt": "Never has a sinless child been born to its mother",
+      "period": "c. 1800 BCE (Old Babylonian copies of an older composition)",
+      "dateShort": "c. 1800 BCE",
+      "dateFull": "circa 1800 BCE",
+      "sortYear": -1800,
+      "sourceLabel": "Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford, translation",
+      "sourceUrl": "https://etcsl.orinst.ox.ac.uk/section5/tr524.htm",
+      "locator": "Lines 97-105 of the composite text.",
+      "place": "Nippur, Iraq",
+      "lat": 32.13,
+      "lng": 45.18,
+      "anchorType": "Approximate association",
+      "placeNote": "Most surviving copies of the Sumerian text come from Nippur scribal schools. The linked page gives the translation only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://etcsl.orinst.ox.ac.uk/section5/tr524.htm",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Suffering and sin",
+          "why": "A young man blames his god for his suffering, then cites the saying that no one is sinless and confesses. The god relents and turns the suffering to joy, so the affliction is read as sent by the god and tied to guilt.",
+          "limit": "A literary lament, spoken in the voice of the sufferer, and the line is a proverb quoted inside his prayer. The text is damaged in places, and the sufferer first protests that he did nothing wrong."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1024,6 +1364,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "aten-hymn-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Great Hymn to the Aten",
+      "short": "Hymn to the Aten",
+      "work": "Great Hymn to the Aten (Amarna), in Breasted’s translation",
+      "excerpt": "How manifold are thy works! They are hidden from before (us), O sole God, whose powers no other possesseth",
+      "period": "c. 1350 BCE (reign of Akhenaten)",
+      "dateShort": "c. 1350 BCE",
+      "dateFull": "circa 1350 BCE",
+      "sortYear": -1350,
+      "sourceLabel": "James Henry Breasted, Development of Religion and Thought in Ancient Egypt (1912), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "locator": "Lecture XI, the hymn section headed “The Whole Creation”. The scanned text contains recognition errors.",
+      "place": "Amarna (Akhetaten), Egypt",
+      "lat": 27.65,
+      "lng": 30.9,
+      "anchorType": "Documented inscription site",
+      "placeNote": "The hymn is known from tomb inscriptions at Akhenaten’s city of Akhetaten, now Tell el-Amarna. The linked page is a scholar’s book; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "One god over all creation",
+          "why": "The hymn addresses the Aten as the one god whose power no other has, maker of the earth and of every people. It affirms a single supreme divine reality behind the world, whose works are hidden from human sight.",
+          "limit": "A court hymn of Akhenaten’s reign in a 1912 translation, and it is praise addressed to a god, not an argument. The text speaks of the sun disk, and the exclusive one-god claim belongs to this period of Egyptian religion only."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "great-hymn-to-the-aten-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Great Hymn to the Aten",
@@ -1055,6 +1429,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "instruction-of-ani-desire",
+      "question": "desire",
+      "name": "Instruction of Ani",
+      "short": "Ani",
+      "work": "The Teaching of Ani, in Budge’s translation",
+      "excerpt": "Fill not thy heart with love for the possessions of another man ; guard thyself [against this], and do it not.",
+      "period": "c. 1300 BCE (New Kingdom composition; papyrus copy later)",
+      "dateShort": "c. 1300 BCE",
+      "dateFull": "circa 1300 BCE",
+      "sortYear": -1300,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan, translation of the Teaching of Ani",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Saying XXV of the Teaching of Ani. The scanned text contains recognition errors.",
+      "place": "Thebes, Egypt",
+      "lat": 25.72,
+      "lng": 32.64,
+      "anchorType": "Approximate association",
+      "placeNote": "The Boulaq papyrus that preserves the text is of Theban origin by report. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Coveting another’s goods",
+          "why": "The teacher tells his reader not to fill his heart with desire for another man’s goods and to guard against it. Desire is held in check by instruction and not extinguished.",
+          "limit": "Budge’s early translation, with his bracketed additions, of a practical New Kingdom text, and the warning is about property of others. The same text approves marriage, a house and gardens."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "instruction-of-ani-happiness",
+      "question": "happiness",
+      "name": "Instruction of Ani",
+      "short": "Ani",
+      "work": "The Teaching of Ani, in Budge’s translation",
+      "excerpt": "or in a high one thou wilt not attain to full happiness; go forth on thy way, and thy foot shall find its place.",
+      "period": "c. 1300 BCE (New Kingdom composition; papyrus copy later)",
+      "dateShort": "c. 1300 BCE",
+      "dateFull": "circa 1300 BCE",
+      "sortYear": -1300,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan, translation of the Teaching of Ani",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Saying XLV of the Teaching of Ani. The scanned text contains recognition errors.",
+      "place": "Thebes, Egypt",
+      "lat": 25.72,
+      "lng": 32.64,
+      "anchorType": "Approximate association",
+      "placeNote": "The Boulaq papyrus that preserves the text is of Theban origin by report, and the author was a scribe of the royal household. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "unscored",
+          "facet": "Full happiness out of reach",
+          "why": "The teacher says that full happiness is not reached whether life is spent in a lowly state or a high one, and tells his reader to go forward on his way. The passage speaks directly to happiness but refuses both outer fortune and inner mastery as its source.",
+          "limit": "Budge’s early translation of a New Kingdom wisdom text, with some doubtful phrases, in a papyrus of later date. The verse stands among sayings on prudence and piety and is followed by the advice to go forward calmly."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1092,6 +1534,210 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "papyrus-anastasi-free-will",
+      "question": "free-will",
+      "name": "Prayer to Re-Harakhte (Papyrus Anastasi II)",
+      "short": "Papyrus Anastasi",
+      "work": "Prayer in Papyrus Anastasi II, in Breasted’s translation",
+      "excerpt": "Come to me, O Re-Harakhte, that thou mayest guide me; for thou art he that doeth, and none doeth without thee, but thou art he who doeth it.",
+      "period": "c. 1250 BCE (Nineteenth Dynasty)",
+      "dateShort": "c. 1250 BCE",
+      "dateFull": "circa 1250 BCE",
+      "sortYear": -1250,
+      "sourceLabel": "James Henry Breasted, Development of Religion and Thought in Ancient Egypt (1912), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "locator": "Lecture XII, the section on the age of personal piety. The scanned text contains recognition errors.",
+      "place": "Memphis, Egypt",
+      "lat": 29.85,
+      "lng": 31.25,
+      "anchorType": "Approximate association",
+      "placeNote": "Papyrus Anastasi II is a scribal miscellany of the Ramesside period, usually linked to the residence area around Memphis. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/developmentofrel00breauoft/developmentofrel00breauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "God as the one who acts",
+          "why": "The petitioner asks the sun-god to guide him and says that the god is the one who acts and that nothing is done without him. Human action is placed under the god’s doing, which leans toward determination.",
+          "limit": "A short prayer from a scribal papyrus in a 1912 translation, and it is devotion, not a worked-out doctrine of fate. The same prayer elsewhere says the speaker follows his own impulses like an ox after fodder."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "ludlul-bel-nemeqi-truth",
+      "question": "truth",
+      "name": "The Poem of the Righteous Sufferer (Ludlul bel nemeqi)",
+      "short": "Righteous Sufferer",
+      "work": "Langdon, Babylonian Wisdom, introduction summarizing the Poem of the Righteous Sufferer",
+      "excerpt": "What seems good to oneself is worthlessness before god. What to his mind is despicable, seems good before god. Who comprehends the will of the gods in the midst of heaven?",
+      "period": "c. 1200 BCE (Kassite period composition; copies to the 1st millennium BCE)",
+      "dateShort": "c. 1200 BCE",
+      "dateFull": "circa 1200 BCE",
+      "sortYear": -1200,
+      "sourceLabel": "S. Langdon, Babylonian Wisdom (1923), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/babylonianwisdom0000slan/babylonianwisdom0000slan_djvu.txt",
+      "locator": "Introduction, discussion of Tablet II of the Poem of the Righteous Sufferer. The scanned text contains recognition errors.",
+      "place": "Babylon, Iraq",
+      "lat": 32.54,
+      "lng": 44.42,
+      "anchorType": "Approximate association",
+      "placeNote": "The poem is usually placed in Babylonia in the Kassite period, with the sufferer’s city given as Nippur in the text. The linked page does not state where it was composed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/babylonianwisdom0000slan/babylonianwisdom0000slan_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "The will of the gods",
+          "why": "The sufferer, who has done all that seemed right, concludes that human judgment of what pleases a god is unreliable and that the divine will cannot be grasped. Knowledge of what the gods require is placed beyond human reach.",
+          "limit": "The words come from Langdon’s 1923 prose rendering of the poem inside his introduction, and the translation is old and has since been revised. The poem goes on to a restoration by the god Marduk, and the doubt here concerns divine will, not every kind of truth."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rig-veda-free-will",
+      "question": "free-will",
+      "name": "Rigveda, hymn to Varuna (Vasishtha)",
+      "short": "Rigveda VII.86",
+      "work": "Rigveda VII.86, in Griffith’s translation",
+      "excerpt": "Not our own will betrayed us, but seduction,",
+      "period": "c. 1200 BCE (Rigveda, Family Book VII)",
+      "dateShort": "c. 1200 BCE",
+      "dateFull": "circa 1200 BCE",
+      "sortYear": -1200,
+      "sourceLabel": "R. T. H. Griffith, The Hymns of the Rigveda (1889), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hymnsrigveda01grifgoog/hymnsrigveda01grifgoog_djvu.txt",
+      "locator": "Book VII, hymn 86, verse 6. The scanned text contains recognition errors.",
+      "place": "Punjab, India",
+      "lat": 30.9,
+      "lng": 75.85,
+      "anchorType": "Traditional association",
+      "placeNote": "The Rigvedic hymns were composed in the north-western part of the subcontinent, and Family Book VII is ascribed to the Vasishtha clan. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hymnsrigveda01grifgoog/hymnsrigveda01grifgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Sin and the will",
+          "why": "The singer pleads to Varuna that his offences came from seduction, thoughtlessness, wine, dice and anger, and not from his own will. His choices are shown as pulled by forces beyond intention, though he still asks for pardon as a wrongdoer.",
+          "limit": "A prayer for forgiveness in Griffith’s 1889 verse translation from a scan with recognition errors. The speaker may be excusing himself before a god, and the verse does not say whether such pulls can be resisted."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "amenemope-desire",
+      "question": "desire",
+      "name": "Instruction of Amenemope",
+      "short": "Amenemope",
+      "work": "The Teaching of Amen-em-apt, son of Kanekht",
+      "excerpt": "Fashion not thy heart in such wise that it hankers after things of wealth",
+      "period": "c. 1100 BCE (New Kingdom, Ramesside)",
+      "dateShort": "c. 1100 BCE",
+      "dateFull": "circa 1100 BCE",
+      "sortYear": -1100,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Seventh chapter, saying XXV. The scanned text contains recognition errors.",
+      "place": "Akhmim (Panopolis), Egypt",
+      "lat": 26.56,
+      "lng": 31.75,
+      "anchorType": "Approximate association",
+      "placeNote": "Amenemope is described as a scribal official of Panopolis in the papyrus title. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Hankering after wealth",
+          "why": "The teacher tells his reader not to shape his heart so that it hankers after luxuries, because luck and destiny are already at work. Desire is to be formed and held in check, not cut off.",
+          "limit": "Budge’s 1924 translation of a Ramesside instruction text, with his bracketed additions. The text allows a modest, honest livelihood, and the warning concerns grasping for wealth."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "amenemope-happiness",
+      "question": "happiness",
+      "name": "Instruction of Amenemope",
+      "short": "Amenemope",
+      "work": "The Teaching of Amen-em-apt, son of Kanekht",
+      "excerpt": "Better are bread-cakes of flour and water with a loving heart (or, mind) Than rich meats that carry with them bickering and quarrelling.",
+      "period": "c. 1100 BCE (New Kingdom, Ramesside)",
+      "dateShort": "c. 1100 BCE",
+      "dateFull": "circa 1100 BCE",
+      "sortYear": -1100,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Sixth chapter, saying XXIV (the second of two similar sayings with the same words).",
+      "place": "Akhmim (Panopolis), Egypt",
+      "lat": 26.56,
+      "lng": 31.75,
+      "anchorType": "Approximate association",
+      "placeNote": "Amenemope is described as a scribal official of Panopolis in the papyrus title. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "Contentment over wealth",
+          "why": "A plain meal eaten in goodwill is judged better than rich food eaten amid quarrels. Well-being is made to depend on the inner and social temper of a life as well as on having enough to eat.",
+          "limit": "Budge’s 1924 translation of a Ramesside instruction text, in a line-numbered verse layout with his bracketed alternatives. The proverb praises modest means and does not say that happiness holds up under real poverty or disaster."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "amenemope-truth",
+      "question": "truth",
+      "name": "Instruction of Amenemope",
+      "short": "Amenemope",
+      "work": "The Teaching of Amen-em-apt, son of Kanekht",
+      "excerpt": "For, most assuredly, thou knowest not the plans of God.",
+      "period": "c. 1100 BCE (New Kingdom, Ramesside)",
+      "dateShort": "c. 1100 BCE",
+      "dateFull": "circa 1100 BCE",
+      "sortYear": -1100,
+      "sourceLabel": "E. A. Wallis Budge, The Teaching of Amen-em-apt (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "locator": "Twenty-second chapter, line 455 of the papyrus. The scanned text contains recognition errors.",
+      "place": "Akhmim (Panopolis), Egypt",
+      "lat": 26.56,
+      "lng": 31.75,
+      "anchorType": "Approximate association",
+      "placeNote": "Amenemope is described as a scribal official of Panopolis in the papyrus title, and the text is known from a British Museum papyrus. The linked page does not give a place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/teachingofamenem0000eawa/teachingofamenem0000eawa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "The plans of God",
+          "why": "The teacher tells his reader that the plans of God are not known to him and that he should wait in silence and prostration. What God intends is placed beyond human knowledge.",
+          "limit": "Budge’s 1924 translation of a Ramesside instruction text, with his bracketed additions. The sentence is advice about patience in dealing with others, not a general claim about knowledge."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "rig-veda-truth",
       "question": "truth",
       "name": "Rig Veda",
@@ -1123,6 +1769,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "book-of-odes-death",
+      "question": "death",
+      "name": "Book of Odes (Shijing), “King Wen”",
+      "short": "Book of Odes",
+      "work": "Book of Odes, Major Odes of the Kingdom, Decade I, Ode 1, in Legge’s translation",
+      "excerpt": "is on high. Oh! bright is he in heaven.",
+      "period": "c. 1000 BCE (early Western Zhou)",
+      "dateShort": "c. 1000 BCE",
+      "dateFull": "circa 1000 BCE",
+      "sortYear": -1000,
+      "sourceLabel": "James Legge, The Shih King, in The Sacred Books of China (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Major Odes, Decade I, Ode 1, stanza 1. The scanned text contains recognition errors.",
+      "place": "Haojing (near Xi’an), China",
+      "lat": 34.25,
+      "lng": 108.8,
+      "anchorType": "Approximate association",
+      "placeNote": "The Major and Minor Odes mostly belong to the Zhou court in the Wei valley near modern Xi’an. The linked page does not name a place of composition; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead king in heaven",
+          "why": "The ode opens by saying that the dead King Wen is above and shining in heaven, moving at the side of God. The dead king continues as a spirit with power over his house.",
+          "limit": "A ritual court ode about a founder king, in Legge’s 1879 translation, so it does not speak for ordinary dead. Legge’s note stresses the passage but other readings treat the lines as figurative."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-odes-free-will",
+      "question": "free-will",
+      "name": "Book of Odes (Shijing), “King Wen”",
+      "short": "Book of Odes",
+      "work": "Book of Odes, Major Odes of the Kingdom, Decade I, Ode 1, in Legge’s translation",
+      "excerpt": "Do not cause your own extinction. Display and make bright your righteousness and fame",
+      "period": "c. 1000 BCE (early Western Zhou)",
+      "dateShort": "c. 1000 BCE",
+      "dateFull": "circa 1000 BCE",
+      "sortYear": -1000,
+      "sourceLabel": "James Legge, The Shih King, in The Sacred Books of China (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Major Odes, Decade I, Ode 1, stanza 6. The scanned text contains recognition errors.",
+      "place": "Haojing (near Xi’an), China",
+      "lat": 34.25,
+      "lng": 108.8,
+      "anchorType": "Approximate association",
+      "placeNote": "The Major and Minor Odes mostly belong to the Zhou court in the Wei valley near modern Xi’an. The linked page does not name a place of composition; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "A mandate that can be lost",
+          "why": "The ode tells the descendants of the fallen Shang that the appointment of Heaven is not easily kept and that they should not bring their own extinction. Heaven’s decree fixes the situation, but the people are told that their own conduct can lose or keep what it gives.",
+          "limit": "A court ode in Legge’s 1879 translation, addressed to the Shang nobles after the Zhou conquest, and the advice concerns a dynasty and its officers. It does not argue about choice as such."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1166,6 +1880,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "shu-king-free-will",
+      "question": "free-will",
+      "name": "Book of Documents (Shu Jing)",
+      "short": "Book of Documents",
+      "work": "Book of Documents, the Day of the Supplementary Sacrifice to Kao Zung, in Legge’s translation",
+      "excerpt": "It is not Heaven that cuts short men’s lives; they bring them to an end themselves.",
+      "period": "c. 1000 BCE (speech set c. 1200 BCE; composition probably early Zhou)",
+      "dateShort": "c. 1000 BCE",
+      "dateFull": "circa 1000 BCE",
+      "sortYear": -1000,
+      "sourceLabel": "James Legge, The Shu King (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Part IV, Book IX, paragraph 3. The scanned text contains recognition errors.",
+      "place": "Anyang, China",
+      "anchorType": "Setting named in the text",
+      "placeNote": "The speech is set at the Shang court, whose last capital was near Anyang. The linked page does not give the coordinates; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "lat": 36.1,
+      "lng": 114.3,
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Who ends a life",
+          "why": "A minister tells the king that Heaven judges people by their righteousness and that those who die early bring it on themselves by refusing to correct their conduct. People are held to answer for what they do.",
+          "limit": "Legge’s 1879 translation, in a speech set in the Shang period but probably composed in the early Zhou, and it speaks of length of life, not of every choice. The text still gives Heaven the role of judge and sender of warnings."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "zarathustra-free-will",
       "question": "free-will",
       "name": "Zarathustra (Gathas)",
@@ -1197,6 +1945,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "zoroaster-free-will",
+      "question": "free-will",
+      "name": "Zarathushtra (Gathas)",
+      "short": "Gathas",
+      "work": "Gathas, Yasna 30, in Mills’s translation",
+      "excerpt": "And between these two let the wisely acting choose aright.",
+      "period": "c. 1000 BCE (the date of the Gathas is disputed, from c. 1500 to c. 600 BCE)",
+      "dateShort": "c. 1000 BCE",
+      "dateFull": "circa 1000 BCE",
+      "sortYear": -1000,
+      "sourceLabel": "L. H. Mills, The Zend-Avesta, Part III (Sacred Books of the East, vol. 31, 1887), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/mlbd.zendavestasacredvo0000vol-31.unse/mlbd.zendavestasacredvo0000vol-31.unse_djvu.txt",
+      "locator": "Yasna 30, verses 2-3. The scanned text contains recognition errors.",
+      "place": "Bactria (Balkh), Afghanistan",
+      "lat": 36.76,
+      "lng": 66.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The Gathas are linked by tradition to Zarathushtra in eastern Iran, with Bactria one of the places proposed. The linked page does not settle the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.zendavestasacredvo0000vol-31.unse/mlbd.zendavestasacredvo0000vol-31.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Choosing between the two spirits",
+          "why": "The speaker names two primeval spirits, one better and one worse in thought, word and deed, and tells the wise to choose between them. The choice is placed with the individual, who is called on to decide for himself.",
+          "limit": "Mills’s 1887 translation is heavily bracketed and glossed, and the Gathic text is hard and disputed. The choice is framed by a cosmic dualism and a coming judgment, and the verses are a sermon, not an argument about causes."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1237,6 +2019,244 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "atharva-veda-death",
+      "question": "death",
+      "name": "Atharvaveda, hymn to Skambha",
+      "short": "Hymn to Skambha",
+      "work": "Atharvaveda X.8, in Griffith’s translation",
+      "excerpt": "Free from the fear of Death is he who knoweth that Soul courageous, youthful, undecaying.",
+      "period": "c. 900 BCE (Atharvaveda, middle books; compiled over several centuries)",
+      "dateShort": "c. 900 BCE",
+      "dateFull": "circa 900 BCE",
+      "sortYear": -900,
+      "sourceLabel": "R. T. H. Griffith, The Hymns of the Atharva-Veda, vol. 2 (1896), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "locator": "Book X, hymn 8, verse 44. The scanned text contains recognition errors.",
+      "place": "Kuru country (Kurukshetra), India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Traditional association",
+      "placeNote": "The Atharvaveda is traditionally associated with the Kuru-Panchala region of the upper Ganges plain. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The undying Soul",
+          "why": "The hymn says that whoever knows the Soul, which is undecaying and immortal, is free from fear of death. Something in the person does not die, which places the passage with a continuing self.",
+          "limit": "Griffith’s 1896 verse translation from a scan with recognition errors. The “Soul” is the cosmic supporter Skambha as well as the self, and the verse does not describe what follows bodily death."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "atharva-veda-truth",
+      "question": "truth",
+      "name": "Atharvaveda, hymn to Skambha",
+      "short": "Hymn to Skambha",
+      "work": "Atharvaveda X.8, in Griffith’s translation",
+      "excerpt": "I know the drawn-out string, the thread whereon these creatures all are strung. I know the thread’s thread also, thus I know the mighty Brahmana.",
+      "period": "c. 900 BCE (Atharvaveda, middle books; compiled over several centuries)",
+      "dateShort": "c. 900 BCE",
+      "dateFull": "circa 900 BCE",
+      "sortYear": -900,
+      "sourceLabel": "R. T. H. Griffith, The Hymns of the Atharva-Veda, vol. 2 (1896), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "locator": "Book X, hymn 8, verses 37-38. The scanned text contains recognition errors.",
+      "place": "Kuru country (Kurukshetra), India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Traditional association",
+      "placeNote": "The Atharvaveda is traditionally associated with the Kuru-Panchala region of the upper Ganges plain. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Knowing the thread of things",
+          "why": "The speaker claims to know the thread on which all creatures are strung and the thread behind it, and so to know the supreme Brahman. The deepest truth is held to be knowable by direct knowledge.",
+          "limit": "Griffith’s 1896 verse translation from a scan with recognition errors. The hymn also asks who among the many is Skambha and leaves the question open, so the claim to knowledge belongs to the knower and is not general."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "atharva-veda-desire",
+      "question": "desire",
+      "name": "Atharvaveda, hymn to Kama (Desire)",
+      "short": "Hymn to Desire",
+      "work": "Atharvaveda XIX.52, in Griffith’s translation",
+      "excerpt": "with whatever wish we make this offering to thee, May it be all fulfilled to us.",
+      "period": "c. 800 BCE (Atharvaveda, late book; compiled over several centuries)",
+      "dateShort": "c. 800 BCE",
+      "dateFull": "circa 800 BCE",
+      "sortYear": -800,
+      "sourceLabel": "R. T. H. Griffith, The Hymns of the Atharva-Veda, vol. 2 (1896), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "locator": "Book XIX, hymn 52, verse 4. The scanned text contains recognition errors.",
+      "place": "Kuru country (Kurukshetra), India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Traditional association",
+      "placeNote": "The Atharvaveda is traditionally associated with the Kuru-Panchala region of the upper Ganges plain. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Prayer that wishes be fulfilled",
+          "why": "The hymn honours Desire as the primal seed of spirit and asks that every wish made with the offering be fulfilled. Desire is welcomed and addressed as a power to be pleased, not renounced.",
+          "limit": "A ritual hymn from a scan with recognition errors, and the desire it affirms is for wealth, strength and victory tied to sacrifice. Other parts of the Atharvaveda and of Indian thought treat desire very differently."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "atharva-veda-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Atharvaveda, hymn to Time (Kala)",
+      "short": "Hymn to Time",
+      "work": "Atharvaveda XIX.53, in Griffith’s translation",
+      "excerpt": "Their son did he become who was their Father : no other higher power than he existeth.",
+      "period": "c. 800 BCE (Atharvaveda, late book; compiled over several centuries)",
+      "dateShort": "c. 800 BCE",
+      "dateFull": "circa 800 BCE",
+      "sortYear": -800,
+      "sourceLabel": "R. T. H. Griffith, The Hymns of the Atharva-Veda, vol. 2 (1896), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "locator": "Book XIX, hymn 53, verse 4. The scanned text contains recognition errors.",
+      "place": "Kuru country (Kurukshetra), India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Traditional association",
+      "placeNote": "The Atharvaveda is traditionally associated with the Kuru-Panchala region of the upper Ganges plain. The linked page does not state it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hymnsoftheatharv029485mbp/hymnsoftheatharv029485mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Time as the supreme power",
+          "why": "The hymn makes Time the maker of heaven and earth and of all living things, with no power above him. It affirms an ultimate reality, a deified Time that is both parent and child of the gods.",
+          "limit": "Griffith’s 1896 verse translation from a scan with recognition errors, and the sense of the verse is debated. The hymn belongs to a late book of the collection, and the claim is made in praise of a god, not as an argument."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-odes-happiness",
+      "question": "happiness",
+      "name": "Book of Odes (Shijing), “Tian bao”",
+      "short": "Book of Odes",
+      "work": "Book of Odes, Minor Odes of the Kingdom, Decade I, Ode 7, in Legge’s translation",
+      "excerpt": "Heaven protects and establishes thee. It grants thee all excellence, So that thine every matter is right, And thou receivest every Heavenly favour. It sends down to thee long-during happiness, Which the days are not sufficient to enjoy.",
+      "period": "c. 800 BCE (Western Zhou; traditionally ascribed to the Duke of Zhou)",
+      "dateShort": "c. 800 BCE",
+      "dateFull": "circa 800 BCE",
+      "sortYear": -800,
+      "sourceLabel": "James Legge, The Shih King, in The Sacred Books of China (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Minor Odes, Decade I, Ode 7, stanzas 1-2. The scanned text contains recognition errors.",
+      "place": "Haojing (near Xi’an), China",
+      "lat": 34.25,
+      "lng": 108.8,
+      "anchorType": "Approximate association",
+      "placeNote": "The Major and Minor Odes mostly belong to the Zhou court in the Wei valley near modern Xi’an. The linked page does not name a place of composition; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Happiness sent down by Heaven",
+          "why": "The ode wishes the king that Heaven will protect him, grant him excellence and send down long-lasting happiness. Happiness is treated as a favour that comes from Heaven.",
+          "limit": "A blessing ode sung to a king in Legge’s 1879 translation, and it expresses a wish and a courtly compliment, not a general account of happiness. The ode also credits the king’s sacrifices and filial piety."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-odes-suffering",
+      "question": "suffering",
+      "name": "Book of Odes (Shijing), “Qiao yan”",
+      "short": "Book of Odes",
+      "work": "Book of Odes, Minor Odes of the Kingdom, Decade V, Ode 4, in Legge’s translation",
+      "excerpt": "O vast and distant Heaven, Who art called our parent, That, without crime or offence, I should suffer from disorders thus great!",
+      "period": "c. 800 BCE (Western Zhou, traditionally under King Li)",
+      "dateShort": "c. 800 BCE",
+      "dateFull": "circa 800 BCE",
+      "sortYear": -800,
+      "sourceLabel": "James Legge, The Shih King, in The Sacred Books of China (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Minor Odes, Decade V, Ode 4, stanza 1. The scanned text contains recognition errors.",
+      "place": "Haojing (near Xi’an), China",
+      "lat": 34.25,
+      "lng": 108.8,
+      "anchorType": "Approximate association",
+      "placeNote": "The Major and Minor Odes mostly belong to the Zhou court in the Wei valley near modern Xi’an. The linked page does not name a place of composition; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Undeserved suffering",
+          "why": "A courtier slandered by the king cries to Heaven that he has committed no crime and yet suffers great disorders. The suffering is felt as undeserved, and the poem finds no purpose in it.",
+          "limit": "A complaint ode in Legge’s 1879 translation, spoken in the first person by a wronged official, and the ode goes on to attack slander rather than explain pain. The traditional dating to King Li’s reign is only approximate."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-odes-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Book of Odes (Shijing), “Yi”",
+      "short": "Book of Odes",
+      "work": "Book of Odes, Major Odes of the Kingdom, Decade III, in Legge’s translation",
+      "excerpt": "Great Heaven is intelligent, And is with you in all your goings. Great Heaven is clear-seeing, And is with you in your wanderings and indulgences.",
+      "period": "c. 800 BCE (Western Zhou, late)",
+      "dateShort": "c. 800 BCE",
+      "dateFull": "circa 800 BCE",
+      "sortYear": -800,
+      "sourceLabel": "James Legge, The Shih King, in The Sacred Books of China (Sacred Books of the East, vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Major Odes, Decade III, the ode of warnings to the king, final stanza. The scanned text contains recognition errors.",
+      "place": "Haojing (near Xi’an), China",
+      "lat": 34.25,
+      "lng": 108.8,
+      "anchorType": "Approximate association",
+      "placeNote": "The Major and Minor Odes mostly belong to the Zhou court in the Wei valley near modern Xi’an. The linked page does not name a place of composition; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Heaven that sees and accompanies",
+          "why": "The ode warns the king that Heaven is intelligent, sees all he does, and goes with him everywhere. It affirms a watching ultimate power that is aware of human conduct.",
+          "limit": "A warning ode in Legge’s 1879 translation, in verse, and it is addressed to a ruler. “Heaven” here may be a personal god or an order of things, and the text does not decide."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1427,8 +2447,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.42,
       "lng": 27.2,
       "anchorType": "Traditional association",
-      "placeNote": "Ancient tradition connects Homer with Smyrna and Chios in Ionia, where the epics are thought to have taken shape; nothing certain is known of the author. The scene itself is set on the walls of Troy. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/1/9/2199/2199-0.txt",
+      "placeNote": "Ancient accounts, the most widespread of which made Homer a blind bard from Ionia on the western coast of Anatolia, are treated by modern scholars as legendary, so the Ionian pin is a traditional association and nothing fixes where the poem was composed.",
+      "placeSource": "https://en.wikipedia.org/wiki/Homer",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -1440,7 +2460,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -1461,8 +2481,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.42,
       "lng": 27.2,
       "anchorType": "Traditional association",
-      "placeNote": "Ancient tradition connects Homer with Ionia, especially Smyrna and Chios; nothing certain is known about the poet or where the poem took shape. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Homer/iliad.24.xxiv.html",
+      "placeNote": "Ancient accounts, the most widespread of which made Homer a blind bard from Ionia on the western coast of Anatolia, are treated by modern scholars as legendary, so the Ionian pin is a traditional association and nothing fixes where the poem was composed.",
+      "placeSource": "https://en.wikipedia.org/wiki/Homer",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -1480,7 +2500,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -1501,8 +2521,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.4,
       "lng": 27.6,
       "anchorType": "Traditional association",
-      "placeNote": "The Iliad was composed in the Greek-speaking East Aegean, with Ionia and Chios the traditional homes of Homer. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/1/9/2199/2199-0.txt",
+      "placeNote": "Ancient accounts, the most widespread of which made Homer a blind bard from Ionia on the western coast of Anatolia, are treated by modern scholars as legendary, so the Ionian pin is a traditional association and nothing fixes where the poem was composed.",
+      "placeSource": "https://en.wikipedia.org/wiki/Homer",
       "review": "draft",
       "readings": {
         "truth": {
@@ -1535,8 +2555,8 @@ window.PILOT_EVIDENCE={
       "lat": 26.73,
       "lng": 85.92,
       "anchorType": "Traditional association",
-      "placeNote": "The text associates Yājñavalkya with the court of King Janaka of Videha. The teaching to Maitreyī has no stated location. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/upanishads02ml/upanishads02ml_djvu.txt",
+      "placeNote": "The Brihadaranyaka Upanishad is dated roughly to the 7th–6th century BCE with no known author or writing place; its dialogues are set at King Janaka's court in Mithila, in the Videha country, so Tradition places the text there and no contemporary record confirms it.",
+      "placeSource": "https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -1548,7 +2568,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -1568,9 +2588,9 @@ window.PILOT_EVIDENCE={
       "place": "Janakpur (ancient Videha), Nepal",
       "lat": 26.73,
       "lng": 85.93,
-      "anchorType": "Setting named in the text",
-      "placeNote": "The teaching is addressed to King Janaka of Videha, a kingdom traditionally centred near modern Janakpur; where the text was composed is not known. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/ThirteenPrincipalUpanishadsByRobertErnestHume/Thirteen%20Principal%20Upanishads%20by%20Robert%20Ernest%20Hume_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Brihadaranyaka Upanishad is dated roughly to the 7th–6th century BCE with no known author or writing place; its dialogues are set at King Janaka's court in Mithila, in the Videha country, so Tradition places the text there and no contemporary record confirms it.",
+      "placeSource": "https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -1582,7 +2602,41 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "hesiod-free-will",
+      "question": "free-will",
+      "name": "Hesiod",
+      "short": "Hesiod",
+      "work": "Works and Days, in Evelyn-White’s translation",
+      "excerpt": "Badness can be got easily and in shoals; the road to her is smooth, and she lives very near us. But between us and Goodness the gods have placed the sweat of our brows",
+      "period": "c. 700 BCE",
+      "dateShort": "c. 700 BCE",
+      "dateFull": "circa 700 BCE",
+      "sortYear": -700,
+      "sourceLabel": "H. G. Evelyn-White translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0132:card=286",
+      "locator": "Works and Days, lines 286-292.",
+      "place": "Ascra, Boeotia, Greece",
+      "lat": 38.3,
+      "lng": 23,
+      "anchorType": "Setting named in the text",
+      "placeNote": "Hesiod names Ascra in Boeotia as his home in the Works and Days. The linked page gives the translation only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0132:card=286",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "The road to goodness",
+          "why": "Hesiod tells his brother that vice is easy and close at hand while virtue lies behind toil that the gods have put in the way. The choice between them is real, but its terms are set by the gods.",
+          "limit": "A 1914 prose translation of a didactic poem addressed to one brother, and the advice is moral and practical. The poem elsewhere gives Zeus control of justice and fortune."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -1603,8 +2657,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.3,
       "lng": 23.1,
       "anchorType": "Traditional association",
-      "placeNote": "The poem addresses Hesiod’s brother Perses and is set at the poet’s home village of Ascra in Boeotia. The linked page does not give coordinates; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/hesiodhomerichym00hesi_0/hesiodhomerichym00hesi_0_djvu.txt",
+      "placeNote": "The Works and Days gives Hesiod's father as settling at Ascra in Boeotia, at the foot of Mount Helicon, where Hesiod's inheritance and dispute with his brother Perses are set; Ascra is the traditional home of the poet and the setting of the poem.",
+      "placeSource": "https://en.wikipedia.org/wiki/Hesiod",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -1637,8 +2691,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.3,
       "lng": 23,
       "anchorType": "Setting named in the text",
-      "placeNote": "The Theogony places the meeting with the Muses on Helicon in Boeotia, near Hesiod’s home at Ascra. The linked page gives the text; the pin is approximate, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/hesiodhomerichym00hesi_0/hesiodhomerichym00hesi_0_djvu.txt",
+      "placeNote": "Hesiod describes meeting the Muses on Mount Helicon, where he had been pasturing sheep (Theogony 22–35), so Helicon is the setting named in the poem; the page calls the story fanciful, and the place of composition is not given.",
+      "placeSource": "https://en.wikipedia.org/wiki/Hesiod",
       "review": "draft",
       "readings": {
         "truth": {
@@ -1711,8 +2765,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.42,
       "lng": 27.2,
       "anchorType": "Traditional association",
-      "placeNote": "Ancient tradition connected Homer with Smyrna and Chios in Ionia; the authorship and place of composition of the poem are unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Homer/odyssey.11.xi.html",
+      "placeNote": "Ancient accounts, the most widespread of which made Homer a blind bard from Ionia on the western coast of Anatolia, are treated by modern scholars as legendary, so the Ionian pin is a traditional association and nothing fixes where the poem was composed.",
+      "placeSource": "https://en.wikipedia.org/wiki/Homer",
       "review": "draft",
       "readings": {
         "death": {
@@ -1724,7 +2778,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -1745,8 +2799,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Setting named in the text",
-      "placeNote": "The chapter is set in the reign of Hezekiah at Jerusalem. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 38 belongs to chapters 36–39, which present King Hezekiah during the Assyrian threat to Judah; the page treats the book as an extended meditation on the destiny of Jerusalem, so Jerusalem is the setting of the narrative, while the date of the passage's composition is not fixed.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "death": {
@@ -2021,9 +3075,9 @@ window.PILOT_EVIDENCE={
       "place": "Videha (near present-day Janakpur, Nepal)",
       "lat": 26.73,
       "lng": 85.92,
-      "anchorType": "Narrative setting",
-      "placeNote": "The dialogues of Yajnavalkya are set at the court of Videha. Where the text was composed is unknown; the pin is a rough marker and still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/upanishads02ml/upanishads02ml_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Brihadaranyaka Upanishad is dated roughly to the 7th–6th century BCE with no known author or writing place; its dialogues are set at King Janaka's court in Mithila, in the Videha country, so Tradition places the text there and no contemporary record confirms it.",
+      "placeSource": "https://en.wikipedia.org/wiki/Brihadaranyaka_Upanishad",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -2042,7 +3096,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -2233,8 +3287,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "Jeremiah’s call is dated to the thirteenth year of Josiah, and he prophesied in Jerusalem. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -2301,8 +3355,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "The chapter is set in the fourth year of Jehoiakim, when Baruch was writing for Jeremiah in Jerusalem. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "desire": {
@@ -2449,8 +3503,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "Jeremiah prophesied in Jerusalem and Judah from about 626 BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -2483,8 +3537,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "Jeremiah prophesied in Jerusalem and Judah from about 626 BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -2517,8 +3571,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "Jeremiah prophesied in Jerusalem and Judah from about 626 BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -2585,8 +3639,8 @@ window.PILOT_EVIDENCE={
       "lat": 31.77,
       "lng": 35.21,
       "anchorType": "Traditional association",
-      "placeNote": "Chapter 29 is a letter sent from Jerusalem to the exiles in Babylon. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "The book is attributed to the prophet Jeremiah, whose mission began about 627 BCE and ran through the fall of Jerusalem, and it is addressed to the Jews of the Babylonian exile; no contemporary record fixes where this verse was spoken or written, so Jerusalem is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Jeremiah",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -2761,8 +3815,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "desire": {
@@ -2795,8 +3849,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -2829,8 +3883,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -2863,8 +3917,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -2897,8 +3951,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "truth": {
@@ -2931,8 +3985,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.54,
       "lng": 44.42,
       "anchorType": "Approximate setting",
-      "placeNote": "The chapters address Judeans exiled in Babylonia, where the prophet is usually placed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Isaiah 40–55 is described as the work of an anonymous author writing during the Exile in the 6th century BCE; Babylon, the place of the exile, is the conventional and approximate setting, and the page does not name a town of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Isaiah",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -3038,8 +4092,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.94,
       "lng": 27.34,
       "anchorType": "Approximate home association",
-      "placeNote": "Heraclitus is traditionally of Ephesus. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Fragments_of_Heraclitus",
+      "placeNote": "Heraclitus is recorded as born and dying at Ephesus in Ionia, and the fragments are tied to that city; the individual fragment is undated, so Ephesus marks where the thinker lived rather than a dated writing event.",
+      "placeSource": "https://en.wikipedia.org/wiki/Heraclitus",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -3058,7 +4112,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3078,9 +4132,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught mainly in his home state of Lu, whose capital stood at modern Qufu. The linked text does not place this exchange; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/3/3/3330/3330.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "death": {
@@ -3092,7 +4146,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3112,9 +4166,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught in his home state of Lu, whose capital was at Qufu. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/XVII",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -3126,7 +4180,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3146,9 +4200,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught his disciples chiefly in his home state of Lu, whose capital was at Qufu. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/VII",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -3160,7 +4214,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3180,9 +4234,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught in his home state of Lu, whose capital was at modern Qufu. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/II",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -3200,7 +4254,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3220,9 +4274,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught mainly in his home state of Lu, whose capital was at Qufu; where this remark was made is not recorded; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/0/9/4094/4094-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "truth": {
@@ -3234,7 +4288,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3254,9 +4308,9 @@ window.PILOT_EVIDENCE={
       "place": "Ephesus (near Selçuk), Turkey",
       "lat": 37.94,
       "lng": 27.4,
-      "anchorType": "Traditional association",
-      "placeNote": "Ancient sources agree that Heraclitus lived at Ephesus in Ionia and deposited his book in the temple of Artemis there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Fragments_of_Heraclitus",
+      "anchorType": "Approximate home association",
+      "placeNote": "Heraclitus is recorded as born and dying at Ephesus in Ionia, and the fragments are tied to that city; the individual fragment is undated, so Ephesus marks where the thinker lived rather than a dated writing event.",
+      "placeSource": "https://en.wikipedia.org/wiki/Heraclitus",
       "review": "draft",
       "readings": {
         "death": {
@@ -3268,7 +4322,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3285,12 +4339,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "King James Version, English Wikisource",
       "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
       "locator": "Chapter 14, verse 12.",
-      "place": "Jerusalem",
-      "lat": 31.78,
-      "lng": 35.23,
-      "anchorType": "Traditional association",
-      "placeNote": "The story is set in the land of Uz, whose location is uncertain; the Hebrew poem is generally thought to have been composed in Judah. The author is unknown; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "place": "Land of Uz (placed here in Edom, southern Jordan)",
+      "lat": 30.5,
+      "lng": 35.6,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book was composed by an anonymous, almost certainly Israelite author in the Persian period (540–330 BCE) and is set in the land of Uz, outside Israel; the page names no place of composition, and a later addition ties Job to the king of Edom, so the pin follows the setting, placed in Edom.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Job",
       "review": "draft",
       "readings": {
         "death": {
@@ -3302,7 +4356,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3319,12 +4373,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "King James Version, English Wikisource",
       "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
       "locator": "Chapter 2, verse 10.",
-      "place": "Jerusalem",
-      "lat": 31.78,
-      "lng": 35.23,
-      "anchorType": "Traditional association",
-      "placeNote": "The story is set in the land of Uz, of uncertain location; the Hebrew book is usually thought to have been composed in Judah, though author and place are unknown. the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "place": "Land of Uz (placed here in Edom, southern Jordan)",
+      "lat": 30.5,
+      "lng": 35.6,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book was composed by an anonymous, almost certainly Israelite author in the Persian period (540–330 BCE) and is set in the land of Uz, outside Israel; the page names no place of composition, and a later addition ties Job to the king of Edom, so the pin follows the setting, placed in Edom.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Job",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -3336,7 +4390,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3357,8 +4411,8 @@ window.PILOT_EVIDENCE={
       "lat": 30.5,
       "lng": 35.6,
       "anchorType": "Setting named in the text",
-      "placeNote": "The book’s first verse sets the story in the land of Uz, whose location is unknown; Edom is one traditional identification. Where the book was written is not known; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "placeNote": "The book opens in the land of Uz, outside Israel, and was composed by an anonymous Israelite author in the Persian period; the page names no place of composition, and a later addition ties Job to the king of Edom, so the pin follows the setting, placed in Edom.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Job",
       "review": "draft",
       "readings": {
         "truth": {
@@ -3370,7 +4424,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3387,12 +4441,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "King James Version, English Wikisource",
       "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
       "locator": "Chapter 11, verse 7.",
-      "place": "Jerusalem",
-      "lat": 31.78,
-      "lng": 35.23,
-      "anchorType": "Traditional association",
-      "placeNote": "The story is set in the land of Uz, of uncertain location; the Hebrew book is usually thought to have been composed in Judah, though author and place are unknown. the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "place": "Land of Uz (placed here in Edom, southern Jordan)",
+      "lat": 30.5,
+      "lng": 35.6,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book was composed by an anonymous, almost certainly Israelite author in the Persian period (540–330 BCE) and is set in the land of Uz, outside Israel; the page names no place of composition, and a later addition ties Job to the king of Edom, so the pin follows the setting, placed in Edom.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Job",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -3410,7 +4464,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3720,9 +4774,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, Shandong, China",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught in his home state of Lu, whose capital was at Qufu. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/VII",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -3734,7 +4788,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3754,9 +4808,9 @@ window.PILOT_EVIDENCE={
       "place": "Qufu, state of Lu (present-day Shandong, China)",
       "lat": 35.6,
       "lng": 116.99,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Confucius taught mainly in his home state of Lu, whose capital was at Qufu. The passage names no place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/XI",
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries, with a Lu version among its early textual traditions; Qufu, in Lu, is therefore a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -3768,7 +4822,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -3815,6 +4869,108 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "pindar-death",
+      "question": "death",
+      "name": "Pindar",
+      "short": "Pindar",
+      "work": "Olympian Ode 2, in Svarlien’s translation",
+      "excerpt": "the reckless souls of those who have died on earth immediately pay the penalty",
+      "period": "476 BCE",
+      "dateShort": "476 BCE",
+      "dateFull": "476 BCE",
+      "sortYear": -476,
+      "sourceLabel": "Diane Arnson Svarlien translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=2",
+      "locator": "Olympian 2, lines 56-60.",
+      "place": "Acragas (Agrigento), Sicily",
+      "lat": 37.3,
+      "lng": 13.58,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The ode celebrates Theron, tyrant of Acragas, and was written for his victory at Olympia in 476 BCE. The linked page gives the title and the occasion but not where Pindar composed it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=2",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Judgment and the islands of the blessed",
+          "why": "The ode says that the souls of those who died unjustly are punished at once, that a judge sits below the earth, and that the righteous reach the island of the blessed. The souls of the dead continue and are judged.",
+          "limit": "A victory ode for a tyrant, in a 1990 translation, and its picture of judgment draws on Orphic and Pythagorean ideas that Pindar adopts for this poem. Other odes speak of death more darkly."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "pindar-desire",
+      "question": "desire",
+      "name": "Pindar",
+      "short": "Pindar",
+      "work": "Pythian Ode 3, in Svarlien’s translation",
+      "excerpt": "Do not crave immortal life, my soul, but use to the full the resources of what is possible.",
+      "period": "c. 474 BCE",
+      "dateShort": "c. 474 BCE",
+      "dateFull": "circa 474 BCE",
+      "sortYear": -474,
+      "sourceLabel": "Diane Arnson Svarlien translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=3",
+      "locator": "Pythian 3, lines 59-62.",
+      "place": "Syracuse, Sicily",
+      "lat": 37.07,
+      "lng": 15.28,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The ode is addressed to Hieron of Syracuse. The linked page does not say where Pindar composed it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=3",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Limits of what to wish for",
+          "why": "The poet tells his own soul not to long for immortality and to use fully what is possible. Desire is kept within the limits of mortal life and not suppressed.",
+          "limit": "A letter-like ode to the tyrant Hieron in a 1990 translation, and the line is a consolation after the death of the healer Asclepius, not a general rule. It is addressed to the poet’s own soul."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "pindar-suffering",
+      "question": "suffering",
+      "name": "Pindar",
+      "short": "Pindar",
+      "work": "Pythian Ode 3, in Svarlien’s translation",
+      "excerpt": "The immortals dispense to men two pains for every blessing.” Fools cannot bear their pain with grace, but noble men can, by turning the good side outwards.",
+      "period": "c. 474 BCE",
+      "dateShort": "c. 474 BCE",
+      "dateFull": "circa 474 BCE",
+      "sortYear": -474,
+      "sourceLabel": "Diane Arnson Svarlien translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=3",
+      "locator": "Pythian 3, lines 80-83.",
+      "place": "Syracuse, Sicily",
+      "lat": 37.07,
+      "lng": 15.28,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The ode is addressed to Hieron of Syracuse. The linked page does not say where Pindar composed it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=3",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Two pains for every blessing",
+          "why": "The ode quotes an old saying that the gods give two pains for each blessing, and adds that the noble bear pain with grace. Suffering is to be borne well, and no purpose is given for it.",
+          "limit": "A consoling ode to the tyrant Hieron in a 1990 translation, and the saying is cited as old wisdom. The ode also holds that the gods allot fortune, which Pindar treats as beyond human control."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -4386,6 +5542,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "pindar-happiness",
+      "question": "happiness",
+      "name": "Pindar",
+      "short": "Pindar",
+      "work": "Pythian Ode 8, in Svarlien’s translation",
+      "excerpt": "Creatures of a day. What is someone? What is no one? Man is the dream of a shadow. But when the brilliance given by Zeus comes, a shining light is on man, and a gentle lifetime.",
+      "period": "446 BCE",
+      "dateShort": "446 BCE",
+      "dateFull": "446 BCE",
+      "sortYear": -446,
+      "sourceLabel": "Diane Arnson Svarlien translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=8",
+      "locator": "Pythian 8, lines 95-97.",
+      "place": "Aegina, Greece",
+      "lat": 37.74,
+      "lng": 23.43,
+      "anchorType": "Setting named in the text",
+      "smallIsland": true,
+      "placeNote": "The ode celebrates Aristomenes of Aegina and ends with a prayer for the island. The linked page does not say where Pindar composed it; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=P.:poem=8",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Brief light from Zeus",
+          "why": "The ode calls human beings creatures of a day and says that a shining and gentle life arrives only when Zeus gives it. Happiness is something conferred from outside, not secured by the person.",
+          "limit": "A victory ode for a wrestler, in a 1990 translation, and it praises good fortune that has come. It does not rule out effort, which the same ode honours."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "buddha-death",
       "question": "death",
       "name": "The Buddha",
@@ -4471,8 +5662,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.72,
       "lng": 16.45,
       "anchorType": "Traditional association",
-      "placeNote": "Herodotus, born at Halicarnassus, is said to have joined the colony of Thurii in southern Italy and to have finished his work there; he also spent time in Athens. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D1%3Achapter%3D207",
+      "placeNote": "Herodotus migrated to Thurii in Calabria in 443 BC or soon after, and Aristotle calls the author 'Herodotus of Thurium'; some passages show knowledge of Magna Graecia, but no source dates the writing of Book I to Thurii, so the pin is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Herodotus",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -4484,7 +5675,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -4967,8 +6158,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.992,
       "lng": 23.708,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato wrote and taught at the Academy in Athens; the dialogue itself is set at a dinner in Athens. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Plato/symposium.html",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -4980,7 +6171,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5047,8 +6238,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.992,
       "lng": 23.708,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato wrote and taught at the Academy outside Athens; the dialogue itself is set in the Piraeus. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Plato/republic.5.iv.html",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "desire": {
@@ -5060,7 +6251,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5081,8 +6272,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.99,
       "lng": 23.71,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato taught at the Academy outside Athens, and the Republic is usually dated to his middle years there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/9/1497/1497-0.txt",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -5094,7 +6285,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5115,8 +6306,8 @@ window.PILOT_EVIDENCE={
       "lat": 38.01,
       "lng": 23.71,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato taught at the Academy in Athens when he wrote the Republic; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/9/1497/1497-0.txt",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -5183,8 +6374,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.99,
       "lng": 23.71,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato wrote and taught at the Academy outside the walls of Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Plato/republic.8.vii.html",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "truth": {
@@ -5196,7 +6387,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5257,8 +6448,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.992,
       "lng": 23.708,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato taught at the Academy outside the walls of Athens; the dialogue is set in the Athenian prison. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Plato/phaedo.html",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "death": {
@@ -5270,7 +6461,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5291,8 +6482,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.992,
       "lng": 23.708,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Plato wrote his late dialogues while heading the Academy in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Plato/timaeus.html",
+      "placeNote": "Wikipedia states that Plato founded the Academy in Athens around 387 BC, and the pin marks that school as the place where he taught. No source consulted records where this dialogue was written, so the association is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -5310,7 +6501,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5520,8 +6711,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.974,
       "lng": 23.744,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Ethics is thought to derive from Aristotle’s lectures at the Lyceum in Athens. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -5533,7 +6724,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5554,8 +6745,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.74,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Ethics is thought to derive from lectures given at the Lyceum in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -5567,7 +6758,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5588,8 +6779,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.74,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Metaphysics is thought to derive from lectures given at the Lyceum in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/metaphysics.2.ii.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "truth": {
@@ -5601,7 +6792,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5622,8 +6813,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.974,
       "lng": 23.744,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Ethics is thought to derive from Aristotle’s lectures at the Lyceum in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "death": {
@@ -5635,7 +6826,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5656,8 +6847,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.745,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Aristotle taught at the Lyceum in Athens in the years to which the ethical lectures are usually dated. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "desire": {
@@ -5669,7 +6860,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5690,8 +6881,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.97,
       "lng": 23.75,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Ethics derives from Aristotle’s lectures at the Lyceum in Athens between 335 and 323 BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/8/4/3/8438/8438-0.txt",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -5703,7 +6894,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5724,8 +6915,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.745,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Aristotle taught at the Lyceum in Athens in the years to which the ethical lectures are usually dated. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -5737,7 +6928,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5758,8 +6949,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.74,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Aristotle taught and wrote at the Lyceum in Athens in his later years; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/8/4/3/8438/8438-0.txt",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -5792,8 +6983,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.74,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Aristotle taught and wrote at the Lyceum in Athens in his later years; the linked page gives the text only, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/politics.1.one.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -5826,8 +7017,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.974,
       "lng": 23.744,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Ethics derives from Aristotle’s lectures, usually linked to his school at the Lyceum in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -5839,7 +7030,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5860,8 +7051,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.974,
       "lng": 23.744,
       "anchorType": "Approximate teaching association",
-      "placeNote": "The Metaphysics derives from Aristotle’s lectures, usually linked to his school at the Lyceum in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Aristotle/metaphysics.12.xii.html",
+      "placeNote": "Aristotle founded his school in the Lyceum at Athens, where his surviving treatises were used in teaching; the page does not date this particular work to a specific building or year, so the Lyceum is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -5873,7 +7064,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -5968,8 +7159,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.72,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epicurus/menoec.html",
+      "placeNote": "Epicurus returned to Athens about 306 BC and founded the Garden, the school that met in a garden he owned, where he taught until his death; the text itself is undated, so the Garden is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epicurus",
       "review": "draft",
       "readings": {
         "death": {
@@ -5981,7 +7172,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6002,8 +7193,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.985,
       "lng": 23.715,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epicurus/menoec.html",
+      "placeNote": "Epicurus returned to Athens about 306 BC and founded the Garden, the school that met in a garden he owned, where he taught until his death; the text itself is undated, so the Garden is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epicurus",
       "review": "draft",
       "readings": {
         "desire": {
@@ -6015,7 +7206,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6036,8 +7227,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.72,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epicurus/menoec.html",
+      "placeNote": "Epicurus returned to Athens about 306 BC and founded the Garden, the school that met in a garden he owned, where he taught until his death; the text itself is undated, so the Garden is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epicurus",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -6049,7 +7240,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6070,8 +7261,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.985,
       "lng": 23.715,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epicurus/menoec.html",
+      "placeNote": "Epicurus returned to Athens about 306 BC and founded the Garden, the school that met in a garden he owned, where he taught until his death; the text itself is undated, so the Garden is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epicurus",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -6089,7 +7280,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6110,8 +7301,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.98,
       "lng": 23.72,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epicurus taught at his school, the Garden, in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epicurus/princdoc.html",
+      "placeNote": "Epicurus returned to Athens about 306 BC and founded the Garden, the school that met in a garden he owned, where he taught until his death; the text itself is undated, so the Garden is an approximate teaching association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epicurus",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -6129,7 +7320,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6257,9 +7448,9 @@ window.PILOT_EVIDENCE={
       "place": "Zoucheng, Shandong, China",
       "lat": 35.4,
       "lng": 116.97,
-      "anchorType": "Traditional association",
-      "placeNote": "Mencius came from the state of Zou, modern Zoucheng, and is traditionally said to have retired there to compile his teachings with disciples. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter14",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "desire": {
@@ -6271,7 +7462,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6291,9 +7482,9 @@ window.PILOT_EVIDENCE={
       "place": "Zoucheng, Shandong, China",
       "lat": 35.4,
       "lng": 117,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Mencius came from the state of Zou and is traditionally held to have retired there to teach and compile his sayings. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter13",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -6305,7 +7496,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6325,9 +7516,9 @@ window.PILOT_EVIDENCE={
       "place": "Zou (present-day Zoucheng, Shandong, China)",
       "lat": 35.4,
       "lng": 116.97,
-      "anchorType": "Traditional association",
-      "placeNote": "Mencius came from Zou and is said to have retired there to teach and compile his sayings. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter03",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -6339,7 +7530,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6360,8 +7551,8 @@ window.PILOT_EVIDENCE={
       "lat": 35.4,
       "lng": 116.97,
       "anchorType": "Approximate home association",
-      "placeNote": "Mencius came from Zou and is traditionally said to have retired there to set down his teachings after travelling among the courts. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter13",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -6373,7 +7564,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6393,9 +7584,9 @@ window.PILOT_EVIDENCE={
       "place": "Zoucheng, Shandong, China",
       "lat": 35.4,
       "lng": 116.97,
-      "anchorType": "Traditional association",
-      "placeNote": "Mencius came from the small state of Zou, at modern Zoucheng, and is said to have retired there to teach after travelling among the courts. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/lifeworksofmenci00mencuoft/lifeworksofmenci00mencuoft_djvu.txt",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -6407,7 +7598,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6427,9 +7618,9 @@ window.PILOT_EVIDENCE={
       "place": "Zou (Zoucheng), Shandong, China",
       "lat": 35.4,
       "lng": 116.97,
-      "anchorType": "Traditional association",
-      "placeNote": "Mencius was a native of the small state of Zou and is traditionally said to have retired there to teach. The linked text does not state where the saying was spoken; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter12",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -6441,7 +7632,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6461,9 +7652,9 @@ window.PILOT_EVIDENCE={
       "place": "Zou (Zoucheng), Shandong, China",
       "lat": 35.4,
       "lng": 116.97,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Mencius came from the small state of Zou and is traditionally said to have retired there to teach. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter13",
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by Mencius and his immediate disciples, perhaps shortly after his death. It does not say where this passage was spoken or written, so the pin marks his home state rather than a documented place of composition.",
+      "placeSource": "https://iep.utm.edu/mencius/",
       "review": "draft",
       "readings": {
         "truth": {
@@ -6481,7 +7672,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6650,8 +7841,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.42,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Early biography makes Zhuangzi a native and minor official of Meng in the state of Song, usually located near modern Shangqiu. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/9/7/0/59709/59709-0.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "death": {
@@ -6663,7 +7854,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6684,8 +7875,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.42,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Zhuangzi is said to have come from Meng in the state of Song, near modern Shangqiu. The linked text names no place of writing; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/sacredbookschin00legggoog/sacredbookschin00legggoog_djvu.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "desire": {
@@ -6697,7 +7888,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6718,8 +7909,8 @@ window.PILOT_EVIDENCE={
       "lat": 33.47,
       "lng": 115.6,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition places Zhuangzi in the state of Song near Meng; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/9/7/0/59709/59709-0.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -6752,8 +7943,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.42,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Early biography makes Zhuangzi a minor official at Meng in the state of Song, usually placed near modern Shangqiu. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_4",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -6765,7 +7956,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6786,8 +7977,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.45,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Early biography makes Zhuangzi a minor official at Meng in the state of Song, usually located near modern Shangqiu. The linked text does not say where the chapter was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/9/7/0/59709/59709-0.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -6805,7 +7996,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6826,8 +8017,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.42,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Early biography makes Zhuang Zhou a minor official at Meng in the state of Song, usually placed near modern Shangqiu. The linked text does not state where the chapter was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/9/7/0/59709/59709-0.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "truth": {
@@ -6839,7 +8030,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6900,8 +8091,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.45,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Early biography places Zhuangzi at Meng in the state of Song, usually identified with the Shangqiu area. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_6",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -6913,7 +8104,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -6932,9 +8123,9 @@ window.PILOT_EVIDENCE={
       "place": "Meng (near present-day Shangqiu, Henan, China)",
       "lat": 34.45,
       "lng": 115.65,
-      "anchorType": "Traditional place of origin",
-      "placeNote": "Han-era biographers speculated that Zhuangzi came from Meng; little about his life is secure. The modern location of Meng still needs an editor’s confirmation.",
-      "placeSource": "https://plato.stanford.edu/entries/zhuangzi/",
+      "anchorType": "Traditional association",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -6947,7 +8138,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7275,9 +8466,9 @@ window.PILOT_EVIDENCE={
       "place": "Jerusalem, Judah",
       "lat": 31.78,
       "lng": 35.22,
-      "anchorType": "Traditional association",
-      "placeNote": "The books were compiled in Judah over several centuries, with Jerusalem the usual association; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "anchorType": "Setting named in the text",
+      "placeNote": "The text introduces its speaker as Kohelet, son of David, king in Jerusalem (1:1); rabbinic tradition ascribes the book to Solomon, while Persian loanwords point to a later author, so Jerusalem is the setting named in the text and not a recorded place of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ecclesiastes",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -7419,8 +8610,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.85,
       "lng": 118.05,
       "anchorType": "Traditional association",
-      "placeNote": "Xunzi is recorded as magistrate of Lanling in the state of Chu, where he is said to have stayed and written in old age. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E6%AD%A3%E5%90%8D%E7%AF%87",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
       "review": "draft",
       "readings": {
         "desire": {
@@ -7438,7 +8629,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7459,9 +8650,9 @@ window.PILOT_EVIDENCE={
       "place": "Lanling, Shandong, China",
       "lat": 34.85,
       "lng": 118.05,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Xunzi served as magistrate of Lanling and by tradition stayed there to write in old age. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E5%A4%A9%E8%AB%96%E7%AF%87",
+      "anchorType": "Traditional association",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -7473,7 +8664,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7494,8 +8685,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.85,
       "lng": 118.05,
       "anchorType": "Traditional association",
-      "placeNote": "Xunzi is said to have been magistrate of Lanling in the state of Chu and to have stayed there to teach and write. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.103953/2015.103953.Works-Of-Hsuntze_djvu.txt",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -7507,7 +8698,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7529,8 +8720,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.85,
       "lng": 118.07,
       "anchorType": "Traditional association",
-      "placeNote": "Xunzi is recorded as magistrate of Lanling in Chu, where he is said to have stayed and written in old age. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E8%A7%A3%E8%94%BD%E7%AF%87",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
       "review": "draft",
       "readings": {
         "truth": {
@@ -7542,7 +8733,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7562,9 +8753,9 @@ window.PILOT_EVIDENCE={
       "place": "Linzi, Qi (present-day Shandong, China)",
       "lat": 36.87,
       "lng": 118.35,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Xunzi taught for years at the Jixia academy in Linzi, capital of Qi, and later held office at Lanling. Where this essay was written is not recorded; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.103953/2015.103953.Works-Of-Hsuntze_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -7576,7 +8767,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7637,8 +8828,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.45,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Zhuang Zhou is traditionally said to have been a minor official at Meng in the state of Song, near modern Shangqiu; the location of Meng is debated and this chapter is by later hands. The linked scan does not settle the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/chuangtzumysticm00chua/chuangtzumysticm00chua_djvu.txt",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -7650,7 +8841,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -7671,8 +8862,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.42,
       "lng": 115.65,
       "anchorType": "Traditional association",
-      "placeNote": "Zhuangzi is traditionally said to have been an official at Meng in the state of Song, near present-day Shangqiu. Where this later chapter was written is unknown; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Chuang_Tz%C5%AD_(Giles)/Chapter_22",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zhuang_Zhou",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -7690,7 +8881,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8211,9 +9402,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.5,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Almost nothing is known of the life of Lucretius; he is conventionally placed in Rome, where the poem circulated. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Carus/nature_things.3.iii.html",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "death": {
@@ -8225,7 +9416,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8246,8 +9437,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.55,
       "anchorType": "Traditional association",
-      "placeNote": "Almost nothing is known of Lucretius’ life; the poem is addressed to the Roman aristocrat Memmius and is usually assumed to have been written in or near Rome; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/7/8/785/785-0.txt",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -8259,7 +9450,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8279,9 +9470,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.5,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Lucretius is thought to have written the poem at Rome in the 50s BCE; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/7/8/785/785-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -8314,8 +9505,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.5,
       "anchorType": "Traditional association",
-      "placeNote": "Almost nothing is known of Lucretius’s life; he is conventionally associated with Rome, where the poem circulated. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Carus/nature_things.5.v.html",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -8327,7 +9518,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8348,8 +9539,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.5,
       "anchorType": "Traditional association",
-      "placeNote": "Almost nothing is known of Lucretius’s life; the poem is addressed to the Roman aristocrat Memmius and is conventionally placed at Rome. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Carus/nature_things.2.ii.html",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -8367,7 +9558,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8388,8 +9579,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.5,
       "anchorType": "Traditional association",
-      "placeNote": "Almost nothing is known of Lucretius’s life; the poem is addressed to the Roman aristocrat Memmius and is conventionally placed at Rome. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Carus/nature_things.5.v.html",
+      "placeNote": "Wikipedia states that very little is known about Lucretius's life, the only certainty being that he was a friend or client of Gaius Memmius, to whom the poem is addressed. No source records where the poem was written, so Rome is a conventional association with its Roman addressee.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucretius",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -8401,7 +9592,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8455,9 +9646,9 @@ window.PILOT_EVIDENCE={
       "place": "Tusculum (near Frascati), Italy",
       "lat": 41.8,
       "lng": 12.7,
-      "anchorType": "Setting named in the text",
-      "placeNote": "The discussions are set at Cicero’s villa at Tusculum in the Alban hills, where he wrote in 45 BCE after his daughter’s death. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/9/8/14988/14988.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The work takes its name from Cicero's villa at Tusculum, where it was reportedly written, in the villa's gallery built for philosophical conversation; the page hedges with 'reportedly', so the attribution is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tusculan_Disputations",
       "review": "draft",
       "readings": {
         "death": {
@@ -8475,7 +9666,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8804,8 +9995,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.89,
       "lng": 12.49,
       "anchorType": "Approximate writing location",
-      "placeNote": "The essay is usually dated to about 49 CE, when Seneca had returned from exile to Rome. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/On_the_shortness_of_life/Chapter_I",
+      "placeNote": "On the Shortness of Life is usually dated to about 49 CE, after Seneca’s return from exile on Corsica to Rome that year; it addresses Paulinus, who oversaw Rome’s grain supply, but no source states where it was written.",
+      "placeSource": "https://en.wikipedia.org/wiki/De_Brevitate_Vitae_(Seneca)",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -8817,7 +10008,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8872,8 +10063,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.95,
       "lng": 27.37,
       "anchorType": "Approximate writing location",
-      "placeNote": "Where Galatians was written is not stated; Ephesus is one common proposal, Antioch and Corinth are others. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Galatians",
+      "placeNote": "Wikipedia reports that some scholars suggest Galatians was written while Paul was staying in Ephesus, usually in the range of 53–57 CE, while other proposals give different dates and places; the Ephesus pin follows the first view and remains a scholarly proposal.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Galatians",
       "review": "draft",
       "readings": {
         "desire": {
@@ -8885,7 +10076,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8904,9 +10095,9 @@ window.PILOT_EVIDENCE={
       "place": "Ephesus (present-day Turkey)",
       "lat": 37.95,
       "lng": 27.37,
-      "anchorType": "Approximate writing location",
-      "placeNote": "The letter is usually said to have been written at Ephesus. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia reports that the First Epistle to the Corinthians is usually held to have been written during Paul's extended stay at Ephesus, where he says he will send Timothy to the Corinthians.",
+      "placeSource": "https://en.wikipedia.org/wiki/First_Epistle_to_the_Corinthians",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -8925,7 +10116,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -8979,9 +10170,9 @@ window.PILOT_EVIDENCE={
       "place": "Corinth, Greece",
       "lat": 37.91,
       "lng": 22.88,
-      "anchorType": "Traditional association",
-      "placeNote": "Romans is generally held to have been written from Corinth, on the evidence of names in its last chapter; the linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Romans was likely written while Paul was staying in the house of Gaius in Corinth, and notes that some textual variants carry subscripts naming Corinth as the place of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Romans",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -8993,7 +10184,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9013,9 +10204,9 @@ window.PILOT_EVIDENCE={
       "place": "Corinth, Greece",
       "lat": 37.91,
       "lng": 22.88,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Romans is generally held to have been dictated at Corinth, on the evidence of the people greeted in its last chapter. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Romans",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Romans was likely written while Paul was staying in the house of Gaius in Corinth, and notes that some textual variants carry subscripts naming Corinth as the place of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Romans",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -9027,7 +10218,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9047,9 +10238,9 @@ window.PILOT_EVIDENCE={
       "place": "Corinth, Greece",
       "lat": 37.91,
       "lng": 22.88,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Romans is generally held to have been dictated at Corinth, on the evidence of the people greeted in its last chapter. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Romans",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Romans was likely written while Paul was staying in the house of Gaius in Corinth, and notes that some textual variants carry subscripts naming Corinth as the place of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Romans",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -9067,7 +10258,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9087,9 +10278,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.49,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Seneca was at Nero’s court in Rome in the years to which the dialogue is usually dated. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Of_a_Happy_Life/Book_VI",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Seneca wrote this dialogue around 58 CE, probably early that year, while in a position of power at the court of Nero in Rome; the date is inferred from remarks in the work and from the attacks on his wealth made in 58.",
+      "placeSource": "https://en.wikipedia.org/wiki/De_Vita_Beata",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -9107,7 +10298,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9128,8 +10319,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.5,
       "anchorType": "Traditional association",
-      "placeNote": "The letter says it was written in captivity. Tradition places that captivity in Rome; Ephesus and Caesarea are also proposed. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Philippians",
+      "placeNote": "Wikipedia states that it is uncertain where Paul was when he wrote the letter or letters now making up Philippians; Ephesus (52–55 AD) and Caesarea Maritima (57–59) are proposed, but Rome around 62 AD is judged the most likely place of writing, so the pin follows that view.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Philippians",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -9147,7 +10338,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9168,8 +10359,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.5,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition says Paul wrote to the Philippians from imprisonment, in Rome or Ephesus; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/10/10-0.txt",
+      "placeNote": "Wikipedia states that it is uncertain where Paul was when he wrote the letter or letters now making up Philippians; Ephesus (52–55 AD) and Caesarea Maritima (57–59) are proposed, but Rome around 62 AD is judged the most likely place of writing, so the pin follows that view.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Philippians",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -9202,8 +10393,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.89,
       "lng": 12.49,
       "anchorType": "Traditional association",
-      "placeNote": "Seneca spent most of his career in Rome apart from his exile on Corsica; where and when this essay was written is not known. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Of_Providence",
+      "placeNote": "On Providence cannot be precisely dated; it is addressed to Lucilius and belongs to the last years of Seneca’s life, but no source says where it was written, so Rome is only a traditional marker.",
+      "placeSource": "https://en.wikipedia.org/wiki/De_Providentia",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -9221,7 +10412,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9241,9 +10432,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.89,
       "lng": 12.49,
-      "anchorType": "Approximate writing location",
-      "placeNote": "The letters were written in Seneca’s retirement, spent in Rome and at his villas in Italy; this letter names no place. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_54",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "readings": {
         "death": {
@@ -9255,7 +10446,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9275,9 +10466,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.55,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Seneca wrote the letters in his last years, in retirement at his villas near Rome and in Campania. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_107",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -9289,7 +10480,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9309,9 +10500,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.49,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Seneca wrote the letters in retirement, moving between Rome and his estates in Campania. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_90",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -9323,7 +10514,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9343,9 +10534,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.5,
-      "anchorType": "Approximate writing association",
-      "placeNote": "The letters were written in Seneca’s last years, mostly at Rome and on his estates; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_41",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -9377,9 +10568,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.5,
-      "anchorType": "Approximate writing association",
-      "placeNote": "The letters were written in Seneca’s last years, mostly at Rome and on his estates; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_7",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -9410,9 +10601,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.49,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Seneca wrote the letters in retirement near the end of his life, in and around Rome and Campania. The pin marks Rome and still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius/Letter_48",
+      "anchorType": "Traditional association",
+      "placeNote": "The Moral Letters were composed in the last years of Seneca’s life, after his retirement from court in 62 CE, when he lived quietly on his country estates and seldom visited Rome; the source names no single estate, so the Rome pin is a general marker for central Italy.",
+      "placeSource": "https://en.wikipedia.org/wiki/Seneca_the_Younger",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -9437,7 +10628,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9674,8 +10865,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.88,
       "lng": 12.48,
       "anchorType": "Traditional association",
-      "placeNote": "The letter presents its author as a prisoner, and tradition places the writing during Paul’s imprisonment in Rome. Authorship and place are both disputed; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Ephesians",
+      "placeNote": "Wikipedia reports that the letter is traditionally believed to have been written by Paul around AD 62 during his imprisonment in Rome, and that most scholars doubt Pauline authorship; the Rome pin therefore records tradition only.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_to_the_Ephesians",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -9693,7 +10884,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -9856,8 +11047,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.9,
       "lng": 12.55,
       "anchorType": "Documented writing location",
-      "placeNote": "Josephus, a priest from Jerusalem, wrote the Antiquities at Rome under Flavian patronage and finished it about 93 CE. The schools he describes were in Judea. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/4/2848/2848-0.txt",
+      "placeNote": "The biography states that Josephus lived in Rome under Flavian patronage and wrote all of his known works there.",
+      "placeSource": "https://en.wikipedia.org/wiki/Josephus",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -9869,7 +11060,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10136,8 +11327,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.02,
       "lng": 20.74,
       "anchorType": "Documented teaching location",
-      "placeNote": "Epictetus taught at Nicopolis in Epirus after his exile from Rome, and Arrian recorded the Discourses there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epictetus/discourses.3.three.html",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "death": {
@@ -10149,7 +11340,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10204,8 +11395,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.02,
       "lng": 20.75,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epictetus taught at Nicopolis after his banishment from Rome, and Arrian heard him there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epictetus/discourses.mb.txt",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -10229,7 +11420,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10364,8 +11555,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.03,
       "lng": 20.76,
       "anchorType": "Documented teaching location",
-      "placeNote": "Epictetus taught at Nicopolis after his banishment from Rome, and Arrian heard him there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epictetus/epicench.html",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "desire": {
@@ -10389,7 +11580,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10410,8 +11601,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.02,
       "lng": 20.75,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epictetus taught at Nicopolis in Epirus after his banishment from Rome, and Arrian heard him there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/5/1/0/45109/45109-0.txt",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -10429,7 +11620,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10450,8 +11641,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.03,
       "lng": 20.76,
       "anchorType": "Documented teaching location",
-      "placeNote": "Epictetus taught at Nicopolis after his banishment from Rome, and Arrian heard him there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epictetus/epicench.html",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -10469,7 +11660,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10490,8 +11681,8 @@ window.PILOT_EVIDENCE={
       "lat": 39.02,
       "lng": 20.74,
       "anchorType": "Approximate teaching association",
-      "placeNote": "Epictetus taught at Nicopolis after his banishment from Rome, and Arrian studied with him there. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Epictetus/epicench.html",
+      "placeNote": "Epictetus founded a school of philosophy at Nicopolis in Epirus after c. AD 93 and taught there for the rest of his life; his pupil Arrian wrote the lectures down about AD 108, so the Nicopolis school is the documented setting of the teaching recorded here, though the individual passage is undated.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -10503,7 +11694,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10703,7 +11894,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10724,8 +11915,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.11,
       "lng": 16.86,
       "anchorType": "Approximate writing location",
-      "placeNote": "A heading in the Meditations places one book “at Carnuntum” on the Danube frontier, where Marcus campaigned; where this section was written is not recorded. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "death": {
@@ -10737,7 +11928,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10758,8 +11949,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.11,
       "lng": 16.87,
       "anchorType": "Approximate writing location",
-      "placeNote": "Parts of the Meditations are headed as written on campaign at Carnuntum and among the Quadi; where Book IX was written is not recorded. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Antoninus/meditations.9.nine.html",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "desire": {
@@ -10771,7 +11962,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10792,8 +11983,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.11,
       "lng": 16.86,
       "anchorType": "Approximate writing location",
-      "placeNote": "Headings in the Meditations place parts of it at Carnuntum and on the river Gran during the Danube campaigns; where Book X was written is not recorded; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -10805,7 +11996,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10826,8 +12017,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.11,
       "lng": 16.87,
       "anchorType": "Approximate writing location",
-      "placeNote": "Parts of the Meditations are headed as written on campaign at Carnuntum and among the Quadi; where Book VII was written is not recorded. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Antoninus/meditations.7.seven.html",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -10839,7 +12030,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10859,9 +12050,9 @@ window.PILOT_EVIDENCE={
       "place": "Danube frontier, near Carnuntum, Austria",
       "lat": 48.11,
       "lng": 16.86,
-      "anchorType": "Traditional association",
-      "placeNote": "Tradition says the Meditations were composed during campaigns on the Danube frontier; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -10893,9 +12084,9 @@ window.PILOT_EVIDENCE={
       "place": "Carnuntum, Danube frontier (Austria)",
       "lat": 48.11,
       "lng": 16.86,
-      "anchorType": "Traditional association",
-      "placeNote": "Headings in the text place parts of the notebook among the Quadi and at Carnuntum during the Danube campaigns. Where Book 8 was written is not recorded; the place still needs an editor’s confirmation.",
-      "placeSource": "https://classics.mit.edu/Antoninus/meditations.mb.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -10907,7 +12098,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10927,9 +12118,9 @@ window.PILOT_EVIDENCE={
       "place": "Danube frontier, near Carnuntum, Austria",
       "lat": 48.11,
       "lng": 16.86,
-      "anchorType": "Traditional association",
-      "placeNote": "Tradition says the Meditations were composed during campaigns on the Danube frontier; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -10962,8 +12153,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.11,
       "lng": 16.86,
       "anchorType": "Approximate writing location",
-      "placeNote": "Parts of the Meditations carry headings naming Carnuntum and the river Gran, where Marcus campaigned on the Danube; where Book IV was written is not recorded. the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "placeNote": "Wikipedia reports that the Meditations were written during Marcus Aurelius's campaigns of 170–180 AD, with the first book headed as written among the Quadi at the Granova (Hron) and the second at Carnuntum. Where this book was written is not recorded, so the pin marks Carnuntum on the Danube frontier.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -10975,7 +12166,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -10995,9 +12186,9 @@ window.PILOT_EVIDENCE={
       "place": "Alexandria, Egypt",
       "lat": 31.15,
       "lng": 29.95,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Clement taught at the Christian school of Alexandria in the years when the work is thought to have been written. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.newadvent.org/fathers/02092.htm",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Paedagogus is dated to about 198 AD, when Clement was living and teaching in Alexandria, which he left during the persecution of 202–203.",
+      "placeSource": "https://en.wikipedia.org/wiki/Clement_of_Alexandria",
       "review": "draft",
       "readings": {
         "desire": {
@@ -11009,7 +12200,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11029,9 +12220,9 @@ window.PILOT_EVIDENCE={
       "place": "Carthage (near Tunis), Tunisia",
       "lat": 36.8,
       "lng": 10.1,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Tertullian lived and wrote at Carthage in Roman Africa; the Apology is addressed to provincial governors. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_III/Apologetic/Apology/Chapter_L",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Apology was written at Carthage in the summer or autumn of 197 CE, addressed to the provincial governors and the magistrates of Carthage; the pin is set slightly inland of the ancient city.",
+      "placeSource": "https://en.wikipedia.org/wiki/Apologeticum",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -11043,7 +12234,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11063,9 +12254,9 @@ window.PILOT_EVIDENCE={
       "place": "Carthage (near Tunis), Tunisia",
       "lat": 36.8,
       "lng": 10.1,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Tertullian lived and wrote at Carthage in Roman Africa; the Apology is addressed to provincial governors. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Ante-Nicene_Fathers/Volume_III/Apologetic/Apology/Chapter_XVII",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Apology was written at Carthage in the summer or autumn of 197 CE, addressed to the provincial governors and the magistrates of Carthage; the pin is set slightly inland of the ancient city.",
+      "placeSource": "https://en.wikipedia.org/wiki/Apologeticum",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -11083,7 +12274,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11456,8 +12647,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.72,
       "lng": 10,
       "anchorType": "Documented writing location",
-      "placeNote": "Cyprian was bishop of Carthage and wrote this treatise there during the plague of the 250s. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.newadvent.org/fathers/050707.htm",
+      "placeNote": "Cyprian was bishop of Carthage during the plague of the early 250s and wrote De mortalitate in that context, according to his biography; Carthage is the documented base of his ministry.",
+      "placeSource": "https://en.wikipedia.org/wiki/Cyprian",
       "review": "draft",
       "readings": {
         "death": {
@@ -11469,7 +12660,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11802,9 +12993,9 @@ window.PILOT_EVIDENCE={
       "place": "Hippo Regius (present-day Annaba, Algeria)",
       "lat": 36.86,
       "lng": 7.74,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Augustine wrote the Confessions in his first years as bishop of Hippo. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "desire": {
@@ -11816,7 +13007,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11836,9 +13027,9 @@ window.PILOT_EVIDENCE={
       "place": "Hippo Regius (present-day Annaba, Algeria)",
       "lat": 36.86,
       "lng": 7.74,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Augustine wrote the Confessions in his first years as bishop of Hippo. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -11856,7 +13047,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11877,8 +13068,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.8,
       "lng": 7.72,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine wrote the Confessions while bishop of Hippo Regius, modern Annaba. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -11896,7 +13087,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11917,8 +13108,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.88,
       "lng": 7.74,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine wrote the Confessions as bishop of Hippo Regius; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -11951,8 +13142,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.8,
       "lng": 7.72,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine wrote the Confessions while bishop of Hippo Regius, modern Annaba; the experience described took place at Milan. The linked text does not state where it was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "truth": {
@@ -11964,7 +13155,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -11985,8 +13176,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.85,
       "lng": 7.74,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine wrote the Confessions as bishop of Hippo Regius, the modern Annaba in Algeria. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -11998,7 +13189,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12017,9 +13208,9 @@ window.PILOT_EVIDENCE={
       "place": "Hippo Regius (present-day Annaba, Algeria)",
       "lat": 36.88,
       "lng": 7.75,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Augustine was bishop of Hippo when he wrote the Confessions. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_I/Volume_I/Confessions/Book_I/Chapter_1",
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -12038,7 +13229,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12092,9 +13283,9 @@ window.PILOT_EVIDENCE={
       "place": "Near Jiujiang (Chaisang), Jiangxi, China",
       "lat": 29.65,
       "lng": 115.95,
-      "anchorType": "Approximate home association",
-      "placeNote": "Tao Qian retired from office to farm near his native Chaisang, by modern Jiujiang below Mount Lu. The linked text does not state where the poem was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/2/2/9/42290/42290-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Tao Yuanming was born at Chaisang (modern Jiujiang) near Mount Lu and, after resigning office, returned home to farm; the source does not date or place this poem exactly, so the pin marks his home district.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Yuanming",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -12106,7 +13297,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12127,8 +13318,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.85,
       "lng": 7.74,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine began The City of God about 413 as bishop of Hippo Regius, the modern Annaba in Algeria. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers:_Series_I/Volume_II/City_of_God/Book_I/Chapter_8",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -12140,7 +13331,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12160,9 +13351,9 @@ window.PILOT_EVIDENCE={
       "place": "Near Jiujiang (Chaisang), Jiangxi, China",
       "lat": 29.65,
       "lng": 115.95,
-      "anchorType": "Approximate home association",
-      "placeNote": "Tao Qian retired from office to farm near his native Chaisang, by modern Jiujiang below Mount Lu. The linked text does not state where the poem was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/2/2/9/42290/42290-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Tao Yuanming was born at Chaisang (modern Jiujiang) near Mount Lu and, after resigning office, returned home to farm; the source does not date or place this poem exactly, so the pin marks his home district.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Yuanming",
       "review": "draft",
       "readings": {
         "death": {
@@ -12174,7 +13365,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12193,9 +13384,9 @@ window.PILOT_EVIDENCE={
       "place": "Chaisang (near present-day Jiujiang, Jiangxi, China)",
       "lat": 29.6,
       "lng": 116,
-      "anchorType": "Approximate home association",
-      "placeNote": "Tao Qian retired to farm at his home near Mount Lu. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/2/2/9/42290/42290-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Tao Yuanming was born at Chaisang (modern Jiujiang) near Mount Lu and, after resigning office, returned home to farm; the source does not date or place this poem exactly, so the pin marks his home district.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Yuanming",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -12220,7 +13411,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12239,9 +13430,9 @@ window.PILOT_EVIDENCE={
       "place": "Hippo Regius (present-day Annaba, Algeria)",
       "lat": 36.86,
       "lng": 7.74,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Augustine was bishop of Hippo when he wrote the City of God. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/5/3/0/45305/45305-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -12260,7 +13451,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12281,8 +13472,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.8,
       "lng": 7.7,
       "anchorType": "Documented writing location",
-      "placeNote": "Augustine was bishop of Hippo Regius from 395 until his death in 430 and wrote this work there for the monks of Hadrumetum. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.newadvent.org/fathers/1510.htm",
+      "placeNote": "Augustine was ordained at Hippo Regius in 391 and remained its bishop until his death in 430; the Confessions (written AD 397–400) and his other works cited here date from that episcopate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -12294,7 +13485,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12349,8 +13540,8 @@ window.PILOT_EVIDENCE={
       "lat": 13.03,
       "lng": 80.25,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition makes Tiruvalluvar a weaver of Mylapore, now part of Chennai; nothing certain is known of his life. The scan’s introduction reports the tradition; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/tiruvalluvanayan00tiruuoft/tiruvalluvanayan00tiruuoft_djvu.txt",
+      "placeNote": "Little is known with certainty of Valluvar’s life; he is believed to have lived at least in Mylapore, now part of Chennai, and the Kural cannot be dated more closely than a wide range from the fourth century BCE to the early fifth century CE, so the pin is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thiruvalluvar",
       "review": "draft",
       "readings": {
         "death": {
@@ -12362,7 +13553,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12383,8 +13574,8 @@ window.PILOT_EVIDENCE={
       "lat": 13.03,
       "lng": 80.25,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition makes Tiruvalluvar a weaver of Mylapore, now part of Chennai; nothing certain is known of his life. The scan’s introduction reports the tradition; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/tiruvalluvanayan00tiruuoft/tiruvalluvanayan00tiruuoft_djvu.txt",
+      "placeNote": "Little is known with certainty of Valluvar’s life; he is believed to have lived at least in Mylapore, now part of Chennai, and the Kural cannot be dated more closely than a wide range from the fourth century BCE to the early fifth century CE, so the pin is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thiruvalluvar",
       "review": "draft",
       "readings": {
         "desire": {
@@ -12396,7 +13587,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12417,8 +13608,8 @@ window.PILOT_EVIDENCE={
       "lat": 13.03,
       "lng": 80.25,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition makes Tiruvalluvar a weaver of Mylapore, now part of Chennai; nothing certain is known of his life. The scan’s introduction reports the tradition; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/tiruvalluvanayan00tiruuoft/tiruvalluvanayan00tiruuoft_djvu.txt",
+      "placeNote": "Little is known with certainty of Valluvar’s life; he is believed to have lived at least in Mylapore, now part of Chennai, and the Kural cannot be dated more closely than a wide range from the fourth century BCE to the early fifth century CE, so the pin is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thiruvalluvar",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -12430,7 +13621,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12451,8 +13642,8 @@ window.PILOT_EVIDENCE={
       "lat": 13.03,
       "lng": 80.25,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition makes Tiruvalluvar a weaver of Mylapore, now part of Chennai; nothing certain is known of his life. The scan’s introduction reports the tradition; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/tiruvalluvanayan00tiruuoft/tiruvalluvanayan00tiruuoft_djvu.txt",
+      "placeNote": "Little is known with certainty of Valluvar’s life; he is believed to have lived at least in Mylapore, now part of Chennai, and the Kural cannot be dated more closely than a wide range from the fourth century BCE to the early fifth century CE, so the pin is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thiruvalluvar",
       "review": "draft",
       "readings": {
         "truth": {
@@ -12464,7 +13655,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12625,12 +13816,12 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Traditional association",
-      "placeNote": "Boethius wrote the work while imprisoned, traditionally said to be near Pavia, before his execution; the place is traditional rather than documented, and the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
       "review": "draft",
       "short": "Boethius",
       "dateShort": "c. 524 CE",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "readings": {
         "free-will": {
           "score": "free",
@@ -12661,9 +13852,9 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Traditional association",
-      "placeNote": "Boethius is traditionally said to have written the work while imprisoned at Pavia before his execution. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -12675,7 +13866,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12693,12 +13884,12 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Traditional association",
-      "placeNote": "Boethius wrote the work while imprisoned, traditionally said to be near Pavia, before his execution; the place is traditional rather than documented, and the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
       "review": "draft",
       "short": "Boethius",
       "dateShort": "c. 524 CE",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "readings": {
         "meaning": {
           "score": "meaning-given",
@@ -12729,9 +13920,9 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Traditional association",
-      "placeNote": "Boethius wrote the work while imprisoned before his execution, by tradition at Pavia (ancient Ticinum). The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -12743,7 +13934,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12761,12 +13952,12 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Traditional association",
-      "placeNote": "Boethius wrote the work while imprisoned, traditionally said to be near Pavia, before his execution; the place is traditional rather than documented, and the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
       "review": "draft",
       "short": "Boethius",
       "dateShort": "c. 524 CE",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "readings": {
         "ultimate-reality": {
           "score": "ultimate-real",
@@ -12796,9 +13987,9 @@ window.PILOT_EVIDENCE={
       "place": "Pavia, Italy",
       "lat": 45.19,
       "lng": 9.16,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Boethius is traditionally said to have written the book in prison at Pavia. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Boethius wrote the Consolation in AD 523 while imprisoned and awaiting trial and execution under Theodoric; his biography places the imprisonment at Pavia.",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -12829,7 +14020,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -12931,8 +14122,8 @@ window.PILOT_EVIDENCE={
       "lat": 30.73,
       "lng": 116.47,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition places Sengcan at Shangu temple on Mount Wangong in Anhui. The attribution itself is uncertain and the linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://zh.wikisource.org/wiki/%E4%BF%A1%E5%BF%83%E9%8A%98",
+      "placeNote": "Tradition holds that Sengcan lived on Wangong Mountain in Anhui after receiving transmission and returned there before his death in 606; his authorship of the Xinxin Ming is itself only putative, so the pin is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sengcan",
       "review": "draft",
       "readings": {
         "truth": {
@@ -12944,7 +14135,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13430,9 +14621,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda, Bihar, India",
       "lat": 25.14,
       "lng": 85.44,
-      "anchorType": "Traditional association",
-      "placeNote": "Tibetan accounts say Shantideva recited the work to the monks of Nalanda. The accounts are late and the linked text does not confirm the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "readings": {
         "desire": {
@@ -13450,7 +14641,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13470,9 +14661,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda, Bihar, India",
       "lat": 25.14,
       "lng": 85.44,
-      "anchorType": "Traditional association",
-      "placeNote": "Tibetan and Indian tradition has Shantideva compose and recite the work as a monk at Nalanda. The scan’s introduction discusses the author; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -13484,7 +14675,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13504,9 +14695,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda, Bihar, India",
       "lat": 25.14,
       "lng": 85.44,
-      "anchorType": "Traditional association",
-      "placeNote": "Tibetan tradition says Shantideva was a monk at the monastic university of Nalanda and first recited the work there. The linked scan’s passage does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -13524,7 +14715,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13544,9 +14735,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda, Bihar, India",
       "lat": 25.14,
       "lng": 85.44,
-      "anchorType": "Traditional association",
-      "placeNote": "Tibetan and Indian tradition says Shantideva recited the work to the monks of Nalanda monastery. The linked translation is not the source for this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -13564,7 +14755,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13584,9 +14775,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda, Bihar, India",
       "lat": 25.14,
       "lng": 85.44,
-      "anchorType": "Traditional association",
-      "placeNote": "Tibetan accounts say Shantideva recited the work to the monks of Nalanda. The accounts are late and the linked text does not confirm the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "readings": {
         "truth": {
@@ -13598,7 +14789,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13617,9 +14808,9 @@ window.PILOT_EVIDENCE={
       "place": "Nalanda (present-day Bihar, India)",
       "lat": 25.136,
       "lng": 85.443,
-      "anchorType": "Traditional teaching association",
-      "placeNote": "Tradition makes Shantideva a monk of the monastery at Nalanda. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -13644,7 +14835,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -13698,11 +14889,11 @@ window.PILOT_EVIDENCE={
       "place": "Jarrow, Northumbria, England",
       "lat": 54.98,
       "lng": -1.48,
-      "anchorType": "Documented writing location",
-      "placeNote": "Bede lived and wrote at the monastery of Wearmouth-Jarrow, and finished the History in 731; the place still needs an editor’s confirmation.",
+      "anchorType": "Approximate association",
+      "placeNote": "Bede probably moved to the monastery at Jarrow in 682 and spent his life in the twin monastery of Monkwearmouth–Jarrow, where the History was composed and completed about 731; Jarrow is the usual association but the page does not name the monastery for each passage.",
       "review": "draft",
       "dateShort": "c. 731 CE",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/3/2/38326/38326-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Bede",
       "readings": {
         "death": {
           "score": "unknown",
@@ -13732,11 +14923,11 @@ window.PILOT_EVIDENCE={
       "place": "Jarrow, Northumbria, England",
       "lat": 54.98,
       "lng": -1.48,
-      "anchorType": "Documented writing location",
-      "placeNote": "Bede lived and wrote at the monastery of Wearmouth-Jarrow, and finished the History in 731; the place still needs an editor’s confirmation.",
+      "anchorType": "Approximate association",
+      "placeNote": "Bede probably moved to the monastery at Jarrow in 682 and spent his life in the twin monastery of Monkwearmouth–Jarrow, where the History was composed and completed about 731; Jarrow is the usual association but the page does not name the monastery for each passage.",
       "review": "draft",
       "dateShort": "c. 731 CE",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/3/2/38326/38326-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Bede",
       "readings": {
         "suffering": {
           "score": "has-meaning",
@@ -13767,10 +14958,10 @@ window.PILOT_EVIDENCE={
       "lat": 31.71,
       "lng": 35.33,
       "anchorType": "Traditional association",
-      "placeNote": "John is traditionally said to have written at the monastery of Mar Saba after leaving Damascus; the date and place are conventional, and the place still needs an editor’s confirmation.",
+      "placeNote": "John is believed to have become a monk at Mar Saba near Jerusalem, where tradition also places his death; the page gives no place of composition for the Exact Exposition, so Mar Saba is a traditional association.",
       "review": "draft",
       "dateShort": "c. 743 CE",
-      "placeSource": "https://www.newadvent.org/fathers/33044.htm",
+      "placeSource": "https://en.wikipedia.org/wiki/John_of_Damascus",
       "readings": {
         "death": {
           "score": "continues",
@@ -13801,10 +14992,10 @@ window.PILOT_EVIDENCE={
       "lat": 31.71,
       "lng": 35.33,
       "anchorType": "Traditional association",
-      "placeNote": "John is traditionally said to have written at the monastery of Mar Saba after leaving Damascus; the date and place are conventional, and the place still needs an editor’s confirmation.",
+      "placeNote": "John is believed to have become a monk at Mar Saba near Jerusalem, where tradition also places his death; the page gives no place of composition for the Exact Exposition, so Mar Saba is a traditional association.",
       "review": "draft",
       "dateShort": "c. 743 CE",
-      "placeSource": "https://www.newadvent.org/fathers/33042.htm",
+      "placeSource": "https://en.wikipedia.org/wiki/John_of_Damascus",
       "readings": {
         "desire": {
           "score": "train",
@@ -13835,10 +15026,10 @@ window.PILOT_EVIDENCE={
       "lat": 31.71,
       "lng": 35.33,
       "anchorType": "Traditional association",
-      "placeNote": "John is traditionally said to have written at the monastery of Mar Saba after leaving Damascus; the date and place are conventional, and the place still needs an editor’s confirmation.",
+      "placeNote": "John is believed to have become a monk at Mar Saba near Jerusalem, where tradition also places his death; the page gives no place of composition for the Exact Exposition, so Mar Saba is a traditional association.",
       "review": "draft",
       "dateShort": "c. 743 CE",
-      "placeSource": "https://www.newadvent.org/fathers/33042.htm",
+      "placeSource": "https://en.wikipedia.org/wiki/John_of_Damascus",
       "readings": {
         "free-will": {
           "score": "free",
@@ -13869,10 +15060,10 @@ window.PILOT_EVIDENCE={
       "lat": 31.71,
       "lng": 35.33,
       "anchorType": "Traditional association",
-      "placeNote": "John is traditionally said to have written at the monastery of Mar Saba after leaving Damascus; the date and place are conventional, and the place still needs an editor’s confirmation.",
+      "placeNote": "John is believed to have become a monk at Mar Saba near Jerusalem, where tradition also places his death; the page gives no place of composition for the Exact Exposition, so Mar Saba is a traditional association.",
       "review": "draft",
       "dateShort": "c. 743 CE",
-      "placeSource": "https://www.newadvent.org/fathers/33042.htm",
+      "placeSource": "https://en.wikipedia.org/wiki/John_of_Damascus",
       "readings": {
         "suffering": {
           "score": "has-meaning",
@@ -13903,10 +15094,10 @@ window.PILOT_EVIDENCE={
       "lat": 31.71,
       "lng": 35.33,
       "anchorType": "Traditional association",
-      "placeNote": "John is traditionally said to have written at the monastery of Mar Saba after leaving Damascus; the date and place are conventional, and the place still needs an editor’s confirmation.",
+      "placeNote": "John is believed to have become a monk at Mar Saba near Jerusalem, where tradition also places his death; the page gives no place of composition for the Exact Exposition, so Mar Saba is a traditional association.",
       "review": "draft",
       "dateShort": "c. 743 CE",
-      "placeSource": "https://www.newadvent.org/fathers/33041.htm",
+      "placeSource": "https://en.wikipedia.org/wiki/John_of_Damascus",
       "readings": {
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -14400,9 +15591,9 @@ window.PILOT_EVIDENCE={
       "lat": 29.15,
       "lng": 121.05,
       "anchorType": "Traditional association",
-      "placeNote": "Poems under the name Han Shan are traditionally linked to Cold Mountain in the Tiantai range; the poet's dates and even identity are uncertain, and the place still needs an editor’s confirmation.",
+      "placeNote": "Nothing certain is known of who Hanshan was or when he lived; the poems are said to have been written on rocks in the mountains he called home, and a preface places him near Guoqing Temple while poem 302 has him arrive at Tiantai Mountain. Tradition places him at Tiantai (Cold Mountain); no contemporary record fixes the place.",
       "review": "draft",
-      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷806",
+      "placeSource": "https://en.wikipedia.org/wiki/Hanshan_%28poet%29",
       "readings": {
         "death": {
           "score": "continues",
@@ -14435,9 +15626,9 @@ window.PILOT_EVIDENCE={
       "lat": 29.15,
       "lng": 121.05,
       "anchorType": "Traditional association",
-      "placeNote": "Poems under the name Han Shan are traditionally linked to Cold Mountain in the Tiantai range; the poet's dates and even identity are uncertain, and the place still needs an editor’s confirmation.",
+      "placeNote": "Nothing certain is known of who Hanshan was or when he lived; the poems are said to have been written on rocks in the mountains he called home, and a preface places him near Guoqing Temple while poem 302 has him arrive at Tiantai Mountain. Tradition places him at Tiantai (Cold Mountain); no contemporary record fixes the place.",
       "review": "draft",
-      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷806",
+      "placeSource": "https://en.wikipedia.org/wiki/Hanshan_%28poet%29",
       "readings": {
         "desire": {
           "score": "train",
@@ -14470,9 +15661,9 @@ window.PILOT_EVIDENCE={
       "lat": 29.15,
       "lng": 121.05,
       "anchorType": "Traditional association",
-      "placeNote": "Poems under the name Han Shan are traditionally linked to Cold Mountain in the Tiantai range; the poet's dates and even identity are uncertain, and the place still needs an editor’s confirmation.",
+      "placeNote": "Nothing certain is known of who Hanshan was or when he lived; the poems are said to have been written on rocks in the mountains he called home, and a preface places him near Guoqing Temple while poem 302 has him arrive at Tiantai Mountain. Tradition places him at Tiantai (Cold Mountain); no contemporary record fixes the place.",
       "review": "draft",
-      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷806",
+      "placeSource": "https://en.wikipedia.org/wiki/Hanshan_%28poet%29",
       "readings": {
         "suffering": {
           "score": "has-meaning",
@@ -14505,9 +15696,9 @@ window.PILOT_EVIDENCE={
       "lat": 29.15,
       "lng": 121.05,
       "anchorType": "Traditional association",
-      "placeNote": "Poems under the name Han Shan are traditionally linked to Cold Mountain in the Tiantai range; the poet's dates and even identity are uncertain, and the place still needs an editor’s confirmation.",
+      "placeNote": "Nothing certain is known of who Hanshan was or when he lived; the poems are said to have been written on rocks in the mountains he called home, and a preface places him near Guoqing Temple while poem 302 has him arrive at Tiantai Mountain. Tradition places him at Tiantai (Cold Mountain); no contemporary record fixes the place.",
       "review": "draft",
-      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷806",
+      "placeSource": "https://en.wikipedia.org/wiki/Hanshan_%28poet%29",
       "readings": {
         "truth": {
           "score": "knowable",
@@ -14618,9 +15809,9 @@ window.PILOT_EVIDENCE={
       "place": "Luoyang, Henan, China",
       "lat": 34.62,
       "lng": 112.45,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Bai Juyi was born in 772 and from 829 lived mostly in Luoyang, so a poem on turning sixty falls in his Luoyang years. The linked text does not name the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/2/2/9/42290/42290-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Bai Juyi settled near Luoyang, the eastern capital, and from about 831 lived there in nominal posts and retirement until his death in 846; the poem is of his sixtieth year, so Luoyang is an approximate association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bai_Juyi",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -14638,7 +15829,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14658,9 +15849,9 @@ window.PILOT_EVIDENCE={
       "place": "Baghdad, Iraq",
       "lat": 33.32,
       "lng": 44.4,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Al-Kindi worked in Baghdad under the Abbasid caliphs and dedicated On First Philosophy to the caliph al-Mu‘tasim. The place of writing is inferred; the place still needs an editor’s confirmation.",
-      "placeSource": "https://plato.stanford.edu/entries/al-kindi/",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Kindi was educated in Baghdad and became a prominent figure in the House of Wisdom there under the Abbasid caliphs; the page gives no date for this work, so Baghdad is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Kindi",
       "review": "draft",
       "readings": {
         "truth": {
@@ -14672,7 +15863,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14693,9 +15884,9 @@ window.PILOT_EVIDENCE={
       "place": "Baghdad, Iraq",
       "lat": 33.33,
       "lng": 44.4,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Al-Kindi worked in Baghdad under the Abbasid caliphs al-Ma’mun and al-Mu’tasim. The linked file does not address where the treatise was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://downloads.hindawi.org/books/96474972.pdf",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Kindi was educated in Baghdad and became a prominent figure in the House of Wisdom there under the Abbasid caliphs; the page gives no date for this work, so Baghdad is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Kindi",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -14707,7 +15898,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -14870,9 +16061,9 @@ window.PILOT_EVIDENCE={
       "place": "Iceland",
       "lat": 64.6,
       "lng": -21.4,
-      "anchorType": "Where the text was written down",
-      "placeNote": "The poem survives in an Icelandic manuscript; where its verses were first composed, in Norway or Iceland, is unknown. The pin is a rough marker and still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Poetic_Edda_(tr._Bellows)/Hovamol",
+      "anchorType": "Manuscript association",
+      "placeNote": "The only surviving source for the Hávamál is the Codex Regius, an Icelandic manuscript thought to have been written in the 1270s; the poem itself is dated by scholars to about 900–1000 AD with no known place of composition, so Iceland marks the manuscript, not the origin of the stanza.",
+      "placeSource": "https://en.wikipedia.org/wiki/Codex_Regius",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -14897,7 +16088,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15277,8 +16468,8 @@ window.PILOT_EVIDENCE={
       "lat": 41.65,
       "lng": -0.88,
       "anchorType": "Documented writing location",
-      "placeNote": "The treatise is dated to 1045 at Zaragoza, then a Muslim-ruled city where Ibn Gabirol lived. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/cu31924014141968/cu31924014141968_djvu.txt",
+      "placeNote": "Ibn Gabirol composed the Improvement of the Moral Qualities in Arabic by about age 23 to 25, while he lived in Zaragoza, which he was compelled to leave by 1045.",
+      "placeSource": "https://en.wikipedia.org/wiki/Solomon_ibn_Gabirol",
       "review": "draft",
       "readings": {
         "desire": {
@@ -15290,7 +16481,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15450,8 +16641,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, lived much of his life and is buried at Nishapur in Khorasan; where any single quatrain was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "death": {
@@ -15463,7 +16654,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15484,8 +16675,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born and died at Nishapur; the English wording was made by FitzGerald in Suffolk. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "desire": {
@@ -15497,7 +16688,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15518,8 +16709,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, lived much of his life and is buried at Nishapur in Khorasan; where any single quatrain was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -15531,7 +16722,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15552,8 +16743,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, worked for much of his life and was buried at Nishapur. The linked text does not say where any quatrain was composed; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -15571,7 +16762,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15592,8 +16783,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, worked for much of his life and died at Nishapur; where any given quatrain was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -15605,7 +16796,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15626,8 +16817,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, worked for much of his life and was buried at Nishapur. The linked text does not say where any quatrain was composed; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "truth": {
@@ -15639,7 +16830,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15660,8 +16851,8 @@ window.PILOT_EVIDENCE={
       "lat": 36.21,
       "lng": 58.8,
       "anchorType": "Traditional association",
-      "placeNote": "Khayyam was born, worked for much of his life and died at Nishapur; where any given quatrain was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -15679,7 +16870,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15698,9 +16889,9 @@ window.PILOT_EVIDENCE={
       "place": "Nishapur (present-day Iran)",
       "lat": 36.21,
       "lng": 58.8,
-      "anchorType": "Approximate home association",
-      "placeNote": "Khayyam was of Nishapur. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia states that Omar Khayyam was born at Nishapur in Khorasan and spent his boyhood there. The Rubáiyát quatrains cannot be placed individually, so the pin marks his native city as a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Omar_Khayyam",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -15725,7 +16916,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15865,9 +17056,9 @@ window.PILOT_EVIDENCE={
       "place": "Tus (near present-day Mashhad, Iran)",
       "lat": 36.48,
       "lng": 59.5,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Al-Ghazali wrote the Persian abridgement of his Revival after retiring to his native Tus. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.106793/2015.106793.Wisdom-Of-The-East-The-Alchemy-Of-Happiness_djvu.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's page groups the Alchemy of Happiness with works of his period of seclusion, after he left Baghdad and returned to Tus; the page does not give a single writing place, so Tus is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "readings": {
         "desire": {
@@ -15879,7 +17070,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15899,9 +17090,9 @@ window.PILOT_EVIDENCE={
       "place": "Tus (near present-day Mashhad, Iran)",
       "lat": 36.48,
       "lng": 59.5,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Al-Ghazali wrote the Persian abridgement of his Revival after retiring to his native Tus. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.106793/2015.106793.Wisdom-Of-The-East-The-Alchemy-Of-Happiness_djvu.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's page groups the Alchemy of Happiness with works of his period of seclusion, after he left Baghdad and returned to Tus; the page does not give a single writing place, so Tus is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -15919,7 +17110,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15939,9 +17130,9 @@ window.PILOT_EVIDENCE={
       "place": "Tus (near present-day Mashhad, Iran)",
       "lat": 36.48,
       "lng": 59.5,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Al-Ghazali wrote his Persian summary of the Revival after returning to his home town of Tus. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.106793/2015.106793.Wisdom-Of-The-East-The-Alchemy-Of-Happiness_djvu.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's page groups the Alchemy of Happiness with works of his period of seclusion, after he left Baghdad and returned to Tus; the page does not give a single writing place, so Tus is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -15953,7 +17144,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -15973,9 +17164,9 @@ window.PILOT_EVIDENCE={
       "place": "Nishapur, Iran",
       "lat": 36.22,
       "lng": 58.79,
-      "anchorType": "Approximate writing location",
-      "placeNote": "The work is usually dated to al-Ghazali’s return to teaching at Nishapur, shortly before his retirement to Tus. The linked scan does not state where it was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/confessionsofalg00ghaziala/confessionsofalg00ghaziala_djvu.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's autobiography was written towards the end of his life; his page has him teaching at Nishapur from 1106 and then returning to Tus, where he died in 1111, and does not fix the work to one of the two, so the pin is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "readings": {
         "truth": {
@@ -15987,7 +17178,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16007,9 +17198,9 @@ window.PILOT_EVIDENCE={
       "place": "Nishapur, Iran",
       "lat": 36.21,
       "lng": 58.8,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "The work is usually dated to the years when al-Ghazali had returned to teaching at Nishapur, about 1106 to 1109. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Confessions_of_Al_Ghazzali/Section_7",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's autobiography was written towards the end of his life; his page has him teaching at Nishapur from 1106 and then returning to Tus, where he died in 1111, and does not fix the work to one of the two, so the pin is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -16027,7 +17218,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16046,9 +17237,9 @@ window.PILOT_EVIDENCE={
       "place": "Tus (near present-day Mashhad, Iran)",
       "lat": 36.48,
       "lng": 59.5,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Al-Ghazali wrote the book late in life after returning to his home region; the retreat it describes was in Damascus and Jerusalem. The place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/TheConfessionsOfAlGhazzali/The-confessions-of-al-ghazzali_djvu.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's autobiography was written towards the end of his life; his page has him teaching at Nishapur from 1106 and then returning to Tus, where he died in 1111, and does not fix the work to one of the two, so the pin is approximate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -16073,7 +17264,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16566,9 +17757,9 @@ window.PILOT_EVIDENCE={
       "place": "Fustat (Old Cairo), Egypt",
       "lat": 30.005,
       "lng": 31.23,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Maimonides wrote the Guide at Fustat, where he served as physician and head of the Jewish community. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/guideforperplexe00maimiala/guideforperplexe00maimiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia reports that Maimonides settled at Fustat between 1168 and 1171, lived there until his death in 1204, and completed the Guide for the Perplexed between 1186 and 1190, so the Guide was written during his residence at Fustat.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -16586,7 +17777,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16607,8 +17798,8 @@ window.PILOT_EVIDENCE={
       "lat": 30.01,
       "lng": 31.23,
       "anchorType": "Documented writing location",
-      "placeNote": "Maimonides wrote the Guide while living at Fustat, where he served as physician to the Ayyubid court. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Guide_for_the_Perplexed_(Friedlander)/Part_III/Chapters",
+      "placeNote": "Wikipedia reports that Maimonides settled at Fustat between 1168 and 1171, lived there until his death in 1204, and completed the Guide for the Perplexed between 1186 and 1190, so the Guide was written during his residence at Fustat.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -16620,7 +17811,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16641,8 +17832,8 @@ window.PILOT_EVIDENCE={
       "lat": 30.01,
       "lng": 31.23,
       "anchorType": "Documented writing location",
-      "placeNote": "Maimonides lived and worked as a physician and community leader at Fustat while writing the Guide. The linked scan’s introduction describes his life in Egypt; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/guideforperplexe00maim/guideforperplexe00maim_djvu.txt",
+      "placeNote": "Wikipedia reports that Maimonides settled at Fustat between 1168 and 1171, lived there until his death in 1204, and completed the Guide for the Perplexed between 1186 and 1190, so the Guide was written during his residence at Fustat.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
       "review": "draft",
       "readings": {
         "truth": {
@@ -16654,7 +17845,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16675,8 +17866,8 @@ window.PILOT_EVIDENCE={
       "lat": 30.01,
       "lng": 31.23,
       "anchorType": "Documented writing location",
-      "placeNote": "Maimonides wrote the Guide while living at Fustat, where he served as physician to the Ayyubid court. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Guide_for_the_Perplexed_(Friedlander)/Part_I",
+      "placeNote": "Wikipedia reports that Maimonides settled at Fustat between 1168 and 1171, lived there until his death in 1204, and completed the Guide for the Perplexed between 1186 and 1190, so the Guide was written during his residence at Fustat.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -16694,7 +17885,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16713,9 +17904,9 @@ window.PILOT_EVIDENCE={
       "place": "Fustat (Old Cairo), Egypt",
       "lat": 30.005,
       "lng": 31.23,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Maimonides lived and worked at Fustat. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/guideforperplexe00maimiala/guideforperplexe00maimiala_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia reports that Maimonides settled at Fustat between 1168 and 1171, lived there until his death in 1204, and completed the Guide for the Perplexed between 1186 and 1190, so the Guide was written during his residence at Fustat.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -16734,7 +17925,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -16755,8 +17946,8 @@ window.PILOT_EVIDENCE={
       "lat": 64.8,
       "lng": -18.5,
       "anchorType": "Manuscript association",
-      "placeNote": "The poem is preserved in Icelandic manuscripts of the thirteenth century; where and when it was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Poetic_Edda_(tr._Bellows)/Hovamol",
+      "placeNote": "The only surviving source for the Hávamál is the Codex Regius, an Icelandic manuscript thought to have been written in the 1270s; the poem itself is dated by scholars to about 900–1000 AD with no known place of composition, so Iceland marks the manuscript, not the origin of the stanza.",
+      "placeSource": "https://en.wikipedia.org/wiki/Codex_Regius",
       "review": "draft",
       "readings": {
         "death": {
@@ -16789,8 +17980,8 @@ window.PILOT_EVIDENCE={
       "lat": 64.8,
       "lng": -18.5,
       "anchorType": "Manuscript association",
-      "placeNote": "The poem is preserved in Icelandic manuscripts of the thirteenth century; where and when it was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Poetic_Edda_(tr._Bellows)/Hovamol",
+      "placeNote": "The only surviving source for the Hávamál is the Codex Regius, an Icelandic manuscript thought to have been written in the 1270s; the poem itself is dated by scholars to about 900–1000 AD with no known place of composition, so Iceland marks the manuscript, not the origin of the stanza.",
+      "placeSource": "https://en.wikipedia.org/wiki/Codex_Regius",
       "review": "draft",
       "readings": {
         "desire": {
@@ -16823,8 +18014,8 @@ window.PILOT_EVIDENCE={
       "lat": 64.8,
       "lng": -18.5,
       "anchorType": "Manuscript association",
-      "placeNote": "The poem is preserved in Icelandic manuscripts of the thirteenth century; where and when it was composed is unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Poetic_Edda_(tr._Bellows)/Hovamol",
+      "placeNote": "The only surviving source for the Hávamál is the Codex Regius, an Icelandic manuscript thought to have been written in the 1270s; the poem itself is dated by scholars to about 900–1000 AD with no known place of composition, so Iceland marks the manuscript, not the origin of the stanza.",
+      "placeSource": "https://en.wikipedia.org/wiki/Codex_Regius",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -17028,9 +18219,9 @@ window.PILOT_EVIDENCE={
       "lat": 64.66,
       "lng": -21.29,
       "anchorType": "Traditional association",
-      "placeNote": "Snorri lived and wrote at Reykholt in western Iceland in the 1220s and 1230s, where Heimskringla is generally placed; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeNote": "Snorri settled at Reykholt in 1206 as manager of an estate and was killed in his house there in 1241; Heimskringla, written in Iceland about 1230, is attributed to him by scholars, so the pin marks his home at Reykholt rather than a documented writing site.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/5/9/598/598.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Snorri_Sturluson",
       "readings": {
         "death": {
           "score": "continues",
@@ -17062,8 +18253,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.95,
       "lng": 135.77,
       "anchorType": "Approximate writing location",
-      "placeNote": "The colophon dates the essay to mid-autumn 1233, when Dōgen was living at Kannon-dōri-in in Fukakusa, south of Kyoto. The linked page gives the date but not the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://antaiji.org/en/classics/genjokoan/",
+      "placeNote": "The Genjōkōan is dated to 1233 (Wikipedia, Genjōkōan), the year in which Dōgen founded the Kannon-dōri-in at Fukakusa, later expanded into Kōshōhōrin-ji; the page does not say where the essay itself was written, so Fukakusa is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/D%C5%8Dgen",
       "review": "draft",
       "readings": {
         "death": {
@@ -17075,7 +18266,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17096,8 +18287,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.95,
       "lng": 135.77,
       "anchorType": "Approximate writing location",
-      "placeNote": "Genjō Kōan is dated 1233, when Dōgen was living at Kannon-dōri-in in Fukakusa, south of Kyoto; the essay was sent to a lay follower in Kyushu. The linked file gives the date in its notes but the place comes from general accounts; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.shastaabbey.org/pdf/shoboAll.pdf",
+      "placeNote": "The Genjōkōan is dated to 1233 (Wikipedia, Genjōkōan), the year in which Dōgen founded the Kannon-dōri-in at Fukakusa, later expanded into Kōshōhōrin-ji; the page does not say where the essay itself was written, so Fukakusa is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/D%C5%8Dgen",
       "review": "draft",
       "readings": {
         "truth": {
@@ -17109,7 +18300,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17129,8 +18320,8 @@ window.PILOT_EVIDENCE={
       "lat": 34.95,
       "lng": 135.77,
       "anchorType": "Approximate writing-period location",
-      "placeNote": "Dōgen founded Kōshō-ji in 1233, the year this essay is dated. Whether it was written there, and for whom, still needs an editor’s confirmation.",
-      "placeSource": "https://terebess.hu/zen/dogen/index.html",
+      "placeNote": "The Genjōkōan is dated to 1233 (Wikipedia, Genjōkōan), the year in which Dōgen founded the Kannon-dōri-in at Fukakusa, later expanded into Kōshōhōrin-ji; the page does not say where the essay itself was written, so Fukakusa is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/D%C5%8Dgen",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -17405,9 +18596,9 @@ window.PILOT_EVIDENCE={
       "place": "Konya (present-day Turkey)",
       "lat": 37.87,
       "lng": 32.49,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Rumi composed the Masnavi at Konya, dictating it to Husam al-Din. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "readings": {
         "desire": {
@@ -17425,7 +18616,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17444,9 +18635,9 @@ window.PILOT_EVIDENCE={
       "place": "Konya (present-day Turkey)",
       "lat": 37.87,
       "lng": 32.49,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Rumi lived and taught at Konya. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -17465,7 +18656,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17486,8 +18677,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.87,
       "lng": 32.49,
       "anchorType": "Documented writing location",
-      "placeNote": "Rumi dictated the Masnavi at Konya to his disciple Husam al-Din over the last years of his life. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/Masnavi_I_Ma'navi/Book_II",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -17499,7 +18690,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17520,8 +18711,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.87,
       "lng": 32.49,
       "anchorType": "Documented writing location",
-      "placeNote": "Rumi composed the Masnavi at Konya, where he lived from the 1220s until his death in 1273. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "readings": {
         "death": {
@@ -17533,7 +18724,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17554,8 +18745,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.87,
       "lng": 32.49,
       "anchorType": "Documented writing location",
-      "placeNote": "Rumi composed the Masnavi at Konya, where he lived from the 1220s until his death in 1273. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -17567,7 +18758,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17588,8 +18779,8 @@ window.PILOT_EVIDENCE={
       "lat": 37.87,
       "lng": 32.49,
       "anchorType": "Documented writing location",
-      "placeNote": "The introduction to the linked scan says Rumi’s family settled at Iconium, modern Konya, where he taught for the rest of his life. That the Masnavi was dictated there is the common account and is not stated at the passage; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
       "review": "draft",
       "readings": {
         "truth": {
@@ -17601,7 +18792,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17621,9 +18812,9 @@ window.PILOT_EVIDENCE={
       "place": "Santa Sabina, Rome, Italy",
       "lat": 41.88,
       "lng": 12.48,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Aquinas is generally held to have begun the First Part while teaching at the Dominican house of Santa Sabina in Rome, before returning to Paris. The linked page states the Roman period; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikipedia.org/wiki/Summa_Theologica",
+      "anchorType": "Documented writing location",
+      "placeNote": "Aquinas began the Summa Theologiae while teaching at the Dominican studium of Santa Sabina in Rome (1265 to 1268) and completed the First Part there before leaving for his second Paris regency.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -17641,7 +18832,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17701,9 +18892,9 @@ window.PILOT_EVIDENCE={
       "place": "Santa Sabina, Rome, Italy",
       "lat": 41.89,
       "lng": 12.49,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Aquinas began the Summa while teaching at the Dominican house of Santa Sabina in Rome in the later 1260s. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/7/6/1/17611/17611-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Aquinas began the Summa Theologiae while teaching at the Dominican studium of Santa Sabina in Rome (1265 to 1268) and completed the First Part there before leaving for his second Paris regency.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
       "review": "draft",
       "readings": {
         "death": {
@@ -17715,7 +18906,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17735,9 +18926,9 @@ window.PILOT_EVIDENCE={
       "place": "Santa Sabina, Rome, Italy",
       "lat": 41.89,
       "lng": 12.49,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Aquinas began the Summa while teaching at the Dominican house of Santa Sabina in Rome in the later 1260s. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/7/6/1/17611/17611-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Aquinas began the Summa Theologiae while teaching at the Dominican studium of Santa Sabina in Rome (1265 to 1268) and completed the First Part there before leaving for his second Paris regency.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -17749,7 +18940,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -17766,12 +18957,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "Fathers of the English Dominican Province translation, New Advent",
       "sourceUrl": "https://www.newadvent.org/summa/1075.htm",
       "locator": "First Part, question 75, article 2, the objection and the answer that follows.",
-      "place": "Orvieto, Italy",
-      "lat": 42.72,
-      "lng": 12.11,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Aquinas wrote the first part of the Summa while teaching in Italy in the 1260s, at Orvieto and Rome; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.newadvent.org/summa/1075.htm",
+      "place": "Santa Sabina, Rome, Italy",
+      "lat": 41.88,
+      "lng": 12.48,
+      "anchorType": "Documented writing location",
+      "placeNote": "Aquinas began the Summa Theologiae while teaching at the Dominican studium of Santa Sabina in Rome (1265 to 1268) and completed the First Part there before leaving for his second Paris regency. The earlier Orvieto pin is corrected to Rome.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -19134,8 +20325,8 @@ window.PILOT_EVIDENCE={
       "lat": 35.06,
       "lng": 1.05,
       "anchorType": "Documented writing location",
-      "placeNote": "Ibn Khaldun records that he wrote the Muqaddimah in retreat at Qal‘at Ibn Salama in 1377. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter2/Ch_2_05.htm",
+      "placeNote": "Ibn Khaldun took refuge at Qalat Ibn Salama in western Algeria for over three years from the late 1370s and used that seclusion to write the Muqaddimah, the introduction to his planned history; the book was completed there in the first stage, with revision later in Tunis.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ibn_Khaldun",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -19147,7 +20338,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19166,9 +20357,9 @@ window.PILOT_EVIDENCE={
       "place": "Qal‘at Ibn Salama (near Frenda, present-day Algeria)",
       "lat": 35.06,
       "lng": 1.05,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Ibn Khaldun is generally said to have written the Muqaddimah in 1377 while living in retreat at this fortress. The linked page gives the text only; the place and date still need an editor’s confirmation.",
-      "placeSource": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter1/Ch_1_01.htm",
+      "anchorType": "Documented writing location",
+      "placeNote": "Ibn Khaldun took refuge at Qalat Ibn Salama in western Algeria for over three years from the late 1370s and used that seclusion to write the Muqaddimah, the introduction to his planned history; the book was completed there in the first stage, with revision later in Tunis.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ibn_Khaldun",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -19187,7 +20378,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19550,9 +20741,9 @@ window.PILOT_EVIDENCE={
       "place": "Mount St Agnes monastery, near Zwolle, Netherlands",
       "lat": 52.52,
       "lng": 6.12,
-      "anchorType": "Traditional association",
-      "placeNote": "Thomas à Kempis spent his adult life at the Augustinian house of Mount St Agnes outside Zwolle. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/6/5/1653/1653-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Thomas à Kempis entered the monastery of Mount St Agnes near Zwolle in 1406 and lived there until his death in 1471; a monument on the mountain states that he wrote the Imitation of Christ there, as recorded in the Wikipedia article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
       "review": "draft",
       "readings": {
         "desire": {
@@ -19570,7 +20761,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19590,9 +20781,9 @@ window.PILOT_EVIDENCE={
       "place": "Mount St Agnes monastery, near Zwolle, Netherlands",
       "lat": 52.52,
       "lng": 6.12,
-      "anchorType": "Traditional association",
-      "placeNote": "Thomas à Kempis spent his life as a canon at Mount St Agnes (Agnietenberg) outside Zwolle, where the book is held to have been written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikipedia.org/wiki/The_Imitation_of_Christ",
+      "anchorType": "Documented writing location",
+      "placeNote": "Thomas à Kempis entered the monastery of Mount St Agnes near Zwolle in 1406 and lived there until his death in 1471; a monument on the mountain states that he wrote the Imitation of Christ there, as recorded in the Wikipedia article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -19604,7 +20795,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19623,9 +20814,9 @@ window.PILOT_EVIDENCE={
       "place": "Mount St Agnes, near Zwolle, Netherlands",
       "lat": 52.53,
       "lng": 6.12,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "The 1911 Encyclopædia Britannica has Thomas writing the chronicle of the monastery of Mount St Agnes, where he spent his life as a canon. That the Imitation was written there, and its exact date, still need an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Thomas_%C3%A0_Kempis",
+      "anchorType": "Documented writing location",
+      "placeNote": "Thomas à Kempis entered the monastery of Mount St Agnes near Zwolle in 1406 and lived there until his death in 1471; a monument on the mountain states that he wrote the Imitation of Christ there, as recorded in the Wikipedia article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -19650,7 +20841,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-20"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19671,8 +20862,8 @@ window.PILOT_EVIDENCE={
       "lat": 25.32,
       "lng": 82.99,
       "anchorType": "Traditional association",
-      "placeNote": "Kabir is traditionally said to have lived and worked as a weaver in Varanasi (Benares). The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -19684,7 +20875,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19704,9 +20895,9 @@ window.PILOT_EVIDENCE={
       "place": "Varanasi, Uttar Pradesh, India",
       "lat": 25.32,
       "lng": 82.99,
-      "anchorType": "Approximate home association",
-      "placeNote": "Kabir is traditionally said to have lived and worked as a weaver in Varanasi. The linked text does not place this song; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "readings": {
         "truth": {
@@ -19724,7 +20915,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19745,8 +20936,8 @@ window.PILOT_EVIDENCE={
       "lat": 25.32,
       "lng": 82.99,
       "anchorType": "Traditional association",
-      "placeNote": "Kabir is traditionally said to have lived and worked as a weaver in Varanasi. The poem names no place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -19764,7 +20955,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19784,8 +20975,8 @@ window.PILOT_EVIDENCE={
       "lat": 25.32,
       "lng": 83.01,
       "anchorType": "Traditional association",
-      "placeNote": "Kabir is traditionally a weaver of Varanasi. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -19804,7 +20995,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19893,8 +21084,8 @@ window.PILOT_EVIDENCE={
       "lat": 25.32,
       "lng": 82.99,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition makes Kabir a weaver of Varanasi (Kashi). The linked text does not place this song; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "readings": {
         "death": {
@@ -19906,7 +21097,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -19927,8 +21118,8 @@ window.PILOT_EVIDENCE={
       "lat": 25.32,
       "lng": 82.99,
       "anchorType": "Traditional association",
-      "placeNote": "Kabir is traditionally said to have lived and taught as a weaver in Varanasi. The linked text gives the poems only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/5/1/6519/6519.txt",
+      "placeNote": "Wikipedia states that Kabir was born in the city of Varanasi and is believed to have become a disciple of Ramananda there, and it relays accounts that he was raised by a Muslim weaver. No contemporary record places the composition of any single song, so the pin marks the city traditionally associated with him.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kabir",
       "review": "draft",
       "readings": {
         "desire": {
@@ -19940,7 +21131,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20035,8 +21226,8 @@ window.PILOT_EVIDENCE={
       "lat": 51.51,
       "lng": -0.1,
       "anchorType": "Documented writing location",
-      "placeNote": "Erasmus said he composed the book in 1509 while staying with Thomas More in London after returning from Italy. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/0/2/0/30201/30201-0.txt",
+      "placeNote": "Erasmus states that the work was originally written in about a week while staying at Thomas More's house in Bucklersbury in the City of London; it was revised and extended afterward and first printed in 1511.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Praise_of_Folly",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -20206,8 +21397,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Sikh tradition holds that Nanak composed or completed the Japjī in his last years at Kartarpur on the Ravi. The scanned page with the stanza does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/sikhreligionitsg01unse/sikhreligionitsg01unse_djvu.txt",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "readings": {
         "death": {
@@ -20225,7 +21416,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20246,8 +21437,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Sikh tradition holds that Nanak composed or completed the Japji in his last years at Kartarpur on the Ravi. The scan gives the tradition in its life of the Guru; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/TheSikhReligion01Macauliffe/The%20Sikh%20Religion%2001%20Macauliffe_djvu.txt",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -20259,7 +21450,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20280,8 +21471,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Sikh tradition holds that Nanak settled at Kartarpur in his last years and that the Japji took its final form there. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Sikh_Religion/Volume_1/Japji",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -20293,7 +21484,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20314,8 +21505,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Sikh tradition holds that Nanak settled at Kartarpur in his last years and that the Japji took its final form there. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Sikh_Religion/Volume_1/Japji",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "readings": {
         "truth": {
@@ -20327,7 +21518,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20348,8 +21539,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Sikh tradition holds that Nanak settled at Kartarpur in his last years and that the Japji took its final form there. The linked translation gives no place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://sikhnet.com/files/Banis/Japji%20-%20Eng-Translation%20%5BDr.%20Sant%20Singh%20Khalsa%5D.pdf",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -20361,7 +21552,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20473,8 +21664,8 @@ window.PILOT_EVIDENCE={
       "lat": 32.09,
       "lng": 75.02,
       "anchorType": "Traditional association",
-      "placeNote": "Tradition has Nanak settle at Kartarpur in his later years. Where and when the Japji was composed is not known; the place still needs an editor’s confirmation.",
-      "placeSource": "https://sikhnet.com/files/Banis/Japji%20-%20Eng-Translation%20%5BDr.%20Sant%20Singh%20Khalsa%5D.pdf",
+      "placeNote": "Tradition places Guru Nanak's later years at Kartarpur, where the biography article says the Japji composition, on which he had worked for decades, was finalized as part of the community's daily recitation; no contemporary record dates individual stanzas, so Kartarpur is a traditional association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Guru_Nanak",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -20499,7 +21690,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -20772,10 +21963,10 @@ window.PILOT_EVIDENCE={
       "place": "Geneva, Switzerland",
       "lat": 46.2,
       "lng": 6.15,
-      "anchorType": "Documented writing location",
-      "placeNote": "Calvin prepared the 1559 Institutes while pastor in Geneva. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Place of first publication",
+      "placeNote": "The 1559 Latin edition of the Institutes, the recast and enlarged text on which this chapter rests, was published in Geneva; the page does not say where each chapter was drafted, so the pin marks the place of publication.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/4/5/0/0/45001/45001-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Institutes_of_the_Christian_Religion",
       "readings": {
         "free-will": {
           "score": "determined",
@@ -20806,10 +21997,10 @@ window.PILOT_EVIDENCE={
       "place": "Geneva, Switzerland",
       "lat": 46.2,
       "lng": 6.15,
-      "anchorType": "Documented writing location",
-      "placeNote": "Calvin prepared the 1559 Institutes while pastor in Geneva. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Place of first publication",
+      "placeNote": "The 1559 Latin edition of the Institutes, the recast and enlarged text on which this chapter rests, was published in Geneva; the page does not say where each chapter was drafted, so the pin marks the place of publication.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/4/5/0/0/45001/45001-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Institutes_of_the_Christian_Religion",
       "readings": {
         "meaning": {
           "score": "meaning-given",
@@ -20840,10 +22031,10 @@ window.PILOT_EVIDENCE={
       "place": "Geneva, Switzerland",
       "lat": 46.2,
       "lng": 6.15,
-      "anchorType": "Documented writing location",
-      "placeNote": "Calvin prepared the 1559 Institutes while pastor in Geneva. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Place of first publication",
+      "placeNote": "The 1559 Latin edition of the Institutes, the recast and enlarged text on which this chapter rests, was published in Geneva; the page does not say where each chapter was drafted, so the pin marks the place of publication.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/4/5/0/0/45001/45001-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Institutes_of_the_Christian_Religion",
       "readings": {
         "ultimate-reality": {
           "score": "ultimate-real",
@@ -22300,8 +23491,8 @@ window.PILOT_EVIDENCE={
       "lat": 48.86,
       "lng": 2.34,
       "anchorType": "Documented writing location",
-      "placeNote": "Hobbes wrote Leviathan in exile in Paris in the late 1640s; it was printed in London in 1651. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "placeNote": "The Wikipedia article states that during the years of composing Leviathan, Hobbes remained in or near Paris among the exiled royalists, completing it by 1650; it was printed in London in 1651.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Hobbes",
       "review": "draft",
       "readings": {
         "desire": {
@@ -22313,7 +23504,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22333,9 +23524,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.35,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Hobbes wrote Leviathan while living in exile in Paris; it was printed in London in 1651. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Wikipedia article states that during the years of composing Leviathan, Hobbes remained in or near Paris among the exiled royalists, completing it by 1650; it was printed in London in 1651.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Hobbes",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -22353,7 +23544,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22372,9 +23563,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.865,
       "lng": 2.33,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Hobbes wrote Leviathan while living in exile in Paris. The linked text does not confirm this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Wikipedia article states that during the years of composing Leviathan, Hobbes remained in or near Paris among the exiled royalists, completing it by 1650; it was printed in London in 1651.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_Hobbes",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -22393,7 +23584,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22413,9 +23604,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.35,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Pascal wrote the notes in Paris and at Port-Royal; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -22447,9 +23638,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.85,
       "lng": 2.35,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Pascal wrote the notes later published as the Pensées in Paris in his last years. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -22461,7 +23652,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22481,9 +23672,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.35,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Pascal wrote the notes in Paris and at Port-Royal; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -22515,9 +23706,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.35,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Pascal wrote the notes in Paris and at Port-Royal; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -22549,9 +23740,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.85,
       "lng": 2.35,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Pascal lived in Paris during the years in which he made the notes for his planned apology. The source text does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -22569,7 +23760,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22724,9 +23915,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.84,
       "lng": 2.342,
-      "anchorType": "Approximate writing-period location",
-      "placeNote": "Pascal lived in Paris in his last years. The linked text does not confirm this directly; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "Pascal's Pensées are fragmentary notes from his last years, left as drafts at his death in Paris in 1662; the page gives no more precise writing location, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Blaise_Pascal",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -22757,7 +23948,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22811,9 +24002,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Dutch Republic (present-day Netherlands)",
       "lat": 52.07,
       "lng": 4.33,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza finished the Ethics while living in The Hague, where he died in 1677; earlier parts were drafted at Rijnsburg and Voorburg. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "The Ethics was written between 1661 and 1675 while Spinoza lived successively at Rijnsburg, Voorburg and, from 1670, The Hague, where he died; the page does not assign individual parts to one residence, so The Hague is an approximate pin.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "death": {
@@ -22825,7 +24016,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22845,9 +24036,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Netherlands",
       "lat": 52.07,
       "lng": 4.32,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza finished the Ethics while living in The Hague, where he died in 1677. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "The Ethics was written between 1661 and 1675 while Spinoza lived successively at Rijnsburg, Voorburg and, from 1670, The Hague, where he died; the page does not assign individual parts to one residence, so The Hague is an approximate pin.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "desire": {
@@ -22859,7 +24050,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22879,9 +24070,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Dutch Republic (present-day Netherlands)",
       "lat": 52.07,
       "lng": 4.33,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza finished the Ethics while living in The Hague, where he died in 1677; earlier parts were drafted at Rijnsburg and Voorburg. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "The Ethics was written between 1661 and 1675 while Spinoza lived successively at Rijnsburg, Voorburg and, from 1670, The Hague, where he died; the page does not assign individual parts to one residence, so The Hague is an approximate pin.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -22893,7 +24084,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22913,8 +24104,8 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Netherlands",
       "lat": 52.08,
       "lng": 4.32,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza worked on the Ethics at Rijnsburg, Voorburg and The Hague, where he lived from 1670 and finished the book. The pin marks The Hague; the place still needs an editor’s confirmation.",
+      "anchorType": "Approximate association",
+      "placeNote": "The Ethics was written between 1661 and 1675 while Spinoza lived successively at Rijnsburg, Voorburg and, from 1670, The Hague, where he died; the page does not assign individual parts to one residence, so The Hague is an approximate pin.",
       "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
@@ -22927,7 +24118,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -22987,9 +24178,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Netherlands",
       "lat": 52.07,
       "lng": 4.32,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza finished the Ethics while living in The Hague, where he died in 1677. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Spinoza moved to The Hague in 1670 and there returned to the manuscript of the Ethics, reworking its third part into the fourth and fifth, so Part Five belongs to his Hague years.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -23001,7 +24192,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23021,9 +24212,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Netherlands",
       "lat": 52.07,
       "lng": 4.33,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza lived at Voorburg and then The Hague while writing the Ethics, and died at The Hague in 1677. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Ethics was written between 1661 and 1675, during Spinoza’s years at Rijnsburg, Voorburg and The Hague; the source does not assign this part to one place, so the pin marks The Hague, where he reworked and finished the book.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -23035,7 +24226,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23055,9 +24246,9 @@ window.PILOT_EVIDENCE={
       "place": "The Hague, Netherlands",
       "lat": 52.07,
       "lng": 4.33,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Spinoza lived at Voorburg and then The Hague while writing the Ethics, and died at The Hague in 1677. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The Ethics was written between 1661 and 1675, during Spinoza’s years at Rijnsburg, Voorburg and The Hague; the source does not assign this part to one place, so the pin marks The Hague, where he reworked and finished the book.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
       "review": "draft",
       "readings": {
         "truth": {
@@ -23075,7 +24266,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23130,9 +24321,9 @@ window.PILOT_EVIDENCE={
       "place": "Convent of San Jerónimo, Mexico City, Mexico",
       "lat": 19.43,
       "lng": -99.13,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Sor Juana lived and wrote in the Hieronymite convent of San Jerónimo in Mexico City from 1669 until her death. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://es.wikisource.org/wiki/Primero_sue%C3%B1o",
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana was cloistered in the Hieronymite convent in Mexico City from 1669 until her death in 1695, and the Wikipedia article states that she studied and wrote there; the individual work is not dated more closely.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sor_Juana",
       "review": "draft",
       "readings": {
         "truth": {
@@ -23144,7 +24335,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23199,9 +24390,9 @@ window.PILOT_EVIDENCE={
       "place": "Convent of San Jerónimo, Mexico City, Mexico",
       "lat": 19.43,
       "lng": -99.13,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Sor Juana lived and wrote in the Hieronymite convent of San Jerónimo in Mexico City from 1669 until her death. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://es.wikisource.org/wiki/Soneto_CXLV_-_A_su_retrato",
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana was cloistered in the Hieronymite convent in Mexico City from 1669 until her death in 1695, and the Wikipedia article states that she studied and wrote there; the individual work is not dated more closely.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sor_Juana",
       "review": "draft",
       "readings": {
         "death": {
@@ -23213,7 +24404,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23235,8 +24426,8 @@ window.PILOT_EVIDENCE={
       "lat": 19.43,
       "lng": -99.13,
       "anchorType": "Documented writing location",
-      "placeNote": "Sor Juana lived and wrote in the Hieronymite convent in Mexico City from 1669 until her death. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://es.wikisource.org/wiki/Insinua_su_aversion_a_los_vicios",
+      "placeNote": "Sor Juana was cloistered in the Hieronymite convent in Mexico City from 1669 until her death in 1695, and the Wikipedia article states that she studied and wrote there; the individual work is not dated more closely.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sor_Juana",
       "review": "draft",
       "readings": {
         "desire": {
@@ -23248,7 +24439,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23304,9 +24495,9 @@ window.PILOT_EVIDENCE={
       "place": "Convent of San Jerónimo, Mexico City, Mexico",
       "lat": 19.43,
       "lng": -99.13,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Sor Juana lived and wrote in the Hieronymite convent of San Jerónimo in Mexico City from 1669 until her death. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://es.wikisource.org/wiki/Insinua_su_aversion_a_los_vicios",
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana was cloistered in the Hieronymite convent in Mexico City from 1669 until her death in 1695, and the Wikipedia article states that she studied and wrote there; the individual work is not dated more closely.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sor_Juana",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -23318,7 +24509,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23408,8 +24599,8 @@ window.PILOT_EVIDENCE={
       "lat": 51.76,
       "lng": 0.2,
       "anchorType": "Documented writing location",
-      "placeNote": "Locke added this chapter for the second edition while living at Oates, Essex; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/0/6/1/10615/10615-0.txt",
+      "placeNote": "Locke added this chapter on personal identity to the second edition of the Essay in 1694 (Stanford Encyclopedia of Philosophy), and by then he had lived at Oates, the Masham household in Essex, since 1691; the page cited gives the residence, and the pin rests on the two together.",
+      "placeSource": "https://en.wikipedia.org/wiki/John_Locke",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -23778,10 +24969,10 @@ window.PILOT_EVIDENCE={
       "place": "Twickenham, England",
       "lat": 51.45,
       "lng": -0.33,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Pope lived at his villa in Twickenham from 1719 and wrote there in the 1730s. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Approximate association",
+      "placeNote": "Pope lived in his villa at Twickenham from 1719, and An Essay on Man was published in 1733–1734; the page does not state where it was written, so Twickenham is an approximate association.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/2/2428/2428-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Alexander_Pope",
       "readings": {
         "truth": {
           "score": "not-knowable",
@@ -23812,10 +25003,10 @@ window.PILOT_EVIDENCE={
       "place": "Twickenham, England",
       "lat": 51.45,
       "lng": -0.33,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Pope lived at his villa in Twickenham from 1719 and wrote there in the 1730s. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Approximate association",
+      "placeNote": "Pope lived in his villa at Twickenham from 1719, and An Essay on Man was published in 1733–1734; the page does not state where it was written, so Twickenham is an approximate association.",
       "review": "draft",
-      "placeSource": "https://gutenberg.pglaf.org/2/4/2/2428/2428-0.txt",
+      "placeSource": "https://en.wikipedia.org/wiki/Alexander_Pope",
       "readings": {
         "happiness": {
           "score": "on-oneself",
@@ -23847,8 +25038,8 @@ window.PILOT_EVIDENCE={
       "lat": 47.7,
       "lng": -0.08,
       "anchorType": "Documented writing location",
-      "placeNote": "Hume wrote most of the Treatise at La Flèche between 1735 and 1737. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/7/0/4705/4705-0.txt",
+      "placeNote": "In 1734 Hume moved to La Flèche in France, where he began writing the Treatise at the age of 23; Books 1 and 2 were published in 1739, so the pin marks where the work was begun, and later parts may have been finished elsewhere.",
+      "placeSource": "https://plato.stanford.edu/entries/hume/",
       "review": "draft",
       "readings": {
         "desire": {
@@ -23860,7 +25051,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -23881,8 +25072,8 @@ window.PILOT_EVIDENCE={
       "lat": 47.7,
       "lng": -0.08,
       "anchorType": "Documented writing location",
-      "placeNote": "Hume wrote most of the Treatise at La Flèche between 1735 and 1737. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/4/7/0/4705/4705-0.txt",
+      "placeNote": "In 1734 Hume moved to La Flèche in France, where he began writing the Treatise at the age of 23; Books 1 and 2 were published in 1739, so the pin marks where the work was begun, and later parts may have been finished elsewhere.",
+      "placeSource": "https://plato.stanford.edu/entries/hume/",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -23894,7 +25085,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -24382,9 +25573,9 @@ window.PILOT_EVIDENCE={
       "place": "Glasgow, Scotland",
       "lat": 55.87,
       "lng": -4.25,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Smith developed the book from his moral philosophy lectures at the University of Glasgow. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/7/3/6/67363/67363-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Smith held the chair of moral philosophy at Glasgow, where he wrote and in 1759 published The Theory of Moral Sentiments, which embodies some of his Glasgow lectures.",
+      "placeSource": "https://en.wikipedia.org/wiki/Adam_Smith",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -24396,7 +25587,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -24416,9 +25607,9 @@ window.PILOT_EVIDENCE={
       "place": "Glasgow, Scotland",
       "lat": 55.87,
       "lng": -4.29,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Smith was professor of moral philosophy at Glasgow when the book appeared; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/theorymoralsent01stewgoog/theorymoralsent01stewgoog_djvu.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Smith held the chair of moral philosophy at Glasgow, where he wrote and in 1759 published The Theory of Moral Sentiments, which embodies some of his Glasgow lectures.",
+      "placeSource": "https://en.wikipedia.org/wiki/Adam_Smith",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -24781,9 +25972,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.34,
-      "anchorType": "Approximate writing location",
-      "placeNote": "D'Holbach wrote in Paris, where he kept his salon; the book was printed in Amsterdam with a false London imprint. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/8/9/0/8909/8909.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "d'Holbach lived and worked mainly in Paris, where he kept a salon, and The System of Nature appeared in 1770; the page does not say where it was written, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baron_d%27Holbach",
       "review": "draft",
       "readings": {
         "death": {
@@ -24795,7 +25986,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -24815,9 +26006,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.34,
-      "anchorType": "Approximate writing location",
-      "placeNote": "D'Holbach wrote in Paris, where he kept his salon; the book was printed in Amsterdam with a false London imprint. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/8/9/0/8909/8909.txt",
+      "anchorType": "Approximate association",
+      "placeNote": "d'Holbach lived and worked mainly in Paris, where he kept a salon, and The System of Nature appeared in 1770; the page does not say where it was written, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baron_d%27Holbach",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -24829,7 +26020,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -24849,9 +26040,9 @@ window.PILOT_EVIDENCE={
       "place": "Paris, France",
       "lat": 48.86,
       "lng": 2.33,
-      "anchorType": "Approximate writing location",
-      "placeNote": "D’Holbach wrote in Paris, where he hosted his salon, and had the book printed in Amsterdam with a false London imprint. The source text does not state the place of writing; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikipedia.org/wiki/The_System_of_Nature",
+      "anchorType": "Approximate association",
+      "placeNote": "d'Holbach lived and worked mainly in Paris, where he kept a salon, and The System of Nature appeared in 1770; the page does not say where it was written, so Paris is an approximate association.",
+      "placeSource": "https://en.wikipedia.org/wiki/Baron_d%27Holbach",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -24863,7 +26054,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -25175,8 +26366,8 @@ window.PILOT_EVIDENCE={
       "lat": 54.71,
       "lng": 20.51,
       "anchorType": "Approximate writing-period location",
-      "placeNote": "Kant lived and taught at Königsberg all his life. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/What_is_Enlightenment%3F",
+      "placeNote": "Kant returned to Königsberg in 1754, taught there and held the chair of logic and metaphysics at its university from 1770; this work belongs to that Königsberg period, though the encyclopedia entry does not date the passage to a particular room or month.",
+      "placeSource": "https://plato.stanford.edu/entries/kant/",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -25201,7 +26392,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -25262,8 +26453,8 @@ window.PILOT_EVIDENCE={
       "lat": 54.71,
       "lng": 20.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Kant lived and taught in Königsberg all his life. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/6/8/5682/5682-0.txt",
+      "placeNote": "Kant returned to Königsberg in 1754, taught there and held the chair of logic and metaphysics at its university from 1770; this work belongs to that Königsberg period, though the encyclopedia entry does not date the passage to a particular room or month.",
+      "placeSource": "https://plato.stanford.edu/entries/kant/",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -25275,7 +26466,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -25296,8 +26487,8 @@ window.PILOT_EVIDENCE={
       "lat": 54.71,
       "lng": 20.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Kant lived and taught at Königsberg when he published the Groundwork; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/6/8/5682/5682-0.txt",
+      "placeNote": "Kant returned to Königsberg in 1754, taught there and held the chair of logic and metaphysics at its university from 1770; this work belongs to that Königsberg period, though the encyclopedia entry does not date the passage to a particular room or month.",
+      "placeSource": "https://plato.stanford.edu/entries/kant/",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -25364,8 +26555,8 @@ window.PILOT_EVIDENCE={
       "lat": 54.71,
       "lng": 20.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Kant lived, taught and wrote in Königsberg throughout his career. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/6/8/5683/5683.txt",
+      "placeNote": "Kant returned to Königsberg in 1754, taught there and held the chair of logic and metaphysics at its university from 1770; this work belongs to that Königsberg period, though the encyclopedia entry does not date the passage to a particular room or month.",
+      "placeSource": "https://plato.stanford.edu/entries/kant/",
       "review": "draft",
       "readings": {
         "death": {
@@ -25377,7 +26568,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26052,8 +27243,8 @@ window.PILOT_EVIDENCE={
       "lat": 54.71,
       "lng": 20.51,
       "anchorType": "Documented teaching location",
-      "placeNote": "Kant gave the lectures on pedagogy at the University of Königsberg. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/kantoneducationu00kantuoft/kantoneducationu00kantuoft_djvu.txt",
+      "placeNote": "Kant returned to Königsberg in 1754, taught there and held the chair of logic and metaphysics at its university from 1770; this work belongs to that Königsberg period, though the encyclopedia entry does not date the passage to a particular room or month.",
+      "placeSource": "https://plato.stanford.edu/entries/kant/",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -26065,7 +27256,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26774,8 +27965,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.46,
       "lng": -71.35,
       "anchorType": "Documented writing location",
-      "placeNote": "Emerson lived and wrote in Concord from 1834. The linked text does not state where the essay was written; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/6/6/4/16643/16643-0.txt",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -26787,7 +27978,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -26808,8 +27999,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.46,
       "lng": -71.35,
       "anchorType": "Documented writing location",
-      "placeNote": "Emerson lived and wrote in Concord when preparing the first series of Essays; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/9/4/2944/2944-0.txt",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -26842,8 +28033,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.46,
       "lng": -71.35,
       "anchorType": "Documented writing location",
-      "placeNote": "Emerson lived and wrote in Concord when preparing the first series of Essays; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/9/4/2944/2944-0.txt",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -26876,8 +28067,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.46,
       "lng": -71.35,
       "anchorType": "Documented writing location",
-      "placeNote": "Emerson lived and wrote in Concord when preparing the first series of Essays; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/9/4/2944/2944-0.txt",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -26910,7 +28101,7 @@ window.PILOT_EVIDENCE={
       "lat": 42.46,
       "lng": -71.35,
       "anchorType": "Documented writing location",
-      "placeNote": "Emerson lived and wrote in Concord from 1835. The source text does not state the place; the place still needs an editor’s confirmation.",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
       "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
@@ -26923,7 +28114,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28039,9 +29230,9 @@ window.PILOT_EVIDENCE={
       "place": "Brooklyn, New York, United States",
       "lat": 40.68,
       "lng": -73.94,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Whitman wrote and printed the first edition of Leaves of Grass in Brooklyn in 1855. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/3/2/1322/1322-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The first edition of Leaves of Grass (1855) was published in Brooklyn at the printing shop of James and Andrew Rome, at Fulton and Cranberry Streets; the article does not say where the individual poem was composed, so the pin marks the place of first printing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
       "review": "draft",
       "readings": {
         "death": {
@@ -28053,7 +29244,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28073,9 +29264,9 @@ window.PILOT_EVIDENCE={
       "place": "Brooklyn, New York, United States",
       "lat": 40.69,
       "lng": -73.95,
-      "anchorType": "Documented writing location",
-      "placeNote": "Whitman wrote and printed the first Leaves of Grass in Brooklyn in 1855. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/3/2/1322/1322-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The first edition of Leaves of Grass (1855) was published in Brooklyn at the printing shop of James and Andrew Rome, at Fulton and Cranberry Streets; the article does not say where the individual poem was composed, so the pin marks the place of first printing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
       "review": "draft",
       "readings": {
         "desire": {
@@ -28087,7 +29278,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28107,9 +29298,9 @@ window.PILOT_EVIDENCE={
       "place": "Brooklyn, New York, United States",
       "lat": 40.68,
       "lng": -73.94,
-      "anchorType": "Documented writing location",
-      "placeNote": "Whitman wrote and printed the first edition of Leaves of Grass in Brooklyn in 1855. The linked page does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/3/2/1322/1322-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The first edition of Leaves of Grass (1855) was published in Brooklyn at the printing shop of James and Andrew Rome, at Fulton and Cranberry Streets; the article does not say where the individual poem was composed, so the pin marks the place of first printing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -28121,7 +29312,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28142,8 +29333,8 @@ window.PILOT_EVIDENCE={
       "lat": 33.33,
       "lng": 44.4,
       "anchorType": "Documented writing location",
-      "placeNote": "Bahá’u’lláh composed the Hidden Words about 1858 while living in exile in Baghdad, by tradition while walking on the banks of the Tigris. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/2",
+      "placeNote": "The Hidden Words was written by Bahá’u’lláh around 1858, composed while he walked along the Tigris during his exile in Baghdad.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Hidden_Words",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -28155,7 +29346,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28385,9 +29576,9 @@ window.PILOT_EVIDENCE={
       "place": "Concord, Massachusetts, United States",
       "lat": 42.46,
       "lng": -71.35,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Emerson lived and wrote in Concord, Massachusetts. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/3/9/8/2/39827/39827-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Emerson moved to Concord, Massachusetts, in October 1834 and bought a house there in July 1835, which he named Bush and which is now the Ralph Waldo Emerson House. The article does not date this essay's composition by room or month, so Concord marks his home during the years of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -28399,7 +29590,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28556,8 +29747,8 @@ window.PILOT_EVIDENCE={
       "lat": 33.33,
       "lng": 44.4,
       "anchorType": "Documented writing location",
-      "placeNote": "Bahá’u’lláh composed the book in Baghdad during his exile there, shortly before 1863. The linked page does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikisource.org/wiki/The_Book_of_Ighan/Chapter_2",
+      "placeNote": "The Kitáb-i-Íqán was composed by Bahá’u’lláh in 1861, in the course of two days, while he was living as an exile in Baghdad.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kit%C3%A1b-i-%C3%8Dq%C3%A1n",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -28575,7 +29766,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28596,8 +29787,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.38,
       "lng": -72.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Dickinson wrote nearly all her poems at the family house in Amherst, Massachusetts. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/2/2/4/12242/12242-0.txt",
+      "placeNote": "Dickinson was born at the family Homestead in Amherst and spent her adult life there, withdrawn from social life; the page calls the early 1860s, when she assembled her fascicles, her most productive writing period, so Amherst is the place where the poems were written, though individual poems are not tied to a room.",
+      "placeSource": "https://en.wikipedia.org/wiki/Emily_Dickinson",
       "review": "draft",
       "readings": {
         "death": {
@@ -28609,7 +29800,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28664,8 +29855,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.38,
       "lng": -72.51,
       "anchorType": "Approximate writing location",
-      "placeNote": "Dickinson wrote her poems at the family house, the Homestead, in Amherst. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/2/2/4/12242/12242-0.txt",
+      "placeNote": "Dickinson was born at the family Homestead in Amherst and spent her adult life there, withdrawn from social life; the page calls the early 1860s, when she assembled her fascicles, her most productive writing period, so Amherst is the place where the poems were written, though individual poems are not tied to a room.",
+      "placeSource": "https://en.wikipedia.org/wiki/Emily_Dickinson",
       "review": "draft",
       "readings": {
         "truth": {
@@ -28683,7 +29874,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28704,8 +29895,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.38,
       "lng": -72.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Dickinson wrote nearly all her poems at the family Homestead in Amherst. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/2/2/4/12242/12242-0.txt",
+      "placeNote": "Dickinson was born at the family Homestead in Amherst and spent her adult life there, withdrawn from social life; the page calls the early 1860s, when she assembled her fascicles, her most productive writing period, so Amherst is the place where the poems were written, though individual poems are not tied to a room.",
+      "placeSource": "https://en.wikipedia.org/wiki/Emily_Dickinson",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -28717,7 +29908,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28778,8 +29969,8 @@ window.PILOT_EVIDENCE={
       "lat": 59.93,
       "lng": 30.4,
       "anchorType": "Setting named in the text",
-      "placeNote": "The narrator lives in Saint Petersburg, and the work appeared in a Petersburg journal; Dostoevsky wrote much of it in Moscow. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/0/600/600-0.txt",
+      "placeNote": "The novella is set in St. Petersburg in about 1862–64, and its narrator is a retired civil servant living there; the page does not give the place where Dostoevsky wrote it, so the pin follows the setting named in the text.",
+      "placeSource": "https://en.wikipedia.org/wiki/Notes_from_Underground",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -28797,7 +29988,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -28818,8 +30009,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.38,
       "lng": -72.51,
       "anchorType": "Documented writing location",
-      "placeNote": "Dickinson wrote nearly all her poems at the family Homestead in Amherst. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/2/2/4/12242/12242-0.txt",
+      "placeNote": "Dickinson was born at the family Homestead in Amherst and spent her adult life there, withdrawn from social life; the page calls the early 1860s, when she assembled her fascicles, her most productive writing period, so Amherst is the place where the poems were written, though individual poems are not tied to a room.",
+      "placeSource": "https://en.wikipedia.org/wiki/Emily_Dickinson",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -28831,7 +30022,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -29320,8 +30511,8 @@ window.PILOT_EVIDENCE={
       "lat": 57.99,
       "lng": 31.36,
       "anchorType": "Approximate writing location",
-      "placeNote": "Dostoevsky wrote much of the novel at his house in Staraya Russa and the rest in Saint Petersburg. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/0/5/28054/28054-0.txt",
+      "placeNote": "The article states that Dostoevsky composed much of the novel in Staraya Russa, a spa town that inspired its main setting.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
       "review": "draft",
       "readings": {
         "meaning": {
@@ -29333,7 +30524,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -29388,7 +30579,7 @@ window.PILOT_EVIDENCE={
       "lat": 57.99,
       "lng": 31.36,
       "anchorType": "Approximate writing location",
-      "placeNote": "Dostoevsky wrote much of the novel at his house in Staraya Russa, the model for its town, and in St Petersburg. The source text does not state the place; the place still needs an editor’s confirmation.",
+      "placeNote": "The article states that Dostoevsky composed much of the novel in Staraya Russa, a spa town that inspired its main setting.",
       "placeSource": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
       "review": "draft",
       "readings": {
@@ -29401,7 +30592,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -29592,8 +30783,8 @@ window.PILOT_EVIDENCE={
       "lat": 44.35,
       "lng": 9.23,
       "anchorType": "Approximate writing-period location",
-      "placeNote": "Nietzsche is generally said to have written the first part at Rapallo in early 1883. The linked text does not confirm this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "placeNote": "Nietzsche's account, given in the article, is that the whole of the first part was conceived while he lived in Rapallo, on walks along the road to Zoagli, in early 1883; the speech on the flies in the market-place belongs to that first part.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra",
       "review": "draft",
       "question": "relationships",
       "readings": {
@@ -29618,7 +30809,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-21"
+        "date": "2026-11-24"
       }
     },
     {
@@ -29839,12 +31030,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "Project Gutenberg, Thomas Common translation",
       "sourceUrl": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
       "locator": "Part 1, section 12, “The Flies in the Market-Place”.",
-      "place": "Sils-Maria, Switzerland",
-      "lat": 46.43,
-      "lng": 9.76,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Nietzsche wrote parts of Zarathustra in the Engadine and in Italy; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "place": "Rapallo, Italy",
+      "lat": 44.35,
+      "lng": 9.23,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Nietzsche's account, given in the article, is that the whole of the first part was conceived while he lived in Rapallo, on walks along the road to Zoagli, in early 1883; the speech on the flies in the market-place belongs to that first part, so the pin is moved here from Sils-Maria.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -30048,8 +31239,8 @@ window.PILOT_EVIDENCE={
       "lat": 46.43,
       "lng": 9.76,
       "anchorType": "Documented writing location",
-      "placeNote": "Nietzsche wrote Twilight of the Idols during the summer of 1888 at Sils-Maria. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/2/2/6/52263/52263-0.txt",
+      "placeNote": "Twilight of the Idols was written in just over a week, between 26 August and 3 September 1888, while Nietzsche was on holiday in Sils Maria.",
+      "placeSource": "https://en.wikipedia.org/wiki/Twilight_of_the_Idols",
       "review": "draft",
       "readings": {
         "desire": {
@@ -30061,7 +31252,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -31951,9 +33142,9 @@ window.PILOT_EVIDENCE={
       "place": "Edinburgh, Scotland",
       "lat": 55.95,
       "lng": -3.19,
-      "anchorType": "Delivery location of the lectures",
-      "placeNote": "The Gifford Lectures were delivered at the University of Edinburgh in 1901 and 1902. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/2/621/621-0.txt",
+      "anchorType": "Place of delivery",
+      "placeNote": "The Wikipedia article states that James gave the Gifford Lectures at the University of Edinburgh, which became The Varieties of Religious Experience (1902).",
+      "placeSource": "https://en.wikipedia.org/wiki/William_James",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -31985,9 +33176,9 @@ window.PILOT_EVIDENCE={
       "place": "Edinburgh, Scotland",
       "lat": 55.95,
       "lng": -3.19,
-      "anchorType": "Documented lecture location",
-      "placeNote": "The book prints the Gifford Lectures on Natural Religion that James delivered at the University of Edinburgh. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/6/2/621/621-0.txt",
+      "anchorType": "Place of delivery",
+      "placeNote": "The Wikipedia article states that James gave the Gifford Lectures at the University of Edinburgh, which became The Varieties of Religious Experience (1902).",
+      "placeSource": "https://en.wikipedia.org/wiki/William_James",
       "review": "draft",
       "readings": {
         "truth": {
@@ -31999,7 +33190,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       }
     },
     {
@@ -33859,9 +35050,9 @@ window.PILOT_EVIDENCE={
       "place": "Cambridge, Massachusetts, USA",
       "lat": 42.37,
       "lng": -71.11,
-      "anchorType": "Delivery location of the lectures",
-      "placeNote": "The Sadhana lectures were delivered at Harvard in 1913 while Tagore was touring the United States. The linked page gives the text only, not the venue; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/sadhanarealisati00tago/sadhanarealisati00tago_djvu.txt",
+      "anchorType": "Place of delivery",
+      "placeNote": "In the author’s preface to Sadhana, Tagore says the papers draw on Bengali discourses given to his students at his school at Bolpur and that he read most of them before Harvard University; the preface does not assign this chapter to either place, so the pin marks the Harvard readings.",
+      "placeSource": "https://gutenberg.pglaf.org/6/8/4/6842/6842.txt",
       "review": "draft",
       "readings": {
         "truth": {
@@ -33893,9 +35084,9 @@ window.PILOT_EVIDENCE={
       "place": "Cambridge, Massachusetts, USA",
       "lat": 42.37,
       "lng": -71.11,
-      "anchorType": "Delivery location of the lectures",
-      "placeNote": "The Sadhana lectures were delivered at Harvard in 1913 while Tagore was touring the United States. The linked page gives the text only, not the venue; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/sadhanarealisati00tago/sadhanarealisati00tago_djvu.txt",
+      "anchorType": "Place of delivery",
+      "placeNote": "In the author’s preface to Sadhana, Tagore says the papers draw on Bengali discourses given to his students at his school at Bolpur and that he read most of them before Harvard University; the preface does not assign this chapter to either place, so the pin marks the Harvard readings.",
+      "placeSource": "https://gutenberg.pglaf.org/6/8/4/6842/6842.txt",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -34365,8 +35556,8 @@ window.PILOT_EVIDENCE={
       "lat": 50.33,
       "lng": 13.75,
       "anchorType": "Documented writing location",
-      "placeNote": "Kafka wrote the aphorisms in notebooks while staying with his sister at Zürau in 1917 and 1918. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://de.wikisource.org/wiki/Betrachtungen_%C3%BCber_S%C3%BCnde,_Leid,_Hoffnung_und_den_wahren_Weg",
+      "placeNote": "Kafka wrote the notes from which the Zürau aphorisms were extracted while staying in the Bohemian village of Zürau (Siřem) after his tuberculosis diagnosis of August 1917, according to the biography article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Franz_Kafka",
       "review": "draft",
       "readings": {
         "happiness": {
@@ -34400,8 +35591,8 @@ window.PILOT_EVIDENCE={
       "lat": 50.33,
       "lng": 13.75,
       "anchorType": "Documented writing location",
-      "placeNote": "Kafka wrote the aphorisms in notebooks while staying with his sister at Zürau in 1917 and 1918. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://de.wikisource.org/wiki/Betrachtungen_%C3%BCber_S%C3%BCnde,_Leid,_Hoffnung_und_den_wahren_Weg",
+      "placeNote": "Kafka wrote the notes from which the Zürau aphorisms were extracted while staying in the Bohemian village of Zürau (Siřem) after his tuberculosis diagnosis of August 1917, according to the biography article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Franz_Kafka",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -34435,8 +35626,8 @@ window.PILOT_EVIDENCE={
       "lat": 50.33,
       "lng": 13.75,
       "anchorType": "Documented writing location",
-      "placeNote": "Kafka wrote the aphorisms in notebooks while staying with his sister at Zürau in 1917 and 1918. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://de.wikisource.org/wiki/Betrachtungen_%C3%BCber_S%C3%BCnde,_Leid,_Hoffnung_und_den_wahren_Weg",
+      "placeNote": "Kafka wrote the notes from which the Zürau aphorisms were extracted while staying in the Bohemian village of Zürau (Siřem) after his tuberculosis diagnosis of August 1917, according to the biography article.",
+      "placeSource": "https://en.wikipedia.org/wiki/Franz_Kafka",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -34444,6 +35635,40 @@ window.PILOT_EVIDENCE={
           "facet": "The indestructible that stays hidden",
           "why": "Kafka says people live on trust in something indestructible that may remain hidden, and he names belief in a personal God as only one way that hiddenness is expressed. The ultimate is affirmed as a need and kept out of reach of description.",
           "limit": "Aphorism 50 speaks of an indestructible element in the person and does not assert a God as fact. The English is the atlas’s own unreviewed translation. The aphorisms are numbered notebook entries, not an argued essay, and the numbering follows the Wikisource page."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "ludwig-wittgenstein-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Ludwig Wittgenstein",
+      "short": "Wittgenstein",
+      "work": "Tractatus Logico-Philosophicus",
+      "excerpt": "things that cannot be put into words. They make themselves manifest. They are what is mystical",
+      "period": "1918",
+      "dateShort": "1918",
+      "dateFull": "1918",
+      "sortYear": 1918,
+      "sourceLabel": "As quoted in Ludwig Wittgenstein, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/wittgenstein/",
+      "locator": "Quoted from Tractatus 6.522 in the account of the unsayable.",
+      "place": "Vienna, Austria",
+      "lat": 48.21,
+      "lng": 16.37,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Wittgenstein completed the Tractatus in 1918, part of it in Vienna; the place still needs checking. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/wittgenstein/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "What cannot be put into words",
+          "why": "Wittgenstein says some things cannot be put into words and show themselves, and calls these the mystical. The passage places what matters most beyond saying.",
+          "limit": "The line is the entry’s quotation of proposition 6.522 and does not name God or an ultimate reality. The word “mystical” is the author’s, and its reach is debated. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
         }
       },
       "check": {
@@ -34601,6 +35826,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "max-scheler-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Max Scheler",
+      "short": "Scheler",
+      "work": "On the Eternal in Man (Vom Ewigen im Menschen)",
+      "excerpt": "Every finite spirit believes either in a God or in an idol",
+      "period": "1921",
+      "dateShort": "1921",
+      "dateFull": "1921",
+      "sortYear": 1921,
+      "sourceLabel": "As quoted in Max Scheler, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/scheler/",
+      "locator": "Quoted in the account of the human being as God-seeker.",
+      "place": "Cologne, Germany",
+      "lat": 50.94,
+      "lng": 6.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Scheler taught at the University of Cologne from 1919 to 1928. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/scheler/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Everyone believes in a God or an idol",
+          "why": "Scheler claims a finite person always places something absolute at the centre, whether a God or a false substitute. The passage affirms an ultimate that people orient themselves toward.",
+          "limit": "The sentence describes what people believe, not whether a God exists, and the entry reads it as a claim that atheists also believe in an absolute. The entry cites it as GW V, 261. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "wittgenstein-truth",
       "question": "truth",
       "name": "Ludwig Wittgenstein",
@@ -34748,6 +36007,40 @@ window.PILOT_EVIDENCE={
           "facet": "Man as a creature of habit",
           "why": "Dewey says that habits, which form through social life, organise raw impulses into the person’s character. A person is shaped by acquired habit more than by native endowment, so the passage sits at made.",
           "limit": "The sentence is a point in a psychology of conduct and leaves open how much impulse is inborn. The text is the 1922 original."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "john-dewey-lasting-self",
+      "question": "lasting-self",
+      "name": "John Dewey",
+      "short": "Dewey",
+      "work": "Human Nature and Conduct",
+      "excerpt": "All habits are demands for certain kinds of activity; and they constitute the self",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "As quoted in John Dewey, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/dewey/",
+      "locator": "Quoted in the account of habit, cited as HNC, MW14: 22.",
+      "place": "New York, USA",
+      "lat": 40.81,
+      "lng": -73.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Dewey taught at Columbia University in New York when the book was published. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/dewey/",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Habits as the self",
+          "why": "Dewey says the self is formed from habits, which are acquired ways of acting. A self made of habits is real but built up over time, so the passage is placed at changing.",
+          "limit": "The line is a short claim in a psychology of conduct; Dewey does not discuss survival after death or personal identity in the metaphysical sense here. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
         }
       },
       "check": {
@@ -35074,6 +36367,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "martin-buber-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Martin Buber",
+      "short": "Buber",
+      "work": "I and Thou",
+      "excerpt": "two human beings reveal the You to one another",
+      "period": "1923",
+      "dateShort": "1923",
+      "dateFull": "1923",
+      "sortYear": 1923,
+      "sourceLabel": "As quoted in Existentialism, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/existentialism/",
+      "locator": "Quoted in the account of the I-You relation.",
+      "place": "Heppenheim, Germany",
+      "lat": 49.64,
+      "lng": 8.63,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Buber lived in Heppenheim from 1916 to 1938, and the book appeared in 1923. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/existentialism/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Meeting another person",
+          "why": "Buber says the other person is revealed between two persons, so that a person is brought out of private concerns by meeting another. This places the passage at others.",
+          "limit": "The line is part of a description of a moment of grace in a face-to-face relation, and Buber treats ordinary use of things as a necessary part of life. The entry cites 1923 [1970, 95]. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "martin-buber-relationships",
       "question": "relationships",
       "name": "Martin Buber",
@@ -35223,6 +36550,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-dewey",
+      "question": "relationships",
+      "name": "John Dewey",
+      "short": "Dewey",
+      "work": "Experience and Nature",
+      "excerpt": "Personality, selfhood, subjectivity, are eventual functions that emerge with complexly organized interactions, organic and social",
+      "period": "1925",
+      "dateShort": "1925",
+      "dateFull": "1925",
+      "sortYear": 1925,
+      "sourceLabel": "As quoted in John Dewey, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/dewey/",
+      "locator": "Quoted in the discussion of mental privacy, cited as EN, LW1: 162.",
+      "place": "New York, USA",
+      "lat": 40.81,
+      "lng": -73.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Dewey taught at Columbia University in New York when the book appeared. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/dewey/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Selfhood as an outcome of interaction",
+          "why": "Dewey says selfhood is a later development that emerges from organized interactions, social ones among them. This makes social relations part of what forms the self.",
+          "limit": "The interactions named are organic and social together, so the passage does not single out other persons alone. The citation is Experience and Nature, LW1: 162. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "phan-chau-trinh-relationships",
       "question": "relationships",
       "name": "Phan Châu Trinh",
@@ -35255,6 +36616,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "alfred-north-whitehead-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Alfred North Whitehead",
+      "short": "Whitehead",
+      "work": "Religion in the Making",
+      "excerpt": "all collective emotions leave untouched the awful ultimate fact, which is the human being, consciously alone with itself, for its own sake. Religion is what the individual does with his own solitariness.",
+      "period": "1926",
+      "dateShort": "1926",
+      "dateFull": "1926",
+      "sortYear": 1926,
+      "sourceLabel": "As quoted in Alfred North Whitehead, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/whitehead/",
+      "locator": "Block quotation in the section on religion and science, cited as 1926 [1996: 15–16].",
+      "place": "Cambridge, Massachusetts, USA",
+      "lat": 42.37,
+      "lng": -71.11,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Whitehead taught at Harvard from 1924, and the book grew from lectures given in Massachusetts in 1926. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/whitehead/",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Religion and solitariness",
+          "why": "Whitehead says collective feeling does not reach the individual who stands alone with himself, and that religion is what that person does with his solitude. This places the passage at solitude.",
+          "limit": "The same passage says society cannot be abstracted from the person, so it holds company as well as solitude. It concerns religion, not a general recommendation to live alone. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35301,6 +36696,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "unreachable",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "martin-heidegger-death",
+      "question": "death",
+      "name": "Martin Heidegger",
+      "short": "Heidegger",
+      "work": "Being and Time",
+      "excerpt": "an impassioned freedom towards death—a freedom which has been released from the illusions of the ‘They’",
+      "period": "1927",
+      "dateShort": "1927",
+      "dateFull": "1927",
+      "sortYear": 1927,
+      "sourceLabel": "As quoted in Existentialism, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/existentialism/",
+      "locator": "Quoted in the account of authenticity and anticipation.",
+      "place": "Marburg, Germany",
+      "lat": 50.81,
+      "lng": 8.77,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Heidegger taught at Marburg when Being and Time appeared in 1927. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/existentialism/",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Freedom toward death",
+          "why": "Heidegger describes facing one’s own death freely and without the comforting illusions of the crowd. The words concern the stance toward death and do not say what happens at death, so the passage is left unscored.",
+          "limit": "The passage describes an attitude toward death, not whether anything follows it. The entry cites it as 1927 [1962, 266]. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "martin-heidegger",
+      "question": "relationships",
+      "name": "Martin Heidegger",
+      "short": "Heidegger",
+      "work": "Being and Time",
+      "excerpt": "We take pleasure and enjoy ourselves as they take pleasure. We read, see, and judge about literature and art as they see and judge",
+      "period": "1927",
+      "dateShort": "1927",
+      "dateFull": "1927",
+      "sortYear": 1927,
+      "sourceLabel": "As quoted in Existentialism, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/existentialism/",
+      "locator": "Quoted in the entry’s account of the “They” and falling.",
+      "place": "Marburg, Germany",
+      "lat": 50.81,
+      "lng": 8.77,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Heidegger taught at Marburg from 1923 to 1928 and Being and Time was completed there. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/existentialism/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The “they” prescribes everyday being",
+          "why": "Heidegger says the everyday self takes its pleasures and judgments from the public “they”. Social others are therefore necessary to the kind of self described, the everyday one.",
+          "limit": "The passage describes the everyday, inauthentic self and Heidegger contrasts it with a self that owns its existence. It does not say all selfhood is fixed by others. The entry cites 1927 [1962, 126–7]. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35415,6 +36878,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "alfred-north-whitehead-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Alfred North Whitehead",
+      "short": "Whitehead",
+      "work": "Process and Reality",
+      "excerpt": "is the poet of the world, with tender patience leading it by his vision of truth, beauty, and goodness",
+      "period": "1927–29",
+      "dateShort": "1927–29",
+      "dateFull": "1927–29",
+      "sortYear": 1929,
+      "sourceLabel": "As quoted in Alfred North Whitehead, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/whitehead/",
+      "locator": "Quoted in the section on God and the world, cited as 1929c [1985: 346].",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.19,
+      "anchorType": "Setting of delivery",
+      "placeNote": "The book was delivered as the Gifford Lectures at the University of Edinburgh in 1927–28. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/whitehead/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as the poet of the world",
+          "why": "Whitehead affirms a God who persuades the world toward value rather than forcing it. The passage places God as a real ultimate that works in the world.",
+          "limit": "The sentence comes from a technical work and describes a God who does not coerce, which differs from traditional theism. The entry’s page citation is 1929c [1985: 346]. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35554,6 +37051,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-dewey-meaning",
+      "question": "meaning",
+      "name": "John Dewey",
+      "short": "Dewey",
+      "work": "“What I Believe”",
+      "excerpt": "the full participation of all our powers in the endeavor to wrest from each changing situation of experience its own full and unique meaning",
+      "period": "1930",
+      "dateShort": "1930",
+      "dateFull": "1930",
+      "sortYear": 1930,
+      "sourceLabel": "As quoted in John Dewey, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/dewey/",
+      "locator": "Quoted in the account of Dewey’s faith in experience, cited as LW5: 272.",
+      "place": "New York, USA",
+      "lat": 40.81,
+      "lng": -73.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Dewey taught at Columbia University in New York in 1930. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/dewey/",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "Wresting meaning from experience",
+          "why": "Dewey describes a faith that comes from using all of a person’s powers to draw meaning out of each changing situation. Meaning is made through that effort, not handed down.",
+          "limit": "The meaning in question belongs to each situation of experience, not to life as a whole, so the passage reaches the question only by extension. The entry cites it as LW5: 272. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "muhammad-iqbal-free-will",
       "question": "free-will",
       "name": "Muhammad Iqbal",
@@ -35690,6 +37221,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nishida-kitaro-lasting-self",
+      "question": "lasting-self",
+      "name": "Nishida Kitarō",
+      "short": "Nishida",
+      "work": "Nishida’s philosophy of nothingness (NKZ V)",
+      "excerpt": "when we truly enter thoroughly into the consciousness of absolute nothingness, there is neither I nor God",
+      "period": "1930s",
+      "dateShort": "1930s",
+      "dateFull": "1930s",
+      "sortYear": 1932,
+      "sourceLabel": "As quoted in The Kyoto School, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/kyoto-school/",
+      "locator": "Quoted in the entry’s account of absolute nothingness, cited as NKZ V, 182.",
+      "place": "Kyoto, Japan",
+      "lat": 35.03,
+      "lng": 135.77,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Nishida taught at Kyoto Imperial University and lived in Kyoto into the 1930s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/kyoto-school/",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Neither self nor God in absolute nothingness",
+          "why": "Nishida says that at the depth of absolute nothingness no self remains. This places the passage at no self, though only for that depth of consciousness.",
+          "limit": "The entry gives the line in a comparison with Meister Eckhart, and it describes a state of consciousness, not an argument that no ordinary self exists. The date is that of the collected-works volume, so it is approximate. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "narada-thera-free-will",
       "question": "free-will",
       "name": "Nārada Mahāthera",
@@ -35755,6 +37320,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "gabriel-marcel-truth",
+      "question": "truth",
+      "name": "Gabriel Marcel",
+      "short": "Marcel",
+      "work": "Being and Having",
+      "excerpt": "The mysterious is not the unknowable, the unknowable is only the limiting case of the problematic",
+      "period": "1935",
+      "dateShort": "1935",
+      "dateFull": "1935",
+      "sortYear": 1935,
+      "sourceLabel": "As quoted in Gabriel Marcel, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/marcel/",
+      "locator": "Quoted in the entry’s account of mystery and problem.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Marcel lived and wrote in Paris in the 1930s; the entry gives the English edition date, so the pin and date are approximate. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/marcel/",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "Mystery is not the unknowable",
+          "why": "Marcel separates mystery from the unknowable, so that what is mysterious can be approached and understood without being solved. This puts the deepest truth at partly knowable.",
+          "limit": "The sentence distinguishes problem and mystery in Marcel’s vocabulary; it does not claim that the deepest truth can be fully grasped. The entry cites Marcel 1949, p. 118. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "watsuji-tetsuro-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Watsuji Tetsurō",
+      "short": "Watsuji",
+      "work": "A Study of the History of the Japanese Spirit",
+      "excerpt": "the communion between man and man does not mean their becoming merely one. It is only through the fact that men are unique individuals that a cooperation between ‘man and man’ can be realized",
+      "period": "1935",
+      "dateShort": "1935",
+      "dateFull": "1935",
+      "sortYear": 1935,
+      "sourceLabel": "As quoted in Watsuji Tetsurō, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/watsuji-tetsuro/",
+      "locator": "Quoted in the entry’s account of individual and social nature, cited as Watsuji 1935, 112.",
+      "place": "Tokyo, Japan",
+      "lat": 35.7,
+      "lng": 139.74,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Watsuji taught in Tokyo from 1934, shortly before the work appeared. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/watsuji-tetsuro/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Communion without merging",
+          "why": "Watsuji says union between people does not erase the individual and that cooperation depends on people being distinct. Neither the person nor the community comes first.",
+          "limit": "The entry quotes the sentence to show Watsuji’s view that people are both individual and social, which is a view the passage only implies. The ellipsis at its opening is the entry’s own. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -35832,6 +37465,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "edith-stein-lasting-self",
+      "question": "lasting-self",
+      "name": "Edith Stein",
+      "short": "Stein",
+      "work": "Finite and Eternal Being",
+      "excerpt": "The being of human beings is a composite of body, soul, and spirit",
+      "period": "1935–37",
+      "dateShort": "1935–37",
+      "dateFull": "1935–37",
+      "sortYear": 1936,
+      "sourceLabel": "As quoted in Edith Stein, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/stein/",
+      "locator": "Quoted in the account of the human person, cited as 1950/2006: 310.",
+      "place": "Cologne, Germany",
+      "lat": 50.94,
+      "lng": 6.96,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Stein wrote the book in the Carmelite convent in Cologne in the later 1930s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/stein/",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "A composite of body, soul and spirit",
+          "why": "Stein says a human being is made of body, soul and spirit together. A real self that is composite is placed at changing.",
+          "limit": "The entry elsewhere describes Stein’s view that the soul is more than momentary, so this line does not settle whether she thinks the self lasts. It is a statement of structure, not of persistence. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "mao-zedong-truth",
       "question": "truth",
       "name": "Mao Zedong",
@@ -35901,6 +37568,108 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "albert-camus-death",
+      "question": "death",
+      "name": "Albert Camus",
+      "short": "Camus",
+      "work": "Nuptials (Noces), essay “The Wind at Djemila”",
+      "excerpt": "I do not want to believe that death is the gateway to another life. For me it is a closed door",
+      "period": "1938",
+      "dateShort": "1938",
+      "dateFull": "1938",
+      "sortYear": 1938,
+      "sourceLabel": "As quoted in Albert Camus, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/camus/",
+      "locator": "Quoted in the entry’s account of abandoning hope of an afterlife; citation “N, 76”.",
+      "place": "Algiers, Algeria",
+      "lat": 36.73,
+      "lng": 3.08,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Camus wrote the Nuptials essays in and around Algiers, where he lived in the late 1930s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/camus/",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Rejecting an afterlife",
+          "why": "Camus refuses the hope of another life and treats death as a shut door. Within these words death ends the person, and the only life to live is the present one.",
+          "limit": "The line comes from a lyrical early essay, not a systematic argument, and states a refusal to believe rather than a proof. The entry cites it as Nuptials page 76; the English wording is the entry author’s choice of translation. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "albert-camus-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Albert Camus",
+      "short": "Camus",
+      "work": "Nuptials (Noces), essay “Summer in Algiers”",
+      "excerpt": "Between this sky and the faces turned toward it there is nothing on which to hang a mythology, a literature, an ethic, or a religion—only stones, flesh, stars, and those truths the hand can touch",
+      "period": "1939",
+      "dateShort": "1939",
+      "dateFull": "1939",
+      "sortYear": 1939,
+      "sourceLabel": "As quoted in Albert Camus, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/camus/",
+      "locator": "Quoted just after the “closed door” line, citation “N, 90”.",
+      "place": "Algiers, Algeria",
+      "lat": 36.73,
+      "lng": 3.08,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Camus wrote the Nuptials essays in and around Algiers in the late 1930s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/camus/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "No mythology to hang on the sky",
+          "why": "Camus says that under the sky there is nothing behind the world to support a religion or an ethic, only what can be touched. The passage therefore denies any ultimate reality beyond the world.",
+          "limit": "The passage is lyrical and describes what the author sees and feels in a landscape; it is not an argued denial of God. The entry cites it as Nuptials page 90. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "gabriel-marcel-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Gabriel Marcel",
+      "short": "Marcel",
+      "work": "Creative Fidelity",
+      "excerpt": "In principle, to commit myself I must know myself, but the fact is I really only know myself when I have committed myself",
+      "period": "1940",
+      "dateShort": "1940",
+      "dateFull": "1940",
+      "sortYear": 1940,
+      "sourceLabel": "As quoted in Gabriel Marcel, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/marcel/",
+      "locator": "Quoted in the account of fidelity, cited as Marcel 1964, p. 163.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Marcel lived and wrote in Paris; the entry cites a later edition, so the date and pin are approximate. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/marcel/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Knowing oneself through commitment",
+          "why": "Marcel says a person has to know themselves in order to commit, yet only learns who they are by committing. Self-knowledge and commitment to others depend on each other, which gives both.",
+          "limit": "The commitment in question is fidelity, mostly to another person, but the sentence does not say so itself. Marcel presents it as an apparent circle that is resolved in lived experience. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "mohandas-gandhi-free-will",
       "question": "free-will",
       "name": "Mohandas K. Gandhi",
@@ -35932,6 +37701,176 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "simone-weil-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Simone Weil",
+      "short": "Weil",
+      "work": "Oppression and Liberty",
+      "excerpt": "relative and mixed goods (home, country, traditions, culture, etc.) which warm and nourish the soul and without which, apart from sanctity, a human life is impossible",
+      "period": "1930s–40s",
+      "dateShort": "1930s–40s",
+      "dateFull": "1930s–40s",
+      "sortYear": 1940,
+      "sourceLabel": "As quoted in Simone Weil, Internet Encyclopedia of Philosophy",
+      "sourceUrl": "https://iep.utm.edu/weil/",
+      "locator": "Quoted in the entry’s discussion of decentralisation and roots.",
+      "place": "Marseille, France",
+      "lat": 43.3,
+      "lng": 5.38,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Weil’s notes from 1940–42 were written in Marseille; the entry does not date this passage, so the pin is approximate. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/weil/",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Goods of home and community",
+          "why": "Weil says the goods of home, country and culture are needed to nourish the soul, with sanctity as the one exception. A life among others is needed, with room kept for a solitary holiness.",
+          "limit": "The passage speaks of belonging to a community and its inherited goods, not of company in the sense of friends. The entry cites it as an earlier statement of the same idea. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "albert-camus-happiness",
+      "question": "happiness",
+      "name": "Albert Camus",
+      "short": "Camus",
+      "work": "The Myth of Sisyphus",
+      "excerpt": "The struggle itself toward the heights is enough to fill a man’s heart. One must imagine Sisyphus happy",
+      "period": "1940–41",
+      "dateShort": "1940–41",
+      "dateFull": "1940–41",
+      "sortYear": 1941,
+      "sourceLabel": "As quoted in Albert Camus, Internet Encyclopedia of Philosophy",
+      "sourceUrl": "https://iep.utm.edu/camus/",
+      "locator": "Closing lines of The Myth of Sisyphus, quoted in the Internet Encyclopedia of Philosophy entry.",
+      "place": "Oran, Algeria",
+      "lat": 35.68,
+      "lng": -0.63,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Camus drafted the essay in Oran and finished it in France between 1940 and 1941; Oran is used as an approximate pin. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/camus/",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happiness inside the struggle",
+          "why": "Camus says the effort itself can fill a life, so that happiness does not wait on a reward or on outward conditions. This puts the passage at on-oneself.",
+          "limit": "The condemned figure of myth is the example, so the claim is made in an extreme and symbolic situation. The line is the closing image of an essay about absurdity, not a general theory of happiness. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "albert-camus-truth",
+      "question": "truth",
+      "name": "Albert Camus",
+      "short": "Camus",
+      "work": "The Myth of Sisyphus",
+      "excerpt": "This world in itself is not reasonable, that is all that can be said",
+      "period": "1940–41",
+      "dateShort": "1940–41",
+      "dateFull": "1940–41",
+      "sortYear": 1941,
+      "sourceLabel": "As quoted in Albert Camus, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/camus/",
+      "locator": "Quoted from The Myth of Sisyphus, citation “MS, 21”.",
+      "place": "Oran, Algeria",
+      "lat": 35.68,
+      "lng": -0.63,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Camus drafted the essay in Oran and finished it in France in 1940 and 1941; Oran is an approximate pin. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/camus/",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "A world that cannot be made reasonable",
+          "why": "Camus claims the only thing that can be stated about the world in itself is that it is not reasonable. This puts the passage at not-knowable.",
+          "limit": "The sentence states the limit of reason as the starting point of the essay, and Camus goes on to build a way of living from it. It does not say that no truths of any kind can be known. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "edith-stein-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Edith Stein",
+      "short": "Stein",
+      "work": "Ways to Know God",
+      "excerpt": "We draw near to God by denying what he is not",
+      "period": "1941",
+      "dateShort": "1941",
+      "dateFull": "1941",
+      "sortYear": 1941,
+      "sourceLabel": "As quoted in Edith Stein, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/stein/",
+      "locator": "Quoted in the discussion of negative theology, cited as 1993: 19.",
+      "place": "Echt, Netherlands",
+      "lat": 51.11,
+      "lng": 5.88,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Stein was in the Carmelite convent at Echt in 1941 when the essay was written. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/stein/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "Approaching God by denial",
+          "why": "Stein states the way of negative theology, in which God is approached by saying what he is not. This places the ultimate beyond direct description.",
+          "limit": "Stein affirms God’s existence and a trinitarian nature elsewhere in the entry, so the line is about a way of speaking, not doubt. The entry cites the English as 1993: 19. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "simone-weil-desire",
+      "question": "desire",
+      "name": "Simone Weil",
+      "short": "Weil",
+      "work": "Gravity and Grace",
+      "excerpt": "An attachment to a particular thing can only be destroyed by an attachment which is incompatible with it",
+      "period": "1940–42",
+      "dateShort": "1940–42",
+      "dateFull": "1940–42",
+      "sortYear": 1941,
+      "sourceLabel": "As quoted in Simone Weil, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/simone-weil/",
+      "locator": "Quoted in the discussion of contradiction and attention, cited as GG 101.",
+      "place": "Marseille, France",
+      "lat": 43.3,
+      "lng": 5.38,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The notebooks later published as Gravity and Grace were written largely in Marseille in 1940–42. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/simone-weil/",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Replacing one attachment with another",
+          "why": "Weil says a given attachment can only be ended by a stronger one that cannot coexist with it. This treats desire as something to be redirected, not just cut off.",
+          "limit": "The sentence is a note from a notebook later arranged by others and speaks of destroying an attachment, which could also be read as renunciation. The entry cites it as GG 101. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36043,6 +37982,108 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jean-paul-sartre-death",
+      "question": "death",
+      "name": "Jean-Paul Sartre",
+      "short": "Sartre",
+      "work": "Being and Nothingness",
+      "excerpt": "to be dead is to be prey for the living",
+      "period": "1943",
+      "dateShort": "1943",
+      "dateFull": "1943",
+      "sortYear": 1943,
+      "sourceLabel": "As quoted in Jean-Paul Sartre, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/sartre/",
+      "locator": "Quoted in the entry’s opening biographical account, cited as 1943 [1956: 543].",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.33,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Sartre wrote Being and Nothingness in Paris in 1941–43. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/sartre/",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "To be dead is to be prey",
+          "why": "Sartre says that after death a person becomes something that others can interpret and use. Nothing of the person goes on, so the passage is placed at ends.",
+          "limit": "The sentence is about the standing of the dead among the living, not about an afterlife, and the entry uses it to describe Sartre’s own biography. It does not say that nothing of a person survives. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "jean-paul-sartre-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Jean-Paul Sartre",
+      "short": "Sartre",
+      "work": "Being and Nothingness",
+      "excerpt": "our being, along with its being-for-itself, is also for-others; the being which is revealed to the reflective consciousness is for-itself-for-others",
+      "period": "1943",
+      "dateShort": "1943",
+      "dateFull": "1943",
+      "sortYear": 1943,
+      "sourceLabel": "As quoted in Phenomenological Approaches to Self-Consciousness, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/self-consciousness-phenomenological/",
+      "locator": "Quoted in the account of the other’s gaze and self-alienation, cited as 1956, 282.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.33,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Sartre wrote Being and Nothingness in Paris during the Occupation. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/self-consciousness-phenomenological/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Being for itself and for others",
+          "why": "Sartre says that what reflection reveals about a person’s being is already marked by the existence of others. Inward reflection and other people are held together, which gives both.",
+          "limit": "The line is a technical claim about being and reflection, and Sartre elsewhere describes the other as a source of conflict. The entry cites it as 1956, 282. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "nishida-kitaro-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Nishida Kitarō",
+      "short": "Nishida",
+      "work": "Last writings (NKZ 10)",
+      "excerpt": "Our life and our existence are not our own. They are the determinations of absolute nothingness",
+      "period": "1943",
+      "dateShort": "1943",
+      "dateFull": "1943",
+      "sortYear": 1943,
+      "sourceLabel": "As quoted in Nishida Kitarō, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/nishida-kitaro/",
+      "locator": "Quoted in the closing section of the entry, cited as NKZ 10, 401, 472.",
+      "place": "Kamakura, Japan",
+      "lat": 35.32,
+      "lng": 139.55,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Nishida lived in Kamakura from 1940 until his death in 1945. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/nishida-kitaro/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Life as a determination of absolute nothingness",
+          "why": "Nishida says human life is a determination of absolute nothingness, which he treats as the ground of all that is. The passage affirms an ultimate that is not a being.",
+          "limit": "The ultimate is called nothingness, which is not an object or a God in the usual sense. The entry quotes the sentence from the last years of his life and joins it by an ellipsis to the sentence that follows, which is not part of the excerpt. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "simone-weil-relationships",
       "question": "relationships",
       "name": "Simone Weil",
@@ -36078,6 +38119,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "simone-weil-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Simone Weil",
+      "short": "Weil",
+      "work": "The Need for Roots",
+      "excerpt": "It is an eternal obligation toward the human being not to let him suffer from hunger when one has a chance of coming to his assistance.",
+      "period": "1943",
+      "dateShort": "1943",
+      "dateFull": "1943",
+      "sortYear": 1943,
+      "sourceLabel": "As quoted in Simone Weil, Internet Encyclopedia of Philosophy",
+      "sourceUrl": "https://iep.utm.edu/weil/",
+      "locator": "Quoted in the entry’s account of obligation, from the first section of the book.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.13,
+      "anchorType": "Documented writing location",
+      "placeNote": "Weil wrote the book in London in 1943, working for the Free French. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/weil/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Obligation to the hungry",
+          "why": "Weil puts a duty to feed the hungry first, as an obligation owed to every human being whatever their claims. This places the passage at others.",
+          "limit": "The sentence is the opening principle of a programme of obligations written for a post-war France, and the entry quotes it without a page. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "mao-zedong-meaning",
       "question": "meaning",
       "name": "Mao Zedong",
@@ -36109,6 +38184,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "simone-de-beauvoir-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Simone de Beauvoir",
+      "short": "Beauvoir",
+      "work": "Pyrrhus and Cineas",
+      "excerpt": "But man is not alone in the world",
+      "period": "1944",
+      "dateShort": "1944",
+      "dateFull": "1944",
+      "sortYear": 1944,
+      "sourceLabel": "As quoted in Simone de Beauvoir, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/beauvoir/",
+      "locator": "Quoted at the end of Part I of the essay, cited in the entry as “PhilW 115”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.33,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Beauvoir lived and wrote in Paris during the Occupation, when the essay appeared in 1944. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/beauvoir/",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Not alone in the world",
+          "why": "Beauvoir sets this sentence against the idea of a person alone whose goals would all seem vain, so that life among others is what gives action its point.",
+          "limit": "The excerpt is one sentence from an ellipsis-broken quotation in the entry; the preceding clause about a lone person is not contiguous with it and is not part of the excerpt. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "gabriel-marcel-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Gabriel Marcel",
+      "short": "Marcel",
+      "work": "Homo Viator, on hope",
+      "excerpt": "Hope consists in asserting that there is at the heart of being, beyond all data, beyond all inventories and all calculations, a mysterious principle which is in connivance with me",
+      "period": "1940s",
+      "dateShort": "1940s",
+      "dateFull": "1940s",
+      "sortYear": 1945,
+      "sourceLabel": "As quoted in Gabriel Marcel, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/marcel/",
+      "locator": "Quoted in the account of hope.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Marcel lived and wrote in Paris through the 1940s; the exact date of the passage is not given in the entry. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/marcel/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Hope and a principle at the heart of being",
+          "why": "Marcel says hope affirms a mysterious principle at the heart of being that is on the side of the hoper. The passage affirms an ultimate reality without describing it.",
+          "limit": "The principle is called mysterious and no name is given to it, and the words describe hope as an act of assertion, not a proof. The entry cites the page as Marcel 1995, p. 28. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36212,6 +38355,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "jean-paul-sartre-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Jean-Paul Sartre",
+      "short": "Sartre",
+      "work": "Existentialism Is a Humanism",
+      "excerpt": "And in wanting freedom we discover that it depends entirely on the freedom of others, and that freedom of others depends on ours",
+      "period": "1945",
+      "dateShort": "1945",
+      "dateFull": "1945",
+      "sortYear": 1945,
+      "sourceLabel": "As quoted in Existentialism, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/existentialism/",
+      "locator": "Quoted in the entry’s account of existentialist ethics.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.33,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Sartre gave the lecture in Paris in October 1945. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/existentialism/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Freedom bound up with others’ freedom",
+          "why": "Sartre says a person’s freedom depends on others’ freedom and theirs on his. Neither comes first, which gives both.",
+          "limit": "The entry quotes the sentence with an ellipsis from a public lecture that Sartre later regretted as popularised. The entry gives no page for it. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36438,6 +38615,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "albert-camus-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Albert Camus",
+      "short": "Camus",
+      "work": "The Rebel (L’Homme révolté)",
+      "excerpt": "I revolt, therefore we are",
+      "period": "1951",
+      "dateShort": "1951",
+      "dateFull": "1951",
+      "sortYear": 1951,
+      "sourceLabel": "As quoted in Albert Camus, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/camus/",
+      "locator": "Quoted from The Rebel, citation “R, 22”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Camus lived and worked in Paris when The Rebel appeared in 1951. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/camus/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "From individual revolt to community",
+          "why": "Camus links one person’s act of revolt directly to a shared human community, in a formula of five words. Neither the individual nor the group is placed first, which gives the position both.",
+          "limit": "The line is a compressed formula; the entry notes it is paradoxical and spends a section asking how an individual act yields a solidarity. The English is a standard translation of the French. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "b-r-ambedkar-ultimate-reality",
       "question": "ultimate-reality",
       "name": "B. R. Ambedkar",
@@ -36509,6 +38720,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "karl-jaspers-happiness",
+      "question": "happiness",
+      "name": "Karl Jaspers",
+      "short": "Jaspers",
+      "work": "The Great Philosophers (Die großen Philosophen)",
+      "excerpt": "promoting the happiness that comes of meeting great men and sharing in their thoughts",
+      "period": "1957",
+      "dateShort": "1957",
+      "dateFull": "1957",
+      "sortYear": 1957,
+      "sourceLabel": "As quoted in Karl Jaspers, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/jaspers/",
+      "locator": "Quoted in the entry’s account of Jaspers’s late work.",
+      "place": "Basel, Switzerland",
+      "lat": 47.56,
+      "lng": 7.59,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Jaspers taught in Basel from 1948, when he wrote the book. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/jaspers/",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "The happiness of meeting great men",
+          "why": "Jaspers names as the aim of his history of philosophy the happiness that comes from meeting great thinkers. The happiness named depends on other people, living or dead.",
+          "limit": "The words state the aim of an unfinished book, not a general theory of happiness. The entry quotes only this phrase from it. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36586,6 +38831,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hannah-arendt-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Hannah Arendt",
+      "short": "Arendt",
+      "work": "“What Is Freedom?”",
+      "excerpt": "We first become aware of freedom or its opposite in our intercourse with others, not in the intercourse with ourselves.",
+      "period": "1960",
+      "dateShort": "1960",
+      "dateFull": "1960",
+      "sortYear": 1960,
+      "sourceLabel": "As quoted in Hannah Arendt, Internet Encyclopedia of Philosophy",
+      "sourceUrl": "https://iep.utm.edu/arendt/",
+      "locator": "Quoted in the entry’s section on freedom as public action.",
+      "place": "New York, USA",
+      "lat": 40.76,
+      "lng": -73.97,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Arendt lived and taught in New York in 1960, when the essay was written. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/arendt/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Freedom first met among others",
+          "why": "Arendt holds that freedom is first known in dealings with other people, not by looking inward. This places the passage at others.",
+          "limit": "The sentence is about the awareness of freedom, not the whole of self-knowledge. The entry quotes it from an essay and gives no page. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "martin-luther-king-jr-suffering",
       "question": "suffering",
       "name": "Martin Luther King Jr.",
@@ -36617,6 +38896,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "emmanuel-levinas-desire",
+      "question": "desire",
+      "name": "Emmanuel Levinas",
+      "short": "Levinas",
+      "work": "Totality and Infinity",
+      "excerpt": "desires beyond everything that can simply complete it. It is like goodness—the Desired does not fulfill it, but deepens it",
+      "period": "1961",
+      "dateShort": "1961",
+      "dateFull": "1961",
+      "sortYear": 1961,
+      "sourceLabel": "As quoted in Emmanuel Levinas, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/levinas/",
+      "locator": "Quoted in the account of metaphysical desire, cited as TI 34.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Levinas lived and worked in Paris when the book appeared in 1961. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/levinas/",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "A desire that deepens when met",
+          "why": "Levinas describes a metaphysical desire that is not ended by satisfaction but grows deeper. It is affirmed as the movement toward the other, so the passage is placed at follow.",
+          "limit": "The entry says this metaphysical desire differs from needs that can be satisfied, so the line does not speak for appetites generally. The first word of the quotation follows words from the entry. The citation is TI 34. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "frantz-fanon-given-or-made",
+      "question": "given-or-made",
+      "name": "Frantz Fanon",
+      "short": "Fanon",
+      "work": "The Wretched of the Earth",
+      "excerpt": "develop a new way of thinking, and endeavor to create a new man",
+      "period": "1961",
+      "dateShort": "1961",
+      "dateFull": "1961",
+      "sortYear": 1961,
+      "sourceLabel": "As quoted in Frantz Fanon, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/frantz-fanon/",
+      "locator": "Quoted in the entry’s discussion of the human, cited as 1961 [2005: 239].",
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Fanon worked in Tunis for the Algerian liberation movement when he wrote the book in 1961. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/frantz-fanon/",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Creating a new man",
+          "why": "Fanon calls for the making of a new kind of human being through a new way of thinking. This places the person as made, not given.",
+          "limit": "The call is aimed at a collective future task of decolonisation and the entry notes that Fanon gives the new man no content. The entry places a call for a new start just before these words. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36652,6 +38999,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "emmanuel-levinas-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Emmanuel Levinas",
+      "short": "Levinas",
+      "work": "Difficult Freedom",
+      "excerpt": "to know God is to know what must be done",
+      "period": "1963",
+      "dateShort": "1963",
+      "dateFull": "1963",
+      "sortYear": 1963,
+      "sourceLabel": "As quoted in Emmanuel Levinas, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/levinas/",
+      "locator": "Quoted in the account of illeity and responsibility, cited as DF 17.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Levinas taught and directed a Jewish school in Paris when the essays appeared in 1963. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/levinas/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "unscored",
+          "facet": "Knowing God as knowing what must be done",
+          "why": "Levinas says knowing God is knowing what must be done, so that God is approached through ethical action. The words neither affirm nor deny an ultimate reality, so the passage is left unscored.",
+          "limit": "The sentence defines knowing God and does not discuss whether God exists. The entry links it to a medieval Jewish tradition of knowing God through attributes of action. The citation is DF 17. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36758,6 +39139,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hannah-arendt-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Hannah Arendt",
+      "short": "Arendt",
+      "work": "Responsibility and Judgment (lectures on moral philosophy)",
+      "excerpt": "If I disagree with other people I can walk away; but I cannot walk away from myself, and therefore I better first try to be in agreement with myself before I take all others into consideration",
+      "period": "1965–66",
+      "dateShort": "1965–66",
+      "dateFull": "1965–66",
+      "sortYear": 1966,
+      "sourceLabel": "As quoted in Hannah Arendt, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/arendt/",
+      "locator": "Quoted from Responsibility and Judgment, citation “RJ, 90”.",
+      "place": "New York, USA",
+      "lat": 40.81,
+      "lng": -73.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Arendt gave her lectures on moral philosophy in New York in the mid-1960s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/arendt/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Agreeing with oneself first",
+          "why": "Arendt argues that conscience begins with consistency with oneself, since a person cannot escape their own company. The passage gives the individual’s own relation to themselves priority over other people.",
+          "limit": "Arendt is describing the Socratic ground of conscience, not recommending a life apart from others. She also gives great weight to the shared world elsewhere, so the line does not stand for her whole view. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "thich-nhat-hanh-truth",
       "question": "truth",
       "name": "Thich Nhat Hanh",
@@ -36789,6 +39204,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "iris-murdoch-free-will",
+      "question": "free-will",
+      "name": "Iris Murdoch",
+      "short": "Murdoch",
+      "work": "The Sovereignty of Good, “The Sovereignty of Good over Other Concepts”",
+      "excerpt": "vaunted freedom of choice is not usually very great",
+      "period": "1967",
+      "dateShort": "1967",
+      "dateFull": "1967",
+      "sortYear": 1967,
+      "sourceLabel": "As quoted in Iris Murdoch, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/murdoch/",
+      "locator": "Quoted in the account of the substantial self, cited as SGC: 78/364.",
+      "place": "Cambridge, England",
+      "lat": 52.2,
+      "lng": 0.12,
+      "anchorType": "Setting of delivery",
+      "placeNote": "The essay began as the Leslie Stephen Lecture given at Cambridge in 1967. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/murdoch/",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "The narrow area of free choice",
+          "why": "Murdoch says the moral agent’s freedom to choose is usually small because habits, attachments and motives already shape the will. A small real area of choice inside conditions places the passage at limited.",
+          "limit": "The excerpt is the end of a sentence whose opening words, “The area of [the moral agent’s]”, are an editor’s bracketed gloss in the entry. It targets a view of radical choice, not the existence of choice. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36829,6 +39278,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "iris-murdoch-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Iris Murdoch",
+      "short": "Murdoch",
+      "work": "The Sovereignty of Good, “On ‘God’ and ‘Good’”",
+      "excerpt": "I shall suggest that God was (or is) a single perfect transcendent non-representable and necessarily real object of attention",
+      "period": "1969",
+      "dateShort": "1969",
+      "dateFull": "1969",
+      "sortYear": 1969,
+      "sourceLabel": "As quoted in Iris Murdoch, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/murdoch/",
+      "locator": "Quoted in the section on religion and philosophy, cited as OGG: 55/344.",
+      "place": "Oxford, England",
+      "lat": 51.75,
+      "lng": -1.26,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Murdoch taught philosophy in Oxford, and the essay dates from the late 1960s. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/murdoch/",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as a necessarily real object of attention",
+          "why": "Murdoch describes God as a perfect, real object of attention and proposes keeping a non-theistic concept with the same features, the Good. The passage affirms an ultimate reality that is real and transcendent.",
+          "limit": "Murdoch does not defend a personal God; she offers the Good as a replacement with the same features. The sentence is a proposal for a concept, not a creed. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -36974,6 +39457,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "emmanuel-levinas-relationships",
+      "question": "relationships",
+      "name": "Emmanuel Levinas",
+      "short": "Levinas",
+      "work": "Otherwise than Being or Beyond Essence",
+      "excerpt": "Communication would be impossible if it should have to begin in the ego",
+      "period": "1974",
+      "dateShort": "1974",
+      "dateFull": "1974",
+      "sortYear": 1974,
+      "sourceLabel": "As quoted in Emmanuel Levinas, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/levinas/",
+      "locator": "Quoted in the entry’s discussion of empathy and communication, citation “OBBE 119”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Levinas taught in Paris when the book appeared in 1974. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/levinas/",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Communication begins before the ego",
+          "why": "Levinas denies that a self can begin alone and then reach others, since communication requires a prior bond. This puts relation to others as necessary to the kind of subject described.",
+          "limit": "The sentence is cut off before its bracketed continuation in the entry, and it concerns how communication is possible, not the whole of a person’s identity. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "emmanuel-levinas-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Emmanuel Levinas",
+      "short": "Levinas",
+      "work": "Otherwise than Being or Beyond Essence",
+      "excerpt": "All my inwardness is invested [s’investit] in the form of a despite-me, for-another",
+      "period": "1974",
+      "dateShort": "1974",
+      "dateFull": "1974",
+      "sortYear": 1974,
+      "sourceLabel": "As quoted in Emmanuel Levinas, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/levinas/",
+      "locator": "Quoted in the account of the middle voice in Otherwise than Being, citation “OBBE 11”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Levinas taught in Paris (Poitiers, Nanterre, then the Sorbonne) when the book appeared in 1974. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/levinas/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Inwardness as for-another",
+          "why": "Levinas says the whole inner life of the self is formed as something done for another and against its own will. This puts duty to the other ahead of the self’s own claims.",
+          "limit": "The sentence is dense technical prose from a philosophical work and the bracketed French is part of the entry’s quotation. It describes the structure of subjectivity, not a rule of conduct. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "robert-nozick",
       "name": "Robert Nozick",
       "short": "Nozick",
@@ -37014,6 +39565,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bernard-williams-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Bernard Williams",
+      "short": "Williams",
+      "work": "Making Sense of Humanity (earlier essays)",
+      "excerpt": "My life, my action, is quite irreducibly mine, and to require that it is at best a derivative conclusion that it should be lived from the perspective that happens to be mine is an extraordinary misunderstanding",
+      "period": "1970s–90s",
+      "dateShort": "1970s–90s",
+      "dateFull": "1970s–90s",
+      "sortYear": 1976,
+      "sourceLabel": "As quoted in Bernard Williams, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/williams-bernard/",
+      "locator": "Quoted in the discussion of impartiality and integrity, cited as MSH 170.",
+      "place": "Cambridge, England",
+      "lat": 52.2,
+      "lng": 0.12,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Williams taught at Cambridge for much of the period of his work on integrity; the entry does not date the sentence. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/williams-bernard/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "The life that is irreducibly mine",
+          "why": "Williams argues a person’s own life and action cannot be treated as derived from an impersonal viewpoint. This gives priority to the individual’s own standpoint over a requirement of impartiality.",
+          "limit": "The passage argues against a demanding impersonal morality, not for ignoring others, and elsewhere Williams says sympathetic concern for others belongs to morality. The entry cites it as MSH 170. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "jean-marie-tjibaou-relationships",
       "question": "relationships",
       "name": "Jean-Marie Tjibaou",
@@ -37046,6 +39631,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "thomas-nagel-free-will",
+      "question": "free-will",
+      "name": "Thomas Nagel",
+      "short": "Nagel",
+      "work": "“Moral Luck”",
+      "excerpt": "area of genuine agency, and therefore of legitimate moral judgment, seems to shrink under this scrutiny to an extensionless point",
+      "period": "1976",
+      "dateShort": "1976",
+      "dateFull": "1976",
+      "sortYear": 1976,
+      "sourceLabel": "As quoted in Moral Luck, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/moral-luck/",
+      "locator": "Quoted in the account of the control principle, cited as 1979, 66.",
+      "place": "Princeton, New Jersey, USA",
+      "lat": 40.35,
+      "lng": -74.66,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Nagel taught at Princeton in the 1970s, when the essay was written. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/moral-luck/",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Agency shrinking to a point",
+          "why": "Nagel says that when outside influences are taken into account, the room for real agency shrinks to almost nothing. This puts the passage at determined.",
+          "limit": "Nagel goes on to say the problem has no solution and that agency seems incompatible with actions being events. The line states a worry, not his settled view, and the entry quotes it from Mortal Questions (1979, 66). The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
@@ -37665,6 +40284,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jacques-derrida-free-will",
+      "question": "free-will",
+      "name": "Jacques Derrida",
+      "short": "Derrida",
+      "work": "“Force of Law”",
+      "excerpt": "A decision that did not go through the ordeal of the undecidable would not be a free decision, it would only be the programmable application or unfolding of a calculable process",
+      "period": "1989",
+      "dateShort": "1989",
+      "dateFull": "1989",
+      "sortYear": 1989,
+      "sourceLabel": "As quoted in Jacques Derrida, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/derrida/",
+      "locator": "Quoted in the account of decision and the undecidable.",
+      "place": "New York, USA",
+      "lat": 40.72,
+      "lng": -74,
+      "anchorType": "Setting of delivery",
+      "placeNote": "Derrida gave the lecture at the Cardozo Law School in New York in 1989. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/derrida/",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "unscored",
+          "facet": "A free decision and the undecidable",
+          "why": "Derrida says a decision is free only if it passes through the undecidable, and a programmed process would not be a decision at all. The words give a condition for freedom without settling whether people are free, so the passage is left unscored.",
+          "limit": "The passage is about the justice of decisions in law and does not discuss causation or determinism. It sets a condition on freedom and does not say whether the condition can be met. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "jennifer-nedelsky",
       "name": "Jennifer Nedelsky",
       "short": "Nedelsky",
@@ -37807,6 +40460,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "paul-ricoeur-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Paul Ricoeur",
+      "short": "Ricoeur",
+      "work": "Oneself as Another",
+      "excerpt": "aiming at a good life lived with and for others in just institutions",
+      "period": "1990",
+      "dateShort": "1990",
+      "dateFull": "1990",
+      "sortYear": 1990,
+      "sourceLabel": "As quoted in Paul Ricoeur, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/ricoeur/",
+      "locator": "Quoted in the account of the little ethics in Oneself as Another.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ricoeur worked in Paris and Chicago when the book appeared in 1990. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/ricoeur/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "The ethical aim",
+          "why": "Ricoeur names the ethical aim as a good life that is lived with and for others. His own good and others’ good are tied together, which gives both.",
+          "limit": "The line is a formula for an aim and does not say what to do when the two conflict. The entry cites it as Oneself as Another, 1992: 172. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "dalai-lama-suffering",
       "question": "suffering",
       "name": "Tenzin Gyatso, the Fourteenth Dalai Lama",
@@ -37838,6 +40525,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "iris-murdoch-desire",
+      "question": "desire",
+      "name": "Iris Murdoch",
+      "short": "Murdoch",
+      "work": "Metaphysics as a Guide to Morals",
+      "excerpt": "always deploying and directing our energy, refining or blunting it, purifying or corrupting it",
+      "period": "1992",
+      "dateShort": "1992",
+      "dateFull": "1992",
+      "sortYear": 1992,
+      "sourceLabel": "As quoted in Iris Murdoch, Stanford Encyclopedia of Philosophy",
+      "sourceUrl": "https://plato.stanford.edu/entries/murdoch/",
+      "locator": "Quoted in the discussion of Metaphysics as a Guide to Morals, cited as MGM 1992: 495.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.19,
+      "anchorType": "Setting of delivery",
+      "placeNote": "The book developed from Murdoch’s Gifford Lectures at the University of Edinburgh in 1982. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://plato.stanford.edu/entries/murdoch/",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Directing the energy of desire",
+          "why": "Murdoch says a person is always directing the energy of attachment, so that it can be refined or blunted, purified or corrupted. This puts desire as something to be educated and redirected.",
+          "limit": "Murdoch’s word here is energy (Eros), which the entry links to desire and attachment, but the sentence does not use the word desire. The initial letter of the sentence is bracketed in the entry. The line is quoted second-hand in an encyclopedia entry, not read in the original text."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
