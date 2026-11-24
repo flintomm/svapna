@@ -43,7 +43,7 @@ const layers = spec.map(l => ({
 const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).map(e => ({ date: e.date.replace(/^(\d{4})-\d\d-\d\d$/, '$1'), title: e.title, tradition: e.tradition, summary: e.summary }));
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -59,6 +59,8 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 </head>
 <body>
 <canvas id="abyss" aria-hidden="true"></canvas>
+<canvas id="fall" aria-hidden="true"></canvas>
+<div id="flash" aria-hidden="true"></div>
 
 <header class="top">
   <a class="mark" href="/">∴ Svapna</a>
@@ -95,16 +97,13 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
             <figcaption>{l.quotes[0].by} · {l.quotes[0].cite}</figcaption>
           </figure>
         )}
+        <button class="pill deeper" type="button" data-layer={i}>Go deeper here</button>
         <details class="more">
-          <summary><span class="pill">Go deeper here</span></summary>
+          <summary><span class="pill">More from this depth</span></summary>
           <div class="more-in">
-            <div class="terms">
-              {l.terms.map(t => <p><span class="small">{t.who}</span>{t.href ? <a href={t.href}>{t.term}</a> : <span>{t.term}</span>}</p>)}
-            </div>
             {l.quotes.slice(1).map(q => (
               <figure class="voice minor"><blockquote>“{q.text}”</blockquote><figcaption>{q.by} · {q.cite}</figcaption></figure>
             ))}
-            {l.ideas.length > 0 && <p class="small ideas-title">What was learned here</p>}
             {l.ideas.map(x => (
               <div class="idea"><h3>{x.title}</h3><p>{x.short}</p>{x.href && <a href={x.href}>Read the full lesson</a>}</div>
             ))}
@@ -124,12 +123,25 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
   </section>
 </main>
 
+<div id="chamber" class="chamber" hidden>
+  <button id="chamber-close" type="button">Rise back</button>
+  <div class="chamber-in">
+    <p class="small" id="chamber-label"></p>
+    <div id="chamber-main"></div>
+    <p class="small" id="chamber-by"></p>
+    <a id="chamber-link" class="pill" hidden>Read the full lesson</a>
+  </div>
+  <div class="chamber-nav"><button id="chamber-prev" type="button" aria-label="Previous">←</button><span class="small" id="chamber-count"></span><button id="chamber-next" type="button" aria-label="Next">→</button></div>
+</div>
+
 <div id="dates" class="sheet" hidden>
   <button id="close-dates" type="button">Close</button>
   <p class="small">Three and a half thousand years, in order</p>
   <ol>{dates.map(d => <li><span class="when">{d.date}</span><div><h3>{d.title}</h3><p class="small">{d.tradition}</p><p>{d.summary}</p></div></li>)}</ol>
 </div>
 
+<script is:inline type="application/json" id="layers" set:html={JSON.stringify(layers.map(l => ({ name: l.name, terms: l.terms, quotes: l.quotes, ideas: l.ideas })))}></script>
+<script is:inline src="/next/three.min.js"></script>
 <script is:inline src="/dream/dream.js"></script>
 </body>
 </html>
