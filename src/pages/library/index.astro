@@ -1,144 +1,56 @@
 ---
-import Concordance from '../../components/Concordance.astro';
-import Layout from '../../layouts/Layout.astro';
-import SectionHeader from '../../components/SectionHeader.astro';
-import Filter from '../../components/react/Filter.jsx';
+import Read from '../../layouts/Read.astro';
+import Coffee from '../../components/Coffee.astro';
 import { articles, library, themes } from '../../lib/content.js';
 import quotesData from '../../data/quotes.json';
-
-const traditions = Array.from(new Set(quotesData.quotes.map(q => q.tradition))).sort();
-const traditionOptions = traditions.map(t => ({ value: t, label: t }));
+const types = [...new Set(library.map(b => b.type))];
 ---
+<Read title="The library: essays, themes, voices and sources on dreaming — Svapna" description={`Six long essays on the traditions of dream practice, ${themes.length} themes traced through the primary texts, ${quotesData.quotes.length} voices and the ${library.length} sources behind the work.`} path="/library" crumbs={[{ name: 'Library', path: '/library' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/dream">Dreaming</a> · Library</p>
+  <h1>The <em>library.</em></h1>
+  <p class="lede">What stands behind Dreaming: six long essays, {themes.length} themes traced through the primary texts, {quotesData.quotes.length} voices, and the sources themselves.</p>
 
-<Layout title="Library — Svapna" description="Long-form articles on the traditions, with the citations behind them.">
-  <div class="fade-in">
-    <SectionHeader
-      num="§ 05"
-      kicker="Articles and Citations"
-      title="Library."
-      sub="Long-form articles on the traditions, with the citations behind them."
-    />
-    <Concordance />
-
-    <div class="hairline-b">
-      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 02</p>
-        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Articles.</h2>
-        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          Six long-form essays — one per tradition — drawn from the project research files. Where the texts in the bibliography below come from, what they argue, and how they meet.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 hairline-t">
-        {articles.map((a, i) => {
-          const isLastRow = i >= articles.length - (articles.length % 2 === 0 ? 2 : 1);
-          const isLeft = i % 2 === 0;
-          return (
-            <a
-              href={`/library/articles/${a.id}`}
-              class={`text-left p-6 sm:p-8 md:p-10 hairline-b ${isLeft ? 'md:hairline-r' : ''} ${isLastRow ? 'md:border-b-0' : ''} active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group block`}
-            >
-              <div class="flex justify-between items-baseline">
-                <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {a.num}</p>
-                <p class="mono text-[9px] uppercase tracking-widest text-neutral-400">~{(a.word_count / 1000).toFixed(1)}k words</p>
-              </div>
-              <h3 class="display text-3xl md:text-4xl mt-3 md:mt-4 leading-tight">{a.label}</h3>
-              <p class="display text-base md:text-lg italic text-neutral-600 mt-2 md:mt-3 leading-snug">{a.title}</p>
-              <p class="text-sm leading-relaxed mt-4 md:mt-5 text-neutral-700">{a.blurb}</p>
-              <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 group-hover:translate-x-1 transition-transform inline-block">Read →</p>
-            </a>
-          );
-        })}
-      </div>
+  <section id="essays">
+    <h2>Six essays</h2>
+    <p class="def">One for each tradition and era, from the Upaniṣads to the sleep laboratory. Long reads, with their citations.</p>
+    <div class="qlist">
+      {articles.map(a => <a href={`/library/articles/${a.id}`}><span><b class="circle-name">{a.label}</b><i class="circle-line">{a.blurb}</i></span><span>{Math.round(a.word_count / 230)} min</span></a>)}
     </div>
+  </section>
 
-    <div class="hairline-b">
-      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 03</p>
-        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Summaries &amp; References.</h2>
-        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          A short editorial summary of each text in the corpus, with its working citation.
-        </p>
-      </div>
+  <section id="themes">
+    <h2>{themes.length} themes</h2>
+    <p class="def">Concerns that recur across the texts, each gathered with the passages where it appears.</p>
+    <div class="index">{themes.map(t => <a href={`/library/themes/${t.id}`}>{t.label}<span>{t.sources} sources</span></a>)}</div>
+  </section>
 
-      <div class="md:hidden hairline-t">
-        {library.map(item => (
-          <div class="hairline-b p-5">
-            <div class="flex justify-between items-baseline">
-              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{item.type}</span>
-              <span class="mono text-[10px] text-neutral-500">{item.year}</span>
-            </div>
-            <h3 class="display text-xl italic leading-tight mt-2">{item.title}</h3>
-            <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mt-1">{item.author}</p>
-            {item.summary && <p class="text-sm mt-3 text-neutral-700 leading-relaxed">{item.summary}</p>}
-            {item.reference && <p class="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3 break-words">{item.reference}</p>}
-          </div>
-        ))}
-      </div>
-
-      <div class="hidden md:block hairline-t">
-        {library.map(item => (
-          <div class="grid grid-cols-12 hairline-b py-6 px-8 hover:bg-neutral-50 transition-colors">
-            <div class="col-span-2 mono text-[10px] uppercase tracking-widest text-neutral-500 pt-1">{item.type}</div>
-            <div class="col-span-9">
-              <div class="display text-xl md:text-2xl italic leading-tight">{item.title}</div>
-              <div class="text-sm pt-1 text-neutral-700">{item.author}</div>
-              {item.summary && <p class="text-sm md:text-base mt-3 leading-relaxed text-neutral-700 max-w-3xl">{item.summary}</p>}
-              {item.reference && <p class="mono text-[10px] uppercase tracking-widest text-neutral-400 mt-3 break-words">{item.reference}</p>}
-            </div>
-            <div class="col-span-1 text-right mono text-xs pt-1 text-neutral-500">{item.year}</div>
-          </div>
-        ))}
-      </div>
+  <section id="voices">
+    <h2>{quotesData.quotes.length} voices</h2>
+    <div class="rows">
+      {quotesData.quotes.map(q => (
+        <article class="row">
+          <div><blockquote>“{q.text}”</blockquote><p class="why">{q.context}</p></div>
+          <div class="who"><p class="name-plain">{q.attribution}</p><p>{q.citation}</p><p>{q.tradition}</p>{q.translator && q.translator !== 'Various' && <p>{q.translator}</p>}</div>
+        </article>
+      ))}
     </div>
+  </section>
 
-    <div class="hairline-b">
-      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 04</p>
-        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Themes.</h2>
-        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          Fourteen cross-cutting concerns that recur across the corpus. Each theme links to passages from the primary texts.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 hairline-t">
-        {themes.map((t, i) => (
-          <a
-            href={`/library/themes/${t.id}`}
-            class="text-left p-6 md:p-8 hairline-b sm:[&:nth-child(odd)]:hairline-r lg:[&:nth-child(3n+1)]:hairline-r lg:[&:nth-child(3n+2)]:hairline-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(even)]:border-r-0 active:bg-neutral-100 md:hover:bg-neutral-50 transition-colors group block"
-          >
-            <div class="flex justify-between items-baseline">
-              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">№ {String(i + 1).padStart(2, '0')}</span>
-              <span class="mono text-[9px] uppercase tracking-widest text-neutral-400">{t.sources} sources</span>
-            </div>
-            <h3 class="display text-2xl md:text-3xl mt-4 leading-tight group-hover:italic transition-all">{t.label}</h3>
-            <p class="text-sm leading-relaxed mt-3 md:mt-4 text-neutral-700">{t.desc}</p>
-            <p class="mono text-[10px] uppercase tracking-widest mt-4 md:mt-5 text-neutral-500 group-hover:text-black group-hover:translate-x-1 transition-all inline-block">Browse passages →</p>
-          </a>
-        ))}
-      </div>
-    </div>
-
-    <div>
-      <div class="px-5 md:px-12 pt-10 md:pt-16 pb-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Fig. 05</p>
-        <h2 class="display text-4xl md:text-6xl mt-2 md:mt-3">Pull-quotes.</h2>
-        <p class="display text-base md:text-xl italic text-neutral-600 mt-3 md:mt-4 max-w-3xl">
-          {quotesData.quotes.length} curated passages from the corpus, with citations. Filter by tradition.
-        </p>
-      </div>
-      <div class="px-5 md:px-12 py-4 hairline-t hairline-b">
-        <Filter id="quotes" options={traditionOptions} client:load />
-      </div>
-      <div data-filter-root="quotes">
-        {quotesData.quotes.map(q => (
-          <div data-filter-value={q.tradition} class="hairline-b px-5 md:px-12 py-8 md:py-10">
-            <p class="display text-lg md:text-2xl italic leading-snug md:leading-relaxed text-neutral-800">&ldquo;{q.text}&rdquo;</p>
-            <div class="mt-4 md:mt-6 flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
-              <span class="mono text-[10px] uppercase tracking-widest">— {q.attribution}</span>
-              <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{q.citation}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</Layout>
+  <section id="sources">
+    <h2>The sources</h2>
+    {types.map(type => (
+      <>
+        <p class="small" style="margin-top:38px">{type}</p>
+        <div class="rows" style="margin-top:10px">
+          {library.filter(b => b.type === type).map(b => (
+            <article class="row term">
+              <div><p class="src-title">{b.title}</p><p class="small">{b.author}{b.year ? ` · ${b.year}` : ''}</p></div>
+              <div><p class="term-def">{b.summary}</p>{b.reference && <p class="small" style="margin-top:8px">{b.reference}</p>}</div>
+            </article>
+          ))}
+        </div>
+      </>
+    ))}
+  </section>
+  <Coffee />
+</Read>
