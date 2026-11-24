@@ -5,7 +5,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
   // public/globe-of-thought is a vendored static page with its own tests in flintomm/Globe-of-Thought.
-  globalIgnores(['dist', '.astro', 'public/globe-of-thought']),
+  globalIgnores(['dist', '.astro', 'public/globe-of-thought', 'public/next']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [
