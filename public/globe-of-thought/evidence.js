@@ -24298,6 +24298,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "swedenborg-free-will",
+      "question": "free-will",
+      "name": "Emanuel Swedenborg",
+      "short": "Swedenborg",
+      "work": "Heaven and Hell, section 293",
+      "excerpt": "because he is in equilibrium he is in his freedom, and can be withdrawn from evils and inclined to good",
+      "period": "1758",
+      "dateShort": "1758",
+      "dateFull": "1758",
+      "sortYear": 1758,
+      "sourceLabel": "English edition with Rev. T. Hartley’s preface, Internet Archive scan",
+      "sourceUrl": "https://archive.org/download/heavenandhellal00swedgoog/heavenandhellal00swedgoog_djvu.txt",
+      "locator": "Section 293, in the part on the equilibrium between heaven and hell.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.1,
+      "anchorType": "Place of first publication",
+      "placeNote": "Swedenborg’s Latin Heaven and Hell was published in London in 1758, where he was living at the time. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/heavenandhellal00swedgoog/heavenandhellal00swedgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Freedom from the balance between heaven and hell",
+          "why": "Swedenborg says each person is held between the influence of spirits from hell and spirits from heaven, and that this balance is what gives freedom to be drawn from evil toward good. The choice is real but takes place inside a condition set by those two opposing influences.",
+          "limit": "A theological report of what the author says he was shown in visions, not an argument from reasons; the English is an eighteenth-century translation, as printed in an 1885 edition. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "swedenborg-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Emanuel Swedenborg",
+      "short": "Swedenborg",
+      "work": "Heaven and Hell, section 5",
+      "excerpt": "That the Lord is the God of heaven, cannot be doubted by the church, for He Himself taught, that all things of the Father are His",
+      "period": "1758",
+      "dateShort": "1758",
+      "dateFull": "1758",
+      "sortYear": 1758,
+      "sourceLabel": "English edition with Rev. T. Hartley’s preface, Internet Archive scan",
+      "sourceUrl": "https://archive.org/download/heavenandhellal00swedgoog/heavenandhellal00swedgoog_djvu.txt",
+      "locator": "Section 5, in the part headed “The Lord is the God of heaven”.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.1,
+      "anchorType": "Place of first publication",
+      "placeNote": "Swedenborg’s Latin Heaven and Hell was published in London in 1758, where he was living at the time. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/heavenandhellal00swedgoog/heavenandhellal00swedgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Lord as the God of heaven",
+          "why": "Swedenborg states that the Lord, meaning Christ, is the God of heaven and rules heaven and earth, and rests this on Christ’s own words. He affirms a God who is the source of heaven’s good and truth.",
+          "limit": "A doctrinal statement in a work presented as a report of visions, resting on scripture and not on argument; it is a particular Christian view in which Christ alone is the one God. The English is an eighteenth-century translation, as printed in 1885. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "adam-smith-happiness",
       "question": "happiness",
       "name": "Adam Smith",
@@ -27433,6 +27501,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charlotte-bronte-suffering",
+      "question": "suffering",
+      "name": "Charlotte Brontë",
+      "short": "Brontë",
+      "work": "Jane Eyre",
+      "excerpt": "Yet it would be your duty to bear it, if you could not avoid it: it is weak and silly to say you cannot bear what it is your fate to be required to bear.",
+      "period": "1847",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "Project Gutenberg text of Jane Eyre (1847)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/6/1260/1260-0.txt",
+      "locator": "Chapter 6, Helen Burns to Jane after the flogging.",
+      "place": "Haworth, Yorkshire, England",
+      "lat": 53.83,
+      "lng": -1.96,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Brontë finished the novel at the parsonage in Haworth in 1847, having begun it in Manchester in 1846. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/6/1260/1260-0.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Endurance of what cannot be avoided",
+          "why": "The schoolgirl Helen Burns tells Jane that a punishment which cannot be avoided is to be borne, and that saying it cannot be borne is weak. Suffering is something to endure, and no purpose is attached to it in this passage.",
+          "limit": "The words are spoken by a fictional child character, and the novel presents Jane as unable to accept the doctrine; Helen’s own faith in a purpose beyond death appears elsewhere in the book. Only the duty of endurance is claimed here."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "rossetti-death",
       "question": "death",
       "name": "Christina Rossetti",
@@ -29446,7 +29548,7 @@ window.PILOT_EVIDENCE={
       "short": "Shortland (Reinga)",
       "work": "Maori Religion and Mythology, “The Reinga or Hades”",
       "excerpt": "When the spirit leaves the body it goes on its way northward, till it arrives at two hills.",
-      "period": "Recorded 1850s to 1880s; published 1882",
+      "period": "Published 1882, from Shortland’s earlier collecting",
       "dateShort": "1882",
       "dateFull": "1882",
       "sortYear": 1882,
@@ -33809,6 +33911,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "gabriela-mistral-death",
+      "question": "death",
+      "name": "Gabriela Mistral",
+      "short": "Mistral",
+      "work": "Sonetos de la muerte, II",
+      "excerpt": "Esperaré que me hayan cubierto totalmente... ¡y después hablaremos por una eternidad!",
+      "translation": "I will wait until they have covered me completely... and then we shall speak together for an eternity!",
+      "period": "1914 (collected 1922)",
+      "dateShort": "1914",
+      "dateFull": "1914",
+      "sortYear": 1914,
+      "sourceLabel": "Desolación (1922), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Desolaci%C3%B3n_(Mistral)/Los_sonetos_de_la_muerte",
+      "locator": "Second sonnet.",
+      "place": "Santiago, Chile",
+      "lat": -33.45,
+      "lng": -70.67,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mistral wrote the poem in Chile in the 1910s, the sonnets winning a Santiago prize in 1914; the exact place of writing is not given on the linked page, which gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Desolaci%C3%B3n_(Mistral)/Los_sonetos_de_la_muerte",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Speaking together after burial",
+          "why": "The speaker, mourning a lover who died, says that after her own burial the two will speak for eternity. Something of the person is held to go on and to meet again.",
+          "limit": "A lyric of grief addressed to the dead, so the hope may be read as the voice of mourning and not as a doctrine; Mistral’s later and wider beliefs were more varied. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
+      }
+    },
+    {
       "id": "jose-ortega-y-gasset",
       "name": "José Ortega y Gasset",
       "short": "Ortega",
@@ -34547,6 +34684,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "gabriela-mistral-suffering",
+      "question": "suffering",
+      "name": "Gabriela Mistral",
+      "short": "Mistral",
+      "work": "El ruego",
+      "excerpt": "Y amar (bien sabes de eso) es amargo ejercicio; un mantener los párpados de lágrimas mojados, un refrescar de besos las trenzas del cilicio conservando, bajo ellas, los ojos extasiados.",
+      "translation": "And to love (you know about that) is a bitter exercise: keeping the eyelids wet with tears, refreshing with kisses the braids of the hair shirt while keeping the eyes ecstatic beneath them.",
+      "period": "Written before 1922; collected 1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "Desolación (1922), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Desolaci%C3%B3n_(Mistral)/El_ruego",
+      "locator": "Stanza beginning “Y amar (bien sabes de eso)”, in the second half of the poem.",
+      "place": "Santiago, Chile",
+      "lat": -33.45,
+      "lng": -70.67,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mistral wrote the poem in Chile in the 1910s, the sonnets winning a Santiago prize in 1914; the exact place of writing is not given on the linked page, which gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Desolaci%C3%B3n_(Mistral)/El_ruego",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Love’s bitter exercise",
+          "why": "The speaker, praying for a lost lover, calls love a bitter exercise of tears and penance in which the eyes stay ecstatic. Suffering has no purpose of its own here but is borne as part of loving and gives it depth.",
+          "limit": "A lyric prayer in the voice of a grieving woman, with Christian imagery of the cross; it states an attitude and does not argue it. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-24"
       }
     },
     {
