@@ -53,6 +53,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <button id="mode" class="mono" type="button">Night</button>
     <button id="open-menu" class="mono" type="button">Menu</button>
     <a class="mono" href="/dream">Dreaming</a>
+    <a class="mono" id="you-link" href="/you">You</a>
   </div>
 </header>
 
@@ -68,6 +69,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <p class="mono dim" id="echo-label"></p>
     <p id="echo-line" class="big"></p>
     <button id="echo-go" class="mono link" type="button">Hear them →</button>
+    <a class="mono link" href="/you" style="margin-left:26px">Who thinks like you? →</a>
   </section>
 
   <section id="voice" class="scene" hidden>
@@ -101,6 +103,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <ol id="menu-list"></ol>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
+    <li><a href="/you">You · who thinks like you?</a></li>
     <li><a href="/questions">All fourteen questions, to read</a></li>
     <li><a href="/thinkers">Every thinker and text</a></li>
     <li><a href="/dream">Dreaming · sink through one night</a></li>

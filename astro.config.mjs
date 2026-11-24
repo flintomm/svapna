@@ -27,7 +27,7 @@ export default defineConfig({
         const path = url.replace('https://svapnaproject.org', '') || '/';
         let priority = 0.7;
         if (path === '/') priority = 1.0;
-        else if (['/dream', '/questions', '/thinkers', '/library', '/glossary', '/community', '/support'].includes(path)) priority = 0.9;
+        else if (['/dream', '/questions', '/thinkers', '/you', '/library', '/glossary', '/community', '/support'].includes(path)) priority = 0.9;
         else if (path === '/start/lucid' || path === '/start/contemplative') priority = 0.8;
         else if (path.startsWith('/library/articles/') || path.startsWith('/history/')) priority = 0.8;
         return { ...item, priority };

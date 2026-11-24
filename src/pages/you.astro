@@ -1,0 +1,105 @@
+---
+// You: answer the questions and see which thinkers think most like you, and which least.
+// Answers are kept on the visitor's own device (localStorage 'svapna_answers'); nothing is sent anywhere.
+import Read from '../layouts/Read.astro';
+import { questions, thinkers } from '../lib/atlas.js';
+
+const value = (q, id) => { const s = q.steps.filter(x => x.tone !== 'none'); const i = s.findIndex(x => x.id === id); return i < 0 ? null : (s.length > 1 ? i / (s.length - 1) : .5); };
+const Q = questions.map(q => ({ id: q.id, plain: q.plain, steps: q.steps.filter(s => s.tone !== 'none').map(s => ({ id: s.id, plain: s.plain, tone: s.tone })) }));
+// Each thinker's position on each question, from their own passages (the average where they have more than one).
+const T = thinkers.map(t => {
+  const pos = {}, say = {};
+  for (const q of questions) {
+    const mine = t.passages.filter(p => p.question.id === q.id && p.step && p.step.tone !== 'none');
+    if (!mine.length) continue;
+    pos[q.id] = +(mine.reduce((n, p) => n + value(q, p.step.id), 0) / mine.length).toFixed(3);
+    const p = mine.find(x => x.home) || mine[0];
+    say[q.id] = [p.card.excerpt, p.step.plain, p.card.id];
+  }
+  return { s: t.slug, n: t.name, w: t.when, p: pos, q: say };
+}).filter(t => Object.keys(t.p).length >= 2);
+---
+<Read title="You: which thinkers think like you? — Svapna" description={`Answer fourteen of life’s big questions and see which of ${T.length} thinkers from four thousand years agree with you most, and which oppose you most, each in their own words.`} path="/you" crumbs={[{ name: 'You', path: '/you' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · You</p>
+  <h1>Who thinks <em>like you?</em></h1>
+  <p class="lede">Answer as many of the fourteen questions as you like. The more you answer, the truer the match. Your answers stay on this device.</p>
+
+  <section id="result" class="you-result" hidden>
+    <div class="you-cols">
+      <div><p class="small">Closest to you</p><div id="near"></div></div>
+      <div><p class="small">Furthest from you</p><div id="far"></div></div>
+    </div>
+    <p class="fine you-note">A match compares your answers with where each thinker’s own words were placed, on the questions you both answered. Those placements are draft readings, and a few quoted lines are not a whole philosophy.</p>
+  </section>
+  <p class="lede" id="need">Answer three questions to see your matches.</p>
+
+  <section>
+    <h2 id="count">Your answers</h2>
+    <div class="rows" id="qs">
+      {Q.map(q => (
+        <div class="row you-q" data-q={q.id}>
+          <p class="you-ask">{q.plain}</p>
+          <p class="you-opts">{q.steps.map(s => <button type="button" data-a={s.id} style={`--c:var(--${s.tone})`}><span class="dot"></span>{s.plain}</button>)}</p>
+        </div>
+      ))}
+    </div>
+    <p style="margin-top:26px"><button type="button" class="go" id="clear">Clear my answers</button></p>
+  </section>
+
+  <a id="you-bar" class="you-bar" href="#result" hidden></a>
+
+  <script is:inline type="application/json" id="you-data" set:html={JSON.stringify({ Q, T })}></script>
+  <script is:inline>
+    (function () {
+      var D = JSON.parse(document.getElementById('you-data').textContent), Q = D.Q, T = D.T, KEY = 'svapna_answers';
+      var A = {}; try { A = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { A = {}; }
+      var val = {}; Q.forEach(function (q) { val[q.id] = {}; q.steps.forEach(function (s, i) { val[q.id][s.id] = q.steps.length > 1 ? i / (q.steps.length - 1) : .5; }); });
+      var plainOf = function (q, id) { var s = q.steps.find(function (x) { return x.id === id; }); return s ? s.plain : ''; };
+      var el = function (tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+      function save() { try { localStorage.setItem(KEY, JSON.stringify(A)); } catch (e) {} }
+      function rank() {
+        var mine = Object.keys(A).filter(function (k) { return val[k] && val[k][A[k]] != null; }), need = Math.min(3, mine.length), out = [];
+        T.forEach(function (t) {
+          var shared = mine.filter(function (k) { return t.p[k] != null; }); if (shared.length < Math.max(2, need)) return;
+          var sum = 0, agree = 0; shared.forEach(function (k) { var d = Math.abs(val[k][A[k]] - t.p[k]); sum += 1 - d; if (d < .26) agree++; });
+          // A thinker who shares only a few questions is pulled toward the middle, so a two-question fluke cannot top the list.
+          out.push({ t: t, shared: shared, agree: agree, score: (sum + 1) / (shared.length + 2) });
+        });
+        return out;
+      }
+      function card(r, kind) {
+        var box = el('details', 'you-match'), sum = el('summary');
+        var name = el('span', 'you-name', r.t.n), meta = el('span', 'small', (kind === 'near' ? 'agrees with you on ' + r.agree : 'differs from you on ' + (r.shared.length - r.agree)) + ' of ' + r.shared.length + ' shared questions · ' + r.t.w);
+        sum.append(name, meta); box.append(sum);
+        r.shared.forEach(function (k) {
+          var q = Q.find(function (x) { return x.id === k; }), row = el('div', 'you-line'), same = Math.abs(val[k][A[k]] - r.t.p[k]) < .26;
+          row.append(el('p', 'small', q.plain));
+          row.append(el('p', 'you-say', '“' + r.t.q[k][0] + '”'));
+          row.append(el('p', 'small', (same ? 'Same as you: ' : 'You said “' + plainOf(q, A[k]) + '”. Placed at: ') + r.t.q[k][1]));
+          box.append(row);
+        });
+        var a = el('a', 'go', 'All of ' + r.t.n + '’s passages →'); a.href = '/thinkers/' + r.t.s; box.append(a);
+        return box;
+      }
+      function paint() {
+        var n = 0;
+        document.querySelectorAll('.you-q').forEach(function (row) { var q = row.dataset.q; if (A[q]) n++; row.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(A[q] === b.dataset.a)); }); });
+        document.getElementById('count').textContent = 'Your answers · ' + n + ' of ' + Q.length;
+        var res = document.getElementById('result'), need = document.getElementById('need');
+        if (n < 3) { document.getElementById('you-bar').hidden = true; res.hidden = true; need.hidden = false; need.textContent = n ? 'Answer ' + (3 - n) + ' more to see your matches.' : 'Answer three questions to see your matches.'; return; }
+        var r = rank(); need.hidden = true; res.hidden = false;
+        var near = r.slice().sort(function (a, b) { return b.score - a.score || b.shared.length - a.shared.length; }).slice(0, 5);
+        var far = r.slice().sort(function (a, b) { return a.score - b.score || b.shared.length - a.shared.length; }).slice(0, 5);
+        var N = document.getElementById('near'), F = document.getElementById('far'); N.textContent = ''; F.textContent = '';
+        var bar = document.getElementById('you-bar'); bar.hidden = !near.length; if (near.length) bar.textContent = 'Closest to you: ' + near[0].t.n + ' · furthest: ' + far[0].t.n + '  ↑';
+        near.forEach(function (x, i) { var c = card(x, 'near'); if (!i) c.open = true; N.append(c); }); far.forEach(function (x, i) { var c = card(x, 'far'); if (!i) c.open = true; F.append(c); });
+      }
+      document.getElementById('qs').addEventListener('click', function (e) {
+        var b = e.target.closest('button[data-a]'); if (!b) return; var q = b.closest('.you-q').dataset.q;
+        if (A[q] === b.dataset.a) delete A[q]; else A[q] = b.dataset.a; save(); paint();
+      });
+      document.getElementById('clear').addEventListener('click', function () { A = {}; save(); paint(); });
+      paint();
+    })();
+  </script>
+</Read>

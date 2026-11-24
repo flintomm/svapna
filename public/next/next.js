@@ -396,6 +396,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
 
   function echo(step) {
     answer = step.id; filter = 'agree';
+    try { const mine = JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}; mine[q.id] = step.id; localStorage.setItem('svapna_answers', JSON.stringify(mine)); const n = Object.keys(mine).length, y = document.getElementById('you-link'); if (y) y.textContent = 'You · ' + n; } catch (e) { /* private mode */ }
     const same = cards.filter(c => c.score === answer), first = same[0];
     $('echo-label').textContent = ask_(q);
     const line = $('echo-line'); line.style.setProperty('--c', css(step.tone)); line.textContent = '';
@@ -498,6 +499,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   $('open-menu').addEventListener('click', () => { $('menu').hidden = false; });
   $('close-menu').addEventListener('click', () => { $('menu').hidden = true; });
 
+  try { const n = Object.keys(JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}).length, y = document.getElementById('you-link'); if (y && n) y.textContent = 'You · ' + n; } catch (e) { /* private mode */ }
   addEventListener('resize', size);
   const wanted = questions.find(item => '#' + item.id === location.hash);
   // A first visit opens on the gentlest question; later visits rotate through the gentle ones, a new one each day.

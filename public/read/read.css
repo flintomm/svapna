@@ -67,3 +67,25 @@ h1.h-read{font-size:clamp(38px,5.6vw,88px);max-width:16ch}
 .def-big{color:var(--ink);font-size:clamp(20px,2vw,28px);max-width:32em}
 .small-list a{font-size:clamp(20px,2.2vw,30px)}
 @media(max-width:760px){.row.term{grid-template-columns:1fr}.turn{grid-template-columns:1fr}.turn .r{text-align:left}.prose{font-size:17px}}
+
+/* ---- You: answers and matches ---- */
+.row.you-q{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);align-items:baseline;padding:24px 0}
+.you-ask{margin:0;font:600 clamp(20px,2.1vw,28px)/1.1 'Inter Tight',sans-serif;letter-spacing:-.035em}
+.you-opts{margin:0;display:flex;flex-wrap:wrap;gap:12px 28px}
+.you-opts button{font:500 16px/1.2 'Inter Tight',sans-serif;border-bottom:1px solid var(--line);padding-bottom:6px;opacity:.7;transition:opacity .2s,color .2s,border-color .2s}
+.you-opts button:hover{opacity:1}.you-opts button[aria-pressed=true]{opacity:1;color:var(--c);border-color:var(--c);font-weight:600}
+.you-opts .dot{opacity:.5}.you-opts button[aria-pressed=true] .dot{opacity:1}
+.you-result{margin-top:64px}
+.you-cols{display:grid;grid-template-columns:1fr 1fr;gap:54px}
+.you-match{border-bottom:1px solid var(--line);padding:16px 0}
+.you-match summary{cursor:pointer;list-style:none;display:flex;flex-direction:column;gap:5px}.you-match summary::-webkit-details-marker{display:none}
+.you-name{font:600 clamp(24px,2.8vw,40px)/1 'Inter Tight',sans-serif;letter-spacing:-.045em}
+.you-match:first-of-type .you-name{font-size:clamp(34px,4.4vw,64px)}
+.you-line{margin-top:20px}.you-say{font:400 clamp(19px,1.9vw,26px)/1.15 'Instrument Serif',Georgia,serif;font-style:italic;margin:6px 0}
+.you-match .go{margin-top:20px}
+.you-note{margin-top:30px}
+#result>.you-cols>div>.small{margin-bottom:6px}
+@media(max-width:760px){.row.you-q{grid-template-columns:1fr}.you-cols{grid-template-columns:1fr;gap:40px}}
+.you-bar{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:6;max-width:calc(100vw - 36px);padding:13px 20px;background:var(--ink);color:var(--bg);font:600 14px/1.25 'Inter Tight',sans-serif;letter-spacing:-.01em;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.you-bar[hidden]{display:none}
+html{scroll-behavior:smooth}#result{scroll-margin-top:90px}
