@@ -4,7 +4,21 @@
   const atlas = window.PILOT_EVIDENCE, land = window.PILOT_LAND;
   const $ = id => document.getElementById(id);
   // Looks: ?v=paper (default), ?v=field, ?v=ink, ?v=night (the first prototype).
-  const V0 = new URLSearchParams(location.search).get('v') || 'cine', DAY = V0 === 'day', V = DAY ? 'aurora' : V0;
+  // Night mode is the cinematic 3D world; light mode is the aurora with the world drawn in points.
+  // The visitor's own choice wins, then the device's setting. ?v= still picks any look outright.
+  let pref = null; try { pref = localStorage.getItem('svapna_mode'); } catch (e) { /* private mode */ }
+  const MODE = pref === 'light' || pref === 'night' ? pref : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night');
+  const V0 = new URLSearchParams(location.search).get('v') || (MODE === 'light' ? 'aurora' : 'cine'), DAY = V0 === 'day', V = DAY ? 'aurora' : V0;
+  { const b = document.getElementById('mode');
+    if (b) {
+      const light = V !== 'cine' && V !== 'night' && V !== 'ink';
+      b.textContent = light ? 'Night' : 'Light'; b.setAttribute('aria-label', light ? 'Switch to night mode' : 'Switch to light mode');
+      b.addEventListener('click', () => {
+        try { localStorage.setItem('svapna_mode', light ? 'night' : 'light'); } catch (e) { /* private mode */ }
+        const u = new URL(location.href); u.searchParams.delete('v'); location.replace(u.toString()); if (!u.search && u.href === location.href) location.reload();
+      });
+    } }
+  { const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = V === 'cine' ? '#03040a' : '#ffffff'; }
   if (DAY) document.body.dataset.three = '1';
   document.body.dataset.v = V;
   const LOOK = {
