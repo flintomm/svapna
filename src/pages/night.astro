@@ -1,14 +1,4 @@
 ---
-// The Night has become Dreaming. This address forwards there.
+import Forward from '../components/Forward.astro';
 ---
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="refresh" content="0; url=/dream" />
-<link rel="canonical" href="https://svapnaproject.org/dream" />
-<meta name="robots" content="noindex" />
-<title>Dreaming — Svapna</title>
-</head>
-<body><p><a href="/dream">Dreaming has moved here.</a></p><script is:inline>location.replace('/dream' + location.hash);</script></body>
-</html>
+<Forward to="/dream" name="Dreaming" keepHash />

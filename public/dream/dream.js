@@ -294,6 +294,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
   addEventListener('keydown', e => { if (e.key === 'Escape') closeDates(); });
   document.querySelectorAll('details.more').forEach(d => d.addEventListener('toggle', () => setTimeout(measure, 50)));
 
+  if (location.hash === '#by-date') openDates();
   addEventListener('resize', size); size(); depth = readDepth();
   requestAnimationFrame(frame);
 })();

@@ -98,136 +98,35 @@ const latestPublished = latestLetter
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
     <script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
+    <script is:inline>
+      (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/read/read.css" />
+    <link rel="stylesheet" href="/read/reskin.css" />
   </head>
-  <body>
-    {/* CSS-only mobile menu controller. Toggled by the hamburger label. */}
-    <input type="checkbox" id="menu-toggle" aria-hidden="true" />
-
-    <header class="fixed top-0 left-0 right-0 bg-white z-50 hairline-b">
-      <div class="flex items-center justify-between px-5 md:px-8 py-3.5 md:py-4">
-        <div class="flex items-center gap-3 md:gap-6">
-          <a href="/" class="mono text-[10px] uppercase tracking-widest">∴ Svapna</a>
-          <div class="mono text-[10px] uppercase tracking-widest text-neutral-400 hidden sm:block">Est. MMXXVI</div>
-        </div>
-
-        <nav class="hidden lg:flex items-center gap-6">
-          {nav.map(item => (
-            <a
-              href={item.href}
-              class={`mono text-[10px] uppercase tracking-widest transition-colors ${isActive(item.href) ? 'text-black' : 'text-neutral-400 hover:text-black'}`}
-            >
-              <span class="mr-1.5 opacity-50">{item.num}</span>
-              {item.label}
-            </a>
-          ))}
-        </nav>
-
-        <label
-          for="menu-toggle"
-          class="lg:hidden flex flex-col justify-center items-end gap-1.5 w-10 h-10 -mr-2 cursor-pointer"
-          aria-label="Menu"
-        >
-          <span class="hamburger-line l1"></span>
-          <span class="hamburger-line l2"></span>
-          <span class="hamburger-line l3"></span>
-        </label>
-      </div>
+  <body class="reskin">
+    <header class="top">
+      <a class="mark" href="/">∴ Svapna</a>
+      <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/library">Library</a><button id="mode" type="button">Mode</button></nav>
     </header>
 
-    <div class="menu-overlay fixed inset-0 z-40 bg-white pt-16 lg:hidden menu-slide overflow-y-auto">
-      <div class="hairline-b px-5 py-4">
-        <p class="mono text-[10px] uppercase tracking-widest text-neutral-500">Index</p>
-      </div>
-      {nav.map((item, i) => (
-        <a
-          href={item.href}
-          class="menu-item w-full text-left hairline-b px-5 py-6 flex items-baseline justify-between active:bg-neutral-100 transition-colors"
-          style={`animation-delay: ${i * 60}ms`}
-        >
-          <span class="flex items-baseline gap-5">
-            <span class="mono text-[10px] uppercase tracking-widest text-neutral-400 w-6">{item.num}</span>
-            <span class={`display text-4xl ${isActive(item.href) ? 'italic' : ''}`}>{item.label}</span>
-          </span>
-          <span class="mono text-[10px] text-neutral-400">→</span>
-        </a>
-      ))}
-      <div class="px-5 py-8">
-        <p class="display text-xl italic text-neutral-500 leading-relaxed">
-          "All that we see or seem<br />is but a dream within a dream."
-        </p>
-        <p class="mono text-[9px] uppercase tracking-widest mt-4 text-neutral-400">— E. A. Poe, 1849</p>
-      </div>
-    </div>
-
-    <div class="fixed left-0 top-0 bottom-0 w-12 hairline-r z-40 flex-col items-center justify-between py-20 hidden xl:flex">
-      <div class="vert-text mono text-[9px] uppercase tracking-[0.3em] text-neutral-500">
-        A study in dream and dissolution
-      </div>
-      <div id="scroll-counter" class="mono text-[9px] text-neutral-400">00</div>
-    </div>
-
-    <main class="xl:pl-12 pt-14 md:pt-16">
+    <main>
       <slot />
     </main>
 
-    <footer class="xl:ml-12 hairline-t mt-20 md:mt-32">
-      <div class="grid grid-cols-1 md:grid-cols-12">
-        <div class="md:col-span-6 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
-          <p class="display text-2xl md:text-3xl italic leading-tight">
-            "All that we see or seem<br />is but a dream within a dream."
-          </p>
-          <p class="mono text-[10px] uppercase tracking-widest mt-5 md:mt-6 text-neutral-500">— E. A. Poe, 1849</p>
-        </div>
-        <div class="md:col-span-3 p-8 md:p-12 hairline-b md:hairline-r md:border-b-0">
-          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Index</p>
-          <ul class="space-y-2 text-sm">
-            <li><a href="/glossary" class="hover:italic transition-all">Glossary</a></li>
-            <li><a href="/dream" class="hover:italic transition-all">Dreaming</a></li>
-            <li><a href="/globe-of-thought" class="hover:italic transition-all">Globe of Thought</a></li>
-            <li><a href="/about/conduct" class="hover:italic transition-all">Code of Conduct</a></li>
-            <li><a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a></li>
-            <li><a href="/about/disclaimer" class="hover:italic transition-all">Medical Disclaimer</a></li>
-            <li><a href="/about/contact" class="hover:italic transition-all">Contact</a></li>
-            <li><a href="/about/privacy" class="hover:italic transition-all">Privacy</a></li>
-            <li><a href="/about/terms" class="hover:italic transition-all">Terms</a></li>
-          </ul>
-        </div>
-        <div class="md:col-span-3 p-8 md:p-12">
-          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 mb-4">Dāna</p>
-          <p class="text-sm leading-relaxed">
-            In the tradition of giving. Take what serves. Pass forward when able.
-          </p>
-          <p class="mt-5 flex flex-col gap-2 mono text-[10px] uppercase tracking-widest">
-            <a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-umami-event="coffee_click" class="hover:italic transition-all">Buy a coffee ↗</a>
-            <a href="/support" class="text-neutral-500 hover:text-black hover:italic transition-all">Other ways →</a>
-          </p>
-        </div>
-      </div>
-      <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
-        {latestPublished ? (
-          <span class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-            <span>Latest published</span>
-            <span class="text-neutral-400">·</span>
-            <a href={latestPublished.href} class="text-neutral-700 hover:text-black hover:italic transition-all normal-case tracking-normal">{latestPublished.title}</a>
-            <span class="text-neutral-400">—</span>
-            <span>{latestPublished.date}</span>
-          </span>
-        ) : (
-          <span>Latest published · forthcoming</span>
-        )}
-        <a href="/rss.xml" class="flex items-center gap-1.5 hover:text-black transition-colors" aria-label="RSS feed">
-          <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" aria-hidden="true">
-            <path d="M5 3a1 1 0 0 0 0 2 14 14 0 0 1 14 14 1 1 0 1 0 2 0A16 16 0 0 0 5 3zm0 5a1 1 0 0 0 0 2 9 9 0 0 1 9 9 1 1 0 1 0 2 0A11 11 0 0 0 5 8zm1.5 8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
-          </svg>
-          <span>RSS</span>
-        </a>
-      </div>
-      <div class="hairline-t px-5 md:px-12 py-4 flex flex-col sm:flex-row justify-between gap-2 mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">
-        <span>© 2026 Svapna Project</span>
-        <span>Vol. I / Iss. I</span>
-        <span>MMXXVI</span>
-      </div>
+    <footer class="foot">
+      <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/library">Library</a><a href="/glossary">Glossary</a><a href="/letter">Letters</a></p>
+      <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-umami-event="coffee_click">Buy a coffee ↗</a><a href="/about/acknowledgments">Acknowledgments</a><a href="/about/disclaimer">Medical disclaimer</a><a href="/about/contact">Contact</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a><a href="/rss.xml">RSS</a></p>
+      {latestPublished && <p class="fine">Latest letter: <a href={latestPublished.href}>{latestPublished.title}</a>, {latestPublished.date}</p>}
     </footer>
+
+    <script is:inline>
+      (function () { var b = document.getElementById('mode'), r = document.documentElement; function paint() { b.textContent = r.dataset.mode === 'light' ? 'Night' : 'Light'; }
+        b.addEventListener('click', function () { r.dataset.mode = r.dataset.mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', r.dataset.mode); } catch (e) {} paint(); }); paint(); })();
+    </script>
 
     <script is:inline>
       // Site-wide Umami helper. Tolerates the loader being absent (blocked,
@@ -243,19 +142,5 @@ const latestPublished = latestLetter
       };
     </script>
 
-    <script is:inline>
-      // Side-rail scroll counter. Tiny enough to inline; runs only on screens
-      // wide enough to show the rail.
-      (function () {
-        var el = document.getElementById('scroll-counter');
-        if (!el) return;
-        var update = function () {
-          var n = Math.min(99, Math.floor(window.scrollY / 20));
-          el.textContent = String(n).padStart(2, '0');
-        };
-        window.addEventListener('scroll', update, { passive: true });
-        update();
-      })();
-    </script>
   </body>
 </html>

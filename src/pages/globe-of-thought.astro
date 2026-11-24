@@ -1,45 +1,17 @@
 ---
-import DanaNote from '../components/DanaNote.astro';
-import Layout from '../layouts/Layout.astro';
-// The atlas body is generated from the Globe of Thought repository by scripts/sync-globe.mjs.
-import atlasBody from '../generated/globe-of-thought.html?raw';
-
-// The globe is drawn on a canvas, so its colours are handed to the atlas script, not set in CSS.
-const theme = {
-  ocean: ['#ffffff', '#ffffff', '#fdfdfd', '#f7f7f7'],
-  halo: '#00000000',
-  haloBlur: 0,
-  edge: '#000000',
-  graticule: '#00000012',
-  land: ['#ececec', '#e4e4e4', '#dadada'],
-  coast: '#00000070',
-  rim: ['#000000', '#000000', '#000000', '#000000'],
-  glow: ['12', '08', '00'],
-  tones: { low: '#000000', mid: '#000000', high: '#000000', none: '#000000' },
-  // The one place the site uses colour: a position on the scale, cool to warm.
-  heat: ['#2f5aa8', '#e2b53a', '#c2371f'],
-  heatAlpha: 0.72,
-  link: '#000000',
-};
+// The earlier globe page. Its questions and passages now live at /questions and /thinkers, and on the home page.
 ---
-
-<Layout
-  title="Globe of Thought - Svapna Project"
-  description="An atlas of what thinkers wrote in answer to the questions seekers ask: the self, death, freedom, suffering, happiness, desire, meaning and truth. Passages placed by where and when they were written."
->
-  <section>
-    <div class="hairline-b px-5 md:px-8 py-5 md:py-6 flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 fade-in">
-      <h1 class="display text-4xl md:text-5xl leading-none">Globe of Thought</h1>
-      <p class="display italic text-base md:text-lg text-neutral-600 max-w-xl md:text-right">What thinkers wrote in answer to the wider questions, placed by where and when.</p>
-    </div>
-    <link rel="stylesheet" href="/globe-of-thought/atlas.css" />
-    <link rel="stylesheet" href="/globe-of-thought/theme.css" />
-    <script is:inline define:vars={{ theme }}>window.ATLAS_THEME = theme;</script>
-    <div class="atlas" set:html={atlasBody} />
-    <script is:inline defer src="/globe-of-thought/d3.min.js"></script>
-    <script is:inline defer src="/globe-of-thought/land.js"></script>
-    <script is:inline defer src="/globe-of-thought/evidence.js"></script>
-    <script is:inline defer src="/globe-of-thought/app.js"></script>
-  </section>
-  <DanaNote />
-</Layout>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="canonical" href="https://svapnaproject.org/questions" />
+<meta name="robots" content="noindex" />
+<title>Globe of Thought — Svapna</title>
+</head>
+<body><p><a href="/questions">The questions have moved here.</a></p>
+<script is:inline>
+  (function () { var q = new URLSearchParams(location.search).get('q'), p = (location.hash.match(/p=([^&]+)/) || [])[1];
+    location.replace(q ? '/questions/' + q + (p ? '#' + p : '') : '/questions'); })();
+</script><noscript><meta http-equiv="refresh" content="0; url=/questions" /></noscript></body>
+</html>

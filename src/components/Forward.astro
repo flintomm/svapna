@@ -1,0 +1,16 @@
+---
+// A retired address that forwards to its replacement.
+interface Props { to: string; name: string; keepHash?: boolean }
+const { to, name, keepHash = false } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content={`0; url=${to}`} />
+<link rel="canonical" href={`https://svapnaproject.org${to.split('#')[0]}`} />
+<meta name="robots" content="noindex" />
+<title>{name} — Svapna</title>
+</head>
+<body><p><a href={to}>{name} has moved here.</a></p><script is:inline define:vars={{ to, keepHash }}>location.replace(to + (keepHash && !to.includes('#') ? location.hash : ''));</script></body>
+</html>

@@ -1,0 +1,31 @@
+/* The new look applied to the pages still built on the older layout (library, history essays, letters, about, support). */
+body.reskin{font-family:'Inter Tight',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+body.reskin main{max-width:1180px;margin:0 auto;padding:10px 32px 80px}
+body.reskin .display{font-family:'Instrument Serif',Georgia,serif}
+body.reskin h1.display,body.reskin h2.display,body.reskin h3.display{font-family:'Inter Tight',sans-serif;font-weight:600;letter-spacing:-.05em;font-style:normal!important;line-height:.95}
+body.reskin .mono{font-family:'Inter Tight',sans-serif;letter-spacing:0!important;text-transform:none!important;font-size:13px!important;font-weight:500}
+body.reskin .text-neutral-400,body.reskin .text-neutral-500,body.reskin .text-neutral-600{color:var(--soft)!important}
+body.reskin .text-neutral-700,body.reskin .text-neutral-800,body.reskin .text-black{color:var(--ink)!important}
+body.reskin .bg-white,body.reskin .grid-bg{background:transparent!important;background-image:none!important}
+body.reskin .bg-black{background:var(--ink)!important;color:var(--bg)!important}
+body.reskin .bg-black .text-white,body.reskin .text-white{color:var(--bg)!important}
+body.reskin .bg-black .text-neutral-300,body.reskin .bg-black .text-neutral-400{color:color-mix(in srgb,var(--bg) 70%,transparent)!important}
+body.reskin .border-black,body.reskin .border{border-color:var(--line)!important}
+body.reskin .hairline-b{border-bottom:1px solid var(--line)!important}body.reskin .hairline-t{border-top:1px solid var(--line)!important}
+body.reskin .hairline-r,body.reskin .hairline-l{border-right:0!important;border-left:0!important}
+body.reskin [class*="hover:bg-neutral"]:hover,body.reskin [class*="active:bg-neutral"]:active{background:color-mix(in srgb,var(--ink) 6%,transparent)!important}
+body.reskin .hover\:bg-black:hover{background:var(--ink)!important;color:var(--bg)!important}
+body.reskin input,body.reskin textarea,body.reskin select{background:transparent;color:var(--ink);border-color:var(--line)}
+body.reskin a.underline,body.reskin .underline{text-decoration-thickness:1px}
+body.reskin .fig{border-bottom-color:var(--line)}
+body.reskin .fig-mark{border-color:var(--ink);background:var(--bg)}body.reskin .fig-mark.on,body.reskin .fig-mark:hover{background:var(--ink)}
+body.reskin .fig-controls button{color:var(--ink);border-color:var(--line)}body.reskin .fig-controls button:hover{background:var(--ink);color:var(--bg)}
+body.reskin .fig-label,body.reskin .fig-axis,body.reskin .fig-lanes,body.reskin .fig-meta,body.reskin .fig-big small{color:var(--soft);font-family:'Inter Tight',sans-serif;letter-spacing:0;text-transform:none;font-size:12px}
+body.reskin .fig-plate h2{font-family:'Inter Tight',sans-serif;font-weight:600;letter-spacing:-.05em}
+body.reskin .fig-big{font-family:'Inter Tight',sans-serif;font-weight:600;letter-spacing:-.05em}
+body.reskin .fig-lede{color:var(--soft)}body.reskin .fig-quote{border-color:var(--line);font-family:'Instrument Serif',serif}body.reskin .fig-go{color:var(--ink);border-color:var(--line);font-family:'Inter Tight',sans-serif;letter-spacing:0;text-transform:none;font-size:14px}
+body.reskin .conc-cell{background:color-mix(in srgb,var(--ink) calc(var(--k) * 100%),transparent)}body.reskin .conc-key i{background:linear-gradient(90deg,transparent,var(--ink));border-color:var(--line)}
+body.reskin .conc-table tbody th,body.reskin .conc-table td{border-color:var(--line)}body.reskin .conc-table tbody th{font-family:'Inter Tight',sans-serif}
+body.reskin .conc-table thead th span{font-family:'Inter Tight',sans-serif;text-transform:none;letter-spacing:0;color:var(--soft)}
+body.reskin .fade-in{animation:none}
+@media(max-width:760px){body.reskin main{padding:6px 18px 60px}}
