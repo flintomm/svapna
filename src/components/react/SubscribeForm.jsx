@@ -24,7 +24,7 @@ export default function SubscribeForm() {
       if (res.ok) {
         setStatus('sent');
         form.reset();
-        if (typeof window !== 'undefined' && window.umami) window.umami.track('home_subscribe_submit');
+        if (typeof window !== 'undefined' && typeof window.pirsch === 'function') window.pirsch('home_subscribe_submit');
       } else {
         const body = await res.json().catch(() => ({}));
         setError(body?.error || 'Something went wrong.');

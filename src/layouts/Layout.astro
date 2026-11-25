@@ -97,7 +97,7 @@ const latestPublished = latestLetter
     {allSchemas.map(schema => (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     ))}
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="ce803793-d5c7-4cef-9e9e-bf173d3bc6e1" data-domains="svapnaproject.org"></script>
+    <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>
     <script is:inline>
       (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; })();
     </script>
@@ -119,7 +119,7 @@ const latestPublished = latestLetter
 
     <footer class="foot">
       <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/library">Library</a><a href="/glossary">Glossary</a><a href="/letter">Letters</a></p>
-      <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-umami-event="coffee_click">Buy a coffee ↗</a><a href="/about/acknowledgments">Acknowledgments</a><a href="/about/disclaimer">Medical disclaimer</a><a href="/about/contact">Contact</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a><a href="/rss.xml">RSS</a></p>
+      <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-pirsch-event="coffee_click">Buy a coffee ↗</a><a href="/about/acknowledgments">Acknowledgments</a><a href="/about/disclaimer">Medical disclaimer</a><a href="/about/contact">Contact</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a><a href="/rss.xml">RSS</a></p>
       {latestPublished && <p class="fine">Latest letter: <a href={latestPublished.href}>{latestPublished.title}</a>, {latestPublished.date}</p>}
     </footer>
 
@@ -133,8 +133,8 @@ const latestPublished = latestLetter
       // offline, or still pending) so call sites never need to guard the call.
       window.trackUmami = function (name) {
         try {
-          if (window.umami && typeof window.umami.track === 'function') {
-            window.umami.track(name);
+          if (typeof window.pirsch === 'function') {
+            window.pirsch(name);
           }
         } catch (e) {
           /* swallow — analytics must never break a page */
