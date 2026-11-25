@@ -1,0 +1,25 @@
+---
+// Every placement the two readers could not agree on, laid out for anyone who wants to argue with it.
+import Read from '../../layouts/Read.astro';
+import { questions, slugify } from '../../lib/atlas.js';
+const groups = questions.map(q => ({ q, rows: q.placed.filter(c => c.second === 'differed') })).filter(g => g.rows.length);
+const total = groups.reduce((n, g) => n + g.rows.length, 0);
+---
+<Read title={`${total} open placements: where the readers differed — Svapna`} description={`The ${total} placements in the atlas that two independent readings could not settle, listed by question, each with a way to say where it belongs.`} path="/how-it-works/open" crumbs={[{ name: 'How it works', path: '/how-it-works' }, { name: 'Open placements', path: '/how-it-works/open' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/how-it-works">How it works</a></p>
+  <h1>{total} placements <em>still open.</em></h1>
+  <p class="lede">Two independent readings placed these passages differently, and a third judged that either position is defensible. They stay where the first reader put them, marked as open. If one is wrong, say so.</p>
+  <p class="keys">{groups.map(g => <span><a href={`#${g.q.id}`}><b>{g.rows.length}</b> {g.q.plain}</a></span>)}</p>
+  {groups.map(g => (
+    <section id={g.q.id}>
+      <h2 class="h-src">{g.q.plain}</h2>
+      <div class="rows">
+        {g.rows.map(c => { const step = g.q.steps.find(s => s.id === c.score); return (
+          <article class="row term">
+            <div><p class="pos" style={`--c:var(--${step.tone})`}><span class="dot"></span>Placed at: {step.plain}</p><a class="name-plain" href={`/thinkers/${slugify(c.name)}#${c.id}`}>{c.name}</a><p class="small">{c.dateShort}</p></div>
+            <div><p class="term-def">“{c.excerpt}”</p><p class="small" style="margin-top:8px">{c.why}</p><p class="small" style="margin-top:8px"><a href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a> · <a href={`/about/contact?about=${g.q.id}:${c.id}`} rel="nofollow">Say where it belongs →</a></p></div>
+          </article>); })}
+      </div>
+    </section>
+  ))}
+</Read>

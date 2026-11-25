@@ -1,0 +1,23 @@
+---
+// The record of placements that were moved, with the reason given each time.
+import Read from '../../layouts/Read.astro';
+import { questions, slugify } from '../../lib/atlas.js';
+const MARK = ' A second, independent reading moved this placement from “';
+const rows = questions.flatMap(q => q.placed.filter(c => c.why.includes(MARK)).map(c => {
+  const [before, rest] = c.why.split(MARK), m = rest.match(/^([^”]+)” to “([^”]+)”: ([\s\S]*)$/);
+  return { q, c, before, from: m ? m[1] : '', to: m ? m[2] : '', reason: m ? m[3] : rest };
+}));
+---
+<Read title={`${rows.length} placements changed, and why — Svapna`} description={`The record of the ${rows.length} placements in the atlas that a second reading moved, each with the old position, the new one and the reason.`} path="/how-it-works/changes" crumbs={[{ name: 'How it works', path: '/how-it-works' }, { name: 'Changes', path: '/how-it-works/changes' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/how-it-works">How it works</a></p>
+  <h1>{rows.length} placements <em>changed.</em></h1>
+  <p class="lede">When the second reading of the atlas was done on 25 November 2026, these placements were moved. Most went to “unscored”: the first reading had leaned on context that the quoted words do not carry by themselves. Nothing was changed silently.</p>
+  <div class="rows" style="margin-top:54px">
+    {rows.map(r => (
+      <article class="row term">
+        <div><a class="name-plain" href={`/thinkers/${slugify(r.c.name)}#${r.c.id}`}>{r.c.name}</a><p class="small">{r.q.plain}</p><p class="small"><s>{r.from}</s> → <b>{r.to}</b></p></div>
+        <div><p class="term-def">“{r.c.excerpt}”</p><p class="small" style="margin-top:8px">{r.reason}</p></div>
+      </article>
+    ))}
+  </div>
+</Read>

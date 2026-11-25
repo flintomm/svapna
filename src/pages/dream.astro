@@ -97,6 +97,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
     <h1>Sink through <em>one night.</em></h1>
     <p class="lede">Eight depths, from lying down to morning. At each one, what people found there over three and a half thousand years.</p>
     <a class="pill" href="#awake">Begin ↓</a>
+    <p class="small intro-back" id="intro-back" hidden></p>
     <p class="small intro-more">Or go straight to the reading: <button id="open-dates-3" type="button">every lesson, by date</button> · <a href="/glossary">the glossary</a> · <a href="/library">the library</a></p>
   </section>
 
@@ -160,6 +161,17 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <script is:inline defer src="/next/three.min.js"></script>
 <script is:inline defer src="/dream/dream.js"></script>
 <script is:inline>
+  // The night remembers where a visitor left it, and which lesson comes next. Both live on the device only.
+  (function () {
+    var names = {}; document.querySelectorAll('.layer').forEach(function (l) { names[l.id] = l.querySelector('h2').textContent; });
+    var box = document.getElementById('intro-back'), at = null, read = []; try { at = localStorage.getItem('svapna_night_at'); read = JSON.parse(localStorage.getItem('svapna_read') || '[]') || []; } catch (e) {}
+    var parts = [];
+    if (!location.hash && at && names[at]) { var a = document.createElement('a'); a.href = '#' + at; a.textContent = 'Go back down to ' + names[at] + ' ↓'; parts.push(a); }
+    if (read.length) { var next = null; document.querySelectorAll('.idea').forEach(function (d) { var l = d.querySelector('a[href^="/curriculum/module-"]'), h3 = d.querySelector('h3'); if (next || !l || !h3) return; if (read.indexOf(l.getAttribute('href').replace(/\/$/, '')) < 0) next = [l.getAttribute('href'), h3.textContent.trim()]; });
+      if (next) { var b = document.createElement('a'); b.href = next[0]; b.textContent = 'Next lesson unread: ' + next[1] + ' →'; parts.push(b); } }
+    parts.forEach(function (x, i) { if (i) box.append(' · '); box.append(x); }); box.hidden = !parts.length;
+    setInterval(function () { var h = location.hash.slice(1); if (names[h]) { try { localStorage.setItem('svapna_night_at', h); } catch (e) {} } else if (h === 'end' || h === 'outro') { try { localStorage.removeItem('svapna_night_at'); } catch (e) {} } }, 2000);
+  })();
   // Lessons already read on this device are marked wherever they are listed.
   (function () { var read = []; try { read = JSON.parse(localStorage.getItem('svapna_read') || '[]') || []; } catch (e) {} if (!read.length) return; document.querySelectorAll('a[href^="/curriculum/module-"]').forEach(function (a) { if (read.indexOf(a.getAttribute('href').replace(/\/$/, '')) >= 0) a.classList.add('was-read'); }); })();
 </script>

@@ -60,6 +60,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
       </div>
     </section>
   )}
+  <p class="def" style="margin-top:60px">To cite: Svapna, “{t.name}”, svapnaproject.org/thinkers/{t.slug}. Cite the linked source for the words themselves. <a href="/how-it-works">How passages are checked and placed</a>.</p>
   <Coffee />
   <script is:inline define:vars={{ slug: t.slug }}>
     try { var F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; F.thinkers = F.thinkers || []; if (F.thinkers.indexOf(slug) < 0 && F.thinkers.length < 40) { F.thinkers.push(slug); localStorage.setItem('svapna_done', JSON.stringify(F)); } } catch (e) {}

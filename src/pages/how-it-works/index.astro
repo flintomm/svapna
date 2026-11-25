@@ -1,8 +1,8 @@
 ---
 // How the atlas is made: what is checked by machine, what is a judgement, and how to disagree.
-import Read from '../layouts/Read.astro';
-import Coffee from '../components/Coffee.astro';
-import { cards, questions, thinkers, links } from '../lib/atlas.js';
+import Read from '../../layouts/Read.astro';
+import Coffee from '../../components/Coffee.astro';
+import { cards, questions, thinkers, links } from '../../lib/atlas.js';
 const all = cards.flatMap(c => Object.values(c.readings));
 const n = s => all.filter(r => r.second === s).length;
 const unscored = all.filter(r => r.score === 'unscored').length;
@@ -34,7 +34,7 @@ const sample = questions[0];
       <li><strong>{n('settled')}</strong>: the readers differed and the third reading settled it.</li>
       <li><strong>{n('differed')}</strong>: the readers differed and the passage could fairly sit either way. Treat these as open.</li>
     </ul>
-    <p>Where the second reading moved a placement, the passage says so, with the reason.</p>
+    <p>Where the second reading moved a placement, the passage says so, with the reason. Both lists are public: <a href="/how-it-works/open">every placement still open</a>, and <a href="/how-it-works/changes">every placement that was changed, and why</a>.</p>
 
     <h2>5. What a placement does not claim</h2>
     <p>A placement describes a few quoted lines. It is not a verdict on a thinker’s whole work, and the same thinker can sit at different positions in different passages. Three positions flatten real differences; the scale is a way to find people to read, not a classification of philosophies.</p>
@@ -47,6 +47,10 @@ const sample = questions[0];
     <h2>7. Disagree with a placement</h2>
     <p>Every passage has a “Disagree?” link. It opens a short form with the passage already named. Say where the passage should sit and why, ideally pointing at the words. Corrections to quotes, dates, places and sources go the same way. Voting on placements by members is planned; until then every message is read by a person.</p>
     <p><a href="/about/contact">Write to Svapna →</a></p>
+
+    <h2>8. Check it yourself</h2>
+    <p>The whole atlas can be downloaded: every passage, its source and locator, every placement with its reason, and the outcome of the second reading. <a href="/data/atlas.json">As JSON</a> · <a href="/data/atlas.csv">as a spreadsheet (CSV)</a>. The placements and notes are offered under CC BY 4.0; the quoted passages belong to their sources.</p>
+    <p>Each passage has a fixed address that can be cited: a thinker’s page, followed by the passage’s own anchor. When citing a passage, cite the source it links to as well; Svapna is the finding aid, not the edition.</p>
   </div>
   <Coffee />
 </Read>
