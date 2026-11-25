@@ -48,7 +48,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
 <body>
 <script is:inline>
   // The look is set at once, so a slow connection never shows the wrong colours while the world loads.
-  (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; var v = new URLSearchParams(location.search).get('v') || (m === 'light' ? 'aurora' : 'cine'); if (v === 'day') v = 'aurora'; document.body.dataset.v = v; })();
+  (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; var v = new URLSearchParams(location.search).get('v') || (m === 'light' ? 'aurora' : 'cine'); if (v === 'day') v = 'aurora'; document.body.dataset.v = v; try { if (localStorage.getItem('svapna_type') === 'plain') document.documentElement.dataset.type = 'plain'; } catch (e) {} })();
 </script>
 <canvas id="gl" aria-hidden="true"></canvas>
 <canvas id="sky" aria-hidden="true"></canvas>
@@ -98,7 +98,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <p class="mono dim" id="echo-label"></p>
     <p id="echo-line" class="big"></p>
     <button id="echo-go" class="mono link" type="button">Hear them →</button>
-    <a class="mono link" href="/you" style="margin-left:26px">Who thinks like you? →</a>
+    <a class="mono link" id="echo-you" href="/you" style="margin-left:26px">Who thinks like you? →</a>
   </section>
 
   <section id="voice" class="scene" hidden>
@@ -153,6 +153,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <li><a href="/glossary">Glossary of dream practice</a></li>
     <li><a href="/library">Library and glossary</a></li>
     <li><a href="/how-it-works">How it works · what is checked</a></li>
+    <li><button id="menu-type" type="button">Plainer type</button></li>
     <li><a href="/community">Community</a></li>
     <li><a href="/support">Support · buy a coffee</a></li>
   </ul>

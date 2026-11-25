@@ -36,11 +36,12 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the page</a>
 <header class="top">
   <a class="mark" href="/">∴ Svapna</a>
   <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/you">You</a><a href="/search" class="wide-only">Search</a><button id="mode" type="button">Mode</button></nav>
 </header>
-<main><slot /></main>
+<main id="main" tabindex="-1"><slot /></main>
 <footer class="foot">
   <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a><a href="/search">Search</a></p>
   <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/how-it-works">How it works</a><a href="/data">Data</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>

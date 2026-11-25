@@ -9,7 +9,8 @@ const count = s => q.placed.filter(c => c.score === s.id).length;
 const total = q.placed.length, first = q.placed[0], last = q.placed.at(-1);
 // One voice to open with: short, agreed by both readers, from the middle of the scale where there is one.
 const mid = scored[Math.floor(scored.length / 2)];
-const lead = q.placed.find(c => c.second === 'agreed' && c.score === mid.id && c.excerpt.length < 170 && !c.translation) || q.placed.find(c => c.second === 'agreed' && c.excerpt.length < 170);
+const LEAD = { death: 'confucius-death' };
+const lead = q.placed.find(c => c.id === LEAD[q.id]) || q.placed.find(c => c.second === 'agreed' && c.score === mid.id && c.excerpt.length < 170 && !c.translation) || q.placed.find(c => c.second === 'agreed' && c.excerpt.length < 170);
 const HEAVY = { death: true, suffering: true };
 const traditions = TRADITIONS.filter(t => q.placed.some(c => c.tradition === t));
 const regions = REGIONS.filter(([id]) => q.placed.some(c => c.region === id));

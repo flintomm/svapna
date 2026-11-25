@@ -512,6 +512,8 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     words(rest, ` voices across ${span(cards)} wrote the same.` + (first ? ` The earliest is ${first.name}, ${first.dateShort}.` : ''), 45);
     line.append(b, rest);
     if (first) face(first);
+    { let n = 0; try { n = Object.keys(JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}).length; } catch (e) { /* private mode */ }
+      $('echo-you').textContent = n < 3 ? `Who thinks like you? ${3 - n} more to find out →` : n < 7 ? `Who thinks like you? ${7 - n} more make it truer →` : 'Who thinks like you? →'; }
     scene('echo');
   }
   const span = list => { const y = list.at(-1).sortYear - list[0].sortYear; return y >= 1000 ? (Math.round(y / 100) / 10).toLocaleString('en') + ' thousand years' : y + ' years'; };
@@ -624,6 +626,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   }
   $('open-menu').addEventListener('click', () => { $('menu').hidden = false; });
   $('close-menu').addEventListener('click', () => { $('menu').hidden = true; });
+  { const tb = $('menu-type'), root = document.documentElement, paintType = () => { tb.textContent = root.dataset.type === 'plain' ? 'Original type' : 'Plainer type'; }; tb.addEventListener('click', () => { if (root.dataset.type === 'plain') delete root.dataset.type; else root.dataset.type = 'plain'; try { localStorage.setItem('svapna_type', root.dataset.type || ''); } catch (e) { /* private mode */ } paintType(); }); paintType(); }
 
   try { const n = Object.keys(JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}).length, y = document.getElementById('you-link'); if (y && n) y.textContent = 'You · ' + n; } catch (e) { /* private mode */ }
   addEventListener('resize', size);

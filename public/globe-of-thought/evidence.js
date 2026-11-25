@@ -54525,6 +54525,21 @@ window.PILOT_EVIDENCE={
       "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
       "tradition": "Other",
       "sure": true
+    },
+    "Fukuzawa Yukichi": {
+      "about": "Japanese educator and writer in Tokyo who founded Keio and argued in the 1870s for learning and personal independence.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Han Yong-un": {
+      "about": "Korean Buddhist monk, poet and independence activist whose collection The Silence of Love appeared in 1926.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Miyazawa Kenji": {
+      "about": "Japanese poet and author of children’s stories from Hanamaki, a devout Buddhist who worked alongside local farmers.",
+      "tradition": "Literature and poetry",
+      "sure": true
     }
   }
 };

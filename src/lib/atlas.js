@@ -34,7 +34,7 @@ export const regionOf = c => { const a = c.lat, o = c.lng;
   return a > -10 ? 'easia' : 'oceania'; };
 export const regionName = id => (REGIONS.find(r => r[0] === id) || [])[1] || '';
 // The checker reads a plain-text mirror of Project Gutenberg; readers are sent to the book's own page there.
-export const readUrl = u => { const m = /^https:\/\/gutenberg\.pglaf\.org\/(?:\d\/)*(\d+)\/\1[-.]/.exec(u); return m ? 'https://www.gutenberg.org/ebooks/' + m[1] : u; };
+export const readUrl = u => { const m = /^https:\/\/gutenberg\.pglaf\.org\/(?:\d\/)*(\d+)\/\1[-.]/.exec(u); if (m) return 'https://www.gutenberg.org/ebooks/' + m[1]; const sf = /^https:\/\/www\.sefaria\.org\/api\/texts\/([^?]+)/.exec(u); return sf ? 'https://www.sefaria.org/' + sf[1] : u; };
 // The language of a passage quoted in its original, where the source makes it plain.
 const langOf = c => { if (!c.translation) return null; const h = (/^https?:\/\/([a-z]{2})\.wikisource\.org/.exec(c.sourceUrl) || [])[1]; if (h && h !== 'en') return h; if (/[\u3040-\u30ff]/.test(c.excerpt)) return 'ja'; if (/[\u4e00-\u9fff]/.test(c.excerpt)) return 'zh'; if (/[\u0600-\u06ff]/.test(c.excerpt)) return 'ar'; if (/projekt-gutenberg\.org/.test(c.sourceUrl)) return 'de'; return 'und'; };
 // A one-line account of each voice and the tradition it belongs to: written by machine, for orientation only.
