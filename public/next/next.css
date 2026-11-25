@@ -200,3 +200,4 @@ body[data-scene=globe] #stage{pointer-events:none}
 .top-right>*{padding:11px 0}
 body[data-v=cine] #voice-pos{color:color-mix(in srgb,var(--c) 55%,#fff)}.who-filter button{white-space:nowrap}
 body:not([data-v=night]) #drift[aria-pressed=true]::first-line{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

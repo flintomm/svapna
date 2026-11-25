@@ -135,3 +135,22 @@ h2.h-src{font-size:clamp(24px,2.8vw,40px)}
 .you-friend{margin-top:54px;padding-top:22px;border-top:1px solid var(--line);max-width:60rem}.you-friend-row{display:flex;flex-wrap:wrap;gap:2px 14px;justify-content:space-between;margin:0;padding:12px 0;border-bottom:1px solid var(--line);color:var(--soft)}.you-friend-row b{color:var(--ink);font-weight:500}.you-friend-row.same b{color:var(--high)}
 .who .src.quiet{display:block}
 .who button.src{font:inherit;color:inherit;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;text-align:left}.row.you-kept{display:block}.row.you-kept a.you-say{display:block;text-decoration:none}.row.you-kept a.you-say:hover{text-decoration:underline}.row.you-kept button{text-decoration:underline;text-underline-offset:4px;opacity:.7}
+
+/* contrast: small quiet text is kept readable */
+.who .src.quiet{opacity:.82}.row .twice{opacity:1;font-size:13px}.find-eras button{opacity:.72}.sticker.off{opacity:.62}.foot a{opacity:.92}
+html[data-mode=light] .pos,html[data-mode=light] .pos a{color:color-mix(in srgb,var(--c) 58%,#000)}
+html[data-mode=light] .you-friend-row.same b{color:color-mix(in srgb,var(--high) 60%,#000)}
+.keys a{text-decoration:none;color:inherit}.keys a:hover b{text-decoration:underline}
+.lead-voice{margin:44px 0 0;max-width:46rem}.lead-voice blockquote{margin:0;font:400 clamp(26px,3.2vw,44px)/1.12 'Instrument Serif',Georgia,serif;font-style:italic}.lead-voice figcaption{margin-top:12px;font-size:14px;color:var(--soft)}
+.gentle{margin-top:26px;padding-left:16px;border-left:1px solid var(--line)}
+.find-regions{flex-basis:100%}.find-do{display:flex;flex-wrap:wrap;gap:6px 22px;align-items:baseline}.find-do button{font:500 14px/1 'Inter Tight',sans-serif;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;padding:8px 0}
+#find-all{flex-basis:100%}
+@media(max-width:700px){.top nav .wide-only{display:none}}
+@media print{
+  html,html[data-mode]{--bg:#fff;--ink:#000;--soft:#333;--line:#bbb;--low:#000;--mid:#000;--high:#000;--none:#000;color-scheme:light}
+  body{animation:none;font-size:11pt}.top,.foot,.find,.coffee,.go,.you-bar,.tally,.crumb,button,.who .src.quiet,.twice a,script{display:none!important}
+  main{padding:0;max-width:none}h1{font-size:26pt;margin:0 0 6pt}h2{font-size:15pt;margin:18pt 0 4pt;break-after:avoid}.lede,.def{font-size:10.5pt}
+  .row{break-inside:avoid;padding:10pt 0;grid-template-columns:1fr 34%;gap:14pt}.row blockquote{font-size:13pt}.row[hidden],section[hidden]{display:none!important}
+  a{text-decoration:none}.who a.src::after{content:' ' attr(href);font-size:8pt;word-break:break-all}
+}
+.who .src.quiet{opacity:1}.sticker.off{opacity:.85}.sticker.off svg{opacity:.45}

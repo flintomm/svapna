@@ -1063,7 +1063,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "harpers-song-meaning",
       "question": "meaning",
-      "name": "Song of the Harper (tomb of King Antef)",
+      "name": "Song of the Harper (tomb of King Intef)",
       "short": "Harper’s Song",
       "work": "Song of the Harper, Papyrus Harris 500",
       "excerpt": "What is best for thee to do is To follow thy heart's desire as long as thou livest.",
@@ -1532,7 +1532,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "song-of-the-harper-death",
       "question": "death",
-      "name": "Song of the Harper (Tomb of King Antef)",
+      "name": "Song of the Harper (tomb of King Intef)",
       "short": "Harper’s Song",
       "work": "Song of the Harper",
       "excerpt": "Who can describe to us their surroundings, Who can give comfort to our hearts, And can act as our guide To the place whereunto they have departed?",
@@ -1777,7 +1777,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "rig-veda-truth",
       "question": "truth",
-      "name": "Rig Veda",
+      "name": "The Rig Veda",
       "short": "Rig Veda",
       "work": "Rig Veda 10.129 (Hymn of Creation)",
       "excerpt": "Who verily knows and who can here declare it, whence it was born and whence comes this creation? The Gods are later than this world's production. Who knows then whence it first came into being?",
@@ -3106,7 +3106,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "proverbs",
-      "name": "The Book of Proverbs",
+      "name": "Book of Proverbs",
       "short": "Proverbs",
       "work": "Proverbs 27:17",
       "excerpt": "Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",
@@ -3141,7 +3141,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "brihadaranyaka-upanishad",
-      "name": "The Brihadaranyaka Upanishad",
+      "name": "Brihadaranyaka Upanishad",
       "short": "Brihadaranyaka",
       "work": "Brihadaranyaka Upanishad, 2.4.5",
       "excerpt": "that you may love the Self, therefore a husband is dear",
@@ -3463,7 +3463,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "chandogya-upanishad",
-      "name": "The Chandogya Upanishad",
+      "name": "Chandogya Upanishad",
       "short": "Chandogya",
       "work": "Chandogya Upanishad, Sixth Prapathaka",
       "excerpt": "in it all that exists has its self. It is the True. It is the Self",
@@ -4775,7 +4775,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "kena-upanishad-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "The Kena Upanishad",
+      "name": "Kena Upanishad",
       "short": "Kena Upanishad",
       "work": "Kena (Talavakara) Upanishad, First Khanda",
       "excerpt": "The eye does not go thither, nor speech, nor mind. We do not know, we do not understand, how any one can teach it.",
@@ -4859,7 +4859,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "proverbs-given-or-made",
       "question": "given-or-made",
-      "name": "Hebrew Bible (Proverbs)",
+      "name": "Book of Proverbs",
       "short": "Proverbs",
       "work": "Proverbs 22",
       "excerpt": "Train up a child in the way he should go: and when he is old, he will not depart from it.",
@@ -5636,7 +5636,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "sanjaya-belatthaputta-truth",
       "question": "truth",
-      "name": "Sañjaya Belatthaputta",
+      "name": "Sañjaya Belaṭṭhaputta",
       "short": "Sañjaya",
       "work": "Samaññaphala Sutta (Digha Nikaya 2)",
       "excerpt": "if I thought that there exists another world, would I declare that to you? I don't think so. I don't think in that way. I don't think otherwise. I don't think not. I don't think not not.",
@@ -5741,7 +5741,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "the-buddha-lasting-self",
       "question": "lasting-self",
-      "name": "The Buddha (Anattalakkhana Sutta)",
+      "name": "The Buddha",
       "short": "Anattalakkhana Sutta",
       "work": "Anattalakkhana Sutta (Samyutta Nikaya 22.59)",
       "excerpt": "Form, monks, is not self.",
@@ -6219,7 +6219,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "katha-upanishad-desire",
       "question": "desire",
-      "name": "The Katha Upanishad",
+      "name": "Katha Upanishad",
       "short": "Katha Upanishad",
       "work": "Katha Upanishad, part 6",
       "excerpt": "When all desires dwelling in the heart cease, then the mortal becomes immortal and attains Brahman here.",
@@ -6508,7 +6508,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "plato-alcibiades-inward-or-others",
       "question": "inward-or-others",
-      "name": "Plato (Alcibiades I)",
+      "name": "Plato",
       "short": "Alcibiades I",
       "work": "Alcibiades I",
       "excerpt": "the face of the person looking into the eye of another is reflected as in a mirror; and in the visual organ which is over against him, and which is called the pupil",
@@ -6991,7 +6991,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "laozi-truth",
       "question": "truth",
-      "name": "Laozi (Tao Te Ching)",
+      "name": "Laozi",
       "short": "Laozi",
       "work": "Tao Te Ching, chapter 1",
       "excerpt": "The Tao that can be trodden is not the enduring and unchanging Tao. The name that can be named is not the enduring and unchanging name.",
@@ -7068,7 +7068,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "yang-zhu-happiness",
       "question": "happiness",
-      "name": "Yang Zhu (as reported in the Liezi)",
+      "name": "Yang Zhu",
       "short": "Yang Zhu",
       "work": "Liezi, chapter 7 (Yang Zhu)",
       "excerpt": "豐屋、美服、厚味、姣色，有此四者，何求於外？",
@@ -7874,7 +7874,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "laozi-happiness",
       "question": "happiness",
-      "name": "Laozi (Tao Te Ching)",
+      "name": "Laozi",
       "short": "Laozi",
       "work": "Tao Te Ching, chapter 46",
       "excerpt": "no calamity greater than to be discontented with one's lot; no fault greater than the wish to be getting. Therefore the sufficiency of contentment is an enduring and unchanging sufficiency.",
@@ -8463,7 +8463,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "yang-zhu-self-or-others-first",
       "question": "self-or-others-first",
-      "name": "Yang Zhu (as reported by Mencius)",
+      "name": "Yang Zhu",
       "short": "Yang Zhu",
       "work": "Mencius 7A26",
       "excerpt": "楊子取『為我』，拔一毛而利天下，不為也",
@@ -9074,7 +9074,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "dhammapada-self-or-others-first",
       "question": "self-or-others-first",
-      "name": "Dhammapada",
+      "name": "The Dhammapada",
       "short": "Dhammapada",
       "work": "Dhammapada, verse 166 (Self, Attavagga)",
       "excerpt": "Let one not neglect one’s own welfare for the sake of another, however great. Clearly understanding one’s own welfare, let one be intent upon the good.",
@@ -9109,7 +9109,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "dhammapada-solitude-or-company",
       "question": "solitude-or-company",
-      "name": "Dhammapada",
+      "name": "The Dhammapada",
       "short": "Dhammapada",
       "work": "Dhammapada, verse 330 (The Elephant, Nagavagga)",
       "excerpt": "Better it is to live alone; there is no fellowship with a fool. Live alone and do no evil; be carefree like an elephant in the elephant forest.",
@@ -9256,7 +9256,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "ecclesiastes-meaning",
       "question": "meaning",
-      "name": "Ecclesiastes (Qoheleth)",
+      "name": "Ecclesiastes (Qohelet)",
       "short": "Ecclesiastes",
       "work": "Ecclesiastes 1:2",
       "excerpt": "Vanity of vanities, saith the Preacher, vanity of vanities; all is vanity.",
@@ -9291,7 +9291,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "ecclesiastes-solitude-or-company",
       "question": "solitude-or-company",
-      "name": "Hebrew Bible (Ecclesiastes)",
+      "name": "Ecclesiastes (Qohelet)",
       "short": "Ecclesiastes",
       "work": "Ecclesiastes 4",
       "excerpt": "Two are better than one; because they have a good reward for their labour.",
@@ -9361,7 +9361,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "ecclesiastes-truth",
       "question": "truth",
-      "name": "Ecclesiastes (Qoheleth)",
+      "name": "Ecclesiastes (Qohelet)",
       "short": "Ecclesiastes",
       "work": "Ecclesiastes 8:17",
       "excerpt": "a man cannot find out the work that is done under the sun: because though a man labour to seek it out, yet he shall not find it",
@@ -9777,7 +9777,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "bhagavad-gita-death",
       "question": "death",
-      "name": "Bhagavad Gītā",
+      "name": "Bhagavad Gita",
       "short": "Gītā",
       "work": "Bhagavad Gītā, chapter 2",
       "excerpt": "So putteth by the spirit Lightly its garb of flesh, And passeth to inherit A residence afresh.",
@@ -10057,7 +10057,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "sirach-free-will",
       "question": "free-will",
-      "name": "Ben Sira (Ecclesiasticus)",
+      "name": "Ben Sira (Sirach)",
       "short": "Ben Sira",
       "work": "Wisdom of Sirach (Ecclesiasticus)",
       "excerpt": "He hath set fire and water before thee: stretch forth thy hand unto whether thou wilt.",
@@ -10127,7 +10127,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "bhagavad-gita-free-will",
       "question": "free-will",
-      "name": "The Bhagavad Gita",
+      "name": "Bhagavad Gita",
       "short": "Gita",
       "work": "Bhagavad Gita, ch. 18, verse 61",
       "excerpt": "There lives a Master in the hearts of men Maketh their deeds, by subtle pulling-strings, Dance to what tune HE will.",
@@ -10168,7 +10168,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "bhagavad-gita",
-      "name": "The Bhagavad Gita",
+      "name": "Bhagavad Gita",
       "short": "Gita",
       "work": "Bhagavad Gita, ch. 6",
       "excerpt": "Let each man raise The Self by Soul, not trample down his Self, Since Soul that is Self's friend may grow Self's foe.",
@@ -10218,7 +10218,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "bhagavad-gita-desire",
       "question": "desire",
-      "name": "The Bhagavad Gita",
+      "name": "Bhagavad Gita",
       "short": "Gita",
       "work": "The Bhagavad Gita, chapter 2",
       "excerpt": "Abandoning desires which shake the mind-- Finds in his soul full comfort for his soul, He hath attained the Yog",
@@ -10260,7 +10260,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "bhagavad-gita-happiness",
       "question": "happiness",
-      "name": "The Bhagavad Gita",
+      "name": "Bhagavad Gita",
       "short": "Gita",
       "work": "The Bhagavad Gita, chapter 5",
       "excerpt": "The sage whose soul Holds off from outer contacts, in himself Finds bliss",
@@ -10660,7 +10660,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cicero-given-or-made",
       "question": "given-or-made",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "Tusculan Disputations, Book II",
       "excerpt": "as a field, although it may be naturally fruitful, cannot produce a crop without dressing, so neither can the mind without education; such is the weakness of either without the other.",
@@ -10695,7 +10695,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cicero-happiness",
       "question": "happiness",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "Tusculan Disputations, Book V",
       "excerpt": "but virtue is sufficient for living with courage, and therefore virtue is able by herself to make life happy.",
@@ -10730,7 +10730,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cicero-suffering",
       "question": "suffering",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "Tusculan Disputations, Book I",
       "excerpt": "Take away this opinion, and you remove with it all grief",
@@ -10772,7 +10772,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cicero-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "On the Nature of the Gods, Book I",
       "excerpt": "the longer I meditate on it, the more obscure it appears to me.",
@@ -10807,7 +10807,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "marcus-tullius-cicero-lasting-self",
       "question": "lasting-self",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "Tusculan Disputations, Book 1",
       "excerpt": "if the soul be the only thing in the whole world which has the power of self-motion, then certainly it never had a beginning, and therefore it is eternal.",
@@ -10842,7 +10842,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cicero-self-or-others-first",
       "question": "self-or-others-first",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "On Duties (De Officiis), Book 1",
       "excerpt": "we are not born for ourselves alone, but our country claims a share of our being, and our friends a share",
@@ -10911,7 +10911,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "cicero",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "On Duties (De Officiis), Book I, §22",
       "excerpt": "we are not born for ourselves alone, but our country claims a share of our being, and our friends a share",
@@ -10968,7 +10968,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "marcus-tullius-cicero-inward-or-others",
       "question": "inward-or-others",
-      "name": "Marcus Tullius Cicero",
+      "name": "Cicero",
       "short": "Cicero",
       "work": "De Amicitia (On Friendship)",
       "excerpt": "In the face of a true friend a man sees as it were a second self.",
@@ -13687,7 +13687,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "nagarjuna-truth",
       "question": "truth",
-      "name": "Nagarjuna",
+      "name": "Nāgārjuna",
       "short": "Nagarjuna",
       "work": "The Heart of Dependent Origination",
       "excerpt": "It is looking perfectly into reality itself, And when reality is seen, complete liberation.",
@@ -14978,7 +14978,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "tirukkural-happiness",
       "question": "happiness",
-      "name": "Tiruvalluvar (Tirukkural)",
+      "name": "Tiruvalluvar",
       "short": "Tirukkural",
       "work": "Tirukkural, chapter 105 (Poverty)",
       "excerpt": "You ask what sharper pain than poverty is known ; Nothing pains more than poverty, save poverty alone.",
@@ -15743,7 +15743,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "quran-desire",
       "question": "desire",
-      "name": "Qur’an",
+      "name": "The Qur’an",
       "short": "Qur’an",
       "work": "Qur’an, sura 79 (Those Who Drag Forth)",
       "excerpt": "But as to him who shall have feared the majesty of his Lord, and shall have refrained his soul from lust, Verily, Paradise-that shall be his dwelling-place.",
@@ -15925,7 +15925,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "quran-death",
       "question": "death",
-      "name": "Qur’an",
+      "name": "The Qur’an",
       "short": "Qur’an",
       "work": "Qur’an, Sura 29 (The Spider)",
       "excerpt": "Every soul shall taste of death. Then to us shall ye return.",
@@ -16874,7 +16874,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "li-bai",
-      "name": "Li Bai (Li Po)",
+      "name": "Li Bai",
       "short": "Li Bai",
       "work": "“Three with the Moon and His Shadow”",
       "excerpt": "I drink alone, and where are my friends?",
@@ -16917,7 +16917,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "li-bai-meaning",
       "question": "meaning",
-      "name": "Li Bai (Li Po)",
+      "name": "Li Bai",
       "short": "Li Bai",
       "work": "Poem “Waking from Drunkenness on a Spring Day”",
       "excerpt": "Life in the World is but a big dream; I will not spoil it by any labour or care.",
@@ -17732,7 +17732,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "havamal",
-      "name": "The Hávamál",
+      "name": "Hávamál (the Sayings of the High One)",
       "short": "Hávamál",
       "work": "Hávamál (Sayings of the High One), stanza 47",
       "excerpt": "Rich did I feel when a comrade I found, For man is man's delight.",
@@ -18042,7 +18042,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-maarri-meaning",
       "question": "meaning",
-      "name": "Abu al-‘Ala al-Ma‘arri",
+      "name": "Abu al-ʿAlaʾ al-Maʿarri",
       "short": "Al-Ma‘arri",
       "work": "Luzumiyat (Rihani’s selection), quatrain 102",
       "excerpt": "My life's the road on which I blindly speed: My goal's the grave on which I plant a reed To shape my Hope, but soon the Hand unseen Will strike",
@@ -18077,7 +18077,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-maarri-suffering",
       "question": "suffering",
-      "name": "Abu al-Ala al-Ma’arri",
+      "name": "Abu al-ʿAlaʾ al-Maʿarri",
       "short": "al-Ma’arri",
       "work": "The Luzumiyat (Ameen Rihani’s English quatrains), CV",
       "excerpt": "Holding my father's life-curse in my hand, Doing no one the wrong that he did me:- Ah, would that he were barren as the sand!",
@@ -18112,7 +18112,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-maarri-truth",
       "question": "truth",
-      "name": "Abu al-‘Ala al-Ma‘arri",
+      "name": "Abu al-ʿAlaʾ al-Maʿarri",
       "short": "Al-Ma‘arri",
       "work": "Luzumiyat (Rihani’s selection), quatrain 5",
       "excerpt": "The truth entire nor here nor there can be; How should our God who made the sun and moon Give all his light to One, I cannot see.",
@@ -18472,7 +18472,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "omar-khayyam-meaning",
       "question": "meaning",
-      "name": "Omar Khayyam (FitzGerald’s Rubáiyát)",
+      "name": "Omar Khayyam",
       "short": "Khayyam",
       "work": "Rubáiyát of Omar Khayyám, first edition, quatrain 38",
       "excerpt": "One Moment in Annihilation's Waste, One moment, of the Well of Life to taste-- The Stars are setting, and the Caravan Starts for the dawn of Nothing--Oh, make haste!",
@@ -18549,7 +18549,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "omar-khayyam-truth",
       "question": "truth",
-      "name": "Omar Khayyam (FitzGerald’s Rubáiyát)",
+      "name": "Omar Khayyam",
       "short": "Khayyam",
       "work": "Rubáiyát of Omar Khayyám, first edition, quatrain 27",
       "excerpt": "Myself when young did eagerly frequent Doctor and Saint, and heard great Argument About it and about: but evermore Came out by the same Door as in I went.",
@@ -18801,7 +18801,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-ghazali-desire",
       "question": "desire",
-      "name": "Abu Hamid al-Ghazali",
+      "name": "Al-Ghazali",
       "short": "al-Ghazali",
       "work": "The Alchemy of Happiness (Kimiya-yi Sa‘adat)",
       "excerpt": "When in the crucible of abstinence he is purged from carnal passions he attains to the highest, and in place of being a slave to lust and anger becomes endued with angelic qualities.",
@@ -18836,7 +18836,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-ghazali-happiness",
       "question": "happiness",
-      "name": "Abu Hamid al-Ghazali",
+      "name": "Al-Ghazali",
       "short": "al-Ghazali",
       "work": "The Alchemy of Happiness (Kimiya-yi Sa‘adat)",
       "excerpt": "Any one who will look into the matter will see that happiness is necessarily linked with the knowledge of God.",
@@ -18983,7 +18983,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "al-ghazali-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Abu Hamid al-Ghazali",
+      "name": "Al-Ghazali",
       "short": "al-Ghazali",
       "work": "Deliverance from Error (al-Munqidh min al-Dalal)",
       "excerpt": "had given me a firm faith in three things-God, Inspiration, and the Last Judgment.",
@@ -19024,7 +19024,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "al-ghazali",
-      "name": "Abu Hamid al-Ghazali",
+      "name": "Al-Ghazali",
       "short": "al-Ghazali",
       "work": "The Deliverance from Error (Confessions)",
       "excerpt": "At last I left Bagdad, giving up all my fortune.",
@@ -19109,7 +19109,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "ramanuja-free-will",
       "question": "free-will",
-      "name": "Ramanuja",
+      "name": "Rāmānuja",
       "short": "Ramanuja",
       "work": "Sri Bhashya (commentary on the Vedanta Sutras), II.3.41",
       "excerpt": "The inwardly ruling highest Self promotes action in so far as it regards in the case of any action the volitional effort made by the individual soul, and then aids that effort by granting its favour or permission",
@@ -19488,7 +19488,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "attar-desire",
       "question": "desire",
-      "name": "Farid al-Din Attar",
+      "name": "Farid al-Din ʿAttar",
       "short": "Attar",
       "work": "The Conference of the Birds (FitzGerald’s Bird Parliament)",
       "excerpt": "Needs both a Lion's Heart beneath the Wing, And even more, a Spirit purified Of Worldly Passion, Malice, Lust, and Pride",
@@ -20613,7 +20613,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "sadi-given-or-made",
       "question": "given-or-made",
-      "name": "Sa‘di of Shiraz",
+      "name": "Saadi of Shiraz",
       "short": "Sa‘di",
       "work": "Gulistan (Rose Garden), Book 7 (On the Effects of Education)",
       "excerpt": "A capacity without education is pitiable, and education without capacity is thrown away.",
@@ -21257,7 +21257,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "shinran-free-will",
       "question": "free-will",
-      "name": "Shinran (as recorded in the Tannisho)",
+      "name": "Shinran",
       "short": "Shinran",
       "work": "Tannisho (A Record in Lament of Divergences), ch. 13",
       "excerpt": "If the karmic cause so prompts us, we will commit any kind of act.",
@@ -21933,7 +21933,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "charvaka-death",
       "question": "death",
-      "name": "Chārvāka verses attributed to Bṛihaspati",
+      "name": "Charvaka verses attributed to Brihaspati",
       "short": "Chārvāka",
       "work": "Sarva-darśana-saṃgraha, chapter 1 (the Chārvāka system)",
       "excerpt": "When once the body becomes ashes, how can it ever return again?",
@@ -22368,7 +22368,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "hafiz-desire",
       "question": "desire",
-      "name": "Hafiz of Shiraz",
+      "name": "Hafez of Shiraz",
       "short": "Hafiz",
       "work": "Divan, poem VI in Gertrude Bell’s selection",
       "excerpt": "Of all the treasures that the earth can boast, A brimming cup of wine I prize the most",
@@ -22992,7 +22992,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "thomas-a-kempis-inward-or-others",
       "question": "inward-or-others",
-      "name": "Thomas a Kempis",
+      "name": "Thomas à Kempis",
       "short": "a Kempis",
       "work": "The Imitation of Christ, Book 1, chapter 20",
       "excerpt": "If thou wilt feel compunction within thy heart, enter into thy chamber and shut out the tumults of the world",
@@ -23630,7 +23630,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cantares-mexicanos-flower-song-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Anonymous Nahuatl flower song, Cantares Mexicanos",
+      "name": "Cantares Mexicanos (Nahua songs)",
       "short": "Nahuatl flower song",
       "work": "Xochicuicatl, a flower song, Cantares Mexicanos, no. XVII",
       "excerpt": "though one knows not the dwelling of the Giver of Life, one knows not whether he is on earth.",
@@ -24608,7 +24608,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cantares-mexicanos-suffering",
       "question": "suffering",
-      "name": "Cantares Mexicanos (anonymous Nahuatl song)",
+      "name": "Cantares Mexicanos (Nahua songs)",
       "short": "Cantares Mexicanos",
       "work": "“An Otomi Song of Sadness”, in Ancient Nahuatl Poetry",
       "excerpt": "my labor has been of no avail, certainly nothing here lessens one's suffering; truly only to be with thee, near thee",
@@ -24643,7 +24643,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "cantares-mexicanos-truth",
       "question": "truth",
-      "name": "Cantares Mexicanos (Nahua song)",
+      "name": "Cantares Mexicanos (Nahua songs)",
       "short": "Cantares Mexicanos",
       "work": "Cantares Mexicanos, song XI in Brinton’s Ancient Nahuatl Poetry",
       "excerpt": "But what can I speak truly here of the Giver of Life? We only dream, we are plunged in sleep",
@@ -24876,7 +24876,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "teresa-of-avila-inward-or-others",
       "question": "inward-or-others",
-      "name": "Teresa of Avila",
+      "name": "Teresa of Ávila",
       "short": "Teresa",
       "work": "The Interior Castle, Mansions 1",
       "excerpt": "it would be madness to think we could do so without sometimes retiring into our souls so as to know ourselves",
@@ -25974,7 +25974,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "elisabeth-of-bohemia-relationships",
       "question": "relationships",
-      "name": "Elisabeth, Princess of Bohemia",
+      "name": "Elisabeth of Bohemia",
       "short": "Elisabeth",
       "work": "Letter to Descartes, 10 June 1643",
       "excerpt": "conversations and social obligations (which I can’t avoid), inflict so much annoyance and boredom on this weak mind ·of mine· that it is useless for anything else for a long time afterward",
@@ -29152,7 +29152,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "baron-d-holbach-death",
       "question": "death",
-      "name": "Paul-Henri Thiry, Baron d'Holbach",
+      "name": "Paul-Henri Thiry, Baron d’Holbach",
       "short": "d'Holbach",
       "work": "The System of Nature, volume 1, chapter XIII",
       "excerpt": "It is for want of being able to form an idea of death that man dreads it; if he could figure to himself a true image of this state of annihilation, he would from thence cease to fear it",
@@ -29187,7 +29187,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "baron-d-holbach-free-will",
       "question": "free-will",
-      "name": "Paul-Henri Thiry, Baron d'Holbach",
+      "name": "Paul-Henri Thiry, Baron d’Holbach",
       "short": "d'Holbach",
       "work": "The System of Nature, volume 1, chapter XI",
       "excerpt": "Man's life is a line that Nature commands him to describe upon the surface of the earth: without his ever being able to swerve from it even for an instant.",
@@ -33257,7 +33257,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "george-eliot-suffering",
       "question": "suffering",
-      "name": "George Eliot (Mary Ann Evans)",
+      "name": "George Eliot",
       "short": "George Eliot",
       "work": "Adam Bede, chapter XLII",
       "excerpt": "Deep unspeakable suffering may well be called a baptism, a regeneration, the initiation into a new state.",
@@ -35755,7 +35755,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "turner-samoa-self-or-others-first",
       "question": "self-or-others-first",
-      "name": "George Turner (recording Samoan custom)",
+      "name": "George Turner (recording Samoan belief)",
       "short": "Turner, Samoa",
       "work": "Samoa, a Hundred Years Ago and Long Before, chapter on the people’s customs",
       "excerpt": "A man cannot bear to be called stingy or disobliging. If he has what is asked, he will either give it, or adopt the worse course of telling a lie about it",
@@ -39229,7 +39229,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "abdul-baha-free-will",
       "question": "free-will",
-      "name": "ʿAbdu’l-Bahá",
+      "name": "‘Abdu’l-Bahá",
       "short": "ʿAbdu’l-Bahá",
       "work": "Some Answered Questions",
       "excerpt": "he is compelled to endure them. But he is free in the choice of good and evil actions",
@@ -39589,7 +39589,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "mark-twain-free-will",
       "question": "free-will",
-      "name": "Mark Twain (Samuel Clemens)",
+      "name": "Mark Twain",
       "short": "Twain",
       "work": "What Is Man?, section “Free Will”",
       "excerpt": "He did not make the choice, it was made for him by forces which he could not control.",
@@ -40304,7 +40304,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "charles-eastman",
-      "name": "Charles Eastman (Ohiyesa)",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
       "short": "Ohiyesa",
       "work": "The Soul of the Indian, ch. 1",
       "excerpt": "It was solitary, because they believed that He is nearer to us in solitude",
@@ -47842,7 +47842,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "thich-nhat-hanh",
-      "name": "Thích Nhất Hạnh",
+      "name": "Thich Nhat Hanh",
       "short": "Nhất Hạnh",
       "work": "Teaching on “interbeing”",
       "excerpt": "to be is to inter-be",
@@ -50745,7 +50745,7 @@ window.PILOT_EVIDENCE={
       ],
       "to": [
         "Thich Nhat Hanh",
-        "Thích Nhất Hạnh"
+        "Thich Nhat Hanh"
       ],
       "verb": "acknowledges a method from",
       "year": 1994,
@@ -50757,7 +50757,7 @@ window.PILOT_EVIDENCE={
       "id": "nov24-thich-nhat-hanh-open-letter-to-king",
       "from": [
         "Thich Nhat Hanh",
-        "Thích Nhất Hạnh"
+        "Thich Nhat Hanh"
       ],
       "to": [
         "Martin Luther King Jr."
@@ -50775,7 +50775,7 @@ window.PILOT_EVIDENCE={
       ],
       "to": [
         "Thich Nhat Hanh",
-        "Thích Nhất Hạnh"
+        "Thich Nhat Hanh"
       ],
       "verb": "nominated",
       "year": 1967,
@@ -50790,7 +50790,7 @@ window.PILOT_EVIDENCE={
       ],
       "to": [
         "Thich Nhat Hanh",
-        "Thích Nhất Hạnh"
+        "Thich Nhat Hanh"
       ],
       "verb": "issued a joint statement with",
       "year": 1966,
@@ -50833,7 +50833,7 @@ window.PILOT_EVIDENCE={
       ],
       "to": [
         "Thich Nhat Hanh",
-        "Thích Nhất Hạnh"
+        "Thich Nhat Hanh"
       ],
       "verb": "wrote about",
       "year": 1966,

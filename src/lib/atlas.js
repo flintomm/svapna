@@ -24,7 +24,16 @@ export const WARM = {
 };
 const ORDER = Object.keys(WARM);
 
-export const cards = data.cards;
+// A broad region for each pin, from where it sits on the map. Coarse on purpose: it is for browsing, not for classifying.
+export const REGIONS = [['europe', 'Europe'], ['wana', 'West Asia and North Africa'], ['africa', 'Sub-Saharan Africa'], ['sasia', 'South and Central Asia'], ['easia', 'East and South-East Asia'], ['namerica', 'North America'], ['lamerica', 'Latin America'], ['oceania', 'Oceania']];
+export const regionOf = c => { const a = c.lat, o = c.lng;
+  if (o < -30) return a > 13 ? 'namerica' : 'lamerica';
+  if (o < 60 && a > 35) return o > 25 && a < 42 ? 'wana' : 'europe';
+  if (o < 60) return a > 12 || o > 32 ? 'wana' : 'africa';
+  if (o < 100) return 'sasia';
+  return a > -10 ? 'easia' : 'oceania'; };
+export const regionName = id => (REGIONS.find(r => r[0] === id) || [])[1] || '';
+export const cards = data.cards.map(c => ({ ...c, region: regionOf(c) }));
 export const links = data.links || [];
 export const questions = data.questions
   .map(q => {
@@ -56,7 +65,7 @@ export const thinkers = [...bySlug.values()].map(t => {
     const out = l.from.includes(t.name), other = (out ? l.to : l.from)[0];
     return { out, verb: l.verb, year: l.year, summary: l.summary, caveat: l.caveat, other, otherSlug: slugify(other) };
   });
-  return { ...t, own, ties, when: own[0].dateShort, where: own[0].place, sort: slugify(t.name.replace(/^(the|al-|a) /i, '')) };
+  return { ...t, own, ties, when: own[0].dateShort, where: own[0].place, region: own[0].region, sort: slugify(t.name.replace(/^(the|al-|a) /i, '')) };
 }).sort((a, b) => a.sort.localeCompare(b.sort));
 export const thinkerOf = name => bySlug.get(slugify(name));
 export const TONE = { low: '#2654ff', mid: '#ffb200', high: '#00b894', none: '#8a8fa3' };

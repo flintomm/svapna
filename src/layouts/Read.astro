@@ -37,11 +37,11 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <body>
 <header class="top">
   <a class="mark" href="/">∴ Svapna</a>
-  <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/you">You</a><button id="mode" type="button">Mode</button></nav>
+  <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/you">You</a><a href="/search" class="wide-only">Search</a><button id="mode" type="button">Mode</button></nav>
 </header>
 <main><slot /></main>
 <footer class="foot">
-  <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a></p>
+  <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a><a href="/search">Search</a></p>
   <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/how-it-works">How it works</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
   <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet. <a href="/how-it-works">How it works</a>.</p>
 </footer>
@@ -54,6 +54,9 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
   (function () {
     var get = function (k) { try { return JSON.parse(localStorage.getItem(k) || '[]') || []; } catch (e) { return []; } }, set = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
     if (location.pathname.indexOf('/curriculum/module-') === 0) { var read = get('svapna_read'), here = location.pathname.replace(/\/$/, ''); if (read.indexOf(here) < 0) { read.push(here); set('svapna_read', read); } }
+    // Copy a passage with its citation. Rows can be added later (search), so the click is caught on the page.
+    document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-copy]'); if (!b) return; var was = b.textContent, done = function (m) { b.textContent = m; setTimeout(function () { b.textContent = was; }, 2200); };
+      if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(function () { done('Copied'); }, function () { done('Could not copy'); }); else done('Could not copy'); });
     var btns = document.querySelectorAll('[data-keep]'); if (!btns.length) return;
     function paint() { var kept = get('svapna_kept').map(function (x) { return x.id; }); btns.forEach(function (b) { var on = kept.indexOf(b.dataset.keep) >= 0; b.textContent = on ? 'Kept · see your list' : 'Keep this passage'; b.dataset.on = on ? '1' : ''; }); }
     btns.forEach(function (b) { b.addEventListener('click', function () { if (b.dataset.on) { location.href = '/you#kept'; return; } var kept = get('svapna_kept'); kept.unshift({ id: b.dataset.keep, name: b.dataset.name, text: b.dataset.text, href: b.dataset.href }); set('svapna_kept', kept.slice(0, 200)); paint(); }); });

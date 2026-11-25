@@ -2,7 +2,8 @@
 // How the atlas is made: what is checked by machine, what is a judgement, and how to disagree.
 import Read from '../../layouts/Read.astro';
 import Coffee from '../../components/Coffee.astro';
-import { cards, questions, thinkers, links } from '../../lib/atlas.js';
+import { cards, questions, thinkers, links, REGIONS } from '../../lib/atlas.js';
+const cover = REGIONS.map(([id, label]) => [label, cards.filter(c => c.region === id).length]);
 const all = cards.flatMap(c => Object.values(c.readings));
 const n = s => all.filter(r => r.second === s).length;
 const unscored = all.filter(r => r.score === 'unscored').length;
@@ -44,13 +45,18 @@ const sample = questions[0];
     <p>Each passage is pinned where it was written, taught or delivered. Some pins cite a page that states the place; others are a traditional association or still await confirmation, and each passage’s page says which. Dates of ancient texts are approximate and marked “c.”.</p>
     <p>The {links.length} connections between thinkers are documented ones only: one thinker citing, answering or writing to another, with the caveat that applies. Similar ideas are not shown as influence.</p>
 
-    <h2>7. Disagree with a placement</h2>
+    <h2 id="coverage">7. Where the atlas is thin</h2>
+    <p>The atlas is not evenly spread, and it should not be read as if it were. By where each passage is pinned: {cover.map(([label, n], i) => <>{i > 0 && ', '}{label} {n}</>)}. Europe is over-represented because far more of its texts are freely readable online in a form a machine can check. Sub-Saharan Africa, Latin America and Oceania are thin, and many voices there reach the atlas only through a collector’s or missionary’s report, which each passage says. Filling these is ongoing work, and suggestions of checkable sources are welcome.</p>
+
+    <h2>8. Disagree with a placement</h2>
     <p>Every passage has a “Disagree?” link. It opens a short form with the passage already named. Say where the passage should sit and why, ideally pointing at the words. Corrections to quotes, dates, places and sources go the same way. Voting on placements by members is planned; until then every message is read by a person.</p>
     <p><a href="/about/contact">Write to Svapna →</a></p>
 
-    <h2>8. Check it yourself</h2>
+    <h2>9. Check it yourself</h2>
     <p>The whole atlas can be downloaded: every passage, its source and locator, every placement with its reason, and the outcome of the second reading. <a href="/data/atlas.json">As JSON</a> · <a href="/data/atlas.csv">as a spreadsheet (CSV)</a>. The placements and notes are offered under CC BY 4.0; the quoted passages belong to their sources.</p>
     <p>Each passage has a fixed address that can be cited: a thinker’s page, followed by the passage’s own anchor. When citing a passage, cite the source it links to as well; Svapna is the finding aid, not the edition.</p>
+    <h2 id="teachers">10. For teachers</h2>
+    <p>Nothing on the site needs an account, and no student data is collected: answers stay in each student’s own browser. A lesson that works: project a question from the home page and have the class vote; open that question’s page, narrow it by era or region, and use “Copy a link to this set” or “Print it” to hand out five or six contrasting passages with their sources; then ask where each passage should sit on the scale, and compare with the placement and its “read twice” line. The passages are primary sources quoted briefly; the placements are the part to argue with.</p>
   </div>
   <Coffee />
 </Read>

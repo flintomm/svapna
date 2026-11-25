@@ -414,7 +414,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   }
   function countUp(el, to) {
     if (reduce) { el.textContent = to; return; }
-    const t0 = performance.now(); (function step(t) { const k = Math.min(1, (t - t0) / 900); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); })(t0);
+    const t0 = performance.now(); (function step(t) { const k = Math.max(0, Math.min(1, (t - t0) / 900)); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); })(t0);
   }
   const scene = name => { mode = name; for (const id of ['ask', 'echo', 'voice']) $(id).hidden = id !== name; $('dock').hidden = name !== 'voice'; $('gdock').hidden = name !== 'globe'; document.body.dataset.scene = name; };
 
@@ -423,6 +423,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const yearAt = w => cards.at(-1).sortYear + NEAR - Math.exp(Math.log(span0()) + (Math.log(NEAR) - Math.log(span0())) * Math.min(1, w));
   const clockAt = y => (Math.log(cards.at(-1).sortYear + NEAR - y) - Math.log(span0())) / (Math.log(NEAR) - Math.log(span0()));
   const yearName = y => { const r = Math.round(y); return r <= 0 ? `${1 - r} BCE` : String(r); };
+  const regionOf = c => { const a = c.lat, o = c.lng; return o < -30 ? (a > 13 ? 'North America' : 'Latin America') : o < 60 && a > 35 ? (o > 25 && a < 42 ? 'West Asia and North Africa' : 'Europe') : o < 60 ? (a > 12 || o > 32 ? 'West Asia and North Africa' : 'Sub-Saharan Africa') : o < 100 ? 'South and Central Asia' : a > -10 ? 'East and South-East Asia' : 'Oceania'; };
   function setPlay(on) { G.play = on; $('g-play').textContent = on ? 'Pause' : 'Play'; $('g-play').setAttribute('aria-pressed', String(on)); }
   function syncGlobe(force) {
     const i = Math.floor(G.t); if (G.play) $('g-year').textContent = yearName(G.year);
@@ -431,6 +432,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const seen = cards.slice(0, i + 1);
     $('g-count').textContent = `${seen.filter(x => !G.hide.has(x.score)).length} of ${cards.length} voices`;
     for (const b of $('g-legend').children) b.lastChild.textContent = ' ' + seen.filter(x => x.score === b.dataset.id).length;
+    $('g-time').setAttribute('aria-valuetext', c.dateShort);
+    // The heat map in words, for anyone not looking at it: said only when time is standing still.
+    if (!G.play) {
+      const live = seen.filter(x => !G.hide.has(x.score)), by = {}; for (const x of live) { const r = regionOf(x); by[r] = (by[r] || 0) + 1; }
+      const top = Object.entries(by).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([r, k]) => `${r} ${k}`).join(', ');
+      $('g-sr').textContent = `Up to ${c.dateShort}: ${live.length} of ${cards.length} voices. ` + [...$('g-legend').children].filter(b => b.getAttribute('aria-pressed') === 'true').map(b => b.textContent.trim()).join(', ') + (top ? `. Most are in ${top}.` : '');
+    }
   }
   function openGlobe() {
     stopDrift(); G.hide.clear(); G.zoom = 1; G.vel = 0; G.t = cards.length - 1; spin = true; goal = null; setPlay(false);
@@ -469,10 +477,14 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     $('ask-count').textContent = first ? 'Welcome. Start with a question.' : `Question ${questions.indexOf(q) + 1} of ${questions.length}`; first = false;
     // The last clause of the question is set in italics.
     const parts = ask_(q).split(' '), cut = Math.max(1, parts.length - 3);
-    $('ask-q').textContent = ''; const lead = document.createElement('span'), em = document.createElement('em');
-    words(lead, parts.slice(0, cut).join(' '), 70); words(em, parts.slice(cut).join(' '), 70);
-    em.querySelectorAll('.w').forEach((n, i) => { n.style.animationDelay = (cut + i) * 70 + 'ms'; });
-    $('ask-q').append(lead, em);
+    // The page writes the opening question itself before this script arrives; it is left as it is.
+    const pre = $('ask-q').dataset.pre === q.id; delete $('ask-q').dataset.pre;
+    if (!pre) {
+      $('ask-q').textContent = ''; const lead = document.createElement('span'), em = document.createElement('em');
+      words(lead, parts.slice(0, cut).join(' '), 70); words(em, parts.slice(cut).join(' '), 70);
+      em.querySelectorAll('.w').forEach((n, i) => { n.style.animationDelay = (cut + i) * 70 + 'ms'; });
+      $('ask-q').append(lead, em);
+    }
     const box = $('ask-answers'); box.textContent = '';
     for (const s of scale.filter(s => s.tone !== 'none')) {
       const b = document.createElement('button'); b.type = 'button'; b.style.setProperty('--c', css(s.tone));
@@ -480,6 +492,9 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     }
     history.replaceState(null, '', '#' + q.id);
     scene('ask');
+    // An answer tapped before the world had loaded is honoured now.
+    const early = window.__svapnaAnswer; window.__svapnaAnswer = null;
+    if (early && early[0] === q.id) { const st = scale.find(x => x.id === early[1]); if (st) echo(st); }
   }
 
   function echo(step) {

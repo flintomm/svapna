@@ -35,6 +35,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
             <p>{c.work}</p><p>{c.dateFull || c.dateShort}</p><p>{c.place}</p><p>{c.sourceLabel}</p>
             <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
             <a class="src" href={`/#${home.question.id}`}>See it on the world →</a>
+            <button class="src quiet" type="button" data-copy={`“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.sourceUrl}`}>Copy with citation</button>
             <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${t.slug}#${c.id}`}>Keep this passage</button>
           </div>
         </article>
