@@ -20147,6 +20147,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kamo-no-chomei-lasting-self",
+      "question": "lasting-self",
+      "name": "Kamo no Chōmei",
+      "short": "Chōmei",
+      "work": "Hōjōki (An Account of My Hut)",
+      "excerpt": "行く川のながれは絕えずして、しかも本の水にあらず。よどみに浮ぶうたかたは、かつ消えかつ結びて久しくとゞまることなし。世の中にある人とすみかと、またかくの如し。",
+      "translation": "The flow of the river never stops, and yet the water is never the same water. The foam that floats on the pools vanishes here and forms there and never lasts long. The people in the world and their dwellings are just like this.",
+      "period": "1212",
+      "dateShort": "1212",
+      "dateFull": "1212",
+      "sortYear": 1212,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Opening sentences of the essay, beginning “行く川のながれは”.",
+      "place": "Hino, south-east of Kyoto, Japan",
+      "lat": 34.93,
+      "lng": 135.82,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The essay closes by saying it was written in the hut Chōmei built in the hills of Hino in the second year of Kenryaku (1212).",
+      "placeSource": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "People as foam on a river",
+          "why": "Chōmei likens people and their houses to foam on a river: they keep forming and vanishing, and nothing in them stays the same. He treats the person as real but constantly passing, which fits a changing self rather than a lasting one.",
+          "limit": "The opening of a personal essay by a Buddhist recluse, quoted from one printed recension; it concerns impermanence in general and does not discuss the self as a philosophical topic. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "kamo-no-chomei-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Kamo no Chōmei",
+      "short": "Chōmei",
+      "work": "Hōjōki (An Account of My Hut)",
+      "excerpt": "身を知り世を知れらば、願はずまじらはず、たゞしづかなるをのぞみとし、うれへなきをたのしみとす。",
+      "translation": "If one knows oneself and knows the world, one neither wishes for nor mixes with others; one hopes only for quiet and takes pleasure in being free of sorrow.",
+      "period": "1212",
+      "dateShort": "1212",
+      "dateFull": "1212",
+      "sortYear": 1212,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Middle of the essay, in the passage on why the hut was built for himself alone; sentence beginning “身を知り世を知れらば”.",
+      "place": "Hino, south-east of Kyoto, Japan",
+      "lat": 34.93,
+      "lng": 135.82,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The essay closes by saying it was written in the hut Chōmei built in the hills of Hino in 1212.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Quiet over companions",
+          "why": "Chōmei says that anyone who knows himself and the world will not seek out company, and will count quiet and freedom from worry as the aim and the pleasure. He goes on to say he built the hut for himself alone, because he has no companion to share it.",
+          "limit": "A recluse’s account of his own choice, not an argument that others should live alone. The same essay describes the company of a boy from the foot of the hill as a comfort. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "ibn-arabi-desire",
       "question": "desire",
       "name": "Ibn Arabi",
@@ -21718,6 +21788,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "yoshida-kenko-death",
+      "question": "death",
+      "name": "Yoshida Kenkō",
+      "short": "Kenkō",
+      "work": "Tsurezuregusa (Essays in Idleness)",
+      "excerpt": "死期はついでをまたず。死は前よりしも來らず、かねてうしろにせまれり。",
+      "translation": "The time of death does not wait its turn. Death does not come from in front; it is already pressing at one’s back.",
+      "period": "c. 1330",
+      "dateShort": "c. 1330",
+      "dateFull": "circa 1330",
+      "sortYear": 1330,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Section 155, beginning “死期はついでをまたず”.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.77,
+      "anchorType": "Approximate association",
+      "placeNote": "Tsurezuregusa is traditionally said to have been compiled around 1330 to 1331 while Kenkō lived near Kyoto. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Death comes from behind",
+          "why": "Kenkō says death cannot be scheduled and is always close behind a person. The passage is about when and how death arrives, not about what follows it, so it takes no position on whether anything continues.",
+          "limit": "A short moral essay in a medieval miscellany; it uses the tide on a tidal flat as an image and makes no claim about an afterlife. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "yoshida-kenko-desire",
+      "question": "desire",
+      "name": "Yoshida Kenkō",
+      "short": "Kenkō",
+      "work": "Tsurezuregusa (Essays in Idleness)",
+      "excerpt": "日暮れ途とほし。吾が生旣に蹉跎たり。諸緣を放下すべき時なり。信をも守らじ。禮義をも思はじ。",
+      "translation": "The day is ending and the road is long. My life has already gone to ruin. It is time to let go of all ties. I will not keep faith, I will not think of courtesy.",
+      "period": "c. 1330",
+      "dateShort": "c. 1330",
+      "dateFull": "circa 1330",
+      "sortYear": 1330,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Section 112, beginning “日暮れ途とほし”.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.77,
+      "anchorType": "Approximate association",
+      "placeNote": "Tsurezuregusa is traditionally said to have been compiled around 1330 to 1331 while Kenkō lived near Kyoto. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Letting go of worldly ties",
+          "why": "Kenkō says the time has come to drop every worldly obligation and attachment, even convention and courtesy, because life is short and the many demands of the world use it up. This is a call to give up entanglements rather than follow them.",
+          "limit": "A monk’s counsel to himself and to older readers; the text goes on to tell the reader to expect to be called mad, and it is not a general rule for everyone. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "yoshida-kenko-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Yoshida Kenkō",
+      "short": "Kenkō",
+      "work": "Tsurezuregusa (Essays in Idleness)",
+      "excerpt": "つれづれわぶる人は、いかなる心ならむ、まぎるゝ方なく、たゞ一人あるのみこそよけれ。",
+      "translation": "What kind of mind has the person who is wretched with idleness? With nothing to distract one, it is best simply to be alone.",
+      "period": "c. 1330",
+      "dateShort": "c. 1330",
+      "dateFull": "circa 1330",
+      "sortYear": 1330,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Section 75, beginning “つれづれわぶる人は”.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.77,
+      "anchorType": "Approximate association",
+      "placeNote": "Tsurezuregusa is traditionally said to have been compiled around 1330 to 1331 while Kenkō lived near Kyoto. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Being alone against boredom",
+          "why": "Kenkō holds that the best remedy for idleness is to be wholly alone, and goes on to say that following the world brings distraction while mixing with people brings trouble in speech. He therefore puts solitude above company.",
+          "limit": "A short essay in a medieval miscellany by a Buddhist monk-courtier. Other sections praise friendship and conversation, so the passage is not his whole view. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -34501,6 +34676,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "fukuzawa-yukichi-given-or-made",
+      "question": "given-or-made",
+      "name": "Fukuzawa Yukichi",
+      "short": "Fukuzawa",
+      "work": "Gakumon no susume (An Encouragement of Learning), Part 1",
+      "excerpt": "人は生まれながらにして貴賤・貧富の別なし。ただ学問を勤めて物事をよく知る者は貴人となり富人となり",
+      "translation": "People are not born with any distinction of high and low, poor and rich. Those who study hard and know things well become honoured and wealthy.",
+      "period": "1872",
+      "dateShort": "1872",
+      "dateFull": "1872",
+      "sortYear": 1872,
+      "sourceLabel": "Japanese text (Iwanami Fukuzawa Yukichi zenshū edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E5%AD%A6%E5%95%8F%E3%81%AE%E3%81%99%E3%82%9D%E3%82%81",
+      "locator": "Part 1, in the paragraph after the sentence “天は人の上に人を造らず”.",
+      "place": "Tokyo, Japan",
+      "lat": 35.66,
+      "lng": 139.74,
+      "anchorType": "Approximate association",
+      "placeNote": "Fukuzawa ran his school in Tokyo when the first part appeared in 1872. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E5%AD%A6%E5%95%8F%E3%81%AE%E3%81%99%E3%82%9D%E3%82%81",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Rank comes from learning",
+          "why": "Fukuzawa says no one is born with a rank or fortune, and that standing is the result of study and knowledge. On this passage a person’s position is made, not given at birth.",
+          "limit": "A popular essay of 1872 aimed at a general readership, and about social position rather than character or nature. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "jose-hernandez-suffering",
       "question": "suffering",
       "name": "José Hernández",
@@ -41183,6 +41393,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "natsume-soseki-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Natsume Sōseki",
+      "short": "Sōseki",
+      "work": "Watakushi no kojinshugi (My Individualism)",
+      "excerpt": "同時に他人の個性も尊重しなければならないという事。",
+      "translation": "At the same time one must respect the individuality of others as well.",
+      "period": "1914",
+      "dateShort": "1914",
+      "dateFull": "25 November 1914",
+      "sortYear": 1914,
+      "sourceLabel": "Japanese text (Aozora Bunko import), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E7%A7%81%E3%81%AE%E5%80%8B%E4%BA%BA%E4%B8%BB%E7%BE%A9",
+      "locator": "Passage summarising the lecture’s argument, sentence beginning “第一に自己の個性の発展を”.",
+      "place": "Gakushūin, Tokyo, Japan",
+      "lat": 35.72,
+      "lng": 139.71,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The lecture was delivered at the Peers’ School (Gakushūin) in Tokyo in 1914. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E7%A7%81%E3%81%AE%E5%80%8B%E4%BA%BA%E4%B8%BB%E7%BE%A9",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "One’s own individuality and that of others",
+          "why": "Sōseki says anyone who wants to develop his own individuality has to respect other people’s individuality at the same time. Neither one’s own good nor the others’ is placed first.",
+          "limit": "The excerpt is a clause from a lecture to students, the first of three conditions he lists; the sentence’s first half, on developing one’s own individuality, is left out because the page prints it with reading aids. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "amado-nervo-meaning",
       "question": "meaning",
       "name": "Amado Nervo",
@@ -43210,6 +43455,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "han-yong-un-suffering",
+      "question": "suffering",
+      "name": "Han Yong-un",
+      "short": "Han Yong-un",
+      "work": "Nim ŭi chimmuk (The Silence of the Beloved), title poem",
+      "excerpt": "그러나 리별을 쓸데업는 눈물의源泉을만들고 마는것은 스々로 사랑을ᄭᅢ치는것인줄 아는ᄭᅡ닭에 것잡을수업는 슯음의힘을 옴겨서 새希望의 정수박이에 드러부엇슴니다",
+      "translation": "Yet to make parting a source of useless tears would be to break love by my own hand; so I take the strength of my unstoppable grief and pour it onto the crown of a new hope.",
+      "period": "1926",
+      "dateShort": "1926",
+      "dateFull": "1926",
+      "sortYear": 1926,
+      "sourceLabel": "1926 first edition text (Hoedong Sŏgwan), Korean Wikisource",
+      "sourceUrl": "https://ko.wikisource.org/wiki/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5",
+      "locator": "Seventh line of the title poem, beginning “그러나 리별을”.",
+      "place": "Seoul, Korea",
+      "lat": 37.57,
+      "lng": 126.98,
+      "anchorType": "Approximate association",
+      "placeNote": "The collection was published in Seoul in 1926; it is said to have been written in 1925 at Baekdamsa temple in the Seoraksan mountains. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ko.wikisource.org/wiki/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Turning grief into hope",
+          "why": "The speaker says that weeping over parting would itself damage love, and chooses to turn the force of grief into new hope. Suffering is given no meaning in itself but is put to use.",
+          "limit": "A lyric poem in 1926 Korean orthography, spoken by a persona whose beloved has gone; the beloved is often read as the nation or the Buddha. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "george-herbert-mead",
       "name": "George Herbert Mead",
       "short": "Mead",
@@ -43972,6 +44252,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "miyazawa-kenji-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Miyazawa Kenji",
+      "short": "Kenji",
+      "work": "[Ame ni mo makezu] (Unbeaten by the rain), notebook poem",
+      "excerpt": "東ニ病気ノコドモアレバ\n行ッテ看病シテヤリ\n西ニツカレタ母アレバ\n行ッテソノ稲ノ束ヲ負ヒ\n南ニ死ニサウナ人アレバ\n行ッテコハガラナクテモイヽトイヒ\n北ニケンクヮヤソショウガアレバ\nツマラナイカラヤメロトイヒ",
+      "translation": "If there is a sick child in the east, go and nurse it; if there is a tired mother in the west, go and carry her bundle of rice; if someone in the south is dying, go and say there is no need to be afraid; if there is a quarrel or lawsuit in the north, say it is pointless and tell them to stop.",
+      "period": "1931",
+      "dateShort": "1931",
+      "dateFull": "November 1931",
+      "sortYear": 1931,
+      "sourceLabel": "Shin kōhon Miyazawa Kenji zenshū text, Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E9%9B%A8%E3%83%8B%E3%83%A2%E3%83%9E%E3%82%B1%E3%82%BA",
+      "locator": "Lines 15 to 21 of the poem.",
+      "place": "Hanamaki, Iwate, Japan",
+      "lat": 39.39,
+      "lng": 141.11,
+      "anchorType": "Approximate association",
+      "placeNote": "The poem is dated to November 1931, when Kenji was ill at his family home in Hanamaki. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E9%9B%A8%E3%83%8B%E3%83%A2%E3%83%9E%E3%82%B1%E3%82%BA",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Going to those in need",
+          "why": "The speaker lists a series of visits to sick, weary, dying and quarrelling people as the life he wants to lead, and he asks for no reward. Other people’s needs set the course of the life described.",
+          "limit": "A private notebook poem written during illness and found after the author’s death, in which the speaker says what he wishes to become; it is not a record of how the author lived. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -51079,5 +51394,3137 @@ window.PILOT_EVIDENCE={
       "summary": "In his Christmas Eve radio address, Čapek speaks to Tagore and calls for a world of equal and free people.",
       "caveat": "A public address, not proof Tagore heard it live, was personally present or shared Čapek’s views."
     }
-  ]
+  ],
+  "thinkers": {
+    "‘Abdu’l-Bahá": {
+      "about": "Bahá’í leader, son of Bahá’u’lláh, who in Akka around 1905 gave talks on theology later collected as Some Answered Questions.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "A Dispute over Suicide (The Dialogue of a Man with his Ba)": {
+      "about": "Egyptian literary dialogue from around 2000 BCE in which a man weary of life argues with his ba, his soul.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "A man and his god": {
+      "about": "Sumerian lament from Nippur around 1800 BCE in which a sufferer pleads with his personal god for relief from affliction.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "A. T. Ariyaratne": {
+      "about": "Sri Lankan Sarvodaya Shramadana movement founder who wrote on peace and moral action, in a 1999 text from Moratuwa.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Abai Qunanbaiuly": {
+      "about": "Kazakh poet and thinker near Semey in the 1890s whose poems and Book of Words reflected on morality, nature and human life.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Abu al-ʿAlaʾ al-Maʿarri": {
+      "about": "Blind Arab poet and sceptic from Syria who around 1030 wrote doubting verse, the Luzumiyat, questioning religion and fate.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Abu Nasr al-Farabi": {
+      "about": "Philosopher in Baghdad around 942 who wrote On the Perfect State, a work on the ideal city and its rulers.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Acaranga Sutra": {
+      "about": "Early Jain scripture, the Acaranga Sutra, a text on monastic conduct and non-violence, composed in Bihar around 300 BCE.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Adam Ferguson": {
+      "about": "Scottish Enlightenment philosopher in Edinburgh who in 1767 published An Essay on the History of Civil Society.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Adam Lindsay Gordon": {
+      "about": "Australian poet and horseman in South Australia who wrote bush ballads in the 1860s and 1870s, including The Sick Stockrider.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Adam Smith": {
+      "about": "Scottish moral philosopher and economist, author of The Theory of Moral Sentiments (1759) and The Wealth of Nations (1776).",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Adi Shankara": {
+      "about": "Indian Advaita Vedanta philosopher around the 8th century who wrote commentaries on the Brahma Sutras and Upanishads.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Adi Shankara (attributed)": {
+      "about": "Verse text, Vivekachudamani, traditionally attributed to Adi Shankara, an Advaita Vedanta work on discernment composed in India around the 8th century.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Aeschylus": {
+      "about": "Athenian tragic playwright whose Oresteia trilogy, including Agamemnon, was staged in 458 BCE.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Aesop (attributed)": {
+      "about": "Traditionally named Greek storyteller of around 560 BCE to whom a collection of animal fables is attributed.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ágnes Heller": {
+      "about": "Hungarian philosopher in Budapest who wrote on everyday life and ethics; this work dates from 1966.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Agustinus Wibowo": {
+      "about": "Indonesian writer and travel author in Jakarta who published A New World, A New Self in 2021.",
+      "tradition": "Other",
+      "sure": false
+    },
+    "Aimé Césaire": {
+      "about": "Martinican poet and politician who co-founded Négritude and gave a discourse on it in Miami in 1987.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ajahn Chah": {
+      "about": "Thai Buddhist forest monk at Wat Nong Pah Pong whose Dhamma talks were recorded in the 1970s.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Ajita Kesakambalī": {
+      "about": "Indian ascetic teacher around 450 BCE, a materialist who denied an afterlife, as reported in the Pali Sāmaññaphala Sutta.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Al-Ghazali": {
+      "about": "Persian theologian and Sufi from Tus, around 1100, author of The Alchemy of Happiness, a Persian summary of his religious ethics.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Al-Kindi": {
+      "about": "Arab philosopher in Baghdad around 850, the first major philosopher writing in Arabic, who wrote On First Philosophy.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Albert Camus": {
+      "about": "French-Algerian writer and philosopher who wrote on the absurd in The Myth of Sisyphus (1942) and The Rebel.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Albert L. Refiti": {
+      "about": "Samoan architect and scholar in Auckland who wrote in 2014 on Samoan cosmology and spatial design.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": false
+    },
+    "Alejandro Korn": {
+      "about": "Argentine philosopher in La Plata who wrote La libertad creadora in 1920.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Aleksandr Solzhenitsyn": {
+      "about": "Russian novelist and dissident who wrote about the Soviet camps and delivered his Nobel Lecture in 1970.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Alexander Pope": {
+      "about": "English poet of Twickenham who wrote the philosophical verse An Essay on Man in the 1730s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Alexandra Kollontai": {
+      "about": "Russian revolutionary and writer in Moscow who in 1923 wrote a letter to working youth on love and sexuality.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Alfred Adler": {
+      "about": "Austrian psychiatrist in Vienna, founder of individual psychology, who published Understanding Human Nature in 1927.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Alfred North Whitehead": {
+      "about": "English-born mathematician and philosopher who wrote Process and Reality and Religion in the Making in the 1920s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Alfred Russel Wallace": {
+      "about": "British naturalist who co-discovered natural selection and published his autobiography, My Life, in 1905.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Ama Ata Aidoo": {
+      "about": "Ghanaian writer and playwright interviewed at Brown University in 2005 about African diaspora relations.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Amado Nervo": {
+      "about": "Mexican poet in Madrid who wrote the poem En paz in 1915.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Amadou Hampâté Bâ": {
+      "about": "Malian writer and ethnologist of Fulbe and Bambara oral traditions who wrote in Paris in the 1970s on the notion of person.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Amenemhet I (attributed)": {
+      "about": "Text, The Instruction of Amenemhet, an Egyptian royal teaching attributed to King Amenemhet I, from Itjtawy around 1950 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Amílcar Cabral": {
+      "about": "Guinea-Bissauan revolutionary and theorist of national liberation who spoke in Pennsylvania in 1972.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Amos": {
+      "about": "Hebrew prophet of Tekoa active around 760 BCE who preached social justice in the northern kingdom of Israel.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Angayuqaq Oscar Kawagley": {
+      "about": "Yupiaq educator at the University of Alaska Fairbanks who wrote on Alaska Native knowledge and education in 2001 and 2002.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Anna Julia Cooper": {
+      "about": "African American scholar and educator in Washington who published A Voice from the South in 1892.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Anna Laetitia Barbauld": {
+      "about": "English poet and essayist from Stoke Newington, author of the poem Life, written around 1825.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Anne Bradstreet": {
+      "about": "Puritan poet in Massachusetts who wrote verses on the burning of her house in 1666.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Annette Baier": {
+      "about": "New Zealand-born philosopher at Pittsburgh who wrote Cartesian Persons in 1985.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Anton Chekhov": {
+      "about": "Russian short story writer and physician who wrote Gooseberries in 1898 at Melikhovo.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Antonio Machado": {
+      "about": "Spanish poet who wrote Campos de Castilla, including Proverbios y cantares, in Baeza in 1912.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Antony the Great (in Athanasius’ Life of Antony)": {
+      "about": "Egyptian Christian hermit around 360 CE whose sayings appear in Athanasius’ Life of Antony.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Anwari": {
+      "about": "Persian court poet around 1150 who wrote an ornate qasida on fate and the course of life.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Apolinario Mabini": {
+      "about": "Filipino lawyer and revolutionary adviser who wrote The True Decalogue in 1898 as a moral code.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Aristippus and the Cyrenaics (reported by Diogenes Laertius)": {
+      "about": "School of philosophers at Cyrene around 370 BCE who held that pleasure is the aim of life, as reported by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Aristotle": {
+      "about": "Greek philosopher who taught at the Lyceum in Athens around 330 BCE and wrote the Nicomachean Ethics.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Arthur Eddington": {
+      "about": "English astrophysicist in Cambridge who wrote The Nature of the Physical World in 1928.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Arthur Schopenhauer": {
+      "about": "German philosopher, author of The World as Will and Idea (1818) and Parerga and Paralipomena (1851), known for pessimism.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Ashanti proverbs (collected by R. S. Rattray)": {
+      "about": "Collection of Ashanti proverbs recorded by colonial anthropologist R. S. Rattray in Ghana in 1916.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ashanti proverbs collected by R. S. Rattray": {
+      "about": "Collection of Ashanti proverbs recorded by colonial anthropologist R. S. Rattray in the Gold Coast, now Ghana, in 1916.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Assia Djebar": {
+      "about": "Algerian novelist and filmmaker who gave her 2006 reception speech at the Académie française in Paris.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Atharvaveda, hymn to Kama (Desire)": {
+      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 800 BCE, addressed to Kama, desire.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Atharvaveda, hymn to Skambha": {
+      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 900 BCE, addressed to Skambha, the cosmic pillar.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Atharvaveda, hymn to Time (Kala)": {
+      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 800 BCE, addressed to Time, Kala.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Audre Lorde": {
+      "about": "Caribbean American poet and essayist who gave the talk The Transformation of Silence into Language and Action in Chicago in 1977.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Augustine of Hippo": {
+      "about": "North African bishop of Hippo around 400 CE who wrote the Confessions and The City of God.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Avicenna (Ibn Sina)": {
+      "about": "Persian physician and philosopher in Isfahan around 1020 who wrote on the soul and rational thought.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ayn Rand": {
+      "about": "Russian-born American novelist and philosopher who wrote Atlas Shrugged, published in New York in 1957.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "B. R. Ambedkar": {
+      "about": "Indian jurist and Dalit leader who wrote Annihilation of Caste (1936) and The Buddha and His Dhamma (1956).",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Babylonian Talmud": {
+      "about": "Rabbinic compendium of Jewish law and discussion compiled in Babylonia, here from the Sura academy around 500 CE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Bahá’u’lláh": {
+      "about": "Founder of the Bahá’í Faith, who wrote the Hidden Words and Kitáb-i-Íqán, and lived in exile at Acre in the 1800s.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Bai Juyi": {
+      "about": "Chinese Tang dynasty poet who wrote On Being Sixty in Luoyang around 831.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ban Zhao": {
+      "about": "Chinese Han dynasty historian and scholar in Luoyang who wrote Lessons for Women around 100 CE.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Banjo Paterson": {
+      "about": "Australian bush poet in Sydney who wrote Clancy of the Overflow in 1889.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Bardaisan of Edessa": {
+      "about": "Syriac Christian thinker of Edessa around 220 whose dialogue is known as The Book of the Laws of Countries.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Baruch Spinoza": {
+      "about": "Dutch philosopher of Jewish descent who wrote the Ethics, published in 1677 after his death at The Hague.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Basavaṇṇa": {
+      "about": "Twelfth-century Kannada poet-saint of Kalyana who composed vachanas, devotional verse, as a leader of the Lingayat movement.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Bede": {
+      "about": "Anglo-Saxon monk of Jarrow who wrote the Ecclesiastical History of the English People around 731.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "bell hooks": {
+      "about": "African American author and cultural critic in Oberlin who wrote Theory as Liberatory Practice in 1991.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Ben Sira (Sirach)": {
+      "about": "Jewish scribe and sage in Jerusalem around 180 BCE who wrote the wisdom book Ecclesiasticus, or Sirach.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Benedict of Nursia": {
+      "about": "Italian monk who founded Monte Cassino and wrote the Rule of St Benedict around 530.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Benjamin Franklin": {
+      "about": "American printer, writer and statesman in Philadelphia who published The Way to Wealth in 1758.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Beowulf": {
+      "about": "Anonymous Old English epic poem of Anglo-Saxon England, composed sometime between 700 and 1000 CE.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Bernard Williams": {
+      "about": "English moral philosopher at Cambridge who wrote essays collected in Making Sense of Humanity.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Bertrand Russell": {
+      "about": "British philosopher and mathematician who wrote A Free Man’s Worship (1903) and The Conquest of Happiness (1930).",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Bessie Head": {
+      "about": "South African-Botswanan novelist in Serowe who wrote the essay Why Do I Write? in the 1960s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Bhagat Singh": {
+      "about": "Indian revolutionary who wrote Why I Am an Atheist in Lahore Central Jail in 1930.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Bhagavad Gita": {
+      "about": "Sanskrit poem within the Mahabharata, a dialogue between Krishna and Arjuna on duty, composed in India around the 2nd century BCE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Black Hawk (Ma-ka-tai-me-she-kia-kiak)": {
+      "about": "Sauk war leader whose life story was dictated and published as an autobiography in Rock Island in 1833.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Blaise Pascal": {
+      "about": "French mathematician and Christian thinker in Paris whose Pensées were notes for a defence of Christianity.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Boethius": {
+      "about": "Roman philosopher and official who wrote The Consolation of Philosophy in prison at Pavia around 524.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Book of Daniel": {
+      "about": "Hebrew Bible book of Jewish apocalyptic visions and court tales, written in Jerusalem around 165 BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Deuteronomy": {
+      "about": "Fifth book of the Hebrew Bible, a collection of laws and speeches framed as Moses’ address, composed around 620 BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Documents (Shu Jing)": {
+      "about": "Chinese classic of ancient speeches and records, here the Day of the Supplementary Sacrifice, translated by James Legge.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Book of Exodus": {
+      "about": "Second book of the Hebrew Bible, the Exodus narrative including the burning bush, set at Mount Sinai.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Jeremiah": {
+      "about": "Hebrew Bible book of prophecies by Jeremiah, a prophet of Anathoth active from about 627 BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Job": {
+      "about": "Hebrew Bible poetic book about a righteous man’s suffering, composed around 500 BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Odes (Shijing), “King Wen”": {
+      "about": "Ode from the Shijing, the Chinese classic of poetry, in praise of King Wen of Zhou, in Legge’s translation.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Book of Odes (Shijing), “Qiao yan”": {
+      "about": "Ode from the Shijing, the Chinese classic of poetry, called Qiao yan, in Legge’s translation.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Book of Odes (Shijing), “Tian bao”": {
+      "about": "Ode from the Shijing, the Chinese classic of poetry, called Tian bao, in Legge’s translation.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Book of Odes (Shijing), “Yi”": {
+      "about": "Ode from the Shijing, the Chinese classic of poetry, called Yi, in Legge’s translation.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Book of Proverbs": {
+      "about": "Hebrew Bible collection of wisdom sayings, compiled in Jerusalem between roughly the 7th and 3rd centuries BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Book of Psalms": {
+      "about": "Hebrew Bible collection of 150 hymns and prayers used in Jewish and Christian worship, from Jerusalem around 500 to 400 BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Booker T. Washington": {
+      "about": "African American educator and founder of Tuskegee Institute who wrote Up from Slavery in 1901.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Brihadaranyaka Upanishad": {
+      "about": "Early Sanskrit Upanishad of the Vedic tradition from the Videha region, composed around 700 BCE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Buddhadasa Bhikkhu": {
+      "about": "Thai Buddhist monk and teacher from Chaiya who wrote Handbook for Mankind in 1956.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Callicles (in Plato’s Gorgias)": {
+      "about": "Character in Plato’s Gorgias, an Athenian who argues that the strong should rule, around 380 BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Cantares Mexicanos (Nahua songs)": {
+      "about": "Collection of Nahuatl songs from 16th-century central Mexico, recorded after the Spanish conquest.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Cao Xueqin": {
+      "about": "Chinese Qing dynasty novelist in Beijing who wrote Dream of the Red Chamber around 1760.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Carl Gustav Jung": {
+      "about": "Swiss psychiatrist and founder of analytical psychology who defined individuation in Psychological Types, 1921.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Catherine of Siena": {
+      "about": "Italian Dominican mystic and church reformer in Siena whose Dialogue was written around 1378.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Catullus": {
+      "about": "Roman poet in Rome around 60 BCE who wrote love lyrics, including Carmina 5.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "César Vallejo": {
+      "about": "Peruvian poet who wrote Los heraldos negros (1918) and Poemas humanos, published after his death in Paris.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Chandogya Upanishad": {
+      "about": "Early Sanskrit Upanishad of the Vedic tradition from northern India, composed around 650 BCE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Charles Alexander Eastman (Ohiyesa)": {
+      "about": "Dakota physician and writer who published The Soul of the Indian in 1911.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Charles Darwin": {
+      "about": "English naturalist who developed the theory of evolution by natural selection and wrote an Autobiography with reflections on religion.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Charles Dickens": {
+      "about": "English novelist in London who published A Christmas Carol in 1843.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Charles Fourier": {
+      "about": "French social theorist and utopian socialist in Lyon who wrote on the passions around 1808.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Charles Horton Cooley": {
+      "about": "American sociologist at the University of Michigan who wrote Human Nature and the Social Order in 1902.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Charles Sanders Peirce": {
+      "about": "American scientist and philosopher in Cambridge who founded pragmatism and wrote How to Make Our Ideas Clear in 1878.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Charles Taylor": {
+      "about": "Canadian philosopher at McGill University who wrote the essay Atomism in 1985.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Charlotte Brontë": {
+      "about": "English novelist at Haworth who published Jane Eyre in 1847.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Charvaka verses attributed to Brihaspati": {
+      "about": "Indian materialist verses attributed to Brihaspati, quoted in the 14th-century Sarva-darsana-samgraha compiled in Vijayanagara.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Chaungo Barasa": {
+      "about": "Kenyan sage interviewed in Bungoma in 1990 for H. Odera Oruka’s Sage Philosophy.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Chief Seattle (Si'ahl), as reported by Henry A. Smith": {
+      "about": "Duwamish chief whose 1854 speech survives only in a version published by Henry A. Smith in 1887.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Christina Rossetti": {
+      "about": "English poet in London who wrote the sonnet Remember in 1849.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Christina Sharpe": {
+      "about": "Scholar of Black studies at Tufts University who published In the Wake: On Blackness and Being in 2016.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Cicero": {
+      "about": "Roman statesman and orator who wrote the Tusculan Disputations and On Duties in 45 to 44 BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Clarence Darrow": {
+      "about": "American defence lawyer in Chicago who wrote The Myth of the Soul in 1928.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Clement of Alexandria": {
+      "about": "Christian teacher in Alexandria around 195 CE who wrote the Paedagogus, a guide to Christian conduct.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Confucius": {
+      "about": "Chinese teacher and thinker around 500 BCE whose sayings were collected in the Analects.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Cyprian of Carthage": {
+      "about": "Bishop of Carthage around 252 who wrote On the Mortality during a plague.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "D. H. Lawrence": {
+      "about": "English novelist and poet who wrote Fantasia of the Unconscious in Taormina in 1922.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Dai Zhen": {
+      "about": "Chinese Qing dynasty philosopher in Beijing who wrote a commentary on Mencius in 1777.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Dante Alighieri": {
+      "about": "Florentine poet who wrote the Divine Comedy and the Convivio, finishing the Comedy in Verona around 1315.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "David Hume": {
+      "about": "Scottish philosopher and historian who wrote A Treatise of Human Nature (1739) and An Enquiry Concerning Human Understanding (1748).",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Davida Malo": {
+      "about": "Hawaiian scholar at Lahainaluna who wrote Hawaiian Antiquities around 1840.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Delmira Agustini": {
+      "about": "Uruguayan poet in Montevideo who published Los cálices vacíos in 1913.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Denis Diderot": {
+      "about": "French Enlightenment writer in Paris who wrote the novel Jacques le fataliste around 1780.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Denis Mukwege": {
+      "about": "Congolese gynaecologist who delivered his Nobel Peace Prize lecture in Oslo in 2018.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Derek Walcott": {
+      "about": "Saint Lucian poet who delivered his Nobel lecture, The Antilles, in Stockholm in 1992.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Desiderius Erasmus": {
+      "about": "Dutch humanist who wrote The Praise of Folly while in London in 1509.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Desmond Tutu": {
+      "about": "South African Anglican archbishop who gave Nobel and Sydney Peace Prize lectures in 1984 and 1999.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Dhammananda Bhikkhuni": {
+      "about": "Thai Buddhist nun who founded Songdhammakalyani Monastery, interviewed around 2024.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Diä!kwain (ǀXam narrator, recorded by Wilhelm Bleek and Lucy Lloyd)": {
+      "about": "ǀXam storyteller in Mowbray near Cape Town in 1875, whose tales were recorded by Wilhelm Bleek and Lucy Lloyd.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Dispute of a Man with his Ba": {
+      "about": "Egyptian literary dialogue from around 1900 BCE in which a man weary of life argues with his ba, or soul.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Dodrupchen Jigme Tenpe Nyima": {
+      "about": "Tibetan Buddhist teacher of Golok around 1900, author of Transforming Suffering and Happiness into Enlightenment.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Dōgen": {
+      "about": "Japanese Zen master who wrote Genjōkōan in 1233 at Kōshō-ji near Kyoto.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Du Fu": {
+      "about": "Chinese Tang dynasty poet who wrote a poem about his thatched hut in Chengdu in 761.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ecclesiastes (Qohelet)": {
+      "about": "Hebrew Bible book of skeptical wisdom attributed to Qohelet, compiled in Jerusalem around the 3rd century BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Edith Stein": {
+      "about": "German philosopher and Carmelite nun who wrote Finite and Eternal Being and died at Auschwitz in 1942.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Edmund Burke": {
+      "about": "Irish-born British statesman who wrote Reflections on the Revolution in France in 1790.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Edward Wilmot Blyden": {
+      "about": "Liberian-based Pan-Africanist thinker who delivered The African Problem and the Method of Its Solution in Washington in 1890.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Egyptian Book of the Dead": {
+      "about": "Ancient Egyptian funerary text of spells for the dead, here Chapter 154, from Thebes around 1400 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Elicura Chihuailaf Nahuelpan": {
+      "about": "Mapuche poet and writer from Chile, interviewed around 2000 about oral literature, oralitura.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Elie Wiesel": {
+      "about": "Romanian-born writer and Holocaust survivor who gave his Nobel Peace Prize speech in Oslo in 1986.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Elisabeth of Bohemia": {
+      "about": "Princess of Bohemia who corresponded with Descartes at The Hague in 1643 and 1645.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Elizabeth Barrett Browning": {
+      "about": "English poet who wrote Sonnets from the Portuguese, including the sonnet beginning How do I love thee, in 1845 to 1850.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Emanuel Swedenborg": {
+      "about": "Swedish scientist and mystic in London who published Heaven and Hell in 1758.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Émilie du Châtelet": {
+      "about": "French mathematician and philosopher at Cirey who wrote Discourse on Happiness around 1747.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Emilio Jacinto": {
+      "about": "Filipino revolutionary who wrote the Kartilya of the Katipunan in Manila in 1896.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Emily Brontë": {
+      "about": "English novelist and poet at Haworth who wrote No Coward Soul Is Mine in 1846.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Emily Dickinson": {
+      "about": "American poet in Amherst who wrote hundreds of short poems in the 1860s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Emma Goldman": {
+      "about": "Russian-born American anarchist who wrote Anarchism and Other Essays and gave lectures on atheism.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Emmanuel Levinas": {
+      "about": "French philosopher of Lithuanian Jewish origin in Paris who wrote Totality and Infinity (1961).",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Empedocles": {
+      "about": "Greek philosopher from Akragas in Sicily around 450 BCE who wrote Purifications.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Enki and Ninmah": {
+      "about": "Sumerian creation poem from Eridu around 1800 BCE telling how the god Enki and the goddess Ninmah made humans.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Epeli Hauʻofa": {
+      "about": "Tongan-Fijian anthropologist and writer who gave the essay Our Sea of Islands in Suva in 1993.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Epic of Gilgamesh": {
+      "about": "Mesopotamian epic poem about the king Gilgamesh, here the Old Babylonian version from around 1800 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Epictetus": {
+      "about": "Stoic philosopher at Nicopolis around 108 CE whose teachings were recorded in the Discourses and Enchiridion.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Epicurus": {
+      "about": "Greek philosopher in Athens around 300 BCE who founded the Garden and taught that pleasure is the aim of life.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Epistle to the Hebrews": {
+      "about": "New Testament letter, written in Rome around 80 CE, urging Christians to endure and keep faith.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Ernestine L. Rose": {
+      "about": "American freethinker and women’s rights advocate who gave A Defence of Atheism in Boston in 1861.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Ernst Haeckel": {
+      "about": "German biologist in Jena who wrote The Riddle of the Universe in 1899.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Ernst Mach": {
+      "about": "Austrian physicist and philosopher in Prague who wrote Contributions to the Analysis of the Sensations in 1886.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Everyman (anonymous morality play)": {
+      "about": "Anonymous English morality play, performed in London around 1495.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Eznik of Kołb": {
+      "about": "Armenian Christian writer at Vagharshapat around 450 who wrote Against the Sects.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Fan Zhen": {
+      "about": "Chinese Liang dynasty critic of Buddhism in Nanjing who wrote On the Extinction of the Spirit around 507 CE.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Farid al-Din ʿAttar": {
+      "about": "Persian Sufi poet of Nishapur around 1177 who wrote The Conference of the Birds.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Felicitas of Carthage": {
+      "about": "Christian martyr in Carthage in 203, whose story is told in The Passion of Perpetua and Felicitas.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Fernando Pessoa": {
+      "about": "Portuguese poet in Lisbon who wrote under many heteronyms, including works from 1918 and 1930.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Francesco Petrarca (Petrarch)": {
+      "about": "Italian poet and humanist at Vaucluse who wrote the Secretum around 1353.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Francis Bacon": {
+      "about": "English philosopher and statesman in London who wrote Essays (1625) and the Novum Organum (1620).",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Francis Galton": {
+      "about": "English scientist in London who published Hereditary Genius in 1869.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Francis of Assisi": {
+      "about": "Italian friar and saint who wrote the Canticle of the Sun around 1225 at San Damiano.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Francisco de Quevedo": {
+      "about": "Spanish poet in Madrid who wrote the sonnet Amor constante más allá de la muerte around 1640.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "François de La Rochefoucauld": {
+      "about": "French moralist in Paris who published his Maxims in 1665.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "François Rabelais": {
+      "about": "French Renaissance writer in Lyon who published Gargantua in 1534.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Frantz Fanon": {
+      "about": "Martinican psychiatrist and anticolonial thinker who wrote The Wretched of the Earth in Tunis in 1961.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Franz Kafka": {
+      "about": "Czech-born German-language writer who wrote the Zürau aphorisms in 1917 to 1918.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Frederick Douglass": {
+      "about": "African American abolitionist and orator in Rochester who gave the lecture Self-Made Men in 1872.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Friedrich Nietzsche": {
+      "about": "German philosopher who wrote Beyond Good and Evil, Zarathustra and Ecce Homo in the 1880s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Fu Xuan": {
+      "about": "Chinese Western Jin poet and official in Luoyang around 260 who wrote A Gentle Wind.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Fuzûlî": {
+      "about": "Azerbaijani poet in Baghdad who wrote the epic Leylâ vü Mecnûn, with a preface dated 1535.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Fyodor Dostoevsky": {
+      "about": "Russian novelist who wrote The Brothers Karamazov (1879 to 1880) and Notes from Underground (1864).",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Fyodor Tyutchev": {
+      "about": "Russian poet in Munich around 1830 who wrote Silentium!",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "G. K. Chesterton": {
+      "about": "English writer in London who wrote Orthodoxy in 1908.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "G. W. F. Hegel": {
+      "about": "German philosopher in Jena who wrote Phenomenology of Mind in 1806 to 1807.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Gabriel Marcel": {
+      "about": "French philosopher in Paris who wrote Being and Having, Creative Fidelity and Homo Viator.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Gabriela Mistral": {
+      "about": "Chilean poet who wrote Sonetos de la muerte (1914) and El ruego (1922) in Santiago.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Gang Jeongildang": {
+      "about": "Korean woman scholar and poet, known as Gang Jeongildang, who wrote letters to her husband around 1820.",
+      "tradition": "Other",
+      "sure": false
+    },
+    "Ge Hong": {
+      "about": "Chinese alchemist and Daoist writer at Jurong around 320 CE who wrote the Baopuzi.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "George Berkeley": {
+      "about": "Irish philosopher and bishop who wrote the Treatise Concerning the Principles of Human Knowledge in Dublin in 1710.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "George Bernard Shaw": {
+      "about": "Irish-born playwright in London who wrote Pygmalion, with Act V dated to 1913.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "George Eliot": {
+      "about": "English novelist who wrote Adam Bede in 1859 at Richmond.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "George Fox": {
+      "about": "English founder of the Quakers whose Journal, written around 1675, records his early spiritual openings.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "George Herbert Mead": {
+      "about": "American philosopher at the University of Chicago whose Mind, Self, and Society was compiled from 1927 to 1930 lectures.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "George Santayana": {
+      "about": "Spanish-born American philosopher who wrote Interpretations of Poetry and Religion (1900) and Soliloquies in England.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "George Turner (recording Samoan belief)": {
+      "about": "Missionary in Samoa who recorded Samoan beliefs in Samoa, a Hundred Years Ago and Long Before (1884).",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Geshe Chekawa Yeshe Dorje": {
+      "about": "Tibetan Kadampa teacher around 1150 who wrote the Seven Points of Mind Training.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Gilgamesh, Enkidu and the nether world": {
+      "about": "Sumerian poem about the hero Gilgamesh, Enkidu and the underworld, from Uruk around 2000 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Gioconda Belli": {
+      "about": "Nicaraguan poet and writer whose memoir El país bajo mi piel appeared in 2001.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Gospel of John": {
+      "about": "New Testament gospel, written around 95 CE, presenting the life and teaching of Jesus.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Gottfried Wilhelm Leibniz": {
+      "about": "German philosopher and mathematician who wrote the Monadology and Theodicy in the early 1700s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Great Hymn to the Aten": {
+      "about": "Egyptian hymn praising the sun-disk Aten, from Amarna around 1350 BCE, in Breasted’s translation.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Guru Nanak": {
+      "about": "Founder of Sikhism, who composed the Japji around 1520 at Kartarpur.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Gyalse Tokme Zangpo": {
+      "about": "Tibetan Buddhist master in Tsang, central Tibet, in the 14th century, who wrote the Thirty-Seven Practices of a Bodhisattva.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Habakkuk": {
+      "about": "Hebrew prophet in Judah around 600 BCE, to whom a biblical book of prophecy and prayer is attributed.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Hafez of Shiraz": {
+      "about": "Persian lyric poet of Shiraz in the 14th century, whose collected ghazals form the Divan.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Han Shan": {
+      "about": "Chinese poet-hermit of Cold Mountain in Zhejiang, traditionally placed in the Tang era, to whom a body of Zen-flavoured poems is attributed.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Handsome Lake (Ganioda'yo)": {
+      "about": "Seneca prophet around 1800 who received visions and preached the moral teachings later known as the Code of Handsome Lake.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Hannah Arendt": {
+      "about": "German-born Jewish political theorist who wrote in the United States in the mid-20th century on action, freedom, totalitarianism and judgment.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Harold Napoleon": {
+      "about": "Yup'ik Alaskan author who wrote Yu'Ya'Raq, an account of the Yup'ik people and the effects of the 1918 epidemic, around 1989.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Harriet Martineau": {
+      "about": "English writer and social theorist of the 19th century who published her Autobiography in 1855 from Ambleside.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hávamál (the Sayings of the High One)": {
+      "about": "Old Norse poem of proverbs and counsel spoken in Odin's voice, preserved in medieval Icelandic manuscripts.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Hebrew Bible (Genesis)": {
+      "about": "First book of the Hebrew Bible, narrating creation and the early ancestors of Israel, compiled in Judah around the 6th century BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Hebrew Bible (Leviticus)": {
+      "about": "Third book of the Hebrew Bible, containing priestly law and the Holiness Code, compiled in Judah around the 6th century BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Hebrew Bible (Psalm)": {
+      "about": "Book of Psalms in the Hebrew Bible, a collection of sacred poems and prayers compiled in Judah in the 6th-5th centuries BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Hegesias of Cyrene (reported by Diogenes Laertius)": {
+      "about": "Cyrenaic philosopher from Cyrene around 290 BCE, known as the death-persuader for his pessimism, reported in Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Helen Keller": {
+      "about": "American deaf-blind author and activist who wrote Optimism and The Story of My Life in the early 1900s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Henri Bergson": {
+      "about": "French philosopher of the late 19th and early 20th centuries who wrote on time, duration and creative evolution.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Henri Poincaré": {
+      "about": "French mathematician and physicist who wrote The Value of Science in Paris in 1905.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Henrik Ibsen": {
+      "about": "Norwegian playwright of the late 19th century who wrote A Doll's House and An Enemy of the People.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Henry David Thoreau": {
+      "about": "American essayist and naturalist who lived at Walden Pond, Massachusetts, and published Walden in 1854.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Henry Lawson": {
+      "about": "Australian poet and short-story writer of the late 19th century, who wrote Faces in the Street in 1888.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Heraclitus": {
+      "about": "Greek philosopher of Ephesus around 500 BCE, known for fragments on change, the logos and the unity of opposites.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Herodotus": {
+      "about": "Greek historian from Halicarnassus who wrote the Histories in the 5th century BCE, later living at Thurii.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Hesiod": {
+      "about": "Greek poet of Boeotia around 700 BCE who composed the Theogony and Works and Days.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Hillel the Elder": {
+      "about": "Jewish sage and teacher in Jerusalem around the turn of the era, whose sayings are preserved in Pirkei Avot.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Hiratsuka Raichō": {
+      "about": "Japanese feminist writer in Tokyo who founded the Seitō journal, opening it in 1911 with In the Beginning, Woman Was the Sun.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Hồ Xuân Hương": {
+      "about": "Vietnamese poet of the late 18th and early 19th centuries, known for witty poems with double meanings.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Homer": {
+      "about": "Name given to the Greek poet traditionally credited with the Iliad and the Odyssey, composed in Ionia around the 8th century BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Honen": {
+      "about": "Japanese Buddhist monk of Kyoto who founded the Pure Land school and wrote the One-Sheet Document shortly before his death in 1212.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Hong Yingming (Hong Zicheng)": {
+      "about": "Chinese writer around 1600 who compiled the Caigentan, a collection of aphorisms blending Confucian, Daoist and Buddhist ideas.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Hryhorii Skovoroda": {
+      "about": "Ukrainian philosopher and poet of the 18th century who wandered as a teacher and wrote dialogues and songs.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Huda Shaarawi": {
+      "about": "Egyptian feminist and nationalist leader in Cairo who founded the Egyptian Feminist Union and left memoirs.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Huineng (Platform Sutra)": {
+      "about": "Sixth patriarch of Chan Buddhism in Tang China, whose teachings are recorded in the Platform Sutra.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Humberto Ak’abal": {
+      "about": "K'iche' Maya poet from Momostenango, Guatemala, who wrote in K'iche' and Spanish and was interviewed by Francisco José Cruz.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ibn Arabi": {
+      "about": "Andalusian Sufi mystic and writer who lived in Mecca around 1215 and wrote the love poems of the Tarjuman al-Ashwaq.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ibn Bajja (Avempace)": {
+      "about": "Muslim philosopher and scientist of Zaragoza in the early 12th century who wrote commentaries on Aristotle.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ibn Khaldun": {
+      "about": "North African Arab historian and scholar who wrote the Muqaddimah in 1377 at Qal'at Ibn Salama.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ibn Miskawayh": {
+      "about": "Persian philosopher and historian in Baghdad around 1000 who wrote the ethical treatise Tahdhib al-akhlaq.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ibn Rushd (Averroes)": {
+      "about": "Muslim philosopher and jurist of Córdoba in the 12th century, known for commentaries on Aristotle and the Decisive Treatise.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ibn Tufayl": {
+      "about": "Andalusian Muslim philosopher and physician at the Almohad court in Marrakesh in the 12th century who wrote Hayy ibn Yaqzan.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Ifeanyi Menkiti": {
+      "about": "Nigerian-born philosopher and poet who taught at Wellesley College and wrote on person and community in African thought in 1984.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Im Yunjidang": {
+      "about": "Korean Neo-Confucian woman scholar of the 18th century who wrote philosophical essays and discourses.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Immanuel Kant": {
+      "about": "German philosopher of Königsberg in the 18th century who wrote the Critiques and the Groundwork of the Metaphysics of Morals.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Inca Garcilaso de la Vega": {
+      "about": "Peruvian-born Spanish writer of Inca and Spanish descent who wrote Royal Commentaries of the Incas, published in 1609.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Inscription at Saïs (reported by Plutarch)": {
+      "about": "Temple inscription at Saïs in Egypt, quoted by Plutarch around 100 CE in On Isis and Osiris.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Instruction for King Merikare": {
+      "about": "Egyptian wisdom text from around 2050 BCE, a king's advice to his son on rule and justice.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Instruction of Amenemope": {
+      "about": "Egyptian wisdom text from around 1100 BCE, a scribe's moral advice to his son.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Instruction of Ani": {
+      "about": "Egyptian wisdom text from around 1300 BCE, a scribe's practical and moral counsel to his son.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Instructions of Shuruppak": {
+      "about": "Sumerian wisdom text from around 2500 BCE presenting the advice of Shuruppak to his son Ziusudra.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Iris Murdoch": {
+      "about": "Irish-born British philosopher and novelist of the 20th century who wrote The Sovereignty of Good.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Isaac Newton": {
+      "about": "English mathematician and natural philosopher who wrote the Principia, here its General Scholium of 1713.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Isaac of Nineveh": {
+      "about": "Syriac Christian bishop and ascetic writer of the 7th century whose Mystic Treatises are widely read in Eastern Christianity.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Isaiah": {
+      "about": "Hebrew prophet in Jerusalem around 700 BCE, to whom a major prophetic book of the Bible is attributed.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Itō Jinsai": {
+      "about": "Japanese Confucian scholar of Kyoto in the 17th and 18th centuries who wrote Ancient Meanings of the Analects.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "J. B. S. Haldane": {
+      "about": "British geneticist and biologist who wrote the essay Possible Worlds in 1927.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "J. E. Casely Hayford": {
+      "about": "Gold Coast lawyer, journalist and nationalist who wrote Ethiopia Unbound in 1911.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Jacques Derrida": {
+      "about": "French philosopher who developed deconstruction and gave the lecture Force of Law in New York in 1989.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Jacques Lacan": {
+      "about": "French psychoanalyst who presented his paper on the mirror stage in 1949.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Jalal al-Din Rumi": {
+      "about": "Persian Sufi poet and teacher who lived in Konya in the 13th century and composed the Masnavi.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "James Africanus Horton": {
+      "about": "Sierra Leonean army surgeon and writer of the 19th century who published West African Countries and Peoples in 1867.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Jami": {
+      "about": "Persian poet and Sufi of Herat in the 15th century, author of Salaman and Absal.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Jan Amos Comenius (Komenský)": {
+      "about": "Czech Protestant educator and writer of the 17th century who wrote The Labyrinth of the World and the Paradise of the Heart.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Jane Addams": {
+      "about": "American social reformer who ran Hull House in Chicago and wrote Democracy and Social Ethics in 1902.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Jane Nardal": {
+      "about": "Martinican writer and intellectual in Paris in the 1920s who helped shape early Négritude thought.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Je Tsongkhapa": {
+      "about": "Tibetan Buddhist teacher around 1400 who founded the Gelug school and wrote the Three Principal Aspects of the Path.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Jean-Jacques Rousseau": {
+      "about": "Genevan-born philosopher of the 18th century who wrote Emile and the Discourse on Inequality.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Jean-Marie Tjibaou": {
+      "about": "Kanak political leader and thinker of New Caledonia who wrote on Melanesian identity in 1976.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Jean-Paul Sartre": {
+      "about": "French existentialist philosopher and writer who wrote Being and Nothingness in 1943 and lectured in 1945.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Jennifer Nedelsky": {
+      "about": "Canadian legal and political theorist who wrote Reconceiving Autonomy in 1989.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Jeong Yakyong (Dasan)": {
+      "about": "Korean Neo-Confucian scholar of the Joseon period who wrote Essentials of the Mencius in exile in 1814.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Jeremiah": {
+      "about": "Hebrew prophet in Jerusalem around 600 BCE, to whom a long prophetic book of the Bible is attributed.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Jesus of Nazareth (Sermon on the Mount)": {
+      "about": "Jewish teacher in Galilee around 30 CE, whose Sermon on the Mount is recorded in the Gospel of Matthew.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Jetsunma Tenzin Palmo": {
+      "about": "British-born Tibetan Buddhist nun who founded Dongyu Gatsal Ling Nunnery in Himachal Pradesh, India.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Jiddu Krishnamurti": {
+      "about": "Indian-born teacher who in 1929 at Ommen dissolved the Order of the Star created around him.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Joaquim Maria Machado de Assis": {
+      "about": "Brazilian novelist of Rio de Janeiro who wrote Posthumous Memoirs of Brás Cubas in 1881.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Johann Wolfgang von Goethe": {
+      "about": "German poet, dramatist and writer in Weimar who published Faust, Part One, in 1808.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "John Calvin": {
+      "about": "French Protestant reformer and theologian in Geneva who published the Institutes of the Christian Religion.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "John Dewey": {
+      "about": "American philosopher and educator of the early 20th century who wrote Human Nature and Conduct and Experience and Nature.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "John Donne": {
+      "about": "English poet and Anglican cleric in London who wrote Devotions upon Emergent Occasions in 1624.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "John Keats": {
+      "about": "English Romantic poet who wrote letters from Hampstead in 1819.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "John Locke": {
+      "about": "English philosopher of the late 17th century who wrote the Essay Concerning Human Understanding.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "John Milton": {
+      "about": "English poet in London who published the epic Paradise Lost in 1667.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "John of Damascus": {
+      "about": "Christian monk and theologian at Mar Saba near Jerusalem in the 8th century who wrote An Exact Exposition of the Orthodox Faith.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "John of the Cross": {
+      "about": "Spanish Carmelite friar and mystic of the 16th century who wrote The Ascent of Mount Carmel.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "John S. Mbiti": {
+      "about": "Kenyan-born theologian and scholar who wrote African Religions and Philosophy in 1969.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "John Stuart Mill": {
+      "about": "English philosopher and economist of the 19th century who wrote On Liberty and Utilitarianism.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "José Enrique Rodó": {
+      "about": "Uruguayan essayist in Montevideo who wrote Ariel in 1900 and Motivos de Proteo in 1909.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "José Hernández": {
+      "about": "Argentine poet who wrote the gaucho epic Martín Fierro, first part in 1872.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "José Martí": {
+      "about": "Cuban poet, essayist and independence leader who wrote in New York in the 1880s and 1890s.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "José Ortega y Gasset": {
+      "about": "Spanish philosopher in Madrid who published Meditations on Quixote in 1914.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "José Rizal": {
+      "about": "Filipino writer and reformer executed by Spain in 1896 who wrote the novel El Filibusterismo and the poem Mi último adiós.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Joseph Butler": {
+      "about": "English Anglican bishop and moral philosopher who preached the Fifteen Sermons at Rolls Chapel, London, in 1726.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Josephus, on the Pharisees": {
+      "about": "Jewish historian writing in Rome around 93 CE whose Antiquities of the Jews describes the Pharisees.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Judah Halevi": {
+      "about": "Jewish poet and philosopher of Spain in the 12th century who wrote The Kuzari.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Julia de Burgos": {
+      "about": "Puerto Rican poet who published the poem A Julia de Burgos in 1938.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Julian Aguon": {
+      "about": "Chamorro lawyer and writer from Guam, interviewed by Grist in 2024.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Julian of Norwich": {
+      "about": "English anchoress and mystic of the late 14th century who wrote Revelations of Divine Love.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Julien Offray de La Mettrie": {
+      "about": "French physician and materialist philosopher who published Man a Machine in Leiden in 1747.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Julius Caesar, as reported by Sallust": {
+      "about": "Roman general and statesman as reported by the historian Sallust in The Conspiracy of Catiline, written around 42 BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Justin Martyr": {
+      "about": "Early Christian apologist and philosopher who wrote the First Apology in Rome around 155 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Juvenal": {
+      "about": "Roman satirist who wrote the Satires in Rome in the early 2nd century CE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Kabir": {
+      "about": "Indian mystic poet of Varanasi in the 15th century whose verses are claimed by both Hindu and Muslim traditions.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Kahlil Gibran": {
+      "about": "Lebanese-American poet and artist who published The Prophet in New York in 1923.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Kaibara Ekken": {
+      "about": "Japanese Neo-Confucian scholar and naturalist of the Edo period who wrote popular moral precepts in 1708.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Kaiten Nukariya": {
+      "about": "Japanese Zen scholar and Sōtō priest who wrote The Religion of the Samurai in 1913.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Kalākaua": {
+      "about": "King of Hawaii who published The Legends and Myths of Hawaii in 1888.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Kamo no Chōmei": {
+      "about": "Japanese poet and recluse who wrote Hōjōki, an account of his hut, in 1212.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Karel Čapek": {
+      "about": "Czech writer who introduced the word robot in his play R.U.R., first staged in Prague in 1920.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Karl Jaspers": {
+      "about": "German psychiatrist and philosopher who wrote The Great Philosophers in Basel in 1957.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Karl Marx": {
+      "about": "German philosopher and economist who wrote on history, class and capitalism in London and Brussels.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Karma Lingpa (revealer)": {
+      "about": "Tibetan Buddhist treasure-revealer of the 14th century credited with revealing the Bardo Thodol and its root verses on the bardos.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Kate Chopin": {
+      "about": "American novelist of St. Louis who published The Awakening in 1899.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Katerina Teaiwa": {
+      "about": "Banaban and Fijian scholar at the Australian National University, interviewed by Logic in 2025.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Kaṭha Upaniṣad": {
+      "about": "Sanskrit Upanishad from northern India around 400 BCE, presenting the dialogue of Nachiketa with Death.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Katha Upanishad": {
+      "about": "Sanskrit Upanishad from the Gangetic plain, around 500 BCE, presenting the dialogue of Nachiketa with Death.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Katherine Mansfield": {
+      "about": "New Zealand-born modernist short-story writer whose journals record entries from 1915 to 1922.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Kautilya": {
+      "about": "Indian political thinker around 300 BCE traditionally credited with the Arthashastra, a treatise on statecraft.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Kebra Nagast (speech of Queen Makeda)": {
+      "about": "Ethiopian national epic compiled around 1320 in Aksum, here the speech of Queen Makeda of Sheba.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Kena Upanishad": {
+      "about": "Sanskrit Upanishad from northern India around 500 BCE, asking what power moves the mind and senses.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Ki Ageng Suryomentaram": {
+      "about": "Javanese prince and philosopher of Yogyakarta who developed a practical psychology of the self in the 20th century.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Kim Man-jung": {
+      "about": "Korean scholar-official of the Joseon period who wrote the novel The Cloud Dream of the Nine around 1689 in exile.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Konai Helu Thaman": {
+      "about": "Tongan poet and educator at the University of the South Pacific who wrote on cultural democracy in teaching in 2009.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Kwame Anthony Appiah": {
+      "about": "Ghanaian-British philosopher who has written on identity, ethics and cosmopolitanism.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Kwame Gyekye": {
+      "about": "Ghanaian philosopher at the University of Ghana who wrote on person and community in African thought in 1992.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Kwame Nkrumah": {
+      "about": "Ghanaian independence leader and first president of Ghana who wrote on African socialism in 1967.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Kwasi Wiredu": {
+      "about": "Ghanaian philosopher who wrote on Akan thought and African culture in the 1980s and 1990s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Kyle Powys Whyte": {
+      "about": "Potawatomi philosopher at Michigan State University who writes on Indigenous environmental justice.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Lactantius": {
+      "about": "Latin Christian writer and teacher of rhetoric who wrote On the Anger of God around 316 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Lal Ded (Lalla)": {
+      "about": "Kashmiri mystic poet of the 14th century who composed spiritual verses known as vakhs.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Lalla (Lal Ded)": {
+      "about": "Kashmiri mystic poet of the 14th century whose spiritual verses are collected in the Lalla-Vakyani.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Langri Thangpa Dorje Senge": {
+      "about": "Tibetan Kadam Buddhist teacher around 1100 who wrote the Eight Verses of Training the Mind.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Laozi": {
+      "about": "Chinese sage traditionally credited with the Tao Te Ching, said to have lived around the 4th century BCE.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Leanne Betasamosake Simpson": {
+      "about": "Michi Saagiig Nishnaabeg writer and scholar who wrote Land as Pedagogy in 2014.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Lélia Gonzalez": {
+      "about": "Brazilian philosopher, anthropologist and activist in Rio de Janeiro who wrote on racism and sexism in 1980.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Leo Tolstoy": {
+      "about": "Russian novelist and moral thinker of Yasnaya Polyana who wrote War and Peace and A Confession.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Léon-Gontran Damas": {
+      "about": "French Guianese poet in Paris and a founder of Négritude, who published Pigments in 1937.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Léopold Sédar Senghor": {
+      "about": "Senegalese poet and first president of Senegal, a founder of the Négritude movement.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Lesia Ukrainka": {
+      "about": "Ukrainian poet and playwright of the late 19th century who wrote the poem Contra spem spero in 1892.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Letter to the Ephesians (attributed to Paul)": {
+      "about": "New Testament letter to the church at Ephesus, attributed to Paul and written around 80 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Lev Shestov": {
+      "about": "Russian-Jewish existentialist philosopher from Kyiv who wrote All Things Are Possible in 1905.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Li Bai": {
+      "about": "Chinese poet of the Tang dynasty in the 8th century, known for poems on wine, moonlight and wandering.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Liezi (Lieh Tzu)": {
+      "about": "Daoist text attributed to the sage Liezi, in its present form compiled around 300 CE.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Liliʻuokalani": {
+      "about": "Last reigning monarch of the Hawaiian Kingdom, who published Hawaii's Story by Hawaii's Queen in 1898.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Linji Yixuan": {
+      "about": "Chinese Chan master of the 9th century at Linji Temple, whose sayings are collected in the Record of Linji.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Longchenpa (Longchen Rabjam)": {
+      "about": "Tibetan Nyingma master of the 14th century who systematized Dzogchen teachings.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Louis Pasteur": {
+      "about": "French chemist and microbiologist who gave his reception speech for Littré at the Académie française in 1882.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Lu Xun": {
+      "about": "Chinese writer in Beijing who wrote the short story My Old Home in 1921.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Lucian of Samosata": {
+      "about": "Greek-language satirist from Syria who wrote the dialogue Zeus Tragoedus in the 2nd century CE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Lucretius": {
+      "about": "Roman poet who wrote the Epicurean poem On the Nature of Things around the mid-1st century BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Ludwig Feuerbach": {
+      "about": "German philosopher who wrote The Essence of Christianity in 1841 and critiqued religion as human projection.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Ludwig Wittgenstein": {
+      "about": "Austrian philosopher who wrote the Tractatus Logico-Philosophicus, published in 1921.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Luís Cardoso": {
+      "about": "East Timorese writer living in Lisbon, interviewed in 2020.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Luis Villoro": {
+      "about": "Mexican philosopher in Mexico City who wrote on the identity of peoples in the 1990s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Machado de Assis": {
+      "about": "Brazilian novelist of Rio de Janeiro who published Dom Casmurro in 1899.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Macrina the Younger, as reported by Gregory of Nyssa": {
+      "about": "Christian ascetic and teacher of the 4th century, whose dialogue on the soul was recorded by her brother Gregory of Nyssa.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Mai Neng Moua": {
+      "about": "Hmong American writer and editor in Saint Paul, Minnesota, author of The Bride Price: A Hmong Wedding Story.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Makkhali Gosala (as reported in the Samaññaphala Sutta)": {
+      "about": "Indian ascetic teacher of the 5th century BCE and leader of the Ajivikas, whose fatalist teaching is reported in a Buddhist sutta.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Mãn Giác": {
+      "about": "Vietnamese Buddhist monk of the 11th century, known for a poem on his illness in 1096.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Manuel Acuña": {
+      "about": "Mexican poet who wrote the poem Ante un cadáver in 1872.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Manuel González Prada": {
+      "about": "Peruvian essayist and poet in Lima who wrote the freethinking essays of Horas de lucha.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Mao Zedong": {
+      "about": "Chinese Communist leader who wrote On Practice in 1937 and Serve the People in 1944 at Yan'an.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Māori tradition of Māui (recorded by George Grey)": {
+      "about": "Māori legend of the demigod Māui, recorded by Governor George Grey in Polynesian Mythology, published in 1855.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Maori tradition recorded by Edward Shortland": {
+      "about": "Māori beliefs about death and the underworld, recorded by Edward Shortland in Maori Religion and Mythology, 1882.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Māori whakataukī (proverb)": {
+      "about": "Traditional Māori proverb from Aotearoa New Zealand, here Whāia te iti kahurangi.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mara bar Serapion": {
+      "about": "Syriac Stoic-leaning writer from Samosata who wrote a letter to his son after 73 CE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Marcus Aurelius": {
+      "about": "Roman emperor of the 2nd century CE who wrote the Stoic Meditations, partly on campaign near the Danube.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Marcus Clarke": {
+      "about": "English-born Australian novelist and journalist in Melbourne who wrote a preface to Adam Lindsay Gordon's poems in 1876.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Marcus Garvey": {
+      "about": "Jamaican-born Black nationalist leader based in Harlem, New York, in the 1920s.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Margaret Fuller": {
+      "about": "American journalist and critic who wrote Woman in the Nineteenth Century in 1845.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Maria Mitchell": {
+      "about": "American astronomer who taught at Vassar College and addressed her students in 1866.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "María Zambrano": {
+      "about": "Spanish philosopher who wrote Carta sobre el exilio in Rome in 1961.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Mark Twain": {
+      "about": "American novelist and humorist who wrote What Is Man? and The Mysterious Stranger.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Martha Washington": {
+      "about": "First Lady of the United States, who wrote to Mercy Otis Warren in New York on 26 December 1789.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Martial": {
+      "about": "Roman epigrammatist from Spain who published his Epigrams in Rome in the late 1st century CE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Martin Buber": {
+      "about": "Austrian-born Jewish philosopher who published I and Thou in 1923.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Martin Heidegger": {
+      "about": "German philosopher who published Being and Time in 1927.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Martin Luther": {
+      "about": "German monk and Protestant reformer in Wittenberg who wrote The Freedom of a Christian and On the Bondage of the Will.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Martin Luther King Jr.": {
+      "about": "American Baptist minister and civil rights leader who wrote the Letter from Birmingham Jail in 1963.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Mary Graham": {
+      "about": "Aboriginal Australian philosopher and Kombumerri woman who wrote on Aboriginal worldviews in 1999.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mary Parker Follett": {
+      "about": "American political and management theorist who wrote The New State in 1918.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Mary Prince": {
+      "about": "Enslaved Bermudian woman whose narrative, The History of Mary Prince, was published in London in 1831.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Mary Rowlandson": {
+      "about": "English colonist in Massachusetts who wrote her account of captivity among Native Americans in 1682.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Mary Shelley": {
+      "about": "English novelist who wrote Frankenstein, first published in 1818 and revised in 1831.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Mary Somerville": {
+      "about": "Scottish science writer and mathematician whose Personal Recollections include a letter from October 1823.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Mary Wollstonecraft": {
+      "about": "English writer and early feminist who published A Vindication of the Rights of Woman in 1792.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Matsuo Bashō": {
+      "about": "Japanese haiku poet of the 17th century who wrote the travel journal The Narrow Road to the Deep North.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Maurice Merleau-Ponty": {
+      "about": "French phenomenologist who published Phenomenology of Perception in 1945.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Max Scheler": {
+      "about": "German philosopher and phenomenologist who wrote On the Eternal in Man in 1921.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Max Stirner": {
+      "about": "German philosopher who published the egoist work The Ego and Its Own in 1844.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Meister Eckhart": {
+      "about": "German Dominican preacher and mystic around 1320, known for sermons on the divine ground of the soul.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Mencius": {
+      "about": "Chinese Confucian philosopher of the 4th century BCE, born in Zou, who taught that human nature is good.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Micah": {
+      "about": "Hebrew prophet in Judah around 700 BCE, to whom a short prophetic book of the Bible is attributed.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Michael Sandel": {
+      "about": "American political philosopher at Harvard who wrote Liberalism and the Limits of Justice in 1982.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Michel de Montaigne": {
+      "about": "French essayist of the 16th century who wrote his Essays at his château in Dordogne.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Michel Foucault": {
+      "about": "French philosopher and historian of ideas who lectured at the Collège de France in 1982.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Miguel de Unamuno": {
+      "about": "Spanish philosopher and writer in Salamanca who wrote The Tragic Sense of Life around 1912-13.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Mikhail Bakunin": {
+      "about": "Russian anarchist revolutionary who wrote God and the State around 1871.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Milarepa": {
+      "about": "Tibetan Buddhist yogi and poet of the 11th-12th centuries, remembered for his songs of realization.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Moana Jackson": {
+      "about": "Māori lawyer and scholar of Aotearoa New Zealand who wrote on decolonisation and law.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mogobe Ramose": {
+      "about": "South African philosopher who has written on ubuntu and African philosophy.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Mohandas K. Gandhi": {
+      "about": "Indian lawyer and independence leader who developed nonviolent resistance and wrote his autobiography.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Möngke Khan (as reported by William of Rubruck)": {
+      "about": "Mongol Great Khan at Karakorum in 1254, as reported by the Franciscan envoy William of Rubruck.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Monica, as reported by Augustine": {
+      "about": "Christian mother of Augustine of Hippo, whose last conversation at Ostia in 387 is reported in his Confessions.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Moses Maimonides": {
+      "about": "Jewish philosopher, jurist and physician in Egypt in the 12th century who wrote the Guide for the Perplexed.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Mozi": {
+      "about": "Chinese philosopher of the 5th century BCE who taught universal love and founded the Mohist school.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Muhammad (hadith in Sahih Muslim)": {
+      "about": "Prophet of Islam in Arabia in the 7th century, whose reported sayings are collected in Sahih Muslim.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Muhammad Iqbal": {
+      "about": "Poet and philosopher of Lahore in the early 20th century who wrote on selfhood and Islamic thought.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Nadine Gordimer": {
+      "about": "South African novelist who delivered her Nobel Lecture in Stockholm in 1991.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nāgārjuna": {
+      "about": "Indian Buddhist philosopher around 200 CE who founded the Madhyamaka school.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Nāgasena (Questions of King Milinda)": {
+      "about": "Buddhist monk who is the teacher in the Milindapañha, a dialogue with a Greek king composed in northwest India.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Nahua proverb (Florentine Codex, Book VI)": {
+      "about": "Aztec proverb recorded around 1547 by Nahua collaborators of Bernardino de Sahagún in the Florentine Codex.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Nārada Mahāthera": {
+      "about": "Sri Lankan Theravada Buddhist monk who wrote the introductory book Buddhism in a Nutshell, published in Colombo in 1933.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Narayana Guru": {
+      "about": "Kerala spiritual teacher and social reformer who taught the unity of all people, writing his Self Instruction verses around 1897.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Narges Mohammadi": {
+      "about": "Iranian human rights activist, jailed in Tehran, whose Nobel Peace Prize lecture came from Evin Prison in 2023.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Naṣīr al-Dīn Ṭūsī": {
+      "about": "Persian scholar of the 13th century who wrote the Nasirean Ethics, a work of moral philosophy.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Natsume Sōseki": {
+      "about": "Japanese novelist who gave the 1914 lecture My Individualism at Gakushuin in Tokyo.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nelson Mandela": {
+      "about": "South African anti-apartheid leader who made his 1964 statement from the dock at the Rivonia Trial in Pretoria.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Nezahualcoyotl (attributed), song in the Cantares Mexicanos": {
+      "about": "Ruler and poet of Texcoco in the Valley of Mexico in the 15th century; songs in the Cantares are attributed to him.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Nguyễn Bỉnh Khiêm": {
+      "about": "Vietnamese scholar and poet of the 16th century who retired to a hermitage and wrote the poem Nhàn.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nguyễn Du": {
+      "about": "Vietnamese poet who wrote the verse epic Truyện Kiều around 1815.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nhia Yer Yang": {
+      "about": "Author of an oral history on the work of a shaman, recorded in Saint Paul, Minnesota, in 1991.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": false
+    },
+    "Niccolò Machiavelli": {
+      "about": "Florentine diplomat and political writer who wrote The Prince in 1513 after leaving office.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Nichiren": {
+      "about": "Japanese Buddhist monk of the 13th century who founded a school centred on the Lotus Sutra.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Nishida Kitarō": {
+      "about": "Japanese philosopher of the Kyoto School who developed a philosophy of nothingness in the early twentieth century.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Njál’s Saga (anonymous)": {
+      "about": "Anonymous Icelandic saga written in southern Iceland around 1280, telling of feuds and law.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nkiru Uwechia Nzegwu": {
+      "about": "African philosopher and scholar who wrote Family Matters: Feminist Concepts in African Philosophy of Culture, published in 2006.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Oji (Akan) proverb, in Richard Burton’s Wit and Wisdom from West Africa": {
+      "about": "Akan proverb from Ghana, collected and printed by Richard Burton in his 1865 book Wit and Wisdom from West Africa.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Oladele Abiodun Balogun": {
+      "about": "Nigerian philosopher who wrote on the traditional Yoruba conception of a meaningful life in 2020.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Olaudah Equiano": {
+      "about": "Igbo-born man enslaved as a child, later a freed writer and abolitionist in London, who published his Narrative in 1789.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Olha Kobylianska": {
+      "about": "Ukrainian modernist writer from Bukovina who wrote the novella Tsarivna in 1896.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Olive Schreiner": {
+      "about": "South African novelist who wrote The Story of an African Farm, published in 1883.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Oliver Lodge": {
+      "about": "British physicist and spiritualist who wrote Raymond, or Life and Death in 1916, about his dead son.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Omar Khayyam": {
+      "about": "Persian mathematician and poet of Nishapur around 1100, known for quatrains later rendered by Edward FitzGerald.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Origen": {
+      "about": "Christian theologian and teacher in Alexandria in the early third century who wrote On First Principles.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Oscar Wilde": {
+      "about": "Irish writer and playwright whose works include The Picture of Dorian Gray (1890) and De Profundis, written in prison.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ōtomo no Tabito": {
+      "about": "Japanese court official and poet of the early eighth century whose sake poems appear in the Manyoshu.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "P. A. Payutto": {
+      "about": "Thai Buddhist monk and scholar who wrote Buddhadhamma, a systematic account of Buddhist teaching.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Pablo Neruda": {
+      "about": "Chilean poet who gave his Nobel Lecture in Stockholm in 1971.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Paja Thao": {
+      "about": "Hmong shaman whose life story, I Am a Shaman, was recorded in Saint Paul, Minnesota, in the 1980s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Pandita Ramabai": {
+      "about": "Indian scholar and social reformer who wrote The High-Caste Hindu Woman in 1887 while in the United States.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Paṭācārā": {
+      "about": "Buddhist nun and early disciple of the Buddha whose verses are preserved in the Therīgāthā.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Patañjali": {
+      "about": "Indian author credited with the Yoga Sutras, a foundational text of yoga philosophy, composed around the 4th century CE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Paul of Tarsus": {
+      "about": "Early Christian apostle and missionary who wrote letters to the churches of the first century.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Paul Ricoeur": {
+      "about": "French philosopher who wrote Oneself as Another, based on lectures given in Edinburgh in 1990.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Paul-Henri Thiry, Baron d’Holbach": {
+      "about": "French-German philosopher in Paris, a materialist and atheist, who published The System of Nature in 1770.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Paulo Freire": {
+      "about": "Brazilian educator who wrote on teaching as a practice of freedom for the oppressed.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Peter Kropotkin": {
+      "about": "Russian geographer and anarchist who wrote The Conquest of Bread and Mutual Aid while living in England.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Peter Wessel Zapffe": {
+      "about": "Norwegian philosopher who wrote the 1933 essay The Last Messiah, a pessimistic account of human consciousness.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Phan Châu Trinh": {
+      "about": "Vietnamese reformer and scholar who gave a lecture comparing Eastern and Western morality in Saigon in 1925.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Phillis Wheatley": {
+      "about": "Enslaved West African-born poet in Boston who published her first book of poems in 1773.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Pierre-Simon Laplace": {
+      "about": "French mathematician and astronomer who wrote A Philosophical Essay on Probabilities in 1814.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Pindar": {
+      "about": "Greek lyric poet of the fifth century BCE who wrote victory odes for athletes and rulers.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Plato": {
+      "about": "Greek philosopher in Athens who founded the Academy and wrote dialogues around the fourth century BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Pliny the Elder": {
+      "about": "Roman naturalist and military officer who wrote the encyclopedic Natural History in the first century CE.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Plotinus": {
+      "about": "Philosopher who taught in Rome in the third century CE and founded Neoplatonism.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Pramoedya Ananta Toer": {
+      "about": "Indonesian novelist who wrote about colonialism and spent years as a political prisoner.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Prayer to Re-Harakhte (Papyrus Anastasi II)": {
+      "about": "Egyptian prayer to the sun god Re-Harakhte preserved in Papyrus Anastasi II, from about 1250 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Prince Shōtoku (attributed)": {
+      "about": "Regent of Japan around 600 CE to whom the Seventeen-Article Constitution of 604 is attributed.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Protagoras": {
+      "about": "Greek sophist who taught in Athens in the fifth century BCE and wrote On the Gods.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Psalms": {
+      "about": "Hebrew poem from the Book of Psalms, the collection of sacred songs and prayers in the Bible.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Pseudo-Dionysius the Areopagite": {
+      "about": "Anonymous Christian mystical writer, probably Syrian, who wrote under an apostle's name around 500 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Ptahhotep": {
+      "about": "Egyptian vizier of the Old Kingdom, credited with a book of maxims on conduct, around 2400 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Pyramid Texts": {
+      "about": "Collection of Egyptian funerary spells carved in royal pyramids at Saqqara, here from the pyramid of King Unas.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Pyrrho of Elis (reported by Diogenes Laertius)": {
+      "about": "Greek philosopher of Elis, founder of skepticism, whose sayings are reported by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Qiu Jin": {
+      "about": "Chinese revolutionary, poet and feminist who addressed her countrywomen from Tokyo in 1904.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Rabbi Akiva (Pirkei Avot)": {
+      "about": "Jewish sage in Palestine in the early second century CE, whose sayings appear in Pirkei Avot.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Rabbi Tarfon (Pirkei Avot)": {
+      "about": "Jewish sage of Lod in the early second century CE, quoted in Pirkei Avot.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Rabi‘a al-‘Adawiyya (as quoted by E. H. Whinfield)": {
+      "about": "Early woman Sufi mystic of Basra in the eighth century, known for teaching love of God.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Rabindranath Tagore": {
+      "about": "Bengali poet and philosopher who won the Nobel Prize in Literature in 1913.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Raden Adjeng Kartini": {
+      "about": "Javanese noblewoman who corresponded with Dutch friends around 1900 and argued for women's education.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Rainer Maria Rilke": {
+      "about": "Austrian poet who wrote The Book of Hours between 1899 and 1903.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ralph Waldo Emerson": {
+      "about": "American essayist and lecturer in Concord, Massachusetts, who led the Transcendentalist movement.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Ramana Maharshi": {
+      "about": "Indian sage who lived at Arunachala and taught self-inquiry as the path to liberation.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Rāmānuja": {
+      "about": "Indian Hindu theologian of the 11th and 12th centuries who taught qualified non-dualism.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Rangjung Dorje, the Third Karmapa": {
+      "about": "Tibetan Buddhist master, third head of the Karma Kagyu school, who wrote a mahamudra aspiration prayer around 1330.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Red Jacket (Sagoyewatha)": {
+      "about": "Seneca orator in western New York who spoke for his people in 1805 against missionary claims.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "René Descartes": {
+      "about": "French philosopher and mathematician of the 17th century who wrote the Discourse on the Method.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Rigveda, hymn to Varuna (Vasishtha)": {
+      "about": "Vedic hymn to the god Varuna from the Rigveda, the oldest Sanskrit scripture of India.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Robert G. Ingersoll": {
+      "about": "American lawyer and orator of the 19th century who lectured widely in defence of agnosticism.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Robert Nozick": {
+      "about": "American philosopher at Harvard who wrote Anarchy, State, and Utopia in 1974.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Robert Owen": {
+      "about": "Welsh manufacturer and social reformer who ran the model mills at New Lanark and wrote A New View of Society.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Robin Wall Kimmerer": {
+      "about": "Potawatomi botanist and writer, author of Braiding Sweetgrass, based in Syracuse, New York.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Rubén Darío": {
+      "about": "Nicaraguan poet who founded Spanish-language modernismo and wrote Cantos de vida y esperanza.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Rule of Benedict": {
+      "about": "Monastic rule for communities of monks, written at Monte Cassino around the sixth century and attributed to Benedict.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Saadi of Shiraz": {
+      "about": "Persian poet of Shiraz in the 13th century who wrote the Gulistan, or Rose Garden, in 1258.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Saba Mahmood": {
+      "about": "Anthropologist at the University of California, Berkeley, who wrote Politics of Piety in 2005 on women in the Islamic revival.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Sakinu Ahronglong": {
+      "about": "Taiwanese indigenous writer from Taitung who published a book of reflections in 2023.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Samuel Butler": {
+      "about": "English Victorian writer who wrote the satirical novel Erewhon while farming in New Zealand.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Samuel Johnson": {
+      "about": "English writer and lexicographer of the 18th century who wrote poems and the tale Rasselas.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Sañjaya Belaṭṭhaputta": {
+      "about": "Indian wandering teacher at the time of the Buddha, known as a skeptic and mentioned in the Sāmaññaphala Sutta.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Sarah Winnemucca (Thocmetony)": {
+      "about": "Northern Paiute writer and activist who published Life Among the Piutes in 1883.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Sayādaw U Paṇḍita": {
+      "about": "Burmese Buddhist meditation master who taught at Panditarama in Yangon and wrote In This Very Life.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Second Isaiah": {
+      "about": "Anonymous Hebrew prophet of the Babylonian exile, around 540 BCE, whose oracles fill Isaiah chapters 40 to 55.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Selina Tusitala Marsh": {
+      "about": "Samoan-New Zealand poet in Auckland, interviewed in 2020 on Pasifika poetry.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Seneca": {
+      "about": "Roman Stoic philosopher, statesman and playwright of the first century CE who wrote letters and essays.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Seneca the Younger": {
+      "about": "Roman Stoic philosopher and adviser to Nero in the first century CE who wrote essays and letters.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Seneca, quoting Cleanthes": {
+      "about": "Roman Stoic writer of the first century CE quoting verses by the earlier Greek Stoic Cleanthes in his letters.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Sengcan (attributed)": {
+      "about": "Early Chan Buddhist master of China to whom the poem Xinxin Ming is attributed, around 600 CE.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Shankara (attributed)": {
+      "about": "Indian philosopher to whom the Vivekachudamani is attributed, a key teacher of Advaita Vedanta around 800 CE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Shantideva": {
+      "about": "Indian Buddhist monk at Nalanda around 700 CE who wrote the Bodhicaryavatara.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Shijing (Book of Odes)": {
+      "about": "Chinese classic collection of ancient songs and odes, from the first millennium BCE.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Shinran": {
+      "about": "Japanese Buddhist monk of the 13th century who founded True Pure Land Buddhism.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Shota Rustaveli": {
+      "about": "Georgian poet of the late 12th and early 13th century who wrote the epic The Man in the Panther's Skin.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Siduri the ale-wife (Old Babylonian Gilgamesh)": {
+      "about": "Tavern keeper in the Old Babylonian Epic of Gilgamesh who advises the hero to enjoy life.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Sigmund Freud": {
+      "about": "Austrian physician who founded psychoanalysis and wrote The Ego and the Id in 1923.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Simeon ben Zoma": {
+      "about": "Jewish sage in Palestine around 110 CE whose sayings appear in Pirkei Avot.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Simón Bolívar": {
+      "about": "South American revolutionary leader who helped liberate several countries from Spanish rule.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Simone de Beauvoir": {
+      "about": "French philosopher and writer who wrote The Second Sex in 1949 and works on existentialist ethics.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Simone Weil": {
+      "about": "French philosopher and mystic who worked in Marseille and London in the early 1940s.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Snorri Sturluson (Eyvind Skaldaspiller's Hakonarmal)": {
+      "about": "Icelandic chronicler of the 13th century who preserved Hákonarmál, a tenth-century skaldic poem, in his Heimskringla.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Socrates (in Plato’s Apology)": {
+      "about": "Athenian philosopher as portrayed in Plato's Apology, his defence speech at his trial in 399 BCE.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Solomon ibn Gabirol": {
+      "about": "Jewish poet and philosopher of Spain in the 11th century who wrote on moral qualities.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Solon (in Herodotus’ Histories)": {
+      "about": "Athenian statesman and poet of the sixth century BCE, as depicted in Herodotus' Histories.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Song of Hannah (1 Samuel)": {
+      "about": "Poem of thanksgiving by Hannah in the First Book of Samuel, chapter 2, in the Hebrew Bible.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Song of the Harper (tomb of King Intef)": {
+      "about": "Egyptian song from a tomb, urging the listener to enjoy life while it lasts, copied over many centuries.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "Sophocles": {
+      "about": "Athenian tragic playwright of the fifth century BCE who wrote Oedipus at Colonus.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Sor Juana Inés de la Cruz": {
+      "about": "Mexican nun, poet and scholar of the 17th century who defended women's right to learn.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Søren Kierkegaard": {
+      "about": "Danish philosopher and theologian of the 19th century who wrote Either/Or.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Souvankham Thammavongsa": {
+      "about": "Canadian writer of Lao descent, interviewed in 2008, who writes poetry and fiction.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Sri Aurobindo": {
+      "about": "Indian philosopher, poet and nationalist who later developed a spiritual philosophy; he gave the Uttarpara Speech in 1909.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Steve Biko": {
+      "about": "South African anti-apartheid activist and founder of the Black Consciousness Movement.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Sulak Sivaraksa": {
+      "about": "Thai social critic and Buddhist activist who received the Right Livelihood Award in 1995.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Sutrakritanga": {
+      "about": "Early Jain scripture, the second of the Jain canonical texts, compiled around 300 BCE.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Sutta Nipata (Rhinoceros Sutra)": {
+      "about": "Early Buddhist collection of verses in the Pali canon, here the Rhinoceros Sutra on solitary wandering.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Swami Vivekananda": {
+      "about": "Indian monk and teacher who introduced Vedanta and yoga to the West in the 1890s.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Swimmer (Ayûnînî), Cherokee storyteller, recorded by James Mooney": {
+      "about": "Cherokee storyteller and healer whose myths were recorded by the ethnographer James Mooney around 1900.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Tacitus": {
+      "about": "Roman historian and senator who wrote the Agricola around 98 CE.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Tao Qian (Tao Yuanming)": {
+      "about": "Chinese poet of the Jin dynasty who left office to farm and wrote poems of rural life.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Tao Yuanming": {
+      "about": "Chinese poet of the Jin dynasty who left office to farm, famed for poems on drinking wine.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Tenzin Gyatso, the 14th Dalai Lama": {
+      "about": "Tibetan Buddhist leader, exiled in Dharamsala, India, and Nobel Peace laureate who writes and teaches on compassion.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Tenzin Gyatso, the Fourteenth Dalai Lama": {
+      "about": "Tibetan Buddhist leader, exiled in Dharamsala, India, and Nobel Peace laureate who writes and teaches on compassion.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Teresa of Ávila": {
+      "about": "Spanish Carmelite nun and mystic of the 16th century who reformed her order and wrote The Interior Castle.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Tertullian": {
+      "about": "Christian writer in Carthage around 200 CE who wrote in Latin on theology and apologetics.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Thaddeus Metz": {
+      "about": "Philosopher at the University of Johannesburg who writes on African ethics and ubuntu.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "The Anana Sutta (Anguttara Nikaya)": {
+      "about": "Buddhist discourse from the Pali canon's Anguttara Nikaya on the happiness of being free of debt.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "The Book of Genesis": {
+      "about": "First book of the Hebrew Bible, here the verse Genesis 2:18 on human solitude.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "The Book of Leviticus": {
+      "about": "Third book of the Hebrew Bible, here the verse Leviticus 19:18 on loving one's neighbour.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "The Buddha": {
+      "about": "Indian teacher of the fifth century BCE who founded Buddhism; his discourses are kept in the Pali canon.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "The Carvaka school (as reported by Madhava)": {
+      "about": "Indian materialist school that rejected the afterlife, as reported by the 14th-century writer Madhava.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "The Carvaka school, as reported by Madhava": {
+      "about": "Indian materialist school that rejected the afterlife, as reported by the 14th-century writer Madhava.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "The Cloud of Unknowing (anonymous)": {
+      "about": "Anonymous English mystical treatise of the late 14th century on contemplative prayer.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "The Code of Handsome Lake (Gaiwiio)": {
+      "about": "Teachings of the Seneca prophet Handsome Lake, who founded a religious movement around 1800.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "The death of Gilgamesh": {
+      "about": "Sumerian poem from about 2000 BCE on the death of Gilgamesh, king of Uruk.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "The death of Ur-Namma": {
+      "about": "Sumerian poem from about 2100 BCE on the death of Ur-Namma, king of Ur.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "The Dhammapada": {
+      "about": "Collection of Buddhist verses in the Pali canon, traditionally ascribed to the Buddha.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "The Gospel of Mark": {
+      "about": "Earliest of the four New Testament accounts of Jesus, traditionally placed in Rome around 70 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "The Gospel of Matthew": {
+      "about": "New Testament account of the life and teaching of Jesus, written around 85 CE.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "The Hitopadesha (attributed to Narayana)": {
+      "about": "Sanskrit collection of animal fables and advice on conduct, attributed to Narayana, around 900 CE.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "The lament for Sumer and Urim": {
+      "about": "Sumerian city lament mourning the destruction of Sumer and Ur, from about 2000 BCE.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "The Poem of the Righteous Sufferer (Ludlul bel nemeqi)": {
+      "about": "Babylonian poem of about 1200 BCE in which a suffering man questions divine justice.",
+      "tradition": "Ancient Egypt and Mesopotamia",
+      "sure": true
+    },
+    "The Qur’an": {
+      "about": "Sacred scripture of Islam, revealed to Muhammad in Mecca and Medina in the seventh century.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "The Rig Veda": {
+      "about": "Oldest Sanskrit scripture of India, a collection of hymns; this passage is the Hymn of Creation.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "The Tao Te Ching (attributed to Laozi)": {
+      "about": "Chinese classic of about 300 BCE traditionally attributed to Laozi.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "The Yoga Vasistha": {
+      "about": "Sanskrit philosophical text on liberation, set as a dialogue between Vasistha and Rama, from about the tenth century.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Thich Nhat Hanh": {
+      "about": "Vietnamese Zen monk, teacher and peace activist who founded Plum Village in France.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Thomas à Kempis": {
+      "about": "Dutch Augustinian monk and writer of the 15th century, traditionally credited with The Imitation of Christ.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Thomas Aquinas": {
+      "about": "Italian Dominican friar and theologian of the 13th century who wrote the Summa Theologiae.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Thomas Browne": {
+      "about": "English physician and writer of Norwich who wrote Religio Medici in 1643.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Thomas Henry Huxley": {
+      "about": "English biologist and defender of Darwin who coined the word agnostic.",
+      "tradition": "Science",
+      "sure": true
+    },
+    "Thomas Hobbes": {
+      "about": "English philosopher who wrote Leviathan, published in 1651, on the state.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Thomas Merton": {
+      "about": "American Trappist monk and writer at the Abbey of Gethsemani in Kentucky.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Thomas More": {
+      "about": "English lawyer and humanist who wrote Utopia, published in 1516.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Thomas Nagel": {
+      "about": "American philosopher who wrote the essay Moral Luck in 1976.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Thomas Paine": {
+      "about": "English-born political writer who wrote Rights of Man and The Age of Reason.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Thomas Reid": {
+      "about": "Scottish philosopher of common sense who wrote Essays on the Intellectual Powers of Man in 1785.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Tilopa": {
+      "about": "Indian Buddhist yogi of the 11th century who is regarded as a founder of the Kagyu lineage.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Tiruvalluvar": {
+      "about": "Tamil poet credited with the Tirukkural, a book of couplets on ethics.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Trần Nhân Tông": {
+      "about": "Vietnamese emperor of the 13th century who became a monk and founded the Trúc Lâm school of Buddhism.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Tsitsi Dangarembga": {
+      "about": "Zimbabwean novelist and filmmaker who received the Peace Prize of the German Book Trade in 2021.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Tsongkhapa": {
+      "about": "Tibetan Buddhist teacher of the 14th and 15th centuries who founded the Gelug school.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Tui Atua Tupua Tamasese Taʻisi Efi": {
+      "about": "Samoan scholar and chief who served as Head of State, writing on Samoan thought and policy.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Tusiata Avia": {
+      "about": "Samoan-New Zealand poet from Christchurch, interviewed in 2015.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)": {
+      "about": "Zulu informant of the Natal region whose account of ancestral spirits was recorded by Henry Callaway in 1868.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Upāsikā Kee Nanayon": {
+      "about": "Thai Buddhist lay woman and meditation teacher of the 20th century.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Vajira (the nun)": {
+      "about": "Buddhist nun of the early Buddhist community, quoted in the Samyutta Nikaya.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Vatsyayana": {
+      "about": "Indian author of the Kama Sutra, a Sanskrit treatise on love and conduct, around the third century CE.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Vine Deloria Jr.": {
+      "about": "Standing Rock Sioux author and activist who wrote on Native American rights and religion.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Vinoba Bhave": {
+      "about": "Indian disciple of Gandhi who led the Bhoodan land-gift movement on foot across India.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Virginia Woolf": {
+      "about": "English novelist who wrote Mrs. Dalloway in 1925.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Voltaire": {
+      "about": "French writer and Enlightenment thinker who wrote Candide in 1759.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Völuspá (the Seeress’s Prophecy)": {
+      "about": "Old Norse poem of a seeress prophesying the creation and end of the world, preserved in Icelandic manuscripts.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "W. B. Yeats": {
+      "about": "Irish poet who wrote The Tower, including Sailing to Byzantium, in the 1920s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "W. E. B. Du Bois": {
+      "about": "African American scholar and civil rights leader who wrote The Souls of Black Folk in 1903.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Walis Nokan": {
+      "about": "Atayal writer of Taiwan who published a collection of indigenous poetry and prose in 1992.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Walt Whitman": {
+      "about": "American poet from Brooklyn who published Leaves of Grass in 1855.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Walter Pater": {
+      "about": "English essayist and critic at Oxford who wrote The Renaissance in 1873.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Wang Chong": {
+      "about": "Chinese philosopher of the Han dynasty who wrote the skeptical Lunheng around 80 CE.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Wang Yangming": {
+      "about": "Chinese Neo-Confucian philosopher of the Ming dynasty who taught the unity of knowledge and action.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Wangari Maathai": {
+      "about": "Kenyan environmentalist who founded the Green Belt Movement and won the 2004 Nobel Peace Prize.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Watsuji Tetsurō": {
+      "about": "Japanese philosopher who wrote on ethics and culture in the early twentieth century.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "Westminster Shorter Catechism": {
+      "about": "Question-and-answer summary of Reformed Christian doctrine, produced at Westminster, London, in 1647.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "William Blake": {
+      "about": "English poet and artist who wrote The Marriage of Heaven and Hell around 1790.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "William James": {
+      "about": "American psychologist and philosopher at Harvard who wrote The Principles of Psychology.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "William Shakespeare": {
+      "about": "English playwright and poet who wrote for the London stage around 1600.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "William Wordsworth": {
+      "about": "English poet who published Ode: Intimations of Immortality in 1807.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "William Wyatt Gill (recording Mangaian belief)": {
+      "about": "Missionary in the Cook Islands who recorded Mangaian myths and beliefs in 1876; a collector's record of others' words.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Wisdom of Solomon": {
+      "about": "Jewish wisdom book written in Greek in Alexandria around 50 BCE, included in Catholic and Orthodox Bibles.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Witi Ihimaera": {
+      "about": "Maori novelist and writer from Aotearoa New Zealand, interviewed in Auckland in 2019.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Witold Gombrowicz": {
+      "about": "Polish novelist and playwright who published Ferdydurke in 1937.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Wonhyo": {
+      "about": "Korean Buddhist monk of the Silla kingdom in the seventh century who wrote commentaries.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Xenophanes of Colophon": {
+      "about": "Greek poet and philosopher of the sixth to fifth century BCE who criticised anthropomorphic gods.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Xunzi": {
+      "about": "Chinese Confucian philosopher of the third century BCE who argued human nature is bad.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Yang Zhu": {
+      "about": "Chinese thinker of the fourth century BCE whose ideas on preserving life are reported in the Liezi.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Yang Zhu, as reported in the Liezi": {
+      "about": "Chinese thinker of the fourth century BCE whose ideas on preserving life are reported in the Liezi.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Yi Hwang (Toegye)": {
+      "about": "Korean Neo-Confucian scholar of the Joseon dynasty who presented the Ten Diagrams to the king in 1568.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Yoshida Kenkō": {
+      "about": "Japanese Buddhist monk and essayist who wrote Tsurezuregusa in the early fourteenth century.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Youk Chhang": {
+      "about": "Cambodian head of the Documentation Center of Cambodia, which records the Khmer Rouge genocide.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Yuan Liaofan (Yuan Huang)": {
+      "about": "Chinese scholar-official of the Ming dynasty who wrote Liaofan's Four Lessons around 1602.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Yunus Emre": {
+      "about": "Turkish Sufi poet of Anatolia around 1300 who wrote in plain Turkish.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Yvonne Vera": {
+      "about": "Zimbabwean novelist from Bulawayo, interviewed in 2001.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Zarathushtra (Gathas)": {
+      "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Zarathustra (Gathas)": {
+      "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Zeami": {
+      "about": "Japanese Noh actor and playwright of the 15th century who wrote treatises on performance.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Zengzi (Tsang)": {
+      "about": "Disciple of Confucius in the fifth century BCE, quoted in the Analects.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Zhang Zai": {
+      "about": "Chinese Neo-Confucian philosopher of the Song dynasty who wrote the Western Inscription.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Zhu Xi": {
+      "about": "Chinese Neo-Confucian philosopher of the Song dynasty who edited the Four Books.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Zhuangzi": {
+      "about": "Chinese Daoist philosopher of the fourth century BCE to whom the book Zhuangzi is attributed.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Zitkála-Šá (Gertrude Simmons Bonnin)": {
+      "about": "Yankton Dakota writer and activist who published American Indian Stories in 1921.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Zoroaster (Zarathushtra)": {
+      "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
+      "tradition": "Other",
+      "sure": true
+    }
+  }
 };

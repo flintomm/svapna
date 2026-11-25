@@ -408,8 +408,11 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
 
   // ---- scenes -------------------------------------------------------------------------------
   // Text arrives a word at a time.
+  // A browser set to another language is probably translating the page; text split word by word translates badly, so it is left whole.
+  const WHOLE = !/^en\b/i.test(navigator.language || 'en');
   function words(el, text, ms) {
     el.textContent = '';
+    if (WHOLE) { const sp = document.createElement('span'); sp.className = 'w'; sp.textContent = text; el.append(sp); return; }
     text.split(' ').forEach((w, i) => { const sp = document.createElement('span'); sp.className = 'w'; sp.style.animationDelay = i * ms + 'ms'; sp.textContent = w + ' '; el.append(sp); });
   }
   function countUp(el, to) {
@@ -474,7 +477,8 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     answer = null; filter = 'all'; shown = cards; at = 0; spin = true; goal = null;
     if (w3) w3.setCards(cards, tones);
     clearTimeout(driftTimer);
-    $('ask-count').textContent = first ? 'Welcome. Start with a question.' : `Question ${questions.indexOf(q) + 1} of ${questions.length}`; first = false;
+    if (!(first && $('ask-q').dataset.pre === q.id)) $('ask-count').textContent = first ? 'Welcome. Start with a question.' : `Question ${questions.indexOf(q) + 1} of ${questions.length}`;
+    first = false;
     // The last clause of the question is set in italics.
     const parts = ask_(q).split(' '), cut = Math.max(1, parts.length - 3);
     // The page writes the opening question itself before this script arrives; it is left as it is.
@@ -544,17 +548,24 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     $('voice-tr').textContent = c.translation || '';
     $('voice-who').textContent = c.name;
     $('voice-where').textContent = `${c.place} · ${c.dateShort}${c.work ? ' · ' + c.work : ''}`;
-    $('voice-source').href = c.sourceUrl;
+    { const m = /^https:\/\/gutenberg\.pglaf\.org\/(?:\d\/)*(\d+)\/\1[-.]/.exec(c.sourceUrl); $('voice-source').href = m ? 'https://www.gutenberg.org/ebooks/' + m[1] : c.sourceUrl; }
+    $('voice-text').translate = !c.translation;
+    if (SAY) { speechSynthesis.cancel(); if (listening) speak(c); }
     $('voice-atlas').href = '/thinkers/' + c.name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '#' + c.id;
     $('when').textContent = c.dateShort;
     face(c); drawStrip();
   }
 
+  // Listen: the device's own voice reads each voice aloud, and carries on to the next while drifting.
+  const SAY = 'speechSynthesis' in window; let listening = false;
+  function speak(c) { const u = new SpeechSynthesisUtterance((c.translation || c.excerpt) + ' ' + c.name + '.'); u.lang = 'en'; u.rate = .92; u.onend = () => { if (listening && drifting && mode === 'voice') { clearTimeout(driftTimer); driftTimer = setTimeout(() => show(at >= shown.length - 1 ? 0 : at + 1), 900); } }; clearTimeout(driftTimer); speechSynthesis.speak(u); }
+  if (SAY) { $('voice-say').hidden = false; $('voice-say').addEventListener('click', () => { listening = !listening; $('voice-say').textContent = listening ? 'Stop listening' : 'Listen'; speechSynthesis.cancel(); if (listening) speak(shown[at]); else tick(); }); }
   function startDrift() { drifting = true; $('drift').setAttribute('aria-pressed', 'true'); $('drift').textContent = 'Drifting'; tick(); }
   function stopDrift() { drifting = false; clearTimeout(driftTimer); $('drift').setAttribute('aria-pressed', 'false'); $('drift').textContent = 'Drift'; }
   function tick() {
     clearTimeout(driftTimer);
     if (!drifting || reduce) return;
+    if (SAY && listening) return;   // while listening, the voice sets the pace
     driftTimer = setTimeout(() => { if (mode !== 'voice') return; show(at >= shown.length - 1 ? 0 : at + 1); tick(); }, 7500);
   }
 
@@ -619,7 +630,8 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const wanted = questions.find(item => '#' + item.id === location.hash);
   // A first visit opens on the gentlest question; later visits rotate through the gentle ones, a new one each day.
   let seen = false; try { seen = localStorage.getItem('svapna_next_seen') === '1'; localStorage.setItem('svapna_next_seen', '1'); } catch (e) { /* private mode */ }
-  ask(wanted || (seen ? questions[Math.floor(Date.now() / 864e5) % GENTLE] : questions[0]));
+  // The page has already written its opening question; the world opens on the same one.
+  ask(wanted || questions.find(item => item.id === $('ask-q').dataset.pre) || (seen ? questions[Math.floor(Date.now() / 864e5) % GENTLE] : questions[0]));
   size();
   requestAnimationFrame(frame);
 })();

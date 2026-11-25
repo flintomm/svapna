@@ -1,7 +1,7 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { questions, slugify, SECOND, REGIONS } from '../../lib/atlas.js';
+import { questions, slugify, SECOND, REGIONS, TRADITIONS } from '../../lib/atlas.js';
 export function getStaticPaths() { return questions.map(q => ({ params: { id: q.id }, props: { q } })); }
 const { q } = Astro.props;
 const scored = q.steps.filter(s => s.tone !== 'none');
@@ -11,8 +11,12 @@ const total = q.placed.length, first = q.placed[0], last = q.placed.at(-1);
 const mid = scored[Math.floor(scored.length / 2)];
 const lead = q.placed.find(c => c.second === 'agreed' && c.score === mid.id && c.excerpt.length < 170 && !c.translation) || q.placed.find(c => c.second === 'agreed' && c.excerpt.length < 170);
 const HEAVY = { death: true, suffering: true };
+const traditions = TRADITIONS.filter(t => q.placed.some(c => c.tradition === t));
 const regions = REGIONS.filter(([id]) => q.placed.some(c => c.region === id));
-const cite = c => `“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.sourceUrl}`;
+const cite = c => `“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.readUrl}`;
+// A few short passages, one for each answer and from different traditions, chosen by hand for reading aloud with a child.
+const CHILD = { death: ['confucius-death', 'barbauld-death', 'tiruvalluvar-death', 'bhagavad-gita-death', 'epictetus-death'] };
+const childSet = (CHILD[q.id] || []).map(id => q.placed.find(c => c.id === id)).filter(Boolean);
 const words = q.plain.split(' '), cut = Math.max(1, words.length - 3);
 const desc = `${q.plain} ${total} passages from ${first.dateShort} to ${last.dateShort}, in their authors’ own words: ${scored.map(s => `${count(s)} say “${s.plain.toLowerCase()}”`).join(', ')}.`;
 const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: q.plain, description: desc, url: `https://svapnaproject.org/questions/${q.id}`,
@@ -24,11 +28,20 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
   <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words. Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</p>
   {lead && <figure class="lead-voice"><blockquote>“{lead.excerpt}”</blockquote><figcaption><a href={`#${lead.id}`}>{lead.name}</a> · {lead.dateShort} · one of {total} voices</figcaption></figure>}
   {HEAVY[q.id] && <p class="def gentle">Some people arrive at this question because of a loss, or a hard stretch. What follows is other people’s words across four thousand years, not answers, and they do not agree. Start anywhere. If things are heavy right now and it would help to talk to someone, <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free, confidential lines in most countries.</p>}
+  {childSet.length > 0 && (
+    <details class="child-set">
+      <summary>Reading this with a child?</summary>
+      <p class="def">Children often ask this plainly and want a plain answer. People have believed different things, and it is fair to say so, and to say what you believe yourself. These {childSet.length} are short, come from different traditions, and do not agree with each other. Read them in your own words.</p>
+      {childSet.map(c => <figure><blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.translation || c.excerpt}”</blockquote><figcaption><a href={`#${c.id}`}>{c.name}</a> · {c.place.split(',').slice(-1)[0].trim()} · {c.dateShort}</figcaption></figure>)}
+    </details>
+  )}
   <a class="go" href={`/#${q.id}`}>Answer it and see the world light up →</a>
   <div class="tally" aria-hidden="true">{q.steps.map(s => count(s) > 0 && <i style={`flex:${count(s)};background:var(--${s.tone})`}></i>)}</div>
   <div class="find" id="find"><input id="find-q" type="search" placeholder="Find a name, a place or a word" aria-label="Find a name, a place or a word" /><span class="find-eras">{[['all', 'All of time'], ['a', 'Before 1 CE'], ['b', '1–1500'], ['c', '1500–1900'], ['d', 'Since 1900']].map(([id, label]) => <button type="button" data-era={id} aria-pressed={String(id === 'all')}>{label}</button>)}</span><span class="small" id="find-n" aria-live="polite"></span>
     <span class="find-eras find-regions"><button type="button" data-region="all" aria-pressed="true">Everywhere</button>{regions.map(([id, label]) => <button type="button" data-region={id} aria-pressed="false">{label}</button>)}</span>
+    <label class="find-t"><span class="small">Tradition</span> <select id="find-t"><option value="">Any</option>{traditions.map(t => <option value={t}>{t}</option>)}</select></label>
     <span class="find-do"><button type="button" id="find-link">Copy a link to this set</button><button type="button" id="find-print">Print it</button><span class="small" id="find-ok" role="status"></span></span></div>
+  <p class="small tally-note">A count of the passages gathered here so far. It is not a vote, and no answer is ranked above another.</p>
   <p class="keys">{q.steps.map(s => count(s) > 0 && <a href={`#${s.id}`}><span class="dot" style={`--c:var(--${s.tone})`}></span><b>{count(s)}</b> {s.plain.toLowerCase()}{s.tone === 'none' ? ' (does not fit the scale)' : ''}</a>)}</p>
 
   {q.steps.map(s => count(s) > 0 && (
@@ -37,9 +50,9 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
       <p class="def">{s.definition}</p>
       <div class="rows">
         {q.placed.filter(c => c.score === s.id).map(c => (
-          <article class="row" id={c.id} data-y={c.sortYear} data-r={c.region}>
+          <article class="row" id={c.id} data-y={c.sortYear} data-r={c.region} data-t={c.tradition}>
             <div>
-              <blockquote>“{c.excerpt}”</blockquote>
+              <blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.excerpt}”</blockquote>
               {c.translation && <p class="tr">{c.translation}</p>}
               <p class="why">{c.why}</p>
               {SECOND[c.second] && <p class={`twice ${c.second}`}>{SECOND[c.second]}</p>}
@@ -47,10 +60,11 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
             <div class="who">
               <a class="name" href={`/thinkers/${slugify(c.name)}#${c.id}`}>{c.name}</a>
               <p>{c.place}</p><p>{c.dateShort}</p><p>{c.work}</p>
-              <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+              <a class="src" href={c.readUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+              <button class="src quiet say" type="button" data-say={`${c.translation || c.excerpt} ${c.name}.`} hidden>Listen</button>
               <button class="src quiet" type="button" data-copy={cite(c)}>Copy with citation</button>
               <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${slugify(c.name)}#${c.id}`}>Keep this passage</button>
-              <a class="src quiet" href={`/about/contact?about=${q.id}:${c.id}`} rel="nofollow">Disagree?</a>
+              <a class="src quiet" href={`/about/contact?about=${q.id}:${c.id}`} rel="nofollow">Correct or disagree?</a>
             </div>
           </article>
         ))}
@@ -60,22 +74,22 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
   <p class="def" style="margin-top:60px">How passages are checked and placed, and how far to trust a placement: <a href="/how-it-works">how Svapna works</a>.</p>
   <script is:inline>
     (function () {
-      var q = document.getElementById('find-q'), n = document.getElementById('find-n'), rows = [].slice.call(document.querySelectorAll('.row[data-y]')), era = 'all', region = 'all', text = rows.map(function (r) { return r.textContent.toLowerCase(); });
+      var q = document.getElementById('find-q'), n = document.getElementById('find-n'), rows = [].slice.call(document.querySelectorAll('.row[data-y]')), era = 'all', region = 'all', ts = document.getElementById('find-t'), text = rows.map(function (r) { return r.textContent.toLowerCase(); });
       var inEra = function (y) { return era === 'all' || (era === 'a' ? y < 1 : era === 'b' ? y >= 1 && y < 1500 : era === 'c' ? y >= 1500 && y < 1900 : y >= 1900); };
       function run() {
         var w = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
-        rows.forEach(function (r, i) { var ok = inEra(+r.dataset.y) && (region === 'all' || r.dataset.r === region) && w.every(function (x) { return text[i].indexOf(x) >= 0; }); r.hidden = !ok; if (ok) shown++; });
+        rows.forEach(function (r, i) { var ok = inEra(+r.dataset.y) && (region === 'all' || r.dataset.r === region) && (!ts.value || r.dataset.t === ts.value) && w.every(function (x) { return text[i].indexOf(x) >= 0; }); r.hidden = !ok; if (ok) shown++; });
         document.querySelectorAll('main section[id]').forEach(function (s) { if (s.querySelector('.row[data-y]')) s.hidden = !s.querySelector('.row[data-y]:not([hidden])'); });
         n.textContent = shown === rows.length ? '' : shown + ' of ' + rows.length + ' passages';
-        var u = new URL(location.href); [['find', q.value.trim()], ['era', era === 'all' ? '' : era], ['region', region === 'all' ? '' : region]].forEach(function (x) { if (x[1]) u.searchParams.set(x[0], x[1]); else u.searchParams.delete(x[0]); }); history.replaceState(null, '', u.pathname + u.search + location.hash);
+        var u = new URL(location.href); [['find', q.value.trim()], ['era', era === 'all' ? '' : era], ['region', region === 'all' ? '' : region], ['tradition', ts.value]].forEach(function (x) { if (x[1]) u.searchParams.set(x[0], x[1]); else u.searchParams.delete(x[0]); }); history.replaceState(null, '', u.pathname + u.search + location.hash);
       }
-      q.addEventListener('input', run);
+      q.addEventListener('input', run); ts.addEventListener('change', run);
       var press = function (sel, key, val) { document.querySelectorAll(sel).forEach(function (x) { x.setAttribute('aria-pressed', String(x.dataset[key] === val)); }); };
       document.querySelectorAll('.find-regions button').forEach(function (b) { b.addEventListener('click', function () { region = b.dataset.region; press('.find-regions button', 'region', region); run(); }); });
       document.getElementById('find-print').addEventListener('click', function () { print(); });
       document.getElementById('find-link').addEventListener('click', function () { var ok = document.getElementById('find-ok'); navigator.clipboard.writeText(location.href.split('#')[0]).then(function () { ok.textContent = 'Link copied.'; }, function () { ok.textContent = location.href; }); setTimeout(function () { ok.textContent = ''; }, 2600); });
       // A shared link restores the same set.
-      (function () { var sp = new URLSearchParams(location.search), f = sp.get('find'), e = sp.get('era'), r = sp.get('region'); if (!f && !e && !r) return; if (f) q.value = f.slice(0, 80); if (/^[abcd]$/.test(e || '')) { era = e; press('.find-eras:not(.find-regions) button', 'era', era); } if (r && document.querySelector('.find-regions button[data-region="' + r.replace(/[^a-z]/g, '') + '"]')) { region = r; press('.find-regions button', 'region', region); } run(); })();
+      (function () { var sp = new URLSearchParams(location.search), f = sp.get('find'), e = sp.get('era'), r = sp.get('region'), t = sp.get('tradition'); if (!f && !e && !r && !t) return; if (t) { ts.value = t; if (ts.value !== t) ts.value = ''; } if (f) q.value = f.slice(0, 80); if (/^[abcd]$/.test(e || '')) { era = e; press('.find-eras:not(.find-regions) button', 'era', era); } if (r && document.querySelector('.find-regions button[data-region="' + r.replace(/[^a-z]/g, '') + '"]')) { region = r; press('.find-regions button', 'region', region); } run(); })();
       document.querySelectorAll('.find-eras:not(.find-regions) button').forEach(function (b) { b.addEventListener('click', function () { era = b.dataset.era; press('.find-eras:not(.find-regions) button', 'era', era); run(); }); });
     })();
   </script>

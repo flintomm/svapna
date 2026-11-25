@@ -1,6 +1,9 @@
 ---
 import Read from '../layouts/Read.astro';
 import PlainForm from '../components/PlainForm.astro';
+import { cards, thinkers, questions } from '../lib/atlas.js';
+import { lessonsByModule } from '../lib/lessons.js';
+const lessons = Object.values(lessonsByModule).reduce((n, l) => n + l.length, 0);
 ---
 <Read title="Support Svapna — free to read, kept open by its readers" description="Svapna is free and donation-supported, in the spirit of dāna. A coffee covers hosting; sharing it or writing for the library helps as much." path="/support" crumbs={[{ name: 'Support', path: '/support' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · Support</p>
@@ -15,6 +18,11 @@ import PlainForm from '../components/PlainForm.astro';
       <div><b>Write for the library</b><div><p>Pitch an essay on a tradition, a text or a finding the library is missing.</p><PlainForm id="pitch" subject="[Library] Pitch" button="Send the pitch" messageLabel="The idea, in a few lines" done="Thank you. The pitch has arrived." /></div></div>
       <div><b>Correct it</b><div><p>A wrong quote, date, place or reading is worth more than a coffee.</p><a class="go" href="/about/contact">Send a correction →</a></div></div>
     </div>
+  </section>
+
+  <section>
+    <h2>What it keeps open</h2>
+    <p class="def">{cards.length} passages from {thinkers.length} thinkers and texts, each checked against its source; {questions.length} questions; {lessons} lessons on the history of dreaming; a glossary and a library. All of it free to read, with no advertising and nothing sold. <a href="/how-it-works">How it is made</a>.</p>
   </section>
 
   <section>

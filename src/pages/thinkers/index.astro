@@ -1,6 +1,6 @@
 ---
 import Read from '../../layouts/Read.astro';
-import { thinkers, REGIONS } from '../../lib/atlas.js';
+import { thinkers, REGIONS, TRADITIONS } from '../../lib/atlas.js';
 const regions = REGIONS.map(([id, label]) => [id, label, thinkers.filter(t => t.region === id).length]).filter(r => r[2]);
 const letters = [...new Set(thinkers.map(t => (t.sort[0] || '#').toUpperCase()))];
 ---
@@ -10,26 +10,27 @@ const letters = [...new Set(thinkers.map(t => (t.sort[0] || '#').toUpperCase()))
   <p class="lede">Every thinker and text in the atlas, from about 2400 BCE to today. Each page gathers that voice’s own words on the questions, where they were written, and where to read them.</p>
   <div class="find"><input id="find-q" type="search" placeholder="Find a thinker or a text" aria-label="Find a thinker or a text" /><span class="small" id="find-n" aria-live="polite"></span>
     <span class="find-eras find-regions"><button type="button" data-region="all" aria-pressed="true">Everywhere</button>{regions.map(([id, label, n]) => <button type="button" data-region={id} aria-pressed="false">{label} · {n}</button>)}</span>
+    <label class="find-t"><span class="small">Tradition</span> <select id="find-t"><option value="">Any</option>{TRADITIONS.map(t => <option value={t}>{t} · {thinkers.filter(x => x.tradition === t).length}</option>)}</select></label>
     <a class="small" id="find-all" href="/search">Search every passage for a word →</a></div>
   <div class="index" id="index">
     {letters.map(L => (
       <>
         <p class="letter">{L}</p>
-        {thinkers.filter(t => (t.sort[0] || '#').toUpperCase() === L).map(t => <a href={`/thinkers/${t.slug}`} data-r={t.region}>{t.name}<span>{t.when}</span></a>)}
+        {thinkers.filter(t => (t.sort[0] || '#').toUpperCase() === L).map(t => <a href={`/thinkers/${t.slug}`} data-r={t.region} data-t={t.tradition}>{t.name}<span>{t.when}</span></a>)}
       </>
     ))}
   </div>
   <script is:inline>
     (function () {
       var q = document.getElementById('find-q'), n = document.getElementById('find-n'), box = document.getElementById('index'), items = [].slice.call(box.querySelectorAll('a')), fold = function (t) { return t.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }, text = items.map(function (a) { return fold(a.textContent); });
-      var region = 'all', all = document.getElementById('find-all');
+      var region = 'all', all = document.getElementById('find-all'), ts = document.getElementById('find-t');
       function run() {
-        var w = fold(q.value.trim()), shown = 0; items.forEach(function (a, i) { var ok = (!w || text[i].indexOf(w) >= 0) && (region === 'all' || a.dataset.r === region); a.hidden = !ok; if (ok) shown++; });
-        var narrowed = Boolean(w) || region !== 'all'; box.querySelectorAll('.letter').forEach(function (l) { l.hidden = narrowed; });
+        var w = fold(q.value.trim()), shown = 0; items.forEach(function (a, i) { var ok = (!w || text[i].indexOf(w) >= 0) && (region === 'all' || a.dataset.r === region) && (!ts.value || a.dataset.t === ts.value); a.hidden = !ok; if (ok) shown++; });
+        var narrowed = Boolean(w) || region !== 'all' || Boolean(ts.value); box.querySelectorAll('.letter').forEach(function (l) { l.hidden = narrowed; });
         n.textContent = narrowed ? shown + ' of ' + items.length : '';
         all.href = '/search' + (w ? '?q=' + encodeURIComponent(q.value.trim()) : ''); all.textContent = w ? 'Search every passage for “' + q.value.trim() + '” →' : 'Search every passage for a word →';
       }
-      q.addEventListener('input', run);
+      q.addEventListener('input', run); ts.addEventListener('change', run);
       document.querySelectorAll('.find-regions button').forEach(function (b) { b.addEventListener('click', function () { region = b.dataset.region; document.querySelectorAll('.find-regions button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); run(); }); });
     })();
   </script>

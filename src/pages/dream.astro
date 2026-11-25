@@ -43,7 +43,7 @@ const layers = spec.map(l => ({
   ...l,
   terms: l.terms.map(([who, term, slug]) => ({ who, term, href: slug && getGlossaryTerm(slug) ? `/glossary/${getGlossaryTerm(slug).slug}` : null })),
   quotes: l.quotes.map(id => Q[id]).filter(Boolean).map(q => ({ text: q.text, by: q.attribution, cite: q.citation })),
-  ideas: shorts.filter(s => s.layer === l.id).map(s => { const x = getLesson(s.module, s.lesson); return { title: /^(What This|Why We Begin)/i.test(s.title) ? `${(curriculumModules[s.module - 1] || {}).title || 'The work'}, in brief` : s.title, short: s.short, href: x ? `/curriculum/module-${pad(s.module)}/${x.urlSlug}` : null }; }),
+  ideas: shorts.filter(s => s.layer === l.id).map(s => { const x = getLesson(s.module, s.lesson); return { title: /^(What This|Why We Begin)/i.test(s.title) ? `${(curriculumModules[s.module - 1] || {}).title || 'The work'}, in brief` : s.title, short: s.short, kind: s.module === 5 ? 'From the sleep laboratory' : s.module === 4 ? 'From Western writers before the laboratory' : 'From the contemplative traditions', href: x ? `/curriculum/module-${pad(s.module)}/${x.urlSlug}` : null }; }),
 }));
 const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).map(e => ({ date: e.date.replace(/^(\d{4})-\d\d-\d\d$/, '$1'), title: e.title, tradition: e.tradition, summary: e.summary }));
 ---
@@ -98,7 +98,8 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
     <p class="lede">Eight depths, from lying down to morning. At each one, what people found there over three and a half thousand years.</p>
     <a class="pill" href="#awake">Begin ↓</a>
     <p class="small intro-back" id="intro-back" hidden></p>
-    <p class="small intro-more">Or go straight to the reading: <button id="open-dates-3" type="button">every lesson, by date</button> · <a href="/glossary">the glossary</a> · <a href="/library">the library</a></p>
+    <p class="small intro-more">Here because of nightmares, or nights that have become hard? <a href="/curriculum/module-05/clinical-applications">Start with what the clinics found</a>. This is a history of what people have discovered about dreaming, not medical advice, and no technique is taught here. <a href="/about/disclaimer">Disclaimer</a>.</p>
+    <p class="small intro-more">Or go straight to the reading: <a href="/dream/lessons">every lesson, by unit</a> · <button id="open-dates-3" type="button">by date</button> · <a href="/glossary">the glossary</a> · <a href="/library">the library</a></p>
   </section>
 
   {layers.map((l, i) => (
@@ -121,7 +122,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
               <figure class="voice minor"><blockquote>“{q.text}”</blockquote><figcaption>{q.by} · {q.cite}</figcaption></figure>
             ))}
             {l.ideas.map(x => (
-              <div class="idea"><h3>{x.title}</h3><p>{x.short}</p>{x.href && <a href={x.href}>Read the full lesson</a>}</div>
+              <div class="idea"><p class="small idea-kind">{x.kind}</p><h3>{x.title}</h3><p>{x.short}</p>{x.href && <a href={x.href}>Read the full lesson</a>}</div>
             ))}
           </div>
         </details>

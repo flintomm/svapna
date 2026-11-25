@@ -37,7 +37,7 @@ const T = thinkers.map(t => {
   <div id="friend" class="you-friend" hidden></div>
   <section id="result" class="you-result" hidden>
     <p class="you-head" id="you-head"></p>
-    <p class="you-share"><button type="button" class="go" id="share">Share your match →</button><button type="button" class="go quiet" id="share-compare" title="The link carries your answers">Send a friend a link to compare →</button><span class="small" id="share-ok" role="status"></span></p>
+    <p class="you-share"><button type="button" class="go" id="share">Share your match →</button><button type="button" class="go" id="share-compare" title="The link carries your answers" hidden>Send a friend a link to compare →</button><span class="small" id="share-ok" role="status"></span></p>
     <div class="you-cols">
       <div><p class="small">Closest to you</p><div id="near"></div></div>
       <div><p class="small">Furthest from you</p><div id="far"></div></div>
@@ -139,8 +139,9 @@ const T = thinkers.map(t => {
         box.append(el('p', 'small', 'A friend sent their answers'));
         if (!both.length) { box.append(el('p', 'you-head', 'Answer the questions below to see where the two of you agree.')); return; }
         box.append(el('p', 'you-head', 'You agree on ' + same.length + ' of the ' + both.length + ' question' + (both.length === 1 ? '' : 's') + ' you have both answered.'));
-        both.forEach(function (q) { var eq = FR[q.id] === A[q.id], row = el('p', 'you-friend-row' + (eq ? ' same' : '')); row.append(el('span', '', q.plain + ' '), el('b', '', eq ? 'Both: ' + plainOf(q, A[q.id]) : 'You: ' + plainOf(q, A[q.id]) + ' · Them: ' + plainOf(q, FR[q.id]))); box.append(row); });
+        both.forEach(function (q) { var eq = FR[q.id] === A[q.id], row = el('p', 'you-friend-row' + (eq ? ' same' : '')); row.append(el('span', '', q.plain + ' '), el('b', '', eq ? 'Both: ' + plainOf(q, A[q.id]) : 'You: ' + plainOf(q, A[q.id]) + ' · Them: ' + plainOf(q, FR[q.id]))); if (!eq) { var hear = el('a', 'small', 'Hear both sides →'); hear.href = '/questions/' + q.id; row.append(hear); } box.append(row); });
         var left = Q.filter(function (q) { return FR[q.id] && !A[q.id]; }).length; if (left) box.append(el('p', 'small', left + ' more of their answers will show as you answer.'));
+        var back = el('button', 'go', 'Send your answers back, so they see this too →'); back.type = 'button'; back.addEventListener('click', function () { document.getElementById('share-compare').click(); }); box.append(back);
       }
       var LAST = null;
       function share(text, url) {
@@ -158,7 +159,7 @@ const T = thinkers.map(t => {
         stickers(n);
         var res = document.getElementById('result'), need = document.getElementById('need');
         if (n < 3) { document.getElementById('you-bar').hidden = true; res.hidden = true; need.hidden = false; need.textContent = n ? 'Answer ' + (3 - n) + ' more to see your matches.' : 'Answer three questions to see your matches.'; return; }
-        var r = rank(); need.hidden = true; res.hidden = false;
+        var r = rank(); need.hidden = true; res.hidden = false; document.getElementById('share-compare').hidden = false;
         var near = r.slice().sort(function (a, b) { return b.score - a.score || b.shared.length - a.shared.length; }).slice(0, 5);
         var far = r.slice().sort(function (a, b) { return a.score - b.score || b.shared.length - a.shared.length; }).slice(0, 5);
         var N = document.getElementById('near'), F = document.getElementById('far'); N.textContent = ''; F.textContent = '';

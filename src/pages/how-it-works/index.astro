@@ -25,6 +25,8 @@ const sample = questions[0];
     <p>A passage is placed where its own words put it. The rule is strict: the excerpt itself must support the position. What the author is known for, or what the surrounding chapter argues, is not enough. Where the words do not settle the question, the passage is marked <em>unscored</em>, which is not a low score or a disagreement. {unscored} of {all.length} placements are unscored.</p>
     <p>Each passage also carries a note on what it does not show: the genre, the translation, the speaker (a character in a play is not the playwright), and what the author says elsewhere.</p>
 
+    <p>Scriptures are quoted the same way as any other text, from a named translation, and placed by their own words. That is a statement about one passage, not a judgement of a faith, and a tradition’s scripture often sits at more than one position. The Bible is quoted from the King James Version because it is in the public domain and can be checked word for word; where another translation is used, the passage names it. The counts on each question’s page describe what has been gathered so far. They are not a vote, and nothing is ranked.</p>
+
     <h2>3. Who does the reading</h2>
     <p>The passages were gathered and first placed by AI research agents working to a written brief, under the direction of the independent researcher who runs the site. No human editor has yet reviewed the placements one by one, and no page on the site claims otherwise.</p>
 
@@ -45,15 +47,18 @@ const sample = questions[0];
     <p>Each passage is pinned where it was written, taught or delivered. Some pins cite a page that states the place; others are a traditional association or still await confirmation, and each passage’s page says which. Dates of ancient texts are approximate and marked “c.”.</p>
     <p>The {links.length} connections between thinkers are documented ones only: one thinker citing, answering or writing to another, with the caveat that applies. Similar ideas are not shown as influence.</p>
 
+    <p>The one-line description under each thinker’s name, and the tradition each is filed under, were written by machine for orientation. They are not sources; the passages are. A voice is filed under one tradition for browsing, which is cruder than the truth for many of them.</p>
+
     <h2 id="coverage">7. Where the atlas is thin</h2>
     <p>The atlas is not evenly spread, and it should not be read as if it were. By where each passage is pinned: {cover.map(([label, n], i) => <>{i > 0 && ', '}{label} {n}</>)}. Europe is over-represented because far more of its texts are freely readable online in a form a machine can check. Sub-Saharan Africa, Latin America and Oceania are thin, and many voices there reach the atlas only through a collector’s or missionary’s report, which each passage says. Filling these is ongoing work, and suggestions of checkable sources are welcome.</p>
 
     <h2>8. Disagree with a placement</h2>
     <p>Every passage has a “Disagree?” link. It opens a short form with the passage already named. Say where the passage should sit and why, ideally pointing at the words. Corrections to quotes, dates, places and sources go the same way. Voting on placements by members is planned; until then every message is read by a person.</p>
     <p><a href="/about/contact">Write to Svapna →</a></p>
+    <p id="credits"><strong>Corrections from readers.</strong> When a reader’s correction is used, the passage is changed and the reader is named here, if they gave a name. None has been received yet; the first will be listed here.</p>
 
     <h2>9. Check it yourself</h2>
-    <p>The whole atlas can be downloaded: every passage, its source and locator, every placement with its reason, and the outcome of the second reading. <a href="/data/atlas.json">As JSON</a> · <a href="/data/atlas.csv">as a spreadsheet (CSV)</a>. The placements and notes are offered under CC BY 4.0; the quoted passages belong to their sources.</p>
+    <p>The whole atlas can be downloaded: every passage, its source and locator, every placement with its reason, and the outcome of the second reading. <a href="/data">The data page</a> explains every column. <a href="/data/atlas.json">As JSON</a> · <a href="/data/atlas.csv">as a spreadsheet (CSV)</a>. The placements and notes are offered under CC BY 4.0; the quoted passages belong to their sources.</p>
     <p>Each passage has a fixed address that can be cited: a thinker’s page, followed by the passage’s own anchor. When citing a passage, cite the source it links to as well; Svapna is the finding aid, not the edition.</p>
     <h2 id="teachers">10. For teachers</h2>
     <p>Nothing on the site needs an account, and no student data is collected: answers stay in each student’s own browser. A lesson that works: project a question from the home page and have the class vote; open that question’s page, narrow it by era or region, and use “Copy a link to this set” or “Print it” to hand out five or six contrasting passages with their sources; then ask where each passage should sit on the scale, and compare with the placement and its “read twice” line. The passages are primary sources quoted briefly; the placements are the part to argue with.</p>

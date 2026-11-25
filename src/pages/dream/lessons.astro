@@ -1,0 +1,27 @@
+---
+// Every lesson, grouped in the six units of the former course. Old course addresses arrive here.
+import Read from '../../layouts/Read.astro';
+import Coffee from '../../components/Coffee.astro';
+import { curriculumModules } from '../../lib/content.js';
+import { lessonsByModule } from '../../lib/lessons.js';
+const units = curriculumModules.map(m => { const n = parseInt(m.num, 10); return { n, pad: String(n).padStart(2, '0'), title: m.title, blurb: m.blurb, lessons: lessonsByModule[String(n)] || [] }; });
+const total = units.reduce((k, u) => k + u.lessons.length, 0);
+---
+<Read title={`${total} lessons on dreaming, in six units — Svapna`} description={`All ${total} lessons on the history and practice of dreaming, from the Upaniṣads to the sleep laboratory, grouped in six units.`} path="/dream/lessons" crumbs={[{ name: 'Dreaming', path: '/dream' }, { name: 'Lessons', path: '/dream/lessons' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/dream">Dreaming</a></p>
+  <h1>{total} lessons, <em>in six units.</em></h1>
+  <p class="lede">The course that used to live here is now part of Dreaming. Nothing was removed: every lesson is below, in its original unit and order. Lessons read on this device are marked.</p>
+  <p><a class="go" href="/dream">Or sink through one night →</a></p>
+  {units.map(u => (
+    <section id={`unit-${u.pad}`}>
+      <h2 class="h-src">{u.n}. {u.title}</h2>
+      <p class="def">{u.blurb}</p>
+      <div class="index" style="margin-top:22px">{u.lessons.map((l, i) => <a href={`/curriculum/module-${u.pad}/${l.urlSlug}`}>{l.title}<span>{u.n}.{i + 1}</span></a>)}</div>
+    </section>
+  ))}
+  <p class="def" style="margin-top:60px">These lessons describe what people have found and written. They are not medical advice. <a href="/about/disclaimer">Disclaimer</a>.</p>
+  <Coffee />
+  <script is:inline>
+    (function () { var read = []; try { read = JSON.parse(localStorage.getItem('svapna_read') || '[]') || []; } catch (e) {} document.querySelectorAll('.index a').forEach(function (a) { if (read.indexOf(a.getAttribute('href')) >= 0) a.querySelector('span').textContent += ' · read'; }); if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); } })();
+  </script>
+</Read>

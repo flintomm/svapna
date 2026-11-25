@@ -33,7 +33,13 @@ export const regionOf = c => { const a = c.lat, o = c.lng;
   if (o < 100) return 'sasia';
   return a > -10 ? 'easia' : 'oceania'; };
 export const regionName = id => (REGIONS.find(r => r[0] === id) || [])[1] || '';
-export const cards = data.cards.map(c => ({ ...c, region: regionOf(c) }));
+// The checker reads a plain-text mirror of Project Gutenberg; readers are sent to the book's own page there.
+export const readUrl = u => { const m = /^https:\/\/gutenberg\.pglaf\.org\/(?:\d\/)*(\d+)\/\1[-.]/.exec(u); return m ? 'https://www.gutenberg.org/ebooks/' + m[1] : u; };
+// The language of a passage quoted in its original, where the source makes it plain.
+const langOf = c => { if (!c.translation) return null; const h = (/^https?:\/\/([a-z]{2})\.wikisource\.org/.exec(c.sourceUrl) || [])[1]; if (h && h !== 'en') return h; if (/[\u3040-\u30ff]/.test(c.excerpt)) return 'ja'; if (/[\u4e00-\u9fff]/.test(c.excerpt)) return 'zh'; if (/[\u0600-\u06ff]/.test(c.excerpt)) return 'ar'; if (/projekt-gutenberg\.org/.test(c.sourceUrl)) return 'de'; return 'und'; };
+// A one-line account of each voice and the tradition it belongs to: written by machine, for orientation only.
+export const WHO = data.thinkers || {};
+export const cards = data.cards.map(c => ({ ...c, tradition: (WHO[c.name] || {}).tradition || 'Other', region: regionOf(c), readUrl: readUrl(c.sourceUrl), lang: langOf(c), checked: c.check && c.check.status === 'matched' ? c.check.date : null }));
 export const links = data.links || [];
 export const questions = data.questions
   .map(q => {
@@ -65,7 +71,7 @@ export const thinkers = [...bySlug.values()].map(t => {
     const out = l.from.includes(t.name), other = (out ? l.to : l.from)[0];
     return { out, verb: l.verb, year: l.year, summary: l.summary, caveat: l.caveat, other, otherSlug: slugify(other) };
   });
-  return { ...t, own, ties, when: own[0].dateShort, where: own[0].place, region: own[0].region, sort: slugify(t.name.replace(/^(the|al-|a) /i, '')) };
+  return { ...t, own, ties, when: own[0].dateShort, where: own[0].place, region: own[0].region, about: (WHO[t.name] || {}).about || '', tradition: (WHO[t.name] || {}).tradition || 'Other', sort: slugify(t.name.replace(/^(the|al-|a) /i, '')) };
 }).sort((a, b) => a.sort.localeCompare(b.sort));
 export const thinkerOf = name => bySlug.get(slugify(name));
 export const TONE = { low: '#2654ff', mid: '#ffb200', high: '#00b894', none: '#8a8fa3' };
@@ -115,3 +121,5 @@ export const SECOND = {
   settled: 'Read twice: the readers differed, and a third reading settled it.',
   differed: 'Read twice: the readers differed, and it could sit either way.',
 };
+
+export const TRADITIONS = [...new Set(cards.map(c => c.tradition))].sort((a, b) => (a === 'Other') - (b === 'Other') || a.localeCompare(b));

@@ -17,7 +17,7 @@ const { id, subject = '', askSubject = false, button = 'Send', done = 'Thank you
   (function () {
     var f = document.getElementById(id), done = document.getElementById(id + '-done'), note = f.querySelector('.note'), btn = f.querySelector('button');
     function say(t) { note.textContent = t; note.hidden = !t; }
-    try { var about = new URLSearchParams(location.search).get('about'); if (about && f.subject && /^[a-z0-9:-]{3,120}$/.test(about)) { f.subject.value = 'Placement: ' + about; f.message.placeholder = 'Where should this passage sit, and which words say so?'; f.scrollIntoView({ block: 'center' }); } } catch (e) {}
+    try { var about = new URLSearchParams(location.search).get('about'); if (about && f.subject && /^[a-z0-9:-]{3,120}$/.test(about)) { var kinds = ['Where it is placed', 'The translation', 'A date or a place', 'The source or the quote', 'Something else'], lab = document.createElement('label'), sel = document.createElement('select'); lab.textContent = 'What is it about?'; lab.htmlFor = id + '-kind'; sel.id = id + '-kind'; kinds.forEach(function (k) { var o = document.createElement('option'); o.textContent = k; sel.append(o); }); f.subject.previousElementSibling.before(lab, sel); var setS = function () { f.subject.value = sel.value + ': ' + about; }; sel.addEventListener('change', setS); setS(); f.message.placeholder = 'What should change, and what shows it? A correction that is used is credited by name, if a name is given.'; f.scrollIntoView({ block: 'center' }); } } catch (e) {}
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!f.name.value.trim() || !f.email.value.trim() || !f.message.value.trim()) { say('Name, email and message are needed.'); return; }

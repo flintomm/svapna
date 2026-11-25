@@ -3,9 +3,10 @@
 // Used as the home page and, unlisted, at /next for comparing looks.
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
 import evidence from '../../public/globe-of-thought/evidence.js?raw';
-import { questions as ordered } from '../lib/atlas.js';
+import { questions as ordered, cards as allCards } from '../lib/atlas.js';
+const atlasCount = allCards.length;
 // The opening question is written by a few lines in the page itself, so it never waits for the globe to load.
-const opening = ordered.map(q => ({ id: q.id, p: q.plain, a: q.steps.filter(s => s.tone !== 'none').map(s => [s.id, s.plain]) }));
+const opening = { total: atlasCount, q: ordered.map(q => ({ id: q.id, p: q.plain, a: q.steps.filter(s => s.tone !== 'none').map(s => [s.id, s.plain]) })) };
 
 interface Props { indexable?: boolean }
 const { indexable = false } = Astro.props;
@@ -71,16 +72,22 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <div id="ask-answers" class="answers"></div>
     <button id="ask-skip" class="mono link" type="button">Just show me the world</button>
     <button id="ask-globe" class="mono link" type="button" style="margin-left:26px">Turn the globe through time</button>
+    <a class="mono link made" href="/how-it-works">How this was made</a>
   </section>
 
   <script is:inline type="application/json" id="opening" set:html={JSON.stringify(opening)}></script>
   <script is:inline>
     (function () {
-      var Q = JSON.parse(document.getElementById('opening').textContent), seen = false; try { seen = localStorage.getItem('svapna_next_seen') === '1'; } catch (e) {}
-      var q = Q.filter(function (x) { return '#' + x.id === location.hash; })[0] || (seen ? Q[Math.floor(Date.now() / 864e5) % 6] : Q[0]);
+      var O = JSON.parse(document.getElementById('opening').textContent), Q = O.q, seen = false, mine = {}, before = 0;
+      try { seen = localStorage.getItem('svapna_next_seen') === '1'; mine = JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}; before = +localStorage.getItem('svapna_seen_count') || 0; localStorage.setItem('svapna_seen_count', O.total); } catch (e) {}
+      // Someone who has been before is met on a question they have not answered yet.
+      var left = Q.filter(function (x) { return !mine[x.id]; }), done = Q.length - left.length;
+      var q = Q.filter(function (x) { return '#' + x.id === location.hash; })[0] || (done && left.length ? left[0] : seen ? Q[Math.floor(Date.now() / 864e5) % 6] : Q[0]);
       var h = document.getElementById('ask-q'), parts = q.p.split(' '), cut = Math.max(1, parts.length - 3), lead = document.createElement('span'), em = document.createElement('em');
       lead.textContent = parts.slice(0, cut).join(' ') + ' '; em.textContent = parts.slice(cut).join(' '); h.append(lead, em); h.dataset.pre = q.id;
-      document.getElementById('ask-count').textContent = 'Welcome. Start with a question.';
+      var hello = document.getElementById('ask-count'), fresh = before && O.total > before ? ' ' + (O.total - before) + ' new voices since your last visit.' : '';
+      if (!done) hello.textContent = seen ? 'Welcome back.' + fresh : 'Welcome. Start with a question.';
+      else { hello.textContent = left.length ? 'Welcome back. ' + done + ' answered, ' + left.length + ' to go.' + fresh + ' ' : 'Welcome back. You have answered all ' + Q.length + '.' + fresh + ' '; var y = document.createElement('a'); y.href = '/you'; y.textContent = 'See who thinks like you →'; y.style.textDecoration = 'underline'; hello.append(y); }
       var box = document.getElementById('ask-answers');
       q.a.forEach(function (a) { var b = document.createElement('button'); b.type = 'button'; b.append(document.createElement('i'), a[1]);
         b.addEventListener('click', function () { window.__svapnaAnswer = [q.id, a[0]]; [].forEach.call(box.children, function (x) { x.style.opacity = x === b ? 1 : .35; }); document.getElementById('ask-count').textContent = 'One moment. The world is arriving.'; }); box.append(b); });
@@ -103,6 +110,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <p class="voice-links mono">
       <a id="voice-source" target="_blank" rel="noopener">Read it at the source ↗</a>
       <a id="voice-atlas">Why it sits here</a>
+      <button id="voice-say" type="button" hidden>Listen</button>
     </p>
   </section>
 </main>
@@ -132,6 +140,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <button id="close-menu" class="mono" type="button">Close</button>
   <p class="mono dim">Fourteen questions</p>
   <ol id="menu-list"></ol>
+  <p class="mono dim menu-made">Every quote is checked against its source. Where each one sits was read by machine, twice, and not yet by a human editor. <a href="/how-it-works">How this was made →</a></p>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
     <li><a href="#globe" id="menu-globe">The globe through time</a></li>

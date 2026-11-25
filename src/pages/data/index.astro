@@ -1,0 +1,24 @@
+---
+// The atlas as data: what is in the files, what each column means, and what may be done with them.
+import Read from '../../layouts/Read.astro';
+import { cards, questions, links } from '../../lib/atlas.js';
+const placements = cards.reduce((n, c) => n + Object.keys(c.readings).length, 0), today = new Date().toISOString().slice(0, 10);
+const cols = [['passage_id', 'A fixed identifier for the passage. It is also the anchor on the thinker’s page.'], ['thinker', 'The person or text, as named in the atlas.'], ['work', 'The work and, where given, the section the words come from.'], ['date', 'When it was written or spoken, as shown on the site. Ancient dates are approximate.'], ['sort_year', 'A single year used to put passages in order. Negative is BCE. Approximate for ancient texts.'], ['place', 'Where the passage is pinned: where it was written, taught or delivered.'], ['lat, lng', 'The pin, in decimal degrees.'], ['question', 'Which of the ' + questions.length + ' questions this placement is for. A passage can be placed on more than one.'], ['position', 'Where the passage sits on that question’s three-step scale, or “unscored” where its words do not settle it.'], ['second_reading', 'The outcome of the second, independent reading: agreed, settled (a third reading decided) or differed (still open).'], ['excerpt', 'The quoted words, exactly as they appear at the source, in the language of the source.'], ['translation', 'The atlas’s own unreviewed English, where the excerpt is not in English.'], ['why', 'The reason for the placement.'], ['source_url', 'The page the excerpt was checked against.']];
+---
+<Read title="The atlas as data: download and column guide — Svapna" description={`Download all ${cards.length} passages and ${placements} placements as JSON or CSV, with a guide to every column and the licence.`} path="/data" crumbs={[{ name: 'Data', path: '/data' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/how-it-works">How it works</a></p>
+  <h1>The atlas, <em>as data.</em></h1>
+  <p class="lede">{cards.length} passages, {placements} placements across {questions.length} questions, and {links.length} documented connections. This copy was built on {today}.</p>
+  <p><a class="go big" href="/data/atlas.csv" download={`svapna-atlas-${today}.csv`}>Spreadsheet (CSV) ↓</a></p>
+  <p><a class="go" href="/data/atlas.json" download={`svapna-atlas-${today}.json`}>Everything, with scales and connections (JSON) ↓</a></p>
+  <section>
+    <h2>The columns</h2>
+    <p class="def">The spreadsheet has one row for each placement. The JSON holds the same fields grouped by passage, plus each question’s scale with its definitions, what each passage does not show, the locator within the source, and the connections.</p>
+    <div class="rows" style="margin-top:34px">{cols.map(([k, v]) => <div class="row term"><div><p class="term-name" style="font-size:20px">{k}</p></div><div><p class="term-def">{v}</p></div></div>)}</div>
+  </section>
+  <section>
+    <h2>What may be done with it</h2>
+    <p class="def">The placements, reasons and notes are offered under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: use them for anything, with credit to the Svapna Project and a link. The quoted passages belong to their sources; most are in the public domain, and each row links to where it came from.</p>
+    <p class="def">The data changes as passages are added and placements corrected. Quote the date above when citing a copy. Placements are machine readings that have been read twice and not yet reviewed by a human editor; <a href="/how-it-works">how it works</a> says how far to trust them, and <a href="/how-it-works/changes">the change record</a> lists what has moved.</p>
+  </section>
+</Read>

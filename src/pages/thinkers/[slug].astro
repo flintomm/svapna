@@ -14,28 +14,32 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
   <h1>{t.name}</h1>
   <p class="lede">{t.where} · {t.when}{n > 1 ? ` · ${n} passages` : ''}. {qs.length === 1 ? 'One question answered' : `${qs.length} questions answered`}, in this voice’s own words.</p>
 
+  {t.about && <p class="who-line">{t.about} <span class="small">{t.tradition !== 'Other' ? t.tradition : ''}</span></p>}
+
   <div class="rows" style="margin-top:56px">
     {t.own.map(c => {
       const places = t.passages.filter(p => p.card.id === c.id), home = places.find(p => p.home) || places[0];
       return (
         <article class="row" id={c.id}>
           <div>
-            <blockquote>“{c.excerpt}”</blockquote>
+            <blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.excerpt}”</blockquote>
             {c.translation && <p class="tr">{c.translation}</p>}
             {places.map(p => (
               <div style="margin-top:22px">
                 <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}#${c.id}`}>{p.question.plain}</a> {p.step.plain}</p>
                 <p class="why">{p.why}</p>
-                {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]} <a href={`/about/contact?about=${p.question.id}:${c.id}`} rel="nofollow">Disagree?</a></p>}
+                {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]} <a href={`/about/contact?about=${p.question.id}:${c.id}`} rel="nofollow">Correct or disagree?</a></p>}
               </div>
             ))}
             <p class="why"><b>What it doesn’t show.</b> {home.limit}</p>
           </div>
           <div class="who">
             <p>{c.work}</p><p>{c.dateFull || c.dateShort}</p><p>{c.place}</p><p>{c.sourceLabel}</p>
-            <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+            <a class="src" href={c.readUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+            {c.checked && <p class="small">Quote checked against the source on {c.checked}</p>}
+            <button class="src quiet say" type="button" data-say={`${c.translation || c.excerpt} ${c.name}.`} hidden>Listen</button>
             <a class="src" href={`/#${home.question.id}`}>See it on the world →</a>
-            <button class="src quiet" type="button" data-copy={`“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.sourceUrl}`}>Copy with citation</button>
+            <button class="src quiet" type="button" data-copy={`“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.readUrl}`}>Copy with citation</button>
             <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${t.slug}#${c.id}`}>Keep this passage</button>
           </div>
         </article>

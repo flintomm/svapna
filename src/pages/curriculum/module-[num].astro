@@ -2,4 +2,4 @@
 import Forward from '../../components/Forward.astro';
 export function getStaticPaths() { return ['01', '02', '03', '04', '05', '06'].map(num => ({ params: { num } })); }
 ---
-<Forward to="/dream" name="Dreaming" />
+<Forward to={`/dream/lessons#unit-${Astro.params.num}`} name="The lessons" />

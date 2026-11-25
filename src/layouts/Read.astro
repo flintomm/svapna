@@ -26,6 +26,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 {crumbs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(buildCrumbs(siteUrl, crumbs)))} />}
 {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 <script is:inline>
+  (function () { try { if (localStorage.getItem('svapna_type') === 'plain') document.documentElement.dataset.type = 'plain'; } catch (e) {} })();
   (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,8 +43,8 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <main><slot /></main>
 <footer class="foot">
   <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a><a href="/search">Search</a></p>
-  <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/how-it-works">How it works</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
-  <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet. <a href="/how-it-works">How it works</a>.</p>
+  <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/how-it-works">How it works</a><a href="/data">Data</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
+  <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet. <a href="/how-it-works">How it works</a>. Quotes were checked in the language shown; a browser’s translation of them is not the checked text. <button type="button" id="type">Plainer type</button></p>
 </footer>
 <script is:inline>
   (function () { var b = document.getElementById('mode'), r = document.documentElement; function paint() { b.textContent = r.dataset.mode === 'light' ? 'Night' : 'Light'; }
@@ -54,6 +55,12 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
   (function () {
     var get = function (k) { try { return JSON.parse(localStorage.getItem(k) || '[]') || []; } catch (e) { return []; } }, set = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
     if (location.pathname.indexOf('/curriculum/module-') === 0) { var read = get('svapna_read'), here = location.pathname.replace(/\/$/, ''); if (read.indexOf(here) < 0) { read.push(here); set('svapna_read', read); } }
+    // Plainer type: upright, unjoined letters for the quotes, for anyone who reads them more easily that way.
+    var tb = document.getElementById('type'), root = document.documentElement; if (tb) { var tp = function () { tb.textContent = root.dataset.type === 'plain' ? 'Original type' : 'Plainer type'; }; tb.addEventListener('click', function () { if (root.dataset.type === 'plain') delete root.dataset.type; else root.dataset.type = 'plain'; try { localStorage.setItem('svapna_type', root.dataset.type || ''); } catch (e) {} tp(); }); tp(); }
+    // Listen: the device's own voice reads a passage aloud. The buttons appear only where that is possible.
+    if ('speechSynthesis' in window) { document.querySelectorAll('[data-say]').forEach(function (b) { b.hidden = false; }); var saying = null;
+      document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-say]'); if (!b) return; speechSynthesis.cancel(); if (saying === b) { saying = null; b.textContent = 'Listen'; return; } if (saying) saying.textContent = 'Listen';
+        var u = new SpeechSynthesisUtterance(b.dataset.say); u.lang = 'en'; u.rate = .92; u.onend = function () { if (saying === b) { saying = null; b.textContent = 'Listen'; } }; saying = b; b.textContent = 'Stop'; speechSynthesis.speak(u); }); }
     // Copy a passage with its citation. Rows can be added later (search), so the click is caught on the page.
     document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-copy]'); if (!b) return; var was = b.textContent, done = function (m) { b.textContent = m; setTimeout(function () { b.textContent = was; }, 2200); };
       if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(function () { done('Copied'); }, function () { done('Could not copy'); }); else done('Could not copy'); });
