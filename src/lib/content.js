@@ -659,9 +659,9 @@ export const aboutPages = {
   privacy: {
     title: 'Privacy',
     kicker: 'What is collected, where it travels, how long it stays',
-    effective: '2026-04-30',
+    effective: '2026-11-25',
     paragraphs: [
-      'The Svapna Project is a free, donation-supported educational site about dream yoga and lucid dreaming. The site is read-mostly. Where it accepts data — three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
+      'The Svapna Project is a free, donation-supported site about consciousness: the large questions people have asked for four thousand years, and the history and practice of dreaming. Most of the site is read without leaving a trace. Where it keeps or receives data — choices saved in the browser, an optional account, three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
       'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
     ],
     sections: [
@@ -675,13 +675,16 @@ export const aboutPages = {
       {
         name: 'What is collected, and why',
         paragraphs: [
-          'Three forms, one analytics request, and one donation widget. Each is described below.',
+          'Choices kept in the browser, an optional account, three forms, one analytics request, and one donation widget. Each is described below.',
           'Newsletter subscription — a single field, email address, submitted from the homepage subscribe form. The address is forwarded by the site’s Cloudflare Worker to Buttondown, which stores it on the subscriber list and uses it to deliver future newsletter dispatches. No name, no preferences, no behavioural metadata. Used only to send the newsletter.',
           'Contact form — four fields: name, email, subject, message. Submitted from the Contact page. The submission is forwarded by the Worker through Resend and delivered as email to admin@svapnaproject.org. Used to read and reply to the message.',
           'Library pitch form — three fields: name, email, message. Submitted from the Support page. Delivered by the same path as the contact form, with the subject line prefixed [Library] Pitch for inbox routing. Used to evaluate, and where appropriate develop, the editorial pitch.',
           'Pageview analytics — a single anonymous pageview event per page visited, sent to Umami Cloud. No cookies, no cross-site identifiers, no fingerprinting beyond what Umami does by default. Umami collects no personally identifiable information; it loads site-wide by default rather than behind a consent gate.',
           'Donation widget — the Support page loads the Buy Me a Coffee donation widget. The widget itself, until clicked, is a script and a small visual bubble; opening it loads the BMC interface, where a donation can be made. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details. The widget script sets browser storage on load; no other page of the site loads BMC.',
-          'No account system, no comment system, no behavioural advertising, no data sold to anyone, ever. The community surface described in the project’s spec is in build and not yet live; when it ships, this policy is updated to describe the additional data it processes (display name, post content, moderation history) before the surface accepts a single submission.',
+          'Choices saved in the browser — answers to the questions, stickers earned, the circles those answers lean toward, the light or night setting and the colour palette of the visit are saved in the browser’s own storage on the visitor’s device. They are not sent to the site or to anyone else unless the visitor signs in. Clearing the browser’s site data removes them.',
+          'An account, when one is created — signing in is optional and uses Google. Google tells the site an email address and a unique identifier for the account; the Google name and picture are not copied or shown. The account then holds the email address, a display name if the member chooses one, the member’s answers to the questions, the stickers earned, a country if the member gives one, and whether a membership has been paid for. On first sign-in, answers and stickers already saved in the browser are copied into the account. Accounts are stored with Supabase.',
+          'A membership payment, when membership opens — membership is not yet open. It will be a single payment of an amount the member chooses, taken by Stripe on Stripe’s own pages. The site never sees or stores card details. Stripe tells the site that a payment succeeded, its amount and the account it belongs to. The amount is not shown to other members.',
+          'No behavioural advertising, no data sold to anyone, ever. Members cannot see one another’s profiles or answers. When features that let members see or speak to one another are added, this policy is updated first to describe what becomes visible and to whom.',
         ],
       },
       {
@@ -691,32 +694,38 @@ export const aboutPages = {
           'Newsletter subscribers: until unsubscribe. Every dispatch carries a one-click unsubscribe link; unsubscribed addresses are removed from Buttondown’s active list and retained only as a suppression record so the address is not re-added by accident.',
           'Analytics events: per Umami Cloud’s defaults, currently a rolling retention window the operator confirms against umami.is/docs before publishing.',
           'Donation records: held by Buy Me a Coffee under BMC’s own retention schedule; the operator sees only the small amount BMC surfaces in the creator dashboard (donor handle, message, amount).',
-          'Community-surface content, when shipped: per the retention rules in the eventual community policy; this policy is updated before that surface accepts data.',
+          'Choices saved in the browser: until the visitor clears the browser’s site data.',
+          'Account data: until the member deletes the account. "Delete my account" on the member’s page removes the account and everything stored with it at once; nothing is kept back. An account that has never paid for membership and has not been used for 24 months may be removed after a warning to the account’s email address; accounts with a paid membership are kept.',
+          'Membership payment records, when membership opens: held by Stripe under Stripe’s retention schedule and as tax law requires; the site keeps only the fact, date and amount of a payment against the account.',
         ],
       },
       {
         name: 'Who it is shared with',
         paragraphs: [
-          'Five third parties carry data on the site’s behalf. None receives data for purposes beyond the function described.',
+          'The third parties below carry data on the site’s behalf. None receives data for purposes beyond the function described.',
           'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Cloudflare is certified under the EU-US Data Privacy Framework. Privacy policy: cloudflare.com/privacypolicy.',
           'Umami Cloud — pageview analytics, loaded site-wide by default. Privacy-friendly by design: no cookies, no cross-site identifiers, no PII. Umami Software, Inc. is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: umami.is/privacy.',
           'Buy Me a Coffee — donation processor and widget host. The widget loads on /support and sets browser storage. No other page of the site loads BMC. Buy Me a Coffee is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buymeacoffee.com/privacy-policy.',
           'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Buttondown is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buttondown.com/privacy.',
           'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Resend is certified under the EU-US Data Privacy Framework. Privacy policy: resend.com/legal/privacy-policy.',
+          'Supabase — stores accounts, answers and stickers, and handles sign-in. Data is held in the United States (AWS, Oregon). Privacy policy: supabase.com/privacy.',
+          'Google — confirms a member’s identity at sign-in, and learns that the member signed in to Svapna. Fonts are also loaded from Google Fonts, which receives the visitor’s IP address as any web request does. Privacy policy: policies.google.com/privacy.',
+          'Stripe — will take membership payments when membership opens. Not yet in use. Privacy policy: stripe.com/privacy.',
         ],
       },
       {
         name: 'International transfers',
         paragraphs: [
-          'All five processors are headquartered in the United States or the European Union. A submission from outside the processor’s home region is, in legal terms, an international transfer of personal data.',
+          'All of these processors are headquartered in the United States or the European Union. A submission from outside the processor’s home region is, in legal terms, an international transfer of personal data.',
           'For transfers from the UK or EEA to the United States, the operative mechanisms are the European Commission’s Standard Contractual Clauses (SCCs) where the processor offers them in its data-processing agreement, and — where the processor is self-certified — the EU-US Data Privacy Framework (DPF) and its UK extension.',
           'Where SCCs and DPF self-certification are both unavailable, the transfer is made on the basis of necessity for the contract the visitor enters into when submitting a form, with the additional safeguards the processor operates under its own privacy programme.',
+          'Account data is stored in the United States. Visitors elsewhere who create an account are sending that data to the United States.',
         ],
       },
       {
         name: 'Cookies and storage',
         paragraphs: [
-          'The site itself uses no cookies for its own purposes — no login, no preferences, no session state.',
+          'The site sets no advertising or tracking cookies. It uses the browser’s local storage for the choices described above: answers, stickers, the light or night setting and the colour palette. When a visitor signs in, the sign-in library supplied by Supabase keeps a session token in local storage so the member stays signed in; signing out removes it.',
           'Two third-party scripts may touch the visitor’s device. Umami Cloud, the analytics endpoint, is cookieless and collects no personally identifiable information; it loads site-wide. The Buy Me a Coffee donation widget loads on the Support page and sets browser storage on load; no other page of the site loads BMC.',
         ],
       },
@@ -726,12 +735,13 @@ export const aboutPages = {
           'The rights below apply to anyone who has submitted data to the site. To exercise any of them, mail admin@svapnaproject.org from the address used at submission, or include enough detail to make the record identifiable. Replies arrive when they arrive, and in any event within the timeframes the applicable law requires.',
           'Under the GDPR and UK GDPR (Articles 15–22) — access (a copy of the data and the categories, sources, recipients, and retention applicable to it); rectification (correction of inaccurate data); erasure (deletion, subject to the narrow exceptions the law preserves); restriction (a pause on processing during a dispute); portability (a machine-readable copy where processing is automated and based on consent or contract); objection (in practice equivalent to a request for erasure here, since no processing rests on legitimate interest); automated decision-making (none takes place; Article 22 is satisfied trivially); complaint (the right to complain to the supervisory authority in the data subject’s country of residence — in the UK, the ICO at ico.org.uk).',
           'Under the CCPA and CPRA, for California residents — know (the categories and specific pieces of personal information collected and the categories of third parties with whom it is shared); delete (deletion, subject to the statutory exceptions); correct (correction of inaccurate information); opt-out of sale or sharing (the site does not sell or share for cross-context behavioural advertising; the right is satisfied trivially and a "Do Not Sell or Share" link is therefore not required); limit use of sensitive personal information (none is collected; the right is satisfied trivially); non-discrimination (exercising any of these rights does not change the access, content, or quality of the site offered to the requester).',
+          'A member can see everything the account holds on the member’s own page, change the display name there, and delete the account there without writing to anyone.',
         ],
       },
       {
         name: 'Children',
         paragraphs: [
-          'The site is not directed at children under the age of 16, and no knowing collection of children’s personal data takes place. Where a submission discloses that the submitter is under 16, the data is deleted and no reply is issued except to confirm the deletion. The community surface in build is gated at 16 or 18 depending on the jurisdictional analysis the operator completes before launch.',
+          'The site is written for adults and is not directed at children under the age of 16. Accounts are not offered to anyone under 16, and an account found to belong to someone younger is removed. Where a form submission discloses that the submitter is under 16, the data is deleted and no reply is issued except to confirm the deletion.',
         ],
       },
       {
@@ -751,9 +761,9 @@ export const aboutPages = {
   terms: {
     title: 'Terms',
     kicker: 'A working set of rules that match how the project actually behaves',
-    effective: '2026-04-30',
+    effective: '2026-11-25',
     paragraphs: [
-      'These terms govern use of the Svapna Project site at svapnaproject.org. The site is a free, donation-supported educational project about dream yoga and lucid dreaming, run by an independent researcher. The terms are kept short on purpose; the goal is a working set of rules that match how the project actually behaves.',
+      'These terms govern use of the Svapna Project site at svapnaproject.org. The site is a free, donation-supported project about consciousness — the large questions people have asked for four thousand years, and the history and practice of dreaming — run by an independent researcher. The terms are kept short on purpose; the goal is a working set of rules that match how the project actually behaves.',
     ],
     sections: [
       {
@@ -765,7 +775,7 @@ export const aboutPages = {
       {
         name: '2. What the site is',
         paragraphs: [
-          'A reading site, with a newsletter, a small set of contact forms, and a donation route. Editorial content draws from primary sources in the Indian, Tibetan, Bön, Sufi, Daoist, Japanese, and Western traditions, plus the contemporary lucid-dreaming research literature. The site is not a clinical service, not a credentialing body, and not a commercial product offering.',
+          'The site has two parts. The Globe of Thought gathers short passages in which thinkers answered large questions, each quoted from a linked source and placed on a scale. Dreaming presents the history and practice of dream work across the traditions and the sleep laboratory. Both are free to read. Around them sit a newsletter, a small set of contact forms, optional accounts, and a donation route. Nothing on the site is medical, psychological, or professional advice.',
         ],
       },
       {
@@ -786,64 +796,87 @@ export const aboutPages = {
         ],
       },
       {
-        name: '5. Donations',
+        name: '5. Passages and readings',
+        paragraphs: [
+          'Every quoted passage in the Globe of Thought links to the source where its words can be read, and was checked against that source by machine. Where a passage sits on a scale, why, and what it does not show are the site’s own readings. They are drafts, not yet reviewed by an editor, and are not a verdict on any author’s whole work. Matches, circles and stickers are computed from those readings and from a visitor’s answers; they are offered as an invitation to read further, not as a description of what anyone believes.',
+          'Passages are quoted briefly for comment and study, with credit and a link. An author or rights holder who wants a passage corrected or removed can write to admin@svapnaproject.org.',
+        ],
+      },
+      {
+        name: '6. Accounts',
+        paragraphs: [
+          'An account is optional and is not offered to anyone under 16. One person, one account. The member is responsible for what is done with it. A display name must not impersonate another person or be chosen to offend. The operator may remove an account that breaks these terms. A member may delete their account at any time from the member’s own page.',
+          'An account that has never paid for membership and has not been used for 24 months may be removed, after a warning sent to the account’s email address. Accounts with a paid membership are not removed for inactivity.',
+        ],
+      },
+      {
+        name: '7. Membership',
+        paragraphs: [
+          'Membership is not yet open. When it opens, it is a single payment of an amount the member chooses, from a stated minimum, taken by Stripe. It is not a subscription and does not renew. It opens the community features of the site for as long as the site runs them; it is not a purchase of the site’s content, which stays free to read.',
+          'Membership payments are final and are not refunded, except where a payment was made in error or where applicable consumer-protection law requires a refund. The operator may end a membership for a serious or repeated breach of these terms, without refund.',
+          'Payments are made to the individual who runs the site, an independent researcher. The site is not a registered nonprofit and payments are not tax-deductible.',
+        ],
+      },
+      {
+        name: '8. Donations',
         paragraphs: [
           'Donations are processed by Buy Me a Coffee under BMC’s own terms of service and privacy policy. Donations are made to an independent researcher operating without a registered charitable status; donations are not tax-deductible in any jurisdiction.',
           'A donation is a gift in the spirit of dāna — generosity, circulation. It is not the purchase of a product or service, not a subscription, and not refund-eligible except where BMC’s own terms or applicable consumer-protection law requires a refund. Editorial content of the site is open to donors and non-donors on identical terms.',
         ],
       },
       {
-        name: '6. Acceptable use',
+        name: '9. Acceptable use',
         paragraphs: [
           'In the spirit of the Code of Conduct, and as a matter of contract under these terms, the following are not permitted — harassment, abuse, or threats directed at the operator, contributors, or any other user; impersonation of any person, including the operator; automated access or scraping that disrupts the site or evades a clear technical signal that the access is unwelcome (polite, well-rate-limited reading by archivers and search-engine crawlers is welcome); submission of unlawful content, malware, or content that infringes third-party rights; use of the site, the forms, the newsletter, or the eventual community surface to recruit for any other practice, organisation, or product, or to advertise commercial services; circumvention of access controls or security features.',
+          'Accounts must not be created by automated means. No one may attempt to read or change another member’s data, or distort the questions’ results by submitting answers that are not their own.',
         ],
       },
       {
-        name: '7. Health and educational content',
+        name: '10. Health and educational content',
         paragraphs: [
           'The site discusses contemplative practice and dream phenomena and includes summaries of psychological and neurological research. The site is not medical, psychological, or psychiatric advice. It does not diagnose, treat, or cure any condition. Where a reader’s circumstances suggest medical or mental-health relevance — sleep disorders, dissociative phenomena, substance use intersecting with sleep, ongoing psychiatric care — the right next step is a qualified clinician, not a website. The fuller disclaimer is at /about/disclaimer.',
         ],
       },
       {
-        name: '8. No warranties',
+        name: '11. No warranties',
         paragraphs: [
           'The site is provided as is and as available. The operator does not warrant that the content is free of error, that translations or paraphrases of primary sources match the originals in every nuance, that citations are exhaustive, that research summaries reflect the current state of every literature touched, or that the site will be available without interruption. Readers are encouraged to consult the cited primary sources before relying on any specific claim.',
           'To the maximum extent permitted by applicable law, all implied warranties (merchantability, fitness for a particular purpose, non-infringement, accuracy) are disclaimed.',
         ],
       },
       {
-        name: '9. Limitation of liability',
+        name: '12. Limitation of liability',
         paragraphs: [
           'To the maximum extent permitted by applicable law, the operator’s aggregate liability arising out of or related to use of the site is limited to the lesser of (a) one hundred US dollars (USD 100) or (b) the total amount, if any, the user contributed to the project in the twelve months preceding the event giving rise to the claim. The operator is not liable for indirect, incidental, special, consequential, exemplary, or punitive damages, including lost profits, lost data, or reputational harm, even if advised of the possibility of such damages.',
           'Some jurisdictions do not allow the exclusion or limitation of certain warranties or damages. Where that is the case, the limitations above apply only to the extent permitted in the relevant jurisdiction, and the user retains the rights the local law grants.',
         ],
       },
       {
-        name: '10. Indemnity',
+        name: '13. Indemnity',
         paragraphs: [
           'The user agrees to indemnify and hold harmless the operator from claims, damages, and reasonable costs (including reasonable legal fees) arising out of (a) the user’s breach of these terms or (b) content the user submitted to the site that is unlawful or infringes a third party’s rights. The indemnity is narrow on purpose; ordinary use of the site does not trigger it.',
         ],
       },
       {
-        name: '11. Termination',
+        name: '14. Termination',
         paragraphs: [
           'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 8, 9, and 10 survive termination.',
         ],
       },
       {
-        name: '12. Governing law',
+        name: '15. Governing law',
         paragraphs: [
-          'These terms are governed by the laws of the State of Delaware, United States, without regard to its conflict-of-laws provisions. Mandatory consumer-protection rights and other non-waivable rights granted by the user’s local law are not displaced by this clause; where the user’s home jurisdiction reserves exclusive jurisdiction over a particular dispute, that reservation is honoured.',
+          'These terms are governed by the laws of the State of Florida, United States, without regard to its conflict-of-laws provisions. Mandatory consumer-protection rights and other non-waivable rights granted by the user’s local law are not displaced by this clause; where the user’s home jurisdiction reserves exclusive jurisdiction over a particular dispute, that reservation is honoured.',
         ],
       },
       {
-        name: '13. Changes',
+        name: '16. Changes',
         paragraphs: [
           'The operator may update these terms. Material changes are flagged on the home page or in a newsletter dispatch before they take effect. Non-material changes are made silently, with the effective date below updated.',
         ],
       },
       {
-        name: '14. Contact',
+        name: '17. Contact',
         paragraphs: [
           'Mail about these terms, requests for permission beyond CC BY 4.0, and notices of any kind land at admin@svapnaproject.org.',
         ],
