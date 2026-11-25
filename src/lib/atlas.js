@@ -30,7 +30,9 @@ export const questions = data.questions
   .map(q => {
     const scored = q.scale.filter(s => s.tone !== 'none');
     const steps = q.scale.map(s => ({ ...s, plain: WARM[q.id] && scored.includes(s) ? WARM[q.id][1][scored.indexOf(s)] : s.label }));
-    const placed = cards.filter(c => c.readings[q.id]).map(c => ({ ...c, ...c.readings[q.id] })).sort((a, b) => a.sortYear - b.sortYear);
+    // A passage placed here from another question is dropped when the same words already sit here in their own right.
+    const here = new Set(cards.filter(c => c.question === q.id).map(c => c.name + '|' + c.excerpt));
+    const placed = cards.filter(c => c.readings[q.id] && (c.question === q.id || !here.has(c.name + '|' + c.excerpt))).map(c => ({ ...c, ...c.readings[q.id] })).sort((a, b) => a.sortYear - b.sortYear);
     return { ...q, plain: WARM[q.id] ? WARM[q.id][0] : q.question, steps, placed };
   })
   .filter(q => q.placed.length)

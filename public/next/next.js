@@ -92,7 +92,7 @@
   let first = true;
   let q, scale, tones, cards, shown, answer = null, filter = 'all', at = 0, mode = 'ask', drifting = true, driftTimer = 0;
   // The globe on its own: turned freely, with time run across it. t counts passages in order of date.
-  const G = { t: 0, play: false, hide: new Set(), zoom: 1, vel: 0, shownAt: -1 };
+  const G = { t: 0, w: 0, year: 0, play: false, hide: new Set(), zoom: 1, vel: 0, shownAt: -1 };
 
   // ---- colour field (aurora look): a slow fluid of the three answer colours, drawn by a shader ----
   const field = (function () {
@@ -365,7 +365,11 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     } else if (mode === 'globe' && G.vel) { rot = [rot[0] + G.vel * dt, rot[1], 0]; G.vel *= Math.pow(.94, dt / 16); if (Math.abs(G.vel) < .0004) G.vel = 0; }
     else if (spin && !reduce) rot = [rot[0] + dt * .004, rot[1], 0];
     if (mode === 'globe') {
-      if (G.play) { G.t = Math.min(cards.length - 1, G.t + cards.length * dt / 48000); if (G.t >= cards.length - 1) setPlay(false); }
+      if (G.play) {
+        // Play runs on the calendar, on a scale that shortens the distant past: each halving of the time before now takes as long as the last.
+        G.w += dt / 52000; G.year = yearAt(G.w); let i = Math.floor(G.t); while (i < cards.length - 1 && cards[i + 1].sortYear <= G.year) i++; G.t = i;
+        if (G.w >= 1) { G.t = cards.length - 1; setPlay(false); syncGlobe(true); }
+      }
       syncGlobe();
     }
     {
@@ -415,10 +419,15 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const scene = name => { mode = name; for (const id of ['ask', 'echo', 'voice']) $(id).hidden = id !== name; $('dock').hidden = name !== 'voice'; $('gdock').hidden = name !== 'globe'; document.body.dataset.scene = name; };
 
   // ---- the globe on its own -----------------------------------------------------------------
+  const NEAR = 40, span0 = () => cards.at(-1).sortYear + NEAR - cards[0].sortYear;
+  const yearAt = w => cards.at(-1).sortYear + NEAR - Math.exp(Math.log(span0()) + (Math.log(NEAR) - Math.log(span0())) * Math.min(1, w));
+  const clockAt = y => (Math.log(cards.at(-1).sortYear + NEAR - y) - Math.log(span0())) / (Math.log(NEAR) - Math.log(span0()));
+  const yearName = y => { const r = Math.round(y); return r <= 0 ? `${1 - r} BCE` : String(r); };
   function setPlay(on) { G.play = on; $('g-play').textContent = on ? 'Pause' : 'Play'; $('g-play').setAttribute('aria-pressed', String(on)); }
   function syncGlobe(force) {
-    const i = Math.floor(G.t); if (!force && i === G.shownAt) return; G.shownAt = i;
-    const c = cards[i]; $('g-year').textContent = c.dateShort; if (document.activeElement !== $('g-time') || G.play) $('g-time').value = i;
+    const i = Math.floor(G.t); if (G.play) $('g-year').textContent = yearName(G.year);
+    if (!force && i === G.shownAt) return; G.shownAt = i;
+    const c = cards[i]; if (!G.play) $('g-year').textContent = c.dateShort; if (document.activeElement !== $('g-time') || G.play) $('g-time').value = i;
     const seen = cards.slice(0, i + 1);
     $('g-count').textContent = `${seen.filter(x => !G.hide.has(x.score)).length} of ${cards.length} voices`;
     for (const b of $('g-legend').children) b.lastChild.textContent = ' ' + seen.filter(x => x.score === b.dataset.id).length;
@@ -426,6 +435,14 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   function openGlobe() {
     stopDrift(); G.hide.clear(); G.zoom = 1; G.vel = 0; G.t = cards.length - 1; spin = true; goal = null; setPlay(false);
     $('g-q').textContent = ask_(q); $('g-time').max = cards.length - 1;
+    // The track gives every voice the same room; the year marks show how unevenly time falls along it.
+    { const marks = $('g-marks'); marks.textContent = ''; let lastAt = -1;
+      for (const y of [-2000, -1000, -500, 1, 500, 1000, 1500, 1800, 1900, 1950, 2000]) {
+        const i = cards.findIndex(c => c.sortYear >= y); if (i <= 0) continue; const at = i / (cards.length - 1) * 100;
+        const tick = document.createElement('i'); tick.style.left = at + '%'; marks.append(tick);
+        if (at - lastAt < 7 || at > 97) continue; lastAt = at;
+        const label = document.createElement('span'); label.style.left = at + '%'; label.textContent = y < 1 ? `${-y} BCE` : String(y); marks.append(label);
+      } }
     const box = $('g-legend'); box.textContent = '';
     for (const s of scale.filter(s => cards.some(c => c.score === s.id))) {
       const b = document.createElement('button'); b.type = 'button'; b.dataset.id = s.id; b.style.setProperty('--c', css(s.tone)); b.setAttribute('aria-pressed', 'true');
@@ -435,7 +452,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     }
     scene('globe'); syncGlobe(true);
   }
-  $('g-play').addEventListener('click', () => { if (!G.play && G.t >= cards.length - 1) G.t = 0; spin = true; setPlay(!G.play); });
+  $('g-play').addEventListener('click', () => { if (!G.play) { if (G.t >= cards.length - 1) G.t = 0; G.w = clockAt(cards[Math.floor(G.t)].sortYear); G.year = cards[Math.floor(G.t)].sortYear; } spin = true; setPlay(!G.play); syncGlobe(true); });
   $('g-time').addEventListener('input', e => { setPlay(false); G.t = Number(e.target.value); syncGlobe(true); });
   $('g-back').addEventListener('click', () => { setPlay(false); ask(q); });
   $('g-next').addEventListener('click', () => { setPlay(false); ask(questions[(questions.indexOf(q) + 1) % questions.length]); openGlobe(); });

@@ -128,3 +128,4 @@ h2.h-src{font-size:clamp(24px,2.8vw,40px)}
 .steps b{font:600 clamp(20px,2vw,28px)/1.1 'Inter Tight',sans-serif;letter-spacing:-.04em}.steps p{margin:0;color:var(--soft);max-width:38em}.steps .go{margin-top:12px}
 @media(max-width:700px){.steps>div{grid-template-columns:1fr}}
 .row .twice{font:500 12px/1.4 'Inter Tight',sans-serif;color:var(--soft);opacity:.75;margin:8px 0 0}.row .twice::before{content:'✓ '}.row .twice.differed::before,.row .twice.settled::before{content:'≈ '}
+.top nav>*{padding:11px 0}
