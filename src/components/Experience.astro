@@ -63,6 +63,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <h1 id="ask-q"></h1>
     <div id="ask-answers" class="answers"></div>
     <button id="ask-skip" class="mono link" type="button">Just show me the world</button>
+    <button id="ask-globe" class="mono link" type="button" style="margin-left:26px">Turn the globe through time</button>
   </section>
 
   <section id="echo" class="scene" hidden>
@@ -95,6 +96,14 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <canvas id="strip" aria-label="Every passage on this question, placed in time"></canvas>
   <div class="dock-foot mono"><span id="t0"></span><span id="when"></span><span id="t1"></span></div>
   <button id="again" class="mono link" type="button">Another question →</button>
+  <button id="to-globe" class="mono link" type="button">The whole globe →</button>
+</footer>
+
+<footer class="dock gdock" id="gdock" hidden>
+  <p class="g-head"><b id="g-year"></b><span class="g-what"><span class="mono dim" id="g-q"></span><span class="mono dim" id="g-count"></span></span></p>
+  <div class="g-row"><button id="g-play" class="mono" type="button" aria-pressed="false">Play</button><input id="g-time" type="range" min="0" max="1" step="1" value="0" aria-label="Move through time" /></div>
+  <div class="g-row g-foot"><div class="who-filter mono" id="g-legend" aria-label="Show or hide each answer"></div><span class="g-links"><button id="g-back" class="mono link" type="button">← The question</button><button id="g-next" class="mono link" type="button">Another question →</button></span></div>
+  <p class="mono dim g-hint">Drag to turn · scroll or pinch to zoom · tap a light to hear it</p>
 </footer>
 
 <div id="menu" class="menu" hidden>
@@ -103,6 +112,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <ol id="menu-list"></ol>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
+    <li><a href="#globe" id="menu-globe">The globe through time</a></li>
     <li><a href="/you">You · who thinks like you?</a></li>
     <li><a href="/questions">All fourteen questions, to read</a></li>
     <li><a href="/thinkers">Every thinker and text</a></li>

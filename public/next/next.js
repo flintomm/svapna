@@ -91,6 +91,8 @@
 
   let first = true;
   let q, scale, tones, cards, shown, answer = null, filter = 'all', at = 0, mode = 'ask', drifting = true, driftTimer = 0;
+  // The globe on its own: turned freely, with time run across it. t counts passages in order of date.
+  const G = { t: 0, play: false, hide: new Set(), zoom: 1, vel: 0, shownAt: -1 };
 
   // ---- colour field (aurora look): a slow fluid of the three answer colours, drawn by a shader ----
   const field = (function () {
@@ -160,6 +162,26 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const tex = new T.CanvasTexture(tc); tex.anisotropy = 8;
     const globe = new T.Mesh(new T.SphereGeometry(1, 96, 64), new T.MeshStandardMaterial({ map: tex, roughness: .9, metalness: 0, emissive: new T.Color(DAY ? '#ffffff' : '#0b1430'), emissiveIntensity: DAY ? .16 : .35, emissiveMap: DAY ? tex : null }));
     turn.add(globe);
+    // Heat: every answer up to the chosen moment, laid on the surface as soft colour that pools where voices gather.
+    const hc = document.createElement('canvas'); hc.width = 1024; hc.height = 512; const hx = hc.getContext('2d'), htex = new T.CanvasTexture(hc);
+    const heat = new T.Mesh(new T.SphereGeometry(1.003, 96, 64), new T.MeshBasicMaterial({ map: htex, transparent: true, depthWrite: false, blending: DAY ? T.NormalBlending : T.AdditiveBlending })); heat.visible = false; turn.add(heat);
+    let heatKey = '';
+    function drawHeat(g, toneOf) {
+      hx.clearRect(0, 0, 1024, 512); hx.globalCompositeOperation = DAY ? 'source-over' : 'lighter';
+      const upto = Math.floor(g.t);
+      items.forEach((it, i) => {
+        if (i > upto || g.hide.has(it.c.score)) return;
+        const rgb = RGB[toneOf[it.c.score]], fresh = Math.max(0, 1 - (upto - i) / 36), a = (DAY ? .2 : .14) + fresh * .3, r = 20 + fresh * 10;
+        const x = (it.c.lng + 180) / 360 * 1024, y = (90 - it.c.lat) / 180 * 512, wide = 1 / Math.max(.25, Math.cos(it.c.lat * Math.PI / 180));
+        for (const dx of [0, -1024, 1024]) {
+          if (x + dx < -r * wide || x + dx > 1024 + r * wide) continue;
+          hx.save(); hx.translate(x + dx, y); hx.scale(wide, 1);
+          const gr = hx.createRadialGradient(0, 0, 0, 0, 0, r); gr.addColorStop(0, `rgba(${rgb},${a})`); gr.addColorStop(1, `rgba(${rgb},0)`);
+          hx.fillStyle = gr; hx.fillRect(-r, -r, 2 * r, 2 * r); hx.restore();
+        }
+      });
+      htex.needsUpdate = true;
+    }
     // Air around the world, tinted by the answer in play.
     const air = new T.Mesh(new T.SphereGeometry(1.16, 64, 48), new T.ShaderMaterial({
       uniforms: { c: { value: new T.Color('#6aa0ff') } }, transparent: true, side: T.BackSide, blending: DAY ? T.NormalBlending : T.AdditiveBlending, depthWrite: false,
@@ -175,6 +197,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     let items = [];
     function setCards(list, toneOf) {
       while (beams.children.length) beams.remove(beams.children[0]);
+      heatKey = '';
       items = list.map(c => {
         const col = new T.Color(`rgb(${RGB[toneOf[c.score]]})`), at0 = P(c.lat, c.lng, 1.002);
         const dot = new T.Mesh(dotGeo, new T.MeshBasicMaterial({ color: col, transparent: true }));
@@ -205,7 +228,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       },
       render(dt, st) {
         // Framing: a wide shot for the question, a slow push in once the world answers, close for a single voice.
-        const narrow = innerWidth < 820, want = st.mode === 'ask' ? { d: narrow ? 5.6 : 4.9, x: narrow ? 0 : 1.32, y: narrow ? .62 : 0 }
+        const narrow = innerWidth < 820, t16 = Math.tan(16 * Math.PI / 180), fit = Math.max(1 / (.66 * t16), 1 / (.9 * t16 * cam.aspect)), want = st.g ? { d: fit / st.g.zoom, x: 0, y: .22 * fit * t16 } : st.mode === 'ask' ? { d: narrow ? 5.6 : 4.9, x: narrow ? 0 : 1.32, y: narrow ? .62 : 0 }
           : st.mode === 'echo' ? { d: narrow ? 4.9 : 3.9, x: narrow ? 0 : 1.12, y: narrow ? .6 : 0 } : { d: narrow ? 4.1 : 3.0, x: narrow ? 0 : .7, y: narrow ? .62 : -.04 };
         const e = reduce ? 1 : 1 - Math.pow(.02, dt / 1000);
         for (const k of ['d', 'x', 'y']) shot[k] += (want[k] - shot[k]) * e;
@@ -217,12 +240,16 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
         tilt.quaternion.setFromUnitVectors(zAxis, toCam).multiply(qx.setFromAxisAngle(xAxis, -st.rot[1] * Math.PI / 180));
         const now = st.now, tone = now ? st.tones[now.score] : st.answer ? st.tones[st.answer] : null;
         air.material.uniforms.c.value.lerp(new T.Color(tone ? `rgb(${RGB[tone]})` : '#7fa6ff'), .04);
-        for (const it of items) {
-          const mine = st.answer ? it.c.score === st.answer : true, inTime = !now || it.c.sortYear <= now.sortYear, cur = it.c === now;
-          const h = st.lit * (inTime ? 1 : 0) * (cur ? .5 : mine ? .16 : .045);
-          it.h += (h - it.h) * Math.min(1, dt / 500); it.beam.scale.y = Math.max(.001, it.h); it.beam.scale.x = it.beam.scale.z = cur ? 2.6 : 1;
-          it.beam.material.opacity = cur ? .95 : mine ? .55 : .3; it.dot.material.opacity = inTime ? (mine ? 1 : .55) : .16; it.dot.scale.setScalar(cur ? 1.9 : mine ? 1 : .7);
-        }
+        const gl = st.g;
+        items.forEach((it, i) => {
+          const hid = gl && gl.hide.has(it.c.score), fresh = gl ? Math.max(0, 1 - (gl.t - i) / 24) : 0;
+          const mine = gl ? true : st.answer ? it.c.score === st.answer : true, inTime = gl ? i <= gl.t : !now || it.c.sortYear <= now.sortYear, cur = it.c === now;
+          const h = hid ? 0 : st.lit * (inTime ? 1 : 0) * (gl ? .035 + .3 * fresh : cur ? .5 : mine ? .16 : .045);
+          it.h += (h - it.h) * Math.min(1, dt / (gl ? 220 : 500)); it.beam.scale.y = Math.max(.001, it.h); it.beam.scale.x = it.beam.scale.z = cur ? 2.6 : 1;
+          it.beam.material.opacity = cur ? .95 : mine ? .55 : .3; it.dot.material.opacity = hid ? 0 : inTime ? (mine ? 1 : .55) : gl ? .05 : .16; it.dot.scale.setScalar(cur ? 1.9 : mine ? 1 : .7);
+        });
+        heat.visible = Boolean(gl);
+        if (gl) { const key = Math.floor(gl.t) + '|' + [...gl.hide].join(); if (key !== heatKey) { heatKey = key; drawHeat(gl, st.tones); } }
         ring.visible = Boolean(now);
         if (now) { const p0 = P(now.lat, now.lng, 1.004); ring.position.copy(p0); ring.lookAt(p0.clone().multiplyScalar(2)); const s0 = 1 + .35 * Math.sin(performance.now() / 380); ring.scale.setScalar(s0); ring.material.opacity = .9; }
         if (arc.visible) { const k = (performance.now() - arc.userData.t) / 1500; arcGeo.setDrawRange(0, Math.max(2, Math.min(64, Math.round(k * 64)))); arc.material.opacity = Math.max(0, Math.min(1, 3.2 - k * .8)); if (arc.material.opacity <= 0) arc.visible = false; }
@@ -235,7 +262,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const sky = $('sky'), world = $('world'), wx = world.getContext('2d'), sx = sky.getContext('2d');
   const projection = d3.geoOrthographic().clipAngle(90), path = d3.geoPath(projection, wx), grat = d3.geoGraticule10();
   let trail = null;
-  let W = 0, H = 0, R = 0, cx = 0, cy = 0, rot = [-40, -22, 0], goal = null, spin = true, lit = 0;
+  let W = 0, H = 0, R = 0, cx = 0, cy = 0, bR = 0, bcx = 0, bcy = 0, rot = [-40, -22, 0], goal = null, spin = true, lit = 0;
 
   function size() {
     const d = Math.min(2, devicePixelRatio || 1);
@@ -243,8 +270,9 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     for (const c of [sky, world]) { c.width = W * d; c.height = H * d; }
     wx.setTransform(d, 0, 0, d, 0, 0); sx.setTransform(d, 0, 0, d, 0, 0);
     const narrow = W < 820;
-    R = narrow ? Math.min(W * .62, H * .34) : Math.min(H * .46, W * .3);
-    cx = narrow ? W * .5 : W * .72; cy = narrow ? H * .3 : H * .5;
+    bR = narrow ? Math.min(W * .62, H * .34) : Math.min(H * .46, W * .3);
+    bcx = narrow ? W * .5 : W * .72; bcy = narrow ? H * .3 : H * .5;
+    if (mode !== 'globe') { R = bR; cx = bcx; cy = bcy; }
     projection.translate([cx, cy]).scale(R);
     if (field) field.size();
     if (w3) w3.size();
@@ -284,7 +312,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
         }
       }
       wx.globalAlpha = 1;
-      if (!L.through) { wx.beginPath(); path({ type: 'Sphere' }); wx.strokeStyle = `rgba(${L.land},.16)`; wx.lineWidth = 1; wx.stroke(); }
+      if (!L.through || mode === 'globe') { wx.beginPath(); path({ type: 'Sphere' }); wx.strokeStyle = `rgba(${L.land},.16)`; wx.lineWidth = 1; wx.stroke(); }
     } else {
       const g = wx.createRadialGradient(cx - R * .35, cy - R * .4, 0, cx, cy, R);
       g.addColorStop(0, '#1c2854'); g.addColorStop(.7, '#0a1024'); g.addColorStop(1, '#060a18');
@@ -297,13 +325,16 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const face = projection.invert([cx, cy]);
     wx.save(); wx.beginPath(); path({ type: 'Sphere' }); wx.clip(); wx.globalCompositeOperation = L.blend;
     const now = mode === 'voice' ? shown[at] : null;
-    for (const c of cards) {
+    const gl = mode === 'globe';
+    for (let ci = 0; ci < cards.length; ci++) {
+      const c = cards[ci];
+      if (gl && (ci > G.t || G.hide.has(c.score))) continue;
       if (d3.geoDistance([c.lng, c.lat], face) > 1.52) continue;
       const tone = tones[c.score], rgb = RGB[tone], [x, y] = projection([c.lng, c.lat]);
-      const mine = answer ? c.score === answer : true;
-      const inTime = !now || c.sortYear <= now.sortYear;       // the world fills in as time passes
-      const k = lit * (inTime ? 1 : .12) * (mine ? 1 : .32);
-      const big = R * (mine ? .15 : .09);
+      const mine = gl ? true : answer ? c.score === answer : true, fresh = gl ? Math.max(0, 1 - (G.t - ci) / 36) : 0;
+      const inTime = gl || !now || c.sortYear <= now.sortYear;       // the world fills in as time passes
+      const k = lit * (inTime ? 1 : .12) * (mine ? 1 : .32) * (gl ? .8 + fresh * .7 : 1);
+      const big = R * (gl ? .2 + fresh * .1 : mine ? .15 : .09);
       const h = wx.createRadialGradient(x, y, 0, x, y, big);
       h.addColorStop(0, `rgba(${rgb},${(V === 'night' ? .17 : .3) * k})`); h.addColorStop(1, `rgba(${rgb},0)`);
       wx.fillStyle = h; wx.fillRect(x - big, y - big, big * 2, big * 2);
@@ -331,12 +362,23 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       let dl = ((goal[0] - rot[0] + 540) % 360) - 180;
       rot = [rot[0] + dl * k, rot[1] + (goal[1] - rot[1]) * k, 0];
       if (Math.abs(dl) < .05 && Math.abs(goal[1] - rot[1]) < .05) goal = null;
-    } else if (spin && !reduce) rot = [rot[0] + dt * .004, rot[1], 0];
+    } else if (mode === 'globe' && G.vel) { rot = [rot[0] + G.vel * dt, rot[1], 0]; G.vel *= Math.pow(.94, dt / 16); if (Math.abs(G.vel) < .0004) G.vel = 0; }
+    else if (spin && !reduce) rot = [rot[0] + dt * .004, rot[1], 0];
+    if (mode === 'globe') {
+      if (G.play) { G.t = Math.min(cards.length - 1, G.t + cards.length * dt / 48000); if (G.t >= cards.length - 1) setPlay(false); }
+      syncGlobe();
+    }
+    {
+      // The world moves to the middle and grows when it is the whole subject.
+      const gl = mode === 'globe', narrow = W < 820, e = reduce ? 1 : 1 - Math.pow(.01, dt / 1000);
+      const wR = gl ? Math.min(W * .45, (H - (narrow ? 300 : 260)) * .5) * G.zoom : bR, wx0 = gl ? W / 2 : bcx, wy0 = gl ? (narrow ? 70 : 40) + (H - (narrow ? 300 : 260)) / 2 : bcy;
+      R += (wR - R) * e; cx += (wx0 - cx) * e; cy += (wy0 - cy) * e; projection.translate([cx, cy]).scale(R);
+    }
     if (field) field.draw(ts / 1000, fieldWant(), mouse);
     const want = mode === 'ask' ? .35 : 1;
     lit += (want - lit) * (reduce ? 1 : Math.min(1, dt / 700));
     paint();
-    if (w3) w3.render(dt, { mode, rot, mouse, lit, answer, tones: tones || {}, now: mode === 'voice' && shown ? shown[at] : null });
+    if (w3) w3.render(dt, { mode, rot, mouse, lit, answer, tones: tones || {}, now: mode === 'voice' && shown ? shown[at] : null, g: mode === 'globe' ? G : null });
     requestAnimationFrame(frame);
   }
   const face = c => { goal = [-c.lng, Math.max(-55, Math.min(55, -c.lat * .8)), 0]; spin = false; };
@@ -370,7 +412,36 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     if (reduce) { el.textContent = to; return; }
     const t0 = performance.now(); (function step(t) { const k = Math.min(1, (t - t0) / 900); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); })(t0);
   }
-  const scene = name => { mode = name; for (const id of ['ask', 'echo', 'voice']) $(id).hidden = id !== name; $('dock').hidden = name !== 'voice'; };
+  const scene = name => { mode = name; for (const id of ['ask', 'echo', 'voice']) $(id).hidden = id !== name; $('dock').hidden = name !== 'voice'; $('gdock').hidden = name !== 'globe'; document.body.dataset.scene = name; };
+
+  // ---- the globe on its own -----------------------------------------------------------------
+  function setPlay(on) { G.play = on; $('g-play').textContent = on ? 'Pause' : 'Play'; $('g-play').setAttribute('aria-pressed', String(on)); }
+  function syncGlobe(force) {
+    const i = Math.floor(G.t); if (!force && i === G.shownAt) return; G.shownAt = i;
+    const c = cards[i]; $('g-year').textContent = c.dateShort; if (document.activeElement !== $('g-time') || G.play) $('g-time').value = i;
+    const seen = cards.slice(0, i + 1);
+    $('g-count').textContent = `${seen.filter(x => !G.hide.has(x.score)).length} of ${cards.length} voices`;
+    for (const b of $('g-legend').children) b.lastChild.textContent = ' ' + seen.filter(x => x.score === b.dataset.id).length;
+  }
+  function openGlobe() {
+    stopDrift(); G.hide.clear(); G.zoom = 1; G.vel = 0; G.t = cards.length - 1; spin = true; goal = null; setPlay(false);
+    $('g-q').textContent = ask_(q); $('g-time').max = cards.length - 1;
+    const box = $('g-legend'); box.textContent = '';
+    for (const s of scale.filter(s => cards.some(c => c.score === s.id))) {
+      const b = document.createElement('button'); b.type = 'button'; b.dataset.id = s.id; b.style.setProperty('--c', css(s.tone)); b.setAttribute('aria-pressed', 'true');
+      b.append(document.createElement('i'), s.tone === 'none' ? 'Unplaced' : say(q, s), document.createElement('b'));
+      b.addEventListener('click', () => { const off = !G.hide.has(s.id); if (off) G.hide.add(s.id); else G.hide.delete(s.id); b.setAttribute('aria-pressed', String(!off)); syncGlobe(true); });
+      box.append(b);
+    }
+    scene('globe'); syncGlobe(true);
+  }
+  $('g-play').addEventListener('click', () => { if (!G.play && G.t >= cards.length - 1) G.t = 0; spin = true; setPlay(!G.play); });
+  $('g-time').addEventListener('input', e => { setPlay(false); G.t = Number(e.target.value); syncGlobe(true); });
+  $('g-back').addEventListener('click', () => { setPlay(false); ask(q); });
+  $('g-next').addEventListener('click', () => { setPlay(false); ask(questions[(questions.indexOf(q) + 1) % questions.length]); openGlobe(); });
+  $('ask-globe').addEventListener('click', openGlobe);
+  $('to-globe').addEventListener('click', openGlobe);
+  $('menu-globe').addEventListener('click', e => { e.preventDefault(); $('menu').hidden = true; openGlobe(); });
 
   function ask(next) {
     q = next; scale = q.scale; tones = Object.fromEntries(scale.map(s => [s.id, s.tone]));
@@ -469,21 +540,33 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     if (e.key === 'ArrowLeft') { stopDrift(); show(at - 1); }
   });
   // Drag turns the world; a tap on a light opens the nearest voice.
-  let drag = null;
-  world.addEventListener('pointerdown', e => { drag = { x: e.clientX, y: e.clientY, rot: rot.slice(), moved: false }; world.setPointerCapture(e.pointerId); });
+  let drag = null, pinch = null; const touches = new Map(), zoomTo = z => { G.zoom = Math.max(.6, Math.min(2.8, z)); };
+  const spread = () => { const [a, b] = [...touches.values()]; return Math.hypot(a.x - b.x, a.y - b.y); };
+  world.addEventListener('wheel', e => { if (mode !== 'globe') return; e.preventDefault(); zoomTo(G.zoom * Math.exp(-e.deltaY * .0014)); }, { passive: false });
+  world.addEventListener('pointerdown', e => {
+    touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (touches.size === 2 && mode === 'globe') { pinch = { d: spread(), z: G.zoom }; drag = null; return; }
+    G.vel = 0; drag = { x: e.clientX, y: e.clientY, rot: rot.slice(), moved: false, lx: e.clientX, lt: performance.now(), v: 0 }; world.setPointerCapture(e.pointerId);
+  });
+  world.addEventListener('pointercancel', e => { touches.delete(e.pointerId); pinch = null; drag = null; });
   world.addEventListener('pointermove', e => {
+    if (touches.has(e.pointerId)) touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pinch && touches.size === 2) { zoomTo(pinch.z * spread() / pinch.d); return; }
     if (!drag) return;
+    { const t = performance.now(); if (t > drag.lt) { drag.v = (e.clientX - drag.lx) * 60 / R / (t - drag.lt); drag.lx = e.clientX; drag.lt = t; } }
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (Math.abs(dx) + Math.abs(dy) > 5) drag.moved = true;
     if (drag.moved) { goal = null; spin = false; stopDrift(); rot = [drag.rot[0] + dx * 60 / R, Math.max(-80, Math.min(80, drag.rot[1] - dy * 60 / R)), 0]; }
   });
   world.addEventListener('pointerup', e => {
+    touches.delete(e.pointerId); if (pinch) { pinch = null; drag = null; return; }
+    if (drag && drag.moved && mode === 'globe' && performance.now() - drag.lt < 90) G.vel = Math.max(-.5, Math.min(.5, drag.v));
     if (drag && !drag.moved && cards) {
       const p = w3 ? w3.invert(e.clientX, e.clientY) : projection.invert([e.clientX, e.clientY]);
       if (p) {
         const pool = mode === 'voice' ? shown : cards;
         let best = -1, d = .12;
-        pool.forEach((c, i) => { const k = d3.geoDistance(p, [c.lng, c.lat]); if (k < d) { d = k; best = i; } });
+        pool.forEach((c, i) => { if (mode === 'globe' && (i > G.t || G.hide.has(c.score))) return; const k = d3.geoDistance(p, [c.lng, c.lat]); if (k < d) { d = k; best = i; } });
         if (best >= 0) { if (mode !== 'voice') { shown = cards; setFilter('all', true); scene('voice'); } stopDrift(); show(best); }
       }
     }
