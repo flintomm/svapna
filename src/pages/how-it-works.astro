@@ -1,0 +1,52 @@
+---
+// How the atlas is made: what is checked by machine, what is a judgement, and how to disagree.
+import Read from '../layouts/Read.astro';
+import Coffee from '../components/Coffee.astro';
+import { cards, questions, thinkers, links } from '../lib/atlas.js';
+const all = cards.flatMap(c => Object.values(c.readings));
+const n = s => all.filter(r => r.second === s).length;
+const unscored = all.filter(r => r.score === 'unscored').length;
+const sample = questions[0];
+---
+<Read title="How Svapna works: what is checked, what is a judgement — Svapna" description={`How the ${cards.length} passages in the atlas are found, checked word for word against their sources, placed on a scale, read a second time, and corrected.`} path="/how-it-works" crumbs={[{ name: 'How it works', path: '/how-it-works' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · How it works</p>
+  <h1>What is checked, <em>and what is a judgement.</em></h1>
+  <p class="lede">The atlas holds {cards.length} short passages from {thinkers.length} thinkers and texts, placed {all.length} times across {questions.length} questions. The quotes are verified. The placements are readings, and this page says exactly how far to trust them.</p>
+
+  <div class="prose">
+    <h2>1. The words are checked by machine</h2>
+    <p>Every passage is a short run of words copied exactly from a text that can be read online: a public-domain edition, the author’s or publisher’s own page, an institution, or a line quoted in a scholarly encyclopedia and labelled as such. Each passage links to that page.</p>
+    <p>Before a passage is published, a program fetches the linked page and confirms the excerpt is there word for word. A passage that fails is not published. Where the original is not in English, the original is quoted and checked, and the English beside it is the atlas’s own unreviewed translation, marked as such.</p>
+    <p>Unauthorised copies of books still in copyright are not used as sources.</p>
+
+    <h2>2. The placement is a reading</h2>
+    <p>Each question has a scale of three positions, with a one-line definition for each, shown on the question’s page. For “{sample.plain}” they are: {sample.steps.filter(s => s.tone !== 'none').map(s => s.plain.toLowerCase()).join(', ')}.</p>
+    <p>A passage is placed where its own words put it. The rule is strict: the excerpt itself must support the position. What the author is known for, or what the surrounding chapter argues, is not enough. Where the words do not settle the question, the passage is marked <em>unscored</em>, which is not a low score or a disagreement. {unscored} of {all.length} placements are unscored.</p>
+    <p>Each passage also carries a note on what it does not show: the genre, the translation, the speaker (a character in a play is not the playwright), and what the author says elsewhere.</p>
+
+    <h2>3. Who does the reading</h2>
+    <p>The passages were gathered and first placed by AI research agents working to a written brief, under the direction of the independent researcher who runs the site. No human editor has yet reviewed the placements one by one, and no page on the site claims otherwise.</p>
+
+    <h2>4. Every placement was read twice</h2>
+    <p>A second reader, also an AI agent, was given only the question, the scale and the quoted words, without the first placement, and placed every passage again. Where the two disagreed, a third reading saw both and decided by the rule above. The outcome is printed under each passage:</p>
+    <ul>
+      <li><strong>{n('agreed')}</strong> placements: both readers placed it in the same position.</li>
+      <li><strong>{n('settled')}</strong>: the readers differed and the third reading settled it.</li>
+      <li><strong>{n('differed')}</strong>: the readers differed and the passage could fairly sit either way. Treat these as open.</li>
+    </ul>
+    <p>Where the second reading moved a placement, the passage says so, with the reason.</p>
+
+    <h2>5. What a placement does not claim</h2>
+    <p>A placement describes a few quoted lines. It is not a verdict on a thinker’s whole work, and the same thinker can sit at different positions in different passages. Three positions flatten real differences; the scale is a way to find people to read, not a classification of philosophies.</p>
+    <p>Matches, circles and stickers are computed from these placements and a visitor’s own answers. They are an invitation to read further.</p>
+
+    <h2>6. Places, dates and connections</h2>
+    <p>Each passage is pinned where it was written, taught or delivered. Some pins cite a page that states the place; others are a traditional association or still await confirmation, and each passage’s page says which. Dates of ancient texts are approximate and marked “c.”.</p>
+    <p>The {links.length} connections between thinkers are documented ones only: one thinker citing, answering or writing to another, with the caveat that applies. Similar ideas are not shown as influence.</p>
+
+    <h2>7. Disagree with a placement</h2>
+    <p>Every passage has a “Disagree?” link. It opens a short form with the passage already named. Say where the passage should sit and why, ideally pointing at the words. Corrections to quotes, dates, places and sources go the same way. Voting on placements by members is planned; until then every message is read by a person.</p>
+    <p><a href="/about/contact">Write to Svapna →</a></p>
+  </div>
+  <Coffee />
+</Read>

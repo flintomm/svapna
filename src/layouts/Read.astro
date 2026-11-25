@@ -42,12 +42,23 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <main><slot /></main>
 <footer class="foot">
   <p><a href="/">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/glossary">Glossary</a></p>
-  <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
-  <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet.</p>
+  <p><a href="/support">Support Svapna</a><a href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener">Buy a coffee ↗</a><a href="/how-it-works">How it works</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
+  <p class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet. <a href="/how-it-works">How it works</a>.</p>
 </footer>
 <script is:inline>
   (function () { var b = document.getElementById('mode'), r = document.documentElement; function paint() { b.textContent = r.dataset.mode === 'light' ? 'Night' : 'Light'; }
     b.addEventListener('click', function () { r.dataset.mode = r.dataset.mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', r.dataset.mode); } catch (e) {} paint(); }); paint(); })();
+</script>
+<script is:inline>
+  // Kept passages and lessons read live on the visitor's own device.
+  (function () {
+    var get = function (k) { try { return JSON.parse(localStorage.getItem(k) || '[]') || []; } catch (e) { return []; } }, set = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+    if (location.pathname.indexOf('/curriculum/module-') === 0) { var read = get('svapna_read'), here = location.pathname.replace(/\/$/, ''); if (read.indexOf(here) < 0) { read.push(here); set('svapna_read', read); } }
+    var btns = document.querySelectorAll('[data-keep]'); if (!btns.length) return;
+    function paint() { var kept = get('svapna_kept').map(function (x) { return x.id; }); btns.forEach(function (b) { var on = kept.indexOf(b.dataset.keep) >= 0; b.textContent = on ? 'Kept · see your list' : 'Keep this passage'; b.dataset.on = on ? '1' : ''; }); }
+    btns.forEach(function (b) { b.addEventListener('click', function () { if (b.dataset.on) { location.href = '/you#kept'; return; } var kept = get('svapna_kept'); kept.unshift({ id: b.dataset.keep, name: b.dataset.name, text: b.dataset.text, href: b.dataset.href }); set('svapna_kept', kept.slice(0, 200)); paint(); }); });
+    paint();
+  })();
 </script>
 </body>
 </html>

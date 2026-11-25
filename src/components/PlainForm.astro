@@ -17,6 +17,7 @@ const { id, subject = '', askSubject = false, button = 'Send', done = 'Thank you
   (function () {
     var f = document.getElementById(id), done = document.getElementById(id + '-done'), note = f.querySelector('.note'), btn = f.querySelector('button');
     function say(t) { note.textContent = t; note.hidden = !t; }
+    try { var about = new URLSearchParams(location.search).get('about'); if (about && f.subject && /^[a-z0-9:-]{3,120}$/.test(about)) { f.subject.value = 'Placement: ' + about; f.message.placeholder = 'Where should this passage sit, and which words say so?'; f.scrollIntoView({ block: 'center' }); } } catch (e) {}
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!f.name.value.trim() || !f.email.value.trim() || !f.message.value.trim()) { say('Name, email and message are needed.'); return; }

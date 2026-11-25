@@ -7,7 +7,8 @@ const letters = [...new Set(thinkers.map(t => (t.sort[0] || '#').toUpperCase()))
   <p class="small crumb"><a href="/">Svapna</a> · Thinkers</p>
   <h1>{thinkers.length} <em>voices.</em></h1>
   <p class="lede">Every thinker and text in the atlas, from about 2400 BCE to today. Each page gathers that voice’s own words on the questions, where they were written, and where to read them.</p>
-  <div class="index">
+  <div class="find"><input id="find-q" type="search" placeholder="Find a thinker or a text" aria-label="Find a thinker or a text" /><span class="small" id="find-n" aria-live="polite"></span></div>
+  <div class="index" id="index">
     {letters.map(L => (
       <>
         <p class="letter">{L}</p>
@@ -15,4 +16,14 @@ const letters = [...new Set(thinkers.map(t => (t.sort[0] || '#').toUpperCase()))
       </>
     ))}
   </div>
+  <script is:inline>
+    (function () {
+      var q = document.getElementById('find-q'), n = document.getElementById('find-n'), box = document.getElementById('index'), items = [].slice.call(box.querySelectorAll('a')), fold = function (t) { return t.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }, text = items.map(function (a) { return fold(a.textContent); });
+      q.addEventListener('input', function () {
+        var w = fold(q.value.trim()), shown = 0; items.forEach(function (a, i) { var ok = !w || text[i].indexOf(w) >= 0; a.hidden = !ok; if (ok) shown++; });
+        box.querySelectorAll('.letter').forEach(function (l) { l.hidden = Boolean(w); });
+        n.textContent = w ? shown + ' of ' + items.length : '';
+      });
+    })();
+  </script>
 </Read>

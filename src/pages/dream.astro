@@ -97,6 +97,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
     <h1>Sink through <em>one night.</em></h1>
     <p class="lede">Eight depths, from lying down to morning. At each one, what people found there over three and a half thousand years.</p>
     <a class="pill" href="#awake">Begin ↓</a>
+    <p class="small intro-more">Or go straight to the reading: <button id="open-dates-3" type="button">every lesson, by date</button> · <a href="/glossary">the glossary</a> · <a href="/library">the library</a></p>
   </section>
 
   {layers.map((l, i) => (
@@ -158,5 +159,9 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <script is:inline type="application/json" id="layers" set:html={JSON.stringify(layers.map(l => ({ name: l.name, terms: l.terms, quotes: l.quotes, ideas: l.ideas })))}></script>
 <script is:inline defer src="/next/three.min.js"></script>
 <script is:inline defer src="/dream/dream.js"></script>
+<script is:inline>
+  // Lessons already read on this device are marked wherever they are listed.
+  (function () { var read = []; try { read = JSON.parse(localStorage.getItem('svapna_read') || '[]') || []; } catch (e) {} if (!read.length) return; document.querySelectorAll('a[href^="/curriculum/module-"]').forEach(function (a) { if (read.indexOf(a.getAttribute('href').replace(/\/$/, '')) >= 0) a.classList.add('was-read'); }); })();
+</script>
 </body>
 </html>

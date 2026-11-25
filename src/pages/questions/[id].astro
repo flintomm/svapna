@@ -18,6 +18,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
   <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words. Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</p>
   <a class="go" href={`/#${q.id}`}>Answer it and see the world light up →</a>
   <div class="tally" aria-hidden="true">{q.steps.map(s => count(s) > 0 && <i style={`flex:${count(s)};background:var(--${s.tone})`}></i>)}</div>
+  <div class="find" id="find"><input id="find-q" type="search" placeholder="Find a name, a place or a word" aria-label="Find a name, a place or a word" /><span class="find-eras">{[['all', 'All of time'], ['a', 'Before 1 CE'], ['b', '1–1500'], ['c', '1500–1900'], ['d', 'Since 1900']].map(([id, label]) => <button type="button" data-era={id} aria-pressed={String(id === 'all')}>{label}</button>)}</span><span class="small" id="find-n" aria-live="polite"></span></div>
   <p class="keys">{q.steps.map(s => count(s) > 0 && <span><span class="dot" style={`--c:var(--${s.tone})`}></span><b>{count(s)}</b> {s.plain.toLowerCase()}{s.tone === 'none' ? ' (does not fit the scale)' : ''}</span>)}</p>
 
   {q.steps.map(s => count(s) > 0 && (
@@ -26,7 +27,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
       <p class="def">{s.definition}</p>
       <div class="rows">
         {q.placed.filter(c => c.score === s.id).map(c => (
-          <article class="row" id={c.id}>
+          <article class="row" id={c.id} data-y={c.sortYear}>
             <div>
               <blockquote>“{c.excerpt}”</blockquote>
               {c.translation && <p class="tr">{c.translation}</p>}
@@ -37,11 +38,28 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
               <a class="name" href={`/thinkers/${slugify(c.name)}#${c.id}`}>{c.name}</a>
               <p>{c.place}</p><p>{c.dateShort}</p><p>{c.work}</p>
               <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
+              <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${slugify(c.name)}#${c.id}`}>Keep this passage</button>
+              <a class="src quiet" href={`/about/contact?about=${q.id}:${c.id}`} rel="nofollow">Disagree?</a>
             </div>
           </article>
         ))}
       </div>
     </section>
   ))}
+  <p class="def" style="margin-top:60px">How passages are checked and placed, and how far to trust a placement: <a href="/how-it-works">how Svapna works</a>.</p>
+  <script is:inline>
+    (function () {
+      var q = document.getElementById('find-q'), n = document.getElementById('find-n'), rows = [].slice.call(document.querySelectorAll('.row[data-y]')), era = 'all', text = rows.map(function (r) { return r.textContent.toLowerCase(); });
+      var inEra = function (y) { return era === 'all' || (era === 'a' ? y < 1 : era === 'b' ? y >= 1 && y < 1500 : era === 'c' ? y >= 1500 && y < 1900 : y >= 1900); };
+      function run() {
+        var w = q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+        rows.forEach(function (r, i) { var ok = inEra(+r.dataset.y) && w.every(function (x) { return text[i].indexOf(x) >= 0; }); r.hidden = !ok; if (ok) shown++; });
+        document.querySelectorAll('main section[id]').forEach(function (s) { if (s.querySelector('.row[data-y]')) s.hidden = !s.querySelector('.row[data-y]:not([hidden])'); });
+        n.textContent = shown === rows.length ? '' : shown + ' of ' + rows.length + ' passages';
+      }
+      q.addEventListener('input', run);
+      document.querySelectorAll('.find-eras button').forEach(function (b) { b.addEventListener('click', function () { era = b.dataset.era; document.querySelectorAll('.find-eras button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); run(); }); });
+    })();
+  </script>
   <Coffee />
 </Read>

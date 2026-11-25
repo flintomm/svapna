@@ -26,7 +26,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
               <div style="margin-top:22px">
                 <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}#${c.id}`}>{p.question.plain}</a> {p.step.plain}</p>
                 <p class="why">{p.why}</p>
-                {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]}</p>}
+                {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]} <a href={`/about/contact?about=${p.question.id}:${c.id}`} rel="nofollow">Disagree?</a></p>}
               </div>
             ))}
             <p class="why"><b>What it doesn’t show.</b> {home.limit}</p>
@@ -35,6 +35,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
             <p>{c.work}</p><p>{c.dateFull || c.dateShort}</p><p>{c.place}</p><p>{c.sourceLabel}</p>
             <a class="src" href={c.sourceUrl} target="_blank" rel="noopener">Read it at the source ↗</a>
             <a class="src" href={`/#${home.question.id}`}>See it on the world →</a>
+            <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${t.slug}#${c.id}`}>Keep this passage</button>
           </div>
         </article>
       );

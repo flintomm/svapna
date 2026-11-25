@@ -294,7 +294,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
 
   // ---- the same material, by date ----
   const sheet = $('dates'), openDates = () => { sheet.hidden = false; }, closeDates = () => { sheet.hidden = true; };
-  $('open-dates').addEventListener('click', openDates); $('open-dates-2').addEventListener('click', openDates); $('close-dates').addEventListener('click', closeDates);
+  $('open-dates').addEventListener('click', openDates); $('open-dates-2').addEventListener('click', openDates); $('open-dates-3').addEventListener('click', openDates); $('close-dates').addEventListener('click', closeDates);
   addEventListener('keydown', e => { if (e.key === 'Escape') closeDates(); });
   document.querySelectorAll('details.more').forEach(d => d.addEventListener('toggle', () => setTimeout(measure, 50)));
 

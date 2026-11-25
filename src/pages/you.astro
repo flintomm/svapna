@@ -34,7 +34,10 @@ const T = thinkers.map(t => {
     </div>
   </div>
 
+  <div id="friend" class="you-friend" hidden></div>
   <section id="result" class="you-result" hidden>
+    <p class="you-head" id="you-head"></p>
+    <p class="you-share"><button type="button" class="go" id="share">Share your match →</button><button type="button" class="go quiet" id="share-compare" title="The link carries your answers">Send a friend a link to compare →</button><span class="small" id="share-ok" role="status"></span></p>
     <div class="you-cols">
       <div><p class="small">Closest to you</p><div id="near"></div></div>
       <div><p class="small">Furthest from you</p><div id="far"></div></div>
@@ -60,6 +63,11 @@ const T = thinkers.map(t => {
       ))}
     </div>
     <p style="margin-top:26px"><button type="button" class="go" id="clear">Clear my answers</button></p>
+  </section>
+
+  <section id="kept" hidden>
+    <h2>Passages you kept</h2>
+    <div class="rows" id="kept-list"></div>
   </section>
 
   <Coffee line="If your matches surprised you, a coffee keeps Svapna open." />
@@ -123,7 +131,27 @@ const T = thinkers.map(t => {
           ['Close reader', 'Read a full lesson.', !!F.lesson, '/glossary'], ['Ten voices', 'Visit ten thinkers’ pages (' + Math.min(met, 10) + ' of 10).', met >= 10, '/thinkers']]
           .forEach(function (x) { box.append(sticker(x[0], x[1], 'star', x[2], x[3])); });
       }
+      // A friend's answers can arrive in the address (#f=...): one character per question, in order.
+      var FR = null; (function () { var m = /^#f=([0-9-]+)$/.exec(location.hash); if (!m || m[1].length !== Q.length) return; FR = {}; Q.forEach(function (q, i) { var s = q.steps[+m[1][i]]; if (m[1][i] !== '-' && s) FR[q.id] = s.id; }); if (!Object.keys(FR).length) FR = null; })();
+      function friend() {
+        var box = document.getElementById('friend'); if (!FR) { box.hidden = true; return; } box.hidden = false; box.textContent = '';
+        var both = Q.filter(function (q) { return FR[q.id] && A[q.id]; }), same = both.filter(function (q) { return FR[q.id] === A[q.id]; });
+        box.append(el('p', 'small', 'A friend sent their answers'));
+        if (!both.length) { box.append(el('p', 'you-head', 'Answer the questions below to see where the two of you agree.')); return; }
+        box.append(el('p', 'you-head', 'You agree on ' + same.length + ' of the ' + both.length + ' question' + (both.length === 1 ? '' : 's') + ' you have both answered.'));
+        both.forEach(function (q) { var eq = FR[q.id] === A[q.id], row = el('p', 'you-friend-row' + (eq ? ' same' : '')); row.append(el('span', '', q.plain + ' '), el('b', '', eq ? 'Both: ' + plainOf(q, A[q.id]) : 'You: ' + plainOf(q, A[q.id]) + ' · Them: ' + plainOf(q, FR[q.id]))); box.append(row); });
+        var left = Q.filter(function (q) { return FR[q.id] && !A[q.id]; }).length; if (left) box.append(el('p', 'small', left + ' more of their answers will show as you answer.'));
+      }
+      var LAST = null;
+      function share(text, url) {
+        var ok = document.getElementById('share-ok'), done = function (m) { ok.textContent = ' ' + m; setTimeout(function () { ok.textContent = ''; }, 2600); };
+        if (navigator.share) { navigator.share({ title: 'Svapna', text: text, url: url }).catch(function () {}); return; }
+        if (navigator.clipboard) navigator.clipboard.writeText(text + ' ' + url).then(function () { done('Copied. Paste it anywhere.'); }, function () { done('Could not copy.'); }); else done(url);
+      }
+      document.getElementById('share').addEventListener('click', function () { if (LAST) share('I think most like ' + LAST[0] + ' and least like ' + LAST[1] + ', out of ' + T.length + ' thinkers across four thousand years. Who thinks like you?', 'https://svapnaproject.org/you'); });
+      document.getElementById('share-compare').addEventListener('click', function () { var code = Q.map(function (q) { var i = q.steps.findIndex(function (s) { return s.id === A[q.id]; }); return i < 0 ? '-' : i; }).join(''); share('I answered ' + Object.keys(A).length + ' old questions. Answer them and see where we agree.', 'https://svapnaproject.org/you#f=' + code); });
       function paint() {
+        friend();
         var n = 0;
         document.querySelectorAll('.you-q').forEach(function (row) { var q = row.dataset.q; if (A[q]) n++; row.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', String(A[q] === b.dataset.a)); }); });
         document.getElementById('count').textContent = 'Your answers · ' + n + ' of ' + Q.length;
@@ -134,9 +162,17 @@ const T = thinkers.map(t => {
         var near = r.slice().sort(function (a, b) { return b.score - a.score || b.shared.length - a.shared.length; }).slice(0, 5);
         var far = r.slice().sort(function (a, b) { return a.score - b.score || b.shared.length - a.shared.length; }).slice(0, 5);
         var N = document.getElementById('near'), F = document.getElementById('far'); N.textContent = ''; F.textContent = '';
+        var head = document.getElementById('you-head'); head.textContent = ''; if (near.length) { LAST = [near[0].t.n, far[0].t.n]; head.append((n < 7 ? 'So far, you think most like ' : 'You think most like '), el('b', '', near[0].t.n), ', and least like ', el('b', '', far[0].t.n), '.'); if (n < 7) head.append(el('span', 'small', ' That rests on ' + n + ' answers. It settles as you answer more.')); }
         var bar = document.getElementById('you-bar'); bar.hidden = !near.length; if (near.length) bar.textContent = 'Closest to you: ' + near[0].t.n + ' · furthest: ' + far[0].t.n + '  ↑';
         near.forEach(function (x, i) { var c = card(x, 'near'); if (!i) c.open = true; N.append(c); }); far.forEach(function (x, i) { var c = card(x, 'far'); if (!i) c.open = true; F.append(c); });
       }
+      (function kept() {
+        var list = []; try { list = JSON.parse(localStorage.getItem('svapna_kept') || '[]') || []; } catch (e) {}
+        var sec = document.getElementById('kept'), box = document.getElementById('kept-list'); sec.hidden = !list.length; box.textContent = '';
+        list.forEach(function (k) { var row = el('div', 'row you-kept'), a = el('a', 'you-say', '“' + k.text + '”'), side = el('p', 'small', k.name + ' · '), drop = el('button', '', 'Remove'); a.href = k.href; drop.type = 'button';
+          drop.addEventListener('click', function () { var now = []; try { now = JSON.parse(localStorage.getItem('svapna_kept') || '[]') || []; } catch (e) {} try { localStorage.setItem('svapna_kept', JSON.stringify(now.filter(function (x) { return x.id !== k.id; }))); } catch (e) {} kept(); });
+          side.append(drop); row.append(a, side); box.append(row); });
+      })();
       document.getElementById('qs').addEventListener('click', function (e) {
         var b = e.target.closest('button[data-a]'); if (!b) return; var q = b.closest('.you-q').dataset.q;
         if (A[q] === b.dataset.a) delete A[q]; else A[q] = b.dataset.a; save(); paint(); if (Acct.user) Acct.saveAnswer(q, A[q]);

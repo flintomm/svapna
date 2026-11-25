@@ -29,7 +29,7 @@ export const historyUnits = [
     slug: 'other-asian-traditions',
     moduleNum: '03',
     articleId: 'other_asian_traditions',
-    title: 'Other Asian Traditions',
+    title: 'Daoist and Sufi Traditions',
     date: 'c. 4th c. BCE — present',
     blurb:
       "Two further streams develop in parallel: the Daoist tradition of transformation and inner alchemy, from Zhuangzi's butterfly to the Quanzhen sleep cultivations; and the Sufi-Islamic tradition's metaphysics of imagination, centered on Ibn al-ʿArabī's khayāl and the imaginal world (ʿālam al-mithāl). Two parallel contemplative answers to the same question the Indian and Greek traditions also asked.",
@@ -112,7 +112,7 @@ export const curriculumModules = [
   {
     num: '03',
     roman: 'III',
-    title: 'Other Asian Traditions',
+    title: 'Daoist and Sufi Traditions',
     lessonCount: 6,
     blurb:
       "The Daoist Chinese tradition's treatment of dream as a wedge against fixed identity, and the Sufi-Islamic tradition's metaphysics of imagination — two parallel contemplative answers to the same question the Indian and Greek traditions also asked.",
@@ -464,7 +464,7 @@ export const articles = [
   {
     id: 'other_asian_traditions',
     num: '03',
-    label: 'Other Asian Traditions',
+    label: 'Daoist and Sufi Traditions',
     title: 'Daoist sleep cultivation and Sufi imagination.',
     blurb:
       "The Zhuangzi's butterfly, Quanzhen sleep cultivation, Ibn al-ʿArabī's khayāl. Two parallel contemplative answers to the same question the Indian and Greek traditions also asked, with vocabularies the Tibetan synthesis quietly converses with.",
@@ -563,7 +563,7 @@ export const moduleDeepening = {
     theme_links: ['dream_yoga_practice', 'rigpa_kunzhi', 'sleep_yoga_clear_light', 'bardo_death', 'energy_body_chakras'],
   },
   '03': {
-    article_link: { id: 'other_asian_traditions', label: 'Read the long-form article: Other Asian Traditions' },
+    article_link: { id: 'other_asian_traditions', label: 'Read the long-form article: Daoist and Sufi Traditions' },
     further_reading: [
       { author: 'Ziporyn, Brook, trans.', title: 'Zhuangzi: The Complete Writings (Hackett, 2020)', note: 'The best contemporary rendering of the Zhuangzi, with notes that illuminate the butterfly passage and its central position in world dream-philosophy.' },
       { author: 'Wong, Eva', title: 'Cultivating Stillness: A Taoist Manual for Transforming Body and Mind (Shambhala, 1992)', note: 'Foundational Quanzhen Daoist meditation text translated with extensive introductions; the right entry point for the framework within which Daoist sleep cultivation operates.' },

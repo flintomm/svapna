@@ -507,7 +507,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     shown = cards.filter(c => filter === 'all' || (filter === 'agree' ? c.score === answer : c.score !== answer));
     if (!shown.length) { filter = 'all'; shown = cards; }
     const box = $('filter'); box.textContent = '';
-    const opts = answer ? [['agree', 'Agree with you'], ['differ', 'See it differently'], ['all', 'Everyone']] : [['all', 'Everyone']];
+    const tight = innerWidth < 560, opts = answer ? [['agree', tight ? 'Agree' : 'Agree with you'], ['differ', tight ? 'Differ' : 'See it differently'], ['all', 'Everyone']] : [['all', 'Everyone']];
     for (const [id, label] of opts) {
       const b = document.createElement('button'); b.type = 'button'; b.textContent = label; b.setAttribute('aria-pressed', String(id === filter));
       b.addEventListener('click', () => { stopDrift(); setFilter(id); }); box.append(b);
