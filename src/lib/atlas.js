@@ -45,7 +45,7 @@ for (const c of cards) {
   const t = bySlug.get(slug);
   for (const [qid, r] of Object.entries(c.readings)) {
     const q = qById[qid]; if (!q) continue;
-    t.passages.push({ card: c, question: q, step: q.steps.find(s => s.id === r.score), why: r.why, limit: r.limit, home: qid === c.question });
+    t.passages.push({ card: c, question: q, step: q.steps.find(s => s.id === r.score), why: r.why, limit: r.limit, second: r.second, home: qid === c.question });
   }
 }
 export const thinkers = [...bySlug.values()].map(t => {
@@ -97,3 +97,10 @@ export const circles = AXES.flatMap(ax => ax.circles.map(([id, name, line], b) =
   const facing = b === 1 ? null : ax.circles[2 - b];
   return { id, name, line, axis: ax, band: b, tone: ax.tone[b], members, facing: facing ? { id: facing[0], name: facing[1] } : null, siblings: ax.circles.filter(c => c[0] !== id).map(c => ({ id: c[0], name: c[1] })) };
 }));
+
+// What the second, independent reading of a placement found. No human editor is implied.
+export const SECOND = {
+  agreed: 'Read twice: both readers placed it here.',
+  settled: 'Read twice: the readers differed, and a third reading settled it.',
+  differed: 'Read twice: the readers differed, and it could sit either way.',
+};

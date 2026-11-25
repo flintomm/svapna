@@ -798,7 +798,7 @@ export const aboutPages = {
       {
         name: '5. Passages and readings',
         paragraphs: [
-          'Every quoted passage in the Globe of Thought links to the source where its words can be read, and was checked against that source by machine. Where a passage sits on a scale, why, and what it does not show are the site’s own readings. They are drafts, not yet reviewed by an editor, and are not a verdict on any author’s whole work. Matches, circles and stickers are computed from those readings and from a visitor’s answers; they are offered as an invitation to read further, not as a description of what anyone believes.',
+          'Every quoted passage in the Globe of Thought links to the source where its words can be read, and was checked against that source by machine. Where a passage sits on a scale, why, and what it does not show are the site’s own readings. Each has been read twice, independently, by machine, and no human editor has reviewed them yet; they are not a verdict on any author’s whole work. Matches, circles and stickers are computed from those readings and from a visitor’s answers; they are offered as an invitation to read further, not as a description of what anyone believes.',
           'Passages are quoted briefly for comment and study, with credit and a link. An author or rights holder who wants a passage corrected or removed can write to admin@svapnaproject.org.',
         ],
       },

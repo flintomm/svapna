@@ -1,7 +1,7 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { thinkers, thinkerOf } from '../../lib/atlas.js';
+import { thinkers, thinkerOf, SECOND } from '../../lib/atlas.js';
 export function getStaticPaths() { return thinkers.map(t => ({ params: { slug: t.slug }, props: { t } })); }
 const { t } = Astro.props;
 const n = t.own.length, qs = [...new Set(t.passages.map(p => p.question.plain))];
@@ -26,6 +26,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
               <div style="margin-top:22px">
                 <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}#${c.id}`}>{p.question.plain}</a> {p.step.plain}</p>
                 <p class="why">{p.why}</p>
+                {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]}</p>}
               </div>
             ))}
             <p class="why"><b>What it doesn’t show.</b> {home.limit}</p>

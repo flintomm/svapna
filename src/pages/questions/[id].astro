@@ -1,7 +1,7 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { questions, slugify } from '../../lib/atlas.js';
+import { questions, slugify, SECOND } from '../../lib/atlas.js';
 export function getStaticPaths() { return questions.map(q => ({ params: { id: q.id }, props: { q } })); }
 const { q } = Astro.props;
 const scored = q.steps.filter(s => s.tone !== 'none');
@@ -31,6 +31,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
               <blockquote>“{c.excerpt}”</blockquote>
               {c.translation && <p class="tr">{c.translation}</p>}
               <p class="why">{c.why}</p>
+              {SECOND[c.second] && <p class={`twice ${c.second}`}>{SECOND[c.second]}</p>}
             </div>
             <div class="who">
               <a class="name" href={`/thinkers/${slugify(c.name)}#${c.id}`}>{c.name}</a>
