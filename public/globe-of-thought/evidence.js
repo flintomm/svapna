@@ -15958,6 +15958,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "quran-happiness",
+      "question": "happiness",
+      "name": "The Qur’an",
+      "short": "Qur’an",
+      "work": "Qur’an, Sura XIII (“Thunder”), Rodwell’s numbering",
+      "excerpt": "What! Shall not men's hearts repose in the thought of God?",
+      "period": "Revealed c. 610–632 CE",
+      "dateShort": "c. 620 CE",
+      "dateFull": "circa 610 to 632 CE",
+      "sortYear": 620,
+      "sourceLabel": "J. M. Rodwell translation (1861), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "locator": "Sura XIII, “Thunder”, verse 28 in standard numbering; Rodwell’s verse numbers differ.",
+      "place": "Mecca, Arabia",
+      "lat": 21.42,
+      "lng": 39.83,
+      "anchorType": "Traditional association",
+      "placeNote": "Rodwell’s edition heads this sura with an early (Meccan) place in his chronological order, while the traditional classification marks Sura 13 as Medinan, so the pin is only a general Arabian association; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Hearts at rest in the thought of God",
+          "why": "The verse asks whether hearts should not find rest in the thought of God, and promises blessedness to those who believe and do right. Contentment is tied to an inner turning to God, not to outward goods.",
+          "limit": "Rodwell’s nineteenth-century translation, with the suras in his chronological order. The rest comes from remembrance of God and belief, so it is not self-sufficiency in the sense of needing nothing from outside oneself, and the page does not make it independent of divine grace."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "quran-truth",
       "question": "truth",
       "name": "The Qur’an",
@@ -16095,6 +16129,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "muhammad-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Muhammad (hadith in Sahih Muslim)",
+      "short": "Hadith",
+      "work": "Sahih Muslim, Book of Faith, hadith 45a",
+      "excerpt": "None amongst you believes (truly) until he loves for his brother\" - or he said \"for his neighbour\" - \"that which he loves for himself.",
+      "period": "Saying dated to c. 622–632; collected by Muslim ibn al-Hajjaj in the 9th century",
+      "dateShort": "c. 630",
+      "dateFull": "circa 630",
+      "sortYear": 630,
+      "sourceLabel": "Sahih Muslim, USC-MSA English translation, QuranX",
+      "sourceUrl": "https://quranx.com/Hadith/Muslim/USC-MSA/Book-1/Hadith-72",
+      "locator": "Book 1, hadith 72 in the USC-MSA numbering (45a in the standard numbering), on the authority of Anas ibn Malik.",
+      "place": "Medina, Saudi Arabia",
+      "lat": 24.47,
+      "lng": 39.61,
+      "anchorType": "Traditional association",
+      "placeNote": "Anas ibn Malik served Muhammad in Medina, so the saying is conventionally placed there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://quranx.com/Hadith/Muslim/USC-MSA/Book-1/Hadith-72",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Loving for a brother what one loves for oneself",
+          "why": "The saying makes faith conditional on wishing for a brother or neighbour what one wishes for oneself. It sets the other person’s good level with one’s own, neither above it nor below it.",
+          "limit": "A saying attributed to Muhammad and transmitted by Anas ibn Malik, collected by Muslim ibn al-Hajjaj in the ninth century; the attribution rests on the chain of transmission. The wording speaks of a brother or neighbour, which many commentators read as fellow Muslims first."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -18946,6 +19014,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "al-ghazali-death",
+      "question": "death",
+      "name": "Al-Ghazali",
+      "short": "Al-Ghazali",
+      "work": "Deliverance from Error (The Confessions of Al Ghazzali)",
+      "excerpt": "Men are asleep ; when they die, they wake.",
+      "period": "c. 1108 CE",
+      "dateShort": "c. 1108",
+      "dateFull": "circa 1108 CE",
+      "sortYear": 1108,
+      "sourceLabel": "Claud Field translation (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/confessionsofalg00ghaziala/confessionsofalg00ghaziala_djvu.txt",
+      "locator": "Early in the work, in the passage on sense-perception and dreams, before the account of his escape from doubt. The scanned text contains recognition errors.",
+      "place": "Nishapur, Iran",
+      "lat": 36.22,
+      "lng": 58.79,
+      "anchorType": "Approximate association",
+      "placeNote": "Al-Ghazali's autobiography was written towards the end of his life; his page has him teaching at Nishapur from 1106 and then returning to Tus, where he died in 1111, and does not fix the work to one of the two, so the pin is approximate.",
+      "placeSource": "https://archive.org/stream/confessionsofalg00ghaziala/confessionsofalg00ghaziala_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Death as waking",
+          "why": "Al-Ghazali quotes a saying of the Prophet that people are asleep and wake when they die, and suggests that present life may be a dream compared with the life to come. Death is placed as an awakening, not an ending.",
+          "limit": "The saying appears in a passage on the limits of sense-perception and is offered with “perhaps”, as one possibility raised during a period of doubt that the autobiography later resolves. The English is Claud Field’s early translation, read from a scan."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "al-ghazali-truth",
       "question": "truth",
       "name": "Al-Ghazali",
@@ -20554,6 +20656,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "saadi-free-will",
+      "question": "free-will",
+      "excerpt": "That which is not allotted, the hand cannot reach, and what is allotted will find you",
+      "locator": "Chapter VIII (Rules for Conduct in Life), maxim LXVII. The scanned text contains recognition errors.",
+      "name": "Saadi of Shiraz",
+      "short": "Saadi",
+      "work": "Gulistan (The Rose Garden)",
+      "period": "1258",
+      "dateShort": "1258",
+      "dateFull": "1258",
+      "sortYear": 1258,
+      "sourceLabel": "Francis Gladwin translation (1865 edition), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "place": "Shiraz (present-day Iran)",
+      "lat": 29.61,
+      "lng": 52.54,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Saadi completed the Gulistan at Shiraz after his return from long travels. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Allotted portion",
+          "why": "The maxim says that what has not been allotted to a person cannot be reached by effort, and that what has been allotted will find him wherever he is. Outcomes are fixed by an allotment that exertion does not change.",
+          "limit": "One of a string of short maxims in Gladwin’s translation, read from a scan. The following maxims and other tales in the same book urge effort and caution, so the Gulistan does not hold a single line on fate."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "saadi-happiness",
       "question": "happiness",
       "name": "Saadi of Shiraz",
@@ -20593,6 +20729,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "saadi-self-or-others-first",
+      "question": "self-or-others-first",
+      "excerpt": "when the world gives pain to one member, the others also suffer uneasiness. Thou who art indifferent to the sufferings of others deservest not to be called a man.",
+      "locator": "Chapter I (On the Morals of Kings), tale X, in the speaker’s reply to the king. The scanned text contains recognition errors.",
+      "name": "Saadi of Shiraz",
+      "short": "Saadi",
+      "work": "Gulistan (The Rose Garden)",
+      "period": "1258",
+      "dateShort": "1258",
+      "dateFull": "1258",
+      "sortYear": 1258,
+      "sourceLabel": "Francis Gladwin translation (1865 edition), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "place": "Shiraz (present-day Iran)",
+      "lat": 29.61,
+      "lng": 52.54,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Saadi completed the Gulistan at Shiraz after his return from long travels. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Indifference to others’ pain",
+          "why": "The speaker, replying to an unjust king, says that human beings are limbs of one body, so that pain in one member is felt by the rest, and that a person indifferent to the sufferings of others does not deserve to be called a man. Concern for others is made a condition of being human at all.",
+          "limit": "A verse in a tale in which the speaker is lecturing a king who asks for prayers, in Francis Gladwin’s older translation read from a scan. The Gulistan mixes moral appeals with prudential advice, and other tales counsel looking after one’s own safety first."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "saadi-solitude-or-company",
+      "question": "solitude-or-company",
+      "excerpt": "From that day, we resolved not to increase our company, but henceforward to lead the lives of recluses ; because in solitude there is tranquillity.",
+      "locator": "Chapter II (Of the Morals of Durwaishes), tale V. The scanned text contains recognition errors.",
+      "name": "Saadi of Shiraz",
+      "short": "Saadi",
+      "work": "Gulistan (The Rose Garden)",
+      "period": "1258",
+      "dateShort": "1258",
+      "dateFull": "1258",
+      "sortYear": 1258,
+      "sourceLabel": "Francis Gladwin translation (1865 edition), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "place": "Shiraz (present-day Iran)",
+      "lat": 29.61,
+      "lng": 52.54,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Saadi completed the Gulistan at Shiraz after his return from long travels. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Retirement for tranquillity",
+          "why": "Dervish travellers, explaining to the narrator why they will not let him join them, say that after one of their party stole from their hosts and the innocent were jailed, they resolved to take up the lives of recluses, because in solitude there is tranquillity. Company is presented as a risk of being tainted by another’s folly.",
+          "limit": "A conclusion drawn by characters inside a tale, and the narrator replies that the story teaches caution about who is admitted to a company, not that society should be abandoned. The Gulistan speaks with many voices, and other passages praise sociable friendship."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -20902,6 +21106,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rumi-meaning",
+      "question": "meaning",
+      "name": "Jalal al-Din Rumi",
+      "short": "Rumi",
+      "work": "Masnavi, Book I, Prologue (the song of the reed)",
+      "excerpt": "He who abides far away from his home Is ever longing for the day he shall return.",
+      "period": "c. 1260–1273",
+      "dateShort": "c. 1265",
+      "dateFull": "circa 1260 to 1273 CE",
+      "sortYear": 1265,
+      "sourceLabel": "E. H. Whinfield, Masnavi i Maʿnavi (abridged translation), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "locator": "Book I, Prologue, opening lines of the song of the reed. The scanned text contains recognition errors.",
+      "place": "Konya, Turkey",
+      "lat": 37.87,
+      "lng": 32.49,
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Rumi settled at Konya with his family, lived there under the Seljuk Sultanate of Rum, where he produced his works, and died and was buried there in 1273. The Masnavi was therefore composed during his residence at Konya.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Longing for the source",
+          "why": "In the opening song of the reed, the reed complains of separation from its source, and the lines say that whoever is far from home is always longing to return. Human longing is given a direction and an origin outside the self.",
+          "limit": "A symbolic opening, in which the footnote reads home as the Creator, and it comes from E. H. Whinfield’s early English version read from a scan. It speaks of yearning and return, not of any plan for ordinary worldly life."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -22541,6 +22779,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hafiz-death",
+      "question": "death",
+      "name": "Hafez of Shiraz",
+      "short": "Hafiz",
+      "work": "Divan, poem XXVI in Gertrude Bell’s selection",
+      "excerpt": "That cup within thy fingers, dost not hear The voices of dead kings speak through the clay ? Kobad, Bahman, Djemshid, their dust is here",
+      "period": "c. 1370",
+      "dateShort": "c. 1370",
+      "dateFull": "circa 1370",
+      "sortYear": 1370,
+      "sourceLabel": "Gertrude Lowthian Bell, Poems from the Divan of Hafiz (1897), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/poems-from-the-divan-of-hafiz-gertrude-lowthian-bell/Poems%20from%20the%20Divan%20of%20Hafiz_djvu.txt",
+      "locator": "Poem XXVI, stanza beginning “Not all the changes that thy days unfold”. The scanned text contains recognition errors.",
+      "place": "Shiraz (present-day Iran)",
+      "lat": 29.61,
+      "lng": 52.54,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Hafiz spent almost his whole life in Shiraz, as the translator’s introduction describes.",
+      "placeSource": "https://archive.org/stream/poems-from-the-divan-of-hafiz-gertrude-lowthian-bell/Poems%20from%20the%20Divan%20of%20Hafiz_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Dead kings as dust",
+          "why": "The poem points to the cup held in the hand and to the dust of the old kings Kobad, Bahman and Djemshid that is said to speak through the clay. The great are reduced to dust, and the poem turns from this to drinking while there is time.",
+          "limit": "A carpe diem passage in Gertrude Bell’s 1897 verse translation, read from a scan, and a poem of wine and love that Sufi readers take as allegory. The dust is a reason to enjoy the present, so the lines do not argue about what survives of the person."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "hafiz-desire",
       "question": "desire",
       "name": "Hafez of Shiraz",
@@ -22685,6 +22957,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "ibn-khaldun-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Ibn Khaldun",
+      "short": "Ibn Khaldun",
+      "work": "The Muqaddimah, chapter 1, first prefatory discussion",
+      "excerpt": "the power of the individual human being is not sufficient for him to obtain (the food) he needs, and does not provide him with as much food as he requires to live",
+      "period": "1377",
+      "dateShort": "1377",
+      "dateFull": "1377",
+      "sortYear": 1377,
+      "sourceLabel": "Franz Rosenthal translation, muslimphilosophy.com",
+      "sourceUrl": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter1/Ch_1_01.htm",
+      "locator": "Chapter 1, First Prefatory Discussion, “Human social organization is necessary”, second paragraph.",
+      "place": "Qal‘at Ibn Salama (near Frenda, present-day Algeria)",
+      "lat": 35.06,
+      "lng": 1.05,
+      "anchorType": "Documented writing location",
+      "placeNote": "Ibn Khaldun took refuge at Qalat Ibn Salama in western Algeria for over three years from the late 1370s and used that seclusion to write the Muqaddimah, the introduction to his planned history. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter1/Ch_1_01.htm",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Need for social organization",
+          "why": "Ibn Khaldun argues that one person’s strength cannot supply even the food needed to live, since every step of preparing it needs many crafts, so human social organization is necessary. Living alone is treated as impossible, not just unpleasant.",
+          "limit": "The argument is about material need and the division of labour, not about friendship or inner life, and it does not rule out periods of retreat. It comes from Franz Rosenthal’s English translation of a fourteenth-century Arabic work."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -27616,6 +27922,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sor-juana-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Sor Juana Inés de la Cruz",
+      "short": "Sor Juana",
+      "work": "Respuesta a sor Filotea de la Cruz",
+      "excerpt": "me solía ir los ratos que a unas y a otras nos sobraban, a consolarlas y recrearme con su conversación. Reparé que en este tiempo hacía falta a mi estudio",
+      "translation": "I used to go, in the spare moments of both sides, to comfort them and enjoy their conversation. I noticed that at this time it was taking away from my study.",
+      "period": "1691",
+      "dateShort": "1691",
+      "dateFull": "1691",
+      "sortYear": 1691,
+      "sourceLabel": "Spanish text, Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "locator": "Paragraph beginning “Solía sucederme que, como entre otros beneficios”.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana wrote the letter in her convent in Mexico City in March 1691. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Company against study",
+          "why": "Sor Juana says she enjoyed the company of the other nuns and went to console and talk with them, then noticed that this took time from study, which led her to vow not to enter any cell. Company is valued and also set against solitude for work.",
+          "limit": "A passage in a letter defending her scholarship, in which she describes herself as drawn to both company and study. It is an account of her own habits and not a general doctrine. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "sor-juana-ines-de-la-cruz-happiness",
       "question": "happiness",
       "name": "Sor Juana Inés de la Cruz",
@@ -30166,6 +30507,40 @@ window.PILOT_EVIDENCE={
           "why": "Equiano argues that enslaved people are charged with faults that the planters’ own treatment produces. What they are said to be is made by what is done to them.",
           "limit": "The point is made in an abolitionist appeal to slaveholders and is about how conditions shape conduct, not a theory of human nature. Questions have been raised about Equiano’s account of his birthplace, though not this passage.",
           "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "olaudah-equiano-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Olaudah Equiano",
+      "short": "Equiano",
+      "work": "The Interesting Narrative of the Life of Olaudah Equiano, chapter II",
+      "excerpt": "and thus for a while we forgot our misfortunes in the joy of being together",
+      "period": "1789",
+      "dateShort": "1789",
+      "dateFull": "1789",
+      "sortYear": 1789,
+      "sourceLabel": "1789 Narrative, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "locator": "Chapter II, the paragraph about meeting his sister, shortly before they are separated again.",
+      "place": "Igboland, south-eastern Nigeria",
+      "lat": 6,
+      "lng": 7.1,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The scene belongs to Equiano’s account of his captivity inland in West Africa, and the text does not name the place. The pin is a general point in Igboland, the region his memoir gives as his home; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Misfortune eased by being together",
+          "why": "Equiano describes a night when he and his sister, both kidnapped, were allowed to lie together, holding hands, and says that for a while they forgot their misfortunes in the joy of being together. Company is what makes the captivity bearable, and the loss of it the worse pain.",
+          "limit": "A memoir written decades later by an author whose account of his African childhood is disputed by some historians. The passage speaks of the comfort of one close person in great distress, not of company in general."
         }
       },
       "check": {
@@ -34410,6 +34785,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "castro-alves-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Castro Alves",
+      "short": "Castro Alves",
+      "work": "Os Escravos, “Vozes d’África”",
+      "excerpt": "Deus! ó Deus! onde estás que não respondes? Em que mundo, em qu'estrela tu t'escondes Embuçado nos céus?",
+      "translation": "God! O God! where are you, that you do not answer? In what world, in what star do you hide, muffled in the heavens?",
+      "period": "1868",
+      "dateShort": "1868",
+      "dateFull": "1868",
+      "sortYear": 1868,
+      "sourceLabel": "Original Portuguese text, Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Vozes_d'%C3%81frica",
+      "locator": "Opening stanza of the poem.",
+      "place": "São Paulo, Brazil",
+      "lat": -23.55,
+      "lng": -46.63,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The poem is conventionally dated to 1868, when Castro Alves was a student in São Paulo. The linked page gives the text only; the place and date still need an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Vozes_d'%C3%81frica",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "unscored",
+          "facet": "The silence of God",
+          "why": "Africa, personified, asks where God is that he does not answer, and in what star he hides muffled in the heavens. The poem takes God’s existence as given and protests at his silence over the suffering of the enslaved, so it does not fit the scale.",
+          "limit": "A rhetorical address by a personified continent in an abolitionist poem, written by a Romantic poet who died young. It asks a question and the quoted stanza gives no answer. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "umpengula-mbanda-death",
       "question": "death",
       "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
@@ -35351,6 +35761,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "machado-de-assis-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Machado de Assis",
+      "short": "Machado de Assis",
+      "work": "Memórias Póstumas de Brás Cubas, chapter VII (O delírio)",
+      "excerpt": "Egoismo, dizes tu? Sim, egoismo, não tenho outra lei. Egoismo, conservação.",
+      "translation": "Selfishness, do you say? Yes, selfishness; I have no other law. Selfishness, self-preservation.",
+      "period": "1880",
+      "dateShort": "1880",
+      "dateFull": "1880",
+      "sortYear": 1880,
+      "sourceLabel": "Original Portuguese text, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/4/8/2/54829/54829-0.txt",
+      "locator": "Chapter VII, “O delírio”, Nature’s reply to the narrator’s plea.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.2,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Machado lived and worked in Rio de Janeiro, where the novel first appeared in a magazine in 1880. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/4/8/2/54829/54829-0.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Selfishness as the law of nature",
+          "why": "In the dying narrator’s delirium, Nature answers his protest by saying that she acts from selfishness and has no other law, and compares herself to the jaguar that kills the calf because it must live. The good of the self is made the universal rule.",
+          "limit": "Spoken by a personified Nature in a hallucination within a satirical novel narrated by a dead man, so it is not Machado’s own statement. The text is in older Portuguese spelling, and the English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "tolstoy-meaning",
       "question": "meaning",
       "name": "Leo Tolstoy",
@@ -35423,7 +35868,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "machado-de-assis-meaning",
       "question": "meaning",
-      "name": "Joaquim Maria Machado de Assis",
+      "name": "Machado de Assis",
       "short": "Machado de Assis",
       "work": "Memórias Póstumas de Brás Cubas, final chapter",
       "excerpt": "Não tive filhos, não transmitti a nenhuma creatura o legado da nossa miseria.",
@@ -36456,6 +36901,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "edward-wilmot-blyden-suffering",
+      "question": "suffering",
+      "name": "Edward Wilmot Blyden",
+      "short": "Blyden",
+      "work": "The African Problem and the Method of Its Solution",
+      "excerpt": "To take their place as accessories in the work to be done God suffered the African to be brought hither",
+      "period": "Delivered 19 January 1890",
+      "dateShort": "1890",
+      "dateFull": "19 January 1890",
+      "sortYear": 1890,
+      "sourceLabel": "E. W. Blyden, The African Problem (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/africanproblemme00blyd/africanproblemme00blyd_djvu.txt",
+      "locator": "Opening pages, in the paragraph on the Europeans and the Indians that follows the account of Israel in Egyptian bondage. The scanned text contains recognition errors.",
+      "place": "Church of the Covenant, Washington, D.C., United States",
+      "lat": 38.9,
+      "lng": -77.04,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The title page of the printed discourse names the Church of the Covenant, Washington, D.C., and the date. The linked page gives this.",
+      "placeSource": "https://archive.org/stream/africanproblemme00blyd/africanproblemme00blyd_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Slavery as providence",
+          "why": "Blyden says that God allowed the African to be brought to the Americas to take the place of the Indians who would not work, so that the suffering of the slave trade is given a providential role in building the New World. The suffering is read as part of a divine plan.",
+          "limit": "A nineteenth-century providential reading of the slave trade by a Black Christian nationalist in a lecture to a white and Black audience, read from a scan. Blyden calls the middle passage cruel and the enslavers brutal in the same passage, and many later writers reject the idea that slavery had a purpose."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "edward-wilmot-blyden-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Edward Wilmot Blyden",
@@ -37041,6 +37520,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "cruz-e-sousa-suffering",
+      "question": "suffering",
+      "name": "Cruz e Sousa",
+      "short": "Cruz e Sousa",
+      "work": "Broqueis, “Acrobata da Dor”",
+      "excerpt": "Gargalha, ri, n'um riso de tormenta, Como um palhaço, que desengonçado, Nervoso, ri, n'um riso absurdo, inflado De uma ironia e de uma dôr violenta.",
+      "translation": "Laugh, laugh in a laugh of storm, like a clown, awkward and nervous, laughing an absurd laugh swollen with irony and violent pain.",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "Original Portuguese text of Broqueis (1893), Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Acrobata_da_Dor",
+      "locator": "First quatrain; the book was published in 1893 and the page gives pages 105-106.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.2,
+      "anchorType": "Approximate publication location",
+      "placeNote": "The page names Rio de Janeiro as the place of publication of the 1893 edition. The poem’s own place of writing is not stated; the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Acrobata_da_Dor",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Pain performed as art",
+          "why": "The sonnet tells the sufferer to laugh like a clown whose laughter is swollen with irony and violent pain, and to keep leaping for the crowd even if he falls bleeding. Pain is given a use as a performance, though the poem does not say it is redeemed.",
+          "limit": "A symbolist sonnet by a Black Brazilian poet that treats suffering as raw material for art, and the poem ends with the heart still called a very sad clown. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "swami-vivekananda-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Swami Vivekananda",
@@ -37073,6 +37587,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "jose-asuncion-silva-death",
+      "question": "death",
+      "name": "José Asunción Silva",
+      "short": "Silva",
+      "work": "Nocturno (“Una noche”)",
+      "excerpt": "Era el frío del sepulcro, era el frío de la muerte, era el frío de la nada",
+      "translation": "It was the cold of the tomb, it was the cold of death, it was the cold of nothingness.",
+      "period": "Written in the 1890s",
+      "dateShort": "1890s",
+      "dateFull": "the 1890s",
+      "sortYear": 1894,
+      "sourceLabel": "Spanish text, Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Nocturno_(Silva)",
+      "locator": "Second part of the poem, after the lines beginning “Esta noche”, at the words “Sentí frío”.",
+      "place": "Bogotá, Colombia",
+      "lat": 4.65,
+      "lng": -74.07,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Silva lived in Bogotá and the poem mourns his sister, who died there in 1891. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Nocturno_(Silva)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "The cold of the dead",
+          "why": "Walking alone on the path where he once walked with a beloved, the speaker feels the cold that her cheeks, temples and hands had in the funeral sheets, and names it the cold of the tomb, of death and of nothingness. Death is felt as an absence, with no continuation named.",
+          "limit": "A lyric of grief, and the poem ends by joining the two shadows again, so it keeps a longing for union that the quoted lines do not affirm. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -37715,6 +38264,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "amado-nervo-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Amado Nervo",
+      "short": "Nervo",
+      "work": "A Kempis",
+      "excerpt": "huyo de todo terreno lazo, ningún cariño mi mente alegra, y con tu libro bajo del brazo voy recorriendo la noche negra",
+      "translation": "I flee every earthly tie, no affection cheers my mind, and with your book under my arm I go walking through the black night.",
+      "period": "Late 1890s",
+      "dateShort": "1890s",
+      "dateFull": "the late 1890s",
+      "sortYear": 1898,
+      "sourceLabel": "Spanish text, Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/A_Kempis",
+      "locator": "Fourth stanza of the poem.",
+      "place": "Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate association",
+      "placeNote": "Nervo was a Mexican poet who wrote in Mexico in the 1890s before moving abroad. The linked page gives the text only, so the date and place still need an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/A_Kempis",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Withdrawal as sickness",
+          "why": "The speaker says that since reading Thomas à Kempis he flees every earthly bond and no affection gladdens his mind, and that he walks through the black night. The poem calls this withdrawal an illness and blames the book for it, so being cut off from others is shown as a loss.",
+          "limit": "A poem addressed to Thomas à Kempis, the reputed author of The Imitation of Christ, and it is written as a complaint, so the speaker’s lament may not match Nervo’s considered view of religious detachment. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "anton-chekhov-happiness",
       "question": "happiness",
       "name": "Anton Chekhov",
@@ -38195,6 +38779,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-enrique-rodo-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "José Enrique Rodó",
+      "short": "Rodó",
+      "work": "Ariel",
+      "excerpt": "Open with healthy generosity to all the currents of the world, there exists at the same time, like the secret chamber of that king, an inner forum hidden from all",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "F. J. Stimson translation (1922), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ariel01rodgoog/ariel01rodgoog_djvu.txt",
+      "locator": "Paragraph about the old king’s sealed chamber, followed by the passage on leisure and Cleanthes. The scanned text contains recognition errors.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.8,
+      "lng": -56.1,
+      "anchorType": "Documented publication location",
+      "placeNote": "Ariel was published in Montevideo in 1900 as an address to students. The linked page gives the translation only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ariel01rodgoog/ariel01rodgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "An inner room within an open life",
+          "why": "Rodó tells his young listeners to stay open to all the currents of the world and also to keep, like a king’s secret chamber, an inner forum hidden from all and ruled by reason alone. Openness to others and a protected inner solitude are both required.",
+          "limit": "Taken from F. J. Stimson’s 1922 English translation of an address to students, read from a scan. The image is of a private mind, not of physical retreat, and the next sentences ask for leisure and meditation as well as labour."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "jose-enrique-rodo",
       "name": "José Enrique Rodó",
       "short": "Rodó",
@@ -38354,6 +38972,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "augusto-dos-anjos-relationships",
+      "question": "relationships",
+      "name": "Augusto dos Anjos",
+      "short": "Augusto dos Anjos",
+      "work": "Eu, “Versos Íntimos”",
+      "excerpt": "O Homem, que, nesta terra miseravel, Mora, entre féras, sente inevitavel Necessidade de tambem ser féra.",
+      "translation": "Man, who in this wretched world lives among wild beasts, feels an inevitable need to become a beast himself.",
+      "period": "1901",
+      "dateShort": "1901",
+      "dateFull": "1901",
+      "sortYear": 1901,
+      "sourceLabel": "Original Portuguese text of Eu (1912), Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Versos_%C3%8Dntimos",
+      "locator": "Quatrain 2 of the sonnet (lines 5 to 8); the page gives the poem’s date as 1901.",
+      "place": "Pau d’Arco, Paraíba, Brazil",
+      "lat": -7.05,
+      "lng": -35.25,
+      "anchorType": "Place and date named in the text",
+      "placeNote": "The page ends the poem with “Pau d’Arco — 1901”, a place in Paraíba, Brazil; the coordinates are a general point in that region and the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Versos_%C3%8Dntimos",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Becoming a beast among beasts",
+          "why": "The poem says that a man who lives among beasts feels an unavoidable need to become one himself. The company a person lives in is said to make him what he is, at the cost of his gentleness.",
+          "limit": "A bitter sonnet addressed to a disappointed friend, in old Portuguese spelling, and it advises meeting ingratitude with cruelty. The claim is made with the force of a complaint, not as a general theory of character. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -39578,6 +40231,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ruben-dario-lasting-self",
+      "question": "lasting-self",
+      "name": "Rubén Darío",
+      "short": "Darío",
+      "work": "Cantos de vida y esperanza, “Yo soy aquel que ayer no más decía”",
+      "excerpt": "Yo soy aquel que ayer no más decía el verso azul y la canción profana, en cuya noche un ruiseñor había que era alondra de luz por la mañana.",
+      "translation": "I am the one who only yesterday spoke the blue verse and the profane song, in whose night there was a nightingale that was a lark of light by morning.",
+      "period": "1905",
+      "dateShort": "1905",
+      "dateFull": "1905",
+      "sortYear": 1905,
+      "sourceLabel": "Spanish text of the 1918 Madrid edition, Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Yo_soy_aquel_que_ayer_no_m%C3%A1s_dec%C3%ADa",
+      "locator": "First stanza of the opening poem of the book.",
+      "place": "Madrid, Spain",
+      "lat": 40.42,
+      "lng": -3.7,
+      "anchorType": "Approximate publication location",
+      "placeNote": "Cantos de vida y esperanza first appeared in Madrid in 1905, and the linked edition is the Madrid reprint of 1918. The composition place of this poem is not stated on the page; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Yo_soy_aquel_que_ayer_no_m%C3%A1s_dec%C3%ADa",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "The earlier self",
+          "why": "The poet opens by naming himself as the man who yesterday wrote the blue verse and the profane song, and goes on to describe how his instincts, art and conscience changed him. The self is told as a history, with the earlier self now seen from a different place.",
+          "limit": "A poem that opens a book about turning from the earlier decorative poems to graver ones, so the self it describes is a literary persona as well as a person. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "ruben-dario-suffering",
       "question": "suffering",
       "name": "Rubén Darío",
@@ -40258,6 +40946,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "casely-hayford-lasting-self",
+      "question": "lasting-self",
+      "excerpt": "I do not mean this frail body of mine, which is but a casket.",
+      "locator": "Chapter IV, section 2, at the graveside, the speech beginning “I kiss these flowers ere I lay them on thy bosom”. The scanned text contains recognition errors.",
+      "name": "J. E. Casely Hayford",
+      "short": "Casely Hayford",
+      "work": "Ethiopia Unbound, chapter IV, “Love and Death”",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Internet Archive scan of the 1911 edition (full text)",
+      "sourceUrl": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "place": "Gold Coast (now Ghana)",
+      "lat": 5.14,
+      "lng": -1.25,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Casely Hayford was a lawyer and nationalist based on the Gold Coast, and the book was published in London in 1911. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The soul behind the body",
+          "why": "A bereaved husband, speaking at his wife’s open grave, says that when he says “I” he does not mean his frail body, which is only a casket, but the soul that can have communion with her. The self is placed in a soul that outlasts the body.",
+          "limit": "Said by a character in a novel, though the novel’s author held similar Akan and Christian views on the soul. The passage is read from a scan, and the speaker treats the soul as a matter of spiritual experience, not argument."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "casely-hayford-meaning",
+      "question": "meaning",
+      "excerpt": "In the beginning evil and good were created, and to man was given the command to rule and subdue the evil, and to foster and cause the good to prevail.",
+      "locator": "Chapter IV, section 6, Mansa’s speech in the hero’s vision, beginning “Ye shall be as gods”. The scanned text contains recognition errors.",
+      "name": "J. E. Casely Hayford",
+      "short": "Casely Hayford",
+      "work": "Ethiopia Unbound, chapter IV, “Love and Death”",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Internet Archive scan of the 1911 edition (full text)",
+      "sourceUrl": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "place": "Gold Coast (now Ghana)",
+      "lat": 5.14,
+      "lng": -1.25,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Casely Hayford was a lawyer and nationalist based on the Gold Coast, and the book was published in London in 1911. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "The task of ruling evil",
+          "why": "A character, appearing to her husband in a vision as a guardian spirit, says that evil and good were created at the beginning, and that man was given the command to rule and subdue evil and foster good. This is called the final reason of human experience, a purpose set for people by the order of creation.",
+          "limit": "Spoken by Mansa, the dead wife of the novel’s hero, in his vision, and the next sentences turn the task into building character and becoming godlike, which gives it a more self-made side. The passage is read from a scan."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -41702,6 +42458,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ashanti-proverbs-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Ashanti proverbs collected by R. S. Rattray",
+      "short": "Ashanti proverbs",
+      "work": "Ashanti Proverbs, no. 788 (Twi: Wonkoo obi afuo da a, wose, ‘Me nko ne kuafo’)",
+      "excerpt": "If you never went to any one else's farm, (you would) say, ' I alone am a farmer '.",
+      "period": "Collected c. 1910s; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "locator": "Chapter of proverbs about conduct and character, no. 788. The scanned text contains recognition errors.",
+      "place": "Ashanti region, Gold Coast (now Ghana)",
+      "lat": 6.7,
+      "lng": -1.62,
+      "anchorType": "Region of collection",
+      "placeNote": "Rattray gathered the sayings in Ashanti territory while serving as a government anthropologist; the linked page gives no exact place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Knowing oneself by comparison",
+          "why": "The proverb says that a person who has never gone to anyone else’s farm will say that he alone is a farmer. Judging oneself rightly needs sight of others, and looking only at oneself gives a false and inflated picture.",
+          "limit": "A single proverb in Rattray’s 1916 English rendering with the Twi, read from a scan, so the sense depends on his translation and glosses. The proverb is about conceit and skill, not about the self in the philosophers’ sense."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "ashanti-proverbs-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Ashanti proverbs collected by R. S. Rattray",
@@ -41839,6 +42629,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sol-plaatje-suffering",
+      "question": "suffering",
+      "name": "Sol Plaatje",
+      "short": "Plaatje",
+      "work": "Native Life in South Africa, chapter IV (One Night with the Fugitives)",
+      "excerpt": "Is it to be thought that God is using the South African Parliament to hound us out of our ancestral homes in order to quicken our pace heavenward?",
+      "period": "1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "Project Gutenberg mirror (plain-text edition)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/5/1452/1452.txt",
+      "locator": "Chapter IV, “One Night with the Fugitives”, paragraph beginning “We are told to forgive our enemies”; the passage follows a few lines later.",
+      "place": "London, United Kingdom",
+      "lat": 51.52,
+      "lng": -0.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Plaatje travelled to England in 1914 as part of a delegation and the book was published in London in 1916. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/5/1452/1452.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Hardship not a path to heaven",
+          "why": "Plaatje asks, with sarcasm, whether God could be using the South African Parliament to drive the Native people from their ancestral homes in order to speed them toward heaven. He rejects the idea that the dispossession serves a divine purpose, and the passage goes on to say that God freed the Israelites from bondage and did not tell them to bear it.",
+          "limit": "A rhetorical question in a political book of 1916 aimed at British readers, speaking of a particular injustice and not of suffering in general. Elsewhere the same book speaks of God’s providence and of prayer for the persecutors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-25"
       }
     },
     {
@@ -52801,11 +53625,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Other",
       "sure": true
     },
-    "Joaquim Maria Machado de Assis": {
-      "about": "Brazilian novelist of Rio de Janeiro who wrote Posthumous Memoirs of Brás Cubas in 1881.",
-      "tradition": "Literature and poetry",
-      "sure": true
-    },
     "Johann Wolfgang von Goethe": {
       "about": "German poet, dramatist and writer in Weimar who published Faust, Part One, in 1808.",
       "tradition": "Literature and poetry",
@@ -54539,6 +55358,31 @@ window.PILOT_EVIDENCE={
     "Miyazawa Kenji": {
       "about": "Japanese poet and author of children’s stories from Hanamaki, a devout Buddhist who worked alongside local farmers.",
       "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Augusto dos Anjos": {
+      "about": "Brazilian poet from Paraíba whose single book, Eu, appeared in 1912 and dwells on decay and matter.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Castro Alves": {
+      "about": "Brazilian Romantic poet of the 1860s from Bahia, known for verse against slavery.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Cruz e Sousa": {
+      "about": "Brazilian Symbolist poet, the son of freed slaves, who wrote in Rio de Janeiro in the 1890s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "José Asunción Silva": {
+      "about": "Colombian poet from Bogotá, an early voice of Spanish-American modernismo, who wrote in the 1880s and 1890s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Sol Plaatje": {
+      "about": "South African writer, journalist and a founder of the South African Native National Congress, who published Native Life in South Africa in 1916.",
+      "tradition": "Politics and reform",
       "sure": true
     }
   }
