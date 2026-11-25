@@ -1,77 +1,31 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SectionHeader from '../../components/SectionHeader.astro';
-import ContactForm from '../../components/react/ContactForm.jsx';
+import Read from '../../layouts/Read.astro';
+import PlainForm from '../../components/PlainForm.astro';
 import { aboutPages } from '../../lib/content.js';
-import { breadcrumbSchema, buildCrumbs } from '../../lib/seo.js';
 
 export function getStaticPaths() {
   return Object.keys(aboutPages).map(key => ({ params: { page: key } }));
 }
-
 const { page } = Astro.params;
 const data = aboutPages[page];
-
-// privacy and terms are not surfaced in the tab strip on purpose — they
-// remain reachable by direct URL and through the consent strip's "Read
-// more" link on /support. The static-paths generator builds them because
-// it iterates Object.keys(aboutPages).
 const tabs = [
-  { id: 'conduct', label: 'Code of Conduct' },
+  { id: 'conduct', label: 'Code of conduct' },
   { id: 'acknowledgments', label: 'Acknowledgments' },
-  { id: 'disclaimer', label: 'Medical Disclaimer' },
+  { id: 'disclaimer', label: 'Medical disclaimer' },
   { id: 'contact', label: 'Contact' },
-];
-
-const siteUrl = Astro.site.href;
-const crumbsLd = breadcrumbSchema(buildCrumbs(siteUrl, [
-  { name: data.title, path: `/about/${page}` },
-]));
+  { id: 'privacy', label: 'Privacy' },
+  { id: 'terms', label: 'Terms' },
+].filter(t => aboutPages[t.id]);
 ---
-
-<Layout
-  title={`${data.title} — Svapna`}
-  description={data.kicker}
-  jsonLd={[crumbsLd]}
->
-  <div class="fade-in">
-    <SectionHeader num="§ —" kicker={data.kicker} title={`${data.title}.`} />
-
-    <div class="px-5 md:px-12 py-3 hairline-b flex flex-wrap gap-2">
-      {tabs.map(t => (
-        <a
-          href={`/about/${t.id}`}
-          class={`mono text-[9px] md:text-[10px] uppercase tracking-widest px-3 py-2 transition-colors ${page === t.id ? 'bg-black text-white' : 'text-neutral-600 hover:bg-neutral-100'}`}
-          style="border: 0.5px solid #000"
-        >
-          {t.label}
-        </a>
-      ))}
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">{data.title}</span>
-      </div>
-      <div class="md:col-span-10 p-6 md:p-12 max-w-3xl space-y-6 md:space-y-8">
-        {data.paragraphs.map(p => (
-          <p class="text-base md:text-lg leading-loose">{p}</p>
-        ))}
-        {data.sections && data.sections.map(s => (
-          <section class="space-y-4 md:space-y-5 pt-4 md:pt-6 hairline-t">
-            <h2 class="mono text-[10px] md:text-[11px] uppercase tracking-widest text-neutral-700">{s.name}</h2>
-            {s.paragraphs.map(p => (
-              <p class="text-base md:text-lg leading-loose">{p}</p>
-            ))}
-          </section>
-        ))}
-        {data.effective && (
-          <p class="mono text-[10px] uppercase tracking-widest text-neutral-500 pt-4 md:pt-6 hairline-t">
-            Effective: {data.effective}
-          </p>
-        )}
-        {page === 'contact' && <ContactForm email={data.email} client:load />}
-      </div>
-    </div>
+<Read title={`${data.title} — Svapna`} description={data.kicker} path={`/about/${page}`} crumbs={[{ name: data.title, path: `/about/${page}` }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · About</p>
+  <h1 class="h-read">{data.title}</h1>
+  <p class="lede">{data.kicker}</p>
+  <nav class="tabs" aria-label="About pages">{tabs.map(t => <a href={`/about/${t.id}`} aria-current={page === t.id ? 'page' : undefined}>{t.label}</a>)}</nav>
+  <div class="prose">
+    {data.paragraphs.map(p => <p>{p}</p>)}
+    {data.sections && data.sections.map(s => (<section><h2 class="sec-name">{s.name}</h2>{s.paragraphs.map(p => <p>{p}</p>)}</section>))}
+    {data.effective && <p class="small">Effective {data.effective}</p>}
   </div>
-</Layout>
+  {page === 'contact' && <PlainForm id="contact" askSubject button="Send the message" />}
+</Read>

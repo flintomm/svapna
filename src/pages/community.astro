@@ -1,60 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
-
-const pillars = [
-  { num: 'i.',   title: 'Lesson Discussion', body: 'Threaded comments anchored to each lesson. New lessons get their threads as the curriculum unfolds; old ones stay open. Coming back months later is one of the gifts.' },
-  { num: 'ii.',  title: 'Dream Circles',     body: 'Small opt-in groups of eight to twelve. Members share dreams. Witnessing without interpretation, unless invited. Asynchronous, so time zones are not a barrier.' },
-  { num: 'iii.', title: 'Practice Partners', body: 'A bulletin board for 1:1 partners working on similar techniques. Accountability without obligation. Either party can step away.' },
-  { num: 'iv.',  title: 'Code of Conduct',   body: 'Respect for personal experience, cultural traditions, and the vulnerability of sharing dreams. No interpretation without invitation. No proselytizing. No advice unless asked.' },
-];
+import Read from '../layouts/Read.astro';
+import { questions, circles } from '../lib/atlas.js';
 ---
+<Read title="Community — find who thinks like you, and who doesn't — Svapna" description={`Answer ${questions.length} old questions, see which thinkers stand nearest and furthest from you, and find your circle. What is open now, and what is being built.`} path="/community" crumbs={[{ name: 'Community', path: '/community' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · Community</p>
+  <h1>Not alone <em>with the question.</em></h1>
+  <p class="lede">People have been answering the same handful of questions for four thousand years. Svapna lets you add your answer and see whose company that puts you in.</p>
+  <p><a class="go big" href="/you">Answer the questions →</a></p>
 
-<Layout
-  title="Community — Svapna"
-  description="An asynchronous community for the Svapna work. Coming soon — word goes out when it opens."
->
-  <div class="fade-in">
-    <SectionHeader
-      num="§ 04"
-      kicker="Together, Asynchronously"
-      title="Community."
-      sub="Coming soon. Peer-led, lightly moderated when it opens."
-    />
-
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Coming Soon</span>
-      </div>
-      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
-        <p class="display text-2xl md:text-3xl leading-snug italic text-neutral-800">
-          A dreaming community.
-        </p>
-        <p class="mt-5 md:mt-6 text-sm md:text-base leading-relaxed text-neutral-700">
-          What follows is the shape of the thing: four pillars. Subscription at the bottom of the page; word goes out when it opens.
-        </p>
-      </div>
+  <section>
+    <h2>Open now</h2>
+    <div class="steps">
+      <div><b>Your answers</b><div><p>{questions.length} questions, one tap each. They stay in your browser.</p><a class="go" href="/you">Start →</a></div></div>
+      <div><b>Nearest and furthest</b><div><p>After three answers, the thinkers who stand closest to you and the ones who stand opposite, each with the passage that puts them there.</p><a class="go" href="/thinkers">All the thinkers →</a></div></div>
+      <div><b>Circles</b><div><p>{circles.length} loose gatherings of thinkers who lean the same way. Your answers point to the ones you lean toward.</p><a class="go" href="/circles">See the circles →</a></div></div>
+      <div><b>Stickers</b><div><p>Small marks for the way you lean and for what you have read. They gather on your page as you go.</p></div></div>
     </div>
+  </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-2">
-      {pillars.map((it, i) => {
-        const isLastRow = i >= pillars.length - 2;
-        const isLeft = i % 2 === 0;
-        return (
-          <div class={`block p-6 sm:p-8 md:p-12 hairline-b ${isLeft ? 'md:hairline-r' : ''} ${isLastRow ? 'md:border-b-0' : ''}`}>
-            <span class="mono text-[10px] uppercase tracking-widest text-neutral-500">{it.num}</span>
-            <h3 class="display text-4xl md:text-5xl mt-3 md:mt-4">{it.title}</h3>
-            <p class="mt-5 md:mt-6 leading-relaxed text-neutral-700 text-sm md:text-base">{it.body}</p>
-            {it.title === 'Code of Conduct' && (
-              <p class="mt-5 md:mt-6">
-                <a href="/about/conduct" class="mono text-[10px] uppercase tracking-widest hover:italic transition-all">
-                  Read the three commitments →
-                </a>
-              </p>
-            )}
-          </div>
-        );
-      })}
+  <section>
+    <h2>Being built</h2>
+    <p class="def">None of this is open yet. It arrives in this order, and nothing is switched on without a plain account of what others can see.</p>
+    <div class="steps">
+      <div><b>Signing in</b><div><p>An optional account, so your answers follow you between devices.</p></div></div>
+      <div><b>The world today</b><div><p>A map of how people answer now, by country, set beside four thousand years of answers.</p></div></div>
+      <div><b>Members in circles</b><div><p>The circles open to people as well as thinkers: a way to find those who lean as you do, and those who don't.</p></div></div>
+      <div><b>Debate</b><div><p>Two members, one question, opposite answers, each arguing from the passages.</p></div></div>
+      <div><b>Checking the atlas</b><div><p>Members say where a passage really belongs on its scale, and why. The readings are drafts; this is how they get better.</p></div></div>
     </div>
-  </div>
-</Layout>
+  </section>
+
+  <section>
+    <h2>How people are treated here</h2>
+    <p class="def">Disagreement is the point; contempt is not. No recruiting, no advice nobody asked for. <a href="/about/conduct">The code of conduct</a>.</p>
+  </section>
+</Read>

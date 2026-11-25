@@ -1,77 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SectionHeader from '../components/SectionHeader.astro';
-import LibraryPitchForm from '../components/react/LibraryPitchForm.jsx';
-import ShareButton from '../components/react/ShareButton.jsx';
+import Read from '../layouts/Read.astro';
+import PlainForm from '../components/PlainForm.astro';
 ---
+<Read title="Support Svapna — free to read, kept open by its readers" description="Svapna is free and donation-supported, in the spirit of dāna. A coffee covers hosting; sharing it or writing for the library helps as much." path="/support" crumbs={[{ name: 'Support', path: '/support' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · Support</p>
+  <h1>Given freely, <em>passed forward.</em></h1>
+  <p class="lede">Dāna is the Sanskrit for generosity: not a transaction, a circulation. Everything here is open to anyone. If it has served you, the way to thank it is to keep it open for the next person.</p>
+  <p><a class="go big" href="https://www.buymeacoffee.com/svapna" target="_blank" rel="noopener" data-umami-event="coffee_click">Buy a coffee ↗</a></p>
 
-<Layout title="Support — Svapna" description="Donation-supported, in the spirit of dāna. Contributions cover hosting and infrastructure.">
-  <div class="fade-in">
-    <SectionHeader num="§ 06" kicker="Dāna" title="Support." sub="Donation-supported, in the spirit of dāna." />
-
-    {/* On Dāna — the why of donation-funding, lifted from the homepage's voice.
-        The donate affordance itself is the BMC floating bubble loaded at the
-        bottom of this page — no inline donate buttons here. */}
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">On Dāna</span>
-      </div>
-      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
-        <p class="display text-2xl md:text-3xl italic leading-relaxed text-neutral-800">
-          The work was given freely, and passes forward.
-        </p>
-        <p class="mt-5 md:mt-6 text-base leading-loose text-neutral-700">
-          Dāna — generosity, in the Sanskrit. Not transaction; circulation. The work, the history, the library, the community — open to anyone. The way to thank the work, if it has served, is to keep it open for the next person.
-        </p>
-      </div>
+  <section>
+    <h2>Other ways</h2>
+    <div class="steps">
+      <div><b>Share it</b><div><p>Send Svapna to one person who would use it.</p><button class="go" id="share" type="button">Share the link →</button></div></div>
+      <div><b>Write for the library</b><div><p>Pitch an essay on a tradition, a text or a finding the library is missing.</p><PlainForm id="pitch" subject="[Library] Pitch" button="Send the pitch" messageLabel="The idea, in a few lines" done="Thank you. The pitch has arrived." /></div></div>
+      <div><b>Correct it</b><div><p>A wrong quote, date, place or reading is worth more than a coffee.</p><a class="go" href="/about/contact">Send a correction →</a></div></div>
     </div>
+  </section>
 
-    {/* Other Ways — non-monetary dāna. Forum-based options come later. */}
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Other Ways</span>
-      </div>
-      <div class="md:col-span-10 p-6 sm:p-8 md:p-12">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 max-w-3xl">
-          <div>
-            <p class="display text-2xl md:text-3xl">i.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">A Library article.</p>
-            <LibraryPitchForm client:load />
-          </div>
-          <div>
-            <p class="display text-2xl md:text-3xl">ii.</p>
-            <p class="mt-2 md:mt-3 text-sm leading-relaxed">The work, shared with someone who would use it.</p>
-            <ShareButton client:load />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Who — recipient, what donations fund, and tax status */}
-    <div class="grid grid-cols-1 md:grid-cols-12 hairline-b">
-      <div class="md:col-span-2 p-5 md:p-8 hairline-b md:hairline-r md:border-b-0">
-        <span class="mono text-[9px] md:text-[10px] uppercase tracking-widest text-neutral-500">Who</span>
-      </div>
-      <div class="md:col-span-10 p-6 sm:p-8 md:p-12 max-w-3xl">
-        <p class="text-base leading-loose text-neutral-700">
-          Svapna is the work of an independent researcher. Contributions cover hosting and infrastructure. Not a registered nonprofit; contributions are not tax-deductible. <a href="/about/acknowledgments" class="hover:italic transition-all">Acknowledgments</a>.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <script
-    is:inline
-    data-name="BMC-Widget"
-    data-cfasync="false"
-    data-id="svapna"
-    data-description="Support the Svapna project on Buy Me a Coffee."
-    data-message="Thank you!"
-    data-color="#5F7FFF"
-    data-position="Right"
-    data-x_margin="18"
-    data-y_margin="18"
-    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-  ></script>
-</Layout>
+  <section>
+    <h2>Where it goes</h2>
+    <p class="def">Svapna is the work of an independent researcher. Contributions cover hosting and infrastructure. It is not a registered nonprofit, and contributions are not tax-deductible. <a href="/about/acknowledgments">Acknowledgments</a>.</p>
+  </section>
+  <script is:inline>
+    (function () { var b = document.getElementById('share'), u = 'https://svapnaproject.org', t = 'Svapna — the big questions, and the history of dreaming';
+      function flash(m) { var o = b.textContent; b.textContent = m; setTimeout(function () { b.textContent = o; }, 2000); }
+      b.addEventListener('click', function () {
+        if (navigator.share) { navigator.share({ url: u, title: t }).catch(function () {}); return; }
+        navigator.clipboard.writeText(u).then(function () { flash('Link copied'); }, function () { flash('Copy failed'); });
+      }); })();
+  </script>
+</Read>

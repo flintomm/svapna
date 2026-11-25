@@ -116,3 +116,14 @@ a.sticker:hover b{text-decoration:underline}
 h2.h-src{font-size:clamp(24px,2.8vw,40px)}
 .row.snippet{grid-template-columns:minmax(0,1fr) 9rem;padding:16px 0}.row.snippet p{margin:0;color:color-mix(in srgb,var(--ink) 86%,transparent);max-width:54em}.row.snippet .small{text-align:right}
 @media(max-width:760px){.row.snippet{grid-template-columns:1fr}.row.snippet .small{text-align:left}}
+/* forms and plain sections for the about, support, letter and community pages */
+.form{margin-top:34px;max-width:36rem}.form label{display:block;margin-top:22px;font:500 13px/1 'Inter Tight',sans-serif;color:var(--soft)}
+.form input,.form textarea{display:block;width:100%;margin-top:8px;font:500 18px/1.4 'Inter Tight',sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:6px 0;outline:0}
+.form textarea{resize:vertical;min-height:7em}.form input:focus,.form textarea:focus{border-color:var(--ink)}
+.form .trap{position:absolute;left:-9999px;width:0;height:0;overflow:hidden}.form .note{margin:16px 0 0;font-size:14px;color:var(--soft)}
+.form-done{margin-top:34px;font:400 clamp(22px,2.2vw,30px)/1.2 'Instrument Serif',Georgia,serif;font-style:italic}
+.tabs{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 26px}.tabs a{font:500 15px/1 'Inter Tight',sans-serif;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:6px;opacity:.6}.tabs a:hover{opacity:1}.tabs a[aria-current]{opacity:1;border-color:var(--ink)}
+.prose .sec-name{font:600 clamp(22px,2.2vw,30px)/1.1 'Inter Tight',sans-serif;letter-spacing:-.04em;margin:2.4em 0 .7em}
+.steps{margin-top:44px;border-top:1px solid var(--line);max-width:60rem}.steps>div{display:grid;grid-template-columns:minmax(0,16rem) minmax(0,1fr);gap:8px 40px;padding:24px 0;border-bottom:1px solid var(--line)}
+.steps b{font:600 clamp(20px,2vw,28px)/1.1 'Inter Tight',sans-serif;letter-spacing:-.04em}.steps p{margin:0;color:var(--soft);max-width:38em}.steps .go{margin-top:12px}
+@media(max-width:700px){.steps>div{grid-template-columns:1fr}}

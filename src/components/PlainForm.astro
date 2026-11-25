@@ -1,0 +1,31 @@
+---
+// A small native form posted to the site's contact worker. No framework: one inline script.
+interface Props { id: string; subject?: string; askSubject?: boolean; button?: string; done?: string; messageLabel?: string }
+const { id, subject = '', askSubject = false, button = 'Send', done = 'Thank you. Replies arrive when they arrive.', messageLabel = 'Message' } = Astro.props;
+---
+<form class="form" id={id} data-subject={subject} novalidate>
+  <label for={`${id}-name`}>Name</label><input id={`${id}-name`} name="name" type="text" required autocomplete="name" />
+  <label for={`${id}-email`}>Email</label><input id={`${id}-email`} name="email" type="email" required autocomplete="email" />
+  {askSubject && <><label for={`${id}-subject`}>Subject</label><input id={`${id}-subject`} name="subject" type="text" /></>}
+  <label for={`${id}-message`}>{messageLabel}</label><textarea id={`${id}-message`} name="message" rows="5" required></textarea>
+  <input class="trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+  <p><button class="go" type="submit">{button} →</button></p>
+  <p class="note" role="status" hidden></p>
+</form>
+<p class="form-done" id={`${id}-done`} hidden>{done}</p>
+<script is:inline define:vars={{ id }}>
+  (function () {
+    var f = document.getElementById(id), done = document.getElementById(id + '-done'), note = f.querySelector('.note'), btn = f.querySelector('button');
+    function say(t) { note.textContent = t; note.hidden = !t; }
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!f.name.value.trim() || !f.email.value.trim() || !f.message.value.trim()) { say('Name, email and message are needed.'); return; }
+      var data = new FormData(f); if (f.dataset.subject) data.set('subject', f.dataset.subject);
+      btn.disabled = true; say('Sending…');
+      fetch('/api/contact', { method: 'POST', body: data, headers: { Accept: 'application/json' } }).then(function (r) {
+        if (r.ok) { f.hidden = true; done.hidden = false; return; }
+        return r.json().catch(function () { return {}; }).then(function (b) { say((b && b.error) || 'Something went wrong. Email works too: admin@svapnaproject.org'); btn.disabled = false; });
+      }).catch(function () { say('Network error. Email works too: admin@svapnaproject.org'); btn.disabled = false; });
+    });
+  })();
+</script>

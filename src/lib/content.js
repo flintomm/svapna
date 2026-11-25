@@ -661,7 +661,7 @@ export const aboutPages = {
     kicker: 'What is collected, where it travels, how long it stays',
     effective: '2026-11-25',
     paragraphs: [
-      'The Svapna Project is a free, donation-supported site about consciousness: the large questions people have asked for four thousand years, and the history and practice of dreaming. Most of the site is read without leaving a trace. Where it keeps or receives data — choices saved in the browser, an optional account, three small forms, an analytics ping, a donation widget — the policy below describes what is collected, why, where it travels, and how long it stays.',
+      'The Svapna Project is a free, donation-supported site about consciousness: the large questions people have asked for four thousand years, and the history and practice of dreaming. Most of the site is read without leaving a trace. Where it keeps or receives data — choices saved in the browser, an optional account, three small forms, an analytics ping, a donation link — the policy below describes what is collected, why, where it travels, and how long it stays.',
       'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
     ],
     sections: [
@@ -675,12 +675,12 @@ export const aboutPages = {
       {
         name: 'What is collected, and why',
         paragraphs: [
-          'Choices kept in the browser, an optional account, three forms, one analytics request, and one donation widget. Each is described below.',
+          'Choices kept in the browser, an optional account, three forms, one analytics request, and one donation link. Each is described below.',
           'Newsletter subscription — a single field, email address, submitted from the homepage subscribe form. The address is forwarded by the site’s Cloudflare Worker to Buttondown, which stores it on the subscriber list and uses it to deliver future newsletter dispatches. No name, no preferences, no behavioural metadata. Used only to send the newsletter.',
           'Contact form — four fields: name, email, subject, message. Submitted from the Contact page. The submission is forwarded by the Worker through Resend and delivered as email to admin@svapnaproject.org. Used to read and reply to the message.',
           'Library pitch form — three fields: name, email, message. Submitted from the Support page. Delivered by the same path as the contact form, with the subject line prefixed [Library] Pitch for inbox routing. Used to evaluate, and where appropriate develop, the editorial pitch.',
           'Pageview analytics — a single anonymous pageview event per page visited, sent to Umami Cloud. No cookies, no cross-site identifiers, no fingerprinting beyond what Umami does by default. Umami collects no personally identifiable information; it loads site-wide by default rather than behind a consent gate.',
-          'Donation widget — the Support page loads the Buy Me a Coffee donation widget. The widget itself, until clicked, is a script and a small visual bubble; opening it loads the BMC interface, where a donation can be made. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details. The widget script sets browser storage on load; no other page of the site loads BMC.',
+          'Donation link — pages of the site link to the project’s page on Buy Me a Coffee, where a donation can be made. Nothing from Buy Me a Coffee loads on this site; following the link leaves it. Payment processing happens on BMC’s infrastructure under BMC’s own privacy policy and terms; the site never sees card numbers, billing addresses, or the donor’s BMC account details.',
           'Choices saved in the browser — answers to the questions, stickers earned, the circles those answers lean toward, the light or night setting and the colour palette of the visit are saved in the browser’s own storage on the visitor’s device. They are not sent to the site or to anyone else unless the visitor signs in. Clearing the browser’s site data removes them.',
           'An account, when one is created — signing in is optional and uses Google. Google tells the site an email address and a unique identifier for the account; the Google name and picture are not copied or shown. The account then holds the email address, a display name if the member chooses one, the member’s answers to the questions, the stickers earned, a country if the member gives one, and whether a membership has been paid for. On first sign-in, answers and stickers already saved in the browser are copied into the account. Accounts are stored with Supabase.',
           'A membership payment, when membership opens — membership is not yet open. It will be a single payment of an amount the member chooses, taken by Stripe on Stripe’s own pages. The site never sees or stores card details. Stripe tells the site that a payment succeeded, its amount and the account it belongs to. The amount is not shown to other members.',
@@ -705,7 +705,7 @@ export const aboutPages = {
           'The third parties below carry data on the site’s behalf. None receives data for purposes beyond the function described.',
           'Cloudflare — request-routing layer. The site’s small Worker runs on Cloudflare and is the first hop for the three forms. Cloudflare also sees the IP address of every visitor as part of normal request handling. Cloudflare is certified under the EU-US Data Privacy Framework. Privacy policy: cloudflare.com/privacypolicy.',
           'Umami Cloud — pageview analytics, loaded site-wide by default. Privacy-friendly by design: no cookies, no cross-site identifiers, no PII. Umami Software, Inc. is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: umami.is/privacy.',
-          'Buy Me a Coffee — donation processor and widget host. The widget loads on /support and sets browser storage. No other page of the site loads BMC. Buy Me a Coffee is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buymeacoffee.com/privacy-policy.',
+          'Buy Me a Coffee — donation processor, reached by a link. No BMC script loads on the site. Buy Me a Coffee is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buymeacoffee.com/privacy-policy.',
           'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Buttondown is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buttondown.com/privacy.',
           'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Resend is certified under the EU-US Data Privacy Framework. Privacy policy: resend.com/legal/privacy-policy.',
           'Supabase — stores accounts, answers and stickers, and handles sign-in. Data is held in the United States (AWS, Oregon). Privacy policy: supabase.com/privacy.',
@@ -726,7 +726,7 @@ export const aboutPages = {
         name: 'Cookies and storage',
         paragraphs: [
           'The site sets no advertising or tracking cookies. It uses the browser’s local storage for the choices described above: answers, stickers, the light or night setting and the colour palette. When a visitor signs in, the sign-in library supplied by Supabase keeps a session token in local storage so the member stays signed in; signing out removes it.',
-          'Two third-party scripts may touch the visitor’s device. Umami Cloud, the analytics endpoint, is cookieless and collects no personally identifiable information; it loads site-wide. The Buy Me a Coffee donation widget loads on the Support page and sets browser storage on load; no other page of the site loads BMC.',
+          'One third-party script runs site-wide: Umami Cloud, the analytics endpoint, which is cookieless and collects no personally identifiable information. Fonts are loaded from Google Fonts.',
         ],
       },
       {
@@ -860,7 +860,7 @@ export const aboutPages = {
       {
         name: '14. Termination',
         paragraphs: [
-          'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 8, 9, and 10 survive termination.',
+          'The operator may suspend or terminate access to the site, the forms, the newsletter, or the eventual community surface for breach of these terms, or where required by law. The user may stop using the site, unsubscribe from the newsletter, or request deletion of submitted content at any time, by mailing admin@svapnaproject.org. Sections 3, 4, 11, 12, and 13 survive termination.',
         ],
       },
       {
