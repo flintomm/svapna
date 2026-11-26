@@ -62,7 +62,9 @@ for (const c of cards) {
   const t = bySlug.get(slug);
   for (const [qid, r] of Object.entries(c.readings)) {
     const q = qById[qid]; if (!q) continue;
-    t.passages.push({ card: c, question: q, step: q.steps.find(s => s.id === r.score), why: r.why, limit: r.limit, second: r.second, home: qid === c.question });
+    // Where this placement can be found on the question's page: the passage itself, or the same words filed there in their own right.
+    const there = q.placed.find(x => x.id === c.id) || q.placed.find(x => x.name === c.name && x.excerpt === c.excerpt);
+    t.passages.push({ card: c, question: q, step: q.steps.find(s => s.id === r.score), why: r.why, limit: r.limit, second: r.second, home: qid === c.question, anchor: there ? there.id : '' });
   }
 }
 export const thinkers = [...bySlug.values()].map(t => {

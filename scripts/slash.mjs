@@ -11,7 +11,7 @@ const fix = u => {
   const m = /^((?:https:\/\/svapnaproject\.org)?)(\/[^?#"'\s]*?)([?#][^"'\s]*)?$/.exec(u);
   if (!m) return u;
   const [, origin, p, rest = ''] = m;
-  if (p === '/' || p.endsWith('/') || /\.[a-z0-9]{2,5}$/i.test(p) || /^\/(api|_astro|account|next|read|dream\/[a-z]+\.(js|css))\b/.test(p)) return u;
+  if (p === '/' || p.endsWith('/') || /\.[a-z0-9]{2,12}$/i.test(p) || /^\/(api|_astro|account|next|read|dream\/[a-z]+\.(js|css))\b/.test(p)) return u;
   if (!origin && !p.startsWith('/')) return u;
   return origin + p + '/' + rest;
 };

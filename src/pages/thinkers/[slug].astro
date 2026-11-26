@@ -45,7 +45,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url, 
             {c.translation && <p class="tr">{c.translation}</p>}
             {places.map(p => (
               <div style="margin-top:22px">
-                <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}#${c.id}`}>{p.question.plain}</a> {p.step.plain}</p>
+                <p class="pos" style={`--c:var(--${p.step.tone})`}><span class="dot"></span><a href={`/questions/${p.question.id}${p.anchor ? '#' + p.anchor : ''}`}>{p.question.plain}</a> {p.step.plain}</p>
                 <p class="why">{p.why}</p>
                 {SECOND[p.second] && <p class={`twice ${p.second}`}>{SECOND[p.second]} <a href={`/about/contact?about=${p.question.id}:${c.id}`} rel="nofollow">Correct or disagree?</a></p>}
               </div>
