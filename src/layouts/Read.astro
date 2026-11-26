@@ -67,7 +67,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
       if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.copy).then(function () { done('Copied'); }, function () { done('Could not copy'); }); else done('Could not copy'); });
     var btns = document.querySelectorAll('[data-keep]'); if (!btns.length) return;
     function paint() { var kept = get('svapna_kept').map(function (x) { return x.id; }); btns.forEach(function (b) { var on = kept.indexOf(b.dataset.keep) >= 0; b.textContent = on ? 'Kept · see your list' : 'Keep this passage'; b.dataset.on = on ? '1' : ''; }); }
-    btns.forEach(function (b) { b.addEventListener('click', function () { if (b.dataset.on) { location.href = '/you#kept'; return; } var kept = get('svapna_kept'); kept.unshift({ id: b.dataset.keep, name: b.dataset.name, text: b.dataset.text, href: b.dataset.href }); set('svapna_kept', kept.slice(0, 200)); paint(); }); });
+    btns.forEach(function (b) { b.addEventListener('click', function () { if (b.dataset.on) { location.href = '/you#kept'; return; } var kept = get('svapna_kept'); kept.unshift({ id: b.dataset.keep, name: b.dataset.name, text: b.dataset.text, href: b.dataset.href, cite: b.dataset.cite || '' }); set('svapna_kept', kept.slice(0, 200)); paint(); }); });
     paint();
   })();
 </script>

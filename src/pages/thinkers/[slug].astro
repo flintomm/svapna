@@ -1,11 +1,22 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { thinkers, thinkerOf, SECOND } from '../../lib/atlas.js';
+import { thinkers, thinkerOf, SECOND, questions, slugify, regionName } from '../../lib/atlas.js';
 export function getStaticPaths() { return thinkers.map(t => ({ params: { slug: t.slug }, props: { t } })); }
 const { t } = Astro.props;
 const n = t.own.length, qs = [...new Set(t.passages.map(p => p.question.plain))];
 const lead = t.own[0];
+// Where to read next: one voice at the other end of a question this thinker answered, and one who agrees from elsewhere in the world.
+const base = t.passages.find(p => p.home && p.step && p.step.tone !== 'none') || t.passages.find(p => p.step && p.step.tone !== 'none');
+const nextUp = [];
+if (base) {
+  const q = questions.find(x => x.id === base.question.id), order = q.steps.filter(x => x.tone !== 'none'), i = order.findIndex(x => x.id === base.step.id);
+  const far = order[i === 0 ? order.length - 1 : i === order.length - 1 ? 0 : 0], pool = q.placed.filter(c => c.name !== t.name && c.second !== 'differed');
+  const near = (list) => list.sort((a, b) => Math.abs(a.sortYear - base.card.sortYear) - Math.abs(b.sortYear - base.card.sortYear))[0];
+  const other = near(pool.filter(c => c.score === far.id)), same = near(pool.filter(c => c.score === base.step.id && c.region !== base.card.region));
+  if (other) nextUp.push({ label: `Answers the other way: ${far.plain.toLowerCase()}`, c: other, q });
+  if (same) nextUp.push({ label: `Says much the same, from ${regionName(same.region)}`, c: same, q });
+}
 const desc = `${t.name} in ${n === 1 ? 'their own words' : `${n} passages`}, ${t.when}, ${t.where}: “${lead.excerpt.slice(0, 110)}${lead.excerpt.length > 110 ? '…' : ''}” On ${qs.slice(0, 3).join(' ').toLowerCase()}`;
 const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: `https://svapnaproject.org/thinkers/${t.slug}`, mainEntity: { '@type': 'Person', name: t.name, description: `Passages by ${t.name} on ${qs.length} of life’s big questions.` } };
 ---
@@ -40,7 +51,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
             <button class="src quiet say" type="button" data-say={`${c.translation || c.excerpt} ${c.name}.`} hidden>Listen</button>
             <a class="src" href={`/#${home.question.id}`}>See it on the world →</a>
             <button class="src quiet" type="button" data-copy={`“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.readUrl}`}>Copy with citation</button>
-            <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${t.slug}#${c.id}`}>Keep this passage</button>
+            <button class="src quiet keep" type="button" data-keep={c.id} data-name={c.name} data-text={c.excerpt} data-href={`/thinkers/${t.slug}#${c.id}`} data-cite={`${c.work} (${c.dateShort}). ${c.readUrl}`}>Keep this passage</button>
           </div>
         </article>
       );
@@ -62,6 +73,15 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: 
         {t.ties.map(l => (
           <p>{l.out ? <>{t.name} {l.verb} {thinkerOf(l.other) ? <a href={`/thinkers/${l.otherSlug}`}>{l.other}</a> : l.other}</> : <>{thinkerOf(l.other) ? <a href={`/thinkers/${l.otherSlug}`}>{l.other}</a> : l.other} {l.verb} {t.name}</>}{l.year ? ` (${l.year})` : ''}. <span>{l.summary} {l.caveat}</span></p>
         ))}
+      </div>
+    </section>
+  )}
+  {nextUp.length > 0 && (
+    <section>
+      <h2 class="h-src">Read next</h2>
+      <p class="def">On “{nextUp[0].q.plain}”</p>
+      <div class="rows" style="margin-top:22px">
+        {nextUp.map(n => <article class="row term"><div><p class="small">{n.label}</p><a class="name-plain" href={`/thinkers/${slugify(n.c.name)}#${n.c.id}`}>{n.c.name}</a><p class="small">{n.c.dateShort} · {n.c.place.split(',').slice(-1)[0].trim()}</p></div><div><p class="term-def">“{n.c.translation || n.c.excerpt}”</p></div></article>)}
       </div>
     </section>
   )}

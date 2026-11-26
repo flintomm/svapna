@@ -15980,10 +15980,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "happiness": {
-          "score": "on-oneself",
+          "score": "unscored",
           "facet": "Hearts at rest in the thought of God",
-          "why": "The verse asks whether hearts should not find rest in the thought of God, and promises blessedness to those who believe and do right. Contentment is tied to an inner turning to God, not to outward goods.",
-          "limit": "Rodwell’s nineteenth-century translation, with the suras in his chronological order. The rest comes from remembrance of God and belief, so it is not self-sufficiency in the sense of needing nothing from outside oneself, and the page does not make it independent of divine grace."
+          "why": "The verse asks whether hearts should not find rest in the thought of God, and promises blessedness to those who believe and do right. Contentment is tied to an inner turning to God, not to outward goods. A second, independent reading moved this placement from “on oneself” to “unscored”: Hearts are said to rest in the thought of God; the words do not settle whether happiness lies with oneself or with circumstance.",
+          "limit": "Rodwell’s nineteenth-century translation, with the suras in his chronological order. The rest comes from remembrance of God and belief, so it is not self-sufficiency in the sense of needing nothing from outside oneself, and the page does not make it independent of divine grace.",
+          "second": "settled"
         }
       },
       "check": {
@@ -16157,7 +16158,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Loving for a brother what one loves for oneself",
           "why": "The saying makes faith conditional on wishing for a brother or neighbour what one wishes for oneself. It sets the other person’s good level with one’s own, neither above it nor below it.",
-          "limit": "A saying attributed to Muhammad and transmitted by Anas ibn Malik, collected by Muslim ibn al-Hajjaj in the ninth century; the attribution rests on the chain of transmission. The wording speaks of a brother or neighbour, which many commentators read as fellow Muslims first."
+          "limit": "A saying attributed to Muhammad and transmitted by Anas ibn Malik, collected by Muslim ibn al-Hajjaj in the ninth century; the attribution rests on the chain of transmission. The wording speaks of a brother or neighbour, which many commentators read as fellow Muslims first.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -19039,7 +19041,8 @@ window.PILOT_EVIDENCE={
           "score": "continues",
           "facet": "Death as waking",
           "why": "Al-Ghazali quotes a saying of the Prophet that people are asleep and wake when they die, and suggests that present life may be a dream compared with the life to come. Death is placed as an awakening, not an ending.",
-          "limit": "The saying appears in a passage on the limits of sense-perception and is offered with “perhaps”, as one possibility raised during a period of doubt that the autobiography later resolves. The English is Claud Field’s early translation, read from a scan."
+          "limit": "The saying appears in a passage on the limits of sense-perception and is offered with “perhaps”, as one possibility raised during a period of doubt that the autobiography later resolves. The English is Claud Field’s early translation, read from a scan.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -20275,7 +20278,8 @@ window.PILOT_EVIDENCE={
           "score": "changing",
           "facet": "People as foam on a river",
           "why": "Chōmei likens people and their houses to foam on a river: they keep forming and vanishing, and nothing in them stays the same. He treats the person as real but constantly passing, which fits a changing self rather than a lasting one.",
-          "limit": "The opening of a personal essay by a Buddhist recluse, quoted from one printed recension; it concerns impermanence in general and does not discuss the self as a philosophical topic. The English is the atlas’s own unreviewed translation."
+          "limit": "The opening of a personal essay by a Buddhist recluse, quoted from one printed recension; it concerns impermanence in general and does not discuss the self as a philosophical topic. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -20310,7 +20314,8 @@ window.PILOT_EVIDENCE={
           "score": "solitude",
           "facet": "Quiet over companions",
           "why": "Chōmei says that anyone who knows himself and the world will not seek out company, and will count quiet and freedom from worry as the aim and the pleasure. He goes on to say he built the hut for himself alone, because he has no companion to share it.",
-          "limit": "A recluse’s account of his own choice, not an argument that others should live alone. The same essay describes the company of a boy from the foot of the hill as a comfort. The English is the atlas’s own unreviewed translation."
+          "limit": "A recluse’s account of his own choice, not an argument that others should live alone. The same essay describes the company of a boy from the foot of the hill as a comfort. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -20681,7 +20686,8 @@ window.PILOT_EVIDENCE={
           "score": "determined",
           "facet": "Allotted portion",
           "why": "The maxim says that what has not been allotted to a person cannot be reached by effort, and that what has been allotted will find him wherever he is. Outcomes are fixed by an allotment that exertion does not change.",
-          "limit": "One of a string of short maxims in Gladwin’s translation, read from a scan. The following maxims and other tales in the same book urge effort and caution, so the Gulistan does not hold a single line on fate."
+          "limit": "One of a string of short maxims in Gladwin’s translation, read from a scan. The following maxims and other tales in the same book urge effort and caution, so the Gulistan does not hold a single line on fate.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -20757,7 +20763,8 @@ window.PILOT_EVIDENCE={
           "score": "others",
           "facet": "Indifference to others’ pain",
           "why": "The speaker, replying to an unjust king, says that human beings are limbs of one body, so that pain in one member is felt by the rest, and that a person indifferent to the sufferings of others does not deserve to be called a man. Concern for others is made a condition of being human at all.",
-          "limit": "A verse in a tale in which the speaker is lecturing a king who asks for prayers, in Francis Gladwin’s older translation read from a scan. The Gulistan mixes moral appeals with prudential advice, and other tales counsel looking after one’s own safety first."
+          "limit": "A verse in a tale in which the speaker is lecturing a king who asks for prayers, in Francis Gladwin’s older translation read from a scan. The Gulistan mixes moral appeals with prudential advice, and other tales counsel looking after one’s own safety first.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -20791,7 +20798,8 @@ window.PILOT_EVIDENCE={
           "score": "solitude",
           "facet": "Retirement for tranquillity",
           "why": "Dervish travellers, explaining to the narrator why they will not let him join them, say that after one of their party stole from their hosts and the innocent were jailed, they resolved to take up the lives of recluses, because in solitude there is tranquillity. Company is presented as a risk of being tainted by another’s folly.",
-          "limit": "A conclusion drawn by characters inside a tale, and the narrator replies that the story teaches caution about who is admitted to a company, not that society should be abandoned. The Gulistan speaks with many voices, and other passages praise sociable friendship."
+          "limit": "A conclusion drawn by characters inside a tale, and the narrator replies that the story teaches caution about who is admitted to a company, not that society should be abandoned. The Gulistan speaks with many voices, and other passages praise sociable friendship.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -21131,10 +21139,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-given",
+          "score": "unscored",
           "facet": "Longing for the source",
-          "why": "In the opening song of the reed, the reed complains of separation from its source, and the lines say that whoever is far from home is always longing to return. Human longing is given a direction and an origin outside the self.",
-          "limit": "A symbolic opening, in which the footnote reads home as the Creator, and it comes from E. H. Whinfield’s early English version read from a scan. It speaks of yearning and return, not of any plan for ordinary worldly life."
+          "why": "In the opening song of the reed, the reed complains of separation from its source, and the lines say that whoever is far from home is always longing to return. Human longing is given a direction and an origin outside the self. A second, independent reading moved this placement from “given” to “unscored”: The lines speak of longing to return home; they do not say whether life’s meaning is given or made.",
+          "limit": "A symbolic opening, in which the footnote reads home as the Creator, and it comes from E. H. Whinfield’s early English version read from a scan. It speaks of yearning and return, not of any plan for ordinary worldly life.",
+          "second": "settled"
         }
       },
       "check": {
@@ -22055,7 +22064,8 @@ window.PILOT_EVIDENCE={
           "score": "unscored",
           "facet": "Death comes from behind",
           "why": "Kenkō says death cannot be scheduled and is always close behind a person. The passage is about when and how death arrives, not about what follows it, so it takes no position on whether anything continues.",
-          "limit": "A short moral essay in a medieval miscellany; it uses the tide on a tidal flat as an image and makes no claim about an afterlife. The English is the atlas’s own unreviewed translation."
+          "limit": "A short moral essay in a medieval miscellany; it uses the tide on a tidal flat as an image and makes no claim about an afterlife. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -22090,7 +22100,8 @@ window.PILOT_EVIDENCE={
           "score": "give-up",
           "facet": "Letting go of worldly ties",
           "why": "Kenkō says the time has come to drop every worldly obligation and attachment, even convention and courtesy, because life is short and the many demands of the world use it up. This is a call to give up entanglements rather than follow them.",
-          "limit": "A monk’s counsel to himself and to older readers; the text goes on to tell the reader to expect to be called mad, and it is not a general rule for everyone. The English is the atlas’s own unreviewed translation."
+          "limit": "A monk’s counsel to himself and to older readers; the text goes on to tell the reader to expect to be called mad, and it is not a general rule for everyone. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -22125,7 +22136,8 @@ window.PILOT_EVIDENCE={
           "score": "solitude",
           "facet": "Being alone against boredom",
           "why": "Kenkō holds that the best remedy for idleness is to be wholly alone, and goes on to say that following the world brings distraction while mixing with people brings trouble in speech. He therefore puts solitude above company.",
-          "limit": "A short essay in a medieval miscellany by a Buddhist monk-courtier. Other sections praise friendship and conversation, so the passage is not his whole view. The English is the atlas’s own unreviewed translation."
+          "limit": "A short essay in a medieval miscellany by a Buddhist monk-courtier. Other sections praise friendship and conversation, so the passage is not his whole view. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -22804,7 +22816,8 @@ window.PILOT_EVIDENCE={
           "score": "ends",
           "facet": "Dead kings as dust",
           "why": "The poem points to the cup held in the hand and to the dust of the old kings Kobad, Bahman and Djemshid that is said to speak through the clay. The great are reduced to dust, and the poem turns from this to drinking while there is time.",
-          "limit": "A carpe diem passage in Gertrude Bell’s 1897 verse translation, read from a scan, and a poem of wine and love that Sufi readers take as allegory. The dust is a reason to enjoy the present, so the lines do not argue about what survives of the person."
+          "limit": "A carpe diem passage in Gertrude Bell’s 1897 verse translation, read from a scan, and a poem of wine and love that Sufi readers take as allegory. The dust is a reason to enjoy the present, so the lines do not argue about what survives of the person.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -22985,7 +22998,8 @@ window.PILOT_EVIDENCE={
           "score": "company",
           "facet": "Need for social organization",
           "why": "Ibn Khaldun argues that one person’s strength cannot supply even the food needed to live, since every step of preparing it needs many crafts, so human social organization is necessary. Living alone is treated as impossible, not just unpleasant.",
-          "limit": "The argument is about material need and the division of labour, not about friendship or inner life, and it does not rule out periods of retreat. It comes from Franz Rosenthal’s English translation of a fourteenth-century Arabic work."
+          "limit": "The argument is about material need and the division of labour, not about friendship or inner life, and it does not rule out periods of retreat. It comes from Franz Rosenthal’s English translation of a fourteenth-century Arabic work.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -27948,7 +27962,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Company against study",
           "why": "Sor Juana says she enjoyed the company of the other nuns and went to console and talk with them, then noticed that this took time from study, which led her to vow not to enter any cell. Company is valued and also set against solitude for work.",
-          "limit": "A passage in a letter defending her scholarship, in which she describes herself as drawn to both company and study. It is an account of her own habits and not a general doctrine. The English is the atlas’s own unreviewed translation."
+          "limit": "A passage in a letter defending her scholarship, in which she describes herself as drawn to both company and study. It is an account of her own habits and not a general doctrine. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -30540,7 +30555,8 @@ window.PILOT_EVIDENCE={
           "score": "company",
           "facet": "Misfortune eased by being together",
           "why": "Equiano describes a night when he and his sister, both kidnapped, were allowed to lie together, holding hands, and says that for a while they forgot their misfortunes in the joy of being together. Company is what makes the captivity bearable, and the loss of it the worse pain.",
-          "limit": "A memoir written decades later by an author whose account of his African childhood is disputed by some historians. The passage speaks of the comfort of one close person in great distress, not of company in general."
+          "limit": "A memoir written decades later by an author whose account of his African childhood is disputed by some historians. The passage speaks of the comfort of one close person in great distress, not of company in general.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -34811,7 +34827,8 @@ window.PILOT_EVIDENCE={
           "score": "unscored",
           "facet": "The silence of God",
           "why": "Africa, personified, asks where God is that he does not answer, and in what star he hides muffled in the heavens. The poem takes God’s existence as given and protests at his silence over the suffering of the enslaved, so it does not fit the scale.",
-          "limit": "A rhetorical address by a personified continent in an abolitionist poem, written by a Romantic poet who died young. It asks a question and the quoted stanza gives no answer. The English is the atlas’s own unreviewed translation."
+          "limit": "A rhetorical address by a personified continent in an abolitionist poem, written by a Romantic poet who died young. It asks a question and the quoted stanza gives no answer. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -35112,7 +35129,8 @@ window.PILOT_EVIDENCE={
           "score": "made",
           "facet": "Rank comes from learning",
           "why": "Fukuzawa says no one is born with a rank or fortune, and that standing is the result of study and knowledge. On this passage a person’s position is made, not given at birth.",
-          "limit": "A popular essay of 1872 aimed at a general readership, and about social position rather than character or nature. The English is the atlas’s own unreviewed translation."
+          "limit": "A popular essay of 1872 aimed at a general readership, and about social position rather than character or nature. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -35787,7 +35805,8 @@ window.PILOT_EVIDENCE={
           "score": "self",
           "facet": "Selfishness as the law of nature",
           "why": "In the dying narrator’s delirium, Nature answers his protest by saying that she acts from selfishness and has no other law, and compares herself to the jaguar that kills the calf because it must live. The good of the self is made the universal rule.",
-          "limit": "Spoken by a personified Nature in a hallucination within a satirical novel narrated by a dead man, so it is not Machado’s own statement. The text is in older Portuguese spelling, and the English is the atlas’s own unreviewed translation."
+          "limit": "Spoken by a personified Nature in a hallucination within a satirical novel narrated by a dead man, so it is not Machado’s own statement. The text is in older Portuguese spelling, and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -36926,7 +36945,8 @@ window.PILOT_EVIDENCE={
           "score": "has-meaning",
           "facet": "Slavery as providence",
           "why": "Blyden says that God allowed the African to be brought to the Americas to take the place of the Indians who would not work, so that the suffering of the slave trade is given a providential role in building the New World. The suffering is read as part of a divine plan.",
-          "limit": "A nineteenth-century providential reading of the slave trade by a Black Christian nationalist in a lecture to a white and Black audience, read from a scan. Blyden calls the middle passage cruel and the enslavers brutal in the same passage, and many later writers reject the idea that slavery had a purpose."
+          "limit": "A nineteenth-century providential reading of the slave trade by a Black Christian nationalist in a lecture to a white and Black audience, read from a scan. Blyden calls the middle passage cruel and the enslavers brutal in the same passage, and many later writers reject the idea that slavery had a purpose.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -37543,10 +37563,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "can-be-used",
+          "score": "unscored",
           "facet": "Pain performed as art",
-          "why": "The sonnet tells the sufferer to laugh like a clown whose laughter is swollen with irony and violent pain, and to keep leaping for the crowd even if he falls bleeding. Pain is given a use as a performance, though the poem does not say it is redeemed.",
-          "limit": "A symbolist sonnet by a Black Brazilian poet that treats suffering as raw material for art, and the poem ends with the heart still called a very sad clown. The English is the atlas’s own unreviewed translation."
+          "why": "The sonnet tells the sufferer to laugh like a clown whose laughter is swollen with irony and violent pain, and to keep leaping for the crowd even if he falls bleeding. Pain is given a use as a performance, though the poem does not say it is redeemed. A second, independent reading moved this placement from “it can be put to use” to “unscored”: The lines command a pained laugh; a use for the pain is in the reading of the poem, not in these words.",
+          "limit": "A symbolist sonnet by a Black Brazilian poet that treats suffering as raw material for art, and the poem ends with the heart still called a very sad clown. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
         }
       },
       "check": {
@@ -37616,7 +37637,8 @@ window.PILOT_EVIDENCE={
           "score": "ends",
           "facet": "The cold of the dead",
           "why": "Walking alone on the path where he once walked with a beloved, the speaker feels the cold that her cheeks, temples and hands had in the funeral sheets, and names it the cold of the tomb, of death and of nothingness. Death is felt as an absence, with no continuation named.",
-          "limit": "A lyric of grief, and the poem ends by joining the two shadows again, so it keeps a longing for union that the quoted lines do not affirm. The English is the atlas’s own unreviewed translation."
+          "limit": "A lyric of grief, and the poem ends by joining the two shadows again, so it keeps a longing for union that the quoted lines do not affirm. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -38287,10 +38309,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "solitude-or-company": {
-          "score": "company",
+          "score": "unscored",
           "facet": "Withdrawal as sickness",
-          "why": "The speaker says that since reading Thomas à Kempis he flees every earthly bond and no affection gladdens his mind, and that he walks through the black night. The poem calls this withdrawal an illness and blames the book for it, so being cut off from others is shown as a loss.",
-          "limit": "A poem addressed to Thomas à Kempis, the reputed author of The Imitation of Christ, and it is written as a complaint, so the speaker’s lament may not match Nervo’s considered view of religious detachment. The English is the atlas’s own unreviewed translation."
+          "why": "The speaker says that since reading Thomas à Kempis he flees every earthly bond and no affection gladdens his mind, and that he walks through the black night. The poem calls this withdrawal an illness and blames the book for it, so being cut off from others is shown as a loss. A second, independent reading moved this placement from “company” to “unscored”: The lines describe fleeing every tie; that the poem regrets it is in the context, not in these words.",
+          "limit": "A poem addressed to Thomas à Kempis, the reputed author of The Imitation of Christ, and it is written as a complaint, so the speaker’s lament may not match Nervo’s considered view of religious detachment. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
         }
       },
       "check": {
@@ -38804,7 +38827,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "An inner room within an open life",
           "why": "Rodó tells his young listeners to stay open to all the currents of the world and also to keep, like a king’s secret chamber, an inner forum hidden from all and ruled by reason alone. Openness to others and a protected inner solitude are both required.",
-          "limit": "Taken from F. J. Stimson’s 1922 English translation of an address to students, read from a scan. The image is of a private mind, not of physical retreat, and the next sentences ask for leisure and meditation as well as labour."
+          "limit": "Taken from F. J. Stimson’s 1922 English translation of an address to students, read from a scan. The image is of a private mind, not of physical retreat, and the next sentences ask for leisure and meditation as well as labour.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -39001,7 +39025,8 @@ window.PILOT_EVIDENCE={
           "score": "constitutive",
           "facet": "Becoming a beast among beasts",
           "why": "The poem says that a man who lives among beasts feels an unavoidable need to become one himself. The company a person lives in is said to make him what he is, at the cost of his gentleness.",
-          "limit": "A bitter sonnet addressed to a disappointed friend, in old Portuguese spelling, and it advises meeting ingratitude with cruelty. The claim is made with the force of a complaint, not as a general theory of character. The English is the atlas’s own unreviewed translation."
+          "limit": "A bitter sonnet addressed to a disappointed friend, in old Portuguese spelling, and it advises meeting ingratitude with cruelty. The claim is made with the force of a complaint, not as a general theory of character. The English is the atlas’s own unreviewed translation.",
+          "second": "differed"
         }
       },
       "check": {
@@ -40257,7 +40282,8 @@ window.PILOT_EVIDENCE={
           "score": "changing",
           "facet": "The earlier self",
           "why": "The poet opens by naming himself as the man who yesterday wrote the blue verse and the profane song, and goes on to describe how his instincts, art and conscience changed him. The self is told as a history, with the earlier self now seen from a different place.",
-          "limit": "A poem that opens a book about turning from the earlier decorative poems to graver ones, so the self it describes is a literary persona as well as a person. The English is the atlas’s own unreviewed translation."
+          "limit": "A poem that opens a book about turning from the earlier decorative poems to graver ones, so the self it describes is a literary persona as well as a person. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -40974,7 +41000,8 @@ window.PILOT_EVIDENCE={
           "score": "lasting",
           "facet": "The soul behind the body",
           "why": "A bereaved husband, speaking at his wife’s open grave, says that when he says “I” he does not mean his frail body, which is only a casket, but the soul that can have communion with her. The self is placed in a soul that outlasts the body.",
-          "limit": "Said by a character in a novel, though the novel’s author held similar Akan and Christian views on the soul. The passage is read from a scan, and the speaker treats the soul as a matter of spiritual experience, not argument."
+          "limit": "Said by a character in a novel, though the novel’s author held similar Akan and Christian views on the soul. The passage is read from a scan, and the speaker treats the soul as a matter of spiritual experience, not argument.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -41008,7 +41035,8 @@ window.PILOT_EVIDENCE={
           "score": "meaning-given",
           "facet": "The task of ruling evil",
           "why": "A character, appearing to her husband in a vision as a guardian spirit, says that evil and good were created at the beginning, and that man was given the command to rule and subdue evil and foster good. This is called the final reason of human experience, a purpose set for people by the order of creation.",
-          "limit": "Spoken by Mansa, the dead wife of the novel’s hero, in his vision, and the next sentences turn the task into building character and becoming godlike, which gives it a more self-made side. The passage is read from a scan."
+          "limit": "Spoken by Mansa, the dead wife of the novel’s hero, in his vision, and the next sentences turn the task into building character and becoming godlike, which gives it a more self-made side. The passage is read from a scan.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -42175,7 +42203,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "One’s own individuality and that of others",
           "why": "Sōseki says anyone who wants to develop his own individuality has to respect other people’s individuality at the same time. Neither one’s own good nor the others’ is placed first.",
-          "limit": "The excerpt is a clause from a lecture to students, the first of three conditions he lists; the sentence’s first half, on developing one’s own individuality, is left out because the page prints it with reading aids. The English is the atlas’s own unreviewed translation."
+          "limit": "The excerpt is a clause from a lecture to students, the first of three conditions he lists; the sentence’s first half, on developing one’s own individuality, is left out because the page prints it with reading aids. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -42483,7 +42512,8 @@ window.PILOT_EVIDENCE={
           "score": "others",
           "facet": "Knowing oneself by comparison",
           "why": "The proverb says that a person who has never gone to anyone else’s farm will say that he alone is a farmer. Judging oneself rightly needs sight of others, and looking only at oneself gives a false and inflated picture.",
-          "limit": "A single proverb in Rattray’s 1916 English rendering with the Twi, read from a scan, so the sense depends on his translation and glosses. The proverb is about conceit and skill, not about the self in the philosophers’ sense."
+          "limit": "A single proverb in Rattray’s 1916 English rendering with the Twi, read from a scan, so the sense depends on his translation and glosses. The proverb is about conceit and skill, not about the self in the philosophers’ sense.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -42657,7 +42687,8 @@ window.PILOT_EVIDENCE={
           "score": "no-purpose",
           "facet": "Hardship not a path to heaven",
           "why": "Plaatje asks, with sarcasm, whether God could be using the South African Parliament to drive the Native people from their ancestral homes in order to speed them toward heaven. He rejects the idea that the dispossession serves a divine purpose, and the passage goes on to say that God freed the Israelites from bondage and did not tell them to bear it.",
-          "limit": "A rhetorical question in a political book of 1916 aimed at British readers, speaking of a particular injustice and not of suffering in general. Elsewhere the same book speaks of God’s providence and of prayer for the persecutors."
+          "limit": "A rhetorical question in a political book of 1916 aimed at British readers, speaking of a particular injustice and not of suffering in general. Elsewhere the same book speaks of God’s providence and of prayer for the persecutors.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -44305,7 +44336,8 @@ window.PILOT_EVIDENCE={
           "score": "can-be-used",
           "facet": "Turning grief into hope",
           "why": "The speaker says that weeping over parting would itself damage love, and chooses to turn the force of grief into new hope. Suffering is given no meaning in itself but is put to use.",
-          "limit": "A lyric poem in 1926 Korean orthography, spoken by a persona whose beloved has gone; the beloved is often read as the nation or the Buddha. The English is the atlas’s own unreviewed translation."
+          "limit": "A lyric poem in 1926 Korean orthography, spoken by a persona whose beloved has gone; the beloved is often read as the nation or the Buddha. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -45105,7 +45137,8 @@ window.PILOT_EVIDENCE={
           "score": "others",
           "facet": "Going to those in need",
           "why": "The speaker lists a series of visits to sick, weary, dying and quarrelling people as the life he wants to lead, and he asks for no reward. Other people’s needs set the course of the life described.",
-          "limit": "A private notebook poem written during illness and found after the author’s death, in which the speaker says what he wishes to become; it is not a record of how the author lived. The English is the atlas’s own unreviewed translation."
+          "limit": "A private notebook poem written during illness and found after the author’s death, in which the speaker says what he wishes to become; it is not a record of how the author lived. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {

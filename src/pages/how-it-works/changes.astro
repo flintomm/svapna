@@ -11,7 +11,7 @@ const rows = questions.flatMap(q => q.placed.filter(c => c.why.includes(MARK)).m
 <Read title={`${rows.length} placements changed, and why — Svapna`} description={`The record of the ${rows.length} placements in the atlas that a second reading moved, each with the old position, the new one and the reason.`} path="/how-it-works/changes" crumbs={[{ name: 'How it works', path: '/how-it-works' }, { name: 'Changes', path: '/how-it-works/changes' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/how-it-works">How it works</a></p>
   <h1>{rows.length} placements <em>changed.</em></h1>
-  <p class="lede">When the second reading of the atlas was done on 25 November 2026, these placements were moved. Most went to “unscored”: the first reading had leaned on context that the quoted words do not carry by themselves. Nothing was changed silently.</p>
+  <p class="lede">These placements were moved when the atlas was read a second time, in November 2026. Most went to “unscored”: the first reading had leaned on context that the quoted words do not carry by themselves. Nothing was changed silently.</p>
   <div class="rows" style="margin-top:54px">
     {rows.map(r => (
       <article class="row term">

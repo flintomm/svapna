@@ -67,6 +67,9 @@ const T = thinkers.map(t => {
 
   <section id="kept" hidden>
     <h2>Passages you kept</h2>
+    <p class="def">Kept on this device. They can be printed as a single sheet, with their sources, for a class or a reading group.</p>
+    <p class="handout-ask">Where would each of these passages sit on its question’s scale, and which words say so?</p>
+    <p><button type="button" class="go" id="kept-print">Print these as a handout →</button></p>
     <div class="rows" id="kept-list"></div>
   </section>
 
@@ -170,10 +173,11 @@ const T = thinkers.map(t => {
       (function kept() {
         var list = []; try { list = JSON.parse(localStorage.getItem('svapna_kept') || '[]') || []; } catch (e) {}
         var sec = document.getElementById('kept'), box = document.getElementById('kept-list'); sec.hidden = !list.length; box.textContent = '';
-        list.forEach(function (k) { var row = el('div', 'row you-kept'), a = el('a', 'you-say', '“' + k.text + '”'), side = el('p', 'small', k.name + ' · '), drop = el('button', '', 'Remove'); a.href = k.href; drop.type = 'button';
+        list.forEach(function (k) { var row = el('div', 'row you-kept'), a = el('a', 'you-say', '“' + k.text + '”'), side = el('p', 'small', k.name + (k.cite ? ', ' + k.cite : '') + ' · '), drop = el('button', '', 'Remove'); a.href = k.href; drop.type = 'button';
           drop.addEventListener('click', function () { var now = []; try { now = JSON.parse(localStorage.getItem('svapna_kept') || '[]') || []; } catch (e) {} try { localStorage.setItem('svapna_kept', JSON.stringify(now.filter(function (x) { return x.id !== k.id; }))); } catch (e) {} kept(); });
           side.append(drop); row.append(a, side); box.append(row); });
       })();
+      document.getElementById('kept-print').addEventListener('click', function () { document.body.classList.add('print-kept'); print(); setTimeout(function () { document.body.classList.remove('print-kept'); }, 800); });
       document.getElementById('qs').addEventListener('click', function (e) {
         var b = e.target.closest('button[data-a]'); if (!b) return; var q = b.closest('.you-q').dataset.q;
         if (A[q] === b.dataset.a) delete A[q]; else A[q] = b.dataset.a; save(); paint(); if (Acct.user) Acct.saveAnswer(q, A[q]);

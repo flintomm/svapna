@@ -164,3 +164,7 @@ html[data-type=plain] body{letter-spacing:.01em;line-height:1.7}
 .who-line{margin:14px 0 0;max-width:40em;font-size:18px}
 .find-t{display:flex;gap:10px;align-items:baseline}.find-t select{font:500 14px/1.2 'Inter Tight',sans-serif;color:var(--ink);background:var(--bg);border:0;border-bottom:1px solid var(--line);border-radius:0;padding:6px 0;max-width:15rem}.who-line .small{display:block;margin-top:6px}
 .skip{position:absolute;left:-9999px;top:0;z-index:9;background:var(--ink);color:var(--bg);padding:12px 18px;font:600 14px/1 'Inter Tight',sans-serif;text-decoration:none}.skip:focus{left:12px;top:12px}main:focus{outline:0}
+
+.find-short{display:flex;gap:8px;align-items:center;cursor:pointer}.find-short input{accent-color:var(--ink);width:16px;height:16px}
+.handout-ask{display:none}
+@media print{body.print-kept main>*:not(#kept){display:none!important}body.print-kept #kept{display:block!important}body.print-kept .handout-ask{display:block;font-size:12pt;font-weight:600;margin:6pt 0 14pt}body.print-kept #kept .def,body.print-kept .you-kept button{display:none!important}body.print-kept .row.you-kept{padding:10pt 0;break-inside:avoid}body.print-kept .you-say{font-size:13pt}}
