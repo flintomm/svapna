@@ -47,3 +47,6 @@ html[data-mode=light] #door-d::before{background:radial-gradient(120% 90% at 40%
   @media(max-width:820px){.top{padding:max(16px,calc(env(safe-area-inset-top) + 8px)) max(18px,env(safe-area-inset-right)) 16px max(18px,env(safe-area-inset-left))}.door:last-child{padding-bottom:calc(26px + env(safe-area-inset-bottom))}}
 }
 @media(prefers-reduced-motion:reduce){body{animation:none}.door{transition:none}}
+
+/* Fingers need about 44px on touch screens. */
+@media (pointer:coarse){.foot p:not(.fine){gap:0 26px}.foot p:not(.fine) a{padding:11px 0}}

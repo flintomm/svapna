@@ -157,3 +157,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}a,button,summary,select
 /* On a phone, words give way to the body of light at the top of the screen. */
 @media(max-width:820px){section.mk{-webkit-mask-image:linear-gradient(to bottom,transparent var(--m0,-9999px),#000 var(--m1,-9998px));mask-image:linear-gradient(to bottom,transparent var(--m0,-9999px),#000 var(--m1,-9998px))}
 .intro{justify-content:flex-end;padding-top:42vh}.intro h1{font-size:clamp(40px,12vw,64px)}.intro .pill{margin-top:22px}.intro-more{margin-top:18px}.intro-back{margin-top:18px}}
+
+/* Fingers need about 44px: on touch screens the tappable area grows, the look stays. */
+@media (pointer:coarse){.top-right>*,.down,p.small button,.pill{position:relative}.top-right>*::after,.down::after,p.small button::after,.pill::before{content:"";position:absolute;left:-6px;right:-6px;top:50%;height:44px;transform:translateY(-50%)}}

@@ -182,3 +182,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}a,button,summary,select
 .find-t select{font-size:16px}.find-short{flex:0 0 auto;white-space:nowrap}
 @media(max-width:760px){.find-short,.find-t{flex-basis:100%}.find-eras button{padding:11px 0 8px}}
 .find .find-short input{flex:0 0 auto;width:18px;height:18px;padding:0;border:0;margin:0}
+
+/* The footer's fine print is a sentence, not a row of links. */
+.foot p.fine{display:block}.foot p.fine a{text-decoration:underline;text-underline-offset:3px}
+/* Fingers need about 44px. On touch screens the tappable area grows; the look stays as it is. */
+@media (pointer:coarse){.foot p:not(.fine){gap:0 26px}.foot p:not(.fine) a{padding:11px 0}.keys{gap:0 28px}.keys a{padding:11px 0}.who{display:flex;flex-wrap:wrap;column-gap:22px;align-items:baseline}.who>*{flex:0 0 100%}.who>.src,.who>.src.quiet{flex:0 0 auto;display:inline-block;margin:0;padding:11px 0}.go,.find-eras button,.you-opts button,.find-do button,.fine button,.who a.name,.find>a.small,.child-set summary{position:relative}.go::after,.find-eras button::after,.you-opts button::after,.find-do button::after,.fine button::after,.who a.name::after,.find>a.small::after,.child-set summary::after{content:"";position:absolute;left:-6px;right:-6px;top:50%;height:44px;transform:translateY(-50%)}.find-eras button::after{height:40px}.you-opts{gap:18px 28px}.crumb a,.pos a{padding-block:13px}.find select{min-height:44px}}
