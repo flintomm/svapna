@@ -38,7 +38,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
       {childSet.map(c => <figure><blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.translation || c.excerpt}”</blockquote><figcaption><a href={`#${c.id}`}>{c.name}</a> · {c.place.split(',').slice(-1)[0].trim()} · {c.dateShort}</figcaption></figure>)}
     </details>
   )}
-  <a class="go" href={`/#${q.id}`}>Answer it and see the world light up →</a>
+  <a class="go" href={`/world#${q.id}`}>Answer it and see the world light up →</a>
   <div class="tally" aria-hidden="true">{q.steps.map(s => count(s) > 0 && <i style={`flex:${count(s)};background:var(--${s.tone})`}></i>)}</div>
   <div class="find" id="find"><input id="find-q" type="search" placeholder="Find a name, a place or a word" aria-label="Find a name, a place or a word" /><span class="find-eras">{[['all', 'All of time'], ['a', 'Before 1 CE'], ['b', '1–1500'], ['c', '1500–1900'], ['d', 'Since 1900']].map(([id, label]) => <button type="button" data-era={id} aria-pressed={String(id === 'all')}>{label}</button>)}</span><span class="small" id="find-n" aria-live="polite"></span>
     <span class="find-eras find-regions"><button type="button" data-region="all" aria-pressed="true">Everywhere</button>{regions.map(([id, label]) => <button type="button" data-region={id} aria-pressed="false">{label}</button>)}</span>

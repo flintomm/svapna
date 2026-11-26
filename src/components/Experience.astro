@@ -8,10 +8,11 @@ const atlasCount = allCards.length;
 // The opening question is written by a few lines in the page itself, so it never waits for the globe to load.
 const opening = { total: atlasCount, q: ordered.map(q => ({ id: q.id, p: q.plain, a: q.steps.filter(s => s.tone !== 'none').map(s => [s.id, s.plain]) })) };
 
-interface Props { indexable?: boolean }
-const { indexable = false } = Astro.props;
+interface Props { indexable?: boolean; path?: string }
+const { indexable = false, path = '/world' } = Astro.props;
+const pageUrl = 'https://svapnaproject.org' + path;
 const siteUrl = 'https://svapnaproject.org/';
-const title = 'Svapna — the big questions, answered across 4,000 years';
+const title = 'Answer a big question and see who agreed, across 4,000 years — Svapna';
 const description = `Answer one of life’s big questions and see the world light up with everyone who agreed: ${atlasCount.toLocaleString('en')} passages from thinkers, scriptures and traditions on every continent, each quoted from its source. Plus a history of dreaming, from the Upaniṣads to the sleep laboratory.`;
 // Search engines and readers without scripts get the questions and a sample of passages as plain text.
 const atlas = JSON.parse(evidence.slice(evidence.indexOf('{'), evidence.lastIndexOf('}') + 1));
@@ -22,13 +23,13 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-{indexable ? <link rel="canonical" href={siteUrl} /> : <meta name="robots" content="noindex, nofollow" />}
+{indexable ? <link rel="canonical" href={pageUrl} /> : <meta name="robots" content="noindex, nofollow" />}
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:url" content={siteUrl} />
+<meta property="og:url" content={pageUrl} />
 <meta property="og:image" content={siteUrl + 'og.jpg'} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#03040a" />
@@ -65,7 +66,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <div class="top-right">
     <button id="mode" class="mono" type="button">Night</button>
     <button id="open-menu" class="mono" type="button">Menu</button>
-    <a class="mono" href="/dream">Dreaming</a>
+    <a class="mono" href="/dream">The night</a>
     <a class="mono" id="you-link" href="/you">You</a>
   </div>
 </header>

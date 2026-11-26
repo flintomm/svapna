@@ -1,5 +1,110 @@
 ---
-// The home page is the Svapna experience.
-import Experience from '../components/Experience.astro';
+// The home page: two doors of equal weight. The questions on one side, the night on the other.
+import { organizationSchema, websiteSchema } from '../lib/seo.js';
+import { questions, cards, thinkers } from '../lib/atlas.js';
+import { lessonsByModule } from '../lib/lessons.js';
+const siteUrl = 'https://svapnaproject.org/';
+const title = 'Svapna — the big questions and the history of dreaming, across 4,000 years';
+const description = `Two ways in. The questions: ${cards.length.toLocaleString('en')} passages from ${thinkers.length} thinkers, scriptures and traditions on fourteen of life’s big questions, each quoted from its source. The night: a history of dreaming in eight depths, from the Upaniṣads to the sleep laboratory.`;
+// One light on the globe for every passage: where it was written, and the tone of its answer.
+const TONE = { low: 0, mid: 1, high: 2, none: 3 };
+const lights = cards.map(c => { const q = questions.find(x => x.id === c.question), st = q && q.steps.find(s => s.id === (c.readings[c.question] || {}).score); return [Math.round(c.lat * 10) / 10, Math.round(c.lng * 10) / 10, st ? TONE[st.tone] : 3]; });
+const depths = [['awake', 'Awake', '23:00'], ['drifting', 'Drifting', '23:20'], ['deep', 'Deep sleep', '00:05'], ['dreaming', 'Dreaming', '00:40'], ['lucid', 'Knowing it is a dream', '05:25'], ['working', 'Working with the dream', '05:55'], ['ground', 'The ground beneath', '06:20'], ['morning', 'Morning', '07:00']];
+const lessons = Object.values(lessonsByModule).reduce((n, l) => n + l.length, 0);
 ---
-<Experience indexable />
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="canonical" href={siteUrl} />
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={siteUrl} />
+<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Svapna" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content={siteUrl + 'og.jpg'} />
+<meta name="theme-color" content="#03040a" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Svapna" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema(siteUrl))} />
+<script is:inline>
+  // Links shared before the questions moved to their own address still arrive at the right place.
+  (function () { var h = location.hash; if (/^#[a-z-]+$/.test(h) && h !== '#doors') { location.replace('/world/' + h); return; }
+    var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/doors/doors.css" />
+<link rel="prefetch" href="/world" />
+<link rel="prefetch" href="/dream" />
+<script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>
+</head>
+<body>
+<main>
+  <div class="stage">
+    <canvas id="doors-gl" aria-hidden="true"></canvas>
+    <header class="top">
+      <a class="mark" href="/" aria-label="Svapna home">∴ Svapna</a>
+      <div class="top-right"><button id="mode" type="button">Light</button><a href="/you">You</a><a href="/search">Search</a></div>
+    </header>
+    <h1 class="sr-only">Svapna: the big questions, and the history of dreaming</h1>
+    <div class="doors">
+      <a class="door" id="door-q" href="/world" data-total={questions.length} data-pirsch-event="door_questions">
+        <span class="small">The questions</span>
+        <span class="big">What people have <em>thought.</em></span>
+        <span class="sub">Fourteen questions and {cards.length.toLocaleString('en')} answers from four thousand years, each quoted from its source.</span>
+        <span class="go" id="door-q-go">Answer one →</span>
+      </a>
+      <a class="door" id="door-d" href="/dream" data-depths={JSON.stringify(Object.fromEntries(depths.map(d => [d[0], d[1]])))} data-pirsch-event="door_night">
+        <span class="small">The night</span>
+        <span class="big">What people have <em>dreamed.</em></span>
+        <span class="sub">One night in eight depths, from the Upaniṣads to the sleep laboratory.</span>
+        <span class="go" id="door-d-go">Sink through it →</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="below">
+    <section>
+      <h2>The questions</h2>
+      <p>Each one answered by thinkers, scriptures and traditions on every continent. Every passage is checked word for word against its source.</p>
+      <ol>{questions.map(q => <li><a href={`/questions/${q.id}`}>{q.plain}<span>{q.placed.length}</span></a></li>)}</ol>
+    </section>
+    <section>
+      <h2>The night</h2>
+      <p>What people have found at each depth of sleep, over three and a half thousand years.</p>
+      <ol>{depths.map(d => <li><a href={`/dream#${d[0]}`}>{d[1]}<span>{d[2]}</span></a></li>)}</ol>
+      <ul style="margin-top:26px">
+        <li><a href="/dream/lessons">Every lesson, by unit<span>{lessons}</span></a></li>
+        <li><a href="/glossary">The glossary</a></li>
+        <li><a href="/library">The library</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer class="foot">
+  <p><a href="/world">The world</a><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/circles">Circles</a><a href="/dream">Dreaming</a><a href="/you">You</a><a href="/search">Search</a></p>
+  <p><a href="/how-it-works">How it works</a><a href="/community">Community</a><a href="/letter">The letter</a><a href="/support">Support Svapna</a><a href="/about/privacy">Privacy</a><a href="/about/terms">Terms</a></p>
+  <p><span class="fine">Quotes are checked word for word against the linked source. Where a passage sits on a scale has been read twice, independently, by machine; no human editor has reviewed it yet.</span></p>
+</footer>
+<script is:inline type="application/json" id="lights" set:html={JSON.stringify(lights)}></script>
+<script is:inline defer src="/next/three.min.js"></script>
+<script is:inline defer src="/doors/doors.js"></script>
+</body>
+</html>
