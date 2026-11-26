@@ -12942,7 +12942,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "seneca-happiness",
       "question": "happiness",
-      "name": "Seneca the Younger",
+      "name": "Seneca",
       "short": "Seneca",
       "work": "On the Happy Life (De Vita Beata)",
       "excerpt": "he is happy who in his present circumstances, whatever they may be, is satisfied and on friendly terms with the conditions of his life.",
@@ -13103,7 +13103,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "seneca-death",
       "question": "death",
-      "name": "Seneca the Younger",
+      "name": "Seneca",
       "short": "Seneca",
       "work": "Moral Letters to Lucilius, Letter 54",
       "excerpt": "Death is non-existence, and I know already what that means. What was before me will happen again after me.",
@@ -17813,6 +17813,217 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "yan-zhitui-given-or-made",
+      "question": "given-or-made",
+      "name": "Yan Zhitui",
+      "short": "Yan Zhitui",
+      "work": "Family Instructions for the Yan Clan (顏氏家訓), chapter on teaching children",
+      "excerpt": "上智不教而成，下愚雖教無益，中庸之人，不教不知也。",
+      "translation": "The highest wisdom is achieved without teaching, the lowest folly gains nothing even with teaching; the ordinary person, untaught, does not know.",
+      "period": "c. 590 CE",
+      "dateShort": "c. 590 CE",
+      "dateFull": "circa 590 CE",
+      "sortYear": 590,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/顏氏家訓/卷第1",
+      "locator": "Chapter “教子”, the sentence beginning “上智不教而成”, near the start of the chapter.",
+      "place": "Chang'an (Xi'an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The Family Instructions are conventionally dated to Yan Zhitui's last years under the Sui, around 590, when he lived at the capital; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/顏氏家訓",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Teaching the middling",
+          "why": "Yan Zhitui says that the highest wisdom is formed without teaching and the lowest folly is not helped by it, but that ordinary people, if not taught, do not know. A fixed endowment is said to be shaped by instruction in most people, which places it at both.",
+          "limit": "The remark opens advice to parents and is given as an observation that the ordinary run of people need teaching, and it echoes the Analects' remark on the wisest and the most foolish. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "gregory-the-great-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Gregory the Great",
+      "short": "Gregory the Great",
+      "work": "The Book of Pastoral Rule, part 2, chapter 5",
+      "excerpt": "The ruler should be a near neighbour to every one in sympathy, and exalted above all in contemplation",
+      "period": "c. 591 CE",
+      "dateShort": "c. 591 CE",
+      "dateFull": "circa 591 CE",
+      "sortYear": 591,
+      "sourceLabel": "Philip Schaff, ed., Nicene and Post-Nicene Fathers, series 2, vol. 12 (translation by James Barmby), Christian Classics Ethereal Library",
+      "sourceUrl": "https://ccel.org/ccel/schaff/npnf212/npnf212.iii.iv.iii.v.html",
+      "locator": "Part 2, chapter 5, first sentence of the chapter.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.5,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gregory wrote the Pastoral Rule at the start of his papacy in Rome around 590 to 591, as the translators' introduction on the linked site describes; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ccel.org/ccel/schaff/npnf212/npnf212.iii.iv.iii.v.html",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "The ruler near to all and high in contemplation",
+          "why": "Gregory says that one in charge of others must be close to everyone in sympathy and above everyone in contemplation, so as to bear others' weaknesses and still rise to what is unseen. The inward life and the turn to others are to be held together, which places it at both.",
+          "limit": "The advice is addressed to bishops and other ruling clergy, not to every person, and the contemplation it names is a Christian one directed to God. The translation is a Victorian one.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "gregory-the-great-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Gregory the Great",
+      "short": "Gregory the Great",
+      "work": "The Book of Pastoral Rule, part 1, chapter 5",
+      "excerpt": "whosoever abounds in virtues, and yet refuses to feed the flock of God, is convicted of not loving the chief Shepherd",
+      "period": "c. 591 CE",
+      "dateShort": "c. 591 CE",
+      "dateFull": "circa 591 CE",
+      "sortYear": 591,
+      "sourceLabel": "Philip Schaff, ed., Nicene and Post-Nicene Fathers, series 2, vol. 12 (translation by James Barmby), Christian Classics Ethereal Library",
+      "sourceUrl": "https://ccel.org/ccel/schaff/npnf212/npnf212.iii.iv.ii.vi.html",
+      "locator": "Part 1, chapter 5, in the paragraph beginning “For there are some who are eminently endowed with virtues”.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.5,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gregory wrote the Pastoral Rule at the start of his papacy in Rome around 590 to 591, as the translators' introduction on the linked site describes; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ccel.org/ccel/schaff/npnf212/npnf212.iii.iv.ii.vi.html",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Gifts are given for others",
+          "why": "Gregory argues that a person gifted with virtue who refuses to serve others, out of a wish for their own ease, fails in love. Care for others is made the proof of love, and the gifts are said to be received not for oneself alone, which places the good of others first.",
+          "limit": "The passage addresses those called to office in the Church, and the 'others' are a flock to be pastorally fed; it is not a general rule on weighing one's own good. The translation is a Victorian one.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "gregory-the-great-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Gregory the Great",
+      "short": "Gregory the Great",
+      "work": "Dialogues, book 2 (Life of St. Benedict)",
+      "excerpt": "wilderness which so much he loved, and dwelt alone with himself, in the sight of his Creator, who beholdeth the hearts of all men",
+      "period": "c. 593 CE",
+      "dateShort": "c. 593 CE",
+      "dateFull": "circa 593 CE",
+      "sortYear": 593,
+      "sourceLabel": "1608 English translation of the Dialogues, 1911 edition, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/dialoguesofsaint00greg/dialoguesofsaint00greg_djvu.txt",
+      "locator": "Book 2, chapter 3, in the passage on Benedict leaving the monks of Vicovaro. The scanned text contains recognition errors.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.5,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gregory composed the Dialogues in Rome in the early 590s as pope; the linked scan does not state the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Dialogues_(Gregory_the_Great)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Benedict returns to the wilderness",
+          "why": "Gregory tells how Benedict, after leaving monks who had turned against him, went back to the wilderness he loved and lived alone with himself before God. Gregory then explains this as keeping one's mind within one's own soul, and the account approves of withdrawal.",
+          "limit": "The account is of one saint who had left a community that had rejected him, and Gregory's wider teaching in the Pastoral Rule pairs contemplation with care for others. The text is a 1608 English translation in a 1911 edition, with spelling and wording of its time, from a scanned book.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "bhartrihari-desire",
+      "question": "desire",
+      "name": "Bhartrihari",
+      "short": "Bhartrihari",
+      "work": "Vairagya Shatakam (Verses on Renunciation), verse 31",
+      "excerpt": "In this life, all is fraught with fear. Renunciation alone is fearless.",
+      "period": "c. 600 CE",
+      "dateShort": "c. 600 CE",
+      "dateFull": "circa 600 CE (traditional date range fifth to seventh century)",
+      "sortYear": 600,
+      "sourceLabel": "Swami Vivekananda's translation of verses from the Vairagya Shatakam (recorded 1898), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_9/Writings:_Prose_and_Poems(Original_and_Translated)/Bhartrihari%27s_Verses_on_Renunciation",
+      "locator": "Verse 31, the last two lines of the verse beginning “In enjoyment is the fear of disease”.",
+      "place": "Ujjain, Madhya Pradesh, India",
+      "lat": 23.18,
+      "lng": 75.78,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition links Bhartrihari with the court of Ujjain, and the Sanskrit poet is dated between the fifth and seventh centuries; the linked page does not state either, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bhartrihari",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Renunciation is fearless",
+          "why": "Bhartrihari lists the fear that attends enjoyment, wealth, beauty, honour and the body, then concludes that only renunciation is without fear. Giving up what desire pursues is made the one safe course, which places the verse at give-up.",
+          "limit": "The translation is a free, oral rendering that Vivekananda gave to disciples in 1898 and the verse numbers are the translator's; Bhartrihari's dates are uncertain, and the poem's speaker is a poet who elsewhere writes of pleasure.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "bhartrihari-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Bhartrihari",
+      "short": "Bhartrihari",
+      "work": "Vairagya Shatakam (Verses on Renunciation), verse 26",
+      "excerpt": "Arise! Let us go into the forest Where pure roots and fruits will be our food, Pure water our only drink, Pure leaves our bed",
+      "period": "c. 600 CE",
+      "dateShort": "c. 600 CE",
+      "dateFull": "circa 600 CE (traditional date range fifth to seventh century)",
+      "sortYear": 600,
+      "sourceLabel": "Swami Vivekananda's translation of verses from the Vairagya Shatakam (recorded 1898), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_9/Writings:_Prose_and_Poems(Original_and_Translated)/Bhartrihari%27s_Verses_on_Renunciation",
+      "locator": "Verse 26, beginning “Arise! Let us go into the forest”.",
+      "place": "Ujjain, Madhya Pradesh, India",
+      "lat": 23.18,
+      "lng": 75.78,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition links Bhartrihari with the court of Ujjain, and the Sanskrit poet is dated between the fifth and seventh centuries; the linked page does not state either, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bhartrihari",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Into the forest, away from the wealthy",
+          "why": "The verse calls on the speaker to leave for the forest, living on roots and water, away from the little-minded and the wealthy. Withdrawal from ordinary society is presented as the better way to live.",
+          "limit": "The translation is a free, oral rendering that Vivekananda gave to disciples in 1898 and the verse numbers are the translator's; the verse is one mood in a poet who also wrote of love and statecraft.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "sengcan-truth",
       "question": "truth",
       "name": "Sengcan (attributed)",
@@ -18788,6 +18999,150 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "yongjia-xuanjue-lasting-self",
+      "question": "lasting-self",
+      "name": "Yongjia Xuanjue",
+      "short": "Yongjia Xuanjue",
+      "work": "Song of Enlightenment (證道歌)",
+      "excerpt": "證實相。無人法。",
+      "translation": "Realising true reality, there is no person and no things.",
+      "period": "c. 713 CE",
+      "dateShort": "c. 713 CE",
+      "dateFull": "circa 713 CE",
+      "sortYear": 713,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/永嘉證道歌",
+      "locator": "Third stanza, beginning “證實相。無人法。”.",
+      "place": "Wenzhou (Yongjia), Zhejiang, China",
+      "lat": 28.05,
+      "lng": 120.45,
+      "anchorType": "Traditional association",
+      "placeNote": "Xuanjue is named after Yongjia, the old name of Wenzhou, where he taught; the poem is attributed to his last years, around 713, but the linked page gives the text and not the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Yongjia_Xuanjue",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "No person, no things",
+          "why": "The song says that realising true reality means there is no person and no things. Denying both a self and the objects it would own places the line at no self.",
+          "limit": "A Chan poem of the early Tang attributed to Xuanjue, in the voice of an awakened teacher; the line is a doctrine of emptiness, not a psychological analysis. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "yongjia-xuanjue-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Yongjia Xuanjue",
+      "short": "Yongjia Xuanjue",
+      "work": "Song of Enlightenment (證道歌)",
+      "excerpt": "常獨行。常獨步。達者同遊涅槃路。",
+      "translation": "Always walking alone, always striding alone; those who have arrived travel together on the road to nirvana.",
+      "period": "c. 713 CE",
+      "dateShort": "c. 713 CE",
+      "dateFull": "circa 713 CE",
+      "sortYear": 713,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/永嘉證道歌",
+      "locator": "The stanza beginning “常獨行。常獨步。”.",
+      "place": "Wenzhou (Yongjia), Zhejiang, China",
+      "lat": 28.05,
+      "lng": 120.45,
+      "anchorType": "Traditional association",
+      "placeNote": "Xuanjue is named after Yongjia, the old name of Wenzhou, where he taught; the poem is attributed to his last years, around 713, but the linked page gives the text and not the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Yongjia_Xuanjue",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Walking alone, together on the road",
+          "why": "The song says the awakened man always walks and strides alone, and in the same line says that those who have arrived travel the road to nirvana together. Solitary practice and shared company on the way are both kept, which places it at both.",
+          "limit": "A Chan poem of the early Tang attributed to Xuanjue, in the voice of an awakened teacher; the 'company' is of other awakened people, not of ordinary society. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "meng-haoran-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Meng Haoran",
+      "short": "Meng Haoran",
+      "work": "Visiting an Old Friend's Farm (過故人莊)",
+      "excerpt": "故人具雞黍，邀我至田家。",
+      "translation": "An old friend has prepared chicken and millet and invites me to his farmhouse.",
+      "period": "c. 730 CE",
+      "dateShort": "c. 730 CE",
+      "dateFull": "circa 730 CE",
+      "sortYear": 730,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/過故人莊",
+      "locator": "Lines 1 and 2 of the poem.",
+      "place": "Xiangyang, Hubei, China",
+      "lat": 32.04,
+      "lng": 112.14,
+      "anchorType": "Traditional association",
+      "placeNote": "Meng Haoran lived near Xiangyang and the poem is conventionally placed in that region; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/過故人莊",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "A friend's farm feast",
+          "why": "An old friend prepares chicken and millet and invites the poet to his farm; the following lines describe the meal and talk in the fields and the poem ends by promising to return. The whole pleasure is the shared meal.",
+          "limit": "A short occasional poem that describes a single visit; it is a pleasure in friendship and does not argue against solitude, which Meng Haoran also praised elsewhere. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "otomo-no-tabito-death",
+      "question": "death",
+      "name": "Ōtomo no Tabito",
+      "short": "Ōtomo no Tabito",
+      "work": "Manyoshu, book 3, poem 348 (in praise of sake)",
+      "excerpt": "この世にし楽しくあらば来む世には虫に鳥にも我れはなりなむ",
+      "translation": "If I can be merry in this world, then in the world to come I shall gladly become an insect or a bird.",
+      "period": "c. 730 CE",
+      "dateShort": "c. 730 CE",
+      "dateFull": "circa 730 CE",
+      "sortYear": 730,
+      "sourceLabel": "Manyoshu text with Japanese readings, Japanese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://ja.wikisource.org/wiki/万葉集/第三巻",
+      "locator": "Book 3, poem 348, the eleventh of the thirteen poems in praise of sake.",
+      "place": "Dazaifu, Fukuoka, Japan",
+      "lat": 33.51,
+      "lng": 130.53,
+      "anchorType": "Documented writing location",
+      "placeNote": "Wikipedia states that Tabito served as Governor-General at Dazaifu from 728 to 730 and that his thirteen tanka in praise of sake belong to that period of service.",
+      "placeSource": "https://en.wikipedia.org/wiki/%C5%8Ctomo_no_Tabito",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Rebirth as an insect or bird",
+          "why": "Tabito says that if he can be happy in this world he will gladly be an insect or a bird in the world to come. The line takes for granted a next existence, which places it at continues.",
+          "limit": "The poem is one of thirteen light verses in praise of sake, written in the voice of a drinker, so the tone is a joke and the line is not doctrine. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "otomo-no-tabito-meaning",
       "question": "meaning",
       "name": "Ōtomo no Tabito",
@@ -18891,6 +19246,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "yamanoue-no-okura-meaning",
+      "question": "meaning",
+      "name": "Yamanoue no Okura",
+      "short": "Yamanoue no Okura",
+      "work": "Manyoshu, book 6, poem 978 (written in his last illness)",
+      "excerpt": "士やも空しくあるべき万代に語り継ぐべき名は立てずして",
+      "translation": "Should a man be idle and vain, having raised no name to be handed down for ten thousand ages?",
+      "period": "c. 733 CE",
+      "dateShort": "c. 733 CE",
+      "dateFull": "circa 733 CE",
+      "sortYear": 733,
+      "sourceLabel": "Manyoshu text with Japanese readings, Japanese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://ja.wikisource.org/wiki/万葉集/第六巻",
+      "locator": "Book 6, poem 978, headed “山上臣憶良沈痾之時歌一首”.",
+      "place": "Nara (Heijo-kyo), Japan",
+      "lat": 34.69,
+      "lng": 135.8,
+      "anchorType": "Traditional association",
+      "placeNote": "The poem is headed as composed when Okura lay ill; he died in 733, and Nara was the capital, but the linked page does not name the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/万葉集/第六巻",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "A name to be told for ages",
+          "why": "Okura, lying ill, asks whether a man should pass his life in vain without making a name that will be told through ten thousand generations. The worth of a life is something he must achieve by what he does, which places the passage at meaning-made.",
+          "limit": "The poem is traditionally the poet's last, spoken from a sickbed, and its ideal is a Confucian-style fame for a man of the gentry class. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -19329,6 +19720,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "wang-wei-desire",
+      "question": "desire",
+      "name": "Wang Wei",
+      "short": "Wang Wei",
+      "work": "Reply to Vice-Prefect Zhang (酬張少府)",
+      "excerpt": "晚年唯好靜，萬事不關心。",
+      "translation": "In my later years I like only quiet; of the ten thousand affairs I care for none.",
+      "period": "c. 750 CE",
+      "dateShort": "c. 750 CE",
+      "dateFull": "circa 750 CE",
+      "sortYear": 750,
+      "sourceLabel": "Chinese text from the Complete Tang Poems, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/全唐詩/卷126",
+      "locator": "Poem “酬張少府”, opening lines.",
+      "place": "Wang River estate, Lantian, Shaanxi, China",
+      "lat": 34.15,
+      "lng": 109.35,
+      "anchorType": "Traditional association",
+      "placeNote": "The poem is conventionally placed in Wang Wei's later years at his Wangchuan estate near Lantian, but the linked page does not give the date or the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷126",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Concern for nothing",
+          "why": "Wang Wei writes that in his later years he likes only quiet and cares about none of the ten thousand affairs. Withdrawing interest from what the world offers places the line at give-up, though it states a settled preference and does not argue for it.",
+          "limit": "A short occasional poem answering a friend, written in an official's voice that may be modest or ironic; the lines that follow admit that he has no grand plan and speak only of returning to the old woods. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "wang-wei-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Wang Wei",
+      "short": "Wang Wei",
+      "work": "Bamboo Lodge (竹里館), from the Wang River collection",
+      "excerpt": "獨坐幽篁裏，彈琴復長嘯。",
+      "translation": "Sitting alone in the secluded bamboo, I play the zither and then whistle long.",
+      "period": "c. 750 CE",
+      "dateShort": "c. 750 CE",
+      "dateFull": "circa 750 CE",
+      "sortYear": 750,
+      "sourceLabel": "Chinese text from the Complete Tang Poems, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/全唐詩/卷128",
+      "locator": "Lines 1 and 2 of the poem “竹里館”.",
+      "place": "Wang River estate, Lantian, Shaanxi, China",
+      "lat": 34.15,
+      "lng": 109.35,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem belongs to the Wang River series, conventionally tied to Wang Wei's country estate at Wangchuan near Lantian and dated to the 740s to 750s; the linked page does not give the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/全唐詩/卷128",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Sitting alone in the bamboo",
+          "why": "The poet sits alone among bamboo, plays the zither and whistles, and the next lines add that no one in the deep wood knows he is there. The poem treats being alone and unseen as complete and content.",
+          "limit": "A short nature lyric written as a scene, not as an argument, and Wang Wei's wider life included official posts and friends. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -19905,7 +20368,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "shankara",
-      "name": "Shankara (attributed)",
+      "name": "Adi Shankara (attributed)",
       "short": "Shankara",
       "work": "Vivekachudamani (Crest-Jewel of Discrimination), verse 52",
       "excerpt": "The trouble such as that caused by a load on the head can be removed by others, but none but one's own self can put a stop to the pain which is caused by hunger and the like.",
@@ -19950,6 +20413,222 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "liu-zongyuan-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Liu Zongyuan",
+      "short": "Liu Zongyuan",
+      "work": "River Snow (江雪)",
+      "excerpt": "孤舟簑笠翁，獨釣寒江雪。",
+      "translation": "A lone boat, an old man in straw cape and hat, fishing by himself in the cold river snow.",
+      "period": "c. 805 to 810 CE",
+      "dateShort": "c. 805-810 CE",
+      "dateFull": "circa 805 to 810 CE",
+      "sortYear": 808,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/江雪",
+      "locator": "Lines 3 and 4 of the poem.",
+      "place": "Yongzhou (Lingling), Hunan, China",
+      "lat": 26.22,
+      "lng": 111.6,
+      "anchorType": "Traditional association",
+      "placeNote": "Liu Zongyuan was exiled to Yongzhou from 805, and the poem is traditionally dated to those years; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/江雪",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "One old man fishing in snow",
+          "why": "The poem's last two lines show a single old man in a straw cape in a lone boat, fishing by himself in the snowy cold river. Solitude is held up as the picture, with no company wanted or missed.",
+          "limit": "A four-line lyric that gives an image and no argument; it is often read as the poet's own feeling in exile, which the text does not say. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "bai-juyi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Bai Juyi",
+      "short": "Bai Juyi",
+      "work": "New Cotton Robe (新製布裘)",
+      "excerpt": "丈夫貴兼濟，豈獨善一身。",
+      "translation": "A worthy man prizes helping all, not only improving himself.",
+      "period": "c. 809 CE",
+      "dateShort": "c. 809 CE",
+      "dateFull": "circa 809 CE",
+      "sortYear": 809,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/新製布裘",
+      "locator": "The eleventh and twelfth lines of the fourteen-line poem, followed by “安得萬里裘，蓋裹週四垠”.",
+      "place": "Chang'an (Xi'an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Traditional association",
+      "placeNote": "The poem is conventionally dated to Bai Juyi's years as a court official at Chang'an around 809; the linked page gives the text and does not date it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/新製布裘",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Warmth for all, not for one",
+          "why": "The poet states that a worthy man values helping everyone, not only perfecting himself, and goes on in the next lines to wish for a robe wide enough to warm the whole world. Putting universal relief above private virtue or comfort places the passage with others.",
+          "limit": "The poem is a short verse in which a comfortable official imagines a gesture of sympathy; it is a wish and records no action. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "liu-zongyuan-given-or-made",
+      "question": "given-or-made",
+      "name": "Liu Zongyuan",
+      "short": "Liu Zongyuan",
+      "work": "Biography of Camel Guo, the Tree-Planter (種樹郭橐駝傳)",
+      "excerpt": "橐駝非能使木壽且孳也，能順木之天，以致其性焉爾。",
+      "translation": "Camel cannot make a tree live long and flourish; he can only follow the tree's heaven-given nature so that its own character is fulfilled.",
+      "period": "c. 810 CE",
+      "dateShort": "c. 810 CE",
+      "dateFull": "circa 810 CE",
+      "sortYear": 810,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/種樹郭橐駝傳",
+      "locator": "The gardener's answer, beginning “橐駝非能使木壽且孳也”.",
+      "place": "Yongzhou (Lingling), Hunan, China",
+      "lat": 26.22,
+      "lng": 111.6,
+      "anchorType": "Traditional association",
+      "placeNote": "Liu Zongyuan wrote most of his prose essays during his exile in Yongzhou after 805, and the essay is traditionally assigned to that time; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/種樹郭橐駝傳",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Following the nature a thing is given",
+          "why": "Camel Guo says that he cannot make a tree live long or multiply; he can only follow its Heaven-given nature so that its character is fully realised. The nature is a given, and the planter's care brings it out, which places the passage at both.",
+          "limit": "The speaker is a gardener in a parable about governing the people, and the 'nature' in question is a tree's; the extension to persons is the essay's own point, not shown in the line. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "liu-zongyuan-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Liu Zongyuan",
+      "short": "Liu Zongyuan",
+      "work": "On Heaven (天說)",
+      "excerpt": "天地，大果蓏也；元氣，大癰痔也；陰陽，大草木也，其烏能賞功而罰禍乎？功者自功，禍者自禍",
+      "translation": "Heaven and earth are a big melon, the primal breath a big boil, yin and yang big plants; how could they reward merit and punish misfortune? Merit is one's own merit, misfortune one's own misfortune.",
+      "period": "c. 813 CE",
+      "dateShort": "c. 813 CE",
+      "dateFull": "circa 813 CE",
+      "sortYear": 813,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/天說",
+      "locator": "Liu Zongyuan's reply, beginning “柳子曰”.",
+      "place": "Yongzhou (Lingling), Hunan, China",
+      "lat": 26.22,
+      "lng": 111.6,
+      "anchorType": "Traditional association",
+      "placeNote": "The essay is traditionally dated to Liu Zongyuan's exile in Yongzhou, around 813; the linked page gives the text and not the date or place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/天說",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "Heaven cannot reward or punish",
+          "why": "Liu Zongyuan answers that heaven and earth are only a large melon, the primal breath a large boil and yin and yang large plants, so none of them can reward merit or punish wrongdoing. Merit and misfortune belong to the people who earn them, so there is no purposive power above the world.",
+          "limit": "The passage is one side of a reply to Han Yu's essay, addressed to a controversy about Heaven's moral role; it denies a judging Heaven and does not discuss the Way or other kinds of ultimate. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "liu-yuxi-happiness",
+      "question": "happiness",
+      "name": "Liu Yuxi",
+      "short": "Liu Yuxi",
+      "work": "Inscription for a Humble Room (陋室銘)",
+      "excerpt": "斯是陋室，惟吾德馨。",
+      "translation": "This is a humble room, but my virtue makes it fragrant.",
+      "period": "c. 824 CE",
+      "dateShort": "c. 824 CE",
+      "dateFull": "circa 824 CE",
+      "sortYear": 824,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/陋室銘",
+      "locator": "The first lines of the inscription, after the opening comparison of mountains and water.",
+      "place": "Hezhou (Hexian), Anhui, China",
+      "lat": 31.72,
+      "lng": 118,
+      "anchorType": "Traditional association",
+      "placeNote": "The inscription is traditionally dated to Liu Yuxi's posting as prefect of Hezhou around 824; the linked page does not give the date or the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/陋室銘",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "A plain room made fragrant by virtue",
+          "why": "Liu Yuxi calls his room humble and says that only the owner's own virtue makes it fragrant. The poem treats the worth and pleasure of a place as coming from the person in it, not from its size or furnishing, which places happiness on oneself.",
+          "limit": "A short rhymed inscription written in an official's voice in a time of demotion, praising a modest life; it does not show how far poverty could be borne when it was real. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "zongmi-lasting-self",
+      "question": "lasting-self",
+      "name": "Zongmi",
+      "short": "Zongmi",
+      "work": "On the Original Nature of Humanity (原人論)",
+      "excerpt": "謂初唯一真靈性，不生不滅，不增不減，不變不易。",
+      "translation": "At the start there is only one true spiritual nature, not born and not dying, not increasing and not decreasing, not changing and not shifting.",
+      "period": "c. 828 CE",
+      "dateShort": "c. 830 CE",
+      "dateFull": "circa 828 to 835 CE",
+      "sortYear": 828,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/原人論",
+      "locator": "In the section on the origin of the person, the sentence beginning “謂初唯一真靈性”.",
+      "place": "Mount Guifeng, Zhongnan Mountains, Shaanxi, China",
+      "lat": 34,
+      "lng": 108.4,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Zongmi lived and taught at Caotang temple at the foot of Mount Zhongnan in his later years and is conventionally said to have written the essay there around 828 to 835; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/原人論",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "One true spiritual nature, not born or dying",
+          "why": "Zongmi says that at the start there is only one true spiritual nature, which is not born, does not die, neither increases nor decreases and does not change. This is the unchanging ground beneath a person, which places the passage at a lasting self.",
+          "limit": "The 'true spiritual nature' is the Buddha-nature of Huayan and Awakening of Faith teaching, not a personal soul; the same essay treats the ego (我執) as an illusion. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -20066,6 +20745,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "pangur-ban-happiness",
+      "question": "happiness",
+      "name": "The Monk and his Pet Cat (Pangur Bán)",
+      "short": "Pangur Bán",
+      "work": "The Monk and his Pet Cat, in Selections from Ancient Irish Poetry",
+      "excerpt": "Though we are thus at all times, Neither hinders the other, Each of us pleased with his own art Amuses himself alone.",
+      "period": "c. 850 CE",
+      "dateShort": "c. 850 CE",
+      "dateFull": "circa 850 CE",
+      "sortYear": 850,
+      "sourceLabel": "Kuno Meyer translation (1911), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/selectionsfroman00meye/selectionsfroman00meye_djvu.txt",
+      "locator": "Final verse of the poem “The Monk and his Pet Cat”, in the section “Miscellaneous”. The scanned text contains recognition errors.",
+      "place": "St. Paul im Lavanttal, Carinthia, Austria",
+      "lat": 46.7,
+      "lng": 14.87,
+      "anchorType": "Manuscript association",
+      "placeNote": "The poem is preserved in a ninth-century manuscript written by an Irish monk on the Continent that is now in the abbey of St. Paul in Carinthia; the linked scan does not give this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Pang%C3%BAr_B%C3%A1n",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Content with one's own craft",
+          "why": "An Irish scholar-monk says that he and his cat each take pleasure in a different craft, his own being the study of hard problems, and neither hinders the other. Contentment comes from the work each one does and not from outside goods, which places the poem at on-oneself.",
+          "limit": "The poem is an anonymous ninth-century verse, a mild comic piece about a cat and a scribe, and the English is Kuno Meyer's 1911 verse rendering; it states a pleasure and does not argue about happiness in general.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "linji-desire",
       "question": "desire",
       "excerpt": "尔若能歇得念念驰求心。便与祖佛不别。",
@@ -20138,6 +20852,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hermits-song-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "The Hermit’s Song (Old Irish)",
+      "short": "The Hermit's Song",
+      "work": "The Hermit's Song, in Selections from Ancient Irish Poetry",
+      "excerpt": "A few men of sense — we will tell their number — Humble and obedient, to pray to the King",
+      "period": "c. 900 CE",
+      "dateShort": "c. 900 CE",
+      "dateFull": "circa 900 CE",
+      "sortYear": 900,
+      "sourceLabel": "Kuno Meyer translation (1911), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/selectionsfroman00meye/selectionsfroman00meye_djvu.txt",
+      "locator": "The poem “The Hermit's Song”, lines beginning “A few men of sense”. The scanned text contains recognition errors.",
+      "place": "Ireland (monastic setting)",
+      "lat": 53.3,
+      "lng": -7.9,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem speaks of a hermitage and a small church in a wooded place but names no site, and its date is uncertain, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/selectionsfroman00meye/selectionsfroman00meye_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "A hut apart, with a few companions",
+          "why": "The speaker asks God for a hidden hut in the wilderness and then specifies a small company of twelve, in the scene of a quiet church and a shared house. He wants withdrawal and a few companions together, which places the poem at both.",
+          "limit": "The Old Irish poem is anonymous, undated and attributed to the early Irish monastic tradition; the English is Kuno Meyer's 1911 verse rendering and the wish is a pious ideal. The excerpt is one line of a longer request.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "hitopadesha-free-will",
       "question": "free-will",
       "name": "The Hitopadesha (attributed to Narayana)",
@@ -20170,6 +20919,77 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "marban-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Marbán (Irish hermit poem)",
+      "short": "Marbán",
+      "work": "King and Hermit, in Selections from Ancient Irish Poetry",
+      "excerpt": "I have a shieling in the wood, None knows it save my God",
+      "period": "c. 900 CE",
+      "dateShort": "c. 900 CE",
+      "dateFull": "circa 900 CE",
+      "sortYear": 900,
+      "sourceLabel": "Kuno Meyer translation (1911), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/selectionsfroman00meye/selectionsfroman00meye_djvu.txt",
+      "locator": "The first speech of Marvan, beginning “I have a shieling in the wood”, in the section “Songs of Nature”. The scanned text contains recognition errors.",
+      "place": "Connacht, Ireland",
+      "lat": 53.8,
+      "lng": -8.9,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem is set in the territory of King Guaire of Connaught; the date and place of composition are not known, so the pin marks the setting and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/selectionsfroman00meye/selectionsfroman00meye_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "A hidden hut in the wood",
+          "why": "The hermit Marbán answers his king's offer of a court by describing a hut that no one but God knows, and goes on to list the trees, springs and wild animals that are his company. Withdrawal into a hidden place is held up as the better life.",
+          "limit": "The Old or Middle Irish poem is a dialogue set in the seventh century but usually dated to about the ninth to tenth centuries, and the English is Kuno Meyer's 1911 verse rendering. The speaker's rejection of the court is partly literary convention.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "the-wanderer-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "The Wanderer (Old English poem)",
+      "short": "The Wanderer",
+      "work": "The Wanderer, Exeter Book",
+      "excerpt": "Wāt sā þe cunnað hū slīþen bið sorg tō gefēran",
+      "translation": "He who has tried it knows how cruel a companion sorrow is.",
+      "period": "c. 900 CE",
+      "dateShort": "c. 900 CE",
+      "dateFull": "circa 900 CE",
+      "sortYear": 900,
+      "sourceLabel": "Old English text from Bright's Anglo-Saxon Reader, Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bright%27s_Anglo-Saxon_Reader/The_Wanderer",
+      "locator": "Lines 28 to 30, beginning “Wāt sā þe cunnað”. The text reads “sā” where “sē” is expected.",
+      "place": "Exeter, Devon, England",
+      "lat": 50.72,
+      "lng": -3.53,
+      "anchorType": "Manuscript association",
+      "placeNote": "The only copy of the poem is in the Exeter Book, given to Exeter Cathedral in the 11th century; where it was composed is not known, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Wanderer_(Old_English_poem)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Sorrow as a companion",
+          "why": "The speaker, cut off from his lord and kin, says that whoever has tried it knows how harsh a companion sorrow is, and the next words give the reason: such a man has few beloved protectors. Being without people is described as a grievous lack, which places the passage at company.",
+          "limit": "The Old English is given with the editor's macrons, in an 11th-century manuscript, and the speaker is a literary figure; the English paraphrase is the atlas's own unreviewed translation. The poem is by an unknown author and its date is disputed, between the 8th and 10th centuries.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -20296,6 +21116,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "hrotsvitha-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Hrotsvitha of Gandersheim",
+      "short": "Hrotsvitha",
+      "work": "Paphnutius (play), spoken by Paphnutius",
+      "excerpt": "A narrow cell, solitude, silence — these must be her lot henceforth. She must learn to know herself and her sins.",
+      "period": "c. 965 CE",
+      "dateShort": "c. 965 CE",
+      "dateFull": "circa 965 CE",
+      "sortYear": 965,
+      "sourceLabel": "Christabel Marshall (St. John Hope) translation (1923), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/playsofroswitha00hrotuoft/playsofroswitha00hrotuoft_djvu.txt",
+      "locator": "The speech of Paphnutius in the play “Paphnutius”, shortly before the scene of the cell, “A narrow cell, solitude, silence”. The scanned text contains recognition errors.",
+      "place": "Gandersheim, Lower Saxony, Germany",
+      "lat": 51.87,
+      "lng": 9.97,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hrotsvitha was a canoness of Gandersheim, as the translator's introduction on the linked page states, and wrote her plays there, around the 960s; the date is conventional.",
+      "placeSource": "https://archive.org/stream/playsofroswitha00hrotuoft/playsofroswitha00hrotuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "A cell to learn to know herself",
+          "why": "In the play, the abbot Paphnutius says that the penitent Thais must be shut in a narrow cell, in solitude and silence, so that she learns to know herself and her sins. Self-knowledge is made to come by withdrawal from others.",
+          "limit": "The words belong to a character in a saint's-life play and describe a penance for a sinner, not Hrotsvitha's own account of how everyone finds the self. The text is a 1923 English prose translation, from a scanned book.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -26191,7 +27046,7 @@ window.PILOT_EVIDENCE={
     },
     {
       "id": "tsongkhapa",
-      "name": "Tsongkhapa",
+      "name": "Je Tsongkhapa",
       "short": "Tsongkhapa",
       "work": "Three Principal Aspects of the Path",
       "excerpt": "Withdraw to solitude, dear son, strengthen your diligence",
@@ -27869,6 +28724,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "babur-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Babur",
+      "short": "Babur",
+      "work": "Baburnama, letter to Humayun",
+      "excerpt": "If thou seek to pleasure me, give up sitting alone and avoiding society.",
+      "period": "November 1528",
+      "dateShort": "1528",
+      "dateFull": "November 1528 (Rabi I 935 AH)",
+      "sortYear": 1528,
+      "sourceLabel": "A. S. Beveridge translation, The Babur-nama in English (1922), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/baburnamainengli02babuuoft/baburnamainengli02babuuoft_djvu.txt",
+      "locator": "Entry for 935 AH, the letter beginning “Again:—As for the ‘retirement’, ‘retirement’, spoken of in thy letters”, paragraph beginning “Again:—Thou art now to go on a great business”. The scanned text contains recognition errors.",
+      "place": "Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Documented writing location",
+      "placeNote": "Babur ruled from Agra in 1528 and the entry belongs to his Hindustan years, although the letter itself gives no place. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/baburnamainengli02babuuoft/baburnamainengli02babuuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "A father’s advice against sitting alone",
+          "why": "Babur writes to his son, who had been living in retirement, telling him to give up sitting alone and avoiding society and to take counsel with the begs and his brother twice daily. Company is made a duty of rule.",
+          "limit": "A father’s instruction to a prince in a state of government, so the advice is shaped by the needs of ruling. The same entry quotes Sa‘di on the bondage of sovereignty, and the English is Beveridge’s 1922 translation from a scan.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "francois-rabelais-desire",
       "question": "desire",
       "name": "François Rabelais",
@@ -28407,6 +29297,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tulsidas-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Tulsidas",
+      "short": "Tulsidas",
+      "work": "Ramcharitmanas, Bala Kanda, opening invocation",
+      "excerpt": "An assembly of the saints is all joy and felicity, like the great tirath",
+      "period": "1574 to 1577",
+      "dateShort": "1574–77",
+      "dateFull": "1574 to 1577",
+      "sortYear": 1575,
+      "sourceLabel": "F. S. Growse translation, The Rámáyana of Tulsi Dás (1877), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/rmyanatulsids01growgoog/rmyanatulsids01growgoog_djvu.txt",
+      "locator": "Book 1 (Bala Kanda), prose rendering of the invocation after the verses to the saints, paragraph beginning “First I reverence the feet of the great Brahman saints”. The scanned text contains recognition errors.",
+      "place": "Varanasi (Benares), Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 83.01,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition holds that Tulsidas began the poem at Ayodhya in 1574 and wrote much of it at Benares, where his shrine stands. Growse gives the traditions in his introduction, but the exact place for this invocation is not recorded; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/rmyanatulsids01growgoog/rmyanatulsids01growgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "The assembly of the saints",
+          "why": "The poet says an assembly of the saints is all joy and felicity, like a pilgrimage place that moves, and goes on to say that anyone who bathes in it with devotion receives all four rewards in this life. The company of the holy is made a source of the good itself.",
+          "limit": "A devotional invocation to the community of saints in Growse’s 1877 prose translation, and it concerns holy company, not company in general. The scanned text contains recognition errors, and the sentence continues past the excerpt.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "montaigne-truth",
       "question": "truth",
       "name": "Michel de Montaigne",
@@ -28911,6 +29836,146 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "akbar-desire",
+      "question": "desire",
+      "name": "Akbar",
+      "short": "Akbar",
+      "work": "Ain-i-Akbari, “The Happy Sayings of His Majesty” (compiled by Abul Fazl)",
+      "excerpt": "The first step in this long road is not to give the rein to desire and anger",
+      "period": "c. 1598 (compiled)",
+      "dateShort": "c. 1598",
+      "dateFull": "circa 1598, compiled from sayings of Akbar",
+      "sortYear": 1598,
+      "sourceLabel": "H. S. Jarrett translation, vol. 3 (1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "locator": "Section “The Happy Sayings of His Majesty”, paragraph beginning “The first step in this long road”. The scanned text contains recognition errors.",
+      "place": "Mughal imperial court, Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate court association",
+      "placeNote": "Abul Fazl completed the Ain-i-Akbari in 1598 at the Mughal court, which then moved between Lahore and Agra. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Not giving the rein to desire",
+          "why": "The saying makes the first step on the road not to give the rein to desire and anger and to align conduct with a measured rule. Desire is held in check and directed, not extinguished or indulged.",
+          "limit": "The sayings were collected and written down by Abul Fazl, not by Akbar himself, and the English is a nineteenth-century translation from a scanned text with recognition errors. The sentence continues beyond the excerpt, and it speaks of desire together with anger as a matter of conduct and not as a full theory.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "akbar-given-or-made",
+      "question": "given-or-made",
+      "name": "Akbar",
+      "short": "Akbar",
+      "work": "Ain-i-Akbari, “The Happy Sayings of His Majesty” (compiled by Abul Fazl)",
+      "excerpt": "A man is the disciple of his own reason. If it has naturally a good lustre, it becomes itself his director, and if it gains it under the direction of a higher mind, it is still a guide.",
+      "period": "c. 1598 (compiled)",
+      "dateShort": "c. 1598",
+      "dateFull": "circa 1598, compiled from sayings of Akbar",
+      "sortYear": 1598,
+      "sourceLabel": "H. S. Jarrett translation, vol. 3 (1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "locator": "Section “The Happy Sayings of His Majesty”, paragraph beginning “A man is the disciple of his own reason”. The scanned text contains recognition errors.",
+      "place": "Mughal imperial court, Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate court association",
+      "placeNote": "Abul Fazl completed the Ain-i-Akbari in 1598 at the Mughal court, which then moved between Lahore and Agra. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Reason as endowment and training",
+          "why": "The saying makes reason a natural endowment that may have a good lustre from the start, and also something that can be gained under the direction of a higher mind. Either way it guides the person, so both endowment and formation have a part.",
+          "limit": "The sayings were collected and written down by Abul Fazl, not by Akbar himself, and the English is a nineteenth-century translation from a scanned text with recognition errors. The saying concerns reason and not the whole person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "akbar-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Akbar",
+      "short": "Akbar",
+      "work": "Ain-i-Akbari, “The Happy Sayings of His Majesty” (compiled by Abul Fazl)",
+      "excerpt": "The difficulty is to live in the world and to refrain from evil, for the life of a recluse is one of bodily ease.",
+      "period": "c. 1598 (compiled)",
+      "dateShort": "c. 1598",
+      "dateFull": "circa 1598, compiled from sayings of Akbar",
+      "sortYear": 1598,
+      "sourceLabel": "H. S. Jarrett translation, vol. 3 (1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "locator": "Section “The Happy Sayings of His Majesty”, paragraph beginning “The difficulty is to live in the world”. The scanned text contains recognition errors.",
+      "place": "Mughal imperial court, Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate court association",
+      "placeNote": "Abul Fazl completed the Ain-i-Akbari in 1598 at the Mughal court, which then moved between Lahore and Agra. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Living in the world versus retreat",
+          "why": "The saying calls the recluse’s life easy and sets the real difficulty in living among others without doing evil. Withdrawal is treated as the lesser achievement, which places the passage on the side of company.",
+          "limit": "The sayings were collected and written down by Abul Fazl, not by Akbar himself, and the English is a nineteenth-century translation from a scanned text with recognition errors. The same sayings elsewhere criticise empty ascetic display and praise withdrawal from worldly attachment in the service of divine love, so the view is not a plain rejection of inwardness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "akbar-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Akbar",
+      "short": "Akbar",
+      "work": "Ain-i-Akbari, “The Happy Sayings of His Majesty” (compiled by Abul Fazl)",
+      "excerpt": "The object of an appellative is the removal of ambiguity, but this is not predicable of the All, Holy Essence.",
+      "period": "c. 1598 (compiled)",
+      "dateShort": "c. 1598",
+      "dateFull": "circa 1598, compiled from sayings of Akbar",
+      "sortYear": 1598,
+      "sourceLabel": "H. S. Jarrett translation, vol. 3 (1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "locator": "Section “The Happy Sayings of His Majesty”, the saying after “Each person according to his condition gives the Supreme Being a name”. The scanned text contains recognition errors.",
+      "place": "Mughal imperial court, Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate court association",
+      "placeNote": "Abul Fazl completed the Ain-i-Akbari in 1598 at the Mughal court, which then moved between Lahore and Agra. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.46757/2015.46757.Ain-I-Akbari--Vol-3_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "The nameless essence",
+          "why": "The saying holds that a name exists to tell one thing from another, so it cannot apply to a divine essence that is all and has no rival. Names for God are therefore inadequate, which places the passage at the position that the ultimate cannot be described.",
+          "limit": "The sayings were collected and written down by Abul Fazl, not by Akbar himself, and the English is a nineteenth-century translation from a scanned text with recognition errors. The neighbouring sayings affirm God as omnipresent, so the passage limits naming, not belief.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "shakespeare-julius-caesar-inward-or-others",
       "question": "inward-or-others",
       "name": "William Shakespeare",
@@ -29268,6 +30333,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "inca-garcilaso-death",
+      "question": "death",
+      "name": "Inca Garcilaso de la Vega",
+      "short": "Garcilaso",
+      "work": "Comentarios reales de los Incas (Royal Commentaries of the Incas), Book II",
+      "excerpt": "The Yncas also believed in a universal resurrection, not for glory or punishment, but for a renewal of this temporal life",
+      "period": "1609",
+      "dateShort": "1609",
+      "dateFull": "1609",
+      "sortYear": 1609,
+      "sourceLabel": "Clements R. Markham translation, First Part of the Royal Commentaries of the Yncas (1869), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/firstpartroyalc00markgoog/firstpartroyalc00markgoog_djvu.txt",
+      "locator": "Book II, the chapter on the Incas’ belief in the future life (page 127 of the scan’s printed numbering), paragraph beginning “The Yncas also believed in a universal resurrection”. The scanned text contains recognition errors.",
+      "place": "Córdoba, Spain",
+      "lat": 37.88,
+      "lng": -4.78,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Garcilaso lived at Montilla and Córdoba in Andalusia while writing the Commentaries, which were printed in Lisbon in 1609. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/firstpartroyalc00markgoog/firstpartroyalc00markgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "A resurrection that renews this life",
+          "why": "Garcilaso reports that the Incas expected all the dead to rise again, not for reward or punishment but to take up this temporal life once more. Something of the person is held to come back after death.",
+          "limit": "A Christianised report by a mestizo author of Inca belief, written half a century after the conquest and shaped by his own wish to match it with Spanish doctrine. He says the Incas thought the future life bodily, and the English is Markham’s 1869 translation from a scan.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -29634,6 +30734,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "tukaram-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Tukaram",
+      "short": "Tukaram",
+      "work": "Abhangas, “Autobiography” section",
+      "excerpt": "All alone, without a companion, I am come to a spot where the road breaks up; I am sorely afraid; I dare not walk on.",
+      "period": "c. 1630",
+      "dateShort": "c. 1630",
+      "dateFull": "circa 1630",
+      "sortYear": 1630,
+      "sourceLabel": "J. Nelson Fraser and K. B. Marathe translation, The Poems of Tukârâma, Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/poemstukrma00maragoog/poemstukrma00maragoog_djvu.txt",
+      "locator": "“Autobiography” section, the abhanga beginning “I cannot go forward a step in the darkness”. The scanned text contains recognition errors.",
+      "place": "Dehu, near Pune, Maharashtra, India",
+      "lat": 18.72,
+      "lng": 73.77,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Tukaram lived and sang in Dehu, but the individual abhangas are undated and not tied to a place, so the date and pin are approximate. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/poemstukrma00maragoog/poemstukrma00maragoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Alone at a parting of the road",
+          "why": "The poet pictures himself alone and without a companion at a place where the road divides, afraid and unable to go on until a guide shows the way. Being alone is felt as a danger, which places the passage on the side of company.",
+          "limit": "A devotional abhanga in a nineteen-tens English prose translation, and the speaker is a soul without a guide, not a person without friends. Other poems of Tukaram speak of keeping company with the saints and also of seeking solitude, so this is one image among several.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "saib-tabrizi-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Sa’ib Tabrizi",
+      "short": "Sa’ib",
+      "work": "Hemistich added to a pupil’s verse (Browne’s anecdote)",
+      "excerpt": "Seek for the truth from the heart which is empty of thought",
+      "period": "c. 1631",
+      "dateShort": "c. 1631",
+      "dateFull": "circa 1631",
+      "sortYear": 1631,
+      "sourceLabel": "E. G. Browne, A Literary History of Persia, vol. 4 (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "locator": "Chapter VI, section on Sa’ib of Isfahan, the anecdote of the pupil’s “bottleless wine” hemistich. The scanned text contains recognition errors.",
+      "place": "Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate association",
+      "placeNote": "Browne suggests the verses date from about 1631 to 1632, when Sa’ib was in India, and says he travelled to Agra and Lahore and the Deccan. Browne gives no place for the verses; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Truth from an empty heart",
+          "why": "Sa’ib caps a pupil’s line “Seek for the bottleless wine from the wineless bottle” with an answer that truth is to be sought from the heart emptied of thought. The way to truth is turned inward and away from others’ words.",
+          "limit": "A single witty couplet repeated by Browne from Shibli, in a literal English version, and its aim is a parallel, not a doctrine. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "saib-tabrizi-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Sa’ib Tabrizi",
+      "short": "Sa’ib",
+      "work": "Verses on the generosity of poets to each other",
+      "excerpt": "Happy that company who arc intoxicated with each others speech; who, through the fermentation of thought, are each other’s red wine.",
+      "period": "c. 1631",
+      "dateShort": "c. 1631",
+      "dateFull": "circa 1631",
+      "sortYear": 1631,
+      "sourceLabel": "E. G. Browne, A Literary History of Persia, vol. 4 (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "locator": "Chapter VI, section on Sa’ib of Isfahan, the verses beginning “Happy that company”. The scanned text contains recognition errors.",
+      "place": "Agra, India",
+      "lat": 27.18,
+      "lng": 78.02,
+      "anchorType": "Approximate association",
+      "placeNote": "Browne suggests the verses date from about 1631 to 1632, when Sa’ib was in India, and says he travelled to Agra and Lahore and the Deccan. Browne gives no place for the verses; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Poets who sharpen one another",
+          "why": "The poet calls a company of poets happy, since their talk intoxicates them, they are each other’s red wine and whetstone, and they help to spread each other’s verses. The best condition of a poet is shown as life among peers.",
+          "limit": "The verses are Browne’s literal prose translation of a quoted Persian poem, and they also complain that real kindness among poets is rare, so the company praised is an ideal. The scanned text contains recognition errors, such as “arc” for “are”.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -30275,6 +31480,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "antonio-vieira-inward-or-others",
+      "question": "inward-or-others",
+      "name": "António Vieira",
+      "short": "Vieira",
+      "work": "Sermão da Sexagésima",
+      "excerpt": "Que coisa é a conversão de uma alma senão entrar um homem dentro em si, e vêr-se a si mesmo?",
+      "translation": "What is the conversion of a soul, if not a man entering into himself and seeing himself?",
+      "period": "1655",
+      "dateShort": "1655",
+      "dateFull": "1655",
+      "sortYear": 1655,
+      "sourceLabel": "Portuguese text, pt.wikisource.org",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Serm%C3%B5es_do_padre_Antonio_Vieira/Serm%C3%A3o_da_Sexagesima",
+      "locator": "Section on the three conditions for a soul to be converted by a sermon, paragraph beginning “Para uma alma se converter por meio de um sermão”.",
+      "place": "Lisbon, Portugal",
+      "lat": 38.72,
+      "lng": -9.13,
+      "anchorType": "Documented delivery location",
+      "placeNote": "Vieira preached the Sexagésima in Lisbon in 1655 before leaving for Maranhão. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Serm%C3%B5es_do_padre_Antonio_Vieira/Serm%C3%A3o_da_Sexagesima",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Conversion as entering oneself",
+          "why": "Vieira defines the conversion of a soul as a person entering into himself and seeing himself, and he asks why sermons fail to bring this about. The self is found by turning inward, though he also gives the preacher and God a part in producing the turn.",
+          "limit": "A Portuguese Baroque sermon on the preacher’s task, and the same sermon requires the preacher’s example and doctrine and God’s grace for the turn to happen. The spelling is that of the Wikisource edition and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "blaise-pascal-given-or-made",
       "question": "given-or-made",
       "name": "Blaise Pascal",
@@ -30489,6 +31730,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "khushal-khan-khattak-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Khushal Khan Khattak",
+      "short": "Khushal Khan",
+      "work": "Poems (Diwan), Poem XXVII",
+      "excerpt": "In loneliness and solitude seated, tell me, 0 monk ! what thou gainest thereby",
+      "period": "c. 1660",
+      "dateShort": "c. 1660",
+      "dateFull": "circa 1660",
+      "sortYear": 1660,
+      "sourceLabel": "H. G. Raverty, Selections from the Poetry of the Afghans (1862), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "locator": "Poem XXVII (the poem on the wine-bibber and the monk). The scanned text contains recognition errors.",
+      "place": "Akora Khattak, near Nowshera, Pakistan",
+      "lat": 33.99,
+      "lng": 72.05,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Khushal Khan was chief of the Khattak tribe, whose seat was Akora; Raverty gives his life but not the place or year of this poem. The date is an approximate midpoint of his poetic career and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Against the monk’s seclusion",
+          "why": "The poet asks the monk what he gains from sitting alone in solitude and goes on to say that he makes the wide world narrow for himself. Seclusion is questioned as a loss, which places the passage on the side of company.",
+          "limit": "A Pashto poem in a literal nineteenth-century English prose rendering by Raverty, with a recognition error in the scanned text (“0” for “O”). Elsewhere in the same collection the poet prizes solitude as a precious repose, so this line is only one side of his view.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -31586,6 +32862,146 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "guru-gobind-singh-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Guru Gobind Singh",
+      "short": "Guru Gobind Singh",
+      "work": "Jap (Japu)",
+      "excerpt": "No form, no complexion, no outline, no costume ; none can in any way describe Him.",
+      "period": "c. 1700",
+      "dateShort": "c. 1700",
+      "dateFull": "circa 1700",
+      "sortYear": 1700,
+      "sourceLabel": "Max Arthur Macauliffe, The Sikh Religion, vol. 5 (1909), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.236492/2015.236492.The-Sikh_djvu.txt",
+      "locator": "Chapter “Compositions of Guru Gobind Singh”, section headed “Japi”. The scanned text contains recognition errors.",
+      "place": "Anandpur Sahib, Punjab, India",
+      "lat": 31.24,
+      "lng": 76.5,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition places the Guru’s compositions at Anandpur and Paonta, where his court of poets worked, but Macauliffe gives no place for this hymn and its dating is conventional. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.236492/2015.236492.The-Sikh_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "God without form or description",
+          "why": "The hymn says God has no form, colour, outline or costume and that no one can describe Him, then goes on to list names the wise give according to His deeds. The ultimate is real but beyond description.",
+          "limit": "A devotional composition attributed to the tenth Sikh Guru, given in Macauliffe’s 1909 English version, which translates only portions of it. The hymn goes on to affirm God as King of kings, so it is as much a statement of praise as a denial that He can be described.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "nabi-free-will",
+      "question": "free-will",
+      "name": "Nâbî",
+      "short": "Nâbî",
+      "work": "Mukhammes (“O that I knew what here I am”)",
+      "excerpt": "No choice of entering this world, or hence of start have I",
+      "period": "c. 1700 (the poet died in 1712)",
+      "dateShort": "c. 1700",
+      "dateFull": "circa 1700; the poet died in 1712",
+      "sortYear": 1700,
+      "sourceLabel": "E. J. W. Gibb, Ottoman Poems (1882), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/ottomanpoemstran00gibb/ottomanpoemstran00gibb_djvu.txt",
+      "locator": "Nâbî, no. I (Mukhammes), third stanza. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Gibb gives only the poet’s death year, 1712, and Nâbî spent his later career in Istanbul, so the date and pin are approximate. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ottomanpoemstran00gibb/ottomanpoemstran00gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "No choice of coming or going",
+          "why": "The poet says that all being is of God alone and that he has no choice in entering this world or leaving it, nor power to claim “I am”. His own course is held to be fixed by the Lord, which puts the passage on the side of determination.",
+          "limit": "An Ottoman Turkish devotional poem in Gibb’s 1882 English verse translation, which is free and fits rhyme. It is about the limits of a servant before God and not an argument about choice in daily action.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "rahman-baba-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Rahman Baba",
+      "short": "Rahman Baba",
+      "work": "Poems (Diwan), Poem VII",
+      "excerpt": "If friends comprehend aught, to-day is their time, That one friend may show self-devotion to another.",
+      "period": "c. 1700",
+      "dateShort": "c. 1700",
+      "dateFull": "circa 1700",
+      "sortYear": 1700,
+      "sourceLabel": "H. G. Raverty, Selections from the Poetry of the Afghans (1862), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "locator": "Poem VII (“Come, do not be the source of trouble unto any one”). The scanned text contains recognition errors.",
+      "place": "Hazar Khwani, near Peshawar, Pakistan",
+      "lat": 33.96,
+      "lng": 71.6,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Raverty reports that Rahman lived a retired life in the Mohmand country near Peshawar and was buried in his native village. The poem’s exact place of composition is not recorded; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Self-devotion among friends",
+          "why": "The poet tells friends that the present is the time for one to show self-devotion to another. The passage places devotion to a friend ahead of one’s own claims.",
+          "limit": "A Pashto devotional poem in a literal nineteenth-century English prose rendering by Raverty. The same poem warns against harming a brother or relation by one’s desires, but the advice is aimed at friends and kin, not at everyone.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "rahman-baba-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Rahman Baba",
+      "short": "Rahman Baba",
+      "work": "Poems (Diwan), Poem VII",
+      "excerpt": "If there is any real existence here, of a truth 'tis this. That in some one's society it should in happiness pass.",
+      "period": "c. 1700",
+      "dateShort": "c. 1700",
+      "dateFull": "circa 1700",
+      "sortYear": 1700,
+      "sourceLabel": "H. G. Raverty, Selections from the Poetry of the Afghans (1862), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "locator": "Poem VII (“Come, do not be the source of trouble unto any one”). The scanned text contains recognition errors.",
+      "place": "Hazar Khwani, near Peshawar, Pakistan",
+      "lat": 33.96,
+      "lng": 71.6,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Raverty reports that Rahman lived a retired life in the Mohmand country near Peshawar and was buried in his native village. The poem’s exact place of composition is not recorded; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/selectionsfrompo00raverich/selectionsfrompo00raverich_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "A life spent in someone’s society",
+          "why": "The poet names the one real existence in this world as life that passes happily in the society of another. Company, not retreat, is made the measure of a life worth having.",
+          "limit": "A Pashto devotional poem in a literal nineteenth-century English prose rendering by Raverty, and the poet elsewhere warns of the world’s faithlessness and urges love of God. The line speaks of companionship in this life.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "gottfried-leibniz-lasting-self",
       "question": "lasting-self",
       "name": "Gottfried Wilhelm Leibniz",
@@ -32252,6 +33668,76 @@ window.PILOT_EVIDENCE={
           "why": "Hume grants that fortune is mostly out of a person’s control and that a sensitive temper makes misfortune take over the mind. Happiness then rests on what befalls a person and on the temper that meets it, so the passage sits at both. A second, independent reading moved this placement from “on both” to “unscored”: The words say that fortune is little in a person’s control and that a sensitive temper is overwhelmed by misfortune; they describe a danger and do not say what happiness needs.",
           "limit": "The essay goes on to argue for cultivating a delicate taste in books and arts as a cure for a delicate passion, which leans toward inner work. The scanned text contains recognition errors, including spacing before colons.",
           "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hazin-lahiji-free-will",
+      "question": "free-will",
+      "name": "Hazin Lahiji",
+      "short": "Hazin",
+      "work": "Autobiography (Tadhkirat al-Ahval)",
+      "excerpt": "When fate approaches, it drives away caution; When destiny moves, it closes every pass.",
+      "period": "1742",
+      "dateShort": "1742",
+      "dateFull": "1742",
+      "sortYear": 1742,
+      "sourceLabel": "F. C. Belfour translation, The Life of Sheikh Mohammed Ali Hazin (1830), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/thelifeofsheikhmohammedalihazin/The_life_of_Sheikh_Mohammad_Ali_Hazin_djvu.txt",
+      "locator": "Account of the siege of Isfahan, verses introduced as the words of Firdausi, beginning “The earth is the shooting ground of fortune”. The scanned text contains recognition errors.",
+      "place": "Delhi, India",
+      "lat": 28.65,
+      "lng": 77.2,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The text says the author was writing in 1742 (1154 AH) after his arrival in India, and Hazin lived in Delhi at that time; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/thelifeofsheikhmohammedalihazin/The_life_of_Sheikh_Mohammad_Ali_Hazin_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Fate that closes every pass",
+          "why": "The lines say that the earth is the shooting ground of fortune, the body her target, and that when fate comes it removes caution and shuts every way out. Human foresight is shown as helpless against what is fixed.",
+          "limit": "Hazin introduces the verses as the words of Firdausi, after saying that a sound plan during the siege of Isfahan was blocked by the fixed decree of fate, and the translation is Belfour’s from a scan. The lines express a mood in the face of calamity, not an argument.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hazin-lahiji-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Hazin Lahiji",
+      "short": "Hazin",
+      "work": "Autobiography (Tadhkirat al-Ahval)",
+      "excerpt": "my constant desire was, to put on the habit of the Dervish, and to choose a retirement in some corner",
+      "period": "c. 1725 (recalled in 1742)",
+      "dateShort": "c. 1725",
+      "dateFull": "circa 1725, recalled in the account written in 1742",
+      "sortYear": 1742,
+      "sourceLabel": "F. C. Belfour translation, The Life of Sheikh Mohammed Ali Hazin (1830), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/thelifeofsheikhmohammedalihazin/The_life_of_Sheikh_Mohammad_Ali_Hazin_djvu.txt",
+      "locator": "Chapter on his stay in Shiraz, paragraph beginning “But my mind was so horror-struck with the world”. The scanned text contains recognition errors.",
+      "place": "Delhi, India",
+      "lat": 28.65,
+      "lng": 77.2,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The text says the author was writing in 1742 (1154 AH) after his arrival in India, and Hazin lived in Delhi at that time; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/thelifeofsheikhmohammedalihazin/The_life_of_Sheikh_Mohammad_Ali_Hazin_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "A wish to withdraw as a dervish",
+          "why": "Hazin says that after the fall of Isfahan his heart was closed to the world and its pleasures and that he constantly wished to take the dervish habit and withdraw to a corner. Retreat from others is what he longs for.",
+          "limit": "He adds that duty to his father’s destitute dependants made the plan impracticable, and later in the book he writes that the hardship and pain of being alone and without friends were always with him. The passage states a wish, not a settled judgment, in a nineteenth-century translation from a scan.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -33465,6 +34951,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "hatif-isfahani-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Hatif Isfahani",
+      "short": "Hatif",
+      "work": "Tarji‘-band (“There is no God but He”)",
+      "excerpt": "He is One and there is naught but He: There is no God save Him alone",
+      "period": "c. 1770",
+      "dateShort": "c. 1770",
+      "dateFull": "circa 1770",
+      "sortYear": 1770,
+      "sourceLabel": "E. G. Browne, A Literary History of Persia, vol. 4 (1924), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "locator": "Chapter VI, “The Tarji‘-band of Hatif”, Strophe II, the refrain that closes the strophe. The scanned text contains recognition errors.",
+      "place": "Isfahan, Iran",
+      "lat": 32.65,
+      "lng": 51.67,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Hatif lived and wrote in Isfahan, where he died in 1783, but the poem’s year is not given and the date is approximate. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/in.ernet.dli.2015.59667/2015.59667.A-Literary-History-Of-Persia-Voliv_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "One God behind the church bell",
+          "why": "In the refrain of the poem, a chant from the church bell proclaims that God is One and that there is nothing but Him, after the speaker has been told that the Trinity does not divide the one Beauty seen in three mirrors. The claim is placed beyond the differences between creeds.",
+          "limit": "A Persian poem in Browne’s 1924 literal prose translation from a scan, and the speaker is a lover in a church who hears the chant in a drunken vision, so its claim is poetic. Hatif was a Muslim and the refrain is also the Islamic confession of unity.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35738,6 +37259,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "simon-bolivar-given-or-made",
+      "question": "given-or-made",
+      "name": "Simón Bolívar",
+      "short": "Bolívar",
+      "work": "Discurso de Angostura (Address to the Congress of Angostura)",
+      "excerpt": "Discípulos de tan perniciosos maestros, las lecciones que hemos recibido y los ejemplos que hemos estudiado, son los más destructores.",
+      "translation": "Pupils of such pernicious teachers, the lessons we have received and the examples we have studied are the most destructive.",
+      "period": "15 February 1819",
+      "dateShort": "1819",
+      "dateFull": "15 February 1819",
+      "sortYear": 1819,
+      "sourceLabel": "Spanish text, es.wikisource.org",
+      "sourceUrl": "https://es.wikisource.org/wiki/Discurso_de_Sim%C3%B3n_Bol%C3%ADvar_ante_el_Congreso_de_Angostura",
+      "locator": "Paragraph beginning “Uncido el pueblo americano al triple yugo de la ignorancia, de la tiranía y del vicio”.",
+      "place": "Angostura (now Ciudad Bolívar), Venezuela",
+      "lat": 8.13,
+      "lng": -63.55,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The page states that the address was delivered to the Congress of Angostura on 15 February 1819, the day of its installation, in the town now called Ciudad Bolívar.",
+      "placeSource": "https://es.wikisource.org/wiki/Discurso_de_Sim%C3%B3n_Bol%C3%ADvar_ante_el_Congreso_de_Angostura",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "A people formed by its teachers",
+          "why": "Bolívar says that colonial rule, working through ignorance, tyranny and vice, gave Americans no knowledge, power or virtue, and that its lessons and examples formed them badly. Character is treated as formed by teachers and example, which places the passage at made.",
+          "limit": "A political address about a people, not an individual, and it argues that a formed character must be re-formed by education and a moral power. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "simon-bolivar-happiness",
       "question": "happiness",
       "name": "Simón Bolívar",
@@ -37174,6 +38731,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "domingo-sarmiento-given-or-made",
+      "question": "given-or-made",
+      "name": "Domingo Faustino Sarmiento",
+      "short": "Sarmiento",
+      "work": "Facundo, o Civilización y barbarie",
+      "excerpt": "La sociedad en que nacen da a estos caracteres la manera especial de manifestarse: sublimes, clásicos, por decirlo así, van al frente de la humanidad civilizada en unas partes; terribles, sanguinarios y malvados, son, en otras, su mancha, su oprobio.",
+      "translation": "The society in which they are born gives these characters their special way of showing themselves: in some places they are sublime and classical, so to speak, and march at the head of civilized humanity; in others they are terrible, bloodthirsty and wicked, its stain and disgrace.",
+      "period": "1845",
+      "dateShort": "1845",
+      "dateFull": "1845",
+      "sortYear": 1845,
+      "sourceLabel": "Spanish text of Facundo, Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/domingo-faustino-sarmiento-facundo/Domingo%20Faustino%20Sarmiento%20-%20Facundo_djvu.txt",
+      "locator": "Chapter II, “Vida de Juan Facundo Quiroga”, paragraph beginning “La estructura de su cabeza revelaba, sin embargo”. The scanned text may contain recognition errors.",
+      "place": "Santiago, Chile",
+      "lat": -33.45,
+      "lng": -70.67,
+      "anchorType": "Documented writing location",
+      "placeNote": "Sarmiento wrote Facundo in Santiago de Chile in 1845, in exile from Rosas’s Argentina, and published it there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/domingo-faustino-sarmiento-facundo/Domingo%20Faustino%20Sarmiento%20-%20Facundo_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Natural gifts shaped by the society of birth",
+          "why": "Sarmiento first says the caudillo Quiroga had natural qualities of a man born to command, then that the society in which such men are born decides how they show themselves, for good or for ill. Endowment and formation both have a part.",
+          "limit": "A passage about a few exceptional men, written as political argument and with the bias of an exile against Rosas’s allies. The Spanish is from a scanned reprint of the 1845 book and the English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "domingo-sarmiento-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Domingo Faustino Sarmiento",
+      "short": "Sarmiento",
+      "work": "Facundo, o Civilización y barbarie",
+      "excerpt": "el estímulo falta, el ejemplo desaparece, la necesidad de manifestarse con dignidad, que se siente en las ciudades, no se hace sentir allí, en el aislamiento y la soledad.",
+      "translation": "the stimulus is missing, the example disappears, and the need to present oneself with dignity that is felt in cities is not felt there, in isolation and solitude.",
+      "period": "1845",
+      "dateShort": "1845",
+      "dateFull": "1845",
+      "sortYear": 1845,
+      "sourceLabel": "Spanish text of Facundo, Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/domingo-faustino-sarmiento-facundo/Domingo%20Faustino%20Sarmiento%20-%20Facundo_djvu.txt",
+      "locator": "Chapter I, “Aspecto físico de la República Argentina”, paragraph beginning “Imaginaos una extensión de dos mil leguas cuadradas”. The scanned text may contain recognition errors.",
+      "place": "Santiago, Chile",
+      "lat": -33.45,
+      "lng": -70.67,
+      "anchorType": "Documented writing location",
+      "placeNote": "Sarmiento wrote Facundo in Santiago de Chile in 1845, in exile from Rosas’s Argentina, and published it there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/domingo-faustino-sarmiento-facundo/Domingo%20Faustino%20Sarmiento%20-%20Facundo_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "The isolation of the pampas",
+          "why": "Sarmiento says that families scattered over the plain lack stimulus, example and the need to show dignity that cities create, and that isolation and solitude breed barbarism and end society. Living apart from others is treated as a danger.",
+          "limit": "A political and sociological argument about the Argentine interior, and it blames dispersal of settlement and not solitude chosen for its own sake. The Spanish is from a scanned reprint of the 1845 book and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "karl-marx-given-or-made",
       "question": "given-or-made",
       "name": "Karl Marx",
@@ -37841,6 +39470,42 @@ window.PILOT_EVIDENCE={
           "facet": "Pain as avenging faults",
           "why": "The speaker reads the man’s cruelty as a mission to avenge her own great faults, and adds that God willed it. Her pain is deserved and sent, which puts the poem at ‘has-meaning’.",
           "limit": "A speaker in the first moment of recovery from a failed love; the reading of her suffering as punishment is one the poem offers and may not be her settled view. The page gives no date of writing. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "alvares-de-azevedo-death",
+      "question": "death",
+      "name": "Álvares de Azevedo",
+      "short": "Azevedo",
+      "work": "Lembrança de morrer (Lira dos Vinte Anos)",
+      "excerpt": "Ó minha virgem dos errantes sonhos, Filha do céu! eu vou amar contigo!",
+      "translation": "O my maiden of wandering dreams, daughter of heaven! I am going to love with you!",
+      "period": "c. 1851",
+      "dateShort": "c. 1851",
+      "dateFull": "circa 1851",
+      "sortYear": 1851,
+      "sourceLabel": "Portuguese text, pt.wikisource.org",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Lembran%C3%A7a_de_morrer",
+      "locator": "Stanza beginning “Ó tu, que à mocidade sonhadora” and following stanzas; the lines are in the sixth stanza from the end of the first part.",
+      "place": "São Paulo, Brazil",
+      "lat": -23.55,
+      "lng": -46.63,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Azevedo wrote the poems of the Lira dos Vinte Anos while a student at the São Paulo law academy between 1848 and 1852. The linked page gives the text only; the place and year still need an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Lembran%C3%A7a_de_morrer",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "A poet’s hope of loving after death",
+          "why": "The dying speaker leaves life like a weary traveller leaving a desert and, in the stanza before this line, expects to kiss truth “holy and bare” and to love with the dream-woman in heaven. He expects that something of him goes on.",
+          "limit": "A Romantic poem spoken by a persona who is leaving life, written by a young poet who died at twenty, and the hope is addressed to an imagined beloved as much as it states a belief. The English is the atlas’s own unreviewed translation.",
           "second": "agreed"
         }
       },
@@ -59797,7 +61462,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "Adi Shankara (attributed)": {
-      "about": "Verse text, Vivekachudamani, traditionally attributed to Adi Shankara, an Advaita Vedanta work on discernment composed in India around the 8th century.",
+      "about": "The Vivekachudamani, a verse manual of Advaita Vedanta traditionally attributed to Adi Shankara; modern scholars dispute his authorship.",
       "tradition": "Hinduism",
       "sure": true
     },
@@ -61032,7 +62697,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "Je Tsongkhapa": {
-      "about": "Tibetan Buddhist teacher around 1400 who founded the Gelug school and wrote the Three Principal Aspects of the Path.",
+      "about": "Tibetan Buddhist teacher of the 14th and 15th centuries who founded the Gelug school and wrote the Three Principal Aspects of the Path.",
       "tradition": "Buddhism",
       "sure": true
     },
@@ -62167,12 +63832,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "Seneca": {
-      "about": "Roman Stoic philosopher, statesman and playwright of the first century CE who wrote letters and essays.",
-      "tradition": "Greek and Roman philosophy",
-      "sure": true
-    },
-    "Seneca the Younger": {
-      "about": "Roman Stoic philosopher and adviser to Nero in the first century CE who wrote essays and letters.",
+      "about": "Roman Stoic philosopher, statesman and playwright of the first century CE, adviser to Nero, who wrote letters and essays.",
       "tradition": "Greek and Roman philosophy",
       "sure": true
     },
@@ -62184,11 +63844,6 @@ window.PILOT_EVIDENCE={
     "Sengcan (attributed)": {
       "about": "Early Chan Buddhist master of China to whom the poem Xinxin Ming is attributed, around 600 CE.",
       "tradition": "Buddhism",
-      "sure": true
-    },
-    "Shankara (attributed)": {
-      "about": "Indian philosopher to whom the Vivekachudamani is attributed, a key teacher of Advaita Vedanta around 800 CE.",
-      "tradition": "Hinduism",
       "sure": true
     },
     "Shantideva": {
@@ -62519,11 +64174,6 @@ window.PILOT_EVIDENCE={
     "Tsitsi Dangarembga": {
       "about": "Zimbabwean novelist and filmmaker who received the Peace Prize of the German Book Trade in 2021.",
       "tradition": "Literature and poetry",
-      "sure": true
-    },
-    "Tsongkhapa": {
-      "about": "Tibetan Buddhist teacher of the 14th and 15th centuries who founded the Gelug school.",
-      "tradition": "Buddhism",
       "sure": true
     },
     "Tui Atua Tupua Tamasese Taʻisi Efi": {
@@ -63119,6 +64769,151 @@ window.PILOT_EVIDENCE={
     "Isha Upanishad": {
       "about": "One of the shortest principal Upanishads, in eighteen verses, composed in northern India in the centuries before the common era.",
       "tradition": "Hinduism",
+      "sure": true
+    },
+    "Wang Wei": {
+      "about": "Chinese poet, painter and official of the Tang dynasty, who wrote at his Wang River estate around 750.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Liu Zongyuan": {
+      "about": "Chinese essayist and poet of the Tang dynasty, who wrote in exile at Yongzhou in the early 800s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Meng Haoran": {
+      "about": "Chinese poet of the Tang dynasty from Xiangyang, who wrote of country life and never held office.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Liu Yuxi": {
+      "about": "Chinese poet and official of the Tang dynasty, who wrote the Inscription for a Humble Room around 824.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Yamanoue no Okura": {
+      "about": "Japanese poet and court official of the early 700s, whose poems are preserved in the Man’yōshū.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Marbán (Irish hermit poem)": {
+      "about": "Old Irish poem of about 900 in which the hermit Marbán answers his brother, King Guaire, on why he lives alone in the woods.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "The Monk and his Pet Cat (Pangur Bán)": {
+      "about": "Old Irish poem of the 800s, written by an Irish monk on the Continent in the margin of a manuscript now at St Paul im Lavanttal.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Gregory the Great": {
+      "about": "Pope from 590 to 604 and former monk, who wrote the Book of Pastoral Rule on the duties of those who lead.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Bhartrihari": {
+      "about": "Sanskrit poet, around the 5th to 7th century, credited with three hundred verses on conduct, love and renunciation.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "The Wanderer (Old English poem)": {
+      "about": "Anonymous Old English poem on exile and loss, preserved in the Exeter Book, copied in the late 900s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hrotsvitha of Gandersheim": {
+      "about": "Canoness of Gandersheim in Saxony in the 900s, who wrote plays, legends and histories in Latin.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Zongmi": {
+      "about": "Chinese Buddhist monk of the Tang dynasty, a patriarch of both the Huayan and Chan schools, who wrote in the early 800s.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Yan Zhitui": {
+      "about": "Chinese scholar-official of the 500s, who served four dynasties and wrote the Family Instructions for the Yan Clan.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Yongjia Xuanjue": {
+      "about": "Chinese Chan Buddhist monk of the early Tang dynasty, credited with the Song of Enlightenment.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "The Hermit’s Song (Old Irish)": {
+      "about": "Anonymous Old Irish poem of about 900, a monk’s wish for a hut in the wilderness, translated by Kuno Meyer.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Nâbî": {
+      "about": "Ottoman poet from Urfa, who wrote in Istanbul and Aleppo and died in 1712.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hazin Lahiji": {
+      "about": "Persian poet and scholar from Isfahan, who fled to India in 1734 and wrote his memoirs in Delhi.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hatif Isfahani": {
+      "about": "Persian poet of Isfahan in the 1700s, known for a long refrain-poem on the unity of God.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Sa’ib Tabrizi": {
+      "about": "Persian poet of the 1600s, who spent years at the Mughal court in India and became poet laureate in Isfahan.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Akbar": {
+      "about": "Mughal emperor from 1556 to 1605, whose sayings were recorded by his minister Abul Fazl in the Ain-i-Akbari.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Rahman Baba": {
+      "about": "Pashto Sufi poet who lived near Peshawar around 1700.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Khushal Khan Khattak": {
+      "about": "Pashtun chief, warrior and poet of the 1600s, who wrote in Pashto and fought the Mughal emperor Aurangzeb.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Babur": {
+      "about": "Founder of the Mughal empire, born in Fergana, who wrote his memoirs, the Baburnama, in Chagatai Turkic before 1530.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Guru Gobind Singh": {
+      "about": "Tenth Sikh Guru, who founded the Khalsa in 1699 and composed hymns including the Jap.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Tukaram": {
+      "about": "Marathi poet-saint of the 1600s from Dehu, who composed devotional songs called abhangas.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Tulsidas": {
+      "about": "Hindi poet-saint who wrote the Ramcharitmanas, a retelling of the Ramayana, in the 1570s.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "António Vieira": {
+      "about": "Portuguese Jesuit preacher and missionary of the 1600s, who worked in Brazil and Lisbon and defended the Indigenous peoples of Brazil.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Álvares de Azevedo": {
+      "about": "Brazilian Romantic poet, who wrote in São Paulo and died at twenty in 1852.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Domingo Faustino Sarmiento": {
+      "about": "Argentine writer and educator, later president of Argentina, who wrote Facundo in exile in Chile in 1845.",
+      "tradition": "Politics and reform",
       "sure": true
     }
   }
