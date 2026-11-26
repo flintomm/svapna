@@ -520,7 +520,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
 
   function listen() {
     setFilter(answer ? 'agree' : 'all', true);
-    scene('voice'); show(0); startDrift();
+    scene('voice'); show(0); stopDrift();
   }
 
   function setFilter(next, quiet) {
@@ -562,13 +562,17 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const SAY = 'speechSynthesis' in window; let listening = false;
   function speak(c) { const u = new SpeechSynthesisUtterance((c.translation || c.excerpt) + ' ' + c.name + '.'); u.lang = 'en'; u.rate = .92; u.onend = () => { if (listening && drifting && mode === 'voice') { clearTimeout(driftTimer); driftTimer = setTimeout(() => show(at >= shown.length - 1 ? 0 : at + 1), 900); } }; clearTimeout(driftTimer); speechSynthesis.speak(u); }
   if (SAY) { $('voice-say').hidden = false; $('voice-say').addEventListener('click', () => { listening = !listening; $('voice-say').textContent = listening ? 'Stop listening' : 'Listen'; speechSynthesis.cancel(); if (listening) speak(shown[at]); else tick(); }); }
-  function startDrift() { drifting = true; $('drift').setAttribute('aria-pressed', 'true'); $('drift').textContent = 'Drifting'; tick(); }
-  function stopDrift() { drifting = false; clearTimeout(driftTimer); $('drift').setAttribute('aria-pressed', 'false'); $('drift').textContent = 'Drift'; }
+  let holding = false;
+  { const v = $('voice'); v.addEventListener('pointerenter', () => { holding = true; }); v.addEventListener('pointerleave', () => { holding = false; }); v.addEventListener('pointerdown', () => { if (drifting) stopDrift(); }); v.addEventListener('focusin', () => { if (drifting) stopDrift(); }); }
+  function startDrift() { drifting = true; $('drift').setAttribute('aria-pressed', 'true'); $('drift').textContent = 'Playing · pause'; tick(); }
+  function stopDrift() { drifting = false; clearTimeout(driftTimer); $('drift').setAttribute('aria-pressed', 'false'); $('drift').textContent = 'Play through'; }
   function tick() {
     clearTimeout(driftTimer);
     if (!drifting || reduce) return;
     if (SAY && listening) return;   // while listening, the voice sets the pace
-    driftTimer = setTimeout(() => { if (mode !== 'voice') return; show(at >= shown.length - 1 ? 0 : at + 1); tick(); }, 7500);
+    // Time to read: longer passages stay longer, and nothing moves while the reader is touching or pointing at the words.
+    const c = shown[at], n = ((c.translation ? c.translation + ' ' : '') + c.excerpt).split(/\s+/).length;
+    driftTimer = setTimeout(() => { if (mode !== 'voice') return; if (holding) { tick(); return; } show(at >= shown.length - 1 ? 0 : at + 1); tick(); }, Math.min(40000, 9000 + n * 520));
   }
 
   // ---- controls -----------------------------------------------------------------------------
