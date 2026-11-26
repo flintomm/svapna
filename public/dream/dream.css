@@ -141,3 +141,15 @@ body.scrubbing #scrub{opacity:1}
 #scrub-name{font:400 clamp(26px,6vw,44px)/1.05 'Instrument Serif',Georgia,serif;font-style:italic}
 @media(max-width:820px){.gauge{padding-left:30px;right:8px}#clock::after{content:none}#scrub{left:18px}.gauge a{height:30px}}
 @media(prefers-reduced-motion:reduce){.rail-hint{animation:none}}
+
+/* ---- phones with a notch, a home indicator and a floating toolbar ---- */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}a,button,summary,select,input,label{-webkit-tap-highlight-color:transparent}a,button,summary{touch-action:manipulation}
+.top-right button,.top-right a{padding:12px 0}
+@supports(padding:max(0px)){
+  .top{padding-top:max(22px,calc(env(safe-area-inset-top) + 8px));padding-left:max(32px,env(safe-area-inset-left));padding-right:max(32px,env(safe-area-inset-right))}
+  .gauge{right:max(32px,env(safe-area-inset-right))}
+  section{padding-bottom:calc(90px + env(safe-area-inset-bottom))}
+  .chamber{padding-bottom:calc(120px + env(safe-area-inset-bottom))}.sheet{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  @media(max-width:820px){.top{padding:max(10px,calc(env(safe-area-inset-top) + 4px)) max(18px,env(safe-area-inset-right)) 10px max(18px,env(safe-area-inset-left))}.gauge{right:max(8px,env(safe-area-inset-right))}section{padding-bottom:calc(70px + env(safe-area-inset-bottom))}}
+}
+.tilt[hidden]{display:none}

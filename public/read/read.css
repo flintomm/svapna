@@ -169,3 +169,16 @@ html[data-type=plain] body{letter-spacing:.01em;line-height:1.7}
 .handout-ask{display:none}
 @media print{body.print-kept main>*:not(#kept){display:none!important}body.print-kept #kept{display:block!important}body.print-kept .handout-ask{display:block;font-size:12pt;font-weight:600;margin:6pt 0 14pt}body.print-kept #kept .def,body.print-kept .you-kept button{display:none!important}body.print-kept .row.you-kept{padding:10pt 0;break-inside:avoid}body.print-kept .you-say{font-size:13pt}}
 .sub{margin-top:30px}.sub-row{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:baseline}.sub-row input{flex:1 1 16rem;margin-top:0}.sub-row .go{margin-top:0}.sub-row[hidden]{display:none}
+
+/* ---- phones with a notch, a home indicator and a floating toolbar ---- */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}a,button,summary,select,input,label{-webkit-tap-highlight-color:transparent}a,button,summary{touch-action:manipulation}
+@supports(padding:max(0px)){
+  body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+  .top{padding-top:max(22px,calc(env(safe-area-inset-top) + 8px))}
+  .foot{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  .you-bar{bottom:calc(18px + env(safe-area-inset-bottom))}
+  @media(max-width:760px){.top{padding-top:max(16px,calc(env(safe-area-inset-top) + 8px))}.foot{padding-bottom:calc(50px + env(safe-area-inset-bottom))}}
+}
+.find-t select{font-size:16px}.find-short{flex:0 0 auto;white-space:nowrap}
+@media(max-width:760px){.find-short,.find-t{flex-basis:100%}.find-eras button{padding:11px 0 8px}}
+.find .find-short input{flex:0 0 auto;width:18px;height:18px;padding:0;border:0;margin:0}

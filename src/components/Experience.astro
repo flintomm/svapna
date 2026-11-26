@@ -32,6 +32,11 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
 <meta property="og:image" content={siteUrl + 'og.jpg'} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#03040a" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Svapna" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -133,7 +138,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
   <div class="g-row"><button id="g-play" class="mono" type="button" aria-pressed="false">Play</button><span class="g-track"><input id="g-time" type="range" min="0" max="1" step="1" value="0" aria-label="Move through time" /><span id="g-marks" aria-hidden="true"></span></span></div>
   <div class="g-row g-foot"><div class="who-filter mono" id="g-legend" aria-label="Show or hide each answer"></div><span class="g-links"><button id="g-back" class="mono link" type="button">← The question</button><button id="g-next" class="mono link" type="button">Another question →</button></span></div>
   <p id="g-sr" class="sr-only" aria-live="polite"></p>
-  <p class="mono dim g-hint">Drag to turn · scroll or pinch to zoom · tap a light to hear it</p>
+  <p class="mono dim g-hint"><span class="hint-text">Drag to turn · scroll or pinch to zoom · tap a light to hear it</span> <button type="button" class="tilt" data-tilt hidden>Move with your phone</button></p>
 </footer>
 
 <div id="menu" class="menu" hidden>
@@ -154,6 +159,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
     <li><a href="/library">Library and glossary</a></li>
     <li><a href="/how-it-works">How it works · what is checked</a></li>
     <li><button id="menu-type" type="button">Plainer type</button></li>
+    <li><button type="button" class="tilt" data-tilt hidden>Move the world by tilting your phone</button></li>
     <li><a href="/community">Community</a></li>
     <li><a href="/support">Support · buy a coffee</a></li>
   </ul>

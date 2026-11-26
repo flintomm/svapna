@@ -64,6 +64,11 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />
 <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(buildCrumbs(siteUrl, [{ name: 'Dreaming', path: '/dream' }])))} />
 <meta name="theme-color" content="#03040a" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Svapna" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,6 +87,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
   <div class="top-right">
     <button id="mode" type="button">Light</button>
     <button id="open-dates" type="button">By date</button>
+    <button type="button" class="tilt" data-tilt hidden>Tilt</button>
     <a href="/">Questions</a>
   </div>
 </header>

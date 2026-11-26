@@ -137,6 +137,29 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     };
   })();
   const mouse = [0, 0];
+  // On a phone, tilting it moves the view, once the reader asks for that and the phone allows it.
+  const tilt = { on: false, b0: null, g0: null };
+  const onTilt = e => { if (e.beta == null || e.gamma == null) return; if (tilt.b0 == null) { tilt.b0 = e.beta; tilt.g0 = e.gamma; }
+    mouse[0] = Math.max(-.5, Math.min(.5, (e.gamma - tilt.g0) / 36)); mouse[1] = Math.max(-.5, Math.min(.5, (tilt.b0 - e.beta) / 36)); };
+  const tiltButtons = [...document.querySelectorAll('[data-tilt]')];
+  const paintTilt = () => tiltButtons.forEach(b => { b.dataset.was = b.dataset.was || b.textContent; b.textContent = tilt.on ? 'Stop moving with the phone' : b.dataset.was; });
+  function startTilt() {
+    const D = window.DeviceOrientationEvent; if (!D) return Promise.resolve(false);
+    const go = () => { tilt.b0 = tilt.g0 = null; addEventListener('deviceorientation', onTilt); tilt.on = true; try { sessionStorage.setItem('svapna_tilt', '1'); } catch (e) { /* private mode */ } paintTilt(); return true; };
+    if (typeof D.requestPermission === 'function') return D.requestPermission().then(r => (r === 'granted' ? go() : false)).catch(() => false);
+    return Promise.resolve(go());
+  }
+  function stopTilt() { removeEventListener('deviceorientation', onTilt); tilt.on = false; mouse[0] = mouse[1] = 0; try { sessionStorage.removeItem('svapna_tilt'); } catch (e) { /* private mode */ } paintTilt(); }
+  if (window.DeviceOrientationEvent && matchMedia('(pointer: coarse)').matches && !reduce) {
+    tiltButtons.forEach(b => { b.hidden = false; b.addEventListener('click', () => (tilt.on ? stopTilt() : startTilt())); });
+    // Once allowed, it carries from page to page: the first touch on the next page turns it back on.
+    let again = false; try { again = sessionStorage.getItem('svapna_tilt') === '1'; } catch (e) { /* private mode */ }
+    if (again) addEventListener('touchend', function once() { removeEventListener('touchend', once); if (!tilt.on) startTilt(); });
+  }
+
+  // If the phone takes the graphics away (a long time in the background), the page starts again when they return.
+  for (const id of ["gl","w3"]) { const c = document.getElementById(id); if (c) { c.addEventListener('webglcontextlost', e => e.preventDefault()); c.addEventListener('webglcontextrestored', () => location.reload()); } }
+
   addEventListener('pointermove', e => { mouse[0] = e.clientX / innerWidth - .5; mouse[1] = .5 - e.clientY / innerHeight; });
   // The field leans toward the colour of the answer given, or of the voice being heard.
   function fieldWant() {
@@ -232,7 +255,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
           : st.mode === 'echo' ? { d: narrow ? 4.9 : 3.9, x: narrow ? 0 : 1.12, y: narrow ? .6 : 0 } : { d: narrow ? 4.1 : 3.0, x: narrow ? 0 : .7, y: narrow ? .62 : -.04 };
         const e = reduce ? 1 : 1 - Math.pow(.02, dt / 1000);
         for (const k of ['d', 'x', 'y']) shot[k] += (want[k] - shot[k]) * e;
-        cam.position.set(st.mouse[0] * .18, st.mouse[1] * .12, shot.d); cam.lookAt(0, 0, 0);
+        { const par = st.tilt ? 3.4 : 1; cam.position.set(st.mouse[0] * .18 * par, st.mouse[1] * .12 * par, shot.d); } cam.lookAt(0, 0, 0);
         tilt.position.set(shot.x, shot.y, 0); air.position.copy(tilt.position);
         // The chosen place is turned to face the camera itself, not straight ahead, since the world sits off-centre.
         turn.rotation.y = (st.rot[0] - 90) * Math.PI / 180;
@@ -382,7 +405,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     const want = mode === 'ask' ? .35 : 1;
     lit += (want - lit) * (reduce ? 1 : Math.min(1, dt / 700));
     paint();
-    if (w3) w3.render(dt, { mode, rot, mouse, lit, answer, tones: tones || {}, now: mode === 'voice' && shown ? shown[at] : null, g: mode === 'globe' ? G : null });
+    if (w3) w3.render(dt, { mode, rot, mouse, lit, answer, tones: tones || {}, now: mode === 'voice' && shown ? shown[at] : null, g: mode === 'globe' ? G : null, tilt: tilt.on });
     requestAnimationFrame(frame);
   }
   const face = c => { goal = [-c.lng, Math.max(-55, Math.min(55, -c.lat * .8)), 0]; spin = false; };
@@ -434,7 +457,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   function syncGlobe(force) {
     const i = Math.floor(G.t); if (G.play) $('g-year').textContent = yearName(G.year);
     if (!force && i === G.shownAt) return; G.shownAt = i;
-    const c = cards[i]; if (!G.play) $('g-year').textContent = c.dateShort; if (document.activeElement !== $('g-time') || G.play) $('g-time').value = i;
+    const c = cards[i]; if (!G.play) $('g-year').textContent = /^(c\. )?\d{1,4}( BCE| CE)?$/.test(c.dateShort) ? c.dateShort : (/^c\./.test(c.dateShort) ? 'c. ' : '') + yearName(c.sortYear); if (document.activeElement !== $('g-time') || G.play) $('g-time').value = i;
     const seen = cards.slice(0, i + 1);
     $('g-count').textContent = `${seen.filter(x => !G.hide.has(x.score)).length} of ${cards.length} voices`;
     for (const b of $('g-legend').children) b.lastChild.textContent = ' ' + seen.filter(x => x.score === b.dataset.id).length;
@@ -497,7 +520,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       const b = document.createElement('button'); b.type = 'button'; b.style.setProperty('--c', css(s.tone));
       b.append(document.createElement('i'), say(q, s)); b.addEventListener('click', () => echo(s)); box.append(b);
     }
-    history.replaceState(null, '', '#' + q.id);
+    try { history.replaceState(null, '', '#' + q.id); } catch (e) { /* Safari limits how often the address may change */ }
     scene('ask');
     // An answer tapped before the world had loaded is honoured now.
     const early = window.__svapnaAnswer; window.__svapnaAnswer = null;

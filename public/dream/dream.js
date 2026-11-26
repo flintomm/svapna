@@ -35,7 +35,7 @@
   let pref = null; try { pref = localStorage.getItem('svapna_mode'); } catch (e) { /* private mode */ }
   let mode = pref === 'light' || pref === 'night' ? pref : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night');
   const modeBtn = $('mode');
-  const paintMode = () => { modeBtn.textContent = mode === 'light' ? 'Night' : 'Light'; };
+  const paintMode = () => { modeBtn.textContent = mode === 'light' ? 'Night' : 'Light'; document.documentElement.dataset.mode = mode; };
   modeBtn.addEventListener('click', () => { mode = mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', mode); } catch (e) { /* private mode */ } paintMode(); });
   paintMode();
 
@@ -93,6 +93,29 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
   }
   function size() { measureRail(); if (fallScene) fallScene.size(); cv.width = Math.round(innerWidth * .5); cv.height = Math.round(innerHeight * .5); if (gl) gl.viewport(0, 0, cv.width, cv.height); measure(); }
   const mouse = [0, 0], m = [0, 0];
+  // On a phone, tilting it moves the view, once the reader asks for that and the phone allows it.
+  const tilt = { on: false, b0: null, g0: null };
+  const onTilt = e => { if (e.beta == null || e.gamma == null) return; if (tilt.b0 == null) { tilt.b0 = e.beta; tilt.g0 = e.gamma; }
+    mouse[0] = Math.max(-.5, Math.min(.5, (e.gamma - tilt.g0) / 36)); mouse[1] = Math.max(-.5, Math.min(.5, (tilt.b0 - e.beta) / 36)); };
+  const tiltButtons = [...document.querySelectorAll('[data-tilt]')];
+  const paintTilt = () => tiltButtons.forEach(b => { b.dataset.was = b.dataset.was || b.textContent; b.textContent = tilt.on ? 'Tilting' : b.dataset.was; b.setAttribute('aria-pressed', String(tilt.on)); });
+  function startTilt() {
+    const D = window.DeviceOrientationEvent; if (!D) return Promise.resolve(false);
+    const go = () => { tilt.b0 = tilt.g0 = null; addEventListener('deviceorientation', onTilt); tilt.on = true; try { sessionStorage.setItem('svapna_tilt', '1'); } catch (e) { /* private mode */ } paintTilt(); return true; };
+    if (typeof D.requestPermission === 'function') return D.requestPermission().then(r => (r === 'granted' ? go() : false)).catch(() => false);
+    return Promise.resolve(go());
+  }
+  function stopTilt() { removeEventListener('deviceorientation', onTilt); tilt.on = false; mouse[0] = mouse[1] = 0; try { sessionStorage.removeItem('svapna_tilt'); } catch (e) { /* private mode */ } paintTilt(); }
+  if (window.DeviceOrientationEvent && matchMedia('(pointer: coarse)').matches && !reduce) {
+    tiltButtons.forEach(b => { b.hidden = false; b.addEventListener('click', () => (tilt.on ? stopTilt() : startTilt())); });
+    // Once allowed, it carries from page to page: the first touch on the next page turns it back on.
+    let again = false; try { again = sessionStorage.getItem('svapna_tilt') === '1'; } catch (e) { /* private mode */ }
+    if (again) addEventListener('touchend', function once() { removeEventListener('touchend', once); if (!tilt.on) startTilt(); });
+  }
+
+  // If the phone takes the graphics away (a long time in the background), the page starts again when they return.
+  for (const id of ["abyss","fall"]) { const c = document.getElementById(id); if (c) { c.addEventListener('webglcontextlost', e => e.preventDefault()); c.addEventListener('webglcontextrestored', () => location.reload()); } }
+
   addEventListener('pointermove', e => { mouse[0] = e.clientX / innerWidth - .5; mouse[1] = .5 - e.clientY / innerHeight; });
 
   // ---- the fall: one body of light, carried down through the whole night ----
@@ -103,7 +126,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
   const fallScene = (function () {
     const cv3 = $('fall'), T = window.THREE; if (!T || !cv3) return null;
     let renderer; try { renderer = new T.WebGLRenderer({ canvas: cv3, antialias: true, alpha: true }); } catch (e) { return null; }
-    renderer.setPixelRatio(Math.min(innerWidth < 820 ? 1.5 : 1.75, devicePixelRatio || 1));
+    let ratio = Math.min(innerWidth < 820 ? 2 : 1.75, devicePixelRatio || 1); renderer.setPixelRatio(ratio);
     const scene = new T.Scene(), cam = new T.PerspectiveCamera(55, 1, .1, 400);
     const night = () => mode === 'night';
     const add = () => (night() ? T.AdditiveBlending : T.NormalBlending);
@@ -189,6 +212,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     let Ls = 0, tAcc = 0, lastSnap = 0, wasLucid = false, push = 0, born = 0;
     return {
       size() { renderer.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); },
+      soften() { if (ratio <= 1) return false; ratio = Math.max(1, ratio - .5); renderer.setPixelRatio(ratio); renderer.setSize(innerWidth, innerHeight, false); mg.setDrawRange(0, Math.round(N * .4)); return true; },
       render(dt, d, mouse, inChamber) {
         const t = (tAcc += dt / 1000), ad = add(), x0 = X0(), n = night(), nar = innerWidth < 820;
         const y = -Math.max(-.6, d) * UNIT;
@@ -270,11 +294,14 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
   try { if (localStorage.getItem('svapna_scrubbed') === '1') $('rail-hint').hidden = true; } catch (err) { /* private mode */ }
 
   // ---- frame ----
-  let last = 0, ph = 0, shown = 99, inChamber = false;
+  let last = 0, ph = 0, shown = 99, inChamber = false, slowN = 0, slowT = 0, tcN = 0;
+  const themeMeta = document.querySelector('meta[name=theme-color]');
   let doneNight = false;
   function mark(key) { try { const F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; F[key] = 1; localStorage.setItem('svapna_done', JSON.stringify(F)); } catch (e) { /* private mode */ } }
   function frame(ts) {
-    const dt = Math.min(64, ts - last || 16); last = ts;
+    const raw = ts - last || 16, dt = Math.min(64, raw); last = ts;
+    // After the first moments, watch the frame time; if the phone is struggling, draw a little less finely.
+    if (fallScene && ts > 2500 && !document.hidden && raw < 200) { slowN++; slowT += raw; if (slowN >= 90) { if (slowT / slowN > 24) fallScene.soften(); slowN = slowT = 0; } }
     const want = readDepth(); depth += (want - depth) * (reduce ? 1 : Math.min(1, dt / 260));
     const tbl = mode === 'light' ? LIGHT : NIGHT, k = row(tbl, depth);
     ph += dt / 1000 * k.n[1] * (reduce ? .2 : 1);
@@ -289,11 +316,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     // Words are dark on a light ground and light on a dark one.
     const lum = .2126 * k.base[0] + .7152 * k.base[1] + .0722 * k.base[2];
     document.body.classList.toggle('light-now', lum > .5);
+    // The colour the phone draws around the page follows the night.
+    if ((tcN = (tcN + 1) % 12) === 0 && themeMeta) { const c = 'rgb(' + k.base.map(v => Math.round(v * 255)).join(',') + ')'; if (themeMeta.content !== c) themeMeta.content = c; }
     if (depth > 7.7 && !doneNight) { doneNight = true; mark('night'); }
     const near = Math.round(depth);
     if (near !== shown) {
       shown = near; links.forEach(a => a.classList.toggle('on', +a.dataset.i === near));
-      const id = sections.find(s => +s.dataset.depth === near); if (id && history.replaceState && seen >= 0) history.replaceState(null, '', '#' + id.id); seen = 1;
+      const id = sections.find(s => +s.dataset.depth === near); if (id && history.replaceState && seen >= 0) { try { history.replaceState(null, '', '#' + id.id); } catch (e) { /* Safari limits how often the address may change */ } } seen = 1;
     }
     const mins = Math.round(lerpList(MIN, depth)) + 23 * 60, hh = Math.floor(mins / 60) % 24, mm = mins % 60;
     const clockText = ('0' + hh).slice(-2) + ':' + ('0' + mm).slice(-2), at = Math.max(0, Math.min(7, Math.round(depth)));
