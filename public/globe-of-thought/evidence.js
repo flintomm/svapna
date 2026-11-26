@@ -1637,9 +1637,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "rig-veda-free-will",
       "question": "free-will",
-      "name": "Rigveda, hymn to Varuna (Vasishtha)",
+      "name": "The Rig Veda",
       "short": "Rigveda VII.86",
-      "work": "Rigveda VII.86, in Griffith’s translation",
+      "work": "Rigveda VII.86 (hymn to Varuna, attributed to Vasishtha), in Griffith’s translation",
       "excerpt": "Not our own will betrayed us, but seduction,",
       "period": "c. 1200 BCE (Rigveda, Family Book VII)",
       "dateShort": "c. 1200 BCE",
@@ -1812,9 +1812,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "book-of-odes-death",
       "question": "death",
-      "name": "Book of Odes (Shijing), “King Wen”",
+      "name": "Book of Odes (Shijing)",
       "short": "Book of Odes",
-      "work": "Book of Odes, Major Odes of the Kingdom, Decade I, Ode 1, in Legge’s translation",
+      "work": "Book of Odes, “King Wen” (Major Odes of the Kingdom, Decade I, Ode 1), in Legge’s translation",
       "excerpt": "is on high. Oh! bright is he in heaven.",
       "period": "c. 1000 BCE (early Western Zhou)",
       "dateShort": "c. 1000 BCE",
@@ -1847,9 +1847,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "book-of-odes-free-will",
       "question": "free-will",
-      "name": "Book of Odes (Shijing), “King Wen”",
+      "name": "Book of Odes (Shijing)",
       "short": "Book of Odes",
-      "work": "Book of Odes, Major Odes of the Kingdom, Decade I, Ode 1, in Legge’s translation",
+      "work": "Book of Odes, “King Wen” (Major Odes of the Kingdom, Decade I, Ode 1), in Legge’s translation",
       "excerpt": "Do not cause your own extinction. Display and make bright your righteousness and fame",
       "period": "c. 1000 BCE (early Western Zhou)",
       "dateShort": "c. 1000 BCE",
@@ -2106,9 +2106,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "atharva-veda-death",
       "question": "death",
-      "name": "Atharvaveda, hymn to Skambha",
+      "name": "Atharvaveda",
       "short": "Hymn to Skambha",
-      "work": "Atharvaveda X.8, in Griffith’s translation",
+      "work": "Atharvaveda X.8 (hymn to Skambha), in Griffith’s translation",
       "excerpt": "Free from the fear of Death is he who knoweth that Soul courageous, youthful, undecaying.",
       "period": "c. 900 BCE (Atharvaveda, middle books; compiled over several centuries)",
       "dateShort": "c. 900 BCE",
@@ -2141,9 +2141,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "atharva-veda-truth",
       "question": "truth",
-      "name": "Atharvaveda, hymn to Skambha",
+      "name": "Atharvaveda",
       "short": "Hymn to Skambha",
-      "work": "Atharvaveda X.8, in Griffith’s translation",
+      "work": "Atharvaveda X.8 (hymn to Skambha), in Griffith’s translation",
       "excerpt": "I know the drawn-out string, the thread whereon these creatures all are strung. I know the thread’s thread also, thus I know the mighty Brahmana.",
       "period": "c. 900 BCE (Atharvaveda, middle books; compiled over several centuries)",
       "dateShort": "c. 900 BCE",
@@ -2176,9 +2176,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "atharva-veda-desire",
       "question": "desire",
-      "name": "Atharvaveda, hymn to Kama (Desire)",
+      "name": "Atharvaveda",
       "short": "Hymn to Desire",
-      "work": "Atharvaveda XIX.52, in Griffith’s translation",
+      "work": "Atharvaveda XIX.52 (hymn to Kama, Desire), in Griffith’s translation",
       "excerpt": "with whatever wish we make this offering to thee, May it be all fulfilled to us.",
       "period": "c. 800 BCE (Atharvaveda, late book; compiled over several centuries)",
       "dateShort": "c. 800 BCE",
@@ -2211,9 +2211,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "atharva-veda-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Atharvaveda, hymn to Time (Kala)",
+      "name": "Atharvaveda",
       "short": "Hymn to Time",
-      "work": "Atharvaveda XIX.53, in Griffith’s translation",
+      "work": "Atharvaveda XIX.53 (hymn to Time, Kala), in Griffith’s translation",
       "excerpt": "Their son did he become who was their Father : no other higher power than he existeth.",
       "period": "c. 800 BCE (Atharvaveda, late book; compiled over several centuries)",
       "dateShort": "c. 800 BCE",
@@ -2246,9 +2246,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "book-of-odes-happiness",
       "question": "happiness",
-      "name": "Book of Odes (Shijing), “Tian bao”",
+      "name": "Book of Odes (Shijing)",
       "short": "Book of Odes",
-      "work": "Book of Odes, Minor Odes of the Kingdom, Decade I, Ode 7, in Legge’s translation",
+      "work": "Book of Odes, “Tian bao” (Minor Odes of the Kingdom, Decade I, Ode 7), in Legge’s translation",
       "excerpt": "Heaven protects and establishes thee. It grants thee all excellence, So that thine every matter is right, And thou receivest every Heavenly favour. It sends down to thee long-during happiness, Which the days are not sufficient to enjoy.",
       "period": "c. 800 BCE (Western Zhou; traditionally ascribed to the Duke of Zhou)",
       "dateShort": "c. 800 BCE",
@@ -2281,9 +2281,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "book-of-odes-suffering",
       "question": "suffering",
-      "name": "Book of Odes (Shijing), “Qiao yan”",
+      "name": "Book of Odes (Shijing)",
       "short": "Book of Odes",
-      "work": "Book of Odes, Minor Odes of the Kingdom, Decade V, Ode 4, in Legge’s translation",
+      "work": "Book of Odes, “Qiao yan” (Minor Odes of the Kingdom, Decade V, Ode 4), in Legge’s translation",
       "excerpt": "O vast and distant Heaven, Who art called our parent, That, without crime or offence, I should suffer from disorders thus great!",
       "period": "c. 800 BCE (Western Zhou, traditionally under King Li)",
       "dateShort": "c. 800 BCE",
@@ -2316,9 +2316,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "book-of-odes-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Book of Odes (Shijing), “Yi”",
+      "name": "Book of Odes (Shijing)",
       "short": "Book of Odes",
-      "work": "Book of Odes, Major Odes of the Kingdom, Decade III, in Legge’s translation",
+      "work": "Book of Odes, “Yi” (Major Odes of the Kingdom, Decade III), in Legge’s translation",
       "excerpt": "Great Heaven is intelligent, And is with you in all your goings. Great Heaven is clear-seeing, And is with you in your wanderings and indulgences.",
       "period": "c. 800 BCE (Western Zhou, late)",
       "dateShort": "c. 800 BCE",
@@ -2351,7 +2351,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "shijing-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Shijing (Book of Odes)",
+      "name": "Book of Odes (Shijing)",
       "short": "Shijing",
       "work": "Greater Odes",
       "excerpt": "Great Heaven is intelligent, And is with you in all your goings.",
@@ -2386,7 +2386,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "shijing-suffering",
       "question": "suffering",
-      "name": "Shijing (Book of Odes)",
+      "name": "Book of Odes (Shijing)",
       "short": "Shijing",
       "work": "Lesser Odes, “The Southern Hill”",
       "excerpt": "O unpitying great Heaven, It is not right he should reduce us all to such misery!",
@@ -4697,6 +4697,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "isha-upanishad-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Isha Upanishad",
+      "short": "Isha",
+      "work": "Isha (Vagasaneyi-Samhita) Upanishad",
+      "excerpt": "And he who beholds all beings in the Self, and the Self in all beings",
+      "period": "c. 600-300 BCE (compiled text)",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "composed roughly between 600 and 300 BCE",
+      "sortYear": -500,
+      "sourceLabel": "F. Max Müller translation (Sacred Books of the East, vol. 1), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/upanishads01mluoft/upanishads01mluoft_djvu.txt",
+      "locator": "Isha Upanishad, verse 6. The scanned text contains recognition errors.",
+      "place": "Ganges plain, northern India",
+      "lat": 26.85,
+      "lng": 80.95,
+      "anchorType": "Regional association",
+      "placeNote": "The Isha Upanishad is a Sanskrit text in the Shukla Yajurveda tradition of north India; its composition place is not recorded, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Isha_Upanishad",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "The Self in all beings",
+          "why": "The verse describes one who sees all beings in the Self and the Self in all beings. Knowing the Self and seeing others are presented as one vision, which is why it holds the inward and the outward together.",
+          "limit": "The verse is part of a compact scripture whose Self is the universal Self (Atman or Brahman), not a personal biography, and its meaning is discussed at length by commentators. The translation is Max Müller’s 1879 version and the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "job-death",
       "question": "death",
       "name": "Book of Job",
@@ -5366,6 +5401,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "pindar-given-or-made",
+      "question": "given-or-made",
+      "name": "Pindar",
+      "short": "Pindar",
+      "work": "Olympian Ode 2",
+      "excerpt": "The man who knows a great deal by nature is truly skillful, while those who have only learned chatter with raucous and indiscriminate tongues in vain like crows against the divine bird of Zeus.",
+      "period": "476 BCE",
+      "dateShort": "476 BCE",
+      "dateFull": "476 BCE",
+      "sortYear": -476,
+      "sourceLabel": "Diane Arnson Svarlien translation, Perseus Digital Library",
+      "sourceUrl": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=2",
+      "locator": "Olympian 2, shortly after line 85, in the passage following “arrows that speak to the initiated”.",
+      "place": "Akragas (Agrigento), Sicily, Italy",
+      "lat": 37.31,
+      "lng": 13.58,
+      "anchorType": "Occasion of the ode",
+      "placeNote": "Olympian 2 celebrates the chariot victory of Theron, ruler of Akragas, in 476 BCE; the place marks that occasion, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0162:book=O.:poem=2",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Native skill and mere learning",
+          "why": "Pindar praises the person who knows much “by nature” and dismisses those who have only learned as chattering crows. Real excellence is placed in inborn endowment, with taught skill ranked below it.",
+          "limit": "The lines are a poet’s boast in a victory ode, aimed at rival poets, and the contrast of nature and learning is a rhetorical one. The translation is a modern one hosted by the Perseus Digital Library, and the Greek says “by nature” (phua).",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -10806,6 +10876,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bhagavad-gita-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Bhagavad Gita",
+      "short": "Gita",
+      "work": "Bhagavad Gita, chapter 6",
+      "excerpt": "He so vowed, So blended, sees the Life-Soul resident In all things living, and all living things In that Life-Soul contained.",
+      "period": "c. 200 BCE (compiled text)",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "compiled around 200 BCE, within the Mahabharata",
+      "sortYear": -200,
+      "sourceLabel": "Edwin Arnold translation, “The Song Celestial” (1885), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/8/2388/2388.txt",
+      "locator": "Chapter 6, “Religion of Self-Restraint”, the lines beginning “He so vowed”.",
+      "place": "Kurukshetra, Haryana, India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The Gita sets its dialogue on the battlefield of Kurukshetra; it is a compiled text and the place marks only that setting, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bhagavad_Gita",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Seeing the Self in all and all in the Self",
+          "why": "The verse says the disciplined seer finds the Life-Soul in every living thing and every living thing in it. The inward discipline of yoga and the vision of other beings are given as a single result.",
+          "limit": "Edwin Arnold’s 1885 verse rendering is free and the Sanskrit speaks of the Self (atman) rather than a “Life-Soul”. The passage is about a yogi’s realisation, not about how ordinary persons come to know themselves through others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "bhagavad-gita-lasting-self",
       "question": "lasting-self",
       "name": "Bhagavad Gita",
@@ -15176,6 +15281,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "diamond-sutra-lasting-self",
+      "question": "lasting-self",
+      "name": "Diamond Sutra",
+      "short": "Diamond Sutra",
+      "work": "The Vagrakkhedika, or Diamond-Cutter, as translated by F. Max Müller",
+      "excerpt": "All beings are without self, all beings are without life",
+      "period": "Composed in Sanskrit, about 2nd to 4th century CE",
+      "dateShort": "c. 200",
+      "dateFull": "composed in Sanskrit between about the 2nd and 4th century CE",
+      "sortYear": 200,
+      "sourceLabel": "F. Max Müller translation (Sacred Books of the East, vol. 49, 1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/buddhistmahayana0049vari/buddhistmahayana0049vari_djvu.txt",
+      "locator": "The Vagrakkhedika, the Buddha’s reply to Subhuti beginning “Those who were spoken of as beings, beings indeed”. The scanned text contains recognition errors.",
+      "place": "Shravasti, Uttar Pradesh, India",
+      "lat": 27.51,
+      "lng": 82.04,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The sutra opens with the Buddha at Shravasti in the Jeta grove, which is the traditional setting. Where the Sanskrit text was composed is not known. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/buddhistmahayana0049vari/buddhistmahayana0049vari_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Beings without self",
+          "why": "The sutra has the Buddha teach that every being is without self and without life. The denial covers all beings, which places the passage at no self.",
+          "limit": "The sutra is a Mahayana discourse set in a dialogue with the disciple Subhuti, and it also says that beings are named only as no-beings, so the words are part of a larger argument about names and things. The translation is from 1894 and its Sanskrit spellings are old.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "hillel-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Hillel the Elder",
@@ -15903,7 +16043,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "yang-zhu-desire",
       "question": "desire",
-      "name": "Yang Zhu, as reported in the Liezi",
+      "name": "Yang Zhu",
       "short": "Yang Zhu",
       "work": "Liezi, “Yang Zhu” chapter",
       "excerpt": "Allow the ear to hear what it likes, the eye to see what it likes, the nose to smell what it likes, the mouth to say what it likes",
@@ -16749,6 +16889,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "buddhaghosa-lasting-self",
+      "question": "lasting-self",
+      "name": "Buddhaghosa",
+      "short": "Buddhaghosa",
+      "work": "Visuddhimagga (The Path of Purification), chapter 16, as translated by Henry Clarke Warren",
+      "excerpt": "Misery only doth exist, none miserable. No doer is there ; naught save the deed is found.",
+      "period": "Early 5th century CE",
+      "dateShort": "c. 430",
+      "dateFull": "circa 430 CE",
+      "sortYear": 430,
+      "sourceLabel": "Henry Clarke Warren translation (Buddhism in Translations, 1896), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/buddhismintransl00warruoft/buddhismintransl00warruoft_djvu.txt",
+      "locator": "Section 15 f, translated from the Visuddhimagga, chapter 16, in the part headed “There is no Ego”. The scanned text contains recognition errors.",
+      "place": "Anuradhapura, Sri Lanka",
+      "lat": 8.34,
+      "lng": 80.4,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition holds that Buddhaghosa wrote the Visuddhimagga at the Mahavihara monastery in Anuradhapura after coming to Sri Lanka. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/buddhismintransl00warruoft/buddhismintransl00warruoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Suffering without a sufferer",
+          "why": "Buddhaghosa quotes a verse that denies a sufferer behind suffering and a doer behind deeds. Nothing is left that could be a self, so the passage sits at no self.",
+          "limit": "The verse is introduced as something already said, so it is older than Buddhaghosa, whose own commentary then explains it. The passage is an excerpt in Warren’s 1896 English selection, and the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -18449,6 +18624,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "shantideva-lasting-self",
+      "question": "lasting-self",
+      "name": "Shantideva",
+      "short": "Shantideva",
+      "work": "Bodhicaryavatara (The Path of Light), chapter on regard for others, as translated by L. D. Barnett",
+      "excerpt": "By constant use man comes to imagine that his body, which has no self -being, is a \" self \"",
+      "period": "Early 8th century CE",
+      "dateShort": "c. 700",
+      "dateFull": "circa 700 CE",
+      "sortYear": 700,
+      "sourceLabel": "L. D. Barnett translation (The Path of Light, 1909), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "locator": "Chapter “Regard for Others”, paragraph containing “We love our hands and other limbs, as members of the body”. The scanned text contains recognition errors.",
+      "place": "Nalanda, Bihar, India",
+      "lat": 25.14,
+      "lng": 85.44,
+      "anchorType": "Traditional association",
+      "placeNote": "Shantideva is said to have been a monk of Nalanda, and the Bodhicaryavatara is traditionally taken to have been composed there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "The body as a made-up self",
+          "why": "Shantideva says that people come to imagine a self by habit and that the body they take for one has no self-being. The word self is put in quotation marks as something made up, so the passage sits at no self.",
+          "limit": "The sentence aims to show that concern for others is as reasonable as concern for oneself, and Barnett’s 1909 version is an abridged prose rendering. It speaks of the body and does not discuss mind or consciousness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -21862,6 +22072,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "moses-maimonides-given-or-made",
+      "question": "given-or-made",
+      "name": "Moses Maimonides",
+      "short": "Maimonides",
+      "work": "The Eight Chapters (Shemonah Perakim), chapter 8",
+      "excerpt": "It is possible, however, that through natural causes he may from birth be so constituted as to have a predilection for a particular virtue or vice, so that he will more readily practise it than any other.",
+      "period": "c. 1168",
+      "dateShort": "c. 1168",
+      "dateFull": "circa 1168",
+      "sortYear": 1168,
+      "sourceLabel": "Joseph I. Gorfinkle translation (1912), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/eightchaptersofm00maim/eightchaptersofm00maim_djvu.txt",
+      "locator": "Chapter VIII, “Concerning the Natural Disposition of Man”, opening paragraph. The scanned text contains recognition errors.",
+      "place": "Fustat (Old Cairo), Egypt",
+      "lat": 30.01,
+      "lng": 31.23,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The Eight Chapters is an introduction to Maimonides’ commentary on the Mishnah tractate Avot, written in the 1160s, partly in Egypt, where he settled at Fustat; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Natural predilection and its limits",
+          "why": "Maimonides says that no one is born with virtue or vice, but a person may be born with a bodily constitution that inclines him toward one. The inclination is an endowment, and what he does with it remains a matter of training and choice.",
+          "limit": "The chapter goes on to insist on free will and the power of instruction and habit, so the quoted sentence gives only the endowed half of the answer. It reflects medieval ideas of bodily temperament, and the scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "ibn-tufayl-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Ibn Tufayl",
@@ -24832,7 +25077,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "carvaka-desire",
       "question": "desire",
-      "name": "The Carvaka school, as reported by Madhava",
+      "name": "The Carvaka school (as reported by Madhava)",
       "short": "Carvaka",
       "work": "Sarva-darsana-samgraha, chapter 1",
       "excerpt": "While life remains let a man live happily, let him feed on ghee even though he runs in debt",
@@ -24916,9 +25161,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "charvaka-death",
       "question": "death",
-      "name": "Charvaka verses attributed to Brihaspati",
+      "name": "The Carvaka school (as reported by Madhava)",
       "short": "Chārvāka",
-      "work": "Sarva-darśana-saṃgraha, chapter 1 (the Chārvāka system)",
+      "work": "Sarva-darśana-saṃgraha, chapter 1 (the Chārvāka system), verses attributed to Brihaspati",
       "excerpt": "When once the body becomes ashes, how can it ever return again?",
       "period": "Verses of uncertain earlier date, quoted in a compendium of the 14th century",
       "dateShort": "14th c.",
@@ -24951,9 +25196,9 @@ window.PILOT_EVIDENCE={
     {
       "id": "charvaka-meaning",
       "question": "meaning",
-      "name": "Charvaka verses attributed to Brihaspati",
+      "name": "The Carvaka school (as reported by Madhava)",
       "short": "Charvaka",
-      "work": "Sarva-darsana-samgraha, chapter 1 (‘The Charvaka System’)",
+      "work": "Sarva-darsana-samgraha, chapter 1 (‘The Charvaka System’), verses attributed to Brihaspati",
       "excerpt": "There is no heaven, no final liberation, nor any soul in another world, Nor do the actions of the four castes, orders, &c., produce any real effect.",
       "period": "Quoted in a 14th-century compendium; the verses are older and undated",
       "dateShort": "14th c.",
@@ -26853,6 +27098,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "niccolo-machiavelli-given-or-made",
+      "question": "given-or-made",
+      "name": "Niccolò Machiavelli",
+      "short": "Machiavelli",
+      "work": "The Prince, chapter 25",
+      "excerpt": "he cannot deviate from what nature inclines him to do",
+      "period": "1513-1514 (written; printed 1532)",
+      "dateShort": "1513",
+      "dateFull": "written 1513, printed 1532",
+      "sortYear": 1513,
+      "sourceLabel": "W. K. Marriott translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/3/1232/1232-0.txt",
+      "locator": "Chapter XXV, “What Fortune Can Effect in Human Affairs”, the paragraph on the cautious and the impetuous man.",
+      "place": "Sant’Andrea in Percussina, near San Casciano, Tuscany, Italy",
+      "lat": 43.68,
+      "lng": 11.17,
+      "anchorType": "Documented writing location",
+      "placeNote": "Machiavelli wrote The Prince in 1513 while living at his farm at Sant’Andrea in Percussina after his dismissal from office; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Prince",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Temperament that cannot be changed",
+          "why": "Machiavelli says a man cannot depart from what his nature inclines him to do, which is why he is ruined when circumstances change. In this passage conduct comes from an inborn inclination more than from learning.",
+          "limit": "The remark is about rulers who prosper by one temperament and fail when times change, and the sentence adds a second cause, the habit of past success. It is an observation in political advice, not a general account of how persons are formed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -29175,6 +29455,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "francis-bacon-given-or-made",
+      "question": "given-or-made",
+      "name": "Francis Bacon",
+      "short": "Bacon",
+      "work": "“Of Nature in Men”, Essays",
+      "excerpt": "NATURE is often hidden; sometimes overcome; seldom extinguished. Force, maketh nature more violent in the return; doctrine and discourse, maketh nature less importune; but custom only doth alter and subdue nature.",
+      "period": "1625 (final edition of the Essays)",
+      "dateShort": "1625",
+      "dateFull": "1625, in the final edition of the Essays",
+      "sortYear": 1625,
+      "sourceLabel": "Essays (1625 text), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/7/575/575.txt",
+      "locator": "“Of Nature in Men”, opening paragraph.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Bacon lived and wrote in London and at Gorhambury, Hertfordshire, in 1625; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Francis_Bacon",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Nature, force and custom",
+          "why": "Bacon holds that a person’s inborn nature is rarely removed, though it can be concealed or overcome. Custom is said to alter and subdue it, so both endowment and formation have a part.",
+          "limit": "The opening sentence leans toward the persistence of nature, while custom is credited with the power to alter it, and the essay then advises on how to practise against one’s nature. The essay is a short piece of counsel in seventeenth-century English, not a theory.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "francis-bacon-inward-or-others",
       "question": "inward-or-others",
       "name": "Francis Bacon",
@@ -29845,6 +30160,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "thomas-hobbes-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Thomas Hobbes",
+      "short": "Hobbes",
+      "work": "Leviathan, Introduction",
+      "excerpt": "whosoever looketh into himselfe, and considereth what he doth, when he does Think, Opine, Reason, Hope, Feare, &c, and upon what grounds; he shall thereby read and know, what are the thoughts, and Passions of all other men",
+      "period": "1651",
+      "dateShort": "1651",
+      "dateFull": "1651",
+      "sortYear": 1651,
+      "sourceLabel": "Leviathan (1651), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "locator": "Introduction, the paragraph on the saying “Nosce teipsum, Read thy self”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hobbes wrote most of Leviathan during his exile in Paris and it was published in London in 1651; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Reading oneself to read others",
+          "why": "Hobbes says that a person who examines his own thinking, hoping and fearing will thereby know the thoughts and passions of everyone else. Self-examination and knowledge of others are made one act, so the passage holds both turns together. A second, independent reading moved this placement from “both” to “inward”: The words send a person to look into himself and promise that this shows the thoughts of all other men; nothing in them says the self is found through others.",
+          "limit": "The point is about knowing other people’s passions from one’s own, the direction of inference being from self to others, rather than finding the self through others. Hobbes limits the likeness to passions, not to their objects, and the text keeps its seventeenth-century spelling.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -31875,6 +32225,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "david-hume-happiness",
+      "question": "happiness",
+      "name": "David Hume",
+      "short": "Hume",
+      "work": "Essays, Moral, Political, and Literary, “Of the Delicacy of Taste and Passion”",
+      "excerpt": "Good or ill fortune is very little at our disposal : And when a person, that has this sensibility of temper, meets with any misfortune, his sorrow or resentment takes entire possession of him",
+      "period": "Published 1741",
+      "dateShort": "1741",
+      "dateFull": "published in 1741",
+      "sortYear": 1741,
+      "sourceLabel": "Green and Grose edition (1875), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/essaysmoralpoli01hume/essaysmoralpoli01hume_djvu.txt",
+      "locator": "Part I, Essay I, “Of the Delicacy of Taste and Passion”, first paragraph. The scanned text contains recognition errors.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.19,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Hume lived mainly in Edinburgh and at Ninewells in the early 1740s and published the first volume of the Essays in Edinburgh in 1741. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/essaysmoralpoli01hume/essaysmoralpoli01hume_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "unscored",
+          "facet": "Fortune and temper",
+          "why": "Hume grants that fortune is mostly out of a person’s control and that a sensitive temper makes misfortune take over the mind. Happiness then rests on what befalls a person and on the temper that meets it, so the passage sits at both. A second, independent reading moved this placement from “on both” to “unscored”: The words say that fortune is little in a person’s control and that a sensitive temper is overwhelmed by misfortune; they describe a danger and do not say what happiness needs.",
+          "limit": "The essay goes on to argue for cultivating a delicate taste in books and arts as a cure for a delicate passion, which leans toward inner work. The scanned text contains recognition errors, including spacing before colons.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "emilie-du-chatelet-desire",
       "question": "desire",
       "name": "Émilie du Châtelet",
@@ -32472,6 +32857,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "samuel-johnson-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Samuel Johnson",
+      "short": "Johnson",
+      "work": "The History of Rasselas, Prince of Abissinia, chapter 12",
+      "excerpt": "in a city populous as Cairo it is possible to obtain at the same time the gratifications of society and the secrecy of solitude",
+      "period": "Published 1759",
+      "dateShort": "1759",
+      "dateFull": "published in 1759",
+      "sortYear": 1759,
+      "sourceLabel": "Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/5/652/652-0.txt",
+      "locator": "Chapter 12, Imlac’s account of his stay in Cairo, in the paragraph beginning “I found in Cairo a mixture of all nations”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Johnson wrote the tale in London in January 1759 to pay for his mother’s funeral, according to his biographer James Boswell. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/6/5/652/652-0.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Society and solitude in a city",
+          "why": "Imlac, the prince’s guide, says a great city lets a person have the pleasures of company and the privacy of being alone together. He treats both as goods that can be had in one place, so the passage sits at both.",
+          "limit": "The words are spoken by the character Imlac in a philosophical tale, and later chapters in the same book treat solitude as a danger to the unoccupied. The remark is about why people move to cities and is not a considered ranking.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "samuel-johnson-suffering",
       "question": "suffering",
       "name": "Samuel Johnson",
@@ -32722,6 +33142,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau-happiness",
+      "question": "happiness",
+      "name": "Jean-Jacques Rousseau",
+      "short": "Rousseau",
+      "work": "Emile, or On Education, Book II",
+      "excerpt": "True happiness consists in decreasing the difference between our desires and our powers, in establishing a perfect equilibrium between the power and the will.",
+      "period": "Published 1762",
+      "dateShort": "1762",
+      "dateFull": "published in 1762",
+      "sortYear": 1762,
+      "sourceLabel": "Barbara Foxley translation (1911), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "locator": "Book II, paragraph beginning “What then is human wisdom? Where is the path of true happiness?”.",
+      "place": "Montmorency, France",
+      "lat": 48.99,
+      "lng": 2.32,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Rousseau lived at Montmorency, north of Paris, from 1757 to 1762 and wrote Emile there according to standard biographies. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "Desires matched to powers",
+          "why": "Rousseau says that neither cutting back desires nor adding to powers is enough alone, and that happiness lies in the balance between them. The first is a matter of inner discipline and the second of outer means, so the passage sits at both.",
+          "limit": "The sentence belongs to a treatise on educating one boy and comes with Rousseau’s claim that happiness is nearest in a natural state with few wants. Foxley’s 1911 translation is used here.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -33617,6 +34072,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "robert-burns-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Robert Burns",
+      "short": "Burns",
+      "work": "“To a Louse, On Seeing One on a Lady’s Bonnet at Church”",
+      "excerpt": "O wad some Power the giftie gie us To see oursels as ithers see us!",
+      "period": "1786",
+      "dateShort": "1786",
+      "dateFull": "1786",
+      "sortYear": 1786,
+      "sourceLabel": "Poems and Songs of Robert Burns, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/7/1279/1279-0.txt",
+      "locator": "Final stanza of the poem.",
+      "place": "Mauchline, Ayrshire, Scotland",
+      "lat": 55.52,
+      "lng": -4.38,
+      "anchorType": "Documented writing location",
+      "placeNote": "Burns lived at Mossgiel farm near Mauchline when the poem was written in 1786; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/To_a_Louse",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Seeing oneself as others see one",
+          "why": "Burns wishes for the gift of seeing oneself as other people see one, which would spare people many mistakes. In his words self-knowledge is something that comes through the view of others, not from looking inward.",
+          "limit": "The line is a wish at the end of a comic poem in Scots, spoken to a louse, and it presents the outside view as a gift people lack. It does not say how far the view of others should be trusted.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "ottobah-cugoano-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Ottobah Cugoano",
@@ -34006,6 +34496,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "johann-wolfgang-von-goethe-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Johann Wolfgang von Goethe",
+      "short": "Goethe",
+      "work": "Torquato Tasso, Act 1",
+      "excerpt": "Es bildet ein Talent sich in der Stille, Sich ein Charakter in dem Strom der Welt.",
+      "translation": "A talent forms itself in stillness, a character in the stream of the world.",
+      "period": "Published 1790",
+      "dateShort": "1790",
+      "dateFull": "published in 1790",
+      "sortYear": 1790,
+      "sourceLabel": "Projekt Gutenberg",
+      "sourceUrl": "https://projekt-gutenberg.org/authors/johann-wolfgang-von-goethe/books/torquato-tasso/chapter/3",
+      "locator": "Act 1, speech of Leonore beginning “So wirst du, Herr, für ihn noch alles thun”.",
+      "place": "Weimar, Germany",
+      "lat": 50.98,
+      "lng": 11.33,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Goethe worked on the play in Weimar and Italy between 1780 and 1789, and the final version was completed in 1789 before publication in 1790. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://projekt-gutenberg.org/authors/johann-wolfgang-von-goethe/books/torquato-tasso/chapter/3",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Talent in stillness, character in the world",
+          "why": "The speaker says that talent grows in quiet and character grows among people in the busy world. Each condition has its own gift, so the passage sits at both.",
+          "limit": "The line is spoken by the character Leonore in a verse play about a poet who shuns the court, and it is advice about how to treat him. It is a character’s remark and not a statement by Goethe, and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -34681,6 +35207,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "g-w-f-hegel-inward-or-others",
+      "question": "inward-or-others",
+      "name": "G. W. F. Hegel",
+      "short": "Hegel",
+      "work": "Phenomenology of Mind (Phenomenology of Spirit)",
+      "excerpt": "Self-consciousness exists in itself and for itself, in that, and by the fact that it exists for another self-consciousness ; that is to say, it is only by being acknowledged or \"recognised.\"",
+      "period": "1807 (Baillie translation, 1910)",
+      "dateShort": "1807",
+      "dateFull": "1807; English translation 1910",
+      "sortYear": 1807,
+      "sourceLabel": "J. B. Baillie translation, 1910, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924097557171/cu31924097557171_djvu.txt",
+      "locator": "Chapter IV, section A, “Independence and Dependence of Self-consciousness”, in the paragraph on the process of recognition. The scanned text contains recognition errors.",
+      "place": "Jena, Germany",
+      "lat": 50.93,
+      "lng": 11.59,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hegel finished the Phenomenology in Jena in 1806 and it appeared in 1807; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Phenomenology_of_Spirit",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Self-consciousness through recognition",
+          "why": "Hegel says self-consciousness is what it is only by existing for another self-consciousness, that is, by being acknowledged by it. The self is therefore reached through recognition by others, not by inward reflection alone.",
+          "limit": "The sentence opens an analysis of the encounter of two self-consciousnesses, in an abstract argument that precedes the passage on lordship and bondage. The Baillie translation is from 1910 and the scanned text contains recognition errors, including odd spacing around punctuation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "charles-fourier-desire",
       "question": "desire",
       "name": "Charles Fourier",
@@ -34851,6 +35412,41 @@ window.PILOT_EVIDENCE={
           "facet": "Two souls in one breast",
           "why": "Faust says that two souls live in his one breast, and that one tries to pull away from the other. The self is real but divided against itself, which places it at a changing self.",
           "limit": "The words are spoken by a character in a verse drama at a moment of inner conflict. The German is the original; the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "percy-bysshe-shelley-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Percy Bysshe Shelley",
+      "short": "Shelley",
+      "work": "Queen Mab, Note on “There is no God” (from The Necessity of Atheism)",
+      "excerpt": "having no proofs from either of the three sources of conviction, the mind CANNOT believe the existence of a creative God",
+      "period": "1813 (note to Queen Mab)",
+      "dateShort": "1813",
+      "dateFull": "1813, printed with Queen Mab",
+      "sortYear": 1813,
+      "sourceLabel": "Complete Poetical Works of Percy Bysshe Shelley (Oxford edition, 1914), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/8/0/4800/4800-0.txt",
+      "locator": "Notes to Queen Mab, note to Canto VII, line 13: “There is no God.”",
+      "place": "Bracknell, Berkshire, England",
+      "lat": 51.42,
+      "lng": -0.75,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Shelley lived at Bracknell in 1813 and Queen Mab was printed privately that year; the pin marks that residence, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Queen_Mab_(poem)",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "No proof of a creative God",
+          "why": "Shelley argues that neither the senses, reason nor testimony supports the existence of a creative God, so that belief in one is impossible for an honest mind. The note glosses the line “There is no God” and so places the passage at denial.",
+          "limit": "The same note says the denial affects only a creative Deity and that a pervading Spirit co-eternal with the universe remains unshaken, so it is narrower than a denial of all ultimate reality. The argument is epistemic, about proof, and the note is an annotation to a poem.",
           "second": "agreed"
         }
       },
@@ -35285,6 +35881,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "william-hazlitt-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "William Hazlitt",
+      "short": "Hazlitt",
+      "work": "Table-Talk, “On Going a Journey”",
+      "excerpt": "I can enjoy society in a room ; but out of doors, nature is company enough for me. I am then never less alone than when alone.",
+      "period": "Published 1822",
+      "dateShort": "1822",
+      "dateFull": "published in 1822",
+      "sortYear": 1822,
+      "sourceLabel": "Table Talk: Original Essays on Men and Manners (1909 edition), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/tabletalkorigina0000hazl/tabletalkorigina0000hazl_djvu.txt",
+      "locator": "Essay “On Going a Journey”, opening paragraph. The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.12,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Hazlitt lived and wrote in London in the early 1820s, and the essay first appeared in the New Monthly Magazine in 1822. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/tabletalkorigina0000hazl/tabletalkorigina0000hazl_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Society indoors, nature outdoors",
+          "why": "Hazlitt enjoys company in a room and prefers to walk alone in the open air, where nature is company enough. Each setting gets its own kind of companionship, so the passage sits at both.",
+          "limit": "The essay is a personal preference about walking trips and goes on to say that travelling companions spoil the pleasure of a journey, which leans toward solitude. The scanned text contains recognition errors, including spacing before semicolons.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mary-somerville-death",
       "question": "death",
       "name": "Mary Somerville",
@@ -35352,6 +35983,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "alexander-pushkin-meaning",
+      "question": "meaning",
+      "name": "Alexander Pushkin",
+      "short": "Pushkin",
+      "work": "“Dar naprasnyi, dar sluchainyi” (Vain gift, chance gift), 1828",
+      "excerpt": "Дар напрасный, дар случайный, Жизнь, зачем ты мне дана? Иль зачем судьбою тайной Ты на казнь осуждена?",
+      "translation": "Vain gift, chance gift, life, why were you given to me? Or why were you condemned to execution by a secret fate?",
+      "period": "Written 26 May 1828",
+      "dateShort": "1828",
+      "dateFull": "written on 26 May 1828",
+      "sortYear": 1828,
+      "sourceLabel": "Russian Wikisource",
+      "sourceUrl": "https://ru.wikisource.org/wiki/%D0%94%D0%B0%D1%80_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9,_%D0%B4%D0%B0%D1%80_%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B9_(%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD)",
+      "locator": "The first stanza of the poem.",
+      "place": "Moscow, Russia",
+      "lat": 55.76,
+      "lng": 37.62,
+      "anchorType": "Documented writing location",
+      "placeNote": "The poem is dated 26 May 1828, Pushkin’s twenty-ninth birthday, and he was in Moscow at that time according to standard biographies. The linked page gives the date but not the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ru.wikisource.org/wiki/%D0%94%D0%B0%D1%80_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9,_%D0%B4%D0%B0%D1%80_%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D1%8B%D0%B9_(%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD)",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Life as a vain gift",
+          "why": "The poet calls life a vain gift and a chance gift and asks why it was given at all. He sees no reason behind it, and a later stanza says no goal lies before him, so the passage sits at there is none.",
+          "limit": "The poem is a short lyric written on the poet’s birthday in a low mood and is not a considered argument. Pushkin’s other poems often praise life and love, and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35566,6 +36233,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "giacomo-leopardi-meaning",
+      "question": "meaning",
+      "name": "Giacomo Leopardi",
+      "short": "Leopardi",
+      "work": "Canti, “A se stesso” (To Himself)",
+      "excerpt": "Non val cosa nessuna i moti tuoi, né di sospiri è degna la terra. Amaro e noia",
+      "translation": "Nothing is worth your heart’s movements, nor is the earth worthy of sighs. Bitterness and boredom",
+      "period": "Written 1833",
+      "dateShort": "1833",
+      "dateFull": "written in 1833",
+      "sortYear": 1833,
+      "sourceLabel": "Canti (Donati edition), Italian Wikisource",
+      "sourceUrl": "https://it.wikisource.org/wiki/A_se_stesso",
+      "locator": "Lines 6 to 9 of the poem; the poem has sixteen lines.",
+      "place": "Florence, Italy",
+      "lat": 43.77,
+      "lng": 11.25,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Leopardi is usually said to have written the poem in Florence in 1833, after his unrequited love for Fanny Targioni Tozzetti. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://it.wikisource.org/wiki/A_se_stesso",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Nothing worth the heart’s stirrings",
+          "why": "The poet tells his own heart that nothing is worth its stirrings, and the next words call life bitterness and boredom. A life of that kind has no worth to give it a purpose, so the passage sits at there is none.",
+          "limit": "The poem is a personal address written after a bitter love disappointment, and the sentence continues past the excerpt by calling life nothing more than bitterness and boredom. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "thomas-carlyle-lasting-self",
       "question": "lasting-self",
       "name": "Thomas Carlyle",
@@ -35704,6 +36407,77 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "mikhail-lermontov-meaning",
+      "question": "meaning",
+      "name": "Mikhail Lermontov",
+      "short": "Lermontov",
+      "work": "“I skuchno i grustno” (And it is boring and sad), 1840",
+      "excerpt": "И жизнь, как посмотришь с холодным вниманьем вокруг — Такая пустая и глупая шутка",
+      "translation": "And life, when one looks around with cold attention, is such an empty and stupid joke",
+      "period": "Written January 1840",
+      "dateShort": "1840",
+      "dateFull": "written in January 1840",
+      "sortYear": 1840,
+      "sourceLabel": "Russian Wikisource",
+      "sourceUrl": "https://ru.wikisource.org/wiki/%D0%98_%D1%81%D0%BA%D1%83%D1%87%D0%BD%D0%BE_%D0%B8_%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D0%BE_(%D0%9B%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2)",
+      "locator": "The last two lines of the poem.",
+      "place": "Saint Petersburg, Russia",
+      "lat": 59.93,
+      "lng": 30.34,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The poem appeared in a Petersburg journal on 20 January 1840 and Lermontov was then living in Saint Petersburg, according to standard biographies. The linked page gives the dating but not the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ru.wikisource.org/wiki/%D0%98_%D1%81%D0%BA%D1%83%D1%87%D0%BD%D0%BE_%D0%B8_%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D0%BE_(%D0%9B%D0%B5%D1%80%D0%BC%D0%BE%D0%BD%D1%82%D0%BE%D0%B2)",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Life as an empty joke",
+          "why": "The poet ends a poem on boredom and unsatisfied wishing by calling life, seen with cold attention, an empty and stupid joke. He finds nothing in it that gives it purpose, so the passage sits at there is none.",
+          "limit": "The poem is a short lyric of weariness in the poet’s own voice, and its mood is shaped by the Russian Romantic taste for disillusion. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ludwig-feuerbach-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Ludwig Feuerbach",
+      "short": "Feuerbach",
+      "work": "The Essence of Christianity",
+      "excerpt": "In another I first have the consciousness of humanity ; through him I first learn, I first feel, that I am a man",
+      "period": "1841 (George Eliot translation, 1854)",
+      "dateShort": "1841",
+      "dateFull": "1841; English translation 1854",
+      "sortYear": 1841,
+      "sourceLabel": "George Eliot (Marian Evans) translation, second edition, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/a581696600feneuoft/a581696600feneuoft_djvu.txt",
+      "locator": "Chapter “Christianity and Heathenism”, paragraph beginning “The other is my thou”. The scanned text contains recognition errors.",
+      "place": "Bruckberg, Bavaria, Germany",
+      "lat": 49.3,
+      "lng": 10.63,
+      "anchorType": "Documented residence",
+      "placeNote": "Feuerbach lived at Bruckberg castle near Ansbach from 1837 and wrote The Essence of Christianity there; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ludwig_Feuerbach",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "The other as the way to humanity",
+          "why": "Feuerbach says a person first becomes conscious of being human through another person, called “my thou” and “the eye seeing itself”. Self-knowledge here comes by way of the other, not by looking inward alone.",
+          "limit": "The passage comes from a discussion of the species and the individual in a book on religion, and it concerns consciousness of humanity as a kind, not of one’s own particular character. The translation is Marian Evans’s mid-nineteenth-century English, and the scanned text contains recognition errors such as stray spaces inside words.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -37251,6 +38025,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "arthur-schopenhauer",
+      "question": "relationships",
+      "name": "Arthur Schopenhauer",
+      "short": "Schopenhauer",
+      "work": "Counsels and Maxims, section on solitude (Aphorismen zur Lebensweisheit)",
+      "excerpt": "The more a man has in himself, the less others can be to him.",
+      "period": "1851 (Parerga und Paralipomena); translation 1890s",
+      "dateShort": "1851",
+      "dateFull": "1851; English translation 1890s",
+      "sortYear": 1851,
+      "sourceLabel": "T. Bailey Saunders translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/7/1/10715/10715-0.txt",
+      "locator": "Section “Counsels and Maxims”, the part on a man’s relation to himself and to society, paragraph beginning “It follows from this that a man is best off”.",
+      "place": "Frankfurt am Main, Germany",
+      "lat": 50.11,
+      "lng": 8.68,
+      "anchorType": "Documented residence",
+      "placeNote": "Schopenhauer lived in Frankfurt from 1833 until his death in 1860 and published Parerga and Paralipomena there in 1851; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Arthur_Schopenhauer",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Self-sufficiency and others",
+          "why": "Schopenhauer says the more a person has within himself, the less he needs others, and elsewhere in the section that a man can be himself only when alone. Others are therefore not necessary to what a person is.",
+          "limit": "The remark is advice about happiness and sociability in a pessimist’s essay, and it claims that others matter less to a rich inner life, not that a person has no relationships. The English is T. Bailey Saunders’s 1890s translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "schopenhauer-happiness",
       "question": "happiness",
       "name": "Arthur Schopenhauer",
@@ -37860,6 +38669,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "walt-whitman-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Walt Whitman",
+      "short": "Whitman",
+      "work": "“Song of Myself”, Leaves of Grass",
+      "excerpt": "I celebrate myself, and sing myself, And what I assume you shall assume, For every atom belonging to me as good belongs to you.",
+      "period": "1855 (text of the final edition, 1891-92)",
+      "dateShort": "1855",
+      "dateFull": "first published 1855; final text 1891-92",
+      "sortYear": 1855,
+      "sourceLabel": "Leaves of Grass (final text), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/3/2/1322/1322-0.txt",
+      "locator": "Opening lines of section 1 of “Song of Myself”.",
+      "place": "Brooklyn, New York, USA",
+      "lat": 40.68,
+      "lng": -73.96,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Whitman lived in Brooklyn when the first Leaves of Grass was printed there in 1855; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Self-celebration that includes the reader",
+          "why": "Whitman begins with praise of himself and at once extends what he claims to the reader, because the same atoms belong to both. The poem turns inward and outward in the same breath.",
+          "limit": "This is the opening of a long poem in a declamatory persona, and it asserts a shared substance more than it describes how a person comes to know themselves. The Gutenberg text is the final, 1891-92 arrangement of a poem first printed in 1855.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "walt-whitman-lasting-self",
       "question": "lasting-self",
       "name": "Walt Whitman",
@@ -37892,6 +38736,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "walt-whitman-relationships",
+      "question": "relationships",
+      "name": "Walt Whitman",
+      "short": "Whitman",
+      "work": "“Song of Myself”, Leaves of Grass",
+      "excerpt": "I exist as I am, that is enough, If no other in the world be aware I sit content, And if each and all be aware I sit content.",
+      "period": "1855 (text of the final edition, 1891-92)",
+      "dateShort": "1855",
+      "dateFull": "first published 1855; final text 1891-92",
+      "sortYear": 1855,
+      "sourceLabel": "Leaves of Grass (final text), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/3/2/1322/1322-0.txt",
+      "locator": "“Song of Myself”, section 20, the lines beginning “I exist as I am”.",
+      "place": "Brooklyn, New York, USA",
+      "lat": 40.68,
+      "lng": -73.96,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Whitman lived in Brooklyn when the first Leaves of Grass was printed there in 1855; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Existing as one is, unwitnessed",
+          "why": "Whitman’s speaker says his existence as he is suffices, whether or not anyone else in the world is aware of him. The words make the self complete without recognition from others.",
+          "limit": "The lines come from a poem in a declamatory first-person persona, and they speak of contentment in being, not of how a self is formed. The same poem elsewhere extends the speaker’s identity to the reader and all things, so the poem as a whole is not a case of isolation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -38644,6 +39523,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "emily-dickinson-relationships",
+      "question": "relationships",
+      "name": "Emily Dickinson",
+      "short": "Dickinson",
+      "work": "“The soul selects her own society”",
+      "excerpt": "The soul selects her own society, Then shuts the door; On her divine majority Obtrude no more.",
+      "period": "c. 1862 (printed 1890)",
+      "dateShort": "c. 1862",
+      "dateFull": "written circa 1862; first printed 1890",
+      "sortYear": 1862,
+      "sourceLabel": "Poems by Emily Dickinson, ed. Todd and Higginson (1890), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/2/4/12242/12242-0.txt",
+      "locator": "Poem beginning “The soul selects her own society”, first stanza.",
+      "place": "Amherst, Massachusetts, USA",
+      "lat": 42.37,
+      "lng": -72.52,
+      "anchorType": "Documented residence",
+      "placeNote": "Dickinson lived at the Homestead in Amherst for nearly all her life and wrote her poems there; the exact date of this poem is conjectural, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Emily_Dickinson",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "The soul chooses its society",
+          "why": "Dickinson pictures the soul as choosing its own society and then closing the door on everyone else, kings included. The soul is described as complete in itself and as deciding which relations to admit.",
+          "limit": "This is a short lyric, and its soul is a figure of speech, so the poem asserts a stance and does not argue that a self can form without others. The Gutenberg text is the 1890 edition, whose editors altered some punctuation and wording from the manuscripts.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "emily-dickinson-solitude-or-company",
       "question": "solitude-or-company",
       "name": "Emily Dickinson",
@@ -39047,6 +39961,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "thomas-hardy-meaning",
+      "question": "meaning",
+      "name": "Thomas Hardy",
+      "short": "Hardy",
+      "work": "Hap (Wessex Poems), 1866",
+      "excerpt": "These purblind Doomsters had as readily strown Blisses about my pilgrimage as pain.",
+      "period": "Written 1866; collected in 1898",
+      "dateShort": "1866",
+      "dateFull": "written in 1866 and published in 1898",
+      "sortYear": 1866,
+      "sourceLabel": "Hap, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Hap",
+      "locator": "The closing two lines of the poem (lines 13 and 14).",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.19,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The poem is dated 1866, and Hardy lived in London from 1862 to 1867. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Hap",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Chance in place of purpose",
+          "why": "The speaker wishes for a cruel god who would give his pain a meaning, then concludes that blind chance dealt out pain and joy alike. A life shaped by chance serves no purpose, so the passage sits at there is none.",
+          "limit": "The poem is a young man’s lyric about his own sorrows and is spoken by a persona. Hardy wrote later poems with a more varied outlook, and the word Doomsters here names impersonal forces, not a plan.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -39459,6 +40408,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "algernon-charles-swinburne-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Algernon Charles Swinburne",
+      "short": "Swinburne",
+      "work": "“Hymn of Man”, in Songs Before Sunrise",
+      "excerpt": "Thou art smitten, thou God, thou art smitten; thy death is upon thee, O Lord. And the love-song of earth as thou diest resounds through the wind of her wings— Glory to Man in the highest!",
+      "period": "1871",
+      "dateShort": "1871",
+      "dateFull": "1871",
+      "sortYear": 1871,
+      "sourceLabel": "Songs Before Sunrise, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/0/7/4072/4072-0.txt",
+      "locator": "Near the end of “Hymn of Man”, the lines beginning “Thou art smitten, thou God”.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Swinburne lived in London in the 1860s when Songs Before Sunrise was composed, published 1871; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Algernon_Charles_Swinburne",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "The death of God",
+          "why": "The hymn addresses God as already struck down and sets “Glory to Man” in the place of divine worship. In its own words it treats God as dying and humanity as the highest thing.",
+          "limit": "This is a rhetorical poem in a defiant voice, written in the 1860s and printed as a hymn to humanity, so it expresses a mood and a programme more than an argued denial. It speaks to a God as if present while announcing his death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "charles-darwin-given-or-made",
+      "question": "given-or-made",
+      "name": "Charles Darwin",
+      "short": "Darwin",
+      "work": "The Descent of Man, chapter 2",
+      "excerpt": "genius which implies a wonderfully complex combination of high faculties, tends to be inherited; and, on the other hand, it is too certain that insanity and deteriorated mental powers likewise run in families.",
+      "period": "1871",
+      "dateShort": "1871",
+      "dateFull": "1871",
+      "sortYear": 1871,
+      "sourceLabel": "The Descent of Man (1871), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/0/2300/2300-0.txt",
+      "locator": "Chapter II, “On the Manner of Development of Man from Some Lower Form”, in the discussion of the causes of variability, citing Galton’s Hereditary Genius.",
+      "place": "Down House, Downe, Kent, England",
+      "lat": 51.33,
+      "lng": 0.05,
+      "anchorType": "Documented writing location",
+      "placeNote": "Darwin wrote The Descent of Man at Down House, his home in Kent, where he lived from 1842 until his death; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Down_House",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Inherited faculties and defects",
+          "why": "Darwin says that high mental ability tends to be inherited and that insanity and weakened mental powers run in families. In these words a person’s faculties come largely as an endowment passed down from parents.",
+          "limit": "The sentence reports work by Francis Galton on heredity and is about tendencies in families, not about any one person. Darwin elsewhere gives weight to use, habit and conditions of life, and the excerpt does not weigh them. Nineteenth-century language about insanity is of its time.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mikhail-bakunin-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Mikhail Bakunin",
@@ -39739,6 +40758,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "james-thomson-meaning",
+      "question": "meaning",
+      "name": "James Thomson (B.V.)",
+      "short": "Thomson",
+      "work": "The City of Dreadful Night, section 14",
+      "excerpt": "I find no hint throughout the Universe Of good or ill",
+      "period": "Written 1870–1873; published 1874",
+      "dateShort": "1874",
+      "dateFull": "published in 1874",
+      "sortYear": 1874,
+      "sourceLabel": "The City of Dreadful Night and other poems (1880), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_City_of_Dreadful_Night_(Thomson)",
+      "locator": "Section XIV (the stanza beginning “If tigers burn with beauty and with might”).",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Thomson lived and worked in London for much of the early 1870s and the poem first appeared in the London journal The National Reformer in 1874. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_City_of_Dreadful_Night_(Thomson)",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "No hint of good or ill",
+          "why": "The speaker looks through the whole universe and finds no sign of any moral order or design in it, only necessity. A universe with no sign of good or ill leaves life without a purpose, so the passage sits at there is none.",
+          "limit": "This is a long Victorian poem whose speaker is a voice in a nightmare city of despairing men, and it need not be the poet’s settled view. The same section ends by calling fellow sufferers to a sad fellowship, which the excerpt does not show.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -40062,6 +41116,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "henrik-ibsen-relationships",
+      "question": "relationships",
+      "name": "Henrik Ibsen",
+      "short": "Ibsen",
+      "work": "A Doll’s House, Act III",
+      "excerpt": "I believe that before all else I am a reasonable human being, just as you are",
+      "period": "1879",
+      "dateShort": "1879",
+      "dateFull": "1879",
+      "sortYear": 1879,
+      "sourceLabel": "William Archer translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/4/2542/2542-0.txt",
+      "locator": "Act III, Nora’s reply after Helmer says “Before all else, you are a wife and a mother.”",
+      "place": "Amalfi, Italy",
+      "lat": 40.64,
+      "lng": 14.6,
+      "anchorType": "Documented writing location",
+      "placeNote": "Ibsen wrote A Doll’s House in 1879, partly at Amalfi and partly at Rome, and it was first staged in Copenhagen; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/A_Doll%27s_House",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "unscored",
+          "facet": "A person before her roles",
+          "why": "Nora answers her husband’s claim that she is first a wife and a mother by saying that before all else she is a reasonable human being like him. Her identity is placed prior to the relationships and roles he names. A second, independent reading moved this placement from “not necessary” to “unscored”: The words claim standing as a reasonable human being before all else; they do not mention relationships or say whether these are needed for the self.",
+          "limit": "The words belong to a character in a play, in a scene of conflict, and she adds that she must still try to become such a person. Ibsen’s own view is not given, and the play does not deny that relationships matter to her life.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -43995,6 +45084,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "stephen-crane-meaning",
+      "question": "meaning",
+      "name": "Stephen Crane",
+      "short": "Crane",
+      "work": "War Is Kind and Other Lines, “A Man Said to the Universe”",
+      "excerpt": "A man said to the universe: \"Sir I exist!\" \"However,\" replied the universe, \"The fact has not created in me A sense of obligation.\"",
+      "period": "Published 1899",
+      "dateShort": "1899",
+      "dateFull": "published in 1899",
+      "sortYear": 1899,
+      "sourceLabel": "War Is Kind & Other Lines (1899), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/A_Man_Said_to_the_Universe",
+      "locator": "The complete four-line poem.",
+      "place": "New York, United States",
+      "lat": 40.73,
+      "lng": -73.99,
+      "anchorType": "Place of publication",
+      "placeNote": "The collection was published in New York in 1899. Where Crane wrote this particular poem is not recorded on the linked page; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/A_Man_Said_to_the_Universe",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "A universe without obligation",
+          "why": "The universe answers that a person’s existence puts it under no duty to him. A universe that owes nothing to its creatures gives their lives no purpose of its own, so the passage sits at there is none.",
+          "limit": "The poem is a four-line parable in which the universe is made to speak, and it is cast as a joke. It denies that existence earns anything from the cosmos and does not say that people cannot find purposes of their own.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "auta-de-sousa-suffering",
       "question": "suffering",
       "name": "Auta de Sousa",
@@ -44294,6 +45418,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "voltairine-de-cleyre-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Voltairine de Cleyre",
+      "short": "De Cleyre",
+      "work": "Note to her poem “Hymn”, in Selected Works",
+      "excerpt": "a vast scheme of mutual murder, with no justice anywhere, and no God in the soul or out of it.",
+      "period": "Poem 1891; note added later, before her death in 1912",
+      "dateShort": "1891 / later note",
+      "dateFull": "poem written January 1891; note added later, before 1912",
+      "sortYear": 1900,
+      "sourceLabel": "Selected Works of Voltairine de Cleyre (1914), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/3/0/9/43098/43098-0.txt",
+      "locator": "Italic note printed under the title “Hymn”, before the poem beginning “I am at peace”.",
+      "place": "Philadelphia, Pennsylvania, USA",
+      "lat": 39.97,
+      "lng": -75.15,
+      "anchorType": "Approximate residence association",
+      "placeNote": "De Cleyre lived in Philadelphia for most of her adult life, but the note is undated and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Voltairine_de_Cleyre",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "No justice and no God",
+          "why": "De Cleyre describes what she calls seeing things as they are: a world with no justice and no God, inside a person or outside. The sentence states the denial as her own settled view.",
+          "limit": "The remark is a headnote to a hymn she wrote in 1891 at a friend’s request, and she says the hymn did not express her beliefs. The note is a brief personal aside, not an argued case, and its date is not given in the text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -55528,7 +56687,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "dalai-lama-happiness",
       "question": "happiness",
-      "name": "Tenzin Gyatso, the 14th Dalai Lama",
+      "name": "Tenzin Gyatso, the Fourteenth Dalai Lama",
       "short": "Dalai Lama",
       "work": "Compassion and the Individual",
       "excerpt": "Unless we are either gravely ill or deprived of basic necessities, our physical condition plays a secondary role in life.",
@@ -58847,21 +60006,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Literature and poetry",
       "sure": true
     },
-    "Atharvaveda, hymn to Kama (Desire)": {
-      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 800 BCE, addressed to Kama, desire.",
-      "tradition": "Hinduism",
-      "sure": true
-    },
-    "Atharvaveda, hymn to Skambha": {
-      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 900 BCE, addressed to Skambha, the cosmic pillar.",
-      "tradition": "Hinduism",
-      "sure": true
-    },
-    "Atharvaveda, hymn to Time (Kala)": {
-      "about": "Hymn of the Atharvaveda, a Hindu Vedic text from the Kuru country around 800 BCE, addressed to Time, Kala.",
-      "tradition": "Hinduism",
-      "sure": true
-    },
     "Audre Lorde": {
       "about": "Caribbean American poet and essayist who gave the talk The Transformation of Silence into Language and Action in Chicago in 1977.",
       "tradition": "Literature and poetry",
@@ -59022,26 +60166,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Judaism",
       "sure": true
     },
-    "Book of Odes (Shijing), “King Wen”": {
-      "about": "Ode from the Shijing, the Chinese classic of poetry, in praise of King Wen of Zhou, in Legge’s translation.",
-      "tradition": "Confucianism",
-      "sure": true
-    },
-    "Book of Odes (Shijing), “Qiao yan”": {
-      "about": "Ode from the Shijing, the Chinese classic of poetry, called Qiao yan, in Legge’s translation.",
-      "tradition": "Confucianism",
-      "sure": true
-    },
-    "Book of Odes (Shijing), “Tian bao”": {
-      "about": "Ode from the Shijing, the Chinese classic of poetry, called Tian bao, in Legge’s translation.",
-      "tradition": "Confucianism",
-      "sure": true
-    },
-    "Book of Odes (Shijing), “Yi”": {
-      "about": "Ode from the Shijing, the Chinese classic of poetry, called Yi, in Legge’s translation.",
-      "tradition": "Confucianism",
-      "sure": true
-    },
     "Book of Proverbs": {
       "about": "Hebrew Bible collection of wisdom sayings, compiled in Jerusalem between roughly the 7th and 3rd centuries BCE.",
       "tradition": "Judaism",
@@ -59145,11 +60269,6 @@ window.PILOT_EVIDENCE={
     "Charlotte Brontë": {
       "about": "English novelist at Haworth who published Jane Eyre in 1847.",
       "tradition": "Literature and poetry",
-      "sure": true
-    },
-    "Charvaka verses attributed to Brihaspati": {
-      "about": "Indian materialist verses attributed to Brihaspati, quoted in the 14th-century Sarva-darsana-samgraha compiled in Vijayanagara.",
-      "tradition": "Hinduism",
       "sure": true
     },
     "Chaungo Barasa": {
@@ -60967,11 +62086,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Modern philosophy",
       "sure": true
     },
-    "Rigveda, hymn to Varuna (Vasishtha)": {
-      "about": "Vedic hymn to the god Varuna from the Rigveda, the oldest Sanskrit scripture of India.",
-      "tradition": "Hinduism",
-      "sure": true
-    },
     "Robert G. Ingersoll": {
       "about": "American lawyer and orator of the 19th century who lectured widely in defence of agnosticism.",
       "tradition": "Modern philosophy",
@@ -61080,11 +62194,6 @@ window.PILOT_EVIDENCE={
     "Shantideva": {
       "about": "Indian Buddhist monk at Nalanda around 700 CE who wrote the Bodhicaryavatara.",
       "tradition": "Buddhism",
-      "sure": true
-    },
-    "Shijing (Book of Odes)": {
-      "about": "Chinese classic collection of ancient songs and odes, from the first millennium BCE.",
-      "tradition": "Confucianism",
       "sure": true
     },
     "Shinran": {
@@ -61222,11 +62331,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Literature and poetry",
       "sure": true
     },
-    "Tenzin Gyatso, the 14th Dalai Lama": {
-      "about": "Tibetan Buddhist leader, exiled in Dharamsala, India, and Nobel Peace laureate who writes and teaches on compassion.",
-      "tradition": "Buddhism",
-      "sure": true
-    },
     "Tenzin Gyatso, the Fourteenth Dalai Lama": {
       "about": "Tibetan Buddhist leader, exiled in Dharamsala, India, and Nobel Peace laureate who writes and teaches on compassion.",
       "tradition": "Buddhism",
@@ -61268,12 +62372,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "The Carvaka school (as reported by Madhava)": {
-      "about": "Indian materialist school that rejected the afterlife, as reported by the 14th-century writer Madhava.",
-      "tradition": "Other",
-      "sure": true
-    },
-    "The Carvaka school, as reported by Madhava": {
-      "about": "Indian materialist school that rejected the afterlife, as reported by the 14th-century writer Madhava.",
+      "about": "Indian materialist school that rejected the afterlife; its verses, some attributed to Brihaspati, survive in the 14th-century report of Madhava.",
       "tradition": "Other",
       "sure": true
     },
@@ -61333,7 +62432,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "The Rig Veda": {
-      "about": "Oldest Sanskrit scripture of India, a collection of hymns; this passage is the Hymn of Creation.",
+      "about": "Oldest Sanskrit scripture of India, a collection of more than a thousand hymns composed around 1500 to 1000 BCE.",
       "tradition": "Hinduism",
       "sure": true
     },
@@ -61588,12 +62687,7 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "Yang Zhu": {
-      "about": "Chinese thinker of the fourth century BCE whose ideas on preserving life are reported in the Liezi.",
-      "tradition": "Other",
-      "sure": true
-    },
-    "Yang Zhu, as reported in the Liezi": {
-      "about": "Chinese thinker of the fourth century BCE whose ideas on preserving life are reported in the Liezi.",
+      "about": "Chinese thinker of the fourth century BCE whose ideas on preserving life are reported in the Liezi and by Mencius.",
       "tradition": "Other",
       "sure": true
     },
@@ -61945,6 +63039,86 @@ window.PILOT_EVIDENCE={
     "Thonga informants (recorded by Henri-Alexandre Junod)": {
       "about": "Tsonga people of southern Mozambique whose sayings and beliefs were recorded by the missionary Henri-Alexandre Junod around 1900.",
       "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Buddhaghosa": {
+      "about": "Theravada Buddhist scholar of the 5th century who worked in Sri Lanka and wrote the Visuddhimagga, the Path of Purification.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Diamond Sutra": {
+      "about": "Mahayana Buddhist scripture on the perfection of wisdom, composed in India in the early centuries of the common era.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "James Thomson (B.V.)": {
+      "about": "Scottish poet who lived in London and published The City of Dreadful Night in 1874.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Thomas Hardy": {
+      "about": "English novelist and poet from Dorset, who wrote from the 1860s until 1928.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Stephen Crane": {
+      "about": "American novelist and poet, who published two books of short unrhymed poems in the 1890s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Giacomo Leopardi": {
+      "about": "Italian poet and essayist from Recanati, who wrote the Canti and the Operette morali in the 1820s and 1830s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Alexander Pushkin": {
+      "about": "Russian poet and novelist, who wrote in St Petersburg and in exile in the 1820s and 1830s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Mikhail Lermontov": {
+      "about": "Russian poet and novelist, who wrote in the 1830s and served as an army officer in the Caucasus.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "William Hazlitt": {
+      "about": "English essayist and critic, who published Table-Talk and other essays in London in the 1820s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Atharvaveda": {
+      "about": "Fourth of the Vedas, a collection of Sanskrit hymns and spells from northern India, compiled around 1000 to 800 BCE.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Book of Odes (Shijing)": {
+      "about": "Chinese classic of poetry: 305 songs and odes from the 11th to the 7th century BCE, by many unnamed hands.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Percy Bysshe Shelley": {
+      "about": "English Romantic poet, who wrote Queen Mab and its prose notes in 1813 and was expelled from Oxford for a pamphlet on atheism.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Algernon Charles Swinburne": {
+      "about": "English poet, who published Songs before Sunrise in 1871.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Voltairine de Cleyre": {
+      "about": "American anarchist writer and lecturer, who wrote essays and poems in Philadelphia from the 1890s until 1912.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Robert Burns": {
+      "about": "Scottish poet from Ayrshire, who wrote in Scots and English in the 1780s and 1790s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Isha Upanishad": {
+      "about": "One of the shortest principal Upanishads, in eighteen verses, composed in northern India in the centuries before the common era.",
+      "tradition": "Hinduism",
       "sure": true
     }
   }
