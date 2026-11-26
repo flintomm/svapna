@@ -56,6 +56,11 @@
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
   let landDots = null;
+  // Angles on the sphere, without the map library's exact-sum machinery:
+  // these run thousands of times a frame.
+  const RAD = Math.PI / 180;
+  const unit = p => { const l = p[0] * RAD, f = p[1] * RAD, c = Math.cos(f); return [c * Math.cos(l), c * Math.sin(l), Math.sin(f)]; };
+  const ang = (a, b) => { const f1 = a[1] * RAD, f2 = b[1] * RAD, c = Math.sin(f1) * Math.sin(f2) + Math.cos(f1) * Math.cos(f2) * Math.cos((b[0] - a[0]) * RAD); return Math.acos(c > 1 ? 1 : c < -1 ? -1 : c); };
   // The land is drawn once onto a small flat map and the grid is read off its
   // pixels: asking the geometry about each point one at a time froze the page
   // for seconds on a phone.
@@ -72,7 +77,7 @@
     const px = x.getImageData(0, 0, w, h).data;
     for (let lat = -58; lat <= 82; lat += 2.4) {
       const step = 2.4 / Math.max(.25, Math.cos(lat * Math.PI / 180)), Y = Math.min(h - 1, Math.floor((90 - lat) / 180 * h));
-      for (let lng = -180; lng < 180; lng += step) { const X = Math.min(w - 1, Math.floor((lng + 180) / 360 * w)); if (px[(Y * w + X) * 4 + 3] > 127) landDots.push([lng, lat]); }
+      for (let lng = -180; lng < 180; lng += step) { const X = Math.min(w - 1, Math.floor((lng + 180) / 360 * w)); if (px[(Y * w + X) * 4 + 3] > 127) landDots.push([lng, lat, ...unit([lng, lat])]); }
     }
   }
   const css = tone => `rgb(${RGB[tone]})`;
@@ -329,21 +334,21 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     if (w3) return;
     if (L.dots) {
       if (!landDots) makeDots();
-      const face0 = projection.invert([cx, cy]), d = Math.max(1.1, R / 210);
+      const f0 = unit(projection.invert([cx, cy])), d = Math.max(1.1, R / 210);
       wx.fillStyle = `rgba(${L.land},.5)`;
       for (const pt of landDots) {
-        const a = d3.geoDistance(pt, face0); if (a > 1.5) continue;
-        const [x, y] = projection(pt), k = Math.cos(a) * .9 + .1;
+        const ca = pt[2] * f0[0] + pt[3] * f0[1] + pt[4] * f0[2]; if (ca < .0707) continue;
+        const [x, y] = projection(pt), k = ca * .9 + .1;
         wx.globalAlpha = .25 + .75 * k; wx.beginPath(); wx.arc(x, y, d * (.55 + .45 * k), 0, 7); wx.fill();
       }
       if (L.through) {
         // The far side shows through, mirrored and faint, so the world reads as a sphere of points.
-        const back = d3.geoOrthographic().translate([cx, cy]).scale(R).rotate([rot[0] + 180, -rot[1], 0]).clipAngle(90), anti = back.invert([cx, cy]);
+        const back = d3.geoOrthographic().translate([cx, cy]).scale(R).rotate([rot[0] + 180, -rot[1], 0]).clipAngle(90), f1 = unit(back.invert([cx, cy]));
         wx.fillStyle = `rgba(${L.land},.5)`;
         for (const pt of landDots) {
-          const a = d3.geoDistance(pt, anti); if (a > 1.45) continue;
+          const ca = pt[2] * f1[0] + pt[3] * f1[1] + pt[4] * f1[2]; if (ca < .1205) continue;
           const [bx, y] = back(pt), x = 2 * cx - bx;
-          wx.globalAlpha = .13 * Math.cos(a); wx.beginPath(); wx.arc(x, y, d * .5, 0, 7); wx.fill();
+          wx.globalAlpha = .13 * ca; wx.beginPath(); wx.arc(x, y, d * .5, 0, 7); wx.fill();
         }
       }
       wx.globalAlpha = 1;
@@ -364,7 +369,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     for (let ci = 0; ci < cards.length; ci++) {
       const c = cards[ci];
       if (gl && (ci > G.t || G.hide.has(c.score))) continue;
-      if (d3.geoDistance([c.lng, c.lat], face) > 1.52) continue;
+      if (ang([c.lng, c.lat], face) > 1.52) continue;
       const tone = tones[c.score], rgb = RGB[tone], [x, y] = projection([c.lng, c.lat]);
       const mine = gl ? true : answer ? c.score === answer : true, fresh = gl ? Math.max(0, 1 - (G.t - ci) / 36) : 0;
       const inTime = gl || !now || c.sortYear <= now.sortYear;       // the world fills in as time passes
@@ -382,7 +387,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       wx.beginPath(); path({ type: 'LineString', coordinates: pts });
       wx.strokeStyle = css(tones[now.score]); wx.lineWidth = 1.6; wx.globalAlpha = .9 * (1 - Math.max(0, (performance.now() - trail.t - 2600) / 1400)); if (wx.globalAlpha > 0) wx.stroke(); wx.globalAlpha = 1;
     }
-    if (now && d3.geoDistance([now.lng, now.lat], face) < 1.52) {
+    if (now && ang([now.lng, now.lat], face) < 1.52) {
       const [x, y] = projection([now.lng, now.lat]), pulse = 9 + 4 * Math.sin(performance.now() / 420);
       wx.beginPath(); wx.arc(x, y, pulse, 0, 7); wx.strokeStyle = css(tones[now.score]); wx.lineWidth = 1.2; wx.stroke();
       wx.beginPath(); wx.arc(x, y, 3.4, 0, 7); wx.fillStyle = L.ring; wx.fill();
@@ -653,7 +658,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       if (p) {
         const pool = mode === 'voice' ? shown : cards;
         let best = -1, d = .12;
-        pool.forEach((c, i) => { if (mode === 'globe' && (i > G.t || G.hide.has(c.score))) return; const k = d3.geoDistance(p, [c.lng, c.lat]); if (k < d) { d = k; best = i; } });
+        pool.forEach((c, i) => { if (mode === 'globe' && (i > G.t || G.hide.has(c.score))) return; const k = ang(p, [c.lng, c.lat]); if (k < d) { d = k; best = i; } });
         if (best >= 0) { if (mode !== 'voice') { shown = cards; setFilter('all', true); scene('voice'); } stopDrift(); show(best); }
       }
     }
