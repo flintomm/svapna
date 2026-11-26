@@ -42,7 +42,8 @@
   // ---- depth from scroll ----
   const sections = [...document.querySelectorAll('section[data-depth]')], links = [...document.querySelectorAll('.gauge a')];
   let centres = [], depth = -1, seen = -1;
-  const measure = () => { centres = sections.map(s => s.offsetTop + s.offsetHeight / 2); };
+  let tops = [], talls = [];
+  const measure = () => { centres = sections.map(s => s.offsetTop + s.offsetHeight / 2); tops = sections.map(s => s.offsetTop); talls = sections.map(s => s.offsetHeight); };
   function readDepth() {
     const y = scrollY + innerHeight / 2;
     let i = 0; while (i < centres.length - 2 && y > centres[i + 1]) i++;
@@ -313,6 +314,11 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
       gl.uniform3fv(U.base, k.base); gl.uniform3fv(U.c0, k.c0); gl.uniform3fv(U.c1, k.c1); gl.uniform3fv(U.c2, k.c2);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
     } else document.body.style.background = `rgb(${k.base.map(v => Math.round(v * 255))})`;
+    // On a narrow screen the body of light has the top of the screen: words fade out as they rise into it.
+    if (innerWidth < 820) { const H = innerHeight, sy = scrollY;
+      for (let i = 0; i < sections.length; i++) { const top = tops[i] - sy, el = sections[i], near = top < H * .5 && top + talls[i] > 0;
+        if (near) { const a = Math.round(H * .27 - top); if (el._m !== a) { el._m = a; el.style.setProperty('--m0', a + 'px'); el.style.setProperty('--m1', (a + Math.round(H * .15)) + 'px'); } if (!el._k) { el._k = 1; el.classList.add('mk'); } }
+        else if (el._k) { el._k = 0; el.classList.remove('mk'); } } }
     // Words are dark on a light ground and light on a dark one.
     const lum = .2126 * k.base[0] + .7152 * k.base[1] + .0722 * k.base[2];
     document.body.classList.toggle('light-now', lum > .5);
