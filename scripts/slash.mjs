@@ -3,6 +3,7 @@
 // sitemap entry is rewritten to the slash form, so readers and search engines never hit a redirect.
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const dist = path.resolve('dist');
 const SITE = 'https://svapnaproject.org';
@@ -15,6 +16,13 @@ const fix = u => {
   if (!origin && !p.startsWith('/')) return u;
   return origin + p + '/' + rest;
 };
+// Stylesheets and scripts are cached by browsers for hours. Each link to one carries a short fingerprint of
+// its contents, so a page and the files it needs always arrive as a matching set after a deploy.
+const prints = new Map();
+const stamp = u => {
+  if (!prints.has(u)) { const f = path.join(dist, u); prints.set(u, fs.existsSync(f) ? crypto.createHash('sha1').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : ''); }
+  return prints.get(u) ? u + '?v=' + prints.get(u) : u;
+};
 let files = 0, changes = 0;
 const walk = d => { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const f = path.join(d, e.name); if (e.isDirectory()) walk(f); else if (e.name.endsWith('.html')) rewrite(f); } };
 function rewrite(f) {
@@ -24,6 +32,7 @@ function rewrite(f) {
   const before = s;
   s = s.replace(/(\s(?:href|content)=")([^"]+)(")/g, (all, a, u, b) => (/^(\/|https:\/\/svapnaproject\.org\/)/.test(u) ? a + fix(u) + b : all));
   s = s.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (all, a, j, b) => a + j.replace(/"(https:\/\/svapnaproject\.org\/[^"]*)"/g, (x, u) => '"' + fix(u) + '"') + b);
+  s = s.replace(/(\s(?:href|src)=")(\/[^"?#]+\.(?:css|js))(")/g, (all, a, u, b) => a + stamp(u) + b);
   if (s !== before) { fs.writeFileSync(f, s); changes++; }
   files++;
 }
