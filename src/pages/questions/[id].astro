@@ -45,7 +45,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
     <label class="find-t"><span class="small">Tradition</span> <select id="find-t"><option value="">Any</option>{traditions.map(t => <option value={t}>{t}</option>)}</select></label>
     <label class="find-short"><input type="checkbox" id="find-short" /> <span class="small">Short enough to read aloud</span></label>
     <span class="find-do"><button type="button" id="find-link">Copy a link to this set</button><button type="button" id="find-print">Print it</button><span class="small" id="find-ok" role="status"></span></span></div>
-  <p class="small tally-note">A count of the passages gathered here so far. It is not a vote, and no answer is ranked above another.</p>
+  <p class="small tally-note">A count of the passages gathered here so far.</p>
   <p class="keys">{q.steps.map(s => count(s) > 0 && <a href={`#${s.id}`}><span class="dot" style={`--c:var(--${s.tone})`}></span><b>{count(s)}</b> {s.plain.toLowerCase()}{s.tone === 'none' ? ' (does not fit the scale)' : ''}</a>)}</p>
 
   {q.steps.map(s => count(s) > 0 && (
