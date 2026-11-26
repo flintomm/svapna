@@ -1959,7 +1959,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "zarathustra-free-will",
       "question": "free-will",
-      "name": "Zarathustra (Gathas)",
+      "name": "Zarathushtra (Gathas)",
       "short": "Zarathustra",
       "work": "Yasna 30 (Ahunavaiti Gatha)",
       "excerpt": "look upon them with clear-seeing thought, for decision between the two Beliefs, each man for himself",
@@ -1989,6 +1989,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "zoroaster-death",
+      "question": "death",
+      "name": "Zarathushtra (Gathas)",
+      "short": "Gathas",
+      "work": "Gathas, Yasna 30, verse 4",
+      "excerpt": "for the wicked (Hell) the worst life, for the holy (Heaven) the Best Mental State",
+      "period": "c. 1000 BCE (the date of the Gathas is disputed, from c. 1500 to c. 600 BCE)",
+      "dateShort": "c. 1000 BCE",
+      "dateFull": "circa 1000 BCE",
+      "sortYear": -1000,
+      "sourceLabel": "L. H. Mills, The Zend-Avesta, Part III (Sacred Books of the East, vol. 31, 1887), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/mlbd.zendavestasacredvo0000vol-31.unse/mlbd.zendavestasacredvo0000vol-31.unse_djvu.txt",
+      "locator": "Yasna 30, verse 4 (page 30 of the volume). The scanned text contains recognition errors.",
+      "place": "Bactria (Balkh), Afghanistan",
+      "lat": 36.76,
+      "lng": 66.9,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia gives Zoroaster’s birthplace only as possibly Bactra (Balkh), dates the Gathas to about 1000 BCE, and notes that the regional names in the Avesta lie mainly in north-eastern and eastern Iran. The pin marks the Bactrian tradition and no composition site is known.",
+      "placeSource": "https://archive.org/stream/mlbd.zendavestasacredvo0000vol-31.unse/mlbd.zendavestasacredvo0000vol-31.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Hell for the wicked, the Best Mental State for the holy",
+          "why": "The two primal spirits are said to have made life and its absence and to have settled how the world will be ordered at the last: the worst life for the wicked and the Best Mental State for the holy. A fate after death for each person is taken as given.",
+          "limit": "Mills’s 1887 translation puts several words in brackets, including “Hell” and “Heaven”, as his own interpretive additions to the Gathic text. Scholars differ over how far the Gathas teach a personal afterlife, and the date of the hymns is disputed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2029,7 +2064,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "zoroaster-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Zoroaster (Zarathushtra)",
+      "name": "Zarathushtra (Gathas)",
       "short": "Zoroaster",
       "work": "Gathas, Yasna 31.8",
       "excerpt": "I recognize Thee, O Mazda, in my thought, that Thou the First art (also) the Last",
@@ -4337,6 +4372,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "confucius-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Confucius",
+      "short": "Confucius",
+      "work": "Analects 4.17",
+      "excerpt": "見賢思齊焉，見不賢而內自省也。",
+      "translation": "On seeing a worthy person, think of matching him; on seeing an unworthy one, look inward and examine yourself.",
+      "period": "c. 500 BCE",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "circa 500 BCE",
+      "sortYear": -500,
+      "sourceLabel": "Chinese Wikisource, Analects, “Li Ren”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/論語/里仁第四",
+      "locator": "Analects, book 4 (Li Ren), saying 17.",
+      "place": "Qufu, Shandong, China",
+      "lat": 35.6,
+      "lng": 117,
+      "anchorType": "Traditional association",
+      "placeNote": "Confucius is traditionally placed at Qufu in the state of Lu; the Analects were compiled by his followers, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Confucius",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Looking at others, then at oneself",
+          "why": "Confucius says that on seeing a worthy person one should try to match him, and on seeing an unworthy one one should look inward and examine oneself. Other people serve as the mirror and the inward check follows, so the passage keeps both turns.",
+          "limit": "The English is the atlas’s own unreviewed translation. The saying is a single sentence recorded by disciples, and it concerns self-improvement rather than a theory of what the self is.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "confucius-meaning",
       "question": "meaning",
       "name": "Confucius",
@@ -6288,6 +6359,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mozi-given-or-made",
+      "question": "given-or-made",
+      "name": "Mozi",
+      "short": "Mozi",
+      "work": "Mozi, “Dyed Silk” (所染)",
+      "excerpt": "染於蒼則蒼，染於黃則黃，所入者變，其色亦變。",
+      "translation": "Dyed in blue it turns blue, dyed in yellow it turns yellow; whatever goes in changes it, and its colour changes too.",
+      "period": "c. 400 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "circa 400 BCE",
+      "sortYear": -400,
+      "sourceLabel": "Chinese Wikisource, Mozi, “Dyed Silk”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/墨子/所染",
+      "locator": "Mozi, book 1, chapter 3, opening paragraph.",
+      "place": "Tengzhou, Shandong, China",
+      "lat": 35.08,
+      "lng": 117.17,
+      "anchorType": "Traditional association",
+      "placeNote": "Mozi is traditionally associated with the state of Lu or Song in what is now Shandong; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Mozi",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Dyed by what enters",
+          "why": "Mozi watches silk being dyed and says it turns blue in blue dye and yellow in yellow, taking on whatever it is steeped in. He goes on to say rulers become good or bad according to the people who colour them, so character comes from what a person is steeped in.",
+          "limit": "The English is the atlas’s own unreviewed translation. The chapter is about rulers and their advisers, and its text is a later compilation attributed to Mozi and his school.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mozi-happiness",
       "question": "happiness",
       "name": "Mozi",
@@ -6954,6 +7061,114 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "guanzi-desire",
+      "question": "desire",
+      "name": "Guanzi (Neiye)",
+      "short": "Guanzi",
+      "work": "Guanzi, chapter 49, “Inward Training” (Nei Ye)",
+      "excerpt": "節其五欲，去其二凶，不喜不怒，平正擅匈",
+      "translation": "Restrain the five desires, put away the two evils, neither delighted nor angry, with evenness and rectitude filling the chest.",
+      "period": "Warring States, c. 4th century BCE; the chapter is of uncertain authorship",
+      "dateShort": "c. 350 BCE",
+      "dateFull": "circa 350 BCE",
+      "sortYear": -350,
+      "sourceLabel": "Chinese Wikisource text of the Guanzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/管子/第49篇內業",
+      "locator": "Chapter 49 (Nei Ye), paragraph beginning 凡人之生也，天出其精, sentence beginning 節其五欲.",
+      "place": "Linzi (Jixia Academy), Shandong, China",
+      "lat": 36.8,
+      "lng": 118.3,
+      "anchorType": "Traditional association",
+      "placeNote": "The Guanzi is associated with the Jixia Academy at Linzi in the state of Qi, where scholars of several schools gathered. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/管子/第49篇內業",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Restrain the five desires, drop the two evils",
+          "why": "The text advises restraining the five desires and dropping the two ‘evils’ so that evenness fills the chest. Desire is moderated and not removed.",
+          "limit": "A dense, brief text whose terms (the five desires, the two evils) are glossed differently by commentators. The aim is health and a settled mind, not a moral doctrine. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "guanzi-given-or-made",
+      "question": "given-or-made",
+      "name": "Guanzi (Neiye)",
+      "short": "Guanzi",
+      "work": "Guanzi, chapter 49, “Inward Training” (Nei Ye)",
+      "excerpt": "凡人之生也，天出其精，地出其形，合此以爲人。和乃生，不和不生",
+      "translation": "Every person’s birth: heaven supplies the essence and earth supplies the form; joined, they make a person. With harmony there is life; without harmony there is none.",
+      "period": "Warring States, c. 4th century BCE; the chapter is of uncertain authorship",
+      "dateShort": "c. 350 BCE",
+      "dateFull": "circa 350 BCE",
+      "sortYear": -350,
+      "sourceLabel": "Chinese Wikisource text of the Guanzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/管子/第49篇內業",
+      "locator": "Chapter 49 (Nei Ye), paragraph beginning 凡人之生也，天出其精.",
+      "place": "Linzi (Jixia Academy), Shandong, China",
+      "lat": 36.8,
+      "lng": 118.3,
+      "anchorType": "Traditional association",
+      "placeNote": "The Guanzi is associated with the Jixia Academy at Linzi in the state of Qi, where scholars of several schools gathered. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/管子/第49篇內業",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Heaven gives the essence, earth gives the form",
+          "why": "The text says heaven supplies a person’s essence and earth the form and that their joining makes a human being. A person is first an endowment from heaven and earth.",
+          "limit": "The same chapter then describes disciplines of calm and diet by which one keeps that harmony, so the endowment is not the whole story. It is a short, hard-to-date text anthologised in the Guanzi. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "laozi-death",
+      "question": "death",
+      "name": "Laozi",
+      "short": "Laozi",
+      "work": "Daodejing, chapter 33",
+      "excerpt": "死而不亡者壽",
+      "translation": "One who dies yet is not lost has long life.",
+      "period": "Compiled c. 4th–3rd century BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa fourth to third century BCE",
+      "sortYear": -350,
+      "sourceLabel": "Wang Bi edition of the Daodejing, Chinese Wikisource text",
+      "sourceUrl": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "locator": "Chapter 33, final line (Wang Bi text).",
+      "place": "Hangu Pass, Henan, China",
+      "lat": 34.63,
+      "lng": 110.92,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia relates Sima Qian’s account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi’s historicity is debated and no contemporary record exists.",
+      "placeSource": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "One who dies and is not lost",
+          "why": "The chapter closes by saying that a person who dies and yet does not perish attains long life. Something of the person is said to outlast death, though what is left unsaid.",
+          "limit": "A six-character line that is read in more than one way: as a persistence of the Way in the one who has died, or as a lasting name or influence. The score reflects only the plain wording that the person is not lost. The linked page prints Wang Bi’s commentary between the lines of the text. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "laozi-desire",
       "question": "desire",
       "name": "Laozi",
@@ -6986,6 +7201,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "laozi-given-or-made",
+      "question": "given-or-made",
+      "name": "Laozi",
+      "short": "Laozi",
+      "work": "Daodejing, chapter 51",
+      "excerpt": "道生之，德畜之，物形之，勢成之",
+      "translation": "The Way gives birth to them, virtue nurtures them, things shape them, circumstances complete them.",
+      "period": "Compiled c. 4th–3rd century BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa fourth to third century BCE",
+      "sortYear": -350,
+      "sourceLabel": "Wang Bi edition of the Daodejing, Chinese Wikisource text",
+      "sourceUrl": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "locator": "Chapter 51, opening line (Wang Bi text).",
+      "place": "Hangu Pass, Henan, China",
+      "lat": 34.63,
+      "lng": 110.92,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia relates Sima Qian’s account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi’s historicity is debated and no contemporary record exists.",
+      "placeSource": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "The Way gives birth, virtue nurtures, things shape",
+          "why": "The chapter says myriad things are born from the Way, nurtured by its virtue, given form by other things and completed by circumstance. Origin is an endowment, but nurture and surroundings finish what each thing becomes.",
+          "limit": "The chapter speaks of the ten thousand things in general and not of persons in particular, so the reading for people is an extension. The Way is said to produce without possessing, which the chapter calls mysterious virtue. The linked page prints Wang Bi’s commentary between the lines of the text. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -7028,6 +7279,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "laozi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Laozi",
+      "short": "Laozi",
+      "work": "Daodejing, chapter 25",
+      "excerpt": "有物混成，先天地生",
+      "translation": "There was something formed out of chaos, born before heaven and earth.",
+      "period": "Compiled c. 4th–3rd century BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa fourth to third century BCE",
+      "sortYear": -350,
+      "sourceLabel": "Wang Bi edition of the Daodejing, Chinese Wikisource text",
+      "sourceUrl": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "locator": "Chapter 25, opening line (Wang Bi text).",
+      "place": "Hangu Pass, Henan, China",
+      "lat": 34.63,
+      "lng": 110.92,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia relates Sima Qian’s account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi’s historicity is debated and no contemporary record exists.",
+      "placeSource": "https://zh.wikisource.org/wiki/道德經_(王弼本)",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Something formed before heaven and earth",
+          "why": "The chapter opens by describing a thing that took shape in a blur and was born before heaven and earth, which it later names the Way. An ultimate reality is affirmed and placed before the world.",
+          "limit": "A terse poetic line whose later words say the author does not know its name and calls it the Way only by force. The text speaks of a ‘thing’ without describing a personal God. The linked page prints Wang Bi’s commentary between the lines of the text. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -7610,6 +7897,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "acaranga-sutra-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Acaranga Sutra",
+      "short": "Acaranga Sutra",
+      "work": "Acaranga Sutra, Book 1, Lecture 5, Lesson 5",
+      "excerpt": "As it would be unto thee, so it is with him whom thou intendest to kill.",
+      "period": "Compiled c. 4th–3rd century BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa fourth to third century BCE",
+      "sortYear": -300,
+      "sourceLabel": "Hermann Jacobi translation (Sacred Books of the East, vol. 22), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/gainasutras01jacouoft/gainasutras01jacouoft_djvu.txt",
+      "locator": "Âkârâṅga Sûtra, Book 1, Lecture 5, Lesson 5, section 3 (page 49). The scanned text contains recognition errors.",
+      "place": "Pataliputra (Patna), Bihar, India",
+      "lat": 25.6,
+      "lng": 85.1,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that the oldest canon was first collected at a council in Pataliputra, in the region where Mahavira taught. The linked text does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/gainasutras01jacouoft/gainasutras01jacouoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Others’ pain as one’s own",
+          "why": "The text tells the seeker that the being he means to kill, tyrannise over or torment is in the same position as himself, and that the righteous man therefore neither kills nor causes killing. One’s own good and another’s are treated as one footing.",
+          "limit": "A rule of conduct for Jain monks in Jacobi’s 1884 translation, read from a scan. It argues from likeness of feeling and does not weigh one party’s claims against the other’s in a hard case.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -8780,6 +9102,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "zhuangzi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Zhuangzi",
+      "short": "Zhuangzi",
+      "work": "Zhuangzi, chapter 28, “Yielding the Throne” (Rang Wang)",
+      "excerpt": "道之眞，以治身；其緒餘，以爲國家；其土苴，以治天下",
+      "translation": "The truth of the Way is for ordering one’s own person; its leftover threads are for running a state; its dregs and sweepings are for governing the world.",
+      "period": "c. 300 BCE (the inner chapters; the outer chapters are later)",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Chinese Wikisource text of the Zhuangzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/莊子/讓王",
+      "locator": "Chapter 28 (Rang Wang), the passage following the story of Yan He, introduced by 故曰.",
+      "place": "Meng, near Shangqiu, Henan, China",
+      "lat": 34.42,
+      "lng": 115.65,
+      "anchorType": "Traditional association",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://zh.wikisource.org/wiki/莊子/讓王",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "The Way’s truth for the self, its dregs for the world",
+          "why": "Zhuangzi, in the voice of the text, ranks care of one’s own person first and ordering a state or the world as left-overs of the Way. Priority goes to the individual’s own life.",
+          "limit": "A line from a late chapter of the outer or miscellaneous chapters, quoted there as a saying, so it is not a statement that can be assigned to Zhuang Zhou himself. The same book elsewhere shows the sage serving others when he cannot avoid it. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "zhuangzi-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Zhuangzi",
+      "short": "Zhuangzi",
+      "work": "Zhuangzi, chapter 11, “Letting Be, Leaving Alone” (Zai You)",
+      "excerpt": "出入六合，遊乎九州，獨往獨來，是謂獨有。獨有之人，是之謂至貴。",
+      "translation": "Going in and out of the six directions and roaming the nine regions, going alone and coming alone: this is called having oneself alone. The person who has himself alone is called the most honoured.",
+      "period": "c. 300 BCE (the inner chapters; the outer chapters are later)",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Chinese Wikisource text of the Zhuangzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/莊子/在宥",
+      "locator": "Chapter 11 (Zai You), the passage after “物而不物，故能物物”.",
+      "place": "Meng, near Shangqiu, Henan, China",
+      "lat": 34.42,
+      "lng": 115.65,
+      "anchorType": "Traditional association",
+      "placeNote": "Sima Qian’s biography, summarised in the Wikipedia article, makes Zhuang Zhou a minor official of Meng in the state of Song in the late fourth century BCE; the book itself is a late Warring States compilation with no recorded place of writing, and the article locates Meng in modern Anhui while the pin keeps the traditional site near Shangqiu.",
+      "placeSource": "https://zh.wikisource.org/wiki/莊子/在宥",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Going alone, coming alone",
+          "why": "The passage calls the person who goes and comes alone ‘the most honoured’, which places value on being alone over belonging to a group.",
+          "limit": "A line from the outer chapters, which scholars date later than the inner chapters and place in a Daoist school after Zhuangzi. Elsewhere the book also describes friendships and the ruler’s duties. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "zhuangzi-suffering",
       "question": "suffering",
       "name": "Zhuangzi",
@@ -9543,6 +9937,77 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "the-dhammapada-inward-or-others",
+      "question": "inward-or-others",
+      "name": "The Dhammapada",
+      "short": "Dhammapada",
+      "work": "Dhammapada, verse 379",
+      "excerpt": "Rouse thyself by thyself, examine thyself by thyself, thus self-protected and attentive wilt thou live happily",
+      "period": "Compiled by c. 3rd century BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "F. Max Müller translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/1/2017/2017.txt",
+      "locator": "Dhammapada, chapter 25 (Bhikkhu), verse 379.",
+      "place": "Rajgir, Bihar, India",
+      "lat": 25.03,
+      "lng": 85.42,
+      "anchorType": "Traditional association",
+      "placeNote": "The verses are traditionally linked to the Buddha’s teaching in the Magadha region, though the collection was compiled later; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Dhammapada",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Examining oneself by oneself",
+          "why": "The verse tells the monk to rouse and examine himself by his own effort and says that self-guarding brings happiness. The work of finding out and steadying oneself is placed in the person alone, so the passage is inward.",
+          "limit": "This is a verse from a collection of Buddhist sayings compiled over centuries, in Max Müller’s 1881 translation. It addresses a monk and does not deny that a teacher and community support the practice.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "the-great-learning-inward-or-others",
+      "question": "inward-or-others",
+      "name": "The Great Learning",
+      "short": "Great Learning",
+      "work": "The Great Learning (Daxue), opening chapter",
+      "excerpt": "物格而後知至，知至而後意誠，意誠而後心正，心正而後身脩，身脩而後家齊，家齊而後國治",
+      "translation": "Things investigated, knowledge reaches its end; knowledge at its end, the will is sincere; the will sincere, the mind is set right; the mind set right, the person is cultivated; the person cultivated, the household is in order; the household in order, the state is governed.",
+      "period": "compiled c. 3rd century BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "Chinese Wikisource, Book of Rites, “Daxue”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/禮記/大學",
+      "locator": "Opening chapter, the chain ending “家齊而後國治”.",
+      "place": "Qufu, Shandong, China",
+      "lat": 35.6,
+      "lng": 117,
+      "anchorType": "Traditional association",
+      "placeNote": "The Great Learning is traditionally linked to the school of Confucius at Qufu, though it was compiled later; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Great_Learning",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "From the mind outward to the state",
+          "why": "The text lays out a sequence from investigating things and making the will sincere to setting the mind right, and then to ordering the family and the state. Cultivation of the person begins within and is completed in the household and the realm, so the passage holds the inward turn and the turn to others together.",
+          "limit": "The English is the atlas’s own unreviewed translation. The text is a short chapter of the Book of Rites later made a core Confucian classic, and it describes a programme of government as much as a way of finding oneself.",
+          "second": "differed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "xunzi-desire",
       "question": "desire",
       "name": "Xunzi",
@@ -9654,6 +10119,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "xunzi-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Xunzi",
+      "short": "Xunzi",
+      "work": "Xunzi, “Encouraging Learning” (勸學)",
+      "excerpt": "君子博學而日參省乎己，則知明而行無過矣",
+      "translation": "The gentleman learns widely and examines himself daily; then his understanding is clear and his conduct without fault.",
+      "period": "c. 250 BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "Chinese Wikisource, Xunzi, “Encouraging Learning”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/荀子/勸學篇",
+      "locator": "Xunzi, chapter 1, second paragraph.",
+      "place": "Linzi, Shandong, China",
+      "lat": 36.8,
+      "lng": 118.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Xunzi taught at the Jixia Academy near Linzi in the state of Qi; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xunzi_(philosopher)",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Wide learning and daily self-examination",
+          "why": "Xunzi says the gentleman learns widely and checks himself each day, and that this makes his understanding clear and his conduct free of fault. Learning from the world and looking at oneself are named together as one practice.",
+          "limit": "The English is the atlas’s own unreviewed translation. The Wikisource page prints the Tang commentary of Yang Liang between the lines, and the commentary ties the phrase to Zengzi’s daily three self-checks.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -9880,6 +10381,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "han-fei-given-or-made",
+      "question": "given-or-made",
+      "name": "Han Feizi",
+      "short": "Fei",
+      "work": "Han Feizi, “The Prominent Schools” (顯學)",
+      "excerpt": "夫必恃自直之箭，百世無矢；恃自圜之木，千世無輪矣。自直之箭，自圜之木，百世無有一",
+      "translation": "If one must rely on arrows that are straight of themselves, there are no arrows in a hundred generations; on wood that is round of itself, no wheels in a thousand. Of arrows straight of themselves and wood round of itself, there is not one in a hundred generations.",
+      "period": "c. 240 BCE",
+      "dateShort": "c. 240 BCE",
+      "dateFull": "circa 240 BCE",
+      "sortYear": -240,
+      "sourceLabel": "Chinese Wikisource, Han Feizi, “Xian Xue”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/韓非子/顯學",
+      "locator": "Han Feizi, chapter 50, paragraph beginning “夫聖人之治國，不恃人之爲吾善也”.",
+      "place": "Xianyang, Shaanxi, China",
+      "lat": 34.33,
+      "lng": 108.71,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Han Fei wrote for the king of Qin, whose capital was Xianyang, according to later records; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Han_Fei",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Straight arrows are one in a hundred generations",
+          "why": "Han Fei says that to wait for arrows that grow straight or wood that grows round would mean no arrows for a hundred generations, and that such things are not found once in a hundred. People are likewise shaped into good conduct by rules and straightening frames, not found good by nature, so the passage sits on the made side.",
+          "limit": "The English is the atlas’s own unreviewed translation. The argument is about governing a state by law and penalties, and the crooked-wood image is a political tool, not a general study of human development.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -10129,6 +10666,216 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "uttaradhyayana-death",
+      "question": "death",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 13, “Kitra and Sambhuta”",
+      "excerpt": "he enters a new existence, either a good or a bad one",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 13, verses 22–24. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Alone into a new existence",
+          "why": "Kitra tells King Brahmadatta that at death a man leaves his goods and kin and, accompanied only by his karman, enters a new existence. Death ends the body but not the person’s course.",
+          "limit": "A verse spoken in a story of two rebirth-linked brothers, from Jacobi’s 1895 translation. It assumes the Jain doctrine of karman and rebirth and offers no argument for it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "uttaradhyayana-desire",
+      "question": "desire",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 14, “Ishukara”",
+      "excerpt": "Pleasures bring only a moment's happiness, but suffering for a very long time, intense suffering, but slight happiness",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 14, verse 13. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Pleasures as brief happiness and long suffering",
+          "why": "The two sons tell their father that pleasures give a moment of happiness for long suffering and block liberation, and they take up monastic life. Desire is to be abandoned, not moderated.",
+          "limit": "A speech by young characters in a monastic poem, in Jacobi’s 1895 translation. It states the monastic ideal and does not say how householders should treat pleasure.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "uttaradhyayana-free-will",
+      "question": "free-will",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 20, “The Great Duty of the Nirgranthas”",
+      "excerpt": "My own Self is the doer and undoer of misery and happiness",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 20, verse 36. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "The self as doer of its own misery and happiness",
+          "why": "A monk tells King Shrenika of Magadha that a person’s own self makes and unmakes its misery and happiness, and is its own friend or foe according to how it acts. Outcomes are credited to the agent’s own conduct, so this passage is placed on the side of free choice.",
+          "limit": "A speech in a monastic narrative, in Jacobi’s 1895 translation. Jain teaching also holds that past karman conditions what a person meets, so this verse stresses responsibility more than it states a theory of choice.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "uttaradhyayana-happiness",
+      "question": "happiness",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 9, “The Pravragya of King Nami”",
+      "excerpt": "Happy are we, happy live we who call nothing our own; when Mithila is on fire, nothing is burned that belongs to me.",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 9, verse 14. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happy who call nothing their own",
+          "why": "Nami says that those who own nothing live happily, and that his burning city takes nothing from him. Happiness here is made to depend on giving up possession and not on what happens to the things possessed.",
+          "limit": "A legendary king’s retort to Indra, in a monastic poem, in Jacobi’s 1895 translation. It describes the happiness of a renouncer and does not say what holds for a person who keeps home and goods.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "uttaradhyayana-lasting-self",
+      "question": "lasting-self",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 14, “Ishukara”",
+      "excerpt": "and since it possesses no corporeal form it is eternal",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 14, verse 19, in the speech of the sons. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The soul as eternal",
+          "why": "The sons of the priest Bhrigu argue that the soul is not produced in the body like fire from wood, and that because it has no bodily form the senses cannot grasp it and it is eternal. That places the self among things that endure.",
+          "limit": "A verse spoken by a character in a Jain narrative poem, in Jacobi’s 1895 translation, answering a father who holds that the soul arises with the body. The same verse says the soul is bound by its own faults, so lasting does not mean unchanged in condition.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "uttaradhyayana-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Uttaradhyayana Sutra",
+      "short": "Uttaradhyayana",
+      "work": "Uttaradhyayana Sutra, Lecture 9, “The Pravragya of King Nami”",
+      "excerpt": "There is much happiness for the sage, for the houseless monk, who is free from all ties, and knows himself to be single and unconnected (with the rest of the world).",
+      "period": "Compiled c. 3rd century BCE to 1st century CE; translation 1895",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -200,
+      "sourceLabel": "Hermann Jacobi translation (Jaina Sutras, part 2, Sacred Books of the East vol. 45, 1895), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "locator": "Lecture 9, verse 16. The scanned text contains recognition errors.",
+      "place": "Pava (Pawapuri), Bihar, India",
+      "lat": 25.1,
+      "lng": 85.53,
+      "anchorType": "Traditional association",
+      "placeNote": "Jain tradition holds that Mahavira delivered his last sermons at Pava, and the Uttaradhyayana is traditionally linked with them. The linked scan does not state this and the text is a later compilation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.gainasutraspart20000vol-45.unse/mlbd.gainasutraspart20000vol-45.unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "The houseless monk, single and unconnected",
+          "why": "King Nami, answering the god Indra after leaving his city, says the monk who has cut every tie and knows himself single finds much happiness. Detachment from others is presented as a gain, which puts the passage on the side of solitude.",
+          "limit": "A speech by a legendary royal sage in a monastic poem, written for those who have left household life, and not advice for lay people. The text elsewhere values the community of monks and teacher.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "ben-sira-desire",
       "question": "desire",
       "name": "Ben Sira (Sirach)",
@@ -10360,6 +11107,186 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "wenzi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Wenzi",
+      "short": "Wenzi",
+      "work": "Wenzi, chapter 1, “Originating in the Way” (Dao Yuan)",
+      "excerpt": "真人者，大己而小天下，貴治身而賤治人",
+      "translation": "The true person makes much of himself and little of the world, honours the governing of his own person and thinks little of governing others.",
+      "period": "Ascribed to a disciple of Laozi; compiled c. 2nd century BCE or later; authorship and date debated",
+      "dateShort": "c. 150 BCE",
+      "dateFull": "circa 150 BCE, a conventional date",
+      "sortYear": -150,
+      "sourceLabel": "Chinese Wikisource text of the Wenzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/文子/卷一",
+      "locator": "Chapter 1 (Dao Yuan), paragraph on the true person (真人), beginning 夫道者，陶冶萬物.",
+      "place": "Luoyang, Henan, China",
+      "lat": 34.62,
+      "lng": 112.45,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Wenzi is presented as the teaching of Laozi to a disciple and has no recorded place of writing. The pin marks Luoyang as a rough regional anchor for Laozi’s traditional Zhou milieu; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/文子/卷一",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "The true person values ruling himself over ruling others",
+          "why": "The true person is described as treating himself as great and the world as small, valuing self-rule above ruling others. The individual’s own life takes first place.",
+          "limit": "The Wenzi is a composite of sayings given to Laozi, and its authorship and date are disputed. The same chapter also tells the ruler to act without forcing, so the book does not reject rule outright. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "wenzi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Wenzi",
+      "short": "Wenzi",
+      "work": "Wenzi, chapter 1, “Originating in the Way” (Dao Yuan)",
+      "excerpt": "夫道者，高不可極，深不可測，苞裹天地，稟受無形",
+      "translation": "The Way is too high to reach and too deep to fathom, wraps heaven and earth, and gives form to the formless.",
+      "period": "Ascribed to a disciple of Laozi; compiled c. 2nd century BCE or later; authorship and date debated",
+      "dateShort": "c. 150 BCE",
+      "dateFull": "circa 150 BCE, a conventional date",
+      "sortYear": -150,
+      "sourceLabel": "Chinese Wikisource text of the Wenzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/文子/卷一",
+      "locator": "Chapter 1 (Dao Yuan), paragraph beginning 夫道者，高不可極.",
+      "place": "Luoyang, Henan, China",
+      "lat": 34.62,
+      "lng": 112.45,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Wenzi is presented as the teaching of Laozi to a disciple and has no recorded place of writing. The pin marks Luoyang as a rough regional anchor for Laozi’s traditional Zhou milieu; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/文子/卷一",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Way too high to reach, wrapping heaven and earth",
+          "why": "The chapter says the Way is beyond measure and wraps up heaven and earth. An ultimate reality is affirmed and treated as source of all forms.",
+          "limit": "The wording closely matches the Huainanzi’s opening chapter, and scholars debate which text borrowed from which; the Wenzi’s authorship and date are disputed. The Way is impersonal. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "huainanzi-desire",
+      "question": "desire",
+      "name": "Huainanzi",
+      "short": "Huainanzi",
+      "work": "Huainanzi, chapter 1, “Originating in the Way”",
+      "excerpt": "約其所守，寡其所求，去其誘慕，除其嗜欲，損其思慮",
+      "translation": "Keep to what he guards, lessen what he seeks, put away what tempts and draws him, remove his cravings, cut down his thinking.",
+      "period": "Presented to Emperor Wu of Han, 139 BCE",
+      "dateShort": "139 BCE",
+      "dateFull": "139 BCE",
+      "sortYear": -139,
+      "sourceLabel": "Chinese Wikisource text of the Huainanzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/淮南子/原道訓",
+      "locator": "Chapter 1 (Yuan Dao Xun), paragraph beginning 是故至人之治也.",
+      "place": "Shouchun (Huainan), Anhui, China",
+      "lat": 32.63,
+      "lng": 116.78,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is credited to scholars at the court of Liu An, King of Huainan, whose capital was Shouchun. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/淮南子/原道訓",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Remove cravings and trim thought",
+          "why": "The perfect person is described as governing by narrowing what he holds to, reducing what he seeks, discarding what attracts him and removing cravings. Desire is cut back to nothing and not just guided.",
+          "limit": "A description of the ideal ruler in a Han compilation, so it speaks to rulers first. A later line in the chapter calls cravings a burden on one’s nature, which reinforces the same reading. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "huainanzi-lasting-self",
+      "question": "lasting-self",
+      "name": "Huainanzi",
+      "short": "Huainanzi",
+      "work": "Huainanzi, chapter 7, “Seminal Essence and Spirit”",
+      "excerpt": "精神入其門，而骨骸反其根，我尚何存？",
+      "translation": "When the spirit enters its gate and the bones return to their root, what is left of the self?",
+      "period": "Presented to Emperor Wu of Han, 139 BCE",
+      "dateShort": "139 BCE",
+      "dateFull": "139 BCE",
+      "sortYear": -139,
+      "sourceLabel": "Chinese Wikisource text of the Huainanzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/淮南子/精神訓",
+      "locator": "Chapter 7 (Jing Shen Xun), paragraph beginning 是故精神，天之有也.",
+      "place": "Shouchun (Huainan), Anhui, China",
+      "lat": 32.63,
+      "lng": 116.78,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is credited to scholars at the court of Liu An, King of Huainan, whose capital was Shouchun. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/淮南子/精神訓",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Spirit and bones return to their sources",
+          "why": "The chapter says the spirit belongs to heaven and the bones to earth, so that at death each returns to its source, and it asks what then remains of the speaker. No separate self is left over.",
+          "limit": "The sentence is a rhetorical question in a chapter about cultivating the spirit, and the same chapter also speaks of the spirit as something to be guarded. The reading as no self takes only the question’s plain force. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "huainanzi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Huainanzi",
+      "short": "Huainanzi",
+      "work": "Huainanzi, chapter 1, “Originating in the Way”",
+      "excerpt": "夫道者，覆天載地，廓四方，柝八極，高不可際，深不可測，包裹天地，稟授無形",
+      "translation": "The Way covers heaven and carries earth, opens out the four quarters and splits the eight limits; it is too high to reach and too deep to fathom; it wraps heaven and earth and gives form to the formless.",
+      "period": "Presented to Emperor Wu of Han, 139 BCE",
+      "dateShort": "139 BCE",
+      "dateFull": "139 BCE",
+      "sortYear": -139,
+      "sourceLabel": "Chinese Wikisource text of the Huainanzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/淮南子/原道訓",
+      "locator": "Chapter 1 (Yuan Dao Xun), opening paragraph.",
+      "place": "Shouchun (Huainan), Anhui, China",
+      "lat": 32.63,
+      "lng": 116.78,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is credited to scholars at the court of Liu An, King of Huainan, whose capital was Shouchun. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/淮南子/原道訓",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Way covering heaven and bearing earth",
+          "why": "The Way is said to cover heaven, bear the earth and wrap them both, beyond measure in height and depth. An ultimate reality is affirmed as the ground that holds the world.",
+          "limit": "A courtly Han compilation that blends Daoist, Legalist and other sources, so the chapter may borrow from earlier texts. The Way is described as impersonal and without a will. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "bhagavad-gita-desire",
       "question": "desire",
       "name": "Bhagavad Gita",
@@ -10469,6 +11396,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "vendidad-meaning",
+      "question": "meaning",
+      "name": "Vendidad",
+      "short": "Vendidad",
+      "work": "Vendidad, Fargard 3, section 31",
+      "excerpt": "He who sows corn, sows holiness",
+      "period": "Compiled c. 3rd century BCE to 3rd century CE (conventional range)",
+      "dateShort": "c. 100 BCE",
+      "dateFull": "circa 100 BCE, a conventional date for a text compiled over centuries",
+      "sortYear": -100,
+      "sourceLabel": "James Darmesteter translation (The Zend-Avesta, Part 1: The Vendidad, Sacred Books of the East vol. 4, 1880), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/TheZendAvestaPart1TheVendidad/TheZendAvestaPart1TheVendidad_djvu.txt",
+      "locator": "Fargard 3, the section numbered 31 (99) in Darmesteter’s double numbering, page 30. The scanned text contains recognition errors.",
+      "place": "Nishapur (Khorasan), Iran",
+      "lat": 36.21,
+      "lng": 58.8,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Avesta’s regional names lie mainly in the north-east of the Iranian world, and the Vendidad reached its present form over centuries in a place nobody can fix. The pin marks Khorasan as a rough region; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/TheZendAvestaPart1TheVendidad/TheZendAvestaPart1TheVendidad_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Sowing corn as sowing holiness",
+          "why": "Ahura Mazda tells Zarathushtra that the food that fills the law is sowing corn again and again, and that he who sows corn sows holiness. Ordinary tillage is given a place in the divine order, so the purpose of this work comes from the order of things.",
+          "limit": "A law-book of the Avesta, in Darmesteter’s 1880 translation, which sets rules for purity and farming. The line speaks of farmers’ work and does not state a purpose for every life.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -13087,6 +14049,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "epictetus-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Epictetus",
+      "short": "Epictetus (Discourses)",
+      "work": "Enchiridion, section 5",
+      "excerpt": "It is the action of an uninstructed person to reproach others for his own misfortunes; of one entering upon instruction, to reproach himself",
+      "period": "c. 125 CE",
+      "dateShort": "c. 125 CE",
+      "dateFull": "circa 125 CE",
+      "sortYear": 125,
+      "sourceLabel": "Project Gutenberg, English translation of the Enchiridion",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/5/1/0/45109/45109-0.txt",
+      "locator": "Enchiridion, section 5, final sentence.",
+      "place": "Nicopolis, Epirus, Greece",
+      "lat": 39.02,
+      "lng": 20.74,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Epictetus taught at Nicopolis in Epirus after leaving Rome; his pupil Arrian wrote down his teaching there. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Blame turned on oneself",
+          "why": "Epictetus tells the learner to look to his own judgments, not to other people, as the source of his distress, and sets self-reproach at the start of instruction. The work of learning who one is happens inside the person, so the passage is inward.",
+          "limit": "The line is practical advice in a handbook compiled by a pupil, in an early twentieth-century English version. It concerns the source of trouble, not the discovery of the self by or through others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "epictetus-suffering",
       "question": "suffering",
       "name": "Epictetus",
@@ -14270,6 +15267,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "liezi-death",
+      "question": "death",
+      "name": "Liezi (Lieh Tzu)",
+      "short": "Liezi",
+      "work": "Liezi, chapter 7, “Yang Zhu”",
+      "excerpt": "生則堯舜，死則腐骨；生則桀紂，死則腐骨。",
+      "translation": "Alive, one may be Yao or Shun; dead, rotting bones. Alive, Jie or Zhou; dead, rotting bones.",
+      "period": "Ascribed to Liezi (c. 4th century BCE); the received text was compiled by c. 300 CE",
+      "dateShort": "c. 300 CE",
+      "dateFull": "compiled by circa 300 CE",
+      "sortYear": 300,
+      "sourceLabel": "Chinese Wikisource text of the Liezi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "locator": "Chapter 7 (Yang Zhu), speech of Yang Zhu beginning 萬物所異者生也.",
+      "place": "Xinzheng (old state of Zheng), Henan, China",
+      "lat": 34.4,
+      "lng": 113.74,
+      "anchorType": "Traditional association",
+      "placeNote": "The book presents Liezi as living in the state of Zheng, whose capital lay at modern Xinzheng. Where the received text was put together is unknown; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Alive Yao or Jie, dead the same rotting bones",
+          "why": "Yang Zhu says the sage kings and the tyrants alike become rotting bones at death, and concludes that one should attend to the present life. Nothing of the person is said to go on, which places the passage with those who hold that death ends the person.",
+          "limit": "The words are given to Yang Zhu inside the Liezi, whose Yang Zhu chapter many scholars treat as a late fourth-century CE composition. Yang Zhu’s stance is tied to a plea for enjoyment, and other chapters of the same book say that death is a return. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "liezi-desire",
+      "question": "desire",
+      "name": "Liezi (Lieh Tzu)",
+      "short": "Liezi",
+      "work": "Liezi, chapter 7, “Yang Zhu”",
+      "excerpt": "恣耳之所欲聽，恣目之所欲視，恣鼻之所欲向，恣口之所欲言，恣體之所欲安，恣意之所欲行。",
+      "translation": "Indulge what the ears wish to hear, what the eyes wish to see, what the nose wishes to smell, what the mouth wishes to say, what the body wishes to rest in, what the mind wishes to do.",
+      "period": "Ascribed to Liezi (c. 4th century BCE); the received text was compiled by c. 300 CE",
+      "dateShort": "c. 300 CE",
+      "dateFull": "compiled by circa 300 CE",
+      "sortYear": 300,
+      "sourceLabel": "Chinese Wikisource text of the Liezi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "locator": "Chapter 7 (Yang Zhu), the dialogue of Guan Yiwu and Yan Ping beginning 晏平仲問養生於管夷吾.",
+      "place": "Xinzheng (old state of Zheng), Henan, China",
+      "lat": 34.4,
+      "lng": 113.74,
+      "anchorType": "Traditional association",
+      "placeNote": "The book presents Liezi as living in the state of Zheng, whose capital lay at modern Xinzheng. Where the received text was put together is unknown; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Let the ears, eyes, nose, mouth and body have what they want",
+          "why": "Guan Yiwu, answering Yan Ping on how to nourish life, says to let each sense and the mind do what it wants, and calls blocking them an injury. Desire is to be followed and not curbed.",
+          "limit": "A speech given to the statesman Guan Yiwu inside the Yang Zhu chapter, which many scholars date late and read as a hedonist counterpoint to other chapters. The same book also contains passages that praise calm and restraint. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "liezi-free-will",
       "question": "free-will",
       "name": "Liezi (Lieh Tzu)",
@@ -14332,6 +15401,42 @@ window.PILOT_EVIDENCE={
           "facet": "Body and mind altering every day",
           "why": "Xiong of Yu compares the world’s unnoticed change to a person’s own, whose looks and mind alter every day and whose body is shed little by little. The person is real but never the same, which puts it at changing.",
           "limit": "The speaker is a figure in a compiled book, and the analogy illustrates the transformation of all things rather than the self as such. The Liezi was put together by about 300 CE. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "liezi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Liezi (Lieh Tzu)",
+      "short": "Liezi",
+      "work": "Liezi, chapter 7, “Yang Zhu”",
+      "excerpt": "古之人損一毫利天下不與也，悉天下奉一身不取也。人人不損一毫，人人不利天下，天下治矣。",
+      "translation": "The ancients would not give up one hair to benefit the world, and would not take the whole world’s service for one person. If no one loses a hair and no one benefits the world, the world is well ordered.",
+      "period": "Ascribed to Liezi (c. 4th century BCE); the received text was compiled by c. 300 CE",
+      "dateShort": "c. 300 CE",
+      "dateFull": "compiled by circa 300 CE",
+      "sortYear": 300,
+      "sourceLabel": "Chinese Wikisource text of the Liezi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "locator": "Chapter 7 (Yang Zhu), speech of Yang Zhu beginning 伯成子高不以一毫利物.",
+      "place": "Xinzheng (old state of Zheng), Henan, China",
+      "lat": 34.4,
+      "lng": 113.74,
+      "anchorType": "Traditional association",
+      "placeNote": "The book presents Liezi as living in the state of Zheng, whose capital lay at modern Xinzheng. Where the received text was put together is unknown; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/列子/楊朱篇",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Not one hair for the world, not the world for one person",
+          "why": "Yang Zhu holds that the ancients would not sacrifice a single hair to help the world, nor accept the world’s service for themselves. The individual’s own body has final authority, which puts the passage on the side of the self.",
+          "limit": "The words are given to Yang Zhu in a late text, and the ‘hair’ story that follows is told by his disciple against an opponent who disagrees. Mencius reports Yang Zhu in much the same terms, but his critics are the main early source for the view. The English is the atlas’s own unreviewed translation.",
           "second": "agreed"
         }
       },
@@ -14408,6 +15513,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "ge-hong-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Ge Hong",
+      "short": "Ge Hong",
+      "work": "Baopuzi, inner chapters, chapter 6, “Subtle Teachings” (Wei Zhi)",
+      "excerpt": "欲求長生者，必欲積善立功，慈心於物，恕己及人，仁逮昆蟲",
+      "translation": "Whoever wants long life must pile up good deeds and merit, be kind to beings, treat others as himself, and extend benevolence even to insects.",
+      "period": "Written c. 317 CE",
+      "dateShort": "c. 317 CE",
+      "dateFull": "circa 317 CE",
+      "sortYear": 317,
+      "sourceLabel": "Chinese Wikisource text of the Baopuzi",
+      "sourceUrl": "https://zh.wikisource.org/wiki/抱朴子/卷06",
+      "locator": "Inner chapters, chapter 6 (Wei Zhi), the paragraph on moral merit, beginning 然覽諸道戒.",
+      "place": "Jurong, Jiangsu, China",
+      "lat": 31.95,
+      "lng": 119.17,
+      "anchorType": "Traditional association",
+      "placeNote": "Ge Hong was from Jurong, near Nanjing, and is traditionally said to have completed the Baopuzi around 317 CE after retreating from public life. The linked page does not state the place of writing; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/抱朴子/卷06",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Long life through goodness to others",
+          "why": "Ge Hong reports that every Daoist precept says whoever seeks long life must accumulate good deeds and show kindness to others, down to insects. One’s own aim, long life, is tied to others’ good, so neither comes first.",
+          "limit": "Ge Hong cites the precepts of the Daoist books and does not state them as his own invention, and the chapter also stresses elixirs and techniques. The motive named is a self-regarding one: the aim is the practitioner’s own immortality. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -14888,9 +16029,45 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tao-yuanming-lasting-self",
+      "question": "lasting-self",
+      "name": "Tao Qian (Tao Yuanming)",
+      "short": "Tao Yuanming",
+      "work": "Form, Shadow, Spirit, “The Shadow Replies to the Form”",
+      "excerpt": "此同既難常，黯爾俱時滅。 身沒名亦盡，念之五情熱。",
+      "translation": "This sameness is hard to keep; dimly we go out together. When the body is gone the name is spent too; the thought of it burns the heart.",
+      "period": "c. 410 CE",
+      "dateShort": "c. 410",
+      "dateFull": "circa 410 CE",
+      "sortYear": 410,
+      "sourceLabel": "Chinese Wikisource, Tao Yuanming, “Form, Shadow, Spirit”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/影答形",
+      "locator": "The five-character couplets near the end of the poem.",
+      "place": "Jiujiang, Jiangxi, China",
+      "lat": 29.6,
+      "lng": 116,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Tao Yuanming lived in retirement near Chaisang by Jiujiang, where the poem is traditionally placed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Yuanming",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "The shadow answers the body",
+          "why": "The Shadow tells the Form that the two are bound together and will fade out together, and that when the body is gone the name is gone as well. Nothing is said to outlast the body, so the lines deny a lasting self.",
+          "limit": "The English is the atlas’s own unreviewed translation. The Shadow is one voice in a three-part poem, and the Spirit’s reply that follows counsels acceptance rather than endorsing the Shadow.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "tao-yuanming-solitude-or-company",
       "question": "solitude-or-company",
-      "name": "Tao Yuanming",
+      "name": "Tao Qian (Tao Yuanming)",
       "short": "Tao Yuanming",
       "work": "Drinking Wine (Yinjiu), poem 5",
       "excerpt": "結廬在人境，而無車馬喧。 問君何能爾？心遠地自偏",
@@ -15443,6 +16620,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tao-hongjing-free-will",
+      "question": "free-will",
+      "name": "Tao Hongjing",
+      "short": "Tao Hongjing",
+      "work": "Yangxing Yanming Lu (Records on Nourishing Nature and Prolonging Life), quoting the Immortals’ Classic",
+      "excerpt": "我命在我不在於天",
+      "translation": "One’s lifespan lies with oneself and not with Heaven.",
+      "period": "Attributed to Tao Hongjing (456–536 CE); compiled c. 500 CE or later",
+      "dateShort": "c. 500 CE",
+      "dateFull": "circa 500 CE",
+      "sortYear": 500,
+      "sourceLabel": "Chinese Wikisource text of the Yangxing Yanming Lu",
+      "sourceUrl": "https://zh.wikisource.org/wiki/養性延命錄",
+      "locator": "Opening section on nourishing life, the sentence beginning 《仙經》曰.",
+      "place": "Mount Mao (Maoshan), Jiangsu, China",
+      "lat": 31.75,
+      "lng": 119.28,
+      "anchorType": "Traditional association",
+      "placeNote": "Tao Hongjing lived on Mount Mao, near Jurong, from about 492 CE and organised the Shangqing tradition there. The linked page does not say where this text was compiled; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/養性延命錄",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Life’s span lies with the person, not Heaven",
+          "why": "The work quotes an Immortals’ Classic saying that one’s span of life is up to the person and not up to Heaven, and goes on to say only fools fail to see this. Choices of care and indulgence decide how long one lives.",
+          "limit": "The Yangxing Yanming Lu is traditionally attributed to Tao Hongjing but may have been compiled by others from earlier sources, and the line is a quotation. It speaks of health and lifespan, not of moral choice in general. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "fan-zhen-death",
       "question": "death",
       "name": "Fan Zhen",
@@ -15476,6 +16689,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "fan-zhen-lasting-self",
+      "question": "lasting-self",
+      "name": "Fan Zhen",
+      "short": "Fan Zhen",
+      "work": "Fan Zhen, On the Extinction of the Spirit (神滅論)",
+      "excerpt": "神卽形也，形卽神也；是以形存則神存，形謝則神滅也。",
+      "translation": "The spirit is the body and the body is the spirit; so while the body stays the spirit stays, and when the body falls away the spirit is extinguished.",
+      "period": "c. 507 CE",
+      "dateShort": "c. 507",
+      "dateFull": "circa 507 CE",
+      "sortYear": 507,
+      "sourceLabel": "Chinese Wikisource, 神滅論",
+      "sourceUrl": "https://zh.wikisource.org/wiki/神滅論",
+      "locator": "Opening exchange of the dialogue.",
+      "place": "Jiankang (Nanjing), Jiangsu, China",
+      "lat": 32.06,
+      "lng": 118.78,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Fan Zhen served at the Liang court at Jiankang when the debate over this text took place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Fan_Zhen",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Spirit as the edge of the knife",
+          "why": "Fan Zhen argues that the spirit is the body and the body is the spirit, so the spirit lasts only while the body does and ends when it decays. No part of a person outlasts death, which is a denial of a lasting self.",
+          "limit": "The English is the atlas’s own unreviewed translation. The text is a dialogue written against Buddhist teaching on rebirth, and Fan Zhen’s opponents answered it at length.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -15791,6 +17040,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "mainog-i-khirad-death",
+      "question": "death",
+      "name": "Mainog-i Khirad",
+      "short": "Mainog-i Khirad",
+      "work": "Dina-i Mainog-i Khirad (Judgments of the Spirit of Wisdom), Chapter 2, verses 125–130",
+      "excerpt": "I am no maiden, but I am thy virtuous deeds",
+      "period": "Pahlavi text of the Sasanian or early Islamic period, probably 6th century CE",
+      "dateShort": "c. 550 CE",
+      "dateFull": "circa 550 CE",
+      "sortYear": 550,
+      "sourceLabel": "E. W. West translation (Pahlavi Texts, Part 3, Sacred Books of the East vol. 24, 1885), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "locator": "Chapter 2, verses 123–130, page 19. The scanned text contains recognition errors.",
+      "place": "Estakhr (Persis), Fars, Iran",
+      "lat": 29.93,
+      "lng": 52.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is a Pahlavi catechism of the Sasanian age, with no recorded place of writing. Persis was the home of Persian Zoroastrian priestly learning, and the pin is a rough regional anchor; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul’s deeds meet it as a maiden",
+          "why": "After death, the righteous soul meets a maiden more beautiful than any in the world, who answers that she is no maiden but the soul’s own virtuous deeds. The passage assumes the soul survives and is received according to what it did.",
+          "limit": "A Pahlavi description of the soul’s journey after death, in West’s 1885 translation, part of a long account of the bridge and the weighing. It is a Sasanian-era statement of doctrine and does not argue for it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "mainog-i-khirad-free-will",
+      "question": "free-will",
+      "name": "Mainog-i Khirad",
+      "short": "Mainog-i Khirad",
+      "work": "Dina-i Mainog-i Khirad (Judgments of the Spirit of Wisdom), Chapter 23",
+      "excerpt": "Even with the might and powerfulness of wisdom and knowledge, even then it is not possible to contend with destiny.",
+      "period": "Pahlavi text of the Sasanian or early Islamic period, probably 6th century CE",
+      "dateShort": "c. 550 CE",
+      "dateFull": "circa 550 CE",
+      "sortYear": 550,
+      "sourceLabel": "E. W. West translation (Pahlavi Texts, Part 3, Sacred Books of the East vol. 24, 1885), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "locator": "Chapter 23, verses 1–8. The scanned text contains recognition errors.",
+      "place": "Estakhr (Persis), Fars, Iran",
+      "lat": 29.93,
+      "lng": 52.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is a Pahlavi catechism of the Sasanian age, with no recorded place of writing. Persis was the home of Persian Zoroastrian priestly learning, and the pin is a rough regional anchor; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "No contending with destiny",
+          "why": "The spirit of wisdom tells the sage that even great wisdom cannot contend with destiny, since when predestination comes the wise lack duty and the lazy become diligent. What a person does is set by what was ordained.",
+          "limit": "A Pahlavi question-and-answer text in West’s 1885 translation, whose parentheses and italics mark his additions. The next chapter says divine providence can sometimes act otherwise than destiny, so the book does not hold a flat fatalism.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "mainog-i-khirad-happiness",
+      "question": "happiness",
+      "name": "Mainog-i Khirad",
+      "short": "Mainog-i Khirad",
+      "work": "Dina-i Mainog-i Khirad (Judgments of the Spirit of Wisdom), Chapter 25",
+      "excerpt": "Of the rich he is the poorer who is not content with that which is his",
+      "period": "Pahlavi text of the Sasanian or early Islamic period, probably 6th century CE",
+      "dateShort": "c. 550 CE",
+      "dateFull": "circa 550 CE",
+      "sortYear": 550,
+      "sourceLabel": "E. W. West translation (Pahlavi Texts, Part 3, Sacred Books of the East vol. 24, 1885), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "locator": "Chapter 25, verses 1–4. The scanned text contains recognition errors.",
+      "place": "Estakhr (Persis), Fars, Iran",
+      "lat": 29.93,
+      "lng": 52.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The book is a Pahlavi catechism of the Sasanian age, with no recorded place of writing. Persis was the home of Persian Zoroastrian priestly learning, and the pin is a rough regional anchor; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.pahlavitextssacr0000ewwe_f3j9/mlbd.pahlavitextssacr0000ewwe_f3j9_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "The richest is the one content",
+          "why": "The spirit of wisdom answers that the poorest of the rich is the one not content with what he has and anxious to increase it. Wealth does not settle wellbeing, which turns on a person’s own contentment.",
+          "limit": "A Pahlavi catechism in West’s 1885 translation. Other chapters of the same book treat prosperity as a real good that Ahriman’s planets withhold, so this passage is only one strand.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -17165,6 +18519,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "huineng-platform-sutra-lasting-self",
+      "question": "lasting-self",
+      "name": "Huineng (Platform Sutra)",
+      "short": "Platform Sutra",
+      "work": "Platform Sutra, account of Huineng’s awakening",
+      "excerpt": "何期自性本不生灭！何期自性本自具足！何期自性本无动摇！",
+      "translation": "Who would have thought self-nature is by origin unborn and undying! Who would have thought it is by origin complete in itself! Who would have thought it is by origin unshaken!",
+      "period": "8th century CE",
+      "dateShort": "8th c.",
+      "dateFull": "eighth century CE",
+      "sortYear": 750,
+      "sourceLabel": "Chinese Wikisource, Platform Sutra (simplified-character text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/六祖大師法寶壇經",
+      "locator": "Huineng’s account of his awakening before the Fifth Patriarch, in the opening section.",
+      "place": "Shaozhou (Shaoguan), Guangdong, China",
+      "lat": 24.8,
+      "lng": 113.6,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The text sets Huineng’s teaching at the Dafan temple in Shaozhou; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platform_Sutra",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Self-nature unborn and unmoving",
+          "why": "On hearing the Diamond Sutra, Huineng exclaims that self-nature is by origin neither born nor extinguished, complete in itself and unshaken. A nature that does not arise or pass away is a lasting one, so the words land on the lasting side.",
+          "limit": "The English is the atlas’s own unreviewed translation. The “self-nature” here is Buddha-nature shared by all beings, not an individual soul, and the same text elsewhere says that originally there is not a single thing.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "li-bai-meaning",
       "question": "meaning",
       "name": "Li Bai",
@@ -17668,6 +19058,114 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "han-yu-given-or-made",
+      "question": "given-or-made",
+      "name": "Han Yu",
+      "short": "Yu",
+      "work": "Han Yu, “On Nature” (原性)",
+      "excerpt": "性也者，與生俱生也；情也者，接於物而生也。性之品有三",
+      "translation": "Nature is what is born together with a person; feeling is what arises on meeting things. Nature has three grades.",
+      "period": "c. 800 CE",
+      "dateShort": "c. 800",
+      "dateFull": "circa 800 CE",
+      "sortYear": 800,
+      "sourceLabel": "Chinese Wikisource, Han Yu, “On Nature”",
+      "sourceUrl": "https://zh.wikisource.org/wiki/原性_(韓愈)",
+      "locator": "Opening paragraph of the essay.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.94,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Han Yu served at the Tang capital Chang’an in these years; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Han_Yu",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Three grades of nature",
+          "why": "Han Yu says nature is born with a person and that it comes in three grades. The middle grade can be led up or down, so he treats part of what a person is as given and part as open to guidance. A second, independent reading moved this placement from “both” to “given”: The quoted words say nature is born with a person; that the middle grade can be led is in the rest of the essay, not in these words.",
+          "limit": "The English is the atlas’s own unreviewed translation. Han Yu also holds that the highest and lowest grades do not change, so the passage leans toward the given more than the reading “both” alone suggests.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "qingjing-jing-desire",
+      "question": "desire",
+      "name": "Qingjing Jing",
+      "short": "Qingjing Jing",
+      "work": "Classic of Purity and Stillness (Qingjing Jing)",
+      "excerpt": "常能遣其慾而心自靜，澄其心而神自清。自然六慾不生，三毒消滅",
+      "translation": "If one can always send desire away, the mind grows still of itself; clear the mind and the spirit becomes clear of itself. Then the six desires do not arise and the three poisons vanish.",
+      "period": "Probably Tang dynasty, 8th–9th century CE",
+      "dateShort": "c. 800 CE",
+      "dateFull": "circa 800 CE",
+      "sortYear": 800,
+      "sourceLabel": "Chinese Wikisource text of the Qingjing Jing",
+      "sourceUrl": "https://zh.wikisource.org/wiki/太上老君說常清靜經",
+      "locator": "Main text, the paragraph beginning 夫人神好清.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Classic of Purity and Stillness is dated by most scholars to the Tang period, when Chang’an was the main centre of Daoist court patronage. The linked page does not state where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/太上老君說常清靜經",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Dismiss desire and the mind grows still",
+          "why": "The text says the mind is made still by dismissing desire and that, then, the six desires no longer arise and the three poisons vanish. Desire is to be sent away, not trained.",
+          "limit": "A short Tang-period scripture with Buddhist terms such as the three poisons, and its date and authorship are uncertain. It is a liturgical text, recited as practice. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "qingjing-jing-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Qingjing Jing",
+      "short": "Qingjing Jing",
+      "work": "Classic of Purity and Stillness (Qingjing Jing)",
+      "excerpt": "大道無形，生育天地；大道無情，運行日月；大道無名，長養萬物",
+      "translation": "The Great Way has no form and gives birth to heaven and earth; the Great Way has no feeling and moves sun and moon; the Great Way has no name and raises the ten thousand things.",
+      "period": "Probably Tang dynasty, 8th–9th century CE",
+      "dateShort": "c. 800 CE",
+      "dateFull": "circa 800 CE",
+      "sortYear": 800,
+      "sourceLabel": "Chinese Wikisource text of the Qingjing Jing",
+      "sourceUrl": "https://zh.wikisource.org/wiki/太上老君說常清靜經",
+      "locator": "Main text, the opening lines after 老君曰.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Classic of Purity and Stillness is dated by most scholars to the Tang period, when Chang’an was the main centre of Daoist court patronage. The linked page does not state where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/太上老君說常清靜經",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Great Way without form that gives birth to heaven and earth",
+          "why": "The Great Way is said to have no form, feeling or name, yet to give birth to heaven and earth, move sun and moon and nurture all things. An ultimate reality is affirmed that cannot be described as a person.",
+          "limit": "A Tang-period scripture with uncertain authorship, and the text says its author knows no name for the Way and uses ‘Way’ by force. The passage affirms the Way and also states how it cannot be described. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -19732,6 +21230,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "taishang-ganying-pian-free-will",
+      "question": "free-will",
+      "name": "Taishang Ganying Pian",
+      "short": "Ganying Pian",
+      "work": "Taishang Ganying Pian, opening",
+      "excerpt": "禍福無門，惟人自召；善惡之報，如影隨形",
+      "translation": "Disaster and blessing have no gate; people summon them for themselves. The repayment for good and evil follows as a shadow follows the form.",
+      "period": "Song dynasty, probably 12th century CE",
+      "dateShort": "c. 1150 CE",
+      "dateFull": "circa 1150 CE",
+      "sortYear": 1150,
+      "sourceLabel": "Chinese Wikisource text of the Taishang Ganying Pian",
+      "sourceUrl": "https://zh.wikisource.org/wiki/太上感應篇",
+      "locator": "Opening lines, the sentence after 太上曰.",
+      "place": "Hangzhou, Zhejiang, China",
+      "lat": 30.25,
+      "lng": 120.17,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Taishang Ganying Pian is first documented in the Song period, and Southern Song editions came from the Hangzhou region. The linked page does not say where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/太上感應篇",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Fortune and misfortune are summoned by people",
+          "why": "The tract says misfortune and fortune have no door of their own and are called in by people, with moral repayment following as surely as a shadow. A person’s own acts decide what comes.",
+          "limit": "A popular moral tract of the Song period, attributed to Laozi’s name, and its idea of repayment holds that reward and punishment follow deeds, which is not the same as a claim that nothing else shapes a life. It may be read as fear-based moral instruction. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "taishang-ganying-pian-suffering",
+      "question": "suffering",
+      "name": "Taishang Ganying Pian",
+      "short": "Ganying Pian",
+      "work": "Taishang Ganying Pian, opening",
+      "excerpt": "算減則貧耗，多逢憂患；人皆惡之，刑禍隨之，吉慶避之，惡星災之；算盡則死",
+      "translation": "When the allotment is cut there is poverty and loss and many troubles; people all hate such a person, punishment and calamity follow, good fortune avoids him, and ill stars harm him; when the allotment is used up, death.",
+      "period": "Song dynasty, probably 12th century CE",
+      "dateShort": "c. 1150 CE",
+      "dateFull": "circa 1150 CE",
+      "sortYear": 1150,
+      "sourceLabel": "Chinese Wikisource text of the Taishang Ganying Pian",
+      "sourceUrl": "https://zh.wikisource.org/wiki/太上感應篇",
+      "locator": "Opening lines, the sentence beginning 是以天地有司過之神.",
+      "place": "Hangzhou, Zhejiang, China",
+      "lat": 30.25,
+      "lng": 120.17,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The Taishang Ganying Pian is first documented in the Song period, and Southern Song editions came from the Hangzhou region. The linked page does not say where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/太上感應篇",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Reduced allotment brings poverty and worry",
+          "why": "Spirits of heaven are said to cut a person’s lifespan according to his faults, and poverty, worry, punishment and early death follow. Suffering is treated as the deserved result of wrongdoing.",
+          "limit": "A moral tract of the Song period that attributes hardship to wrongdoing, which many readers, including later Chinese critics, have held to be false for innocent sufferers. It is a hortatory text and not an argument. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "maimonides-desire",
       "question": "desire",
       "name": "Moses Maimonides",
@@ -19834,6 +21404,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "ibn-tufayl-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Ibn Tufayl",
+      "short": "Ibn Tufayl",
+      "work": "Hayy ibn Yaqzan, Introduction",
+      "excerpt": "he sometimes looks towards Truth, and sometimes towards himself; and thus he fluctuates between both, till he retires from himself wholly",
+      "period": "c. 1175 CE",
+      "dateShort": "c. 1175",
+      "dateFull": "circa 1175 CE",
+      "sortYear": 1175,
+      "sourceLabel": "Simon Ockley translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/8/3/16831/16831-8.txt",
+      "locator": "Introduction, in the passage on the fruits of practice and “Conjunction”.",
+      "place": "Marrakesh, Morocco",
+      "lat": 31.63,
+      "lng": -8,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ibn Tufayl served the Almohad court, residing at Marrakesh and Granada; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ibn_Tufail",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Retiring from oneself toward God",
+          "why": "Ibn Tufayl describes the seeker who reaches truth by his own discipline, turning his gaze between Truth and himself until he drops attention to himself altogether. The path is solitary and inward, so the passage is scored inward.",
+          "limit": "The text is Simon Ockley’s 1708 English in early modern spelling, from the introduction that sets out the aim of the philosophical tale. It describes the mystic’s path and does not discuss what others contribute to self-knowledge.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -20869,6 +22474,181 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "shaikh-farid-desire",
+      "question": "desire",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sloks of Shaikh Farid, slok XXXVII, in The Sikh Religion",
+      "excerpt": "are like poisonous sprouts smeared with sugar ; Some die while planting them ; others are ruined while gathering them.",
+      "period": "13th century; collected 1604",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "“Sloks of Shaikh Farid”, slok XXXVII, in “The Bhagats of the Granth Sahib”, pages 392–407. The scanned text contains recognition errors.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date individual sloks, and Guru Arjan later placed them in the Granth Sahib; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Pleasures as poisoned sweets",
+          "why": "Farid compares pleasures to poisonous shoots coated in sugar, deadly to those who plant them and to those who gather them. Pleasure is treated as a harm to be shunned.",
+          "limit": "A couplet from a Sufi saint in Macauliffe’s 1909 translation. A footnote there records that some readers take the verse to concern women, which Macauliffe rejects as contrary to the Granth Sahib.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "shaikh-farid-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sloks of Shaikh Farid, slok XIX, in The Sikh Religion",
+      "excerpt": "It is in the heart God dwelleth ; why seekest thou Him in the forest ?",
+      "period": "13th century; collected 1604",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "“Sloks of Shaikh Farid”, slok XIX, in “The Bhagats of the Granth Sahib”, pages 392–407. The scanned text contains recognition errors.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date individual sloks, and Guru Arjan later placed them in the Granth Sahib; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "God in the heart, not the forest",
+          "why": "Farid asks the wanderer why he roams from forest to forest when God dwells in the heart. The search is turned inward and away from places and company.",
+          "limit": "A couplet from a Sufi saint preserved in the Sikh scripture, in Macauliffe’s 1909 translation. Macauliffe notes the verse is said to have been prompted by a particular wanderer, and the same sloks elsewhere praise saintly company.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "shaikh-farid-meaning",
+      "question": "meaning",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sloks of Shaikh Farid, slok XXXVIII, in The Sikh Religion",
+      "excerpt": "the four watches of the night in sleep ; God will call for thine account",
+      "period": "13th century; collected 1604",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "“Sloks of Shaikh Farid”, slok XXXVIII, in “The Bhagats of the Granth Sahib”, pages 392–407. The scanned text contains recognition errors.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date individual sloks, and Guru Arjan later placed them in the Granth Sahib; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Called to account for the days",
+          "why": "Farid says men have wasted day and night in wandering and sleep and that God will call each to account. A person’s life is measured against an end set by God, which makes meaning something given.",
+          "limit": "A couplet in Macauliffe’s 1909 rendering. The excerpt starts partway through the sloks because the line’s earlier words are broken by a line-end hyphen in the scan; the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "shaikh-farid-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sloks of Shaikh Farid, slok VII, in The Sikh Religion",
+      "excerpt": "if men beat thee with their fists, beat them not in return ; Nay, kiss their feet and go home.",
+      "period": "13th century; collected 1604",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "“Sloks of Shaikh Farid”, slok VII, in “The Bhagats of the Granth Sahib”, pages 392–407. The scanned text contains recognition errors.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date individual sloks, and Guru Arjan later placed them in the Granth Sahib; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Kiss the feet of those who strike",
+          "why": "Farid tells the hearer not to strike back at those who beat him but to kiss their feet and go home. The hearer’s own claim to retaliate is set aside for the other person.",
+          "limit": "A couplet in Macauliffe’s 1909 translation, addressed to a seeker of humility and not a rule for law or public life.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "shaikh-farid-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sloks of Shaikh Farid, slok LXXV, in The Sikh Religion",
+      "excerpt": "the Creator dwelleth in creation and creation in the Creator ; Whom callest thou bad, since there is none beside Him?",
+      "period": "13th century; collected 1604",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "“Sloks of Shaikh Farid”, slok LXXV, in “The Bhagats of the Granth Sahib”, pages 392–407. The scanned text contains recognition errors.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date individual sloks, and Guru Arjan later placed them in the Granth Sahib; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Creator in creation",
+          "why": "The couplet says the Creator dwells in creation and creation in the Creator, and that nothing lies outside Him. An ultimate reality is affirmed and the world is placed within it.",
+          "limit": "A couplet in Macauliffe’s 1909 rendering, placed in the sloks just after a verse by Guru Arjan, and Macauliffe does not say which part is Farid’s own. A Sufi poet’s language about God may differ from later philosophical readings.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -24334,6 +26114,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kabir-free-will",
+      "question": "free-will",
+      "name": "Kabir",
+      "short": "Kabir",
+      "work": "Slok on the entertainment, as told in The Sikh Religion",
+      "excerpt": "How do I know what God may have done ? Yet it was all Kabir.",
+      "period": "15th century; retold 1909",
+      "dateShort": "15th c.",
+      "dateFull": "fifteenth century",
+      "sortYear": 1480,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "Life of Kabir in “The Bhagats of the Granth Sahib”, the slok following the banquet episode, page 134. The scanned text contains recognition errors.",
+      "place": "Varanasi, Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe’s account of the banquet places Kabir in Banaras. No contemporary record dates or places individual sloks, so the pin marks the city traditionally associated with him; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "unscored",
+          "facet": "It was all Kabir, though Kabir did nothing",
+          "why": "Told that a host who looked like Kabir had received guests in his place, Kabir says he did not do it and cannot do it, and that he cannot know what God has done. The act is credited to Kabir only because God worked through him, which puts it on the side of the determined. A second, independent reading moved this placement from “determined” to “unscored”: The words say he cannot know what God has done and that it was all Kabir; they do not settle whether a person acts freely.",
+          "limit": "A slok in Macauliffe’s 1909 translation, set within a legend that God entertained the guests in the saint’s likeness. It is a statement of thanks for an event, not a general theory of the will, and the scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "kabir-happiness",
       "question": "happiness",
       "name": "Kabir",
@@ -24446,6 +26261,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "guru-nanak-desire",
+      "question": "desire",
+      "name": "Guru Nanak",
+      "short": "Nanak",
+      "work": "Hymn on the physician, Malar, as told in The Sikh Religion",
+      "excerpt": "Make enjoyments thy firewood, covetousness thy clarified butter and oil.",
+      "period": "Early 16th century (hymn); retold 1909",
+      "dateShort": "c. 1500",
+      "dateFull": "circa 1500",
+      "sortYear": 1500,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 1 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg01unse/sikhreligionitsg01unse_djvu.txt",
+      "locator": "Chapter on the Guru’s youth, the hymn beginning “Pain is arsenic, the name of God is the antidote”, page 28. The scanned text contains recognition errors.",
+      "place": "Talwandi (Nankana Sahib), Punjab, Pakistan",
+      "lat": 31.45,
+      "lng": 73.71,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe sets the physician episode in Nanak’s youth at his birthplace Talwandi. The place of composition of a single hymn is not recorded; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg01unse/sikhreligionitsg01unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Burning enjoyments and greed",
+          "why": "In a hymn using the image of a burnt offering, the Guru tells the hearer to make enjoyments the fuel and covetousness the butter, burned in the fire of divine knowledge. The desires are consumed, not tamed, so the passage is placed on giving desire up.",
+          "limit": "A line from a hymn in Macauliffe’s 1909 rendering, spoken in the story of Nanak’s youth when his parents called a physician. The image reuses a Hindu ritual to teach, and the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "erasmus-happiness",
       "question": "happiness",
       "name": "Desiderius Erasmus",
@@ -24513,6 +26363,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "guru-nanak-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Guru Nanak",
+      "short": "Nanak",
+      "work": "Saying to his Sikhs at Kurukshetra, as told in The Sikh Religion",
+      "excerpt": "doors a man entereth, whether he be a hermit or a householder, he shall find God.",
+      "period": "Early 16th century (traditional account); retold 1909",
+      "dateShort": "c. 1510s",
+      "dateFull": "circa 1510s",
+      "sortYear": 1515,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 1 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg01unse/sikhreligionitsg01unse_djvu.txt",
+      "locator": "Chapter on Guru Nanak’s visit to Kurukshetra, page 49; Macauliffe’s prose, not a hymn. The scanned text contains recognition errors.",
+      "place": "Kurukshetra, Haryana, India",
+      "lat": 29.97,
+      "lng": 76.84,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe places this saying at Kurukshetra, where Guru Nanak is said to have made many converts. The dating of the janamsakhi episodes is uncertain and the linked page gives no year; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg01unse/sikhreligionitsg01unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Hermit or householder",
+          "why": "After listing four ways to reach God (holy companionship, truth, contentment, restraint of the senses), the Guru says that by whichever door a man enters, whether as hermit or householder, he finds God. Both a life apart and a life among others are allowed, with neither ranked above the other.",
+          "limit": "A saying Macauliffe reports in prose from the Janamsakhi tradition, not a hymn of the Granth Sahib, so its wording rests on a 1909 retelling. The excerpt begins mid-sentence because a footnote and a page header interrupt the line; the scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -24619,6 +26504,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "wang-yangming-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Wang Yangming",
+      "short": "Wang Yangming",
+      "work": "Instructions for Practical Living (Chuanxilu), part 1",
+      "excerpt": "凡明不得、行不去，須反在自心上體當，即可通。",
+      "translation": "Whatever cannot be understood or put into practice, turn back to one’s own mind and work it out there, and it will come through.",
+      "period": "1518 CE",
+      "dateShort": "1518",
+      "dateFull": "1518 CE",
+      "sortYear": 1518,
+      "sourceLabel": "Chinese Wikisource, Chuanxilu, part 1",
+      "sourceUrl": "https://zh.wikisource.org/wiki/傳習錄/卷上",
+      "locator": "Chuanxilu, part 1, the numbered section that ends “心外無理，心外無事”.",
+      "place": "Ganzhou, Jiangxi, China",
+      "lat": 25.83,
+      "lng": 114.93,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Wang Yangming was governing and teaching around Ganzhou when part 1 was recorded by Xu Ai and others; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Seeking in one’s own mind",
+          "why": "Wang Yangming tells students that whatever they cannot understand or carry out should be turned back on their own mind to be worked out, and that this opens the way. The place to look is the person’s own mind, so the passage is inward.",
+          "limit": "The English is the atlas’s own unreviewed translation. The sentence is a recorded conversation with students, and the teaching about the mind also holds that the mind answers to parents, rulers and friends in practice.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -25538,6 +27459,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "guru-amar-das-free-will",
+      "question": "free-will",
+      "name": "Guru Amar Das",
+      "short": "Amar Das",
+      "work": "Reply to Shaikh Farid, slok XIII, in The Sikh Religion",
+      "excerpt": "Even if all men desire to love God, they will not succeed by their own endeavours : This cup of love belongeth to God ; He giveth it to whom He pleaseth.",
+      "period": "Mid-16th century; retold 1909",
+      "dateShort": "c. 1560",
+      "dateFull": "circa 1560",
+      "sortYear": 1560,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "locator": "Sloks of Shaikh Farid, slok XIII, with Guru Amar Das’s reply, in “The Bhagats of the Granth Sahib”, page 395–396. The scanned text contains recognition errors.",
+      "place": "Goindwal, Punjab, India",
+      "lat": 31.43,
+      "lng": 75.07,
+      "anchorType": "Traditional association",
+      "placeNote": "Guru Amar Das is traditionally associated with Goindwal, which he founded as his seat. Macauliffe does not say where this reply was given; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionvolv032589mbp/sikhreligionvolv032589mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "The cup of love given as God pleases",
+          "why": "Guru Amar Das, objecting to a couplet of Farid, says that even universal desire for God’s love cannot succeed by human effort, because the cup of love belongs to God, who gives it to whom He pleases. The result lies in God’s hands alone.",
+          "limit": "Macauliffe records this as Amar Das’s reply to Farid’s couplet in the Granth Sahib. It concerns love of God and divine grace, and Sikh teaching elsewhere also values effort and the Guru’s instruction.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "yi-hwang-desire",
       "question": "desire",
       "name": "Yi Hwang (Toegye)",
@@ -25834,6 +27790,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "michel-de-montaigne-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, “Of Solitude”",
+      "excerpt": "we must reserve a backshop, wholly our own and entirely free, wherein to settle our true liberty, our principal solitude and retreat",
+      "period": "1580",
+      "dateShort": "1580",
+      "dateFull": "1580",
+      "sortYear": 1580,
+      "sourceLabel": "Charles Cotton translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "locator": "Essays, book 1, chapter 39, “Of Solitude”.",
+      "place": "Château de Montaigne, Dordogne, France",
+      "lat": 44.84,
+      "lng": 0.04,
+      "anchorType": "Documented writing location",
+      "placeNote": "Montaigne wrote the Essays in the tower of his château near Bordeaux; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Michel_de_Montaigne",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "A private backshop of the mind",
+          "why": "Montaigne says a person with family and goods should still keep a private room in the mind, entirely their own, where they talk and laugh with themselves alone. The true self and liberty are placed in that inner retreat, so the passage is inward.",
+          "limit": "The sentence is advice on keeping inner freedom while living an ordinary social life, in Charles Cotton’s seventeenth-century English. Montaigne elsewhere stresses friendship and conversation as ways of knowing oneself.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "michel-de-montaigne",
       "name": "Michel de Montaigne",
       "short": "Montaigne",
@@ -26111,6 +28102,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "guru-arjan-happiness",
+      "question": "happiness",
+      "name": "Guru Arjan",
+      "short": "Arjan",
+      "work": "Hymn at Hema’s hut, in The Sikh Religion",
+      "excerpt": "Even when turning a handmill or wearing a coarse blanket, the heart may be happy and contented.",
+      "period": "c. 1600; retold 1909",
+      "dateShort": "c. 1600",
+      "dateFull": "circa 1600",
+      "sortYear": 1600,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 3 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg03unse/sikhreligionitsg03unse_djvu.txt",
+      "locator": "“Life of Guru Arjan”, the hymn composed in Hema’s hut, pages 23–24. The scanned text contains recognition errors.",
+      "place": "Amritsar, Punjab, India",
+      "lat": 31.62,
+      "lng": 74.87,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe tells the hymn as composed in a village hut during a journey and does not name the village. Amritsar, Guru Arjan’s seat, stands as a traditional association; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg03unse/sikhreligionitsg03unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Contentment in poverty, at a handmill",
+          "why": "Guru Arjan says that even at hard labour in a coarse blanket the heart can be happy and contented, and that an empire that brings no satisfaction is worthless. Happiness is placed in the heart’s state and not in comfort or rank.",
+          "limit": "A hymn in Macauliffe’s 1909 translation, composed according to the story in thanks for a poor Sikh’s hospitality. It speaks of poverty chosen or borne with devotion and does not claim that hardship has no effect.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "guru-arjan-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Guru Arjan",
+      "short": "Arjan",
+      "work": "Hymn at Hema’s hut, in The Sikh Religion",
+      "excerpt": "There is a pleasure even in poverty when in the company of the saints God is remembered.",
+      "period": "c. 1600; retold 1909",
+      "dateShort": "c. 1600",
+      "dateFull": "circa 1600",
+      "sortYear": 1600,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 3 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg03unse/sikhreligionitsg03unse_djvu.txt",
+      "locator": "“Life of Guru Arjan”, the hymn composed in Hema’s hut, pages 23–24. The scanned text contains recognition errors.",
+      "place": "Amritsar, Punjab, India",
+      "lat": 31.62,
+      "lng": 74.87,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe tells the hymn as composed in a village hut during a journey and does not name the village. Amritsar, Guru Arjan’s seat, stands as a traditional association; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg03unse/sikhreligionitsg03unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Pleasure in poverty among the saints",
+          "why": "The hymn says there is pleasure even in poverty when God is remembered in the company of the saints. Fellowship is what makes the hardship good, so the passage commends company.",
+          "limit": "A hymn in Macauliffe’s 1909 translation, in praise of a poor Sikh’s hospitality. The same hymn also praises remembering God in simple surroundings, so company is not the only value it names.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -33215,6 +35276,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ralph-waldo-emerson-lasting-self",
+      "question": "lasting-self",
+      "name": "Ralph Waldo Emerson",
+      "short": "Emerson",
+      "work": "Essays: Second Series, “Experience”",
+      "excerpt": "Life is a train of moods like a string of beads, and as we pass through them they prove to be many-colored lenses which paint the world their own hue",
+      "period": "1844",
+      "dateShort": "1844",
+      "dateFull": "1844",
+      "sortYear": 1844,
+      "sourceLabel": "Project Gutenberg, Essays: Second Series",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/9/4/2945/2945.txt",
+      "locator": "“Experience”, paragraph beginning “Dream delivers us to dream”.",
+      "place": "Concord, Massachusetts, United States",
+      "lat": 42.46,
+      "lng": -71.35,
+      "anchorType": "Documented writing location",
+      "placeNote": "Emerson lived and wrote at Concord when the essay was written and published in 1844; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ralph_Waldo_Emerson",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "A train of moods",
+          "why": "Emerson describes the self as a succession of moods, each of which colours the world differently, strung together like beads. The self is real and continuous in this telling but made of shifting parts, which suits the middle position.",
+          "limit": "The line is a figure from an essay written in grief after the death of Emerson’s young son, and it is part of a wider argument that the mind’s moods block any fixed view. Elsewhere Emerson speaks of a deeper soul behind the moods.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "karl-marx-given-or-made",
       "question": "given-or-made",
       "name": "Karl Marx",
@@ -38891,6 +40987,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "leo-tolstoy-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Leo Tolstoy",
+      "short": "Tolstoy",
+      "work": "The Kingdom of God Is Within You, chapter 12",
+      "excerpt": "God, whom he recognizes within himself as love, and therefore he loves all things and all men",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "Constance Garnett translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/6/0/4602/4602.txt",
+      "locator": "The Kingdom of God Is Within You, the passage summing up the Christian doctrine of the soul as love.",
+      "place": "Yasnaya Polyana, Tula Oblast, Russia",
+      "lat": 54.07,
+      "lng": 37.52,
+      "anchorType": "Documented writing location",
+      "placeNote": "Tolstoy wrote the book at his estate of Yasnaya Polyana between 1890 and 1893, as widely recorded; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Kingdom_of_God_Is_Within_You",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "God recognised within and loved in all",
+          "why": "Tolstoy says a person finds the divine within, as love, and that this very recognition makes him love all other people. The inward finding and the turn to others are held together, so the passage sits in the middle.",
+          "limit": "The book is a Christian argument against violence and state authority, here in Constance Garnett’s English. The “within” is the divine principle in a person rather than a private self.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "swami-vivekananda-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Swami Vivekananda",
@@ -39486,6 +41617,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "swami-vivekananda-lasting-self",
+      "question": "lasting-self",
+      "name": "Swami Vivekananda",
+      "short": "Vivekananda",
+      "work": "Raja Yoga, “Concentration: Its Practice”",
+      "excerpt": "the Soul is not a compound; It is the only eternal simple in the universe",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Internet Archive scan of Raja Yoga (recognition errors possible)",
+      "sourceUrl": "https://archive.org/download/RajaYogaVivekananda/RajaYoga_Vivekananda_djvu.txt",
+      "locator": "Raja Yoga, the commentary on the first chapter, where the “seedless” samadhi is described. The scanned text contains recognition errors.",
+      "place": "New York City, United States",
+      "lat": 40.75,
+      "lng": -73.98,
+      "anchorType": "Documented teaching location",
+      "placeNote": "Vivekananda gave the Raja Yoga lectures in New York in the winter of 1895–96; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Raja_Yoga_(book)",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The soul is simple and unborn",
+          "why": "Vivekananda says that when all the waves of the mind are stilled, the Soul is seen to be no compound but the one eternal simple thing. A thing that is not made of parts cannot be broken up, so the passage affirms a self that lasts.",
+          "limit": "The words come from lectures on Patanjali’s Yoga Sutras delivered to a New York audience and edited from transcripts, in a scanned text with recognition errors. The “Soul” here is the universal Purusha, not the personality.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -40307,6 +42473,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nitobe-inazo-given-or-made",
+      "question": "given-or-made",
+      "name": "Nitobe Inazo",
+      "short": "Nitobe",
+      "work": "Bushido: The Soul of Japan, “Sources of Bushido”",
+      "excerpt": "Shinto theology has no place for the dogma of “original sin.” On the contrary, it believes in the innate goodness and God-like purity of the human soul",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "Project Gutenberg, Bushido: The Soul of Japan",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/0/9/12096/12096-0.txt",
+      "locator": "Bushido, chapter 3, “Sources of Bushido”, paragraph on Shinto.",
+      "place": "Malvern, Pennsylvania, United States",
+      "lat": 40.04,
+      "lng": -75.51,
+      "anchorType": "Documented writing location",
+      "placeNote": "The preface of the book is signed “Malvern, Pa., Twelfth Month, 1899”.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/0/9/12096/12096-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Innate goodness of the soul",
+          "why": "Nitobe reports that Shinto holds the human soul to be innately good and pure, with no original sin. What a person is at bottom is treated as an endowment, so the passage is placed on the given side.",
+          "limit": "The sentence describes a tradition rather than stating Nitobe’s own view, and the same book spends many pages on the training of a samurai. The work was written in English for Western readers.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "swimmer-cherokee-death",
       "question": "death",
       "name": "Swimmer (Ayûnînî), Cherokee storyteller, recorded by James Mooney",
@@ -40375,6 +42576,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "zitkala-sa-given-or-made",
+      "question": "given-or-made",
+      "name": "Zitkála-Šá (Gertrude Simmons Bonnin)",
+      "short": "Zitkala-Sa",
+      "work": "American Indian Stories, “An Indian Teacher among Indians”",
+      "excerpt": "I was neither a wee girl nor a tall one; neither a wild Indian nor a tame one. This deplorable situation was the effect of my brief course in the East",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "Project Gutenberg, American Indian Stories",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/3/7/10376/10376-0.txt",
+      "locator": "American Indian Stories, “An Indian Teacher among Indians”, opening paragraphs.",
+      "place": "Yankton Reservation, South Dakota, United States",
+      "lat": 43,
+      "lng": -98.4,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The memoir places her return among her mother’s people on the Yankton Reservation; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zitkala-Sa",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Neither wild nor tame",
+          "why": "Zitkala-Sa says the schooling she received in the East left her belonging fully to neither her mother’s world nor the white one. A person here is shaped by the education imposed on her, which puts the passage on the made side.",
+          "limit": "The passage is a memoir written with a particular grievance against boarding-school assimilation. It reports one person’s experience and does not claim that nothing is inborn.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -41379,6 +43615,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "w-e-b-du-bois-lasting-self",
+      "question": "lasting-self",
+      "name": "W. E. B. Du Bois",
+      "short": "Du Bois",
+      "work": "The Souls of Black Folk, “Of Our Spiritual Strivings”",
+      "excerpt": "this longing to attain self-conscious manhood, to merge his double self into a better and truer self",
+      "period": "1903",
+      "dateShort": "1903",
+      "dateFull": "1903",
+      "sortYear": 1903,
+      "sourceLabel": "Project Gutenberg, The Souls of Black Folk",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/0/408/408-0.txt",
+      "locator": "The Souls of Black Folk, chapter 1, paragraph beginning “It is a peculiar sensation, this double-consciousness”.",
+      "place": "Atlanta, Georgia, United States",
+      "lat": 33.75,
+      "lng": -84.39,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Du Bois was a professor at Atlanta University when the essays were written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/W._E._B._Du_Bois",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Two selves merged into one",
+          "why": "Du Bois describes the American Negro as carrying two souls in one body and striving to merge the double self into a better and truer one. The self is real but divided and still being made, so the passage sits at a changing self.",
+          "limit": "The passage is about the divided consciousness produced by racial oppression and the aim of a single life, not a general theory of the self. It is a lyrical essay, not an argument about persistence over time.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -42642,6 +44913,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charles-eastman-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
+      "short": "Eastman",
+      "work": "The Soul of the Indian, chapter 1 “The Great Mystery”",
+      "excerpt": "because they believed that He is nearer to us in solitude, and there were no priests authorized to come between a man and his Maker",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Internet Archive scan of the 1911 edition (recognition errors possible)",
+      "sourceUrl": "https://archive.org/download/soulofindian00east/soulofindian00east_djvu.txt",
+      "locator": "The Soul of the Indian, chapter 1, “The Great Mystery”, paragraph on worship. The scanned text contains recognition errors.",
+      "place": "Amesbury, Massachusetts, United States",
+      "lat": 42.86,
+      "lng": -70.94,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Eastman is recorded as living in Massachusetts in these years; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Charles_Eastman",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Nearer to God in solitude",
+          "why": "Eastman explains that the worship of his Sioux ancestors was solitary because they believed the divine is nearer in solitude and that no priest stood between a person and God. The seeker is sent away from others, so the passage is inward.",
+          "limit": "Eastman wrote for a white readership and presents Dakota religion in general terms and in the past tense. The solitary worship he describes sat alongside community ceremonies treated elsewhere in the book.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "charles-eastman-meaning",
       "question": "meaning",
       "name": "Charles Alexander Eastman (Ohiyesa)",
@@ -43413,6 +45719,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "rabindranath-tagore-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Rabindranath Tagore",
+      "short": "Tagore",
+      "work": "Sadhana, “Soul Consciousness”",
+      "excerpt": "whomsoever we love, in him we find our own soul in the highest sense",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "Project Gutenberg, authorised English text of Sadhana",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/8/4/6842/6842-0.txt",
+      "locator": "Sadhana, chapter 2, paragraph on the Upanishad saying that a son is dear for the sake of the soul.",
+      "place": "Santiniketan, West Bengal, India",
+      "lat": 23.68,
+      "lng": 87.69,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The essays that make up Sadhana grew out of Tagore’s teaching at Santiniketan and were delivered as lectures in the United States in 1912–13; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sadhana_(book)",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Finding the soul in the beloved",
+          "why": "Tagore takes the saying of the Upanishad that a son is dear for the sake of the soul and reads it as meaning that love shows a person their own self in someone else. The self is found through the one loved, so the passage sits on the side of others.",
+          "limit": "The essay is a lecture on love as a path to the divine, and the “soul” in question is the supreme self in all, not a private personality. The passage does not say that inward reflection is useless.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "rabindranath-tagore-lasting-self",
+      "question": "lasting-self",
+      "name": "Rabindranath Tagore",
+      "short": "Tagore",
+      "work": "Sadhana, “Soul Consciousness”",
+      "excerpt": "by knowing that worldly losses and physical death can take nothing away from the truth and the greatness of our soul",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "Project Gutenberg, authorised English text of Sadhana",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/8/4/6842/6842-0.txt",
+      "locator": "Sadhana, chapter 2, paragraph beginning “According to the Upanishads, the key to cosmic consciousness”.",
+      "place": "Santiniketan, West Bengal, India",
+      "lat": 23.68,
+      "lng": 87.69,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The essays that make up Sadhana grew out of Tagore’s teaching at Santiniketan and were delivered as lectures in the United States in 1912–13; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sadhana_(book)",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The soul beyond loss and death",
+          "why": "Tagore says that to know the soul apart from the self is to know that essentially a person is spirit, and that neither worldly loss nor physical death can take anything from the soul. The soul is treated as something that stays whole through all loss, which places the passage with a lasting self.",
+          "limit": "The lecture speaks from the Upanishadic idea of the soul as one with the supreme spirit, so the lasting “soul” is not a separate personal identity. The same page treats the ordinary “self” as narrow and passing.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -45351,6 +47727,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "kahlil-gibran-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Kahlil Gibran",
+      "short": "Gibran",
+      "work": "The Prophet, “On Love”",
+      "excerpt": "All these things shall love do unto you that you may know the secrets of your heart, and in that knowledge become a fragment of Life’s heart.",
+      "period": "1923",
+      "dateShort": "1923",
+      "dateFull": "1923",
+      "sortYear": 1923,
+      "sourceLabel": "Project Gutenberg, The Prophet",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "locator": "The Prophet, “On Love”, near the end of the first speech.",
+      "place": "New York City, United States",
+      "lat": 40.74,
+      "lng": -74,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gibran lived and wrote in New York when The Prophet appeared in 1923; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Prophet_(book)",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Love as the road to the heart",
+          "why": "Gibran says love threshes, grinds and kneads a person so that he may know the secrets of his own heart and so become part of the heart of life. Self-knowledge comes through the force of love toward another, and ends in a deeper inward knowing, so both turns are present.",
+          "limit": "The Prophet is a prose poem in the voice of a fictional sage, in English written by Gibran himself. “Love” here is an abstract power and not a particular person, so the passage speaks of self-knowledge through others only in a general way.",
+          "second": "differed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "kahlil-gibran-lasting-self",
+      "question": "lasting-self",
+      "name": "Kahlil Gibran",
+      "short": "Gibran",
+      "work": "The Prophet, “The Farewell”",
+      "excerpt": "A little while, and my longing shall gather dust and foam for another body. A little while, a moment of rest upon the wind, and another woman shall bear me.",
+      "period": "1923",
+      "dateShort": "1923",
+      "dateFull": "1923",
+      "sortYear": 1923,
+      "sourceLabel": "Project Gutenberg, The Prophet",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/8/5/8/58585/58585-0.txt",
+      "locator": "The Prophet, “The Farewell”, in Almustafa’s last address.",
+      "place": "New York City, United States",
+      "lat": 40.74,
+      "lng": -74,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gibran lived and wrote in New York when The Prophet appeared in 1923; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Prophet_(book)",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Another body, the same self",
+          "why": "Almustafa tells the people of Orphalese that after a short rest on the wind he will be borne again by another woman. The speaker carries on through the change of bodies, which puts the passage on the lasting side.",
+          "limit": "The words belong to a fictional prophet in a poetic work and are not an argued doctrine. They suggest a rebirth of one person, not a detailed account of what persists.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -56557,11 +59003,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Literature and poetry",
       "sure": true
     },
-    "Tao Yuanming": {
-      "about": "Chinese poet of the Jin dynasty who left office to farm, famed for poems on drinking wine.",
-      "tradition": "Literature and poetry",
-      "sure": true
-    },
     "Tenzin Gyatso, the 14th Dalai Lama": {
       "about": "Tibetan Buddhist leader, exiled in Dharamsala, India, and Nobel Peace laureate who writes and teaches on compassion.",
       "tradition": "Buddhism",
@@ -56969,12 +59410,7 @@ window.PILOT_EVIDENCE={
     },
     "Zarathushtra (Gathas)": {
       "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
-      "tradition": "Other",
-      "sure": true
-    },
-    "Zarathustra (Gathas)": {
-      "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
-      "tradition": "Other",
+      "tradition": "Zoroastrianism",
       "sure": true
     },
     "Zeami": {
@@ -57005,11 +59441,6 @@ window.PILOT_EVIDENCE={
     "Zitkála-Šá (Gertrude Simmons Bonnin)": {
       "about": "Yankton Dakota writer and activist who published American Indian Stories in 1921.",
       "tradition": "Indigenous and oral traditions",
-      "sure": true
-    },
-    "Zoroaster (Zarathushtra)": {
-      "about": "Iranian prophet to whom the Gathas, oldest hymns of the Avesta, are attributed.",
-      "tradition": "Other",
       "sure": true
     },
     "Fukuzawa Yukichi": {
@@ -57155,6 +59586,81 @@ window.PILOT_EVIDENCE={
     "Zulu informants (recorded by Henry Callaway)": {
       "about": "Zulu speakers whose accounts of belief were recorded and translated by the missionary Henry Callaway in Natal in the 1860s.",
       "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Guanzi (Neiye)": {
+      "about": "Chinese text of about the fourth century BCE on stilling the mind and cultivating vital breath, preserved in the Guanzi.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Guru Amar Das": {
+      "about": "Third Sikh Guru, who led the community from Goindwal in the Punjab in the sixteenth century.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Guru Arjan": {
+      "about": "Fifth Sikh Guru, who compiled the Adi Granth at Amritsar and was executed in 1606.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Han Yu": {
+      "about": "Chinese essayist and official of the Tang dynasty, around 800, who argued for a return to Confucian teaching.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Huainanzi": {
+      "about": "Chinese collection of essays compiled at the court of Liu An, king of Huainan, and presented in 139 BCE.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Mainog-i Khirad": {
+      "about": "Zoroastrian book in Middle Persian, of about the sixth century, in which a sage questions the Spirit of Wisdom.",
+      "tradition": "Zoroastrianism",
+      "sure": true
+    },
+    "Nitobe Inazo": {
+      "about": "Japanese educator and writer who explained samurai ethics to Western readers in Bushido, written in English in 1900.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Qingjing Jing": {
+      "about": "Short Daoist scripture of the Tang dynasty on purity and stillness, recited in the Quanzhen school.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Shaikh Farid": {
+      "about": "Punjabi Sufi of the thirteenth century at Pakpattan, whose verses are preserved in the Sikh scripture.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Taishang Ganying Pian": {
+      "about": "Chinese moral tract of about the twelfth century on how good and bad deeds are answered.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Tao Hongjing": {
+      "about": "Chinese Daoist scholar and physician of the fifth and sixth centuries, who compiled writings on nourishing life.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "The Great Learning": {
+      "about": "Short Confucian text of about the third century BCE on cultivating oneself in order to order the family and the state.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Uttaradhyayana Sutra": {
+      "about": "Jain scripture of sermons and dialogues attributed to Mahavira, set down in the centuries before the common era.",
+      "tradition": "Jainism and Sikhism",
+      "sure": true
+    },
+    "Vendidad": {
+      "about": "Book of the Zoroastrian Avesta concerned with purity and law, compiled over many centuries.",
+      "tradition": "Zoroastrianism",
+      "sure": true
+    },
+    "Wenzi": {
+      "about": "Chinese Daoist text of about the second century BCE, presented as the sayings of a disciple of Laozi.",
+      "tradition": "Daoism",
       "sure": true
     }
   }
