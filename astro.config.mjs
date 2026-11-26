@@ -29,13 +29,13 @@ export default defineConfig({
         if (path === '/') priority = 1.0;
         else if (['/dream', '/questions', '/thinkers', '/you', '/circles', '/library', '/glossary', '/community', '/support'].includes(path)) priority = 0.9;
         else if (path === '/start/lucid' || path === '/start/contemplative') priority = 0.8;
-        else if (path.startsWith('/library/articles/') || path.startsWith('/history/')) priority = 0.8;
-        return { ...item, priority };
+        else if (path.startsWith('/library/articles/') || path.startsWith('/history/') || /^\/questions\/[a-z-]+$/.test(path)) priority = 0.8;
+        return { ...item, priority, lastmod: new Date().toISOString().slice(0, 10) };
       },
     }),
   ],
   output: 'static',
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
   build: {
     format: 'directory',
   },

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/slash.mjs",
     "lint": "eslint .",
     "test:markdown": "node --test test/markdown.test.js",
     "preview": "astro preview"

@@ -1,7 +1,7 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { thinkers, thinkerOf, SECOND, questions, slugify, regionName } from '../../lib/atlas.js';
+import { thinkers, thinkerOf, SECOND, questions, slugify, regionName, TOPIC, isText } from '../../lib/atlas.js';
 export function getStaticPaths() { return thinkers.map(t => ({ params: { slug: t.slug }, props: { t } })); }
 const { t } = Astro.props;
 const n = t.own.length, qs = [...new Set(t.passages.map(p => p.question.plain))];
@@ -18,9 +18,17 @@ if (base) {
   if (same) nextUp.push({ label: `Says much the same, from ${regionName(same.region)}`, c: same, q });
 }
 const desc = `${t.name} in ${n === 1 ? 'their own words' : `${n} passages`}, ${t.when}, ${t.where}: “${lead.excerpt.slice(0, 110)}${lead.excerpt.length > 110 ? '…' : ''}” On ${qs.slice(0, 3).join(' ').toLowerCase()}`;
-const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: `https://svapnaproject.org/thinkers/${t.slug}`, mainEntity: { '@type': 'Person', name: t.name, description: `Passages by ${t.name} on ${qs.length} of life’s big questions.` } };
+const topics = [...new Set(t.passages.map(p => TOPIC[p.question.id]).filter(Boolean))];
+const topicText = topics.length > 2 ? topics.slice(0, 3).join(', ') + (topics.length > 3 ? ' and more' : '') : topics.join(' and ');
+const seoTitle = `${t.name} on ${topics.slice(0, 3).join(', ').replace(/, ([^,]*)$/, ' and $1')}: quotes with sources — Svapna`;
+const seoDesc = `${t.about ? t.about + ' ' : ''}${n === 1 ? 'One passage' : n + ' passages'} on ${topicText}, each quoted from a named source: “${lead.excerpt.slice(0, 90)}${lead.excerpt.length > 90 ? '…' : ''}”`;
+const jsonLd0 = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: `https://svapnaproject.org/thinkers/${t.slug}`, mainEntity: { '@type': 'Person', name: t.name, description: `Passages by ${t.name} on ${qs.length} of life’s big questions.` } };
+const url = `https://svapnaproject.org/thinkers/${t.slug}`;
+const jsonLd = { '@context': 'https://schema.org', '@type': 'ProfilePage', url, name: seoTitle.replace(' — Svapna', ''), description: seoDesc,
+  mainEntity: { '@type': isText(t.name) ? 'CreativeWork' : 'Person', name: t.name, ...(t.about ? { description: t.about } : {}) },
+  hasPart: t.own.slice(0, 20).map(c => ({ '@type': 'Quotation', text: c.excerpt, url: url + '#' + c.id, creator: { '@type': isText(t.name) ? 'Organization' : 'Person', name: t.name }, isBasedOn: { '@type': 'CreativeWork', name: c.work, url: c.readUrl } })) };
 ---
-<Read title={`${t.name}: in their own words — Svapna`} description={desc} path={`/thinkers/${t.slug}`} crumbs={[{ name: 'Thinkers', path: '/thinkers' }, { name: t.name, path: `/thinkers/${t.slug}` }]} jsonLd={jsonLd}>
+<Read title={seoTitle} description={seoDesc} path={`/thinkers/${t.slug}`} image={`/og/q-${(t.passages.find(p => p.home) || t.passages[0]).question.id}.jpg`} crumbs={[{ name: 'Thinkers', path: '/thinkers' }, { name: t.name, path: `/thinkers/${t.slug}` }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/thinkers">Thinkers</a></p>
   <h1>{t.name}</h1>
   <p class="lede">{t.where} · {t.when}{n > 1 ? ` · ${n} passages` : ''}. {qs.length === 1 ? 'One question answered' : `${qs.length} questions answered`}, in this voice’s own words.</p>

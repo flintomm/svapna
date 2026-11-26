@@ -1,8 +1,8 @@
 ---
 // The reading layout: the new look for pages meant to be read and found by search.
 import { organizationSchema, breadcrumbSchema, buildCrumbs } from '../lib/seo.js';
-interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null }
-const { title, description, path, crumbs = [], jsonLd = null } = Astro.props;
+interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null; image?: string }
+const { title, description, path, crumbs = [], jsonLd = null, image = '/og.jpg' } = Astro.props;
 const siteUrl = 'https://svapnaproject.org/';
 const canonical = siteUrl.replace(/\/$/, '') + path;
 ---
@@ -18,7 +18,11 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
-<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta property="og:image" content={siteUrl.replace(/\/$/, '') + image} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Svapna" />
+<meta name="twitter:image" content={siteUrl.replace(/\/$/, '') + image} />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />

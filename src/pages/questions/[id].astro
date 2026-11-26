@@ -1,7 +1,7 @@
 ---
 import Coffee from '../../components/Coffee.astro';
 import Read from '../../layouts/Read.astro';
-import { questions, slugify, SECOND, REGIONS, TRADITIONS } from '../../lib/atlas.js';
+import { questions, slugify, SECOND, REGIONS, TRADITIONS, TOPIC, TRAD, tradSets } from '../../lib/atlas.js';
 export function getStaticPaths() { return questions.map(q => ({ params: { id: q.id }, props: { q } })); }
 const { q } = Astro.props;
 const scored = q.steps.filter(s => s.tone !== 'none');
@@ -19,11 +19,13 @@ const cite = c => `“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}).
 const CHILD = { death: ['confucius-death', 'barbauld-death', 'tiruvalluvar-death', 'bhagavad-gita-death', 'epictetus-death'] };
 const childSet = (CHILD[q.id] || []).map(id => q.placed.find(c => c.id === id)).filter(Boolean);
 const words = q.plain.split(' '), cut = Math.max(1, words.length - 3);
-const desc = `${q.plain} ${total} passages from ${first.dateShort} to ${last.dateShort}, in their authors’ own words: ${scored.map(s => `${count(s)} say “${s.plain.toLowerCase()}”`).join(', ')}.`;
+const sets = tradSets.filter(x => x.q.id === q.id);
+const desc = `${q.plain} Quotes on ${TOPIC[q.id] || q.short.toLowerCase()} from ${total} thinkers, scriptures and traditions, ${first.dateShort} to ${last.dateShort}, each with its source: ${scored.map(s => `${count(s)} say “${s.plain.toLowerCase()}”`).join(', ')}.`;
+const desc0 = `${q.plain} ${total} passages from ${first.dateShort} to ${last.dateShort}, in their authors’ own words: ${scored.map(s => `${count(s)} say “${s.plain.toLowerCase()}”`).join(', ')}.`;
 const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: q.plain, description: desc, url: `https://svapnaproject.org/questions/${q.id}`,
   mainEntity: { '@type': 'ItemList', numberOfItems: total, itemListElement: q.placed.slice(0, 25).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Quotation', text: c.excerpt, spokenByCharacter: { '@type': 'Person', name: c.name }, url: `https://svapnaproject.org/thinkers/${slugify(c.name)}#${c.id}` } })) } };
 ---
-<Read title={`${q.plain} ${total} answers across 4,000 years — Svapna`} description={desc} path={`/questions/${q.id}`} crumbs={[{ name: 'Questions', path: '/questions' }, { name: q.plain, path: `/questions/${q.id}` }]} jsonLd={jsonLd}>
+<Read title={`${q.plain} Quotes on ${TOPIC[q.id] || 'it'} from ${total} voices across 4,000 years — Svapna`} description={desc} path={`/questions/${q.id}`} image={`/og/q-${q.id}.jpg`} crumbs={[{ name: 'Questions', path: '/questions' }, { name: q.plain, path: `/questions/${q.id}` }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/questions">Questions</a></p>
   <h1>{words.slice(0, cut).join(' ')} <em>{words.slice(cut).join(' ')}</em></h1>
   <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words. Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</p>
@@ -73,6 +75,12 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
       </div>
     </section>
   ))}
+  {sets.length > 0 && (
+    <section id="by-tradition">
+      <h2 class="h-src">By tradition</h2>
+      <div class="index" style="margin-top:22px">{sets.map(x => <a href={`/questions/${q.id}/${x.slug}`}>What {TRAD[x.t][0]} {TRAD[x.t][1] ? 'says' : 'say'} about {TOPIC[q.id]}<span>{x.placed.length}</span></a>)}</div>
+    </section>
+  )}
   <p class="def" style="margin-top:60px">How passages are checked and placed, and how far to trust a placement: <a href="/how-it-works">how Svapna works</a>.</p>
   <script is:inline>
     (function () {

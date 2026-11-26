@@ -59,7 +59,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <meta property="og:title" content={pageTitle} />
 <meta property="og:description" content={pageDesc} />
 <meta property="og:url" content={siteUrl + 'dream'} />
-<meta property="og:image" content={siteUrl + 'og.jpg'} />
+<meta property="og:image" content={siteUrl + 'og/dream.jpg'} />
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />
 <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema(buildCrumbs(siteUrl, [{ name: 'Dreaming', path: '/dream' }])))} />

@@ -12,7 +12,7 @@ interface Props { indexable?: boolean }
 const { indexable = false } = Astro.props;
 const siteUrl = 'https://svapnaproject.org/';
 const title = 'Svapna — the big questions, answered across 4,000 years';
-const description = 'Answer one of life’s big questions and see the world light up with everyone who agreed: over 1,200 passages from thinkers on every continent, each checked at its source. A study of consciousness, from dreaming to death.';
+const description = `Answer one of life’s big questions and see the world light up with everyone who agreed: ${atlasCount.toLocaleString('en')} passages from thinkers, scriptures and traditions on every continent, each quoted from its source. Plus a history of dreaming, from the Upaniṣads to the sleep laboratory.`;
 // Search engines and readers without scripts get the questions and a sample of passages as plain text.
 const atlas = JSON.parse(evidence.slice(evidence.indexOf('{'), evidence.lastIndexOf('}') + 1));
 const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas.cards.filter(c => c.readings[q.id]).slice(0, 3) }));
