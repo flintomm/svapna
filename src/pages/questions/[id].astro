@@ -31,7 +31,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
   {HEAVY[q.id] && <p class="def gentle">Some people arrive at this question because of a loss, or a hard stretch. What follows is other people’s words across four thousand years, not answers, and they do not agree. Start anywhere. If things are heavy right now and it would help to talk to someone, <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free, confidential lines in most countries.</p>}
   {childSet.length > 0 && (
     <details class="child-set">
-      <summary>Reading this with a child?</summary>
+      <summary>Are you reading this with a child?</summary>
       <p class="def">Children often ask this plainly and want a plain answer. People have believed different things, and it is fair to say so, and to say what you believe yourself. These {childSet.length} are short, come from different traditions, and do not agree with each other. Read them in your own words.</p>
       {childSet.map(c => <figure><blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.translation || c.excerpt}”</blockquote><figcaption><a href={`#${c.id}`}>{c.name}</a> · {c.place.split(',').slice(-1)[0].trim()} · {c.dateShort}</figcaption></figure>)}
     </details>
