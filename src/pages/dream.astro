@@ -86,10 +86,14 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
   </div>
 </header>
 
-<nav class="gauge" aria-label="Depth">
-  <span id="clock">23:00</span>
-  <ol>{layers.map((l, i) => <li><a href={`#${l.id}`} data-i={i} title={l.name}><span>{l.name}</span></a></li>)}</ol>
+<nav class="gauge" id="gauge" aria-label="The night, from 23:00 to 07:00. Drag along it to move through the night.">
+  <div class="rail" id="rail">
+    <span id="clock">23:00</span><i id="thumb" aria-hidden="true"></i>
+    <ol>{layers.map((l, i) => <li><a href={`#${l.id}`} data-i={i} title={l.name}><span>{l.name}</span></a></li>)}</ol>
+  </div>
+  <span class="small rail-hint" id="rail-hint">Drag</span>
 </nav>
+<div id="scrub" aria-hidden="true"><b id="scrub-time">23:00</b><span id="scrub-name"></span></div>
 
 <main id="night">
   <section class="intro" id="top" data-depth="-1">

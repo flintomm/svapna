@@ -91,11 +91,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
       U = Object.fromEntries(['r', 'm', 'ph', 'amt', 'sharp', 'rise', 'ptr', 'nar', 'dk', 'seed', 'base', 'c0', 'c1', 'c2'].map(k => [k, gl.getUniformLocation(pr, k)]));
     }
   }
-  function size() { if (fallScene) fallScene.size(); cv.width = Math.round(innerWidth * .5); cv.height = Math.round(innerHeight * .5); if (gl) gl.viewport(0, 0, cv.width, cv.height); measure(); }
+  function size() { measureRail(); if (fallScene) fallScene.size(); cv.width = Math.round(innerWidth * .5); cv.height = Math.round(innerHeight * .5); if (gl) gl.viewport(0, 0, cv.width, cv.height); measure(); }
   const mouse = [0, 0], m = [0, 0];
   addEventListener('pointermove', e => { mouse[0] = e.clientX / innerWidth - .5; mouse[1] = .5 - e.clientY / innerHeight; });
 
-  // ---- the fall: a column of space the camera sinks through, with its own scene at each depth ----
+  // ---- the fall: one body of light, carried down through the whole night ----
+  // The same petals are present from the first screen to the last. At each depth they take a different form:
+  // a quiet globe, a restless swarm, a slow drift, one long wave, a storm, a lotus, a still plain, a sun.
   document.documentElement.className = 'js';
   const UNIT = 34;                                    // world units between depths
   const fallScene = (function () {
@@ -105,12 +107,11 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     const scene = new T.Scene(), cam = new T.PerspectiveCamera(55, 1, .1, 400);
     const night = () => mode === 'night';
     const add = () => (night() ? T.AdditiveBlending : T.NormalBlending);
-    // A soft round dot, used for motes, glows and the sun.
     const dotTex = (function () { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'), g = x.createRadialGradient(64, 64, 0, 64, 64, 64);
       g.addColorStop(0, 'rgba(255,255,255,1)'); g.addColorStop(.35, 'rgba(255,255,255,.45)'); g.addColorStop(1, 'rgba(255,255,255,0)'); x.fillStyle = g; x.fillRect(0, 0, 128, 128); return new T.CanvasTexture(c); })();
     let seed = 5; const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
     const bell = (d, c, w) => Math.max(0, 1 - Math.abs(d - c) / w), step = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
-    const X0 = () => (innerWidth < 820 ? 0 : 7);       // scenes sit to the right of the words on wide screens
+    const X0 = () => (innerWidth < 820 ? 0 : innerWidth < 1200 ? 8 : 10);   // the body sits to the right of the words on wide screens
 
     // Motes fill the whole column. They are still; the camera's fall makes them rise.
     const N = 5200, mp = new Float32Array(N * 3);
@@ -119,22 +120,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
     if (innerWidth < 820) mg.setDrawRange(0, Math.round(N * .5));
     const motes = new T.Points(mg, new T.PointsMaterial({ size: .5, map: dotTex, transparent: true, depthWrite: false, sizeAttenuation: true })); scene.add(motes);
 
-    // 0 Awake: restless, sharp strokes.
-    const LN = 420, lp = new Float32Array(LN * 6);
-    for (let i = 0; i < LN; i++) { const x = (rnd() - .5) * 26, y = (rnd() - .5) * 20, z = -8 - rnd() * 26, a = rnd() * 6.283, l = .3 + rnd() * 1.6; lp.set([x, y, z, x + Math.cos(a) * l, y + Math.sin(a) * l, z], i * 6); }
-    const lg = new T.BufferGeometry(); lg.setAttribute('position', new T.BufferAttribute(lp, 3));
-    const strokes = new T.LineSegments(lg, new T.LineBasicMaterial({ transparent: true })); scene.add(strokes);
-
-    // 1 Drifting: large soft shapes and half-formed figures.
-    const blobs = []; const blobCols = ['#8f7bff', '#ffb7a0', '#3fc7c9', '#b9a0ff', '#ffd0b8'];
-    for (let i = 0; i < 12; i++) { const sp = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: blobCols[i % 5], transparent: true, depthWrite: false })); sp.userData = { x: (rnd() - .5) * 26, y: (rnd() - .5) * 22, z: -10 - rnd() * 22, s: 7 + rnd() * 12, p: rnd() * 6.283 }; scene.add(sp); blobs.push(sp); }
-    const forms = []; for (let i = 0; i < 4; i++) { const m = new T.LineSegments(new T.WireframeGeometry(i % 2 ? new T.IcosahedronGeometry(2.6, 0) : new T.TorusKnotGeometry(1.6, .5, 40, 6)), new T.LineBasicMaterial({ transparent: true })); m.userData = { x: (rnd() - .5) * 16, y: (rnd() - .5) * 12, z: -12 - rnd() * 10, p: rnd() * 6.283 }; scene.add(m); forms.push(m); }
-
-    // 2 Deep sleep: one long slow wave, barely there.
-    const WN = 160, wp = new Float32Array(WN * 3), wg = new T.BufferGeometry(); wg.setAttribute('position', new T.BufferAttribute(wp, 3));
-    const wave = new T.Line(wg, new T.LineBasicMaterial({ color: 0x8090c8, transparent: true })); scene.add(wave);
-
-    // 3-5 The dream: petals of light that storm (dreaming), close into a lotus (lucid), then open and turn to the pointer (working).
+    // The body: petals of light.
     const petalTex = (function () { const c = document.createElement('canvas'); c.width = 96; c.height = 256; const x = c.getContext('2d');
       const g = x.createLinearGradient(0, 256, 0, 0); g.addColorStop(0, 'rgba(255,255,255,.15)'); g.addColorStop(.35, 'rgba(255,255,255,.95)'); g.addColorStop(1, 'rgba(255,255,255,.55)');
       x.fillStyle = g; x.beginPath(); x.moveTo(48, 254); x.bezierCurveTo(-18, 170, 2, 60, 48, 2); x.bezierCurveTo(94, 60, 114, 170, 48, 254); x.fill();
@@ -142,39 +128,82 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
       const t2 = new T.CanvasTexture(c); t2.anisotropy = 4; return t2; })();
     const petalGeo = new T.PlaneGeometry(.62, 1.9); petalGeo.translate(0, .95, 0);
     const RINGS = 14, CORE = 9, ringN = k => 10 + k * 8; let M = 0; for (let k = 0; k < RINGS; k++) M += ringN(k);
-    const shards = new T.InstancedMesh(petalGeo, new T.MeshBasicMaterial({ map: petalTex, transparent: true, side: T.DoubleSide, depthWrite: false }), M);
-    const sh = [], dreamCols = ['#ff4fd8', '#31d8ff', '#ffd24a', '#a070ff', '#3df0c0'].map(c => new T.Color(c)), clearA = new T.Color('#4fc8ff'), clearB = new T.Color('#d8f6ff'), tmpC = new T.Color();
+    const body = new T.InstancedMesh(petalGeo, new T.MeshBasicMaterial({ map: petalTex, transparent: true, side: T.DoubleSide, depthWrite: false }), M);
+    const C = h => new T.Color(h), dreamCols = ['#ff4fd8', '#31d8ff', '#ffd24a', '#a070ff', '#3df0c0'].map(C);
+    const PAL = {
+      night: { globe: C('#ffe2bd'), swarm: C('#ffd0a0'), drift: ['#8f7bff', '#ffb7a0', '#3fc7c9'].map(C), wave: C('#6f80c0'), clearA: C('#4fc8ff'), clearB: C('#d8f6ff'), ground: ['#aab4ff', '#7d8cff'].map(C), sunA: C('#ffc98a'), sunB: C('#fff0cf') },
+      light: { globe: C('#20264a'), swarm: C('#1a1f3a'), drift: ['#7a66f0', '#f09a80', '#22a8b0'].map(C), wave: C('#6f80c0'), clearA: C('#0a84d8'), clearB: C('#0b2a6a'), ground: ['#3a3fa0', '#6a5fd0'].map(C), sunA: C('#f0a04a'), sunB: C('#ffc98a') },
+    };
+    const sh = [];
     for (let k = 0, i = 0; k < RINGS; k++) for (let j = 0; j < ringN(k); j++, i++) {
-      sh.push({ r: 1.5 + rnd() * 8.5, a: rnd() * 6.283, h: (rnd() - .5) * 20, sp: (.25 + rnd() * .9) * (rnd() < .5 ? -1 : 1), wob: rnd() * 6.283, c: dreamCols[i % 5], s: .7 + rnd() * .9,
+      // a place on a sphere (spread evenly), used by the globe, the swarm, the drift and the sun
+      const gy = 1 - 2 * (i + .5) / M, gr = Math.sqrt(1 - gy * gy), ga = i * 2.399963;
+      sh.push({ i, dx: Math.cos(ga) * gr, dy: gy, dz: Math.sin(ga) * gr, r1: rnd(), r2: rnd(), r3: rnd(), ph: rnd() * 6.283,
+        r: 1.5 + rnd() * 8.5, a: rnd() * 6.283, h: (rnd() - .5) * 20, sp: (.25 + rnd() * .9) * (rnd() < .5 ? -1 : 1), wob: rnd() * 6.283, c: dreamCols[i % 5], s: .7 + rnd() * .9,
         k, th: j / ringN(k) * 6.283 + k * .31, rad: .55 + k * .92, late: k >= CORE, ax: new T.Vector3(rnd() - .5, rnd() - .5, rnd() - .5).normalize() }); }
-    shards.instanceColor = new T.InstancedBufferAttribute(new Float32Array(M * 3), 3); scene.add(shards);
+    body.instanceColor = new T.InstancedBufferAttribute(new Float32Array(M * 3), 3); body.frustumCulled = false; scene.add(body);
     const flare = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: 0xffffff, transparent: true, depthWrite: false })); scene.add(flare);
-
-    // 6 The ground: a horizon and one wide, still light.
-    const ring = new T.Mesh(new T.TorusGeometry(46, .03, 6, 220), new T.MeshBasicMaterial({ color: 0xaab4ff, transparent: true })); ring.rotation.x = Math.PI / 2; scene.add(ring);
     const vast = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: 0x4a55d8, transparent: true, depthWrite: false })); scene.add(vast);
-    // 7 Morning: light coming up from below.
     const sun = new T.Sprite(new T.SpriteMaterial({ map: dotTex, color: 0xffc98a, transparent: true, depthWrite: false })); scene.add(sun);
 
-    const o = new T.Object3D(), qA = new T.Quaternion(), qB = new T.Quaternion(), eu = new T.Euler(), ptr = new T.Vector3(), colA = new T.Color('#0a84d8'), colB = new T.Color('#0b2a6a');
-    let Ls = 0, tAcc = 0, lastSnap = 0, wasLucid = false, push = 0;
+    // One form of the body. Writes where a petal is, how it is turned, its size and its colour.
+    const up = new T.Vector3(0, 1, 0), v = new T.Vector3(), eu = new T.Euler(), qFlat = new T.Quaternion().setFromAxisAngle(new T.Vector3(1, 0, 0), -Math.PI / 2 + .1);
+    const mk = () => ({ p: new T.Vector3(), q: new T.Quaternion(), s: new T.Vector3(), c: new T.Color() }), A = mk(), B = mk();
+    const ctx = { n: true, pal: PAL.night, nar: false, work: 0, spin: 0, px: 0, py: 0, rise: 0 };
+    function pose(kind, p, t, o) {
+      const pal = ctx.pal;
+      if (kind === 0) {            // the day, gathered: a globe of small lights turning slowly
+        const a = t * .12, c = Math.cos(a), s = Math.sin(a), x = p.dx * c - p.dz * s, z = p.dx * s + p.dz * c;
+        o.p.set(x * 5.6, p.dy * 5.6, z * 5.6); o.q.setFromUnitVectors(up, v.set(x, p.dy, z)); o.s.set(.42 * p.s, .42 * p.s, 1); o.c.copy(pal.globe);
+      } else if (kind === 1) {     // awake: the globe comes apart into a restless swarm
+        const R = 4 + 6 * p.r1; o.p.set(p.dx * R + Math.sin(t * 7 + p.ph) * .35, p.dy * R + Math.cos(t * 6.3 + p.ph * 1.3) * .35, p.dz * R + Math.sin(t * 5.1 + p.ph * .7) * .35);
+        o.q.setFromAxisAngle(p.ax, t * 2.2 + p.ph); o.s.set(.26, .7 * p.s, 1); o.c.copy(pal.swarm);
+      } else if (kind === 2) {     // drifting: slow, soft, half-formed
+        const R = 5 + 7 * p.r1, b = 1 + .12 * Math.sin(t * .2 + p.ph); o.p.set(p.dx * R + Math.sin(t * .11 + p.ph) * 3, p.dy * R * .8 + Math.cos(t * .09 + p.ph) * 2.4, p.dz * R + Math.sin(t * .07 + p.ph) * 2);
+        o.q.setFromAxisAngle(p.ax, t * .15 + p.ph); o.s.set(1.5 * b, .8 * b, 1); o.c.copy(pal.drift[p.i % 3]).multiplyScalar(ctx.n ? .5 : 1);
+      } else if (kind === 3) {     // deep sleep: everything settles into one long slow wave, almost gone
+        const u = p.r1, ph = u * 7 - t * .5, env = Math.sin(u * Math.PI) * 1.9; o.p.set((u - .5) * 46, Math.sin(ph) * env + (p.r2 - .5) * .5, (p.r3 - .5) * 4);
+        eu.set(0, 0, -Math.PI / 2 + Math.atan(Math.cos(ph) * env * .15), 'XYZ'); o.q.setFromEuler(eu); o.s.set(.3, .42, 1); o.c.copy(pal.wave).multiplyScalar(.4);
+      } else if (kind === 4) {     // dreaming: the wave breaks into a storm of colour
+        const a = p.a + t * p.sp; o.p.set(Math.cos(a) * p.r, p.h + Math.sin(t * .6 + p.wob) * 1.2, Math.sin(a) * p.r * .7);
+        o.q.setFromAxisAngle(p.ax, a * 1.7 + p.wob); o.s.set(p.s, p.s, 1); o.c.copy(p.c); if (!ctx.n) o.c.multiplyScalar(.85);
+      } else if (kind === 5) {     // lucid: the storm closes into a lotus; worked, its rings turn against each other and answer the hand
+        const w = ctx.work, th = p.th + (p.k % 2 ? -1 : 1) * (t * .02 + ctx.spin * .09), rr = p.rad * (ctx.nar ? .78 : .7) * (1 + .03 * Math.sin(t * .8)) * (1 + w * .12 * Math.sin(t * .9 + p.k));
+        const tx = Math.cos(th) * rr, ty = Math.sin(th) * rr; let lift = .32 + p.k * .035, sc = p.s * (p.late ? w : 1);
+        if (w > 0) { const f = w * Math.max(0, 1 - Math.hypot(tx - ctx.px, ty - ctx.py) / 6.5); lift += f * 1.1; sc *= 1 + f * .7; }
+        eu.set(lift, 0, th - Math.PI / 2, 'ZXY'); o.q.setFromEuler(eu); o.p.set(tx, ty, -p.k * .12); sc *= .88 + p.k * .03; o.s.set(sc, sc, 1);
+        o.c.copy(p.c); if (!ctx.n) o.c.multiplyScalar(.85); o.c.lerp(p.k % 2 ? pal.clearA : pal.clearB, 1 - w); if (w > 0) o.c.offsetHSL(w * (.5 + .5 * Math.sin(t * .35 + p.k * .7)) * .22, 0, 0);
+      } else if (kind === 6) {     // the ground: the lotus lies down and opens out into a still plain
+        const th = p.th + (p.k % 2 ? -1 : 1) * t * .012, rr = 1.6 + p.k * 2 + p.r2 * .8; o.p.set(Math.cos(th) * rr, -4.6 + Math.sin(t * .3 + rr * .5) * .12, -Math.sin(th) * rr - 4);
+        eu.set(0, 0, th - Math.PI / 2, 'XYZ'); o.q.setFromEuler(eu).premultiply(qFlat); o.s.set(p.s * 1.15, p.s * 1.15, 1); o.c.copy(pal.ground[p.k % 2]).multiplyScalar(ctx.n ? .7 : 1);
+      } else {                     // morning: the plain gathers into a sun and rises; at the end it lets go
+        const a = t * .05, c = Math.cos(a), s = Math.sin(a), x = p.dx * c - p.dz * s, z = p.dx * s + p.dz * c, R = 4.4 * Math.cbrt(p.r1) + (kind === 8 ? 30 * p.r2 : 0);
+        o.p.set(x * R, p.dy * R + ctx.rise + (kind === 8 ? 14 * p.r3 : 0), z * R); o.q.setFromUnitVectors(up, v.set(x, p.dy, z));
+        const g = kind === 8 ? .0001 : .62 * p.s; o.s.set(g, g, 1); o.c.copy(pal.sunA).lerp(pal.sunB, 1 - p.r1);
+      }
+    }
+    // Which two forms the body is between at each depth, from the opening (-1) to the end (8).
+    const FROM = [0, 1, 2, 3, 4, 5, 5, 6, 7], TO = [1, 2, 3, 4, 5, 5, 6, 7, 8];
+
+    const o = new T.Object3D(), tmpC = new T.Color();
+    let Ls = 0, tAcc = 0, lastSnap = 0, wasLucid = false, push = 0, born = 0;
     return {
       size() { renderer.setSize(innerWidth, innerHeight, false); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); },
       render(dt, d, mouse, inChamber) {
-        const t = (tAcc += dt / 1000), ad = add(), x0 = X0(), n = night();
+        const t = (tAcc += dt / 1000), ad = add(), x0 = X0(), n = night(), nar = innerWidth < 820;
         const y = -Math.max(-.6, d) * UNIT;
-        // How much each scene is present at this depth.
-        const w0 = 1 - step(.35, 1.05, d), w1 = bell(d, 1, .95), w2 = bell(d, 2, .8), wd = step(2.45, 3, d) * (1 - step(5.5, 6.1, d)), w6 = bell(d, 6, .95), w7 = step(6.5, 7.1, d);
+        const w0 = 1 - step(.35, 1.05, d), w1 = bell(d, 1, .95), wd = step(2.45, 3, d) * (1 - step(5.5, 6.1, d)), w6 = bell(d, 6, .95), w7 = step(6.5, 7.1, d);
         const lucid = step(3.5, 3.72, d), work = step(4.55, 5, d) * (1 - step(5.5, 6, d));
         Ls += (lucid - Ls) * Math.min(1, dt / 150);                 // the snap is quick
         if (lucid > .5 && !wasLucid && performance.now() - lastSnap > 1500) { lastSnap = performance.now(); const f = $('flash'); f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); }
         wasLucid = lucid > .5;
         push += ((inChamber ? 1 : 0) - push) * Math.min(1, dt / 500);
+        born = Math.min(1, born + dt / 1600);
 
         // The camera: restless when awake, rolling as sleep comes, still in deep sleep, swept round in the dream,
         // locked steady once lucid, wide and slow on the ground, tilting up toward morning.
         const jit = w0 * .05, roll = w1 * Math.sin(t * .23) * .16 + wd * (1 - Ls) * Math.sin(t * .5) * .1;
-        cam.position.set(mouse[0] * 1.2 + Math.sin(t * 13) * jit, y + mouse[1] * .8 + Math.cos(t * 11) * jit, 4 - push * (innerWidth < 820 ? 1.5 : 5));
+        cam.position.set(mouse[0] * 1.2 + Math.sin(t * 13) * jit, y + mouse[1] * .8 + Math.cos(t * 11) * jit, 4 - push * (nar ? 1.5 : 5));
         cam.rotation.set(-.04 + w7 * .16 + mouse[1] * .05, -mouse[0] * .06 + wd * (1 - Ls) * Math.sin(t * .31) * .12, roll);
         const fov = 55 + wd * (1 - Ls) * 16 - Ls * wd * 9 + w6 * 26 - push * 12; if (Math.abs(cam.fov - fov) > .05) { cam.fov += (fov - cam.fov) * Math.min(1, dt / 400); cam.updateProjectionMatrix(); }
 
@@ -182,50 +211,63 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
         const dens = .85 * (1 - bell(d, 2, 1.15)) * (1 - .6 * w6);
         motes.material.blending = ad; motes.material.opacity = Math.max(0, dens) * (n ? .8 : .55);
         motes.material.color.set(n ? '#cfd8ff' : '#2a2f55').lerp(tmpC.set(n ? '#ffd9a0' : '#c2702a'), w7).lerp(tmpC.set(n ? '#bff6ff' : '#0a6fd0'), Ls * wd * .7);
-        motes.material.size = .34 + w1 * .9 + w6 * .5;                 // soft and large while drifting
+        motes.material.size = .34 + w1 * .9 + w6 * .5;
 
-        strokes.visible = w0 > .01; strokes.position.y = 0;
-        strokes.rotation.z = Math.sin(t * 9) * .012 + Math.sin(t * 23) * .006; strokes.material.opacity = w0 * (n ? .5 : .55); strokes.material.color.set(n ? '#ffd6a8' : '#1a1f3a'); strokes.material.blending = ad;
-        strokes.position.x = x0 + Math.sin(t * 17) * .05;
+        // The body stays with the reader the whole way down.
+        const dd = Math.max(-1, Math.min(7.999, d)), seg = Math.floor(dd), f = dd - seg, ka = FROM[seg + 1], kb = TO[seg + 1];
+        const e = seg === 3 ? Ls * Ls * (3 - 2 * Ls) : seg === 2 ? step(.45, .8, f) : seg === 5 ? step(.45, .95, f) : seg === 7 ? step(.3, 1, f) : step(.25, .8, f);
+        const size = nar ? .78 : .9, cx = x0, cy = y + (nar ? 12 : 0), cz = nar ? -40 : -19;
+        ctx.n = n; ctx.pal = n ? PAL.night : PAL.light; ctx.nar = nar; ctx.work = work; ctx.spin += dt / 1000 * work;
+        ctx.px = (mouse[0] * 26 - 4) / size; ctx.py = mouse[1] * 14 / size; ctx.rise = -7 + 9 * step(6.4, 7.6, d);
+        for (let i = 0; i < M; i++) { const p = sh[i];
+          pose(ka, p, t, A);
+          if (kb !== ka && e > .001) { pose(kb, p, t, B); A.p.lerp(B.p, e); A.q.slerp(B.q, e); A.s.lerp(B.s, e); A.c.lerp(B.c, e); }
+          o.position.set(cx + A.p.x * size, cy + A.p.y * size, cz + A.p.z * size); o.quaternion.copy(A.q); o.scale.set(Math.max(.0001, A.s.x * size), Math.max(.0001, A.s.y * size), 1); o.updateMatrix();
+          body.setMatrixAt(i, o.matrix); body.setColorAt(i, A.c); }
+        body.instanceMatrix.needsUpdate = true; body.instanceColor.needsUpdate = true;
+        // Light adds to light in the dark; the lotus alone is solid. The change of blending hides behind the flash, and behind a dip on the way out.
+        const solid = !n || (Ls > .5 && d < 5.55);
+        body.material.blending = solid ? T.NormalBlending : T.AdditiveBlending;
+        body.material.opacity = born * (n ? (solid ? .92 : .8) : .86) * (n ? 1 - .7 * bell(d, 5.55, .1) : 1);
 
-        blobs.forEach(sp => { const u = sp.userData; sp.visible = w1 > .01; sp.position.set(x0 + u.x + Math.sin(t * .11 + u.p) * 3, -UNIT + u.y + Math.cos(t * .09 + u.p) * 2.4, u.z); sp.scale.setScalar(u.s * (1 + .12 * Math.sin(t * .2 + u.p))); sp.material.opacity = w1 * (n ? .3 : .42); sp.material.blending = ad; });
-        forms.forEach(m => { const u = m.userData; m.visible = w1 > .01; m.position.set(x0 + u.x, -UNIT + u.y + Math.sin(t * .13 + u.p) * 1.5, u.z); m.rotation.set(t * .05 + u.p, t * .07, 0); m.material.opacity = w1 * (.1 + .1 * Math.sin(t * .31 + u.p)); m.material.color.set(n ? '#ffffff' : '#30306a'); });
-
-        wave.visible = w2 > .01; if (wave.visible) { for (let i = 0; i < WN; i++) { const u = i / (WN - 1); wp[i * 3] = x0 - 4 + (u - .5) * 44; wp[i * 3 + 1] = -2 * UNIT + Math.sin(u * 7 - t * .5) * 1.7 * Math.sin(u * 3.14); wp[i * 3 + 2] = -16; } wg.attributes.position.needsUpdate = true; wave.material.opacity = w2 * .22; }
-
-        // The dream.
-        shards.visible = wd > .01;
-        if (shards.visible) {
-          const nar = innerWidth < 820, cyC = -UNIT * Math.max(3, Math.min(5.3, d)) + (nar ? 12 : 0), cz = nar ? -40 : -19, size = nar ? .78 : 1;
-          ptr.set(x0 + mouse[0] * 26 - 4, cyC + mouse[1] * 14, cz);
-          const e = Ls * Ls * (3 - 2 * Ls), breathe = 1 + .03 * Math.sin(t * .8);
-          for (let i = 0; i < M; i++) { const p = sh[i], a = p.a + t * p.sp;
-            // the storm: tumbling round the axis
-            let px = x0 + Math.cos(a) * p.r * size, py = cyC + p.h * size + Math.sin(t * .6 + p.wob) * 1.2, pz = cz + Math.sin(a) * p.r * .7;
-            qA.setFromAxisAngle(p.ax, a * 1.7 + p.wob);
-            // the lotus: rings of petals pointing outward, alternate rings turning opposite ways once the dream is worked
-            const th = p.th + (p.k % 2 ? -1 : 1) * (t * .02 + work * t * .09), rr = p.rad * (nar ? .78 : .7) * breathe * (1 + work * .12 * Math.sin(t * .9 + p.k));
-            const tx = x0 + Math.cos(th) * rr, ty = cyC + Math.sin(th) * rr;
-            let lift = .32 + p.k * .035;                                    // petals lean toward the viewer, more at the rim
-            let sc = p.s * wd * (p.late ? Math.max(1 - Ls, work) : 1);      // the outer rings fall away at lucidity and return, multiplied, when the dream is worked
-            if (work > 0) { const dist = Math.hypot(tx - ptr.x, ty - ptr.y), f = work * Math.max(0, 1 - dist / 6.5); lift += f * 1.1; sc *= 1 + f * .7; }
-            eu.set(lift, 0, th - Math.PI / 2, 'ZXY'); qB.setFromEuler(eu);
-            px += (tx - px) * e; py += (ty - py) * e; pz += (cz - p.k * .12 - pz) * e;
-            o.position.set(px, py, pz); o.quaternion.copy(qA).slerp(qB, e); o.scale.setScalar(Math.max(.0001, sc * size * (1 + e * (-.12 + p.k * .03)))); o.updateMatrix(); shards.setMatrixAt(i, o.matrix);
-            tmpC.copy(p.c); if (!n) tmpC.multiplyScalar(.85); tmpC.lerp(n ? (p.k % 2 ? clearA : clearB) : (p.k % 2 ? colA : colB), e * (1 - work));
-            if (work > 0) tmpC.offsetHSL(work * (.5 + .5 * Math.sin(t * .35 + p.k * .7)) * .22, 0, 0);
-            shards.setColorAt(i, tmpC); }
-          shards.instanceMatrix.needsUpdate = true; shards.instanceColor.needsUpdate = true; shards.material.opacity = Math.min(1, wd * 1.2) * (n ? .78 + e * .14 : .86); shards.material.blending = n && e < .5 ? T.AdditiveBlending : T.NormalBlending;
-          const since = (performance.now() - lastSnap) / 1000; flare.visible = Ls > .02 && wd > .1; flare.position.set(x0, cyC, cz - 2); flare.scale.setScalar(7 + 60 * Math.exp(-since * 2.2)); flare.material.opacity = Ls * wd * (.22 + .78 * Math.exp(-since * 2)) * (1 - work * .5); flare.material.blending = ad; flare.material.color.set(n ? '#dffaff' : '#8fd8ff');
-        } else flare.visible = false;
-
-        ring.visible = vast.visible = w6 > .01; ring.position.set(x0, -6 * UNIT - 3, -30); ring.rotation.z = t * .01; ring.material.opacity = w6 * (n ? .5 : .6); ring.material.color.set(n ? '#aab4ff' : '#3a3fa0');
-        vast.position.set(x0 + 4, -6 * UNIT + 2, -70); vast.scale.setScalar(150); vast.material.opacity = w6 * (n ? .5 : .35); vast.material.blending = ad;
-        sun.visible = w7 > .01; sun.position.set(x0, -7 * UNIT - 26 + step(6.5, 8, d) * 30, -55); sun.scale.setScalar(70 + w7 * 60); sun.material.opacity = w7 * (n ? .95 : .6); sun.material.blending = ad;
+        const since = (performance.now() - lastSnap) / 1000, lot = Ls * (1 - step(5.3, 5.9, d));
+        flare.visible = lot > .02; flare.position.set(cx, cy, cz - 2); flare.scale.setScalar(7 + 60 * Math.exp(-since * 2.2)); flare.material.opacity = lot * (.22 + .78 * Math.exp(-since * 2)) * (1 - work * .5); flare.material.blending = ad; flare.material.color.set(n ? '#bfeaff' : '#ffffff');
+        vast.visible = w6 > .01; vast.position.set(cx, cy - 4, cz - 40); vast.scale.setScalar(150); vast.material.opacity = w6 * (n ? .5 : .35); vast.material.blending = ad;
+        sun.visible = w7 > .01; sun.position.set(cx, cy + ctx.rise * size, cz - 6); sun.scale.setScalar(26 + w7 * 30); sun.material.opacity = w7 * (n ? .7 : .45) * (1 - .5 * step(7.4, 8, d)); sun.material.blending = ad;
         renderer.render(scene, cam);
       },
     };
   })();
+
+  // ---- the rail is a scrub bar: drag along it and the night moves under the finger ----
+  const gauge = $('gauge'), thumb = $('thumb'), clockEl = $('clock'), NAMES = links.map(a => a.title);
+  let stops = [0, 1];
+  function measureRail() { stops = links.map(a => a.offsetTop + a.offsetHeight / 2); }
+  const railY = d => { const x = Math.max(0, Math.min(stops.length - 1, d)), i = Math.min(stops.length - 2, Math.floor(x)); return stops[i] + (stops[i + 1] - stops[i]) * (x - i); };
+  const depthAt = clientY => { const y = clientY - $('rail').getBoundingClientRect().top; let i = 0; while (i < stops.length - 2 && y > stops[i + 1]) i++; return Math.max(0, Math.min(stops.length - 1, i + (y - stops[i]) / (stops[i + 1] - stops[i]))); };
+  // The scroll position at which a given depth sits in the middle of the screen. Sections run -1, 0..7, 8.
+  const scrollFor = d => { const x = Math.max(0, Math.min(centres.length - 1, d + 1)), i = Math.min(centres.length - 2, Math.floor(x)); return centres[i] + (centres[i + 1] - centres[i]) * (x - i) - innerHeight / 2; };
+  let scrub = null, scrubbed = 0;
+  const root = document.documentElement;
+  gauge.addEventListener('pointerdown', e => { scrub = { y: e.clientY, on: false, id: e.pointerId }; });
+  gauge.addEventListener('pointermove', e => {
+    if (!scrub) return;
+    if (!scrub.on && Math.abs(e.clientY - scrub.y) > 5) {
+      scrub.on = true; try { gauge.setPointerCapture(scrub.id); } catch (err) { /* older browsers */ }
+      document.body.classList.add('scrubbing'); root.style.scrollSnapType = 'none'; root.style.scrollBehavior = 'auto';
+      $('rail-hint').hidden = true; try { localStorage.setItem('svapna_scrubbed', '1'); } catch (err) { /* private mode */ }
+    }
+    if (scrub.on) { e.preventDefault(); scrollTo(0, scrollFor(depthAt(e.clientY))); }
+  });
+  const endScrub = () => {
+    if (!scrub) return; const was = scrub.on; scrub = null; if (!was) return;
+    scrubbed = performance.now(); document.body.classList.remove('scrubbing'); root.style.scrollBehavior = '';
+    // Come to rest on the nearest depth.
+    scrollTo({ top: scrollFor(Math.round(readDepth())), behavior: reduce ? 'auto' : 'smooth' }); setTimeout(() => { root.style.scrollSnapType = ''; }, 900);
+  };
+  gauge.addEventListener('pointerup', endScrub); gauge.addEventListener('pointercancel', endScrub);
+  gauge.addEventListener('click', e => { if (performance.now() - scrubbed < 400) e.preventDefault(); }, true);
+  try { if (localStorage.getItem('svapna_scrubbed') === '1') $('rail-hint').hidden = true; } catch (err) { /* private mode */ }
 
   // ---- frame ----
   let last = 0, ph = 0, shown = 99, inChamber = false;
@@ -254,7 +296,10 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*ptr*.22;
       const id = sections.find(s => +s.dataset.depth === near); if (id && history.replaceState && seen >= 0) history.replaceState(null, '', '#' + id.id); seen = 1;
     }
     const mins = Math.round(lerpList(MIN, depth)) + 23 * 60, hh = Math.floor(mins / 60) % 24, mm = mins % 60;
-    $('clock').textContent = ('0' + hh).slice(-2) + ':' + ('0' + mm).slice(-2);
+    const clockText = ('0' + hh).slice(-2) + ':' + ('0' + mm).slice(-2), at = Math.max(0, Math.min(7, Math.round(depth)));
+    if (clockEl.textContent !== clockText) { clockEl.textContent = clockText; $('scrub-time').textContent = clockText; }
+    if (clockEl.dataset.name !== NAMES[at]) { clockEl.dataset.name = NAMES[at]; $('scrub-name').textContent = NAMES[at]; }
+    const ty = railY(depth); thumb.style.transform = 'translateY(' + ty.toFixed(1) + 'px)'; clockEl.style.transform = 'translateY(' + ty.toFixed(1) + 'px) translateY(-50%)';
     requestAnimationFrame(frame);
   }
 

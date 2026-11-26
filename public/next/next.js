@@ -401,10 +401,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
       tx.fillStyle = cur ? L.ring : g; tx.fillRect(x - (cur ? 1.5 : 1), cur ? 0 : 12, cur ? 3 : 2, r.height - (cur ? 0 : 12));
     });
   }
-  strip.addEventListener('click', e => {
-    const r = strip.getBoundingClientRect(), f = (e.clientX - r.left - 6) / (r.width - 12);
-    stopDrift(); show(Math.round(f * (shown.length - 1)));
-  });
+  // The strip is a playback bar: touch it anywhere, or drag along it, and the voice under the finger is the one shown.
+  let stripDrag = false, stripLast = 0;
+  const stripAt = e => { const r = strip.getBoundingClientRect(); return Math.max(0, Math.min(shown.length - 1, Math.round((e.clientX - r.left - 6) / (r.width - 12) * (shown.length - 1)))); };
+  strip.addEventListener('pointerdown', e => { stripDrag = true; try { strip.setPointerCapture(e.pointerId); } catch (err) { /* older browsers */ } stopDrift(); show(stripAt(e)); });
+  strip.addEventListener('pointermove', e => { if (!stripDrag) return; const i = stripAt(e), now = performance.now(); if (i !== at && now - stripLast > 60) { stripLast = now; show(i); } });
+  strip.addEventListener('pointerup', e => { if (!stripDrag) return; stripDrag = false; const i = stripAt(e); if (i !== at) show(i); });
+  strip.addEventListener('pointercancel', () => { stripDrag = false; });
 
   // ---- scenes -------------------------------------------------------------------------------
   // Text arrives a word at a time.
