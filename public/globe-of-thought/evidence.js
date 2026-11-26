@@ -8186,7 +8186,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Turning back to oneself, then acting on others",
           "why": "Mencius first sends a person inward to test their own sincerity, then in the next sentence tells them to act with consideration for others as the nearest way to humaneness. The inward turn and the turn to others are held together, which puts it at both.",
-          "limit": "The first sentence alone could be read as purely inward, and some commentators do so; the pairing with the second sentence is what places it at both. The English is the atlas’s own unreviewed translation."
+          "limit": "The first sentence alone could be read as purely inward, and some commentators do so; the pairing with the second sentence is what places it at both. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -8256,7 +8257,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Improving oneself, then benefiting all",
           "why": "Mencius says a gentleman works on his own character when he has no power and spreads that goodness to the world when he does. Self-cultivation and service to others belong to one path, which puts it at both.",
-          "limit": "The sentence follows a statement that when thwarted the gentleman keeps his integrity, so it sets order by circumstance and does not rank the two goods. The English is the atlas’s own unreviewed translation."
+          "limit": "The sentence follows a statement that when thwarted the gentleman keeps his integrity, so it sets order by circumstance and does not rank the two goods. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -9681,7 +9683,8 @@ window.PILOT_EVIDENCE={
           "score": "company",
           "facet": "Humans prevail because they form groups",
           "why": "Xunzi explains human dominance over stronger animals by the ability to form a social group with divided roles. People live well together and cannot do so apart, which puts it at company.",
-          "limit": "The claim concerns the survival and order of a society, not whether individuals sometimes need solitude. The English is the atlas’s own unreviewed translation."
+          "limit": "The claim concerns the survival and order of a society, not whether individuals sometimes need solitude. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -9906,7 +9909,8 @@ window.PILOT_EVIDENCE={
           "score": "self",
           "facet": "Everyone acts for their own benefit",
           "why": "Han Feizi argues that even a landowner who feeds his hired labourers well and labourers who plough hard do so for their own gain, not out of affection. Self-interest is taken as the real motive, which puts it at self.",
-          "limit": "Han Feizi wrote this to advise rulers on managing people, not as an ethic to live by, and he states that this is how people behave, not that they should. The English is the atlas’s own unreviewed translation."
+          "limit": "Han Feizi wrote this to advise rulers on managing people, not as an ethic to live by, and he states that this is how people behave, not that they should. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -14327,7 +14331,8 @@ window.PILOT_EVIDENCE={
           "score": "changing",
           "facet": "Body and mind altering every day",
           "why": "Xiong of Yu compares the world’s unnoticed change to a person’s own, whose looks and mind alter every day and whose body is shed little by little. The person is real but never the same, which puts it at changing.",
-          "limit": "The speaker is a figure in a compiled book, and the analogy illustrates the transformation of all things rather than the self as such. The Liezi was put together by about 300 CE. The English is the atlas’s own unreviewed translation."
+          "limit": "The speaker is a figure in a compiled book, and the analogy illustrates the transformation of all things rather than the self as such. The Liezi was put together by about 300 CE. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -17299,7 +17304,8 @@ window.PILOT_EVIDENCE={
           "score": "others",
           "facet": "Wishing his own hut ruined for others’ shelter",
           "why": "After a storm wrecks his hut, Du Fu wishes for great halls to shelter every poor scholar, and in the closing lines says he would accept his own hut being ruined and himself freezing if they could be. He puts others’ shelter ahead of his own, which puts it at others.",
-          "limit": "The words are a wish voiced in a poem of hardship, not a rule of conduct, and the quoted wish is a line apart from the closing lines that state his own sacrifice. The English is the atlas’s own unreviewed translation."
+          "limit": "The words are a wish voiced in a poem of hardship, not a rule of conduct, and the quoted wish is a line apart from the closing lines that state his own sacrifice. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -18565,7 +18571,8 @@ window.PILOT_EVIDENCE={
           "score": "unscored",
           "facet": "Change and constancy depending on the view",
           "why": "Su Shi answers a guest’s lament over the brevity of life with two viewpoints: seen as change nothing lasts a moment, seen as unchanging the self and things have no end. The passage declines to choose between a passing and an enduring self, which leaves it unscored.",
-          "limit": "The speaker is a persona in a prose poem about a boat trip, and the text goes on to advise enjoying the river’s wind and the moon, so the stance is an attitude as much as a claim. The English is the atlas’s own unreviewed translation."
+          "limit": "The speaker is a persona in a prose poem about a boat trip, and the text goes on to advise enjoying the river’s wind and the moon, so the stance is an attitude as much as a claim. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -19518,7 +19525,8 @@ window.PILOT_EVIDENCE={
           "score": "company",
           "facet": "Being alone as a trial",
           "why": "In a late lyric of widowhood the speaker sits at her window through a long autumn day and asks how she can endure it alone. Being alone is felt as a lack and a hardship, which puts it at company.",
-          "limit": "The line is the voice of a lyric speaker, widely read as Li Qingzhao’s own, and the poem is one of grief and not an argument about solitude. The date and place of composition are traditional. The English is the atlas’s own unreviewed translation."
+          "limit": "The line is the voice of a lyric speaker, widely read as Li Qingzhao’s own, and the poem is one of grief and not an argument about solitude. The date and place of composition are traditional. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -25039,7 +25047,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Innate knowing, clouded and cleared",
           "why": "Wang Yangming holds that everyone is born with innate knowing, yet it is clouded and must be cleared by study and discipline. An endowment that has to be developed puts the passage at both.",
-          "limit": "The passage belongs to a discussion of sages and ordinary people differing in degree, and “knowing” here is the moral knowing of his school, not general intelligence. The English is the atlas’s own unreviewed translation."
+          "limit": "The passage belongs to a discussion of sages and ordinary people differing in degree, and “knowing” here is the moral knowing of his school, not general intelligence. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -25074,7 +25083,8 @@ window.PILOT_EVIDENCE={
           "score": "on-oneself",
           "facet": "Joy as the mind’s own substance",
           "why": "Wang Yangming says joy belongs to the mind by its nature, in sage and ordinary person alike, and persists even amid worry. Happiness lies within a person’s own power, which puts it at on-oneself.",
-          "limit": "He adds that people lose sight of this joy and need a moment of sincere awareness to recover it, so it is available but not automatic. The English is the atlas’s own unreviewed translation."
+          "limit": "He adds that people lose sight of this joy and need a moment of sincere awareness to recover it, so it is available but not automatic. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -30161,7 +30171,8 @@ window.PILOT_EVIDENCE={
           "score": "has-meaning",
           "facet": "Grief within God’s ordering",
           "why": "Consoling the parents of a dead child, Wheatley tells them to read their loss as the working of unerring grace and to answer it with praise. Grief is treated as part of a larger good, which puts it at has-meaning.",
-          "limit": "This is a consolation poem in the Christian elegy tradition, written for a particular family, so it states the convention rather than arguing it. Wheatley’s own captivity and loss are not the subject here."
+          "limit": "This is a consolation poem in the Christian elegy tradition, written for a particular family, so it states the convention rather than arguing it. Wheatley’s own captivity and loss are not the subject here.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -30764,7 +30775,8 @@ window.PILOT_EVIDENCE={
           "score": "others",
           "facet": "The good man’s duty to all people",
           "why": "Cugoano describes the true philanthropist as one who regards every person as a brother or friend and works for their good whatever their station. The passage puts duty to others at the centre of a good life, which puts it at others.",
-          "limit": "The sentence is a portrait of an ideal person inside an argument that Christian law condemns the slave trade, not a general claim about when self-interest may count. The scanned text contains recognition errors."
+          "limit": "The sentence is a portrait of an ideal person inside an argument that Christian law condemns the slave trade, not a general claim about when self-interest may count. The scanned text contains recognition errors.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -30973,7 +30985,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Planters’ safety bound to their slaves’ treatment",
           "why": "Addressing slave-owners, Equiano argues that their own safety and prosperity depend on treating the enslaved as men. Their good and the good of the enslaved are tied together, which puts it at both.",
-          "limit": "The argument is addressed to slave-holders and appeals to their prudence, so it is a tactic as well as a conviction; elsewhere the Narrative condemns slavery outright. Some scholars question details of Equiano’s early life."
+          "limit": "The argument is addressed to slave-holders and appeals to their prudence, so it is a tactic as well as a conviction; elsewhere the Narrative condemns slavery outright. Some scholars question details of Equiano’s early life.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -32425,10 +32438,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "no-purpose",
+          "score": "unscored",
           "facet": "Slavery as suffering to be ended",
-          "why": "Prince presents what she lived through as an evil that others must end, and she asks readers to break the chains. Suffering here has no lesson or purpose, only a remedy, which puts it at no-purpose.",
-          "limit": "The narrative was dictated and edited for the anti-slavery campaign, and the words passed through other hands. Elsewhere she also describes God preserving her for better things, so the wider text is not a flat denial of meaning."
+          "why": "Prince presents what she lived through as an evil that others must end, and she asks readers to break the chains. Suffering here has no lesson or purpose, only a remedy, which puts it at no-purpose. A second, independent reading moved this placement from “no purpose” to “unscored”: The words bear witness to suffering and ask that it be known; they do not say whether it has a purpose.",
+          "limit": "The narrative was dictated and edited for the anti-slavery campaign, and the words passed through other hands. Elsewhere she also describes God preserving her for better things, so the wider text is not a flat denial of meaning.",
+          "second": "settled"
         }
       },
       "check": {
@@ -32462,7 +32476,8 @@ window.PILOT_EVIDENCE={
           "score": "ultimate-real",
           "facet": "God who knows the slave’s heart",
           "why": "Prince appeals to God as the one witness who knows what the enslaved feel when families are sold apart. The appeal takes God to be real and attentive, which puts it at ultimate-real.",
-          "limit": "This is a narrated aside in an anti-slavery memoir shaped for a Christian readership, not an argument for God. The surrounding text was edited by Thomas Pringle and Susanna Strickland."
+          "limit": "This is a narrated aside in an anti-slavery memoir shaped for a Christian readership, not an argument for God. The surrounding text was edited by Thomas Pringle and Susanna Strickland.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -32566,7 +32581,8 @@ window.PILOT_EVIDENCE={
           "score": "has-meaning",
           "facet": "Enslavement seen as Providence’s road",
           "why": "Crowther calls the day he was seized and sold “unhappy” for the loss of his family, and “blessed” because Providence had marked it out as the start of his journey to the Gospel. His suffering is read as part of a larger good, which puts it at has-meaning.",
-          "limit": "Written by a convert and later Anglican bishop for the Church Missionary Society, the passage uses its terms about Africa and does not speak for other enslaved people. He also names his loss of parents and sisters as unhappy."
+          "limit": "Written by a convert and later Anglican bishop for the Church Missionary Society, the passage uses its terms about Africa and does not speak for other enslaved people. He also names his loss of parents and sisters as unhappy.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -34295,7 +34311,8 @@ window.PILOT_EVIDENCE={
           "score": "continues",
           "facet": "The Christian’s death and heaven",
           "why": "Seacole, drawing on deathbeds she attended, says the labour of a good life earns the repose of heaven. She treats death as a passage to rest, which puts it at continues.",
-          "limit": "The claim rests on her own nursing experience and on faith, not on argument, and in the same passage she says death is always terrible and that how it is borne depends partly on temperament. The view is a Victorian Christian one."
+          "limit": "The claim rests on her own nursing experience and on faith, not on argument, and in the same passage she says death is always terrible and that how it is borne depends partly on temperament. The view is a Victorian Christian one.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -34329,7 +34346,8 @@ window.PILOT_EVIDENCE={
           "score": "meaning-given",
           "facet": "Providence and usefulness",
           "why": "Replying to a toast at Cruces, Seacole says Providence made her to be useful, so that her usefulness is a given purpose rather than a choice. That puts the passage at meaning-given.",
-          "limit": "The line is a spoken reply reported in a memoir, partly deflecting praise and a remark about her complexion, so it is not a worked account of life's meaning. Elsewhere in the book she also speaks of choosing her work."
+          "limit": "The line is a spoken reply reported in a memoir, partly deflecting praise and a remark about her complexion, so it is not a worked account of life's meaning. Elsewhere in the book she also speaks of choosing her work.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -37146,7 +37164,8 @@ window.PILOT_EVIDENCE={
           "score": "both",
           "facet": "Shared human nature, shaped by schooling",
           "why": "Firmin holds that all peoples share one human endowment, and that what minds produce depends on the instruction and education they receive. The passage gives both an endowment and its formation a part, which puts it at both.",
-          "limit": "The sentence is the conclusion of a book arguing against racial hierarchy, so it stresses likeness and does not treat individual differences. The English is the atlas’s own unreviewed translation."
+          "limit": "The sentence is the conclusion of a book arguing against racial hierarchy, so it stresses likeness and does not treat individual differences. The English is the atlas’s own unreviewed translation.",
+          "second": "differed"
         }
       },
       "check": {
@@ -37567,7 +37586,8 @@ window.PILOT_EVIDENCE={
           "score": "made",
           "facet": "Capacity formed by training",
           "why": "Thomas answers the historian James Anthony Froude, who prescribed European government and education as the way to qualify black West Indians. He says these qualifications are mastered through training, and that denying the prize afterwards contradicts the premise, which puts it at made.",
-          "limit": "The phrase comes from a polemic against Froude and mostly exposes an inconsistency, so it assumes more than it argues about how character is formed. The scanned text contains recognition errors."
+          "limit": "The phrase comes from a polemic against Froude and mostly exposes an inconsistency, so it assumes more than it argues about how character is formed. The scanned text contains recognition errors.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -38001,7 +38021,8 @@ window.PILOT_EVIDENCE={
           "score": "made",
           "facet": "Everything begins as coal",
           "why": "Martí says that all that is beautiful and ordered, like a diamond, began as coal. Worth is the result of a becoming and not a starting endowment, which puts it at made.",
-          "limit": "This is a single image in a poem of plain verses about a speaker’s experience, and it is not an argument about persons. The verse speaks of things in general, so applying it to human formation is an inference. The English is the atlas’s own unreviewed translation."
+          "limit": "This is a single image in a poem of plain verses about a speaker’s experience, and it is not an argument about persons. The verse speaks of things in general, so applying it to human formation is an inference. The English is the atlas’s own unreviewed translation.",
+          "second": "differed"
         }
       },
       "check": {
@@ -38178,7 +38199,8 @@ window.PILOT_EVIDENCE={
           "score": "determined",
           "facet": "Effort cannot undo God’s decree",
           "why": "The proverb says that no amount of effort cancels what God has decreed, so outcomes are fixed from above. It places a person’s choices inside a decree they cannot alter, which puts it at determined.",
-          "limit": "A proverb stands for a common saying, not one thinker, and Taylor’s note says it is often used to excuse not taking precautions. The English is Taylor’s own 1891 rendering of the Swahili, and the scanned text contains recognition errors."
+          "limit": "A proverb stands for a common saying, not one thinker, and Taylor’s note says it is often used to excuse not taking precautions. The English is Taylor’s own 1891 rendering of the Swahili, and the scanned text contains recognition errors.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -38212,7 +38234,8 @@ window.PILOT_EVIDENCE={
           "score": "company",
           "facet": "Working alone is self-ruin",
           "why": "In the full verse, farming without help is said to ruin the person who does it alone, because the burnt brush and weeds cannot be gathered by one pair of hands. Being alone is treated as a danger, which puts it at company.",
-          "limit": "The saying is about farm work, not about solitude as a way of life, and it appears in a note to proverb 178, not as a numbered saying. The English is Taylor’s own rendering and the scanned text contains recognition errors."
+          "limit": "The saying is about farm work, not about solitude as a way of life, and it appears in a note to proverb 178, not as a numbered saying. The English is Taylor’s own rendering and the scanned text contains recognition errors.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -42453,10 +42476,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "A lover’s moods mirrored in the beloved",
-          "why": "The speaker says her laughter and singing now follow her lover’s, and the next line has her sleeping at his feet. Her mood is formed by the other person, which puts it at constitutive for this aspect of the self.",
-          "limit": "This is a love sonnet, so the speaker is dramatising devotion and not stating a theory of the self. The claim covers moods and conduct, not identity as a whole. The English is the atlas’s own unreviewed translation."
+          "why": "The speaker says her laughter and singing now follow her lover’s, and the next line has her sleeping at his feet. Her mood is formed by the other person, which puts it at constitutive for this aspect of the self. A second, independent reading moved this placement from “necessary” to “unscored”: The lines describe one mood following another’s; they do not say that the other person forms who the speaker is.",
+          "limit": "This is a love sonnet, so the speaker is dramatising devotion and not stating a theory of the self. The claim covers moods and conduct, not identity as a whole. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
         }
       },
       "check": {
@@ -43852,7 +43876,8 @@ window.PILOT_EVIDENCE={
           "score": "follow",
           "facet": "Taste everything, because everything is beautiful",
           "why": "The speaker urges her beloved to run, travel and sample everything the world offers, because everything is beautiful. Desire is to be followed and fulfilled, which puts it at follow.",
-          "limit": "The urging is a lover’s farewell in a poem whose last stanzas say the roads all lead back to her, so the freedom it grants is tinged with longing. The English is the atlas’s own unreviewed translation."
+          "limit": "The urging is a lover’s farewell in a poem whose last stanzas say the roads all lead back to her, so the freedom it grants is tinged with longing. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
         }
       },
       "check": {

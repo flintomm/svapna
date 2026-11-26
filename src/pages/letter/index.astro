@@ -5,8 +5,20 @@ import { allLetters } from '../../lib/letters.js';
 <Read title="Letters — the Svapna newsletter archive" description="A letter goes out when new work publishes, about one a month. Each is kept here." path="/letter" crumbs={[{ name: 'Letters', path: '/letter' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · Letters · <a href="/letter.xml">RSS</a></p>
   <h1>Past <em>letters.</em></h1>
-  <p class="lede">A letter goes out when new work publishes. About one a month. Each is kept here.</p>
+  <p class="lede">A letter goes out when new work publishes, about once a month. Each one is kept here.</p>
+  <form class="form sub" id="sub" novalidate>
+    <label for="sub-email">Get the letter by email</label>
+    <p class="sub-row"><input id="sub-email" name="email" type="email" required autocomplete="email" placeholder="Your email address" /><button class="go" type="submit">Subscribe →</button></p>
+    <input class="trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <p class="note" role="status" hidden></p>
+    <p class="small">Sent through Buttondown. One click to unsubscribe from any letter. <a href="/about/privacy">Privacy</a>.</p>
+  </form>
   {allLetters.length === 0
     ? <p class="def" style="margin-top:44px">The first letter is in preparation.</p>
     : <div class="qlist">{allLetters.map(l => <a href={`/letter/${l.slug}`}><span><b class="circle-name">{l.title}</b>{l.excerpt && <i class="circle-line">{l.excerpt}</i>}</span><span>{l.displayDate}</span></a>)}</div>}
+  <script is:inline>
+    (function () { var f = document.getElementById('sub'), note = f.querySelector('.note'), btn = f.querySelector('button'); function say(t) { note.textContent = t; note.hidden = !t; }
+      f.addEventListener('submit', function (e) { e.preventDefault(); var em = f.email.value.trim(); if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { say('That email address looks incomplete.'); return; } btn.disabled = true; say('Sending…');
+        fetch('/api/contact/subscribe', { method: 'POST', body: new FormData(f), headers: { Accept: 'application/json' } }).then(function (r) { if (r.ok) { f.querySelector('.sub-row').hidden = true; say('Thank you. The next letter will go to that address.'); if (typeof window.pirsch === 'function') window.pirsch('letter_subscribe'); return; } return r.json().catch(function () { return {}; }).then(function (b) { say((b && b.error) || 'Something went wrong. Try again later.'); btn.disabled = false; }); }).catch(function () { say('Network error. Try again later.'); btn.disabled = false; }); }); })();
+  </script>
 </Read>

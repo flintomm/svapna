@@ -168,3 +168,4 @@ html[data-type=plain] body{letter-spacing:.01em;line-height:1.7}
 .find-short{display:flex;gap:8px;align-items:center;cursor:pointer}.find-short input{accent-color:var(--ink);width:16px;height:16px}
 .handout-ask{display:none}
 @media print{body.print-kept main>*:not(#kept){display:none!important}body.print-kept #kept{display:block!important}body.print-kept .handout-ask{display:block;font-size:12pt;font-weight:600;margin:6pt 0 14pt}body.print-kept #kept .def,body.print-kept .you-kept button{display:none!important}body.print-kept .row.you-kept{padding:10pt 0;break-inside:avoid}body.print-kept .you-say{font-size:13pt}}
+.sub{margin-top:30px}.sub-row{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:baseline}.sub-row input{flex:1 1 16rem;margin-top:0}.sub-row .go{margin-top:0}.sub-row[hidden]{display:none}

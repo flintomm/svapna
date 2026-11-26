@@ -40,7 +40,7 @@ const names = c.members.slice(0, 6).map(m => m.t.name).join(', ');
 
   <section>
     <h2>{c.members.length} in this circle</h2>
-    <p class="def">Ordered by how many of the circle’s questions each has spoken to. Membership rests on draft readings of a few passages, not on a thinker’s whole work.</p>
+    <p class="def">Ordered by how many of the circle’s questions each has spoken to. Membership rests on machine readings of a few passages, not on a thinker’s whole work.</p>
     <div class="index">{c.members.map(m => <a href={`/thinkers/${m.t.slug}`}>{m.t.name}<span>{m.t.when}</span></a>)}</div>
   </section>
 
