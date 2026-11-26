@@ -33607,6 +33607,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nisia-floresta-given-or-made",
+      "question": "given-or-made",
+      "name": "Nísia Floresta",
+      "short": "Nísia Floresta",
+      "work": "Discurso que a suas educandas dirigio",
+      "excerpt": "mister para conseguir esse digno fim, que ella se amolde desde a infancia á pratica exacta e constante das virtudes",
+      "translation": "it is necessary, to reach that worthy end, that she mould herself from childhood to the exact and constant practice of the virtues",
+      "period": "18 December 1847",
+      "dateShort": "1847",
+      "dateFull": "18 December 1847",
+      "sortYear": 1847,
+      "sourceLabel": "Portuguese Wikisource transcription of the 1847 printing",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Discurso_que_%C3%A0s_suas_educandas_dirigiu_N%C3%ADsia_Floresta_Brasileira_Augusta",
+      "locator": "Third paragraph of the speech.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.92,
+      "lng": -43.35,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The printed title page gives the speech to the pupils of the Colégio Augusto, Rio de Janeiro, on 18 December 1847; the exact site of the school within the city is not stated, so the pin is approximate.",
+      "placeSource": "https://pt.wikisource.org/wiki/Discurso_que_%C3%A0s_suas_educandas_dirigiu_N%C3%ADsia_Floresta_Brasileira_Augusta",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Virtue formed from childhood",
+          "why": "Addressing her pupils, the educator says a woman must be shaped from childhood to the steady practice of virtue if she is to fulfil her mission. Character is formed by training, which puts the passage at ‘made’.",
+          "limit": "A school-leaving speech with the moral language of its time, which assigns women a mission of consolation and peace; the same text insists on the value of education for women. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "rossetti-death",
       "question": "death",
       "name": "Christina Rossetti",
@@ -33674,6 +33710,114 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "gertrudis-gomez-de-avellaneda-free-will",
+      "question": "free-will",
+      "name": "Gertrudis Gómez de Avellaneda",
+      "short": "Avellaneda",
+      "work": "Al destino",
+      "excerpt": "Escrito estaba: el cielo me condena A tornar siempre al cautiverio rudo",
+      "translation": "It was written: heaven condemns me to return always to harsh captivity",
+      "period": "Mid-nineteenth century (page gives no date)",
+      "dateShort": "Mid-nineteenth century (page gives no date)",
+      "dateFull": "Mid-nineteenth century (page gives no date)",
+      "sortYear": 1850,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/Al_destino",
+      "locator": "Second line of the first stanza onward.",
+      "place": "Madrid, Spain",
+      "lat": 40.42,
+      "lng": -3.7,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Avellaneda lived mainly in Madrid from the 1840s, but the linked page gives no place of writing, so the pin marks the city of her main career; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Al_destino",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Fate as a chain",
+          "why": "The speaker says her fate was written beforehand and that every attempt to break the chain only returns her to it. She surrenders to destiny like a dry leaf in a whirlwind, which puts the poem at ‘determined’.",
+          "limit": "A lyric poem in the voice of a speaker who submits to destiny in a moment of despair, and the last lines turn defiant, so it does not state Avellaneda’s considered view. The page gives no date of writing. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "gertrudis-gomez-de-avellaneda-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Gertrudis Gómez de Avellaneda",
+      "short": "Avellaneda",
+      "work": "A él (No existe lazo ya; todo está roto)",
+      "excerpt": "hice un mundo de ti que hoy se anonada, y en honda y vasta soledad me miro",
+      "translation": "I made a world of you that now is destroyed, and I see myself in deep and vast solitude",
+      "period": "Mid-nineteenth century (page gives no date)",
+      "dateShort": "Mid-nineteenth century (page gives no date)",
+      "dateFull": "Mid-nineteenth century (page gives no date)",
+      "sortYear": 1850,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/A_%C3%A9l_(1-G%C3%B3mez_de_Avellaneda)",
+      "locator": "Sixth stanza.",
+      "place": "Madrid, Spain",
+      "lat": 40.42,
+      "lng": -3.7,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Avellaneda lived mainly in Madrid from the 1840s, but the linked page gives no place of writing, so the pin marks the city of her main career; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/A_%C3%A9l_(1-G%C3%B3mez_de_Avellaneda)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Solitude after a lost bond",
+          "why": "With the bond broken, the speaker finds her freedom sad because she had made a whole world of the other person. Being alone is felt as emptiness, which puts the passage at ‘company’.",
+          "limit": "A farewell poem about one failed love, so the solitude it describes is the pain of one loss, not a general view on company. The page gives no date of writing. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "gertrudis-gomez-de-avellaneda-suffering",
+      "question": "suffering",
+      "name": "Gertrudis Gómez de Avellaneda",
+      "short": "Avellaneda",
+      "work": "A él (No existe lazo ya; todo está roto)",
+      "excerpt": "De grandes faltas vengador terrible dócil llenaste tu misión, ¿la ignoras?",
+      "translation": "You were the terrible avenger of great faults; you docilely fulfilled your mission, do you not know it?",
+      "period": "Mid-nineteenth century (page gives no date)",
+      "dateShort": "Mid-nineteenth century (page gives no date)",
+      "dateFull": "Mid-nineteenth century (page gives no date)",
+      "sortYear": 1850,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/A_%C3%A9l_(1-G%C3%B3mez_de_Avellaneda)",
+      "locator": "Fourth stanza.",
+      "place": "Madrid, Spain",
+      "lat": 40.42,
+      "lng": -3.7,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Avellaneda lived mainly in Madrid from the 1840s, but the linked page gives no place of writing, so the pin marks the city of her main career; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/A_%C3%A9l_(1-G%C3%B3mez_de_Avellaneda)",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Pain as avenging faults",
+          "why": "The speaker reads the man’s cruelty as a mission to avenge her own great faults, and adds that God willed it. Her pain is deserved and sent, which puts the poem at ‘has-meaning’.",
+          "limit": "A speaker in the first moment of recovery from a failed love; the reading of her suffering as punishment is one the poem offers and may not be her settled view. The page gives no date of writing. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35477,6 +35621,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "gertrudis-gomez-de-avellaneda-death",
+      "question": "death",
+      "name": "Gertrudis Gómez de Avellaneda",
+      "short": "Avellaneda",
+      "work": "A una joven madre en la pérdida de su hijo",
+      "excerpt": "las almas puras Viajan por esos astros de las alturas",
+      "translation": "pure souls travel among those stars on high",
+      "period": "1868",
+      "dateShort": "1868",
+      "dateFull": "1868",
+      "sortYear": 1868,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/A_una_joven_madre_en_la_p%C3%A9rdida_de_su_hijo",
+      "locator": "Lines near the end, after the verse on the evening light.",
+      "place": "Madrid, Spain",
+      "lat": 40.42,
+      "lng": -3.7,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Avellaneda lived mainly in Madrid from the 1840s, but the linked page gives no place of writing, so the pin marks the city of her main career; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/A_una_joven_madre_en_la_p%C3%A9rdida_de_su_hijo",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Souls among the stars",
+          "why": "The poem consoles a mother by saying that the dead child’s pure soul travels among the stars and still looks down on her. Something of the person goes on, so it sits at ‘continues’.",
+          "limit": "A consoling poem addressed to a grieving mother, and the speaker puts the belief in the mouth of unnamed ‘they say’ sources; it is a poetic comfort and not a doctrinal statement. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "umpengula-mbanda-death",
       "question": "death",
       "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
@@ -35509,6 +35689,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "zulu-informants-death",
+      "question": "death",
+      "name": "Zulu informants (recorded by Henry Callaway)",
+      "short": "Zulu informants",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "we say that death is in the power of the Amadhlozi, and if they do not wish, it cannot enter.",
+      "period": "Recorded in the 1860s; published 1868",
+      "dateShort": "1868",
+      "dateFull": "1868",
+      "sortYear": 1868,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1868–70), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the account of how the dead are worshipped after a funeral.",
+      "place": "Springvale mission, Natal (now South Africa)",
+      "lat": -29.9,
+      "lng": 30.55,
+      "anchorType": "Documented writing location",
+      "placeNote": "Callaway ran the Springvale mission in Natal and wrote down the accounts from Zulu speakers there. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead as ancestors",
+          "why": "A Zulu informant says that the dead, the Amadhlozi, stand round the living as a wall against death. The dead are still present and powerful, so the passage sits at ‘continues’.",
+          "limit": "Words of a Zulu informant, written down by the missionary Henry Callaway and translated by him; the informant adds that this is said without full understanding. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "zulu-informants-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Zulu informants (recorded by Henry Callaway)",
+      "short": "Zulu informants",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "he exists no longer. As my grandfather no longer exists, he too no longer exists ; he died.",
+      "period": "Recorded in the 1860s; published 1868",
+      "dateShort": "1868",
+      "dateFull": "1868",
+      "sortYear": 1868,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1868–70), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the account of Unsondo and Uthlanga in the informant’s reply to Callaway’s questions.",
+      "place": "Springvale mission, Natal (now South Africa)",
+      "lat": -29.9,
+      "lng": 30.55,
+      "anchorType": "Documented writing location",
+      "placeNote": "Callaway ran the Springvale mission in Natal and wrote down the accounts from Zulu speakers there. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "The first ancestor is dead",
+          "why": "A Zulu informant says that the first ancestor, Uthlanga, who begat the line that led to the living, no longer exists, just as his own grandfather no longer exists. The informant denies that any such origin is still alive, which puts the passage at ‘no-ultimate’.",
+          "limit": "Words of an Amazulu or Amabaca informant, written down in Zulu and translated by the missionary Henry Callaway; the English is his. The informant speaks of the first ancestor, not of every kind of divinity, and Callaway’s informants disagree among themselves about Unkulunkulu. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35670,6 +35920,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "juana-manuela-gorriti-death",
+      "question": "death",
+      "name": "Juana Manuela Gorriti",
+      "short": "Gorriti",
+      "work": "El día de difuntos",
+      "excerpt": "esa cruz que se eleva, sobre las tumbas como un faro de esperanza y de inmortalidad",
+      "translation": "that cross that rises over the tombs like a lighthouse of hope and of immortality",
+      "period": "c. 1870",
+      "dateShort": "c. 1870",
+      "dateFull": "circa 1870",
+      "sortYear": 1870,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/El_d%C3%ADa_de_difuntos_(Gorriti)",
+      "locator": "Final paragraph of the sketch.",
+      "place": "Lima, Peru",
+      "lat": -12.04,
+      "lng": -77.03,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The sketch is set in the Lima cemetery on All Souls’ Day, during a yellow-fever epidemic; Gorriti lived in Lima in these years. The date is an estimate from the epidemic it mentions, and the place of writing still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/El_d%C3%ADa_de_difuntos_(Gorriti)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The cross as a lamp of immortality",
+          "why": "After describing the crowds at the Lima cemetery, the narrator says that the glory of heroes cannot light the shadows of death and that the visitors would leave with only desolate impressions but for the cross over the graves. The cross stands for hope and immortality, so the passage sits at ‘continues’.",
+          "limit": "A narrator’s closing reflection in a prose sketch of All Souls’ Day, which first doubts that fame survives death and then rests the hope on faith. It is a literary voice, not a treatise. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -37279,6 +37565,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tshi-proverbs-death",
+      "question": "death",
+      "name": "Tshi proverbs (collected by A. B. Ellis)",
+      "short": "Tshi proverbs",
+      "work": "The Tshi-speaking Peoples of the Gold Coast of West Africa, on Srahmanadzi, the land of the dead",
+      "excerpt": "A corner in the world is better than the whole of Srahmanadzi",
+      "period": "Collected in the 1880s; published 1887",
+      "dateShort": "1887",
+      "dateFull": "1887",
+      "sortYear": 1887,
+      "sourceLabel": "A. B. Ellis, The Tshi-speaking Peoples of the Gold Coast of West Africa (1887), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/tshispeakingpeo00elligoog/tshispeakingpeo00elligoog_djvu.txt",
+      "locator": "Chapter on the future state, in the paragraph on Srahmanadzi, the proverb quoted after the sentence on its likeness to the world.",
+      "place": "Tshi (Akan) country, Gold Coast (now Ghana)",
+      "lat": 6,
+      "lng": -1.3,
+      "anchorType": "Traditional association",
+      "placeNote": "The belief and the saying belong to Tshi-speaking peoples of the Gold Coast, among whom Ellis served. The pin marks the region, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/tshispeakingpeo00elligoog/tshispeakingpeo00elligoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The world of the dead",
+          "why": "The saying is quoted in Ellis’s account of Srahmanadzi, the world beneath the earth where the dead live on in the same bodies. It takes for granted that the dead continue there, and says that life in this world is still better.",
+          "limit": "A saying recorded and translated into English by the British colonial officer A. B. Ellis, who sets it inside his own description of Tshi belief. It praises life and is not a teaching on death, so the position is inferred from the afterlife it assumes. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "friedrich-nietzsche-desire",
       "question": "desire",
       "name": "Friedrich Nietzsche",
@@ -37526,6 +37847,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "clorinda-matto-de-turner-given-or-made",
+      "question": "given-or-made",
+      "name": "Clorinda Matto de Turner",
+      "short": "Matto de Turner",
+      "work": "Aves sin nido, Primera Parte",
+      "excerpt": "la influencia de los hábitos que se dan a la niña en el hogar paterno, sin el correctivo de una educación madura, pues la mujer peruana es dócil y virtuosa por regla general",
+      "translation": "the influence of the habits given to a girl in her father’s house, without the corrective of a mature education, since Peruvian women are as a rule docile and virtuous",
+      "period": "1889",
+      "dateShort": "1889",
+      "dateFull": "1889",
+      "sortYear": 1889,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/Aves_sin_nido_(Matto_de_Turner)/Primera_Parte",
+      "locator": "Primera Parte, the paragraph where don Fernando leaves Lucía’s room for his study.",
+      "place": "Lima, Peru",
+      "lat": -12.04,
+      "lng": -77.03,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The novel was published in Lima in 1889, where Matto de Turner then lived; the linked page does not name a place of writing, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Aves_sin_nido_(Matto_de_Turner)/Primera_Parte",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Habits taught to a girl",
+          "why": "A character reflects that a wife’s modest tastes come from the habits instilled in the girl at home. Character is formed by upbringing, which puts the passage at ‘made’.",
+          "limit": "The thought is that of a fictional husband, narrated by the author, and it rests on a stereotype of Peruvian women; it is not a stated thesis of the novel. The page is long and the passage sits in the first part. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "clorinda-matto-de-turner-suffering",
+      "question": "suffering",
+      "name": "Clorinda Matto de Turner",
+      "short": "Matto de Turner",
+      "work": "Aves sin nido, Proemio",
+      "excerpt": "en el país existen hermanos que sufren, explotados en la noche de la ignorancia, martirizados en esas tinieblas que piden luz",
+      "translation": "in the country there are brothers who suffer, exploited in the night of ignorance, martyred in that darkness which asks for light",
+      "period": "1889",
+      "dateShort": "1889",
+      "dateFull": "1889",
+      "sortYear": 1889,
+      "sourceLabel": "Spanish Wikisource transcription",
+      "sourceUrl": "https://es.wikisource.org/wiki/Aves_sin_nido_(Matto_de_Turner)/Proemio",
+      "locator": "Last paragraph of the Proemio.",
+      "place": "Lima, Peru",
+      "lat": -12.04,
+      "lng": -77.03,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The novel was published in Lima in 1889, where Matto de Turner then lived; the linked page does not name a place of writing, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Aves_sin_nido_(Matto_de_Turner)/Proemio",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Suffering to be ended",
+          "why": "The preface says the Indigenous poor suffer from exploitation and ignorance and need light. Their suffering is a wrong to be ended, with no purpose in itself, which puts it at ‘no-purpose’.",
+          "limit": "The author’s preface to a novel written to expose abuses by priests and officials in the Andes, and it speaks of Indigenous people from an outsider’s and reformer’s position. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "henri-bergson-free-will",
       "question": "free-will",
       "name": "Henri Bergson",
@@ -37698,6 +38091,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "ewe-proverbs-death",
+      "question": "death",
+      "name": "Ewe proverbs (collected by A. B. Ellis)",
+      "short": "Ewe proverbs",
+      "work": "The Ewe-speaking Peoples of the Slave Coast of West Africa, chapter on proverbs and folk-lore",
+      "excerpt": "No child of man knows the day of his death.",
+      "period": "Collected in the 1880s; published 1890",
+      "dateShort": "1890",
+      "dateFull": "1890",
+      "sortYear": 1890,
+      "sourceLabel": "A. B. Ellis, The Ewe-speaking Peoples of the Slave Coast of West Africa (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "locator": "Proverb 28 in Ellis’s list of Ewe proverbs. The scanned text contains recognition errors.",
+      "place": "Ewe country, Slave Coast (now Ghana and Togo)",
+      "lat": 6.6,
+      "lng": 0.47,
+      "anchorType": "Traditional association",
+      "placeNote": "The sayings were in use among Ewe speakers of the Slave Coast hinterland; Ellis, a British colonial officer, collected them in the 1880s and gives no town for any single proverb. The pin marks the region, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "The day of death",
+          "why": "The saying says that no one knows when death will come. It speaks of the hour of death, not of what follows it. A second, independent reading moved this placement from “we cannot know” to “unscored”: the words concern the day of death, not what happens after it.",
+          "limit": "An anonymous oral saying recorded and translated into English by the British colonial officer A. B. Ellis; his glosses are not the speakers’ own. It says nothing about what follows death, so its position on this question is a stretch. Ellis notes that a companion saying about the fowl in the coop is used to remind slaves they may be sold at any time.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ewe-proverbs-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Ewe proverbs (collected by A. B. Ellis)",
+      "short": "Ewe proverbs",
+      "work": "The Ewe-speaking Peoples of the Slave Coast of West Africa, chapter on proverbs and folk-lore",
+      "excerpt": "If the agriculturist does not go to his neighbour’s plantation (and see him at work), he says, “I alone am working.”",
+      "period": "Collected in the 1880s; published 1890",
+      "dateShort": "1890",
+      "dateFull": "1890",
+      "sortYear": 1890,
+      "sourceLabel": "A. B. Ellis, The Ewe-speaking Peoples of the Slave Coast of West Africa (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "locator": "Proverb 99 in Ellis’s list of Ewe proverbs, in the second half of the chapter. The scanned text contains recognition errors.",
+      "place": "Ewe country, Slave Coast (now Ghana and Togo)",
+      "lat": 6.6,
+      "lng": 0.47,
+      "anchorType": "Traditional association",
+      "placeNote": "The sayings were in use among Ewe speakers of the Slave Coast hinterland; Ellis, a British colonial officer, collected them in the 1880s and gives no town for any single proverb. The pin marks the region, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Seeing oneself against neighbours",
+          "why": "The saying says that a farmer who never visits a neighbour’s plantation believes he alone works. Seeing others at work corrects one’s picture of oneself, which puts it with ‘others’.",
+          "limit": "An anonymous oral saying recorded and translated into English by the British colonial officer A. B. Ellis; his glosses are not the speakers’ own. The saying concerns a farmer’s picture of his own labour and is stretched here to the larger question of self-knowledge.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ewe-proverbs-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Ewe proverbs (collected by A. B. Ellis)",
+      "short": "Ewe proverbs",
+      "work": "The Ewe-speaking Peoples of the Slave Coast of West Africa, chapter on proverbs and folk-lore",
+      "excerpt": "One tree does not make a forest.",
+      "period": "Collected in the 1880s; published 1890",
+      "dateShort": "1890",
+      "dateFull": "1890",
+      "sortYear": 1890,
+      "sourceLabel": "A. B. Ellis, The Ewe-speaking Peoples of the Slave Coast of West Africa (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "locator": "Proverb 58 in Ellis’s list of Ewe proverbs. The scanned text contains recognition errors.",
+      "place": "Ewe country, Slave Coast (now Ghana and Togo)",
+      "lat": 6.6,
+      "lng": 0.47,
+      "anchorType": "Traditional association",
+      "placeNote": "The sayings were in use among Ewe speakers of the Slave Coast hinterland; Ellis, a British colonial officer, collected them in the 1880s and gives no town for any single proverb. The pin marks the region, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Strength in numbers",
+          "why": "The saying holds that a single tree is not a forest, so that a group is more than one of its members. It leans to ‘company’ as a statement of what only many together can be.",
+          "limit": "An anonymous oral saying recorded and translated into English by the British colonial officer A. B. Ellis; his glosses are not the speakers’ own. Ellis glosses it as an answer to ‘One swallow does not make a summer’; the saying is about number and does not say that being alone is bad for a person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -38461,6 +38959,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "yoruba-proverbs-given-or-made",
+      "question": "given-or-made",
+      "name": "Yoruba proverbs (collected by A. B. Ellis)",
+      "short": "Yoruba proverbs",
+      "work": "The Yoruba-speaking Peoples of the Slave Coast of West Africa, chapter XIII, Proverbs",
+      "excerpt": "A man may be born to a fortune, but wisdom only comes with length of days.",
+      "period": "Collected in the 1880s; published 1894",
+      "dateShort": "1894",
+      "dateFull": "1894",
+      "sortYear": 1894,
+      "sourceLabel": "A. B. Ellis, The Yoruba-speaking Peoples of the Slave Coast of West Africa (1894), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "locator": "Proverb 45 in the chapter list. The scanned text contains recognition errors.",
+      "place": "Yorubaland (now south-western Nigeria)",
+      "lat": 7.4,
+      "lng": 3.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were in use among Yoruba speakers; Ellis, a British colonial officer, collected them from informants on the coast and gives no town for any one saying. The pin marks the Yoruba heartland near Ibadan, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Fortune and wisdom",
+          "why": "The saying separates what a person may be born to, which is wealth, from wisdom, which comes only with years. A person is partly given and partly formed over time, so it sits at ‘both’.",
+          "limit": "An anonymous oral saying recorded and translated into English by the British colonial officer A. B. Ellis. The contrast is between wealth and wisdom, and the saying does not speak of character or talent more widely.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "yoruba-proverbs-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Yoruba proverbs (collected by A. B. Ellis)",
+      "short": "Yoruba proverbs",
+      "work": "The Yoruba-speaking Peoples of the Slave Coast of West Africa, chapter XIII, Proverbs",
+      "excerpt": "Not to aid one in distress is to kill him in your heart.",
+      "period": "Collected in the 1880s; published 1894",
+      "dateShort": "1894",
+      "dateFull": "1894",
+      "sortYear": 1894,
+      "sourceLabel": "A. B. Ellis, The Yoruba-speaking Peoples of the Slave Coast of West Africa (1894), Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "locator": "Proverb 71 in the chapter list. The scanned text contains recognition errors.",
+      "place": "Yorubaland (now south-western Nigeria)",
+      "lat": 7.4,
+      "lng": 3.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were in use among Yoruba speakers; Ellis, a British colonial officer, collected them from informants on the coast and gives no town for any one saying. The pin marks the Yoruba heartland near Ibadan, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Duty to those in distress",
+          "why": "The saying treats a refusal to help someone in distress as a kind of killing. It makes the other person’s need a claim on the hearer, so it sits with ‘others’.",
+          "limit": "An anonymous oral saying recorded and translated into English by the British colonial officer A. B. Ellis. It is a moral maxim about a single occasion and does not rank everyday self-interest against the community.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -39507,6 +40075,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "auta-de-sousa-suffering",
+      "question": "suffering",
+      "name": "Auta de Sousa",
+      "short": "Auta de Sousa",
+      "work": "Horto, poem Supplica",
+      "excerpt": "Se tudo cai, Senhor! por que não morre A dor sem fim que me devora aos poucos?",
+      "translation": "If everything falls, Lord, why does it not die, the endless pain that devours me little by little?",
+      "period": "Published 1900; second edition 1910",
+      "dateShort": "1900",
+      "dateFull": "1900 (collected in Horto)",
+      "sortYear": 1900,
+      "sourceLabel": "Horto, 2nd ed. (Paris, 1910), Portuguese Wikisource transcription",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Horto_(1910)/Supplica",
+      "locator": "Final tercet of the sonnet, page 265 of the 1910 edition.",
+      "place": "Macaíba, Rio Grande do Norte, Brazil",
+      "lat": -5.86,
+      "lng": -35.35,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Auta de Sousa was born in Macaíba and lived there and in Recife and Natal; the page does not say where this poem was written, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Horto_(1910)/Supplica",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "A pain that will not end",
+          "why": "The poem lists everything that passes away and then asks God why the speaker’s own pain alone does not. It treats the pain as a burden to be ended and finds no purpose in it, which puts it at ‘no-purpose’.",
+          "limit": "A devotional sonnet by a young poet who was ill and died at 24; the question is addressed to God and the poem does not answer it. The English in the translation field is the atlas’s own unreviewed translation; the spelling follows the 1910 edition.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "dodrupchen-jigme-tenpe-nyima-happiness",
       "question": "happiness",
       "name": "Dodrupchen Jigme Tenpe Nyima",
@@ -39884,6 +40488,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "julia-lopes-de-almeida-given-or-made",
+      "question": "given-or-made",
+      "name": "Júlia Lopes de Almeida",
+      "short": "Lopes de Almeida",
+      "work": "A Falência, chapter XII",
+      "excerpt": "Não creia o senhor nessas balelas. Qual superioridade de raça! de educação, só de educação.",
+      "translation": "Do not believe such nonsense. What superiority of race! It is education, only education.",
+      "period": "1901",
+      "dateShort": "1901",
+      "dateFull": "1901",
+      "sortYear": 1901,
+      "sourceLabel": "Portuguese Wikisource transcription (A Tribuna, Rio de Janeiro, 1901)",
+      "sourceUrl": "https://pt.wikisource.org/wiki/A_Fal%C3%AAncia/XII",
+      "locator": "Chapter XII, in the conversation between Francisco Teodoro and Inocêncio’s friend about the English.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.93,
+      "lng": -43.3,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The novel is set in Rio de Janeiro and was serialised there in 1901, where the author lived; the page does not state where the chapter was written, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/A_Fal%C3%AAncia/XII",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Education over inborn race",
+          "why": "A character in the novel rejects the claim that the English are superior by race and says the difference comes only from education. What people are is made by training, which puts the passage at ‘made’.",
+          "limit": "A line of dialogue spoken by a fictional merchant to another in a novel, not the author’s essay, and the same speaker goes on to praise English business sense. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -42521,6 +43161,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "hausa-proverbs-free-will",
+      "question": "free-will",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "excerpt": "Yesterday You (Allah) portioned out (good and evil fortune), to- day we shall be given (our share).",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "locator": "Proverb 33 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Fortune portioned out by Allah",
+          "why": "The saying says that Allah divided good and evil fortune beforehand and that people now receive what was set aside. It puts what a life holds in advance of the person living it, which puts it at ‘determined’.",
+          "limit": "An anonymous oral saying, given by the colonial official R. S. Rattray in Hausa with his English translation; the bracketed words are his. It speaks of fortune, not of choices, so it is not a full position on free will.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hausa-proverbs-happiness",
+      "question": "happiness",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "excerpt": "The truly contented man comes from Allah.",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/download/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "locator": "Proverb 52 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Contentment from Allah",
+          "why": "The saying says that true contentment is a gift from Allah. It puts happiness in what is given to a person, not in anything they do, so it sits with ‘on-fortune’.",
+          "limit": "An anonymous oral saying, given by the colonial official R. S. Rattray in Hausa with his English translation; the bracketed words are his. The saying does not say whether a person can pray or work towards it, so the reading as ‘fortune’ is a simplification.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hausa-proverbs-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "excerpt": "If you refuse to live with the slanderer, whom are you going to live with ?",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "locator": "Proverb 36 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Living with the flawed",
+          "why": "The saying answers anyone who withdraws from a slanderer by pointing out that everyone has such faults. Living apart from people one dislikes leaves one with no company, so it leans to ‘company’.",
+          "limit": "An anonymous oral saying, given by the colonial official R. S. Rattray in Hausa with his English translation; the bracketed words are his. The saying is about putting up with other people, not praising company for its own sake.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -56354,6 +57099,61 @@ window.PILOT_EVIDENCE={
     },
     "Swahili proverbs (collected by W. E. Taylor)": {
       "about": "Proverbs of the Swahili coast gathered by the missionary W. E. Taylor and published in 1891.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Auta de Sousa": {
+      "about": "Brazilian poet from Rio Grande do Norte whose devotional collection Horto appeared in 1900, a year before her death.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Clorinda Matto de Turner": {
+      "about": "Peruvian novelist and journalist whose Aves sin nido, 1889, denounced the treatment of Andean Indigenous people.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ewe proverbs (collected by A. B. Ellis)": {
+      "about": "Proverbs of the Ewe-speaking peoples of West Africa, recorded by the British officer A. B. Ellis and published in 1890.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Gertrudis Gómez de Avellaneda": {
+      "about": "Cuban-born poet, novelist and playwright who wrote in Spain from the 1840s, author of the anti-slavery novel Sab.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hausa proverbs (collected by R. S. Rattray)": {
+      "about": "Proverbs of the Hausa of West Africa, recorded by R. S. Rattray and published in 1913.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Juana Manuela Gorriti": {
+      "about": "Argentine writer of the nineteenth century who lived in exile in Bolivia and Peru and hosted a literary salon in Lima.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Júlia Lopes de Almeida": {
+      "about": "Brazilian novelist from Rio de Janeiro, writing from the 1880s to the 1930s, author of A Falência.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nísia Floresta": {
+      "about": "Brazilian educator and writer of the nineteenth century who argued for the education of girls.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Tshi proverbs (collected by A. B. Ellis)": {
+      "about": "Proverbs of the Twi-speaking peoples of the Gold Coast, recorded by A. B. Ellis and published in 1887.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Yoruba proverbs (collected by A. B. Ellis)": {
+      "about": "Proverbs of the Yoruba-speaking peoples of West Africa, recorded by A. B. Ellis and published in 1894.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Zulu informants (recorded by Henry Callaway)": {
+      "about": "Zulu speakers whose accounts of belief were recorded and translated by the missionary Henry Callaway in Natal in the 1860s.",
       "tradition": "Indigenous and oral traditions",
       "sure": true
     }
