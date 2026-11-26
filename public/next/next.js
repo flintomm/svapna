@@ -513,7 +513,7 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
     line.append(b, rest);
     if (first) face(first);
     { let n = 0; try { n = Object.keys(JSON.parse(localStorage.getItem('svapna_answers') || '{}') || {}).length; } catch (e) { /* private mode */ }
-      $('echo-you').textContent = n < 3 ? `Matches need ${3 - n} more answer${3 - n === 1 ? '' : 's'} →` : n < 7 ? `Matches · ${7 - n} more answers sharpen them →` : 'Matches →'; }
+      $('echo-you').textContent = n < 3 ? `Answer ${3 - n} more to see your matches →` : n < 7 ? `Answer ${7 - n} more to sharpen your matches →` : 'See your matches →'; }
     scene('echo');
   }
   const span = list => { const y = list.at(-1).sortYear - list[0].sortYear; return y >= 1000 ? (Math.round(y / 100) / 10).toLocaleString('en') + ' thousand years' : y + ' years'; };

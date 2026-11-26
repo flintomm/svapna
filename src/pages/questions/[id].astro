@@ -28,11 +28,11 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
   <h1>{words.slice(0, cut).join(' ')} <em>{words.slice(cut).join(' ')}</em></h1>
   <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words. Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</p>
   {lead && <figure class="lead-voice"><blockquote>“{lead.excerpt}”</blockquote><figcaption><a href={`#${lead.id}`}>{lead.name}</a> · {lead.dateShort} · one of {total} voices</figcaption></figure>}
-  {HEAVY[q.id] && <p class="def gentle">The passages below are other people’s words across four thousand years. They do not agree, and none is offered as the answer. For anyone in crisis, <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free, confidential lines by country.</p>}
+  {HEAVY[q.id] && <p class="def gentle">These are the thoughts and opinions of others, gathered across four thousand years. For anyone in crisis, <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free, confidential lines by country.</p>}
   {childSet.length > 0 && (
     <details class="child-set">
       <summary>For reading with a child</summary>
-      <p class="def">{childSet.length} short passages from different traditions, one or more for each answer. They do not agree with each other.</p>
+      <p class="def">{childSet.length} short passages from different traditions.</p>
       {childSet.map(c => <figure><blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.translation || c.excerpt}”</blockquote><figcaption><a href={`#${c.id}`}>{c.name}</a> · {c.place.split(',').slice(-1)[0].trim()} · {c.dateShort}</figcaption></figure>)}
     </details>
   )}

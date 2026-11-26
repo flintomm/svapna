@@ -1613,11 +1613,11 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "S. Langdon, Babylonian Wisdom (1923), Internet Archive scan",
       "sourceUrl": "https://archive.org/stream/babylonianwisdom0000slan/babylonianwisdom0000slan_djvu.txt",
       "locator": "Introduction, discussion of Tablet II of the Poem of the Righteous Sufferer. The scanned text contains recognition errors.",
-      "place": "Babylon, Iraq",
-      "lat": 32.54,
-      "lng": 44.42,
-      "anchorType": "Approximate association",
-      "placeNote": "The poem is usually placed in Babylonia in the Kassite period, with the sufferer’s city given as Nippur in the text. The linked page does not state where it was composed; the place still needs an editor’s confirmation.",
+      "place": "Nippur, Iraq",
+      "lat": 32.13,
+      "lng": 45.23,
+      "anchorType": "Documented writing location",
+      "placeNote": "Langdon argues in the introduction to Babylonian Wisdom that the choice of the Sumerian ruler Ur-Bau in the sufferer’s dream confirms that the poem was written at Nippur. The attribution rests on that scholarly inference, not on a colophon.",
       "placeSource": "https://archive.org/stream/babylonianwisdom0000slan/babylonianwisdom0000slan_djvu.txt",
       "review": "draft",
       "readings": {
@@ -1631,7 +1631,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -6376,7 +6376,7 @@ window.PILOT_EVIDENCE={
       "lat": 37.975,
       "lng": 23.725,
       "anchorType": "Setting named in the text",
-      "placeNote": "The speech is set at the trial of Socrates before an Athenian court, held in or near the Agora. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeNote": "In Jowett’s translation of the Apology, Socrates addresses his jurors throughout as “men of Athens”, which places the speech at his trial before an Athenian court; the text does not name the building.",
       "placeSource": "https://classics.mit.edu/Plato/apology.html",
       "review": "draft",
       "readings": {
@@ -6390,7 +6390,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -8160,6 +8160,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mencius-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Mencius",
+      "short": "Mencius",
+      "work": "Mengzi (孟子), Jin Xin I (盡心上)",
+      "excerpt": "萬物皆備於我矣，反身而誠，樂莫大焉。強恕而行，求仁莫近焉。",
+      "translation": "All things are complete in me. To turn back on oneself and find oneself sincere is the greatest joy. Strive to act with consideration for others, and there is no nearer road to humaneness.",
+      "period": "Compiled c. 300 BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "compiled circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/孟子/盡心上",
+      "locator": "Jin Xin I (7A), chapter beginning 孟子曰：「萬物皆備於我矣」.",
+      "place": "Zoucheng, Shandong, China",
+      "lat": 35.4,
+      "lng": 116.97,
+      "anchorType": "Approximate home association",
+      "placeNote": "Mencius was a native of Zou, a small state in what is now Shandong, and the book was assembled by him and his disciples. The linked page gives the text only and does not place this saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/mencius/",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Turning back to oneself, then acting on others",
+          "why": "Mencius first sends a person inward to test their own sincerity, then in the next sentence tells them to act with consideration for others as the nearest way to humaneness. The inward turn and the turn to others are held together, which puts it at both.",
+          "limit": "The first sentence alone could be read as purely inward, and some commentators do so; the pairing with the second sentence is what places it at both. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mencius-meaning",
       "question": "meaning",
       "name": "Mencius",
@@ -8192,6 +8227,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "mencius-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Mencius",
+      "short": "Mencius",
+      "work": "Mengzi (孟子), Jin Xin I (盡心上)",
+      "excerpt": "窮則獨善其身；達則兼善天下。",
+      "translation": "In obscurity, perfect your own person alone; in success, extend that goodness to the whole world.",
+      "period": "Compiled c. 300 BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "compiled circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/孟子/盡心上",
+      "locator": "Jin Xin I (7A), the chapter about the ancients who, when they achieved their aim, benefited the people, ending 「窮則獨善其身；達則兼善天下」.",
+      "place": "Zoucheng, Shandong, China",
+      "lat": 35.4,
+      "lng": 116.97,
+      "anchorType": "Approximate home association",
+      "placeNote": "Mencius was a native of Zou, a small state in what is now Shandong, and the book was assembled by him and his disciples. The linked page gives the text only and does not place this saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/mencius/",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Improving oneself, then benefiting all",
+          "why": "Mencius says a gentleman works on his own character when he has no power and spreads that goodness to the world when he does. Self-cultivation and service to others belong to one path, which puts it at both.",
+          "limit": "The sentence follows a statement that when thwarted the gentleman keeps his integrity, so it sets order by circumstance and does not rank the two goods. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -9585,6 +9655,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "xunzi-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Xunzi",
+      "short": "Xunzi",
+      "work": "Xunzi (荀子), Wang Zhi (王制)",
+      "excerpt": "力不若牛，走不若馬，而牛馬為用，何也？曰：人能群，彼不能群也。",
+      "translation": "In strength a person is no match for an ox, nor in running for a horse, yet ox and horse are put to use. Why? Because people can form groups and they cannot.",
+      "period": "c. 250 BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/荀子/王制篇",
+      "locator": "Wang Zhi, paragraph beginning 水火有氣而無生.",
+      "place": "Lanling, Shandong, China",
+      "lat": 34.85,
+      "lng": 118.05,
+      "anchorType": "Traditional association",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and remained in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Humans prevail because they form groups",
+          "why": "Xunzi explains human dominance over stronger animals by the ability to form a social group with divided roles. People live well together and cannot do so apart, which puts it at company.",
+          "limit": "The claim concerns the survival and order of a society, not whether individuals sometimes need solitude. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "xunzi-truth",
       "question": "truth",
       "name": "Xunzi",
@@ -9772,6 +9877,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "han-feizi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Han Feizi",
+      "short": "Han Feizi",
+      "work": "Han Feizi (韓非子), Wai Chu Shuo Zuo Shang (外儲說左上)",
+      "excerpt": "此其養功力，有父子之澤矣，而心調於用者，皆挾自爲心也",
+      "translation": "Such care for another’s strength looks like the kindness of father and son, yet the heart is set on use: all of them act with their own benefit in mind.",
+      "period": "c. 240 BCE",
+      "dateShort": "c. 240 BCE",
+      "dateFull": "circa 240 BCE",
+      "sortYear": -240,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/韓非子/外儲說左上",
+      "locator": "The explanation section beginning 人爲嬰兒也，父母養之簡; the quoted clause is near its end.",
+      "place": "Xinzheng (capital of Han), Henan, China",
+      "lat": 34.4,
+      "lng": 113.74,
+      "anchorType": "Approximate home association",
+      "placeNote": "Han Fei was a prince of the state of Han, whose capital lay at modern Xinzheng; the text is not dated or placed and the book was compiled after his death, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Han_Fei",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Everyone acts for their own benefit",
+          "why": "Han Feizi argues that even a landowner who feeds his hired labourers well and labourers who plough hard do so for their own gain, not out of affection. Self-interest is taken as the real motive, which puts it at self.",
+          "limit": "Han Feizi wrote this to advise rulers on managing people, not as an ethic to live by, and he states that this is how people behave, not that they should. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -10674,9 +10814,9 @@ window.PILOT_EVIDENCE={
       "place": "Tusculum, near Rome, Italy",
       "lat": 41.81,
       "lng": 12.72,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Cicero wrote the Tusculan Disputations in 45 BCE at his Tusculan villa, according to the work’s own framing; the linked page does not confirm the place, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/9/8/14988/14988.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The article on the work says the Tusculan Disputations are so called because they were reportedly written at Cicero’s villa in Tusculum, in 45 BC; the account rests on the work’s title and tradition rather than a dated record.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tusculanae_Disputationes",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -10689,7 +10829,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -13148,9 +13288,9 @@ window.PILOT_EVIDENCE={
       "place": "Carnuntum, on the Danube, Austria",
       "lat": 48.11,
       "lng": 16.86,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Marcus campaigned on the Danube frontier in the 170s, and the work notes Carnuntum as a place of writing for Book II; the passage itself is not dated, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia reports that the first book is marked as written among the Quadi on the Granua and the second at Carnuntum, and that large portions may have been written at Sirmium during the Danube campaigns of 170–180. No place is recorded for this book, so the Carnuntum pin marks the campaign region generally.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "given-or-made": {
@@ -13163,7 +13303,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -13183,9 +13323,9 @@ window.PILOT_EVIDENCE={
       "place": "Carnuntum, on the Danube, Austria",
       "lat": 48.11,
       "lng": 16.86,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Marcus campaigned on the Danube frontier in the 170s, and the work notes Carnuntum as a place of writing for Book II; the passage itself is not dated, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia reports that the first book is marked as written among the Quadi on the Granua and the second at Carnuntum, and that large portions may have been written at Sirmium during the Danube campaigns of 170–180. No place is recorded for this book, so the Carnuntum pin marks the campaign region generally.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -13198,7 +13338,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -14158,6 +14298,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "liezi-lasting-self",
+      "question": "lasting-self",
+      "name": "Liezi (Lieh Tzu)",
+      "short": "Liezi",
+      "work": "Liezi (列子), Tian Rui (天瑞)",
+      "excerpt": "亦如人自世至老，貌色智態，亡日不異；皮膚爪髮，隨世隨落，非嬰孩時有停而不易也",
+      "translation": "It is the same with a person from birth to old age: looks, colour, wits and bearing differ with every day; skin, nails and hair fall away through life, and nothing stays unchanged from infancy.",
+      "period": "Ascribed to Liezi (c. 4th century BCE); the received text was compiled by c. 300 CE",
+      "dateShort": "c. 300 CE",
+      "dateFull": "compiled by circa 300 CE",
+      "sortYear": 300,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/列子/天瑞篇",
+      "locator": "Tian Rui, speech of Yu Xiong (粥熊) beginning 運轉亡已，天地密移.",
+      "place": "Xinzheng (old state of Zheng), Henan, China",
+      "lat": 34.4,
+      "lng": 113.74,
+      "anchorType": "Traditional association",
+      "placeNote": "The book presents Liezi as living in the state of Zheng, whose capital lay at modern Xinzheng. Where the received text was put together is unknown; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Liezi_(text)",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Body and mind altering every day",
+          "why": "Xiong of Yu compares the world’s unnoticed change to a person’s own, whose looks and mind alter every day and whose body is shed little by little. The person is real but never the same, which puts it at changing.",
+          "limit": "The speaker is a figure in a compiled book, and the analogy illustrates the transformation of all things rather than the self as such. The Liezi was put together by about 300 CE. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -17098,6 +17273,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "du-fu-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Du Fu",
+      "short": "Du Fu",
+      "work": "Song of My Thatched Hut Wrecked by the Autumn Wind (茅屋為秋風所破歌)",
+      "excerpt": "安得廣廈千萬間，大庇天下寒士俱歡顏",
+      "translation": "If only I had ten thousand great halls, to shelter every poor scholar under heaven and make them all glad.",
+      "period": "761 CE",
+      "dateShort": "761 CE",
+      "dateFull": "autumn of 761 CE",
+      "sortYear": 761,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/茅屋為秋風所破歌",
+      "locator": "Closing lines, beginning “安得廣廈千萬間”; the self-sacrifice follows in the last line, beginning 嗚呼！.",
+      "place": "Thatched Cottage, Chengdu, Sichuan, China",
+      "lat": 30.66,
+      "lng": 104.03,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Du Fu travelled to Chengdu in December 759 and based himself in Sichuan for most of the next five years. The page does not name the cottage poem, so Chengdu is the region of his residence in that period.",
+      "placeSource": "https://en.wikipedia.org/wiki/Du_Fu",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Wishing his own hut ruined for others’ shelter",
+          "why": "After a storm wrecks his hut, Du Fu wishes for great halls to shelter every poor scholar, and in the closing lines says he would accept his own hut being ruined and himself freezing if they could be. He puts others’ shelter ahead of his own, which puts it at others.",
+          "limit": "The words are a wish voiced in a poem of hardship, not a rule of conduct, and the quoted wish is a line apart from the closing lines that state his own sacrifice. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "platform-sutra-desire",
       "question": "desire",
       "excerpt": "當用大智慧，打破五蘊煩惱塵勞。如此修行，定成佛道，變三毒為戒定慧。",
@@ -18329,6 +18539,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "su-shi-lasting-self",
+      "question": "lasting-self",
+      "name": "Su Shi",
+      "short": "Su Shi",
+      "work": "First Ode on the Red Cliff (前赤壁賦)",
+      "excerpt": "自其變者而觀之，則天地曾不能以一瞬；自其不變者而觀之，則物与我皆無盡也",
+      "translation": "Looked at as what changes, heaven and earth cannot last even a blink; looked at as what does not change, things and I are both endless.",
+      "period": "1082 CE",
+      "dateShort": "1082 CE",
+      "dateFull": "autumn of 1082 CE",
+      "sortYear": 1082,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/前赤壁賦",
+      "locator": "Su Shi’s reply to the guest, beginning 蘇子曰：「客亦知夫水与月乎？」.",
+      "place": "Red Cliff, Huangzhou, Hubei, China",
+      "lat": 30.45,
+      "lng": 114.9,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The ode records a boat trip below the Red Cliff near Huangzhou, where Su Shi was exiled from 1080; the date and place are in the text’s opening line, though the identification of the cliff is traditional.",
+      "placeSource": "https://zh.wikisource.org/wiki/前赤壁賦",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "unscored",
+          "facet": "Change and constancy depending on the view",
+          "why": "Su Shi answers a guest’s lament over the brevity of life with two viewpoints: seen as change nothing lasts a moment, seen as unchanging the self and things have no end. The passage declines to choose between a passing and an enduring self, which leaves it unscored.",
+          "limit": "The speaker is a persona in a prose poem about a boat trip, and the text goes on to advise enjoying the river’s wind and the moon, so the stance is an attitude as much as a claim. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "man-giac-death",
       "question": "death",
       "name": "Mãn Giác",
@@ -19244,6 +19489,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "li-qingzhao-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Li Qingzhao",
+      "short": "Li Qingzhao",
+      "work": "Slow, Slow Tune (聲聲慢)",
+      "excerpt": "獨自怎生得黑？",
+      "translation": "Alone, how can I get through to dark?",
+      "period": "c. 1130s CE",
+      "dateShort": "c. 1130 CE",
+      "dateFull": "circa 1130 CE (traditional date)",
+      "sortYear": 1130,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/聲聲慢_(李清照)",
+      "locator": "Second stanza, line 3.",
+      "place": "Hangzhou, Zhejiang, China",
+      "lat": 30.27,
+      "lng": 120.15,
+      "anchorType": "Traditional association",
+      "placeNote": "Li Qingzhao fled south after the fall of the northern Song capital in 1127 and later lived in Hangzhou; the poem is not dated or placed in the linked text, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Li_Qingzhao",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Being alone as a trial",
+          "why": "In a late lyric of widowhood the speaker sits at her window through a long autumn day and asks how she can endure it alone. Being alone is felt as a lack and a hardship, which puts it at company.",
+          "limit": "The line is the voice of a lyric speaker, widely read as Li Qingzhao’s own, and the poem is one of grief and not an argument about solitude. The date and place of composition are traditional. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -20341,8 +20621,8 @@ window.PILOT_EVIDENCE={
       "lat": 21.42,
       "lng": 39.83,
       "anchorType": "Documented writing location",
-      "placeNote": "Ibn Arabi’s preface says the poems were composed at Mecca, where he had met the woman they celebrate. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/stream/TarjumanAlAshwaqACollectionOfMysticalOdes/Tarjuman%20al-ashwaq%20(A%20collection%20of%20mystical%20odes)_djvu.txt",
+      "placeNote": "In the author’s own note to the collection, quoted in Nicholson’s introduction, the love poems were composed at Mecca in the months of Rajab, Sha‘ban and Ramadan of 611 AH (1214–15), at the request of a friend.",
+      "placeSource": "https://archive.org/stream/TarjumanAlAshwaqACollectionOfMysticalOdes/TarjumanAlAshwaqACollectionOfMysticalOdes_djvu.txt",
       "review": "draft",
       "readings": {
         "desire": {
@@ -20355,7 +20635,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -22990,8 +23270,8 @@ window.PILOT_EVIDENCE={
       "lat": 35.06,
       "lng": 1.05,
       "anchorType": "Documented writing location",
-      "placeNote": "Ibn Khaldun took refuge at Qalat Ibn Salama in western Algeria for over three years from the late 1370s and used that seclusion to write the Muqaddimah, the introduction to his planned history. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter1/Ch_1_01.htm",
+      "placeNote": "The article on the Muqaddimah says Ibn Khaldun wrote its first version at Qalʿat ibn Salama, where he secluded himself for almost four years after withdrawing from political life, and completed it in 1377.",
+      "placeSource": "https://en.wikipedia.org/wiki/Muqaddimah",
       "review": "draft",
       "readings": {
         "solitude-or-company": {
@@ -23004,7 +23284,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -23144,8 +23424,8 @@ window.PILOT_EVIDENCE={
       "lat": 52.63,
       "lng": 1.3,
       "anchorType": "Traditional association",
-      "placeNote": "Julian lived as an anchoress attached to a church in Norwich; this is general knowledge and the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/5/2/9/5/52958/52958-0.txt",
+      "placeNote": "The article on the work says Julian, who lived all her life in Norwich, wrote the Revelations about the visions she received in 1373; the pin follows that association, as no manuscript names a place of composition.",
+      "placeSource": "https://en.wikipedia.org/wiki/Revelations_of_Divine_Love",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -23158,7 +23438,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -24730,6 +25010,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "wang-yangming-given-or-made",
+      "question": "given-or-made",
+      "name": "Wang Yangming",
+      "short": "Wang Yangming",
+      "work": "Instructions for Practical Living (傳習錄), Juan Xia",
+      "excerpt": "眾人自孩提之童，莫不完具此知，只是障蔽多；然本體之知自難泯息，雖問學克冶，也只憑他",
+      "translation": "Ordinary people, from childhood, all have this knowing complete, but it is much obscured; yet the knowing in its own substance is hard to extinguish, and even study and self-discipline rest on it alone.",
+      "period": "1520s CE",
+      "dateShort": "1520s",
+      "dateFull": "the 1520s CE",
+      "sortYear": 1525,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/傳習錄/卷下",
+      "locator": "Juan Xia, answer beginning 這良知人人皆有.",
+      "place": "Shaoxing, Zhejiang, China",
+      "lat": 30,
+      "lng": 120.58,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Wang Yangming’s home and later school were at Shaoxing, where he taught in his last years. The linked text does not place this saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Innate knowing, clouded and cleared",
+          "why": "Wang Yangming holds that everyone is born with innate knowing, yet it is clouded and must be cleared by study and discipline. An endowment that has to be developed puts the passage at both.",
+          "limit": "The passage belongs to a discussion of sages and ordinary people differing in degree, and “knowing” here is the moral knowing of his school, not general intelligence. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "wang-yangming-happiness",
+      "question": "happiness",
+      "name": "Wang Yangming",
+      "short": "Wang Yangming",
+      "work": "Instructions for Practical Living (傳習錄), reply to Lu Yuanjing (答陸原靜書)",
+      "excerpt": "樂是心之本體，雖不同於七情之樂，而亦不外於七情之樂；雖則聖賢別有真樂，而亦常人之所同有",
+      "translation": "Joy is the very substance of the mind. It differs from the joy of the seven emotions yet is not apart from it. Though sages have a true joy of their own, ordinary people have it too.",
+      "period": "1520s CE",
+      "dateShort": "1520s",
+      "dateFull": "the 1520s CE",
+      "sortYear": 1525,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/傳習錄/卷中",
+      "locator": "Juan Zhong, reply beginning 樂是心之本體.",
+      "place": "Shaoxing, Zhejiang, China",
+      "lat": 30,
+      "lng": 120.58,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Wang Yangming’s home and later school were at Shaoxing, where he taught in his last years. The linked text does not place this saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Joy as the mind’s own substance",
+          "why": "Wang Yangming says joy belongs to the mind by its nature, in sage and ordinary person alike, and persists even amid worry. Happiness lies within a person’s own power, which puts it at on-oneself.",
+          "limit": "He adds that people lose sight of this joy and need a moment of sincere awareness to recover it, so it is available but not automatic. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -28692,8 +29042,8 @@ window.PILOT_EVIDENCE={
       "place": "La Fleche, France",
       "lat": 47.7,
       "lng": -0.07,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Hume drafted the Treatise at La Fleche in Anjou between 1734 and 1737 and published it in London; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Stanford Encyclopedia of Philosophy reports that Hume moved to La Flèche in France in 1734 and began writing A Treatise of Human Nature there; Book 2 was composed during the same project, though the entry does not date the section on pride and humility.",
       "placeSource": "https://plato.stanford.edu/entries/hume/",
       "review": "draft",
       "readings": {
@@ -28707,7 +29057,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -29786,6 +30136,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "phillis-wheatley-suffering",
+      "question": "suffering",
+      "name": "Phillis Wheatley",
+      "short": "Wheatley",
+      "work": "On the Death of a young Lady of Five Years of Age",
+      "excerpt": "The dispensations of unerring grace, Should turn your sorrows into grateful praise;",
+      "period": "1767–73",
+      "dateShort": "c. 1770",
+      "dateFull": "between 1767 and 1773",
+      "sortYear": 1770,
+      "sourceLabel": "Project Gutenberg text of Poems on Various Subjects, Religious and Moral (1773)",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/0/409/409.txt",
+      "locator": "The poem “On the Death of a young Lady of Five Years of Age”, lines 7–8.",
+      "place": "Boston, Massachusetts, USA",
+      "lat": 42.36,
+      "lng": -71.08,
+      "anchorType": "Documented residence",
+      "placeNote": "The attestation printed with the 1773 Poems, signed by John Wheatley at Boston on 14 November 1772, says Wheatley was then living with her master, and names Boston men as witnesses to her authorship; the poem itself is not dated or placed.",
+      "placeSource": "https://gutenberg.pglaf.org/4/0/409/409.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Grief within God’s ordering",
+          "why": "Consoling the parents of a dead child, Wheatley tells them to read their loss as the working of unerring grace and to answer it with praise. Grief is treated as part of a larger good, which puts it at has-meaning.",
+          "limit": "This is a consolation poem in the Christian elegy tradition, written for a particular family, so it states the convention rather than arguing it. Wheatley’s own captivity and loss are not the subject here."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "phillis-wheatley-death",
       "question": "death",
       "name": "Phillis Wheatley",
@@ -29802,8 +30186,8 @@ window.PILOT_EVIDENCE={
       "place": "Boston, Massachusetts, USA",
       "lat": 42.36,
       "lng": -71.08,
-      "anchorType": "Place of publication",
-      "placeNote": "Wheatley lived in Boston as the enslaved servant of the Wheatley family and her book was printed in London in 1773. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented residence",
+      "placeNote": "The attestation printed with the 1773 Poems, signed by John Wheatley at Boston on 14 November 1772, says Wheatley was then living with her master, and names Boston men as witnesses to her authorship; the poem itself is not dated or placed.",
       "placeSource": "https://gutenberg.pglaf.org/4/0/409/409.txt",
       "review": "draft",
       "readings": {
@@ -29817,7 +30201,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -29837,8 +30221,8 @@ window.PILOT_EVIDENCE={
       "place": "Boston, Massachusetts, USA",
       "lat": 42.36,
       "lng": -71.08,
-      "anchorType": "Place of publication",
-      "placeNote": "Wheatley lived in Boston as the enslaved servant of the Wheatley family and her book was printed in London in 1773. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented residence",
+      "placeNote": "The attestation printed with the 1773 Poems, signed by John Wheatley at Boston on 14 November 1772, says Wheatley was then living with her master, and names Boston men as witnesses to her authorship; the poem itself is not dated or placed.",
       "placeSource": "https://gutenberg.pglaf.org/4/0/409/409.txt",
       "review": "draft",
       "readings": {
@@ -29852,7 +30236,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -30355,6 +30739,40 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ottobah-cugoano-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Ottobah Cugoano",
+      "short": "Cugoano",
+      "work": "Thoughts and Sentiments on the Evil and Wicked Traffic of the Slavery and Commerce of the Human Species",
+      "excerpt": "he looks around on his fellow men as his brethren and friends; and in every situation and case, however mean and contemptible they may seem, he endeavours to do them good",
+      "period": "1787",
+      "dateShort": "1787",
+      "dateFull": "1787",
+      "sortYear": 1787,
+      "sourceLabel": "1787 first edition, scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/bim_eighteenth-century_thoughts-and-sentiments-_cugoano-ottobah_1787/bim_eighteenth-century_thoughts-and-sentiments-_cugoano-ottobah_1787_djvu.txt",
+      "locator": "Late chapter on the law of God and love, paragraph on the “noble philanthropist”. The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.13,
+      "anchorType": "Publication location",
+      "placeNote": "Cugoano published the book in London in 1787 and lived in London at the time; the linked scan does not state where this passage was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/bim_eighteenth-century_thoughts-and-sentiments-_cugoano-ottobah_1787/bim_eighteenth-century_thoughts-and-sentiments-_cugoano-ottobah_1787_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "The good man’s duty to all people",
+          "why": "Cugoano describes the true philanthropist as one who regards every person as a brother or friend and works for their good whatever their station. The passage puts duty to others at the centre of a good life, which puts it at others.",
+          "limit": "The sentence is a portrait of an ideal person inside an argument that Christian law condemns the slave trade, not a general claim about when self-interest may count. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "immanuel-kant-death",
       "question": "death",
       "name": "Immanuel Kant",
@@ -30527,6 +30945,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "olaudah-equiano-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Olaudah Equiano",
+      "short": "Equiano",
+      "work": "The Interesting Narrative of the Life of Olaudah Equiano",
+      "excerpt": "by changing your conduct, and treating your slaves as men, every cause of fear would be banished.",
+      "period": "1789",
+      "dateShort": "1789",
+      "dateFull": "1789",
+      "sortYear": 1789,
+      "sourceLabel": "1789 Narrative, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "locator": "Chapter V (closing paragraph, after the account of the West Indies), the paragraph beginning “But by changing your conduct, and treating your slaves as men”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Publication location",
+      "placeNote": "Equiano published the Narrative in London in 1789 and lived there; the linked text gives no place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Planters’ safety bound to their slaves’ treatment",
+          "why": "Addressing slave-owners, Equiano argues that their own safety and prosperity depend on treating the enslaved as men. Their good and the good of the enslaved are tied together, which puts it at both.",
+          "limit": "The argument is addressed to slave-holders and appeals to their prudence, so it is a tactic as well as a conviction; elsewhere the Narrative condemns slavery outright. Some scholars question details of Equiano’s early life."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -31951,6 +32403,74 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mary-prince-suffering",
+      "question": "suffering",
+      "name": "Mary Prince",
+      "short": "Prince",
+      "work": "The History of Mary Prince",
+      "excerpt": "I have been a slave--I have felt what a slave feels, and I know what a slave knows; and I would have all the good people in England to know it too",
+      "period": "1831",
+      "dateShort": "1831",
+      "dateFull": "1831",
+      "sortYear": 1831,
+      "sourceLabel": "Project Gutenberg text of the 1831 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "locator": "Chapter beginning with the account of the old slave Daniel, paragraph beginning “Oh the horrors of slavery!”",
+      "place": "Claremont Square, London, England",
+      "lat": 51.53,
+      "lng": -0.11,
+      "anchorType": "Documented writing location",
+      "placeNote": "Prince dictated her story in London in 1831 in the household of the anti-slavery secretary Thomas Pringle; the linked text names the editors but not the street, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Slavery as suffering to be ended",
+          "why": "Prince presents what she lived through as an evil that others must end, and she asks readers to break the chains. Suffering here has no lesson or purpose, only a remedy, which puts it at no-purpose.",
+          "limit": "The narrative was dictated and edited for the anti-slavery campaign, and the words passed through other hands. Elsewhere she also describes God preserving her for better things, so the wider text is not a flat denial of meaning."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "mary-prince-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Mary Prince",
+      "short": "Prince",
+      "work": "The History of Mary Prince",
+      "excerpt": "The great God above alone knows the thoughts of the poor slave’s heart, and the bitter pains which follow such separations as these.",
+      "period": "1831",
+      "dateShort": "1831",
+      "dateFull": "1831",
+      "sortYear": 1831,
+      "sourceLabel": "Project Gutenberg text of the 1831 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "locator": "The paragraph describing her sale away from her mother and sisters, beginning “I wish I could find words to tell you all I then felt and suffered.”",
+      "place": "Claremont Square, London, England",
+      "lat": 51.53,
+      "lng": -0.11,
+      "anchorType": "Documented writing location",
+      "placeNote": "Prince dictated her story in London in 1831 in the household of the anti-slavery secretary Thomas Pringle; the linked text names the editors but not the street, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God who knows the slave’s heart",
+          "why": "Prince appeals to God as the one witness who knows what the enslaved feel when families are sold apart. The appeal takes God to be real and attentive, which puts it at ultimate-real.",
+          "limit": "This is a narrated aside in an anti-slavery memoir shaped for a Christian readership, not an argument for God. The surrounding text was edited by Thomas Pringle and Susanna Strickland."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "black-hawk-happiness",
       "question": "happiness",
       "name": "Black Hawk (Ma-ka-tai-me-she-kia-kiak)",
@@ -32018,6 +32538,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "samuel-ajayi-crowther-suffering",
+      "question": "suffering",
+      "name": "Samuel Ajayi Crowther",
+      "short": "Crowther",
+      "work": "Letter to the Rev. William Jowett, 22 February 1837",
+      "excerpt": "the day which Providence had marked out for me to set out on my journey from the land of heathenism, superstition, and vice, to a place where His Gospel is preached",
+      "period": "1837",
+      "dateShort": "1837",
+      "dateFull": "22 February 1837",
+      "sortYear": 1837,
+      "sourceLabel": "Schön and Crowther, Journals (1842), Appendix III, scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/journalsofrevjam00scho/journalsofrevjam00scho_djvu.txt",
+      "locator": "Appendix III, letter to Rev. W. Jowett, paragraph beginning “I suppose, some time about the commencement of the year 1821”. The scanned text contains recognition errors.",
+      "place": "Fourah Bay, Freetown, Sierra Leone",
+      "lat": 8.44,
+      "lng": -13.15,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is headed “Fourah Bay, Feb. 22, 1837” in the linked scan; the pin sits on the Freetown peninsula near that site.",
+      "placeSource": "https://archive.org/stream/journalsofrevjam00scho/journalsofrevjam00scho_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Enslavement seen as Providence’s road",
+          "why": "Crowther calls the day he was seized and sold “unhappy” for the loss of his family, and “blessed” because Providence had marked it out as the start of his journey to the Gospel. His suffering is read as part of a larger good, which puts it at has-meaning.",
+          "limit": "Written by a convert and later Anglican bishop for the Church Missionary Society, the passage uses its terms about Africa and does not speak for other enslaved people. He also names his loss of parents and sisters as unhappy."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -33369,8 +33923,8 @@ window.PILOT_EVIDENCE={
       "lat": 42.44,
       "lng": -71.34,
       "anchorType": "Documented writing location",
-      "placeNote": "Thoreau lived at Walden Pond from 1845 to 1847 and wrote most of the first draft there; the place still needs an editor’s confirmation.",
-      "placeSource": "https://en.wikipedia.org/wiki/Walden",
+      "placeNote": "The preface to Walden states that he wrote the book while living alone in a house he built on the shore of Walden Pond in Concord, Massachusetts, which the pin marks.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -33383,7 +33937,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -33713,6 +34267,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "mary-seacole-death",
+      "question": "death",
+      "name": "Mary Seacole",
+      "short": "Seacole",
+      "work": "Wonderful Adventures of Mrs. Seacole in Many Lands",
+      "excerpt": "so does the heart's labour of a lifetime make the repose of heaven acceptable.",
+      "period": "1857",
+      "dateShort": "1857",
+      "dateFull": "1857",
+      "sortYear": 1857,
+      "sourceLabel": "Project Gutenberg text of the 1857 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/0/3/23031/23031.txt",
+      "locator": "Chapter VII (the yellow fever in Jamaica and her experience of death-beds), paragraph beginning “I do not willingly care to dwell upon scenes of suffering and death”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Publication location",
+      "placeNote": "The book was published in London in 1857, when Seacole was living there after the Crimean War; the linked text does not say where each chapter was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/0/3/23031/23031.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The Christian’s death and heaven",
+          "why": "Seacole, drawing on deathbeds she attended, says the labour of a good life earns the repose of heaven. She treats death as a passage to rest, which puts it at continues.",
+          "limit": "The claim rests on her own nursing experience and on faith, not on argument, and in the same passage she says death is always terrible and that how it is borne depends partly on temperament. The view is a Victorian Christian one."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "mary-seacole-meaning",
+      "question": "meaning",
+      "name": "Mary Seacole",
+      "short": "Seacole",
+      "work": "Wonderful Adventures of Mrs. Seacole in Many Lands",
+      "excerpt": "Providence evidently made me to be useful, and I can't help it.",
+      "period": "1857",
+      "dateShort": "1857",
+      "dateFull": "1857",
+      "sortYear": 1857,
+      "sourceLabel": "Project Gutenberg text of the 1857 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/0/3/23031/23031.txt",
+      "locator": "Chapter VI, her reply beginning “Gentlemen,--I return you my best thanks”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Publication location",
+      "placeNote": "The book was published in London in 1857, when Seacole was living there after the Crimean War; the linked text does not say where each chapter was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/0/3/23031/23031.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Providence and usefulness",
+          "why": "Replying to a toast at Cruces, Seacole says Providence made her to be useful, so that her usefulness is a given purpose rather than a choice. That puts the passage at meaning-given.",
+          "limit": "The line is a spoken reply reported in a memoir, partly deflecting praise and a remark about her complexion, so it is not a worked account of life's meaning. Elsewhere in the book she also speaks of choosing her work."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35620,9 +36242,9 @@ window.PILOT_EVIDENCE={
       "place": "Rome, Italy",
       "lat": 41.9,
       "lng": 12.5,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Ibsen wrote the play in 1879 while living in Italy, at Rome and Amalfi; the linked page does not state the place, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/5/4/2542/2542-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The article on the play states that Ibsen outlined A Doll’s House as a modern tragedy in a note written in Rome on 19 October 1878; the pin marks that place of the outline and early planning.",
+      "placeSource": "https://en.wikipedia.org/wiki/A_Doll%27s_House",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -35635,7 +36257,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -35690,9 +36312,9 @@ window.PILOT_EVIDENCE={
       "place": "Staraya Russa, Russia",
       "lat": 57.99,
       "lng": 31.35,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Dostoevsky wrote much of the novel at Staraya Russa between 1878 and 1880; the linked page does not state the place, so the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/2/8/0/5/28054/28054-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The article on the novel states that Dostoevsky composed much of The Brothers Karamazov in Staraya Russa, which also inspired its main setting.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
       "review": "draft",
       "readings": {
         "self-or-others-first": {
@@ -35705,7 +36327,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -36498,6 +37120,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "anor-firmin-given-or-made",
+      "question": "given-or-made",
+      "name": "Anténor Firmin",
+      "short": "Firmin",
+      "work": "De l’égalité des races humaines (Conclusion)",
+      "excerpt": "le fond général de l’humanité est identique et constant, dans tous les groupes ethniques ! Selon que le degré d’instruction et le genre d’éducation seront les mêmes, les mêmes idées, les mêmes réflexions surgiront",
+      "translation": "the general basis of humanity is identical and constant in all ethnic groups! According as the degree of instruction and the kind of education are the same, the same ideas and the same reflections will arise.",
+      "period": "1885",
+      "dateShort": "1885",
+      "dateFull": "1885",
+      "sortYear": 1885,
+      "sourceLabel": "French text, French Wikisource",
+      "sourceUrl": "https://fr.wikisource.org/wiki/De_l’égalité_des_races_humaines/Conclusion",
+      "locator": "Conclusion, paragraph beginning with the claim that science shows the general basis of humanity to be identical, ending “De cet échange de sentiments sort et ressort la vraie fraternité”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Publication location",
+      "placeNote": "Firmin, a Haitian member of the Société d’anthropologie de Paris, published the book in Paris in 1885; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://fr.wikisource.org/wiki/Anténor_Firmin",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Shared human nature, shaped by schooling",
+          "why": "Firmin holds that all peoples share one human endowment, and that what minds produce depends on the instruction and education they receive. The passage gives both an endowment and its formation a part, which puts it at both.",
+          "limit": "The sentence is the conclusion of a book arguing against racial hierarchy, so it stresses likeness and does not treat individual differences. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "ernst-mach-lasting-self",
       "question": "lasting-self",
       "name": "Ernst Mach",
@@ -36882,6 +37539,40 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "jj-thomas-given-or-made",
+      "question": "given-or-made",
+      "name": "J. J. Thomas",
+      "short": "Thomas",
+      "work": "Froudacity: West Indian Fables Explained",
+      "excerpt": "when these qualifications are conspicuously mastered by the Negro",
+      "period": "1889",
+      "dateShort": "1889",
+      "dateFull": "1889",
+      "sortYear": 1889,
+      "sourceLabel": "1889 edition, scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/froudacity00thom/froudacity00thom_djvu.txt",
+      "locator": "Chapter on the West Indian confederation, paragraph beginning “supposes to be carried away by his hypothetical (white) generations”. The scanned text contains recognition errors.",
+      "place": "Port of Spain, Trinidad",
+      "lat": 10.66,
+      "lng": -61.5,
+      "anchorType": "Documented residence",
+      "placeNote": "Thomas, a Trinidadian schoolteacher and philologist, wrote the book in Port of Spain before it was published in London; the linked scan does not state the place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/froudacity00thom/froudacity00thom_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Capacity formed by training",
+          "why": "Thomas answers the historian James Anthony Froude, who prescribed European government and education as the way to qualify black West Indians. He says these qualifications are mastered through training, and that denying the prize afterwards contradicts the premise, which puts it at made.",
+          "limit": "The phrase comes from a polemic against Froude and mostly exposes an inconsistency, so it assumes more than it argues about how character is formed. The scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -37284,6 +37975,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-marti-given-or-made",
+      "question": "given-or-made",
+      "name": "José Martí",
+      "short": "Martí",
+      "work": "Versos sencillos, I",
+      "excerpt": "Todo es música y razón, Y todo, como el diamante, Antes que luz es carbón.",
+      "translation": "Everything is music and reason, and everything, like the diamond, was coal before it was light.",
+      "period": "1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "Spanish text, Wikisource (es.wikisource.org)",
+      "sourceUrl": "https://es.wikisource.org/wiki/Versos_sencillos/I",
+      "locator": "Stanza beginning “Todo es hermoso y constante”.",
+      "place": "Haines Falls, Catskill Mountains, New York, USA",
+      "lat": 42.2,
+      "lng": -74.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The verses are commonly said to have been written in the Catskill Mountains in 1890 and published in New York in 1891; the linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Versos_sencillos/I",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Everything begins as coal",
+          "why": "Martí says that all that is beautiful and ordered, like a diamond, began as coal. Worth is the result of a becoming and not a starting endowment, which puts it at made.",
+          "limit": "This is a single image in a poem of plain verses about a speaker’s experience, and it is not an argument about persons. The verse speaks of things in general, so applying it to human formation is an inference. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "jose-marti-lasting-self",
       "question": "lasting-self",
       "name": "José Martí",
@@ -37424,6 +38150,74 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "swahili-proverbs-free-will",
+      "question": "free-will",
+      "name": "Swahili proverbs (collected by W. E. Taylor)",
+      "short": "Swahili proverbs",
+      "work": "African Aphorisms: or, Saws from Swahili-Land",
+      "excerpt": "Diligence annuls not the decree of God.",
+      "period": "Collected before 1891",
+      "dateShort": "1891",
+      "dateFull": "published 1891",
+      "sortYear": 1891,
+      "sourceLabel": "W. E. Taylor, African Aphorisms (1891), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "locator": "Proverb 116, with the Swahili original above it. The scanned text contains recognition errors.",
+      "place": "Frere Town, Mombasa, Kenya",
+      "lat": -4.02,
+      "lng": 39.64,
+      "anchorType": "Approximate collecting location",
+      "placeNote": "Taylor was a missionary at Frere Town near Mombasa, on the Swahili coast. The linked scan does not place each proverb, so the pin marks the collector’s base; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Effort cannot undo God’s decree",
+          "why": "The proverb says that no amount of effort cancels what God has decreed, so outcomes are fixed from above. It places a person’s choices inside a decree they cannot alter, which puts it at determined.",
+          "limit": "A proverb stands for a common saying, not one thinker, and Taylor’s note says it is often used to excuse not taking precautions. The English is Taylor’s own 1891 rendering of the Swahili, and the scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "swahili-proverbs-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Swahili proverbs (collected by W. E. Taylor)",
+      "short": "Swahili proverbs",
+      "work": "African Aphorisms: or, Saws from Swahili-Land",
+      "excerpt": "Cultivating to a man who is alone means (lit. is) ruining himself",
+      "period": "Collected before 1891",
+      "dateShort": "1891",
+      "dateFull": "published 1891",
+      "sortYear": 1891,
+      "sourceLabel": "W. E. Taylor, African Aphorisms (1891), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "locator": "Footnote to proverb 178, “Kulima ni raki, ndia ni rafiki”. The scanned text contains recognition errors.",
+      "place": "Frere Town, Mombasa, Kenya",
+      "lat": -4.02,
+      "lng": 39.64,
+      "anchorType": "Approximate collecting location",
+      "placeNote": "Taylor was a missionary at Frere Town near Mombasa, on the Swahili coast. The linked scan does not place each proverb, so the pin marks the collector’s base; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Working alone is self-ruin",
+          "why": "In the full verse, farming without help is said to ruin the person who does it alone, because the burnt brush and weeds cannot be gathered by one pair of hands. Being alone is treated as a danger, which puts it at company.",
+          "limit": "The saying is about farm work, not about solitude as a way of life, and it appears in a note to proverb 178, not as a numbered saying. The English is Taylor’s own rendering and the scanned text contains recognition errors."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -38373,9 +39167,9 @@ window.PILOT_EVIDENCE={
       "place": "Los Baños, Laguna, Philippines",
       "lat": 14.17,
       "lng": 121.22,
-      "anchorType": "Approximate writing location",
-      "placeNote": "Mabini is generally said to have drafted the Decalogue and his constitutional programme in 1898 while staying at Los Baños, before joining Aguinaldo at Kawit. The linked text does not state this; the place still needs an editor’s confirmation.",
-      "placeSource": "https://gutenberg.pglaf.org/1/4/6/6/14660/14660-0.txt",
+      "anchorType": "Documented writing location",
+      "placeNote": "The article on Mabini says that, while he was convalescing at the hot springs of Los Baños, Laguna, in 1898, he wrote the pamphlets “El Verdadero Decálogo” and “Ordenanzas de la Revolución”.",
+      "placeSource": "https://en.wikipedia.org/wiki/Apolinario_Mabini",
       "review": "draft",
       "readings": {
         "relationships": {
@@ -38395,7 +39189,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -40166,8 +40960,8 @@ window.PILOT_EVIDENCE={
       "place": "Broadstone, Dorset, England",
       "lat": 50.76,
       "lng": -1.99,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Wallace wrote My Life while living at Broadstone in Dorset, according to standard biographies; the linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "The preface to My Life is dated “Old Orchard, Broadstone, September, 1905”, the house where Wallace lived while completing the book.",
       "placeSource": "https://archive.org/stream/myliferecordofev01walluoft/myliferecordofev01walluoft_djvu.txt",
       "review": "draft",
       "readings": {
@@ -40181,7 +40975,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -40702,8 +41496,8 @@ window.PILOT_EVIDENCE={
       "place": "Uttarpara, West Bengal, India",
       "lat": 22.67,
       "lng": 88.35,
-      "anchorType": "Documented delivery location",
-      "placeNote": "The speech was delivered at Uttarpara, near Calcutta, on 30 May 1909, shortly after Aurobindo’s release from Alipore jail. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Place of delivery",
+      "placeNote": "The speech is known by the name of the town; the text addresses the annual meeting of the local Sabha, where Aurobindo spoke after his release from Alipore jail in 1909. The page does not give a street address for the hall.",
       "placeSource": "https://en.wikisource.org/wiki/Uttarpara_Speech",
       "review": "draft",
       "readings": {
@@ -40717,7 +41511,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -41636,6 +42430,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "delmira-agustini-relationships",
+      "question": "relationships",
+      "name": "Delmira Agustini",
+      "short": "Agustini",
+      "work": "El intruso",
+      "excerpt": "Y hoy río si tu ríes, y canto si tú cantas;",
+      "translation": "And today I laugh if you laugh, and I sing if you sing;",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "Spanish text, Wikisource (es.wikisource.org)",
+      "sourceUrl": "https://es.wikisource.org/wiki/El_intruso",
+      "locator": "First line of the first tercet, “Y hoy río si tú ríes, y canto si tú cantas;”.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.8,
+      "lng": -56.2,
+      "anchorType": "Approximate residence",
+      "placeNote": "Agustini lived and wrote in Montevideo; the linked page gives the poem only and does not date or place it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/El_intruso",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "A lover’s moods mirrored in the beloved",
+          "why": "The speaker says her laughter and singing now follow her lover’s, and the next line has her sleeping at his feet. Her mood is formed by the other person, which puts it at constitutive for this aspect of the self.",
+          "limit": "This is a love sonnet, so the speaker is dramatising devotion and not stating a theory of the self. The claim covers moods and conduct, not identity as a whole. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "george-bernard-shaw-given-or-made",
       "question": "given-or-made",
       "name": "George Bernard Shaw",
@@ -42433,9 +43262,9 @@ window.PILOT_EVIDENCE={
       "place": "Ashanti region, Gold Coast (now Ghana)",
       "lat": 6.7,
       "lng": -1.62,
-      "anchorType": "Region of collection",
-      "placeNote": "Rattray gathered the sayings in Ashanti territory while serving as a government anthropologist; the linked page gives no exact place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/download/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs are Asante sayings in Twi, translated by Rattray from the Basel Mission collection compiled by Christaller and annotated from his own service in Ashanti. The author’s note does not place any single proverb or the translation at a particular town, so the pin marks the region where the sayings were in use.",
+      "placeSource": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
       "review": "draft",
       "readings": {
         "free-will": {
@@ -42448,7 +43277,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -42503,9 +43332,9 @@ window.PILOT_EVIDENCE={
       "place": "Ashanti region, Gold Coast (now Ghana)",
       "lat": 6.7,
       "lng": -1.62,
-      "anchorType": "Region of collection",
-      "placeNote": "Rattray gathered the sayings in Ashanti territory while serving as a government anthropologist; the linked page gives no exact place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/download/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs are Asante sayings in Twi, translated by Rattray from the Basel Mission collection compiled by Christaller and annotated from his own service in Ashanti. The author’s note does not place any single proverb or the translation at a particular town, so the pin marks the region where the sayings were in use.",
+      "placeSource": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
       "review": "draft",
       "readings": {
         "inward-or-others": {
@@ -42518,7 +43347,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -42538,9 +43367,9 @@ window.PILOT_EVIDENCE={
       "place": "Ashanti region, Gold Coast (now Ghana)",
       "lat": 6.7,
       "lng": -1.62,
-      "anchorType": "Region of collection",
-      "placeNote": "Rattray gathered the sayings in Ashanti territory while serving as a government anthropologist; the linked page gives no exact place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://archive.org/download/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs are Asante sayings in Twi, translated by Rattray from the Basel Mission collection compiled by Christaller and annotated from his own service in Ashanti. The author’s note does not place any single proverb or the translation at a particular town, so the pin marks the region where the sayings were in use.",
+      "placeSource": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -42553,7 +43382,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -42823,8 +43652,8 @@ window.PILOT_EVIDENCE={
       "lat": 50.35,
       "lng": 13.7,
       "anchorType": "Documented writing location",
-      "placeNote": "Kafka wrote these aphorisms while staying with his sister at Zürau in Bohemia from autumn 1917 to spring 1918, according to standard biographies. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://projekt-gutenberg.org/authors/franz-kafka/books/franz-kafka-aphorismen/chapter/4",
+      "placeNote": "The article on the Zürau Aphorisms says they were written from September 1917 to April 1918 while Kafka, suffering from tuberculosis, stayed with his sister Ottla at Zürau (now Siřem) in West Bohemia.",
+      "placeSource": "https://en.wikipedia.org/wiki/Z%C3%BCrau_Aphorisms",
       "review": "draft",
       "readings": {
         "lasting-self": {
@@ -42837,7 +43666,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -42994,6 +43823,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "alfonsina-storni-desire",
+      "question": "desire",
+      "name": "Alfonsina Storni",
+      "short": "Storni",
+      "work": "Date a volar",
+      "excerpt": "Gústalo todo porque todo es bello.",
+      "translation": "Taste it all, because all of it is beautiful.",
+      "period": "1919",
+      "dateShort": "1919",
+      "dateFull": "1919",
+      "sortYear": 1919,
+      "sourceLabel": "Spanish text, Wikisource (es.wikisource.org)",
+      "sourceUrl": "https://es.wikisource.org/wiki/Date_a_volar",
+      "locator": "Fifth stanza, last line, of the poem from Irremediablemente… (1919).",
+      "place": "Buenos Aires, Argentina",
+      "lat": -34.62,
+      "lng": -58.45,
+      "anchorType": "Approximate residence",
+      "placeNote": "Storni lived and worked in Buenos Aires when the 1919 volume appeared; the linked page gives no place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Date_a_volar",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Taste everything, because everything is beautiful",
+          "why": "The speaker urges her beloved to run, travel and sample everything the world offers, because everything is beautiful. Desire is to be followed and fulfilled, which puts it at follow.",
+          "limit": "The urging is a lover’s farewell in a poem whose last stanzas say the roads all lead back to her, so the freedom it grants is tinged with longing. The English is the atlas’s own unreviewed translation."
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -43224,8 +44088,8 @@ window.PILOT_EVIDENCE={
       "place": "Cologne, Germany",
       "lat": 50.94,
       "lng": 6.96,
-      "anchorType": "Approximate teaching association",
-      "placeNote": "Scheler taught at the University of Cologne from 1919 to 1928. The linked entry does not state the place; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "The Stanford Encyclopedia of Philosophy entry states that Scheler wrote On the Eternal in Man (1921) during his time at the University of Cologne, where he taught from 1919 to 1928.",
       "placeSource": "https://plato.stanford.edu/entries/scheler/",
       "review": "draft",
       "readings": {
@@ -43239,7 +44103,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -43350,8 +44214,8 @@ window.PILOT_EVIDENCE={
       "place": "Taormina, Sicily, Italy",
       "lat": 37.86,
       "lng": 15.28,
-      "anchorType": "Foreword dated location",
-      "placeNote": "The foreword is dated Taormina, 8 October 1921, but the book was written in several places, so Taormina is the dated site and not necessarily where this chapter was written. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "The foreword to Fantasia of the Unconscious in the linked edition is dated “Taormina, October 8, 1921”, which places the writing of the book at Taormina, Sicily, where Lawrence was living at the time.",
       "placeSource": "https://gutenberg.pglaf.org/2/0/6/5/20654/20654.txt",
       "review": "draft",
       "readings": {
@@ -43365,7 +44229,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -44324,12 +45188,12 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "1926 first edition text (Hoedong Sŏgwan), Korean Wikisource",
       "sourceUrl": "https://ko.wikisource.org/wiki/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5",
       "locator": "Seventh line of the title poem, beginning “그러나 리별을”.",
-      "place": "Seoul, Korea",
-      "lat": 37.57,
-      "lng": 126.98,
-      "anchorType": "Approximate association",
-      "placeNote": "The collection was published in Seoul in 1926; it is said to have been written in 1925 at Baekdamsa temple in the Seoraksan mountains. The linked page gives the text only; the place still needs an editor’s confirmation.",
-      "placeSource": "https://ko.wikisource.org/wiki/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5/%EB%8B%98%EC%9D%98_%EC%B9%A8%EB%AC%B5",
+      "place": "Baekdamsa, Inje, Gangwon, South Korea",
+      "lat": 38.17,
+      "lng": 128.37,
+      "anchorType": "Documented writing location",
+      "placeNote": "The article on Han Yong-un says the poems of Nim ŭi chimmuk were written at Baekdam Temple in 1925, the year before the collection appeared in Seoul; the pin is moved there from Seoul, the place of publication.",
+      "placeSource": "https://en.wikipedia.org/wiki/Han_Yong-un",
       "review": "draft",
       "readings": {
         "suffering": {
@@ -44342,7 +45206,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-25"
+        "date": "2026-11-26"
       }
     },
     {
@@ -44626,11 +45490,11 @@ window.PILOT_EVIDENCE={
       "sourceLabel": "Internet Archive full text of the 1928 edition",
       "sourceUrl": "https://archive.org/stream/natureofphysical00eddi/natureofphysical00eddi_djvu.txt",
       "locator": "Chapter XIV “Reality”, section “Mind-Stuff”. The scanned text contains recognition errors.",
-      "place": "Cambridge, England",
-      "lat": 52.2,
-      "lng": 0.12,
-      "anchorType": "Approximate writing association",
-      "placeNote": "Eddington was Plumian Professor at Cambridge when he wrote the book from his Edinburgh lectures. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.19,
+      "anchorType": "Place of delivery",
+      "placeNote": "Eddington’s preface states that the book is substantially the course of Gifford Lectures he delivered in the University of Edinburgh from January to March 1927; the pin is moved there from Cambridge, his home institution, to mark the documented place of delivery.",
       "placeSource": "https://archive.org/stream/natureofphysical00eddi/natureofphysical00eddi_djvu.txt",
       "review": "draft",
       "readings": {
@@ -44644,7 +45508,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -44741,9 +45605,9 @@ window.PILOT_EVIDENCE={
       "place": "Edinburgh, Scotland",
       "lat": 55.95,
       "lng": -3.19,
-      "anchorType": "Setting of delivery",
-      "placeNote": "The book was delivered as the Gifford Lectures at the University of Edinburgh in 1927–28. The linked entry does not state the place; the place still needs an editor’s confirmation.",
-      "placeSource": "https://plato.stanford.edu/entries/whitehead/",
+      "anchorType": "Place of delivery",
+      "placeNote": "Process and Reality was first given as the Gifford Lectures at the University of Edinburgh in the 1927–28 session, according to the article on the work.",
+      "placeSource": "https://en.wikipedia.org/wiki/Process_and_Reality",
       "review": "draft",
       "readings": {
         "ultimate-reality": {
@@ -44756,7 +45620,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-24"
+        "date": "2026-11-26"
       }
     },
     {
@@ -44776,8 +45640,8 @@ window.PILOT_EVIDENCE={
       "place": "Ommen, Netherlands",
       "lat": 52.52,
       "lng": 6.42,
-      "anchorType": "Documented lecture location",
-      "placeNote": "The speech was given at the Star Camp at Ommen in the Netherlands on 3 August 1929, far from the speaker’s native India. The linked page gives the date; the place is from general accounts; the place still needs an editor’s confirmation.",
+      "anchorType": "Place of delivery",
+      "placeNote": "The Krishnamurti Foundation’s page on the speech says Krishnamurti gave it on 3 August 1929, the opening day of the annual Star Camp at Ommen in Holland, when he dissolved the Order of the Star before about 3,000 members.",
       "placeSource": "https://kfoundation.org/about-krishnamurti/dissolution-speech/",
       "review": "draft",
       "readings": {
@@ -44791,7 +45655,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -45198,8 +46062,8 @@ window.PILOT_EVIDENCE={
       "place": "Vajirarama, Colombo, Sri Lanka",
       "lat": 6.89,
       "lng": 79.9,
-      "anchorType": "Approximate home association",
-      "placeNote": "Nārada lived and taught at the Vajirarama monastery in Colombo. The linked page does not say where the booklet was written; the place still needs an editor’s confirmation.",
+      "anchorType": "Documented writing location",
+      "placeNote": "The 1982 preface of the linked edition is signed by Nārada at Vajirarama, Colombo, Sri Lanka, on 7 May 1982, and says the booklet first appeared in 1933; the place is that of the edition preface, not of the first drafting.",
       "placeSource": "https://www.accesstoinsight.org/lib/authors/narada/nutshell.html",
       "review": "draft",
       "readings": {
@@ -45213,7 +46077,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-23"
+        "date": "2026-11-26"
       }
     },
     {
@@ -55416,6 +56280,56 @@ window.PILOT_EVIDENCE={
     "Sol Plaatje": {
       "about": "South African writer, journalist and a founder of the South African Native National Congress, who published Native Life in South Africa in 1916.",
       "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Alfonsina Storni": {
+      "about": "Argentine poet, born in Switzerland, who wrote in Buenos Aires from the 1910s to the 1930s on love and women’s independence.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Anténor Firmin": {
+      "about": "Haitian anthropologist and statesman who published On the Equality of Human Races in Paris in 1885.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Han Feizi": {
+      "about": "Chinese thinker of the Warring States period, third century BCE, who wrote on law and rulership.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "J. J. Thomas": {
+      "about": "Trinidadian schoolmaster and linguist who answered James Froude’s account of the West Indies in Froudacity, 1889.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Li Qingzhao": {
+      "about": "Chinese poet of the Song dynasty, twelfth century, known for her song lyrics.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Mary Seacole": {
+      "about": "Jamaican-born nurse and businesswoman who cared for soldiers in the Crimean War and published her memoir in 1857.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Ottobah Cugoano": {
+      "about": "Fante-born writer, enslaved as a child, who published an argument against slavery in London in 1787.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Samuel Ajayi Crowther": {
+      "about": "Yoruba-born clergyman, freed from a slave ship as a boy, who became the first African Anglican bishop in 1864.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Su Shi": {
+      "about": "Chinese poet, essayist and official of the Song dynasty, eleventh century, also known as Su Dongpo.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Swahili proverbs (collected by W. E. Taylor)": {
+      "about": "Proverbs of the Swahili coast gathered by the missionary W. E. Taylor and published in 1891.",
+      "tradition": "Indigenous and oral traditions",
       "sure": true
     }
   }
