@@ -7,7 +7,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 'Inter Tig
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
 .top{display:flex;justify-content:space-between;align-items:center;padding:22px 32px;position:sticky;top:0;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);z-index:5}
-.mark{font:600 19px/1 'Inter Tight',sans-serif;letter-spacing:-.03em;text-decoration:none}
+.mark{font:600 19px/1 'Inter Tight',sans-serif;letter-spacing:-.03em;text-decoration:none;display:inline-block;padding:13px 0;margin:-13px 0}
 .top nav{display:flex;gap:24px;font-size:14px}.top nav>*{opacity:.72;text-decoration:none}.top nav>*:hover{opacity:1}
 main{max-width:1180px;margin:0 auto;padding:40px 32px 90px}
 .small{font:500 13px/1.45 'Inter Tight',sans-serif;color:var(--soft);margin:0}

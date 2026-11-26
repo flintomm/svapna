@@ -1,4 +1,5 @@
 ---
+import Fonts from './Fonts.astro';
 // The Svapna experience: a question, the world lit by everyone who answered it, and their words one at a time.
 // Used as the home page and, unlisted, at /next for comparing looks.
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
@@ -44,9 +45,7 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
 <link rel="alternate" type="application/rss+xml" title="Svapna" href="/rss.xml" />
 {indexable && <script type="application/ld+json" set:html={JSON.stringify(organizationSchema(siteUrl))} />}
 {indexable && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema(siteUrl))} />}
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@400&family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<Fonts world italic />
 <link rel="stylesheet" href="/next/next.css" />
 <link rel="prefetch" href="/dream" />
 <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>

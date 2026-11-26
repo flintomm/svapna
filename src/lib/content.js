@@ -659,7 +659,7 @@ export const aboutPages = {
   privacy: {
     title: 'Privacy',
     kicker: 'What is collected, where it travels, how long it stays',
-    effective: '2026-11-25',
+    effective: '2026-11-26',
     paragraphs: [
       'The Svapna Project is a free, donation-supported site about consciousness: the large questions people have asked for four thousand years, and the history and practice of dreaming. Most of the site is read without leaving a trace. Where it keeps or receives data — choices saved in the browser, an optional account, three small forms, an analytics ping, a donation link — the policy below describes what is collected, why, where it travels, and how long it stays.',
       'The intent is the minimum legible footprint compatible with running an editorial project on the open web.',
@@ -709,7 +709,7 @@ export const aboutPages = {
           'Buttondown — newsletter list and dispatch. Receives the email address submitted to the subscribe form, plus standard delivery metadata. Buttondown is not currently certified under the EU-US Data Privacy Framework; transfers rely on Standard Contractual Clauses. Privacy policy: buttondown.com/privacy.',
           'Resend — transactional email delivery for the contact and library-pitch forms. Receives the form submission as the body of an email addressed to admin@svapnaproject.org. Resend is certified under the EU-US Data Privacy Framework. Privacy policy: resend.com/legal/privacy-policy.',
           'Supabase — stores accounts, answers and stickers, and handles sign-in. Data is held in the United States (AWS, Oregon). Privacy policy: supabase.com/privacy.',
-          'Google — confirms a member’s identity at sign-in, and learns that the member signed in to Svapna. Fonts are also loaded from Google Fonts, which receives the visitor’s IP address as any web request does. Privacy policy: policies.google.com/privacy.',
+          'Google — confirms a member’s identity at sign-in, and learns that the member signed in to Svapna. Privacy policy: policies.google.com/privacy.',
           'Stripe — will take membership payments when membership opens. Not yet in use. Privacy policy: stripe.com/privacy.',
         ],
       },
@@ -726,7 +726,7 @@ export const aboutPages = {
         name: 'Cookies and storage',
         paragraphs: [
           'The site sets no advertising or tracking cookies. It uses the browser’s local storage for the choices described above: answers, stickers, the light or night setting and the colour palette. When a visitor signs in, the sign-in library supplied by Supabase keeps a session token in local storage so the member stays signed in; signing out removes it.',
-          'One third-party script runs site-wide: Pirsch Analytics, which is cookieless and stores no personal identifiers. Fonts are loaded from Google Fonts.',
+          'One third-party script runs site-wide: Pirsch Analytics, which is cookieless and stores no personal identifiers. Fonts are served from the site itself.',
         ],
       },
       {

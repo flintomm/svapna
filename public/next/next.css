@@ -51,7 +51,7 @@ button:focus-visible,a:focus-visible{outline:1px solid #fff;outline-offset:5px}
 /* ---- 2026 looks: paper (default), field, ink. The first prototype is ?v=night. ---- */
 body:not([data-v=night]){--sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;font-family:var(--sans);background:#f1eee7;color:#0e0e0e}
 body:not([data-v=night]) .mono{font:500 13px/1.4 var(--sans);letter-spacing:-.005em;text-transform:none}
-body:not([data-v=night]) .mark{font:600 19px/1 var(--sans);letter-spacing:-.03em}
+body:not([data-v=night]) .mark{font:600 19px/1 var(--sans);letter-spacing:-.03em;display:inline-block;padding:13px 0;margin:-13px 0}
 body:not([data-v=night]) #ask h1{font:600 clamp(50px,8.6vw,160px)/.86 var(--sans);letter-spacing:-.055em}
 body:not([data-v=night]) #ask h1 em{font:400 1.04em/.86 var(--serif);font-style:italic;letter-spacing:-.03em}
 body:not([data-v=night]) .answers{font:500 clamp(17px,1.5vw,22px)/1 var(--sans);gap:10px;letter-spacing:-.015em}

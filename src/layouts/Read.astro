@@ -1,4 +1,5 @@
 ---
+import Fonts from '../components/Fonts.astro';
 // The reading layout: the new look for pages meant to be read and found by search.
 import { organizationSchema, breadcrumbSchema, buildCrumbs } from '../lib/seo.js';
 interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null; image?: string }
@@ -39,9 +40,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
   (function () { try { if (localStorage.getItem('svapna_type') === 'plain') document.documentElement.dataset.type = 'plain'; } catch (e) {} })();
   (function () { var m = null; try { m = localStorage.getItem('svapna_mode'); } catch (e) {} if (m !== 'light' && m !== 'night') m = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'night'; document.documentElement.dataset.mode = m; var tc = document.querySelector('meta[name=theme-color]'); if (tc) tc.content = m === 'light' ? '#ffffff' : '#05060c'; })();
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<Fonts />
 <link rel="stylesheet" href="/read/read.css" />
 <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>
 </head>

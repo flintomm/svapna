@@ -56,11 +56,23 @@
   for (const k of ['low', 'mid', 'high']) document.body.style.setProperty('--' + k, `rgb(${RGB[k]})`);
   // Land as a field of dots: a grid of points kept where they fall on land.
   let landDots = null;
+  // The land is drawn once onto a small flat map and the grid is read off its
+  // pixels: asking the geometry about each point one at a time froze the page
+  // for seconds on a phone.
   function makeDots() {
     landDots = [];
+    const w = 1440, h = 720, c = document.createElement('canvas'); c.width = w; c.height = h;
+    const x = c.getContext('2d', { willReadFrequently: true });
+    x.beginPath();
+    for (const poly of land.type === 'MultiPolygon' ? land.coordinates : [land.coordinates]) for (const ring of poly) {
+      ring.forEach((pt, i) => { const X = (pt[0] + 180) / 360 * w, Y = (90 - pt[1]) / 180 * h; if (i) x.lineTo(X, Y); else x.moveTo(X, Y); });
+      x.closePath();
+    }
+    x.fill('evenodd');
+    const px = x.getImageData(0, 0, w, h).data;
     for (let lat = -58; lat <= 82; lat += 2.4) {
-      const step = 2.4 / Math.max(.25, Math.cos(lat * Math.PI / 180));
-      for (let lng = -180; lng < 180; lng += step) if (d3.geoContains(land, [lng, lat])) landDots.push([lng, lat]);
+      const step = 2.4 / Math.max(.25, Math.cos(lat * Math.PI / 180)), Y = Math.min(h - 1, Math.floor((90 - lat) / 180 * h));
+      for (let lng = -180; lng < 180; lng += step) { const X = Math.min(w - 1, Math.floor((lng + 180) / 360 * w)); if (px[(Y * w + X) * 4 + 3] > 127) landDots.push([lng, lat]); }
     }
   }
   const css = tone => `rgb(${RGB[tone]})`;

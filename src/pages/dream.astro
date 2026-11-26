@@ -1,4 +1,5 @@
 ---
+import Fonts from '../components/Fonts.astro';
 // Dreaming: a descent through one night of sleep, layer by layer.
 import quotesData from '../data/quotes.json';
 import timelineData from '../data/timeline.json';
@@ -70,9 +71,7 @@ const dates = [...timelineData.entries].sort((a, b) => a.sort_key - b.sort_key).
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Svapna" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<Fonts italic />
 <link rel="stylesheet" href="/dream/dream.css" />
 <link rel="prefetch" href="/world" />
 <script defer src="https://api.pirsch.io/pa.js" id="pianjs" data-code="ZKEB8d2dhWfXicXcGrjg6juT4izbzLaK"></script>

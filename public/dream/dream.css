@@ -4,7 +4,7 @@ body.light-now{--ink:#07070c;--soft:#07070cb0;--line:#07070c40;--glass:#ffffffb0
 a{color:inherit}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
 #abyss{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;display:block}
 .top{position:fixed;inset:0 0 auto 0;z-index:6;display:flex;justify-content:space-between;align-items:center;padding:22px 32px;pointer-events:none}
-.top *{pointer-events:auto}.mark{font:600 19px/1 'Inter Tight',sans-serif;letter-spacing:-.03em;text-decoration:none}
+.top *{pointer-events:auto}.mark{font:600 19px/1 'Inter Tight',sans-serif;letter-spacing:-.03em;text-decoration:none;display:inline-block;padding:13px 0;margin:-13px 0}
 .top-right{display:flex;gap:22px;align-items:center;font:500 13px/1 'Inter Tight',sans-serif}.top-right>*{opacity:.72;text-decoration:none}.top-right>*:hover{opacity:1}
 .gauge{position:fixed;right:32px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;align-items:flex-end;gap:14px}
 #clock{font:600 15px/1 'Inter Tight',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
