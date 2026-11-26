@@ -3107,7 +3107,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "psalms-ultimate-reality",
       "question": "ultimate-reality",
-      "name": "Psalms",
+      "name": "Book of Psalms",
       "short": "Psalms",
       "work": "Psalm 19",
       "excerpt": "The heavens declare the glory of God; and the firmament sheweth his handywork.",
@@ -3359,7 +3359,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "jeremiah-given-or-made",
       "question": "given-or-made",
-      "name": "Book of Jeremiah",
+      "name": "Jeremiah",
       "short": "Jeremiah",
       "work": "Jeremiah 1:5",
       "excerpt": "Before I formed thee in the belly I knew thee; and before thou camest forth out of the womb I sanctified thee, and I ordained thee a prophet unto the nations.",
@@ -3548,7 +3548,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "genesis-solitude-or-company",
       "question": "solitude-or-company",
-      "name": "Hebrew Bible (Genesis)",
+      "name": "The Book of Genesis",
       "short": "Genesis",
       "work": "Genesis 2",
       "excerpt": "It is not good that the man should be alone",
@@ -3905,7 +3905,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "leviticus-self-or-others-first",
       "question": "self-or-others-first",
-      "name": "Hebrew Bible (Leviticus)",
+      "name": "The Book of Leviticus",
       "short": "Leviticus",
       "work": "Leviticus 19",
       "excerpt": "thou shalt love thy neighbour as thyself",
@@ -4192,7 +4192,7 @@ window.PILOT_EVIDENCE={
     {
       "id": "psalms-given-or-made",
       "question": "given-or-made",
-      "name": "Hebrew Bible (Psalm)",
+      "name": "Book of Psalms",
       "short": "Psalm",
       "work": "Psalm 139",
       "excerpt": "thou hast possessed my reins: thou hast covered me in my mother’s womb",
@@ -4264,6 +4264,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-proverbs-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Book of Proverbs",
+      "short": "Proverbs",
+      "work": "Proverbs 27:19",
+      "excerpt": "As in water face answereth to face, so the heart of man to man.",
+      "period": "c. 700–300 BCE",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "compiled between about 700 and 300 BCE",
+      "sortYear": -500,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Proverbs",
+      "locator": "Proverbs, chapter 27, verse 19.",
+      "place": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.21,
+      "anchorType": "Traditional association",
+      "placeNote": "The collection is traditionally linked with Solomon and the court at Jerusalem, though its sayings were gathered over centuries. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Proverbs",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Heart answers heart",
+          "why": "The proverb compares a face seen in water with the way one person’s heart shows what another’s is like. A person sees his own heart reflected in other people, which places it at through others.",
+          "limit": "A one-line saying, and the Hebrew is hard; some translators read it as the heart showing the man himself. The King James rendering fixes a meaning the original may not hold.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "book-of-psalms-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Book of Psalms",
+      "short": "Psalms",
+      "work": "Psalm 4:4",
+      "excerpt": "commune with your own heart upon your bed, and be still.",
+      "period": "c. 1000–300 BCE",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "composed between about 1000 and 300 BCE",
+      "sortYear": -500,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "locator": "Psalm 4, verse 4.",
+      "place": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.21,
+      "anchorType": "Traditional association",
+      "placeNote": "The psalm is headed as David’s and the psalter is tied to worship at Jerusalem; the dates of single psalms are unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Speaking with the heart in stillness",
+          "why": "The psalmist tells his hearers to turn from anger and speak with their own hearts in stillness on their beds. Calm is sought by turning inward, away from company.",
+          "limit": "A line in a prayer attributed to David, in the King James wording. The Hebrew rendered “commune with your own heart” is read by other translators as “speak” to the heart or “search” the heart.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "book-of-psalms-meaning",
+      "question": "meaning",
+      "name": "Book of Psalms",
+      "short": "Psalms",
+      "work": "Psalm 8:4–5",
+      "excerpt": "For thou hast made him a little lower than the angels, and hast crowned him with glory and honour.",
+      "period": "c. 1000–300 BCE",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "composed between about 1000 and 300 BCE",
+      "sortYear": -500,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "locator": "Psalm 8, verses 4 and 5.",
+      "place": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.21,
+      "anchorType": "Traditional association",
+      "placeNote": "The psalm is headed as David’s and the psalter is tied to worship at Jerusalem; the dates of single psalms are unknown. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Crowned with glory and honour",
+          "why": "The psalmist asks why God cares for humankind and answers that God made humans little lower than the angels and crowned them with glory and honour. A human life has a worth and place conferred by its Maker.",
+          "limit": "A hymn of praise, in the King James wording. The Hebrew word rendered “angels” can also mean “God” or “gods”, which changes the claim somewhat, and the psalm speaks of humankind in general, not of single lives.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -6246,6 +6351,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "job-given-or-made",
+      "question": "given-or-made",
+      "name": "Book of Job",
+      "short": "Job",
+      "work": "Job 31:15",
+      "excerpt": "Did not he that made me in the womb make him? and did not one fashion us in the womb?",
+      "period": "c. 500–300 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "composed between about 500 and 300 BCE",
+      "sortYear": -400,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "locator": "Job, chapter 31, verse 15.",
+      "place": "Land of Uz (Edom or north Arabia)",
+      "lat": 30.3,
+      "lng": 36,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book places Job in the land of Uz, whose location is unknown, and gives no site of composition. The pin is a rough guess on the Edom and north Arabia side; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Made in the womb",
+          "why": "Job argues that God fashioned both master and servant in the womb. Persons are made what they are by their maker before birth, and Job draws equal dignity from this.",
+          "limit": "A rhetorical question in Job’s speech defending his conduct toward his servants. It speaks of shared origin before birth, not of how character forms afterward.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "job-lasting-self",
+      "question": "lasting-self",
+      "name": "Book of Job",
+      "short": "Job",
+      "work": "Job 19:25–27",
+      "excerpt": "though after my skin worms destroy this body, yet in my flesh shall I see God",
+      "period": "c. 500–300 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "composed between about 500 and 300 BCE",
+      "sortYear": -400,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "locator": "Job, chapter 19, verses 25 to 27.",
+      "place": "Land of Uz (Edom or north Arabia)",
+      "lat": 30.3,
+      "lng": 36,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book places Job in the land of Uz, whose location is unknown, and gives no site of composition. The pin is a rough guess on the Edom and north Arabia side; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Seeing God in the flesh",
+          "why": "Job says that after worms destroy his body he will still, in his own flesh, see God. The speaker expects to persist as one and the same person, which places the passage at a lasting self.",
+          "limit": "A poem spoken by a suffering character in a literary work, not a doctrine. Scholars disagree about whether the Hebrew speaks of life after death or of vindication within this life, and the King James rendering favours the first.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "job-meaning",
+      "question": "meaning",
+      "name": "Book of Job",
+      "short": "Job",
+      "work": "Job 7:16",
+      "excerpt": "I loathe it; I would not live alway: let me alone; for my days are vanity.",
+      "period": "c. 500–300 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "composed between about 500 and 300 BCE",
+      "sortYear": -400,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "locator": "Job, chapter 7, verse 16.",
+      "place": "Land of Uz (Edom or north Arabia)",
+      "lat": 30.3,
+      "lng": 36,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book places Job in the land of Uz, whose location is unknown, and gives no site of composition. The pin is a rough guess on the Edom and north Arabia side; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "My days are vanity",
+          "why": "In his suffering Job says he loathes life and wants to be left alone, because his days are vanity, empty breath. Life appears to him without purpose.",
+          "limit": "The speech is that of a character in agony, answered later in the poem by a divine reply that Job accepts. It states Job’s mood in one chapter and not the book’s conclusion.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "katha-upanishad-death",
       "question": "death",
       "name": "Kaṭha Upaniṣad",
@@ -6428,6 +6638,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "mundaka-upanishad-lasting-self",
+      "question": "lasting-self",
+      "name": "Mundaka Upanishad",
+      "short": "Mundaka",
+      "work": "Mundaka Upanishad 3.1.1",
+      "excerpt": "One of them eats the sweet fruit, the other looks on without eating",
+      "period": "c. 500–300 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "composed between about 500 and 300 BCE",
+      "sortYear": -400,
+      "sourceLabel": "Max Müller translation (Sacred Books of the East, vol. 15, 1884), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/upanishads02ml/upanishads02ml_djvu.txt",
+      "locator": "Third Mundaka, first Khanda, verse 1. The scanned text contains recognition errors.",
+      "place": "Ganges plain, northern India",
+      "lat": 26.4,
+      "lng": 82,
+      "anchorType": "Traditional association",
+      "placeNote": "The Upanishad has no known place of composition; the central Ganges plain is a conventional association for the Vedic schools only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/upanishads02ml/upanishads02ml_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The witness bird on the tree",
+          "why": "Two birds sit on one tree, one eating the fruit and the other watching without eating. The watching bird stands for a Self that stays apart from experience, which places the passage at a lasting self.",
+          "limit": "A verse in Max Müller’s Victorian translation, with a commentary tradition that reads the second bird as God or the Self and the first as the individual soul. The wider verse sequence says the grieving bird is freed when it sees the other, so the two are finally one.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -9717,6 +9962,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "ecclesiastes-lasting-self",
+      "question": "lasting-self",
+      "name": "Ecclesiastes (Qohelet)",
+      "short": "Ecclesiastes",
+      "work": "Ecclesiastes 12:7",
+      "excerpt": "Then shall the dust return to the earth as it was: and the spirit shall return unto God who gave it.",
+      "period": "c. 250 BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "King James Version, Wikisource text",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+      "locator": "Ecclesiastes, chapter 12, verse 7.",
+      "place": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.21,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition connects the book with Jerusalem, where the speaker is a king; the date and author are disputed. The linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Ecclesiastes",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The spirit returns to God",
+          "why": "The closing poem says the body goes back to dust while the spirit goes back to God who gave it. Something of the person is said to continue, which places the passage at a lasting self.",
+          "limit": "Elsewhere the same book says the fate of humans and beasts is alike (3:19–21) and asks who knows where the spirit goes, so this verse may be a later or more hopeful voice. The King James wording shapes how firmly it reads.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -13565,6 +13845,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "epictetus-given-or-made",
+      "question": "given-or-made",
+      "name": "Epictetus",
+      "short": "Epictetus",
+      "work": "Golden Sayings of Epictetus, saying 86",
+      "excerpt": "How are we constituted by Nature? To be free, to be noble, to be modest (for what other living thing is capable of blushing, or of feeling the impression of shame?)",
+      "period": "c. 100 CE",
+      "dateShort": "c. 100 CE",
+      "dateFull": "circa 100 CE",
+      "sortYear": 100,
+      "sourceLabel": "Hastings Crossley translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/8/7/871/871-0.txt",
+      "locator": "Saying LXXXVI, beginning “How are we constituted by Nature?”.",
+      "place": "Nicopolis, Epirus, Greece",
+      "lat": 39.02,
+      "lng": 20.73,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Epictetus taught at Nicopolis in Epirus after leaving Rome around 93 CE. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/8/7/871/871-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Constituted by Nature to be free",
+          "why": "Epictetus answers that human beings are by nature constituted to be free, noble and modest, and he points to the capacity for shame as a sign. What a person is comes as an endowment of nature.",
+          "limit": "A saying from lectures recorded by his pupil and arranged by a Victorian editor in Hastings Crossley’s English. Epictetus also insists that training is needed to live up to this nature.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "epictetus-lasting-self",
+      "question": "lasting-self",
+      "name": "Epictetus",
+      "short": "Epictetus",
+      "work": "Golden Sayings of Epictetus",
+      "excerpt": "thou art thyself a fragment torn from God:—thou hast a portion of Him within thyself.",
+      "period": "c. 100 CE",
+      "dateShort": "c. 100 CE",
+      "dateFull": "circa 100 CE",
+      "sortYear": 100,
+      "sourceLabel": "Hastings Crossley translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/8/7/871/871-0.txt",
+      "locator": "The saying addressed to one who does not know his high descent, beginning “Seek then the real nature of the Good”.",
+      "place": "Nicopolis, Epirus, Greece",
+      "lat": 39.02,
+      "lng": 20.73,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Epictetus taught at Nicopolis in Epirus after leaving Rome around 93 CE. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/8/7/871/871-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "A portion of God within",
+          "why": "Epictetus tells his hearer that he is a fragment torn from God and carries a portion of Him within. What a person truly is derives from the divine and is not just a body, which places the passage at a lasting self.",
+          "limit": "A collection of sayings drawn from his recorded lectures and arranged by a Victorian editor in Hastings Crossley’s English. Epictetus was unsure what happens at death, so the passage speaks of divine kinship more than of survival.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "rabbi-tarfon-meaning",
       "question": "meaning",
       "name": "Rabbi Tarfon (Pirkei Avot)",
@@ -14574,6 +14924,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "marcus-aurelius-lasting-self",
+      "question": "lasting-self",
+      "name": "Marcus Aurelius",
+      "short": "Marcus Aurelius",
+      "work": "Meditations, Book 10",
+      "excerpt": "all this that now thou art in either kind, either for matter of substance, or of life, hath but two or three days ago partly from meats eaten, and partly from air breathed in, received all its influx",
+      "period": "c. 170–180 CE",
+      "dateShort": "c. 175 CE",
+      "dateFull": "circa 170 to 180 CE",
+      "sortYear": 175,
+      "sourceLabel": "Meric Casaubon translation (1634), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "locator": "Tenth Book, the section on dissolution into the elements, with the comparison to a running river.",
+      "place": "Carnuntum, on the Danube, Austria",
+      "lat": 48.11,
+      "lng": 16.86,
+      "anchorType": "Traditional association",
+      "placeNote": "The Meditations are traditionally linked to Marcus’s Danube campaigns against the Quadi and Marcomanni; Book 2 is marked as written at Granua. Which Book 10 section was written where is not known; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/6/8/2680/2680-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "The self as a river fed from outside",
+          "why": "Marcus tells himself that the matter and life he now is were taken in from food and air only days ago, like a river kept up by fresh water. What he calls himself is a changing stream, not a fixed thing.",
+          "limit": "A private notebook in Meric Casaubon’s seventeenth-century English, which is loose in places. Marcus elsewhere speaks of a ruling faculty that persists, so this passage gives only one side of his view.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "marcus-aurelius-meaning",
       "question": "meaning",
       "name": "Marcus Aurelius",
@@ -14942,6 +15327,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "patanjali-yoga-sutras-lasting-self",
+      "question": "lasting-self",
+      "name": "Patañjali",
+      "short": "Patañjali",
+      "work": "Yoga Sutras, Book 1, sutra 3",
+      "excerpt": "3. Then the Seer comes to consciousness in his proper nature.",
+      "period": "c. 200 BCE – 400 CE",
+      "dateShort": "c. 200 CE",
+      "dateFull": "compiled between about 200 BCE and 400 CE",
+      "sortYear": 200,
+      "sourceLabel": "Charles Johnston translation (1912), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/2/2526/2526-0.txt",
+      "locator": "Book 1 (Samadhi Pada), sutra 3.",
+      "place": "India (place unknown)",
+      "lat": 26.8,
+      "lng": 80.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The Sutras have no known place of composition; northern India is a conventional association only. The linked page gives the text, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/5/2/2526/2526-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The Seer in its proper nature",
+          "why": "When the mind’s activities cease, the Seer, the pure witnessing self, stands in its own nature. The Sutras treat that Seer as distinct from the changing mind and as what remains, which places it at a lasting self.",
+          "limit": "The sutra is Charles Johnston’s 1912 rendering, and the commentary around it carries his theosophical reading. Yoga here is a practice for freeing the Seer, and the sutra does not argue for the Seer’s existence.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "patanjali-yoga-sutras-meaning",
+      "question": "meaning",
+      "name": "Patañjali",
+      "short": "Patañjali",
+      "work": "Yoga Sutras, Book 2, sutra 21",
+      "excerpt": "21. The very essence of things seen is, that they exist for the Seer.",
+      "period": "c. 200 BCE – 400 CE",
+      "dateShort": "c. 200 CE",
+      "dateFull": "compiled between about 200 BCE and 400 CE",
+      "sortYear": 200,
+      "sourceLabel": "Charles Johnston translation (1912), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/2/2526/2526-0.txt",
+      "locator": "Book 2 (Sadhana Pada), sutra 21.",
+      "place": "India (place unknown)",
+      "lat": 26.8,
+      "lng": 80.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The Sutras have no known place of composition; northern India is a conventional association only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/5/2/2526/2526-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Things exist for the Seer",
+          "why": "The Sutras say that the whole seen world, including the mind and body, exists for the purposes of the Seer, the Soul. The order of things gives experience a purpose, which places the passage at a meaning that is given.",
+          "limit": "Charles Johnston’s 1912 rendering, with a theosophical commentary after the sutra. The purpose named is liberation of the Seer from the seen, which belongs to the Yoga school’s dualism.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -16795,6 +17250,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "boethius-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Boethius",
+      "short": "Boethius",
+      "work": "The Consolation of Philosophy, Book 2",
+      "excerpt": "seek ye from without that happiness whose seat is only within us?",
+      "period": "c. 524 CE",
+      "dateShort": "c. 524 CE",
+      "dateFull": "circa 524 CE",
+      "sortYear": 524,
+      "sourceLabel": "H. R. James translation (1897), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "locator": "Book 2, the prose beginning “Why, then, ye children of mortality”.",
+      "place": "Pavia, Italy",
+      "lat": 45.19,
+      "lng": 9.16,
+      "anchorType": "Traditional association",
+      "placeNote": "Boethius is traditionally said to have written the Consolation while imprisoned near Pavia before his execution in about 524. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Happiness whose seat is within",
+          "why": "Philosophy asks why people look outside themselves for a happiness that has its seat within. Peace is found by being master of oneself, which Fortune cannot take away.",
+          "limit": "Spoken by the personified figure of Philosophy to the imprisoned author, in H. R. James’s 1897 translation. The book turns later to God as the highest good, so this inward step is not its last word.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -26858,6 +27348,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "wang-yangming-lasting-self",
+      "question": "lasting-self",
+      "name": "Wang Yangming",
+      "short": "Wang Yangming",
+      "work": "Instructions for Practical Living (Chuanxilu), Part 3",
+      "excerpt": "人孰無根？良知即是天植靈根，自生生不息；但著了私累，把此根戕賊蔽塞，不得發生耳。",
+      "translation": "Who has no root? Innate knowing is the spiritual root planted by Heaven, and it grows without ceasing by itself; it is only that selfish burdens have damaged and blocked this root so that it cannot sprout.",
+      "period": "1518–1527",
+      "dateShort": "c. 1520",
+      "dateFull": "recorded between 1518 and 1527 and compiled by his students",
+      "sortYear": 1520,
+      "sourceLabel": "Chinese Wikisource text of the Chuanxilu, Part 3",
+      "sourceUrl": "https://zh.wikisource.org/wiki/傳習錄/卷下",
+      "locator": "Part 3, the exchange at Yuxue in Shaoxing, beginning “顧田間禾曰” with Fan Zhaoqi, saying numbered 245.",
+      "place": "Shaoxing, Zhejiang, China",
+      "lat": 30,
+      "lng": 120.58,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The exchange is set at the Yu Cave area near Shaoxing, where Wang taught in his later years. The linked page does not state the year; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/傳習錄/卷下",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The unceasing root of innate knowing",
+          "why": "Wang says everyone has a root, the innate knowing planted by Heaven, which grows of itself without ceasing and is only blocked by selfish burdens. The core of a person is treated as lasting and untouched by what covers it.",
+          "limit": "A remark to a student who watched grain growing, in the Chinese original on Wikisource; the English is the atlas’s own unreviewed translation. Wang’s term liangzhi, innate knowing, is a moral awareness and not a soul in the sense of later Western debate.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "guru-nanak",
       "name": "Guru Nanak",
       "short": "Nanak",
@@ -27965,6 +28491,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "michel-de-montaigne-given-or-made",
+      "question": "given-or-made",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, Book 3, chapter 2, “Of Repentance”",
+      "excerpt": "Natural inclinations are much assisted and fortified by education; but they seldom alter and overcome their institution",
+      "period": "1588",
+      "dateShort": "1588",
+      "dateFull": "1588",
+      "sortYear": 1588,
+      "sourceLabel": "Charles Cotton translation, edited by W. C. Hazlitt, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "locator": "Book 3, chapter 2, “Of Repentance”, the paragraph beginning “Natural inclinations are much assisted and fortified by education”.",
+      "place": "Château de Montaigne, Périgord, France",
+      "lat": 44.84,
+      "lng": 0.75,
+      "anchorType": "Documented writing location",
+      "placeNote": "Montaigne wrote the Essays in the tower of his château near Bordeaux. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Natural inclination and education",
+          "why": "Montaigne says that education strengthens a person’s natural inclinations but seldom changes them. A person has a given nature that training develops and rarely overturns, which places the passage between given and made.",
+          "limit": "A remark in an essay about Montaigne’s own character, in the seventeenth-century translation of Charles Cotton. The next lines allow that a thousand natures have escaped toward virtue or vice through opposite discipline.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "michel-de-montaigne-lasting-self",
       "question": "lasting-self",
       "name": "Michel de Montaigne",
@@ -28032,6 +28593,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "michel-de-montaigne-meaning",
+      "question": "meaning",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, Book 3, chapter 13, “Of Experience”",
+      "excerpt": "The glorious masterpiece of man is to live to purpose; all other things: to reign, to lay up treasure, to build, are but little appendices and props.",
+      "period": "1592",
+      "dateShort": "1592",
+      "dateFull": "1592",
+      "sortYear": 1592,
+      "sourceLabel": "Charles Cotton translation, edited by W. C. Hazlitt, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "locator": "Book 3, chapter 13, “Of Experience”, near the end, the paragraph beginning “The glorious masterpiece of man”.",
+      "place": "Château de Montaigne, Périgord, France",
+      "lat": 44.84,
+      "lng": 0.75,
+      "anchorType": "Documented writing location",
+      "placeNote": "Montaigne wrote the Essays in the tower of his château near Bordeaux. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "To live to purpose",
+          "why": "Montaigne says that a person’s great achievement is to live well and to the purpose, and that power, wealth and building count for little beside it. Meaning is something a person works out in the manner of living.",
+          "limit": "A line from the closing essay of the Essays, in Charles Cotton’s seventeenth-century English, where “to live to purpose” renders a French phrase about living appropriately. The essay values ordinary pleasures and does not say what the purpose is.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -28499,6 +29095,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "john-donne-inward-or-others",
+      "question": "inward-or-others",
+      "name": "John Donne",
+      "short": "Donne",
+      "work": "Devotions upon Emergent Occasions, Meditation 17",
+      "excerpt": "No man is an island, entire of itself; every man is a piece of the continent, a part of the main.",
+      "period": "1624",
+      "dateShort": "1624",
+      "dateFull": "1624",
+      "sortYear": 1624,
+      "sourceLabel": "Project Gutenberg text of Devotions upon Emergent Occasions",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/7/7/23772/23772.txt",
+      "locator": "Meditation 17, the passage on the passing bell.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Documented writing location",
+      "placeNote": "Donne wrote the Devotions in 1623 during an illness and was then Dean of St Paul’s in London. The linked page does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/7/7/23772/23772.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "unscored",
+          "facet": "No man is an island",
+          "why": "Donne says that each person belongs to the whole of humanity, so that any man’s death diminishes him. A person understands himself as bound up with others, which places the passage at through others. A second, independent reading moved this placement from “through others” to “unscored”: The words say that every person is part of the whole of humankind; they speak of belonging, and nothing in them says how a person comes to see or know the self.",
+          "limit": "A meditation written during a serious illness, urging sympathy at a tolling bell. It speaks of belonging and shared fate, not of how a person comes to know himself.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -29396,6 +30027,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "blaise-pascal-meaning",
+      "question": "meaning",
+      "name": "Blaise Pascal",
+      "short": "Pascal",
+      "work": "Pensées, fragment 205",
+      "excerpt": "there is no reason why here rather than there, why now rather than then. Who has put me here? By whose order and direction have this place and time been allotted to me?",
+      "period": "c. 1657–1662",
+      "dateShort": "c. 1660",
+      "dateFull": "written between about 1657 and 1662, published 1670",
+      "sortYear": 1660,
+      "sourceLabel": "W. F. Trotter translation (1904), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "locator": "Fragment 205, the paragraph beginning “When I consider the short duration of my life”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Documented writing location",
+      "placeNote": "Pascal wrote the notes for the Pensées in Paris in his last years and they were published after his death in 1662. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "unscored",
+          "facet": "Placed here without a stated reason",
+          "why": "Pascal says that when he considers his short life between two eternities he is frightened to find himself here and now with no reason why. The passage asks what or who placed him, and leaves the question unanswered.",
+          "limit": "A private note, in W. F. Trotter’s 1904 translation, that Pascal meant to answer through faith elsewhere in the Pensées. The excerpt alone does not say whether he finds a given meaning or none.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -31687,6 +32353,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "adam-smith-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Adam Smith",
+      "short": "Smith",
+      "work": "The Theory of Moral Sentiments, Part 3, chapter 1",
+      "excerpt": "But we can do this in no other way than by endeavouring to view them with the eyes of other people, or as other people are likely to view them.",
+      "period": "1759",
+      "dateShort": "1759",
+      "dateFull": "1759",
+      "sortYear": 1759,
+      "sourceLabel": "Internet Archive scan of the 1853 edition",
+      "sourceUrl": "https://archive.org/stream/theorymoralsent00stewgoog/theorymoralsent00stewgoog_djvu.txt",
+      "locator": "Part 3, chapter 1, the passage beginning “We can never survey our own sentiments and motives”. The scanned text contains recognition errors.",
+      "place": "Glasgow, Scotland",
+      "lat": 55.87,
+      "lng": -4.29,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Smith held the chair of moral philosophy at the University of Glasgow when the book first appeared in 1759. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/theorymoralsent00stewgoog/theorymoralsent00stewgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Judging oneself through others’ eyes",
+          "why": "Smith argues that a person can judge his own motives only by standing back from them, and that this is possible only by viewing them as other people would. Self-knowledge is reached through the imagined eyes of others.",
+          "limit": "A claim about moral self-judgment, from an eighteenth-century book that moves on to the figure of an impartial inner spectator, who is partly an internalised other. The scanned text contains recognition errors, and the quoted span was chosen to avoid them.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "adam-smith-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Adam Smith",
@@ -32021,6 +32722,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Jean-Jacques Rousseau",
+      "short": "Rousseau",
+      "work": "Emile, Book 4 (Profession of Faith of the Savoyard Vicar)",
+      "excerpt": "Conscience is the voice of the soul, the passions are the voice of the body.",
+      "period": "1762",
+      "dateShort": "1762",
+      "dateFull": "1762",
+      "sortYear": 1762,
+      "sourceLabel": "Barbara Foxley translation (1911), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "locator": "Book 4, the Profession of Faith, the passage on conscience beginning “We are resisting it”.",
+      "place": "Montmorency, France",
+      "lat": 49,
+      "lng": 2.32,
+      "anchorType": "Documented writing location",
+      "placeNote": "Rousseau wrote Emile while living at Montmorency near Paris, and the book was condemned on publication in 1762. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Conscience as the true guide",
+          "why": "The Vicar says that the inner voice of conscience, unlike reason and the senses, never deceives and is the true guide of man. Truth about right and wrong is found by looking within, which places the passage at inward.",
+          "limit": "The speaker is a fictional priest in a treatise on education, and Rousseau elsewhere stresses how society forms a child. Barbara Foxley’s 1911 translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau-lasting-self",
+      "question": "lasting-self",
+      "name": "Jean-Jacques Rousseau",
+      "short": "Rousseau",
+      "work": "Emile, Book 4 (Profession of Faith of the Savoyard Vicar)",
+      "excerpt": "I cannot conceive a similar destruction of the conscious nature, and as I cannot imagine how it can die, I presume that it does not die.",
+      "period": "1762",
+      "dateShort": "1762",
+      "dateFull": "1762",
+      "sortYear": 1762,
+      "sourceLabel": "Barbara Foxley translation (1911), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "locator": "Book 4, the Profession of Faith, in the section on life after death.",
+      "place": "Montmorency, France",
+      "lat": 49,
+      "lng": 2.32,
+      "anchorType": "Documented writing location",
+      "placeNote": "Rousseau wrote Emile while living at Montmorency near Paris, and the book was condemned on publication in 1762. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The soul survives the body",
+          "why": "The Vicar admits that he cannot prove the soul is immortal but holds that the conscious self is not worn away as the body is, and so presumes it lasts. The passage affirms an enduring self on moral and rational grounds.",
+          "limit": "The words belong to a fictional priest in a treatise on education, and Rousseau presents the belief as a consoling presumption, not a demonstration. The translation is by Barbara Foxley (1911).",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau-meaning",
+      "question": "meaning",
+      "name": "Jean-Jacques Rousseau",
+      "short": "Rousseau",
+      "work": "Emile, Book 4 (Profession of Faith of the Savoyard Vicar)",
+      "excerpt": "the fulfilment of my destiny in this world, according to the purpose of my Maker.",
+      "period": "1762",
+      "dateShort": "1762",
+      "dateFull": "1762",
+      "sortYear": 1762,
+      "sourceLabel": "Barbara Foxley translation (1911), Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "locator": "Book 4, the Profession of Faith, the passage after the Vicar’s address to the Supreme Being, beginning “Having thus deduced”.",
+      "place": "Montmorency, France",
+      "lat": 49,
+      "lng": 2.32,
+      "anchorType": "Documented writing location",
+      "placeNote": "Rousseau wrote Emile while living at Montmorency near Paris, and the book was condemned on publication in 1762. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/4/2/5427/5427.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "A destiny set by the Maker",
+          "why": "The Vicar says the rules for his life must serve his destiny in this world according to the purpose of his Maker. The aim of a life is set by God, and the person’s task is to read it in his heart.",
+          "limit": "The speaker is a fictional priest who reasons from nature and conscience, not from scripture, and Rousseau let the book circulate as a statement of his own faith. Barbara Foxley’s 1911 translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -33420,6 +34226,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mary-wollstonecraft-meaning",
+      "question": "meaning",
+      "name": "Mary Wollstonecraft",
+      "short": "Wollstonecraft",
+      "work": "A Vindication of the Rights of Woman, chapter 1",
+      "excerpt": "For what purpose were the passions implanted? That man by struggling with them might attain a degree of knowledge denied to the brutes",
+      "period": "1792",
+      "dateShort": "1792",
+      "dateFull": "1792",
+      "sortYear": 1792,
+      "sourceLabel": "Project Gutenberg text of A Vindication of the Rights of Woman",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "locator": "Chapter 1, “The Rights and Involved Duties of Mankind Considered”, the paragraph beginning “For what purpose were the passions implanted?”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Documented writing location",
+      "placeNote": "Wollstonecraft wrote the Vindication in London in 1791 and 1792 and published it there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/4/2/3420/3420.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Why the passions were implanted",
+          "why": "Wollstonecraft asks why the passions were implanted and answers that human beings might gain knowledge through struggling with them. A purpose for human life is read from the design of nature and Providence, which places it at given.",
+          "limit": "The passage is part of an argument about reason and virtue, not a direct treatise on life’s meaning, and the purpose it names is gaining knowledge and virtue. The wording is that of a 1792 text, and the Project Gutenberg copy is an old e-text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mary-wollstonecraft-suffering",
       "question": "suffering",
       "name": "Mary Wollstonecraft",
@@ -33908,6 +34749,114 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "johann-wolfgang-von-goethe-given-or-made",
+      "question": "given-or-made",
+      "name": "Johann Wolfgang von Goethe",
+      "short": "Goethe",
+      "work": "Faust, Part 1, “Night”",
+      "excerpt": "Was du ererbt von deinen Vätern hast, Erwirb es, um es zu besitzen.",
+      "translation": "What you have inherited from your fathers, earn it so as to possess it.",
+      "period": "1808",
+      "dateShort": "1808",
+      "dateFull": "1808",
+      "sortYear": 1808,
+      "sourceLabel": "Project Gutenberg text of Faust, Part 1 (German)",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "locator": "Faust, Part 1, the scene “Nacht”, Faust’s monologue after the Earth Spirit leaves.",
+      "place": "Weimar, Germany",
+      "lat": 50.98,
+      "lng": 11.33,
+      "anchorType": "Documented writing location",
+      "placeNote": "Goethe lived and worked in Weimar from 1775 and finished Faust, Part 1, there, publishing it in 1808. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Earning what is inherited",
+          "why": "Faust says that what a person inherits must still be earned before it is truly his own. An endowment comes first and has to be worked for, which places the passage between given and made.",
+          "limit": "Spoken by a character reflecting on his study and on the possessions of his family; it is about inheritance in a general sense and not about natural talent. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "johann-wolfgang-von-goethe-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Johann Wolfgang von Goethe",
+      "short": "Goethe",
+      "work": "Faust, Part 1, “Prologue in Heaven”",
+      "excerpt": "Ein guter Mensch, in seinem dunklen Drange, Ist sich des rechten Weges wohl bewußt.",
+      "translation": "A good person, in his dark urge, is quite aware of the right way.",
+      "period": "1808",
+      "dateShort": "1808",
+      "dateFull": "1808",
+      "sortYear": 1808,
+      "sourceLabel": "Project Gutenberg text of Faust, Part 1 (German)",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "locator": "Faust, Part 1, “Prologue in Heaven”, the Lord’s reply to Mephistopheles.",
+      "place": "Weimar, Germany",
+      "lat": 50.98,
+      "lng": 11.33,
+      "anchorType": "Documented writing location",
+      "placeNote": "Goethe lived and worked in Weimar from 1775 and finished Faust, Part 1, there, publishing it in 1808. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "The inner urge knows the way",
+          "why": "The Lord tells Mephistopheles that a good person, even in obscure striving, senses the right path from within. Direction is found from an inner awareness and not from outside guidance.",
+          "limit": "The line is spoken by God in a wager scene with the devil, and the drama goes on to show Faust going astray. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "johann-wolfgang-von-goethe-lasting-self",
+      "question": "lasting-self",
+      "name": "Johann Wolfgang von Goethe",
+      "short": "Goethe",
+      "work": "Faust, Part 1, “Outside the City Gate”",
+      "excerpt": "Zwei Seelen wohnen, ach! in meiner Brust, Die eine will sich von der andern trennen;",
+      "translation": "Two souls, alas, dwell in my breast; the one wants to separate itself from the other.",
+      "period": "1808",
+      "dateShort": "1808",
+      "dateFull": "1808",
+      "sortYear": 1808,
+      "sourceLabel": "Project Gutenberg text of Faust, Part 1 (German)",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "locator": "Faust, Part 1, the scene “Vor dem Tor” (Outside the City Gate), Faust’s speech to Wagner beginning “Du bist dir nur des einen Triebs bewußt”.",
+      "place": "Weimar, Germany",
+      "lat": 50.98,
+      "lng": 11.33,
+      "anchorType": "Documented writing location",
+      "placeNote": "Goethe lived and worked in Weimar from 1775 and finished Faust, Part 1, there, publishing it in 1808. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/2/2/2229/2229-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "Two souls in one breast",
+          "why": "Faust says that two souls live in his one breast, and that one tries to pull away from the other. The self is real but divided against itself, which places it at a changing self.",
+          "limit": "The words are spoken by a character in a verse drama at a moment of inner conflict. The German is the original; the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -34617,6 +35566,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-carlyle-lasting-self",
+      "question": "lasting-self",
+      "name": "Thomas Carlyle",
+      "short": "Carlyle",
+      "work": "Sartor Resartus, Book 1",
+      "excerpt": "From Eternity, onwards to Eternity! These are Apparitions: what else? Are they not Souls rendered visible: in Bodies, that took shape and will lose it, melting into air?",
+      "period": "1833–1834",
+      "dateShort": "1833",
+      "dateFull": "serialised 1833 to 1834",
+      "sortYear": 1833,
+      "sourceLabel": "Project Gutenberg text of Sartor Resartus",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/5/1051/1051-0.txt",
+      "locator": "Book 1, the passage on the living flood in the streets, seen from the Professor’s watch-tower, beginning “That living flood, pouring through these streets”.",
+      "place": "Craigenputtock, Dumfriesshire, Scotland",
+      "lat": 55.17,
+      "lng": -3.84,
+      "anchorType": "Documented writing location",
+      "placeNote": "Carlyle wrote Sartor Resartus in 1830 and 1831 while living at Craigenputtock, his wife’s farm in Dumfriesshire. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/5/1051/1051-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Souls from eternity to eternity",
+          "why": "The narrator looks at a crowd in a city street and says its members are souls made visible in bodies that will melt away, coming from eternity and going to eternity. The self is taken as lasting and the body as passing.",
+          "limit": "A rhetorical passage in a comic philosophical novel, spoken by the narrator about the fictional Professor Teufelsdröckh’s view. It asserts the soul’s eternity in a mood of wonder and offers no argument.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "thomas-carlyle-meaning",
+      "question": "meaning",
+      "name": "Thomas Carlyle",
+      "short": "Carlyle",
+      "work": "Sartor Resartus, Book 2, chapter 9",
+      "excerpt": "Love not Pleasure; love God. This is the EVERLASTING YEA, wherein all contradiction is solved: wherein whoso walks and works, it is well with him.",
+      "period": "1833–1834",
+      "dateShort": "1833",
+      "dateFull": "serialised 1833 to 1834",
+      "sortYear": 1833,
+      "sourceLabel": "Project Gutenberg text of Sartor Resartus",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/5/1051/1051-0.txt",
+      "locator": "Book 2, chapter 9, “The Everlasting Yea”, the paragraph beginning “Es leuchtet mir ein”.",
+      "place": "Craigenputtock, Dumfriesshire, Scotland",
+      "lat": 55.17,
+      "lng": -3.84,
+      "anchorType": "Documented writing location",
+      "placeNote": "Carlyle wrote Sartor Resartus in 1830 and 1831 while living at Craigenputtock, his wife’s farm in Dumfriesshire. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/5/1051/1051-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "The Everlasting Yea",
+          "why": "After despair, Teufelsdröckh concludes that a person finds blessedness not in pleasure but in loving God, the Godlike in man. Life’s purpose is received as a divine order to be taken up, which places the passage at given.",
+          "limit": "The words come from a fictional professor’s spiritual autobiography in a satirical novel, though they echo Carlyle’s own recovery from doubt. The vision is a general faith, not tied to a creed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "samuel-ajayi-crowther-suffering",
       "question": "suffering",
       "name": "Samuel Ajayi Crowther",
@@ -34790,6 +35809,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "ralph-waldo-emerson-meaning",
+      "question": "meaning",
+      "name": "Ralph Waldo Emerson",
+      "short": "Emerson",
+      "work": "Essays, First Series, “Spiritual Laws”",
+      "excerpt": "Each man has his own vocation. The talent is the call. There is one direction in which all space is open to him.",
+      "period": "1841",
+      "dateShort": "1841",
+      "dateFull": "1841",
+      "sortYear": 1841,
+      "sourceLabel": "Project Gutenberg text of Essays, First Series",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/9/4/2944/2944-0.txt",
+      "locator": "“Spiritual Laws”, the paragraph beginning “Each man has his own vocation”.",
+      "place": "Concord, Massachusetts",
+      "lat": 42.46,
+      "lng": -71.35,
+      "anchorType": "Documented writing location",
+      "placeNote": "Emerson lived and wrote in Concord, Massachusetts, when the first series was published in 1841. The linked page does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/9/4/2944/2944-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "The talent is the call",
+          "why": "Emerson says that each person’s gifts point to a calling, and that along that one direction every obstacle is removed. The purpose of a life is carried in a person’s given talent, so it is given and not chosen.",
+          "limit": "An essay that urges trust in one’s own nature, in a confident register that downplays the difficulty of finding a calling. The same essay allows that people may mistake their vocation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -35276,6 +36330,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ralph-waldo-emerson-given-or-made",
+      "question": "given-or-made",
+      "name": "Ralph Waldo Emerson",
+      "short": "Emerson",
+      "work": "Essays, Second Series, “Experience”",
+      "excerpt": "Temperament is the iron wire on which the beads are strung.",
+      "period": "1844",
+      "dateShort": "1844",
+      "dateFull": "1844",
+      "sortYear": 1844,
+      "sourceLabel": "Project Gutenberg text of Essays, Second Series",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/9/4/2945/2945.txt",
+      "locator": "“Experience”, the paragraph on the lords of life beginning “There are always sunsets, and there is always genius”.",
+      "place": "Concord, Massachusetts",
+      "lat": 42.46,
+      "lng": -71.35,
+      "anchorType": "Documented writing location",
+      "placeNote": "Emerson lived and wrote in Concord, Massachusetts. “Experience” followed the death of his young son Waldo in 1842. The linked page does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/9/4/2945/2945.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Temperament as the iron wire",
+          "why": "Emerson says that a person’s moods and gifts are strung on temperament, which sets limits that fortune and talent cannot move. What a person is rests on a given constitution.",
+          "limit": "A figure of speech in an essay that also grieves over the limits of life and dwells on how little a person can change. Emerson elsewhere urges self-reliance and growth, so the line shows only one mood.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "ralph-waldo-emerson-lasting-self",
       "question": "lasting-self",
       "name": "Ralph Waldo Emerson",
@@ -35703,6 +36792,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "george-copway-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "George Copway (Kah-ge-ga-gah-bowh)",
+      "short": "Copway",
+      "work": "The Life, History, and Travels of Kah-ge-ga-gah-bowh, chapter III",
+      "excerpt": "if others are in want ; never withhold from them what the Great Spirit has blessed you with",
+      "period": "1847",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "1847 Albany edition, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/lifehistorytrave00copw/lifehistorytrave00copw_djvu.txt",
+      "locator": "Chapter III, the series of sayings beginning “If you own a good hunting dog”. The scanned text contains recognition errors.",
+      "place": "Albany, New York, United States",
+      "lat": 42.66,
+      "lng": -73.78,
+      "anchorType": "Documented place of publication",
+      "placeNote": "The title page of the linked scan gives Albany, 1847 as the place of printing, and the author’s signed dedication is dated Albany, January 1847. The scanned text contains recognition errors.",
+      "placeSource": "https://archive.org/stream/lifehistorytrave00copw/lifehistorytrave00copw_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Sharing the catch with those in want",
+          "why": "Copway reports his father’s counsel that a hunter must share a kill with anyone in need, because what he holds was given by the Great Spirit. The claim of the needy outranks the hunter’s own claim on what he has caught.",
+          "limit": "The words are Copway’s English rendering of precepts he says his people taught the young, set down about fifteen years after his conversion. Copway, an Ojibwe Methodist missionary, wrote in English for a Christian audience and was by then a convert, so he reports the older Ojibwe belief from outside it. He gives this as his people’s view, not an argument. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "george-copway-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "George Copway (Kah-ge-ga-gah-bowh)",
+      "short": "Copway",
+      "work": "The Life, History, and Travels of Kah-ge-ga-gah-bowh, chapter III",
+      "excerpt": "They also said he could hear all his children, and see them. He was the author of all things that they saw, and made the other spirits that were acknowledged by the Ojebwas",
+      "period": "1847",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "1847 Albany edition, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/lifehistorytrave00copw/lifehistorytrave00copw_djvu.txt",
+      "locator": "Chapter III, paragraph beginning “The Ojebwas, as well as many others, acknowledged that there was but one Great Spirit”. The scanned text contains recognition errors.",
+      "place": "Albany, New York, United States",
+      "lat": 42.66,
+      "lng": -73.78,
+      "anchorType": "Documented place of publication",
+      "placeNote": "The title page of the linked scan gives Albany, 1847 as the place of printing, and the author’s signed dedication is dated Albany, January 1847. The scanned text contains recognition errors.",
+      "placeSource": "https://archive.org/stream/lifehistorytrave00copw/lifehistorytrave00copw_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "One Great Spirit as author of all things",
+          "why": "Copway reports that the Ojibwe of his youth held to one Great Spirit who hears and sees all and made everything, including the lesser spirits. That affirms an ultimate reality behind the world.",
+          "limit": "Copway describes the older belief as a Christian convert and may have shaped it toward a single creator familiar to his readers; the lesser spirits and ceremonies that the passage mentions sit beside it. Copway, an Ojibwe Methodist missionary, wrote in English for a Christian audience and was by then a convert, so he reports the older Ojibwe belief from outside it. He gives this as his people’s view, not an argument. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "nisia-floresta-given-or-made",
       "question": "given-or-made",
       "name": "Nísia Floresta",
@@ -35908,6 +37067,111 @@ window.PILOT_EVIDENCE={
           "facet": "Pain as avenging faults",
           "why": "The speaker reads the man’s cruelty as a mission to avenge her own great faults, and adds that God willed it. Her pain is deserved and sent, which puts the poem at ‘has-meaning’.",
           "limit": "A speaker in the first moment of recovery from a failed love; the reading of her suffering as punishment is one the poem offers and may not be her settled view. The page gives no date of writing. The English in the translation field is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "arthur-schopenhauer-given-or-made",
+      "question": "given-or-made",
+      "name": "Arthur Schopenhauer",
+      "short": "Schopenhauer",
+      "work": "The Wisdom of Life, “Personality, or What a Man Is”",
+      "excerpt": "The ultimate cause of this is undoubtedly to be found in innate, and therefore unalterable, physical constitution",
+      "period": "1851",
+      "dateShort": "1851",
+      "dateFull": "1851",
+      "sortYear": 1851,
+      "sourceLabel": "T. Bailey Saunders translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/7/4/10741/10741-0.txt",
+      "locator": "Chapter 2, “Personality, or What a Man Is”, the paragraph on good spirits and health beginning “But however much health may contribute”.",
+      "place": "Frankfurt am Main, Germany",
+      "lat": 50.11,
+      "lng": 8.68,
+      "anchorType": "Documented writing location",
+      "placeNote": "Schopenhauer lived in Frankfurt from 1833 until his death in 1860 and wrote Parerga and Paralipomena there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/7/4/10741/10741-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Innate, unalterable temperament",
+          "why": "Schopenhauer says that a melancholy or cheerful temperament comes from a man’s inborn physical constitution, which cannot be altered. What a person is in this respect is an endowment from birth.",
+          "limit": "The claim concerns temperament and mood, not the whole person, and Schopenhauer wrote before modern genetics or psychology. T. Bailey Saunders’ translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "arthur-schopenhauer-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Arthur Schopenhauer",
+      "short": "Schopenhauer",
+      "work": "The Wisdom of Life (Aphorisms on the Wisdom of Life), “Personality, or What a Man Is”",
+      "excerpt": "what a man is in himself, what accompanies him when he is alone, what no one can give or take away, is obviously more essential to him than everything he has in the way of possessions",
+      "period": "1851",
+      "dateShort": "1851",
+      "dateFull": "1851",
+      "sortYear": 1851,
+      "sourceLabel": "T. Bailey Saunders translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/7/4/10741/10741-0.txt",
+      "locator": "Chapter 2, “Personality, or What a Man Is”, the opening pages.",
+      "place": "Frankfurt am Main, Germany",
+      "lat": 50.11,
+      "lng": 8.68,
+      "anchorType": "Documented writing location",
+      "placeNote": "Schopenhauer lived in Frankfurt from 1833 until his death in 1860 and wrote Parerga and Paralipomena there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/7/4/10741/10741-0.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "What a man is in himself",
+          "why": "Schopenhauer holds that the part of a person that stays when he is alone, and cannot be given or taken, matters more than possessions or reputation. Well-being lies in what a person is in himself, which turns the reader inward.",
+          "limit": "A set of worldly counsels by a writer known for his pessimism, in T. Bailey Saunders’ translation. It prizes self-sufficiency and warns against society, and so gives no weight to what others can teach a person about himself.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "arthur-schopenhauer-lasting-self",
+      "question": "lasting-self",
+      "name": "Arthur Schopenhauer",
+      "short": "Schopenhauer",
+      "work": "“Immortality: a Dialogue”, in Studies in Pessimism",
+      "excerpt": "your individuality is not your true and inmost being: it is only the outward manifestation of it.",
+      "period": "1851",
+      "dateShort": "1851",
+      "dateFull": "1851",
+      "sortYear": 1851,
+      "sourceLabel": "T. Bailey Saunders translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/7/3/10732/10732-0.txt",
+      "locator": "“Immortality: a Dialogue”, the speech of Philalethes beginning “Transcendental knowledge is knowledge which passes beyond the bounds of possible experience”.",
+      "place": "Frankfurt am Main, Germany",
+      "lat": 50.11,
+      "lng": 8.68,
+      "anchorType": "Documented writing location",
+      "placeNote": "Schopenhauer lived in Frankfurt from 1833 until his death in 1860 and wrote Parerga and Paralipomena, from which the dialogue comes, there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/7/3/10732/10732-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The individual ends, the true being does not",
+          "why": "Philalethes tells his partner that the individual perishes, but that the real being behind it knows no beginning or end and is present in every individual. A lasting something is affirmed, though it is not the personal self.",
+          "limit": "A philosophical dialogue whose speaker Philalethes voices Schopenhauer’s view, in T. Bailey Saunders’ 1890s translation. What lasts is the will, shared by all, not the person, so the passage denies a lasting personal self while affirming a lasting ground.",
           "second": "agreed"
         }
       },
@@ -36162,6 +37426,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henry-david-thoreau-given-or-made",
+      "question": "given-or-made",
+      "name": "Henry David Thoreau",
+      "short": "Thoreau",
+      "work": "Walden, “Higher Laws”",
+      "excerpt": "We are all sculptors and painters, and our material is our own flesh and blood and bones. Any nobleness begins at once to refine a man’s features, any meanness or sensuality to imbrute them.",
+      "period": "1854",
+      "dateShort": "1854",
+      "dateFull": "1854",
+      "sortYear": 1854,
+      "sourceLabel": "Project Gutenberg text of Walden",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "locator": "Chapter 11, “Higher Laws”, the paragraph beginning “Every man is the builder of a temple”.",
+      "place": "Walden Pond, Concord, Massachusetts",
+      "lat": 42.44,
+      "lng": -71.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "Thoreau lived at Walden Pond from 1845 to 1847 and drafted much of the book there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "People as sculptors of their own flesh",
+          "why": "Thoreau says that each person builds his own body like a temple, and that nobleness or meanness at once shapes the face. A person is formed by his own conduct, which places the passage at made.",
+          "limit": "A moral exhortation inside an essay on diet and restraint, resting on a physiognomic belief that character shows in the face. It concerns self-shaping and says nothing about the given basis for it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "henry-david-thoreau-inward-or-others",
       "question": "inward-or-others",
       "name": "Henry David Thoreau",
@@ -36188,6 +37487,76 @@ window.PILOT_EVIDENCE={
           "facet": "Solitude as company",
           "why": "Thoreau says he finds more company in being alone than in the society of others, and that he has gone to the pond to live deliberately. The passage turns a person away from others toward their own solitude, which places it at inward.",
           "limit": "Thoreau lived a mile or two from the town of Concord, received visitors and walked into the village often, and the book is a literary account of a chosen experiment. The sentence is a general remark and does not show how he weighed other people.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "henry-david-thoreau-lasting-self",
+      "question": "lasting-self",
+      "name": "Henry David Thoreau",
+      "short": "Thoreau",
+      "work": "Walden, “Solitude”",
+      "excerpt": "a certain doubleness by which I can stand as remote from myself as from another.",
+      "period": "1854",
+      "dateShort": "1854",
+      "dateFull": "1854",
+      "sortYear": 1854,
+      "sourceLabel": "Project Gutenberg text of Walden",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "locator": "Chapter 5, “Solitude”, the paragraph beginning “I think that I love society as much as most”.",
+      "place": "Walden Pond, Concord, Massachusetts",
+      "lat": 42.44,
+      "lng": -71.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "Thoreau lived at Walden Pond from 1845 to 1847 and drafted much of the book there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "unscored",
+          "facet": "The spectator within the self",
+          "why": "Thoreau says he can watch his own experience as a detached spectator who is no more himself than it is the reader. The self is real but divided, with a part that observes the part that lives. A second, independent reading moved this placement from “a changing self” to “unscored”: The words describe standing apart from oneself as an onlooker; they do not say whether the self endures, is built up over time, or is absent.",
+          "limit": "A brief observation made while arguing for the company of solitude, not a theory of identity. He does not say what the spectator is or whether it outlasts death.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "henry-david-thoreau-meaning",
+      "question": "meaning",
+      "name": "Henry David Thoreau",
+      "short": "Thoreau",
+      "work": "Walden, “Where I Lived, and What I Lived For”",
+      "excerpt": "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach",
+      "period": "1854",
+      "dateShort": "1854",
+      "dateFull": "1854",
+      "sortYear": 1854,
+      "sourceLabel": "Project Gutenberg text of Walden",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "locator": "Chapter 2, “Where I Lived, and What I Lived For”, the paragraph beginning “I went to the woods because I wished to live deliberately”.",
+      "place": "Walden Pond, Concord, Massachusetts",
+      "lat": 42.44,
+      "lng": -71.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "Thoreau lived at Walden Pond from 1845 to 1847 and drafted much of the book there. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/205/205-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "Living deliberately",
+          "why": "Thoreau says he went to the woods to test whether life, faced in its essentials, has something to teach, so that he would not discover at death that he had not lived. Meaning is sought by a chosen way of living.",
+          "limit": "A statement of a personal experiment by a man who kept a cabin near friends and family for two years. It states a wish to find out what life teaches and leaves open whether it teaches anything.",
           "second": "agreed"
         }
       },
@@ -36880,6 +38249,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "omar-khayyam-given-or-made",
+      "question": "given-or-made",
+      "name": "Omar Khayyam",
+      "short": "Omar Khayyam",
+      "work": "Rubáiyát, FitzGerald’s first edition, stanza 63",
+      "excerpt": "They sneer at me for leaning all awry; What? did the Hand then of the Potter shake?",
+      "period": "1859 (poet c. 1100)",
+      "dateShort": "1859",
+      "dateFull": "translated 1859; poet active about 1100 CE",
+      "sortYear": 1859,
+      "sourceLabel": "Edward FitzGerald translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "locator": "First edition, the “Book of Pots” group of stanzas, the sixty-third.",
+      "place": "Nishapur, Iran",
+      "lat": 36.21,
+      "lng": 58.8,
+      "anchorType": "Traditional association",
+      "placeNote": "Omar Khayyam is associated with Nishapur, though FitzGerald’s version was made in England. The linked page does not state the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/4/246/246-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "The crooked pot and the potter",
+          "why": "A misshapen pot protests that it did not make itself crooked and blames the shaking hand of its maker. How a person turns out is treated as fixed by the one who made him.",
+          "limit": "Edward FitzGerald’s very free 1859 rendering, which blends the Persian quatrains into one voice; the pot parable is his arrangement. The speaker is a pot in a fable, and the stanza questions divine justice more than it states a doctrine.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -38268,6 +39672,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-stuart-mill-meaning",
+      "question": "meaning",
+      "name": "John Stuart Mill",
+      "short": "Mill",
+      "work": "Autobiography, chapter 5",
+      "excerpt": "The end had ceased to charm, and how could there ever again be any interest in the means? I seemed to have nothing left to live for.",
+      "period": "1873 (describing 1826)",
+      "dateShort": "1873",
+      "dateFull": "written about 1870 and published 1873, describing the year 1826",
+      "sortYear": 1873,
+      "sourceLabel": "Project Gutenberg text of the Autobiography",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/3/7/10378/10378-0.txt",
+      "locator": "Chapter 5, “A Crisis in My Mental History”, the paragraph beginning “In this frame of mind it occurred to me”.",
+      "place": "Avignon, France",
+      "lat": 43.95,
+      "lng": 4.81,
+      "anchorType": "Documented writing location",
+      "placeNote": "Mill wrote the Autobiography mainly at Avignon, where he lived in his later years. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/3/7/10378/10378-0.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "unscored",
+          "facet": "The end that ceased to charm",
+          "why": "Mill recalls that when he imagined all his reforming aims achieved, he felt no joy, and the purpose that had organised his life fell away. In that state life seemed to him to hold nothing to live for. A second, independent reading moved this placement from “there is none” to “unscored”: The words recall a time when life seemed to hold nothing to live for; they report a state of mind and make no claim that life itself has no meaning.",
+          "limit": "Mill describes a depression of his early twenties that he later overcame, partly through poetry and a wider view of happiness. The passage reports a mood and not a considered doctrine.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "walter-pater-lasting-self",
       "question": "lasting-self",
       "name": "Walter Pater",
@@ -39080,6 +40519,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "friedrich-nietzsche-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Friedrich Nietzsche",
+      "short": "Nietzsche",
+      "work": "Thus Spake Zarathustra, Part 1, “The Friend”",
+      "excerpt": "What is usually the countenance of thy friend? It is thine own countenance, in a coarse and imperfect mirror.",
+      "period": "1883",
+      "dateShort": "1883",
+      "dateFull": "1883",
+      "sortYear": 1883,
+      "sourceLabel": "Thomas Common translation, Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "locator": "Part 1, chapter 14, “The Friend”, the paragraph beginning “Sawest thou ever thy friend asleep”.",
+      "place": "Rapallo, Italy",
+      "lat": 44.35,
+      "lng": 9.24,
+      "anchorType": "Documented writing location",
+      "placeNote": "Nietzsche wrote Part 1 in about ten days in early 1883 at Rapallo on the Ligurian coast. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "The friend as a mirror",
+          "why": "Zarathustra says that a person’s friend shows his own face, though in a coarse mirror, and that the anchorite needs a friend because the talk of “I and me” alone sinks too deep. Seeing oneself takes another person.",
+          "limit": "Poetic speech put in the mouth of a prophet in Thomas Common’s 1909 translation. Zarathustra elsewhere in the book praises solitude, so the passage gives one side of his teaching.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -41507,6 +42981,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "lafcadio-hearn-given-or-made",
+      "question": "given-or-made",
+      "name": "Lafcadio Hearn",
+      "short": "Hearn",
+      "work": "Kokoro, “From a Traveling Diary”",
+      "excerpt": "that which might well seem to be the most strictly personal of all feelings, is not an individual matter at all.",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Project Gutenberg text of Kokoro, 1896",
+      "sourceUrl": "https://gutenberg.pglaf.org/8/8/8/8882/8882.txt",
+      "locator": "“From a Traveling Diary”, Kyoto, the passage on first love and inherited feeling.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.76,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The diary section is headed Kyoto, April 10–20. The book was published in 1896. The page does not say where this passage was drafted; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/8/8/8/8882/8882.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Feeling inherited from ancestors",
+          "why": "Hearn says that even first love, which seems the most personal of feelings, is inherited from earlier generations and is not an individual matter. What a person feels comes from ancestry, which places the passage at given.",
+          "limit": "Hearn leans on the evolutionary psychology of Herbert Spencer and on a belief in racial memory, both now rejected. The essay is a traveller’s reflection, not an argument.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "lafcadio-hearn-lasting-self",
+      "question": "lasting-self",
+      "name": "Lafcadio Hearn",
+      "short": "Hearn",
+      "work": "Kokoro, “From a Traveling Diary”",
+      "excerpt": "there is no absolute individuality,--that the mind is as much a composite of souls as the body is of cells.",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Project Gutenberg text of Kokoro, 1896",
+      "sourceUrl": "https://gutenberg.pglaf.org/8/8/8/8882/8882.txt",
+      "locator": "“From a Traveling Diary”, Kyoto, April 10–20, in the passage on Greek art and the shock of beauty.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.76,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The diary section is headed Kyoto, April 10–20, and the passage follows a visit to an art exhibition. The book was published in 1896. The page does not say where this passage was drafted; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/8/8/8/8882/8882.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "changing",
+          "facet": "The mind as a composite of souls",
+          "why": "Hearn argues from the Greek ideal of beauty that a person carries inherited traces of countless earlier lives, so the mind is built up from many souls as the body is from cells. The self is real but composite, which places it at a changing self.",
+          "limit": "The remark is an aside in a travel essay on art and rests on the evolutionary psychology of Herbert Spencer, which is now disputed. It speaks of a mind built from inheritance and says little about whether anything endures through one lifetime.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "olha-kobylianska-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Olha Kobylianska",
@@ -41617,6 +43161,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "swami-vivekananda-given-or-made",
+      "question": "given-or-made",
+      "name": "Swami Vivekananda",
+      "short": "Vivekananda",
+      "work": "Raja Yoga, motto on the title page",
+      "excerpt": "EACH SOUL is POTENTIALLY DIVINE. THE GOAL IS TO MANIFEST THIS DIVINITY WITHIN",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Internet Archive full text of the 1920 Brentano’s edition",
+      "sourceUrl": "https://archive.org/stream/raajayogabeingle00viveuoft/raajayogabeingle00viveuoft_djvu.txt",
+      "locator": "The motto on the page before the Preface of Raja Yoga. The scanned text contains recognition errors.",
+      "place": "New York City",
+      "lat": 40.75,
+      "lng": -73.99,
+      "anchorType": "Documented lecture location",
+      "placeNote": "The Raja Yoga lectures were given in New York in the winter of 1895 to 1896 and published in 1896. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/raajayogabeingle00viveuoft/raajayogabeingle00viveuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Each soul potentially divine",
+          "why": "Vivekananda says each soul is already potentially divine, and the task is to bring that divinity out through discipline. An endowment is given and has to be developed, which places the passage between given and made.",
+          "limit": "A motto printed at the head of the book, in capital letters in the scan, and not a worked argument. The divinity is a Vedanta teaching, and the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "swami-vivekananda-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Swami Vivekananda",
+      "short": "Vivekananda",
+      "work": "Raja Yoga, commentary on Patañjali’s Yoga Aphorisms",
+      "excerpt": "It is true that all knowledge is within ourselves, but this has to be called forth by another knowledge.",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Internet Archive full text of the 1920 Brentano’s edition",
+      "sourceUrl": "https://archive.org/stream/raajayogabeingle00viveuoft/raajayogabeingle00viveuoft_djvu.txt",
+      "locator": "Commentary on Book 1, aphorism 26 of the Yoga Aphorisms. The scanned text contains recognition errors.",
+      "place": "New York City",
+      "lat": 40.75,
+      "lng": -73.99,
+      "anchorType": "Documented lecture location",
+      "placeNote": "The Raja Yoga lectures were given in New York in the winter of 1895 to 1896 and published in 1896. The linked page does not state this; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/raajayogabeingle00viveuoft/raajayogabeingle00viveuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Knowledge within, called out by another",
+          "why": "Vivekananda holds that all knowledge is already inside a person but has to be called out by another knowledge, for dead matter cannot do it. The inward source and the help of others are held together.",
+          "limit": "A comment on one aphorism about God as the teacher of the ancient teachers, so “another knowledge” may mean a teacher or God as well as other people. Elsewhere in the book he says that in the end no one can help a person but that person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -41799,6 +43413,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "samuel-johnson-yoruba-death",
+      "question": "death",
+      "name": "Samuel Johnson (Yoruba historian)",
+      "short": "Johnson (Yoruba)",
+      "work": "The History of the Yorubas, chapter III, “Religion”",
+      "excerpt": "Whatever we do on earth we shall give an account thereof at the portals of heaven",
+      "period": "Written c. 1897, published 1921",
+      "dateShort": "c. 1897",
+      "dateFull": "Written c. 1897, published 1921",
+      "sortYear": 1897,
+      "sourceLabel": "The History of the Yorubas (1921), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "locator": "Chapter III, paragraph on the future state, beginning “They also believe in a future state”. The scanned text contains recognition errors.",
+      "place": "Oyo, Nigeria",
+      "lat": 7.85,
+      "lng": 3.93,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Johnson, a Yoruba clergyman, completed the manuscript at Oyo in 1897; it was published posthumously by his brother in 1921. The linked page does not give the place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Account at the portals of heaven",
+          "why": "Johnson cites a Yoruba adage, with his own English gloss, to show that the Yoruba expect a future judgment. People are held to account for their lives after death, so something of them goes on.",
+          "limit": "This is a proverb quoted by Johnson as evidence of belief; its sense may have been read in a Christian direction by him. Johnson, a Yoruba Anglican clergyman, wrote in English for a mission and colonial readership, describes the older religion from a Christian standpoint, and died before the book appeared in 1921 under his brother’s editing. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "samuel-johnson-yoruba-free-will",
+      "question": "free-will",
+      "name": "Samuel Johnson (Yoruba historian)",
+      "short": "Johnson (Yoruba)",
+      "work": "The History of the Yorubas, chapter III, “Religion”",
+      "excerpt": "The Ori (head) is the universal household deity worshipped by both sexes as the god of fate. It is believed that good or ill fortune attends one, according to the will or decree of this god",
+      "period": "Written c. 1897, published 1921",
+      "dateShort": "c. 1897",
+      "dateFull": "Written c. 1897, published 1921",
+      "sortYear": 1897,
+      "sourceLabel": "The History of the Yorubas (1921), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "locator": "Chapter III, paragraph beginning “3. Ori.”. The scanned text contains recognition errors.",
+      "place": "Oyo, Nigeria",
+      "lat": 7.85,
+      "lng": 3.93,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Johnson, a Yoruba clergyman, completed the manuscript at Oyo in 1897; it was published posthumously by his brother in 1921. The linked page does not give the place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Ori, the god of fate",
+          "why": "Johnson reports that the Yoruba hold that a person’s fortune follows the decree of Ori, the head, a god of fate worshipped in every household. What happens to a person is fixed by that decree.",
+          "limit": "The same passage says Ori is propitiated so that good luck may be the worshipper’s share, which leaves room for influence over the decree. Johnson, a Yoruba Anglican clergyman, wrote in English for a mission and colonial readership, describes the older religion from a Christian standpoint, and died before the book appeared in 1921 under his brother’s editing. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "samuel-johnson-yoruba-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Samuel Johnson (Yoruba historian)",
+      "short": "Johnson (Yoruba)",
+      "work": "The History of the Yorubas, chapter III, “Religion”",
+      "excerpt": "They, however, believe in the existence of an Almighty God, him they term Olorun, i.e., Lord of Heaven. They acknowledge Him, Maker of heaven and earth",
+      "period": "Written c. 1897, published 1921",
+      "dateShort": "c. 1897",
+      "dateFull": "Written c. 1897, published 1921",
+      "sortYear": 1897,
+      "sourceLabel": "The History of the Yorubas (1921), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "locator": "Chapter III, opening paragraph. The scanned text contains recognition errors.",
+      "place": "Oyo, Nigeria",
+      "lat": 7.85,
+      "lng": 3.93,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Johnson, a Yoruba clergyman, completed the manuscript at Oyo in 1897; it was published posthumously by his brother in 1921. The linked page does not give the place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofyorubas00john/historyofyorubas00john_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Olorun, Lord of Heaven",
+          "why": "Johnson reports that the Yoruba hold to an Almighty God, Olorun, maker of heaven and earth, above the many lesser gods. That affirms an ultimate reality.",
+          "limit": "The passage adds that God is too exalted to concern himself directly with human affairs, which is why many intermediary gods are worshipped; it is Johnson’s summary of belief, not a prayer or teaching. Johnson, a Yoruba Anglican clergyman, wrote in English for a mission and colonial readership, describes the older religion from a Christian standpoint, and died before the book appeared in 1921 under his brother’s editing. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -42018,6 +43737,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "arunta-informants-given-or-made",
+      "question": "given-or-made",
+      "name": "Arunta informants (recorded by Spencer and Gillen)",
+      "short": "Arunta",
+      "work": "The Native Tribes of Central Australia, chapter IV, “The Totems”",
+      "excerpt": "The spirit children are supposed to have a strong predilection for fat women, and prefer to choose such for their mothers, even at the risk of being born into the wrong class.",
+      "period": "1899",
+      "dateShort": "1899",
+      "dateFull": "1899",
+      "sortYear": 1899,
+      "sourceLabel": "The Native Tribes of Central Australia (1899), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nativetribescen00gillgoog/nativetribescen00gillgoog_djvu.txt",
+      "locator": "Chapter IV, paragraph beginning “of water near to the gap in the Ranges where the spirits dwell”, on the woman who bore a witchetty grub child. The scanned text contains recognition errors.",
+      "place": "Alice Springs (Mparntwe), Northern Territory, Australia",
+      "lat": -23.7,
+      "lng": 133.88,
+      "anchorType": "Fieldwork location",
+      "placeNote": "The authors worked chiefly at Alice Springs and Charlotte Waters in Central Australia and their account refers to Alice Springs as the locality of the woman described; the exact place of this report is not stated.",
+      "placeSource": "https://archive.org/stream/nativetribescen00gillgoog/nativetribescen00gillgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Spirit children choose their mothers",
+          "why": "The Arunta account is that a child’s identity and totem are fixed by a spirit child that enters a woman, and that the spirit chooses its own mother. What a person is arrives as an endowment from the spirit world, not from upbringing.",
+          "limit": "This is the authors’ English summary of belief, in their own idiom (“predilection for fat women”), gathered from Arunta men and women and not in any speaker’s words; Spencer and Gillen were British-trained observers and the wording is theirs. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -42830,6 +44584,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "charles-horton-cooley-given-or-made",
+      "question": "given-or-made",
+      "name": "Charles Horton Cooley",
+      "short": "Cooley",
+      "work": "Human Nature and the Social Order",
+      "excerpt": "the child has by heredity a generous capacity and need for social feeling, rather too vague and plastic to be given any specific name like love.",
+      "period": "1902",
+      "dateShort": "1902",
+      "dateFull": "1902",
+      "sortYear": 1902,
+      "sourceLabel": "Internet Archive full text, 1902 edition",
+      "sourceUrl": "https://archive.org/stream/humannaturesocia00cooluoft/humannaturesocia00cooluoft_djvu.txt",
+      "locator": "Chapter 2 on sympathy and primary ideals, the paragraph beginning “I take it that the child has by heredity”. The scanned text contains recognition errors.",
+      "place": "Ann Arbor, Michigan",
+      "lat": 42.28,
+      "lng": -83.74,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Cooley studied and taught at the University of Michigan in Ann Arbor. The linked page does not say where each book was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/humannaturesocia00cooluoft/humannaturesocia00cooluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Inherited capacity for social feeling",
+          "why": "Cooley holds that a child inherits a wide but vague capacity and need for social feeling, which later experience shapes into particular sentiments. The passage gives both an endowment and the making of it.",
+          "limit": "A statement within a psychological theory from 1902, before modern genetics, offered as an assumption. The scanned text contains recognition errors, and the quoted span was chosen to avoid them.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -43730,6 +45519,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kurnai-informants-death",
+      "question": "death",
+      "name": "Kurnai informants (recorded by A. W. Howitt)",
+      "short": "Kurnai",
+      "work": "The Native Tribes of South-East Australia, chapter VIII, “Beliefs and Burial Practices”",
+      "excerpt": "It must be so, for when I sleep I go to distant places, I see distant people, I even see and speak with those who are dead.",
+      "period": "1904",
+      "dateShort": "1904",
+      "dateFull": "1904",
+      "sortYear": 1904,
+      "sourceLabel": "The Native Tribes of South-East Australia (1904), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nativetribessou00howigoog/nativetribessou00howigoog_djvu.txt",
+      "locator": "Chapter VIII, paragraph beginning “The same belief is held by the Kurnai”. The scanned text contains recognition errors.",
+      "place": "Gippsland, Victoria, Australia",
+      "lat": -37.75,
+      "lng": 147.55,
+      "anchorType": "Traditional association",
+      "placeNote": "Howitt places the Kurnai in Gippsland, Victoria, in the south-east of the continent; the page does not locate this particular conversation, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/nativetribessou00howigoog/nativetribessou00howigoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Going to the sky to see the dead",
+          "why": "A Kurnai man, asked whether his spirit really leaves his body in sleep, answers that in sleep he sees and speaks with the dead. The dead are taken to go on existing where the sleeper’s spirit can visit them.",
+          "limit": "The words are Howitt’s English record of what an unnamed man told him, with the Kurnai original and context not shown, and Howitt, a colonial official and anthropologist, selects and frames them. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "mark-twain-meaning",
       "question": "meaning",
       "name": "Mark Twain",
@@ -44271,6 +46095,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "okakura-kakuzo-meaning",
+      "question": "meaning",
+      "name": "Okakura Kakuzō",
+      "short": "Okakura",
+      "work": "The Book of Tea, chapter 1",
+      "excerpt": "It is essentially a worship of the Imperfect, as it is a tender attempt to accomplish something possible in this impossible thing we know as life.",
+      "period": "1906",
+      "dateShort": "1906",
+      "dateFull": "1906",
+      "sortYear": 1906,
+      "sourceLabel": "Project Gutenberg text of The Book of Tea",
+      "sourceUrl": "https://gutenberg.pglaf.org/7/6/769/769.txt",
+      "locator": "Chapter 1, “The Cup of Humanity”, the opening paragraphs on Teaism.",
+      "place": "New York City",
+      "lat": 40.75,
+      "lng": -73.99,
+      "anchorType": "Approximate publication association",
+      "placeNote": "The book was first published in New York in 1906 while Okakura worked with the Museum of Fine Arts, Boston. The linked page does not state where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/7/6/769/769.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "Something possible in an impossible life",
+          "why": "Okakura describes the way of tea as a modest effort to make something beautiful and humane within a life that cannot be perfected. Meaning is made by that attempt and not found in advance.",
+          "limit": "A description of the tea ceremony as a cultural practice, written in English for Western readers in 1906. It speaks of a cultivated art of living more than of life’s meaning in general.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -44878,6 +46737,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charles-eastman-given-or-made",
+      "question": "given-or-made",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
+      "short": "Eastman",
+      "work": "The Soul of the Indian, chapter II, “The Family Altar”",
+      "excerpt": "Her attitude and secret meditations must be such as to instill into the receptive soul of the unborn child the love of the “Great Mystery” and a sense of brotherhood with all creation",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "The Soul of the Indian (1911), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
+      "locator": "Chapter II, paragraph beginning “The Indian was a religious man from his mother’s womb”.",
+      "place": "Amherst, Massachusetts, United States",
+      "lat": 42.37,
+      "lng": -72.52,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia records that from 1903 Eastman’s family was based in Amherst, Massachusetts, and lists The Soul of the Indian (1911) among the books he published in those years. The page does not name the room or date of writing, so Amherst is the place of residence during the period.",
+      "placeSource": "https://en.wikipedia.org/wiki/Charles_Eastman",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "The mother’s forming influence",
+          "why": "Eastman describes the Dakota belief that the mother’s thoughts and conduct before birth shape the child’s spirit, and that her teaching continues in the first years. A person’s religious character is formed by another’s deliberate influence, which is a position on the side of being made.",
+          "limit": "Eastman, a Santee Dakota physician educated in American schools, writes in English for a general readership and speaks of “the Indian” in general terms, so the passage is his own recollection and generalisation of Dakota life, not a statement by a named elder. The passage is about religious disposition, not about every trait, and elsewhere he also speaks of the child as a gift of the Great Good.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "charles-eastman-happiness",
       "question": "happiness",
       "name": "Charles Alexander Eastman (Ohiyesa)",
@@ -44980,6 +46874,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "charles-eastman-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
+      "short": "Eastman",
+      "work": "The Soul of the Indian, chapter IV, “Barbarism and the Moral Code”",
+      "excerpt": "he is never permitted to forget that he does not live to himself alone, but to his tribe and his clan",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "The Soul of the Indian (1911), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
+      "locator": "Chapter IV, paragraph beginning “The public or tribal position of the Indian is entirely dependent upon his private virtue”.",
+      "place": "Amherst, Massachusetts, United States",
+      "lat": 42.37,
+      "lng": -72.52,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia records that from 1903 Eastman’s family was based in Amherst, Massachusetts, and lists The Soul of the Indian (1911) among the books he published in those years. The page does not name the room or date of writing, so Amherst is the place of residence during the period.",
+      "placeSource": "https://en.wikipedia.org/wiki/Charles_Eastman",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Duty to tribe and clan",
+          "why": "Eastman says a man’s standing in the tribe rests on his private virtue and that he is constantly reminded that his life belongs to his tribe and clan. Duty to the community is placed ahead of his own claims.",
+          "limit": "Eastman, a Santee Dakota physician educated in American schools, writes in English for a general readership and speaks of “the Indian” in general terms, so the passage is his own recollection and generalisation of Dakota life, not a statement by a named elder. The passage describes an ideal of the old days, written after the old life had ended.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "charles-eastman-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
+      "short": "Eastman",
+      "work": "The Soul of the Indian, chapter I, “The Great Mystery”",
+      "excerpt": "there is a magnetic and nervous force that accumulates in solitude and that is quickly dissipated by life in a crowd",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "The Soul of the Indian (1911), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
+      "locator": "Chapter I, paragraph beginning “To the untutored sage, the concentration of population was the prolific mother of all evils”.",
+      "place": "Amherst, Massachusetts, United States",
+      "lat": 42.37,
+      "lng": -72.52,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia records that from 1903 Eastman’s family was based in Amherst, Massachusetts, and lists The Soul of the Indian (1911) among the books he published in those years. The page does not name the room or date of writing, so Amherst is the place of residence during the period.",
+      "placeSource": "https://en.wikipedia.org/wiki/Charles_Eastman",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Power gathered in solitude",
+          "why": "Eastman explains the Dakota habit of worshipping alone by a loss of spiritual power that comes from too close contact with other people. Solitude is where strength is gathered, and a crowd spends it, which puts the passage on the side of being alone.",
+          "limit": "Eastman, a Santee Dakota physician educated in American schools, writes in English for a general readership and speaks of “the Indian” in general terms, so the passage is his own recollection and generalisation of Dakota life, not a statement by a named elder. He also stresses elsewhere that the individual belongs to tribe and clan, so this is one side of a wider account.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -45171,6 +47135,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "e-pauline-johnson-death",
+      "question": "death",
+      "name": "E. Pauline Johnson (Tekahionwake)",
+      "short": "Johnson",
+      "work": "“The Happy Hunting Grounds”, in Flint and Feather",
+      "excerpt": "Surely the great Hereafter cannot be more than this, Surely we'll see that country after Time's farewell kiss.",
+      "period": "Collected in Flint and Feather, 1912",
+      "dateShort": "1912",
+      "dateFull": "Collected in Flint and Feather, 1912",
+      "sortYear": 1912,
+      "sourceLabel": "Flint and Feather (1912), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/6/2/5625/5625.txt",
+      "locator": "The poem “The Happy Hunting Grounds”, sixth stanza.",
+      "place": "Brantford, Ontario, Canada",
+      "lat": 43.14,
+      "lng": -80.26,
+      "anchorType": "Approximate association",
+      "placeNote": "Johnson grew up at Chiefswood on the Grand River near Brantford, Ontario, and lived in Brantford and Vancouver as an adult. The linked text does not say where this poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/6/2/5625/5625.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The hunting ground after death",
+          "why": "In a poem about the western prairie as the home of the Indian’s soul, Johnson says she expects to see that country after death and cannot imagine the hereafter exceeding it. The poem pictures life continuing in a world of beauty.",
+          "limit": "This is a poem in a literary voice by a Mohawk and English poet writing in English for a Canadian and British readership. “Surely” marks a hope more than a proof, and the happy hunting ground is a popular image as much as a recorded Mohawk belief.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -45680,6 +47679,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "rabindranath-tagore-given-or-made",
+      "question": "given-or-made",
+      "name": "Rabindranath Tagore",
+      "short": "Tagore",
+      "work": "Sadhana, “The Problem of Self”",
+      "excerpt": "We gain our freedom when we attain our truest nature.",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "Project Gutenberg text of Sadhana",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/8/4/6842/6842-0.txt",
+      "locator": "Chapter 4, “The Problem of Self”, the paragraph beginning “We gain our freedom when we attain our truest nature”.",
+      "place": "Cambridge, Massachusetts",
+      "lat": 42.37,
+      "lng": -71.11,
+      "anchorType": "Approximate lecture location",
+      "placeNote": "Sadhana collects lectures Tagore gave in the United States in 1912 and 1913, including at Harvard. The linked page does not state the place of this lecture; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/6/8/4/6842/6842-0.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Nature fulfilled, not destroyed",
+          "why": "Tagore says people reach freedom by attaining their truest nature, and that the work of religion is to fulfil that nature and not to destroy it. A given nature is treated as something that must be realised through effort.",
+          "limit": "A statement from a lecture on religious freedom, in the author’s own English. Tagore means a spiritual nature, which he does not describe as inherited or learned.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "rabindranath-tagore-happiness",
       "question": "happiness",
       "name": "Rabindranath Tagore",
@@ -46041,6 +48075,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "thonga-informants-death",
+      "question": "death",
+      "name": "Thonga informants (recorded by Henri-Alexandre Junod)",
+      "short": "Thonga",
+      "work": "The Life of a South African Tribe, volume II, The Psychic Life",
+      "excerpt": "The body becomes rotten, but the shadow goes away and continues its life as a god, shikwembu. The belief in the continuation of life after death is universal",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "The Life of a South African Tribe, vol. II (1913), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/lifeofsouthafric02junouoft/lifeofsouthafric02junouoft_djvu.txt",
+      "locator": "Volume II, section on the soul and the shadow, paragraph beginning “Lastly, the definitive unsheathing of personality takes place at death”. The scanned text contains recognition errors.",
+      "place": "Rikatla, Mozambique",
+      "lat": -25.75,
+      "lng": 32.5,
+      "anchorType": "Fieldwork location",
+      "placeNote": "Junod’s mission station was at Rikatla near Lourenço Marques (Maputo), and the volume draws on that district. The linked page does not name where this teaching was recorded, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/lifeofsouthafric02junouoft/lifeofsouthafric02junouoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The shadow becomes an ancestor-god",
+          "why": "Junod reports that the Thonga hold that at death the body rots but the shadow leaves and goes on as an ancestor-god, shikwembu. Something of the person is held to continue.",
+          "limit": "The words are Junod’s own summary in English of what Thonga informants taught, and he was a Swiss missionary writing for a European public in 1913; the passage also notes that the Thonga reject resurrection of the body. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -47148,6 +49217,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sol-molema-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Silas Modiri Molema",
+      "short": "Molema",
+      "work": "The Bantu, Past and Present, chapter IX, “Manners and Customs”",
+      "excerpt": "a Bantu tribe was a huge social organisation, to promote whose welfare was incumbent upon every member",
+      "period": "1920",
+      "dateShort": "1920",
+      "dateFull": "1920",
+      "sortYear": 1920,
+      "sourceLabel": "The Bantu, Past and Present (1920), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/bantupastpresent00mole/bantupastpresent00mole_djvu.txt",
+      "locator": "Paragraph beginning “Individualism, as understood in the Western world, could not thrive”, in chapter IX. The scanned text contains recognition errors.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.2,
+      "anchorType": "Documented place of publication",
+      "placeNote": "The title page of the linked scan gives Edinburgh, W. Green & Son, 1920, and the dedication thanks Scotland as the author’s refuge during the war.",
+      "placeSource": "https://archive.org/stream/bantupastpresent00mole/bantupastpresent00mole_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "The tribe as a social organisation",
+          "why": "Molema, describing Tswana and related polities, says the tribe’s welfare was a duty on every member, with property and even lives held in the chief’s service. The community’s good comes before the individual’s own.",
+          "limit": "Molema, a Tswana physician and historian writing in Edinburgh in 1920 for a largely European readership, draws on Rousseau and other writers to idealise Bantu collectivism and sets it against the individualism of the West. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "sol-molema-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Silas Modiri Molema",
+      "short": "Molema",
+      "work": "The Bantu, Past and Present, chapter XIII, “Religious Beliefs”",
+      "excerpt": "This god, however, was more of an absent god ; he lived retired on high, took no concern in what was going on, and although the author of Nature and more powerful than the spirits, he was inactive.",
+      "period": "1920",
+      "dateShort": "1920",
+      "dateFull": "1920",
+      "sortYear": 1920,
+      "sourceLabel": "The Bantu, Past and Present (1920), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/bantupastpresent00mole/bantupastpresent00mole_djvu.txt",
+      "locator": "Chapter XIII, paragraph beginning “This god, however, was more of an absent god”. The scanned text contains recognition errors.",
+      "place": "Edinburgh, Scotland",
+      "lat": 55.95,
+      "lng": -3.2,
+      "anchorType": "Documented place of publication",
+      "placeNote": "The title page of the linked scan gives Edinburgh, W. Green & Son, 1920, and the dedication thanks Scotland as the author’s refuge during the war.",
+      "placeSource": "https://archive.org/stream/bantupastpresent00mole/bantupastpresent00mole_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "An absent High God of the Bantu",
+          "why": "Molema holds that the Bantu peoples shared an idea of a supreme god, named Modimo, Umkulunkulu and so on, who made nature but stays remote. An ultimate being is affirmed, though not an active one.",
+          "limit": "Molema is a Christian Tswana writer who reads the older belief as “faint glimmerings” of Christian truth and calls much else “superstition”, so the description is coloured by his own faith. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "lu-xun-meaning",
       "question": "meaning",
       "name": "Lu Xun",
@@ -47450,6 +49589,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-dewey-inward-or-others",
+      "question": "inward-or-others",
+      "name": "John Dewey",
+      "short": "Dewey",
+      "work": "Human Nature and Conduct, Part 4, “Morality Is Social”",
+      "excerpt": "We know with them; there is conscience. An assembly is formed within our breast which discusses and appraises proposed and performed acts.",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "Internet Archive full text of the 1922 edition",
+      "sourceUrl": "https://archive.org/stream/humannatureandco011182mbp/humannatureandco011182mbp_djvu.txt",
+      "locator": "Part 4, section 4, “Morality Is Social”, the paragraph beginning “So with conscience”. The scanned text contains recognition errors.",
+      "place": "Columbia University, New York City",
+      "lat": 40.81,
+      "lng": -73.96,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Dewey taught at Columbia University from 1904 and published the book in 1922. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/humannatureandco011182mbp/humannatureandco011182mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Conscience as the community within",
+          "why": "Dewey says that people foresee how others will react and so take those reactions inside as a tribunal that judges their own acts. Conscience, and with it self-judgment, comes from other people, which places the passage at through others.",
+          "limit": "A psychological account of how conscience forms, not advice about where to look for oneself. The Internet Archive scan contains recognition errors, and the quoted span was chosen to avoid them.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
+      }
+    },
+    {
       "id": "john-dewey-lasting-self",
       "question": "lasting-self",
       "name": "John Dewey",
@@ -47552,6 +49726,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "te-wai-o-hine-death",
+      "question": "death",
+      "name": "Te Wai-o-hine (Tūhoe; recorded by Elsdon Best)",
+      "short": "Te Wai-o-hine",
+      "work": "Spiritual and Mental Concepts of the Maori (Dominion Museum Monograph No. 2)",
+      "excerpt": "I went to spirit-land last night and saw Kiriwai (an old woman who had recently died). She no longer looked old, but young, as we were long ago.",
+      "period": "Published 1922, from conversations recorded earlier",
+      "dateShort": "1922",
+      "dateFull": "Published 1922, from conversations recorded earlier",
+      "sortYear": 1922,
+      "sourceLabel": "Dominion Museum Monograph No. 2 (1922), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "locator": "Section on the wairua and its functions, paragraph beginning “Te Wai-o-hine, a Tuhoe woman, once said to me”. The scanned text contains recognition errors.",
+      "place": "Ruatāhuna, Urewera, New Zealand",
+      "lat": -38.68,
+      "lng": 176.98,
+      "anchorType": "Approximate association",
+      "placeNote": "Best did his main fieldwork among the Tūhoe of the Urewera, including Ruatāhuna, but the linked text does not say where this remark was made, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Meeting the dead in spirit-land",
+          "why": "A Tūhoe woman tells of a dream-journey to the spirit-land where she met a woman lately dead, now young again, and concludes that the dead regain their youth there. The person is understood to live on after death.",
+          "limit": "The words come from Elsdon Best, a Pākehā ethnographer who recorded them in English, and the wording and framing are his. Only the first sentences are in the speaker’s quoted voice, and a dream report is the evidence offered. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -48760,6 +50969,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "luther-standing-bear-happiness",
+      "question": "happiness",
+      "name": "Luther Standing Bear (Ota K’te)",
+      "short": "Standing Bear",
+      "work": "My People the Sioux, chapter II",
+      "excerpt": "We had everything provided for us by the Great Spirit above. Is it any wonder that we grew fat with contentment and happiness?",
+      "period": "1928",
+      "dateShort": "1928",
+      "dateFull": "1928",
+      "sortYear": 1928,
+      "sourceLabel": "My People the Sioux (Houghton Mifflin, 1928), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/mypeoplesioux00stan_0/mypeoplesioux00stan_0_djvu.txt",
+      "locator": "Chapter II, the paragraph closing the account of a summer camp storm, beginning “Such was the life I lived”. The scanned text contains recognition errors.",
+      "place": "Los Angeles, California, United States",
+      "lat": 34.05,
+      "lng": -118.24,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Standing Bear lived and worked in the Los Angeles area from the 1920s, and the book was published in 1928. The linked scan does not say where each chapter was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mypeoplesioux00stan_0/mypeoplesioux00stan_0_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Contentment from what the land provided",
+          "why": "Standing Bear sums up his boyhood among the Lakota by saying that everything the people needed was provided by the Great Spirit, and that contentment and happiness followed from it. Happiness here rests on outward provision and a settled way of life.",
+          "limit": "He writes in 1928 as an old man recalling childhood in the 1870s, after the buffalo economy had gone, so the picture is idealised and rests on conditions he could not keep. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-26"
       }
     },
     {
@@ -56773,11 +59017,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Judaism",
       "sure": true
     },
-    "Book of Jeremiah": {
-      "about": "Hebrew Bible book of prophecies by Jeremiah, a prophet of Anathoth active from about 627 BCE.",
-      "tradition": "Judaism",
-      "sure": true
-    },
     "Book of Job": {
       "about": "Hebrew Bible poetic book about a righteous man’s suffering, composed around 500 BCE.",
       "tradition": "Judaism",
@@ -57421,21 +59660,6 @@ window.PILOT_EVIDENCE={
     "Hávamál (the Sayings of the High One)": {
       "about": "Old Norse poem of proverbs and counsel spoken in Odin's voice, preserved in medieval Icelandic manuscripts.",
       "tradition": "Indigenous and oral traditions",
-      "sure": true
-    },
-    "Hebrew Bible (Genesis)": {
-      "about": "First book of the Hebrew Bible, narrating creation and the early ancestors of Israel, compiled in Judah around the 6th century BCE.",
-      "tradition": "Judaism",
-      "sure": true
-    },
-    "Hebrew Bible (Leviticus)": {
-      "about": "Third book of the Hebrew Bible, containing priestly law and the Holiness Code, compiled in Judah around the 6th century BCE.",
-      "tradition": "Judaism",
-      "sure": true
-    },
-    "Hebrew Bible (Psalm)": {
-      "about": "Book of Psalms in the Hebrew Bible, a collection of sacred poems and prayers compiled in Judah in the 6th-5th centuries BCE.",
-      "tradition": "Judaism",
       "sure": true
     },
     "Hegesias of Cyrene (reported by Diogenes Laertius)": {
@@ -58658,11 +60882,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Greek and Roman philosophy",
       "sure": true
     },
-    "Psalms": {
-      "about": "Hebrew poem from the Book of Psalms, the collection of sacred songs and prayers in the Bible.",
-      "tradition": "Judaism",
-      "sure": true
-    },
     "Pseudo-Dionysius the Areopagite": {
       "about": "Anonymous Christian mystical writer, probably Syrian, who wrote under an apostle's name around 500 CE.",
       "tradition": "Christianity",
@@ -59034,12 +61253,12 @@ window.PILOT_EVIDENCE={
       "sure": true
     },
     "The Book of Genesis": {
-      "about": "First book of the Hebrew Bible, here the verse Genesis 2:18 on human solitude.",
+      "about": "First book of the Hebrew Bible, narrating creation and the early ancestors of Israel, compiled in Judah around the 6th century BCE.",
       "tradition": "Judaism",
       "sure": true
     },
     "The Book of Leviticus": {
-      "about": "Third book of the Hebrew Bible, here the verse Leviticus 19:18 on loving one's neighbour.",
+      "about": "Third book of the Hebrew Bible, containing priestly law and the Holiness Code, compiled in Judah around the 6th century BCE.",
       "tradition": "Judaism",
       "sure": true
     },
@@ -59661,6 +61880,71 @@ window.PILOT_EVIDENCE={
     "Wenzi": {
       "about": "Chinese Daoist text of about the second century BCE, presented as the sayings of a disciple of Laozi.",
       "tradition": "Daoism",
+      "sure": true
+    },
+    "Arunta informants (recorded by Spencer and Gillen)": {
+      "about": "Arrernte people of central Australia whose accounts of belief were recorded by Baldwin Spencer and F. J. Gillen in the 1890s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "E. Pauline Johnson (Tekahionwake)": {
+      "about": "Mohawk and English poet and performer from the Six Nations reserve in Ontario, who published from the 1890s until 1913.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "George Copway (Kah-ge-ga-gah-bowh)": {
+      "about": "Ojibwe writer and Methodist missionary from Upper Canada, who published his life story in 1847.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Kurnai informants (recorded by A. W. Howitt)": {
+      "about": "Gunaikurnai people of Gippsland in south-east Australia whose accounts were recorded by A. W. Howitt in the late nineteenth century.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Lafcadio Hearn": {
+      "about": "Writer of Greek and Irish parentage who settled in Japan in 1890 and wrote about Japanese life and Buddhist thought.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Luther Standing Bear (Ota K’te)": {
+      "about": "Oglala Lakota writer and actor, born in the 1860s, who published accounts of Lakota life in the 1920s and 1930s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mundaka Upanishad": {
+      "about": "One of the principal Upanishads, in verse, composed in northern India in the centuries before the common era.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Okakura Kakuzō": {
+      "about": "Japanese scholar and curator who wrote The Book of Tea in English in 1906.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Samuel Johnson (Yoruba historian)": {
+      "about": "Yoruba Anglican clergyman who completed The History of the Yorubas in 1897; it was published in 1921.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Silas Modiri Molema": {
+      "about": "Tswana doctor and historian from Mafeking, who wrote The Bantu, Past and Present while studying in Scotland, published 1920.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Te Wai-o-hine (Tūhoe; recorded by Elsdon Best)": {
+      "about": "Tūhoe woman of the Urewera whose words on the spirit were recorded by Elsdon Best and published in 1922.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Thomas Carlyle": {
+      "about": "Scottish essayist and historian, who wrote Sartor Resartus in the early 1830s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Thonga informants (recorded by Henri-Alexandre Junod)": {
+      "about": "Tsonga people of southern Mozambique whose sayings and beliefs were recorded by the missionary Henri-Alexandre Junod around 1900.",
+      "tradition": "Indigenous and oral traditions",
       "sure": true
     }
   }

@@ -7,7 +7,7 @@
   // Light or night: the visitor's own choice, else the device's.
   const modeBtn = $('mode'), themeMeta = document.querySelector('meta[name=theme-color]');
   const paintMode = () => { const light = root.dataset.mode === 'light'; modeBtn.textContent = light ? 'Night' : 'Light'; if (themeMeta) themeMeta.content = light ? '#ffffff' : '#03040a'; };
-  modeBtn.addEventListener('click', () => { root.dataset.mode = root.dataset.mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', root.dataset.mode); } catch (e) { /* private mode */ } paintMode(); if (scene) scene.restyle(); });
+  modeBtn.addEventListener('click', () => { root.dataset.mode = root.dataset.mode === 'light' ? 'night' : 'light'; try { localStorage.setItem('svapna_mode', root.dataset.mode); } catch { /* private mode */ } paintMode(); if (scene) scene.restyle(); });
   paintMode();
 
   // Each door says where a returning visitor left off.
@@ -16,12 +16,12 @@
     if (mine) $('door-q-go').textContent = mine >= total ? 'You’ve answered all ' + total + ' · See the world →' : 'You’ve answered ' + mine + ' of ' + total + ' · Continue →';
     const at = localStorage.getItem('svapna_night_at'), names = JSON.parse($('door-d').dataset.depths);
     if (at && names[at]) { $('door-d-go').textContent = 'Go back down to ' + names[at] + ' →'; $('door-d').href = '/dream/#' + at; }
-  } catch (e) { /* private mode */ }
+  } catch { /* private mode */ }
 
   const cv = $('doors-gl'), T = window.THREE, doorQ = $('door-q'), doorD = $('door-d'), stage = cv.parentElement;
   let scene = null;
   if (T && cv) scene = (function () {
-    let renderer; try { renderer = new T.WebGLRenderer({ canvas: cv, antialias: true, alpha: true }); } catch (e) { return null; }
+    let renderer; try { renderer = new T.WebGLRenderer({ canvas: cv, antialias: true, alpha: true }); } catch { return null; }
     renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1)); renderer.setScissorTest(true); renderer.autoClear = false;
     const night = () => root.dataset.mode !== 'light';
     const dotTex = (function () { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'), g = x.createRadialGradient(64, 64, 0, 64, 64, 64);
