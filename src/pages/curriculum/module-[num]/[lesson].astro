@@ -32,7 +32,7 @@ const kicker = (lesson.kicker || '').replace(/[*_]/g, '');
 const description = (short ? short.short : kicker || lesson.title).slice(0, 180);
 const jsonLd = articleSchema({ url: 'https://svapnaproject.org' + path, headline: lesson.title, description, section: `Dreaming / ${mod.title}` });
 ---
-<Read title={`${lesson.title} — Dreaming, Svapna`} description={description} path={path}
+<Read title={`${/^(What This|Why We Begin)/i.test(lesson.title) ? `${mod.title}: what this unit covers` : lesson.title} — Dreaming, Svapna`} description={description} path={path}
   crumbs={[{ name: 'Dreaming', path: '/dream' }, { name: lesson.title, path }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/dream">Dreaming</a>{short && <> · <a href={`/dream#${short.layer}`}>{LAYER[short.layer]}</a></>} · {mod.title}</p>
   <h1 class="h-read">{lesson.title}</h1>

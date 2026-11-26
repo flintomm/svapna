@@ -17,7 +17,7 @@ const tabs = [
   { id: 'terms', label: 'Terms' },
 ].filter(t => aboutPages[t.id]);
 ---
-<Read title={`${data.title} — Svapna`} description={data.kicker} path={`/about/${page}`} crumbs={[{ name: data.title, path: `/about/${page}` }]}>
+<Read title={`${data.title} — Svapna`} description={`${data.kicker}. ${data.paragraphs[0]}`.slice(0, 170)} path={`/about/${page}`} crumbs={[{ name: data.title, path: `/about/${page}` }]}>
   <p class="small crumb"><a href="/">Svapna</a> · About</p>
   <h1 class="h-read">{data.title}</h1>
   <p class="lede">{data.kicker}</p>

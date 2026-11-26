@@ -18,7 +18,7 @@ const siblings = glossaryTerms.filter(t => t.language === entry.language && t.sl
 const plain = entry.definition.replace(/[*_]/g, '');
 const jsonLd = definedTermSchema({ url: `https://svapnaproject.org/glossary/${entry.slug}`, name: entry.term, description: plain, termCode: entry.slug, language: entry.language, inDefinedTermSet: 'https://svapnaproject.org/glossary' });
 ---
-<Read title={`${entry.term}: meaning in dream practice — Svapna`} description={plain.slice(0, 180)} path={`/glossary/${entry.slug}`}
+<Read title={`${entry.term}: meaning in dream practice — Svapna`} description={(plain.length < 90 ? `${entry.term}: ${plain} ${entry.language ? 'A ' + entry.language + ' term' : 'A term'} from the traditions of dream practice, with where it appears in the sources.` : plain).slice(0, 180)} path={`/glossary/${entry.slug}`}
   crumbs={[{ name: 'Glossary', path: '/glossary' }, { name: entry.term, path: `/glossary/${entry.slug}` }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/dream">Dreaming</a> · <a href="/glossary">Glossary</a>{entry.language && <> · {entry.language}</>}</p>
   <h1><em>{entry.term}</em></h1>

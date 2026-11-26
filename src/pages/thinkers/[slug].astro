@@ -20,7 +20,9 @@ if (base) {
 const desc = `${t.name} in ${n === 1 ? 'their own words' : `${n} passages`}, ${t.when}, ${t.where}: “${lead.excerpt.slice(0, 110)}${lead.excerpt.length > 110 ? '…' : ''}” On ${qs.slice(0, 3).join(' ').toLowerCase()}`;
 const topics = [...new Set(t.passages.map(p => TOPIC[p.question.id]).filter(Boolean))];
 const topicText = topics.length > 2 ? topics.slice(0, 3).join(', ') + (topics.length > 3 ? ' and more' : '') : topics.join(' and ');
-const seoTitle = `${t.name} on ${topics.slice(0, 3).join(', ').replace(/, ([^,]*)$/, ' and $1')}: quotes with sources — Svapna`;
+// As many subjects as fit in the space a search result shows.
+const titleWith = k => `${t.name} on ${topics.slice(0, k).join(', ').replace(/, ([^,]*)$/, ' and $1')}: quotes with sources — Svapna`;
+const seoTitle = [3, 2, 1].map(titleWith).find(x => x.length <= 66) || titleWith(1);
 const seoDesc = `${t.about ? t.about + ' ' : ''}${n === 1 ? 'One passage' : n + ' passages'} on ${topicText}, each quoted from a named source: “${lead.excerpt.slice(0, 90)}${lead.excerpt.length > 90 ? '…' : ''}”`;
 const jsonLd0 = { '@context': 'https://schema.org', '@type': 'ProfilePage', url: `https://svapnaproject.org/thinkers/${t.slug}`, mainEntity: { '@type': 'Person', name: t.name, description: `Passages by ${t.name} on ${qs.length} of life’s big questions.` } };
 const url = `https://svapnaproject.org/thinkers/${t.slug}`;
