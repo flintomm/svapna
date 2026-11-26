@@ -85,12 +85,12 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
       var q = Q.filter(function (x) { return '#' + x.id === location.hash; })[0] || (done && left.length ? left[0] : seen ? Q[Math.floor(Date.now() / 864e5) % 6] : Q[0]);
       var h = document.getElementById('ask-q'), parts = q.p.split(' '), cut = Math.max(1, parts.length - 3), lead = document.createElement('span'), em = document.createElement('em');
       lead.textContent = parts.slice(0, cut).join(' ') + ' '; em.textContent = parts.slice(cut).join(' '); h.append(lead, em); h.dataset.pre = q.id;
-      var hello = document.getElementById('ask-count'), fresh = before && O.total > before ? ' ' + (O.total - before) + ' new voices since your last visit.' : '';
-      if (!done) hello.textContent = seen ? 'Welcome back.' + fresh : 'Welcome. Start with a question.';
-      else { hello.textContent = left.length ? 'Welcome back. ' + done + ' answered, ' + left.length + ' to go.' + fresh + ' ' : 'Welcome back. You have answered all ' + Q.length + '.' + fresh + ' '; var y = document.createElement('a'); y.href = '/you'; y.textContent = 'See who thinks like you →'; y.style.textDecoration = 'underline'; hello.append(y); }
+      var hello = document.getElementById('ask-count'), fresh = before && O.total > before ? ' ' + (O.total - before) + ' passages added since the last visit.' : '';
+      if (!done) hello.textContent = seen && fresh ? fresh.trim() : 'Welcome. Start with a question.';
+      else { hello.textContent = (left.length ? done + ' of ' + Q.length + ' answered.' : 'All ' + Q.length + ' answered.') + fresh + ' '; var y = document.createElement('a'); y.href = '/you'; y.textContent = 'Matches →'; y.style.textDecoration = 'underline'; hello.append(y); }
       var box = document.getElementById('ask-answers');
       q.a.forEach(function (a) { var b = document.createElement('button'); b.type = 'button'; b.append(document.createElement('i'), a[1]);
-        b.addEventListener('click', function () { window.__svapnaAnswer = [q.id, a[0]]; [].forEach.call(box.children, function (x) { x.style.opacity = x === b ? 1 : .35; }); document.getElementById('ask-count').textContent = 'One moment. The world is arriving.'; }); box.append(b); });
+        b.addEventListener('click', function () { window.__svapnaAnswer = [q.id, a[0]]; [].forEach.call(box.children, function (x) { x.style.opacity = x === b ? 1 : .35; }); document.getElementById('ask-count').textContent = 'Loading the globe.'; }); box.append(b); });
     })();
   </script>
 

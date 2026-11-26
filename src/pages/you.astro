@@ -137,11 +137,11 @@ const T = thinkers.map(t => {
         var box = document.getElementById('friend'); if (!FR) { box.hidden = true; return; } box.hidden = false; box.textContent = '';
         var both = Q.filter(function (q) { return FR[q.id] && A[q.id]; }), same = both.filter(function (q) { return FR[q.id] === A[q.id]; });
         box.append(el('p', 'small', 'A friend sent their answers'));
-        if (!both.length) { box.append(el('p', 'you-head', 'Answer the questions below to see where the two of you agree.')); return; }
+        if (!both.length) { box.append(el('p', 'you-head', 'The comparison appears as the questions below are answered.')); return; }
         box.append(el('p', 'you-head', 'You agree on ' + same.length + ' of the ' + both.length + ' question' + (both.length === 1 ? '' : 's') + ' you have both answered.'));
         both.forEach(function (q) { var eq = FR[q.id] === A[q.id], row = el('p', 'you-friend-row' + (eq ? ' same' : '')); row.append(el('span', '', q.plain + ' '), el('b', '', eq ? 'Both: ' + plainOf(q, A[q.id]) : 'You: ' + plainOf(q, A[q.id]) + ' · Them: ' + plainOf(q, FR[q.id]))); if (!eq) { var hear = el('a', 'small', 'Hear both sides →'); hear.href = '/questions/' + q.id; row.append(hear); } box.append(row); });
         var left = Q.filter(function (q) { return FR[q.id] && !A[q.id]; }).length; if (left) box.append(el('p', 'small', left + ' more of their answers will show as you answer.'));
-        var back = el('button', 'go', 'Send your answers back, so they see this too →'); back.type = 'button'; back.addEventListener('click', function () { document.getElementById('share-compare').click(); }); box.append(back);
+        var back = el('button', 'go', 'Send your answers back →'); back.type = 'button'; back.addEventListener('click', function () { document.getElementById('share-compare').click(); }); box.append(back);
       }
       var LAST = null;
       function share(text, url) {

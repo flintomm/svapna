@@ -10,8 +10,8 @@ const total = units.reduce((k, u) => k + u.lessons.length, 0);
 <Read title={`${total} lessons on dreaming, in six units — Svapna`} description={`All ${total} lessons on the history and practice of dreaming, from the Upaniṣads to the sleep laboratory, grouped in six units.`} path="/dream/lessons" crumbs={[{ name: 'Dreaming', path: '/dream' }, { name: 'Lessons', path: '/dream/lessons' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/dream">Dreaming</a></p>
   <h1>{total} lessons, <em>in six units.</em></h1>
-  <p class="lede">The course that used to live here is now part of Dreaming. Nothing was removed: every lesson is below, in its original unit and order. Lessons read on this device are marked.</p>
-  <p><a class="go" href="/dream">Or sink through one night →</a></p>
+  <p class="lede">The former course is now part of Dreaming. All {total} lessons are below, in their original units and order. Lessons read on this device are marked.</p>
+  <p><a class="go" href="/dream">Dreaming, as one night →</a></p>
   {units.map(u => (
     <section id={`unit-${u.pad}`}>
       <h2 class="h-src">{u.n}. {u.title}</h2>
