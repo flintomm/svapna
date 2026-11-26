@@ -2,8 +2,8 @@
 import Fonts from '../components/Fonts.astro';
 // The reading layout: the new look for pages meant to be read and found by search.
 import { organizationSchema, breadcrumbSchema, buildCrumbs } from '../lib/seo.js';
-interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null; image?: string }
-const { title, description, path, crumbs = [], jsonLd = null, image = '/og.jpg' } = Astro.props;
+interface Props { title: string; description: string; path: string; crumbs?: { name: string; path: string }[]; jsonLd?: object | null; image?: string; noindex?: boolean }
+const { title, description, path, crumbs = [], jsonLd = null, image = '/og.jpg', noindex = false } = Astro.props;
 const siteUrl = 'https://svapnaproject.org/';
 const canonical = siteUrl.replace(/\/$/, '') + path;
 ---
@@ -20,7 +20,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <meta name="apple-mobile-web-app-title" content="Svapna" />
 <title>{title}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={canonical} />
+{noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonical} />}
 <meta property="og:type" content="article" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />

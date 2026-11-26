@@ -1,0 +1,32 @@
+---
+// Shown for any address that leads nowhere: the ways back in, and a search made from the address itself.
+import Read from '../layouts/Read.astro';
+import { cards, thinkers, questions } from '../lib/atlas.js';
+---
+<Read title="Page not found — Svapna" description="This page isn’t here. The ways back in: the questions, the thinkers, Dreaming, and search." path="/404" noindex>
+  <p class="small crumb"><a href="/">Svapna</a> · Not found</p>
+  <h1>This page <em>isn’t here.</em></h1>
+  <p class="lede">The link may be old, or the address mistyped.</p>
+  <p id="nf-try" hidden><a class="go big" id="nf-link" href="/search"></a></p>
+
+  <section>
+    <h2>Ways back in</h2>
+    <div class="steps">
+      <div><b>The questions</b><div><p>{questions.length} questions, answered across four thousand years. Answer one and see who agreed.</p><a class="go" href="/world">Begin →</a></div></div>
+      <div><b>Dreaming</b><div><p>One night in eight depths: what people have found out about dreams.</p><a class="go" href="/dream">Go down →</a></div></div>
+      <div><b>Thinkers</b><div><p>{thinkers.length} thinkers and texts, each with their passages and sources.</p><a class="go" href="/thinkers">See them all →</a></div></div>
+      <div><b>Search</b><div><p>{cards.length.toLocaleString('en')} passages, by a name, a place, a work, or a word.</p><form action="/search" method="get" role="search" class="find"><input name="q" id="nf-q" type="search" placeholder="A name, a place, or a word" aria-label="Search every passage" autocomplete="off" /></form></div></div>
+    </div>
+  </section>
+  <script is:inline>
+    // The last part of the address usually says what was wanted: offer it as a search.
+    (function () {
+      var parts = location.pathname.split('/').filter(Boolean), last = parts[parts.length - 1] || '';
+      try { last = decodeURIComponent(last); } catch (e) {}
+      var words = last.replace(/\.[a-z0-9]+$/i, '').replace(/[-_+]+/g, ' ').replace(/[^\p{L}\p{N} ]/gu, '').trim().slice(0, 60);
+      if (words.length < 3 || /^\d+$/.test(words)) return;
+      var a = document.getElementById('nf-link'); a.textContent = 'Search for “' + words + '” →'; a.href = '/search?q=' + encodeURIComponent(words);
+      document.getElementById('nf-try').hidden = false; document.getElementById('nf-q').value = words;
+    })();
+  </script>
+</Read>
