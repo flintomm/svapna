@@ -27,9 +27,17 @@ const ORDER = Object.keys(WARM);
 // A broad region for each pin, from where it sits on the map. Coarse on purpose: it is for browsing, not for classifying.
 export const REGIONS = [['europe', 'Europe'], ['wana', 'West Asia and North Africa'], ['africa', 'Sub-Saharan Africa'], ['sasia', 'South and Central Asia'], ['easia', 'East and South-East Asia'], ['namerica', 'North America'], ['lamerica', 'Latin America'], ['oceania', 'Oceania']];
 export const regionOf = c => { const a = c.lat, o = c.lng;
-  if (o < -30) return a > 13 ? 'namerica' : 'lamerica';
+  if (o < -30) {
+    // The Pacific islands east of the date line belong to Oceania; Mexico, Central America and the
+    // Caribbean belong to Latin America (the last clause follows the Rio Grande border).
+    if (o < -120 && a < 30) return 'oceania';
+    const border = o < -106.5 ? 31.6 : 31.8 - 0.648 * (o + 106.5);
+    return a < 23.5 || (o > -117.3 && o < -97.2 && a < border) ? 'lamerica' : 'namerica';
+  }
   if (o < 60 && a > 35) return o > 25 && a < 42 ? 'wana' : 'europe';
-  if (o < 60) return a > 12 || o > 32 ? 'wana' : 'africa';
+  // Africa south of the Sahara: everything below 12°N, the Sahel and the Ethiopian highlands up to 16°N
+  // (west of the Red Sea), and West Africa up to 18°N. East Africa used to fall under West Asia here.
+  if (o < 60) return a < 12 || (a < 16 && o < 40) || (a < 18 && o < 20) ? 'africa' : 'wana';
   if (o < 100) return 'sasia';
   return a > -10 ? 'easia' : 'oceania'; };
 export const regionName = id => (REGIONS.find(r => r[0] === id) || [])[1] || '';

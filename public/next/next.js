@@ -469,7 +469,13 @@ void main(){vec2 p=(gl_FragCoord.xy-.5*r)/r.y;p+=m*.06;
   const yearAt = w => cards.at(-1).sortYear + NEAR - Math.exp(Math.log(span0()) + (Math.log(NEAR) - Math.log(span0())) * Math.min(1, w));
   const clockAt = y => (Math.log(cards.at(-1).sortYear + NEAR - y) - Math.log(span0())) / (Math.log(NEAR) - Math.log(span0()));
   const yearName = y => { const r = Math.round(y); return r <= 0 ? `${1 - r} BCE` : String(r); };
-  const regionOf = c => { const a = c.lat, o = c.lng; return o < -30 ? (a > 13 ? 'North America' : 'Latin America') : o < 60 && a > 35 ? (o > 25 && a < 42 ? 'West Asia and North Africa' : 'Europe') : o < 60 ? (a > 12 || o > 32 ? 'West Asia and North Africa' : 'Sub-Saharan Africa') : o < 100 ? 'South and Central Asia' : a > -10 ? 'East and South-East Asia' : 'Oceania'; };
+  // The same rule as the reading pages (src/lib/atlas.js): Pacific islands are Oceania, Mexico and the
+  // Caribbean are Latin America, and East Africa and the Sahel are Sub-Saharan Africa.
+  const regionOf = c => { const a = c.lat, o = c.lng;
+    if (o < -30) { if (o < -120 && a < 30) return 'Oceania'; const border = o < -106.5 ? 31.6 : 31.8 - 0.648 * (o + 106.5); return a < 23.5 || (o > -117.3 && o < -97.2 && a < border) ? 'Latin America' : 'North America'; }
+    if (o < 60 && a > 35) return o > 25 && a < 42 ? 'West Asia and North Africa' : 'Europe';
+    if (o < 60) return a < 12 || (a < 16 && o < 40) || (a < 18 && o < 20) ? 'Sub-Saharan Africa' : 'West Asia and North Africa';
+    return o < 100 ? 'South and Central Asia' : a > -10 ? 'East and South-East Asia' : 'Oceania'; };
   function setPlay(on) { G.play = on; $('g-play').textContent = on ? 'Pause' : 'Play'; $('g-play').setAttribute('aria-pressed', String(on)); }
   function syncGlobe(force) {
     const i = Math.floor(G.t); if (G.play) $('g-year').textContent = yearName(G.year);
