@@ -27188,6 +27188,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jaidev-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Jaidev",
+      "short": "Jaidev",
+      "work": "Gujari hymn of Jaidev on God’s attributes",
+      "excerpt": "If thou desire the defeat of the god of death and his train, praise and bless God, and do good works. God is equally in the present, past, and future,",
+      "period": "c. 1170 CE (Macauliffe)",
+      "dateShort": "c. 1170 CE",
+      "dateFull": "circa 1170 CE",
+      "sortYear": 1170,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Gujari hymn of Jaidev, p. 15, beginning “Before all things was the Being”.",
+      "place": "Kenduli, Birbhum, West Bengal, India",
+      "lat": 23.67,
+      "lng": 87.7,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says Jaidev was born at Kenduli, about twenty miles from Suri in Birbhum, Lower Bengal. The hymn has no stated place; the pin marks Kenduli, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God present in all times",
+          "why": "The verse calls for praise and blessing of God and says God is equally present in the present, past and future. The passage affirms a God who is not bound by time.",
+          "limit": "The hymn praises God rather than arguing for God’s existence, and the English is Macauliffe’s 1909 rendering. Macauliffe’s account of Jaidev is of the Sanskrit poet of the Gita Govinda, a link the hymns themselves do not state.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ibn-tufayl-inward-or-others",
       "question": "inward-or-others",
       "name": "Ibn Tufayl",
@@ -28399,6 +28434,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "shaikh-farid-happiness",
+      "question": "happiness",
+      "name": "Shaikh Farid",
+      "short": "Farid",
+      "work": "Sermon sentences of Shaikh Farid",
+      "excerpt": "Be not overjoyed with worldly wealth, and, if thou have none at all, be not depressed.",
+      "period": "13th century; sermons recorded in later biography",
+      "dateShort": "13th c.",
+      "dateFull": "thirteenth century",
+      "sortYear": 1250,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "“The following sentences are taken from Farid’s sermons”, p. 379.",
+      "place": "Pakpattan (Ajodhan), Punjab, Pakistan",
+      "lat": 30.34,
+      "lng": 73.39,
+      "anchorType": "Traditional association",
+      "placeNote": "Shaikh Farid is traditionally placed at Ajodhan, now Pakpattan, where his shrine stands. Macauliffe does not date these sermons; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happiness apart from wealth",
+          "why": "The verse tells the hearer not to be elated by wealth or cast down without it, so contentment is placed in a person’s own stance rather than in fortune.",
+          "limit": "These are sermon sentences recorded by a later biographer and set among unrelated maxims. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "shaikh-farid-inward-or-others",
       "question": "inward-or-others",
       "name": "Shaikh Farid",
@@ -29401,6 +29471,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "trilochan-death",
+      "question": "death",
+      "name": "Trilochan",
+      "short": "Trilochan",
+      "work": "Hymn of Trilochan, “Last thoughts determine man’s future state”",
+      "excerpt": "At the last moment, he who thinketh upon his wealth and dieth in that thought, Shall be born again and again as a serpent.",
+      "period": "Birth said to be 1267 CE (Macauliffe)",
+      "dateShort": "1267 CE",
+      "dateFull": "1267 CE",
+      "sortYear": 1267,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn headed “Last thoughts determine man’s future state”, Trilochan section, p. 80.",
+      "place": "Pandharpur, Maharashtra, India",
+      "lat": 17.68,
+      "lng": 75.33,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says Trilochan either lived at or visited Pandharpur, and found no record of him there. The hymn has no stated place, so the pin marks Pandharpur; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Last thoughts and rebirth",
+          "why": "The verse says a person’s final thought fixes the next birth, so one who dies thinking of wealth is born again as a serpent. Something of the person carries on past death, in rebirth.",
+          "limit": "This is a devotional warning in a saint’s voice, not a full doctrine of rebirth. Macauliffe’s birth date for Trilochan came from a informant he names only as a Sadhu, and the 1909 English is a rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "aquinas-meaning",
       "question": "meaning",
       "name": "Thomas Aquinas",
@@ -29632,6 +29737,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "namdev-desire",
+      "question": "desire",
+      "name": "Namdev",
+      "short": "Namdev",
+      "work": "Hymn V of Namdev",
+      "excerpt": "If thou see the Supreme God, thou shaft have no other desire ; If thou think of the worship of God, thou shalt keep thy mind free from care.",
+      "period": "Late 13th to early 14th century (Macauliffe)",
+      "dateShort": "c. 1300 CE",
+      "dateFull": "circa 1300 CE",
+      "sortYear": 1300,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn V in the Namdev section, beginning “If thou see the Supreme God”.",
+      "place": "Pandharpur, Maharashtra, India",
+      "lat": 17.68,
+      "lng": 75.33,
+      "anchorType": "Traditional association",
+      "placeNote": "Namdev is traditionally linked with Pandharpur. Macauliffe does not say where this hymn was composed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Other desires left behind",
+          "why": "The verse says that seeing the Supreme God leaves no other desire, and that thinking on worship keeps the mind free from care. Desire is presented as ending once God is known.",
+          "limit": "The verse describes the result of devotion rather than an instruction to suppress desire, so it may be read as a promise rather than a rule. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "namdev-given-or-made",
+      "question": "given-or-made",
+      "name": "Namdev",
+      "short": "Namdev",
+      "work": "Hymn III of Namdev, beginning “My heart is a yard measure”",
+      "excerpt": "What care I for caste ? What care I for lineage ? I repeat the name of God day and night ;",
+      "period": "Late 13th to early 14th century (Macauliffe)",
+      "dateShort": "c. 1300 CE",
+      "dateFull": "circa 1300 CE",
+      "sortYear": 1300,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn III in the Namdev section, beginning “My heart is a yard measure”.",
+      "place": "Pandharpur, Maharashtra, India",
+      "lat": 17.68,
+      "lng": 75.33,
+      "anchorType": "Traditional association",
+      "placeNote": "Namdev is traditionally linked with Pandharpur. Macauliffe does not say where this hymn was composed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "unscored",
+          "facet": "Caste set aside for devotion",
+          "why": "The verse sets caste and lineage aside and puts daily repetition of God’s name in their place, so worth is presented as something practised rather than inherited at birth. A second, independent reading moved this placement from “made” to “unscored”: The words set caste and lineage aside for the repeating of God’s name; they do not say whether a person is given or made.",
+          "limit": "The verse denies that birth decides worth, but it does not discuss inherited capacities, so it is not a full account of how a person is formed. The English is Macauliffe’s 1909 rendering.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "namdev-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Namdev",
@@ -29658,6 +29833,111 @@ window.PILOT_EVIDENCE={
           "facet": "One God filling everything",
           "why": "The hymn states that there is one God who appears in many forms and fills everything. Wherever the speaker looks he finds God, so the ultimate is affirmed as real and present in all things.",
           "limit": "The English is Macauliffe's 1909 rendering of a hymn that the Sikh scripture attributes to Namdev, and the hymn also speaks of the world as the play of illusion. Macauliffe's notes call Namdev's creed the unity of God, whose likeness to a later Sikh view is part of the editor's framing.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sadhna-desire",
+      "question": "desire",
+      "name": "Sadhna",
+      "short": "Sadhna",
+      "work": "Hymn of Sadhna, composed before his sentence was carried out",
+      "excerpt": "Let him whom Thou orderest cheerfully burn his body. My mind desireth not death, yet Thou mayest, if it please Thee, put me in the fire.",
+      "period": "Late 13th or early 14th century, a contemporary of Namdev (Macauliffe)",
+      "dateShort": "c. 1300 CE",
+      "dateFull": "circa 1300 CE",
+      "sortYear": 1300,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn beginning “Even though Thou, O God, consign me to hell”, Sadhna section, p. 86.",
+      "place": "Sehwan, Sind, Pakistan",
+      "lat": 26.42,
+      "lng": 67.86,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says Sadhna was believed to be born at Sehwan in Sind. The hymn is tied to a trial whose place he does not give, so the pin marks the birthplace; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "unscored",
+          "facet": "Own desire under God’s will",
+          "why": "The verse says the speaker does not desire death, yet he gives way to whatever God orders. His own desire is brought under God’s will rather than removed. A second, independent reading moved this placement from “train it” to “unscored”: The words accept whatever God wills, even death by fire; they do not say what should be done with desire.",
+          "limit": "Macauliffe presents the hymn within a legend of a false accusation, and the verse is one of submission under sentence. It does not state a general rule about desire.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sultan-veled-desire",
+      "question": "desire",
+      "name": "Sultan Veled",
+      "short": "Sultan Veled",
+      "work": "Fragment of a Ghazel [5] in Gibb’s numbering",
+      "excerpt": "Come, for God's sake, come unto me that thou mayest God conceive ! Give up the world e'en this very day that thou mayest God receive!",
+      "period": "c. 1300",
+      "dateShort": "c. 1300",
+      "dateFull": "circa 1300",
+      "sortYear": 1300,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Fragment of a Ghazel [5], opening couplet. The scanned text contains recognition errors.",
+      "place": "Konya, Turkey",
+      "lat": 37.87,
+      "lng": 32.48,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb says Sultan Veled, son of Jelal-ud-Din Rumi, led the Mevlevi order after his father and the family seat was Qonya (Konya); the poems’ exact place of composition is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Giving up the world to receive God",
+          "why": "The speaker urges a hearer to give up the world in order to receive God, and a later couplet adds ‘give up thy wealth’, so worldly desire is something to be surrendered.",
+          "limit": "A fragment in Turkish verse by a Persian-writing Sufi, and Gibb’s note says ‘the world’ and ‘head’ stand for selfhood, so the renunciation is mystical self-surrender, not only a rule about money. Only a fragment survives. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sultan-veled-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Sultan Veled",
+      "short": "Sultan Veled",
+      "work": "Rebab-Name, Turkish verses [3] in Gibb’s numbering",
+      "excerpt": "Hold thou fast by him who hath found God alway; Neither when thou'st found him cry, 'Where 's God? I pray!' Other is not God than he, ope thou thine eyes;",
+      "period": "c. 1300",
+      "dateShort": "c. 1300",
+      "dateFull": "circa 1300",
+      "sortYear": 1300,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Turkish verses [3], the passage beginning “Seek thou God from him who doth His message bear”. The scanned text contains recognition errors.",
+      "place": "Konya, Turkey",
+      "lat": 37.87,
+      "lng": 32.48,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb says Sultan Veled, son of Jelal-ud-Din Rumi, led the Mevlevi order after his father and the family seat was Qonya (Konya); the poems’ exact place of composition is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "Finding God through a saint",
+          "why": "The speaker tells the seeker to cling to a man who has found God and not to ask where God is once he is found, so the way to God runs through another person.",
+          "limit": "The ‘him’ is a Sufi master, and Gibb reads the verse as teaching that the seeker must be identified with what he seeks; the passage does not deny an inner life, and the claim that the teacher is not other than God is a mystical one. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
           "second": "agreed"
         }
       },
@@ -29772,6 +30052,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "yunus-emre-free-will",
+      "question": "free-will",
+      "name": "Yunus Emre",
+      "short": "Yunus Emre",
+      "work": "Ghazel [7] in Gibb’s numbering",
+      "excerpt": "Who maketh some ascetics be, and some to work iniquity; That Argument and Proof who veils their faults and flaws alway",
+      "period": "c. 1300",
+      "dateShort": "c. 1300",
+      "dateFull": "circa 1300, undated",
+      "sortYear": 1300,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Ghazel [7], third couplet. The scanned text contains recognition errors.",
+      "place": "Sakarya valley, north-western Anatolia, Turkey",
+      "lat": 40,
+      "lng": 30.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Gibb reports that Yunus was a native of the Boli district and a disciple of Tapduq Imre, who lived in a hamlet near the river Sakarya; no place of composition is recorded, so the pin marks the Sakarya valley only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Who makes ascetic and sinner",
+          "why": "The speaker, taking God’s voice, says it is He who makes some people ascetics and others workers of iniquity, so what people do is fixed by God and not by themselves.",
+          "limit": "In this ghazel Yunus speaks as the Divine ‘I’, which Gibb reads as his pantheism; the line therefore describes God’s agency, not a worked-out theory of human responsibility. The verse is a literary voice and its wording was transmitted through centuries of copying. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "yunus-emre-given-or-made",
+      "question": "given-or-made",
+      "name": "Yunus Emre",
+      "short": "Yunus Emre",
+      "work": "Mesnevi passage addressed to God in Gibb’s account of Yunus",
+      "excerpt": "Was it I who schemed me? — nay. Thou didst me scheme; Why createdst me so faultful. Lord Supreme?",
+      "period": "c. 1300",
+      "dateShort": "c. 1300",
+      "dateFull": "circa 1300, undated",
+      "sortYear": 1300,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Mesnevi passage beginning “O my God, if so be Thou should question me”, about thirty lines in. The scanned text contains recognition errors.",
+      "place": "Sakarya valley, north-western Anatolia, Turkey",
+      "lat": 40,
+      "lng": 30.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Gibb reports that Yunus was a native of the Boli district and a disciple of Tapduq Imre, who lived in a hamlet near the river Sakarya; no place of composition is recorded, so the pin marks the Sakarya valley only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Who fashioned the self",
+          "why": "The speaker denies that he designed himself and says God did, asking why he was made faulty, so what a person is is presented as an endowment from the Creator.",
+          "limit": "A bold rhetorical complaint against God in a mesnevi, which Gibb says satirises a harsh popular conception of God punishing frail man; the poet is arguing a grievance, not stating a settled doctrine of nature and nurture. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -30235,6 +30585,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "ashiq-pasha-meaning",
+      "question": "meaning",
+      "name": "Ashiq Pasha",
+      "short": "Ashiq Pasha",
+      "work": "Gharib-Name (The Book of the Stranger), Fourth Chapter, First Legend",
+      "excerpt": "Every thing doth serve the soul with one accord. While the soul itself is come to serve the Lord.",
+      "period": "c. 1330",
+      "dateShort": "c. 1330",
+      "dateFull": "circa 1330",
+      "sortYear": 1330,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "[10] in Gibb’s numbering, the First Legend of the Fourth Chapter, near its end. The scanned text contains recognition errors.",
+      "place": "Kırşehir, Turkey",
+      "lat": 39.15,
+      "lng": 34.16,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb, citing Tash-kopri-zade, says Ashiq Pasha settled at Qir-Shehri (Kırşehir), where he died and was buried; the poem’s date of composition is not given, so the pin marks his town. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "The soul made to serve the Lord",
+          "why": "The lines say that all things serve the soul while the soul itself has come to serve the Lord, which gives human life an end set by God and not chosen by the person.",
+          "limit": "A didactic mystic mesnevi addressed to the reader, and Gibb notes that the elements are said to serve man only so that man may give thanks; the poem’s own purpose is devotional. The poet’s dates are given as 1271–1332. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -31621,6 +32006,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "pipa-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Pipa",
+      "short": "Pipa",
+      "work": "Dhanasari hymn of Pipa, beginning “In the body is God”",
+      "excerpt": "What is in the universe is found in the body : whoever searcheth for it shall find it there.",
+      "period": "Late 14th to early 15th century, a disciple of Ramanand (Macauliffe)",
+      "dateShort": "c. 1400 CE",
+      "dateFull": "circa 1400 CE",
+      "sortYear": 1400,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Dhanasari hymn of Pipa, p. 120.",
+      "place": "Gagron, Rajasthan, India",
+      "lat": 24.83,
+      "lng": 76.33,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says Pipa ruled at Gagaraungarh, now Gagron, and the hymn is linked to that place. The pin is approximate; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Worship found within the body",
+          "why": "The verse says whatever is in the universe is found in the body, and that whoever searches for it there will find it. The seeker is pointed inward.",
+          "limit": "The hymn is set against outward pilgrimage and offerings, and it says nothing about the part others play in the search. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "sad-dar-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Sad Dar",
@@ -31647,6 +32067,41 @@ window.PILOT_EVIDENCE={
           "facet": "Heaven made for the liberal",
           "why": "Ohrmazd is made to say that the highest heaven was created for those who give to the worthy. A person's final good is made to depend on what is given to others.",
           "limit": "The giving is limited to the worthy, and the reward is heaven, so the passage joins duty to others with a promised return. The Sad Dar is a late Persian work of religious rules, translated by West in 1885.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sain-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Sain",
+      "short": "Sain",
+      "work": "Dhanasari hymn of Sain, beginning “Having made an oblation of incense”",
+      "excerpt": "Thy name is the best lamp, meditation thereon the purest wick ; Thou alone art the Bright One, O God.",
+      "period": "End of the 14th to beginning of the 15th century (Macauliffe)",
+      "dateShort": "c. 1400 CE",
+      "dateFull": "circa 1400 CE",
+      "sortYear": 1400,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Dhanasari hymn of Sain, the stanza beginning “Hail to Thee, O God”, p. 122.",
+      "place": "Bandhavgarh, Madhya Pradesh, India",
+      "lat": 23.7,
+      "lng": 80.95,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe places Sain at the court of Raja Ram of Bandhavgarh, Rewa. The pin marks Bandhavgarh approximately; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as the Bright One",
+          "why": "The verse addresses God as the Bright One and names God’s name as the lamp of worship, so the passage affirms God as the reality to which the worship is directed.",
+          "limit": "It is a devotional hymn in the voice of a barber-saint, and it praises God rather than arguing for God’s existence. The English is Macauliffe’s 1909 rendering.",
           "second": "agreed"
         }
       },
@@ -31815,6 +32270,286 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "nesimi-free-will",
+      "question": "free-will",
+      "name": "Nesimi",
+      "short": "Nesimi",
+      "work": "Ghazel [55] in Gibb’s numbering",
+      "excerpt": "Zealot, seek not thou to stay me from the love of beauties bright; For The Truth made Love my portion in the Fore-eternal Year.",
+      "period": "c. 1400–1417",
+      "dateShort": "c. 1400",
+      "dateFull": "circa 1400, before his execution at Aleppo in about 1417",
+      "sortYear": 1405,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Ghazel [55], last couplet but two, beginning “Zealot, seek not thou to stay me”. The scanned text contains recognition errors.",
+      "place": "Aleppo, Syria",
+      "lat": 36.2,
+      "lng": 37.16,
+      "anchorType": "Place of death, composition place not recorded",
+      "placeNote": "Gibb says Nesimi was flayed at Aleppo after a legal ruling there and that he travelled widely; no place of composition is recorded for this ghazel, so the pin marks Aleppo, where his life ended. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Love assigned before time",
+          "why": "The couplet answers a critic by saying God made love the speaker’s portion in the ‘Fore-eternal Year’, before his birth, so his loving is assigned and not chosen.",
+          "limit": "Gibb glosses the ‘Fore-eternal Year’ as the Day of the Primal Compact, so the line is a love poem’s defence of its passion more than a treatise on fate; the poet’s wider mysticism also urges effort on the path. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "nesimi-lasting-self",
+      "question": "lasting-self",
+      "name": "Nesimi",
+      "short": "Nesimi",
+      "work": "Ghazel [56] in Gibb’s numbering",
+      "excerpt": "On the road to reach the Loved One is duality the veil ; Ne'er till 'I-ness' is uprooted is the curtain dra\\vn aside.",
+      "period": "c. 1400–1417",
+      "dateShort": "c. 1400",
+      "dateFull": "circa 1400, before his execution at Aleppo in about 1417",
+      "sortYear": 1405,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Ghazel [56], couplet beginning “On the road to reach the Loved One”. The scanned text contains recognition errors.",
+      "place": "Aleppo, Syria",
+      "lat": 36.2,
+      "lng": 37.16,
+      "anchorType": "Place of death, composition place not recorded",
+      "placeNote": "Gibb says Nesimi was flayed at Aleppo after a legal ruling there and that he travelled widely; no place of composition is recorded for this ghazel, so the pin marks Aleppo, where his life ended. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Uprooting the sense of ‘I’",
+          "why": "The couplet says the veil between lover and Beloved is duality and that it lifts only when ‘I-ness’ is uprooted, so the separate self is something to be removed, not kept.",
+          "limit": "A Hurufi and Sufi love lyric in which the self’s effacement is a goal of mystic union, not a plain denial that persons exist; the same poet elsewhere praises the human form as the face of God. A ghazel speaks in a literary voice. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "nesimi-truth",
+      "question": "truth",
+      "name": "Nesimi",
+      "short": "Nesimi",
+      "work": "Ghazel [54] in Gibb’s numbering",
+      "excerpt": "Every wight who knows himself and who hath found The Truth is grown Knower of the Lord, a Sultan he though name of slave he bear.",
+      "period": "c. 1400–1417",
+      "dateShort": "c. 1400",
+      "dateFull": "circa 1400, before his execution at Aleppo in about 1417",
+      "sortYear": 1405,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Ghazel [54], couplet beginning “Every wight who knows himself”. The scanned text contains recognition errors.",
+      "place": "Aleppo, Syria",
+      "lat": 36.2,
+      "lng": 37.16,
+      "anchorType": "Place of death, composition place not recorded",
+      "placeNote": "Gibb says Nesimi was flayed at Aleppo after a legal ruling there and that he travelled widely; no place of composition is recorded for this ghazel, so the pin marks Aleppo, where his life ended. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Knowing oneself and the Lord",
+          "why": "The couplet says whoever knows himself and finds The Truth becomes a knower of the Lord, so the deepest truth is placed within a person’s reach by direct experience.",
+          "limit": "The poet’s ‘Truth’ is the Hurufi and Sufi God known through self-knowledge and through the human face; the verse does not say how many attain it. A ghazel is a poem, not an argument. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "suleyman-chelebi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Suleyman Chelebi",
+      "short": "Suleyman Chelebi",
+      "work": "Mevlid-i Nebi (Hymn on the Prophet’s Nativity)",
+      "excerpt": "He the Lord Eternal who nor dies nor sleeps, He the King whose reign shall never pass away, He the Mateless, He the Matchless, Peerless aye.",
+      "period": "1409",
+      "dateShort": "1409",
+      "dateFull": "1409",
+      "sortYear": 1409,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "[36] in Gibb’s numbering, the opening section on the names of God. The scanned text contains recognition errors.",
+      "place": "Bursa, Turkey",
+      "lat": 40.19,
+      "lng": 29.06,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gibb says Suleyman Chelebi was imam of the Ulu Jami in Brusa (Bursa) and wrote the Mevlid there; the date is given from the poet’s own verses. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Eternal, One and Matchless",
+          "why": "The lines name God as the eternal Lord who neither dies nor sleeps, whose reign never ends and who has no equal, so they plainly affirm an ultimate reality.",
+          "limit": "A devotional hymn written for recitation at Muslim gatherings, in praise of a God already believed in; it offers no argument. Gibb says it is the best known of Turkish religious poems. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "dhanna-death",
+      "question": "death",
+      "name": "Dhanna",
+      "short": "Dhanna",
+      "work": "Hymn of Dhanna, in his later hymns",
+      "excerpt": "My love, turning in a different direction from virtue, increaseth, and I again weave the web of birth and death.",
+      "period": "Born 1415 CE (Macauliffe)",
+      "dateShort": "1415 CE",
+      "dateFull": "1415 CE",
+      "sortYear": 1415,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn beginning “Wandering and roaming many births have passed away”, Dhanna section, p. 109.",
+      "place": "Tonk, Rajasthan, India",
+      "lat": 26.17,
+      "lng": 75.79,
+      "anchorType": "Approximate residence",
+      "placeNote": "Macauliffe says Dhanna lived in the village of Dhuan in Tonk territory, about twenty miles from the Deoli cantonment. The pin marks Tonk, the nearest town; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The cycle of birth and death",
+          "why": "The verse says that turning away from virtue keeps the speaker weaving the web of birth and death, so the cycle of rebirth carries on through many lives.",
+          "limit": "The verse describes a sinful life the speaker means to leave, and says little about what happens after death in detail. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "dhanna-free-will",
+      "question": "free-will",
+      "name": "Dhanna",
+      "short": "Dhanna",
+      "work": "Hymn of Dhanna, in his later hymns",
+      "excerpt": "Wert thou to run through the universe and the continents of the earth, it would not avail thee ; only what the Creator doeth cometh to pass.",
+      "period": "Born 1415 CE (Macauliffe)",
+      "dateShort": "1415 CE",
+      "dateFull": "1415 CE",
+      "sortYear": 1415,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn beginning “Wert thou to run through the universe”, Dhanna section, p. 110.",
+      "place": "Tonk, Rajasthan, India",
+      "lat": 26.17,
+      "lng": 75.79,
+      "anchorType": "Approximate residence",
+      "placeNote": "Macauliffe says Dhanna lived in the village of Dhuan in Tonk territory, about twenty miles from the Deoli cantonment. The pin marks Tonk, the nearest town; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Only God’s doing comes to pass",
+          "why": "The verse says that running through the whole world would not help, because only what the Creator does comes to pass. Human effort is set against a fixed divine order, so what happens lies outside the person’s control.",
+          "limit": "The verse is a devotional hymn about God’s providence and does not treat human choice as a separate question. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "dhanna-given-or-made",
+      "question": "given-or-made",
+      "name": "Dhanna",
+      "short": "Dhanna",
+      "work": "Asa hymn attributed to Dhanna, on saints of low birth",
+      "excerpt": "Abandoning weaving and stretching thread, Kabir devoted his love to God’s feet ; Though a weaver of low family he obtained untold virtues.",
+      "period": "Born 1415 CE (Macauliffe)",
+      "dateShort": "1415 CE",
+      "dateFull": "1415 CE",
+      "sortYear": 1415,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Asa hymn in the Dhanna section, beginning “In Gobind, Gobind, Gobind”, p. 109.",
+      "place": "Tonk, Rajasthan, India",
+      "lat": 26.17,
+      "lng": 75.79,
+      "anchorType": "Approximate residence",
+      "placeNote": "Macauliffe says Dhanna lived in the village of Dhuan in Tonk territory, about twenty miles from the Deoli cantonment. The pin marks Tonk, the nearest town; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Birth overcome by devotion",
+          "why": "The verse says that Kabir, a weaver, and others of low birth became holy by devoting their love to God, so birth is set against what a person does in devotion.",
+          "limit": "Macauliffe attributes the hymn to Dhanna, though the Granth headings give it to Guru Arjan. The English is a 1909 rendering, and the verse does not settle whether birth shapes a person in other ways.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sheykhi-truth",
+      "question": "truth",
+      "name": "Sheykhi",
+      "short": "Sheykhi",
+      "work": "Khusrev and Shirin, couplet quoted in Gibb’s notice of Sheykhi",
+      "excerpt": "Ne'er may Reason yield us tidings of Thy Godhead's caravan ; Only soft unto the Soul's ear is there borne a cliime of bells.",
+      "period": "c. 1420",
+      "dateShort": "c. 1420",
+      "dateFull": "circa 1420",
+      "sortYear": 1420,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume I, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "locator": "Couplet quoted just before the account of the Khusrev and Shirin, in Gibb’s notice of Sheykhi of Germiyan. The scanned text contains recognition errors.",
+      "place": "Kütahya, Turkey",
+      "lat": 39.42,
+      "lng": 29.98,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Sheykhi came from the Germiyan principality, whose capital was Kütahya, studied under Ahmedi and wrote for Sultan Murad; the pin marks Kütahya as the poet’s region, with no exact place of writing given. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman01gibbuoft/historyofottoman01gibbuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "Reason and the Godhead’s caravan",
+          "why": "The couplet says Reason can never bring news of the Godhead, yet the soul’s ear catches a faint chime, so the ultimate is approached by the inner ear and not grasped by reason.",
+          "limit": "Gibb gives the couplet as the litany an old dervish saw heavenly hosts chanting in a vision, so it reached Gibb at second hand through a story; the image of caravan bells means the soul knows God only through what it experiences. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -32050,6 +32785,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "name": "Nezahualcoyotl (attributed), song in the Cantares Mexicanos",
+      "short": "Nezahualcoyotl",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Texcoco, Valley of Mexico",
+      "lat": 19.51,
+      "lng": -98.88,
+      "anchorType": "Traditional association",
+      "placeNote": "Brinton’s introduction ties these songs to Nezahualcoyotl, ruler of Texcoco, who died in 1472; the linked page does not say where the song was sung, so the pin on Texcoco is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1430–1472",
+      "dateShort": "c. 1430–1472",
+      "dateFull": "circa 1430 to 1472",
+      "sortYear": 1460,
+      "id": "nezahualcoyotl-desire",
+      "question": "desire",
+      "work": "Ancient Nahuatl Poetry, introduction, “The LX songs of King Nezahualcoyotl”, third song",
+      "excerpt": "The amethyst, signifying the cares which a king has for his subjects, and moderation in desires.",
+      "locator": "Introduction, section 9, third song, verse 7. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Moderation in desires",
+          "why": "The poem names the amethyst as the sign of a ruler’s care for his subjects and of moderation in desires, so desire is something a good ruler holds in check and directs.",
+          "limit": "The line is one in a list of jewels and the virtues they stand for, in a Spanish verse rendering put into English by Brinton in 1887, and Brinton’s English has been much corrected by later scholars. It speaks of a king’s virtues and does not give a rule for everyone.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Nezahualcoyotl (attributed), song in the Cantares Mexicanos",
+      "short": "Nezahualcoyotl",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Texcoco, Valley of Mexico",
+      "lat": 19.51,
+      "lng": -98.88,
+      "anchorType": "Traditional association",
+      "placeNote": "Brinton’s introduction ties these songs to Nezahualcoyotl, ruler of Texcoco, who died in 1472; the linked page does not say where the song was sung, so the pin on Texcoco is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1430–1472",
+      "dateShort": "c. 1430–1472",
+      "dateFull": "circa 1430 to 1472",
+      "sortYear": 1460,
+      "id": "nezahualcoyotl-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "Ancient Nahuatl Poetry, introduction, “The LX songs of King Nezahualcoyotl”, third song",
+      "excerpt": "I feel, when alone, that my soul is pleased but for a brief time, and that all pleasure soon passes.",
+      "locator": "Introduction, section 9, third song, verse 13. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Pleasure that fades when alone",
+          "why": "The speaker says that when alone his soul has only brief pleasure, and he turns in the next lines to the presence of his warriors as what pleases him, so company gives a gladness that solitude does not.",
+          "limit": "The poem survives only as a Spanish verse rendering handed down in the family of Nezahualcoyotl, put into English by Brinton in 1887, so the wording is at two removes. The speaker’s next verses praise his warrior princes, so the verse says what pleases a king surrounded by vassals, and Brinton’s English has been much corrected by later scholars.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "kabir-meaning",
       "question": "meaning",
       "name": "Kabir",
@@ -32278,6 +33083,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "jami-desire",
+      "question": "desire",
+      "name": "Jami",
+      "short": "Jami",
+      "work": "Verses by Jami, quoted in E. G. Browne’s chapter on Mysticism, Metaphysic and Magic",
+      "excerpt": "Be thou the thrall of love ; make this thine object ; For this one thing seemeth to wise men worthy",
+      "period": "c. 1480",
+      "dateShort": "c. 1480",
+      "dateFull": "circa 1480 (the poet’s lifetime; Browne’s English rendering published 1893)",
+      "sortYear": 1480,
+      "sourceLabel": "E. G. Browne, A Year Amongst the Persians (1893), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "locator": "Chapter on Mysticism, Metaphysic and Magic, passage beginning “let us listen once more to the utterance of Jami”. The scanned text contains recognition errors.",
+      "place": "Herat, Afghanistan",
+      "lat": 34.35,
+      "lng": 62.2,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Jami held a post at the Timurid court in Herat and lived there at the end of his life; the page does not name the place where these verses were written. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jami",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Love as the one worthy object",
+          "why": "Jami tells the reader to become love’s thrall and to make love the aim of life, calling it the one thing worthy of wise men. The desire for love is affirmed, not restrained.",
+          "limit": "These are Browne’s English verses, quoted in his prose and taken from Browne’s English recollection of the poem, not a translation checked against the Persian. The verse does not name the poem, and it does not say how ordinary appetites should be handled; the passage is about love of the Divine Beloved.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -32561,6 +33401,251 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kabir-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Kabir",
+      "short": "Kabir",
+      "work": "Kabir’s hymn LXIV",
+      "excerpt": "O my soul, thou hast no helper ; drag not the weight of others' sins behind thee.",
+      "period": "15th century (Macauliffe)",
+      "dateShort": "15th c.",
+      "dateFull": "fifteenth century",
+      "sortYear": 1480,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn LXIV in Kabir’s hymns.",
+      "place": "Varanasi, Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe’s account places Kabir in Banaras. No contemporary record dates or places individual hymns, so the pin marks the city traditionally associated with him; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Each soul bears its own sins",
+          "why": "The verse tells the soul it has no helper and should not drag other people’s sins behind it, so each person answers for their own conduct first.",
+          "limit": "This is a warning about moral accountability, not a general statement on how to weigh one’s own good against others’. The sayings are Macauliffe’s selection from the Granth Sahib, in a 1909 English rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "kabir-suffering",
+      "question": "suffering",
+      "name": "Kabir",
+      "short": "Kabir",
+      "work": "Kabir’s hymn LVI",
+      "excerpt": "Not having thought of God in thy heart, thou sufferest from the thirst of covetousness and the hunger of error ;",
+      "period": "15th century (Macauliffe)",
+      "dateShort": "15th c.",
+      "dateFull": "fifteenth century",
+      "sortYear": 1480,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn LVI in Kabir’s hymns, after the couplet on human birth as a priceless diamond.",
+      "place": "Varanasi, Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe’s account places Kabir in Banaras. No contemporary record dates or places individual hymns, so the pin marks the city traditionally associated with him; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Suffering from neglecting God",
+          "why": "The verse ties suffering to a failure to think of God, and to covetousness and error, so the suffering is presented as the deserved result of that neglect.",
+          "limit": "This is a rebuke aimed at the hearer’s conduct, not an account of suffering in general. The 1909 English is a rendering of the original, and some of its sense may be lost.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Cantares Mexicanos (Nahua songs)",
+      "short": "Cantares",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Mexico-Tenochtitlan, Valley of Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Traditional association",
+      "placeNote": "The songs belong to the Valley of Mexico and are dated by Brinton’s introduction to the century before the Spanish conquest; the linked page does not place this song in a single town, so the pin on Mexico-Tenochtitlan is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1450–1520",
+      "dateShort": "c. 1450–1520",
+      "dateFull": "circa 1450 to 1520",
+      "sortYear": 1485,
+      "id": "cantares-mexicanos-desire",
+      "question": "desire",
+      "work": "Ancient Nahuatl Poetry, song XI, “Another”",
+      "excerpt": "Let my soul be draped in various flowers ; let it be intoxicated by them, for soon must I weeping go before the face of our mother.",
+      "locator": "Song XI, verse 6, in the English section of Brinton’s book. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Draping the soul in flowers",
+          "why": "The singer asks that the soul be covered with flowers and made drunk with them, since death is near; the longing for beauty is welcomed and given its fill.",
+          "limit": "Brinton’s 1887 English has been much corrected by later scholars, and the song survives in a manuscript copied after the Spanish conquest, so Christian wording may have entered it. Flowers and songs in these poems stand for poetry and for the pleasures of the earth, so the verse is not a plain call to gratify every appetite; the same song also laments that the singer must leave them.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Cantares Mexicanos (Nahua songs)",
+      "short": "Cantares",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Mexico-Tenochtitlan, Valley of Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Traditional association",
+      "placeNote": "The songs belong to the Valley of Mexico and are dated by Brinton’s introduction to the century before the Spanish conquest; the linked page does not place this song in a single town, so the pin on Mexico-Tenochtitlan is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1450–1520",
+      "dateShort": "c. 1450–1520",
+      "dateFull": "circa 1450 to 1520",
+      "sortYear": 1485,
+      "id": "cantares-mexicanos-free-will",
+      "question": "free-will",
+      "work": "Ancient Nahuatl Poetry, song VI, “Another Chalco song, a poem of Tetlepan Quetzanitzin”",
+      "excerpt": "mayst thou so dispose my heart, that it may pass through this place of reckoning, without anger, without injury, and live a good life on earth.",
+      "locator": "Song VI, verse 2, in the English section of Brinton’s book. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "unscored",
+          "facet": "Asking God to dispose the heart",
+          "why": "The singer prays that God dispose his heart so that he can live a good life without anger, so the good life is his to live but needs the shaping of his heart by a power beyond him. A second, independent reading moved this placement from “free within limits” to “unscored”: The words are a prayer that the heart be so disposed as to live well; they do not say whether a person’s choices are free or fixed.",
+          "limit": "Brinton’s 1887 English has been much corrected by later scholars, and the song survives in a manuscript copied after the Spanish conquest, so Christian wording may have entered it. This is a prayer in a song of mourning, so it shows how the singer pictures his own part and God’s, and does not set out a doctrine of choice; some later scholars read such lines as shaped by Christian prayer.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Cantares Mexicanos (Nahua songs)",
+      "short": "Cantares",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Mexico-Tenochtitlan, Valley of Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Traditional association",
+      "placeNote": "The songs belong to the Valley of Mexico and are dated by Brinton’s introduction to the century before the Spanish conquest; the linked page does not place this song in a single town, so the pin on Mexico-Tenochtitlan is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1450–1520",
+      "dateShort": "c. 1450–1520",
+      "dateFull": "circa 1450 to 1520",
+      "sortYear": 1485,
+      "id": "cantares-mexicanos-happiness",
+      "question": "happiness",
+      "work": "Ancient Nahuatl Poetry, song XXII",
+      "excerpt": "I seek neither vestment nor riches, O children, but a song for a place of joy.",
+      "locator": "Song XXII, verse 8, in the English section of Brinton’s book. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "unscored",
+          "facet": "A song instead of riches",
+          "why": "The singer says he looks for neither clothing nor wealth but for a song that makes a place of joy, so the joy he wants is one he can make himself and does not depend on possessions. A second, independent reading moved this placement from “on oneself” to “unscored”: The words say the singer seeks a song for a place of joy, not riches; they do not say what happiness rests on.",
+          "limit": "Brinton’s 1887 English has been much corrected by later scholars, and the song survives in a manuscript copied after the Spanish conquest, so Christian wording may have entered it. The song is a poet’s boast about his own art, and the same poems often say that flowers and songs, too, fade; it does not say that joy is secure whatever befalls.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Cantares Mexicanos (Nahua songs)",
+      "short": "Cantares",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Mexico-Tenochtitlan, Valley of Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Traditional association",
+      "placeNote": "The songs belong to the Valley of Mexico and are dated by Brinton’s introduction to the century before the Spanish conquest; the linked page does not place this song in a single town, so the pin on Mexico-Tenochtitlan is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1450–1520",
+      "dateShort": "c. 1450–1520",
+      "dateFull": "circa 1450 to 1520",
+      "sortYear": 1485,
+      "id": "cantares-mexicanos-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "Ancient Nahuatl Poetry, song II, “A spring song, an Otomi song, a plain song”",
+      "excerpt": "Pluck the flowers, whichever thou wishest, mayest thou the singer be glad, and give them to thy friends, to the nobles, that they may rejoice on the earth.",
+      "locator": "Song II, verse 4, in the English section of Brinton’s book. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Gathering flowers to give away",
+          "why": "The singer is told to take the flowers he wishes and be glad, and in the same breath to give them to friends and nobles so that they too may rejoice, so his own gladness and theirs are joined.",
+          "limit": "Brinton’s 1887 English has been much corrected by later scholars, and the song survives in a manuscript copied after the Spanish conquest, so Christian wording may have entered it. The flowers are songs, and the giving is a poet’s offering to the nobles who rule, so it describes a poet’s duty to a court and not a rule for every person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Cantares Mexicanos (Nahua songs)",
+      "short": "Cantares",
+      "sourceLabel": "Daniel G. Brinton, Ancient Nahuatl Poetry (1887), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "place": "Mexico-Tenochtitlan, Valley of Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Traditional association",
+      "placeNote": "The songs belong to the Valley of Mexico and are dated by Brinton’s introduction to the century before the Spanish conquest; the linked page does not place this song in a single town, so the pin on Mexico-Tenochtitlan is approximate and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ancientnahuatlpo00brinrich/ancientnahuatlpo00brinrich_djvu.txt",
+      "period": "c. 1450–1520",
+      "dateShort": "c. 1450–1520",
+      "dateFull": "circa 1450 to 1520",
+      "sortYear": 1485,
+      "id": "cantares-mexicanos-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "Ancient Nahuatl Poetry, song XXII",
+      "excerpt": "In this spot of turquoise and emerald, I think upon beauteous songs, beauteous flowers ; let us rejoice now, dear friends and children, for life is not long upon earth.",
+      "locator": "Song XXII, verse 3, in the English section of Brinton’s book. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Rejoicing with friends",
+          "why": "The singer, thinking of songs and flowers, calls on dear friends and children to rejoice together while life lasts, so shared joy is what the brief life is for.",
+          "limit": "Brinton’s 1887 English has been much corrected by later scholars, and the song survives in a manuscript copied after the Spanish conquest, so Christian wording may have entered it. The same song opens with the singer walking alone among his flowers with a sad soul, so the call to company comes out of solitude and does not deny it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "everyman",
       "name": "Everyman (anonymous morality play)",
       "short": "Everyman",
@@ -32673,6 +33758,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ravidas-given-or-made",
+      "question": "given-or-made",
+      "name": "Ravidas",
+      "short": "Ravidas",
+      "work": "Reply recorded in Macauliffe’s account of Ravidas",
+      "excerpt": "Rav Das replied, ‘ What is dear to God is devotion ; He payeth no heed to caste.’",
+      "period": "15th to early 16th century (Macauliffe)",
+      "dateShort": "c. 1500 CE",
+      "dateFull": "circa 1500 CE",
+      "sortYear": 1500,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Reply to the Brahmans in the Ravidas section, after the account of his caste.",
+      "place": "Varanasi, Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Ravidas is traditionally placed in Varanasi, and Macauliffe’s account of the contest is set there. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "unscored",
+          "facet": "Devotion, not caste",
+          "why": "The verse answers the Brahmans’ claim that caste matters by saying that God values devotion and pays no heed to caste. Worth is placed in what a person does in service, not in birth. A second, independent reading moved this placement from “made” to “unscored”: The words say that God heeds devotion and not caste; they do not say whether a person is given or made.",
+          "limit": "This is a reply inside a narrative of a contest with Brahmans, so it is Macauliffe’s telling of the exchange rather than a hymn. The English is a 1909 rendering.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ravidas-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Ravidas",
+      "short": "Ravidas",
+      "work": "Hymn I in Gauri, Ravidas section",
+      "excerpt": "O God, may I continue to associate with the saints as the bee with the honey !",
+      "period": "15th to early 16th century; hymns recorded in the Granth Sahib in 1604",
+      "dateShort": "c. 1500 CE",
+      "dateFull": "circa 1500 CE",
+      "sortYear": 1500,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Gauri, hymn I in the Ravidas section, beginning “My associations are low”.",
+      "place": "Varanasi, Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Ravidas is traditionally placed in Varanasi. Macauliffe does not say where this hymn was composed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Staying near the saints",
+          "why": "The verse asks God to let the speaker keep company with the saints, comparing that attachment to a bee’s attachment to honey. The company of holy people is presented as the condition of devotion.",
+          "limit": "The verse is a prayer, and the saints are devotees of God, so it speaks of holy company rather than company in general. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ravidas-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Ravidas",
@@ -32699,6 +33854,76 @@ window.PILOT_EVIDENCE={
           "facet": "Attributes beyond expression",
           "why": "The hymn prays for a sight of God and says even the highest yogis cannot explain God's attributes, which lie beyond expression. The ultimate is affirmed but described as beyond what words can say.",
           "limit": "The line comes from a prayer, in which the speaker also asks for understanding, so the hymn does not rule out knowing God by devotion. The English is Macauliffe's 1909 rendering of a hymn kept in the Granth Sahib under the name Rav Das.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "mira-bai-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Mira Bai",
+      "short": "Mira Bai",
+      "work": "Mira Bai’s reply to her sister-in-law, in Macauliffe’s account",
+      "excerpt": "The slur of hundreds of thousands of births departeth on association with saints. The slur is on her who loveth not their company. My life dependeth on the company of saints.",
+      "period": "Born about 1504 CE (Macauliffe); the reply is set in her husband’s household",
+      "dateShort": "c. 1504 CE",
+      "dateFull": "circa 1504 CE",
+      "sortYear": 1504,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Mira Bai’s reply to her sister-in-law, in the account of her life, p. 345.",
+      "place": "Chittor, Rajasthan, India",
+      "lat": 24.89,
+      "lng": 74.63,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe places the reply at the court of her husband’s family, the Rana, without naming a town in this passage. The pin marks Chittor, the Mewar capital; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Life that depends on saints",
+          "why": "The verse says the stain of many births is removed by association with saints, and that a life depends on their company. Holy company is treated as necessary and set against a family’s objection.",
+          "limit": "This is a reply to a relative in a quarrel, given in Macauliffe’s narrative, so it is one stance in an argument rather than a general view of solitude. The English is a 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "mira-bai-suffering",
+      "question": "suffering",
+      "name": "Mira Bai",
+      "short": "Mira Bai",
+      "work": "Hymns of Mira Bai",
+      "excerpt": "I ever bow to thee, dispel all my sorrow. All my husband’s relations give me continual annoyance. They cause me to endure great suffering when I associate with saints, and perform my worship.",
+      "period": "Born about 1504 CE (Macauliffe)",
+      "dateShort": "c. 1504 CE",
+      "dateFull": "circa 1504 CE",
+      "sortYear": 1504,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Hymn beginning “I ever bow to thee”, in the sequence of Mira Bai’s hymns.",
+      "place": "Chittor, Rajasthan, India",
+      "lat": 24.89,
+      "lng": 74.63,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe places the complaint at the court of her husband’s family, the Rana, without naming a town. The pin marks Chittor, the Mewar capital; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Suffering for devotion",
+          "why": "The verse asks God to dispel sorrow and says the husband’s relations cause great suffering for her devotion. The suffering is treated as something to be ended or endured, and no good is given for it.",
+          "limit": "The verse names no good that the suffering serves, but it is a complaint in a particular quarrel, and the translation is Macauliffe’s 1909 rendering.",
           "second": "agreed"
         }
       },
@@ -33616,6 +34841,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sur-das-desire",
+      "question": "desire",
+      "name": "Sur Das",
+      "short": "Sur Das",
+      "work": "Sarang hymn of Sur Das, “The people of God dwell with God”",
+      "excerpt": "He who forsaketh God and desireth any one else, is like a leech on a leprous body.",
+      "period": "Born 1528 CE (Macauliffe)",
+      "dateShort": "1528 CE",
+      "dateFull": "1528 CE",
+      "sortYear": 1528,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Sarang hymn in the Sur Das section, after the hymn beginning “The people of God dwell with God”.",
+      "place": "Banaras (Varanasi), Uttar Pradesh, India",
+      "lat": 25.32,
+      "lng": 82.99,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says Sur Das spent the rest of his life in forest tracts near Banaras, where his shrine is. The hymn has no stated place; the pin marks Banaras; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Desire fixed on God alone",
+          "why": "The verse says that a person who forsakes God and desires anyone else is like a leech on a diseased body. Desire is redirected onto God rather than given up.",
+          "limit": "The verse condemns desire for others and says little more about desire for God. Macauliffe notes that this Sur Das is not the blind poet of the Sur Sagar. The English is a 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "francois-rabelais-desire",
       "question": "desire",
       "name": "François Rabelais",
@@ -33900,6 +35160,216 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bhikan-suffering",
+      "question": "suffering",
+      "name": "Bhikan",
+      "short": "Bhikan",
+      "work": "Sorath hymn attributed to Bhikan",
+      "excerpt": "Such pangs have been produced in me that there is no medicine for them. The name of God, a pure nectareous water, is the best medicine in the world.",
+      "period": "Shaikh Bhikan of Kakori died 1573–74 (Macauliffe); hymn date not known",
+      "dateShort": "16th c.",
+      "dateFull": "sixteenth century",
+      "sortYear": 1550,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Sorath hymn attributed to Bhikan, the stanzas beginning “There is pain in my forehead”.",
+      "place": "Kakori, Uttar Pradesh, India",
+      "lat": 26.8,
+      "lng": 80.87,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe takes Bhikan to be most probably Shaikh Bhikan of Kakori, though he doubts the attribution. The pin marks Kakori approximately; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "Pain cured by God’s name",
+          "why": "The verse describes bodily and mental pain that has no medicine, and says that God’s name is the only cure. Suffering is presented as something to be ended, not as something with a purpose of its own.",
+          "limit": "Macauliffe doubts that the Bhikan of these hymns is the Shaikh of Kakori, and suggests a religious man of reformist views. The English is a 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bhikan-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Bhikan",
+      "short": "Bhikan",
+      "work": "Sorath hymn attributed to Bhikan",
+      "excerpt": "My tongue is happy in repeating, mine ear in hearing, and my mind in thinking on God’s name. Saith Bhikan, both mine eyes are satisfied ; wherever I look there is God",
+      "period": "Shaikh Bhikan of Kakori died 1573–74 (Macauliffe); hymn date not known",
+      "dateShort": "16th c.",
+      "dateFull": "sixteenth century",
+      "sortYear": 1550,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 6 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "locator": "Sorath hymn attributed to Bhikan, the stanza beginning “My tongue is happy in repeating”.",
+      "place": "Kakori, Uttar Pradesh, India",
+      "lat": 26.8,
+      "lng": 80.87,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe takes Bhikan to be most probably Shaikh Bhikan of Kakori, though he doubts the attribution. The pin marks Kakori approximately; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg06unse/sikhreligionitsg06unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God seen everywhere",
+          "why": "The verse says that wherever the speaker looks there is God, so the passage affirms God’s presence in all things.",
+          "limit": "Macauliffe doubts that the Bhikan of these hymns is the Shaikh of Kakori, and suggests a religious man of reformist views. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "fuzuli-happiness",
+      "question": "happiness",
+      "name": "Fuzûlî",
+      "short": "Fuzûlî",
+      "work": "Ghazel [199] in Gibb’s numbering",
+      "excerpt": "Then the joy of being near her made the ailing body whole. Then the cheer of union with her brought the weary heart respite.",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [199], third couplet. The scanned text contains recognition errors.",
+      "place": "Baghdad, Iraq",
+      "lat": 33.31,
+      "lng": 44.37,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb places Fuzûlî in Baghdad, where he lived under Ottoman rule after 1535; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Joy of the beloved’s presence",
+          "why": "The speaker says that his joy came from being near her and that union with her cheered his heart, so his happiness is placed in another person’s presence, which he does not control.",
+          "limit": "A love ghazel looking back on days of union, in which the poet blames Fortune’s turning; it is lament, and not a considered view of happiness. Fuzûlî is not the speaker of a doctrine here. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "khayali-desire",
+      "question": "desire",
+      "name": "Khayali",
+      "short": "Khayali",
+      "work": "Ghazel [185] in Gibb’s numbering",
+      "excerpt": "How to make my soul be fellow of the Sempiternal Rayne? How to strip away all yearning for the world's desire and gain?",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [185], first two couplets. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Khayali Bey lived in Constantinople in the reign of Suleyman; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Stripping away yearning for the world",
+          "why": "The speaker asks how to join the Eternal and how to strip away every yearning for the world’s desire and gain, so desire for worldly things is to be removed.",
+          "limit": "Two questions in a mystic ghazel, not a command, and Gibb’s note ties the stripping away to a hard road of ‘selfish desire’ killed before progress; the same poet also writes of the longing for the Beloved. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "khayali-suffering",
+      "question": "suffering",
+      "name": "Khayali",
+      "short": "Khayali",
+      "work": "Ghazel [189] in Gibb’s numbering",
+      "excerpt": "Naught he knows of medicine's virtue who hath ne'er had ache or pain ; Never doth the caitiff quaff the beaker at the feast of bane.",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [189], opening couplet. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Khayali Bey lived in Constantinople in the reign of Suleyman; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Pain as the knowledge of the cure",
+          "why": "The couplet says only a person who has felt ache or pain knows what medicine is worth, and a caitiff never drinks at the feast of bane, so suffering gives a knowledge nothing else gives.",
+          "limit": "Gibb’s note reads the couplet as saying that the caitiff cannot win adeptship, which one must suffer to gain, so ‘ache’ and ‘bane’ stand for the pangs of mystic love; it does not say suffering is sent for a reason. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "muhibbi-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Muhibbi",
+      "short": "Muhibbi",
+      "work": "Ghazel [165] in Gibb’s numbering",
+      "excerpt": "O Muhibbi, if thou cravest rest, withdraw from cares of earth; There is ne'er a peaceful corner like the hermit's nook, perdie.",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [165], last couplet. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "The pen-name Muhibbi belongs to Sultan Suleyman, whose court was at Istanbul (Gibb says Constantinople); the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "The hermit’s nook",
+          "why": "The speaker says that anyone who wants rest should withdraw from the cares of the world, and that nothing is as peaceful as the hermit’s nook, so he recommends being apart.",
+          "limit": "Muhibbi is the pen-name of Sultan Suleyman the Magnificent; Gibb reads his verse as showing humility before worldly glory. The poem praises privacy from the throne, and it is a ghazel, not a rule he followed. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "nguyen-binh-khiem-happiness",
       "question": "happiness",
       "name": "Nguyễn Bỉnh Khiêm",
@@ -33999,6 +35469,76 @@ window.PILOT_EVIDENCE={
           "facet": "Wandering without a friend",
           "why": "The poet wanders the world and mourns that he has found no friend by evening, which treats being alone as a lack and a hardship.",
           "limit": "A folk-mystic (Alevi) song whose attribution and wording come down through oral tradition and a modern printed text; the 'friend' (dost) may also mean a spiritual companion or God. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "yahya-bey-desire",
+      "question": "desire",
+      "name": "Yahya Bey",
+      "short": "Yahya Bey",
+      "work": "Shah u Geda (King and Beggar) [210] in Gibb’s numbering",
+      "excerpt": "The slave to Love becometh King of earth, For Love's duresse fulfilled of joy and mirth; For that desire of earthly things alway Obscureth heavenly beauty's perfect ray.",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "[210], the passage on Love, in the middle of the extract. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Yahya Bey served Sultan Suleyman and was given stewardship of pious foundations in and near Constantinople; the Shah u Geda is undated in the text and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Earthly desire hides heavenly beauty",
+          "why": "The lines say that desire for earthly things always obscures heavenly beauty, while the slave of Love becomes a king of earth, so earthly desire is to be put aside for the higher love.",
+          "limit": "The moral comes from a romance in which Love, a desire itself, is praised as the means of reaching God; the passage condemns desire for earthly things and not desire as such. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "yahya-bey-truth",
+      "question": "truth",
+      "name": "Yahya Bey",
+      "short": "Yahya Bey",
+      "work": "Shah u Geda (King and Beggar) [210] in Gibb’s numbering",
+      "excerpt": "One day shall secret things be brought to sight, And the soul's eye awakened by Love's might; All things before him shall be bared and known, From God's own self the curtain shall be thrown ;",
+      "period": "c. 1550",
+      "dateShort": "c. 1550",
+      "dateFull": "circa 1550",
+      "sortYear": 1550,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "[210], the passage on Love, about three-quarters through the extract. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Yahya Bey served Sultan Suleyman and was given stewardship of pious foundations in and near Constantinople; the Shah u Geda is undated in the text and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "The soul’s eye awakened by Love",
+          "why": "The lines say the soul’s eye, awakened by Love, will see secret things, all of them bared and known when God lifts the curtain, so ultimate truth is said to be knowable by direct vision.",
+          "limit": "A passage of a romantic mesnevi that speaks of the lover, not of every person, and it speaks in the future tense of a day of unveiling; the knowledge it promises is mystical, and ‘Primal Wisdom’ is described as dazed by it. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
           "second": "agreed"
         }
       },
@@ -34729,6 +36269,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "baki-free-will",
+      "question": "free-will",
+      "name": "Bâkî",
+      "short": "Bâkî",
+      "work": "Ghazel [218] in Gibb’s numbering",
+      "excerpt": "Grieve not, Baql, at the hand of Fortune, for the world is thus: To the thorn the rose allotted, in the cage the bulbul, see.",
+      "period": "c. 1580",
+      "dateShort": "c. 1580",
+      "dateFull": "circa 1580",
+      "sortYear": 1580,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [218], last couplet. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Bâkî lived at the court in Constantinople in the age of Suleyman and Selim II; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "The rose allotted to the thorn",
+          "why": "The couplet tells the poet not to grieve at Fortune because the world is so arranged: the rose is allotted to the thorn and the bulbul to the cage, so lots are assigned and not chosen.",
+          "limit": "A consoling image at the end of a love ghazel; it says what befalls people is allotted, but does not discuss responsibility or choice of conduct. It is not a worked-out doctrine of fate. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -35497,6 +37072,41 @@ window.PILOT_EVIDENCE={
           "why": "The poet says that the person who lives pleasantly in a fleeting world is the one to whom happiness and woe are equal. Contentment is placed in the person's own indifference to fortune, not in what fortune brings.",
           "limit": "A stanza from a mystical Ottoman Turkish poem by a Mevlevi dervish, here in E. J. W. Gibb's 1900 verse translation, which bends the wording to fit rhyme and metre. The poem also praises wine and dissolute company in a mystic sense, and the stanza is one voice among several moods.",
           "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ruhi-of-baghdad-truth",
+      "question": "truth",
+      "name": "Ruhi of Baghdad",
+      "short": "Ruhi",
+      "work": "Terkib-Bend [228] in Gibb’s numbering",
+      "excerpt": "All they who do the tavern-folk's elation blest gainsay. By their own reason seek to win to Truth, ah, wel-a-way !",
+      "period": "c. 1605",
+      "dateShort": "c. 1605",
+      "dateFull": "circa 1605",
+      "sortYear": 1605,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Terkib-Bend [228], the stanza on the zealot who would play guide and teacher. The scanned text contains recognition errors.",
+      "place": "Damascus, Syria",
+      "lat": 33.51,
+      "lng": 36.29,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gibb says the last stanza shows the Terkib-Bend was written in Damascus, where Ruhi died in 1014 (1605–6), probably shortly before his death. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "Reason against the tavern-folk’s ecstasy",
+          "why": "The lines lament those who condemn the ecstatic ‘tavern-folk’ and try to reach Truth by their own reason, so Truth is held to be reached through ecstasy and not by reason alone, and known only by some.",
+          "limit": "The ‘tavern’ stands for mystic intoxication and the poet is defending one camp against ‘zealots’ in a stanza of a poem that Gibb says moves from mysticism through defiance to resignation; it does not say how far the ecstatic can know. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "settled"
         }
       },
       "check": {
@@ -36820,6 +38430,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "naili-desire",
+      "question": "desire",
+      "name": "Nâ‘ilî",
+      "short": "Nâ‘ilî",
+      "work": "Ghazel [289] in Gibb’s numbering",
+      "excerpt": "O Lord, deliverance from hope and fear on me bestow, Vouchsafe a mind that will full fain life and the world forego.",
+      "period": "c. 1650",
+      "dateShort": "c. 1650",
+      "dateFull": "circa 1650",
+      "sortYear": 1650,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [289], opening couplet. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb calls Nâ‘ilî (Yenizada Mustafa Efendi) a poet of Constantinople; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Freedom from hope and fear",
+          "why": "The speaker prays to be freed from hope and fear and given a mind that will gladly forego life and the world, so wanting is to be given up altogether.",
+          "limit": "A prayer, so it asks God to bring about a renunciation and does not say a person can achieve it alone; the same ghazel also asks for strength to bear distress, and Nâ‘ilî’s other verses are less austere. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "niyazi-death",
+      "question": "death",
+      "name": "Niyazi",
+      "short": "Niyazi",
+      "work": "Poem [295], the ‘Spiritual City’, in Gibb’s numbering",
+      "excerpt": "My pathway to a city led the which a plain doth compass fair; Who enters in sees naught of death, he drinketh of life's water there.",
+      "period": "c. 1650",
+      "dateShort": "c. 1650",
+      "dateFull": "circa 1650",
+      "sortYear": 1650,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Poem [295], opening couplet. The scanned text contains recognition errors.",
+      "place": "Bursa, Turkey",
+      "lat": 40.19,
+      "lng": 29.06,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb places Niyazi’s life in Brusa (Bursa) and notes a period spent in Cairo, whence his second pen-name Misri; the poem is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The city where none sees death",
+          "why": "The speaker describes a spiritual city whose dwellers see no death and drink the water of life, so the soul is said to live on in a realm beyond dying.",
+          "limit": "Niyazi (Misri) is a mystic and the ‘city’ is an allegory, the City of the Truth, entered in life as well as after it; Gibb says his ghazels are often hard to interpret. The passage does not say what happens to the body. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "thomas-hobbes-desire",
       "question": "desire",
       "name": "Thomas Hobbes",
@@ -37777,6 +39457,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "guru-tegh-bahadur-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Guru Tegh Bahadur",
+      "short": "Tegh Bahadur",
+      "work": "Dhanasari hymn I of Guru Teg Bahadur",
+      "excerpt": "As in flowers there is odour and in a mirror reflection, So God dwelleth continually in thy heart ; search for Him",
+      "period": "Late 17th century, composed c. 1665–1675 (Macauliffe)",
+      "dateShort": "c. 1670 CE",
+      "dateFull": "circa 1670 CE",
+      "sortYear": 1670,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 4 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "locator": "Dhanasari hymn I in the Hymns of Guru Teg Bahadur, p. 403.",
+      "place": "Delhi, India",
+      "lat": 28.66,
+      "lng": 77.23,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says it is believed the Guru composed most of his sloks during his captivity before his execution at Delhi in 1675. He does not date this hymn; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Seek God within the heart",
+          "why": "The verse compares God in the heart to fragrance in flowers and a reflection in a mirror, and directs the search for God to the heart, so the search is pointed inward.",
+          "limit": "The verse is a short devotional hymn and gives no view on the part other people play in the search. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "guru-tegh-bahadur-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Guru Tegh Bahadur",
+      "short": "Tegh Bahadur",
+      "work": "Hymn of Guru Teg Bahadur, beginning “Wives, friends, sons, and relatives”",
+      "excerpt": "Wives, friends, sons, and relatives are all attached to wealth ; When they see a man poor, they all forsake his company and flee.",
+      "period": "Late 17th century, composed c. 1665–1675 (Macauliffe)",
+      "dateShort": "c. 1670 CE",
+      "dateFull": "circa 1670 CE",
+      "sortYear": 1670,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 4 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "locator": "Hymn in the Hymns of Guru Teg Bahadur, p. 401.",
+      "place": "Delhi, India",
+      "lat": 28.66,
+      "lng": 77.23,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says it is believed the Guru composed most of his sloks during his captivity before his execution at Delhi in 1675. He does not date this hymn; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Kin who desert the poor",
+          "why": "The verse says that wives, friends and relatives attached to wealth forsake a poor man, so company is presented as unreliable and a warning against depending on it.",
+          "limit": "The verse warns against worldly company and does not say that being alone is better. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "guru-tegh-bahadur-suffering",
+      "question": "suffering",
+      "name": "Guru Tegh Bahadur",
+      "short": "Tegh Bahadur",
+      "work": "Dhanasari hymn II of Guru Teg Bahadur",
+      "excerpt": "Without God’s name thou shalt suffer ; Without piety doubts are not at an end ; the Guru gave me this secret.",
+      "period": "Late 17th century, composed c. 1665–1675 (Macauliffe)",
+      "dateShort": "c. 1670 CE",
+      "dateFull": "circa 1670 CE",
+      "sortYear": 1670,
+      "sourceLabel": "Max Arthur Macauliffe translation, “The Sikh Religion”, volume 4 (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "locator": "Dhanasari hymn II in the Hymns of Guru Teg Bahadur, p. 405.",
+      "place": "Delhi, India",
+      "lat": 28.66,
+      "lng": 77.23,
+      "anchorType": "Traditional association",
+      "placeNote": "Macauliffe says it is believed the Guru composed most of his sloks during his captivity before his execution at Delhi in 1675. He does not date this hymn; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/sikhreligionitsg04unse/sikhreligionitsg04unse_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Suffering that follows neglect of God",
+          "why": "The verse says that a person without God’s name will suffer, so suffering is presented as the deserved result of neglecting God.",
+          "limit": "The hymn is short and gives the Guru’s teaching in a line, not a theory of suffering in general. The English is Macauliffe’s 1909 rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "walda-heywat-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Walda Heywat",
@@ -38210,6 +39995,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "nabi-suffering",
+      "question": "suffering",
+      "name": "Nâbî",
+      "short": "Nâbî",
+      "work": "Ghazel [304] in Gibb’s numbering",
+      "excerpt": "Never can earth prosper sans the waves of stress; Water, if it resteth, stagnates in decay.",
+      "period": "c. 1680",
+      "dateShort": "c. 1680",
+      "dateFull": "circa 1680",
+      "sortYear": 1680,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [304], second couplet. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Documented residence",
+      "placeNote": "Gibb says Nâbî, born at Urfa, came to Constantinople and served Mustafa Pasha there for some thirty years; the ghazel is undated and its place of writing is not recorded. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Stress that keeps the earth fruitful",
+          "why": "The couplet says the earth cannot prosper without the waves of stress, as still water stagnates, so hardship is a condition of growth and not a pure evil.",
+          "limit": "A single didactic couplet from a ghazel by a poet Gibb describes as introducing a ‘deliberative and didactic spirit’; it says stress enables prosperity and does not say who sends it or whether it is deserved. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -39027,6 +40847,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "talib-suffering",
+      "question": "suffering",
+      "name": "Talib",
+      "short": "Talib",
+      "work": "Ghazel [301] in Gibb’s numbering",
+      "excerpt": "The heart becomes matured and pure by pressure of the world's duresse, As grapes to must, and must to wine, are turned by treaders' might at last.",
+      "period": "c. 1700",
+      "dateShort": "c. 1700",
+      "dateFull": "circa 1700, before his death in 1706–7",
+      "sortYear": 1700,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry (1900–04), volume III, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "locator": "Ghazel [301], third couplet. The scanned text contains recognition errors.",
+      "place": "Bursa, Turkey",
+      "lat": 40.19,
+      "lng": 29.06,
+      "anchorType": "Approximate association",
+      "placeNote": "Gibb says Talib (Muhammed Efendi) was the son of an imam at Brusa (Bursa) and served as judge at Kütahya and Erzerum; the ghazel is undated and its place of writing is not recorded, so the pin marks his home city. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibb/historyofottoman03gibb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Pressure that refines the heart",
+          "why": "The couplet says the heart is matured and made pure by the pressure of the world’s hardship, as grapes are pressed into wine, so suffering is used to ripen a person.",
+          "limit": "Gibb calls Talib a minor poet marked by melancholy and a philosophising tone caught from Nâbî; the image is a single simile in a ghazel, and the poem does not say the pressure is sent for a purpose. The English is E. J. W. Gibb’s verse rendering, which keeps the rhyme scheme at some cost to literalness.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -40616,6 +42471,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kirikovi-of-mangaia-death",
+      "question": "death",
+      "name": "Kirikovi of Mangaia (recorded by William Wyatt Gill)",
+      "short": "Kirikovi",
+      "work": "Myths and Songs from the South Pacific, ch. IX, “Introduction to the fête of Riuvaka”",
+      "excerpt": "I came (said he) to instruct you In making food-offerings to the dead, Offerings to those in spirit-world ; Gifts from their relatives Who yet linger in this upper world.",
+      "period": "c. 1760",
+      "dateShort": "c. 1760",
+      "dateFull": "circa 1760",
+      "sortYear": 1760,
+      "sourceLabel": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "locator": "Chapter IX, “Introduction to the fête of Riuvaka. Composed by Kirikovi, circa 1760”, Veetini’s answer to Tueva. The scanned text contains recognition errors.",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.92,
+      "lng": -157.92,
+      "smallIsland": true,
+      "anchorType": "Approximate association",
+      "placeNote": "Gill worked as a missionary on Mangaia, Cook Islands, from 1852 to 1872, so the songs were gathered there; the linked page gives the text only, and the pin on the island is an approximate one, the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead who linger and are fed",
+          "why": "The song has the dead Veetini say he came back to teach the living to make food-offerings to those in spirit-world, so the dead are held to exist and to be fed by their kin.",
+          "limit": "A song of a chief who worshipped Tane, in a missionary’s 1876 English, built on the myth of Veetini, the first person to die. It states a belief that gave rise to the food-offerings and does not say what becomes of the dead afterwards; Gill says elsewhere that natural death could end in being eaten by Miru.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "skovoroda-meaning",
       "question": "meaning",
       "name": "Hryhorii Skovoroda",
@@ -41189,6 +43080,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "sourceLabel": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.92,
+      "lng": -157.92,
+      "smallIsland": true,
+      "anchorType": "Approximate association",
+      "placeNote": "Gill worked as a missionary on Mangaia, Cook Islands, from 1852 to 1872, so the songs were gathered there; the linked page gives the text only, and the pin on the island is an approximate one, the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "id": "uanuku-of-mangaia-death",
+      "question": "death",
+      "name": "Uanuku of Mangaia (recorded by William Wyatt Gill)",
+      "short": "Uanuku",
+      "work": "Myths and Songs from the South Pacific, ch. IX, “Dirge for Vera: a death-talk”",
+      "excerpt": "Torrents of rain obstruct thy journey. Yet by the aid of a mighty god The band led by Vera shall safely reach Their home beneath the glowing ocean.",
+      "period": "c. 1770",
+      "dateShort": "c. 1770",
+      "dateFull": "circa 1770",
+      "sortYear": 1770,
+      "locator": "Chapter IX, “Dirge for Vera: a death-talk. Composed by Uanuku, circa 1770”, introduction. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The band of ghosts reaching its home",
+          "why": "The dirge speaks to the dead Vera as leader of a band of spirits who, helped by a god, will reach a home beneath the sea, so the dead are said to go on to a further existence.",
+          "limit": "A song composed for a funeral gathering and given in Gill’s 1876 English; the images of the journey belong to the Mangaian myth of Veetini that the dirge alludes to. The song states a hope for the dead and is not a creed, and Gill notes other Mangaian beliefs about natural death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42919,6 +44846,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "sourceLabel": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.92,
+      "lng": -157.92,
+      "smallIsland": true,
+      "anchorType": "Approximate association",
+      "placeNote": "Gill worked as a missionary on Mangaia, Cook Islands, from 1852 to 1872, so the songs were gathered there; the linked page gives the text only, and the pin on the island is an approximate one, the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "id": "koroa-of-mangaia-death",
+      "question": "death",
+      "name": "Koroa of Mangaia (recorded by William Wyatt Gill)",
+      "short": "Koroa",
+      "work": "Myths and Songs from the South Pacific, ch. IX, “Another lament for Kourapapa”",
+      "excerpt": "The mother mourns the dead : — But thou and thy sister have reached The gathering-place of spirits.",
+      "period": "c. 1796",
+      "dateShort": "c. 1796",
+      "dateFull": "circa 1796",
+      "sortYear": 1796,
+      "locator": "Chapter IX, “Another lament for Kourapapa. By Koroa, circa A.D. 1796”, third offshoot. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead child among the spirits",
+          "why": "The lament tells the dead child that he and his sister have arrived at the gathering-place of spirits, so the dead are spoken to as still existing in a place of their own.",
+          "limit": "A funeral lament by a chief and poet for his young son, recorded in Mangaian and rendered into English by a missionary in 1876, so the wording is Gill’s. Gill elsewhere records that those who die a natural death were said to be eaten by the goddess Miru, so this lament is not the whole of Mangaian belief.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "sourceLabel": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.92,
+      "lng": -157.92,
+      "smallIsland": true,
+      "anchorType": "Approximate association",
+      "placeNote": "Gill worked as a missionary on Mangaia, Cook Islands, from 1852 to 1872, so the songs were gathered there; the linked page gives the text only, and the pin on the island is an approximate one, the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "id": "koroa-of-mangaia-suffering",
+      "question": "suffering",
+      "name": "Koroa of Mangaia (recorded by William Wyatt Gill)",
+      "short": "Koroa",
+      "work": "Myths and Songs from the South Pacific, ch. IX, “A dirge for Pukukare and Kourapapa”",
+      "excerpt": "Inexpressibly bad, my child ! The god \"Turanga\" is devouring thee. Although only partially his own. I am disgusted with the god of thy mother.",
+      "period": "c. 1796",
+      "dateShort": "c. 1796",
+      "dateFull": "circa 1796",
+      "sortYear": 1796,
+      "locator": "Chapter IX, “A spirit-journey: a dirge for Pukukare and Kourapapa, by their father Koroa, circa 1796”, first offshoot. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "A dying child and a failing god",
+          "why": "The father says a bad god is devouring his child and that he is disgusted with that god, so the wasting illness is treated as a harm to be ended and not as something with a purpose.",
+          "limit": "A lament by a father for his dying sons, in a missionary’s 1876 English. Mangaian belief often saw illness as the act of a god, so the song could be read as ascribing the illness to a god’s will; the father, however, offers no reason or good for it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "code-of-handsome-lake-desire",
       "question": "desire",
       "name": "The Code of Handsome Lake (Gaiwiio)",
@@ -44340,6 +46339,42 @@ window.PILOT_EVIDENCE={
           "facet": "Worship as benevolence",
           "why": "Roy says that the worship he and his co-religionists offer consists in daya, or benevolence toward one another, and not in ritual motions. Service to others is named as the whole of the duty, which puts others first.",
           "limit": "The sentence is a statement of creed written for Christian missionaries in a magazine Roy wrote under the pseudonym Shivaprasad Sarma, so the voice is a defence of a reformed Hindu position. The scanned text contains recognition errors, including “Diiya” for daya.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "sourceLabel": "William Wyatt Gill, Myths and Songs from the South Pacific (1876), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "place": "Mangaia, Cook Islands",
+      "lat": -21.92,
+      "lng": -157.92,
+      "smallIsland": true,
+      "anchorType": "Approximate association",
+      "placeNote": "Gill worked as a missionary on Mangaia, Cook Islands, from 1852 to 1872, so the songs were gathered there; the linked page gives the text only, and the pin on the island is an approximate one, the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mythsandsongsfr00mlgoog/mythsandsongsfr00mlgoog_djvu.txt",
+      "id": "naupata-of-mangaia-death",
+      "question": "death",
+      "name": "Naupata of Mangaia (recorded by William Wyatt Gill)",
+      "short": "Naupata",
+      "work": "Myths and Songs from the South Pacific, ch. VIII, farewell for Vaiana",
+      "excerpt": "She has sped to Avaiki, She disappeared at the edge of the horizon. Where the sun drops through. We weep for thee !",
+      "period": "1824",
+      "dateShort": "1824",
+      "dateFull": "1824",
+      "sortYear": 1824,
+      "locator": "Chapter VIII, “A farewell chanted at a reed-throwing match for women”, composed in memory of Vaiana by her husband Naupata, 1824. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "A wife gone to Avaiki",
+          "why": "The husband’s farewell says his dead wife has gone to Avaiki, the land of the dead at the setting sun, so she is said to have gone somewhere and not to be gone altogether.",
+          "limit": "A single farewell song by a husband for his wife, set down in 1876 English by a missionary who adds that the author later became a Christian. It reports the common Mangaian picture of Avaiki and does not say what condition the dead are in there.",
           "second": "agreed"
         }
       },
@@ -50162,6 +52197,706 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ubebe-death",
+      "question": "death",
+      "name": "Ubebe (recorded by Henry Callaway)",
+      "short": "Ubebe",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "Where is Unkulunkulu of whom yon speak 1 \" They said, \" He is dead, and Uthlanga also is dead.\"",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ubebe, on where Unkulunkulu is. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Unkulunkulu and Uthlanga are dead",
+          "why": "The elders answer a child's question about where the first man is by saying that he and his source are dead. The passage gives death as an end, with no word of the dead living on. A second, independent reading moved this placement from “it ends” to “unscored”: The words report that Unkulunkulu and Uthlanga are dead; they do not say what happens to a person at death.",
+          "limit": "The answer concerns the first ancestors, whom Ubebe's people did not worship, while the same people prayed to their recent dead. Callaway notes that Uthlanga is said to be dead ('Uthlanga ka se ko'), not simply gone. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ubebe-suffering",
+      "question": "suffering",
+      "name": "Ubebe (recorded by Henry Callaway)",
+      "short": "Ubebe",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "If a man is struck and dies, it is said, \" The lord has found fault with him.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ubebe, on lightning. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Struck by lightning as blame",
+          "why": "A man killed by lightning is said to have been found at fault by the lord. Suffering is read as deserved punishment from above, so the passage places meaning in it.",
+          "limit": "This is what people used to say, as recalled by Ubebe; Callaway sets it beside other peoples' sayings, and the same speaker says that when lightning killed cattle the people were not distressed. It states the saying, not whether Ubebe himself accepted it. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ubebe-truth",
+      "question": "truth",
+      "name": "Ubebe (recorded by Henry Callaway)",
+      "short": "Ubebe",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "We do not know whence Uthlanga came ; or whether Unkulunkulu and Uthlanga both came from one Uthlanga or not. We do not know whether Uthlanga was a woman, for our fathers said we were begotten by Unkulunkulu",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ubebe, on the origin of Uthlanga. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "The origin of Uthlanga",
+          "why": "The speaker says plainly that the source of the first man is unknown, down to whether the source was a woman. Asked about the first things, he answers that no one knows.",
+          "limit": "Ubebe was an old man of the Amantanja tribe whose people were scattered by Utshaka's armies, answering Callaway's questions through his interpreter; he does not say all deep truth is unknowable, only this origin. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ubebe-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Ubebe (recorded by Henry Callaway)",
+      "short": "Ubebe",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "And they used to say, \" There is a lord in heaven.\" When it hailed, and thundered, they said, \" The lord is arming ; he will cause it to hail.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ubebe, on the primitive faith of the forefathers. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "A lord in heaven",
+          "why": "The speaker reports that his forefathers said there is a lord in heaven who sends hail and thunder. A real ruler above is taken as a fact, so the passage affirms an ultimate reality.",
+          "limit": "Ubebe is recalling what his ancestors believed before the missionaries came, as translated by Callaway, and Callaway suggests the missionaries' teaching may have coloured how such memories were told. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ufulatela-sitole-death",
+      "question": "death",
+      "name": "Ufulatela Sitole (recorded by Henry Callaway)",
+      "short": "Ufulatela Sitole",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "they say, \"It is the Idhlozi of So-and-so,\" mentioning the name of a man who is dead ; it is said the snake came out of him at his death.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ufulatela Sitole, on the snake that enters a house. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The dead man as a snake in the house",
+          "why": "A snake that enters the house is not killed because it is taken to be the spirit of a named dead man who came out of him at death. The dead man is thought still present, so the passage sits at 'continues'.",
+          "limit": "This describes a custom among the speaker's people as Ufulatela Sitole told it to Callaway, not his own considered doctrine; Callaway adds that the snake may be a later addition to an older tradition. The English is Callaway's translation. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ufulatela-sitole-lasting-self",
+      "question": "lasting-self",
+      "name": "Ufulatela Sitole (recorded by Henry Callaway)",
+      "short": "Ufulatela Sitole",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "A man whose father is dead, when he is about to kill a bullock, worships his father, praying him to look on him continually, and give him all that he wishes, and give him cattle and corn",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ufulatela Sitole, near its close. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "A dead father still prayed to",
+          "why": "A man addresses his dead father as someone who can still see him and give him gifts. The father is treated as the same person, still existing and still acting.",
+          "limit": "A description of custom, not an argument, in Callaway's English; it concerns a son's dead father and does not say what the father is made of. Ufulatela Sitole is reporting what people do, not stating his own belief. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "uguaise-mdunga-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Uguaise Mdunga (recorded by Henry Callaway)",
+      "short": "Uguaise Mdunga",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "A man dreams perhaps, and is then ill ; he says, \" I am ill for no other reason than because I have dreamed.\" Others ask him what he has dreamed.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Uguaise Mdunga, its opening lines on the Itongo as a snake and dreams. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "A dream, an illness, and what others ask",
+          "why": "A man understands his illness as coming from what he saw in his own sleep, and then the people around him ask what the dream was. The passage holds his own inner experience and the questioning of others together. A second, independent reading moved this placement from “both” to “through others”: The words have the dreamer turn to other people, who ask what he dreamed; nothing in them commends looking inward.",
+          "limit": "This is a general, hypothetical picture of how the Itongo is thought to appear, told by Uguaise Mdunga in Callaway's translation; it says nothing of whether the sleeper or the others interpret the dream better. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "uguaise-mdunga-suffering",
+      "question": "suffering",
+      "name": "Uguaise Mdunga (recorded by Henry Callaway)",
+      "short": "Uguaise Mdunga",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "O, for sooth, the worshipper gains nothing by his worship ; and the man who does not worship does well. Let it be left alone entirely.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Uguaise Mdunga, on misfortune befalling those who worship. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "unscored",
+          "facet": "The worshipper who is struck down anyway",
+          "why": "Bystanders note that a man who sacrificed faithfully was killed anyway and conclude that worship gains nothing while the neglectful man does well. Suffering here follows no rule of desert, so it has no purpose to be found. A second, independent reading moved this placement from “no purpose” to “unscored”: The words say that the worshipper gains nothing by his worship; they speak of whether worship helps and do not say whether suffering has a purpose.",
+          "limit": "These are the words Uguaise Mdunga reports the villagers saying after such a death, a protest the speaker sets beside the contrary belief that the Amatongo send misfortune for neglect. The words are in Callaway's translation. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ukoto-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Ukoto (recorded by Henry Callaway)",
+      "short": "Ukoto",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "they used to point to the Lord on high ; we did not hear his name ; we heard only that the Lord is on high.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement headed Ukoto, about the creator of the world being the Lord above. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Lord on high",
+          "why": "The speaker says that in his childhood people pointed to a Lord on high, whose name was never given. A lord above who is known only as being there is affirmed as real.",
+          "limit": "Ukoto was a very old man of the Isilangeni tribe, and Callaway notes this is one of the few places the word Umdabuko is used for the source of creation. The English is Callaway's, and the speaker claims no knowledge beyond that the Lord is on high. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ulangeni-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Ulangeni (recorded by Henry Callaway)",
+      "short": "Ulangeni",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "we used to say it when it thundered, and we thus knew that there is a power which is in heaven",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the account of Ulangeni, an old Ikaxosa, on the word Utikxo. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "A power in heaven when it thundered",
+          "why": "The speaker says the name was used at thunder and that his people thereby knew a power exists in heaven. The existence of a power above is stated as known.",
+          "limit": "Ulangeni was an old Xhosa man living at a mission station, answering Callaway about the word Utikxo, and he adds that nothing was known of where that power was or what it was. The scanned text garbles the name Utikxo, which is why it is left out of the quoted words. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-desire",
+      "question": "desire",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "to separate ourselves from these things, and we make him a liar, for that evil which we like of our own accord, we adhere to with the utmost tenacity.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Umpengula Mbanda that includes the line 'Truly we know nothing but his name'. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "unscored",
+          "facet": "Clinging to what is liked",
+          "why": "The speaker says people find it hard to part from the things they like, even the evil ones, and hold to them with the utmost tenacity. The words describe following desire as the people's actual practice. A second, independent reading moved this placement from “follow it” to “unscored”: The words say that people cling to the evil they like; they describe a habit and do not say whether desire should be followed, trained or given up.",
+          "limit": "This is a description, put ironically by a Christian speaker who is criticising how his people use the name of Unkulunkulu as an excuse for what they like. It reports that desire is followed; it does not recommend doing so. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "And I woke in the morning and told the people, saying, \" My heart is heavy. I have dreamt of a wedding-dance, and of a funeral lamentation.\" The people said, \" You have dreamt of a bad thing.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, section on dreams, the statement ending with the signature Umpengula Mbanda that begins 'My heart is heavy'. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "A heavy heart and what others make of the dream",
+          "why": "The speaker feels in his own heart that the dream is bad, and then tells others, who read its meaning for him. The passage holds the inward feeling and the reading by other people together. A second, independent reading moved this placement from “both” to “through others”: The words have the dreamer tell the people his dream and the people say what it means; the reading of his own heart comes from them.",
+          "limit": "A first-person account of one dream, written down by Callaway in Zulu and English; it is not a general statement about the self. The surrounding page goes on to the dream's consequences for the speaker's household. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-lasting-self",
+      "question": "lasting-self",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "support themselves by it, and say, \" He will still treat us in the same way now he is dead. We do not know why he should regard others besides us; he will regard us only.\"",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Umpengula Mbanda that begins with the worship of the Amatongo by their children. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The dead father who still treats his children",
+          "why": "The children expect their dead father to go on acting toward them exactly as he did in life. The passage treats the father as the same person continuing after death.",
+          "limit": "This reports what the worshippers say of their dead father, as Umpengula described it to Callaway; it is the belief of the family, not a claim Umpengula himself defends, and the passage is about a father rather than the speaker's own self. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-truth",
+      "question": "truth",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "There is no truth in it ; for there are none who say, they know the place where Unkulunkulu broke off the people.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Umpengula Mbanda, on Unkulunkulu as a vain account. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "Origins no one can point to",
+          "why": "The speaker rejects the claim that Unkulunkulu made the nations because no one can name the place where he is said to have broken them off. Nobody claims to know the origin, so the passage holds that the first things cannot be known.",
+          "limit": "Umpengula was a Zulu Christian speaking to Callaway, who translated and printed his words, and he is arguing against the old men's accounts rather than reporting a settled Zulu teaching. His point concerns one origin story, not every kind of deep truth. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "umpengula-mbanda-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Umpengula Mbanda (Zulu informant, recorded by Henry Callaway)",
+      "short": "Umpengula Mbanda",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "we can give some account of what belongs to Unkulunkulu ; we can scarcely give any account of what belongs to the heavenly king.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Umpengula Mbanda that begins with the heavenly king. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "The heavenly king, scarcely described",
+          "why": "The speaker separates the ancestral first man, about whom stories can be told, from a king in heaven about whom almost nothing can be said. A power that exists but can hardly be described puts the passage at the position of what lies beyond saying.",
+          "limit": "Umpengula is explaining what his people knew before the missionaries came, and he adds that the thunder and the saying that the king is playing were all they had of the heavenly king. His wider statements treat the Christian God as known; this passage does not. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ungqeto-wakwatshange-death",
+      "question": "death",
+      "name": "Ungqeto waKwaTshange (recorded by Henry Callaway)",
+      "short": "Ungqeto",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "They say that Unkulunkulu, who sprang from the bed of reeds, is dead. They say, \"We do not know where he is.\"",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the opening of the statement ending with the signature Ungqeto waKwaTshange. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Unkulunkulu is dead and no one knows where",
+          "why": "The speakers say the first man is dead and that they do not know where he now is. The passage states that death has happened and says nothing of what follows.",
+          "limit": "The statement is about the first ancestor, not about every death, and Ungqeto goes on to say that his house prays to its own ancestor Utshange, so the wider account holds that the dead can be addressed. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ungqeto-wakwatshange-desire",
+      "question": "desire",
+      "name": "Ungqeto waKwaTshange (recorded by Henry Callaway)",
+      "short": "Ungqeto",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "We pray to him for anything we wish to have ; we and all of the family of Utshange pray to him. If we wish to have cattle, we say, \" Ye people of our house.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ungqeto waKwaTshange, on prayer to Utshange. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Asking the house ancestor for what one wants",
+          "why": "The speaker says his family asks its founding ancestor for anything it wishes to have, naming cattle as an example. Wishes are voiced and brought to a higher power to be granted, not renounced.",
+          "limit": "A description of his house's practice in Callaway's translation, concerning prayer to an ancestor rather than desire in general; the passage does not say whether every wish should be pursued or what happens when a prayer is not answered. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ungqeto-wakwatshange-truth",
+      "question": "truth",
+      "name": "Ungqeto waKwaTshange (recorded by Henry Callaway)",
+      "short": "Ungqeto",
+      "work": "The Religious System of the Amazulu, Part I, Unkulunkulu",
+      "excerpt": "we say, there is not ; for we do not know the land in which it is, of which they can say, it is in such and such a country.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part I, Unkulunkulu, the statement ending with the signature Ungqeto waKwaTshange, on the bed of reeds. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "No one can say where the reed bed is",
+          "why": "The speaker refuses the old men's claim that there is a bed of reeds from which the first man came, because no one can name the country in which it lies. Where nobody can say, the origin is not something that can be known.",
+          "limit": "Ungqeto waKwaTshange speaks as one of the 'children' questioning the old men, and Callaway notes this is a case where each house has its own Unkulunkulu. The passage doubts one tradition, not every claim about first things. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "usetemba-dhladhla-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Usetemba Dhladhla (recorded by Henry Callaway)",
+      "short": "Usetemba Dhladhla",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "I used habitually to pray at all times in secret. I did so because when I prayed it was as if I really saw the Lord ; and I went away from prayer with my heart very white indeed.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Usetemba Dhladhla, its opening lines. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Secret prayer and a white heart",
+          "why": "The speaker withdraws to pray alone and in secret, and comes away with a heart he calls very white. His peace is found by turning inward and away from others.",
+          "limit": "This is one convert's account of private prayer before baptism, set down by Callaway; it says nothing for or against finding oneself through other people, and the same account later relies on what other believers told him. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "usetemba-dhladhla-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Usetemba Dhladhla (recorded by Henry Callaway)",
+      "short": "Usetemba Dhladhla",
+      "work": "The Religious System of the Amazulu, Part II, Amatongo",
+      "excerpt": "After that when I prayed I saw that the Lord is, and it was as if I could fly away to Him for the joy which overflowed my heart.",
+      "period": "c. 1860s; recorded at the Springvale mission, published 1868-70",
+      "dateShort": "c. 1860s",
+      "dateFull": "circa 1860s",
+      "sortYear": 1865,
+      "sourceLabel": "Henry Callaway, The Religious System of the Amazulu (1870), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "locator": "Part II, Amatongo, the statement ending with the signature Usetemba Dhladhla, on his prayers before baptism. The scanned text contains recognition errors.",
+      "place": "Springvale mission on the Umkomanzi, Natal (now South Africa)",
+      "lat": -30.1,
+      "lng": 30.2,
+      "anchorType": "Approximate recording location",
+      "placeNote": "Callaway wrote down these statements from Zulu speakers at his Springvale mission on the Umkomanzi in Natal. The passage itself names no place, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/relamazulu00calluoft/relamazulu00calluoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Praying and seeing that the Lord is",
+          "why": "The speaker says that after a period of fear and doubt in prayer he saw that the Lord is, and was filled with joy. A God who exists is stated from his own experience.",
+          "limit": "Usetemba Dhladhla is a Christian convert describing his own prayers while being instructed for baptism, and Callaway compares his account with the experiences of early Christian hermits. It is a personal testimony, not a Zulu tradition. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "adam-lindsay-gordon-meaning",
       "question": "meaning",
       "name": "Adam Lindsay Gordon",
@@ -54082,6 +56817,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "andalib-as-reported-by-browne-truth",
+      "question": "truth",
+      "name": "‘Andalib (as reported by E. G. Browne)",
+      "short": "‘Andalib",
+      "work": "A Year Amongst the Persians, chapter XIV (conversation at Yazd)",
+      "excerpt": "Wherever one arises speaking this Word, know him to be a Manifestation of the Divine Will, believe in him, and take his yoke upon you",
+      "period": "1888",
+      "dateShort": "1888",
+      "dateFull": "1888",
+      "sortYear": 1888,
+      "sourceLabel": "E. G. Browne, A Year Amongst the Persians (1893), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "locator": "Chapter XIV, conversation at Yazd with an old mulla present, after the passage beginning “How can you or I, who are Persians, judge”. The scanned text contains recognition errors.",
+      "place": "Yazd, Iran",
+      "lat": 31.9,
+      "lng": 54.37,
+      "anchorType": "Documented conversation location",
+      "placeNote": "Browne records this conversation with the Bábí ‘Andalib at Yazd in 1888, during his weeks in the city; the date is that of the visit.",
+      "placeSource": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Recognising a Manifestation by the Word",
+          "why": "‘Andalib says that a speaker who brings the Divine Word can be known to be a Manifestation of the Divine Will. The passage holds that this recognition is possible, through the Word itself.",
+          "limit": "Browne’s English recollection of a Persian conversation at Yazd, not a transcript. The passage concerns recognising a messenger, not the deepest truth, and an old mulla present at the talk found the claim hard to accept.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "eugenio-maria-de-hostos-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Eugenio María de Hostos",
@@ -54437,6 +57207,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mirza-asadu-llah-as-reported-by-browne-death",
+      "question": "death",
+      "name": "Mirza Asadu'llah (as reported by E. G. Browne)",
+      "short": "Mirza Asadu'llah",
+      "work": "A Year Amongst the Persians, chapter on Mysticism, Metaphysic and Magic (the philosophy of Sabzawar)",
+      "excerpt": "In either case he enters after death into the World of Ideas, where he is happy or miserable according to his deserts",
+      "period": "1888",
+      "dateShort": "1888",
+      "dateFull": "1888",
+      "sortYear": 1888,
+      "sourceLabel": "E. G. Browne, A Year Amongst the Persians (1893), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "locator": "Chapter on Mysticism, Metaphysic and Magic, the account of the Arc of Descent and the grades of the soul after death, as expounded by Mirza Asadu’llah. The scanned text contains recognition errors.",
+      "place": "Sabzawar, Iran",
+      "lat": 36.21,
+      "lng": 57.68,
+      "anchorType": "Setting named in the text",
+      "placeNote": "Browne names Mirza Asadu’llah as a pupil of Hajji Mulla Hadi of Sabzawar and as the teacher from whom he learned this philosophy; the page does not confirm where the conversation took place. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul enters a world of its deserts",
+          "why": "Mirza Asadu’llah, a pupil of Hajji Mulla Hadi, holds that after death the soul enters a World of Ideas, where it is happy or miserable according to its deserts. Something of the person goes on after death.",
+          "limit": "Browne’s English recollection of a Persian conversation: he gives this as his own summary of the school’s teaching, so the wording is his. The World of Ideas is a doctrine of the Sabzawar philosophers, and Browne notes in the same passage that they deny a bodily resurrection.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "shiraz-babis-as-reported-by-browne-meaning",
       "question": "meaning",
       "name": "Hajji Mirza Hasan and a young Seyyid (as reported by E. G. Browne)",
@@ -54499,6 +57304,41 @@ window.PILOT_EVIDENCE={
           "why": "The speakers say that knowing God is impossible by unassisted reason, so prophets must be sent to instruct people. The deepest truth is held to be knowable, but only through revelation.",
           "limit": "Browne paraphrases a long discussion from memory, so the wording is his; the claim is the Bábí premise he was then questioning. The scanned text contains recognition errors.",
           "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "zoroastrians-of-yazd-as-reported-by-browne-death",
+      "question": "death",
+      "name": "Zoroastrian friends of Yazd (as reported by E. G. Browne)",
+      "short": "Zoroastrians of Yazd",
+      "work": "A Year Amongst the Persians, chapter on Yazd (Zoroastrian account of judgment on the fourth day)",
+      "excerpt": "If the former are in excess, the departed is admitted into paradise ; if the latter, he is punished",
+      "period": "1888",
+      "dateShort": "1888",
+      "dateFull": "1888",
+      "sortYear": 1888,
+      "sourceLabel": "E. G. Browne, A Year Amongst the Persians (1893), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "locator": "Chapter on Yazd, paragraph beginning “The angel Rashn, who presides over the eighteenth day” (the fourth-day judgment), with footnote 1 on the Desatir. The scanned text contains recognition errors.",
+      "place": "Yazd, Iran",
+      "lat": 31.9,
+      "lng": 54.37,
+      "anchorType": "Documented conversation location",
+      "placeNote": "Browne records these accounts from his Zoroastrian friends in Yazd in 1888; the date is that of the visit.",
+      "placeSource": "https://archive.org/stream/yearamongstpersi00browuoft/yearamongstpersi00browuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Judgment after death and the soul’s fate",
+          "why": "Browne’s Zoroastrian friends say that after death an angel weighs a person’s deeds, and the good are admitted to paradise while the wicked are sent back into this world for another probation. Something of the person goes on after death in either case.",
+          "limit": "Browne’s English recollection of a Persian conversation with Zoroastrians at Yazd, and he adds in a footnote that the judgment doctrine may be a modern one derived from the apocryphal Desatir. The passage describes a popular account of the afterlife, not a canonical text.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -83304,6 +86144,166 @@ window.PILOT_EVIDENCE={
     "Zitsuzen Ashitsu": {
       "about": "Japanese Tendai Buddhist priest, who spoke at the 1893 Parliament of Religions.",
       "tradition": "Buddhism",
+      "sure": true
+    },
+    "Ashiq Pasha": {
+      "about": "Turkish Sufi poet of Kırşehir, who wrote the long mystical poem Gharib-name in 1330.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Bhikan": {
+      "about": "Sufi saint of Kakori in north India in the 1500s, two of whose hymns are in the Sikh scripture.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Dhanna": {
+      "about": "Farmer and poet-saint of Rajasthan, born in 1415, some of whose hymns are in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Jaidev": {
+      "about": "Sanskrit poet of twelfth-century Bengal, author of the Gita Govinda, two of whose hymns are in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Khayali": {
+      "about": "Ottoman dervish poet of the 1500s, favoured at the court of Sultan Süleyman.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Kirikovi of Mangaia (recorded by William Wyatt Gill)": {
+      "about": "Mangaian composer of the 1700s, whose song was written down by the missionary William Wyatt Gill.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Koroa of Mangaia (recorded by William Wyatt Gill)": {
+      "about": "Mangaian poet of the late 1700s, whose laments for the dead were written down by the missionary William Wyatt Gill.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mira Bai": {
+      "about": "Rajput princess and poet-saint of the 1500s, devoted to Krishna, whose songs are sung across north India.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Mirza Asadu'llah (as reported by E. G. Browne)": {
+      "about": "Persian philosopher of Sabzawar, pupil of Hajji Mulla Hadi, whose teaching E. G. Browne recorded in 1888.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Muhibbi": {
+      "about": "Pen-name of the Ottoman sultan Süleyman the Magnificent, who wrote a large body of verse in the 1500s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Naupata of Mangaia (recorded by William Wyatt Gill)": {
+      "about": "Mangaian composer of the early 1800s, whose farewell song was written down by the missionary William Wyatt Gill.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Nesimi": {
+      "about": "Turkic mystical poet of the Hurufi movement, who was put to death at Aleppo around 1417.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Niyazi": {
+      "about": "Niyazi Mısri, Ottoman Sufi poet and Khalveti sheikh of the 1600s, who taught at Bursa and died in exile.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Pipa": {
+      "about": "Rajput ruler of Gagron who became a wandering poet-saint around 1400; one of his hymns is in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Sadhna": {
+      "about": "Butcher by trade and poet-saint of Sind, of about the 13th century, one of whose hymns is in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Sain": {
+      "about": "Barber at a royal court and poet-saint of about 1400, one of whose hymns is in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Sheykhi": {
+      "about": "Ottoman poet and physician of Kütahya, who wrote the romance Khusrev and Shirin around 1420.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Suleyman Chelebi": {
+      "about": "Ottoman poet of Bursa, who wrote the Mevlid, a poem on the birth of the Prophet, in 1409.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Sultan Veled": {
+      "about": "Son of Rumi and organiser of the Mevlevi order at Konya, who wrote verse in Persian and Turkish around 1300.",
+      "tradition": "Islam and Sufism",
+      "sure": true
+    },
+    "Sur Das": {
+      "about": "Blind poet-saint of north India in the 1500s, devoted to Krishna; one of his hymns is in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Talib": {
+      "about": "Ottoman poet of Bursa, who died in 1706.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Trilochan": {
+      "about": "Poet-saint of Maharashtra, born in 1267 and a companion of Namdev, some of whose hymns are in the Sikh scripture.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Uanuku of Mangaia (recorded by William Wyatt Gill)": {
+      "about": "Mangaian poet of the 1700s, whose dirge for a dead youth was written down by the missionary William Wyatt Gill.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ubebe (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of his people’s beliefs was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ufulatela Sitole (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of his people’s beliefs was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Uguaise Mdunga (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of ancestor spirits and dreams was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ukoto (recorded by Henry Callaway)": {
+      "about": "Elderly Zulu man of Natal, whose account of the first things was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ulangeni (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of his people’s beliefs was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Ungqeto waKwaTshange (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of the origin of things and of death was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Usetemba Dhladhla (recorded by Henry Callaway)": {
+      "about": "Zulu man of Natal, whose account of ancestor spirits was written down in Zulu by Henry Callaway in the 1860s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Yahya Bey": {
+      "about": "Ottoman poet and soldier of Albanian birth, who wrote five long poems in the 1500s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Zoroastrian friends of Yazd (as reported by E. G. Browne)": {
+      "about": "Zoroastrians of Yazd in Iran, whose account of their beliefs E. G. Browne recorded in 1888.",
+      "tradition": "Zoroastrianism",
       "sure": true
     }
   }
