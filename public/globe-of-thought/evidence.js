@@ -6386,6 +6386,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "euripides-death",
+      "question": "death",
+      "name": "Euripides",
+      "short": "Euripides",
+      "work": "Hippolytus (the Nurse speaking, translated by Gilbert Murray)",
+      "excerpt": "For other life is a fountain sealed, And the deeps below us are unrevealed, And we drift on legends for ever !",
+      "period": "428 BCE (first performed)",
+      "dateShort": "428 BCE",
+      "dateFull": "428 BCE",
+      "sortYear": -428,
+      "sourceLabel": "Gilbert Murray translation (1902), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/hippolytuseurip00murrgoog/hippolytuseurip00murrgoog_djvu.txt",
+      "locator": "The Nurse's speech to Phaedra, near the Greek lines 189–197. The scanned text contains recognition errors.",
+      "place": "Athens, Greece",
+      "lat": 37.98,
+      "lng": 23.72,
+      "anchorType": "Setting of first performance",
+      "placeNote": "Tradition holds that Hippolytus won first prize at the City Dionysia in Athens in 428 BCE; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Hippolytus_(play)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "No word from below",
+          "why": "The Nurse says that people cling to life because no one knows of another one: what lies below is sealed and unrevealed, and what is said of it rests on legends. She leaves what follows death open and unknown.",
+          "limit": "These are the words of a character in a tragedy, spoken to comfort the dying Phaedra, and do not state the poet's own belief. The English is Gilbert Murray's 1902 verse translation, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "sophocles-suffering",
       "question": "suffering",
       "name": "Sophocles",
@@ -6778,6 +6813,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "shu-jing-happiness",
+      "question": "happiness",
+      "name": "Book of Documents (Shu Jing)",
+      "short": "Shu Jing",
+      "work": "Book of Documents, “The Great Plan” (Hong Fan), ninth category",
+      "excerpt": "The first is long life; the second, riches; the third, soundness of body and serenity of mind; the fourth, the love of virtue; and the fifth, fulfilling to the end the will (of Heaven).",
+      "period": "Speech set c. 1046 BCE; composition debated",
+      "dateShort": "set c. 1046 BCE",
+      "dateFull": "speech set around 1046 BCE; composition debated, probably before the 3rd century BCE",
+      "sortYear": -400,
+      "sourceLabel": "James Legge translation (Sacred Books of the East vol. 3, 1879), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/sacredbooksofeas0003jame/sacredbooksofeas0003jame_djvu.txt",
+      "locator": "Part V, book 4 “The Great Plan” (Hung Fan), paragraph ix, “Ninth, of the five (sources of) happiness”. The scanned text contains recognition errors.",
+      "place": "Zhou capital near Xi'an, Shaanxi, China",
+      "lat": 34.25,
+      "lng": 108.85,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The chapter presents Jizi answering King Wu of Zhou, whose capital lay near present-day Xi'an; the linked scan does not give the coordinates, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Book_of_Documents",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "The five sources of happiness",
+          "why": "The Great Plan lists five sources of happiness that mix outer goods, long life and riches, with inner ones, serenity of mind and the love of virtue. It treats both kinds as part of a fortunate life.",
+          "limit": "The list is part of an old statecraft text of uncertain date, said to be given to King Wu of Zhou, and it names the goods without ranking them. The English is James Legge's 1879 translation, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -8212,6 +8282,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "acaranga-sutra-relationships",
+      "question": "relationships",
+      "name": "Acaranga Sutra",
+      "short": "Acaranga",
+      "work": "Acaranga Sutra, book 1, lecture 3, lesson 4",
+      "excerpt": "Man ! Thou art thy own friend ; why wishest thou for a friend beyond thyself?",
+      "period": "Compiled c. 3rd century BCE",
+      "dateShort": "c. 3rd c. BCE",
+      "dateFull": "compiled around the 3rd century BCE",
+      "sortYear": -300,
+      "sourceLabel": "Hermann Jacobi translation, Sacred Books of the East vol. 22, Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/jainasutrasparti029233mbp/jainasutrasparti029233mbp_djvu.txt",
+      "locator": "First Book, Lecture 3, Lesson 4, verse 3. The scanned text contains recognition errors.",
+      "place": "Magadha, Bihar, India",
+      "lat": 25.4,
+      "lng": 85.1,
+      "anchorType": "Traditional association",
+      "placeNote": "The Acaranga is a Svetambara Jain canonical text associated with the Magadha region, but it was compiled and edited over centuries; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/%C4%80c%C4%81r%C4%81%E1%B9%85ga_S%C5%ABtra",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "One's own friend",
+          "why": "The Jain monastic text tells the reader that he is his own friend and asks why he would look for any friend beyond himself. Liberation from pain is placed in self-restraint, with no need of another's help.",
+          "limit": "This is an exhortation in a monks' scripture about the path to release, and it does not describe how persons are formed. The English is Hermann Jacobi's 1884 translation, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -10322,6 +10427,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "the-dhammapada-lasting-self",
+      "question": "lasting-self",
+      "name": "The Dhammapada",
+      "short": "Dhammapada",
+      "work": "Dhammapada, verse 279 (The Path, Maggavagga)",
+      "excerpt": "\"All things are not-self\" — when one sees this with wisdom, one turns away from suffering.",
+      "period": "Compiled by c. 3rd century BCE",
+      "dateShort": "c. 3rd c. BCE",
+      "dateFull": "compiled by around the 3rd century BCE",
+      "sortYear": -250,
+      "sourceLabel": "Acharya Buddharakkhita translation, Access to Insight",
+      "sourceUrl": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.20.budd.html",
+      "locator": "Chapter 20 (The Path), verse 279.",
+      "place": "Magadha, Bihar, India",
+      "lat": 25,
+      "lng": 85.3,
+      "anchorType": "Traditional association",
+      "placeNote": "The Dhammapada is a compilation of sayings attributed to the Buddha, whose teaching is traditionally set in the Magadha region; the verse has no known place of composition, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.20.budd.html",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "All things are not-self",
+          "why": "The verse states that all things are not-self and presents seeing this clearly as the way out of suffering. No part of experience is left as a self.",
+          "limit": "The Dhammapada is a compilation of sayings attributed to the Buddha, and a verse this short states the doctrine without arguing for it. The English is Acharya Buddharakkhita's rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "the-great-learning-inward-or-others",
       "question": "inward-or-others",
       "name": "The Great Learning",
@@ -11784,6 +11924,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "the-buddha-happiness",
+      "question": "happiness",
+      "name": "The Buddha",
+      "short": "The Buddha",
+      "work": "Anguttara Nikaya 8.54, Dighajanu (Vyagghapajja) Sutta",
+      "excerpt": "There are these four qualities, TigerPaw, that lead to a lay person's happiness and well-being in this life. Which four? Being consummate in initiative, being consummate in vigilance, admirable friendship, and maintaining one's livelihood in tune.",
+      "period": "Pali canon, compiled by c. 1st century BCE",
+      "dateShort": "c. 1st c. BCE (canon)",
+      "dateFull": "Pali canon, written down by about the 1st century BCE",
+      "sortYear": -100,
+      "sourceLabel": "Thanissaro Bhikkhu translation, Access to Insight",
+      "sourceUrl": "https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.than.html",
+      "locator": "The Blessed One's reply, beginning “There are these four qualities, TigerPaw”.",
+      "place": "Kakkarapatta, Koliya country, near the India–Nepal border",
+      "lat": 27.5,
+      "lng": 83.4,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The sutta opens with the Buddha staying among the Koliyans at their town of Kakkarapatta; the exact site is not known and the coordinates are a rough guess for the Koliya country, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.accesstoinsight.org/tipitaka/an/an08/an08.054.than.html",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "A householder's happiness",
+          "why": "The Buddha tells a householder that happiness in this life rests on four things: his own energy and watchfulness, good friends, and a livelihood kept in balance. These mix inner effort with outer conditions such as friends and income.",
+          "limit": "The sutta is advice to a layman, and the same discourse goes on to four further qualities, of conviction, virtue, generosity and discernment, for happiness in lives to come. The English is Thanissaro Bhikkhu's translation, and the discourse is a later compilation attributed to the Buddha.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "vendidad-meaning",
       "question": "meaning",
       "name": "Vendidad",
@@ -12608,6 +12783,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "yang-xiong-given-or-made",
+      "question": "given-or-made",
+      "name": "Yang Xiong",
+      "short": "Yang Xiong",
+      "work": "Model Sayings (法言), chapter 1 “Learning and Practice”",
+      "excerpt": "或曰：「人可鑄與？」曰：「孔子鑄顏淵矣。」",
+      "translation": "Someone asked: “Can a person be cast?” He said: “Confucius cast Yan Yuan.”",
+      "period": "c. 5 CE",
+      "dateShort": "c. 5 CE",
+      "dateFull": "c. 5 CE",
+      "sortYear": 5,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B3%95%E8%A8%80/01",
+      "locator": "Chapter 1, exchange beginning “或問：世言鑄金，金可鑄與？”.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Yang Xiong lived and served at the Han capital Chang’an, where tradition places the Fayan; the linked page gives no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E6%B3%95%E8%A8%80/01",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Casting a person",
+          "why": "Yang Xiong answers that a person can be cast like metal, and that Confucius cast his disciple Yan Yuan. What a person becomes is shaped by a teacher and by learning.",
+          "limit": "The line is a short exchange in a Confucian dialogue that praises teachers, and the same chapter says that nature has innate faculties which learning straightens. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "yang-xiong-happiness",
+      "question": "happiness",
+      "name": "Yang Xiong",
+      "short": "Yang Xiong",
+      "work": "Model Sayings (法言), chapter 1 “Learning and Practice”",
+      "excerpt": "紆朱懷金者之樂，不如顏氏子之樂。顏氏子之樂也內，紆朱懷金者之樂也外。",
+      "translation": "The joy of one who wears the red cord and carries the gold seal is not like the joy of Master Yan. Master Yan’s joy is within; the joy of the one with the cord and seal is without.",
+      "period": "c. 5 CE",
+      "dateShort": "c. 5 CE",
+      "dateFull": "c. 5 CE",
+      "sortYear": 5,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%B3%95%E8%A8%80/01",
+      "locator": "Chapter 1, reply beginning “紆朱懷金者之樂，不如顏氏子之樂”.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.95,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Yang Xiong lived and served at the Han capital Chang’an, where tradition places the Fayan; the linked page gives no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E6%B3%95%E8%A8%80/01",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Inner and outer joy",
+          "why": "Yang Xiong contrasts the joy of an official with rank and gold with the joy of Yan Hui, and says Yan’s lies within while the official’s lies in outward things. Real happiness is set in what is within the person.",
+          "limit": "The speaker is the author answering a questioner who would like official rank, and his point is partly a defence of his own poverty. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -13914,6 +14161,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "asvaghosa-lasting-self",
+      "question": "lasting-self",
+      "name": "Aśvaghoṣa",
+      "short": "Aśvaghoṣa",
+      "work": "Buddha-karita, book 16 (the Buddha's teaching, verse 28)",
+      "excerpt": "This body composed of the five skandhas, and produced from the five elements, is all empty and without soul, and arises from the action of the chain of causation.",
+      "period": "c. 100 CE",
+      "dateShort": "c. 100 CE",
+      "dateFull": "circa 100 CE",
+      "sortYear": 100,
+      "sourceLabel": "Sacred Books of the East vol. 49 (Oxford, 1894), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/buddhistmahy01asvauoft/buddhistmahy01asvauoft_djvu.txt",
+      "locator": "Book 16, verse 28, in the Buddha's teaching to the people. The scanned text contains recognition errors.",
+      "place": "Saketa (Ayodhya), India",
+      "lat": 26.8,
+      "lng": 82.2,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition links Aśvaghoṣa to Saketa and to the court of the Kushan emperor Kanishka, but both are uncertain and the date is approximate; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/A%C5%9Bvagho%E1%B9%A3a",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "A body empty and without soul",
+          "why": "The Buddha of the poem says the body, made of the five aggregates and elements, is empty and without soul and arises only from a chain of causes. No part of the person is left as a lasting self.",
+          "limit": "The later cantos of the Buddha-karita survive only in Chinese and Tibetan, so the English is a translation of a translation and may differ from the lost Sanskrit. The verse is part of a poetic life of the Buddha, and the English dates from 1894, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ban-zhao-given-or-made",
       "question": "given-or-made",
       "name": "Ban Zhao",
@@ -14017,6 +14299,146 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "laws-of-manu-death",
+      "question": "death",
+      "name": "Laws of Manu",
+      "short": "Manu",
+      "work": "Laws of Manu, IV.239",
+      "excerpt": "For in the next world neither father, nor mother, nor wife, nor sons, nor relations stay to be his companions; spiritual merit alone remains (with him).",
+      "period": "c. 100 CE (compiled)",
+      "dateShort": "c. 100 CE (compiled)",
+      "dateFull": "c. 100 CE (compiled)",
+      "sortYear": 100,
+      "sourceLabel": "G. Bühler translation (Sacred Books of the East vol. 25, 1886), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "locator": "Book IV, verse 239.",
+      "place": "Northern India (Brahmanical heartland)",
+      "lat": 27,
+      "lng": 80,
+      "anchorType": "Traditional association",
+      "placeNote": "The Manusmriti is a compiled Brahmanical law text with no known single place of writing; the pin marks the Gangetic plain, the region its rules describe. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Merit follows the soul",
+          "why": "The verse says that in the next world no relative stays as a companion and only the merit a person has gathered remains. A person is taken to pass into a next world, so the passage places death as a continuation.",
+          "limit": "The point of the verse is to urge the householder to gather spiritual merit, not to describe death at length. The code describes rewards and punishments in later worlds in detail elsewhere, and this verse is one rule among many.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "laws-of-manu-desire",
+      "question": "desire",
+      "name": "Laws of Manu",
+      "short": "Manu",
+      "work": "Laws of Manu, II.94-95",
+      "excerpt": "Desire is never extinguished by the enjoyment of desired objects; it only grows stronger like a fire (fed) with clarified butter.",
+      "period": "c. 100 CE (compiled)",
+      "dateShort": "c. 100 CE (compiled)",
+      "dateFull": "c. 100 CE (compiled)",
+      "sortYear": 100,
+      "sourceLabel": "G. Bühler translation (Sacred Books of the East vol. 25, 1886), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "locator": "Book II, verse 94.",
+      "place": "Northern India (Brahmanical heartland)",
+      "lat": 27,
+      "lng": 80,
+      "anchorType": "Traditional association",
+      "placeNote": "The Manusmriti is a compiled Brahmanical law text with no known single place of writing; the pin marks the Gangetic plain, the region its rules describe. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Desire grows with indulgence",
+          "why": "The verse says that satisfying desire feeds it as butter feeds a fire, and the next verse calls renouncing all pleasure far better than having it all. Desire is to be given up and not indulged.",
+          "limit": "The verse sits in a section on the self-restraint of the senses for a student of the Veda, not in a general ethics. The compiled text is a prescriptive code of the early centuries CE, in a nineteenth-century translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "laws-of-manu-happiness",
+      "question": "happiness",
+      "name": "Laws of Manu",
+      "short": "Manu",
+      "work": "Laws of Manu, IV.160",
+      "excerpt": "Everything that depends on others (gives) pain, everything that depends on oneself (gives) pleasure; know that this is the short definition of pleasure and pain.",
+      "period": "c. 100 CE (compiled)",
+      "dateShort": "c. 100 CE (compiled)",
+      "dateFull": "c. 100 CE (compiled)",
+      "sortYear": 100,
+      "sourceLabel": "G. Bühler translation (Sacred Books of the East vol. 25, 1886), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "locator": "Book IV, verse 160.",
+      "place": "Northern India (Brahmanical heartland)",
+      "lat": 27,
+      "lng": 80,
+      "anchorType": "Traditional association",
+      "placeNote": "The Manusmriti is a compiled Brahmanical law text with no known single place of writing; the pin marks the Gangetic plain, the region its rules describe. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Pleasure and pain defined",
+          "why": "The text defines pleasure as whatever rests on oneself and pain as whatever rests on others. Happiness is placed in what is within a person’s own power, which puts the passage on the side of the self.",
+          "limit": "The rule sits in a code of conduct for a Brahmin householder and concerns undertakings whose success depends on others, not a general theory of happiness. The Bühler translation of 1886 dates the compiled text loosely to the early centuries CE.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "lotus-sutra-desire",
+      "question": "desire",
+      "name": "Lotus Sutra",
+      "short": "Lotus Sutra",
+      "work": "Saddharma-pundarika (Lotus of the True Law), chapter III, “A Parable”",
+      "excerpt": "in delighting in this triple world ye are burnt, heated, inflamed with the thirst inseparable from the pleasures of the five senses.",
+      "period": "c. 100 CE (compiled)",
+      "dateShort": "c. 100 CE (compiled)",
+      "dateFull": "c. 100 CE (compiled)",
+      "sortYear": 100,
+      "sourceLabel": "H. Kern translation (Sacred Books of the East vol. 21, 1884), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/saddharmapundar00camb/saddharmapundar00camb_djvu.txt",
+      "locator": "Chapter III, in the Buddha’s address in prose after the story of the burning house.",
+      "place": "Rajagriha (Rajgir), Bihar, India",
+      "lat": 25,
+      "lng": 85.42,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The sutra places the discourse on Vulture Peak near Rajagriha. The text was composed in Sanskrit centuries after the Buddha and its actual place of composition is unknown; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/saddharmapundar00camb/saddharmapundar00camb_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Craving as a burning house",
+          "why": "The Buddha, speaking in the parable of the burning house, tells his hearers that delight in the sense-pleasures of the world is itself what burns them, and urges them to flee it. Desire is to be left behind, not followed or trained.",
+          "limit": "The speaker is the Buddha in a long parable meant to draw children out of a burning house, and the same chapter then offers three “vehicles” as an enticement. The Sanskrit text was compiled over several centuries, and the translation is H. Kern’s of 1884.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -14249,6 +14671,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "epictetus-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Epictetus",
+      "short": "Epictetus",
+      "work": "Discourses, book 3, chapter 13 (“What solitude is”)",
+      "excerpt": "But none the less a man ought to be prepared in a manner for this also, to be able to be sufficient for himself and to be his own companion.",
+      "period": "c. 108 CE (lectures recorded by Arrian)",
+      "dateShort": "c. 108 CE",
+      "dateFull": "circa 108 CE",
+      "sortYear": 108,
+      "sourceLabel": "George Long translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Epictetus/discourses.3.three.html",
+      "locator": "Book 3, chapter 13, paragraph beginning “For if being alone is enough to make solitude”.",
+      "place": "Nicopolis, Epirus, Greece",
+      "lat": 39.02,
+      "lng": 20.73,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Epictetus taught at Nicopolis after leaving Rome, and Arrian's notes of the lectures are dated by scholars to about 108 CE. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Being one's own companion",
+          "why": "Epictetus grants that people naturally desire community and the pleasure of talk, yet says a person should also be able to be alone and be his own companion. Both company and the capacity to be alone have a place.",
+          "limit": "The chapter's main aim is to separate being alone from being helpless, and it ends by praising the peace of the self-sufficient man. The English is George Long's 1877 translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -14655,6 +15112,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "sutra-forty-two-sections-desire",
+      "question": "desire",
+      "name": "Sutra in Forty-two Sections",
+      "short": "Forty-two Sections",
+      "work": "Sutra in Forty-two Sections",
+      "excerpt": "佛言：「人從愛欲生憂，從憂生畏。無愛即無憂，不憂即無畏。」",
+      "translation": "The Buddha said: “From craving and desire a person produces worry, and from worry fear. Without craving there is no worry; without worry there is no fear.”",
+      "period": "c. 150 CE (traditionally 67 CE)",
+      "dateShort": "c. 150 CE (traditionally 67 CE)",
+      "dateFull": "c. 150 CE (traditionally 67 CE)",
+      "sortYear": 150,
+      "sourceLabel": "Chinese Wikisource (Koryo Tripitaka edition, public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BD%9B%E8%AA%AA%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%AB%A0%E7%B6%93%EF%BC%88%E9%AB%98%E9%BA%97%E7%89%88%E5%A4%A7%E8%97%8F%E7%B6%93%E6%9C%AC%EF%BC%89",
+      "locator": "The saying beginning “人從愛欲生憂”.",
+      "place": "Luoyang, Henan, China",
+      "lat": 34.72,
+      "lng": 112.6,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition says the sutra was first translated at Luoyang under Emperor Ming (67 CE), but the extant text is probably later; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E4%BD%9B%E8%AA%AA%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%AB%A0%E7%B6%93%EF%BC%88%E9%AB%98%E9%BA%97%E7%89%88%E5%A4%A7%E8%97%8F%E7%B6%93%E6%9C%AC%EF%BC%89",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Craving as the root of fear",
+          "why": "The saying traces worry and fear back to craving, and says that without craving they cease. Desire is to be cut off at its root.",
+          "limit": "This is a brief monastic saying addressed to renunciants, not to householders, and the same text elsewhere speaks of desire in more graphic terms. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sutra-forty-two-sections-lasting-self",
+      "question": "lasting-self",
+      "name": "Sutra in Forty-two Sections",
+      "short": "Forty-two Sections",
+      "work": "Sutra in Forty-two Sections",
+      "excerpt": "佛言：「熟自念身中四大，名自有名都為無，吾我者寄生，生亦不久，其事如幻耳。」",
+      "translation": "The Buddha said: “Look carefully into the four elements in the body. The names are only names, and in truth they are nothing. This ‘I’ and ‘mine’ is a lodger; its life will not last, and the whole matter is like an illusion.”",
+      "period": "c. 150 CE (traditionally 67 CE)",
+      "dateShort": "c. 150 CE (traditionally 67 CE)",
+      "dateFull": "c. 150 CE (traditionally 67 CE)",
+      "sortYear": 150,
+      "sourceLabel": "Chinese Wikisource (Koryo Tripitaka edition, public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BD%9B%E8%AA%AA%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%AB%A0%E7%B6%93%EF%BC%88%E9%AB%98%E9%BA%97%E7%89%88%E5%A4%A7%E8%97%8F%E7%B6%93%E6%9C%AC%EF%BC%89",
+      "locator": "The saying beginning “熟自念身中四大”.",
+      "place": "Luoyang, Henan, China",
+      "lat": 34.72,
+      "lng": 112.6,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition says the sutra was first translated at Luoyang under Emperor Ming (67 CE), but the extant text is probably later; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E4%BD%9B%E8%AA%AA%E5%9B%9B%E5%8D%81%E4%BA%8C%E7%AB%A0%E7%B6%93%EF%BC%88%E9%AB%98%E9%BA%97%E7%89%88%E5%A4%A7%E8%97%8F%E7%B6%93%E6%9C%AC%EF%BC%89",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "The body and the “I” as borrowed",
+          "why": "The Buddha tells monks to see that the body’s four elements are only names, that the “I” lives in them as a temporary lodger, and that all of it is like an illusion. No lasting self is found in the person.",
+          "limit": "This is a short Chinese Buddhist digest of sayings rather than a philosophical argument, and its text history is uncertain. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -15351,6 +15880,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mouzi-death",
+      "question": "death",
+      "name": "Mouzi",
+      "short": "Mouzi",
+      "work": "Mouzi on Dispelling Doubts (牟子理惑論)",
+      "excerpt": "魂神固不滅矣，但身自朽爛耳。身譬如五穀之根葉，魂神如五穀之種實；根葉生必當死，種實豈有終亡",
+      "translation": "The soul surely does not perish; only the body rots away. The body is like the roots and leaves of the five grains, and the soul like their seed. Roots and leaves that live must die, but how could the seed ever come to an end?",
+      "period": "c. 200 CE",
+      "dateShort": "c. 200 CE",
+      "dateFull": "c. 200 CE",
+      "sortYear": 200,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%89%9F%E5%AD%90%E7%90%86%E6%83%91%E8%AB%96",
+      "locator": "Reply of Mouzi to the question about calling back the soul.",
+      "place": "Jiaozhi (near modern Hanoi), Vietnam",
+      "lat": 21.03,
+      "lng": 105.85,
+      "anchorType": "Traditional association",
+      "placeNote": "The preface says Mouzi withdrew to Jiaozhi in the Han collapse, where tradition places the work; its place and date are disputed, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E7%89%9F%E5%AD%90%E7%90%86%E6%83%91%E8%AB%96",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul as the seed",
+          "why": "Mouzi, defending the Buddhist teaching, says the body decays like the leaves of a plant while the soul is like the seed that survives it. Something of the person continues after death.",
+          "limit": "The speaker is a Buddhist apologist answering a questioner in a dialogue, and the work’s authorship and date are disputed, with some placing it much later than 200. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "nagarjuna-truth",
       "question": "truth",
       "name": "Nāgārjuna",
@@ -15645,6 +16210,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "xu-gan-given-or-made",
+      "question": "given-or-made",
+      "name": "Xu Gan",
+      "short": "Xu Gan",
+      "work": "Balanced Discourses (中論), “On Learning”",
+      "excerpt": "馬雖有逸足，而不閑輿，則不為良駿。人雖有美質，而不習道，則不為君子。",
+      "translation": "A horse may have swift feet, but if it is not trained to the carriage it does not become a fine steed. A person may have an excellent nature, but if he does not practise the Way he does not become a gentleman.",
+      "period": "c. 210 CE",
+      "dateShort": "c. 210 CE",
+      "dateFull": "c. 210 CE",
+      "sortYear": 210,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%B8%AD%E8%AB%96_(%E5%84%92%E5%AE%B6)/%E5%8D%B7%E4%B9%8B%E4%B8%8A",
+      "locator": "First chapter, “治學第一”, near the middle.",
+      "place": "Ye (near Handan), Hebei, China",
+      "lat": 36.35,
+      "lng": 114.4,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Xu Gan was one of the Seven Scholars of Jian’an who served Cao Cao at Ye; the linked page does not state where the essay was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E4%B8%AD%E8%AB%96_(%E5%84%92%E5%AE%B6)/%E5%8D%B7%E4%B9%8B%E4%B8%8A",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Fine nature needs training",
+          "why": "Xu Gan grants that a person may have a fine native quality, as a horse has swift feet, but says it makes a gentleman only when trained in the Way. An endowment is needed, and it has to be developed.",
+          "limit": "The essay praises study and leaves open how far native quality varies between people. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "bardaisan-free-will",
       "question": "free-will",
       "name": "Bardaisan of Edessa",
@@ -15712,6 +16313,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "zhuge-liang-given-or-made",
+      "question": "given-or-made",
+      "name": "Zhuge Liang",
+      "short": "Zhuge Liang",
+      "work": "Admonition to His Son (誡子書)",
+      "excerpt": "非澹泊無以明志，非寧靜無以致遠。夫學須靜也，才須學也。非學無以廣才，非志無以成學。",
+      "translation": "Without simplicity there is no way to make one’s aim clear; without tranquillity there is no way to reach far. Study requires stillness, and talent requires study. Without study there is no way to widen talent; without resolve there is no way to complete study.",
+      "period": "c. 234 CE",
+      "dateShort": "c. 234 CE",
+      "dateFull": "c. 234 CE",
+      "sortYear": 234,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%AA%A1%E5%AD%90%E6%9B%B8",
+      "locator": "Whole short letter; second sentence onward.",
+      "place": "Chengdu, Shu Han, China",
+      "lat": 30.66,
+      "lng": 104.06,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Zhuge Liang served as chancellor of Shu Han from Chengdu and the letter is traditionally dated to his last years (c. 234 CE); the linked text does not name the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E8%AA%A1%E5%AD%90%E6%9B%B8",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Ability grows from study",
+          "why": "Zhuge Liang tells his son that talent has to be built through study and that study itself needs resolve and a quiet mind. What a person can become is made by effort and not simply inherited.",
+          "limit": "The letter is advice from a father to a young son and does not deny that talent exists at the start. Its attribution to Zhuge Liang rests on a later source, and the English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -15824,6 +16461,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "ruan-ji-happiness",
+      "question": "happiness",
+      "name": "Ruan Ji",
+      "short": "Ruan Ji",
+      "work": "Biography of Master Great Man (大人先生傳)",
+      "excerpt": "夫無貴則賤者不怨，無富則貧者不爭，各足於身而無所求也。",
+      "translation": "Where there is no rank, the lowly do not resent it; where there is no wealth, the poor do not quarrel; each is sufficient in himself and seeks nothing.",
+      "period": "c. 260 CE",
+      "dateShort": "c. 260 CE",
+      "dateFull": "c. 260 CE",
+      "sortYear": 260,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A4%A7%E4%BA%BA%E5%85%88%E7%94%9F%E5%82%B3",
+      "locator": "Great Man’s reply to the gentleman, paragraph beginning “於是大人先生乃逌然而嘆”.",
+      "place": "Luoyang, Henan, China",
+      "lat": 34.68,
+      "lng": 112.45,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ruan Ji lived and held office at the Wei capital Luoyang, where the work is traditionally placed; the linked text gives no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E5%A4%A7%E4%BA%BA%E5%85%88%E7%94%9F%E5%82%B3",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Being sufficient in oneself",
+          "why": "Ruan Ji’s Great Man pictures a state in which each person is sufficient in himself and so wants nothing from others. Contentment lies in the self’s own sufficiency, not in goods or standing.",
+          "limit": "The speaker is a fictional Daoist figure in a satire of Confucian officials, and the sentence describes an imagined primitive order and not a rule for ordinary life. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "xi-kang-given-or-made",
+      "question": "given-or-made",
+      "name": "Xi Kang (Ji Kang)",
+      "short": "Xi Kang",
+      "work": "Letter Breaking Off with Shan Juyuan (與山巨源絕交書)",
+      "excerpt": "夫人之相知，貴識其天性，因而濟之。禹不偪伯成子高，全其節也；仲尼不假蓋於子夏，護其短也",
+      "translation": "When people truly know one another, what matters is to recognise the other’s innate nature and help it along. Yu did not press Boch’eng Zigao, to keep his integrity whole; Confucius did not borrow Zixia’s canopy, to shield his stinginess.",
+      "period": "c. 262 CE",
+      "dateShort": "c. 262 CE",
+      "dateFull": "c. 262 CE",
+      "sortYear": 262,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%88%87%E5%B1%B1%E5%B7%A8%E6%BA%90%E7%B5%95%E4%BA%A4%E6%9B%B8",
+      "locator": "Paragraph beginning “夫人之相知，貴識其天性”.",
+      "place": "Shanyang (near Xiuwu), Henan, China",
+      "lat": 35.3,
+      "lng": 113.4,
+      "anchorType": "Traditional association",
+      "placeNote": "Xi Kang lived at Shanyang in Henan when he wrote to Shan Tao at Luoyang around 262 CE, per the traditional account; the linked text does not state the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E8%88%87%E5%B1%B1%E5%B7%A8%E6%BA%90%E7%B5%95%E4%BA%A4%E6%9B%B8",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Each person’s innate nature",
+          "why": "Xi Kang says true friendship consists in recognising each person’s inborn nature and helping it to complete itself, not reshaping it. What a person is comes as an endowment that others should respect.",
+          "limit": "The letter is a defence of his own refusal of office, so the claim is argued to justify his temperament, and it is written in a rhetorical, partly ironic style. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -16041,6 +16750,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "panchatantra-given-or-made",
+      "question": "given-or-made",
+      "name": "The Panchatantra",
+      "short": "Panchatantra",
+      "work": "Book I (The Loss of Friends)",
+      "excerpt": "The worthy, by display of worth, Attain distinction, not by birth.",
+      "period": "c. 300 CE (compiled)",
+      "dateShort": "c. 300 CE (compiled)",
+      "dateFull": "c. 300 CE (compiled)",
+      "sortYear": 300,
+      "sourceLabel": "Arthur W. Ryder translation (1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "locator": "Verse after “The moon its rise from ocean takes; And gems proceed from hoods of snakes”.",
+      "place": "Kashmir (traditional association)",
+      "lat": 34.08,
+      "lng": 74.8,
+      "anchorType": "Traditional association",
+      "placeNote": "The Panchatantra was compiled in Sanskrit, with Kashmir often suggested as its home, but the date and place are uncertain; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Worth against birth",
+          "why": "The verse says that standing comes from what a person shows in conduct and not from the family a person is born into. It places who a person becomes in action and not in endowment.",
+          "limit": "The line is a maxim spoken by a character inside a fable and is one of many verses on the subject; the same book also speaks of fate. Ryder’s 1925 verse translation compresses the Sanskrit.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "panchatantra-happiness",
+      "question": "happiness",
+      "name": "The Panchatantra",
+      "short": "Panchatantra",
+      "work": "Book II (The Winning of Friends)",
+      "excerpt": "Contentment’s nectar-draught supplies The quiet joy that satisfies; How can the money-maddened know That joy in bustlings to and fro?",
+      "period": "c. 300 CE (compiled)",
+      "dateShort": "c. 300 CE (compiled)",
+      "dateFull": "c. 300 CE (compiled)",
+      "sortYear": 300,
+      "sourceLabel": "Arthur W. Ryder translation (1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "locator": "Verse beginning “Contentment’s nectar-draught supplies”, after “This being so, contentment is always wise”.",
+      "place": "Kashmir (traditional association)",
+      "lat": 34.08,
+      "lng": 74.8,
+      "anchorType": "Traditional association",
+      "placeNote": "The Panchatantra was compiled in Sanskrit, with Kashmir often suggested as its home, but the date and place are uncertain; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Contentment against money",
+          "why": "The verse puts lasting joy in contentment, a state of mind, and denies it to those who chase money. Happiness is made a matter of the person’s own disposition and not of what is owned.",
+          "limit": "The words are a maxim spoken by a character within a fable, often by a figure with a motive of his own. The verse recommends contentment to someone who has lost his wealth.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "panchatantra-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "The Panchatantra",
+      "short": "Panchatantra",
+      "work": "Book I (The Loss of Friends)",
+      "excerpt": "Stout hearts delight to pay the price Of merciful self-sacrifice, Count life as nothing, if it end In gentle service to a friend.",
+      "period": "c. 300 CE (compiled)",
+      "dateShort": "c. 300 CE (compiled)",
+      "dateFull": "c. 300 CE (compiled)",
+      "sortYear": 300,
+      "sourceLabel": "Arthur W. Ryder translation (1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "locator": "Verse beginning “Stout hearts delight to pay the price”, in the story of the heron that liked crab-meat.",
+      "place": "Kashmir (traditional association)",
+      "lat": 34.08,
+      "lng": 74.8,
+      "anchorType": "Traditional association",
+      "placeNote": "The Panchatantra was compiled in Sanskrit, with Kashmir often suggested as its home, but the date and place are uncertain; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Self-sacrifice for a friend",
+          "why": "The verse praises those who count their own lives as nothing if they end in service to a friend. The friend’s good is put ahead of the person’s own.",
+          "limit": "In the tale the fish say these words to a heron who is deceiving them in order to eat them, so the sentiment is spoken by dupes and quoted as a maxim. The book also contains many verses that counsel self-interest and caution.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "yang-zhu-desire",
       "question": "desire",
       "name": "Yang Zhu",
@@ -16180,6 +16994,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "wang-xizhi-death",
+      "question": "death",
+      "name": "Wang Xizhi",
+      "short": "Wang Xizhi",
+      "work": "Preface to the Orchid Pavilion Collection (蘭亭集序)",
+      "excerpt": "况脩短随化，終期扵盡。古人云：「死生亦大矣。」豈不痛哉！",
+      "translation": "All the more so since a long life or a short one follows the course of change and ends in exhaustion. The ancients said, “Life and death are a great matter.” How can that not be painful!",
+      "period": "353 CE",
+      "dateShort": "353 CE",
+      "dateFull": "353 CE",
+      "sortYear": 353,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
+      "locator": "Second half of the preface, after “夫人之相與，俯仰一世”.",
+      "place": "Orchid Pavilion, near Shaoxing (Kuaiji), Zhejiang, China",
+      "lat": 29.96,
+      "lng": 120.54,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The preface names the gathering at the Orchid Pavilion on Kuaiji mountain in the ninth year of Yonghe (353 CE); the modern site near Shaoxing is traditional, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E8%98%AD%E4%BA%AD%E9%9B%86%E5%BA%8F",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Life ends however long",
+          "why": "Wang Xizhi says that long lives and short lives alike follow change and come to an end, and quotes the ancient saying that life and death are a great matter. He treats death as the close of a life, as a cause of grief and not of consolation.",
+          "limit": "The preface was written for a poetry gathering and is a mood piece that goes on to reject the Zhuangzi view that life and death are one, without saying anything of an afterlife. The English is the atlas’s own unreviewed translation, and the text keeps the Wikisource spellings of older variant characters.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -16554,6 +17404,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kalidasa-lasting-self",
+      "question": "lasting-self",
+      "name": "Kālidāsa",
+      "short": "Kālidāsa",
+      "work": "Shakuntala, Act V (Arthur W. Ryder translation)",
+      "excerpt": "There must be recollections Of things not seen on earth, Deep nature's predilections, Loves earlier than birth.",
+      "period": "c. 400 CE",
+      "dateShort": "c. 400 CE",
+      "dateFull": "c. 400 CE",
+      "sortYear": 400,
+      "sourceLabel": "Arthur W. Ryder translation (1912), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/6/5/16659/16659-0.txt",
+      "locator": "Act V, the king’s verse beginning “In face of sweet presentment”.",
+      "place": "Ujjain, Malwa, India",
+      "lat": 23.18,
+      "lng": 75.78,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition links Kālidāsa with the court of Ujjain, but his patron and dates are disputed; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/6/6/5/16659/16659-0.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "Memory of earlier births",
+          "why": "The king, moved by a song, reasons that a pang with no cause in this life must come from loves held before birth. A person is taken to carry something across lives, which puts the passage on the side of a lasting self.",
+          "limit": "The words are a song-like reflection of a character in a play, not a doctrine the poet argues for, and the king says them in a moment of unexplained longing. The date and life of Kālidāsa are traditional; the translation is Ryder’s 1912 verse rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "patanjali-suffering",
       "question": "suffering",
       "name": "Patañjali",
@@ -16586,6 +17471,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "shudraka-happiness",
+      "question": "happiness",
+      "name": "Shūdraka",
+      "short": "Shūdraka",
+      "work": "The Little Clay Cart (Mṛcchakaṭika), Act I (Arthur W. Ryder translation)",
+      "excerpt": "Thence comes despondency; and thence, despair; Despair breeds folly; death is folly’s fruit. — Ah! the lack of money is all evil’s root!",
+      "period": "c. 400 CE",
+      "dateShort": "c. 400 CE",
+      "dateFull": "c. 400 CE",
+      "sortYear": 400,
+      "sourceLabel": "Arthur W. Ryder translation (Harvard Oriental Series vol. 9, 1905), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/littleclaycartmr00sudr/littleclaycartmr00sudr_djvu.txt",
+      "locator": "Act I, Charudatta’s speech to Maitreya beginning “Believe me, friend. My sorrow does not spring”.",
+      "place": "Ujjain, Malwa, India",
+      "lat": 23.18,
+      "lng": 75.78,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The play is set in Ujjayini (Ujjain), and the text does not say where it was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/littleclaycartmr00sudr/littleclaycartmr00sudr_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Poverty and despair",
+          "why": "The ruined merchant Charudatta traces a chain from poverty through shame and insult to despair and death. Well-being is made to depend on outward means, which places the passage on the side of circumstances.",
+          "limit": "The speaker is a character in a play at a low point, and Charudatta later keeps his dignity; the verse is not the dramatist’s own verdict. The work’s authorship and date are uncertain, and this is Ryder’s 1905 verse rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -23699,6 +24619,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kamo-no-chomei-death",
+      "question": "death",
+      "name": "Kamo no Chōmei",
+      "short": "Chōmei",
+      "work": "Hōjōki (An Account of My Hut), opening",
+      "excerpt": "知らず、生れ死ぬる人、いづかたより來りて、いづかたへか去る。",
+      "translation": "I do not know: the people who are born and die, from where do they come, and to where do they go?",
+      "period": "1212",
+      "dateShort": "1212",
+      "dateFull": "1212",
+      "sortYear": 1212,
+      "sourceLabel": "Japanese text (Kokubun Taikan edition), Japanese Wikisource",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "locator": "Opening section, the second paragraph, after “あしたに死し、ゆふべに生るゝならひ、たゞ水の泡にぞ似たりける”.",
+      "place": "Hino, south-east of Kyoto, Japan",
+      "lat": 34.93,
+      "lng": 135.82,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The essay closes by saying it was written in the hut Chōmei built in the hills of Hino in 1212.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E6%96%B9%E4%B8%88%E8%A8%98_(%E5%9C%8B%E6%96%87%E5%A4%A7%E8%A7%80)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Whence and whither",
+          "why": "Chōmei, reflecting on how houses and people vanish like foam on a stream, says he does not know where those who are born and die come from or where they go. He leaves open what lies beyond death.",
+          "limit": "The sentence is part of a reflection on impermanence by a retired official turned hermit, and the essay later turns to Buddhist practice. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "kamo-no-chomei-happiness",
       "question": "happiness",
       "name": "Kamo no Chōmei",
@@ -25528,11 +26484,46 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "kebra-nagast-death",
+      "question": "death",
+      "name": "Kebra Nagast",
+      "short": "Kebra Nagast",
+      "work": "Kebra Nagast (The Glory of Kings), chapter 112",
+      "excerpt": "for they all are alive with God ; and by this the Resurrection of the dead is to be understood.",
+      "period": "Compiled in Ge‘ez c. 1320 from older materials",
+      "dateShort": "c. 1320",
+      "dateFull": "circa 1320",
+      "sortYear": 1320,
+      "sourceLabel": "E. A. Wallis Budge translation (1922), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/budge-1922-kebra-nagast/Budge_1922_Kebra_Nagast_djvu.txt",
+      "locator": "Chapter 112 (How the prophets foreshadowed Him in their persons), passage on the Trinity. The scanned text contains recognition errors.",
+      "place": "Aksum, Ethiopia",
+      "lat": 14.13,
+      "lng": 38.72,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia says the Kebra Nagast is a fourteenth-century Ge'ez national epic written by Nebure Id Yeshaq of Aksum.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kebra_Nagast",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The God of the living",
+          "why": "Reading the words “I am not the God of the dead, but the God of the living”, the Ethiopian compilers conclude that the dead are alive with God and that this points to the resurrection. Something of the person goes on after death.",
+          "limit": "A passage of Christian scriptural interpretation in a compiled national epic, in E. A. Wallis Budge’s 1922 translation, read from a scan; it states the doctrine and offers no argument beyond the quoted verse. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "kebra-nagast-desire",
       "question": "desire",
-      "name": "Kebra Nagast (speech of Queen Makeda)",
+      "name": "Kebra Nagast",
       "short": "Kebra Nagast",
-      "work": "Kebra Nagast (The Glory of Kings), chapter 24",
+      "work": "Kebra Nagast (The Glory of Kings), chapter 24 (speech of Queen Makeda)",
       "excerpt": "I am smitten with the love of wisdom, and I am constrained by the cords of understanding ; for wisdom is far better than treasure of gold and silver",
       "period": "Compiled in Ge‘ez c. 1320 from older materials",
       "dateShort": "c. 1320",
@@ -25560,6 +26551,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "kebra-nagast-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Kebra Nagast",
+      "short": "Kebra Nagast",
+      "work": "Kebra Nagast (The Glory of Kings), chapter 28 (speech of Queen Makeda)",
+      "excerpt": "From this moment I will not worship the sun, but will worship the Creator of the sun, the God of Israel.",
+      "period": "Compiled in Ge‘ez c. 1320 from older materials",
+      "dateShort": "c. 1320",
+      "dateFull": "circa 1320",
+      "sortYear": 1320,
+      "sourceLabel": "E. A. Wallis Budge translation (1922), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/budge-1922-kebra-nagast/Budge_1922_Kebra_Nagast_djvu.txt",
+      "locator": "Chapter 28 (How Solomon gave commandments to the Queen). The scanned text contains recognition errors.",
+      "place": "Aksum, Ethiopia",
+      "lat": 14.13,
+      "lng": 38.72,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia says the Kebra Nagast is a fourteenth-century Ge'ez national epic written by Nebure Id Yeshaq of Aksum.",
+      "placeSource": "https://en.wikipedia.org/wiki/Kebra_Nagast",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "From the sun to its Creator",
+          "why": "The Queen of Sheba, after hearing Solomon, renounces the worship of the sun and turns to the One who made it. The passage affirms a single God behind the visible world.",
+          "limit": "A speech put into the mouth of a legendary queen in the Ethiopian national epic, in E. A. Wallis Budge’s 1922 translation, read from a scan. It gives a conversion story and no argument for God’s existence.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -28096,6 +29122,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-more-happiness",
+      "question": "happiness",
+      "name": "Thomas More",
+      "short": "More",
+      "work": "Utopia, book 2, “Of Their Trades, and Manner of Life” (Hythloday speaking)",
+      "excerpt": "to regulate labour by the necessities of the public, and to allow the people as much time as is necessary for the improvement of their minds, in which they think the happiness of life consists.",
+      "period": "1516",
+      "dateShort": "1516",
+      "dateFull": "1516",
+      "sortYear": 1516,
+      "sourceLabel": "Gilbert Burnet translation (1684), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/1/3/2130/2130-0.txt",
+      "locator": "Book 2, the end of the section “Of Their Trades, and Manner of Life”, just before “Of Their Traffic”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.09,
+      "anchorType": "Approximate writing association",
+      "placeNote": "More wrote the second book of Utopia in 1515–1516, and standard accounts place its drafting in London; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Utopia_(book)",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "Leisure for the improvement of minds",
+          "why": "Hythloday reports that the Utopians place the happiness of life in improving their minds. He adds that the state arranges work so that everyone has the leisure for it, so happiness needs both inner cultivation and favourable conditions.",
+          "limit": "The words describe an imagined island, reported by a fictional traveller, and More left open how far he endorsed Utopian customs. The English is Gilbert Burnet's 1684 translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "wang-yangming-desire",
       "question": "desire",
       "name": "Wang Yangming",
@@ -30259,6 +31320,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ruhi-of-baghdad-happiness",
+      "question": "happiness",
+      "name": "Ruhi of Baghdad",
+      "short": "Ruhi",
+      "work": "Terkib-Bend",
+      "period": "c. 1605",
+      "dateShort": "c. 1605",
+      "dateFull": "circa 1605",
+      "sortYear": 1605,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry, vol. 3 (1904), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibbuoft/historyofottoman03gibbuoft_djvu.txt",
+      "locator": "Vol. 3, in the chapter on Ruhi of Baghdad, section “From the Terkib-Bend”, the stanza beginning “Within this fleeting world the one who pleasant lives”. The scanned text contains recognition errors.",
+      "place": "Damascus, Syria",
+      "lat": 33.51,
+      "lng": 36.29,
+      "anchorType": "Documented writing location",
+      "placeNote": "Gibb states that the last stanza of the poem shows it was written in Damascus, where Ruhi died in 1014 AH (1605–6).",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibbuoft/historyofottoman03gibbuoft_djvu.txt",
+      "excerpt": "the one who pleasant lives is he To whom 'tis equal come there happiness, or come there woe",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Equal before joy and woe",
+          "why": "The poet says that the person who lives pleasantly in a fleeting world is the one to whom happiness and woe are equal. Contentment is placed in the person's own indifference to fortune, not in what fortune brings.",
+          "limit": "A stanza from a mystical Ottoman Turkish poem by a Mevlevi dervish, here in E. J. W. Gibb's 1900 verse translation, which bends the wording to fit rhyme and metre. The poem also praises wine and dissolute company in a mystic sense, and the stanza is one voice among several moods.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "shakespeare-meaning",
       "question": "meaning",
       "name": "William Shakespeare",
@@ -30734,6 +31830,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "nefi-free-will",
+      "question": "free-will",
+      "name": "Nef‘i",
+      "short": "Nef‘i",
+      "work": "Fakhriyya (self-praise poem)",
+      "period": "c. 1620s",
+      "dateShort": "c. 1620s",
+      "dateFull": "circa 1620s",
+      "sortYear": 1625,
+      "sourceLabel": "E. J. W. Gibb, A History of Ottoman Poetry, vol. 3 (1904), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/historyofottoman03gibbuoft/historyofottoman03gibbuoft_djvu.txt",
+      "locator": "Vol. 3, chapter on Nef‘i, poem [262], “Fakhriyya”, couplet beginning “I'm the Universe of Inward Truth”. The scanned text contains recognition errors.",
+      "place": "Istanbul, Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Nef‘i was a court poet in Istanbul, where he was executed in 1635; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/historyofottoman03gibbuoft/historyofottoman03gibbuoft_djvu.txt",
+      "review": "draft",
+      "excerpt": "I'm the Universe of Inward Truth, I'm free of Fate's control; From my spheres' revolving cometh pain or woe to ne'er a wight",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Free of Fate's control",
+          "why": "The poet boasts that he is the universe of inward truth, free of fate's control, and that the revolving spheres bring pain or woe to no one. The claim of freedom from fate rests on his own inner knowledge.",
+          "limit": "A boast in a self-praising poem, which Gibb says can hardly be read other than mystically, as the poet's identification with the universal; it is not an argument about choice. The English is E. J. W. Gibb's 1904 verse translation, shaped by rhyme and metre.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -32574,6 +33705,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sor-juana-free-will",
+      "question": "free-will",
+      "name": "Sor Juana Inés de la Cruz",
+      "short": "Sor Juana",
+      "work": "Respuesta a Sor Filotea de la Cruz",
+      "excerpt": "han bastado a que deje de seguir este natural impulso que Dios puso en mí",
+      "translation": "have sufficed to make me stop following this natural impulse that God put in me",
+      "period": "1691",
+      "dateShort": "1691",
+      "dateFull": "1691",
+      "sortYear": 1691,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "locator": "Paragraph beginning “El escribir nunca ha sido dictamen propio”.",
+      "place": "Convent of San Jerónimo, Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Documented writing location",
+      "placeNote": "The Respuesta is dated 1 March 1691 and was written by Sor Juana in her convent in Mexico City, where she lived from 1669; the linked page does not state the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sor_Juana",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "An impulse that rebuke could not stop",
+          "why": "Sor Juana says that neither others’ reproaches nor her own second thoughts could turn her from her inclination to letters, which she calls an impulse God placed in her. The course of her life is described as set by that impulse.",
+          "limit": "The sentence is part of a defence of her studies in a letter to a bishop under a pen name, and it stresses her inborn bent to justify it; elsewhere in the letter she speaks of her choices, including entering the convent. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -35397,6 +36564,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "william-cowper-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "William Cowper",
+      "short": "Cowper",
+      "work": "“Retirement” (1782)",
+      "excerpt": "How sweet, how passing sweet is solitude ! But grant me still a friend in my retreat, Whom I may whisper, solitude is sweet.",
+      "period": "1782",
+      "dateShort": "1782",
+      "dateFull": "1782",
+      "sortYear": 1782,
+      "sourceLabel": "Wikisource text of Poems (1782)",
+      "sourceUrl": "https://en.wikisource.org/wiki/Retirement_(Cowper)",
+      "locator": "Lines in the middle of the poem, after “I praise the Frenchman, his remark was shrewd”.",
+      "place": "Olney, Buckinghamshire, England",
+      "lat": 52.15,
+      "lng": -0.7,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Cowper lived at Olney from 1767 to 1786 and published the poem in his 1782 volume. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/William_Cowper",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Solitude with one friend",
+          "why": "Cowper agrees that solitude is sweet but asks to keep one friend in his retreat to whom he can say so. The couplet values being alone and still wants a companion with him.",
+          "limit": "The poem as a whole warns that solitude can become a grave for those with no inner life, and the line is a poet's wish, not an argument. Cowper wrote from a life of retirement and bouts of depression.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "immanuel-kant",
       "name": "Immanuel Kant",
       "short": "Kant",
@@ -35838,6 +37040,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "olaudah-equiano-happiness",
+      "question": "happiness",
+      "name": "Olaudah Equiano",
+      "short": "Equiano",
+      "work": "The Interesting Narrative of the Life of Olaudah Equiano, chapter 2",
+      "excerpt": "Thus, at the very moment I dreamed of the greatest happiness, I found myself most miserable; and it seemed as if fortune wished to give me this taste of joy, only to render the reverse more poignant.",
+      "period": "1789",
+      "dateShort": "1789",
+      "dateFull": "1789",
+      "sortYear": 1789,
+      "sourceLabel": "Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "locator": "Chapter II, in the account of his captivity and separation from his sister.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Equiano settled in London, where he became active in the abolitionist movement in the 1780s, and that his Narrative was first published in London in 1789. The article does not name the house where it was written, so the London pin rests on his residence and the place of publication.",
+      "placeSource": "https://en.wikipedia.org/wiki/Olaudah_Equiano",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Joy given only to be taken away",
+          "why": "Equiano recalls waking from a dream of happiness, on the day he was carried off, to find himself in utter misery. Happiness here is something fortune gives and withdraws, outside a person's control.",
+          "limit": "A retrospective account written decades after the events, in a book that argues against the slave trade; the sentence describes a boy's sudden reversal and does not say that happiness is always at fortune's mercy. Elsewhere Equiano finds consolation in Providence.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "olaudah-equiano-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Olaudah Equiano",
@@ -35975,6 +37212,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "tomas-antonio-gonzaga-desire",
+      "question": "desire",
+      "name": "Tomás Antônio Gonzaga",
+      "short": "Gonzaga",
+      "work": "Marília de Dirceu, Part I, Lira XIV",
+      "excerpt": "Façamos, sim, façamos, doce amada, Os nossos breves dias mais ditosos. Um coração, que frouxo A grata posse de seu bem difere, A si, Marília, a si próprio rouba,",
+      "translation": "Let us make our brief days happier, sweet beloved. A heart that slackly puts off the pleasant possession of its good robs itself, Marília, robs itself,",
+      "period": "before 1789",
+      "dateShort": "before 1789",
+      "dateFull": "before 1789",
+      "sortYear": 1789,
+      "sourceLabel": "Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Mar%C3%ADlia_de_Dirceu/I/XIV",
+      "locator": "Third stanza.",
+      "place": "Vila Rica (Ouro Preto), Minas Gerais, Brazil",
+      "lat": -20.39,
+      "lng": -43.5,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Gonzaga lived in Vila Rica as a magistrate and wrote the first part of the lyrics there before his arrest in 1789; the linked page does not date or place this lira, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tom%C3%A1s_Ant%C3%B4nio_Gonzaga",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Making brief days happier",
+          "why": "Because time and fortune pass, the speaker urges his beloved to enjoy their love now, and says that a heart which delays its good robs itself. Desire is to be fulfilled while there is time.",
+          "limit": "A carpe diem pastoral addressed to one beloved, so the advice concerns love and not every appetite; the convention is inherited from classical poets. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "tomas-antonio-gonzaga-happiness",
+      "question": "happiness",
+      "name": "Tomás Antônio Gonzaga",
+      "short": "Gonzaga",
+      "work": "Marília de Dirceu, Part I, Lira XIV",
+      "excerpt": "Minha bela Marília, tudo passa; A sorte deste mundo é mal segura. Se vem depois dos males a ventura, Vem depois dos prazeres a desgraça.",
+      "translation": "My lovely Marília, everything passes; the fortune of this world is poorly secured. If good fortune comes after ills, misfortune comes after pleasures.",
+      "period": "before 1789",
+      "dateShort": "before 1789",
+      "dateFull": "before 1789",
+      "sortYear": 1789,
+      "sourceLabel": "Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Mar%C3%ADlia_de_Dirceu/I/XIV",
+      "locator": "First stanza.",
+      "place": "Vila Rica (Ouro Preto), Minas Gerais, Brazil",
+      "lat": -20.39,
+      "lng": -43.5,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Gonzaga lived in Vila Rica as a magistrate and wrote the first part of the lyrics there before his arrest in 1789; the linked page does not date or place this lira, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tom%C3%A1s_Ant%C3%B4nio_Gonzaga",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Fortune is ill secured",
+          "why": "The speaker says that fortune in this world is insecure and that good and bad turn into each other, so happiness depends on luck that does not stay.",
+          "limit": "A pastoral love lyric in the voice of the shepherd Dirceu, which uses the point to urge enjoyment of the present; it is a literary convention and not a worked theory. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -36469,6 +37778,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jean-paul-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Jean Paul",
+      "short": "Jean Paul",
+      "work": "Siebenkäs, “Speech of the Dead Christ from the Universe: That There Is No God”",
+      "excerpt": "Jesus, have we no Father?” He made answer, with streaming tears, “We are orphans all, both I and ye. We have no Father.”",
+      "period": "1796",
+      "dateShort": "1796",
+      "dateFull": "1796",
+      "sortYear": 1796,
+      "sourceLabel": "Flower, Fruit, and Thorn Pieces (Bohn's Standard Library, 1893), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/cu31924026189260/cu31924026189260_djvu.txt",
+      "locator": "Book 2, end of chapter 8, the “First Flower Piece”, the dead Christ’s speech. The scanned text contains recognition errors.",
+      "place": "Hof, Bavaria, Germany",
+      "lat": 50.32,
+      "lng": 11.92,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Jean Paul lived in his mother's house in Hof until 1796 and wrote Siebenkäs there and afterwards in Leipzig; the linked scan gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jean_Paul",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "The dead Christ announces there is no God",
+          "why": "In the dream-vision, the dead children ask Christ whether they have no Father, and he answers that all are orphans with no Father. The passage denies any God or ultimate parent behind the universe.",
+          "limit": "It is a dream vision in a novel, and the dreamer wakes from it, so the denial is staged and is not Jean Paul’s own assertion. The English is the Bohn’s Standard Library translation of 1893, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "code-of-handsome-lake-desire",
       "question": "desire",
       "name": "The Code of Handsome Lake (Gaiwiio)",
@@ -36942,6 +38286,77 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "andres-bello-desire",
+      "question": "desire",
+      "name": "Andrés Bello",
+      "short": "Bello",
+      "work": "Mis deseos",
+      "excerpt": "No ricos muebles, no soberbios lares, ni una mesa que adule al apetito.",
+      "translation": "Not rich furnishings, not proud mansions, nor a table that flatters the appetite.",
+      "period": "early 19th century",
+      "dateShort": "early 1800s",
+      "dateFull": "the early nineteenth century",
+      "sortYear": 1810,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Mis_deseos_(Bello)",
+      "locator": "First quatrain.",
+      "place": "Caracas, Venezuela",
+      "lat": 10.5,
+      "lng": -66.9,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Bello lived in Caracas until 1810; the sonnet names the Aragua valley, but the linked page gives no date or place of writing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Andr%C3%A9s_Bello",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "A modest wish",
+          "why": "The poet lists what he asks for and refuses luxury, grand houses and a table that feeds appetite, wanting only a modest estate by a stream. His wishes are held within a plain measure.",
+          "limit": "A sonnet of private wishes addressed to a woman, probably an early work, with a pastoral convention behind it; it describes a taste and does not discuss desire in general. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jane-austen-happiness",
+      "question": "happiness",
+      "name": "Jane Austen",
+      "short": "Austen",
+      "work": "Sense and Sensibility, chapter 17 (Marianne speaking)",
+      "excerpt": "money can only give happiness where there is nothing else to give it. Beyond a competence, it can afford no real satisfaction, as far as mere self is concerned.",
+      "period": "1811",
+      "dateShort": "1811",
+      "dateFull": "1811",
+      "sortYear": 1811,
+      "sourceLabel": "Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/161/161-0.txt",
+      "locator": "Volume 1, chapter 17, the conversation about what each sister would do with a fortune.",
+      "place": "Chawton, Hampshire, England",
+      "lat": 51.15,
+      "lng": -0.98,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Austen revised the novel for publication at Chawton cottage between 1809 and 1811; the linked page gives the text only, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sense_and_Sensibility",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-both",
+          "facet": "Money and contentment",
+          "why": "Marianne says money brings happiness only where nothing else does and, past a competence, brings none. Her sister Elinor replies that wealth has much to do with it, and the two end near a shared view that some means are needed.",
+          "limit": "The words are spoken by a young character in a novel, who is gently teased by her sister in the next lines, and they are not Austen's own statement. The exchange concerns money only, among many goods.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "percy-bysshe-shelley-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Percy Bysshe Shelley",
@@ -37084,6 +38499,112 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nguyen-du-suffering",
+      "question": "suffering",
+      "name": "Nguyễn Du",
+      "short": "Nguyễn Du",
+      "work": "Truyện Kiều (The Tale of Kiều), closing reflection",
+      "excerpt": "Ngẫm hay muôn sự tại trời, Trời kia đã bắt làm người có thân. Bắt phong trần phải phong trần, Cho thanh cao mới được phần thanh cao.",
+      "translation": "Thinking it over, I see that all things lie with Heaven, and Heaven has made us people with bodies. It forces the one fated for wind and dust to bear the wind and dust, so that the pure may receive their share of purity.",
+      "period": "c. 1815",
+      "dateShort": "c. 1815",
+      "dateFull": "c. 1815",
+      "sortYear": 1815,
+      "sourceLabel": "Vietnamese text of Truyện Kiều (Vietnamese Wikisource)",
+      "sourceUrl": "https://vi.wikisource.org/wiki/Truy%E1%BB%87n_Ki%E1%BB%81u",
+      "locator": "Lines 3241–3244, near the end of the poem.",
+      "place": "Huế, Vietnam",
+      "lat": 16.46,
+      "lng": 107.55,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Nguyễn Du served the Nguyễn court at Huế from 1802 and died there in 1820; when and where he wrote the poem is debated. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://vi.wikisource.org/wiki/Truy%E1%BB%87n_Ki%E1%BB%81u",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Hardship as a path to purity",
+          "why": "In the poem’s closing reflection, the narrator says Heaven compels Kiều to bear a life of wind and dust so that purity may be hers. Suffering is given a purpose within Heaven’s ordering and is read as a path to a higher good.",
+          "limit": "The lines are the narrator’s summing-up of a tale of long suffering and not a settled doctrine, and the poem elsewhere complains that talent and fate are at odds. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "john-keats-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "John Keats",
+      "short": "Keats",
+      "work": "Sonnet “O Solitude! if I must with thee dwell”",
+      "excerpt": "Yet the sweet converse of an innocent mind, Whose words are images of thoughts refin'd, Is my soul's pleasure; and it sure must be Almost the highest bliss of human-kind, When to thy haunts two kindred spirits flee.",
+      "period": "1815–1816",
+      "dateShort": "1816",
+      "dateFull": "written 1815–1816; published 1816",
+      "sortYear": 1816,
+      "sourceLabel": "The Complete Poetical Works and Letters of John Keats (1899), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/O_Solitude!_if_I_must_with_thee_dwell",
+      "locator": "The sestet, the last six lines of the sonnet.",
+      "place": "London, England",
+      "lat": 51.5,
+      "lng": -0.09,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Keats was living and training as a surgeon in Southwark, London, in 1815–1816, when the sonnet was written and published in The Examiner; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/John_Keats",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Solitude shared by kindred spirits",
+          "why": "Keats welcomes solitude in the countryside, away from the city's crowd, yet says the talk of a kindred mind is his soul's pleasure and almost the highest bliss, when two spirits go to solitude together. He keeps a place for both being alone and one companion.",
+          "limit": "The sonnet, written by a young poet who wished to leave London for the country, contrasts solitude with the crowded city, not with company in general. The text comes from a Wikisource transcription of an old edition of his collected works.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "lord-byron-relationships",
+      "question": "relationships",
+      "name": "Lord Byron",
+      "short": "Byron",
+      "work": "Childe Harold’s Pilgrimage, Canto III, stanza 113",
+      "excerpt": "I stood Among them, but not of them ; in a shroud Of thoughts which were not their thoughts",
+      "period": "1816",
+      "dateShort": "1816",
+      "dateFull": "1816",
+      "sortYear": 1816,
+      "sourceLabel": "Internet Archive scan of Childe Harold and other poems",
+      "sourceUrl": "https://archive.org/stream/childeharoldothe00byro/childeharoldothe00byro_djvu.txt",
+      "locator": "Canto III, stanza 113 (numbered cxiii in the scan). The scanned text contains recognition errors.",
+      "place": "Cologny near Geneva, Switzerland",
+      "lat": 46.22,
+      "lng": 6.18,
+      "anchorType": "Documented writing location",
+      "placeNote": "Byron wrote Canto III in 1816 beside Lake Geneva, living at the Villa Diodati, according to standard biographies; the linked scan does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Childe_Harold%27s_Pilgrimage",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Thoughts not shared with others",
+          "why": "Byron's speaker says he lived among other people yet was not one of them, wrapped in thoughts that were not theirs. His inner life, as he describes it, did not come from those around him.",
+          "limit": "The stanza is a poem in the voice of a self-dramatising narrator and records a sense of alienation, not a claim that selves form alone. The text is a scanned 1900s school edition with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "robert-owen-happiness",
       "question": "happiness",
       "name": "Robert Owen",
@@ -37116,6 +38637,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "tongan-informants-suffering",
+      "question": "suffering",
+      "name": "Tongan informants (recorded by William Mariner and John Martin)",
+      "short": "Tongan belief",
+      "work": "An Account of the Natives of the Tonga Islands, chapter on religious tenets",
+      "excerpt": "all human evil is inflicted by the gods upon mankind, on account of some neglect of religious duty",
+      "period": "1806-1810 (published 1817)",
+      "dateShort": "1817",
+      "dateFull": "recorded 1806-1810, published 1817",
+      "sortYear": 1817,
+      "sourceLabel": "1817 first edition, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/b21356865_0/b21356865_0_djvu.txt",
+      "locator": "Volume II, chapter on the religion of the Tonga islands, list of tenets, item 7. The scanned text contains recognition errors.",
+      "place": "Vava‘u, Tonga",
+      "lat": -18.65,
+      "lng": -173.98,
+      "smallIsland": true,
+      "anchorType": "Setting of the recorded experience",
+      "placeNote": "Mariner lived in the Ha‘apai and Vava‘u groups of Tonga from 1806 to 1810, and the beliefs were gathered there; the pin is a regional anchor, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/b21356865_0/b21356865_0_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Evil as the gods’ punishment",
+          "why": "The account sets out the Tongan belief that all human evil is sent by the gods in answer to neglected religious duty, whether by the sufferer or by the chief he serves. Suffering is thus deserved and meant.",
+          "limit": "A list of tenets compiled by John Martin from the recollections of William Mariner, a young Englishman who lived in Tonga from 1806 to 1810, and published in London in 1817; the beliefs reach the reader through a recorder and an editor, and Mariner’s own wording and Martin’s tidying cannot be separated.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -37366,6 +38923,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-maria-heredia-death",
+      "question": "death",
+      "name": "José María Heredia",
+      "short": "Heredia",
+      "work": "En el Teocalli de Cholula",
+      "excerpt": "Si, que la muerte, universal señora, Hiriendo á par al déspota y esclavo, Escribe la igualdad sobre la tumba.",
+      "translation": "Yes, for death, universal mistress, striking despot and slave alike, writes equality upon the tomb.",
+      "period": "1820",
+      "dateShort": "1820",
+      "dateFull": "1820",
+      "sortYear": 1820,
+      "sourceLabel": "Poesías líricas, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/En_el_Teocalli_de_Cholula",
+      "locator": "The stanza that begins “En tal contemplación embebecido”, final lines. The scanned text contains recognition errors.",
+      "place": "Cholula, Puebla, Mexico",
+      "lat": 19.06,
+      "lng": -98.3,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The ode names the great pyramid of Cholula as the place where the poet sat and was published in his Poesías (1825); where it was composed is not given on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_Heredia_(Cuban_poet)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Death as the leveller",
+          "why": "Sitting on the pyramid of Cholula, the poet reflects that death strikes ruler and slave alike and that all things perish by a universal law; the tomb is where the matter ends. A second, independent reading moved this placement from “it ends” to “unscored”: The words say that death strikes ruler and slave alike; they do not say whether anything of the person goes on.",
+          "limit": "A meditative ode on the fall of the Aztec monarchy and of empires in general; it speaks of the fate of rulers and peoples and is silent about any soul. The edition is a scan with old spelling and recognition errors may remain. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jose-maria-heredia-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "José María Heredia",
+      "short": "Heredia",
+      "work": "En una tempestad",
+      "excerpt": "Yo en ti me elevo Al trono del Señor: oigo en las nubes El eco de su voz; siento á la tierra Escucharle y temblar.",
+      "translation": "In you I rise to the throne of the Lord: I hear in the clouds the echo of his voice; I feel the earth listen to him and tremble.",
+      "period": "September 1822",
+      "dateShort": "1822",
+      "dateFull": "September 1822",
+      "sortYear": 1822,
+      "sourceLabel": "Poesías líricas, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/En_una_tempestad",
+      "locator": "Final stanza. The date “Setiembre de 1822” is printed under the poem.",
+      "place": "Matanzas, Cuba",
+      "lat": 23,
+      "lng": -81.6,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The poem is dated September 1822, when Heredia was living in Cuba; the linked page gives no place, and Matanzas is from general knowledge, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_Heredia_(Cuban_poet)",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The voice of the Lord in the storm",
+          "why": "Watching a hurricane, the poet says that he is raised to the Lord’s throne and hears the echo of his voice in the clouds, and ends by worshipping his majesty. A God is affirmed as the power behind the storm.",
+          "limit": "A Romantic nature ode that records an experience of awe before a storm and uses biblical imagery; it does not argue for a doctrine, and the scan has old spelling. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "simon-bolivar-meaning",
       "question": "meaning",
       "name": "Simón Bolívar",
@@ -37576,6 +39205,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "tahitian-tradition-ellis-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Tahitian and Leeward Islands tradition (recorded by William Ellis)",
+      "short": "Taaroa tradition",
+      "work": "Polynesian Researches, volume 2, chapter on the mythology and gods of the islanders",
+      "excerpt": "Taaroa, who was supreme here as well as in Tahiti, was said to be Toivi, or without parents, and to have existed from eternity.",
+      "period": "1829 (recorded about 1818-1822)",
+      "dateShort": "1829",
+      "dateFull": "published 1829, recorded during Ellis’s residence in the Society Islands, 1818-1822",
+      "sortYear": 1829,
+      "sourceLabel": "1829 first edition, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/polynesianresear02elli_2/polynesianresear02elli_2_djvu.txt",
+      "locator": "Volume 2, passage on the traditions of the Leeward Islands, paragraph beginning “The most popular traditions in the Leeward Islands”. The scanned text contains recognition errors.",
+      "place": "Fare, Huahine, Society Islands, French Polynesia",
+      "lat": -16.72,
+      "lng": -151.03,
+      "smallIsland": true,
+      "anchorType": "Documented residence of author",
+      "placeNote": "Ellis lived on Huahine as a missionary from 1818 to 1822 and gathered Society Islands traditions there, though the book was finished in England. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/polynesianresear02elli_2/polynesianresear02elli_2_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Taaroa, the eternal supreme god",
+          "why": "Ellis records a Leeward Islands tradition that Taaroa, the supreme god, had no parents and has existed from eternity, dwelling alone in the highest heavens before he made the world. That affirms an uncreated ultimate being.",
+          "limit": "Ellis was a London Missionary Society missionary writing for a Christian readership, and he took this version from a fellow missionary, Charles Barff, writing after the old religion had been abandoned. He also records other traditions in which Taaroa came out of Night or Chaos, so the picture of one eternal god is only one strand.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -38000,6 +39665,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ghalib-suffering",
+      "question": "suffering",
+      "name": "Mirza Ghalib",
+      "short": "Ghalib",
+      "work": "Divan-e-Ghalib, ghazal beginning “Sab kahāñ kuchh lāla-o-gul meṅ numāyāṅ ho gaʾīṅ”",
+      "excerpt": "رنج سے خُوگر ہُوا انساں تو مٹ جاتا ہے رنج مشکلیں مجھ پر پڑیں اتنی کہ آساں ہو گئیں",
+      "translation": "When a person grows used to pain, the pain itself disappears. So many hardships fell upon me that they became easy.",
+      "period": "before 1841",
+      "dateShort": "before 1841",
+      "dateFull": "before 1841",
+      "sortYear": 1841,
+      "sourceLabel": "Urdu Wikisource (Divan-e-Ghalib, public-domain text)",
+      "sourceUrl": "https://ur.wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%D9%86",
+      "locator": "Ghazal of the radif ن (“ہو گئیں”), closing couplets, the couplet beginning “رنج سے خُوگر ہُوا انساں”.",
+      "place": "Delhi, India",
+      "lat": 28.65,
+      "lng": 77.23,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ghalib lived in Delhi from his youth and the early Divan was compiled there, but the date and place of this ghazal are not recorded on the linked page; the place still needs an editor’s confirmation.",
+      "placeSource": "https://ur.wikisource.org/wiki/%D8%AF%DB%8C%D9%88%D8%A7%D9%86_%D8%BA%D8%A7%D9%84%D8%A8/%D8%BA%D8%B2%D9%84%DB%8C%D8%A7%D8%AA/%D8%B1%D8%AF%DB%8C%D9%81_%D9%86",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Hardship that makes hardship easy",
+          "why": "Ghalib says that a person who grows used to pain finds the pain gone, and that his own hardships became easy by their number. Suffering has no purpose of its own here, but it can toughen a person until it loses its sting.",
+          "limit": "The couplet is one verse of a ghazal, each of which stands alone and is often ironic, and it is not an argument that suffering is good. The English is the atlas’s own unreviewed translation, and the Urdu text is the Wikisource transcription of the Divan.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -38661,6 +40362,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "placido-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Plácido",
+      "short": "Plácido",
+      "work": "Plegaria a Dios",
+      "excerpt": "Fuera de vos, Señor, el todo es nada,",
+      "translation": "Apart from you, Lord, the whole is nothing,",
+      "period": "1844",
+      "dateShort": "1844",
+      "dateFull": "1844",
+      "sortYear": 1844,
+      "sourceLabel": "Spanish text in El Tesoro de la Juventud (1911), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Plegaria_a_Dios",
+      "locator": "Third stanza, fourth line.",
+      "place": "Matanzas, Cuba",
+      "lat": 23.05,
+      "lng": -81.58,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The anthology note says the prayer was composed a few days before the poet was shot in 1844; he was imprisoned in Matanzas, which is general knowledge and not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Plegaria_a_Dios",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as the source of all",
+          "why": "Facing execution, the poet addresses God as omnipotent, giver of life and motion to all things, and says that without him everything is nothing; even nothingness obeys him.",
+          "limit": "A prayer said to have been composed days before the poet’s execution in 1844, appealing to God against a charge of conspiracy; its spelling is old and the linked text is a 1911 anthology printing. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ralph-waldo-emerson-given-or-made",
       "question": "given-or-made",
       "name": "Ralph Waldo Emerson",
@@ -38728,6 +40465,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "zeng-guofan-free-will",
+      "question": "free-will",
+      "name": "Zeng Guofan",
+      "short": "Zeng Guofan",
+      "work": "Family letter to his brothers (曾國藩家書), 8th month 1844",
+      "excerpt": "此二者，由我作主，得尺則我之尺也，得寸則我之寸也。今日進一分德，便算積了一升穀；明日修一分業，又算餘了一文錢。德業並增，則家私日起。至於功名富貴，悉由命定，絲毫不能自主。",
+      "translation": "In these two, I am the master: each foot I gain is my foot, each inch my inch. Add a measure of virtue today and a measure of grain is stored; improve one’s work tomorrow and a coin is saved. As virtue and work both grow, the family’s wealth rises. But as for rank, fame and riches, all are fixed by fate, and one has not the least control over them.",
+      "period": "1844",
+      "dateShort": "1844",
+      "dateFull": "1844",
+      "sortYear": 1844,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9B%BE%E5%9C%8B%E8%97%A9%E5%AE%B6%E6%9B%B8/2",
+      "locator": "Letter to his four brothers dated 八月二十九日 (道光二十四年), paragraph beginning “吾人只有進德、修業兩事靠得住”.",
+      "place": "Beijing, China",
+      "lat": 39.92,
+      "lng": 116.4,
+      "anchorType": "Approximate writing association",
+      "placeNote": "In 1844 Zeng Guofan was an official in Beijing; the linked page does not name the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E6%9B%BE%E5%9C%8B%E8%97%A9%E5%AE%B6%E6%9B%B8/2",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Effort within and beyond one’s control",
+          "why": "Zeng Guofan says that moral growth and skilled work are in a person’s own hands, while rank, fame and wealth are fixed by fate and cannot be controlled. A person is free in some matters and bound in others.",
+          "limit": "The letter advises younger brothers to study and not to fret over examination results, so it may be softening their disappointment. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -38800,6 +40573,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hong-xiuquan-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Hong Xiuquan",
+      "short": "Hong Xiuquan",
+      "work": "Original Way to Awaken the World (原道醒世訓)",
+      "excerpt": "天下多男人 盡是兄弟之輩 天下多女子 盡是姊妹之羣 何得存此疆彼界之私",
+      "translation": "The many men under heaven are all brothers, and the many women under heaven are all sisters. How can anyone hold on to the selfishness of “this boundary, that border”?",
+      "period": "c. 1845",
+      "dateShort": "c. 1845",
+      "dateFull": "c. 1845",
+      "sortYear": 1845,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%9F%E9%81%93%E9%86%92%E4%B8%96%E8%A8%93",
+      "locator": "Paragraph beginning “蓋實夫天下凡間”.",
+      "place": "Hua County (near Guangzhou), Guangdong, China",
+      "lat": 23.4,
+      "lng": 113.2,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Hong Xiuquan wrote his early tracts in 1845-46 while living in the Guangzhou area; the linked page does not state where, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E5%8E%9F%E9%81%93%E9%86%92%E4%B8%96%E8%A8%93",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "All people as siblings",
+          "why": "Hong Xiuquan says that all men and women are brothers and sisters under one God and asks how anyone can keep selfish borders between them. Duty to the whole human family is put ahead of narrower claims.",
+          "limit": "The tract is a religious manifesto by the founder of the Taiping movement, and its call for universal kinship was later used to justify a war that killed millions. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -39125,6 +40934,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charlotte-bronte-relationships",
+      "question": "relationships",
+      "name": "Charlotte Brontë",
+      "short": "Brontë",
+      "work": "Jane Eyre, chapter 27 (Jane speaking)",
+      "excerpt": "The more solitary, the more friendless, the more unsustained I am, the more I will respect myself.",
+      "period": "1847",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/6/1260/1260-0.txt",
+      "locator": "Chapter 27, Jane's reply to the voice urging her to stay, beginning “Still indomitable was the reply”.",
+      "place": "Haworth, Yorkshire, England",
+      "lat": 53.83,
+      "lng": -1.96,
+      "anchorType": "Documented writing location",
+      "placeNote": "Brontë wrote the novel while living at Haworth Parsonage, with a stay in Manchester in 1846 while her father had eye surgery. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jane_Eyre",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Self-respect without support",
+          "why": "Jane Eyre, refusing to become Rochester's mistress, says her self-respect rises as friends and support fall away. The passage denies that others' company or backing is needed for the self-regard she describes.",
+          "limit": "A fictional heroine speaks these words in a crisis, and the novel elsewhere gives love and kinship large weight. The passage concerns self-respect and the keeping of principle, not the formation of a self as a whole.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "charlotte-bronte-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Charlotte Brontë",
@@ -39301,6 +41145,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-stuart-mill-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "John Stuart Mill",
+      "short": "Mill",
+      "work": "Principles of Political Economy, Book IV, chapter 6 (“Of the Stationary State”)",
+      "excerpt": "It is not good for man to be kept perforce at all times in the presence of his species. A world from which solitude is extirpated is a very poor ideal.",
+      "period": "1848",
+      "dateShort": "1848",
+      "dateFull": "1848",
+      "sortYear": 1848,
+      "sourceLabel": "Library of Economics and Liberty (Ashley edition, 1909)",
+      "sourceUrl": "https://www.econlib.org/library/Mill/mlP61.html",
+      "locator": "Book IV, chapter 6, section 8, the paragraph on the crowded world that contains “It is not good for man to be kept perforce”.",
+      "place": "London, England",
+      "lat": 51.5,
+      "lng": -0.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mill worked at the East India Company offices in London when the Principles appeared in 1848; the linked page gives the text only, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/John_Stuart_Mill",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "both",
+          "facet": "Solitude in a crowded world",
+          "why": "Mill says people gain from the advantages of social intercourse, but that a life never alone is a poor one. He treats being often alone as essential to depth of thought and character.",
+          "limit": "The words come from an economic argument about population and the stationary state, and Mill says them while praising social intercourse and co-operation. The passage defends solitude as one need among others, not as a general rule for how to live.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "rossetti-death",
       "question": "death",
       "name": "Christina Rossetti",
@@ -39333,6 +41212,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "alfred-tennyson-death",
+      "question": "death",
+      "name": "Alfred, Lord Tennyson",
+      "short": "Tennyson",
+      "work": "In Memoriam A. H. H., canto 55",
+      "excerpt": "I stretch lame hands of faith, and grope, And gather dust and chaff, and call To what I feel is Lord of all, And faintly trust the larger hope.",
+      "period": "1833–1849; published 1850",
+      "dateShort": "1850",
+      "dateFull": "written 1833–1849; published 1850",
+      "sortYear": 1850,
+      "sourceLabel": "Internet Archive scan of In Memoriam (annotated school edition)",
+      "sourceUrl": "https://archive.org/stream/inmemoriam00tenn/inmemoriam00tenn_djvu.txt",
+      "locator": "Canto 55, final stanza. The scanned text contains recognition errors.",
+      "place": "Somersby, Lincolnshire, England",
+      "lat": 53.2,
+      "lng": 0.05,
+      "anchorType": "Approximate association",
+      "placeNote": "Tennyson wrote the cantos over seventeen years in several places, so no single site is certain; Somersby, his family home, is used as a rough anchor and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/In_Memoriam_A._H._H.",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "A faint larger hope",
+          "why": "Tennyson, grieving his friend, says he can only grope with faith and faintly trust a larger hope that no life fails beyond the grave. He claims trust, not knowledge, and leaves the matter open.",
+          "limit": "The canto is followed by one in which Nature answers “I know no more”, and the poem's later cantos grow more confident, so the doubt here is a stage in a sequence. The text is a scan of a 1900s school edition with recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -39403,7 +41317,7 @@ window.PILOT_EVIDENCE={
       },
       "check": {
         "status": "matched",
-        "date": "2026-11-26"
+        "date": "2026-11-27"
       }
     },
     {
@@ -39725,6 +41639,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "goncalves-dias-meaning",
+      "question": "meaning",
+      "name": "Gonçalves Dias",
+      "short": "Gonçalves Dias",
+      "work": "Canção do Tamoyo",
+      "excerpt": "A vida é combate, Que os fracos abate, Que os fortes, os bravos, Só pode exaltar.",
+      "translation": "Life is combat, which brings down the weak and which only the strong, the brave, can exalt.",
+      "period": "1851",
+      "dateShort": "1851",
+      "dateFull": "1851",
+      "sortYear": 1851,
+      "sourceLabel": "Últimos cantos (1851), Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Can%C3%A7%C3%A3o_do_Tamoio",
+      "locator": "Stanza I.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.25,
+      "anchorType": "Publication place",
+      "placeNote": "Últimos cantos was published in Rio de Janeiro in 1851 (F. de Paula Brito); where the poem was written is not given on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Can%C3%A7%C3%A3o_do_Tamoio",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "unscored",
+          "facet": "Life as combat",
+          "why": "A Tupi warrior tells his newborn son that life is a hard fight in which worth comes from courage, so a life has the meaning that its struggle earns. A second, independent reading moved this placement from “made” to “unscored”: The words call life a combat that exalts the brave; they do not say whether a life has a meaning, or where one would come from.",
+          "limit": "A song put in the mouth of an indigenous warrior by a Romantic poet, so it expresses a Romantic ideal of heroism and not Tupi belief. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "schopenhauer-happiness",
       "question": "happiness",
       "name": "Arthur Schopenhauer",
@@ -39827,6 +41777,78 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "junqueira-freire-death",
+      "question": "death",
+      "name": "Junqueira Freire",
+      "short": "Junqueira Freire",
+      "work": "Morte (Hora de Delírio)",
+      "excerpt": "E depois nada mais. Já não há tempo, nem vida, nem sentir, nem dor, nem gosto.",
+      "translation": "And after that, nothing more. There is no longer time, nor life, nor feeling, nor pain, nor taste.",
+      "period": "c. 1850–1855",
+      "dateShort": "c. 1850s",
+      "dateFull": "circa 1850 to 1855",
+      "sortYear": 1853,
+      "sourceLabel": "Inspirações do Claustro, Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Morte_(Hora_de_Del%C3%ADrio)",
+      "locator": "Stanza beginning “Miríades de vermes lá me esperam”, fourth line of the following stanza.",
+      "place": "Salvador, Bahia, Brazil",
+      "lat": -12.98,
+      "lng": -38.48,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Junqueira Freire lived as a Benedictine novice and monk in Salvador, Bahia, from 1851 and published Inspirações do Claustro in 1855; the linked page does not date or place the poem, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Luiz_José_Junqueira_Freire",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Nothing after death",
+          "why": "The speaker welcomes death as a return to the earth, where body and soul are absorbed and then nothing remains: no time, no life, no feeling. Death is the end of the person.",
+          "limit": "A Romantic lyric by a young Benedictine novice who wrote with an unorthodox bitterness, and its speaker calls for death in despair; his wider poems are more devout. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "junqueira-freire-desire",
+      "question": "desire",
+      "name": "Junqueira Freire",
+      "short": "Junqueira Freire",
+      "work": "Temor",
+      "excerpt": "Ao gozo, ao gozo, amiga. O chão que pisas A cada instante te oferece a cova.",
+      "translation": "To pleasure, to pleasure, my friend. The ground you tread offers you the grave at every moment.",
+      "period": "c. 1850–1855",
+      "dateShort": "c. 1850s",
+      "dateFull": "circa 1850 to 1855",
+      "sortYear": 1853,
+      "sourceLabel": "Inspirações do Claustro, Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Temor",
+      "locator": "First two lines of the poem.",
+      "place": "Salvador, Bahia, Brazil",
+      "lat": -12.98,
+      "lng": -38.48,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Junqueira Freire lived as a Benedictine novice and monk in Salvador, Bahia, from 1851 and published Inspirações do Claustro in 1855; the linked page does not date or place the poem, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Luiz_José_Junqueira_Freire",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Pleasure while the grave waits",
+          "why": "The speaker urges his beloved to give herself to pleasure at once, because the ground underfoot always offers the grave. Desire is to be followed while life lasts.",
+          "limit": "A short lyric by a Benedictine novice, written in a convention of carpe diem; its urgency comes from fear of death, and the poet’s own life in the cloister points the other way. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -40509,6 +42531,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bahaullah-happiness",
+      "question": "happiness",
+      "work": "The Hidden Words, Arabic no. 52",
+      "locator": "Part One (From the Arabic), no. 52.",
+      "period": "c. 1858",
+      "dateShort": "c. 1858",
+      "dateFull": "circa 1858",
+      "sortYear": 1858,
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/hidden-words.xhtml",
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Documented writing location",
+      "placeNote": "Bahá’u’lláh wrote the Hidden Words around 1858 during his exile in Baghdad; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/hidden-words.xhtml",
+      "name": "Bahá’u’lláh",
+      "short": "Bahá’u’lláh",
+      "sourceLabel": "Shoghi Effendi translation, Bahá’í Reference Library (bahai.org)",
+      "review": "draft",
+      "excerpt": "Should prosperity befall thee, rejoice not, and should abasement come upon thee, grieve not, for both shall pass away and be no more",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Rejoice not, grieve not",
+          "why": "The saying tells the reader not to rejoice in prosperity or grieve in abasement because both pass away. Steadiness is placed in the person's inward stance, not in circumstances.",
+          "limit": "A single command in a short devotional text spoken in the voice of God; it counsels detachment and does not describe what makes people happy. The translation is by Shoghi Effendi, an authorised rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bahaullah-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Bahá’u’lláh",
+      "short": "Bahá’u’lláh",
+      "work": "The Hidden Words, Arabic no. 2",
+      "period": "c. 1858",
+      "dateShort": "c. 1858",
+      "dateFull": "circa 1858",
+      "sortYear": 1858,
+      "sourceLabel": "Shoghi Effendi translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/2",
+      "locator": "Part One (From the Arabic), no. 2.",
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Documented writing location",
+      "placeNote": "Bahá’u’lláh wrote the Hidden Words around 1858 during his exile in Baghdad, according to the same pin used for his other Hidden Words card; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/2",
+      "excerpt": "thou shalt see with thine own eyes and not through the eyes of others, and shalt know of thine own knowledge and not through the knowledge of thy neighbor",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Seeing with one's own eyes",
+          "why": "The passage tells the reader that the gift of justice lets a person see with their own eyes and know by their own knowledge, not through other people's. Truth is located in the individual's own perception and not in what others report.",
+          "limit": "The sentence is about independent investigation of truth, spoken in the voice of God in a short devotional text, and not a general account of how the self is known. The passage does not forbid learning from others. The translation is by Shoghi Effendi, an authorised rendering.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bahaullah-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "The Hidden Words, Arabic no. 56",
+      "locator": "Part One (From the Arabic), no. 56.",
+      "period": "c. 1858",
+      "dateShort": "c. 1858",
+      "dateFull": "circa 1858",
+      "sortYear": 1858,
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/hidden-words.xhtml",
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Documented writing location",
+      "placeNote": "Bahá’u’lláh wrote the Hidden Words around 1858 during his exile in Baghdad; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/hidden-words/hidden-words.xhtml",
+      "name": "Bahá’u’lláh",
+      "short": "Bahá’u’lláh",
+      "sourceLabel": "Shoghi Effendi translation, Bahá’í Reference Library (bahai.org)",
+      "review": "draft",
+      "excerpt": "The company of the ungodly increaseth sorrow, whilst fellowship with the righteous cleanseth the rust from off the heart",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Fellowship with the righteous",
+          "why": "The saying says that bad company adds to sorrow and that fellowship with the righteous cleanses the heart. It places a person's well-being in the company they keep.",
+          "limit": "The advice is about choosing between good and bad companions, within a devotional text in the voice of God; it does not address solitude itself. The translation is by Shoghi Effendi, an authorised rendering.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "bahaullah-suffering",
       "question": "suffering",
       "name": "Bahá’u’lláh",
@@ -40541,6 +42668,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "james-lionel-michael-free-will",
+      "question": "free-will",
+      "name": "James Lionel Michael",
+      "short": "Michael",
+      "work": "Personality (poem)",
+      "excerpt": "To choose what I must be is mine, Mine in these few and fleeting days,",
+      "period": "1858",
+      "dateShort": "1858",
+      "dateFull": "1858 (printed in The Month, Sydney)",
+      "sortYear": 1858,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Personality",
+      "locator": "Fourth stanza of the poem, beginning “To choose what I must be is mine”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Place of first publication",
+      "placeNote": "The anthology’s notes record that the poem appeared in The Month (Sydney, 1858) and that Michael practised as a solicitor in Sydney at this time. The linked page does not say where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Personality",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Choosing what one will be",
+          "why": "Michael’s speaker says that the choice of what he will become is his own to make within his short life, and the next lines add that he may be divine if he wills it. Choice is placed in the person, which puts the passage on the side of free will.",
+          "limit": "A short devotional poem; the choice is to love God and His law, and the closing stanza prays to the Father for help, so the freedom is exercised inside a Christian frame and is not argued against determinism.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "james-lionel-michael-lasting-self",
+      "question": "lasting-self",
+      "name": "James Lionel Michael",
+      "short": "Michael",
+      "work": "Personality (poem)",
+      "excerpt": "This is not I—within such coil The immortal spirit rests awhile: When this shall lie beneath the soil, Which its mere mortal parts defile, That shall for ever live",
+      "period": "1858",
+      "dateShort": "1858",
+      "dateFull": "1858 (printed in The Month, Sydney)",
+      "sortYear": 1858,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Personality",
+      "locator": "Second stanza of the poem, beginning “This is not I—within such coil”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Place of first publication",
+      "placeNote": "The anthology’s notes record that the poem appeared in The Month (Sydney, 1858) and that Michael practised as a solicitor in Sydney at this time. The linked page does not say where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Personality",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The immortal spirit within the body",
+          "why": "Michael’s poem denies that the speaker is the ailing body and says the real self is an immortal spirit that lodges there for a time and lives on after the body is buried. The self is affirmed as lasting.",
+          "limit": "A Victorian devotional poem by a Sydney solicitor, first printed in a Sydney magazine in 1858; it takes Christian immortality for granted and argues from the contrast between a frail body and a spirit, not from any analysis of the self. Its epigraph is borrowed from Scott’s Heart of Midlothian.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -41076,6 +43273,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sotho-proverbs-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Sotho proverbs (recorded by Eugène Casalis)",
+      "short": "Sotho proverbs",
+      "work": "The Basutos, chapter on moral ideas (proverbs, no. 51)",
+      "excerpt": "One link only sounds because of another.",
+      "period": "Collected 1833–1855; published 1861",
+      "dateShort": "1861",
+      "dateFull": "1861",
+      "sortYear": 1861,
+      "sourceLabel": "Eugène Casalis, The Basutos (1861), English translation, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/basutosortwentyt00casa/basutosortwentyt00casa_djvu.txt",
+      "locator": "Chapter on moral ideas, list of proverbs, no. 51. The scanned text contains recognition errors.",
+      "place": "Morija, Lesotho",
+      "lat": -29.62,
+      "lng": 27.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Casalis served as a missionary of the Paris Evangelical Mission among the Basotho from 1833, founding Morija, and the book reports their sayings. The linked page does not tie this proverb to a place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/basutosortwentyt00casa/basutosortwentyt00casa_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "One link sounds because of another",
+          "why": "The proverb says a single link in a chain sounds only because of the one beside it. Casalis explains that people cannot do without the help of their fellow-creatures, so a person alone is treated as incomplete.",
+          "limit": "An anonymous Sotho proverb noted by a French missionary, with his gloss, in an English translation of 1861; he chose and explained the sayings and sometimes added parallels from Solomon and Horace. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "bahaullah-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Bahá’u’lláh",
@@ -41332,6 +43564,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "zeng-guofan-given-or-made",
+      "question": "given-or-made",
+      "name": "Zeng Guofan",
+      "short": "Zeng Guofan",
+      "work": "Family letter to his sons Zeng Jize and Zeng Hongji (曾國藩家書), 4th month 1862",
+      "excerpt": "人之氣質，由於天生，本難改變，惟讀書則可變化氣質。",
+      "translation": "A person’s temperament comes from birth and is hard to change in itself; only through study can temperament be transformed.",
+      "period": "1862",
+      "dateShort": "1862",
+      "dateFull": "1862",
+      "sortYear": 1862,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E6%9B%BE%E5%9C%8B%E8%97%A9%E5%AE%B6%E6%9B%B8/1",
+      "locator": "Letter signed “滌生示 四月二十四日(同治元年)”, paragraph beginning “人之氣質，由於天生”.",
+      "place": "Anqing, Anhui, China",
+      "lat": 30.52,
+      "lng": 117.05,
+      "anchorType": "Approximate writing association",
+      "placeNote": "In 1862 Zeng Guofan commanded the Xiang Army from a camp near Anqing, but the linked page does not state where this letter was written; the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E6%9B%BE%E5%9C%8B%E8%97%A9%E5%AE%B6%E6%9B%B8/1",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Temperament changed by study",
+          "why": "Zeng Guofan tells his sons that temperament is born with a person and hard to alter, but that study can change it, and he gives his own giving up of tobacco as proof. An inborn endowment is granted and has to be worked on.",
+          "limit": "The words are fatherly advice in a private letter, urging a son to stop being slow and heavy in his character. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42037,6 +44305,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henry-kendall-suffering",
+      "question": "suffering",
+      "name": "Henry Kendall",
+      "short": "Kendall",
+      "work": "Outre Mer (poem)",
+      "excerpt": "By force of chance and changes Man’s life is hard at best; And, seeing rest is voiceless, The dearest thing is rest.",
+      "period": "c. 1870",
+      "dateShort": "c. 1870",
+      "dateFull": "circa 1870 (printed in the 1906 anthology)",
+      "sortYear": 1870,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Outre_Mer",
+      "locator": "Third stanza of the poem, beginning “By force of chance and changes”.",
+      "place": "Camden Haven, New South Wales, Australia",
+      "lat": -31.64,
+      "lng": 152.8,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Kendall lived at Camden Haven from 1871 for seven years, and he was in Sydney and Melbourne before and after. The linked page does not date the poem or say where it was written, so the date and place still need an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Outre_Mer",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "A hard life that asks for rest",
+          "why": "Kendall’s speaker says that chance and change make a person’s life hard at best, and that the thing he most wants is rest. Suffering is treated as something to be ended or endured, not as having a purpose, and the poem allows only that some men grow strong with trouble while he has no strength left.",
+          "limit": "A personal lyric by a poet whose young daughter had died, and the speaker’s mood is exhaustion, not a doctrine; the longing for a haven across the sea is a wish for death and sleep, and later stanzas speak of angels beckoning. Printed in a 1906 anthology.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "juana-manuela-gorriti-death",
       "question": "death",
       "name": "Juana Manuela Gorriti",
@@ -42105,6 +44408,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "arthur-rimbaud-lasting-self",
+      "question": "lasting-self",
+      "name": "Arthur Rimbaud",
+      "short": "Rimbaud",
+      "work": "Letter to Paul Demeny, 15 May 1871 (the “Lettre du voyant”)",
+      "excerpt": "Car Je est un autre. Si le cuivre s’éveille clairon, il n’y a rien de sa faute. Cela m’est évident : j’assiste à l’éclosion de ma pensée : je la regarde, je l’écoute",
+      "translation": "For I is an other. If brass wakes up a bugle, it is not at all its fault. That is plain to me: I am present at the hatching of my thought: I watch it, I listen to it.",
+      "period": "1871",
+      "dateShort": "1871",
+      "dateFull": "1871",
+      "sortYear": 1871,
+      "sourceLabel": "French Wikisource",
+      "sourceUrl": "https://fr.wikisource.org/wiki/Lettre_de_Rimbaud_%C3%A0_Paul_Demeny_-_15_mai_1871",
+      "locator": "Second half of the letter, in the paragraph on Romanticism that contains “Car Je est un autre”.",
+      "place": "Charleville, France",
+      "lat": 49.77,
+      "lng": 4.72,
+      "anchorType": "Documented writing location",
+      "placeNote": "Rimbaud was living with his mother in Charleville in the Ardennes when he sent the letter, according to standard biographies; the linked page itself gives only the text, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://fr.wikipedia.org/wiki/Lettres_du_voyant",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "unscored",
+          "facet": "The “I” as an other",
+          "why": "Rimbaud says that “I” is an other and that he watches his own thought come into being, as a bugle does not choose to sound. The speaker is not the owner or author of what is thought, so no settled self stands behind it. A second, independent reading moved this placement from “no self” to “unscored”: The words say that the “I” is an other and that the speaker watches his own thought arrive; they do not deny that there is a self, or say whether one endures.",
+          "limit": "The sentence is part of a poetic manifesto about the poet as seer, written by a sixteen-year-old, and it is not a philosophical argument that no self exists. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42249,6 +44588,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-hernandez-given-or-made",
+      "question": "given-or-made",
+      "name": "José Hernández",
+      "short": "Hernández",
+      "work": "El Gaucho Martín Fierro, Canto I",
+      "excerpt": "Nací como nace el peje En el fondo de la mar; Naides me puede quitar Aquello que Dios me dió",
+      "translation": "I was born as the fish is born in the depths of the sea; nobody can take from me what God gave me",
+      "period": "1872",
+      "dateShort": "1872",
+      "dateFull": "1872",
+      "sortYear": 1872,
+      "sourceLabel": "1894 edition, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/El_Gaucho_Mart%C3%ADn_Fierro_(1894)/I",
+      "locator": "Canto I, stanza beginning “Nací como nace el peje”.",
+      "place": "Buenos Aires, Argentina",
+      "lat": -34.6,
+      "lng": -58.45,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The first part of Martín Fierro was published in Buenos Aires in 1872, where Hernández lived and wrote it; the linked page gives no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/El_Gaucho_Mart%C3%ADn_Fierro_(1894)/I",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "What the world gave, no one can take",
+          "why": "The gaucho singer says he was born as a fish is born, with what God gave him, and that no one can take it. What he is comes with birth.",
+          "limit": "A speech by a fictional gaucho in a narrative poem, in rural Argentine speech, and the line is about his freedom and temperament, not a theory of the person. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "jose-hernandez-suffering",
       "question": "suffering",
       "name": "José Hernández",
@@ -42356,6 +44731,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "fukuzawa-yukichi-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Fukuzawa Yukichi",
+      "short": "Fukuzawa",
+      "work": "An Encouragement of Learning (学問のすすめ), Part 3",
+      "excerpt": "独立とは自分にて自分の身を支配し他によりすがる心なきを言う。みずから物事の理非を弁別して処置を誤ることなき者は、他人の智恵によらざる独立なり。",
+      "translation": "Independence means governing one’s own person oneself and having no heart to cling to others. One who judges for himself what is right and wrong in things and does not err in dealing with them is independent of other people’s wisdom.",
+      "period": "1873",
+      "dateShort": "1873",
+      "dateFull": "1873",
+      "sortYear": 1873,
+      "sourceLabel": "Japanese Wikisource (public-domain text)",
+      "sourceUrl": "https://ja.wikisource.org/wiki/%E5%AD%A6%E5%95%8F%E3%81%AE%E3%81%99%E3%82%9D%E3%82%81",
+      "locator": "Part 3, section “一身独立して一国独立すること”, first article.",
+      "place": "Tokyo, Japan",
+      "lat": 35.66,
+      "lng": 139.74,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Fukuzawa wrote the series in Tokyo, where he ran the Keio school in Mita; the linked page does not state where each part was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/%E5%AD%A6%E5%95%8F%E3%81%AE%E3%81%99%E3%82%9D%E3%82%81",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Independence of one’s own judgment",
+          "why": "Fukuzawa defines independence as ruling oneself, judging right and wrong for oneself and not leaning on others’ wisdom, and he makes this the condition of a nation’s independence. Authority is placed in the individual’s own judgment and responsibility.",
+          "limit": "The words come from a popular pamphlet written to encourage study in early Meiji Japan, and the same section argues that independent individuals are needed so that the nation can stand against foreign powers. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "john-stuart-mill-meaning",
       "question": "meaning",
       "name": "John Stuart Mill",
@@ -42458,6 +44869,146 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "james-thomson-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "James Thomson (B.V.)",
+      "short": "Thomson",
+      "work": "The City of Dreadful Night, section 14 (the preacher’s sermon)",
+      "excerpt": "There is no God; no Fiend with names divine Made us and tortures us; if we must pine, It is to satiate no Being's gall.",
+      "period": "Written 1870–1873; published 1874",
+      "dateShort": "1874",
+      "dateFull": "written 1870–1873; published 1874",
+      "sortYear": 1874,
+      "sourceLabel": "The City of Dreadful Night and other poems (1880), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_City_of_Dreadful_Night_(Thomson)",
+      "locator": "Section 14, the sermon from the pulpit, lines beginning “And now at last authentic word I bring”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Thomson lived and worked in London for much of the early 1870s and the poem first appeared in the London journal The National Reformer in 1874. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_City_of_Dreadful_Night_(Thomson)",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "No God behind suffering",
+          "why": "A preacher in the poem's city tells the congregation that no God and no devil made or torments them. Their suffering serves no being's anger and has no personal source behind it.",
+          "limit": "The words are spoken by a character in a long poem of despair, and the poem presents them as grim news, not as comfort. Thomson was an avowed secularist, but the passage is poetry, not argument.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "john-stuart-mill-death",
+      "question": "death",
+      "name": "John Stuart Mill",
+      "short": "Mill",
+      "work": "Three Essays on Religion, “Theism”, Part III: Immortality",
+      "excerpt": "as we do not know the limits either of his power or of his goodness, there is room to hope that both the one and the other may extend to granting us this gift",
+      "period": "Written 1868–1870; published 1874",
+      "dateShort": "1874",
+      "dateFull": "written 1868–1870; published 1874",
+      "sortYear": 1874,
+      "sourceLabel": "Internet Archive scan of Three Essays on Religion (Henry Holt, 1874)",
+      "sourceUrl": "https://archive.org/stream/threeessaysonre00millgoog/threeessaysonre00millgoog_djvu.txt",
+      "locator": "Theism, Part III “Immortality”, the paragraph after “There is, therefore, no assurance whatever of a life after death, on grounds of natural religion”. The scanned text contains recognition errors.",
+      "place": "Avignon, France",
+      "lat": 43.95,
+      "lng": 4.81,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Mill lived mainly at Avignon from 1858 until his death in 1873, and the essay Theism is dated by editors to his last years; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/John_Stuart_Mill",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Room to hope without assurance",
+          "why": "Mill finds no assurance of a life after death from natural evidence, yet says the limits of the Creator's power and goodness are unknown, so there is room to hope. The question stays open, with hope allowed and proof absent.",
+          "limit": "Mill's reasoning assumes a Creator of limited power whom he thinks the evidence only weakly supports, and he offers hope, not belief. The text is a scanned US edition with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bahaullah-given-or-made",
+      "question": "given-or-made",
+      "name": "Bahá’u’lláh",
+      "short": "Bahá’u’lláh",
+      "work": "Gleanings from the Writings of Bahá’u’lláh, CXXII",
+      "period": "c. 1870s",
+      "dateShort": "c. 1870s",
+      "dateFull": "circa 1870s",
+      "sortYear": 1875,
+      "sourceLabel": "Shoghi Effendi translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/bahaullah/gleanings-writings-bahaullah/gleanings-writings-bahaullah.xhtml",
+      "locator": "Gleanings, section CXXII, paragraph beginning “Regard man as a mine rich in gems”.",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.92,
+      "lng": 35.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Most of the tablets collected in the Gleanings were written during Bahá’u’lláh’s years in Acre, where he lived from 1868 until his death in 1892; this tablet is not dated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/gleanings-writings-bahaullah/gleanings-writings-bahaullah.xhtml",
+      "excerpt": "Regard man as a mine rich in gems of inestimable value. Education can, alone, cause it to reveal its treasures, and enable mankind to benefit therefrom",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Man as a mine of gems",
+          "why": "The passage compares a person to a mine already holding gems of great value, which only education can bring out. The worth is given, and the revealing of it depends on formation by others.",
+          "limit": "A tablet addressed to rulers and peoples, concerned with education and the unity of humankind, not with the individual psychology of development. The linked text is a compiled English selection translated by Shoghi Effendi; the original tablet's exact place and date of writing are not given on the page.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bahaullah-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "Gleanings from the Writings of Bahá’u’lláh, V",
+      "period": "c. 1870s",
+      "dateShort": "c. 1870s",
+      "dateFull": "circa 1870s",
+      "sortYear": 1875,
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/bahaullah/gleanings-writings-bahaullah/gleanings-writings-bahaullah.xhtml",
+      "locator": "Gleanings, section V, near the end of the tablet.",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.92,
+      "lng": 35.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Most tablets in the Gleanings were written during Bahá’u’lláh’s years in Acre (1868–92); this one is not dated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/bahaullah/gleanings-writings-bahaullah/gleanings-writings-bahaullah.xhtml",
+      "name": "Bahá’u’lláh",
+      "short": "Bahá’u’lláh",
+      "sourceLabel": "Shoghi Effendi translation, Bahá’í Reference Library (bahai.org)",
+      "review": "draft",
+      "excerpt": "Forget your own selves, and turn your eyes towards your neighbor. Bend your energies to whatever may foster the education of men",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Forgetting oneself for the neighbour",
+          "why": "The passage tells readers to forget themselves, look to their neighbour and spend their energies on the education of others. Others' good is put ahead of one's own.",
+          "limit": "A tablet addressed to the followers of Bahá’u’lláh in the voice of a religious teacher; it is exhortation, not an argument, and the surrounding passage is about unity and service to a religious cause. The date and place of this tablet are not given on the linked page. The translation is by Shoghi Effendi.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42749,6 +45300,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-bracken-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Thomas Bracken",
+      "short": "Bracken",
+      "work": "Not Understood (poem)",
+      "excerpt": "How many breasts are aching For lack of sympathy! Ah! day by day How many cheerless, lonely hearts are breaking!",
+      "period": "c. 1870s",
+      "dateShort": "1870s",
+      "dateFull": "probably 1870s (printed in the 1906 anthology)",
+      "sortYear": 1878,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Not_Understood",
+      "locator": "Fifth stanza, beginning “Not understood! How many breasts are aching”.",
+      "place": "Dunedin, Otago, Aotearoa New Zealand",
+      "lat": -45.88,
+      "lng": 170.5,
+      "anchorType": "Residence of author",
+      "placeNote": "Bracken settled in New Zealand in 1869 and lived and worked in Dunedin as a journalist and member of Parliament from 1881 to 1884, according to the anthology’s biographical note. The linked page does not say where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Not_Understood",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "The ache of not being understood",
+          "why": "Bracken’s poem treats loneliness as a wound caused by lack of sympathy and ends by asking that people draw nearer to one another. Life among understanding others is presented as the remedy for isolation.",
+          "limit": "A popular nineteenth-century poem by an Irish-born New Zealand politician and journalist, reprinted in a 1906 anthology; it speaks of misunderstanding and harsh judgement and does not discuss deliberate solitude.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "dostoevsky-meaning",
       "question": "meaning",
       "name": "Fyodor Dostoevsky",
@@ -42851,6 +45437,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ivan-turgenev-meaning",
+      "question": "meaning",
+      "name": "Ivan Turgenev",
+      "short": "Turgenev",
+      "work": "Poems in Prose, “Nature” (Nature speaking in a dream)",
+      "excerpt": "I gave you life ; I take it from you and give it to others, — worms or men, it is all the same to me",
+      "period": "1879",
+      "dateShort": "1879",
+      "dateFull": "1879",
+      "sortYear": 1879,
+      "sourceLabel": "Poems in Prose (English translation, 1880s), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/poemsinprose00turgiala/poemsinprose00turgiala_djvu.txt",
+      "locator": "Poems in Prose, “Nature”, dated August 1879, Nature's second speech. The scanned text contains recognition errors.",
+      "place": "Bougival, near Paris, France",
+      "lat": 48.87,
+      "lng": 2.14,
+      "anchorType": "Approximate residence association",
+      "placeNote": "The piece is dated August 1879 and gives no place; Turgenev then lived mainly at Bougival near Paris and spent some summers at Spasskoye in Russia, so the place is uncertain and still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ivan_Turgenev",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Nature's indifference to human aims",
+          "why": "In a dream Nature tells the narrator that she gives and takes life with no regard to who receives it, worms or men alike. Just before, she says she recognizes no good or bad and that reason is no law for her, so no aim for human life is built into her order.",
+          "limit": "Nature is a personified figure in a dream within a short prose poem, so the words are not Turgenev's own statement of belief, and the surrounding poems in the collection treat human life more warmly. The English translation is from the 1880s and the scan has recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "narrinyeri-informants-death",
+      "question": "death",
+      "name": "Narrinyeri informants (recorded by George Taplin)",
+      "short": "Narrinyeri",
+      "work": "The Folklore, Manners, Customs, and Languages of the South Australian Aborigines, “The Narrinyeri”",
+      "excerpt": "The Narrinyeri point out several stars, and say that they are deceased warriors who have gone to heaven (Wyirrewarre).",
+      "period": "1879",
+      "dateShort": "1879",
+      "dateFull": "1879",
+      "sortYear": 1879,
+      "sourceLabel": "1879 edition (Adelaide), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nativetribessou00taplgoog/nativetribessou00taplgoog_djvu.txt",
+      "locator": "Chapter “The Narrinyeri”, section IV, Funeral Rites. The scanned text contains recognition errors.",
+      "place": "Point McLeay (Raukkan), Lake Alexandrina, South Australia, Australia",
+      "lat": -35.5,
+      "lng": 139.3,
+      "anchorType": "Documented residence of author",
+      "placeNote": "Taplin ran the Point McLeay mission on Lake Alexandrina from 1859 until his death in 1879 and wrote his account of the Narrinyeri there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/nativetribessou00taplgoog/nativetribessou00taplgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Dead warriors in the stars",
+          "why": "Taplin reports that the Narrinyeri point to stars as deceased warriors who have gone to the sky country, Wyirrewarre, and that every native expects to follow. Something of the person goes on after death.",
+          "limit": "A missionary’s summary in English of what people told him in the 1860s and 1870s, and the same passage adds that the dead are believed to come down again and walk the earth, which complicates the picture. It speaks for the group as a whole, not for named speakers.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "narrinyeri-informants-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Narrinyeri informants (recorded by George Taplin)",
+      "short": "Narrinyeri",
+      "work": "The Folklore, Manners, Customs, and Languages of the South Australian Aborigines, “The Narrinyeri”",
+      "excerpt": "the natives say that Nurundere made all things, and that he now lives in Wyirrewarre",
+      "period": "1879",
+      "dateShort": "1879",
+      "dateFull": "1879",
+      "sortYear": 1879,
+      "sourceLabel": "1879 edition (Adelaide), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nativetribessou00taplgoog/nativetribessou00taplgoog_djvu.txt",
+      "locator": "Chapter “The Narrinyeri”, section on religion and the ceremonies of hunting, sentence beginning “Although the natives say that Nurundere made all things”. The scanned text contains recognition errors.",
+      "place": "Point McLeay (Raukkan), Lake Alexandrina, South Australia, Australia",
+      "lat": -35.5,
+      "lng": 139.3,
+      "anchorType": "Documented residence of author",
+      "placeNote": "Taplin ran the Point McLeay mission on Lake Alexandrina from 1859 until his death in 1879 and wrote his account of the Narrinyeri there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/nativetribessou00taplgoog/nativetribessou00taplgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Nurundere, who made all things",
+          "why": "Taplin reports that the Narrinyeri (Ngarrindjeri) of the Lower Murray say a being named Nurundere made all things and now lives in the sky country. That affirms a maker behind the world.",
+          "limit": "Taplin was a Congregational missionary at Point McLeay and wrote in English in the 1870s; the sentence is his report of what people told him, and he goes on to call their traditions about Nurundere’s earthly doings ridiculous. The Ngarrindjeri names and meanings are as he spelled them.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42959,6 +45650,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henry-kendall-truth",
+      "question": "truth",
+      "name": "Henry Kendall",
+      "short": "Kendall",
+      "work": "To a Mountain (dedicatory poem to Songs from the Mountains)",
+      "excerpt": "Here, in this home, Away from men and books and all the schools, I take thee for my Teacher. In thy voice Of deathless majesty, I, kneeling, hear God’s grand authentic Gospel!",
+      "period": "1880",
+      "dateShort": "1880",
+      "dateFull": "1880 (Songs from the Mountains; printed in the 1906 anthology)",
+      "sortYear": 1880,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/To_a_Mountain",
+      "locator": "Opening verse paragraph of the poem, beginning “To thee, O father of the stately peaks”.",
+      "place": "Camden Haven, New South Wales, Australia",
+      "lat": -31.64,
+      "lng": 152.8,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Kendall lived at Camden Haven from 1871 for seven years, in charge of a timber yard, and Songs from the Mountains came out in 1880. The linked page does not say where this poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/To_a_Mountain",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Hearing the gospel in a mountain",
+          "why": "Kendall’s dedicatory poem turns from men, books and schools to a mountain as his teacher and says he hears in it God’s authentic gospel. The deepest truth is presented as directly knowable by listening to the natural world.",
+          "limit": "A Romantic dedicatory poem, printed in Songs from the Mountains in 1880; the claim is a poet’s devotional address to a mountain, not an argued doctrine, and it sits beside conventional Christian words such as psalm, liturgy and Bible.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "james-brunton-stephens-death",
+      "question": "death",
+      "name": "James Brunton Stephens",
+      "short": "Brunton Stephens",
+      "work": "The Dark Companion (poem)",
+      "excerpt": "Thou, too, in this wise, when, our eyes unsealing, The clearer day shall change our faith to sight, Shalt show thyself, in that supreme revealing, No Dark Companion, but a thing of light.",
+      "period": "c. 1880",
+      "dateShort": "c. 1880",
+      "dateFull": "circa 1880 (printed in the 1906 anthology)",
+      "sortYear": 1880,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/The_Dark_Companion",
+      "locator": "Stanza beginning “Thou, too, in this wise”. The date is approximate.",
+      "place": "Brisbane, Queensland, Australia",
+      "lat": -27.47,
+      "lng": 153.03,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Stephens worked in Brisbane from 1866, first as a tutor and later in the Colonial Secretary’s Department. The linked page does not say where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/The_Dark_Companion",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Death as a light on the Blissful Border",
+          "why": "Stephens compares death to the star that was inferred from the pull it exerted before telescopes showed it as a speck of light. He says that when faith becomes sight death will be revealed as a guide and a light on the border of a blessed state, so that something of the person goes on.",
+          "limit": "A Victorian Christian poem by a Scottish-born Queensland civil servant; it is an extended comparison with astronomy and rests on faith, not on any argument that survival is certain. The poem addresses death as a personified Dark Companion.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "leo-tolstoy-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Leo Tolstoy",
@@ -43027,6 +45788,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "machado-de-assis-suffering",
+      "question": "suffering",
+      "name": "Machado de Assis",
+      "short": "Machado",
+      "work": "Memórias Póstumas de Brás Cubas, chapter VII (O delírio)",
+      "excerpt": "Egoismo, conservação. A onça mata o novilho porque o raciocinio da onça é que ella deve viver, e se o novilho é tenro tanto melhor: eis o estatuto universal.",
+      "translation": "Egoism, self-preservation. The jaguar kills the calf because the jaguar’s reasoning is that it must live, and if the calf is tender so much the better: that is the universal statute.",
+      "period": "1880",
+      "dateShort": "1880",
+      "dateFull": "1880",
+      "sortYear": 1880,
+      "sourceLabel": "Portuguese Wikisource, old orthography",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Mem%C3%B3rias_P%C3%B3stumas_de_Br%C3%A1s_Cubas/VII",
+      "locator": "Chapter VII, Nature’s last speech before “Sobe e olha”.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.25,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Machado lived in Rio de Janeiro all his life and the novel was serialised there in 1880 and published as a book in 1881; the linked page does not state where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Machado_de_Assis",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "unscored",
+          "facet": "Nature’s universal statute",
+          "why": "In a feverish vision, Nature tells the dying narrator that devouring and being devoured follow only from the drive to survive. Suffering serves no end beyond that. A second, independent reading moved this placement from “no purpose” to “unscored”: The words give self-preservation as the rule by which the jaguar kills the calf; they do not speak of suffering or of any purpose in it.",
+          "limit": "The words are spoken by a figure in the narrator’s delirium, in a novel narrated by a dead man, and cannot be read straight as the author’s view. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -43238,6 +46035,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "machado-de-assis-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Machado de Assis",
+      "short": "Machado",
+      "work": "O Espelho (Papéis avulsos)",
+      "excerpt": "Cada criatura humana traz duas almas consigo: uma que olha de dentro para fora, outra que olha de fora para dentro",
+      "translation": "Each human creature carries two souls: one that looks from inside outward, another that looks from outside inward",
+      "period": "1882",
+      "dateShort": "1882",
+      "dateFull": "1882",
+      "sortYear": 1882,
+      "sourceLabel": "Papéis avulsos (1882), Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/O_Espelho",
+      "locator": "Early in the story, the speaker’s reply beginning “Nada menos de duas almas”.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.25,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Machado lived and worked in Rio de Janeiro all his life and the story was collected in Papéis avulsos (1882); the linked page does not state where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/O_Espelho",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "both",
+          "facet": "Two souls in each person",
+          "why": "A character argues that a person has an inner soul and an outer soul, the second formed by what others see, and that the two together complete the person. The inward and the outward are held together.",
+          "limit": "The claim is made by a fictional speaker in a short story, who is arguing a paradox among friends and may not speak for the author. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -43784,6 +46617,147 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "manuel-gutierrez-najera-death",
+      "question": "death",
+      "name": "Manuel Gutiérrez Nájera",
+      "short": "Gutiérrez Nájera",
+      "work": "Non omnis moriar",
+      "excerpt": "¡No moriré del todo, amiga mía! De mi ondulante espíritu disperso, algo en la urna diáfana del verso, piadosa guardará la poesía.",
+      "translation": "I shall not die altogether, my friend! Of my scattered, wavering spirit, something poetry will piously keep in the clear urn of verse.",
+      "period": "c. 1880s",
+      "dateShort": "c. 1880s",
+      "dateFull": "circa 1880s",
+      "sortYear": 1885,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Non_omnis_Moriar",
+      "locator": "First stanza.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Gutiérrez Nájera lived and worked as a journalist in Mexico City until his death in 1895; the poem’s date and place of writing are not given on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Non_omnis_Moriar",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Survival in verse",
+          "why": "The poet says that he will not die altogether, because part of his spirit will be kept in his verse. Something of him continues, though only as a poem’s trace.",
+          "limit": "A sonnet-like lyric whose title echoes Horace and which claims a literary survival, not survival of the soul as such. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ramakrishna-desire",
+      "question": "desire",
+      "name": "Ramakrishna",
+      "short": "Ramakrishna",
+      "work": "Sayings of Ramakrishna, in Max Müller, Ramakrishna: His Life and Sayings (1898)",
+      "excerpt": "So if thou wishest to concentrate thy heart on God, be meek, humble, and poor in spirit, and remove all filaments of desire.",
+      "period": "c. 1880s (collected 1898)",
+      "dateShort": "c. 1880s (collected 1898)",
+      "dateFull": "c. 1880s (collected 1898)",
+      "sortYear": 1885,
+      "sourceLabel": "Max Müller, Ramakrishna: His Life and Sayings (1898), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "locator": "Saying 285 (numbered 286 in the scan), beginning “If thou wishest to thread the needle”.",
+      "place": "Dakshineswar, near Calcutta, India",
+      "lat": 22.65,
+      "lng": 88.36,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Ramakrishna lived and taught at the Kali temple at Dakshineswar, but the book does not date or place each saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Desire as the fibres on the thread",
+          "why": "Ramakrishna compares the heart to a thread that cannot pass through a needle’s eye until the loose fibres are removed, and names those fibres as desire. Desire is to be stripped away, not indulged.",
+          "limit": "The sayings were spoken in Bengali, recorded by followers and collected in English, and Max Müller’s 1898 book is a selection arranged by theme, so the wording is not Ramakrishna’s own. Elsewhere he treats some desire, such as longing for God, as the way itself.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ramakrishna-relationships",
+      "question": "relationships",
+      "name": "Ramakrishna",
+      "short": "Ramakrishna",
+      "work": "Sayings of Ramakrishna, in Max Müller, Ramakrishna: His Life and Sayings (1898)",
+      "excerpt": "So doth the society of the pious relieve worldly men, intoxicated with the wine of desires, from their intoxication.",
+      "period": "c. 1880s (collected 1898)",
+      "dateShort": "c. 1880s (collected 1898)",
+      "dateFull": "c. 1880s (collected 1898)",
+      "sortYear": 1885,
+      "sourceLabel": "Max Müller, Ramakrishna: His Life and Sayings (1898), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "locator": "Saying 368 (numbered 868 in the scan), beginning “The society of pious men”.",
+      "place": "Dakshineswar, near Calcutta, India",
+      "lat": 22.65,
+      "lng": 88.36,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Ramakrishna lived and taught at the Kali temple at Dakshineswar, but the book does not date or place each saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "The company of the pious",
+          "why": "Ramakrishna compares the pious to rice-water that sobers a drunkard, and says their company relieves worldly people of their intoxication with desire. Other people help shape a person’s inner state, though the saying does not make them necessary.",
+          "limit": "The sayings were spoken in Bengali, recorded by followers and arranged by theme in English by Max Müller, so the wording is not Ramakrishna’s own. The same collection also advises meditating in solitude, so company is only one of the helps he names.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ramakrishna-suffering",
+      "question": "suffering",
+      "name": "Ramakrishna",
+      "short": "Ramakrishna",
+      "work": "Sayings of Ramakrishna, in Max Müller, Ramakrishna: His Life and Sayings (1898)",
+      "excerpt": "Whenever he is frightened by adversity and misfortune he goes up to his God, his true home ; but in a short time he is constrained to come down into the world by its irresistible attractions.",
+      "period": "c. 1880s (collected 1898)",
+      "dateShort": "c. 1880s (collected 1898)",
+      "dateFull": "c. 1880s (collected 1898)",
+      "sortYear": 1885,
+      "sourceLabel": "Max Müller, Ramakrishna: His Life and Sayings (1898), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "locator": "Saying 175, the parable of the tame mungoose.",
+      "place": "Dakshineswar, near Calcutta, India",
+      "lat": 22.65,
+      "lng": 88.36,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Ramakrishna lived and taught at the Kali temple at Dakshineswar, but the book does not date or place each saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ramakrishnahisli017400mbp/ramakrishnahisli017400mbp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Adversity turns the mind to God",
+          "why": "Ramakrishna compares a person to a tame mongoose tied to a weight, who runs to its high home when frightened and is soon pulled back down. Adversity has no purpose of its own, but it can send a person to God for a time.",
+          "limit": "The saying is a parable recorded by followers and put into English by Max Müller, not a doctrine on suffering. It also says the turn to God lasts only briefly, so the benefit it names is partial.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ernst-mach-lasting-self",
       "question": "lasting-self",
       "name": "Ernst Mach",
@@ -43854,6 +46828,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "pandita-ramabai-given-or-made",
+      "question": "given-or-made",
+      "name": "Pandita Ramabai",
+      "short": "Ramabai",
+      "work": "The High-Caste Hindu Woman, “Needs of the Hindu Woman” section",
+      "excerpt": "self-reliance ; therefore, is it not the duty of our Western sisters to teach them how they may become self-reliant?",
+      "period": "1887",
+      "dateShort": "1887",
+      "dateFull": "1887",
+      "sortYear": 1887,
+      "sourceLabel": "First edition (Philadelphia, 1887), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/highcastehinduwo00ramaiala/highcastehinduwo00ramaiala_djvu.txt",
+      "locator": "Page 101, paragraph beginning “But it is idle to hope that the condition of my countrywomen”. The scanned text contains recognition errors.",
+      "place": "Philadelphia, Pennsylvania, United States",
+      "lat": 39.96,
+      "lng": -75.2,
+      "anchorType": "Documented place of publication",
+      "placeNote": "Ramabai wrote and published the book in Philadelphia during her stay in the United States; the title page of the scan gives Philadelphia, 1887.",
+      "placeSource": "https://archive.org/stream/highcastehinduwo00ramaiala/highcastehinduwo00ramaiala_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Self-reliance taught or stifled",
+          "why": "Ramabai says high-caste women have been cropped in their early days until energy and self-reliance are dead in them, and she asks that they be taught to become self-reliant. What a woman is able to be is something made or unmade by her upbringing.",
+          "limit": "The passage is part of an appeal to American women for funds and teachers, and it presents Indian women in a deliberately stark light for that audience. It speaks of one group, high-caste Hindu women, not of persons in general.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "pandita-ramabai-relationships",
       "question": "relationships",
       "name": "Pandita Ramabai",
@@ -43921,6 +46930,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "francis-adams-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Francis Adams",
+      "short": "Adams",
+      "work": "Something (poem), from Songs of the Army of the Night",
+      "excerpt": "And that you with these may be her lover, with these may save and suffer for her sake: It is joy to have lived, so to discover You’ve a life you can give and she can take!",
+      "period": "1884-1889",
+      "dateShort": "1880s",
+      "dateFull": "written between 1884 and 1889, printed in the 1906 anthology",
+      "sortYear": 1888,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Something",
+      "locator": "Closing stanza of the poem, beginning “And, in the silent solemn hours”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Adams was in Australia from 1884 to 1889, and his Songs of the Army of the Night was printed in Sydney in 1888. The linked page does not say where this poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Something",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "A life to give to the land",
+          "why": "Adams ends by saying that joy comes from finding one has a life to give to the country, to join her saviours in saving and suffering for her sake. The speaker’s good is placed in giving himself for others.",
+          "limit": "A short poem by an English-born socialist poet who lived in Australia for five years, in which the pronoun ‘her’ stands for the land; the passage is rhetorical and patriotic and does not weigh a person’s own interest against others’ claims. The linked page does not say in which book it first appeared.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -44133,6 +47177,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "anton-chekhov-meaning",
+      "question": "meaning",
+      "name": "Anton Chekhov",
+      "short": "Chekhov",
+      "work": "A Dreary Story (the old professor speaking)",
+      "excerpt": "even the most skilful analyst could not find what is called a general idea, or the god of a living man. And if there is not that, then there is nothing.",
+      "period": "1889",
+      "dateShort": "1889",
+      "dateFull": "1889",
+      "sortYear": 1889,
+      "sourceLabel": "Constance Garnett translation, Project Gutenberg (The Wife and Other Stories)",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/8/8/1883/1883-0.txt",
+      "locator": "“A Dreary Story from the Notebook of an Old Man”, chapter VI, the paragraph beginning “Every feeling and every thought exists apart in me”.",
+      "place": "Sumy, Ukraine",
+      "lat": 50.91,
+      "lng": 34.8,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Chekhov spent the summers of 1888 and 1889 at the Lintvaryov estate near Sumy and worked on the story in 1889; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/A_Boring_Story",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "No general idea in a life",
+          "why": "An old professor, near death, says that nothing in his thoughts or feelings joins them into a general idea or ruling purpose. Without one he concludes that there is nothing, so his life has no meaning that he can find.",
+          "limit": "The speaker is a fictional character, a dying scientist in despair, and Chekhov did not endorse his conclusion; the story offers no answer to it. The English is Constance Garnett's translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "banjo-paterson-happiness",
+      "question": "happiness",
+      "name": "Banjo Paterson",
+      "short": "Paterson",
+      "work": "Clancy of the Overflow (poem)",
+      "excerpt": "For the drover's life has pleasures that the townsfolk never know. And the bush hath friends to meet him, and their kindly voices greet him In the murmur of the breezes and the river on its bars",
+      "period": "1889",
+      "dateShort": "1889",
+      "dateFull": "1889 (first printed in the Bulletin)",
+      "sortYear": 1889,
+      "sourceLabel": "The Man from Snowy River and Other Verses (1895), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Man_from_Snowy_River_and_Other_Verses/Clancy_of_The_Overflow",
+      "locator": "Second stanza, beginning “In my wild erratic fancy visions come to me of Clancy”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Residence of author",
+      "placeNote": "Paterson worked as a solicitor in Sydney when the poem appeared in the Bulletin in 1889, and its speaker sits in a city office. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Man_from_Snowy_River_and_Other_Verses/Clancy_of_The_Overflow",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "The drover’s life and the clerk’s office",
+          "why": "The city clerk imagines the drover Clancy as happy because of where he lives: open country, company on the track and the stars, set against the foul air and the hurry of the office. Happiness is tied to outward circumstances.",
+          "limit": "The speaker is an office worker in a comic ballad, and the picture of bush life is his daydream; the final lines hint that Clancy might not suit an office, and the poem does not say a drover is actually happier.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -44450,6 +47564,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ewe-proverbs-given-or-made",
+      "question": "given-or-made",
+      "locator": "Ellis’s list of Ewe proverbs, a few lines after “Politeness engenders friendship”. The scanned text contains recognition errors.",
+      "excerpt": "If you are an orphan, and somebody gives his child instruction, take care to listen, so that you may profit by it.",
+      "name": "Ewe proverbs (collected by A. B. Ellis)",
+      "short": "Ewe proverbs",
+      "work": "The Ewe-speaking Peoples of the Slave Coast of West Africa, chapter on proverbs and folk-lore",
+      "period": "Collected in the 1880s; published 1890",
+      "dateShort": "1890",
+      "dateFull": "1890",
+      "sortYear": 1890,
+      "sourceLabel": "A. B. Ellis, The Ewe-speaking Peoples of the Slave Coast of West Africa (1890), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "place": "Ewe country, Slave Coast (now Ghana and Togo)",
+      "lat": 6.6,
+      "lng": 0.47,
+      "anchorType": "Traditional association",
+      "placeNote": "The sayings were in use among Ewe speakers of the Slave Coast hinterland; Ellis, a British colonial officer, collected them in the 1880s and gives no town for any single proverb. The pin marks the region, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ewespeakingpeopl0000abel/ewespeakingpeopl0000abel_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Profiting from another's child's lessons",
+          "why": "The proverb tells an orphan to listen when another person instructs his own child, because the orphan can profit by it. A person without a parent is formed through the teaching that others give, which places the saying toward the made end.",
+          "limit": "An anonymous proverb recorded and translated by a British colonial officer in 1890; it is advice to an orphan about learning and does not discuss inborn nature. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -44817,6 +47966,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-marti-death",
+      "question": "death",
+      "name": "José Martí",
+      "short": "Martí",
+      "work": "Versos sencillos, XLVI",
+      "excerpt": "¡Verso, nos hablan de un Dios A donde van los difuntos: Verso, o nos condenan juntos, O nos salvamos los dos!",
+      "translation": "Verse, they tell us of a God where the dead go: Verse, either both of us are condemned, or both of us are saved!",
+      "period": "1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Versos_sencillos/XLVI",
+      "locator": "Versos sencillos, poem XLVI, last stanza.",
+      "place": "New York, United States",
+      "lat": 40.75,
+      "lng": -73.98,
+      "anchorType": "Documented writing location",
+      "placeNote": "Versos sencillos was published in New York in 1891, where Martí lived in exile from 1881 to 1895; the linked page does not state where it was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Versos_sencillos/XLVI",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "A God where the dead go",
+          "why": "The poet reports what others say about a God and the place of the dead, and leaves the outcome open: he and his verse will be condemned together or saved together.",
+          "limit": "A closing address to his own verse, partly playful, which neither affirms nor denies an afterlife; the poet’s wider religious views are not shown here. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "jose-marti-given-or-made",
       "question": "given-or-made",
       "name": "José Martí",
@@ -44886,6 +48071,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "jose-marti-meaning",
+      "question": "meaning",
+      "name": "José Martí",
+      "short": "Martí",
+      "work": "Versos sencillos, XXVI",
+      "excerpt": "Cuando al peso de la cruz El hombre morir resuelve, Sale a hacer bien, lo hace, y vuelve Como de un baño de luz.",
+      "translation": "When under the weight of the cross a man resolves to die, he goes out to do good, does it, and returns as from a bath of light.",
+      "period": "1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Versos_sencillos/XXVI",
+      "locator": "Versos sencillos, poem XXVI, second stanza.",
+      "place": "New York, United States",
+      "lat": 40.75,
+      "lng": -73.98,
+      "anchorType": "Documented writing location",
+      "placeNote": "Versos sencillos was published in New York in 1891, where Martí lived in exile from 1881 to 1895 and wrote the book in the summer of 1890 in the Catskills; the linked page states neither, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Versos_sencillos/XXVI",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "Doing good as renewal",
+          "why": "The speaker says that a man weighed down to the point of wanting to die finds renewal by going out and doing good. The worth of a life is found by acting, not received.",
+          "limit": "A plain four-line stanza in a book of simple verses, offered as an observation drawn from life, not a worked argument; the book also speaks of exile and political struggle. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -44961,6 +48182,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jose-rizal-suffering",
+      "question": "suffering",
+      "name": "José Rizal",
+      "short": "Rizal",
+      "work": "El Filibusterismo (The Reign of Greed), chapter 39",
+      "excerpt": "“The just and the worthy must suffer in order that their ideas may be known and extended! You must shake or shatter the vase to spread its perfume, you must smite the rock to get the spark!",
+      "period": "1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "Charles Derbyshire translation (1912), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/6/7/10676/10676-0.txt",
+      "locator": "Chapter 39, “Final Chapter”, in Padre Florentino’s reply to Simoun.",
+      "place": "Ghent, Belgium",
+      "lat": 51.05,
+      "lng": 3.72,
+      "anchorType": "Documented place of publication",
+      "placeNote": "El Filibusterismo was published in Ghent in 1891, and a historical marker there identifies the site where Rizal lived when the novel was published; the scene itself is set in the Philippines.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/6/7/10676/10676-0.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Persecution as spreading ideas",
+          "why": "Padre Florentino tells the dying Simoun that the just must suffer so that their ideas are spread, as perfume comes from a shaken vase and a spark from struck rock. Suffering is given a purpose within a providential order.",
+          "limit": "The words are those of a priest in a novel, speaking to a repentant revolutionary at his deathbed, and Simoun is not persuaded; the novel is also an indictment of tyranny. The translation is Charles Derbyshire’s 1912 English version.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "rizal-meaning",
       "question": "meaning",
       "name": "José Rizal",
@@ -45031,6 +48287,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "swahili-proverbs-happiness",
+      "question": "happiness",
+      "work": "African Aphorisms, no. 468",
+      "excerpt": "Patience insures (draws) happiness, it brings what is afar.",
+      "locator": "Proverb no. 468 (Saburi yavuta heri). The scanned text contains recognition errors.",
+      "name": "Swahili proverbs (collected by W. E. Taylor)",
+      "short": "Swahili proverbs",
+      "period": "Collected 1880s; published 1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "place": "Frere Town, Mombasa, Kenya",
+      "lat": -4.02,
+      "lng": 39.64,
+      "anchorType": "Traditional association",
+      "placeNote": "Taylor was a Church Missionary Society missionary at Frere Town near Mombasa, and the preface to the book places the collecting on the East African coast. The linked page gives no exact collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Patience as the road to happiness",
+          "why": "The proverb says patience draws happiness to a person, even happiness that seems far away. The cause named is a quality of the person, not wealth or luck, which places the saying toward the view that happiness lies in one's own power.",
+          "limit": "An anonymous proverb recorded and translated by a missionary in 1891; it does not say whether patience suffices when a person lacks food or safety. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "swahili-proverbs-solitude-or-company",
       "question": "solitude-or-company",
       "name": "Swahili proverbs (collected by W. E. Taylor)",
@@ -45063,6 +48354,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "swahili-proverbs-ultimate-reality",
+      "question": "ultimate-reality",
+      "work": "African Aphorisms, no. 207",
+      "excerpt": "With God (matters) are not distant, nor is there any difficult thing.",
+      "locator": "Proverb no. 207 (Kwa Mngu k’aya kule). The scanned text contains recognition errors.",
+      "name": "Swahili proverbs (collected by W. E. Taylor)",
+      "short": "Swahili proverbs",
+      "period": "Collected 1880s; published 1891",
+      "dateShort": "1891",
+      "dateFull": "1891",
+      "sortYear": 1891,
+      "sourceLabel": "W. E. Taylor, African Aphorisms; or, Saws from Swahili-Land (1891), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "place": "Frere Town, Mombasa, Kenya",
+      "lat": -4.02,
+      "lng": 39.64,
+      "anchorType": "Traditional association",
+      "placeNote": "Taylor was a Church Missionary Society missionary at Frere Town near Mombasa, and the preface to the book places the collecting on the East African coast. The linked page gives no exact collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/AfricanAphorisms/African_aphorisms_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Nothing difficult with God",
+          "why": "The proverb says that with God nothing is far off and nothing is hard. It affirms a God of unlimited power as a background to ordinary affairs.",
+          "limit": "An anonymous proverb recorded and translated by a missionary in 1891, who calls it “a very ancient saying” and compares it with Luke 1:37; the saying shows a Christian or Muslim sense of God and offers no description of him. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -45321,6 +48647,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "yoruba-proverbs-desire",
+      "question": "desire",
+      "locator": "Proverb 73 in the chapter list. The scanned text contains recognition errors.",
+      "excerpt": "Covetousness is the father of disease.",
+      "name": "Yoruba proverbs (collected by A. B. Ellis)",
+      "short": "Yoruba proverbs",
+      "work": "The Yoruba-speaking Peoples of the Slave Coast of West Africa, chapter XIII, Proverbs",
+      "period": "Collected in the 1880s; published 1894",
+      "dateShort": "1894",
+      "dateFull": "1894",
+      "sortYear": 1894,
+      "sourceLabel": "A. B. Ellis, The Yoruba-speaking Peoples of the Slave Coast of West Africa (1894), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "place": "Yorubaland (now south-western Nigeria)",
+      "lat": 7.4,
+      "lng": 3.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were in use among Yoruba speakers; Ellis, a British colonial officer, collected them from informants on the coast and gives no town for any one saying. The pin marks the Yoruba heartland near Ibadan, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Covetousness as the source of disease",
+          "why": "The proverb names covetousness as the parent of disease, so that unchecked wanting brings harm to the body. Desire is to be held in check and redirected, not given free rein and not stamped out.",
+          "limit": "An anonymous proverb recorded and translated by a British colonial officer in 1894; it condemns covetousness in particular and says nothing of other desires. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "yoruba-proverbs-given-or-made",
       "question": "given-or-made",
       "name": "Yoruba proverbs (collected by A. B. Ellis)",
@@ -45388,6 +48749,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "yoruba-proverbs-suffering",
+      "question": "suffering",
+      "locator": "Proverb 54 in the chapter list. The scanned text contains recognition errors.",
+      "excerpt": "He who annoys another only teaches him to strengthen himself.",
+      "name": "Yoruba proverbs (collected by A. B. Ellis)",
+      "short": "Yoruba proverbs",
+      "work": "The Yoruba-speaking Peoples of the Slave Coast of West Africa, chapter XIII, Proverbs",
+      "period": "Collected in the 1880s; published 1894",
+      "dateShort": "1894",
+      "dateFull": "1894",
+      "sortYear": 1894,
+      "sourceLabel": "A. B. Ellis, The Yoruba-speaking Peoples of the Slave Coast of West Africa (1894), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "place": "Yorubaland (now south-western Nigeria)",
+      "lat": 7.4,
+      "lng": 3.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were in use among Yoruba speakers; Ellis, a British colonial officer, collected them from informants on the coast and gives no town for any one saying. The pin marks the Yoruba heartland near Ibadan, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/yorubaspeakingp00elligoog/yorubaspeakingp00elligoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Annoyance that strengthens",
+          "why": "The proverb says that a person who torments another only teaches that other to become stronger. The harm has no purpose of its own, but the one who suffers can turn it into strength.",
+          "limit": "An anonymous proverb recorded and translated by a British colonial officer in 1894; it speaks of annoyance between people and does not address illness, loss or suffering sent by the gods. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -45545,6 +48941,112 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ada-cambridge-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Ada Cambridge",
+      "short": "Cambridge",
+      "work": "Honour (sonnet)",
+      "excerpt": "Know myself true, though false as hell I seem— Know myself worthy, howsoe’er disgraced— Know myself right, though every tongue should blame.",
+      "period": "before 1906",
+      "dateShort": "by 1906",
+      "dateFull": "before 1906 (printed in the 1906 anthology)",
+      "sortYear": 1895,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Honour",
+      "locator": "Sestet of the sonnet, beginning “Let me be clean from secret stain and shame”, last three lines.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Residence of author",
+      "placeNote": "Cambridge arrived in Melbourne in 1870 and lived in Victoria for the rest of her life, according to the anthology’s biographical note. The exact place of composition of this poem is not stated, so the pin is a regional anchor and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Honour",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Keeping faith with one’s own judgment",
+          "why": "Cambridge’s sonnet asks to be despised by the world and condemned by the law rather than lose her own esteem, and it ends on knowing herself true, worthy and right whatever others say. Final authority is given to the individual’s own judgment of her conduct.",
+          "limit": "A literary sonnet whose speaker is a rebel against convention; it deals with reputation and conscience, not with duties of care or sharing, and it does not say that the speaker may neglect others. Printed in a 1906 anthology.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "banjo-paterson-free-will",
+      "question": "free-will",
+      "name": "Banjo Paterson",
+      "short": "Paterson",
+      "work": "Black Swans (poem)",
+      "excerpt": "They are flying west, by their instinct guided, And for man likewise is his fate decided, And griefs apportioned and joys divided By a mighty power with a purpose dread.",
+      "period": "1895",
+      "dateShort": "1895",
+      "dateFull": "1895 (collected in The Man from Snowy River; printed in the 1906 anthology)",
+      "sortYear": 1895,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Black_Swans",
+      "locator": "Final stanza of the poem, beginning “In the silent park is a scent of clover”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Residence of author",
+      "placeNote": "Paterson practised as a solicitor in Sydney in the 1890s when his first book appeared in 1895. The linked page does not say where this poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Black_Swans",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Fate apportioned by a mighty power",
+          "why": "Paterson’s speaker watches black swans fly west by instinct and says that, for man likewise, fate is decided and griefs and joys are portioned out by a mighty power with a purpose. What happens to a person is treated as fixed from outside.",
+          "limit": "A nostalgic bush ballad whose speaker is musing on lost days; the line is a passing reflection prompted by the swans and not an argued doctrine, and it sits beside a plain wish to return to the old life.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jose-asuncion-silva-truth",
+      "question": "truth",
+      "name": "José Asunción Silva",
+      "short": "Silva",
+      "work": "La respuesta de la tierra",
+      "excerpt": "La tierra, como siempre, displicente y callada, al gran poeta lírico no le contestó nada.",
+      "translation": "The earth, as always, indifferent and silent, answered the great lyric poet nothing.",
+      "period": "c. 1890s",
+      "dateShort": "c. 1890s",
+      "dateFull": "circa 1890s",
+      "sortYear": 1895,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/La_respuesta_de_la_tierra",
+      "locator": "Final couplet.",
+      "place": "Bogotá, Colombia",
+      "lat": 4.65,
+      "lng": -74.08,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Silva lived in Bogotá for most of his life, apart from stays in Europe and Caracas, and died there in 1896; the poem is not dated or placed on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/La_respuesta_de_la_tierra",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "The earth that does not answer",
+          "why": "After a poet asks the earth why people are born and die and what lies beyond, the poem ends by saying that the earth gave no answer. The great questions stay unanswered.",
+          "limit": "The poem is a short ironic fable that mocks the grand poet’s pose, so the silence may be aimed at the poet as much as at the question. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "william-james-meaning",
       "question": "meaning",
       "name": "William James",
@@ -45577,6 +49079,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "yan-fu-given-or-made",
+      "question": "given-or-made",
+      "name": "Yan Fu",
+      "short": "Yan Fu",
+      "work": "On Strength (原強), 1895",
+      "excerpt": "顧彼民之能自治而自由者，皆其力、其智、其德誠優者也。是以今日要政，統於三端：一曰鼓民力，二曰開民智，三曰新民德。",
+      "translation": "Those peoples who can govern themselves and be free are all ones whose strength, intelligence and virtue are truly superior. So the pressing business of today comes down to three things: first, to stir up the people’s strength; second, to open the people’s intelligence; third, to renew the people’s virtue.",
+      "period": "1895",
+      "dateShort": "1895",
+      "dateFull": "1895",
+      "sortYear": 1895,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%8E%9F%E5%BC%B7",
+      "locator": "Paragraph beginning “夫如是，則中國今日之所宜為，大可見矣”.",
+      "place": "Tianjin, China",
+      "lat": 39.12,
+      "lng": 117.2,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Yan Fu published the essay in the Tianjin newspaper Zhibao in 1895 while teaching at a naval school there; the linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E5%8E%9F%E5%BC%B7",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Strength, intelligence and morals as made",
+          "why": "Yan Fu says a people’s fitness for self-rule rests on its strength, intelligence and morals, and that these can be built up by deliberate effort. What a people becomes is something made by training and renewal and not simply inherited.",
+          "limit": "The passage is about the Chinese people as a whole, in an essay applying Spencer’s social Darwinism after the defeat in the Sino-Japanese War, and it speaks of groups and not of individuals. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -45696,6 +49234,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "euahlayi-bahloo-death",
+      "question": "death",
+      "name": "Euahlayi informants (recorded by K. Langloh Parker)",
+      "short": "Euahlayi",
+      "work": "Australian Legendary Tales, “Bahloo the Moon, and the Daens”",
+      "excerpt": "But now you will only be black fellows while you live, and bones when you are dead.",
+      "period": "1896",
+      "dateShort": "1896",
+      "dateFull": "1896",
+      "sortYear": 1896,
+      "sourceLabel": "Project Gutenberg text of the 1896 edition, hosted by the Internet Archive",
+      "sourceUrl": "https://archive.org/download/australianlegend03833gut/strlt10.txt",
+      "locator": "Story 3, near its end, in Bahloo’s speech after he carries his snakes across the creek.",
+      "place": "Bangate Station, Narran River, near Angledool, New South Wales, Australia",
+      "lat": -29.1,
+      "lng": 147.9,
+      "anchorType": "Documented fieldwork location",
+      "placeNote": "Parker lived on Bangate station on the Narran River and gathered these tales from Euahlayi neighbours there; the linked page gives the text only, so the exact station location still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/australianlegend03833gut/strlt10.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Why people do not rise again",
+          "why": "In a Euahlayi story, Bahloo the Moon says that people could have risen again after death, like the moon and a floating piece of bark, but that their fear lost them the chance. They will be people while they live and bones when they are dead, so nothing of them goes on.",
+          "limit": "A story told to children, recorded in English by Katie Langloh Parker and published in 1896; its words and framing are hers, and the tale is a myth about the origin of death, not a doctrine stated in a person’s own voice. The Euahlayi also held beliefs in a spirit that goes to Byamee, so the story is only one strand.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "henry-lawson-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Henry Lawson",
+      "short": "Lawson",
+      "work": "The Vagabond (poem)",
+      "excerpt": "Sacrifice all for the family's sake, Bow to their selfish rule! Slave till your big soft heart they break— The heart of the family fool.",
+      "period": "1890s (printed 1896)",
+      "dateShort": "1896",
+      "dateFull": "1896 (printed in In the Days When the World Was Wide)",
+      "sortYear": 1896,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/The_Vagabond",
+      "locator": "Stanza beginning “Sacrifice all for the family’s sake”.",
+      "place": "Sydney, New South Wales, Australia",
+      "lat": -33.87,
+      "lng": 151.2,
+      "anchorType": "Residence of author",
+      "placeNote": "Lawson lived mainly in Sydney in the 1890s when his early verse appeared in the Bulletin. The linked page does not say where this poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/The_Vagabond",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "Refusing the family’s claim",
+          "why": "The poem’s rover mocks the advice to give up everything for family and home, calling the person who obeys a fool whose heart is broken by others’ selfish rule. He claims the right to go his own way, which gives priority to one’s own course over the claims of kin.",
+          "limit": "A ballad spoken by a roving seaman persona, not an essay, and written in the 1890s by a poet whose own life was marked by family quarrels and later regrets; the same poem goes on to confess shame for a friend he deserted, so the stance is not left unqualified.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -46100,6 +49708,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "joseph-conrad-meaning",
+      "question": "meaning",
+      "name": "Joseph Conrad",
+      "short": "Conrad",
+      "work": "Letter to R. B. Cunninghame Graham, 20 December 1897",
+      "excerpt": "It knits us in and it knits us out. It has knitted time, space, pain, death, corruption, despair and all the illusions,—and nothing matters.",
+      "period": "1897",
+      "dateShort": "1897",
+      "dateFull": "1897",
+      "sortYear": 1897,
+      "sourceLabel": "G. Jean-Aubry, Joseph Conrad: Life and Letters (1927), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/josephconradlife0001gjea/josephconradlife0001gjea_djvu.txt",
+      "locator": "Volume 1, p. 216, the letter to Cunninghame Graham of 20 December 1897. The scanned text contains recognition errors.",
+      "place": "Stanford-le-Hope, Essex, England",
+      "lat": 51.52,
+      "lng": 0.42,
+      "anchorType": "Documented writing location",
+      "placeNote": "The next letter in the same volume, to Angèle Zagórska on the same date, is headed Stanford-le-Hope, where Conrad then lived; the Graham letter's own heading is not shown in the scan, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/josephconradlife0001gjea/josephconradlife0001gjea_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "A machine that knits and nothing matters",
+          "why": "Conrad likens the universe to a knitting machine that made itself without thought or purpose and produced everything, including pain and death. He concludes that nothing matters, so no meaning stands behind life.",
+          "limit": "This is a private letter written in a mood of ironic gloom, to a friend whose idealism Conrad was teasing, and his novels give moral choices real weight. The text is a scan of Jean-Aubry's Life and Letters, with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "narayana-guru-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Narayana Guru",
@@ -46275,6 +49918,112 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "swami-vivekananda-death",
+      "question": "death",
+      "name": "Swami Vivekananda",
+      "short": "Vivekananda",
+      "work": "The Future of India (lecture, Madras)",
+      "excerpt": "Life is short, but the soul is immortal and eternal, and one thing being certain, death, let us therefore take up a great ideal and give up our whole life to it.",
+      "period": "1897",
+      "dateShort": "1897",
+      "dateFull": "1897",
+      "sortYear": 1897,
+      "sourceLabel": "The Complete Works of Swami Vivekananda, vol. 3, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_3/Lectures_from_Colombo_to_Almora/The_Future_of_India",
+      "locator": "Paragraph beginning “Life is short, but the soul is immortal and eternal”.",
+      "place": "Chennai (Madras), India",
+      "lat": 13.08,
+      "lng": 80.2,
+      "anchorType": "Approximate delivery location",
+      "placeNote": "The lecture belongs to the series Vivekananda gave in Madras in February 1897; the linked page does not name the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_3/Lectures_from_Colombo_to_Almora/The_Future_of_India",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul against the certainty of death",
+          "why": "Vivekananda grants that death is certain, and sets against it the immortal and eternal soul, urging that a life be given to a great ideal. Something of the person is taken to outlast death.",
+          "limit": "The words come from a public lecture whose aim is to rouse young listeners to national service, and the claim about the soul is stated, not argued. The text is the wording of the Complete Works, an edition compiled after his death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "swami-vivekananda-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Swami Vivekananda",
+      "short": "Vivekananda",
+      "work": "Vedanta in its Application to Indian Life (lecture, Madras)",
+      "excerpt": "I should see God in the poor, and it is for my salvation that I go and worship them. The poor and the miserable are for our salvation, so that we may serve the Lord",
+      "period": "1897",
+      "dateShort": "1897",
+      "dateFull": "1897",
+      "sortYear": 1897,
+      "sourceLabel": "The Complete Works of Swami Vivekananda, vol. 3, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_3/Lectures_from_Colombo_to_Almora/Vedanta_in_its_Application_to_Indian_Life",
+      "locator": "Paragraph beginning “Look upon every man, woman, and every one as God”.",
+      "place": "Chennai (Madras), India",
+      "lat": 13.08,
+      "lng": 80.2,
+      "anchorType": "Approximate delivery location",
+      "placeNote": "The lecture belongs to the series Vivekananda gave in Madras in February 1897; the linked page does not name the place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Complete_Works_of_Swami_Vivekananda/Volume_3/Lectures_from_Colombo_to_Almora/Vedanta_in_its_Application_to_Indian_Life",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Serving the poor as one’s own salvation",
+          "why": "The lecture says the speaker serves the poor for his own salvation and that the poor exist for the salvation of those who serve them. Neither the helper’s good nor the poor’s good comes first, because each is made to depend on the other.",
+          "limit": "The words come from a public lecture to a Madras audience on applying Vedanta to Indian social life, and the surrounding text also warns against ruling over others in the name of helping them. The wording is that of the Complete Works, an edition compiled after his death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "tan-sitong-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Tan Sitong",
+      "short": "Tan Sitong",
+      "work": "A Study of Benevolence (仁學), section 38",
+      "excerpt": "五倫中於人生最無弊而有益，無纖毫之苦，有淡水之樂，其惟朋友乎。",
+      "translation": "Of the five human relations, the one that does a person no harm and does him good, with not a trace of bitterness and with the pleasure of plain water, is surely friendship.",
+      "period": "c. 1897",
+      "dateShort": "c. 1897",
+      "dateFull": "c. 1897",
+      "sortYear": 1897,
+      "sourceLabel": "Chinese Wikisource (public-domain text)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E4%BB%81%E5%AD%B8/2",
+      "locator": "Section 38.",
+      "place": "Nanjing, China",
+      "lat": 32.06,
+      "lng": 118.78,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Tan Sitong wrote the Renxue in 1896-97, mostly while living in Nanjing; the linked page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/%E4%BB%81%E5%AD%B8/2",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Friendship among the five bonds",
+          "why": "Tan Sitong picks friendship as the one of the five Confucian bonds that gives benefit without harm, because it rests on equality and freedom. Life among others is commended, in the form of chosen friendship.",
+          "limit": "The same section calls the other bonds, bound up with the three cardinal ties, like hell, so he praises one kind of company and condemns others. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "vivekananda-truth",
       "question": "truth",
       "name": "Swami Vivekananda",
@@ -46420,6 +50169,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "debendranath-tagore-happiness",
+      "question": "happiness",
+      "name": "Debendranath Tagore",
+      "short": "D. Tagore",
+      "work": "Autobiography, chapter XIX",
+      "excerpt": "I became totally free from all desire. I had read in the Upanishads about the peace and happiness of him who desires nothing ; and now I tasted of it in real life.",
+      "period": "1898 (events of the 1840s)",
+      "dateShort": "1898 (events of the 1840s)",
+      "dateFull": "1898 (events of the 1840s)",
+      "sortYear": 1898,
+      "sourceLabel": "The Autobiography of Maharshi Devendranath Tagore (1914 translation), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/tagoreautobiogr00thaauoft/tagoreautobiogr00thaauoft_djvu.txt",
+      "locator": "Chapter XIX, paragraph beginning “That was a day of days at the burning-ground”.",
+      "place": "Jorasanko, Calcutta, India",
+      "lat": 22.58,
+      "lng": 88.36,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Debendranath Tagore lived at the family house at Jorasanko, Calcutta, and dictated the autobiography in Bengali in his last years; the linked text does not state where each part was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/tagoreautobiogr00thaauoft/tagoreautobiogr00thaauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Peace in wanting nothing",
+          "why": "After selling his horses and carriages and living as an ascetic householder, Debendranath Tagore says he found the happiness the Upanishads promise to one who desires nothing. The happiness is made to come from the loss of wanting, not from owning anything.",
+          "limit": "The passage comes from a retrospective account written after his father’s debts had ruined the family’s fortunes, so loss may colour his reading of it. The text is an English translation of a Bengali original.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "debendranath-tagore-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Debendranath Tagore",
+      "short": "D. Tagore",
+      "work": "Autobiography, chapter XII",
+      "excerpt": "Hitherto He had existed beyond and outside myself ; now He revealed Himself within me, I saw Him within my soul.",
+      "period": "1898 (events of the 1840s)",
+      "dateShort": "1898 (events of the 1840s)",
+      "dateFull": "1898 (events of the 1840s)",
+      "sortYear": 1898,
+      "sourceLabel": "The Autobiography of Maharshi Devendranath Tagore (1914 translation), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/tagoreautobiogr00thaauoft/tagoreautobiogr00thaauoft_djvu.txt",
+      "locator": "Chapter XII, paragraph beginning “I was satisfied with getting so much”.",
+      "place": "Jorasanko, Calcutta, India",
+      "lat": 22.58,
+      "lng": 88.36,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Debendranath Tagore lived at the family house at Jorasanko, Calcutta, and dictated the autobiography in Bengali in his last years; the linked text does not state where each part was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/tagoreautobiogr00thaauoft/tagoreautobiogr00thaauoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "God found within the soul",
+          "why": "Debendranath Tagore describes passing from a God felt outside himself to a God found within his own soul, where he began to hear religious teaching. The truth is reached by turning inward.",
+          "limit": "This is a retrospective account of a religious experience of the 1840s, written decades later and translated into English by family members. It describes his personal path and not a general claim about others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "george-essex-evans-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "George Essex Evans",
+      "short": "Evans",
+      "work": "A Pastoral (poem), from Loraine and Other Verses",
+      "excerpt": "But the faiths have flowered and flown, And the truth is but in part; Many a creed and many a grade For Thy purpose Thou hast made. None can know Thee what Thou art, Fathomless! Unknown!",
+      "period": "1898",
+      "dateShort": "1898",
+      "dateFull": "1898 (Loraine and Other Verses; printed in the 1906 anthology)",
+      "sortYear": 1898,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/A_Pastoral",
+      "locator": "Last two stanzas of the poem, beginning “All the strong souls of the race”.",
+      "place": "Toowoomba, Queensland, Australia",
+      "lat": -27.56,
+      "lng": 151.95,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Evans was District Registrar at Toowoomba. The linked page does not say where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/A_Pastoral",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "beyond-saying",
+          "facet": "The Power no creed can name",
+          "why": "Evans addresses a Power he feels in the quiet country and says that faiths come and go, that each holds only part of the truth, and that no one can know what it is. The ultimate is addressed but placed beyond description.",
+          "limit": "A short lyric by a Queensland civil servant, printed in 1898 and again in a 1906 anthology; the speaker addresses the Power as “Thou”, so the poem affirms something while declining to define it, and the religious vocabulary is that of a late Victorian liberal Christian.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -46784,6 +50638,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ada-cambridge-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Ada Cambridge",
+      "short": "Cambridge",
+      "work": "Faith (sonnet)",
+      "excerpt": "Let go the myths and creeds of groping men. This clay knows nought—the Potter understands. I own that Power divine beyond my ken, And still can leave me in His shaping hands.",
+      "period": "before 1906",
+      "dateShort": "by 1906",
+      "dateFull": "before 1906 (printed in the 1906 anthology)",
+      "sortYear": 1900,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Faith",
+      "locator": "Sestet of the sonnet, beginning “Let go the myths and creeds of groping men”.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Residence of author",
+      "placeNote": "Cambridge arrived in Melbourne in 1870 and lived in Victorian parishes and in Melbourne districts for the rest of her life, where she wrote for the press. The exact place of composition of this poem is not stated, so the pin is a regional anchor and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Faith",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Faith against doubt",
+          "why": "Cambridge’s sonnet drops inherited creeds yet affirms a divine Power who shapes the speaker as a potter shapes clay. It affirms an ultimate being while admitting that it lies beyond human understanding.",
+          "limit": "A poem by a clergyman’s wife in colonial Melbourne, printed in a 1906 anthology; the speaker moves from doubt to trust in the sestet, and the faith is stated as a choice made in spite of unanswered questions, not demonstrated.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "auta-de-sousa-suffering",
       "question": "suffering",
       "name": "Auta de Sousa",
@@ -46897,6 +50786,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "edward-booth-loughran-relationships",
+      "question": "relationships",
+      "name": "Edward Booth Loughran",
+      "short": "Loughran",
+      "work": "Isolation (poem)",
+      "excerpt": "Man lives alone; star-like, each soul In its own orbit circles ever; Myriads may by or round it roll— The ways may meet, but mingle never.",
+      "period": "before 1906",
+      "dateShort": "by 1906",
+      "dateFull": "before 1906 (printed in the 1906 anthology)",
+      "sortYear": 1900,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Isolation",
+      "locator": "Opening stanza of the poem, beginning “Man lives alone; star-like, each soul”.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Loughran joined the Victorian Government Hansard staff in 1879, so he lived in Melbourne. The linked page does not say where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Isolation",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "not_constitutive",
+          "facet": "Each soul alone",
+          "why": "Loughran’s poem holds that each soul keeps its own course and that even close friends and lovers only run beside one another. The inner self is described as formed and carried alone, not by relationships.",
+          "limit": "A short poem from a Melbourne Hansard journalist, printed in a 1906 anthology; it also says that the apartness is a kindly ordinance, since love and friendship could not survive if the heart’s hidden chambers were opened, and it does not deny that people love one another.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "george-santayana-ultimate-reality",
       "question": "ultimate-reality",
       "name": "George Santayana",
@@ -46929,6 +50853,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "jose-enrique-rodo-inward-or-others",
+      "question": "inward-or-others",
+      "name": "José Enrique Rodó",
+      "short": "Rodó",
+      "work": "Ariel, chapter III",
+      "excerpt": "nos ha legado una sencilla y conmovedora imagen de la salvación de la libertad interior, aun en medio a los rigores de la servidumbre, en la hermosa figura de Cleanto",
+      "translation": "has left us a simple and moving image of the saving of inner freedom, even amid the rigours of servitude, in the fine figure of Cleanthes",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "Ariel (1900), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Ariel/Cap%C3%ADtulo_III",
+      "locator": "Chapter III, paragraph beginning “La escuela estoica, que iluminó el ocaso de la antigüedad”.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.85,
+      "lng": -56.17,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ariel was published in Montevideo in 1900, where Rodó lived and taught; the linked page does not state where he wrote it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jos%C3%A9_Enrique_Rod%C3%B3",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Inner freedom under servitude",
+          "why": "Rodó holds up the Stoic Cleanthes, who meditated while working as a slave, as the model of an inner life that survives outward constraint, and later urges his young listeners to keep a space for disinterested contemplation. Freedom and worth are placed in the inner life.",
+          "limit": "The passage is a rhetorical address to young people about education and balance, and Rodó also insists elsewhere in the essay on social duty and solidarity. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -47013,6 +50973,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "kartini-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Raden Adjeng Kartini",
+      "short": "Kartini",
+      "work": "Letters of a Javanese Princess, letter to Stella Zeehandelaar (August 1900)",
+      "excerpt": "if one of us should be condemned to unhappiness, let me be the one. Here lurks egoism, for I could never be happy, even if I had freedom, even if I gained my independence",
+      "period": "August 1900",
+      "dateShort": "August 1900",
+      "dateFull": "August 1900",
+      "sortYear": 1900,
+      "sourceLabel": "Agnes Louise Symmers translation (1920), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/6/4/34647/34647-0.txt",
+      "locator": "Letter dated August 1900, paragraph beginning “I love him unspeakably, my old grey Father”.",
+      "place": "Jepara, Central Java, Indonesia",
+      "lat": -6.65,
+      "lng": 110.72,
+      "anchorType": "Documented writing location",
+      "placeNote": "Kartini wrote her letters from the regent’s residence at Jepara on the north coast of Java, where she lived until her marriage in 1903. The pin is set slightly inland.",
+      "placeSource": "https://gutenberg.pglaf.org/3/4/6/4/34647/34647-0.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Freedom bound to a father’s happiness",
+          "why": "Kartini says she would accept unhappiness herself rather than see her father suffer, and admits this is also egoism, since she could not be happy with her own freedom if it cost him his. Her own good and his are tied together so that neither comes first.",
+          "limit": "The passage is a private letter to a pen friend, written in Dutch and read here in Agnes Louise Symmers’s 1920 English translation, which may smooth her wording. It speaks of one family choice and not of a general rule.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -47478,6 +51473,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "david-mcdonald-ross-happiness",
+      "question": "happiness",
+      "name": "David MacDonald Ross",
+      "short": "Ross",
+      "work": "Autumn (sonnet), from The After Glow",
+      "excerpt": "And meet and kiss thee, that were enough of Spring; Enough of sunshine, could I feel the warm Glad beating of thy heart ’neath Winter’s wing, Tho’ Earth were full of whirlwind and of storm.",
+      "period": "c. 1902",
+      "dateShort": "c. 1902",
+      "dateFull": "circa 1902 (printed in the 1906 anthology)",
+      "sortYear": 1902,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Autumn",
+      "locator": "Sestet of the sonnet, beginning “If o’er the bare fields, cold and whitening”. The date is approximate.",
+      "place": "Waikato district, Aotearoa New Zealand",
+      "lat": -37.78,
+      "lng": 175.28,
+      "anchorType": "Residence of author",
+      "placeNote": "The anthology’s biographical note says Ross was appointed Stock Inspector for the Waikato district in 1893 and still held the post. The linked page does not say where the poem was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Autumn",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-fortune",
+          "facet": "Warmth from another’s heart",
+          "why": "Ross’s sonnet says that meeting the beloved would be enough of spring and sunshine, even in winter and storm, if he could feel her heart beat. Contentment is made to depend on another person’s presence, not on the speaker’s own strength.",
+          "limit": "A love sonnet by a New Zealand stock inspector, printed in a 1906 anthology; the speaker is a lover in a mood of loss and the poem states a longing, not a general doctrine of happiness. It also says that outward conditions need not matter once the beloved is there.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -48526,6 +52556,146 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "abdul-baha-given-or-made",
+      "question": "given-or-made",
+      "locator": "Paragraph 9 of the talk on education, beginning “Now, someone might say that, since the capacity and aptitude of souls differ”.",
+      "name": "‘Abdu’l-Bahá",
+      "short": "‘Abdu’l-Bahá",
+      "period": "1904-1906",
+      "dateShort": "1904–06",
+      "dateFull": "1904 to 1906",
+      "sortYear": 1905,
+      "sourceLabel": "Authorised English translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.93,
+      "lng": 35.09,
+      "anchorType": "Documented teaching location",
+      "placeNote": "‘Abdu’l-Bahá remained a prisoner in Acre until 1908, and Some Answered Questions compiles table talks recorded by Laura Clifford Barney between 1904 and 1906, so the talks fall in his Acre period; the linked page does not name the house.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "work": "Some Answered Questions",
+      "excerpt": "capacity is of two kinds: innate and acquired. The innate capacity, which is the creation of God, is wholly and entirely good",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Innate and acquired capacity",
+          "why": "The talk divides capacity into innate and acquired, calling the innate part God's creation and wholly good. Character then rests on both what is given and what is acquired afterwards.",
+          "limit": "A table talk recorded by a listener in English, answering why the wicked should be blamed; the next sentences say the acquired capacity can turn toward evil, so the emphasis falls on the acquired. The translation is the authorised English text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "abdul-baha-lasting-self",
+      "question": "lasting-self",
+      "name": "‘Abdu’l-Bahá",
+      "short": "‘Abdu’l-Bahá",
+      "work": "Some Answered Questions, Part 4",
+      "period": "1904-1906",
+      "dateShort": "1904–06",
+      "dateFull": "1904 to 1906",
+      "sortYear": 1905,
+      "sourceLabel": "Authorised English translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "locator": "Paragraph 4 of the talk on the rational soul, in the answer beginning “The rational soul is endowed from the beginning with individuality”.",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.93,
+      "lng": 35.09,
+      "anchorType": "Documented teaching location",
+      "placeNote": "‘Abdu’l-Bahá remained a prisoner in Acre until 1908, and Some Answered Questions compiles table talks recorded by Laura Clifford Barney between 1904 and 1906, so the talks fall in his Acre period; the linked page does not name the house.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "excerpt": "The rational soul is endowed from the beginning with individuality; it does not acquire it through the intermediary of the body",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The rational soul and its individuality",
+          "why": "The passage says the rational soul has its individuality from the start, and does not get it from the body. A soul with its own individuality from the beginning is one that persists as itself.",
+          "limit": "The sentence is part of a Bahá’í doctrinal answer about the soul's survival and progress after death; it takes the soul's existence for granted. The following sentence adds that the soul's identity can be strengthened in this world. The translation is the authorised English text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "abdul-baha-relationships",
+      "question": "relationships",
+      "locator": "Paragraph 6 of the talk on the existence of beings, beginning “Let us give another, more subtle proof”. The part and chapter are not identified on the linked page.",
+      "name": "‘Abdu’l-Bahá",
+      "short": "‘Abdu’l-Bahá",
+      "period": "1904-1906",
+      "dateShort": "1904–06",
+      "dateFull": "1904 to 1906",
+      "sortYear": 1905,
+      "sourceLabel": "Authorised English translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.93,
+      "lng": 35.09,
+      "anchorType": "Documented teaching location",
+      "placeNote": "‘Abdu’l-Bahá remained a prisoner in Acre until 1908, and Some Answered Questions compiles table talks recorded by Laura Clifford Barney between 1904 and 1906, so the talks fall in his Acre period; the linked page does not name the house.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "work": "Some Answered Questions",
+      "excerpt": "all beings are linked together like a chain; and mutual aid, assistance, and interaction are among their intrinsic properties and are the cause of their formation, development, and growth",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Beings linked like a chain",
+          "why": "The talk says all beings are linked like a chain and that mutual aid and interaction are the cause of their formation, development and growth. A thing's making is credited to its relations with others.",
+          "limit": "The sentence is about all created things, not people alone, and is part of an argument on the order of creation; its bearing on the human self is by extension. The translation is the authorised English text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "abdul-baha-self-or-others-first",
+      "question": "self-or-others-first",
+      "locator": "Paragraph 7 of the talk on the station of man, beginning “Then it is clear that the honour and exaltation of man cannot reside solely in material delights”.",
+      "name": "‘Abdu’l-Bahá",
+      "short": "‘Abdu’l-Bahá",
+      "period": "1904-1906",
+      "dateShort": "1904–06",
+      "dateFull": "1904 to 1906",
+      "sortYear": 1905,
+      "sourceLabel": "Authorised English translation, Bahá’í Reference Library (bahai.org)",
+      "sourceUrl": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "place": "Acre (ʿAkká), Israel",
+      "lat": 32.93,
+      "lng": 35.09,
+      "anchorType": "Documented teaching location",
+      "placeNote": "‘Abdu’l-Bahá remained a prisoner in Acre until 1908, and Some Answered Questions compiles table talks recorded by Laura Clifford Barney between 1904 and 1906, so the talks fall in his Acre period; the linked page does not name the house.",
+      "placeSource": "https://www.bahai.org/library/authoritative-texts/abdul-baha/some-answered-questions/some-answered-questions.xhtml",
+      "work": "Some Answered Questions",
+      "excerpt": "self-abnegation for the good of all people, kindness and compassion for all nations",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Self-abnegation for the good of all",
+          "why": "The talk lists self-abnegation for the good of all people among the virtues in which the exaltation of man consists. The sacrifice of self for others is named as part of what it is to be exalted.",
+          "limit": "One item in a long list of virtues in a doctrinal talk; it states an ideal and does not weigh the claims of self against others in a particular case. The translation is the authorised English text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "alfred-russel-wallace-free-will",
       "question": "free-will",
       "name": "Alfred Russel Wallace",
@@ -48561,6 +52731,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "euahlayi-byamee-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Euahlayi informants (recorded by K. Langloh Parker)",
+      "short": "Euahlayi",
+      "work": "The Euahlayi Tribe, chapter II, The All Father, Byamee",
+      "excerpt": "Byamee still exists. I have been told by an old native, as will be shown later, that prayers for the souls of the dead used to be addressed to Byamee at funerals",
+      "period": "1905",
+      "dateShort": "1905",
+      "dateFull": "1905",
+      "sortYear": 1905,
+      "sourceLabel": "Project Gutenberg text of the 1905 edition, hosted by the Internet Archive",
+      "sourceUrl": "https://archive.org/download/theeuahlayitribe03819gut/tetas10.txt",
+      "locator": "Chapter II, paragraph beginning “Byamee, in the first place, is to the Euahlayi”, later passage beginning “Byamee still exists”.",
+      "place": "Bangate Station, Narran River, near Angledool, New South Wales, Australia",
+      "lat": -29.1,
+      "lng": 147.9,
+      "anchorType": "Documented fieldwork location",
+      "placeNote": "Parker lived on Bangate station on the Narran River and gathered Euahlayi material from neighbours there; the linked page gives the text only, so the exact station location still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/download/theeuahlayitribe03819gut/tetas10.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Byamee, the All Father",
+          "why": "Katie Langloh Parker, reporting what Euahlayi elders told her, says Byamee, the All Father, is a living being to whom prayers for the dead were addressed. That affirms an ultimate being behind the world.",
+          "limit": "The words are Parker's, summarising what old men and women told her around the 1890s; they reach the reader through a recorder writing in English, and Andrew Lang added a preface. Her sources said the belief was kept from women and uninitiated youths, and later scholars have debated how far mission influence shaped reports of Baiame.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "henri-poincare-truth",
       "question": "truth",
       "name": "Henri Poincaré",
@@ -48593,6 +52798,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "masai-proverbs-given-or-made",
+      "question": "given-or-made",
+      "work": "The Masai: Their Language and Folklore, Masai Proverbs and Sayings, no. 50",
+      "excerpt": "The zebra cannot do away with his stripes.",
+      "locator": "Masai Proverbs and Sayings, no. 50 (Mepal ol-oitigo ’sirat). The scanned text contains recognition errors.",
+      "name": "Masai proverbs (collected by Alfred Claud Hollis)",
+      "short": "Masai proverbs",
+      "period": "Collected c. 1900–1905; published 1905",
+      "dateShort": "1905",
+      "dateFull": "1905",
+      "sortYear": 1905,
+      "sourceLabel": "A. C. Hollis, The Masai: Their Language and Folklore (1905), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/masaitheirlangua00holl/masaitheirlangua00holl_djvu.txt",
+      "place": "Masailand near Kajiado, Kenya",
+      "lat": -1.85,
+      "lng": 36.78,
+      "anchorType": "Traditional association",
+      "placeNote": "Hollis was a colonial official in the East Africa Protectorate who took down Masai sayings in Masai, with literal and free English renderings. The linked page does not tie this proverb to a place, so the pin marks the Masai country south of Nairobi, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/masaitheirlangua00holl/masaitheirlangua00holl_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "The zebra and its stripes",
+          "why": "The proverb says the zebra cannot get rid of its stripes, so what a creature is comes with its birth and cannot be unmade. Applied to a person, it places character at the given end.",
+          "limit": "An anonymous proverb recorded in Masai and translated by a colonial official; the editor himself adds a Biblical parallel (Jeremiah 13:23) and does not say how Masai speakers applied it to people. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -48665,6 +52905,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "ruben-dario-meaning",
+      "question": "meaning",
+      "name": "Rubén Darío",
+      "short": "Darío",
+      "work": "Lo fatal",
+      "excerpt": "Ser y no saber nada, y ser sin rumbo cierto,",
+      "translation": "To be and to know nothing, and to be without a sure course,",
+      "period": "1905",
+      "dateShort": "1905",
+      "dateFull": "1905",
+      "sortYear": 1905,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Lo_fatal",
+      "locator": "Second stanza, first line.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Lo fatal appeared in Cantos de vida y esperanza (Madrid, 1905); the poem is not dated more closely and Darío was often in Paris and Madrid in these years, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Lo_fatal",
+      "review": "draft",
+      "readings": {
+        "meaning": {
+          "score": "no-meaning",
+          "facet": "Life without direction",
+          "why": "The poet counts conscious life as the greatest burden and describes it as being without a sure course, with no known origin or destination. No purpose is given, and none is made.",
+          "limit": "A lyric poem whose speaker envies trees and stones; it dramatizes dread and is not an argued doctrine, and the poet wrote devotional verse elsewhere. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -48884,6 +53160,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "bernard-odowd-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Bernard O’Dowd",
+      "short": "O’Dowd",
+      "work": "Our Duty (sonnet)",
+      "excerpt": "Ay, what were Love, my love, did we not love Our stricken brothers so, as to resign For Its own sake, the foison of Its dower",
+      "period": "c. 1906",
+      "dateShort": "c. 1906",
+      "dateFull": "circa 1906 (printed in the 1906 anthology)",
+      "sortYear": 1906,
+      "sourceLabel": "Bertram Stevens (ed.), An Anthology of Australian Verse (1906), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Our_Duty",
+      "locator": "Last sestet of the sonnet, lines beginning “Ay, what were Love, my love”.",
+      "place": "Melbourne, Victoria, Australia",
+      "lat": -37.81,
+      "lng": 144.96,
+      "anchorType": "Residence of author",
+      "placeNote": "O’Dowd lived and worked in Melbourne (he was a librarian in the Victorian Supreme Court library). The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/An_Anthology_of_Australian_Verse/Our_Duty",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Love that serves the stricken",
+          "why": "O’Dowd’s sonnet asks what private love would be if the lovers did not love others enough to give up its fullness for their sake. Love’s own richness is subordinated to helping the oppressed, which puts the good of others first.",
+          "limit": "A literary sonnet from the Melbourne poet’s socialist-idealist phase, printed in a 1906 anthology; the speaker is a lover addressing a beloved and the argument is carried by rhetorical questions, not a plain doctrine.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -49245,6 +53556,148 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nandi-proverbs-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "The Nandi: Their Language and Folk-lore, Nandi Proverbs, no. 15",
+      "excerpt": "The Sun is owned by everybody, but a man's body is owned by himself alone.",
+      "locator": "Nandi Proverbs, no. 15 (Ki-am-doi Asis). The scanned text contains recognition errors.",
+      "name": "Nandi proverbs (collected by Alfred Claud Hollis)",
+      "short": "Nandi proverbs",
+      "period": "Collected c. 1905–1909; published 1909",
+      "dateShort": "1909",
+      "dateFull": "1909",
+      "sortYear": 1909,
+      "sourceLabel": "A. C. Hollis, The Nandi: Their Language and Folk-lore (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nanditheirlangua00holl/nanditheirlangua00holl_djvu.txt",
+      "place": "Nandi country near Kapsabet, Kenya",
+      "lat": 0.2,
+      "lng": 35.1,
+      "anchorType": "Traditional association",
+      "placeNote": "Hollis was a colonial official in the East Africa Protectorate who took down Nandi sayings in Nandi, with literal and free English renderings. The linked page does not tie this proverb to a place, so the pin marks the Nandi highlands, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/nanditheirlangua00holl/nanditheirlangua00holl_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "self",
+          "facet": "A body owned by oneself alone",
+          "why": "The proverb contrasts the sun, which belongs to all, with a man's body, which belongs to himself alone. Final authority over one's own person is given to the individual rather than to the community.",
+          "limit": "An anonymous proverb recorded in Nandi and translated by a colonial official, who matches it to “Each for himself and God for us all”; it speaks of ownership of the body and does not say that one's own good outranks duties to others. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "nandi-proverbs-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "The Nandi: Their Language and Folk-lore, Nandi Proverbs, no. 49",
+      "excerpt": "Let us put our trembling legs together in one place, and we shall obtain support one from the other.",
+      "locator": "Nandi Proverbs, no. 49. The scanned text contains recognition errors.",
+      "name": "Nandi proverbs (collected by Alfred Claud Hollis)",
+      "short": "Nandi proverbs",
+      "period": "Collected c. 1905–1909; published 1909",
+      "dateShort": "1909",
+      "dateFull": "1909",
+      "sortYear": 1909,
+      "sourceLabel": "A. C. Hollis, The Nandi: Their Language and Folk-lore (1909), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/nanditheirlangua00holl/nanditheirlangua00holl_djvu.txt",
+      "place": "Nandi country near Kapsabet, Kenya",
+      "lat": 0.2,
+      "lng": 35.1,
+      "anchorType": "Traditional association",
+      "placeNote": "Hollis was a colonial official in the East Africa Protectorate who took down Nandi sayings in Nandi, with literal and free English renderings. The linked page does not tie this proverb to a place, so the pin marks the Nandi highlands, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/nanditheirlangua00holl/nanditheirlangua00holl_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Trembling legs put together",
+          "why": "The proverb has weak, trembling people stand together so that each steadies the other. Support comes from company, and standing alone is treated as the weaker position.",
+          "limit": "An anonymous proverb recorded in Nandi and translated by a colonial official, who glosses it as “the necessity of joint action”; it concerns mutual support in danger, not the value of solitude. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "delmira-agustini-inward-or-others",
+      "question": "inward-or-others",
+      "name": "Delmira Agustini",
+      "short": "Agustini",
+      "work": "Íntima",
+      "excerpt": "Y sé que en nuestras vidas se produjo el milagro inefable del reflejo... En el silencio de la noche mi alma llega a la tuya como un gran espejo.",
+      "translation": "And I know that in our lives the ineffable miracle of reflection took place... In the silence of the night my soul comes to yours like a great mirror.",
+      "period": "c. 1907–1913",
+      "dateShort": "c. 1910",
+      "dateFull": "circa 1907 to 1913",
+      "sortYear": 1910,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/%C3%8Dntima_(Agustini)",
+      "locator": "Stanza beginning “Y sé que en nuestras vidas”.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.85,
+      "lng": -56.17,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Agustini lived in Montevideo until her death in 1914 and published her books there; the poem’s date and place are not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/%C3%8Dntima_(Agustini)",
+      "review": "draft",
+      "readings": {
+        "inward-or-others": {
+          "score": "others",
+          "facet": "A soul that mirrors another",
+          "why": "After shutting her longings inside herself, the speaker says she sees and is held up through the beloved, whose soul she meets as a mirror. Her sense of herself comes by way of another person.",
+          "limit": "A love lyric addressed to one person, in which the turn outward follows a long period of closed solitude; it does not generalize to others beyond the lover. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "delmira-agustini-solitude-or-company",
+      "question": "solitude-or-company",
+      "name": "Delmira Agustini",
+      "short": "Agustini",
+      "work": "Íntima",
+      "excerpt": "Las cumbres de la vida son tan solas, ¡tan solas y tan frías! Yo encerré mis ansias en mi misma, y toda entera como una torre de marfil me alcé.",
+      "translation": "The summits of life are so lonely, so lonely and so cold! I shut my longings within myself, and whole I raised myself like an ivory tower.",
+      "period": "c. 1907–1913",
+      "dateShort": "c. 1910",
+      "dateFull": "circa 1907 to 1913",
+      "sortYear": 1910,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/%C3%8Dntima_(Agustini)",
+      "locator": "Stanza beginning “Yo te diré los sueños de mi vida”, second to third stanzas.",
+      "place": "Montevideo, Uruguay",
+      "lat": -34.85,
+      "lng": -56.17,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Agustini lived in Montevideo until her death in 1914 and published her books there; the poem’s date and place are not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/%C3%8Dntima_(Agustini)",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "unscored",
+          "facet": "The cold summits of life",
+          "why": "The speaker describes a self shut in alone as lonely and cold, then opens it to a beloved, saying that in silence she wavered and holds herself up through the other. A second, independent reading moved this placement from “company” to “unscored”: The words call life’s heights lonely and cold and then describe a self shut in like a tower; they do not say which is better.",
+          "limit": "A love lyric addressed to one person, so company here means a lover and not society at large; the poem is by a young poet of the Uruguayan modernist circle. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "emma-goldman-desire",
       "question": "desire",
       "name": "Emma Goldman",
@@ -49386,6 +53839,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "casely-hayford-given-or-made",
+      "question": "given-or-made",
+      "excerpt": "Truly, it is of thine own building. No one may build for another.",
+      "name": "J. E. Casely Hayford",
+      "short": "Casely Hayford",
+      "work": "Ethiopia Unbound, chapter IV, “Love and Death”",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Internet Archive scan of the 1911 edition (full text)",
+      "sourceUrl": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "place": "Gold Coast (now Ghana)",
+      "lat": 5.14,
+      "lng": -1.25,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Casely Hayford was a lawyer and nationalist based on the Gold Coast, and the book was published in London in 1911. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "locator": "Chapter IV, “Love and Death”, the speech of Mansa beginning “Truly, it is of thine own building”. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Character built by oneself",
+          "why": "Mansa, the guardian spirit, tells her husband that the habitation he is raising in the sacred city is his own work, built from his character, and that no one else can build it for him. What a person becomes is made by that person's own effort.",
+          "limit": "Spoken by a fictional goddess in a novel, in a chapter that mixes Akan and Christian imagery; the point is moral character after death, not inborn endowment, which the passage does not discuss.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "casely-hayford-lasting-self",
       "question": "lasting-self",
       "excerpt": "I do not mean this frail body of mine, which is but a casket.",
@@ -49488,6 +53976,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "casely-hayford-ultimate-reality",
+      "question": "ultimate-reality",
+      "excerpt": "By knowledge God planned out the heavens, and laid deep the foundations of the earth.",
+      "name": "J. E. Casely Hayford",
+      "short": "Casely Hayford",
+      "work": "Ethiopia Unbound, chapter IV, “Love and Death”",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Internet Archive scan of the 1911 edition (full text)",
+      "sourceUrl": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "place": "Gold Coast (now Ghana)",
+      "lat": 5.14,
+      "lng": -1.25,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Casely Hayford was a lawyer and nationalist based on the Gold Coast, and the book was published in London in 1911. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ethiopiaunbounds00hayf/ethiopiaunbounds00hayf_djvu.txt",
+      "locator": "Chapter IV, “Love and Death”, Mansa’s speech to Kwamankra beginning “I talk of naught, husband mine”. The scanned text contains recognition errors.",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as planner of the heavens",
+          "why": "Mansa says that God planned the heavens and laid the foundations of the earth by knowledge, which affirms a God behind the world who made it with understanding.",
+          "limit": "Spoken by a fictional goddess in a novel that blends Akan and Christian ideas of the divine (the god Nyiakrapon and “God”); it is a literary speech, not an argument for God. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -49890,6 +54413,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ganda-proverbs-suffering",
+      "question": "suffering",
+      "name": "Ganda proverbs (collected by John Roscoe)",
+      "short": "Ganda proverbs",
+      "work": "The Baganda, chapter on folklore, proverbs",
+      "excerpt": "He who has not suffered does not know how to pity.",
+      "period": "Collected c. 1900–1910; published 1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "John Roscoe, The Baganda (1911), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/bagandaaccountof00roscuoft/bagandaaccountof00roscuoft_djvu.txt",
+      "locator": "Chapter XVII (Folklore), list of proverbs. The scanned text contains recognition errors.",
+      "place": "Buganda, Uganda",
+      "lat": 0.32,
+      "lng": 32.58,
+      "anchorType": "Traditional association",
+      "placeNote": "Roscoe, a Church Missionary Society missionary, lived in Buganda from 1891 and collected the proverbs there. The linked page does not tie this proverb to a place, so the pin marks Kampala, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/bagandaaccountof00roscuoft/bagandaaccountof00roscuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Suffering teaches pity",
+          "why": "The proverb says that only a person who has suffered knows how to pity. Suffering is given no purpose of its own, but it teaches compassion, which places it as something that can be used.",
+          "limit": "An anonymous Ganda proverb noted and translated by a missionary in 1911; no explanation from Ganda speakers accompanies it. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "hiratsuka-raicho-relationships",
       "question": "relationships",
       "name": "Hiratsuka Raichō",
@@ -49959,6 +54517,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "augusto-dos-anjos-death",
+      "question": "death",
+      "name": "Augusto dos Anjos",
+      "short": "Anjos",
+      "work": "Psychologia de um Vencido (Eu, 1912)",
+      "excerpt": "Anda a espreitar meus olhos para roêl-os, E ha de deixar-me apenas os cabellos, Na frialdade inorganica da terra!",
+      "translation": "It is watching my eyes in order to gnaw them, and will leave me only the hair, in the inorganic coldness of the earth!",
+      "period": "1912",
+      "dateShort": "1912",
+      "dateFull": "1912",
+      "sortYear": 1912,
+      "sourceLabel": "Eu (1912), Portuguese Wikisource",
+      "sourceUrl": "https://pt.wikisource.org/wiki/Eu_(Augusto_dos_Anjos,_1912)/Psychologia_de_um_Vencido",
+      "locator": "Final tercets of the sonnet.",
+      "place": "Rio de Janeiro, Brazil",
+      "lat": -22.9,
+      "lng": -43.25,
+      "anchorType": "Publication place",
+      "placeNote": "Eu was published in Rio de Janeiro in 1912, where the poet had moved in 1910; the individual poem’s date and place of writing are not given on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://pt.wikisource.org/wiki/Eu_(Augusto_dos_Anjos,_1912)/Psychologia_de_um_Vencido",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "The worm and the cold earth",
+          "why": "The speaker, a self-described son of carbon and ammonia, expects the worm to consume him until only hair remains in the cold earth. Nothing is said to survive.",
+          "limit": "A lyric of morbid self-portrait in a sonnet by a poet who mixes scientific vocabulary with despair; the spelling is that of the 1912 edition. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -50293,6 +54887,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hausa-proverbs-desire",
+      "question": "desire",
+      "locator": "Proverb 42 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "excerpt": "Allah made the (great) silk cotton tree beautiful, let the (little) chidia tree cease being angry (discontented).",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Contentment with a smaller lot",
+          "why": "The proverb tells the small tree not to resent the great one, since Allah made each as it is. Envy is to be set aside and wanting is brought into line with one's given place, which is a call to moderate desire rather than to renounce it.",
+          "limit": "An anonymous proverb recorded and translated by a colonial official in 1913; the Muslim framing is explicit, and the saying addresses envy of rank and beauty, not appetite in general. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "hausa-proverbs-free-will",
       "question": "free-will",
       "name": "Hausa proverbs (collected by R. S. Rattray)",
@@ -50325,6 +54954,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hausa-proverbs-given-or-made",
+      "question": "given-or-made",
+      "locator": "Proverb 40 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "excerpt": "He who is naturally gifted in anything becomes expert in it.",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Natural gift made into skill",
+          "why": "The proverb names a natural gift as the starting point and says the gifted person becomes expert in the thing. An endowment is given, and the saying treats it as developing into skill, so a person is both given and made. A second, independent reading moved this placement from “both” to “given”: The words make the natural gift the cause of the skill; they give no separate part to teaching or effort.",
+          "limit": "An anonymous proverb recorded and translated by a colonial official in 1913; it concerns skill, and the translation does not say whether practice or the gift does more of the work. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -50395,6 +55059,112 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "hausa-proverbs-suffering",
+      "question": "suffering",
+      "locator": "Proverb 23 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "excerpt": "The goat will learn sense by having its ears slit.",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Learning sense through pain",
+          "why": "The proverb says a goat gains sense through the cutting of its ears. Pain has no purpose of its own here, but it teaches, which places the saying with suffering that can be used.",
+          "limit": "An anonymous proverb recorded and translated by a colonial official in 1913; it is about learning from punishment or injury and says nothing of suffering sent by God or of suffering that teaches nothing. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "hausa-proverbs-ultimate-reality",
+      "question": "ultimate-reality",
+      "locator": "Proverb 122 of the numbered list in the second volume. The scanned text contains recognition errors.",
+      "excerpt": "To whom does everything belong? to Allah.",
+      "name": "Hausa proverbs (collected by R. S. Rattray)",
+      "short": "Hausa proverbs",
+      "period": "Collected c. 1910s; published 1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "R. S. Rattray, Hausa Folk-Lore (1913), vol. 2, Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "work": "Hausa Folk-Lore, Customs, Proverbs, etc., vol. 2, Proverbs",
+      "place": "Hausaland, northern Nigeria",
+      "lat": 12,
+      "lng": 8.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were taken down in Hausa with Rattray’s English translation, in Northern Nigeria, which was then a British protectorate. The text gives no place for any single saying, so the pin marks Kano, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hausafolklorecus02rattuoft/hausafolklorecus02rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Everything belongs to Allah",
+          "why": "The proverb answers its own question: all things belong to Allah. It affirms a single owner and ruler behind everything that exists.",
+          "limit": "An anonymous Muslim Hausa proverb, recorded and translated by a colonial official in 1913; it asserts God's lordship and gives no argument or description of Allah. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jose-ingenieros-given-or-made",
+      "question": "given-or-made",
+      "name": "José Ingenieros",
+      "short": "Ingenieros",
+      "work": "El hombre mediocre, Los caracteres mediocres",
+      "excerpt": "Los caracteres excelentes ascienden á la propia dignidad, nadando contra todas las corrientes rebajadoras",
+      "translation": "Excellent characters rise to their own dignity, swimming against all the lowering currents",
+      "period": "1913",
+      "dateShort": "1913",
+      "dateFull": "1913",
+      "sortYear": 1913,
+      "sourceLabel": "El hombre mediocre (1913 edition), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/El_hombre_mediocre_(1913)/Los_caracteres_mediocres",
+      "locator": "Chapter “Los caracteres mediocres”, section I, “Hombres y sombras”. The scanned text contains recognition errors.",
+      "place": "Buenos Aires, Argentina",
+      "lat": -34.6,
+      "lng": -58.45,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ingenieros lived and taught in Buenos Aires, and the book appeared in 1913 (published in Argentina and Spain per the linked page); the place of writing is not stated there, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/El_hombre_mediocre_(1913)/Los_caracteres_mediocres",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Rising to one’s own dignity",
+          "why": "Ingenieros contrasts people who drift with every current and never individualize themselves with those who rise to dignity by swimming against the stream. Character is reached by effort.",
+          "limit": "A moralizing essay with a sharp contrast between the mediocre and the excellent, in a spelling of 1913; the text is a scan with recognition errors, and the essay assumes some are born able to rise. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -51080,6 +55850,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-hardy-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Thomas Hardy",
+      "short": "Hardy",
+      "work": "“God’s Funeral”, in Satires of Circumstance",
+      "excerpt": "tricked by our own early dream And need of solace, we grew self-deceived, Our making soon our maker did we deem, And what we had imagined we believed.",
+      "period": "Written 1908–1910; published 1914",
+      "dateShort": "1914",
+      "dateFull": "written 1908–1910; published 1914",
+      "sortYear": 1914,
+      "sourceLabel": "Internet Archive scan of Satires of Circumstance (Macmillan, 1914)",
+      "sourceUrl": "https://archive.org/stream/satiresofcircums00harduoft/satiresofcircums00harduoft_djvu.txt",
+      "locator": "Stanza VIII of “God’s Funeral”, p. 49. The scanned text contains recognition errors.",
+      "place": "Max Gate, Dorchester, England",
+      "lat": 50.71,
+      "lng": -2.43,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The poem is dated 1908–10 at its end, and Hardy lived at Max Gate, Dorchester, from 1885 until his death. The scan does not say where he wrote it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Max_Gate",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "no-ultimate",
+          "facet": "God as a human creation",
+          "why": "In the poem a procession of mourners says that people made the figure they called God, then took their own creation for their maker. The passage treats God as an imagined being that has now died.",
+          "limit": "The words belong to the mourners in a dream-vision, and the narrator says he sympathises with them while the poem ends on a faint, ambiguous light. It is a poem, and Hardy described himself in other places as unsure, not as a confident denier. The text is a scanned 1914 edition with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "amado-nervo-meaning",
       "question": "meaning",
       "name": "Amado Nervo",
@@ -51284,6 +56089,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ashanti-proverbs-death",
+      "question": "death",
+      "work": "Ashanti Proverbs, no. 36",
+      "excerpt": "A good spirit (ghost) looks after its child.",
+      "locator": "Chapter I (belief in a Supreme Being, animism and ancestors), no. 36. The scanned text contains recognition errors.",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The good ghost watching over its child",
+          "why": "The proverb takes for granted that a dead parent remains a spirit who watches over a surviving child. Something of the person goes on after death and keeps up its care.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist; it assumes the belief in ancestral spirits and does not describe the afterlife. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ashanti-proverbs-desire",
+      "question": "desire",
+      "work": "Ashanti Proverbs, no. 718",
+      "excerpt": "One cannot both feast and become rich.",
+      "locator": "Chapter XIV (General Precepts and Maxims), no. 718. The scanned text contains recognition errors.",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "train",
+          "facet": "Feasting and wealth cannot be had together",
+          "why": "The proverb says that a person who feasts will not grow rich, so the appetite for enjoyment must be held back if the wish for wealth is to be met. Desire is set against desire and has to be moderated.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist; it makes a practical point about spending and says nothing of whether wanting itself is good or bad. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ashanti-proverbs-free-will",
       "question": "free-will",
       "name": "Ashanti proverbs collected by R. S. Rattray",
@@ -51386,6 +56261,111 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "ashanti-proverbs-relationships",
+      "question": "relationships",
+      "work": "Ashanti Proverbs, no. 494",
+      "excerpt": "When you have no mother and you go to some one's house to play, and she (the mother) admonishes her children, you profit by some of that advice yourself.",
+      "locator": "Chapter IX (chiefs, slaves, the family), no. 494. The scanned text contains recognition errors.",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "contributory",
+          "facet": "Advice meant for other children",
+          "why": "The proverb says a motherless child who plays in another house still takes in the advice a mother gives her own children. Other people's guidance shapes the child even when it was not aimed at that child, so relationships help form the self without being the only source.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist; it concerns the upbringing of children and does not state a view of the self as a whole.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ashanti-proverbs-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "Ashanti Proverbs, no. 201",
+      "excerpt": "When a fowl is eating your friend's grain, drive it away, for some day it will eat yours.",
+      "locator": "Chapter IV (Birds), no. 201. The scanned text contains recognition errors.",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "A neighbour's loss as one's own",
+          "why": "The proverb tells a person to protect a friend's grain from the fowl because the same fowl will come to one's own. Helping the friend and guarding oneself are one act, so neither good comes first.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist; it appeals to prudence and does not say what is owed when helping a friend brings no benefit to oneself.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ashanti-proverbs-suffering",
+      "question": "suffering",
+      "work": "Ashanti Proverbs, no. 13",
+      "excerpt": "If the Supreme Being gives you sickness, He (also) gives you medicine.",
+      "locator": "Chapter I (belief in a Supreme Being, animism and ancestors), no. 13. The scanned text contains recognition errors.",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "period": "Collected 1913–1916; published 1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "Rattray collected Ashanti proverbs while serving in the Gold Coast administration; the proverbs belong to the Akan-speaking Ashanti of the Kumasi region. The linked page gives no collection site; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/cu31924027161961/cu31924027161961_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "has-meaning",
+          "facet": "Sickness and its medicine from one source",
+          "why": "The proverb says that the Supreme Being sends sickness and also supplies its cure. Suffering is treated as sent from the same hand that provides relief, which places it as part of a larger good.",
+          "limit": "An anonymous proverb recorded and translated by a colonial anthropologist; it speaks of bodily sickness and does not say why the sickness is sent. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -51564,6 +56544,78 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "amado-nervo-free-will",
+      "question": "free-will",
+      "name": "Amado Nervo",
+      "short": "Nervo",
+      "work": "En paz",
+      "excerpt": "yo fui el arquitecto de mi propio destino;",
+      "translation": "I was the architect of my own destiny;",
+      "period": "1909–1918, collected in Elevación (1917)",
+      "dateShort": "1917",
+      "dateFull": "published in 1917",
+      "sortYear": 1917,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/En_paz",
+      "locator": "Third stanza, second line.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Nervo lived in Mexico City and in diplomatic posts abroad; En paz was published in Elevación (1917). Its place of writing is not documented in the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/En_paz",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Architect of one’s destiny",
+          "why": "The speaker looks back over his life and says that he built his own destiny, which makes his course the work of his own choices.",
+          "limit": "A lyric that gives a personal verdict and not an argument about freedom, and it does not consider limits set by birth or circumstance. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "amado-nervo-happiness",
+      "question": "happiness",
+      "name": "Amado Nervo",
+      "short": "Nervo",
+      "work": "En paz",
+      "excerpt": "que si extraje la miel o la hiel de las cosas, fue porque en ellas puse hiel o mieles sabrosas: cuando planté rosales, coseché siempre rosas.",
+      "translation": "that whether I drew honey or gall from things, it was because I had put gall or sweet honey in them: when I planted rosebushes, I always harvested roses.",
+      "period": "1909–1918, collected in Elevación (1917)",
+      "dateShort": "1917",
+      "dateFull": "published in 1917",
+      "sortYear": 1917,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/En_paz",
+      "locator": "Fourth to sixth lines of the poem.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Nervo lived in Mexico City and in diplomatic posts abroad; En paz was published in Elevación (1917). Its place of writing is not documented in the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/En_paz",
+      "review": "draft",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Honey or gall from things",
+          "why": "The speaker says that the sweetness or bitterness he found in things was what he had put into them, so his contentment came from himself and not from what life dealt him.",
+          "limit": "A short lyric of retrospective acceptance written near the end of the poet’s life, with a gentle tone that passes over real misfortune. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "cesar-vallejo-suffering",
       "question": "suffering",
       "name": "César Vallejo",
@@ -51597,6 +56649,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "cesar-vallejo-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "César Vallejo",
+      "short": "Vallejo",
+      "work": "Los dados eternos (Los heraldos negros)",
+      "excerpt": "Dios mío, si tú hubieras sido hombre, hoy supieras ser Dios; pero tú, que estuviste siempre bien, no sientes nada de tu creación.",
+      "translation": "My God, if you had been a man, today you would know how to be God; but you, who have always been well, feel nothing of your creation.",
+      "period": "1918",
+      "dateShort": "1918",
+      "dateFull": "1918",
+      "sortYear": 1918,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Los_dados_eternos",
+      "locator": "Second stanza.",
+      "place": "Trujillo, Peru",
+      "lat": -8.11,
+      "lng": -79.03,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Los heraldos negros was published in Lima in 1918 and its poems were written in the preceding years, partly in Trujillo and Lima; this poem is not dated more closely, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Los_dados_eternos",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "A God who feels nothing",
+          "why": "The speaker addresses God as a real being who made the world but who, never having suffered, does not feel it. The poem accuses God and does not deny him.",
+          "limit": "A poem of protest by a speaker in grief; it quarrels with God rather than affirming a doctrine, and a reader could place it differently. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -51864,6 +56952,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ramon-lopez-velarde-desire",
+      "question": "desire",
+      "name": "Ramón López Velarde",
+      "short": "López Velarde",
+      "work": "Hormigas",
+      "excerpt": "Antes de que deserten mis hormigas, Amada, déjalas caminar camino de tu boca",
+      "translation": "Before my ants desert me, Beloved, let them walk the road to your mouth",
+      "period": "c. 1917–1919",
+      "dateShort": "c. 1918",
+      "dateFull": "circa 1917 to 1919",
+      "sortYear": 1918,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Hormigas",
+      "locator": "Fourth stanza, first lines.",
+      "place": "Mexico City, Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "López Velarde lived in Mexico City from 1914 until his death in 1921; the poem’s date and place are not stated on the linked page, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Hormigas",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "follow",
+          "facet": "Before the ants desert",
+          "why": "The speaker likens his desire to ants in his veins that will leave him as he ages and asks the beloved to let it run its course to her mouth before death. Desire is to be satisfied while it lasts.",
+          "limit": "A love poem addressed to one person, in dense figurative language that also dwells on decay and death; the poem’s date is not given on the linked page. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "alfonsina-storni-desire",
       "question": "desire",
       "name": "Alfonsina Storni",
@@ -51968,6 +57092,183 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "name": "Hafiz Ibrahim",
+      "short": "Hafiz Ibrahim",
+      "period": "before 1932",
+      "dateShort": "by 1932",
+      "dateFull": "written before the poet’s death in 1932",
+      "sortYear": 1920,
+      "place": "Cairo, Egypt",
+      "lat": 30.05,
+      "lng": 31.24,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "id": "hafiz-ibrahim-free-will",
+      "question": "free-will",
+      "work": "Poem “La talum kaffi idha al-sayf naba”",
+      "translation": "Do not blame my hand if the sword fails: my resolve was sound, but time refused.",
+      "locator": "Opening couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D9%84%D8%A7_%D8%AA%D9%84%D9%85_%D9%83%D9%81%D9%89_%D8%A5%D8%B0%D8%A7_%D8%A7%D9%84%D8%B3%D9%8A%D9%81_%D9%86%D8%A8%D8%A7",
+      "placeSource": "https://ar.wikisource.org/wiki/%D9%84%D8%A7_%D8%AA%D9%84%D9%85_%D9%83%D9%81%D9%89_%D8%A5%D8%B0%D8%A7_%D8%A7%D9%84%D8%B3%D9%8A%D9%81_%D9%86%D8%A8%D8%A7",
+      "placeNote": "Hafiz Ibrahim lived and worked in Cairo for most of his career and died there in 1932; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "excerpt": "لا تلم كفى إذا السيف نبا صح منى العزم و الدهر أبى",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Resolve sound, fate refusing",
+          "why": "The poet says that when his sword failed his own resolve was sound but time refused. A person can will rightly yet be defeated by what lies outside the will.",
+          "limit": "The opening line of a patriotic poem of disappointment in his own nation, with a long narrative about a lover and a call to war; it speaks of a failed effort and not of free will in general. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Hafiz Ibrahim",
+      "short": "Hafiz Ibrahim",
+      "period": "before 1932",
+      "dateShort": "by 1932",
+      "dateFull": "written before the poet’s death in 1932",
+      "sortYear": 1920,
+      "place": "Cairo, Egypt",
+      "lat": 30.05,
+      "lng": 31.24,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "id": "hafiz-ibrahim-suffering",
+      "question": "suffering",
+      "work": "Poem “Khalaqta li nafsan fa-arsadtaha”",
+      "translation": "So grant me a soul untouched by sorrow; perhaps it will know the taste of happiness.",
+      "locator": "Second couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%AE%D9%84%D9%82%D8%AA_%D9%84%D9%8A_%D9%86%D9%81%D8%B3%D8%A7_%D9%81%D8%A3%D8%B1%D8%B5%D8%AF%D8%AA%D9%87%D8%A7",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%AE%D9%84%D9%82%D8%AA_%D9%84%D9%8A_%D9%86%D9%81%D8%B3%D8%A7_%D9%81%D8%A3%D8%B1%D8%B5%D8%AF%D8%AA%D9%87%D8%A7",
+      "placeNote": "Hafiz Ibrahim lived and worked in Cairo for most of his career and died there in 1932; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "excerpt": "فامنُنْ بنَفْسٍ لم يَشُبْها الأَسَى لَعلَّهَا تَعرِفُ طَعمَ الهناءْ",
+      "readings": {
+        "suffering": {
+          "score": "no-purpose",
+          "facet": "A soul made for grief",
+          "why": "After complaining that God made his soul for grief and affliction, the poet asks for a soul free of sorrow, so that it might know happiness. Suffering is treated as something to be lifted, not as meant for anything.",
+          "limit": "A two-couplet prayer that is a poem of complaint; it expresses a wish and does not say that suffering has no purpose in so many words. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ila-informants-death",
+      "question": "death",
+      "work": "The Ila-speaking Peoples of Northern Rhodesia, chapter XX (Dynamism)",
+      "excerpt": "When a person dies the corpse remains alone and the shadow goes to God.",
+      "locator": "Chapter XX (Dynamism), page 93, the account dictated about the shadow and witchcraft. The scanned text contains recognition errors.",
+      "name": "Ila informants (recorded by Edwin W. Smith and Andrew Murray Dale)",
+      "short": "Ila informants",
+      "period": "Collected c. 1902–1919; published 1920",
+      "dateShort": "1920",
+      "dateFull": "1920",
+      "sortYear": 1920,
+      "sourceLabel": "E. W. Smith and A. M. Dale, The Ila-speaking Peoples of Northern Rhodesia (1920), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "place": "Ila country near Namwala, Zambia",
+      "lat": -15.75,
+      "lng": 26.45,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The authors were missionaries among the Ba-ila of the Kafue flats in what was then Northern Rhodesia; the book gives the words of men of the region. The linked text names no single village for this passage, so the pin marks Namwala, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The shadow that goes to God",
+          "why": "An Ila speaker explains that the visible shadow is the person, and that at death the body stays behind while the shadow goes to God. Something of the person continues after death.",
+          "limit": "A statement taken down in Ila and translated by two missionaries, offered in the course of explaining witchcraft; the same passage says a person whose shadow is taken by a sorcerer perishes altogether, and other Ila accounts of the dead differ. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ila-informants-lasting-self",
+      "question": "lasting-self",
+      "work": "The Ila-speaking Peoples of Northern Rhodesia, part IV (religion), on reincarnation",
+      "excerpt": "I am my grandfather, I entered my mother's womb to be born.",
+      "locator": "Part IV, chapter on the soul and reincarnation, page 153, the sentence beginning “But we have again and again heard men say”. The scanned text contains recognition errors.",
+      "name": "Ila informants (recorded by Edwin W. Smith and Andrew Murray Dale)",
+      "short": "Ila informants",
+      "period": "Collected c. 1902–1919; published 1920",
+      "dateShort": "1920",
+      "dateFull": "1920",
+      "sortYear": 1920,
+      "sourceLabel": "E. W. Smith and A. M. Dale, The Ila-speaking Peoples of Northern Rhodesia (1920), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "place": "Ila country near Namwala, Zambia",
+      "lat": -15.75,
+      "lng": 26.45,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The authors were missionaries among the Ba-ila of the Kafue flats in what was then Northern Rhodesia; the book gives the words of men of the region. The linked text names no single village for this passage, so the pin marks Namwala, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "A person as a returned grandfather",
+          "why": "Ila men are reported to say that a person is a grandfather returned, who entered the mother's womb to be born again. The self is treated as one and the same across death and birth, which places it as lasting.",
+          "limit": "A saying that the authors report having heard “again and again”, not a worked-out doctrine; they note that Ila opinion differs on when the ancestral spirit enters the child and what relation it bears to the soul. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ila-informants-ultimate-reality",
+      "question": "ultimate-reality",
+      "work": "The Ila-speaking Peoples of Northern Rhodesia, vol. 2, part IV (religion)",
+      "excerpt": "He is Owner-of-his- things : all things are his. He cannot be charged with an offence, cannot be accused, cannot be questioned",
+      "locator": "Part IV, chapter on the Ba-ila idea of God, in the old man Kambunga's account of Leza. The scanned text contains recognition errors.",
+      "name": "Ila informants (recorded by Edwin W. Smith and Andrew Murray Dale)",
+      "short": "Ila informants",
+      "period": "Collected c. 1902–1919; published 1920",
+      "dateShort": "1920",
+      "dateFull": "1920",
+      "sortYear": 1920,
+      "sourceLabel": "E. W. Smith and A. M. Dale, The Ila-speaking Peoples of Northern Rhodesia (1920), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "place": "Ila country near Namwala, Zambia",
+      "lat": -15.75,
+      "lng": 26.45,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The authors were missionaries among the Ba-ila of the Kafue flats in what was then Northern Rhodesia; the book gives the words of old men of the region. The linked text names no single village for this passage, so the pin marks Namwala, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ilaspeakingpeopl02edwi/ilaspeakingpeopl02edwi_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Leza the owner of all things",
+          "why": "An Ila elder speaks of Leza, the high God, as the owner of everything and as a being no one can accuse, question or claim anything from. The passage affirms an ultimate power over the world that stands beyond human judgment.",
+          "limit": "The words of an old chief, taken down in Ila and translated by two missionaries, who print the Ila beside the English; the same speaker says that Leza is no longer as he once was and that people only imagine him, so this line is one stance within a doubtful whole. The scanned text interleaves the two languages and contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -52108,6 +57409,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "bertrand-russell-lasting-self",
+      "question": "lasting-self",
+      "name": "Bertrand Russell",
+      "short": "Russell",
+      "work": "The Analysis of Mind, lecture 1",
+      "excerpt": "The subject, however, appears to be a logical fiction, like mathematical points and instants. It is introduced, not because observation reveals it, but because it is linguistically convenient and apparently demanded by grammar.",
+      "period": "1921",
+      "dateShort": "1921",
+      "dateFull": "1921",
+      "sortYear": 1921,
+      "sourceLabel": "Project Gutenberg text",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/2/2529/2529.txt",
+      "locator": "Lecture 1, “Recent Criticisms of Consciousness”, in the discussion of sensation and the subject.",
+      "place": "London, England",
+      "lat": 51.52,
+      "lng": -0.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The book grew out of lectures that Russell gave in London in 1918 and was published in 1921; the linked text does not state the place of writing, so it still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Analysis_of_Mind",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "The subject as a logical fiction",
+          "why": "Russell argues that the subject or self found in grammar is not observed and may be a convenient fiction, like a point or an instant. He holds that mental life can be described without positing such an entity.",
+          "limit": "Russell says only that the subject appears to be a fiction and that such entities may or may not exist, so the claim is cautious. The passage concerns the self as the grammatical subject of experience, not the person’s identity over time.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -52553,6 +57889,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "maori-tohunga-best-lasting-self",
+      "question": "lasting-self",
+      "name": "Māori tohunga (recorded by Elsdon Best)",
+      "short": "Māori tohunga",
+      "work": "Spiritual and Mental Concepts of the Maori, section “The soul comes from Supreme Being”",
+      "excerpt": "The wairua returns to lo at the death of the body, or abides in the haven provided by the daughter of Hine-ahu-one.",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "Dominion Museum Monograph No. 2 (1922), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "locator": "Section “The soul comes from Supreme Being”, paragraph beginning “The old man replied”. The scanned text contains recognition errors.",
+      "place": "Dominion Museum, Wellington, Aotearoa New Zealand",
+      "lat": -41.29,
+      "lng": 174.78,
+      "anchorType": "Place of publication",
+      "placeNote": "The monograph was published by the Dominion Museum in Wellington, where Best was ethnologist; the teachings were collected earlier, mostly in the Urewera country. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "lasting",
+          "facet": "The wairua returns to its source",
+          "why": "Best reports that, in the teaching he was given, the wairua, the spirit, outlasts the body and either returns to its source or dwells in a haven prepared for it. The self is treated as an enduring spirit.",
+          "limit": "Best’s English summary of teachings collected from Māori elders, mostly Tūhoe, long after contact with missionaries, so the phrasing and the unity of the account are his. Other Māori accounts distinguish several spiritual parts of a person and give different destinations. The scanned text prints the name Io as “lo”.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "maori-tohunga-best-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Māori tohunga (recorded by Elsdon Best)",
+      "short": "Māori tohunga",
+      "work": "Spiritual and Mental Concepts of the Maori, section “The soul comes from Supreme Being”",
+      "excerpt": "The things that make for life and superlative welfare all originated with lo, the Supreme Being.",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922",
+      "sortYear": 1922,
+      "sourceLabel": "Dominion Museum Monograph No. 2 (1922), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "locator": "Section “The soul comes from Supreme Being”, paragraph beginning “The old man replied”. The scanned text contains recognition errors.",
+      "place": "Dominion Museum, Wellington, Aotearoa New Zealand",
+      "lat": -41.29,
+      "lng": 174.78,
+      "anchorType": "Place of publication",
+      "placeNote": "The monograph was published by the Dominion Museum in Wellington, where Best was ethnologist; the teachings were collected earlier, mostly in the Urewera country. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/spiritualmentalc00bestuoft/spiritualmentalc00bestuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Io as source of life",
+          "why": "Best reports the teaching of the Māori priestly schools that the principles of life, including the soul, breath and sacred knowledge, all came from Io, the Supreme Being. That affirms an ultimate source behind the world and human life.",
+          "limit": "Best was an ethnographer writing in 1922 from notes taken from elders, chiefly Tūhoe, between the 1890s and 1910s; the words are his summary, in English. How far the Io teaching is ancient and how far it was shaped in the nineteenth century by contact with Christianity is disputed among scholars. The scanned text prints the name Io as “lo”.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "te-wai-o-hine-death",
       "question": "death",
       "name": "Te Wai-o-hine (Tūhoe; recorded by Elsdon Best)",
@@ -52585,6 +57991,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "trobriand-informants-self-or-others-first",
+      "question": "self-or-others-first",
+      "name": "Trobriand Islanders (recorded by Bronisław Malinowski)",
+      "short": "Trobrianders",
+      "work": "Argonauts of the Western Pacific, chapter on the Kula and native economics",
+      "excerpt": "Meanness, indeed, is the most despised vice, and the only thing about which the natives have strong moral views, while generosity is the essence of goodness.",
+      "period": "1922",
+      "dateShort": "1922",
+      "dateFull": "1922 (fieldwork 1915-1918)",
+      "sortYear": 1922,
+      "sourceLabel": "Project Gutenberg text of the 1922 edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/5/8/2/55822/55822-0.txt",
+      "locator": "Chapter III, section on the Kula and native ideas of wealth, paragraph beginning “Thus the main symptom of being powerful is to be wealthy”.",
+      "place": "Omarakana, Kiriwina, Trobriand Islands, Papua New Guinea",
+      "lat": -8.52,
+      "lng": 151.07,
+      "smallIsland": true,
+      "anchorType": "Documented fieldwork location",
+      "placeNote": "Malinowski’s main fieldwork base was Omarakana on Kiriwina, in the Trobriand Islands; the linked page gives the text only, so the exact village still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/5/5/8/2/55822/55822-0.txt",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "Generosity as goodness",
+          "why": "Malinowski reports that in the Kula region meanness is the one vice the people strongly condemn and generosity is the core of goodness. Giving to others is held above hoarding for oneself.",
+          "limit": "This is Malinowski’s own summary of what he saw and was told during fieldwork in 1915-1918, not a direct quotation of a named speaker, and the book also stresses that giving builds a giver’s rank and secures return gifts. The words reach the reader through a recorder writing in English for a European readership.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -53212,6 +58654,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "name": "Ahmad Shawqi",
+      "short": "Shawqi",
+      "period": "before 1932",
+      "dateShort": "by 1932",
+      "dateFull": "written before the poet’s death in 1932",
+      "sortYear": 1925,
+      "place": "Cairo, Egypt",
+      "lat": 30.05,
+      "lng": 31.24,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "ahmad-shawqi-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "Fable “Infa’ bi-ma u’tita min qudra”",
+      "translation": "Benefit others with the power you have been given and intercede for the one at fault in the assembly, for how will you rise to eminence if you neither benefit nor intercede?",
+      "locator": "Opening two couplets of the fable.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A5%D9%86%D9%81%D8%B9_%D8%A8%D9%85%D8%A7_%D8%A3%D8%B9%D8%B7%D9%8A%D8%AA_%D9%85%D9%86_%D9%82%D8%AF%D8%B1%D8%A9",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%A5%D9%86%D9%81%D8%B9_%D8%A8%D9%85%D8%A7_%D8%A3%D8%B9%D8%B7%D9%8A%D8%AA_%D9%85%D9%86_%D9%82%D8%AF%D8%B1%D8%A9",
+      "placeNote": "Shawqi lived and wrote chiefly in Cairo, with exile in Spain from 1914 to 1920; the linked page does not date or place this fable, so the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "إنفعْ بِما أُعطِيتَ من قدرَةٍ واشفع لذي الذنبِ لَدَى المجمعِ إذ كيفَ تسمو للعلا يا فتى إن أنتَ لم تنفع ولم تشفعِ",
+      "readings": {
+        "self-or-others-first": {
+          "score": "both",
+          "facet": "Rising by benefiting others",
+          "why": "The opening of the fable tells the reader to use his power to help others and to plead for the guilty, and asks how he could rise otherwise. His own rise is made to depend on serving others.",
+          "limit": "The couplets open a verse fable for children (the lion and the frog) and state its moral; the poet’s other writing is often courtly, and the date of this fable is not given. The English is the atlas's own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "gandhi-meaning",
       "question": "meaning",
       "name": "Mohandas K. Gandhi",
@@ -53314,6 +58792,186 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "name": "Khalil Mutran",
+      "short": "Mutran",
+      "period": "before 1949",
+      "dateShort": "by 1949",
+      "dateFull": "written before the poet’s death in 1949",
+      "sortYear": 1925,
+      "place": "Cairo, Egypt",
+      "lat": 30.05,
+      "lng": 31.24,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "work": "Poem “Amantu bi-Allah, kullu shay’in”",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A2%D9%85%D9%8E%D9%86%D9%92%D8%AA%D9%8F_%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%87%D9%90_%D9%83%D9%8F%D9%84%D9%8F%D9%91_%D8%B4%D9%8E%D9%8A%D8%A1%D9%8D",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%A2%D9%85%D9%8E%D9%86%D9%92%D8%AA%D9%8F_%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%87%D9%90_%D9%83%D9%8F%D9%84%D9%8F%D9%91_%D8%B4%D9%8E%D9%8A%D8%A1%D9%8D",
+      "placeNote": "Mutran, born in Baalbek, Lebanon, lived and worked in Cairo from 1892 until his death in 1949; the linked page does not date or place this short poem, so the place still needs an editor’s confirmation.",
+      "id": "khalil-mutran-truth",
+      "question": "truth",
+      "translation": "I am not able to grasp it, but if my mind goes astray, my heart will guide me.",
+      "locator": "Second couplet of the poem.",
+      "excerpt": "مَا بِيَ إِدْرَاكُهُ وَلَكِ نَّ إِنْ يَغْوِ عَقْلِي يُرْشِدْ فُؤَادِي",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "Where reason fails, the heart guides",
+          "why": "The poet says he cannot grasp the divine truth by his reason, but that his heart guides him when his mind strays. The truth is held to be reached in part, through the heart, and not fully by the intellect.",
+          "limit": "The second couplet of a very short devotional lyric; the 'it' is God, and the poem does not argue the point or say what the heart knows. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Khalil Mutran",
+      "short": "Mutran",
+      "period": "before 1949",
+      "dateShort": "by 1949",
+      "dateFull": "written before the poet’s death in 1949",
+      "sortYear": 1925,
+      "place": "Cairo, Egypt",
+      "lat": 30.05,
+      "lng": 31.24,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "work": "Poem “Amantu bi-Allah, kullu shay’in”",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A2%D9%85%D9%8E%D9%86%D9%92%D8%AA%D9%8F_%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%87%D9%90_%D9%83%D9%8F%D9%84%D9%8F%D9%91_%D8%B4%D9%8E%D9%8A%D8%A1%D9%8D",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%A2%D9%85%D9%8E%D9%86%D9%92%D8%AA%D9%8F_%D8%A8%D9%90%D8%A7%D9%84%D9%84%D9%87%D9%90_%D9%83%D9%8F%D9%84%D9%8F%D9%91_%D8%B4%D9%8E%D9%8A%D8%A1%D9%8D",
+      "placeNote": "Mutran, born in Baalbek, Lebanon, lived and worked in Cairo from 1892 until his death in 1949; the linked page does not date or place this short poem, so the place still needs an editor’s confirmation.",
+      "id": "khalil-mutran-ultimate-reality",
+      "question": "ultimate-reality",
+      "translation": "I believe in God; everything in what we see is a guide to Him.",
+      "locator": "First line of the poem.",
+      "excerpt": "آمَنْتُ بِاللهِ كُلُّ شَيءٍ فِيمَا نَرَاهُ إِلَيْهِ هَادِ",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Everything points to God",
+          "why": "The poet affirms God and says everything seen is a guide to Him. The ultimate is taken as real and as shown through the world.",
+          "limit": "The first line of a two-couplet lyric by a Lebanese-born poet who lived in Cairo; the next couplet admits that the intellect cannot grasp what the heart is guided to. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Maruf al-Rusafi",
+      "short": "al-Rusafi",
+      "period": "1910s–1945",
+      "dateShort": "by 1945",
+      "dateFull": "written before the poet’s death in 1945",
+      "sortYear": 1925,
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "maruf-al-rusafi-death",
+      "question": "death",
+      "work": "Poem “Qara’tu wa-ma ghayru al-tabi’ati min sifr”",
+      "translation": "The days compose us as poetry, but deaths return what they composed to prose.",
+      "locator": "Couplet in the first third of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D9%82%D8%B1%D8%A3%D8%AA_%D9%88%D9%85%D8%A7_%D8%BA%D9%8A%D8%B1_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9_%D9%85%D9%86_%D8%B3%D9%81%D8%B1",
+      "placeSource": "https://ar.wikisource.org/wiki/%D9%82%D8%B1%D8%A3%D8%AA_%D9%88%D9%85%D8%A7_%D8%BA%D9%8A%D8%B1_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D8%A9_%D9%85%D9%86_%D8%B3%D9%81%D8%B1",
+      "placeNote": "Al-Rusafi lived mainly in Baghdad, with periods in Istanbul and Jerusalem; the linked page does not date or place this poem, so the pin is Baghdad and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "تنظّمنا الايام شعراً وانما تردُّ المنايا ما نَظمن إلى النثر",
+      "readings": {
+        "death": {
+          "score": "ends",
+          "facet": "Life as verse that death turns to prose",
+          "why": "The poet compares people to lines of verse that the days compose and death returns to plain prose. Death is the unmaking of what life composed, with no continuation mentioned.",
+          "limit": "A meditative poem set among graves, built on an extended metaphor of poetry; the passage describes the end of the form of a life and does not discuss the afterlife. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Maruf al-Rusafi",
+      "short": "al-Rusafi",
+      "period": "1910s–1945",
+      "dateShort": "by 1945",
+      "dateFull": "written before the poet’s death in 1945",
+      "sortYear": 1925,
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "maruf-al-rusafi-free-will",
+      "question": "free-will",
+      "work": "Poem “Kullu ibn Adam maqhurun bi-adat”",
+      "translation": "Every child of Adam is overpowered by habits, to which he submits in all his acts of will.",
+      "locator": "Opening couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D9%83%D9%84_%D8%A7%D8%A8%D9%86_%D8%A7%D8%AF%D9%85_%D9%85%D9%82%D9%87%D9%88%D8%B1_%D8%A8%D8%B9%D8%A7%D8%AF%D8%A7%D8%AA",
+      "placeSource": "https://ar.wikisource.org/wiki/%D9%83%D9%84_%D8%A7%D8%A8%D9%86_%D8%A7%D8%AF%D9%85_%D9%85%D9%82%D9%87%D9%88%D8%B1_%D8%A8%D8%B9%D8%A7%D8%AF%D8%A7%D8%AA",
+      "placeNote": "Al-Rusafi lived mainly in Baghdad, with periods in Istanbul and Jerusalem; the linked page does not date or place this poem, so the pin is Baghdad and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "كلُّ ابن ادم مقهورٌ بعادات لهنَّ ينقاد في كل الإرادات",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Ruled by habits",
+          "why": "The poem's opening says every person is overpowered by habits and obeys them in all his willing. Choices are traced to settled habit.",
+          "limit": "The poem is a half-humorous reflection on the smoking habit, in which the speaker admits to smoking himself; the opening line is a generalisation and not a worked theory of will. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Maruf al-Rusafi",
+      "short": "al-Rusafi",
+      "period": "1910s–1945",
+      "dateShort": "by 1945",
+      "dateFull": "written before the poet’s death in 1945",
+      "sortYear": 1925,
+      "place": "Baghdad, Iraq",
+      "lat": 33.33,
+      "lng": 44.4,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "maruf-al-rusafi-meaning",
+      "question": "meaning",
+      "work": "Poem “Tayaqqaz fa-ma anta bi-al-khalid”",
+      "translation": "So make immortal, by your striving, a glory that lasts like the stars, which no one denies.",
+      "locator": "Third couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%AA%D9%8A%D9%82%D8%B8_%D9%81%D9%85%D8%A7_%D8%A7%D9%86%D8%AA_%D8%A8%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%AA%D9%8A%D9%82%D8%B8_%D9%81%D9%85%D8%A7_%D8%A7%D9%86%D8%AA_%D8%A8%D8%A7%D9%84%D8%AE%D8%A7%D9%84%D8%AF",
+      "placeNote": "Al-Rusafi lived mainly in Baghdad, with periods in Istanbul and Jerusalem; the linked page does not date or place this poem, so the pin is Baghdad and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "فخلَّد بسعيك مجداً يدومُ دوام النجوم بلا جاحد",
+      "readings": {
+        "meaning": {
+          "score": "meaning-made",
+          "facet": "Making a lasting name by effort",
+          "why": "Told that he is not immortal, the reader is urged to give his life lasting worth by his own striving. Meaning is something a person builds through effort.",
+          "limit": "A poem of exhortation to the reader to act and to learn; the meaning it offers is a lasting good name earned by effort. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -53505,6 +59163,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "unreachable",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "horacio-quiroga-given-or-made",
+      "question": "given-or-made",
+      "name": "Horacio Quiroga",
+      "short": "Quiroga",
+      "work": "Decálogo del perfecto cuentista",
+      "excerpt": "el desarrollo de la personalidad es una larga paciencia.",
+      "translation": "the development of personality is a long patience.",
+      "period": "1927",
+      "dateShort": "1927",
+      "dateFull": "1927",
+      "sortYear": 1927,
+      "sourceLabel": "Spanish text, Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Dec%C3%A1logo_del_perfecto_cuentista",
+      "locator": "Rule III.",
+      "place": "Buenos Aires, Argentina",
+      "lat": -34.6,
+      "lng": -58.4,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The Decálogo was published in 1927; Quiroga lived mostly in Buenos Aires and in Misiones at this time, and the linked page gives no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Dec%C3%A1logo_del_perfecto_cuentista",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Personality as long patience",
+          "why": "In advice to young story writers, Quiroga says personality grows slowly through patience and imitation, which is a view of a self formed by effort.",
+          "limit": "A set of rules for the craft of the short story, so the remark is about an artist’s style and not about persons in general. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -53943,6 +59637,150 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "name": "Abu al-Qasim al-Shabbi",
+      "short": "al-Shabbi",
+      "period": "1920s–1934",
+      "dateShort": "by 1934",
+      "dateFull": "written before the poet’s death in 1934",
+      "sortYear": 1930,
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "id": "abu-al-qasim-al-shabbi-death",
+      "question": "death",
+      "work": "Poem “Ila al-mawt” (To Death)",
+      "translation": "In the world of death, life casts off the robe of sorrow and the mask of darkness.",
+      "locator": "Middle of the poem, after the couplet beginning “To death, if misfortunes besiege you”.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A5%D9%84%D9%89_%D8%A7%D9%84%D9%85%D9%88%D8%AA",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%A5%D9%84%D9%89_%D8%A7%D9%84%D9%85%D9%88%D8%AA",
+      "placeNote": "Al-Shabbi lived and wrote in Tunisia and died in Tunis in 1934; the linked page does not date or place this poem, so the pin is the capital and the place still needs an editor’s confirmation.",
+      "excerpt": "في عالمِ المَوْتِ تَنْضُو الحياةُ رِداءَ الأَسَى ، وقِناعَ الظَّلامْ",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Life putting off sorrow in death",
+          "why": "The poem addresses a weary person and says that in the world of death life sheds the robe of sorrow and the mask of darkness. Death is pictured as a place where life goes on, freed of grief.",
+          "limit": "A lyric of despair in which the speaker calls on a suffering person to turn to death; it is a poetic consolation and not a statement of belief, and the poem's mood is one of weariness. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Abu al-Qasim al-Shabbi",
+      "short": "al-Shabbi",
+      "period": "1920s–1934",
+      "dateShort": "by 1934",
+      "dateFull": "written before the poet’s death in 1934",
+      "sortYear": 1930,
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "abu-al-qasim-al-shabbi-meaning",
+      "question": "meaning",
+      "work": "Poem “Khuliqna li-nablugha sha’wa al-kamal”",
+      "translation": "We were created to reach the summit of perfection and become worthy of the glory of eternity.",
+      "locator": "Opening couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%AE%D9%84%D9%82%D9%86%D8%A7_%D9%84%D9%86%D8%A8%D9%84%D8%BA%D9%8E_%D8%B4%D9%8E%D8%A3%D9%88%D9%8E_%D8%A7%D9%84%D9%83%D9%85%D8%A7%D9%84%D9%90",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%AE%D9%84%D9%82%D9%86%D8%A7_%D9%84%D9%86%D8%A8%D9%84%D8%BA%D9%8E_%D8%B4%D9%8E%D8%A3%D9%88%D9%8E_%D8%A7%D9%84%D9%83%D9%85%D8%A7%D9%84%D9%90",
+      "placeNote": "Al-Shabbi lived and wrote in Tunisia and died in Tunis in 1934; the linked page does not date or place this poem, so the pin is the capital and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "خلقنا لنبلغَ شَأوَ الكمالِ وَنُصبحَ أهلاً لمجدِ الخُلُودْ",
+      "readings": {
+        "meaning": {
+          "score": "meaning-given",
+          "facet": "Created to reach perfection",
+          "why": "The short poem says humans were created to reach perfection and become worthy of eternal glory. The purpose of life is stated as set by the act of creation.",
+          "limit": "A very short, undated lyric on the page; the verses that follow say sorrow purifies the soul, and the speaker is a poet and not a doctrinal authority. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Abu al-Qasim al-Shabbi",
+      "short": "al-Shabbi",
+      "period": "1920s–1934",
+      "dateShort": "by 1934",
+      "dateFull": "written before the poet’s death in 1934",
+      "sortYear": 1930,
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "review": "draft",
+      "id": "abu-al-qasim-al-shabbi-suffering",
+      "question": "suffering",
+      "work": "Poem “Tabarramta bi-al-aysh khawfa al-fana”",
+      "translation": "Were it not for life's painful misery, people would never grasp the meaning of happiness; and whoever has never been startled by the frown of the dark would not rejoice in the new morning.",
+      "locator": "Final couplets of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%AA%D8%A8%D8%B1%D9%85%D8%AA_%D8%A8%D8%A7%D9%84%D8%B9%D9%8A%D8%B4_%D8%AE%D9%88%D9%81_%D8%A7%D9%84%D9%81%D9%86%D8%A7%D8%A1",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%AA%D8%A8%D8%B1%D9%85%D8%AA_%D8%A8%D8%A7%D9%84%D8%B9%D9%8A%D8%B4_%D8%AE%D9%88%D9%81_%D8%A7%D9%84%D9%81%D9%86%D8%A7%D8%A1",
+      "placeNote": "Al-Shabbi lived and wrote in Tunisia and died in Tunis in 1934; the linked page does not date or place this poem, so the pin is the capital and the place still needs an editor’s confirmation.",
+      "excerpt": "ولولا شقاءُ الحياةِ الأليمِ لما أدركَ النَّاسُ معنى السُّعودْ ومن لم يرُعْه قطوبُ الديَاجيرِ لَمْ يغتبطْ بالصّباح الجديدْ",
+      "readings": {
+        "suffering": {
+          "score": "can-be-used",
+          "facet": "Misery teaches what joy means",
+          "why": "The poet says that without life's painful misery people would not understand happiness, and that only one who has met darkness can welcome morning. Suffering is not given a purpose of its own but is shown to teach what joy is.",
+          "limit": "A lyric addressed to a reader who fears mortality; the lines argue from contrast and do not claim that every suffering is justified. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Abu al-Qasim al-Shabbi",
+      "short": "al-Shabbi",
+      "period": "1920s–1934",
+      "dateShort": "by 1934",
+      "dateFull": "written before the poet’s death in 1934",
+      "sortYear": 1930,
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing location",
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "id": "abu-al-qasim-al-shabbi-truth",
+      "question": "truth",
+      "work": "Poem “Ajaban li! uriddu an afhama al-kawn”",
+      "translation": "I wish to understand the universe, while my own soul has not been able to understand itself.",
+      "locator": "Opening couplet of the poem.",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%B9%D8%AC%D8%A8%D8%A7_%D9%84%D9%8A%21_%D8%A3%D9%88%D8%AF_%D8%A3%D9%86_%D8%A3%D9%81%D9%87%D9%85_%D8%A7%D9%84%D9%83%D9%88%D9%86",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%B9%D8%AC%D8%A8%D8%A7_%D9%84%D9%8A%21_%D8%A3%D9%88%D8%AF_%D8%A3%D9%86_%D8%A3%D9%81%D9%87%D9%85_%D8%A7%D9%84%D9%83%D9%88%D9%86",
+      "placeNote": "Al-Shabbi lived and wrote in Tunisia and died in Tunis in 1934; the linked page does not date or place this poem, so the pin is the capital and the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "excerpt": "أودُّ أن أَفْهَمَ الكونَ، ونفسي لَمْ تستطعْ فَهْمَ نفسِي",
+      "readings": {
+        "truth": {
+          "score": "not-knowable",
+          "facet": "Not even one's own soul understood",
+          "why": "The poet marvels that he wants to understand the universe when his own soul cannot understand itself. Knowing the deepest things is placed out of reach, starting from the self.",
+          "limit": "A lyric of grief and doubt by a young poet, not an argument; the poem goes on to say that all he has learned from the universe is that he is heading for the grave. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "bertrand-russell-happiness",
       "question": "happiness",
       "name": "Bertrand Russell",
@@ -54224,6 +60062,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "sol-plaatje-relationships",
+      "question": "relationships",
+      "work": "Mhudi, chapter 21",
+      "excerpt": "She made me what I am, I feel certain that your manhood will never be recognised as long as you remain wifeless.",
+      "locator": "Chapter 21, Ra-Thaga's speech to Phil Jay beginning “Why, don’t you fancy anyone?”",
+      "sourceUrl": "https://en.wikisource.org/wiki/Mhudi/Chapter_21",
+      "placeSource": "https://en.wikisource.org/wiki/Mhudi/Chapter_21",
+      "name": "Sol Plaatje",
+      "short": "Plaatje",
+      "period": "Written c. 1919–1920; published 1930",
+      "dateShort": "1930",
+      "dateFull": "1930",
+      "sortYear": 1930,
+      "sourceLabel": "Wikisource transcription of the Lovedale Press edition (1930)",
+      "place": "Kimberley, South Africa",
+      "lat": -28.74,
+      "lng": 24.77,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Plaatje lived and edited his newspaper in Kimberley, and Mhudi was drafted around 1919–1920 and published at Lovedale in 1930. The linked page does not say where the chapter was written; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "A wife who makes the man",
+          "why": "Ra-Thaga says his wife Mhudi made him what he is and that his friend's manhood will not be recognised until he marries. The speaker's being a man is credited to a relationship, which places the claim at the constitutive end.",
+          "limit": "A speech by a fictional character in a novel, urging a friend to marry; it speaks of manhood and marriage and does not generalise to all relationships. The passage is partly humorous.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sol-plaatje-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "Mhudi, chapter 21",
+      "excerpt": "A man was not made to live alone,",
+      "locator": "Chapter 21, Ra-Thaga's speech to Phil Jay beginning “Why, don’t you fancy anyone?”",
+      "sourceUrl": "https://en.wikisource.org/wiki/Mhudi/Chapter_21",
+      "placeSource": "https://en.wikisource.org/wiki/Mhudi/Chapter_21",
+      "name": "Sol Plaatje",
+      "short": "Plaatje",
+      "period": "Written c. 1919–1920; published 1930",
+      "dateShort": "1930",
+      "dateFull": "1930",
+      "sortYear": 1930,
+      "sourceLabel": "Wikisource transcription of the Lovedale Press edition (1930)",
+      "place": "Kimberley, South Africa",
+      "lat": -28.74,
+      "lng": 24.77,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Plaatje lived and edited his newspaper in Kimberley, and Mhudi was drafted around 1919–1920 and published at Lovedale in 1930. The linked page does not say where the chapter was written; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "readings": {
+        "solitude-or-company": {
+          "score": "company",
+          "facet": "Not made to live alone",
+          "why": "Ra-Thaga tells his friend Phil that a man is not made for solitude and urges him to marry. Living alone is treated as falling short of what a person is meant for.",
+          "limit": "A line spoken by a fictional character in a novel and aimed at a bachelor friend; it concerns marriage in particular, and the novel also shows lonely wanderers surviving by themselves.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "sol-plaatje-ultimate-reality",
+      "question": "ultimate-reality",
+      "work": "Mhudi, chapter 8",
+      "excerpt": "This immense dome, so lofty and yet so brilliant, suggested the power of its Maker, who apparently also made the trees and birds, and beasts and men",
+      "locator": "Chapter 8, paragraph beginning “Crouching down for the night”.",
+      "sourceUrl": "https://en.wikisource.org/wiki/Mhudi/Chapter_8",
+      "placeSource": "https://en.wikisource.org/wiki/Mhudi/Chapter_8",
+      "name": "Sol Plaatje",
+      "short": "Plaatje",
+      "period": "Written c. 1919–1920; published 1930",
+      "dateShort": "1930",
+      "dateFull": "1930",
+      "sortYear": 1930,
+      "sourceLabel": "Wikisource transcription of the Lovedale Press edition (1930)",
+      "place": "Kimberley, South Africa",
+      "lat": -28.74,
+      "lng": 24.77,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Plaatje lived and edited his newspaper in Kimberley, and Mhudi was drafted around 1919–1920 and published at Lovedale in 1930. The linked page does not say where the chapter was written; the place still needs an editor’s confirmation.",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The Maker seen in the night sky",
+          "why": "Mhudi, alone for the night under the stars, reads the heavens as a sign of the power of a Maker who made trees, animals and people. The passage takes a maker for granted, then goes on to ask where this Spirit is and why such people as the Matebele were made.",
+          "limit": "A passage of narration in a novel, spoken through a fictional woman of the 1830s and written by Plaatje about ninety years later; it expresses wonder and doubt, not a doctrine. It is not Plaatje's statement of his own creed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "gandhi-suffering",
       "question": "suffering",
       "name": "Mohandas K. Gandhi",
@@ -54330,6 +60273,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "abu-al-qasim-al-shabbi-free-will",
+      "question": "free-will",
+      "name": "Abu al-Qasim al-Shabbi",
+      "short": "al-Shabbi",
+      "translation": "If a people one day wills life, then fate must answer.",
+      "period": "1933",
+      "dateShort": "1933",
+      "dateFull": "1933",
+      "sortYear": 1933,
+      "sourceLabel": "Arabic text, Arabic Wikisource",
+      "sourceUrl": "https://ar.wikisource.org/wiki/%D8%A5%D8%B1%D8%A7%D8%AF%D8%A9_%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9",
+      "locator": "Opening couplet of the poem 'Iradat al-Hayat' (The Will to Life).",
+      "place": "Tunis, Tunisia",
+      "lat": 36.8,
+      "lng": 10.18,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Al-Shabbi, a Tunisian poet, lived and wrote in Tunisia, studying in Tunis; the exact town where this poem was written is not given on the linked page, so the pin is the capital and the place still needs an editor’s confirmation.",
+      "placeSource": "https://ar.wikisource.org/wiki/%D8%A5%D8%B1%D8%A7%D8%AF%D8%A9_%D8%A7%D9%84%D8%AD%D9%8A%D8%A7%D8%A9",
+      "excerpt": "إذا الشّعْبُ يَوْمَاً أرَادَ الْحَيَـاةَ فَلا بُدَّ أنْ يَسْتَجِيبَ القَـدَر",
+      "review": "draft",
+      "work": "Iradat al-Hayat (The Will to Life)",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "The will of a people to live",
+          "why": "The poet states that when a people wills to live, destiny must respond to that will, so that fate yields to resolve and not the reverse. The opening couplet puts agency on the side of the chooser.",
+          "limit": "An opening couplet of a lyric poem in Modern Standard Arabic, written for a political and poetic call to a colonised people; it speaks of a collective will, and not of individual choice in the philosophical sense. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "narada-thera-free-will",
       "question": "free-will",
       "name": "Nārada Mahāthera",
@@ -54432,6 +60411,258 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-death",
+      "question": "death",
+      "work": "Divan, Qasida section: “Someone asked Socrates what he had learned from dying”",
+      "translation": "He said: O unaware one, why do you call life death? If one day you fly up from this low earth, you will see the realm of that other world, its heavens and universes.",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%82%D8%B5%D8%A7%D8%A6%D8%AF)/%DB%8C%DA%A9%DB%8C_%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF_%D8%A7%D8%B2_%D8%B3%D9%82%D8%B1%D8%A7%D8%B7_%DA%A9%D8%B2_%D9%85%D8%B1%D8%AF%D9%86_%DA%86%D9%87_%D8%AE%D9%88%D8%A7%D9%86%D8%AF%D8%B3%D8%AA%DB%8C",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%82%D8%B5%D8%A7%D8%A6%D8%AF)/%DB%8C%DA%A9%DB%8C_%D9%BE%D8%B1%D8%B3%DB%8C%D8%AF_%D8%A7%D8%B2_%D8%B3%D9%82%D8%B1%D8%A7%D8%B7_%DA%A9%D8%B2_%D9%85%D8%B1%D8%AF%D9%86_%DA%86%D9%87_%D8%AE%D9%88%D8%A7%D9%86%D8%AF%D8%B3%D8%AA%DB%8C",
+      "locator": "Opening two couplets of the qasida.",
+      "excerpt": "بگفت ای بیخبر، مرگ از چه نامی زندگانی را اگر زین خاکدان پست روزی بر پری بینی که گردونها و گیتی‌هاست ملک آن جهانی را",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Calling life death",
+          "why": "Socrates, as imagined by the poet, answers that what is called death is life, and that rising from the earth shows a larger world with its own heavens. Death is placed as a passage to another realm.",
+          "limit": "A reply put in the mouth of Socrates in a moral poem, which draws on Persian Sufi and Platonic ideas and not on the historical Socrates. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-desire",
+      "question": "desire",
+      "work": "Divan, Mathnavi and Tamthil section: “In a dark cave a dervish slept”",
+      "translation": "Since every treasure has a snake to guard it, I want neither this treasure nor that snake.",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A8%D8%BA%D8%A7%D8%B1%DB%8C_%D8%AA%DB%8C%D8%B1%D9%87%D8%8C_%D8%AF%D8%B1%D9%88%DB%8C%D8%B4%DB%8C_%D8%AF%D9%85%DB%8C_%D8%AE%D9%81%D8%AA",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A8%D8%BA%D8%A7%D8%B1%DB%8C_%D8%AA%DB%8C%D8%B1%D9%87%D8%8C_%D8%AF%D8%B1%D9%88%DB%8C%D8%B4%DB%8C_%D8%AF%D9%85%DB%8C_%D8%AE%D9%81%D8%AA",
+      "locator": "Couplet near the middle of the poem, in the dervish's reply to the treasure.",
+      "excerpt": "چو شد هر گنج را ماری نگهدار نه این گنجینه میخواهم، نه آن مار",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Refusing the guarded treasure",
+          "why": "A dervish answers a treasure that offers to lift him from poverty by saying that wealth always comes with a guarding snake and that he wants neither. Desire for riches is set aside because of what it brings.",
+          "limit": "The words are spoken by a dervish in a verse fable, not by the poet in her own voice, though the fable's moral is the poet's. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "parvin-etesami-free-will",
+      "question": "free-will",
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "work": "Divan, Qasida section: “Strange! This is not the road of God”",
+      "translation": "You shut your eyes and fall into the well; this is your fault, not the decree of fate.",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%82%D8%B5%D8%A7%D8%A6%D8%AF)/%D8%A7%DB%8C_%D8%B9%D8%AC%D8%A8%21_%D8%A7%DB%8C%D9%86_%D8%B1%D8%A7%D9%87_%D9%86%D9%87_%D8%B1%D8%A7%D9%87_%D8%AE%D8%AF%D8%A7%D8%B3%D8%AA",
+      "locator": "Couplet in the first third of the poem, after “you cross this ravine and a thief follows you”.",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%82%D8%B5%D8%A7%D8%A6%D8%AF)/%D8%A7%DB%8C_%D8%B9%D8%AC%D8%A8%21_%D8%A7%DB%8C%D9%86_%D8%B1%D8%A7%D9%87_%D9%86%D9%87_%D8%B1%D8%A7%D9%87_%D8%AE%D8%AF%D8%A7%D8%B3%D8%AA",
+      "excerpt": "دیده ببندی و درافتی بچاه این گنه تست، نه حکم قضاست",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Falling by one's own fault",
+          "why": "The poem tells the reader that a fall into a well after closing one's eyes is the person's own fault, not a decree of fate. Responsibility is put on the one who chose not to see.",
+          "limit": "A line of moral exhortation in a long didactic qasida, not an argument about causation; the same poem speaks of nafs and demons leading people astray. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "review": "draft",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-inward-or-others",
+      "question": "inward-or-others",
+      "work": "Divan, Mathnavi and Tamthil section: “O heart, the first step of the good-hearted”",
+      "translation": "To rebuild a ruined heart is better than raising a palace.",
+      "locator": "Last line of the poem.",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A7%DB%8C_%D8%AF%D9%84%D8%8C_%D8%A7%D9%88%D9%84_%D9%82%D8%AF%D9%85_%D9%86%DB%8C%DA%A9%D8%AF%D9%84%D8%A7%D9%86",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A7%DB%8C_%D8%AF%D9%84%D8%8C_%D8%A7%D9%88%D9%84_%D9%82%D8%AF%D9%85_%D9%86%DB%8C%DA%A9%D8%AF%D9%84%D8%A7%D9%86",
+      "excerpt": "دل ویرانه عمارت کردن خوشتر از کاخ برافراختن است",
+      "readings": {
+        "inward-or-others": {
+          "score": "inward",
+          "facet": "Rebuilding the ruined heart",
+          "why": "The closing line says that repairing a ruined heart is better than building a palace. The work worth doing is placed within the person.",
+          "limit": "The last line of a short moral poem about overcoming greed and the devil; it is a comparison and does not exclude helping others. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-relationships",
+      "question": "relationships",
+      "work": "Divan, Mathnavi and Tamthil section: “In that house where there is no woman”",
+      "translation": "Where would a child without a mother learn the story of love? Where did a land without a sultan find order and safety?",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%AF%D8%B1_%D8%A2%D9%86_%D8%B3%D8%B1%D8%A7%DB%8C_%DA%A9%D9%87_%D8%B2%D9%86_%D9%86%DB%8C%D8%B3%D8%AA%D8%8C_%D8%A7%D9%86%D8%B3_%D9%88_%D8%B4%D9%81%D9%82%D8%AA_%D9%86%DB%8C%D8%B3%D8%AA",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%AF%D8%B1_%D8%A2%D9%86_%D8%B3%D8%B1%D8%A7%DB%8C_%DA%A9%D9%87_%D8%B2%D9%86_%D9%86%DB%8C%D8%B3%D8%AA%D8%8C_%D8%A7%D9%86%D8%B3_%D9%88_%D8%B4%D9%81%D9%82%D8%AA_%D9%86%DB%8C%D8%B3%D8%AA",
+      "locator": "Couplets in the middle of the poem on women, beginning “Where did a child without a mother read the tale of love”.",
+      "excerpt": "حدیث مهر، کجا خواند طفل بی مادر نظام و امن، کجا یافت ملک بی سلطان",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "The child without a mother",
+          "why": "The poem asks how a child with no mother could learn of love, and sets the question beside a land without a ruler finding order. Capacity for love is made to depend on a relationship.",
+          "limit": "Two rhetorical questions in a long didactic poem arguing for the education and standing of women; the poem speaks of the mother's role, not of relationships in general. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-self-or-others-first",
+      "question": "self-or-others-first",
+      "work": "Divan, Mathnavi and Tamthil section: “Have you heard what is the repose of the great”",
+      "translation": "Have you heard what is the repose of the great? Not resting, for the sake of the helpless.",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%B4%D9%86%DB%8C%D8%AF%D9%87%E2%80%8C%D8%A7%DB%8C%D8%AF_%DA%A9%D9%87_%D8%A2%D8%B3%D8%A7%DB%8C%D8%B4_%D8%A8%D8%B2%D8%B1%DA%AF%D8%A7%D9%86_%DA%86%DB%8C%D8%B3%D8%AA:",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%B4%D9%86%DB%8C%D8%AF%D9%87%E2%80%8C%D8%A7%DB%8C%D8%AF_%DA%A9%D9%87_%D8%A2%D8%B3%D8%A7%DB%8C%D8%B4_%D8%A8%D8%B2%D8%B1%DA%AF%D8%A7%D9%86_%DA%86%DB%8C%D8%B3%D8%AA:",
+      "locator": "Opening two lines of the poem.",
+      "excerpt": "شنیده‌اید که آسایش بزرگان چیست: برای خاطر بیچارگان نیاسودن",
+      "review": "draft",
+      "readings": {
+        "self-or-others-first": {
+          "score": "others",
+          "facet": "The rest of the great",
+          "why": "The poem defines the comfort of great people as refusing to rest for the sake of the helpless. Others' need takes priority over one's own ease.",
+          "limit": "The opening of a short didactic poem that goes on to list further virtues; it states an ideal, not a rule for ordinary conduct. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "name": "Parvin E’tesami",
+      "short": "E’tesami",
+      "period": "1920s–1935",
+      "dateShort": "by 1935",
+      "dateFull": "before 1935 (collected in the Divan, 1935)",
+      "sortYear": 1935,
+      "sourceLabel": "Persian text, Persian Wikisource (Divan of Parvin E’tesami)",
+      "place": "Tehran, Iran",
+      "lat": 35.7,
+      "lng": 51.4,
+      "anchorType": "Approximate writing location",
+      "review": "draft",
+      "placeNote": "Parvin E’tesami, born in Tabriz, lived and wrote in Tehran, where her Divan was published in 1935; the linked page does not date or place this poem, so the place still needs an editor’s confirmation.",
+      "id": "parvin-etesami-solitude-or-company",
+      "question": "solitude-or-company",
+      "work": "Divan, Mathnavi and Tamthil section: “How good to move out of the body”",
+      "translation": "How good to move out of the body and make one's home in the soul, and to keep one's face hidden from people like a fairy.",
+      "locator": "Opening couplet of the poem.",
+      "sourceUrl": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A7%DB%8C_%D8%AE%D9%88%D8%B4_%D8%A7%D8%B2_%D8%AA%D9%86_%DA%A9%D9%88%DA%86_%DA%A9%D8%B1%D8%AF%D9%86%D8%8C_%D8%AE%D8%A7%D9%86%D9%87_%D8%AF%D8%B1_%D8%AC%D8%A7%D9%86_%D8%AF%D8%A7%D8%B4%D8%AA%D9%86",
+      "placeSource": "https://fa.wikisource.org/wiki/%D9%BE%D8%B1%D9%88%DB%8C%D9%86_%D8%A7%D8%B9%D8%AA%D8%B5%D8%A7%D9%85%DB%8C_(%D9%85%D8%AB%D9%86%D9%88%DB%8C%D8%A7%D8%AA_%D9%88_%D8%AA%D9%85%D8%AB%DB%8C%D9%84%D8%A7%D8%AA_%D9%88_%D9%85%D9%82%D8%B7%D8%B9%D8%A7%D8%AA)/%D8%A7%DB%8C_%D8%AE%D9%88%D8%B4_%D8%A7%D8%B2_%D8%AA%D9%86_%DA%A9%D9%88%DA%86_%DA%A9%D8%B1%D8%AF%D9%86%D8%8C_%D8%AE%D8%A7%D9%86%D9%87_%D8%AF%D8%B1_%D8%AC%D8%A7%D9%86_%D8%AF%D8%A7%D8%B4%D8%AA%D9%86",
+      "excerpt": "ای خوش از تن کوچ کردن، خانه در جان داشتن روی مانند پری از خلق پنهان داشتن",
+      "readings": {
+        "solitude-or-company": {
+          "score": "solitude",
+          "facet": "Hiding from people like a fairy",
+          "why": "The opening line praises living in the soul rather than the body and keeping one's face hidden from people, like a fairy. Withdrawal from company is held up as the blessed state.",
+          "limit": "The first couplet of a poem that goes on to praise the saints' endurance and learning; the withdrawal described is spiritual and not literal retreat from society. The English is the atlas's own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -62956,11 +69187,6 @@ window.PILOT_EVIDENCE={
       "tradition": "Hinduism",
       "sure": true
     },
-    "Kebra Nagast (speech of Queen Makeda)": {
-      "about": "Ethiopian national epic compiled around 1320 in Aksum, here the speech of Queen Makeda of Sheba.",
-      "tradition": "Christianity",
-      "sure": true
-    },
     "Kena Upanishad": {
       "about": "Sanskrit Upanishad from northern India around 500 BCE, asking what power moves the mind and senses.",
       "tradition": "Hinduism",
@@ -64914,6 +71140,356 @@ window.PILOT_EVIDENCE={
     "Domingo Faustino Sarmiento": {
       "about": "Argentine writer and educator, later president of Argentina, who wrote Facundo in exile in Chile in 1845.",
       "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Abu al-Qasim al-Shabbi": {
+      "about": "Tunisian poet, who wrote in Arabic and died at twenty-five in 1934.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ada Cambridge": {
+      "about": "English-born Australian novelist and poet, who wrote in Victoria from the 1870s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ahmad Shawqi": {
+      "about": "Egyptian poet and dramatist, called the Prince of Poets, who wrote in Cairo until 1932.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Alfred, Lord Tennyson": {
+      "about": "English poet, Poet Laureate from 1850, who wrote In Memoriam over seventeen years after the death of a friend.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Andrés Bello": {
+      "about": "Venezuelan-born poet, grammarian and jurist, who later worked in London and Chile and died in 1865.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Arthur Rimbaud": {
+      "about": "French poet, who wrote all his poetry before the age of twenty-one, in the early 1870s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Aśvaghoṣa": {
+      "about": "Indian Buddhist poet of about the first or second century CE, who wrote a Sanskrit verse life of the Buddha.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Bernard O’Dowd": {
+      "about": "Australian poet and lawyer, who wrote in Melbourne around 1900.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "David MacDonald Ross": {
+      "about": "New Zealand poet of the Waikato, who published The After Glow in 1904.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Debendranath Tagore": {
+      "about": "Bengali religious reformer and leader of the Brahmo Samaj, father of Rabindranath Tagore, who wrote his autobiography in 1898.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Edward Booth Loughran": {
+      "about": "Irish-born Australian journalist and poet, who wrote in Melbourne in the late 1800s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Euahlayi informants (recorded by K. Langloh Parker)": {
+      "about": "Yuwaalaraay people of the Narran River in New South Wales, whose stories were recorded by K. Langloh Parker in the 1890s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Euripides": {
+      "about": "Athenian tragic playwright of the fifth century BCE, author of Medea, Hippolytus and the Bacchae.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Francis Adams": {
+      "about": "English-born writer, who lived in Australia in the 1880s and wrote Songs of the Army of the Night.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ganda proverbs (collected by John Roscoe)": {
+      "about": "Proverbs of the Baganda of Uganda, collected by the missionary John Roscoe and published in 1911.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "George Essex Evans": {
+      "about": "English-born Australian poet, who wrote in Queensland in the 1890s and 1900s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Mirza Ghalib": {
+      "about": "Urdu and Persian poet of Delhi, who wrote ghazals from the 1810s until his death in 1869.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Gonçalves Dias": {
+      "about": "Brazilian Romantic poet, who wrote on Indigenous themes in the 1840s and 1850s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hafiz Ibrahim": {
+      "about": "Egyptian poet, called the Poet of the Nile, who wrote in Cairo until 1932.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Henry Kendall": {
+      "about": "Australian poet of New South Wales, who wrote from the 1860s until 1882.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Hong Xiuquan": {
+      "about": "Founder and leader of the Taiping movement in southern China, who wrote religious tracts in the 1840s.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Horacio Quiroga": {
+      "about": "Uruguayan short-story writer, who lived in Argentina and wrote until 1937.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ila informants (recorded by Edwin W. Smith and Andrew Murray Dale)": {
+      "about": "Ila people of what is now Zambia, whose beliefs and sayings were recorded by Edwin W. Smith and Andrew Murray Dale and published in 1920.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "James Brunton Stephens": {
+      "about": "Scottish-born Australian poet, who wrote in Queensland from the 1870s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "James Lionel Michael": {
+      "about": "English-born Australian poet and solicitor, who wrote in New South Wales in the 1850s and 1860s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Jane Austen": {
+      "about": "English novelist, who published six novels between 1811 and 1818.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "José Ingenieros": {
+      "about": "Argentine physician and philosopher, who published El hombre mediocre in 1913.",
+      "tradition": "Modern philosophy",
+      "sure": true
+    },
+    "José María Heredia": {
+      "about": "Cuban poet, who wrote in exile in Mexico and the United States in the 1820s and 1830s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Junqueira Freire": {
+      "about": "Brazilian poet and former Benedictine monk of Bahia, who died at twenty-two in 1855.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Kālidāsa": {
+      "about": "Sanskrit poet and playwright of about the fourth or fifth century CE, author of Shakuntala.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Kebra Nagast": {
+      "about": "The Glory of Kings, an Ethiopian national epic in Ge‘ez compiled in the early 1300s, telling of the Queen of Sheba and Solomon.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Khalil Mutran": {
+      "about": "Lebanese-born poet, who lived and wrote in Egypt until 1949.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Laws of Manu": {
+      "about": "Sanskrit code of duty and law, compiled in northern India in about the first centuries of the common era.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Lord Byron": {
+      "about": "English Romantic poet, who wrote Childe Harold, Manfred and Don Juan and died in Greece in 1824.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Lotus Sutra": {
+      "about": "Mahayana Buddhist scripture, compiled in India in the first centuries of the common era, teaching one path for all beings.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Manuel Gutiérrez Nájera": {
+      "about": "Mexican poet and journalist, a forerunner of modernismo, who wrote in Mexico City until 1895.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Māori tohunga (recorded by Elsdon Best)": {
+      "about": "Māori experts in sacred knowledge, whose teaching was recorded by Elsdon Best and published in 1922.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Maruf al-Rusafi": {
+      "about": "Iraqi poet and teacher, who wrote in Baghdad until 1945.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Masai proverbs (collected by Alfred Claud Hollis)": {
+      "about": "Proverbs of the Maasai of Kenya and Tanzania, collected by Alfred Claud Hollis and published in 1905.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Mouzi": {
+      "about": "Chinese author of an early defence of Buddhism, written in dialogue form around 200 CE in what is now northern Vietnam.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Nandi proverbs (collected by Alfred Claud Hollis)": {
+      "about": "Proverbs of the Nandi of western Kenya, collected by Alfred Claud Hollis and published in 1909.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Narrinyeri informants (recorded by George Taplin)": {
+      "about": "Ngarrindjeri people of the lower Murray River in South Australia, whose beliefs were recorded by the missionary George Taplin in the 1870s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Nef‘i": {
+      "about": "Ottoman poet and satirist, who wrote in Istanbul and was put to death in 1635.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "The Panchatantra": {
+      "about": "Sanskrit collection of animal fables on worldly wisdom, compiled in India around 300 CE.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Parvin E’tesami": {
+      "about": "Iranian poet, who wrote in Tehran and published her Divan in 1935.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Plácido": {
+      "about": "Cuban poet Gabriel de la Concepción Valdés, a free man of colour, who was executed by the Spanish authorities in 1844.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ramakrishna": {
+      "about": "Bengali mystic and priest of the Kali temple at Dakshineswar, whose sayings were written down by his followers in the 1880s.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Ramón López Velarde": {
+      "about": "Mexican poet, who wrote in Mexico City until 1921.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ruan Ji": {
+      "about": "Chinese poet and musician of the third century, one of the Seven Sages of the Bamboo Grove.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Ruhi of Baghdad": {
+      "about": "Ottoman poet from Baghdad, who died in Damascus in 1605.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Shūdraka": {
+      "about": "Indian playwright to whom The Little Clay Cart, a Sanskrit play of about the fourth or fifth century, is attributed.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Sotho proverbs (recorded by Eugène Casalis)": {
+      "about": "Proverbs of the Basotho of Lesotho, recorded by the missionary Eugène Casalis and published in 1861.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Sutra in Forty-two Sections": {
+      "about": "Short collection of the Buddha’s sayings, by tradition the first Buddhist text translated into Chinese.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Tahitian and Leeward Islands tradition (recorded by William Ellis)": {
+      "about": "Beliefs of the Society Islands, recorded by the missionary William Ellis in the 1820s.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Tan Sitong": {
+      "about": "Chinese reformer and philosopher, who wrote A Study of Benevolence and was executed in 1898.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Thomas Bracken": {
+      "about": "Irish-born New Zealand poet and journalist, who wrote in Dunedin from the 1870s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Tomás Antônio Gonzaga": {
+      "about": "Portuguese-Brazilian poet and judge in Minas Gerais, who wrote Marília de Dirceu in the 1780s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Tongan informants (recorded by William Mariner and John Martin)": {
+      "about": "People of the Tonga Islands, whose beliefs were described by William Mariner, who lived among them from 1806 to 1810.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Trobriand Islanders (recorded by Bronisław Malinowski)": {
+      "about": "People of the Trobriand Islands off New Guinea, whose customs and sayings were recorded by Bronisław Malinowski between 1915 and 1918.",
+      "tradition": "Indigenous and oral traditions",
+      "sure": true
+    },
+    "Wang Xizhi": {
+      "about": "Chinese calligrapher and official of the Eastern Jin, who wrote the Preface to the Orchid Pavilion Collection in 353.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "William Cowper": {
+      "about": "English poet and hymn writer, who wrote at Olney in the 1770s and 1780s.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Xi Kang (Ji Kang)": {
+      "about": "Chinese philosopher, poet and musician of the third century, one of the Seven Sages of the Bamboo Grove.",
+      "tradition": "Daoism",
+      "sure": true
+    },
+    "Xu Gan": {
+      "about": "Chinese scholar of the late Han, who wrote the Balanced Discourses around 210 CE.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Yan Fu": {
+      "about": "Chinese scholar and translator, who introduced Huxley, Mill and Spencer to Chinese readers from 1895.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Yang Xiong": {
+      "about": "Chinese philosopher and poet of the Han dynasty, who wrote the Model Sayings around 5 CE.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Zeng Guofan": {
+      "about": "Chinese statesman and general of the Qing dynasty, whose family letters were written from the 1840s to the 1870s.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Zhuge Liang": {
+      "about": "Chinese statesman and strategist of the Three Kingdoms, chancellor of Shu Han, who died in 234.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Ivan Turgenev": {
+      "about": "Russian novelist, author of Fathers and Sons, who lived much of his later life in France and wrote his Poems in Prose around 1880.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Jean Paul": {
+      "about": "German novelist Johann Paul Friedrich Richter, who wrote in Bavaria around 1800.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Joseph Conrad": {
+      "about": "Polish-born novelist who wrote in English, author of Heart of Darkness and Lord Jim.",
+      "tradition": "Literature and poetry",
       "sure": true
     }
   }
