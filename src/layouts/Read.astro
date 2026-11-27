@@ -49,7 +49,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
 <a class="skip" href="#main">Skip to the page</a>
 <header class="top">
   <a class="mark" href="/">∴ Svapna</a>
-  <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/you">You</a><a href="/search" class="wide-only">Search</a><button id="mode" type="button">Mode</button></nav>
+  <nav><a href="/questions">Questions</a><a href="/thinkers">Thinkers</a><a href="/dream">Dreaming</a><a href="/you">You</a><a href="/search" class="wide-only">Search</a><button id="big-top" type="button" aria-label="Larger text" title="Larger text">A+</button><button id="mode" type="button">Mode</button></nav>
 </header>
 <main id="main" tabindex="-1"><slot /></main>
 <footer class="foot">
@@ -67,7 +67,7 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
     var get = function (k) { try { return JSON.parse(localStorage.getItem(k) || '[]') || []; } catch (e) { return []; } }, set = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
     if (location.pathname.indexOf('/curriculum/module-') === 0) { var read = get('svapna_read'), here = location.pathname.replace(/\/$/, ''); if (read.indexOf(here) < 0) { read.push(here); set('svapna_read', read); } }
     // Plainer type: upright, unjoined letters for the quotes, for anyone who reads them more easily that way.
-    var bb = document.getElementById('big'); if (bb) { var bp = function () { bb.textContent = document.documentElement.dataset.big ? 'Normal text' : 'Larger text'; }; bb.addEventListener('click', function () { var r = document.documentElement; if (r.dataset.big) delete r.dataset.big; else r.dataset.big = '1'; try { localStorage.setItem('svapna_big', r.dataset.big ? '1' : '0'); } catch (e) {} bp(); }); bp(); }
+    var bb = document.getElementById('big'), bt = document.getElementById('big-top'); if (bb) { var bp = function () { var on = !!document.documentElement.dataset.big; bb.textContent = on ? 'Normal text' : 'Larger text'; if (bt) { bt.textContent = on ? 'A−' : 'A+'; bt.setAttribute('aria-label', on ? 'Normal text' : 'Larger text'); bt.title = on ? 'Normal text' : 'Larger text'; } }; if (bt) bt.addEventListener('click', function () { bb.click(); }); bb.addEventListener('click', function () { var r = document.documentElement; if (r.dataset.big) delete r.dataset.big; else r.dataset.big = '1'; try { localStorage.setItem('svapna_big', r.dataset.big ? '1' : '0'); } catch (e) {} bp(); }); bp(); }
     var tb = document.getElementById('type'), root = document.documentElement; if (tb) { var tp = function () { tb.textContent = root.dataset.type === 'plain' ? 'Original type' : 'Plainer type'; }; tb.addEventListener('click', function () { if (root.dataset.type === 'plain') delete root.dataset.type; else root.dataset.type = 'plain'; try { localStorage.setItem('svapna_type', root.dataset.type || ''); } catch (e) {} tp(); }); tp(); }
     // Listen: the device's own voice reads a passage aloud. The buttons appear only where that is possible.
     if ('speechSynthesis' in window) { document.querySelectorAll('[data-say]').forEach(function (b) { b.hidden = false; }); var saying = null;
@@ -80,21 +80,25 @@ const canonical = siteUrl.replace(/\/$/, '') + path;
     function addCard(b) { if (b.nextElementSibling && b.nextElementSibling.dataset.card) return; var s = document.createElement('button'); s.type = 'button'; s.className = 'src quiet'; s.textContent = 'Save as image'; s.dataset.card = '1'; b.after(s); }
     document.querySelectorAll('.who [data-copy]').forEach(addCard); window.svapnaCard = addCard;
     function wrap(x, text, max) { var out = [], line = ''; text.split(/\s+/).forEach(function (w) { var t = line ? line + ' ' + w : w; if (x.measureText(t).width > max && line) { out.push(line); line = w; } else line = t; }); if (line) out.push(line); return out; }
-    document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-card]'); if (!b) return; var row = b.closest('.row, article') || document, cp = row.querySelector('[data-copy]'); if (!cp) return;
-      var m = /^“([\s\S]*)” — ([\s\S]*?)\. https?:\S+$/.exec(cp.dataset.copy) || [null, cp.dataset.copy, ''], tr = row.querySelector('.tr'), quote = (tr ? tr.textContent : m[1]).trim(), by = m[2], was = b.textContent; b.textContent = 'Making it…';
+    document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-card]'); if (!b) return;
+      if (b.dataset.card === '1') { // first tap: offer the two shapes
+        var sq = document.createElement('button'); sq.type = 'button'; sq.className = 'src quiet'; sq.textContent = 'Square'; sq.dataset.card = 'square'; b.textContent = 'Tall'; b.dataset.card = 'tall'; b.after(sq); var lab = document.createElement('span'); lab.className = 'src quiet card-as'; lab.textContent = 'Image:'; b.before(lab); return; }
+      var square = b.dataset.card === 'square', light = document.documentElement.dataset.mode === 'light';
+      var row = b.closest('.row, article') || document, cp = row.querySelector('[data-copy]'); if (!cp) return;
+      var m = /^“([\s\S]*)” — ([\s\S]*?)\. https?:\S+$/.exec(cp.dataset.copy) || [null, cp.dataset.copy, ''], tr = row.querySelector('.tr'), quote = (tr ? tr.textContent : m[1]).trim(), by = m[2], was = b.textContent; b.textContent = '…';
       var fonts = document.fonts ? Promise.all([document.fonts.load("italic 400 60px 'Instrument Serif'"), document.fonts.load("600 34px 'Inter Tight'")]) : Promise.resolve();
       fonts.catch(function () {}).then(function () {
-        var W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H; var x = c.getContext('2d');
-        x.fillStyle = '#05060c'; x.fillRect(0, 0, W, H);
-        var g = x.createRadialGradient(880, 180, 0, 880, 180, 760); g.addColorStop(0, 'rgba(111,143,255,.34)'); g.addColorStop(.5, 'rgba(39,211,168,.14)'); g.addColorStop(1, 'rgba(5,6,12,0)'); x.fillStyle = g; x.fillRect(0, 0, W, H);
-        x.fillStyle = '#f4f4f8'; x.textBaseline = 'top'; x.font = "600 30px 'Inter Tight', sans-serif"; x.fillText('∴ Svapna', 84, 84);
-        var size = 72, lines; do { x.font = 'italic 400 ' + size + "px 'Instrument Serif', Georgia, serif"; lines = wrap(x, '“' + quote + '”', W - 168); size -= 4; } while (lines.length * (size + 4) * 1.16 > 760 && size > 26); size += 4;
-        var lh = size * 1.16, y = 210 + Math.max(0, (760 - lines.length * lh) / 2); lines.forEach(function (l) { x.fillText(l, 84, y); y += lh; });
+        var W = 1080, H = square ? 1080 : 1350, room = square ? 560 : 760, ink = light ? '10,10,14' : '244,244,248', c = document.createElement('canvas'); c.width = W; c.height = H; var x = c.getContext('2d');
+        x.fillStyle = light ? '#f7f6f2' : '#05060c'; x.fillRect(0, 0, W, H);
+        var g = x.createRadialGradient(880, 180, 0, 880, 180, 760); g.addColorStop(0, light ? 'rgba(111,143,255,.30)' : 'rgba(111,143,255,.34)'); g.addColorStop(.5, light ? 'rgba(39,211,168,.12)' : 'rgba(39,211,168,.14)'); g.addColorStop(1, light ? 'rgba(247,246,242,0)' : 'rgba(5,6,12,0)'); x.fillStyle = g; x.fillRect(0, 0, W, H);
+        x.fillStyle = 'rgb(' + ink + ')'; x.textBaseline = 'top'; x.font = "600 30px 'Inter Tight', sans-serif"; x.fillText('∴ Svapna', 84, 84);
+        var size = 72, lines; do { x.font = 'italic 400 ' + size + "px 'Instrument Serif', Georgia, serif"; lines = wrap(x, '“' + quote + '”', W - 168); size -= 4; } while (lines.length * (size + 4) * 1.16 > room && size > 24); size += 4;
+        var lh = size * 1.16, y = (square ? 170 : 210) + Math.max(0, (room - lines.length * lh) / 2); lines.forEach(function (l) { x.fillText(l, 84, y); y += lh; });
         var nm = row.querySelector('.name'), name = nm ? nm.textContent.trim() : (by.indexOf(document.querySelector('h1').textContent.trim()) === 0 ? document.querySelector('h1').textContent.trim() : ''), rest = name && by.indexOf(name) === 0 ? by.slice(name.length).replace(/^,\s*/, '') : '';
         if (!name) { name = by; rest = ''; }
-        x.font = "600 34px 'Inter Tight', sans-serif"; var yy = 1010; wrap(x, name, W - 168).slice(0, 2).forEach(function (l) { x.fillText(l, 84, yy); yy += 44; });
-        x.fillStyle = 'rgba(244,244,248,.66)'; x.font = "500 25px 'Inter Tight', sans-serif"; yy += 6; wrap(x, rest, W - 168).slice(0, 3).forEach(function (l) { x.fillText(l, 84, yy); yy += 35; });
-        x.fillStyle = 'rgba(244,244,248,.5)'; x.font = "500 23px 'Inter Tight', sans-serif"; x.fillText('Checked word for word against its source · svapnaproject.org', 84, H - 110);
+        x.font = "600 34px 'Inter Tight', sans-serif"; var yy = H - 340; wrap(x, name, W - 168).slice(0, 2).forEach(function (l) { x.fillText(l, 84, yy); yy += 44; });
+        x.fillStyle = 'rgba(' + ink + ',.66)'; x.font = "500 25px 'Inter Tight', sans-serif"; yy += 6; wrap(x, rest, W - 168).slice(0, square ? 2 : 3).forEach(function (l) { x.fillText(l, 84, yy); yy += 35; });
+        x.fillStyle = 'rgba(' + ink + ',.5)'; x.font = "500 23px 'Inter Tight', sans-serif"; x.fillText('Checked word for word against its source · svapnaproject.org', 84, H - 110);
         c.toBlob(function (blob) { b.textContent = was; if (!blob) return; var name = 'svapna-' + (row.id || 'passage') + '.jpg', file; try { file = new File([blob], name, { type: 'image/jpeg' }); } catch (err) {}
           if (window.pirsch) { try { window.pirsch('card_saved'); } catch (err) {} }
           if (file && navigator.canShare && navigator.canShare({ files: [file] })) { navigator.share({ files: [file] }).catch(function () {}); return; }

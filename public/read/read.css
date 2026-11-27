@@ -189,4 +189,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}a,button,summary,select
 @media (pointer:coarse){.foot p:not(.fine){gap:0 26px}.foot p:not(.fine) a{padding:11px 0}.keys{gap:0 28px}.keys a{padding:11px 0}.who{display:flex;flex-wrap:wrap;column-gap:22px;align-items:baseline}.who>*{flex:0 0 100%}.who>.src,.who>.src.quiet{flex:0 0 auto;display:inline-block;margin:0;padding:11px 0}.go,.find-eras button,.you-opts button,.find-do button,.fine button,.who a.name,.find>a.small,.child-set summary{position:relative}.go::after,.find-eras button::after,.you-opts button::after,.find-do button::after,.fine button::after,.who a.name::after,.find>a.small::after,.child-set summary::after{content:"";position:absolute;left:-6px;right:-6px;top:50%;height:44px;transform:translateY(-50%)}.find-eras button::after{height:40px}.you-opts{gap:18px 28px}.crumb a,.pos a{padding-block:13px}.find select{min-height:44px}}
 
 /* Larger text, for anyone who reads more easily that way; and the small print is a little less small. */
-html[data-big] body{zoom:1.25}.who{font-size:15px}.row .tr,.row .why{font-size:16px}.row .twice.says{opacity:1;color:var(--ink)}.row .twice.says::before{content:''}
+html[data-big] body{zoom:1.25;width:80%}.who{font-size:15px}.row .tr,.row .why{font-size:16px}.row .twice.says{opacity:1;color:var(--ink)}.row .twice.says::before{content:''}
+
+.top nav #big-top{font-weight:600;min-width:1.6em}.who .card-as{opacity:.55;margin-right:-10px}@media print{.card-as{display:none!important}}
+
+@media(max-width:430px){.top nav{gap:11px;font-size:12.5px}}html[data-big] .top nav{gap:9px}
+@media(max-width:760px){html[data-big] .top{zoom:.8}}
+@media(max-width:360px){.top nav a[href^="/thinkers"]{display:none}}.find-t{min-width:0}.find-t select{max-width:100%}@media(max-width:760px){html[data-big] .find-t select{max-width:250px}}
+@media(max-width:760px){html[data-big] .find-t{flex-wrap:wrap}html[data-big] .find-t select{width:230px!important;max-width:230px!important;flex:none}}@media(max-width:360px){html[data-big] body{zoom:1.1;width:90.9%}html[data-big] .top{zoom:.91}}
