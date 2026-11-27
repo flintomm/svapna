@@ -1,0 +1,33 @@
+---
+// Quotes on one everyday topic: every passage whose own words name it.
+import Read from '../../layouts/Read.astro';
+import Passage from '../../components/Passage.astro';
+import { slugify } from '../../lib/atlas.js';
+import { topics, occasions, short } from '../../lib/topics.js';
+export function getStaticPaths() { return topics.map(t => ({ params: { topic: t.slug }, props: { t } })); }
+const { t } = Astro.props;
+const n = t.passages.length, first = t.passages[0], last = t.passages[n - 1];
+const voices = new Set(t.passages.map(c => c.name)).size;
+const brief = t.passages.filter(c => short(c) <= 20).length;
+const title = `Quotes about ${t.name}: ${n} passages, each checked against its source — Svapna`;
+const desc = `${n} quotes about ${t.name} from ${voices} thinkers, scriptures and traditions, ${first.dateShort} to ${last.dateShort}. Every one is quoted exactly and linked to the source it was checked against.`;
+const others = topics.filter(x => x.slug !== t.slug);
+const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `Quotes about ${t.name}`, description: desc, url: `https://svapnaproject.org/quotes/${t.slug}`,
+  mainEntity: { '@type': 'ItemList', numberOfItems: n, itemListElement: t.passages.slice(0, 25).map((c, i) => ({ '@type': 'ListItem', position: i + 1, item: { '@type': 'Quotation', text: c.translation || c.excerpt, spokenByCharacter: { '@type': 'Person', name: c.name }, url: `https://svapnaproject.org/thinkers/${slugify(c.name)}#${c.id}` } })) } };
+---
+<Read title={title} description={desc} path={`/quotes/${t.slug}`} crumbs={[{ name: 'Quotes', path: '/quotes' }, { name: t.name, path: `/quotes/${t.slug}` }]} jsonLd={jsonLd}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/quotes">Quotes</a></p>
+  <h1>Quotes about <em>{t.name}.</em></h1>
+  <p class="lede">{t.line} {n} passages from {voices} voices, {first.dateShort} to {last.dateShort}, oldest first. Each is quoted exactly and linked to the source it was checked against.</p>
+  <p class="def">A passage is here because its own words name the subject. It was chosen by rule, not by an editor, so a few use the word in passing.</p>
+  <div class="find"><label class="find-short"><input type="checkbox" id="q-short" /> Short enough for a card ({brief})</label></div>
+  <div class="rows" id="q-rows">{t.passages.map(c => <Passage c={c} />)}</div>
+  <section>
+    <h2>More topics</h2>
+    <p class="keys">{others.map(x => <a href={`/quotes/${x.slug}`}><b>{x.name.charAt(0).toUpperCase() + x.name.slice(1)}</b> {x.passages.length}</a>)}</p>
+    <p class="def" style="margin-top:22px">Or by occasion: {occasions.map((o, i) => <>{i > 0 && ', '}<a href={`/quotes/for/${o.slug}`}>{o.short.toLowerCase()}</a></>)}.</p>
+  </section>
+  <script is:inline>
+    (function () { var b = document.getElementById('q-short'); if (!b) return; b.addEventListener('change', function () { document.querySelectorAll('#q-rows .row').forEach(function (r) { r.hidden = b.checked && +r.dataset.w > 20; }); }); })();
+  </script>
+</Read>

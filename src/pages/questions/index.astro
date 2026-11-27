@@ -9,4 +9,5 @@ import { questions, cards, HOW_MANY, HOW_MANY_CAP } from '../../lib/atlas.js';
   <div class="qlist">
     {questions.map(q => <a href={`/questions/${q.id}`}>{q.plain}<span>{q.placed.length} passages</span></a>)}
   </div>
+  <p class="def" style="margin-top:34px">Looking for words on a subject or for an occasion? See <a href="/quotes">quotes by topic and occasion</a>.</p>
 </Read>

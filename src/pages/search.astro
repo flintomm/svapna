@@ -48,7 +48,7 @@ import { cards, thinkers } from '../lib/atlas.js';
           var row = el('article', 'row'), a = el('div'), b = el('div', 'who'); a.append(el('blockquote', '', '“' + c.e + '”')); if (c.t) a.append(el('p', 'tr', c.t)); a.append(el('p', 'why', c.q.join(' · ')));
           var name = el('a', 'name', c.n); name.href = '/thinkers/' + c.s + '#' + c.i; b.append(name, el('p', '', c.p), el('p', '', c.d), el('p', '', c.w));
           var src = el('a', 'src', 'Read it at the source ↗'); src.href = c.u; src.target = '_blank'; src.rel = 'noopener'; var cp = el('button', 'src quiet', 'Copy with citation'); cp.type = 'button'; cp.dataset.copy = '“' + c.e + '” — ' + c.n + ', ' + c.w + ' (' + c.d + '). ' + c.u;
-          b.append(src, cp); row.append(a, b); box.append(row); });
+          b.append(src, cp); row.append(a, b); box.append(row); if (window.svapnaCard) window.svapnaCard(cp); });
       }
       q.addEventListener('input', function () { load(run); });
       var first = new URLSearchParams(location.search).get('q'); if (first) { q.value = first.slice(0, 80); load(run); } else q.focus();

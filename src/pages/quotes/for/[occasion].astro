@@ -1,0 +1,22 @@
+---
+// A short set of passages for an occasion, chosen by hand from those both readers agreed on.
+import Read from '../../../layouts/Read.astro';
+import Passage from '../../../components/Passage.astro';
+import { occasions, topics } from '../../../lib/topics.js';
+export function getStaticPaths() { return occasions.map(o => ({ params: { occasion: o.slug }, props: { o } })); }
+const { o } = Astro.props;
+const n = o.passages.length, voices = new Set(o.passages.map(c => c.name)).size;
+const words = o.title.split(' '), cut = Math.max(1, words.length - 3);
+const desc = `${o.title}: ${n} short passages from ${voices} voices across four thousand years, each quoted exactly and linked to the source it was checked against.`;
+---
+<Read title={`${o.title}: ${n} quotes with sources — Svapna`} description={desc} path={`/quotes/for/${o.slug}`} crumbs={[{ name: 'Quotes', path: '/quotes' }, { name: o.short, path: `/quotes/for/${o.slug}` }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/quotes">Quotes</a></p>
+  <h1>{words.slice(0, cut).join(' ')} <em>{words.slice(cut).join(' ')}.</em></h1>
+  <p class="lede">{o.line}</p>
+  <p class="def">{n} passages, chosen by hand for being short and plain. Each can be copied with its citation or saved as an image, and each links to the source it was checked against.</p>
+  <div class="rows">{o.passages.map(c => <Passage c={c} />)}</div>
+  <section>
+    <h2>More</h2>
+    <p class="def">Other occasions: {occasions.filter(x => x.slug !== o.slug).map((x, i) => <>{i > 0 && ', '}<a href={`/quotes/for/${x.slug}`}>{x.short.toLowerCase()}</a></>)}. Or browse <a href="/quotes">quotes by topic</a>: {topics.slice(0, 8).map((t, i) => <>{i > 0 && ', '}<a href={`/quotes/${t.slug}`}>{t.name}</a></>)} and more.</p>
+  </section>
+</Read>

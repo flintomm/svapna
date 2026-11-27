@@ -1,0 +1,24 @@
+---
+// Quotes by topic and by occasion: the same verified passages, arranged the way people look for them.
+import Read from '../../layouts/Read.astro';
+import { cards, thinkers } from '../../lib/atlas.js';
+import { topics, occasions } from '../../lib/topics.js';
+const desc = `${cards.length.toLocaleString('en')} quotes from ${thinkers.length} thinkers, scriptures and traditions, by topic and by occasion. Every quote is checked word for word against a linked source.`;
+---
+<Read title="Quotes by topic and occasion, each checked against its source — Svapna" description={desc} path="/quotes" crumbs={[{ name: 'Quotes', path: '/quotes' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · Quotes</p>
+  <h1>Quotes, <em>with their sources.</em></h1>
+  <p class="lede">{cards.length.toLocaleString('en')} passages from four thousand years. Each one is quoted exactly, checked by machine against the page it comes from, and linked to it, so it can be used with confidence.</p>
+  <section>
+    <h2>For an occasion</h2>
+    <div class="index">{occasions.map(o => <a href={`/quotes/for/${o.slug}`}><b>{o.short}</b><span>{o.passages.length} passages</span></a>)}</div>
+  </section>
+  <section>
+    <h2>By topic</h2>
+    <div class="index">{topics.map(t => <a href={`/quotes/${t.slug}`}><b>{t.name.charAt(0).toUpperCase() + t.name.slice(1)}</b><span>{t.passages.length} passages</span></a>)}</div>
+  </section>
+  <section>
+    <h2>Other ways in</h2>
+    <p class="def"><a href="/questions">By question</a>, where each passage is placed on a scale of answers; <a href="/thinkers">by thinker</a>; or <a href="/search">search every passage</a> for a word, a name or a place.</p>
+  </section>
+</Read>
