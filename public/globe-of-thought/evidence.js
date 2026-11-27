@@ -56115,6 +56115,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "anagarika-dharmapala-truth",
+      "question": "truth",
+      "name": "Anagarika Dharmapala",
+      "short": "Dharmapala",
+      "work": "Closing address at the Parliament",
+      "excerpt": "Learn to think without prejudice, love all beings for love's sake, express your convictions fearlessly, lead a life of purity, and the sunlight of truth will illuminate you.",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Dharmapala’s address, final paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Colombo, Sri Lanka",
+      "lat": 6.93,
+      "lng": 79.87,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Dharmapala, a Sinhalese Buddhist reformer, spoke at the closing session in Chicago in 1893 and is pinned in Colombo, where he helped found the Maha Bodhi Society in 1891; the linked text does not state that, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Truth open to the unprejudiced",
+          "why": "Dharmapala tells his hearers that truth will illuminate those who think without prejudice, love all beings and live purely. It is presented as something a person can come to know by this discipline.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. A farewell exhortation by a Sinhalese Buddhist reformer, so it states a method more than it argues for it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "anagarika-dharmapala-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Anagarika Dharmapala",
@@ -56150,6 +56185,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "b-b-nagarkar-truth",
+      "question": "truth",
+      "name": "B. B. Nagarkar",
+      "short": "Nagarkar",
+      "work": "Ideals of the Brahmo-Somaj (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "not satisfied unless and until he has seen God",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1227 to 1229, the first spiritual ideal of the Brahmo-Somaj, paragraph about God-vision. The scanned text contains recognition errors.",
+      "place": "Mumbai, Maharashtra, India",
+      "lat": 19.1,
+      "lng": 72.88,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Nagarkar of the Brahmo Samaj spoke in Chicago in 1893 and is headed in the text as “of Bombay”; the atlas pins him in Bombay. The linked text does not say where he taught, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Brahmo_Samaj",
+      "readings": {
+        "truth": {
+          "score": "knowable",
+          "facet": "Seeing God directly",
+          "why": "Nagarkar says that the eastern seeker is not satisfied with belief until he has seen God, which treats the deepest truth as known through direct experience.",
+          "limit": "The passage states the ideal of the Brahmo Samaj and does not claim that every seeker attains it. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "b-b-nagarkar-ultimate-reality",
       "question": "ultimate-reality",
       "name": "B. B. Nagarkar",
@@ -56176,6 +56246,321 @@ window.PILOT_EVIDENCE={
           "facet": "God felt and not argued",
           "why": "Nagarkar affirms one true God as a stern reality to be felt in daily communion, not an idea reached by argument. The passage asserts an ultimate reality and says how it is known.",
           "limit": "The speaker is a Brahmo Samaj member addressing an American audience in 1893 and contrasting eastern and western habits of belief. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "benjamin-w-arnett-truth",
+      "question": "truth",
+      "name": "Benjamin W. Arnett",
+      "short": "Arnett",
+      "work": "Closing address at the Parliament",
+      "excerpt": "while we have truth on our side we have not had all the truth",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Bishop Arnett’s address, fourth paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Wilberforce, Ohio, United States",
+      "lat": 39.71,
+      "lng": -83.88,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Arnett, a bishop of the African Methodist Episcopal Church, spoke in Chicago in 1893; he lived and worked at Wilberforce, Ohio, where the church’s Wilberforce University stands, and the linked text does not say so, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "Truth held in part",
+          "why": "Arnett says that the Parliament has taught that his own side has truth but not all of it. Truth is real and held, though not held whole.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. The sentence concerns the Christian delegates' share of truth and the need to match belief with practice, not the deepest truth in general.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "benjamin-w-arnett-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Benjamin W. Arnett",
+      "short": "Arnett",
+      "work": "Closing address at the Parliament",
+      "excerpt": "the source of the true, beautiful, and the good is spirit, love and light, of infinite power, wisdom and",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Bishop Arnett’s address, first paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Wilberforce, Ohio, United States",
+      "lat": 39.71,
+      "lng": -83.88,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Arnett, a bishop of the African Methodist Episcopal Church, spoke in Chicago in 1893; he lived and worked at Wilberforce, Ohio, where the church’s Wilberforce University stands, and the linked text does not say so, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Source of the true, beautiful and good",
+          "why": "Arnett says the delegates agreed that the source of all that is true, beautiful and good is spirit, love and light of infinite power. He affirms a God as that source.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. Arnett was a bishop of the African Methodist Episcopal Church; he speaks of agreement among the delegates, which is his summary, not a record of every view. The excerpt stops at the end of a line because the scan misprints the next word.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "c-n-chakravarti-desire",
+      "question": "desire",
+      "name": "C. N. Chakravarti",
+      "short": "Chakravarti",
+      "work": "Address of welcome",
+      "excerpt": "We have in India, even to this day, thousands of people who give up as trash, as nothing, all the material comforts and luxuries of life",
+      "period": "1893 (opening session, 11 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “Assembling and Welcoming”, Prof. Chakravarti’s speech, fifth paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Allahabad, Uttar Pradesh, India",
+      "lat": 25.45,
+      "lng": 81.85,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Chakravarti, a theosophist of Allahabad, spoke in Chicago in 1893 on the opening days; the pin marks the city he named as his home, and the linked text gives that only in passing, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Renouncing material comforts",
+          "why": "Chakravarti points to Indians who give up material comforts as nothing, and he presents this as the East's turn toward something greater. He approves renunciation.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. A welcome speech by a theosophist of Allahabad, who describes others' renunciation and does not say he practises it himself.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-death",
+      "question": "death",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "now to find itself in the body of a tiger, suitable to its nature",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “If this state continues until the body be dissolved”, in “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Rebirth after death",
+          "why": "The prince says that after the body dissolves the same spirit may reappear in a new body fitted to its nature. Something of the person goes on through rebirth.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The paper also names the final goal as the extinction of being in Nirvana, and calls the sense of a lasting self a delusion; the excerpt describes only what happens to an unreleased spirit.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-desire",
+      "question": "desire",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "Buddhist does not mar the purity of his self-denial by lusting after a positive happiness which he himself shall enjoy here or hereafter.",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “The true Buddhist does not mar the purity of his self-denial”, in “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Renouncing longing for happiness",
+          "why": "The prince holds that a true Buddhist keeps his self-denial pure by not craving a personal happiness, in this life or the next. Desire is to be given up, not redirected.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The sentence begins mid-clause because the scan misprints the first words; the same paper elsewhere asks for desires to be controlled while still on the path.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-given-or-made",
+      "question": "given-or-made",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "he will be continually adopting, directly or indirectly, in his own life, the wills and acts of that tiger and thereby is himself that animal",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “Man, who is an aggregate of Dharma”, in “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Becoming what one imitates",
+          "why": "The prince says a man who keeps adopting the wills and acts of a tiger thereby becomes that animal in spirit, and one who adopts a higher being's acts becomes like it. What a person is comes from the habits he forms.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The point is made through a rebirth illustration, and the paper also treats the self as a delusion; the excerpt shows formation by one's own conduct, not by teachers.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-lasting-self",
+      "question": "lasting-self",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "The consciousness of self-being is a delusion, so that, until we are convinced that we ourselves and whatever belongs to ourselves is a mere nothingness",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “However, to all beings alike, whether superior or inferior to ourselves”, in the paper “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "Self-being as delusion",
+          "why": "The prince calls the sense of a separate self a delusion and says release requires seeing oneself as nothing. That denies a lasting self.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The wider paper also describes a spirit that reappears in new bodies, which the passage leaves aside.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-suffering",
+      "question": "suffering",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "Ignorance of Dharma leads to sin, which leads to sorrow",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “Man, who is an aggregate of Dharma” to the paragraph on the rope and the snake, in “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "suffering": {
+          "score": "unscored",
+          "facet": "Ignorance as the root of sorrow",
+          "why": "Sorrow is traced to ignorance of the Dharma, and the paper's aim is to remove it through knowledge. Suffering is a condition to be ended, with no purpose of its own. A second, independent reading moved this placement from “no purpose” to “unscored”: The words trace sorrow to sin and sin to ignorance; they give a cause and do not say whether suffering has a purpose.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The excerpt is a short chain of cause and effect; the Four Noble Truths that follow in the paper give the full account.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "chandradat-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Prince Chandradat Chudhadharn",
+      "short": "Chandradat",
+      "work": "Buddhism as it Exists in Siam",
+      "excerpt": "and the same essence, merelv a modification of the one great eternal truth, Dharma.",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "First section of the paper, paragraph beginning “The Dharma is formed of two essences”, in “Buddhism as it Exists in Siam”, Parliament Papers, fifth day. The scanned text contains recognition errors.",
+      "place": "Bangkok, Thailand",
+      "lat": 13.76,
+      "lng": 100.5,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The paper was read at the Parliament in Chicago in September 1893 by another person on behalf of the prince, who was a brother of the King of Siam; the pin marks his home, Bangkok, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "The one eternal Dharma",
+          "why": "The prince says that all differences among things are only apparent and that all is one essence, the eternal Dharma. That affirms an ultimate reality, though an impersonal one.",
+          "limit": "A paper prepared for an interfaith audience in Chicago, printed in English and read for the author by an assistant, so it presents Siamese Buddhism to outsiders. The Dharma here is a principle of nature, not a creator God, and the same paper denies a lasting self; the excerpt begins mid-clause because the scan misprints the words before it.",
           "second": "agreed"
         }
       },
@@ -56221,6 +56606,286 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "h-sumangala-free-will",
+      "question": "free-will",
+      "name": "H. Sumangala",
+      "short": "Sumangala",
+      "work": "Orthodox Southern Buddhism (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "hence man is the creator of his own destiny",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 894 to 897, paragraph beginning “Every effect being related to an anterior, formative cause”. The scanned text contains recognition errors.",
+      "place": "Colombo, Sri Lanka",
+      "lat": 6.92,
+      "lng": 79.87,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Sumangala was chief priest of a Buddhist college in Colombo. The address was delivered in Chicago in 1893 and the pin is the speaker's home, which the book does not name; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Hikkaduwe_Sri_Sumangala",
+      "readings": {
+        "free-will": {
+          "score": "free",
+          "facet": "Responsibility for one's destiny",
+          "why": "Sumangala says that karma governs the results of actions and that man is the creator of his own destiny and his only liberator, which gives the person's own choices a real authorship.",
+          "limit": "The karma described is a natural law, so the passage affirms agency within that law rather than choice that could have been otherwise. The address was prepared for an interfaith audience and summarises Southern Buddhist teaching. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "herant-kiretchjian-given-or-made",
+      "question": "given-or-made",
+      "name": "Herant Kiretchjian",
+      "short": "Kiretchjian",
+      "work": "A Voice from the Orient (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "if man is man he has it all in himself",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1276 to 1279, the first point of the address, on the dignity of man. The scanned text contains recognition errors.",
+      "place": "Istanbul (Constantinople), Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book gives the speaker as of Constantinople. The address was delivered in Chicago in 1893 and the pin is the speaker's home city; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "given-or-made": {
+          "score": "given",
+          "facet": "Human dignity from within",
+          "why": "Kiretchjian says that if man is man he has all that goodness requires within himself, as he has his bodily capacities, so the passage treats what a person is as an endowment rather than something made by religious teaching.",
+          "limit": "The passage is a rebuke to missionary claims, and it is addressed to a Christian audience; it does not describe education in detail. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "herant-kiretchjian-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Herant Kiretchjian",
+      "short": "Kiretchjian",
+      "work": "A Voice from the Orient (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "We want the spirit of God",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1276 to 1279, the closing section of the address. The scanned text contains recognition errors.",
+      "place": "Istanbul (Constantinople), Turkey",
+      "lat": 41.2,
+      "lng": 28.9,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book gives the speaker as of Constantinople. The address was delivered in Chicago in 1893 and the pin is the speaker's home city; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "A God whose spirit is wanted",
+          "why": "Kiretchjian says that there is a power outside man that draws him, that the speakers want God, and that they want the spirit of God, so the passage affirms a God behind the world.",
+          "limit": "The God named is the Christian God and the passage is a short rhetorical address. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "horin-toki-given-or-made",
+      "question": "given-or-made",
+      "name": "Horin Toki",
+      "short": "Toki",
+      "work": "Buddhism in Japan",
+      "excerpt": "the aim of it is to help all beings to develop the nature of Buddha, and to guide them to the plane of Buddha",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “The especial characteristics of Buddhism are humanity and patient forbearance”, in “Buddhism in Japan”, Parliament Papers, fourth day. The scanned text contains recognition errors.",
+      "place": "Kyoto, Japan",
+      "lat": 35.01,
+      "lng": 135.77,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Toki, a Japanese Buddhist priest of the Shingon school, delivered the paper in Chicago in 1893; the pin marks the speaker's home, Kyoto, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Buddha-nature developed",
+          "why": "Toki says all beings already carry the nature of Buddha and that Buddhism helps them to develop it and guides them to the Buddha's plane. An endowment present in everyone is brought out by guidance.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. Toki was a Japanese Shingon priest, and the paper is a summary of Japanese Buddhism for outsiders; whether the English is his own or a translation read for him is not stated, and the scan is poor in places.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jinanji-jamshedji-modi-death",
+      "question": "death",
+      "name": "Jinanji Jamshedji Modi",
+      "short": "Modi",
+      "work": "The Religious System of the Parsees (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "Zoroastrianism believes in the immortality of the soul",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 898 to 920, section on the destiny of the soul after death, paragraph beginning “This brings us to the question of the destiny of the soul after death”. The scanned text contains recognition errors.",
+      "place": "Mumbai, Maharashtra, India",
+      "lat": 19.1,
+      "lng": 72.88,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Modi was of Bombay, where the Parsee community is centred. The address was delivered in Chicago in 1893 and the pin is the speaker's home; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jinanji_Jamshedji_Modi",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "The soul after death",
+          "why": "Modi says that Zoroastrianism believes in the immortality of the soul and describes the soul's fate after death, so the passage says the self continues after death.",
+          "limit": "The account draws on scripture and later Pahlavi books and compares them with Christian and Dante's notions, and it was prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jinanji-jamshedji-modi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Jinanji Jamshedji Modi",
+      "short": "Modi",
+      "work": "The Religious System of the Parsees (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "the causer of all causes. He is the creator as well as the destroyer",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 898 to 920, section on Ahura-Mazda, paragraph beginning “We have seen that Ahura-Mazda or God is”. The scanned text contains recognition errors.",
+      "place": "Mumbai, Maharashtra, India",
+      "lat": 19.1,
+      "lng": 72.88,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Modi was of Bombay, where the Parsee community is centred. The address was delivered in Chicago in 1893 and the pin is the speaker's home; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jinanji_Jamshedji_Modi",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Ahura-Mazda as the one God",
+          "why": "Modi describes Ahura-Mazda, the one God of Parsee scripture, as the causer of all causes and the creator, so the passage affirms a God behind the world.",
+          "limit": "The passage summarises Parsee scripture rather than Modi's own argument, and the same account describes an evil principle set against the one God. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "kinza-hirai-truth",
+      "question": "truth",
+      "name": "Kinza Hirai",
+      "short": "Hirai",
+      "work": "Synthetic Religion (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "We believe something which we do not know",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1286 to 1288, opening paragraphs on a priori belief. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.68,
+      "lng": 139.69,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book gives the speaker's name and Japan but no home city. Tokyo is an approximate pin from general knowledge; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "truth": {
+          "score": "unscored",
+          "facet": "Unknown first premises",
+          "why": "Hirai says that tracing premises back leads to the incomprehensible and that religion is a priori belief in an unknown entity, so the passage places the deepest truth beyond human knowing. A second, independent reading moved this placement from “no” to “unscored”: The words say that people believe something they do not know; they do not say whether it can be known.",
+          "limit": "Hirai argues about the first premises of reason and does not deny that truth can be approached by other means. The book does not say whether the English is a translation. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "kinza-hirai-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Kinza Hirai",
+      "short": "Hirai",
+      "work": "Synthetic Religion (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "can see but one entity — truth — the connecting link of cause and effect",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1286 to 1288, paragraph beginning “Some will argue that truth is a creation of God”. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.68,
+      "lng": 139.69,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book gives the speaker's name and Japan but no home city. Tokyo is an approximate pin from general knowledge; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Truth as the one ultimate entity",
+          "why": "Hirai identifies God with truth, which he calls the essence of phenomena, and so affirms one ultimate entity behind the world.",
+          "limit": "Hirai also says that religion is a belief in an unknown entity, so the ultimate is affirmed but not described. The book does not say whether the English is a translation. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "leo-tolstoy-inward-or-others",
       "question": "inward-or-others",
       "name": "Leo Tolstoy",
@@ -56256,6 +56921,111 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "manilal-n-dvivedi-free-will",
+      "question": "free-will",
+      "name": "Manilal N. D'vivedi",
+      "short": "D'vivedi",
+      "work": "Answers of the Advaita Philosophy to Religious Problems",
+      "excerpt": "Man in his physical or even mental nature is not free, but spiritually he is ever free to realize himself, within and without,",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Section “VIII. Free Will and Providence”, in “Answers of the Advaita Philosophy”, Parliament Papers, second day. The scanned text contains recognition errors.",
+      "place": "Nadiad, Gujarat, India",
+      "lat": 22.69,
+      "lng": 72.86,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Manilal N. D'vivedi, a professor and Advaita Vedanta scholar from Gujarat, had his paper read in Chicago in 1893; the pin marks the speaker's home, Nadiad, in Gujarat, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "free-will": {
+          "score": "limited",
+          "facet": "Free in spirit, bound in body and mind",
+          "why": "D'vivedi says that a person's body and mind are bound by cause and effect, while the spirit is always free to realize itself. Real freedom exists, but inside conditions that are not chosen.",
+          "limit": "D'vivedi presented Advaita Vedanta as answers to questions submitted by the Parliament's organizers. Prepared for an interfaith audience in Chicago and printed in English. The freedom described is spiritual realization, not a power to choose among everyday actions; the excerpt stops at the end of a line because the next word is split across lines.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "manilal-n-dvivedi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Manilal N. D'vivedi",
+      "short": "D'vivedi",
+      "work": "Answers of the Advaita Philosophy to Religious Problems",
+      "excerpt": "The revelation of God is in his works. This, however, does not mean that God creates, for in this philosophy one must abstain from materializing the idea of God.",
+      "period": "1893 (paper for the World's Parliament of Religions)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Section “VII. Has God made any Revelation of Himself and How?”, in “Answers of the Advaita Philosophy”, Parliament Papers, second day. The scanned text contains recognition errors.",
+      "place": "Nadiad, Gujarat, India",
+      "lat": 22.69,
+      "lng": 72.86,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Manilal N. D'vivedi, a professor and Advaita Vedanta scholar from Gujarat, had his paper read in Chicago in 1893; the pin marks the speaker's home, Nadiad, in Gujarat, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God as an all-pervading reality",
+          "why": "D'vivedi says God is revealed in the world but does not create it, and must not be pictured as a person or thing. God is affirmed as the reality behind the world, impersonal and not a maker.",
+          "limit": "D'vivedi presented Advaita Vedanta as answers to questions submitted by the Parliament's organizers. Prepared for an interfaith audience in Chicago and printed in English. Elsewhere in the same paper D'vivedi calls the world of forms unreal and denies a personal creator, so the God affirmed here is the Advaita absolute.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "momolu-massaquoi-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Momolu Massaquoi",
+      "short": "Massaquoi",
+      "work": "Closing address at the Parliament",
+      "excerpt": "May the coming together of these wise men result in the full realization of the general fatherhood of God, the brotherhood of man, and the consecration of souls to the service of God.",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Prince Massaquoi’s address, final paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Cape Mount, Liberia",
+      "lat": 7,
+      "lng": -11.1,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Massaquoi, a Vai (Vey) prince from what is now Liberia, spoke in Chicago in 1893; the pin marks his home territory near Cape Mount, and the linked text names only the Vey territory, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "Fatherhood of God",
+          "why": "Massaquoi hopes the Parliament will lead to the full realization of God's fatherhood and the service of God. The wish assumes that God exists and is a Father to all.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. The line is a wish voiced at a farewell session by a Vai prince of Liberia who had become a Christian, not an argument.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "protap-chunder-mozoomdar-inward-or-others",
       "question": "inward-or-others",
       "name": "Protap Chunder Mozoomdar",
@@ -56282,6 +57052,286 @@ window.PILOT_EVIDENCE={
           "facet": "The Spirit realized in the soul",
           "why": "Mozoomdar names introspection as the second gift of Asia and says the Spirit of God is fully realized only in a person’s own soul, not in texts, nature, churches or prophets. The direction is inward.",
           "limit": "The speaker is a Brahmo Samaj leader addressing an American audience in 1893, and he also praises insight into nature and the communal side of worship elsewhere in the same address. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "protap-chunder-mozoomdar-ultimate-reality",
+      "question": "ultimate-reality",
+      "name": "Protap Chunder Mozoomdar",
+      "short": "Mozoomdar",
+      "work": "The World’s Religious Debt to Asia (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "Nature is God's abode",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1083 to 1091, the section on nature, paragraph beginning “Nature is not a mere stimulus to mild poetry”. The scanned text contains recognition errors.",
+      "place": "Kolkata, West Bengal, India",
+      "lat": 22.57,
+      "lng": 88.36,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Mozoomdar led the Brahmo Samaj of India from Calcutta and spoke in Chicago in 1893; the atlas pins him in Calcutta, where he taught. The linked text only names the Brahmo Samaj, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Protap_Chunder_Mozoomdar",
+      "readings": {
+        "ultimate-reality": {
+          "score": "ultimate-real",
+          "facet": "God present in nature",
+          "why": "Mozoomdar says that Nature is God's abode and that the Supreme Spirit fills all creation, so the passage affirms an ultimate reality present in the world.",
+          "limit": "The passage is part of a praise of Asian religious feeling, and the same address places the Spirit most fully in the soul. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "pung-kwang-yu-death",
+      "question": "death",
+      "name": "Pung Kwang Yu",
+      "short": "Pung",
+      "work": "Confucianism",
+      "excerpt": "We know not as yet about life ; how can we know about death ?",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Section “The Laws of the Spiritual World”, the paragraph that quotes Confucius on duties to men and to spirits, in “Confucianism”, Parliament Papers, third day. The scanned text contains recognition errors.",
+      "place": "Washington, D.C., United States",
+      "lat": 38.91,
+      "lng": -77.04,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Pung Kwang Yu, a Chinese diplomat, sent the paper to be read in Chicago in 1893 and lived in Washington while serving as First Secretary of the Chinese Legation; the pin marks the speaker's home, Washington, D.C., not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Confucius on not knowing death",
+          "why": "Pung quotes Confucius as saying that people do not yet know life well enough to know death, and he reads the Master as leaving the question open. The passage declines to say what follows death.",
+          "limit": "Pung Kwang Yu was First Secretary of the Chinese Legation in Washington and the Chinese delegate; his paper was read in Chicago by William Pipe. Prepared for an interfaith audience in Chicago and printed in English. These are Confucius's words as Pung quotes them in his own exposition, not his own statement; the paper elsewhere says such matters lie beyond all but the most gifted.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "pung-kwang-yu-given-or-made",
+      "question": "given-or-made",
+      "name": "Pung Kwang Yu",
+      "short": "Pung",
+      "work": "Confucianism",
+      "excerpt": "Man only can remove the imperfections inherent in the substance of his organization by directing his mind to intellectual pursuits, by abiding in virtue",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Section “The Laws of Humanity”, paragraph beginning “As for man he also has natural imperfections”, in “Confucianism”, Parliament Papers, third day. The scanned text contains recognition errors.",
+      "place": "Washington, D.C., United States",
+      "lat": 38.91,
+      "lng": -77.04,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Pung Kwang Yu, a Chinese diplomat, sent the paper to be read in Chicago in 1893 and lived in Washington while serving as First Secretary of the Chinese Legation; the pin marks the speaker's home, Washington, D.C., not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "given-or-made": {
+          "score": "both",
+          "facet": "Removing imperfections by effort",
+          "why": "Pung says people are born with an organization that has inherent imperfections, and that they can remove them only by study and virtue. An endowment is present and has to be worked on.",
+          "limit": "Pung Kwang Yu was First Secretary of the Chinese Legation in Washington and the Chinese delegate; his paper was read in Chicago by William Pipe. Prepared for an interfaith audience in Chicago and printed in English. The text is a Confucian summary with quotations from Confucius, in an English rendering prepared for the Parliament.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "pung-kwang-yu-relationships",
+      "question": "relationships",
+      "name": "Pung Kwang Yu",
+      "short": "Pung",
+      "work": "Confucianism",
+      "excerpt": "Humanity must have the social relations for its sphere of action. Love must begin at home.",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Section “The Laws of Humanity”, second paragraph, in “Confucianism”, Parliament Papers, third day. The scanned text contains recognition errors.",
+      "place": "Washington, D.C., United States",
+      "lat": 38.91,
+      "lng": -77.04,
+      "anchorType": "Approximate residence association",
+      "placeNote": "Pung Kwang Yu, a Chinese diplomat, sent the paper to be read in Chicago in 1893 and lived in Washington while serving as First Secretary of the Chinese Legation; the pin marks the speaker's home, Washington, D.C., not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "relationships": {
+          "score": "constitutive",
+          "facet": "Humanity needs social relations",
+          "why": "Pung says that humanity, the characteristic of man, must act within the social relations, and that love begins in the family. The kind of person he describes is formed in relationships.",
+          "limit": "Pung Kwang Yu was First Secretary of the Chinese Legation in Washington and the Chinese delegate; his paper was read in Chicago by William Pipe. Prepared for an interfaith audience in Chicago and printed in English. The claim concerns the sphere in which the virtue of humanity operates, and the same section ranks the relations in a fixed order of rulers, parents and husbands, which the excerpt does not show.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "reuchi-shibata-death",
+      "question": "death",
+      "name": "Reuchi Shibata",
+      "short": "Shibata",
+      "work": "Farewell address at the close of the Parliament",
+      "excerpt": "hope they may be again united in the life hereafter.",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Shibata’s farewell, second paragraph, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.69,
+      "lng": 139.75,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Shibata, head of the Jikko sect of Shinto, spoke at the closing session in Chicago on 27 September 1893; the pin marks the speaker's home, Tokyo, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Hope of reunion in the next life",
+          "why": "Shibata expresses the hope that souls joined at the Parliament will be united again in a life after this one. He assumes that persons continue after death, though he states it as hope.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. The line is a farewell courtesy, not a statement of Shinto doctrine, and Shibata, who spoke no English, had it read for him by Dr. Barrows.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "reuchi-shibata-truth",
+      "question": "truth",
+      "name": "Reuchi Shibata",
+      "short": "Shibata",
+      "work": "Shintoism",
+      "excerpt": "the religionists ought, at least, to conquer hostile feelings; to try to find out the common truth which is hidden in all forms of religious",
+      "period": "1893",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Paragraph beginning “As our doctrines teach us, all animate and inanimate things were born from One Heavenly Deity”, near the end of the paper “Shintoism”, Parliament Papers, third day. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.69,
+      "lng": 139.75,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Shibata, head of the Jikko sect of Shinto, spoke in Chicago in 1893; the pin marks the speaker's home, Tokyo, not Chicago, and the linked text does not state it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "partly-knowable",
+          "facet": "A common truth hidden in all faiths",
+          "why": "Shibata says the common truth is hidden in every form of religion and has to be searched out together. It can be approached, but is not yet in anyone's hands.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. Shibata, president of the Jikko sect of Shinto, spoke no English, so the printed text is a translation read for him. The excerpt stops at the end of a printed line.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "shaku-soyen-free-will",
+      "question": "free-will",
+      "name": "Shaku Soyen",
+      "short": "Soyen",
+      "work": "The Law of Cause and Effect as Taught by Buddha (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "If you ask me who determined the length of our life, I say, the law of causality",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 829 to 831, section “Fifthly, cause and effect as the law of nature”. The scanned text contains recognition errors.",
+      "place": "Kamakura, Japan",
+      "lat": 35.32,
+      "lng": 139.54,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Soyen was abbot of Engaku-ji in Kamakura. The address was delivered in Chicago in 1893 and the pin is the speaker's home, which the book does not name; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sh%C5%8Dku_S%C5%8Dyen",
+      "readings": {
+        "free-will": {
+          "score": "determined",
+          "facet": "Causal law and fixed conditions",
+          "why": "Soyen says that the law of causality determines the length of life and the conditions a person is born into, so what a person does and receives is fixed by prior causes.",
+          "limit": "The same address says that each person rewards and punishes oneself through one's own actions, which the passage does not reconcile with fixed causes. The address was prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "shaku-soyen-happiness",
+      "question": "happiness",
+      "name": "Shaku Soyen",
+      "short": "Soyen",
+      "work": "The Law of Cause and Effect as Taught by Buddha (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "We enjoy happiness and suffer misery, our own actions being causes",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 829 to 831, section “Fourthly, self-formation of cause and effect”. The scanned text contains recognition errors.",
+      "place": "Kamakura, Japan",
+      "lat": 35.32,
+      "lng": 139.54,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Soyen was abbot of Engaku-ji in Kamakura. The address was delivered in Chicago in 1893 and the pin is the speaker's home, which the book does not name; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sh%C5%8Dku_S%C5%8Dyen",
+      "readings": {
+        "happiness": {
+          "score": "on-oneself",
+          "facet": "Happiness from one's own actions",
+          "why": "Soyen says that happiness and misery come from a person's own actions and that no other cause makes a person happy or unhappy, so the passage places happiness within a person's own conduct.",
+          "limit": "The address was prepared for an interfaith audience and explains a Buddhist doctrine of karma rather than advice on living. The book does not say whether the English is a translation. The scanned text contains recognition errors.",
           "second": "agreed"
         }
       },
@@ -56422,6 +57472,146 @@ window.PILOT_EVIDENCE={
           "facet": "Karma and the world’s injustice",
           "why": "Gandhi says the Jain law of karma, summed up as reaping what one sows, accounts for the inequality and apparent injustice of the world. Suffering is read as the result of a person’s own actions, which places it as meant.",
           "limit": "The speaker is a lay Jain scholar summarising his tradition for an American audience in 1893, and he states the doctrine briefly without arguing it. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "virchand-gandhi-truth",
+      "question": "truth",
+      "name": "Virchand Gandhi",
+      "short": "Virchand Gandhi",
+      "work": "Closing address at the Parliament",
+      "excerpt": "I entreat you to hear the moral of this story and learn to examine the various religious systems from all standpoints.",
+      "period": "1893 (closing session, 27 September 1893)",
+      "dateShort": "1893",
+      "dateFull": "1893",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 1, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "locator": "Chapter “The Close of the Parliament”, Gandhi’s address, paragraph after the elephant story, in the History of the Parliament. The scanned text contains recognition errors.",
+      "place": "Mumbai, Maharashtra, India",
+      "lat": 19.1,
+      "lng": 72.88,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Virchand Gandhi, a Jain scholar of Bombay, spoke in Chicago in 1893 for the Jain Association of India, and the atlas pins him in Bombay where he worked and taught; the linked text gives only that he came from Bombay, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen03barrgoog/worldsparliamen03barrgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "truth": {
+          "score": "unscored",
+          "facet": "The elephant and the seven blind men",
+          "why": "Gandhi tells the story of seven blind men who each feel one part of an elephant, and asks his hearers to examine religions from every side. Each view grasps part of the truth, not the whole. A second, independent reading moved this placement from “in part” to “unscored”: The words ask the hearers to examine religious systems from all standpoints; the story that gives them their point is outside them, so they do not say whether truth can be known.",
+          "limit": "Prepared for an interfaith audience in Chicago and printed in English. The excerpt states the moral, and the story it refers to comes just before it in the printed address; the speaker was a Jain layman from Bombay.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "zitsuzen-ashitsu-desire",
+      "question": "desire",
+      "name": "Zitsuzen Ashitsu",
+      "short": "Ashitsu",
+      "work": "Buddha (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "a state of the mind free from lust and evil desire",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1038 to 1040, section “1. Denomination”, the second personality of Buddha. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.68,
+      "lng": 139.69,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book names the speaker only as a Japanese Buddhist prelate and gives no home city. Tokyo is an approximate pin from general knowledge; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "desire": {
+          "score": "give-up",
+          "facet": "Renouncing desire",
+          "why": "Ashitsu describes the result of Buddhist self-refinement as a state of mind free from lust and evil desire, and he states a vow to abstain from desires, so the passage calls for desire to be given up.",
+          "limit": "The sentence describes the mind of the Buddha and a vow, not a rule for ordinary life, and it names lust and evil desire rather than all desire. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "zitsuzen-ashitsu-given-or-made",
+      "question": "given-or-made",
+      "name": "Zitsuzen Ashitsu",
+      "short": "Ashitsu",
+      "work": "Buddha (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "If we cultivate our minds, we can, of course, clear off the clouds of ignorance",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1038 to 1040, section “2. Personality”, the paragraph on the difference between ordinary beings and Buddha. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.68,
+      "lng": 139.69,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book names the speaker only as a Japanese Buddhist prelate and gives no home city. Tokyo is an approximate pin from general knowledge; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "given-or-made": {
+          "score": "made",
+          "facet": "Shared nature and cultivation",
+          "why": "Ashitsu says that all beings have the same nature as the Buddha, and that the difference lies in cultivation, so the passage gives a shared endowment that must be developed. A second, independent reading moved this placement from “both” to “made”: The words say that cultivating the mind clears away ignorance; the shared nature that the address also speaks of is not in them.",
+          "limit": "The passage concerns the enlightenment of the mind and says little about formation by teachers or society. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "zitsuzen-ashitsu-lasting-self",
+      "question": "lasting-self",
+      "name": "Zitsuzen Ashitsu",
+      "short": "Ashitsu",
+      "work": "Buddha (address to the World’s Parliament of Religions, 1893)",
+      "excerpt": "there is no such thing as ego",
+      "period": "1893 CE",
+      "dateShort": "1893",
+      "dateFull": "1893 CE",
+      "sortYear": 1893,
+      "sourceLabel": "John Henry Barrows, ed., The World's Parliament of Religions (1893), volume 2, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "review": "draft",
+      "locator": "Pages 1038 to 1040, section “2. Personality”, the description of the second stage of Nirvana. The scanned text contains recognition errors.",
+      "place": "Tokyo, Japan",
+      "lat": 35.68,
+      "lng": 139.69,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The book names the speaker only as a Japanese Buddhist prelate and gives no home city. Tokyo is an approximate pin from general knowledge; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/worldsparliamen01barrgoog/worldsparliamen01barrgoog_djvu.txt",
+      "readings": {
+        "lasting-self": {
+          "score": "no_self",
+          "facet": "The ego",
+          "why": "Ashitsu says that a person who perceives that life is fleeting comes to see that there is no such thing as ego, which denies that a lasting self exists.",
+          "limit": "The sentence is one stage in a classification of Nirvana, and the same address describes a Buddha-nature with neither beginning nor end, which the passage does not settle. The words were prepared for an interfaith audience. The scanned text contains recognition errors.",
           "second": "agreed"
         }
       },
@@ -82044,6 +83234,76 @@ window.PILOT_EVIDENCE={
     "Ziya Pasha": {
       "about": "Ottoman statesman and poet, a leader of the Young Ottomans, who died in 1880.",
       "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Benjamin W. Arnett": {
+      "about": "Bishop of the African Methodist Episcopal Church and Ohio legislator, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "C. N. Chakravarti": {
+      "about": "Indian Theosophist and mathematician of Allahabad, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Prince Chandradat Chudhadharn": {
+      "about": "Siamese prince, brother of King Chulalongkorn, whose paper on Buddhism in Siam was read at the 1893 Parliament of Religions.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "H. Sumangala": {
+      "about": "Hikkaduwe Sri Sumangala, Sri Lankan Buddhist monk and scholar, whose paper was read at the 1893 Parliament of Religions.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Herant Kiretchjian": {
+      "about": "Armenian of Constantinople, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Horin Toki": {
+      "about": "Japanese Shingon Buddhist priest, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Jinanji Jamshedji Modi": {
+      "about": "Parsi priest and scholar of Bombay, whose paper on the Zoroastrian religion was read at the 1893 Parliament of Religions.",
+      "tradition": "Zoroastrianism",
+      "sure": true
+    },
+    "Kinza Hirai": {
+      "about": "Japanese lay Buddhist and lecturer, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Manilal N. D'vivedi": {
+      "about": "Gujarati scholar and writer on Advaita Vedanta, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Hinduism",
+      "sure": true
+    },
+    "Momolu Massaquoi": {
+      "about": "Vai prince of Liberia, later a diplomat, who spoke as a young man at the 1893 Parliament of Religions.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Pung Kwang Yu": {
+      "about": "First Secretary of the Chinese Legation in Washington, whose paper on Confucianism was read at the 1893 Parliament of Religions.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Reuchi Shibata": {
+      "about": "Head of the Jikkō sect of Shinto in Japan, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Shaku Soyen": {
+      "about": "Japanese Rinzai Zen abbot of Engaku-ji in Kamakura, the first Zen master to teach in the United States, in 1893.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Zitsuzen Ashitsu": {
+      "about": "Japanese Tendai Buddhist priest, who spoke at the 1893 Parliament of Religions.",
+      "tradition": "Buddhism",
       "sure": true
     }
   }
