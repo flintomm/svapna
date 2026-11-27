@@ -97,6 +97,7 @@
     truth: ['Can the deepest truth be known?', ['No', 'In part', 'Yes']],
     'lasting-self': ['Is there a lasting “me”?', ['No', 'A changing one', 'Yes']],
     'ultimate-reality': ['Is there a God, or something ultimate?', ['No', 'Beyond words', 'Yes']],
+    humiliation: ['What exactly is humiliation?', ['A wound', 'Only what I make it', 'A teacher']],
     suffering: ['Does suffering have a purpose?', ['None', 'It can be used', 'It has meaning']],
     death: ['What happens when we die?', ['It ends', 'We cannot know', 'Something continues']],
   };

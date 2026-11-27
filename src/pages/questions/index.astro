@@ -1,10 +1,10 @@
 ---
 import Read from '../../layouts/Read.astro';
-import { questions, cards } from '../../lib/atlas.js';
+import { questions, cards, HOW_MANY, HOW_MANY_CAP } from '../../lib/atlas.js';
 ---
-<Read title="The fourteen questions — Svapna" description={`Fourteen of life’s big questions, each answered by thinkers from every continent across four thousand years: ${cards.length.toLocaleString('en')} passages checked at their sources.`} path="/questions" crumbs={[{ name: 'Questions', path: '/questions' }]}>
+<Read title={`The ${HOW_MANY} questions — Svapna`} description={`${HOW_MANY_CAP} of life’s big questions, each answered by thinkers from every continent across four thousand years: ${cards.length.toLocaleString('en')} passages checked at their sources.`} path="/questions" crumbs={[{ name: 'Questions', path: '/questions' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · Questions</p>
-  <h1>Fourteen <em>questions.</em></h1>
+  <h1>{HOW_MANY_CAP} <em>questions.</em></h1>
   <p class="lede">Each one has been answered for four thousand years, on every continent, and never the same way twice. {cards.length.toLocaleString('en')} passages in all, each in its author’s own words and checked at its source.</p>
   <div class="qlist">
     {questions.map(q => <a href={`/questions/${q.id}`}>{q.plain}<span>{q.placed.length} passages</span></a>)}

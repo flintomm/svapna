@@ -11,7 +11,7 @@ const total = q.placed.length, first = q.placed[0], last = q.placed.at(-1);
 const mid = scored[Math.floor(scored.length / 2)];
 const LEAD = { death: 'confucius-death' };
 const lead = q.placed.find(c => c.id === LEAD[q.id]) || q.placed.find(c => c.second === 'agreed' && c.score === mid.id && c.excerpt.length < 170 && !c.translation) || q.placed.find(c => c.second === 'agreed' && c.excerpt.length < 170);
-const HEAVY = { death: true, suffering: true };
+const HEAVY = { death: true, suffering: true, humiliation: true };
 const traditions = TRADITIONS.filter(t => q.placed.some(c => c.tradition === t));
 const regions = REGIONS.filter(([id]) => q.placed.some(c => c.region === id));
 const cite = c => `“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.readUrl}`;

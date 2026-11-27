@@ -2,11 +2,11 @@
 import Fonts from '../components/Fonts.astro';
 // The home page: two doors of equal weight. The questions on one side, the night on the other.
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
-import { questions, cards, thinkers } from '../lib/atlas.js';
+import { questions, cards, thinkers, HOW_MANY, HOW_MANY_CAP } from '../lib/atlas.js';
 import { lessonsByModule } from '../lib/lessons.js';
 const siteUrl = 'https://svapnaproject.org/';
 const title = 'Svapna — the big questions and the history of dreaming, across 4,000 years';
-const description = `Two ways in. The questions: ${cards.length.toLocaleString('en')} passages from ${thinkers.length} thinkers, scriptures and traditions on fourteen of life’s big questions, each quoted from its source. The night: a history of dreaming in eight depths, from the Upanishads to the sleep laboratory.`;
+const description = `Two ways in. The questions: ${cards.length.toLocaleString('en')} passages from ${thinkers.length} thinkers, scriptures and traditions on ${HOW_MANY} of life’s big questions, each quoted from its source. The night: a history of dreaming in eight depths, from the Upanishads to the sleep laboratory.`;
 // One light on the globe for every passage: where it was written, and the tone of its answer.
 const TONE = { low: 0, mid: 1, high: 2, none: 3 };
 const lights = cards.map(c => { const q = questions.find(x => x.id === c.question), st = q && q.steps.find(s => s.id === (c.readings[c.question] || {}).score); return [Math.round(c.lat * 10) / 10, Math.round(c.lng * 10) / 10, st ? TONE[st.tone] : 3]; });
@@ -67,7 +67,7 @@ const lessons = Object.values(lessonsByModule).reduce((n, l) => n + l.length, 0)
       <a class="door" id="door-q" href="/world" data-total={questions.length} data-pirsch-event="door_questions">
         <span class="small">The questions</span>
         <span class="big">What people have <em>thought.</em></span>
-        <span class="sub">Fourteen questions and {cards.length.toLocaleString('en')} answers from four thousand years, each quoted from its source.</span>
+        <span class="sub">{HOW_MANY_CAP} questions and {cards.length.toLocaleString('en')} answers from four thousand years, each quoted from its source.</span>
         <span class="go" id="door-q-go">Answer one →</span>
       </a>
       <a class="door" id="door-d" href="/dream" data-depths={JSON.stringify(Object.fromEntries(depths.map(d => [d[0], d[1]])))} data-pirsch-event="door_night">

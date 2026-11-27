@@ -4,7 +4,7 @@ import Fonts from './Fonts.astro';
 // Used as the home page and, unlisted, at /next for comparing looks.
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
 import evidence from '../../public/globe-of-thought/evidence.js?raw';
-import { questions as ordered, cards as allCards } from '../lib/atlas.js';
+import { questions as ordered, cards as allCards, HOW_MANY, HOW_MANY_CAP } from '../lib/atlas.js';
 const atlasCount = allCards.length;
 // The opening question is written by a few lines in the page itself, so it never waits for the globe to load.
 const opening = { total: atlasCount, q: ordered.map(q => ({ id: q.id, p: q.plain, a: q.steps.filter(s => s.tone !== 'none').map(s => [s.id, s.plain]) })) };
@@ -143,14 +143,14 @@ const sample = atlas.questions.map(q => ({ id: q.id, q: q.question, cards: atlas
 
 <div id="menu" class="menu" hidden>
   <button id="close-menu" class="mono" type="button">Close</button>
-  <p class="mono dim">Fourteen questions</p>
+  <p class="mono dim">{HOW_MANY_CAP} questions</p>
   <ol id="menu-list"></ol>
   <p class="mono dim menu-made">Every quote is checked against its source. Where each one sits was read by machine, twice, and not yet by a human editor. <a href="/how-it-works">How this was made →</a></p>
   <p class="mono dim menu-more">The rest of Svapna</p>
   <ul class="menu-links">
     <li><a href="#globe" id="menu-globe">The globe through time</a></li>
     <li><a href="/you">You · who thinks like you?</a></li>
-    <li><a href="/questions">All fourteen questions, to read</a></li>
+    <li><a href="/questions">All {HOW_MANY} questions, to read</a></li>
     <li><a href="/thinkers">Every thinker and text</a></li>
     <li><a href="/search">Search every passage</a></li>
     <li><a href="/circles">The nine circles of thinkers</a></li>

@@ -1,11 +1,11 @@
 ---
 import Read from '../layouts/Read.astro';
-import { questions, circles } from '../lib/atlas.js';
+import { questions, circles, HOW_MANY } from '../lib/atlas.js';
 ---
 <Read title="Community — find who thinks like you, and who doesn't — Svapna" description={`Answer ${questions.length} old questions, see which thinkers stand nearest and furthest from you, and find your circle. What is open now, and what is being built.`} path="/community" crumbs={[{ name: 'Community', path: '/community' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · Community</p>
   <h1>Answers, <em>compared.</em></h1>
-  <p class="lede">The atlas records where thinkers across four thousand years stand on fourteen questions. A visitor can add their own answers and see who stands nearest and who stands furthest.</p>
+  <p class="lede">The atlas records where thinkers across four thousand years stand on {HOW_MANY} questions. A visitor can add their own answers and see who stands nearest and who stands furthest.</p>
   <p><a class="go big" href="/you">Answer the questions →</a></p>
 
   <section>

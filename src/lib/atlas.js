@@ -19,6 +19,7 @@ export const WARM = {
   truth: ['Can the deepest truth be known?', ['No', 'In part', 'Yes']],
   'lasting-self': ['Is there a lasting “me”?', ['No', 'A changing one', 'Yes']],
   'ultimate-reality': ['Is there a God, or something ultimate?', ['No', 'Beyond words', 'Yes']],
+  humiliation: ['What exactly is humiliation?', ['A wound', 'Only what I make it', 'A teacher']],
   suffering: ['Does suffering have a purpose?', ['None', 'It can be used', 'It has meaning']],
   death: ['What happens when we die?', ['It ends', 'We cannot know', 'Something continues']],
 };
@@ -84,6 +85,11 @@ export const thinkers = [...bySlug.values()].map(t => {
   return { ...t, own, ties, when: own[0].dateShort, where: own[0].place, region: own[0].region, about: (WHO[t.name] || {}).about || '', tradition: (WHO[t.name] || {}).tradition || 'Other', sort: slugify(t.name.replace(/^(the|al-|a) /i, '')) };
 }).sort((a, b) => a.sort.localeCompare(b.sort));
 export const thinkerOf = name => bySlug.get(slugify(name));
+// How many questions there are, in words, so that the pages never go stale when one is added.
+const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+export const numberWord = n => WORDS[n] || String(n);
+export const HOW_MANY = numberWord(questions.length);
+export const HOW_MANY_CAP = HOW_MANY[0].toUpperCase() + HOW_MANY.slice(1);
 export const TONE = { low: '#2654ff', mid: '#ffb200', high: '#00b894', none: '#8a8fa3' };
 
 // ---- circles: three questions-behind-the-questions, each with three leanings. A thinker (or a visitor)
@@ -135,7 +141,7 @@ export const SECOND = {
 export const TRADITIONS = [...new Set(cards.map(c => c.tradition))].sort((a, b) => (a === 'Other') - (b === 'Other') || a.localeCompare(b));
 
 // How people search for each question's subject, used in titles and descriptions.
-export const TOPIC = { death: 'death', 'free-will': 'free will', happiness: 'happiness', suffering: 'suffering', desire: 'desire', 'solitude-or-company': 'solitude', relationships: 'other people', 'inward-or-others': 'knowing oneself', 'given-or-made': 'human nature', 'self-or-others-first': 'duty to others', meaning: 'the meaning of life', truth: 'truth', 'lasting-self': 'the self', 'ultimate-reality': 'God' };
+export const TOPIC = { death: 'death', 'free-will': 'free will', happiness: 'happiness', suffering: 'suffering', humiliation: 'humiliation', desire: 'desire', 'solitude-or-company': 'solitude', relationships: 'other people', 'inward-or-others': 'knowing oneself', 'given-or-made': 'human nature', 'self-or-others-first': 'duty to others', meaning: 'the meaning of life', truth: 'truth', 'lasting-self': 'the self', 'ultimate-reality': 'God' };
 // Traditions as a reader would search for them, and whether to say "says" or "say".
 export const TRAD = { 'Buddhism': ['Buddhism', 1], 'Christianity': ['Christianity', 1], 'Judaism': ['Judaism', 1], 'Islam and Sufism': ['Islam and Sufism', 0], 'Hinduism': ['Hinduism', 1], 'Daoism': ['Daoism', 1], 'Confucianism': ['Confucianism', 1], 'Jainism and Sikhism': ['Jainism and Sikhism', 0], 'Zoroastrianism': ['Zoroastrianism', 1], 'Greek and Roman philosophy': ['Greek and Roman philosophers', 0], 'Ancient Egypt and Mesopotamia': ['Ancient Egypt and Mesopotamia', 0], 'Indigenous and oral traditions': ['Indigenous and oral traditions', 0], 'Modern philosophy': ['Modern philosophers', 0], 'Science': ['Scientists', 0], 'Literature and poetry': ['Poets and writers', 0], 'Politics and reform': ['Reformers and activists', 0] };
 export const tradSlug = t => slugify(t);

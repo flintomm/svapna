@@ -3,7 +3,7 @@
 // Answers are kept on the visitor's own device (localStorage 'svapna_answers'); nothing is sent anywhere.
 import Coffee from '../components/Coffee.astro';
 import Read from '../layouts/Read.astro';
-import { questions, thinkers, AXES } from '../lib/atlas.js';
+import { questions, thinkers, AXES, HOW_MANY } from '../lib/atlas.js';
 const AX = AXES.map(a => ({ id: a.id, name: a.name, qs: a.qs, tone: a.tone, circles: a.circles }));
 
 const value = (q, id) => { const s = q.steps.filter(x => x.tone !== 'none'); const i = s.findIndex(x => x.id === id); return i < 0 ? null : (s.length > 1 ? i / (s.length - 1) : .5); };
@@ -21,10 +21,10 @@ const T = thinkers.map(t => {
   return { s: t.slug, n: t.name, w: t.when, p: pos, q: say };
 }).filter(t => Object.keys(t.p).length >= 2);
 ---
-<Read title="You: which thinkers think like you? — Svapna" description={`Answer fourteen of life’s big questions and see which of ${T.length} thinkers from four thousand years agree with you most, and which oppose you most, each in their own words.`} path="/you" crumbs={[{ name: 'You', path: '/you' }]}>
+<Read title="You: which thinkers think like you? — Svapna" description={`Answer ${HOW_MANY} of life’s big questions and see which of ${T.length} thinkers from four thousand years agree with you most, and which oppose you most, each in their own words.`} path="/you" crumbs={[{ name: 'You', path: '/you' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · You</p>
   <h1>Who thinks <em>like you?</em></h1>
-  <p class="lede">Answer as many of the fourteen questions as you like. The more you answer, the truer the match. <span id="where">Your answers stay on this device.</span></p>
+  <p class="lede">Answer as many of the {HOW_MANY} questions as you like. The more you answer, the truer the match. <span id="where">Your answers stay on this device.</span></p>
   <div id="acct" class="acct" hidden>
     <p id="acct-out" hidden><a class="go" href="/join">Sign in to keep them across devices →</a></p>
     <div id="acct-in" hidden>
@@ -129,7 +129,7 @@ const T = thinkers.map(t => {
         try { localStorage.setItem('svapna_circles', JSON.stringify(mine)); } catch (e) {}
         var F = {}; try { F = JSON.parse(localStorage.getItem('svapna_done') || '{}') || {}; } catch (e) {}
         var met = (F.thinkers || []).length;
-        [['First answer', 'Answer one question.', n >= 1], ['Halfway', 'Answer seven questions.', n >= 7], ['All fourteen', 'Answer every question.', n >= Q.length],
+        [['First answer', 'Answer one question.', n >= 1], ['Halfway', 'Answer ' + Math.ceil(Q.length / 2) + ' questions.', n >= Math.ceil(Q.length / 2)], ['Every question', 'Answer every question.', n >= Q.length],
           ['Through the night', 'Reach morning in Dreaming.', !!F.night, '/dream'], ['Went deeper', 'Open a depth of the night.', !!F.deeper, '/dream'],
           ['Close reader', 'Read a full lesson.', !!F.lesson, '/glossary'], ['Ten voices', 'Visit ten thinkers’ pages (' + Math.min(met, 10) + ' of 10).', met >= 10, '/thinkers']]
           .forEach(function (x) { box.append(sticker(x[0], x[1], 'star', x[2], x[3])); });

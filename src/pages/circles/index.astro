@@ -1,11 +1,11 @@
 ---
 import Read from '../../layouts/Read.astro';
-import { AXES, circles } from '../../lib/atlas.js';
+import { AXES, circles, HOW_MANY } from '../../lib/atlas.js';
 ---
 <Read title="The nine circles of thinkers — Svapna" description="Nine circles of thinkers, gathered by how they answered life’s big questions: what lies beyond, what is in our hands, and whether we are made alone or together." path="/circles" crumbs={[{ name: 'Circles', path: '/circles' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · Circles</p>
   <h1>Nine <em>circles.</em></h1>
-  <p class="lede">Behind the fourteen questions sit three larger ones. On each, thinkers across four thousand years fall into three circles. A thinker joins a circle when their own words, on at least two of its questions, lean that way.</p>
+  <p class="lede">Behind the {HOW_MANY} questions sit three larger ones. On each, thinkers across four thousand years fall into three circles. A thinker joins a circle when their own words, on at least two of its questions, lean that way.</p>
   <a class="go" href="/you">Find your own circles →</a>
   {AXES.map(ax => (
     <section>
