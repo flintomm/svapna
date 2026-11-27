@@ -62,3 +62,7 @@ export const occasions = [
   O('being-put-down', 'Words for when you have been put down', 'Being put down', 'On insult, mockery and being looked down on, from people who met it and kept their footing.',
     ['marcus-aurelius-humiliation', 'diogenes-the-cynic-humiliation', 'hong-yingming-humiliation', 'booker-t-washington-humiliation', 'liliuokalani-humiliation', 'confucius-humiliation', 'song-rongzi-humiliation', 'epictetus-humiliation', 'akkosa-sutta-humiliation', 'jane-austen-humiliation', 'wang-yangming-humiliation', 'thomas-hobbes-humiliation', 'john-cassian-humiliation']),
 ].map(o => ({ ...o, passages: o.ids.map(id => byId[id]).filter(Boolean).map(c => ({ ...c, home: home(c) })) }));
+
+// Elegies for a particular person, grouped by who is mourned (the card's facet says which).
+const WHO_DIED = [['Mourning a parent', 'A parent', 'parent'], ['Mourning a child', 'A child', 'child'], ['Mourning a husband or wife', 'A husband or wife', 'spouse'], ['Mourning a brother or sister', 'A brother or sister', 'sibling'], ['Mourning a friend', 'A friend', 'friend']];
+export const mourning = WHO_DIED.map(([facet, name, id]) => ({ id, name, passages: unique.filter(c => c.facet === facet).map(c => ({ ...c, home: home(c) })).sort((a, b) => a.sortYear - b.sortYear) })).filter(g => g.passages.length);

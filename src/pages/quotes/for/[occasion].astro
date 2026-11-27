@@ -2,7 +2,7 @@
 // A short set of passages for an occasion, chosen by hand from those both readers agreed on.
 import Read from '../../../layouts/Read.astro';
 import Passage from '../../../components/Passage.astro';
-import { occasions, topics } from '../../../lib/topics.js';
+import { occasions, topics, mourning } from '../../../lib/topics.js';
 export function getStaticPaths() { return occasions.map(o => ({ params: { occasion: o.slug }, props: { o } })); }
 const { o } = Astro.props;
 const n = o.passages.length, voices = new Set(o.passages.map(c => c.name)).size;
@@ -22,6 +22,19 @@ const desc = `${o.title}: ${n} short passages from ${voices} voices across four 
     <div class="find"><span class="find-eras" id="o-views"><button type="button" data-v="" aria-pressed="true">All {n}</button>{views.map(s => <button type="button" data-v={s.id} aria-pressed="false">{s.plain} ({o.passages.filter(c => c.readings[one.id].score === s.id).length})</button>)}</span></div>
   )}
   <div class="rows" id="o-rows">{o.passages.map(c => <Passage c={c} view />)}</div>
+  {(o.slug === 'a-funeral' || o.slug === 'someone-grieving') && mourning.length > 0 && (
+    <section id="who">
+      <h2>For a particular person</h2>
+      <p class="def">Words written by someone mourning the same kind of loss. Most of them grieve without saying what follows death.</p>
+      <p class="keys">{mourning.map(g => <a href={`#for-${g.id}`}><b>{g.name}</b> {g.passages.length}</a>)}</p>
+      {mourning.map(g => (
+        <div id={`for-${g.id}`}>
+          <h3 class="h-src" style="margin-top:44px">{g.name}</h3>
+          <div class="rows">{g.passages.map(c => <Passage c={c} note={false} />)}</div>
+        </div>
+      ))}
+    </section>
+  )}
   <section>
     <h2>More</h2>
     <p class="def">Other occasions: {occasions.filter(x => x.slug !== o.slug).map((x, i) => <>{i > 0 && ', '}<a href={`/quotes/for/${x.slug}`}>{x.short.toLowerCase()}</a></>)}. Or browse <a href="/quotes">quotes by topic</a>: {topics.slice(0, 8).map((t, i) => <>{i > 0 && ', '}<a href={`/quotes/${t.slug}`}>{t.name}</a></>)} and more.</p>
