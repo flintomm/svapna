@@ -2809,6 +2809,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "homer-mourning",
+      "question": "death",
+      "name": "Homer",
+      "short": "Homer",
+      "work": "Iliad, Book XVIII",
+      "excerpt": "what boots it to me, seeing that my dear comrade Patroclus has fallen—he whom I valued more than all others, and loved as dearly as my own life? I have lost him;",
+      "period": "c. 8th century BCE",
+      "dateShort": "c. 750 BCE",
+      "dateFull": "circa 750 BCE",
+      "sortYear": -750,
+      "sourceLabel": "Samuel Butler translation (1898), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/1/9/2199/2199-0.txt",
+      "locator": "Book XVIII, Achilles to Thetis.",
+      "place": "Ionia (Smyrna region), Turkey",
+      "lat": 38.42,
+      "lng": 27.2,
+      "anchorType": "Traditional association",
+      "placeNote": "The poems are traditionally linked to Ionia; the text gives no place of composition. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/1/9/2199/2199-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "Achilles tells his mother Thetis that his victory means nothing now that Patroclus, whom he loved as his own life, is dead.",
+          "limit": "A literary speaker in an epic, in Samuel Butler’s 1898 prose translation. The words show grief and do not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "homer-humiliation",
       "question": "humiliation",
       "name": "Homer",
@@ -2918,6 +2953,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "book-of-odes-mourning",
+      "question": "death",
+      "name": "Book of Odes (Shijing)",
+      "short": "Book of Odes",
+      "work": "Ode “Lu E” (蓼莪)",
+      "excerpt": "無父何怙？無母何恃？ 出則銜恤，入則靡至。 父兮生我，母兮鞠我，拊我、畜我、長我、育我、 顧我、復我、出入腹我。欲報之德，昊天罔極。",
+      "translation": "Without a father, on whom can I lean? Without a mother, on whom rely? Going out I carry sorrow, coming in I have nowhere to go. Father, you begot me; mother, you nursed me. You fondled me, fed me, raised me, reared me, watched over me, turned back to me, in and out you held me in your arms. I would repay that kindness, but heaven is boundless.",
+      "period": "c. 8th–7th century BCE",
+      "dateShort": "c. 700 BCE",
+      "dateFull": "circa 700 BCE",
+      "sortYear": -700,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/詩經/蓼莪",
+      "locator": "Stanzas 3–4 of 6.",
+      "place": "Wei River valley, Shaanxi, China",
+      "lat": 34.3,
+      "lng": 108.9,
+      "anchorType": "Traditional association",
+      "placeNote": "The odes are traditionally linked to the Zhou heartland; the page names no place. The place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/詩經/蓼莪",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a parent",
+          "why": "A son whose parents have died asks whom he can lean on now, and recounts how his father and mother bore, fed and raised him, a kindness he cannot repay.",
+          "limit": "An anonymous ode of the early Zhou period, compiled later; the speaker is unnamed. The English is the atlas’s own unreviewed translation. It does not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -4003,6 +4074,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "second-samuel-mourning-child",
+      "question": "death",
+      "name": "Book of 2 Samuel",
+      "short": "2 Samuel",
+      "work": "2 Samuel 18:33",
+      "excerpt": "O my son Absalom, my son, my son Absalom! would God I had died for thee, O Absalom, my son, my son!",
+      "period": "Compiled c. 7th–6th century BCE",
+      "dateShort": "c. 600 BCE",
+      "dateFull": "circa 600 BCE",
+      "sortYear": -600,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/2_Samuel",
+      "locator": "2 Samuel 18:33.",
+      "place": "Mahanaim, east of the Jordan (setting of the story)",
+      "lat": 32.18,
+      "lng": 35.69,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The story places David in the chamber over the gate at Mahanaim; the date of composition is uncertain. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/2_Samuel",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a child",
+          "why": "King David cries out at the death of his son Absalom and wishes he had died in the son’s place.",
+          "limit": "A narrative of a king’s grief in the King James Version of 1611. Absalom had rebelled against his father, and the text was compiled long after the events. The cry does not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "second-samuel-mourning-friend",
+      "question": "death",
+      "name": "Book of 2 Samuel",
+      "short": "2 Samuel",
+      "work": "2 Samuel 1:26",
+      "excerpt": "I am distressed for thee, my brother Jonathan: very pleasant hast thou been unto me: thy love to me was wonderful, passing the love of women.",
+      "period": "Compiled c. 7th–6th century BCE",
+      "dateShort": "c. 600 BCE",
+      "dateFull": "circa 600 BCE",
+      "sortYear": -600,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/2_Samuel",
+      "locator": "2 Samuel 1:26.",
+      "place": "Ziklag, southern Judah (setting of the story)",
+      "lat": 31.38,
+      "lng": 34.95,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The story places David at Ziklag when news of the battle reached him; the date of composition is uncertain. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/2_Samuel",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "David laments the death of Jonathan, whom he calls his brother, and says that Jonathan’s love for him surpassed any other.",
+          "limit": "A lament placed in David’s mouth in the King James Version of 1611, within a text compiled long after the events. It grieves and does not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -6870,6 +7011,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "sophocles-mourning",
+      "question": "death",
+      "name": "Sophocles",
+      "short": "Sophocles",
+      "work": "Antigone",
+      "excerpt": "The husband lost, another might have been found, and child from another, to replace the first-born: but, father and mother hidden with Hades, no brother's life could ever bloom for me again.",
+      "period": "441 BCE",
+      "dateShort": "441 BCE",
+      "dateFull": "441 BCE",
+      "sortYear": -441,
+      "sourceLabel": "R. C. Jebb translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Sophocles/antigone.html",
+      "locator": "Antigone’s speech before she is led away.",
+      "place": "Athens, Greece",
+      "lat": 37.98,
+      "lng": 23.72,
+      "anchorType": "Approximate performance association",
+      "placeNote": "The play was staged in Athens, set in Thebes; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://classics.mit.edu/Sophocles/antigone.html",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a brother or sister",
+          "why": "Antigone, who has buried her brother Polyneices against the king’s order, says that a husband or child could be replaced but a brother could not.",
+          "limit": "The speaker is a character in a tragedy, and she gives these words as a reason for her act as she is led to her tomb, not as a funeral lament. The translation is R. C. Jebb’s, from the nineteenth century.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -11191,6 +11367,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "callimachus-mourning",
+      "question": "death",
+      "name": "Callimachus",
+      "short": "Callimachus",
+      "work": "Epigram on Heraclitus, in William Cory’s “Heraclitus”",
+      "excerpt": "They told me, Heraclitus, they told me you were dead, They brought me bitter news to hear and bitter tears to shed.",
+      "period": "Greek original c. 270 BCE; English 1858",
+      "dateShort": "c. 270 BCE",
+      "dateFull": "circa 270 BCE",
+      "sortYear": -270,
+      "sourceLabel": "William Johnson Cory, “Heraclitus” (1891), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Heraclitus_(Cory)",
+      "locator": "First stanza.",
+      "place": "Alexandria, Egypt",
+      "lat": 31.15,
+      "lng": 29.95,
+      "anchorType": "Traditional association",
+      "placeNote": "Callimachus worked in Alexandria; the linked page gives Cory’s English only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Heraclitus_(Cory)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "The speaker learns that his friend Heraclitus has died and weeps remembering their long talks that outlasted the day.",
+          "limit": "William Cory’s free English version of 1858 stands in for a short Greek epigram written about 270 BCE, and the later lines of the poem are Cory’s own. The first stanza only grieves.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "dhammapada",
       "name": "The Dhammapada",
       "short": "Dhammapada",
@@ -14420,6 +14631,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "catullus-mourning",
+      "question": "death",
+      "name": "Catullus",
+      "short": "Catullus",
+      "work": "Carmina 101",
+      "excerpt": "Nunc tamen interea haec, prisco quae more parentum Tradita sunt tristi munere ad inferias, Accipe fraterno multum manantia fletu Atque in perpetuum, frater, ave atque uale.",
+      "translation": "Now, though, in the meantime, receive these gifts, handed down by the ancient custom of our fathers as a sad offering to the dead, wet with much of a brother’s weeping, and for ever, brother, hail and farewell.",
+      "period": "c. 56 BCE",
+      "dateShort": "c. 56 BCE",
+      "dateFull": "circa 56 BCE",
+      "sortYear": -56,
+      "sourceLabel": "Latin text (ed. Merrill), Latin Wikisource",
+      "sourceUrl": "https://la.wikisource.org/wiki/Carmina_(Catullus,_ed._Merrill)/Carmen_CI",
+      "locator": "Poem 101, lines 7–10.",
+      "place": "Troad, near Troy, Turkey",
+      "lat": 39.8,
+      "lng": 26.7,
+      "anchorType": "Setting named elsewhere in Catullus",
+      "placeNote": "Poem 68 places the brother’s grave near Troy, and poem 101 describes a journey to it; the linked page gives only the Latin text. The place still needs an editor’s confirmation.",
+      "placeSource": "https://la.wikisource.org/wiki/Carmina_(Catullus,_ed._Merrill)/Carmen_CI",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a brother or sister",
+          "why": "Catullus offers at his brother’s grave the gifts handed down by ancestral custom, wet with a brother’s weeping, and says a last farewell.",
+          "limit": "A Latin poem whose speaker is generally taken to be Catullus himself. The English is the atlas’s own unreviewed translation. The lines describe a rite and a farewell and say nothing about what becomes of the brother.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -20668,6 +20915,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "augustine-of-hippo-mourning-friend",
+      "question": "death",
+      "name": "Augustine of Hippo",
+      "short": "Augustine",
+      "work": "Confessions, Book IV",
+      "excerpt": "For I wondered that others, subject to death, did live, since he whom I loved, as if he should never die, was dead;",
+      "period": "c. 397–400 CE",
+      "dateShort": "c. 398 CE",
+      "dateFull": "circa 398 CE",
+      "sortYear": 398,
+      "sourceLabel": "E. B. Pusey translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "locator": "Book IV, chapter 6.",
+      "place": "Hippo Regius (present-day Annaba, Algeria)",
+      "lat": 36.86,
+      "lng": 7.74,
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine wrote the Confessions as bishop of Hippo about 397–400; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "Augustine describes the death of a close friend and his astonishment that others and he himself still lived.",
+          "limit": "Written years after the event, in E. B. Pusey’s nineteenth-century translation. The friend is unnamed. The passage describes grief and not the afterlife.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "augustine-of-hippo-mourning-mother",
+      "question": "death",
+      "name": "Augustine of Hippo",
+      "short": "Augustine",
+      "work": "Confessions, Book IX",
+      "excerpt": "What then was it which did grievously pain me within, but a fresh wound wrought through the sudden wrench of that most sweet and dear custom of living together?",
+      "period": "c. 397–400 CE",
+      "dateShort": "c. 398 CE",
+      "dateFull": "circa 398 CE",
+      "sortYear": 398,
+      "sourceLabel": "E. B. Pusey translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "locator": "Book IX, chapter 12.",
+      "place": "Hippo Regius (present-day Annaba, Algeria)",
+      "lat": 36.86,
+      "lng": 7.74,
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine wrote the Confessions as bishop of Hippo about 397–400; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/2/9/3296/3296-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a parent",
+          "why": "Augustine explains that his grief at his mother Monica’s death was the pain of losing the daily habit of living with her.",
+          "limit": "Written years after her death, in E. B. Pusey’s nineteenth-century translation. Elsewhere in the chapter he says she was not wholly dead, but this sentence only describes the loss.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "augustine-truth",
       "question": "truth",
       "name": "Augustine of Hippo",
@@ -20952,6 +21269,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "tao-qian-mourning",
+      "question": "death",
+      "name": "Tao Qian (Tao Yuanming)",
+      "short": "Tao Qian",
+      "work": "Sacrificial text for his sister, Madam Cheng (祭程氏妹文)",
+      "excerpt": "寂寂高堂，何時復踐？藐藐孤女，曷依曷恃？煢煢遊魂，誰主誰祀？奈何程妹，於此永已！死如有知，相見蒿裏。",
+      "translation": "Silent is the hall: when will she tread it again? The small orphan girl: on whom can she lean, on whom rely? A lonely wandering soul: who will keep her rites, who will make her offerings? How can it be, sister Cheng, that here you are gone for good! If the dead have knowledge, we shall meet in the burial ground.",
+      "period": "407 CE",
+      "dateShort": "407 CE",
+      "dateFull": "407 CE",
+      "sortYear": 407,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/祭程氏妹文",
+      "locator": "Closing lines of the text.",
+      "place": "Xunyang (near Jiujiang), Jiangxi, China",
+      "lat": 29.55,
+      "lng": 115.9,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Tao Qian lived in the countryside near Xunyang after leaving office in 405; the page dates the rite to 407 but does not name the place. The place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/祭程氏妹文",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Mourning a brother or sister",
+          "why": "Tao Qian mourns his sister, who married into the Cheng family, and asks who will now shelter her orphaned daughter and keep her rites. He ends that if the dead know anything, they will meet in the burial ground, which leaves the matter conditional.",
+          "limit": "A formal text recited at a memorial offering two years after her death, so the conventions of the genre shape its wording. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -22766,6 +23119,41 @@ window.PILOT_EVIDENCE={
           "facet": "The scourge that restores peace with God",
           "why": "Gregory reads the suffering in Job as God’s scourge, by which people who have fallen out with God through sin are brought back to peace with Him. Pain is sent and has a purpose in a larger order of correction, which places it as meant.",
           "limit": "The passage is part of a long verse-by-verse commentary on Job, in a nineteenth-century English translation, and it speaks of suffering as chastening for sinners, while Gregory holds elsewhere in the same book that Job himself suffered without fault. The work was begun at Constantinople and finished at Rome.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "al-khansa-mourning",
+      "question": "death",
+      "name": "Al-Khansa",
+      "short": "Al-Khansa",
+      "work": "Elegies for her brother Ṣakhr",
+      "excerpt": "Sunrise awakes in me the sad remembrance Of Ṣakhr, and I recall him at every sunset.",
+      "period": "Late 6th–early 7th century CE",
+      "dateShort": "c. 600 CE",
+      "dateFull": "circa 600 CE",
+      "sortYear": 600,
+      "sourceLabel": "R. A. Nicholson, A Literary History of the Arabs (1907), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/7/9/8/37985/37985-0.txt",
+      "locator": "Chapter III, discussion of Khansá under “Elegiac poetry”.",
+      "place": "Najd, Arabian Peninsula",
+      "lat": 24.7,
+      "lng": 46.7,
+      "anchorType": "Regional association",
+      "placeNote": "Al-Khansa belonged to the Banu Sulaym of the Najd region; the linked page names no place of composition. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/7/9/8/37985/37985-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a brother or sister",
+          "why": "Al-Khansa, whose brothers Mu‘áwiya and Ṣakhr were killed, says that the rising and setting of the sun alike bring her brother back to mind.",
+          "limit": "Two lines in R. A. Nicholson’s 1907 English prose-like rendering, quoted as an example from a much longer body of elegies. The excerpt does not say what the poet thinks follows death.",
           "second": "agreed"
         }
       },
@@ -25945,6 +26333,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "yuan-zhen-mourning",
+      "question": "death",
+      "name": "Yuan Zhen",
+      "short": "Yuan Zhen",
+      "work": "Three poems grieving (遣悲懷), second poem",
+      "excerpt": "昔日戲言身後意，今朝都到眼前來。 衣裳已施行看盡，針線猶存未忍開。",
+      "translation": "The jokes we once made about what would come after my death have all arrived before my eyes today. Her clothes I have nearly given away, but her needlework still lies there and I cannot bear to open it.",
+      "period": "c. 810 CE",
+      "dateShort": "c. 810 CE",
+      "dateFull": "circa 810 CE",
+      "sortYear": 810,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/遣悲懷",
+      "locator": "Second poem, lines 1–4.",
+      "place": "Jiangling, Hubei, China",
+      "lat": 30.35,
+      "lng": 112.19,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The poems are dated about 809–810, after his wife Wei Cong died; the linked page gives no place. The place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/遣悲懷",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a husband or wife",
+          "why": "Yuan Zhen recalls that the jokes he and his wife once made about her death have come true, and he cannot bring himself to open the sewing she left.",
+          "limit": "The English is the atlas’s own unreviewed translation. The lines grieve and do not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "liu-zongyuan-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Liu Zongyuan",
@@ -27432,6 +27856,42 @@ window.PILOT_EVIDENCE={
           "why": "Su Shi says that a man who answers an insult by drawing his sword shows no courage, and that great courage belongs to someone who is not provoked. Being insulted is shown as a test of the person’s composure, not of the injury done.",
           "limit": "The excerpt breaks off in mid-sentence; the essay goes on to say the truly brave are not startled when suddenly confronted. It is a young man’s examination essay about the strategist Zhang Liang, not a discussion of shame. The English is the atlas’s own unreviewed translation.",
           "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "su-shi-mourning",
+      "question": "death",
+      "name": "Su Shi",
+      "short": "Su Shi",
+      "work": "Jiangchengzi, “Ten years, living and dead” (江城子·乙卯正月二十日夜記夢)",
+      "excerpt": "十年生死兩茫茫，不思量，自難忘。千里孤墳，無處話淒涼。縱使相逢應不識，塵滿面，鬢如霜。",
+      "translation": "Ten years, the living and the dead, both lost to sight. I do not try to remember, yet I cannot forget. Her lonely grave lies a thousand li away, and there is nowhere to tell my sorrow. Even if we met, she would not know me: dust on my face, frost at my temples.",
+      "period": "1075 CE",
+      "dateShort": "1075 CE",
+      "dateFull": "1075 CE",
+      "sortYear": 1075,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/江城子_(蘇軾)/江城子_(乙卯正月二十日夜記夢)",
+      "locator": "Opening stanza.",
+      "place": "Mizhou (Zhucheng), Shandong, China",
+      "lat": 35.99,
+      "lng": 119.4,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The title dates the poem to 1075, when Su Shi governed Mizhou; the linked page does not name the place. The place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/江城子_(蘇軾)/江城子_(乙卯正月二十日夜記夢)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a husband or wife",
+          "why": "Su Shi writes ten years after his wife’s death that he does not try to remember her yet cannot forget, and that her lonely grave is far away.",
+          "limit": "The English is the atlas’s own unreviewed translation. The lines imagine a meeting but do not claim that one will happen.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -38734,6 +39194,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "michel-de-montaigne-mourning",
+      "question": "death",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, “Of Friendship”",
+      "excerpt": "I have only led a languishing life; and the very pleasures that present themselves to me, instead of administering anything of consolation, double my affliction for his loss.",
+      "period": "c. 1572–1580",
+      "dateShort": "c. 1580",
+      "dateFull": "circa 1580",
+      "sortYear": 1580,
+      "sourceLabel": "Charles Cotton translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "locator": "Book I, chapter 27, “Of Friendship”.",
+      "place": "Château de Montaigne, Périgord, France",
+      "lat": 44.84,
+      "lng": 0.75,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Montaigne wrote the Essays in his tower at the château; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "Montaigne says that since the death of Étienne de La Boétie his life has been languishing and even pleasures only deepen his sense of loss.",
+          "limit": "Charles Cotton’s seventeenth-century translation. The friend is named in the translator’s notes, not in this sentence. The passage does not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "michel-de-montaigne",
       "name": "Michel de Montaigne",
       "short": "Montaigne",
@@ -39543,6 +40038,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ben-jonson-mourning",
+      "question": "death",
+      "name": "Ben Jonson",
+      "short": "Jonson",
+      "work": "On My First Sonne",
+      "excerpt": "Farewell, thou child of my right hand, and joy, My sin was too much hope of thee, loved boy; Seven years th' wert lent to me, and I thee pay, Exacted by thy fate, on the just day.",
+      "period": "c. 1603; printed 1616",
+      "dateShort": "c. 1603",
+      "dateFull": "circa 1603",
+      "sortYear": 1603,
+      "sourceLabel": "Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/On_My_First_Sonne",
+      "locator": "Opening four lines.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.1,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Jonson lived in London when his son died of plague in 1603; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/On_My_First_Sonne",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a child",
+          "why": "Jonson bids farewell to his seven-year-old son, calling his own fault too much hope, and speaks of the boy as a loan repaid on the day it fell due.",
+          "limit": "An epigram in a modernised Wikisource text. The excerpt does not speak of what follows death, though later lines wish the boy rest.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ruhi-of-baghdad-happiness",
       "question": "happiness",
       "name": "Ruhi of Baghdad",
@@ -40034,6 +40564,41 @@ window.PILOT_EVIDENCE={
           "facet": "The book of nature in mathematical language",
           "why": "Galileo says the universe is a book that can be read once its language is learned, and that the language is mathematics. Truth about nature is therefore within reach of reason trained in geometry.",
           "limit": "The claim concerns the physical universe and not ultimate questions, and it is part of a polemic against a Jesuit opponent who relied on authority. The English is the atlas's own unreviewed translation of the Italian original.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "henry-king-mourning",
+      "question": "death",
+      "name": "Henry King",
+      "short": "King",
+      "work": "The Exequy",
+      "excerpt": "Sleep on my Love in thy cold bed Never to be disquieted ! My last good night ! Thou wilt not wake Till I thy fate shall overtake:",
+      "period": "c. 1624; printed 1657",
+      "dateShort": "c. 1624",
+      "dateFull": "circa 1624",
+      "sortYear": 1624,
+      "sourceLabel": "Internet Archive scan, English Poems of Henry King",
+      "sourceUrl": "https://archive.org/stream/englishpoemsofhe00king/englishpoemsofhe00king_djvu.txt",
+      "locator": "Lines 81–84 of the poem. The scanned text contains recognition errors.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "King’s wife Anne died in 1624 when he lived in London; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/englishpoemsofhe00king/englishpoemsofhe00king_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Mourning a husband or wife",
+          "why": "King bids his dead wife sleep in her grave until he follows her and overtakes her fate, which implies that the two will meet again.",
+          "limit": "A scanned edition, so the text contains recognition errors and old spacing before punctuation. The sleep is a poetic image, and the reunion is stated as an expectation, not a doctrine.",
           "second": "agreed"
         }
       },
@@ -41398,6 +41963,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-milton-mourning",
+      "question": "death",
+      "name": "John Milton",
+      "short": "Milton",
+      "work": "Sonnet 19 (“Methought I saw my late espoused Saint”)",
+      "excerpt": "And such, as yet once more I trust to have Full sight of her in Heaven without restraint, Came vested all in white, pure as her mind: Her face was vail'd, yet to my fancied sight,",
+      "period": "c. 1658",
+      "dateShort": "c. 1658",
+      "dateFull": "circa 1658",
+      "sortYear": 1658,
+      "sourceLabel": "Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Poems,_%26c._Upon_Several_Occasions/Sonnets/Sonnet_19",
+      "locator": "Lines 7–10.",
+      "place": "London, England",
+      "lat": 51.5,
+      "lng": -0.13,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Milton lived in Westminster, London, in 1658; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Poems,_%26c._Upon_Several_Occasions/Sonnets/Sonnet_19",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Mourning a husband or wife",
+          "why": "Milton dreams of his dead wife, veiled and robed in white, and says he trusts to see her fully in Heaven.",
+          "limit": "The poem does not name her; she is read as his second wife, Katherine, who died in 1658. The trust is stated as a hope and the poem ends with waking to night.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "blaise-pascal-given-or-made",
       "question": "given-or-made",
       "name": "Blaise Pascal",
@@ -41682,6 +42282,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "anne-bradstreet-mourning",
+      "question": "death",
+      "name": "Anne Bradstreet",
+      "short": "Bradstreet",
+      "work": "In Memory of My Dear Grandchild Elizabeth Bradstreet",
+      "excerpt": "Farewell fair flower that for a space was lent, Then ta'en away unto eternity. Blest babe why should I once bewail thy fate, Or sigh the days so soon were terminate; Sith thou art settled in an everlasting state.",
+      "period": "1665",
+      "dateShort": "1665",
+      "dateFull": "1665",
+      "sortYear": 1665,
+      "sourceLabel": "Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/In_Memory_of_My_Dear_Grandchild_Elizabeth_Bradstreet,_Who_Deceased_August,_1665_Being_a_Year_and_a_Half_Old",
+      "locator": "Lines 3–7.",
+      "place": "Andover, Massachusetts, United States",
+      "lat": 42.66,
+      "lng": -71.14,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Bradstreet lived at Andover in 1665; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/In_Memory_of_My_Dear_Grandchild_Elizabeth_Bradstreet,_Who_Deceased_August,_1665_Being_a_Year_and_a_Half_Old",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "continues",
+          "facet": "Mourning a child",
+          "why": "Bradstreet mourns her granddaughter, who died aged a year and a half, and consoles herself that the child is taken to eternity and settled in an everlasting state.",
+          "limit": "The mourner is a grandmother, and the poem is one of several elegies she wrote for grandchildren. The consolation is Puritan and states the belief that the child lives on; the wording is of the 1665 poem in modern spelling.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42808,6 +43443,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "matsuo-basho-mourning",
+      "question": "death",
+      "name": "Matsuo Bashō",
+      "short": "Bashō",
+      "work": "Nozarashi Kikō (野ざらし紀行)",
+      "excerpt": "母の白髮おがめよ、浦島が子の玉手箱、汝が眉もやゝ老たりとしばらく泣て、 手にとらば消ん涙ぞあつき秋の霜",
+      "translation": "“Look on my mother’s white hair — Urashima’s treasure box; your own brows too have grown a little old,” said my brother, and I wept a while. If I took it in my hand it would melt: hot are my tears, autumn frost.",
+      "period": "1684–85",
+      "dateShort": "1684–85",
+      "dateFull": "1684–1685",
+      "sortYear": 1684,
+      "sourceLabel": "Japanese text, Japanese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://ja.wikisource.org/wiki/野ざらし紀行",
+      "locator": "Entry on his return home in the ninth month.",
+      "place": "Ueno, Iga (Mie), Japan",
+      "lat": 34.77,
+      "lng": 136.13,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The diary has him return to his birthplace in Iga; the page does not give the town. The place still needs an editor’s confirmation.",
+      "placeSource": "https://ja.wikisource.org/wiki/野ざらし紀行",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a parent",
+          "why": "Bashō, back in his home village after his mother’s death, is shown a lock of her white hair and answers with a verse: if taken in the hand, it would melt, and the tears are hotter than the autumn frost.",
+          "limit": "A travel diary from 1684–85. The English is the atlas’s own unreviewed translation. The verse describes grief and does not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -47422,6 +48093,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "william-cowper-mourning",
+      "question": "death",
+      "name": "William Cowper",
+      "short": "Cowper",
+      "work": "On the Receipt of My Mother’s Picture out of Norfolk",
+      "excerpt": "My mother! when I learn'd that thou wast dead, Say, wast thou conscious of the tears I shed? Hover'd thy spirit o'er thy sorrowing son, Wretch even then, life's journey just begun?",
+      "period": "1790",
+      "dateShort": "1790",
+      "dateFull": "1790",
+      "sortYear": 1790,
+      "sourceLabel": "Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/On_the_Receipt_of_My_Mother%27s_Picture",
+      "locator": "Stanza beginning “My mother! when I learn’d that thou wast dead”.",
+      "place": "Weston Underwood, Buckinghamshire, England",
+      "lat": 52.15,
+      "lng": -0.7,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Cowper lived at Weston Underwood in 1790; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/On_the_Receipt_of_My_Mother%27s_Picture",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unknown",
+          "facet": "Mourning a parent",
+          "why": "Cowper, looking at his mother’s portrait fifty years after her death, asks whether her spirit hovered over him when he wept, and leaves the question open in these lines.",
+          "limit": "Written in 1790; the Wikisource text is a nineteenth-century printing. Later lines answer the question hopefully through the portrait’s smile.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "mary-wollstonecraft-desire",
       "question": "desire",
       "name": "Mary Wollstonecraft",
@@ -48166,6 +48872,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "william-wordsworth-mourning-brother",
+      "question": "death",
+      "name": "William Wordsworth",
+      "short": "Wordsworth",
+      "work": "Elegiac Stanzas, suggested by a picture of Peele Castle in a storm",
+      "excerpt": "So once it would have been,—'tis so no more; I have submitted to a new control: A power is gone, which nothing can restore; A deep distress hath humaniz'd my Soul.",
+      "period": "1805–06; printed 1807",
+      "dateShort": "1806",
+      "dateFull": "1805–06",
+      "sortYear": 1806,
+      "sourceLabel": "Poems (1815), Volume 2, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Poems_(Wordsworth,_1815)/Volume_2/Elegiac_Stanzas",
+      "locator": "Stanza beginning “So once it would have been”.",
+      "place": "Grasmere, Cumbria, England",
+      "lat": 54.46,
+      "lng": -3.02,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Wordsworth lived at Dove Cottage, Grasmere, in 1805–06. The linked page gives the text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Poems_(Wordsworth,_1815)/Volume_2/Elegiac_Stanzas",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a brother or sister",
+          "why": "Wordsworth says that a loss has ended his earlier calm and that grief has changed him. The poem was written after the drowning of his brother John, who is not named in these lines.",
+          "limit": "The page does not name the brother, so the identification comes from the poem’s history, not its words. Spelling is that of the 1815 printing. The lines do not say whether the dead survive.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "g-w-f-hegel-inward-or-others",
       "question": "inward-or-others",
       "name": "G. W. F. Hegel",
@@ -48518,6 +49259,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "william-wordsworth-mourning-child",
+      "question": "death",
+      "name": "William Wordsworth",
+      "short": "Wordsworth",
+      "work": "Surprized by joy—impatient as the Wind",
+      "excerpt": "Save one, one only, when I stood forlorn, Knowing my heart's best treasure was no more; That neither present time, nor years unborn Could to my sight that heavenly face restore.",
+      "period": "c. 1813; printed 1815",
+      "dateShort": "c. 1813",
+      "dateFull": "circa 1813",
+      "sortYear": 1813,
+      "sourceLabel": "Poems (1815), Volume 2, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Poems_(Wordsworth,_1815)/Volume_2/Surprized_by_joy",
+      "locator": "Final lines of the sonnet.",
+      "place": "Rydal Mount, Cumbria, England",
+      "lat": 54.45,
+      "lng": -2.98,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Wordsworth lived at Rydal Mount from 1813. The linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Poems_(Wordsworth,_1815)/Volume_2/Surprized_by_joy",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a child",
+          "why": "Wordsworth recalls the worst pang of grief, when he knew that his heart’s best treasure was gone and that no future time would restore her face to sight.",
+          "limit": "The poem does not name the person; it is read as about his daughter Catherine, who died in 1812. Spelling is that of the 1815 printing. It says the face cannot be restored to sight but does not settle whether she survives.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -49828,6 +50604,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "alfred-tennyson-mourning",
+      "question": "death",
+      "name": "Alfred, Lord Tennyson",
+      "short": "Tennyson",
+      "work": "In Memoriam A. H. H., canto 7",
+      "excerpt": "Dark house, by which once more I stand Here in the long unlovely street, Doors, where my heart was used to beat So quickly, waiting for a hand, A hand that can be claspt no more—",
+      "period": "c. 1833; printed 1850",
+      "dateShort": "1833–50",
+      "dateFull": "1833–1850",
+      "sortYear": 1833,
+      "sourceLabel": "Internet Archive scan of In Memoriam (annotated school edition)",
+      "sourceUrl": "https://archive.org/stream/inmemoriam00tenn/inmemoriam00tenn_djvu.txt",
+      "locator": "Canto 7, first two stanzas. The scanned text contains recognition errors.",
+      "place": "Wimpole Street, London, England",
+      "lat": 51.52,
+      "lng": -0.15,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The edition’s notes identify the house as the Hallams’ in Wimpole Street; the poem itself names no street. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/inmemoriam00tenn/inmemoriam00tenn_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a friend",
+          "why": "Tennyson stands outside the house of his dead friend Arthur Hallam and recalls the heart that once beat as he waited for a hand he cannot clasp again.",
+          "limit": "A scanned school edition, so the text contains recognition errors. The lines express grief and do not say what follows death.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -51939,6 +52750,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "victor-hugo-mourning",
+      "question": "death",
+      "name": "Victor Hugo",
+      "short": "Hugo",
+      "work": "Les Contemplations, “Demain, dès l’aube”",
+      "excerpt": "Demain, dès l'aube, à l'heure où blanchit la campagne. Je partirai. Vois-tu, je sais que tu m'attends. J'irai par la forêt, j'irai par la montagne. Je ne puis demeurer loin de toi plus longtemps.",
+      "translation": "Tomorrow, at dawn, at the hour when the countryside whitens, I shall set out. You see, I know you are waiting for me. I shall go by the forest, I shall go by the mountain. I cannot stay away from you any longer.",
+      "period": "1847; printed 1856",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "Internet Archive scan, Les Contemplations (Hugo)",
+      "sourceUrl": "https://archive.org/stream/lescontemplatio02hugogoog/lescontemplatio02hugogoog_djvu.txt",
+      "locator": "Book IV, poem XIV, first stanza. The scanned text contains recognition errors.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The poem is dated 1847, and Hugo lived in Paris then; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/lescontemplatio02hugogoog/lescontemplatio02hugogoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a child",
+          "why": "Hugo tells his dead daughter Léopoldine that he will walk to her grave at dawn, since he cannot stay away from her any longer.",
+          "limit": "The poem does not name Léopoldine; the identification comes from the collection’s history. The English is the atlas’s own unreviewed translation, and the source is a scan with recognition errors. The address to her does not claim that she hears.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -72114,6 +72961,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-hardy-mourning",
+      "question": "death",
+      "name": "Thomas Hardy",
+      "short": "Hardy",
+      "work": "The Going (Poems of 1912–13)",
+      "excerpt": "Never to bid good-bye, Or give me the softest call, Or utter a wish for a word, while I Saw morning harden upon the wall, Unmoved, unknowing That your great going Had place that moment, and altered all.",
+      "period": "1912",
+      "dateShort": "1912",
+      "dateFull": "1912",
+      "sortYear": 1912,
+      "sourceLabel": "Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Going_(Hardy)",
+      "locator": "Second stanza.",
+      "place": "Max Gate, Dorchester, England",
+      "lat": 50.71,
+      "lng": -2.43,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hardy wrote the Poems of 1912–13 at Max Gate after Emma’s death in November 1912; the linked page gives text only. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Going_(Hardy)",
+      "review": "draft",
+      "readings": {
+        "death": {
+          "score": "unscored",
+          "facet": "Mourning a husband or wife",
+          "why": "Hardy laments that his wife Emma left without a farewell and that he saw the morning pass unaware that her death had altered everything.",
+          "limit": "The poem does not name Emma; the identification is from the poem’s history. It grieves a sudden death and does not say what follows it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "delmira-agustini-desire",
       "question": "desire",
       "name": "Delmira Agustini",
@@ -90639,6 +91521,41 @@ window.PILOT_EVIDENCE={
     "Zeno of Elea (reported by Diogenes Laertius)": {
       "about": "Greek philosopher of the 5th century BCE, pupil of Parmenides, as reported by Diogenes Laertius.",
       "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Al-Khansa": {
+      "about": "Arab poet of the 7th century, famous for her laments for her brothers Sakhr and Mu‘awiya.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Ben Jonson": {
+      "about": "English playwright and poet, a contemporary of Shakespeare, who wrote in London until 1637.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Callimachus": {
+      "about": "Greek poet and scholar of Alexandria in the 3rd century BCE.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Henry King": {
+      "about": "English poet and bishop of Chichester, who wrote The Exequy for his wife around 1624.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Book of 2 Samuel": {
+      "about": "Book of the Hebrew Bible telling of the reign of King David, compiled in Judah by about the 6th century BCE.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Victor Hugo": {
+      "about": "French poet, novelist and dramatist, who wrote Les Contemplations after the death of his daughter Léopoldine.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Yuan Zhen": {
+      "about": "Chinese poet and official of the Tang dynasty, known for his poems mourning his wife.",
+      "tradition": "Literature and poetry",
       "sure": true
     }
   }
