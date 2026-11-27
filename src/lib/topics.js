@@ -65,4 +65,4 @@ export const occasions = [
 
 // Elegies for a particular person, grouped by who is mourned (the card's facet says which).
 const WHO_DIED = [['Mourning a parent', 'A parent', 'parent'], ['Mourning a child', 'A child', 'child'], ['Mourning a husband or wife', 'A husband or wife', 'spouse'], ['Mourning a brother or sister', 'A brother or sister', 'sibling'], ['Mourning a friend', 'A friend', 'friend']];
-export const mourning = WHO_DIED.map(([facet, name, id]) => ({ id, name, passages: unique.filter(c => c.facet === facet).map(c => ({ ...c, home: home(c) })).sort((a, b) => a.sortYear - b.sortYear) })).filter(g => g.passages.length);
+export const mourning = WHO_DIED.map(([facet, name, id]) => ({ id, name, passages: unique.filter(c => ((c.readings[c.question || 'relationships'] || {}).facet || c.facet) === facet).map(c => ({ ...c, home: home(c) })).sort((a, b) => a.sortYear - b.sortYear) })).filter(g => g.passages.length);
