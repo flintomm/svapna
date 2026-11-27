@@ -1239,7 +1239,7 @@ window.PILOT_EVIDENCE={
           "facet": "A ruler’s self-reliance",
           "why": "The dead king warns his son to rely on no one: closeness to others brings no satisfaction and no safety.",
           "limit": "This is advice to a king after a palace betrayal, not a general view of persons. It was probably composed for his successor’s court, and this is a 1906 translation.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "solitude",
@@ -1491,7 +1491,7 @@ window.PILOT_EVIDENCE={
           "facet": "Death fixed for mankind",
           "why": "The ale-wife tells Gilgamesh that the gods kept lasting life for themselves and assigned death to humans. His search for a life beyond death is declared hopeless. A second, independent reading moved this placement from “it ends” to “unscored”: ‘They fixed death for mankind’ says humans must die, not that nothing of the person goes on, as A's own limit concedes.",
           "limit": "The lines are spoken by a character in a poem, here in an early twentieth-century rendering quoted by Donald Mackenzie. Elsewhere the epic describes a dim underworld of shades, so the passage denies escape from death more than it denies any afterlife.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -1907,11 +1907,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "limited",
+          "score": "unscored",
           "facet": "Sin and the will",
-          "why": "The singer pleads to Varuna that his offences came from seduction, thoughtlessness, wine, dice and anger, and not from his own will. His choices are shown as pulled by forces beyond intention, though he still asks for pardon as a wrongdoer.",
+          "why": "The singer pleads to Varuna that his offences came from seduction, thoughtlessness, wine, dice and anger, and not from his own will. His choices are shown as pulled by forces beyond intention, though he still asks for pardon as a wrongdoer. A second, independent reading moved this placement from “free within limits” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A prayer for forgiveness in Griffith’s 1889 verse translation from a scan with recognition errors. The speaker may be excusing himself before a god, and the verse does not say whether such pulls can be resisted.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -1981,7 +1981,7 @@ window.PILOT_EVIDENCE={
           "facet": "Contentment over wealth",
           "why": "A plain meal eaten in goodwill is judged better than rich food eaten amid quarrels. Well-being is made to depend on the inner and social temper of a life as well as on having enough to eat.",
           "limit": "Budge’s 1924 translation of a Ramesside instruction text, in a line-numbered verse layout with his bracketed alternatives. The proverb praises modest means and does not say that happiness holds up under real poverty or disaster.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -2051,7 +2051,7 @@ window.PILOT_EVIDENCE={
           "facet": "The origin of creation",
           "why": "The hymn asks who could know where creation came from and answers that even the gods arrived too late to witness it. The first origin is placed beyond the reach of any knower it can name.",
           "limit": "A liturgical poem in Ralph Griffith’s 1890s translation. Its questions are rhetorical and its last verse leaves open whether the highest overseer knows, so the hymn doubts more than it denies.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -2117,11 +2117,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "limited",
+          "score": "unscored",
           "facet": "A mandate that can be lost",
-          "why": "The ode tells the descendants of the fallen Shang that the appointment of Heaven is not easily kept and that they should not bring their own extinction. Heaven’s decree fixes the situation, but the people are told that their own conduct can lose or keep what it gives.",
+          "why": "The ode tells the descendants of the fallen Shang that the appointment of Heaven is not easily kept and that they should not bring their own extinction. Heaven’s decree fixes the situation, but the people are told that their own conduct can lose or keep what it gives. A second, independent reading moved this placement from “free within limits” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A court ode in Legge’s 1879 translation, addressed to the Shang nobles after the Zhou conquest, and the advice concerns a dynasty and its officers. It does not argue about choice as such.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -2905,7 +2905,7 @@ window.PILOT_EVIDENCE={
           "facet": "Sorrow spun by carefree gods",
           "why": "Achilles tells the grieving Priam that the gods, untroubled themselves, deal out sorrow to mortals, and that nothing is gained by weeping. Sorrow is handed down without reason and can only be borne.",
           "limit": "Achilles speaks in an epic poem, in Samuel Butler’s 1898 prose translation. The sorrow is sent by Zeus from his two urns, so the passage could be read as “sent”; what it lacks is any purpose behind the sending.",
-          "second": "differed"
+          "second": "settled"
         },
         "free-will": {
           "score": "determined",
@@ -2947,7 +2947,7 @@ window.PILOT_EVIDENCE={
           "facet": "The Muses know, mortals hear report",
           "why": "Before the catalogue of ships the poet says the Muses see everything while mortals have only report, so the poet knows what he sings only through divine help.",
           "limit": "The invocation concerns knowledge of past events for the poem, not the deepest truth of the world, and it is a convention of epic. The translation is Samuel Butler’s prose of 1898.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -3158,7 +3158,7 @@ window.PILOT_EVIDENCE={
           "facet": "Muses’ true and false words",
           "why": "The Muses tell the poet that they can speak falsehoods that look like truths and also speak truth when they choose, so the truth is given to hearers only as the goddesses allow. A second, independent reading moved this placement from “in part” to “unscored”: The Muses‘ ’we know... to utter true things' concerns what goddesses can say, not whether humans can know the deepest truth.",
           "limit": "The speakers are goddesses in the poet’s own account of his calling, in a 1914 prose translation. The passage concerns the reliability of poetic speech, not the deepest truths of the world.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -3193,7 +3193,7 @@ window.PILOT_EVIDENCE={
           "facet": "A farmer’s livelihood",
           "why": "Hesiod treats the people next door as one of the main things that make a household thrive or fail. A second, independent reading moved this placement from “helps shape” to “unscored”: A neighbour as ‘plague’ or ‘blessing’ concerns how a household fares, not what a person is.",
           "limit": "This is practical advice about farming life and reciprocity. It says others affect how a household fares, not what a person is.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -3669,7 +3669,7 @@ window.PILOT_EVIDENCE={
           "facet": "Bliss not in the finite",
           "why": "Sanatkumara tells Narada that bliss is not found in anything finite and belongs to the Infinite alone, so happiness is not to be had from limited, outer things. A second, independent reading moved this placement from “on oneself” to “unscored”: ‘Infinity only is bliss’ locates bliss but does not say it lies in a person‘s own power; A’s limit concedes the placing is an inference from a later identification with the Self.",
           "limit": "A teaching in Max Müller’s Victorian translation. The Infinite is later identified with the Self, but this verse does not itself say that happiness is in a person’s power, so the placing is an inference.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -4344,11 +4344,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Being human",
-          "why": "In this creation account a solitary human being is declared incomplete, and a companion is made.",
+          "why": "In this creation account a solitary human being is declared incomplete, and a companion is made. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A narrative, not an argument, and its first concern is marriage. The date is that of the text’s compilation, which scholars debate.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -4754,7 +4754,7 @@ window.PILOT_EVIDENCE={
           "facet": "A shared world",
           "why": "The waking share one common world; turning into a world of one’s own is what sleepers do. A second, independent reading moved this placement from “through others” to “unscored”: The ‘common world’ of the waking versus ‘a world of his own’ is about a shared world, not about finding or knowing oneself through other people.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -5324,7 +5324,7 @@ window.PILOT_EVIDENCE={
           "facet": "Knowing what one does not know",
           "why": "Confucius defines knowledge as including an honest boundary: some things are known and some are not, and saying which is which is part of knowing. Knowledge is real but partial. A second, independent reading moved this placement from “in part” to “unscored”: The saying defines honest knowing (‘to allow that you do not know it’) and does not address whether the deepest truth can be known.",
           "limit": "A remark to the disciple Zilu, recorded by later followers, in Legge’s nineteenth-century English. It is advice about intellectual honesty and does not mention ultimate reality, on which the Analects elsewhere reports Confucius as reticent.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -5355,11 +5355,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "death": {
-          "score": "unknown",
+          "score": "unscored",
           "facet": "What awaits the dead",
-          "why": "The fragment says something awaits the dead but that it lies outside anything people expect or imagine. Its stress falls on how little the living can know of it.",
+          "why": "The fragment says something awaits the dead but that it lies outside anything people expect or imagine. Its stress falls on how little the living can know of it. A second, independent reading moved this placement from “open or unknowable” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is an isolated sentence preserved by Clement of Alexandria centuries later, with no surviving context. It does say that something awaits, so it could also be read as affirming survival. The translation is John Burnet’s.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -5677,11 +5677,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "Knowing by not grasping",
-          "why": "The verse says Brahman escapes anyone who claims to have it as an object of thought, and is present only to the one who does not so claim. That makes it approachable but never held as ordinary knowledge.",
+          "why": "The verse says Brahman escapes anyone who claims to have it as an object of thought, and is present only to the one who does not so claim. That makes it approachable but never held as ordinary knowledge. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A scriptural dialogue between teacher and pupil, in Max Müller’s 1879 translation with his bracketed gloss. The next verse speaks of Brahman being known ‘by awakening’, so the text as a whole is less negative than this paradox alone.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -6052,7 +6052,7 @@ window.PILOT_EVIDENCE={
           "facet": "Becoming a person of perfect virtue",
           "why": "The passage ties one’s own standing to helping others stand: self-cultivation and concern for others advance together.",
           "limit": "It describes the conduct of an ideal person, not what makes anyone a self. The sayings were compiled by later followers, so the wording is not securely Confucius’s own.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "made",
@@ -6682,7 +6682,7 @@ window.PILOT_EVIDENCE={
           "facet": "Refusing every answer",
           "why": "Asked about another world, the wandering teacher Sañjaya declines to affirm, deny, or take any position between. The reply addresses the question and refuses to land anywhere on it.",
           "limit": "Sañjaya’s words survive only in a Buddhist discourse that presents them, through a king’s report, as evasion; no text of his own exists. The reply does not say whether the matter is unknowable or merely not to be declared. Modern translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -6717,7 +6717,7 @@ window.PILOT_EVIDENCE={
           "facet": "Against “all is past karma”",
           "why": "The Buddha rejects the view that everything a person experiences is fixed by past deeds, because it leaves no room for the effort to do one thing and not another. The passage treats that effort as real and as a person’s own.",
           "limit": "The passage refutes three kinds of determinism; it does not give a positive theory of free will. Elsewhere the discourses describe intention as itself arising from conditions, and the bracketed words are the translator’s.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -6822,7 +6822,7 @@ window.PILOT_EVIDENCE={
           "facet": "Questions left undeclared",
           "why": "Asked to settle metaphysical questions about the cosmos, the soul and existence after death, the Buddha lists them as things he has not declared. The passage addresses the question directly and declines to answer either way.",
           "limit": "The discourse gives a practical reason for the silence: such answers do not lead to the end of suffering. It does not say the questions are unanswerable in principle, and it does not mention a creator god. The text is a canonical report compiled after the Buddha's lifetime.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -7005,7 +7005,7 @@ window.PILOT_EVIDENCE={
           "facet": "The released one after death",
           "why": "Asked where a liberated person reappears after death, the Buddha rejects both “reappears” and “does not reappear” as terms that fail to fit. The passage refuses each end of the scale and does not say the matter is merely unknown.",
           "limit": "The refusal concerns a fully awakened person only; for everyone else the same collection teaches rebirth according to action. A discourse compiled by the early community and read here in a modern English translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -8595,11 +8595,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "The maker past finding out",
-          "why": "The maker of the universe is ‘past finding out’, and even if found could not be told to all; discovery is hard and for a few, not ruled out.",
+          "why": "The maker of the universe is ‘past finding out’, and even if found could not be told to all; discovery is hard and for a few, not ruled out. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -8950,11 +8950,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "What words cannot hold",
-          "why": "The opening lines say that whatever can be walked or named is not the lasting Way. The Way is still spoken of and pointed toward, so it is approached while the whole stays outside words.",
+          "why": "The opening lines say that whatever can be walked or named is not the lasting Way. The Way is still spoken of and pointed toward, so it is approached while the whole stays outside words. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Legge’s 1891 translation of a compiled text whose single author is legendary. The lines limit language and naming; the same chapter says the mystery can be sounded by one without desire, so they do not rule out other kinds of knowing.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -9117,7 +9117,7 @@ window.PILOT_EVIDENCE={
           "facet": "The object of existence",
           "why": "The gloom of care is counted as time lost from a life, leaving hardly an hour of serenity; it is a subtraction and nothing is said to come of it. A second, independent reading moved this placement from “no purpose” to “unscored”: The ‘gloom of care’ leads to the question ‘what ... can be the object of human existence?’, which is about life's point, not about whether suffering has a purpose.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -9498,11 +9498,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "inward-or-others": {
-          "score": "both",
+          "score": "unscored",
           "facet": "The friend as a second self",
-          "why": "Aristotle says a good man’s awareness of his own good existence is pleasant, and that he should be equally aware of a friend, who is a second self. Self-perception and perception of the friend run together, so the passage sits at both.",
+          "why": "Aristotle says a good man’s awareness of his own good existence is pleasant, and that he should be equally aware of a friend, who is a second self. Self-perception and perception of the friend run together, so the passage sits at both. A second, independent reading moved this placement from “both” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage concerns good people’s friendship in a particular argument, in an early twentieth-century translation. It does not say that a person cannot know himself alone.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -9568,11 +9568,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "can-be-used",
+          "score": "unscored",
           "facet": "Nobility shown in misfortune",
-          "why": "Aristotle grants that great misfortunes crush and maim happiness, yet says they give a person of character the occasion to show nobility. Misfortune is bad in itself but can bring out something fine.",
+          "why": "Aristotle grants that great misfortunes crush and maim happiness, yet says they give a person of character the occasion to show nobility. Misfortune is bad in itself but can bring out something fine. A second, independent reading moved this placement from “it can be put to use” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence qualifies a passage that insists misfortune really does damage a good life; Aristotle denies that anyone suffering Priam’s fate is blessed. The English is W. D. Ross’s translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -9754,7 +9754,7 @@ window.PILOT_EVIDENCE={
           "facet": "Knowing one thing and all things",
           "why": "The Jain scripture ties full knowledge of any single thing to knowledge of everything, and speaks of the one who knows all things as a real possibility. Complete knowledge is treated as attainable.",
           "limit": "A terse monastic aphorism in Hermann Jacobi’s 1884 translation, read here from a scan. It does not say who attains such knowledge; Jain tradition reserves it for the perfected, and later Jain thinkers stress that ordinary views are one-sided.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -10597,7 +10597,7 @@ window.PILOT_EVIDENCE={
           "facet": "No more this than that",
           "why": "Pyrrho is reported to have held that nothing is in itself one way more than another and that custom alone guides action. On that view there is no truth about things for anyone to know. A second, independent reading moved this placement from “no” to “unscored”: ‘no single thing is in itself any more this than that’ is a claim about things, with nothing in the excerpt about knowing or its limits.",
           "limit": "Pyrrho wrote nothing; this is a report written some five centuries later, in R. D. Hicks’s 1925 translation. Later sceptics said they suspended judgement and denied asserting even this much, which would fit ‘unscored’ better.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -10917,11 +10917,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Likings that do no harm",
-          "why": "Asked how a man can be without passions and desires, Zhuangzi answers that he means a man who does not let his likes and dislikes injure him. Desire is kept from doing damage, which is a matter of discipline and not of removal.",
+          "why": "Asked how a man can be without passions and desires, Zhuangzi answers that he means a man who does not let his likes and dislikes injure him. Desire is kept from doing damage, which is a matter of discipline and not of removal. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The exchange with Huizi is a literary dialogue in a nineteenth-century translation, and the word rendered “passions and desires” is qing, which later scholars translate differently. The scan breaks the word “dislikings” across a line, and the excerpt keeps that break.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -10953,11 +10953,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "given-or-made": {
-          "score": "given",
+          "score": "unscored",
           "facet": "Heaven is the ox’s four feet",
-          "why": "The God of the North Sea says that an ox or horse having four feet is what is called Heaven, and bridling the horse or piercing the ox’s nose is what is called the human. What a creature is by nature comes from Heaven, and human interference is an imposition on it.",
+          "why": "The God of the North Sea says that an ox or horse having four feet is what is called Heaven, and bridling the horse or piercing the ox’s nose is what is called the human. What a creature is by nature comes from Heaven, and human interference is an imposition on it. A second, independent reading moved this placement from “given” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The lines are about animals and are used as an image for how people should live; they do not decide what each human being is. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -11058,11 +11058,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-made",
+          "score": "unscored",
           "facet": "The useless tree’s own aim",
-          "why": "A sacred oak, dismissed by a carpenter as good-for-nothing timber, answers in a dream that uselessness was its own aim and has let it live out its years. The tree refuses the purposes others would assign and sets its own, which places the passage at made.",
+          "why": "A sacred oak, dismissed by a carpenter as good-for-nothing timber, answers in a dream that uselessness was its own aim and has let it live out its years. The tree refuses the purposes others would assign and sets its own, which places the passage at made. A second, independent reading moved this placement from “made” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The speaker is a tree in a parable, in Herbert Giles’s 1889 translation. The story can as well be read as mocking the whole idea of purpose, and Zhuangzi elsewhere counsels following the course of nature, not choosing against it.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -11211,7 +11211,7 @@ window.PILOT_EVIDENCE={
           "facet": "Dreaming and waking",
           "why": "The speaker cannot tell which of two states is the real one, and offers no test that would settle it. On the most basic matter of what he is, he reports not knowing.",
           "limit": "A parable in Herbert Giles’s 1889 translation, closing a chapter that questions fixed distinctions. It ends by speaking of transformation, so it may illustrate change between states more than a general denial of knowledge. Authorship of the chapter by the historical Zhuang Zhou is traditional.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -11638,7 +11638,7 @@ window.PILOT_EVIDENCE={
           "facet": "Happiness without possessions",
           "why": "Happiness is pictured as living while calling nothing one’s own, with wanting to possess dropped altogether.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -11914,18 +11914,18 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "happiness": {
-          "score": "on-fortune",
+          "score": "unscored",
           "facet": "Enjoyment as a gift",
-          "why": "Qohelet says that both the goods and the very ability to enjoy them are handed out by God. Enjoyment is something received, not something a person can secure by effort, so the passage puts happiness outside one’s own power.",
+          "why": "Qohelet says that both the goods and the very ability to enjoy them are handed out by God. Enjoyment is something received, not something a person can secure by effort, so the passage puts happiness outside one’s own power. A second, independent reading moved this placement from “on circumstances” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Wisdom literature in the King James Version of 1611. The next verses describe a man given wealth but not the power to enjoy it; the book also commends taking joy in one’s work, which leaves some part to the person.",
-          "second": "differed"
+          "second": "settled"
         },
         "desire": {
           "score": "follow",
           "facet": "Enjoyment as a gift",
           "why": "To eat of one’s wealth, take one’s portion and rejoice in one’s labour is called the gift of God, so enjoyment is endorsed.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -12388,7 +12388,7 @@ window.PILOT_EVIDENCE={
           "facet": "From the mind outward to the state",
           "why": "The text lays out a sequence from investigating things and making the will sincere to setting the mind right, and then to ordering the family and the state. Cultivation of the person begins within and is completed in the household and the realm, so the passage holds the inward turn and the turn to others together.",
           "limit": "The English is the atlas’s own unreviewed translation. The text is a short chapter of the Book of Rites later made a core Confucian classic, and it describes a programme of government as much as a way of finding oneself.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -12681,7 +12681,7 @@ window.PILOT_EVIDENCE={
           "facet": "Prayer and rain",
           "why": "Xunzi says there is no reason behind rain following prayer, since rain comes whether or not anyone prays. The passage denies that a power behind nature responds to human appeals. A second, independent reading moved this placement from “no” to “unscored”: ‘If people do not pray for rain, it will nevertheless rain’ denies that prayer brings rain, not that there is any ultimate; A's limit concedes Heaven is not denied.",
           "limit": "The passage denies divine response, not the existence of Heaven, which Xunzi treats as the regular course of nature. He goes on to defend the rites as ornament. The translation is from 1928.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -12796,11 +12796,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "The nameless Tao",
-          "why": "Tao is said to be unspeakable and nameless, though the passage still says of it that it gives form to forms; it is pointed at, not captured.",
+          "why": "Tao is said to be unspeakable and nameless, though the passage still says of it that it gives form to forms; it is pointed at, not captured. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -13831,7 +13831,7 @@ window.PILOT_EVIDENCE={
           "facet": "Raising oneself",
           "why": "A person is told to raise the self by their own effort and not let it sink.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -14986,11 +14986,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "Rival accounts of the soul",
-          "why": "Which opinion about the soul is true is left for ‘some God’ to determine; what remains for humans is to ask which looks most like truth.",
+          "why": "Which opinion about the soul is true is left for ‘some God’ to determine; what remains for humans is to ask which looks most like truth. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -15277,7 +15277,7 @@ window.PILOT_EVIDENCE={
           "facet": "To whom a person belongs",
           "why": "Cicero, citing Plato and the Stoics, says a person’s very being is partly owed to country and friends, and that people are born for one another’s sake. A second, independent reading moved this placement from “necessary” to “helps shape”: ‘not born for ourselves alone’ and ‘a share of our being’ give country and friends a part alongside oneself, which is a share and not a necessity.",
           "limit": "An argument about duty and justice addressed to his son. It concerns what is owed to others, drawn from a view of human nature, and not how a personality is formed. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -15801,11 +15801,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Belonging to one body",
-          "why": "Paul pictures each believer as a limb of one body, so that no member can do without the others.",
+          "why": "Paul pictures each believer as a limb of one body, so that no member can do without the others. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The body is the church, a community of believers, not humankind or society in general.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -15847,7 +15847,7 @@ window.PILOT_EVIDENCE={
           "facet": "Knowing in part",
           "why": "Paul says that present knowledge is like a dim reflection and only partial, while full knowledge is promised for later. The truth is approached now but not yet grasped whole.",
           "limit": "A pastoral letter in the 1611 King James translation; the ‘glass’ is an ancient mirror. The passage contrasts the present age with the age to come and is part of a chapter in praise of love, not a theory of knowledge.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -16071,7 +16071,7 @@ window.PILOT_EVIDENCE={
           "facet": "Right judgment in any condition",
           "why": "The happy person is the one satisfied with present circumstances whatever they are, so wanting is brought into line with what is.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -16113,7 +16113,7 @@ window.PILOT_EVIDENCE={
           "facet": "Learned contentment",
           "why": "Contentment in any state is described as something ‘learned’, a discipline acquired and not a desire fulfilled.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -16256,11 +16256,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "determined",
+          "score": "unscored",
           "facet": "Fate leads or drags",
-          "why": "The verse says fate carries a person to the same place whether the person consents or not. The only thing left open is the attitude taken on the way.",
+          "why": "The verse says fate carries a person to the same place whether the person consents or not. The only thing left open is the attitude taken on the way. A second, independent reading moved this placement from “determined” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Seneca is translating lines of the earlier Stoic Cleanthes and adds the last line himself; the letter is moral exhortation. The English is Richard Gummere’s Loeb version. Stoics held that the assent itself belongs to the person, which the image of being dragged leaves unclear.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -16400,7 +16400,7 @@ window.PILOT_EVIDENCE={
           "facet": "Living well",
           "why": "Seneca says no one can live happily with regard to himself alone: living for others is a condition of living for oneself.",
           "limit": "The claim is about a good life, not about what a self is. Elsewhere in the letters Seneca also praises the wise person’s self-sufficiency.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -17634,14 +17634,14 @@ window.PILOT_EVIDENCE={
           "facet": "The veiled goddess",
           "why": "The goddess declares herself to be everything that was, is and will be, and says that no mortal has ever lifted her robe. The whole of reality is presented as still hidden from human beings.",
           "limit": "A Greek author’s report, around 100 CE, of an Egyptian temple inscription that has not been found; Frank Cole Babbitt’s 1936 translation. ‘Has yet uncovered’ states what has not happened, and Plutarch’s own essay holds that the search for truth about the gods is a sacred duty.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
           "facet": "The veiled goddess",
           "why": "The speaker is all that has been, is and shall be, and no mortal has uncovered her robe: the whole is affirmed and declared hidden.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -17708,11 +17708,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "A wife’s standing among in-laws",
-          "why": "Ban Zhao reasons that a wife’s standing with her husband depends on his parents’ affection, and theirs on what his siblings say of her, so her good or bad name comes wholly through them. Who she is taken to be is made by household relations.",
+          "why": "Ban Zhao reasons that a wife’s standing with her husband depends on his parents’ affection, and theirs on what his siblings say of her, so her good or bad name comes wholly through them. Who she is taken to be is made by household relations. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage concerns reputation and standing inside a marital household, not inner character, and it is advice written for daughters within an unequal order that the text accepts. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -17778,11 +17778,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "What a person is",
-          "why": "Asked what a person is, Epictetus answers: a part of a larger whole, with duties that follow from being a part.",
+          "why": "Asked what a person is, Epictetus answers: a part of a larger whole, with duties that follow from being a part. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Compare his handbook, also in this atlas, which warns against needing anyone’s approval. Being part of the world-city is a claim about role and duty, recorded by a student.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -17985,7 +17985,7 @@ window.PILOT_EVIDENCE={
           "facet": "Rejoicing in one’s portion",
           "why": "The rich person is defined as the one who rejoices in his portion, so wanting is fitted to what is already had.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -18293,7 +18293,7 @@ window.PILOT_EVIDENCE={
           "facet": "Living as a philosopher",
           "why": "The passage says that wanting other people’s approval wrecks the life he recommends, and adds that appearing a philosopher to yourself is enough.",
           "limit": "It is about whose approval a person should need, not about whether anyone could grow up or live without others. Elsewhere the handbook treats duties to family and city as real.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -18656,11 +18656,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "What humans are made for",
-          "why": "Marcus treats working with others as built into what a human being is, the way a hand belongs to a body; acting against others is called contrary to nature.",
+          "why": "Marcus treats working with others as built into what a human being is, the way a hand belongs to a body; acting against others is called contrary to nature. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is a claim about human nature and duty, written as a private reminder. It does not describe how an individual’s personality forms.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -18670,11 +18670,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "self-or-others-first": {
-          "score": "others",
+          "score": "unscored",
           "facet": "What humans are made for",
-          "why": "To act against one another is contrary to nature.",
+          "why": "To act against one another is contrary to nature. A second, independent reading moved this placement from “others’” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "meaning": {
           "score": "meaning-given",
@@ -18996,7 +18996,7 @@ window.PILOT_EVIDENCE={
           "facet": "The bee and the hive",
           "why": "Marcus says that what harms the whole cannot benefit its member, so a person’s own good is bound up with the community’s. Neither is put first, which places the passage at both.",
           "limit": "The sentence is a private note of a Stoic emperor and does not say what to do when the two seem to conflict. The English is Meric Casaubon’s seventeenth-century translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -19867,7 +19867,7 @@ window.PILOT_EVIDENCE={
           "facet": "Contentment with poverty",
           "why": "Contentment with poverty is called the best gift and riches and honour the handmaids of disaster, so wanting is to be scaled down to little.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -20871,7 +20871,7 @@ window.PILOT_EVIDENCE={
           "facet": "The restless heart",
           "why": "The heart is said to be made for God and restless until it rests there; longing is kept and pointed at one object.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -21521,11 +21521,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "solitude-or-company": {
-          "score": "solitude",
+          "score": "unscored",
           "facet": "Peace of mind",
-          "why": "He lives among people but keeps a heart at a distance from their bustle.",
+          "why": "He lives among people but keeps a heart at a distance from their bustle. A second, independent reading moved this placement from “solitude” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -22593,7 +22593,7 @@ window.PILOT_EVIDENCE={
           "facet": "Happiness",
           "why": "Philosophy tells the imprisoned Boethius that happiness lies within a person and cannot depend on anything outside, friends and fortune included.",
           "limit": "The argument is about where happiness lies, and it is spoken to a man stripped of everything. Elsewhere the book calls true friends the most precious kind of wealth.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -22645,11 +22645,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "The monk’s formation",
-          "why": "Benedict ranks monks who live in community under a rule above the rest, and lets hermits go alone only after long training among others.",
+          "why": "Benedict ranks monks who live in community under a rule above the rest, and lets hermits go alone only after long training among others. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The Rule still honours the hermit’s life as a later stage, so community is the school rather than the whole of the life.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "unscored",
@@ -22694,11 +22694,11 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://en.wikipedia.org/wiki/Rule_of_Saint_Benedict",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Evil desires",
-          "why": "The Rule tells monks to guard against evil desires and quotes Scripture against following one's concupiscences. It restrains desires rather than abolishing them, so it sits at train.",
+          "why": "The Rule tells monks to guard against evil desires and quotes Scripture against following one's concupiscences. It restrains desires rather than abolishing them, so it sits at train. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The Rule is a set of regulations for a monastic community, and its wider teaching on self-will is stricter than this sentence. The English is Leonard Doyle's twentieth-century translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -24269,11 +24269,11 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://en.wikipedia.org/wiki/Isaac_of_Nineveh",
       "readings": {
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "Truth known through experience",
-          "why": "Isaac says truth cannot be recognised without first going through experience of the affections, and that those who bear suffering for God see it clearly. Truth is open only to those who have undergone this, which puts the passage at partly-knowable.",
+          "why": "Isaac says truth cannot be recognised without first going through experience of the affections, and that those who bear suffering for God see it clearly. Truth is open only to those who have undergone this, which puts the passage at partly-knowable. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence is part of a longer description of how an ascetic comes to trust God's care, and 'the affections' is the translator's word for the passions. The English is Wensinck's 1923 translation from the Syriac, and the scanned text contains recognition errors.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -24339,11 +24339,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Desire turned to good works",
-          "why": "Shantideva says ordinary desires never satisfy and cut like a razor, while the appetite for good deeds need never be sated. Wanting is redirected from pleasures to practice.",
+          "why": "Shantideva says ordinary desires never satisfy and cut like a razor, while the appetite for good deeds need never be sated. Wanting is redirected from pleasures to practice. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The lines come from an abridged prose translation of 1909 of a Sanskrit verse text written for monks. Other chapters of the work speak of desire and the passions as enemies to be destroyed, which goes further than this passage.",
-          "second": "differed"
+          "second": "settled"
         },
         "happiness": {
           "score": "on-oneself",
@@ -24686,7 +24686,7 @@ window.PILOT_EVIDENCE={
           "facet": "Where the sense of ‘I’ is placed",
           "why": "The speaker resolves to ‘cease to live as self’, treating the sense of ‘I’ as a habit that can be moved elsewhere. A second, independent reading moved this placement from “no self” to “unscored”: ‘I will cease to live as self, and will take as my self my fellow-creatures’ is an ethical resolve that still speaks of ‘my self’, not a denial that there is one.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "others",
@@ -25304,7 +25304,7 @@ window.PILOT_EVIDENCE={
           "facet": "Good cheer",
           "why": "Drinking alone he misses his friends, and makes company of the moon and his shadow. A second, independent reading moved this placement from “both have a place” to “company”: ‘I drink alone, and where are my friends?’ voices solitude as a lack; the moon and shadow that would make it both are outside the excerpt.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -25952,7 +25952,7 @@ window.PILOT_EVIDENCE={
           "facet": "Hoarding and greed",
           "why": "The poet says greed for wealth turns on its owner, as owlets devour their mother, and that giving away brings good fortune. Desire is redirected into letting go, so the passage sits at train.",
           "limit": "The poem is about acquisitiveness for wealth, not every desire, and its wider poems lean toward renunciation. The English is the atlas's own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -26198,11 +26198,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "not_constitutive",
+          "score": "unscored",
           "facet": "Liberation",
-          "why": "The text argues by analogy that freedom from ignorance is something only a person can achieve for themselves; others cannot do it for them.",
+          "why": "The text argues by analogy that freedom from ignorance is something only a person can achieve for themselves; others cannot do it for them. A second, independent reading moved this placement from “not necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The work is framed as a teacher instructing a pupil, so it does not picture someone without a guide. Scholars dispute whether Shankara wrote it, and its date is uncertain.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -26581,7 +26581,7 @@ window.PILOT_EVIDENCE={
           "facet": "Truth from any source",
           "why": "Al-Kindi says that truth should be admired and acquired from any source, including distant nations. The sentence assumes that truth can be acquired by study and built up across peoples and generations.",
           "limit": "As quoted in the Stanford Encyclopedia of Philosophy in a modern translation from Arabic. The sentence defends the use of Greek learning and does not say how much of the truth can be reached; al-Kindi also held that God’s nature exceeds human description.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -27286,7 +27286,7 @@ window.PILOT_EVIDENCE={
           "facet": "Reaching human perfection",
           "why": "Al-Farabi holds that without collaborating with others in an association, a human being cannot reach the perfection their nature is for. A second, independent reading moved this placement from “necessary” to “unscored”: The excerpt has ‘cannot attain the perfection’ but the condition about association with others is supplied wholly by a paraphrase outside the quoted words.",
           "limit": "The quotation is taken from a secondary source and begins mid-sentence; the condition ‘without collaboration’ is supplied by that source’s paraphrase. The claim is about attaining perfection, not about existing or being conscious.",
-          "second": "differed"
+          "second": "settled"
         },
         "meaning": {
           "score": "meaning-given",
@@ -27359,11 +27359,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "A person’s joy",
-          "why": "The speaker recalls wandering alone and lost, and says he felt rich only on finding a companion. A second, independent reading moved this placement from “necessary” to “helps shape”: ‘Rich did I feel when a comrade I found, For man is man’s delight' says others bring joy, which supports a contribution but not necessity.",
+          "why": "The speaker recalls wandering alone and lost, and says he felt rich only on finding a companion. A second, independent reading moved this placement from “necessary” to “helps shape”: ‘Rich did I feel when a comrade I found, For man is man’s delight' says others bring joy, which supports a contribution but not necessity. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Gnomic verse put in the mouth of Odin; other stanzas counsel caution towards friends. It speaks of joy and safety on the road, not of what a self is.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -27665,7 +27665,7 @@ window.PILOT_EVIDENCE={
           "facet": "Beyond the intellect",
           "why": "Tilopa says thinking and deliberate effort cannot reach the final truth. The song still treats that truth as something to be met, so it is closed to the ordinary means of knowing and open only another way.",
           "limit": "A song of instruction to Naropa, preserved in Tibetan and given here in a modern English translation. The lines that follow tell the student to rest in ‘naked awareness’, so the text as a whole promises attainment to the practitioner.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -27923,11 +27923,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-given",
+          "score": "unscored",
           "facet": "The scholar’s charge",
-          "why": "The saying names what a life of learning is for: serving Heaven and Earth, the people, the sages and the ages to come. The purpose is set by a person’s place in that order.",
+          "why": "The saying names what a life of learning is for: serving Heaven and Earth, the people, the sages and the ages to come. The purpose is set by a person’s place in that order. A second, independent reading moved this placement from “given” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The compilers introduce the saying as showing how heavy a charge Zhang Zai laid on himself, so it can also be read as a vocation he chose. The wording differs between early records, and the English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -28035,7 +28035,7 @@ window.PILOT_EVIDENCE={
           "facet": "The plum branch after spring",
           "why": "A dying monk tells his students that age and death come like the passing of spring, yet warns them not to think everything has fallen: a plum branch flowered in the night. The image says that something goes on past the ending.",
           "limit": "A deathbed verse in classical Chinese that speaks only in images; readers take the plum branch as awakened nature beyond birth and death, and the poem states no doctrine of an afterlife. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -28322,7 +28322,7 @@ window.PILOT_EVIDENCE={
           "facet": "The same door",
           "why": "The speaker recalls listening to scholars and holy men argue and always leaving no wiser than he arrived. The quatrain treats the great questions as closed to learning and to piety alike.",
           "limit": "Edward FitzGerald’s 1859 English poem is a free reworking, and which Persian quatrains are really Khayyam’s is disputed. It reports one person’s failure to find answers, which is weaker than a proof that none can be found.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -29757,7 +29757,7 @@ window.PILOT_EVIDENCE={
           "facet": "The divine presence as a mirror",
           "why": "In the poem the Simorgh, the divine presence, answers the birds that it is a mirror in which each seeker sees himself. The ultimate is real and is met in the seeker’s own self. A second, independent reading moved this placement from “yes” to “unscored”: ‘Whoever comes sees himself in it’ affirms nothing about a God or ultimate; that ‘it’ is the divine Simorgh is context only.",
           "limit": "A couplet from a Sufi allegory spoken by a character, in a Persian text that a Persian-language site transcribes. The English is the atlas’s own unreviewed translation, and readings differ on how far self and divine are identified. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -29943,11 +29943,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "suffering": {
-          "score": "no-purpose",
+          "score": "unscored",
           "facet": "Bodily well-being before perfection of soul",
-          "why": "Great hunger, thirst, heat or cold are said to stop a person from grasping an idea at all, so suffering blocks understanding and teaches nothing.",
+          "why": "Great hunger, thirst, heat or cold are said to stop a person from grasping an idea at all, so suffering blocks understanding and teaches nothing. A second, independent reading moved this placement from “no purpose” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -30013,11 +30013,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "not-knowable",
+          "score": "unscored",
           "facet": "God’s essence",
-          "why": "Maimonides holds that human beings can grasp that God exists but not what God is. On these words the deepest reality lies beyond comprehension, and only negative statements about it are safe.",
+          "why": "Maimonides holds that human beings can grasp that God exists but not what God is. On these words the deepest reality lies beyond comprehension, and only negative statements about it are safe. A second, independent reading moved this placement from “no” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Michael Friedländer’s translation (1881–85, revised 1904) of a work written in Judeo-Arabic. Maimonides allows real knowledge of God’s existence and of what God is not, so ‘in part’ is also a fair reading of his wider view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -30059,7 +30059,7 @@ window.PILOT_EVIDENCE={
           "facet": "Negative attributes only",
           "why": "The Creator can be described only by negative attributes: something can be said of what he is not, nothing of what he is.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -30090,11 +30090,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Human nature",
-          "why": "Maimonides takes it as established that humans, unlike other animals, are compelled by their nature to live in communities.",
+          "why": "Maimonides takes it as established that humans, unlike other animals, are compelled by their nature to live in communities. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He uses this as a premise for why people need law and a lawgiver. It is about the species and its survival, not about how a person’s inner life forms.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -30703,11 +30703,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "lasting-self": {
-          "score": "changing",
+          "score": "unscored",
           "facet": "Studying the self",
-          "why": "The self is something to be studied and then forgotten, and is ‘actualized’ by other things; it is not a fixed core.",
+          "why": "The self is something to be studied and then forgotten, and is ‘actualized’ by other things; it is not a fixed core. A second, independent reading moved this placement from “a changing self” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "both",
@@ -31286,11 +31286,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Deserving to be called human",
-          "why": "Saadi pictures humankind as limbs of one body and says a person unmoved by others’ suffering does not deserve the name of human.",
+          "why": "Saadi pictures humankind as limbs of one body and says a person unmoved by others’ suffering does not deserve the name of human. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is moral verse addressed to a ruler, about what humanity demands of each person. It is not an account of how an individual self comes to be.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -31489,11 +31489,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "has-meaning",
+          "score": "unscored",
           "facet": "Pain as a hidden mercy",
-          "why": "An old man in the poem blesses the illness that keeps him awake for prayer, and the narrator draws the moral that pain carries mercy inside it. The pain is described as sent by God for the sufferer’s good.",
+          "why": "An old man in the poem blesses the illness that keeps him awake for prayer, and the narrator draws the moral that pain carries mercy inside it. The pain is described as sent by God for the sufferer’s good. A second, independent reading moved this placement from “it has meaning” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Verse from a long teaching poem in which stories and speakers shift; this is E. H. Whinfield’s abridged 1898 translation from the Persian. The lines are devotional encouragement and do not address suffering that crushes.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -31780,7 +31780,7 @@ window.PILOT_EVIDENCE={
           "facet": "Limits of natural knowledge of God",
           "why": "Aquinas holds that natural knowledge starts from the senses and so cannot reach what God is. The same reply allows that reason can know that God exists and is the cause of all things, so the truth is known in part.",
           "limit": "The article concerns natural reason in this life only; elsewhere in the same question Aquinas teaches that the blessed see God’s essence by grace. The translation is that of the English Dominican Fathers, 1920.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -32035,11 +32035,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Human nature and what people owe each other",
-          "why": "Aquinas takes it as given that being human means living with others, and derives duties such as truthfulness from that fact.",
+          "why": "Aquinas takes it as given that being human means living with others, and derives duties such as truthfulness from that fact. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage uses humanity’s social nature as a premise for an argument about truthfulness. It is not an account of how a self is formed, and Aquinas also holds that each person has an individual rational soul.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "others",
@@ -32151,7 +32151,7 @@ window.PILOT_EVIDENCE={
           "facet": "Standing safely in the world",
           "why": "The hero Kari answers with a proverb: a man with no kinsman behind him is exposed, and praises the companion who stood by him. A second, independent reading moved this placement from “necessary” to “unscored”: ‘Bare is back ... without brother behind it’ is about protection in a feud, not what a self is.",
           "limit": "A proverb spoken in a tale of feud, about protection and loyalty in a society without police. It says nothing directly about the inner self.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -32648,11 +32648,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "A sufficient human life",
-          "why": "Dante argues that no one alone can obtain what a human life needs, so family, neighbourhood and city follow from human nature.",
+          "why": "Dante argues that no one alone can obtain what a human life needs, so family, neighbourhood and city follow from human nature. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He is restating Aristotle on the way to an argument for empire. The need is for goods and help; it is not a claim about the inner self.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -32725,11 +32725,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "free",
+          "score": "unscored",
           "facet": "Free will against the stars",
-          "why": "Marco Lombardo tells the pilgrim that the heavens start human impulses but do not fix conduct: people have light to tell good from evil and a free will that can overcome the stars. The fault for evil is therefore their own.",
+          "why": "Marco Lombardo tells the pilgrim that the heavens start human impulses but do not fix conduct: people have light to tell good from evil and a free will that can overcome the stars. The fault for evil is therefore their own. A second, independent reading moved this placement from “free” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The speaker is a character in a poem, and he concedes that the heavens incline people at the start, so the freedom is won by effort. The English is Longfellow's 1867 verse translation from Italian.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -33030,7 +33030,7 @@ window.PILOT_EVIDENCE={
           "facet": "The soul’s union with God",
           "why": "The soul can gather itself until it is alone with God. A second, independent reading moved this placement from “a lasting self” to “unscored”: ‘the soul may be alone with... sheer divinity’ names a soul but does not say it endures as the same.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -33299,7 +33299,7 @@ window.PILOT_EVIDENCE={
           "facet": "The necessities of life",
           "why": "Human necessities are limited to three, and the one who lives at peace with those met is called happy; wants are held to that measure.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -33369,7 +33369,7 @@ window.PILOT_EVIDENCE={
           "facet": "A contented life",
           "why": "Kenkō says mixing with others bends the mind to their talk, and that being alone is a good in itself. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘it is good merely to be alone’ praises solitude without explicitly denying that relationships are necessary.",
           "limit": "These are the notes of a retired court poet turned priest. Other sections dwell fondly on friends and conversation.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -34367,11 +34367,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Why people differ in their gifts",
-          "why": "In Catherine’s account God says he could have made each person complete, but chose to make people need one another.",
+          "why": "In Catherine’s account God says he could have made each person complete, but chose to make people need one another. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A mystical dialogue in God’s voice. The need is for one another’s gifts and service; the soul’s first relation is still to God.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -34584,18 +34584,18 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "What a soul is before God",
-          "why": "Julian says that taken alone she is nothing; she is something only in ‘oneness of charity’ with all her fellow Christians.",
+          "why": "Julian says that taken alone she is nothing; she is something only in ‘oneness of charity’ with all her fellow Christians. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The ‘oneness’ is the community of the saved, held together by love of God, not society at large. The chapter number should be checked against the book.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
-          "score": "others",
+          "score": "unscored",
           "facet": "What a soul is before God",
-          "why": "Looked at singly she is nothing; she is something only in oneness with others.",
+          "why": "Looked at singly she is nothing; she is something only in oneness with others. A second, independent reading moved this placement from “through others” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -34844,11 +34844,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-given",
+          "score": "unscored",
           "facet": "The weight of a human birth",
-          "why": "The prayer asks for the realisation that a human life with its freedoms, once found, is rare and of great meaning, and for the resolve to take its essence day and night. The meaning is said to lie in the human birth itself, as the chance for the path, which places the passage at given.",
+          "why": "The prayer asks for the realisation that a human life with its freedoms, once found, is rare and of great meaning, and for the resolve to take its essence day and night. The meaning is said to lie in the human birth itself, as the chance for the path, which places the passage at given. A second, independent reading moved this placement from “given” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is one line of a verse prayer, and the English is the atlas’s own unreviewed translation; the linked page gives a published rendering. The verse also asks for the determination to make the most of the chance, so the given worth still has to be taken up by effort.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -35331,7 +35331,7 @@ window.PILOT_EVIDENCE={
           "facet": "The devout life",
           "why": "Thomas recommends withdrawing from company, and quotes the saying that one returns from among people ‘less a man’. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘used to avoid ... the company of men’ reports the saints' practice but does not explicitly deny that relationships are necessary.",
           "limit": "This is counsel for monks about holiness, and it replaces human company with a relationship to God rather than with nothing.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -35381,7 +35381,7 @@ window.PILOT_EVIDENCE={
           "facet": "Seeing one’s own form as the audience sees it",
           "why": "Zeami holds that a performer sees their true form only through the viewpoint of the audience, and that what their own eyes see is a different and limited view. Self-knowledge here comes by taking the place of others.",
           "limit": "A passage of stage training in a fifteenth-century treatise in Japanese, quoted from an edited modern transcription. The English is the atlas’s own unreviewed translation, and the point concerns performance and not the self in general. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -35587,11 +35587,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "knowable",
+          "score": "unscored",
           "facet": "Knowing by arriving",
-          "why": "Kabir says the nameless reality is known by the one who gets there, and by no report or teaching. That is knowledge by direct experience, though it cannot be passed on in words.",
+          "why": "Kabir says the nameless reality is known by the one who gets there, and by no report or teaching. That is knowledge by direct experience, though it cannot be passed on in words. A second, independent reading moved this placement from “yes” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A devotional song in Rabindranath Tagore’s free 1915 English version, made from a Bengali edition whose attributions to Kabir are doubted by scholars. The same song says the arrival depends on grace, so it is not promised to everyone.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -36354,7 +36354,7 @@ window.PILOT_EVIDENCE={
           "facet": "Facing death",
           "why": "At the end every companion leaves; a person faces death with their own deeds only. A second, independent reading moved this placement from “solitude” to “unscored”: ‘They all at the last do Everyman forsake’ reports that companions fall away at death; it neither commends being alone nor clearly warns against company.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -37298,11 +37298,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "The seeker’s discipline",
-          "why": "Nanak replaces the ascetic’s solitary order with fellowship with all people, while placing the real victory in mastering one’s own mind.",
+          "why": "Nanak replaces the ascetic’s solitary order with fellowship with all people, while placing the real victory in mastering one’s own mind. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A devotional hymn whose centre is the divine order, not human relationships. The two halves of the line pull different ways, which is why it sits in the middle of the scale. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "both",
@@ -37312,11 +37312,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "solitude-or-company": {
-          "score": "both",
+          "score": "unscored",
           "facet": "The seeker’s discipline",
-          "why": "Fellowship with all, and mastery of one’s own mind.",
+          "why": "Fellowship with all, and mastery of one’s own mind. A second, independent reading moved this placement from “both have a place” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -38462,7 +38462,7 @@ window.PILOT_EVIDENCE={
           "facet": "Where the soul will dwell",
           "why": "The singer, grieving that friends will soon be known no more, asks where the soul will live and receives no answer. The song leaves what follows death as an open question.",
           "limit": "The song is anonymous, written down in Nahuatl after the Spanish conquest, and its age and authorship are uncertain. The English given is Daniel Brinton's 1887 rendering from the same page, which later scholars have often corrected; “soul” translates a word for the heart.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -38821,7 +38821,7 @@ window.PILOT_EVIDENCE={
           "facet": "God alone suffices",
           "why": "The verses gather all wanting into one object: the person who has God wants for nothing else, so desire is redirected and not simply suppressed. A second, independent reading moved this placement from “train it” to “unscored”: ‘Whoever has God lacks nothing’ describes sufficiency and says nothing about what is to be done with desire.",
           "limit": "These are a few lines of devotional verse said to have been found in Teresa’s breviary; the attribution is traditional. They do not say what becomes of ordinary desires. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -39006,11 +39006,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Perfection as love of neighbour",
-          "why": "Teresa tells her nuns that spiritual perfection is made up of love of God and of neighbour, and warns that zeal which cools mutual affection injures the soul. Love of other people is thus part of what the perfected self is, not an optional addition.",
+          "why": "Teresa tells her nuns that spiritual perfection is made up of love of God and of neighbour, and warns that zeal which cools mutual affection injures the soul. Love of other people is thus part of what the perfected self is, not an optional addition. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The book as a whole pictures the soul as an interior castle entered through solitary prayer, and love of neighbour is paired with, and ranked after, love of God. The English is an early twentieth-century translation from Spanish. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -39314,11 +39314,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "suffering": {
-          "score": "can-be-used",
+          "score": "unscored",
           "facet": "Fortune and the soul",
-          "why": "Fortune is said to bring neither good nor hurt, only ‘the matter and the seed’, which the soul turns and applies as it pleases; hardship is raw material with no purpose built in.",
+          "why": "Fortune is said to bring neither good nor hurt, only ‘the matter and the seed’, which the soul turns and applies as it pleases; hardship is raw material with no purpose built in. A second, independent reading moved this placement from “it can be put to use” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -40524,11 +40524,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "limited",
+          "score": "unscored",
           "facet": "Freedom of mind through devotion to God",
-          "why": "Comenius says that people given wholly to God gain full freedom of mind, bound to nothing but God and obliged to do nothing against their will. The same chapter says the rest of the world is full of compulsion, so freedom here is a conditional gift and not a general fact.",
+          "why": "Comenius says that people given wholly to God gain full freedom of mind, bound to nothing but God and obliged to do nothing against their will. The same chapter says the rest of the world is full of compulsion, so freedom here is a conditional gift and not a general fact. A second, independent reading moved this placement from “free within limits” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A religious allegory in Czech, where the speaker is a pilgrim, not a treatise; the English is the atlas’s own unreviewed translation. Freedom here is inner and depends on submission to God.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -40847,11 +40847,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "A fully human life",
-          "why": "Bacon quotes the saying to argue that a real aversion to society is something savage, and that life without friends is a wilderness.",
+          "why": "Bacon quotes the saying to argue that a real aversion to society is something savage, and that life without friends is a wilderness. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He grants that solitude can serve a higher life in rare cases. The essay is about the benefits of friendship, not the origin of the self.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -41261,11 +41261,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Family duty and the mind",
-          "why": "Elisabeth tells Descartes that the interests of her house and the social duties she cannot avoid leave her mind unfit for meditation long afterwards. Family and company are reported as shaping what her mind can do, as a hindrance and without any claim that the mind depends on them.",
+          "why": "Elisabeth tells Descartes that the interests of her house and the social duties she cannot avoid leave her mind unfit for meditation long afterwards. Family and company are reported as shaping what her mind can do, as a hindrance and without any claim that the mind depends on them. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The wording is Jonathan Bennett’s modernised and abridged English version of a French letter, and the dots mark words he added. The sentence begins “The interests of my house (which I must not neglect) and”. It is a personal aside in a letter about mind and body. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -41335,7 +41335,7 @@ window.PILOT_EVIDENCE={
           "facet": "Mystery beyond reason",
           "why": "Browne says he delights in carrying his reason up to the mysteries of divinity until it fails, and answers objections by faith. The deepest religious truths are treated as beyond what reason can grasp. A second, independent reading moved this placement from “no” to “unscored”: ‘I love to lose myself in a mystery’ states a taste, not whether the mystery can be known; both readers' positions rest on the surrounding lines.",
           "limit": "This is the temper of a physician-believer who admits mysteries, not a sceptic's denial that truth exists, and elsewhere he claims that nature and scripture are two books that can be read. The sentence is short and its sense depends on the lines that follow it.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -41876,7 +41876,7 @@ window.PILOT_EVIDENCE={
           "facet": "A tolerable life",
           "why": "Hobbes argues that without a common power over them, people have no industry, arts or society, only fear. A second, independent reading moved this placement from “helps shape” to “unscored”: The excerpt lists ‘solitary’ among the miseries of life without law but says nothing about what shapes a self.",
           "limit": "For Hobbes people are not sociable by nature: society is something they must build for safety. So others are needed for a decent life, not for being a self.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -42094,7 +42094,7 @@ window.PILOT_EVIDENCE={
           "facet": "Where is the self?",
           "why": "Pascal argues that a person is loved for qualities that can perish while the person remains, and asks where the self is if it is in neither body nor soul. The passage finds no part of a person that is the self, so it sits at no self. A second, independent reading moved this placement from “no self” to “unscored”: ‘I can lose these qualities without losing myself. Where, then, is this Ego’ poses a question and even presupposes a ‘myself’; it denies nothing.",
           "limit": "The fragment is a question left in unfinished notes, and Pascal affirms the soul and God elsewhere, so it is not his settled view. The English is W. F. Trotter’s nineteenth-century translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -43244,11 +43244,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Preserving one’s being",
-          "why": "Spinoza argues that people who live by reason strengthen one another, so nothing helps a person persevere and flourish more than other people.",
+          "why": "Spinoza argues that people who live by reason strengthen one another, so nothing helps a person persevere and flourish more than other people. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Other people are ‘useful’ to a being that already strives to preserve itself; the striving is the individual’s own.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "both",
@@ -44077,11 +44077,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "lasting-self": {
-          "score": "lasting",
+          "score": "unscored",
           "facet": "Personal identity and consciousness",
-          "why": "Locke ties the self to consciousness, so that a person is the same self as far as consciousness reaches back to past acts. A self that is the same across time puts the passage at a lasting self, though without a soul-substance behind it.",
+          "why": "Locke ties the self to consciousness, so that a person is the same self as far as consciousness reaches back to past acts. A self that is the same across time puts the passage at a lasting self, though without a soul-substance behind it. A second, independent reading moved this placement from “a lasting self” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Locke leaves open in the same chapter whether the same self is carried by the same substance, and his memory criterion raises problems of gaps and false memories. A reader should not take the passage as a claim about an immortal soul.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -44723,11 +44723,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "What human nature is for",
-          "why": "Butler argues that human nature points towards others as plainly as it points towards a person’s own good.",
+          "why": "Butler argues that human nature points towards others as plainly as it points towards a person’s own good. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He says the two go together: people are made both for society and for their own private good, and neither is reduced to the other.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -45579,11 +45579,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "The first desire",
-          "why": "The proverb advises checking a want at the start because each satisfied want breeds more, a counsel of thrift and self-management.",
+          "why": "The proverb advises checking a want at the start because each satisfied want breeds more, a counsel of thrift and self-management. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The saying speaks of suppressing one desire but is advice about spending, voiced by the invented Father Abraham quoting the invented Poor Richard. It is prudence about purchases, not a teaching that desire as such should end.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -46372,11 +46372,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "The human condition",
-          "why": "Ferguson says every account of humankind finds people in groups, so society is the natural state and not an invention.",
+          "why": "Ferguson says every account of humankind finds people in groups, so society is the natural state and not an invention. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He is arguing against the idea of a pre-social ‘state of nature’. It is a claim about the species drawn from travellers’ reports.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -46879,11 +46879,11 @@ window.PILOT_EVIDENCE={
           "second": "settled"
         },
         "self-or-others-first": {
-          "score": "both",
+          "score": "unscored",
           "facet": "Seeing what is right",
-          "why": "The test is whether one could bear what one demands of others.",
+          "why": "The test is whether one could bear what one demands of others. A second, independent reading moved this placement from “bound together” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -47262,7 +47262,7 @@ window.PILOT_EVIDENCE={
           "facet": "The moral order of a life",
           "why": "Im treats the bond between parent and child as part of the pattern of Heaven itself, so that what a person ought to be is given in their relationships. A second, independent reading moved this placement from “necessary” to “unscored”: Calling parent-child love ‘Heavenly pattern-principle’ ranks a relationship morally but does not say in the excerpt that it forms the person.",
           "limit": "A Confucian judgment on a historical case. Im is also known for arguing that women can become sages as men can, which is a claim about each person’s own capacity. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "given",
@@ -48409,11 +48409,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Meeting one’s wants",
-          "why": "Paine says nature made each person’s wants greater than their powers, so people are driven into society as naturally as bodies fall.",
+          "why": "Paine says nature made each person’s wants greater than their powers, so people are driven into society as naturally as bodies fall. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "He distinguishes society, which he thinks natural, from government, which he distrusts. The need is practical.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -48462,7 +48462,7 @@ window.PILOT_EVIDENCE={
           "facet": "A deist’s creed",
           "why": "Belief is claimed for one God, but happiness beyond this life is only something hoped for; the wording stops short of asserting it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -49743,11 +49743,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "has-meaning",
+          "score": "unscored",
           "facet": "The vale of soul-making",
-          "why": "Keats proposes that the world is a school in which pain is necessary to turn an intelligence into a soul. Suffering is thus part of what the world is for.",
+          "why": "Keats proposes that the world is a school in which pain is necessary to turn an intelligence into a soul. Suffering is thus part of what the world is for. A second, independent reading moved this placement from “it has meaning” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is a speculation in a private journal-letter by a poet of twenty-three, offered as a sketch “of a system of salvation” he prefers to the Christian one. He gives it as a thought, not a settled doctrine.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -49994,11 +49994,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "no-meaning",
+          "score": "unscored",
           "facet": "Human deeds before the infinite",
-          "why": "Time tells the conqueror that human actions have no value in its eyes and that everything shrinks to less than a point before the infinite. Measured on that scale, a life’s deeds count for nothing.",
+          "why": "Time tells the conqueror that human actions have no value in its eyes and that everything shrinks to less than a point before the infinite. Measured on that scale, a life’s deeds count for nothing. A second, independent reading moved this placement from “there is none” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The words belong to a personified Time in a visionary prose piece whose attribution to Bolívar has been questioned. The climber answers by going back down to his cause, and the same writer spent his life on political action. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -51492,7 +51492,7 @@ window.PILOT_EVIDENCE={
           "facet": "Acting on one’s own judgment",
           "why": "The essay praises keeping the independence of solitude in the midst of the crowd. A second, independent reading moved this placement from “both have a place” to “unscored”: ‘What I must do ... not what the people think’ is about independence of judgment, not being alone; A‘s both rests on the rest of the essay and B’s solitude overreads the line.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "self",
@@ -51884,7 +51884,7 @@ window.PILOT_EVIDENCE={
           "facet": "What matters to the individual",
           "why": "Stirner rejects every cause above the individual, whether God, humanity or society, and declares himself his own only concern. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘Nothing is more to me than myself!’ is a claim about what matters to him, not an explicit denial that relationships are necessary.",
           "limit": "This is a claim about what has authority over a person, not about how a person comes to exist. Stirner goes on to allow voluntary association with others for one’s own ends.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "self",
@@ -54083,7 +54083,7 @@ window.PILOT_EVIDENCE={
           "facet": "Good company",
           "why": "Thoreau says he is most himself alone, and finds company ‘wearisome and dissipating’ by comparison. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘I never found the companion that was so companionable as solitude’ is a personal preference, not an explicit denial that relationships are necessary.",
           "limit": "This is a personal report, not a theory. Thoreau had frequent visitors at the pond, and the same book includes a chapter on them.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "inward",
@@ -55073,11 +55073,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Strong desires, weak consciences",
-          "why": "Mill defends strong desires as raw energy and locates the fault in an undeveloped conscience, so the remedy is to cultivate and balance, not to weaken, desire.",
+          "why": "Mill defends strong desires as raw energy and locates the fault in an undeveloped conscience, so the remedy is to cultivate and balance, not to weaken, desire. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage argues for individuality against social conformity and does not say how conscience is to be strengthened. Its praise of strong impulses leans toward affirming desire more than most accounts of moderation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -55465,11 +55465,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "lasting-self": {
-          "score": "changing",
+          "score": "unscored",
           "facet": "Personality as the phenomena of a life",
-          "why": "Huxley says he cannot conceive of a personality separate from the phenomena of his life and that the attempt only turns a word into a thing. That treats the self as real but as nothing beyond the course of experience.",
+          "why": "Huxley says he cannot conceive of a personality separate from the phenomena of his life and that the attempt only turns a word into a thing. That treats the self as real but as nothing beyond the course of experience. A second, independent reading moved this placement from “a changing self” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The remark is a private letter written in grief, in a passage arguing that immortality has no evidence, and Huxley allows that the personality may be “the surest thing I know”. He does not develop a theory of the self.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -56141,7 +56141,7 @@ window.PILOT_EVIDENCE={
           "facet": "Pain without horizon",
           "why": "Dickinson describes pain as a blank that erases its own beginning and, in the next stanza, has “no future but itself”. Pain here points to nothing beyond itself and teaches nothing. A second, independent reading moved this placement from “no purpose” to “unscored”: The excerpt describes how pain feels (‘an element of blank’, ‘cannot recollect when it began’) and says nothing about purpose; ‘no future but itself’ is in the next stanza.",
           "limit": "This is an eight-line lyric that describes how pain feels from inside; it does not argue about purpose, and the title was added by her first editors. Other Dickinson poems treat anguish differently.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -57741,7 +57741,7 @@ window.PILOT_EVIDENCE={
           "facet": "Happiness within",
           "why": "The passage says happiness is inside a person and that misery comes from having too much, not too little; it is said of a prisoner of war on a forced march.",
           "limit": "This is the narrator reporting what the character Pierre Bezukhov learned in captivity, in the Maudes’ English translation. It still names the satisfaction of simple needs, so it is not a claim that nothing outward matters.",
-          "second": "differed"
+          "second": "settled"
         },
         "desire": {
           "score": "train",
@@ -57790,7 +57790,7 @@ window.PILOT_EVIDENCE={
           "facet": "A dying stockrider’s guess",
           "why": "The dying stockrider claims no knowledge of what follows death and says only that he will probably go where most men go. The passage leaves the question open.",
           "limit": "A dramatic monologue spoken by a dying fictional horseman, not the poet’s statement of belief; the phrase “where most men go” is deliberately vague. Gordon himself died by suicide in 1870, a fact the poem does not mention.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -59000,7 +59000,7 @@ window.PILOT_EVIDENCE={
           "facet": "The thought of annihilation",
           "why": "Darwin says that annihilation of all sentient beings after long progress is an intolerable thought, while declining in the same section to claim knowledge either way. That leaves what happens at death open and names only his feeling about it. A second, independent reading moved this placement from “open or unknowable” to “unscored”: The excerpt calls annihilation ‘an intolerable thought’ but neither asserts it nor says the matter cannot be known; A‘s ’unknown' rests on the surrounding section.",
           "limit": "The sentence expresses a feeling, not a belief that death is not the end. Darwin wrote it in a private reminiscence for his family, and the surrounding passage rests on the physicists’ prediction that the sun will grow cold.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -59183,7 +59183,7 @@ window.PILOT_EVIDENCE={
           "facet": "The beauty of loneliness in the bush",
           "why": "Clarke calls the forest solitude desolation, then says that one who lives in the wilderness comes to find beauty in loneliness. Being alone is both a danger and, with time, a value, so the passage sits between solitude and company. A second, independent reading moved this placement from “both have a place” to “solitude”: The excerpt‘s own words are ’subtle charm‘ and ’the beauty of loneliness‘; the desolation that would make it both is only in A’s context.",
           "limit": "A preface about landscape and poetry by a Melbourne journalist and novelist, not an argument about how to live. It does not mention company, and the first half of the passage, on desolation, is as emphatic as the second.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -59253,7 +59253,7 @@ window.PILOT_EVIDENCE={
           "facet": "Truth as the end of inquiry",
           "why": "Peirce defines truth as the opinion that inquiry is bound to reach in the end, and reality as what that opinion represents. Truth so defined is what investigation arrives at, so it is knowable.",
           "limit": "The sentence begins “The opinion which is fated”, with a footnote on “fated” that interrupts it on the page. Peirce places the agreement at the ideal end of inquiry, not within any one lifetime.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -60394,7 +60394,7 @@ window.PILOT_EVIDENCE={
           "facet": "The individual and the Universal Whole",
           "why": "The character Waldo, grieving, concludes that the single person perishes but is taken back into a whole that abides. The passage calls this “no death”, a continuing by union and not by personal survival.",
           "limit": "The words belong to a character in a novel and come at the end of a chapter that tries and rejects several consolations. The same sentence says the individual does perish, so the passage could also be read as an ending.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -60744,11 +60744,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "given-or-made": {
-          "score": "both",
+          "score": "unscored",
           "facet": "Shared human nature, shaped by schooling",
-          "why": "Firmin holds that all peoples share one human endowment, and that what minds produce depends on the instruction and education they receive. The passage gives both an endowment and its formation a part, which puts it at both.",
+          "why": "Firmin holds that all peoples share one human endowment, and that what minds produce depends on the instruction and education they receive. The passage gives both an endowment and its formation a part, which puts it at both. A second, independent reading moved this placement from “both” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence is the conclusion of a book arguing against racial hierarchy, so it stresses likeness and does not treat individual differences. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -61029,7 +61029,7 @@ window.PILOT_EVIDENCE={
           "facet": "Thinking without an ‘I’",
           "why": "Nietzsche argues that the ‘I’ said to do the thinking is an assumption added by grammar. The passage removes the subject from behind thought, which denies a self. A second, independent reading moved this placement from “no self” to “unscored”: ‘a thought comes when \"it\" wishes, and not when \"I\" wish’ limits the thinker’s command over thought; the denial of a subject is in the context, not these words.",
           "limit": "Section 12 of the same book proposes keeping the soul as a hypothesis in new forms, such as a ‘social structure of the instincts’, so the wider view is closer to a composite self. The translation is Helen Zimmern’s of 1906.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -61165,11 +61165,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Dependence and self-reliance",
-          "why": "Ramabai argues that the lifelong dependence on male relatives required of high-caste women forms their character by denying them self-reliance. Relationships are shown shaping a person, here for the worse, while the quality she prizes is standing on one’s own.",
+          "why": "Ramabai argues that the lifelong dependence on male relatives required of high-caste women forms their character by denying them self-reliance. Relationships are shown shaping a person, here for the worse, while the quality she prizes is standing on one’s own. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence describes a legal and customary arrangement in one class of nineteenth-century Indian society and was written to raise support among American readers. It treats independence as the ideal, so it does not make ties to others the ground of the self. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -61376,11 +61376,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Against annihilating the passions",
-          "why": "Nietzsche rejects rooting out desire and, in the same section, speaks of a later stage when passions “marry with the spirit” and are spiritualised, which is desire refined and not abolished.",
+          "why": "Nietzsche rejects rooting out desire and, in the same section, speaks of a later stage when passions “marry with the spirit” and are spiritualised, which is desire refined and not abolished. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence itself only attacks extirpation; the positive idea of spiritualising passion comes from the lines around it. The section is an attack on Christian morality in Anthony Ludovici’s 1911 translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -61415,7 +61415,7 @@ window.PILOT_EVIDENCE={
           "facet": "Becoming what one is",
           "why": "Nietzsche holds that a person has a life-task fixed from the start and yet has to become it, and that this goes best when the person does not aim at it directly. An endowment that must be worked out puts the passage at both.",
           "limit": "The remark is made in an autobiographical, polemical book written just before his collapse, and its sense is disputed. The English is Anthony Ludovici’s 1911 translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -61485,7 +61485,7 @@ window.PILOT_EVIDENCE={
           "facet": "The sorrows of the city poor",
           "why": "Lawson’s poem treats the want and weariness of the city poor as a wrong for which the comfortable owe an account to God. Suffering here has no justifying purpose; it is an injustice awaiting a reckoning. A second, independent reading moved this placement from “no purpose” to “unscored”: ‘When God demands a reason for the sorrows of the street’ is a single clause implying an account is owed; it does not itself say the sorrows have no purpose.",
           "limit": "A poem of social protest in which the speaker also imagines a revolutionary army as the remedy. It speaks of poverty in a colonial city, not of suffering in general.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -62694,11 +62694,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "given-or-made": {
-          "score": "made",
+          "score": "unscored",
           "facet": "Everything begins as coal",
-          "why": "Martí says that all that is beautiful and ordered, like a diamond, began as coal. Worth is the result of a becoming and not a starting endowment, which puts it at made.",
+          "why": "Martí says that all that is beautiful and ordered, like a diamond, began as coal. Worth is the result of a becoming and not a starting endowment, which puts it at made. A second, independent reading moved this placement from “made” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is a single image in a poem of plain verses about a speaker’s experience, and it is not an argument about persons. The verse speaks of things in general, so applying it to human formation is an inference. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -62802,11 +62802,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "self-or-others-first": {
-          "score": "both",
+          "score": "unscored",
           "facet": "Casting one’s lot with the poor",
-          "why": "The poet chooses to cast his own lot with the poor of the earth, tying his fortune to theirs instead of putting his own advantage first or giving himself up to them. The pairing places the lines in the middle.",
+          "why": "The poet chooses to cast his own lot with the poor of the earth, tying his fortune to theirs instead of putting his own advantage first or giving himself up to them. The pairing places the lines in the middle. A second, independent reading moved this placement from “bound together” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A lyric stanza in an exile’s voice, followed by lines preferring the mountain stream to the sea and the forest to gold; it states a preference and does not set out a duty. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -62838,11 +62838,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "has-meaning",
+          "score": "unscored",
           "facet": "Coal before light",
-          "why": "Having just spoken of a hidden wound and an enslaved people, the poet says that everything is order and reason, and that everything is coal before it becomes light. Darkness and pain belong to the way things come to shine.",
+          "why": "Having just spoken of a hidden wound and an enslaved people, the poet says that everything is order and reason, and that everything is coal before it becomes light. Darkness and pain belong to the way things come to shine. A second, independent reading moved this placement from “it has meaning” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A stanza from a lyric sequence written in exile, not a treatise; the image states a faith in the order of things and does not argue for it. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -66155,7 +66155,7 @@ window.PILOT_EVIDENCE={
           "facet": "Sorrow as sacred",
           "why": "Wilde calls sorrow holy ground and says life cannot be understood without grasping this. The passage gives suffering a sacred standing of its own.",
           "limit": "This is a letter written by a prisoner near the end of a two-year sentence, published after his death in an abridged form. It is a statement of feeling and not an argument, and it does not say every suffering is deserved.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -66468,11 +66468,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "knowable",
+          "score": "unscored",
           "facet": "Seeing spiritual truths directly",
-          "why": "Vivekananda claims that spiritual truths are met directly by people who pass beyond the senses, and that this still happens. The highest truths are objects of experience, not only of belief.",
+          "why": "Vivekananda claims that spiritual truths are met directly by people who pass beyond the senses, and that this still happens. The highest truths are objects of experience, not only of belief. A second, independent reading moved this placement from “yes” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A public lecture as reported and later edited for his collected works. It asserts rather than argues that such perception occurs, and it describes a few seers, though he adds that the state is open to anyone.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -66543,7 +66543,7 @@ window.PILOT_EVIDENCE={
           "facet": "The silence of the unhappy",
           "why": "The speaker says one person’s happiness rests on other people suffering out of sight and keeping quiet, which makes it depend on a social order and on others, not on the happy person alone.",
           "limit": "The words belong to Ivan Ivanovich, a character in a short story, and his listeners are left unconvinced; they are not Chekhov’s stated view. The English is Constance Garnett’s translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -66574,11 +66574,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "What a person owes to country",
-          "why": "Mabini’s fourth commandment tells the reader to love country more than self because life, love, interests, happiness and honour all come through her. Everything that makes up a person’s good is traced to the national community.",
+          "why": "Mabini’s fourth commandment tells the reader to love country more than self because life, love, interests, happiness and honour all come through her. Everything that makes up a person’s good is traced to the national community. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A patriotic catechism written for a revolution, in an early twentieth-century English translation of the Spanish; it exhorts and does not argue. The catalogue’s reading of Mabini rests on a different text, La trinidad política, which could not be reached for checking. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "happiness": {
           "score": "on-fortune",
@@ -66721,11 +66721,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "given-or-made": {
-          "score": "both",
+          "score": "unscored",
           "facet": "A gift for composing kept alive by use",
-          "why": "Liliʻuokalani calls her ease in composing a gift of nature and adds that it has stayed with her because she never let it fall into disuse. A natural endowment is held to need continual use, so the passage sits at both.",
+          "why": "Liliʻuokalani calls her ease in composing a gift of nature and adds that it has stayed with her because she never let it fall into disuse. A natural endowment is held to need continual use, so the passage sits at both. A second, independent reading moved this placement from “both” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "An autobiography written in English in 1897-98 while the author was campaigning in the United States against annexation, with a Boston publisher. It speaks of one talent, music, and not of a person as a whole.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -67553,11 +67553,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "inward-or-others": {
-          "score": "both",
+          "score": "unscored",
           "facet": "The inner life",
-          "why": "Stay open to the world, and keep an inner forum closed to all.",
+          "why": "Stay open to the world, and keep an inner forum closed to all. A second, independent reading moved this placement from “both” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "both",
@@ -67919,11 +67919,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Becoming a beast among beasts",
-          "why": "The poem says that a man who lives among beasts feels an unavoidable need to become one himself. The company a person lives in is said to make him what he is, at the cost of his gentleness.",
+          "why": "The poem says that a man who lives among beasts feels an unavoidable need to become one himself. The company a person lives in is said to make him what he is, at the cost of his gentleness. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A bitter sonnet addressed to a disappointed friend, in old Portuguese spelling, and it advises meeting ingratitude with cruelty. The claim is made with the force of a complaint, not as a general theory of character. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -68411,18 +68411,18 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Moral standards in a democracy",
-          "why": "Addams says standards of conduct are set ‘largely for each other’, so a person’s moral condition rises or falls with the community’s.",
+          "why": "Addams says standards of conduct are set ‘largely for each other’, so a person’s moral condition rises or falls with the community’s. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage concerns shared responsibility for political corruption. It says others shape a person’s moral life, not that they are what makes a self.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "both",
           "facet": "Moral standards in a democracy",
           "why": "People move forward or backward together; no one can stand aside. A second, independent reading moved this placement from “others’” to “bound together”: ‘Bound to move forward or retrograde together’ ties each person‘s fortune to everyone’s and states no priority of others over self.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -68628,11 +68628,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "happiness": {
-          "score": "on-oneself",
+          "score": "unscored",
           "facet": "Congenital happiness",
-          "why": "James says that some people are happy by temperament, and refuse to feel unhappiness even amid hardship. That puts happiness in the person’s own constitution and not in circumstances, though the cause is inborn and not chosen.",
+          "why": "James says that some people are happy by temperament, and refuse to feel unhappiness even amid hardship. That puts happiness in the person’s own constitution and not in circumstances, though the cause is inborn and not chosen. A second, independent reading moved this placement from “on oneself” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The point is a description of one type of religious temperament, the healthy-minded, from lectures that also describe the “sick soul”, whose unhappiness James treats as equally real. He does not claim that everyone can choose happiness.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -68772,7 +68772,7 @@ window.PILOT_EVIDENCE={
           "facet": "The Great Spirit heard in nature",
           "why": "The Yankton Dakota writer sets aside missionary dogma and says that the Great Spirit’s voice is heard directly in the natural world. The deepest truth is met in experience, which places the passage at yes.",
           "limit": "This is a personal essay written in English for a magazine readership, defending her own practice against a preacher’s criticism. It says the voice is heard, not that everything about the Great Spirit is understood.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -68873,11 +68873,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Redirecting desire to eternal things",
-          "why": "Russell asks the free man to drop the eagerness of passing desire and to turn the same passion toward eternal things. Desire is redirected and not simply put out, which places the passage in the middle of the scale.",
+          "why": "Russell asks the free man to drop the eagerness of passing desire and to turn the same passion toward eternal things. Desire is redirected and not simply put out, which places the passage in the middle of the scale. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The essay is a rhetorical meditation written in a high style, and its “eternal things” are the ideal and the contemplation of fate, not a religion. A reader may find the line closer to renunciation than to training.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -69598,11 +69598,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "not_constitutive",
+          "score": "unscored",
           "facet": "Relying on oneself",
-          "why": "Qiu Jin tells women that their standing and abilities cannot come from the men they depend on and must be sought in themselves. For the capacity to act and to learn, dependence on others is denied a necessary part.",
+          "why": "Qiu Jin tells women that their standing and abilities cannot come from the men they depend on and must be sought in themselves. For the capacity to act and to learn, dependence on others is denied a necessary part. A second, independent reading moved this placement from “not necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The same address describes how family and custom have shaped women’s lives and calls on women to band together, so it does not deny that others affect a person. It is a vernacular polemic, and the English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -69917,7 +69917,7 @@ window.PILOT_EVIDENCE={
           "facet": "What science can know",
           "why": "Poincaré holds that science reaches the true relations between things but not their inner nature, and that nothing else could reach that nature either. That puts the passage at partly knowable: relations are known, the thing in itself is not. A second, independent reading moved this placement from “in part” to “no”: ‘nothing is capable of teaching it to us’ denies knowledge of the nature of things outright; the known relations that make it ‘partly’ are only in A's context.",
           "limit": "The claim is about the objective value of physical science, as a mathematician’s argument against both scepticism and naive realism. It concerns the nature of things, not truth in ethics or religion. The English is George Bruce Halsted’s translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -71765,7 +71765,7 @@ window.PILOT_EVIDENCE={
           "facet": "The free-will theory of punishment",
           "why": "Goldman describes the doctrine that a person is always a free agent for good or evil as the basis of punishment and calls it long exploded. That treats conduct as shaped by conditions and not as freely chosen.",
           "limit": "The passage is a polemic against punishment, aimed at the legal use of free will, and does not set out a philosophical account of determinism. Goldman elsewhere stresses the power of individuals to change themselves.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -71937,11 +71937,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "death": {
-          "score": "continues",
+          "score": "unscored",
           "facet": "The soul that outlasts the body",
-          "why": "A bereaved husband in Casely Hayford’s Gold Coast story says that what he means by “I” is the soul, not the body, and that it keeps communion with his dead wife. The person is held to continue as soul and spirit.",
+          "why": "A bereaved husband in Casely Hayford’s Gold Coast story says that what he means by “I” is the soul, not the body, and that it keeps communion with his dead wife. The person is held to continue as soul and spirit. A second, independent reading moved this placement from “it continues” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The words are spoken by a character in the allegorical chapter that closes the book’s argument for African self-respect, so they are a literary expression of Akan-influenced belief and not a plain statement of the author’s creed. The scanned text contains recognition errors.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72081,7 +72081,7 @@ window.PILOT_EVIDENCE={
           "facet": "Sorrow as the road to God",
           "why": "After his wife and child die, the hero is said to come to know that sorrow is a way to God. Suffering is not given a cause, but it is said to awaken understanding and so can be used.",
           "limit": "Narration about a fictional character in an allegorical chapter of a political book, so the view is the author’s literary expression and not a treatise. The scanned text contains recognition errors.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72182,11 +72182,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "train",
+          "score": "unscored",
           "facet": "Love of possessions",
-          "why": "Eastman reports the Dakota teaching that wanting things for oneself unsettles the spirit and is to be trained out of children by making them give away what they prize.",
+          "why": "Eastman reports the Dakota teaching that wanting things for oneself unsettles the spirit and is to be trained out of children by making them give away what they prize. A second, independent reading moved this placement from “train it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Eastman writes in English for a white readership about “the Indian” in general, from memories of a Santee Dakota boyhood. The passage concerns desire for property only.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72462,11 +72462,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "truth": {
-          "score": "partly-knowable",
+          "score": "unscored",
           "facet": "Wordless adoration",
-          "why": "Eastman, a Santee Dakota writer, says that the Great Mystery cannot be put into speech and was approached in silence. It can be drawn near to but not captured in words, which places the passage at in part.",
+          "why": "Eastman, a Santee Dakota writer, says that the Great Mystery cannot be put into speech and was approached in silence. It can be drawn near to but not captured in words, which places the passage at in part. A second, independent reading moved this placement from “in part” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Eastman writes in English for a general readership in 1911 and uses Christian vocabulary such as “God” for what he elsewhere calls the Great Mystery. He describes the religion of his Dakota childhood as he remembered it and generalises from it.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72497,11 +72497,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "ultimate-reality": {
-          "score": "beyond-saying",
+          "score": "unscored",
           "facet": "Wordless worship",
-          "why": "Eastman says his Dakota ancestors worshipped the “Great Mystery” in silence because no speech is adequate to it. The ultimate is affirmed but held to be beyond words.",
+          "why": "Eastman says his Dakota ancestors worshipped the “Great Mystery” in silence because no speech is adequate to it. The ultimate is affirmed but held to be beyond words. A second, independent reading moved this placement from “beyond saying” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Eastman, a Santee Dakota physician educated in New England, wrote in English for a white readership and presents one idealised picture of “the Indian” before contact. The passage speaks of God as real, so it could also be read as a plain yes.",
-          "second": "differed"
+          "second": "settled"
         },
         "truth": {
           "score": "partly-knowable",
@@ -72543,7 +72543,7 @@ window.PILOT_EVIDENCE={
           "facet": "Spiritual life",
           "why": "Eastman describes the worship of his Dakota forebears as something done alone, with no one authorised to come between a person and the Great Mystery. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘He is nearer to us in solitude’ prefers solitary worship but is not an explicit denial that relationships are necessary.",
           "limit": "This concerns worship only. Eastman, writing in English for outsiders, describes a people whose daily life was closely bound by kinship, and his account has been criticised as idealised.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "solitude",
@@ -72621,7 +72621,7 @@ window.PILOT_EVIDENCE={
           "facet": "Living by another’s light",
           "why": "Raichō treats a life lived through others and lit by others as a sickly, fallen condition, set against an original state in which woman was a sun and “an authentic person”. The dependent self is described as a loss and not as what a person is. A second, independent reading moved this placement from “not necessary” to “unscored”: ‘living through others and shining by the light of others’ depicts dependence as a sickly state but neither denies explicitly that relationships are necessary nor says they shape an authentic self.",
           "limit": "A manifesto in poetic prose for the first issue of a women’s magazine; it protests one kind of dependence and does not argue that people form themselves without others. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72798,7 +72798,7 @@ window.PILOT_EVIDENCE={
           "facet": "Belief in God as a wish",
           "why": "Unamuno says belief in God rests on will and not on reason, so reason cannot settle whether there is a God. That leaves the question open by argument, with only a wish to hold it. A second, independent reading moved this placement from “beyond saying” to “unscored”: ‘To believe in God is ... to wish that there may be a God’ defines belief as wish and does not say the question is unanswerable; that step is A's inference.",
           "limit": "Unamuno wrote as a believer in anguish, and he treats the wish as a vital need and not as a proof or a refutation. The English is the Flitch translation of 1921, and the passage sits in the chapter on doubt and faith.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -72878,11 +72878,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "death": {
-          "score": "continues",
+          "score": "unscored",
           "facet": "Death as the familiar unknown",
-          "why": "The poet reasons that he once entered life as a stranger and found it a mother, and expects the same welcome in death. The passage expects someone to be there to whom death appears and who can love it.",
+          "why": "The poet reasons that he once entered life as a stranger and found it a mother, and expects the same welcome in death. The passage expects someone to be there to whom death appears and who can love it. A second, independent reading moved this placement from “it continues” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A devotional prose poem in the author’s own English rendering of his Bengali verse. It is an expression of trust and not an argument, and it does not say in what form the speaker continues.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -73476,11 +73476,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "has-meaning",
+          "score": "unscored",
           "facet": "Suffering and consciousness",
-          "why": "Unamuno makes suffering the way by which living beings become conscious of themselves as persons. That gives suffering a necessary role in existence and not just an occasional use.",
+          "why": "Unamuno makes suffering the way by which living beings become conscious of themselves as persons. That gives suffering a necessary role in existence and not just an occasional use. A second, independent reading moved this placement from “it has meaning” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The claim is asserted in a personal, deliberately paradoxical essay, not demonstrated. Unamuno calls suffering a mystery in the preceding sentence, and the English is a 1921 translation from Spanish.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -73658,11 +73658,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "self-or-others-first": {
-          "score": "both",
+          "score": "unscored",
           "facet": "Gaining by giving away",
-          "why": "Tagore says the self reaches its fullness only by giving itself away, citing the Upanishadic line that one gains by giving up. A person’s own good is realised through the good of the larger whole, so the two are not set against each other.",
+          "why": "Tagore says the self reaches its fullness only by giving itself away, citing the Upanishadic line that one gains by giving up. A person’s own good is realised through the good of the larger whole, so the two are not set against each other. A second, independent reading moved this placement from “bound together” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The book is a set of lectures on spiritual life and does not address cases where self and others conflict in practice. The place of delivery is not fixed by the text, and the edition is a 1921 reprint.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -73739,7 +73739,7 @@ window.PILOT_EVIDENCE={
           "facet": "The soul finding its truth",
           "why": "The self is said to have its joy only when it unifies itself with others, so joy requires other people.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -75568,7 +75568,7 @@ window.PILOT_EVIDENCE={
           "facet": "The indestructible that stays hidden",
           "why": "Kafka says people live on trust in something indestructible that may remain hidden, and he names belief in a personal God as only one way that hiddenness is expressed. The ultimate is affirmed as a need and kept out of reach of description.",
           "limit": "Aphorism 50 speaks of an indestructible element in the person and does not assert a God as fact. The English is the atlas’s own unreviewed translation. The aphorisms are numbered notebook entries, not an argued essay, and the numbering follows the Wikisource page.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -76112,7 +76112,7 @@ window.PILOT_EVIDENCE={
           "facet": "Life that depends on one other person",
           "why": "The robot Primus, asked whether he wishes to live, answers that he will not live apart from Helena. The line makes his wish to go on depend on one other person, which puts it near the constitutive end. A second, independent reading moved this placement from “necessary” to “unscored”: ‘I will not live without her’ is a character's declaration about his will to live, not a claim about what forms a self.",
           "limit": "These are the words of a stage character, a robot who has just begun to feel, and not Čapek’s own statement; the play invites readers to see in Primus and Helena a new Adam and Eve. The passage concerns the will to live and does not argue about how a self is formed.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -76428,7 +76428,7 @@ window.PILOT_EVIDENCE={
           "facet": "What shows itself",
           "why": "Wittgenstein affirms that there is something beyond what language can state, and that it makes itself manifest. It is present to a person yet cannot be put into propositions, which places the passage at in part.",
           "limit": "The remark is one numbered proposition in a book that ends by calling its own sentences nonsensical, and its reading is much disputed. The English is the 1922 translation published under C. K. Ogden’s name.",
-          "second": "differed"
+          "second": "settled"
         },
         "ultimate-reality": {
           "score": "beyond-saying",
@@ -76477,7 +76477,7 @@ window.PILOT_EVIDENCE={
           "facet": "Becoming an individual",
           "why": "Individuation is a process of becoming, and the individual already presupposes others. A second, independent reading moved this placement from “a changing self” to “unscored”: ‘presupposes a collective relationship’ speaks to relatedness; the idea of a self in the making comes from the heading ‘Individuation’, not the excerpt.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "unscored",
@@ -76555,7 +76555,7 @@ window.PILOT_EVIDENCE={
           "facet": "Love’s bitter exercise",
           "why": "The speaker, praying for a lost lover, calls love a bitter exercise of tears and penance in which the eyes stay ecstatic. Suffering has no purpose of its own here but is borne as part of loving and gives it depth. A second, independent reading moved this placement from “it can be put to use” to “unscored”: The lines call love ‘a bitter exercise’ with tears and a hair shirt; they are about what loving is like, not whether suffering has a purpose.",
           "limit": "A lyric prayer in the voice of a grieving woman, with Christian imagery of the cross; it states an attitude and does not argue it. The English is the atlas’s own unreviewed translation.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -77081,7 +77081,7 @@ window.PILOT_EVIDENCE={
           "facet": "Love as the road to the heart",
           "why": "Gibran says love threshes, grinds and kneads a person so that he may know the secrets of his own heart and so become part of the heart of life. Self-knowledge comes through the force of love toward another, and ends in a deeper inward knowing, so both turns are present.",
           "limit": "The Prophet is a prose poem in the voice of a fictional sage, in English written by Gibran himself. “Love” here is an abstract power and not a particular person, so the passage speaks of self-knowledge through others only in a general way.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -77601,7 +77601,7 @@ window.PILOT_EVIDENCE={
           "facet": "Life directed to seeing God",
           "why": "Gandhi has just named the goal as self-realization, seeing God face to face and attaining moksha, and says his speaking, writing and politics are all directed to it. The end he lives for is the liberation his religion holds out to all, not one of his own devising, which places the passage at given. A second, independent reading moved this placement from “given” to “unscored”: ‘In pursuit of this goal’ does not say whether the goal is assigned or chosen; that it is moksha held out by his religion is only in A‘s context, and B’s made has no more support.",
           "limit": "The sentence is a personal statement of what Gandhi wants to achieve, so it could also be read as a chosen aim. It is from the English translation of a Gujarati original, by Mahadev Desai.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -77671,7 +77671,7 @@ window.PILOT_EVIDENCE={
           "facet": "Selfhood as an outcome of interaction",
           "why": "Dewey says selfhood is a later development that emerges from organized interactions, social ones among them. This makes social relations part of what forms the self.",
           "limit": "The interactions named are organic and social together, so the passage does not single out other persons alone. The citation is Experience and Nature, LW1: 162. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -78219,7 +78219,7 @@ window.PILOT_EVIDENCE={
           "facet": "The “they” prescribes everyday being",
           "why": "Heidegger says the everyday self takes its pleasures and judgments from the public “they”. Social others are therefore necessary to the kind of self described, the everyday one.",
           "limit": "The passage describes the everyday, inauthentic self and Heidegger contrasts it with a self that owns its existence. It does not say all selfhood is fixed by others. The entry cites 1927 [1962, 126–7]. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -78320,11 +78320,11 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "The conditions of a human life",
-          "why": "Adler holds that no human being has ever existed outside a community, so character can only be understood as a response to communal life.",
+          "why": "Adler holds that no human being has ever existed outside a community, so character can only be understood as a response to communal life. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A popular lecture course in individual psychology. Adler’s concern is how well a person adapts to others, and he still treats each person’s ‘style of life’ as their own creation.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -79180,11 +79180,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "suffering": {
-          "score": "has-meaning",
+          "score": "unscored",
           "facet": "Suffering as the human law",
-          "why": "Gandhi calls suffering the law of human beings and the price by which a people’s most important goods are won. That gives it a necessary place in how good comes about, not merely an occasional use.",
+          "why": "Gandhi calls suffering the law of human beings and the price by which a people’s most important goods are won. That gives it a necessary place in how good comes about, not merely an occasional use. A second, independent reading moved this placement from “it has meaning” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A sentence from Gandhi’s weekly paper, read here in a thematic anthology that strips the context. He is speaking of suffering voluntarily accepted in nonviolent struggle, not of illness, poverty or harm inflicted on the unwilling.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -79718,7 +79718,7 @@ window.PILOT_EVIDENCE={
           "facet": "Individuals and community",
           "why": "Watsuji holds that a human being is at once individual and social, and warns that community does not mean people merging into one. A second, independent reading moved this placement from “helps shape” to “unscored”: The sentence makes unique individuals the precondition of cooperation; it does not say cooperation shapes the individual.",
           "limit": "Quoted from a secondary source. Watsuji’s ethics is usually read as stressing the relational side of the self; this line shows him guarding the individual side too. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -79826,11 +79826,11 @@ window.PILOT_EVIDENCE={
           "second": "settled"
         },
         "self-or-others-first": {
-          "score": "others",
+          "score": "unscored",
           "facet": "Living as equals",
-          "why": "A decent society is an attitude of respect and reverence towards fellow men.",
+          "why": "A decent society is an attitude of respect and reverence towards fellow men. A second, independent reading moved this placement from “others’” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -79865,7 +79865,7 @@ window.PILOT_EVIDENCE={
           "facet": "A composite of body, soul and spirit",
           "why": "Stein says a human being is made of body, soul and spirit together. A real self that is composite is placed at changing.",
           "limit": "The entry elsewhere describes Stein’s view that the soul is more than momentary, so this line does not settle whether she thinks the self lasts. It is a statement of structure, not of persistence. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -80004,11 +80004,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Form imposed by others",
-          "why": "The narrator argues that a person’s manner of being is never only their own but is imposed from outside, so that who someone appears to be depends on the people they are bound to. Dependence on others is treated as inescapable in forming the expressed self. A second, independent reading moved this placement from “necessary” to “helps shape”: Outward manner depends ‘on what style happens to come their way and how dependent they are on other people’, a matter of degree alongside another factor, so not necessity.",
+          "why": "The narrator argues that a person’s manner of being is never only their own but is imposed from outside, so that who someone appears to be depends on the people they are bound to. Dependence on others is treated as inescapable in forming the expressed self. A second, independent reading moved this placement from “necessary” to “helps shape”: Outward manner depends ‘on what style happens to come their way and how dependent they are on other people’, a matter of degree alongside another factor, so not necessity. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The words belong to the narrator of a satirical novel, in an essayistic preface, and concern the outward form a person takes, not a hidden inner core. The excerpt is quoted on a Polish state education page, and the English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -80250,11 +80250,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "solitude-or-company": {
-          "score": "both",
+          "score": "unscored",
           "facet": "Goods of home and community",
-          "why": "Weil says the goods of home, country and culture are needed to nourish the soul, with sanctity as the one exception. A life among others is needed, with room kept for a solitary holiness.",
+          "why": "Weil says the goods of home, country and culture are needed to nourish the soul, with sanctity as the one exception. A life among others is needed, with room kept for a solitary holiness. A second, independent reading moved this placement from “both have a place” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The passage speaks of belonging to a community and its inherited goods, not of company in the sense of friends. The entry cites it as an earlier statement of the same idea. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -80647,7 +80647,7 @@ window.PILOT_EVIDENCE={
           "facet": "Solitude and the impersonal",
           "why": "Weil holds that what is sacred in a human being is reached only in solitude, and the following sentences add that it never happens in someone who thinks of themselves as part of a “we”. For the aspect of the self she values most, belonging to a group is denied any part.",
           "limit": "The essay is about the impersonal good in a person, not about how character or personality forms, and elsewhere Weil stresses the need for roots in a community. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -81189,7 +81189,7 @@ window.PILOT_EVIDENCE={
           "facet": "Woman as ‘the Other’",
           "why": "Beauvoir argues that what ‘woman’ is taken to be has been fixed through her relation to man.",
           "limit": "She is describing and criticising how a social identity is imposed, not endorsing it or claiming every self is formed this way.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "made",
@@ -81519,7 +81519,7 @@ window.PILOT_EVIDENCE={
           "facet": "Appearing as who one is",
           "why": "Arendt holds that who someone is shows itself only in acting and speaking among others, in a shared ‘space of appearance’.",
           "limit": "The quotation comes from a secondary source. Arendt is describing public, political life; she also insists on a private realm, and on each person’s uniqueness.",
-          "second": "differed"
+          "second": "settled"
         },
         "inward-or-others": {
           "score": "others",
@@ -81627,11 +81627,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "desire": {
-          "score": "follow",
+          "score": "unscored",
           "facet": "A desire that deepens when met",
-          "why": "Levinas describes a metaphysical desire that is not ended by satisfaction but grows deeper. It is affirmed as the movement toward the other, so the passage is placed at follow.",
+          "why": "Levinas describes a metaphysical desire that is not ended by satisfaction but grows deeper. It is affirmed as the movement toward the other, so the passage is placed at follow. A second, independent reading moved this placement from “follow it” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The entry says this metaphysical desire differs from needs that can be satisfied, so the line does not speak for appetites generally. The first word of the quotation follows words from the entry. The citation is TI 34. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -81702,7 +81702,7 @@ window.PILOT_EVIDENCE={
           "facet": "Roles others assign as masks",
           "why": "Zambrano says that the figures others take the exile to be, from hero to saviour, are masks made by the needs of those who meet him. Telling the truth of what is lived exposes them, so what others make of a person is denied the status of that person’s self. A second, independent reading moved this placement from “not necessary” to “unscored”: The excerpt calls the figures others project ‘masks’ but does not itself deny that relationships are necessary to the self.",
           "limit": "The letter concerns Spanish Civil War exiles and how they are seen, not the formation of persons in general, and it also treats the exile as bound to a people and its memory. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -81737,7 +81737,7 @@ window.PILOT_EVIDENCE={
           "facet": "Knowing God as knowing what must be done",
           "why": "Levinas says knowing God is knowing what must be done, so that God is approached through ethical action. The words neither affirm nor deny an ultimate reality, so the passage is left unscored.",
           "limit": "The sentence defines knowing God and does not discuss whether God exists. The entry links it to a medieval Jewish tradition of knowing God through attributes of action. The citation is DF 17. The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -81772,7 +81772,7 @@ window.PILOT_EVIDENCE={
           "facet": "Shared destiny",
           "why": "King says that people are bound together in a single web of mutual dependence, so that what touches one touches all. Others are woven into each person’s fate, though the sentence does not claim they make the self.",
           "limit": "The sentence argues for moral and political solidarity against segregation, not about how identity forms. It was written as an open letter in reply to clergy critics. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -81983,7 +81983,7 @@ window.PILOT_EVIDENCE={
           "facet": "Solitary days, a crowded dream world",
           "why": "Head states that she lives alone in waking life while friends pass by without coming near. She neither commends nor condemns this, and the next lines set a crowded dream world against it, so the passage describes a state more than it ranks solitude over company.",
           "limit": "A writer’s self-description in an essay about her work, with no argument about whether people are better off alone. The text comes from a copy of the essay in a publisher’s workshop reader. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -82053,7 +82053,7 @@ window.PILOT_EVIDENCE={
           "facet": "Non-attachment to views",
           "why": "The training asks practitioners to treat everything they now know as provisional and short of absolute truth. Insight is still expected to grow, so truth is approached without being held complete.",
           "limit": "A communal vow of the Order of Interbeing, first written in 1966 and revised several times since; the wording on the linked page is the current revision, not the 1966 text. It is a rule for practice and not an argument.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -82158,7 +82158,7 @@ window.PILOT_EVIDENCE={
           "facet": "Individual well-being",
           "why": "Nkrumah values a life in which a person’s well-being is bound up with the group’s, while insisting in the same paper that each person is ‘an end in himself’. A second, independent reading moved this placement from “helps shape” to “unscored”: The excerpt calls such a community ‘praiseworthy’, an evaluation, without saying the group shapes the person.",
           "limit": "He is warning against romanticising ‘traditional African society’: he wants its spirit, not its structure. This is a political paper, and the passage weighs community and individual together rather than making either the source of the other.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "both",
@@ -82277,7 +82277,7 @@ window.PILOT_EVIDENCE={
           "facet": "Happiness as a form of wanting",
           "why": "Ajahn Chah treats happiness and unhappiness as twins born of wanting and says a happy mind is not a peaceful one. The talk sets happiness aside as a goal, so it does not say where happiness is to be found.",
           "limit": "A talk given in the Lao dialect of north-east Thailand and published in an edited English translation. Since it traces both feelings to wanting, it could be read as an inner account; its aim is peace beyond both.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -82590,11 +82590,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "not_constitutive",
+          "score": "unscored",
           "facet": "Defining oneself",
-          "why": "Biko defines freedom as self-definition that other people’s power does not limit. For the free self he describes, what others make of a person is expressly denied a part, and only God and nature remain as bounds.",
+          "why": "Biko defines freedom as self-definition that other people’s power does not limit. For the free self he describes, what others make of a person is expressly denied a part, and only God and nature remain as bounds. A second, independent reading moved this placement from “not necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence before it speaks of group pride and of rallying together as a group, so Biko does not treat the self as solitary; the denial is aimed at domination by others. It comes from a political essay written under apartheid, read here in a scanned anthology reprint. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -82773,11 +82773,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Land as web of relations",
-          "why": "Tjibaou says clan land is the fabric of human relations and calls it a fundamental element of Kanak personality; a few lines on he writes that the person of the tribe attains personality through relation to myth and to space. Relations are made a foundation of the person.",
+          "why": "Tjibaou says clan land is the fabric of human relations and calls it a fundamental element of Kanak personality; a few lines on he writes that the person of the tribe attains personality through relation to myth and to space. Relations are made a foundation of the person. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The subject of the sentence is space, meaning clan land, so kinship enters through the land that holds it. The article is an ethnographic account of Kanak society written by a member of it, and its text online is a scan. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -82812,7 +82812,7 @@ window.PILOT_EVIDENCE={
           "facet": "Agency shrinking to a point",
           "why": "Nagel says that when outside influences are taken into account, the room for real agency shrinks to almost nothing. This puts the passage at determined.",
           "limit": "Nagel goes on to say the problem has no solution and that agency seems incompatible with actions being events. The line states a worry, not his settled view, and the entry quotes it from Mortal Questions (1979, 66). The line is quoted second-hand in an encyclopedia entry, not read in the original text.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83096,11 +83096,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "free-will": {
-          "score": "limited",
+          "score": "unscored",
           "facet": "Choice inside social conditioning",
-          "why": "Payutto calls the belief that people act entirely from free will a delusion, and says that most people choose and act within confines set by upbringing and society. Choice is kept, but as something narrow and conditioned.",
+          "why": "Payutto calls the belief that people act entirely from free will a delusion, and says that most people choose and act within confines set by upbringing and society. Choice is kept, but as something narrow and conditioned. A second, independent reading moved this placement from “free within limits” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The claim is about “most people” in an unawakened state; the book’s purpose is to show that insight can widen this freedom. It is a 2021 English translation of a Thai work, and the excerpt on its own reads more bleakly than the chapter.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83436,7 +83436,7 @@ window.PILOT_EVIDENCE={
           "facet": "To whom a life belongs",
           "why": "Speaking as a survivor, Wiesel says a life is not only its owner’s: it is claimed by everyone who suffers and needs a witness. A second, independent reading moved this placement from “necessary” to “unscored”: ‘Our lives no longer belong to us alone’ states a moral claim others have on a life, not that others form the self.",
           "limit": "A moral appeal in a public speech, grounded in the memory of the Holocaust. It is a claim about responsibility, not an account of how a self is formed. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "others",
@@ -83479,7 +83479,7 @@ window.PILOT_EVIDENCE={
           "facet": "Inherited collective memory",
           "why": "Césaire grounds identity in what a community’s history has laid down in its members, saying just afterwards that nobody arrives in the world with an empty brain. Shared memory is given weight in forming a person, without a claim that nothing else does. A second, independent reading moved this placement from “helps shape” to “unscored”: The excerpt affirms the ‘value’ of what lies in collective memory but does not itself say that memory forms a person; that step comes only from the next sentence reported by A.",
           "limit": "A conference speech, quoted from a teaching excerpt that numbers its lines and adds notes. Later in the same speech Césaire rejects any “prison” conception of identity, so the passage should not be read as collective determinism. The English is the atlas’s own unreviewed translation. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83517,11 +83517,11 @@ window.PILOT_EVIDENCE={
           "second": "agreed"
         },
         "lasting-self": {
-          "score": "changing",
+          "score": "unscored",
           "facet": "What it is to exist",
-          "why": "To be is to ‘inter-be’: a person exists only as made up of relations, with nothing standing by itself.",
+          "why": "To be is to ‘inter-be’: a person exists only as made up of relations, with nothing standing by itself. A second, independent reading moved this placement from “a changing self” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83626,14 +83626,14 @@ window.PILOT_EVIDENCE={
           "facet": "Becoming autonomous",
           "why": "Nedelsky argues that the capacity to govern oneself is something relationships make possible, not something they threaten.",
           "limit": "Quoted from a secondary source; the article title is supplied from memory and should be checked. The claim concerns autonomy, one capacity of a self, and she also notes that relationships can undermine it.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "made",
           "facet": "Becoming autonomous",
           "why": "Relationships are what enable people to become autonomous.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83668,7 +83668,7 @@ window.PILOT_EVIDENCE={
           "facet": "Inquiry into the nature of things",
           "why": "Asked whether philosophy advances knowledge, the Kenyan sage answers yes and calls it a rational inquiry into the real nature of things. The reply takes that nature to be open to reasoned inquiry. A second, independent reading moved this placement from “yes” to “unscored”: ‘a rational method of inquiry into the real nature of things’ describes an inquiry without saying it reaches the deepest truth.",
           "limit": "An interview answer, edited and published by Oruka, as quoted in the Stanford Encyclopedia of Philosophy. It concerns whether philosophy advances knowledge and does not address whether an ultimate truth can be reached in full.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -83734,11 +83734,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-given",
+          "score": "unscored",
           "facet": "The purpose of life",
-          "why": "The Dalai Lama answers the question of life’s purpose directly: it is to be happy, because every being wants happiness from birth. The purpose is read off human nature and is not invented by each person.",
+          "why": "The Dalai Lama answers the question of life’s purpose directly: it is to be happy, because every being wants happiness from birth. The purpose is read off human nature and is not invented by each person. A second, independent reading moved this placement from “given” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The sentence is offered as a personal belief in an essay for a general audience and makes no appeal to Buddhist doctrine. The essay goes on to say that happiness comes from compassion, so the purpose is not private pleasure.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84119,18 +84119,18 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Values and the individual",
-          "why": "Gyekye accepts that a person’s values come from a cultural community, while insisting that individuals can still stand back, question them and choose their own goals.",
+          "why": "Gyekye accepts that a person’s values come from a cultural community, while insisting that individuals can still stand back, question them and choose their own goals. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Quoted from a secondary source. Gyekye is arguing against Menkiti’s stronger view, also in this atlas, which he thinks gives the community a ‘tyranny’ over the individual. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "self-or-others-first": {
           "score": "unscored",
           "facet": "Values and the individual",
           "why": "A person’s values come from a community, and the person can still question them. A second, independent reading moved this placement from “bound together” to “unscored”: The excerpt says the individual‘s values are ’a creation of cultural community‘, which is about where values come from, not whose good comes first; A’s ‘can still question them’ is not in it.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84196,11 +84196,11 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://ecommons.cornell.edu/server/api/core/bitstreams/7a6b0906-cc79-4b0a-9995-2f91155a72eb/content",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "The personal as a product of society",
-          "why": "The novelist says the personal is a product of the whole of society, past and present, which makes society's formation of a person necessary even where the consequences fall on one person alone.",
+          "why": "The novelist says the personal is a product of the whole of society, past and present, which makes society's formation of a person necessary even where the consequences fall on one person alone. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "An essay of 1992 in Alex G. Bardsley's translation, discussing a writer's responsibility after years of political detention. The sentence concedes that consequences are borne alone, and the claim about society is made in passing. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84306,7 +84306,7 @@ window.PILOT_EVIDENCE={
           "facet": "Daily existence in Oceania",
           "why": "Hauʻofa argues that islanders live through networks of kin spread across the ocean, a reciprocal interdependence that sustains their dignity and sense of who they are.",
           "limit": "The essay is about a region’s collective self-understanding and economy, not a theory of the individual mind. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84337,18 +84337,18 @@ window.PILOT_EVIDENCE={
       "question": "relationships",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Becoming a person",
-          "why": "Senghor describes a human being’s growth in vital force as becoming a person, and says this happens through ever greater freedom inside a community of mutual dependence.",
+          "why": "Senghor describes a human being’s growth in vital force as becoming a person, and says this happens through ever greater freedom inside a community of mutual dependence. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "Quoted in English from a secondary source, which cites a 1993 collection; the original text and its date should be checked. Senghor’s account of an ‘African’ philosophy has been criticised as too sweeping. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "given-or-made": {
           "score": "unscored",
           "facet": "Becoming a person",
           "why": "A human being ‘becomes’ a person, growing freer within a community. A second, independent reading moved this placement from “made” to “unscored”: ‘By being freer and freer within an interdependent community’ hints at a process but the claim that one becomes a person is only in A's context.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84416,11 +84416,11 @@ window.PILOT_EVIDENCE={
       "placeSource": "https://envia3.xoc.uam.mx/site/uploads/lecturas_TID/unidad2/Villoro_identidad.pdf",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "The gaze of others",
-          "why": "Villoro says that how others see a person assigns that person a social personality, so relationships help form the self presented to the world.",
+          "why": "Villoro says that how others see a person assigns that person a social personality, so relationships help form the self presented to the world. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The English is the atlas's own unreviewed translation. The essay goes on to say that a person can set an own gaze against the gaze of others, so others shape the self without fully making it. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -84525,7 +84525,7 @@ window.PILOT_EVIDENCE={
           "facet": "Being a person in the world",
           "why": "Graham places the person inside relationships with land and with other people, and contrasts this with a view on which the individual is ‘totally alone’. A second, independent reading moved this placement from “necessary” to “unscored”: The sentence ranks two kinds of relationship as ‘most important’ but does not say they make or shape the person.",
           "limit": "One Aboriginal philosopher’s public account, not a statement for every community. Relations among people come second to relation with land. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "solitude-or-company": {
           "score": "company",
@@ -84937,11 +84937,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "meaning": {
-          "score": "meaning-given",
+          "score": "unscored",
           "facet": "A calling to heal the Earth",
-          "why": "Maathai speaks of a task to which humanity is called: to heal the Earth and embrace the whole of creation as a larger family of life. The purpose is presented as a summons arising from humanity’s place in that family.",
+          "why": "Maathai speaks of a task to which humanity is called: to heal the Earth and embrace the whole of creation as a larger family of life. The purpose is presented as a summons arising from humanity’s place in that family. A second, independent reading moved this placement from “given” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "A Nobel Peace Prize lecture about environmental and democratic work in Kenya. “Called” is not explained; the speech does not say who or what does the calling, and it also stresses that people must choose to act.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -85042,11 +85042,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "constitutive",
+          "score": "unscored",
           "facet": "Agency formed within subordination",
-          "why": "Mahmood argues that the capacity to act is produced by particular relations of power and authority, not held by a will that exists before them. The relations a person stands in are thus said to create the agency in question.",
+          "why": "Mahmood argues that the capacity to act is produced by particular relations of power and authority, not held by a will that exists before them. The relations a person stands in are thus said to create the agency in question. A second, independent reading moved this placement from “necessary” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The claim is about agency and the formation of subjects, built on Foucault and Butler, and is developed through a study of a women’s mosque movement in Cairo. It concerns relations of power and discipline more than friendship or kinship. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "free-will": {
           "score": "limited",
@@ -85155,11 +85155,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "Family and where one stands",
-          "why": "Thammavongsa recalls defending her father’s reading of a word at school and sees in hindsight that she was defending her family’s standing, which she felt as her own. Her sense of who she was is shown bound up with her parents, alongside what reading and writing later gave her.",
+          "why": "Thammavongsa recalls defending her father’s reading of a word at school and sees in hindsight that she was defending her family’s standing, which she felt as her own. Her sense of who she was is shown bound up with her parents, alongside what reading and writing later gave her. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "This is a writer’s memory of one childhood episode, told in a student newspaper interview, and she later reworked it as fiction. It does not claim that family alone decides who a person is. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -85229,7 +85229,7 @@ window.PILOT_EVIDENCE={
           "facet": "Seeing oneself rightly",
           "why": "Tenzin Palmo teaches that the sense of being a solid self set apart from everyone and everything else is a mistake, and the root of suffering. A second, independent reading moved this placement from “necessary” to “unscored”: The excerpt rejects seeing oneself as ‘separate from the rest of creation’, which is not specifically relationships with people.",
           "limit": "A transcribed Buddhist teaching; its date should be checked. What a person is said not to be separate from is the whole of creation, not other people only, and the underlying claim is that there is no self-existent self at all. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         },
         "lasting-self": {
           "score": "no_self",
@@ -85243,7 +85243,7 @@ window.PILOT_EVIDENCE={
           "facet": "Seeing oneself rightly",
           "why": "Suffering is traced to the mistake of seeing oneself as solid and separate; it lasts as long as the mistake does and is given no purpose of its own.",
           "limit": "This passage was chosen for a different question. It is placed here only for what its own words say on this one, and may not represent the thinker’s considered view.",
-          "second": "differed"
+          "second": "settled"
         },
         "happiness": {
           "score": "on-oneself",
@@ -85926,11 +85926,11 @@ window.PILOT_EVIDENCE={
       "review": "draft",
       "readings": {
         "relationships": {
-          "score": "contributory",
+          "score": "unscored",
           "facet": "A plural cogito",
-          "why": "Dangarembga proposes rewriting Descartes’s formula so that shared existence comes before individual thought. The passage offers this as a possibility that “could” follow from looking past the single thinker, so it points toward a relational self without asserting that one is necessary.",
+          "why": "Dangarembga proposes rewriting Descartes’s formula so that shared existence comes before individual thought. The passage offers this as a possibility that “could” follow from looking past the single thinker, so it points toward a relational self without asserting that one is necessary. A second, independent reading moved this placement from “helps shape” to “unscored”: Two further independent readings each placed these words differently from the first, so the words alone do not settle it.",
           "limit": "The reformulations are put forward as experiments in a public address, and the same speech says that the older philosophy of “I am because you are” did not protect her region from violence. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
@@ -86249,7 +86249,7 @@ window.PILOT_EVIDENCE={
           "facet": "Belonging to the land",
           "why": "Teaiwa says that in older Banaban thinking a person belongs to the land and is born of it, so that being Banaban means being of the rock. Identity is defined through a relation to land and ancestors. A second, independent reading moved this placement from “necessary” to “unscored”: ‘you belong to the land ... to be a Banaban is to be of the rock’ defines identity by land, not by relationships with people.",
           "limit": "The tie described is to land and ancestors more than to living people, and Teaiwa reports a pre-Christian view as a scholar, not as her own creed. It comes from an interview given in connection with an exhibition. Reading drawn from the project’s research catalogue.",
-          "second": "differed"
+          "second": "settled"
         }
       },
       "check": {
