@@ -1,0 +1,75 @@
+---
+import Read from '../../layouts/Read.astro';
+import StarsNav from '../../components/StarsNav.astro';
+const faq = [
+  ['Where do horoscope apps get their predictions?', 'The positions of the planets come from astronomical tables, usually NASA’s Jet Propulsion Laboratory ephemerides. The sentences are written in advance by astrologers and staff writers, and software picks the ones that match the planets’ positions for each user.'],
+  ['Are horoscopes written by AI?', 'Most of the text in the large apps and in newspaper columns is written by people. Software selects and assembles it. Some newer services say they use language models to draft or vary the wording.'],
+  ['Has astrology been tested?', 'Yes. In the best-known test, published in Nature in 1985, astrologers matched birth charts to personality profiles no better than chance. Reviews of many such studies have reached the same result.'],
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Read title="How horoscopes are made: where columns and apps get their predictions — Svapna" description="A horoscope has two parts: planetary positions from astronomical tables, and sentences written by people and matched to those positions by rule. How columns and apps do it, and what controlled tests have found." path="/stars/horoscopes" crumbs={[{ name: 'The sky', path: '/stars' }, { name: 'How horoscopes are made', path: '/stars/horoscopes' }]} jsonLd={jsonLd}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/stars">The sky</a> · How horoscopes are made</p>
+  <h1>Where the predictions <em>come from.</em></h1>
+  <p class="lede">A horoscope is made in two steps. The first is astronomy: working out where the sun, moon and planets are. The second is a set of rules, about two thousand years old, for turning those positions into sentences. The first step is exact. The second is written by people.</p>
+  <StarsNav path="/stars/horoscopes" />
+
+  <div class="prose">
+    <h2>Step one: the positions</h2>
+    <p>The places of the planets on any date come from an ephemeris, a table of positions. Today’s tables are computed by NASA’s Jet Propulsion Laboratory for navigating spacecraft, and they are accurate to a tiny fraction of a degree across thousands of years. Almost all astrology software reads them through a free program library called the Swiss Ephemeris, published in 1997 by the Zurich firm Astrodienst.</p>
+    <p>So the statement “Mars enters Leo on Thursday” in a horoscope is a fact about the sky, in the zodiac the astrologer uses. An astronomer would give the same position in different words.</p>
+
+    <h2>Step two: the rules</h2>
+    <p>Each part of the sky has a traditional meaning. In outline:</p>
+    <ul>
+      <li><strong>Planets</strong> stand for kinds of activity. Mercury is speech and trade, Venus is love and pleasure, Mars is conflict and drive, Jupiter is growth and luck, Saturn is limits and delay.</li>
+      <li><strong>Signs</strong> give the manner. A planet in Aries acts quickly, and in Taurus slowly.</li>
+      <li><strong>Houses</strong> give the area of life: the second is money, the seventh is partners, the tenth is career.</li>
+      <li><strong>Aspects</strong> are the angles between planets. Ninety degrees, a square, means friction. A hundred and twenty, a trine, means ease.</li>
+    </ul>
+    <p>A reading is a sentence built from these. “Mars in the tenth house, square Saturn” becomes “your ambitions at work meet an obstacle; be patient with those in charge”. The rules allow many readings of the same sky, and choosing among them is the astrologer’s craft.</p>
+
+    <h2>How a newspaper column is written</h2>
+    <p>A columnist knows the reader’s sun sign and nothing else. The standard technique is to treat that sign as the first house and count the others round from it. If Venus is in Libra this week, then for a reader who is an Aries, Venus is in the seventh sign from their own, the place of partners, and the paragraph for Aries will be about relationships. For a Capricorn the same Venus falls in the tenth, and the paragraph will be about work.</p>
+    <p>The columnist does this twelve times, once for each sign, and writes each paragraph to fit a few dozen words. Each paragraph has to serve about a twelfth of the readers, so it is written to be widely applicable. Many columns are syndicated, and one writer’s paragraphs appear in hundreds of papers.</p>
+    <p>This format is recent. It dates from the Sunday Express in London in 1930 and took its twelve-paragraph form later in that decade. <a href="/stars/history">The history</a>.</p>
+
+    <h2>How an app does it</h2>
+    <p>An app asks for the date, the time and the place of birth, and computes the full birth chart. Each day it compares the planets’ present positions with that chart. The points of contact are called transits: “Saturn today is opposite the place where your moon was when you were born.”</p>
+    <p>For each possible transit the company holds text written beforehand. With ten planets, twelve signs, twelve houses and half a dozen aspects there are several thousand combinations, and the writing of that library is the main editorial work. Software finds which transits apply to a user today, ranks them, and assembles the matching passages into a reading.</p>
+    <p>Co–Star, one of the largest, describes its method as “AI that merges NASA data with the insight of human astrologers”. Reporting on the company has found that the sentences are written by its staff of writers and astrologers and that the algorithm’s part is to select and combine them. Some newer services say they use language models to draft or rephrase the text. In every case the meanings come from the same traditional rules.</p>
+    <p>The result is more specific to the user than a column, since two people rarely share a chart. It is specific in its inputs. The sentences are still drawn from a shared stock.</p>
+
+    <h2 id="feels">Why a horoscope can feel accurate</h2>
+    <p>In 1948 the psychologist Bertram Forer gave his students a personality test and, a week later, handed each one a written description of their character. He asked them to rate how well it fitted, from 0 to 5. The average rating was 4.26. Every student had received the same text, which Forer had assembled largely from a newsstand astrology book. It included lines such as “You have a great need for other people to like and admire you” and “At times you are extroverted, affable, sociable, while at other times you are introverted, wary, reserved.”</p>
+    <p>The finding has been repeated many times and is known as the Forer effect or the Barnum effect. People accept general statements as descriptions of themselves in particular, the more readily when they are told the description was prepared for them and when it is mostly flattering.</p>
+    <p>Two other habits help. People remember the readings that fitted and forget the ones that did not. And a person who knows what their sign is supposed to be like can come to describe themselves that way: one study found a link between sun sign and self-reported personality that appeared only among people who knew their sign’s reputation.</p>
+
+    <h2 id="tests">What tests have found</h2>
+    <p>Astrology makes claims that can be checked, and they have been.</p>
+    <p>The best-known test was run by the physicist Shawn Carlson and published in <em>Nature</em> in 1985. Twenty-eight astrologers, nominated by their own professional body, agreed the design in advance. Each was given a volunteer’s birth chart and three personality profiles from a standard psychological inventory, one of them the volunteer’s own. They had predicted they would pick the right one at least half the time. They did so about a third of the time, which is what guessing gives. Astrologers have criticised the design and the analysis since, and the argument continues in their journals.</p>
+    <p>Other tests have compared people born minutes apart, who share a chart and should resemble each other, and found no more resemblance than between strangers. Large studies have looked for links between sun sign and occupation, marriage and divorce, using census records, and found none beyond chance. The French researcher Michel Gauquelin reported in 1955 that sports champions were born more often with Mars in certain parts of the sky; later attempts to reproduce this have mostly failed, and it remains disputed.</p>
+    <p>There is also no known way for it to work. The gravitational pull of the planets on a newborn is far smaller than that of the midwife standing beside it.</p>
+    <p>For these reasons scientists and philosophers of science commonly give astrology as a standard example of a pseudoscience: a body of claims presented as knowledge that has not held up when tested.</p>
+
+    <h2>What that leaves</h2>
+    <p>Many people who read horoscopes know all this. In the Pew survey of 2025, most Americans who consult astrology said they do so “just for fun”, and one in a hundred adults said they rely on it a lot for major decisions. People describe using it as a prompt for thinking about themselves, as a shared language with friends, or as a small ritual in the day. A reading can serve those purposes whether or not the planets have any part in it.</p>
+    <p>It has also been used in ways that carry costs: to turn down a marriage or a job applicant, or to put off a medical decision. The belief about Fire Horse women in Japan is <a href="/stars/traditions">one example</a> with a measurable effect.</p>
+
+    <h2>Short answers</h2>
+    {faq.map(([q, a]) => <><h3>{q}</h3><p>{a}</p></>)}
+
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://ssd.jpl.nasa.gov/planets/eph_export.html" rel="noopener">Jet Propulsion Laboratory, planetary ephemerides</a>; <a href="https://www.astro.com/swisseph/swephinfo_e.htm" rel="noopener">Astrodienst, the Swiss Ephemeris</a>.</li>
+      <li><a href="https://www.costarastrology.com/about" rel="noopener">Co–Star, “About”</a>, for the company’s description of its method.</li>
+      <li>Bertram R. Forer, <a href="https://doi.org/10.1037/h0059240" rel="noopener">“The fallacy of personal validation: a classroom demonstration of gullibility”</a>, <em>Journal of Abnormal and Social Psychology</em> 44 (1949), 118–123.</li>
+      <li>Shawn Carlson, <a href="https://www.nature.com/articles/318419a0" rel="noopener">“A double-blind test of astrology”</a>, <em>Nature</em> 318 (1985), 419–425.</li>
+      <li>Jeff Mayo, O. White and H. J. Eysenck, “An empirical study of the relation between astrological factors and personality”, <em>Journal of Social Psychology</em> 105 (1978), with the follow-up in H. J. Eysenck and D. K. B. Nias, <em>Astrology: Science or Superstition?</em> (1982), on the effect of knowing one’s sign.</li>
+      <li>Geoffrey Dean and Ivan W. Kelly, “Is astrology relevant to consciousness and psi?”, <em>Journal of Consciousness Studies</em> 10 (2003), 175–198, a review of the tests including people born close together.</li>
+      <li><a href="https://plato.stanford.edu/entries/pseudo-science/" rel="noopener">“Science and Pseudo-Science”, Stanford Encyclopedia of Philosophy</a>.</li>
+      <li><a href="https://www.pewresearch.org/religion/2025/05/21/3-in-10-americans-consult-astrology-tarot-cards-or-fortune-tellers/" rel="noopener">Pew Research Center, 21 May 2025</a>.</li>
+    </ul>
+    <p><a class="go" href="/stars/your-signs">Next: your signs in five traditions →</a></p>
+  </div>
+</Read>

@@ -50,3 +50,9 @@ html[data-mode=light] #door-d::before{background:radial-gradient(120% 90% at 40%
 
 /* Fingers need about 44px on touch screens. */
 @media (pointer:coarse){.foot p:not(.fine){gap:0 26px}.foot p:not(.fine) a{padding:11px 0}}
+
+/* Three doors: a little less room for each. */
+.door .big{font-size:clamp(34px,4vw,72px)}
+@media(max-width:820px){.door .big{font-size:clamp(27px,7.6vw,40px);margin-top:6px}.door .sub{display:none}.door .go{margin-top:12px}.door{padding-bottom:18px}.stage{min-height:620px}}
+#door-s::before{background:radial-gradient(120% 90% at 50% 30%,#0f2a3a 0%,#081420 50%,#03040a 100%)}
+html[data-mode=light] #door-s::before{background:radial-gradient(120% 90% at 50% 30%,#fff3d9 0%,#fbf7ee 50%,#fff 100%)}

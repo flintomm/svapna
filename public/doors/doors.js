@@ -1,5 +1,6 @@
-// The home page: two doors, both alive. On one side the world, lit where people answered; on the other the body of
-// light from Dreaming, moving through three of its forms. One canvas draws both, each inside its own door.
+// The home page: three doors, all alive. The world, lit where people answered; the body of light from Dreaming,
+// moving through three of its forms; and the sky, with the sun travelling the ring of the zodiac. One canvas draws
+// all three, each inside its own door.
 (function () {
   const $ = id => document.getElementById(id), root = document.documentElement;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -18,7 +19,7 @@
     if (at && names[at]) { $('door-d-go').textContent = 'Go back down to ' + names[at] + ' →'; $('door-d').href = '/dream/#' + at; }
   } catch { /* private mode */ }
 
-  const cv = $('doors-gl'), T = window.THREE, doorQ = $('door-q'), doorD = $('door-d'), stage = cv.parentElement;
+  const cv = $('doors-gl'), T = window.THREE, doorQ = $('door-q'), doorD = $('door-d'), doorS = $('door-s'), stage = cv.parentElement;
   let scene = null;
   if (T && cv) scene = (function () {
     let renderer; try { renderer = new T.WebGLRenderer({ canvas: cv, antialias: true, alpha: true }); } catch { return null; }
@@ -73,18 +74,33 @@
       else { const th = p.th + (p.k % 2 ? -1 : 1) * t * .03, rr = p.rad * .72 * (1 + .03 * Math.sin(t * .8)); eu.set(.32 + p.k * .035, 0, th - Math.PI / 2, 'ZXY'); w.q.setFromEuler(eu); w.p.set(Math.cos(th) * rr, Math.sin(th) * rr, -p.k * .12); w.s = p.s * (.88 + p.k * .03); w.c.copy(p.k % 2 ? pal.a : pal.b); if (isNight) w.c.multiplyScalar(.8); }
     }
 
+    // ---- the sky: a field of stars, and the ring of twelve signs the sun moves along ----
+    const sC = new T.Scene(), camC = new T.PerspectiveCamera(40, 1, .1, 200), sky = new T.Group(), ringG = new T.Group(); sC.add(sky); sC.add(ringG); ringG.rotation.set(1.12, 0, .41);
+    const SN = 420, sp = new Float32Array(SN * 3); for (let i = 0; i < SN; i++) { const u = rnd() * 2 - 1, a = rnd() * Math.PI * 2, r = 7 + rnd() * 5, k = Math.sqrt(1 - u * u); sp.set([r * k * Math.cos(a), r * u, r * k * Math.sin(a)], i * 3); }
+    const sg = new T.BufferGeometry(); sg.setAttribute('position', new T.BufferAttribute(sp, 3));
+    const stars = new T.Points(sg, new T.PointsMaterial({ size: .16, map: dotTex, transparent: true, depthWrite: false, sizeAttenuation: true })); sky.add(stars);
+    const RR = 3.1, rp = [], sgn = new Float32Array(36); for (let i = 0; i <= 96; i++) { const a = i / 96 * Math.PI * 2; rp.push(new T.Vector3(Math.cos(a) * RR, 0, Math.sin(a) * RR)); }
+    for (let i = 0; i < 12; i++) { const a = i / 12 * Math.PI * 2; sgn.set([Math.cos(a) * RR, 0, Math.sin(a) * RR], i * 3); }
+    const ring = new T.Line(new T.BufferGeometry().setFromPoints(rp), new T.LineBasicMaterial({ transparent: true, opacity: .35 })); ringG.add(ring);
+    const sgG = new T.BufferGeometry(); sgG.setAttribute('position', new T.BufferAttribute(sgn, 3));
+    const signs = new T.Points(sgG, new T.PointsMaterial({ size: .5, map: dotTex, transparent: true, depthWrite: false, sizeAttenuation: true })); ringG.add(signs);
+    const sunG = new T.BufferGeometry(); sunG.setAttribute('position', new T.BufferAttribute(new Float32Array(3), 3));
+    const sun = new T.Points(sunG, new T.PointsMaterial({ size: 1.25, map: dotTex, transparent: true, depthWrite: false, sizeAttenuation: true })); ringG.add(sun);
+
     function restyle() {
       isNight = night(); pal = isNight ? PAL.night : PAL.light; paintMap();
       const tn = isNight ? TONES.night : TONES.light; L.forEach((x, i) => { const c = tn[x[2]] || tn[3]; lc.set([c[0] / 255, c[1] / 255, c[2] / 255], i * 3); }); lg.attributes.color.needsUpdate = true;
       lights.material.blending = isNight ? T.AdditiveBlending : T.NormalBlending; lights.material.size = isNight ? .085 : .04;
       air.material.blending = isNight ? T.AdditiveBlending : T.NormalBlending; air.material.uniforms.c.value.set(isNight ? '#6aa0ff' : '#9bb8ff'); air.material.uniforms.k.value = isNight ? .55 : .5;
       body.material.blending = isNight ? T.AdditiveBlending : T.NormalBlending; body.material.opacity = isNight ? .78 : .86;
+      for (const o of [stars, signs, sun]) o.material.blending = isNight ? T.AdditiveBlending : T.NormalBlending;
+      stars.material.color.set(isNight ? '#cfd8ff' : '#1d2440'); signs.material.color.set(isNight ? '#8fb0ff' : '#2654ff'); ring.material.color.set(isNight ? '#8fa0cf' : '#1d2440'); sun.material.color.set(isNight ? '#ffc040' : '#e09a00');
     }
     restyle();
 
-    const mouse = [0, 0], m = [0, 0], warm = [0, 0];       // warm: how much each door is being pointed at
+    const mouse = [0, 0], m = [0, 0], warm = [0, 0, 0];       // warm: how much each door is being pointed at
     addEventListener('pointermove', e => { mouse[0] = e.clientX / innerWidth - .5; mouse[1] = .5 - e.clientY / innerHeight; });
-    let hot = -1; [doorQ, doorD].forEach((d, i) => { d.addEventListener('pointerenter', () => { hot = i; }); d.addEventListener('pointerleave', () => { if (hot === i) hot = -1; }); d.addEventListener('focus', () => { hot = i; }); d.addEventListener('blur', () => { if (hot === i) hot = -1; }); });
+    let hot = -1; [doorQ, doorD, doorS].filter(Boolean).forEach((d, i) => { d.addEventListener('pointerenter', () => { hot = i; }); d.addEventListener('pointerleave', () => { if (hot === i) hot = -1; }); d.addEventListener('focus', () => { hot = i; }); d.addEventListener('blur', () => { if (hot === i) hot = -1; }); });
     const size = () => { renderer.setSize(stage.clientWidth, stage.clientHeight, false); };
     addEventListener('resize', size); size();
     let onScreen = true; if ('IntersectionObserver' in window) new IntersectionObserver(es => { onScreen = es[0].isIntersecting; }).observe(stage);
@@ -98,7 +114,7 @@
       requestAnimationFrame(frame); const dt = Math.min(64, ts - last || 16); last = ts; if (!onScreen || document.hidden) return;
       const t = (tt += dt / 1000 * (reduce ? .15 : 1)); born = Math.min(1, born + dt / 1400);
       m[0] += (mouse[0] - m[0]) * Math.min(1, dt / 300); m[1] += (mouse[1] - m[1]) * Math.min(1, dt / 300);
-      for (let i = 0; i < 2; i++) warm[i] += ((hot === i ? 1 : 0) - warm[i]) * Math.min(1, dt / 400);
+      for (let i = 0; i < 3; i++) warm[i] += ((hot === i ? 1 : 0) - warm[i]) * Math.min(1, dt / 400);
       renderer.setScissorTest(false); renderer.clear(); renderer.setScissorTest(true);
       // The world: turning slowly, sitting in the upper part of its door, a little nearer when pointed at.
       view(doorQ, camA, (w, h) => { const a = w / h, fr = h < 520 ? .4 : .47, off = h < 520 ? .42 : a > 1 ? .27 : .34, d = Math.max(1 / (fr * t16), 1 / (.8 * t16 * a)) * (1 - warm[0] * .08); camA.position.set(m[0] * .25, m[1] * .15, d); camA.lookAt(0, 0, 0); tiltG.position.set(0, d * t16 * off, 0); air.position.copy(tiltG.position); });
@@ -111,6 +127,13 @@
       body.instanceMatrix.needsUpdate = true; body.instanceColor.needsUpdate = true; body.material.opacity = born * (isNight ? .78 : .86);
       view(doorD, camB, (w, h) => { const a = w / h, fr = h < 520 ? .4 : .47, off = h < 520 ? .42 : a > 1 ? .27 : .34, d = Math.max(9.5 / (fr * t20), 9.5 / (.8 * t20 * a)) * (1 - warm[1] * .08); camB.position.set(m[0] * 2, -d * t20 * off + m[1] * 1.4, d); camB.lookAt(0, -d * t20 * off, 0); });
       renderer.render(sB, camB);
+      // The sky: the stars drift, and the sun goes round the twelve signs once every two minutes.
+      if (doorS) {
+        const sa = -t * Math.PI / 60; sun.geometry.attributes.position.setXYZ(0, Math.cos(sa) * RR, 0, Math.sin(sa) * RR); sun.geometry.attributes.position.needsUpdate = true;
+        sky.rotation.y = t * .012; ringG.rotation.y = t * .02; stars.material.opacity = born * (isNight ? .9 : .55); signs.material.opacity = born; sun.material.opacity = born;
+        view(doorS, camC, (w, h) => { const a = w / h, fr = h < 520 ? .4 : .47, off = h < 520 ? .42 : a > 1 ? .27 : .34, d = Math.max(3.6 / (fr * t20), 3.6 / (.8 * t20 * a)) * (1 - warm[2] * .08); camC.position.set(m[0] * 1.2, -d * t20 * off + m[1] * .8, d); camC.lookAt(0, -d * t20 * off, 0); });
+        renderer.render(sC, camC);
+      }
     }
     requestAnimationFrame(frame);
     cv.addEventListener('webglcontextlost', e => e.preventDefault()); cv.addEventListener('webglcontextrestored', () => location.reload());

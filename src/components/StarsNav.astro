@@ -1,0 +1,8 @@
+---
+import { STARS } from '../lib/stars.js';
+const { path } = Astro.props;
+---
+<nav class="tabs" aria-label="The sky">
+  <a href="/stars" aria-current={path === '/stars' ? 'page' : undefined}>Overview</a>
+  {STARS.map(s => <a href={s.path} aria-current={path === s.path ? 'page' : undefined}>{s.name}</a>)}
+</nav>

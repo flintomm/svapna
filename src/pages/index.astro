@@ -1,12 +1,12 @@
 ---
 import Fonts from '../components/Fonts.astro';
-// The home page: two doors of equal weight. The questions on one side, the night on the other.
+// The home page: three doors of equal weight. The questions, the night, and the sky.
 import { organizationSchema, websiteSchema } from '../lib/seo.js';
 import { questions, cards, thinkers, HOW_MANY, HOW_MANY_CAP } from '../lib/atlas.js';
 import { lessonsByModule } from '../lib/lessons.js';
 const siteUrl = 'https://svapnaproject.org/';
 const title = 'Svapna — the big questions and the history of dreaming, across 4,000 years';
-const description = `Two ways in. The questions: ${cards.length.toLocaleString('en')} passages from ${thinkers.length} thinkers, scriptures and traditions on ${HOW_MANY} of life’s big questions, each quoted from its source. The night: a history of dreaming in eight depths, from the Upanishads to the sleep laboratory.`;
+const description = `Three ways in. The questions: ${cards.length.toLocaleString('en')} passages from ${thinkers.length} thinkers, scriptures and traditions on ${HOW_MANY} of life’s big questions, each quoted from its source. The night: a history of dreaming in eight depths, from the Upanishads to the sleep laboratory. The sky: the history of astrology, and how horoscopes are made.`;
 // One light on the globe for every passage: where it was written, and the tone of its answer.
 const TONE = { low: 0, mid: 1, high: 2, none: 3 };
 const lights = cards.map(c => { const q = questions.find(x => x.id === c.question), st = q && q.steps.find(s => s.id === (c.readings[c.question] || {}).score); return [Math.round(c.lat * 10) / 10, Math.round(c.lng * 10) / 10, st ? TONE[st.tone] : 3]; });
@@ -62,7 +62,7 @@ const lessons = Object.values(lessonsByModule).reduce((n, l) => n + l.length, 0)
       <a class="mark" href="/" aria-label="Svapna home">∴ Svapna</a>
       <div class="top-right"><button id="mode" type="button">Light</button><a href="/you">You</a><a href="/search">Search</a></div>
     </header>
-    <h1 class="sr-only">Svapna: the big questions, and the history of dreaming</h1>
+    <h1 class="sr-only">Svapna: the big questions, the history of dreaming, and the history of astrology</h1>
     <div class="doors">
       <a class="door" id="door-q" href="/world" data-total={questions.length} data-pirsch-event="door_questions">
         <span class="small">The questions</span>
@@ -75,6 +75,12 @@ const lessons = Object.values(lessonsByModule).reduce((n, l) => n + l.length, 0)
         <span class="big">What people have <em>dreamed.</em></span>
         <span class="sub">One night in eight depths, from the Upanishads to the sleep laboratory.</span>
         <span class="go" id="door-d-go">Sink through it →</span>
+      </a>
+      <a class="door" id="door-s" href="/stars" data-pirsch-event="door_stars">
+        <span class="small">The sky</span>
+        <span class="big">What people have <em>read in the stars.</em></span>
+        <span class="sub">Astrology from Babylon to the horoscope app: where it came from, how it differs around the world, and how today’s predictions are made.</span>
+        <span class="go">Look up →</span>
       </a>
     </div>
   </div>

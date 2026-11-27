@@ -1,0 +1,44 @@
+---
+import Read from '../../layouts/Read.astro';
+import StarsNav from '../../components/StarsNav.astro';
+---
+<Read title="Your signs in five traditions: Western, Indian, Chinese, Maya, Burmese — Svapna" description="Enter a birth date to see its sun sign in the Western and Indian zodiacs, its animal and element in the Chinese cycle, its day in the Maya 260-day count and its Burmese day of the week. Worked out on your device." path="/stars/your-signs" crumbs={[{ name: 'The sky', path: '/stars' }, { name: 'Your signs', path: '/stars/your-signs' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · <a href="/stars">The sky</a> · Your signs</p>
+  <h1>One birthday, <em>five traditions.</em></h1>
+  <p class="lede">Enter a date of birth. This page works out where five traditions place it and says what each tradition teaches about that place. It describes the traditions and predicts nothing.</p>
+  <StarsNav path="/stars/your-signs" />
+
+  <form class="form signs-form" id="signs-form">
+    <label for="s-date">Date of birth<input id="s-date" type="date" min="1900-01-01" max="2100-12-31" required /></label>
+    <details class="signs-more">
+      <summary>Add the time of birth, for the moon’s sign</summary>
+      <label for="s-time">Time of birth, by the clock where you were born<input id="s-time" type="time" /></label>
+      <label for="s-off">That clock’s difference from Greenwich time (UTC)<select id="s-off"></select></label>
+      <p class="small">The moon changes sign about every two and a half days, so its sign often depends on the hour. The sun’s sign and the calendars need only the date, except on a day when the sun changes sign.</p>
+    </details>
+    <p><button class="go big" type="submit">Show the five →</button></p>
+    <p class="small">The date stays on this device. The sums are done in the browser and nothing is sent or stored.</p>
+  </form>
+
+  <div id="signs-out" aria-live="polite"></div>
+  <noscript><p class="def">This page needs JavaScript to do the calculation.</p></noscript>
+
+  <div class="prose">
+    <h2>How the five are worked out</h2>
+    <p><strong>Western.</strong> The sun’s position along its yearly path is calculated for the date, measured from the spring equinox, and the path is cut into twelve signs of thirty degrees.</p>
+    <p><strong>Indian.</strong> The same position is measured from the fixed stars. The difference, called the <em>ayanamsa</em>, is about twenty-four degrees today; this page uses the Lahiri value, the standard of India’s national calendar. The moon’s position gives the <em>rashi</em> and the <em>nakshatra</em>.</p>
+    <p><strong>Chinese.</strong> The year is counted from the lunar new year, which falls between 21 January and 20 February, and named by its place in the cycle of sixty. The Four Pillars method starts the year at <em>lichun</em>, the “start of spring” near 4 February, and the page says when the two disagree.</p>
+    <p><strong>Maya.</strong> The days are counted from the base date of the Maya calendar using the correlation most scholars accept (Goodman–Martinez–Thompson, 584283), which also matches the count kept by daykeepers in Guatemala today.</p>
+    <p><strong>Burmese.</strong> The day of the week of the date, with Wednesday divided at noon.</p>
+    <p>The positions of the sun and moon follow the formulas in Jean Meeus, <em>Astronomical Algorithms</em> (second edition, 1998), accurate here to about a tenth of a degree. Dates from 1900 to 2100 are covered. The descriptions of each sign are the ones commonly given in that tradition’s own handbooks and almanacs.</p>
+    <p>On why the traditions disagree, see <a href="/stars/traditions">Around the world</a>. On whether a sign says anything about a person, see <a href="/stars/horoscopes#tests">what tests have found</a>.</p>
+  </div>
+
+  <style is:inline>
+    .signs-form{max-width:34rem;margin-top:36px}.signs-form label{display:block;margin-top:18px}.signs-more{margin-top:22px}.signs-more summary{cursor:pointer;font:500 16px/1.4 'Inter Tight',sans-serif}
+    #signs-out .steps b small{display:block;margin-top:8px;font:500 13px/1.3 'Inter Tight',sans-serif;letter-spacing:0;color:var(--soft)}
+    #signs-out{scroll-margin-top:84px}#signs-out .steps p+p{margin-top:10px}#signs-out .steps .sign{color:var(--ink);font:600 clamp(20px,2vw,26px)/1.2 'Inter Tight',sans-serif;letter-spacing:-.03em}
+  </style>
+  <script is:inline src="/stars/sky.js"></script>
+  <script is:inline src="/stars/signs.js"></script>
+</Read>

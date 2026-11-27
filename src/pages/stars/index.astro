@@ -1,0 +1,39 @@
+---
+import Read from '../../layouts/Read.astro';
+import StarsNav from '../../components/StarsNav.astro';
+import { STARS } from '../../lib/stars.js';
+---
+<Read title="Astrology: its history, its traditions, and how horoscopes are made — Svapna" description="Where astrology came from, how it differs between Europe, India, China and the Americas, how it changed over 4,000 years, and how today’s horoscope columns and apps produce their predictions." path="/stars" crumbs={[{ name: 'The sky', path: '/stars' }]}>
+  <p class="small crumb"><a href="/">Svapna</a> · The sky</p>
+  <h1>What people have <em>read in the stars.</em></h1>
+  <p class="lede">For about four thousand years people have looked at the sky for news about themselves. This section describes how that began, how it differs from one part of the world to another, how it changed, and how the horoscope in a newspaper or an app is produced today.</p>
+  <StarsNav path="/stars" />
+
+  <div class="qlist">
+    {STARS.map(s => <a href={s.path}><span><span class="circle-name">{s.name}</span><span class="circle-line">{s.line}</span></span><span>Read →</span></a>)}
+  </div>
+
+  <div class="prose">
+    <h2>How this section treats the subject</h2>
+    <p>These pages describe astrology as history and as living practice. They say what each tradition teaches, in that tradition’s own terms, and they give the evidence from the tests that have been run. They make no predictions.</p>
+    <p>Astrology and astronomy were one subject for most of their history. The same people who kept the records of eclipses and worked out where the planets would be also said what those positions meant. The two parted in Europe in the seventeenth century. Astronomy kept the measurements, and astrology kept the meanings.</p>
+    <p>The measurements are exact. Where the sun, moon and planets were on any date can be calculated to a fraction of a degree, and astrologers and astronomers use the same tables. The disagreement is about whether those positions say anything about a person. Controlled tests have so far found that they do not, and <a href="/stars/horoscopes#tests">the page on horoscopes</a> sets out what was tested and how.</p>
+    <p>About three in ten adults in the United States consult astrology or a horoscope at least once a year, and most of them say they do it for fun, according to a Pew Research Center survey published in 2025. In India, China, Japan and many other countries, birth charts and calendars of lucky days still play a part in weddings, names and the timing of important events.</p>
+
+    <h2>Short answers</h2>
+    <h3>Where does astrology come from?</h3>
+    <p>From Mesopotamia. Scribes there recorded omens in the sky for their kings from about 1800 BCE, divided the sun’s path into twelve equal signs in the fifth century BCE, and wrote the oldest known birth horoscope in 410 BCE. <a href="/stars/history">The history</a>.</p>
+    <h3>Why is my sign different in Indian astrology?</h3>
+    <p>Western astrology starts its zodiac at the spring equinox. Indian astrology ties its zodiac to the stars. The two have drifted about 24 degrees apart since antiquity, so most people’s sun sign moves back by one. <a href="/stars/traditions#two-zodiacs">The two zodiacs</a>.</p>
+    <h3>Who writes the horoscope in an app?</h3>
+    <p>People do. The planets’ positions come from astronomical tables, and the sentences are written in advance by astrologers and staff writers, then matched to the positions by software. <a href="/stars/horoscopes">How horoscopes are made</a>.</p>
+    <h3>What are my signs in other traditions?</h3>
+    <p><a href="/stars/your-signs">Enter a birth date</a> to see it in the Western and Indian zodiacs, the Chinese cycle of years, the Maya count of days and the Burmese days of the week.</p>
+
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://www.pewresearch.org/religion/2025/05/21/3-in-10-americans-consult-astrology-tarot-cards-or-fortune-tellers/" rel="noopener">Pew Research Center, “3 in 10 Americans consult astrology, tarot cards or fortune tellers”</a>, 21 May 2025.</li>
+      <li>Each page in this section lists its own sources at the foot.</li>
+    </ul>
+  </div>
+</Read>
