@@ -9,7 +9,7 @@ const count = s => q.placed.filter(c => c.score === s.id).length;
 const total = q.placed.length, first = q.placed[0], last = q.placed.at(-1);
 // One voice to open with: short, agreed by both readers, from the middle of the scale where there is one.
 const mid = scored[Math.floor(scored.length / 2)];
-const LEAD = { death: 'confucius-death' };
+const LEAD = { death: 'confucius-death', humiliation: 'marcus-aurelius-humiliation' };
 const lead = q.placed.find(c => c.id === LEAD[q.id]) || q.placed.find(c => c.second === 'agreed' && c.score === mid.id && c.excerpt.length < 170 && !c.translation) || q.placed.find(c => c.second === 'agreed' && c.excerpt.length < 170);
 const HEAVY = { death: true, suffering: true, humiliation: true };
 const traditions = TRADITIONS.filter(t => q.placed.some(c => c.tradition === t));
@@ -28,7 +28,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
 <Read title={`${q.plain} ${total} quotes on ${TOPIC[q.id] || 'it'}, with sources — Svapna`} description={desc} path={`/questions/${q.id}`} image={`/og/q-${q.id}.jpg`} crumbs={[{ name: 'Questions', path: '/questions' }, { name: q.plain, path: `/questions/${q.id}` }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/questions">Questions</a></p>
   <h1>{words.slice(0, cut).join(' ')} <em>{words.slice(cut).join(' ')}</em></h1>
-  <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words. Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</p>
+  <p class="lede">{total} passages from {first.dateShort} to {last.dateShort}, each in its author’s own words.{q.question.toLowerCase() !== q.plain.toLowerCase() && <> Put more exactly, the question is: {q.question.charAt(0).toLowerCase() + q.question.slice(1)}</>}</p>
   {lead && <figure class="lead-voice"><blockquote>“{lead.excerpt}”</blockquote><figcaption><a href={`#${lead.id}`}>{lead.name}</a> · {lead.dateShort} · one of {total} voices</figcaption></figure>}
   {HEAVY[q.id] && <p class="def gentle">These are the thoughts and opinions of others, gathered across four thousand years. For anyone in crisis, <a href="https://findahelpline.com" target="_blank" rel="noopener">findahelpline.com</a> lists free, confidential lines by country.</p>}
   {childSet.length > 0 && (

@@ -560,6 +560,46 @@ window.PILOT_EVIDENCE={
         }
       ],
       "group": "Living and dying"
+    },
+    {
+      "id": "humiliation",
+      "short": "What is humiliation?",
+      "question": "What exactly is humiliation?",
+      "scale": [
+        {
+          "id": "a-wound",
+          "label": "A wound",
+          "term": null,
+          "tone": "low",
+          "color": "#ee9f93",
+          "definition": "The passage treats humiliation as a real injury done to a person: to their dignity, honour or standing."
+        },
+        {
+          "id": "an-opinion",
+          "label": "Only what you make it",
+          "term": null,
+          "tone": "mid",
+          "color": "#f4c47d",
+          "definition": "The passage says humiliation has no hold unless a person accepts it, or that a person can stay unmoved by insult: the injury lies in their own judgement."
+        },
+        {
+          "id": "a-teacher",
+          "label": "A teacher",
+          "term": null,
+          "tone": "high",
+          "color": "#adb8ff",
+          "definition": "The passage says being brought low is good for a person: it cures pride or shows them the truth about themselves."
+        },
+        {
+          "id": "unscored",
+          "label": "Unscored",
+          "term": null,
+          "tone": "none",
+          "color": "#d5e2fb",
+          "definition": "The passage does not settle the question. This is not a zero, a low score, or a disagreement."
+        }
+      ],
+      "group": "Living and dying"
     }
   ],
   "cards": [
@@ -2769,6 +2809,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "homer-humiliation",
+      "question": "humiliation",
+      "name": "Homer",
+      "short": "Homer",
+      "work": "Iliad, Book I",
+      "excerpt": "surely Jove, who thunders from Olympus, might have made that little glorious. It is not so. Agamemnon, son of Atreus, has done me dishonour, and has robbed me of my prize by force.",
+      "period": "c. 750–700 BCE",
+      "dateShort": "c. 725 BCE",
+      "dateFull": "circa 750 to 700 BCE",
+      "sortYear": -725,
+      "sourceLabel": "Samuel Butler translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Homer/iliad.1.i.html",
+      "locator": "Book I, Achilles’ prayer to his mother Thetis, after the quarrel with Agamemnon.",
+      "place": "Ionia (Smyrna region), Turkey",
+      "lat": 38.42,
+      "lng": 27.2,
+      "anchorType": "Traditional association",
+      "placeNote": "Ancient tradition places Homer in Ionia, with Smyrna and Chios as claimed homes, and the Iliad is usually dated to the eighth century BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Homer",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Dishonour and lost prize",
+          "why": "Achilles tells his mother that Agamemnon has dishonoured him by taking his prize, and he sets this against the short and glorious life he was promised. The insult is a real loss of honour that no one else has made good.",
+          "limit": "A speech by the hero Achilles in a poem, in Samuel Butler’s prose translation of 1898, and the poem goes on to show how this grievance is destructive. The passage shows what dishonour meant to a warrior society, not Homer’s own view.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "homer-suffering",
       "question": "suffering",
       "name": "Homer",
@@ -4253,6 +4328,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "isaiah-humiliation",
+      "name": "Second Isaiah",
+      "short": "Second Isaiah",
+      "work": "Isaiah 50",
+      "excerpt": "For the Lord GOD will help me; therefore shall I not be confounded: therefore have I set my face like a flint, and I know that I shall not be ashamed.",
+      "period": "c. 540 BCE, during the Babylonian exile",
+      "dateShort": "c. 540 BCE",
+      "dateFull": "circa 540 BCE",
+      "sortYear": -540,
+      "sourceLabel": "King James Version, English Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Isaiah",
+      "locator": "Isaiah 50, verse 7.",
+      "place": "Babylon, Iraq",
+      "lat": 32.54,
+      "lng": 44.42,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Chapters 40–55 are conventionally dated to the Babylonian exile; the linked text does not state a place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Isaiah",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Disgrace refused",
+          "why": "The servant has just given his back to the smiters and not hidden his face from shame and spitting; he now says he will not be confounded or ashamed. The disgrace is real but has no hold on him, because his standing rests on God’s help and not on how he is treated.",
+          "limit": "A prophetic poem in the voice of the Servant, whose identity is disputed. The security comes from trust in God, so this is a particular religious ground for refusing shame, not a general claim. King James rendering of 1611.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "isaiah-meaning",
       "question": "meaning",
       "name": "Second Isaiah",
@@ -4547,6 +4657,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ahikar-humiliation",
+      "question": "humiliation",
+      "name": "Story of Ahikar",
+      "short": "Ahikar",
+      "work": "Story of Ahikar, Ahikar’s counsel to Nadan",
+      "excerpt": "if thou beat a wise man with a word of wisdom, it will lurk in his breast like a subtle sense of shame; but if thou drub the ignorant with a stick he will neither understand nor hear.",
+      "period": "Aramaic original c. 500 BCE; the Arabic form translated here is later",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "circa 500 BCE",
+      "sortYear": -500,
+      "sourceLabel": "Story of Ahikar, translation as published in The Forgotten Books of Eden, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Story_of_Ahikar",
+      "locator": "Ahikar’s counsel to Nadan, saying 36.",
+      "place": "Nineveh (Mosul), Iraq",
+      "lat": 36.36,
+      "lng": 43.15,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The story is set at the court of the Assyrian kings Sennacherib and Esarhaddon at Nineveh, though the surviving texts were written down elsewhere. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Forgotten_Books_of_Eden/The_Story_of_Ahikar",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Rebuke that shames the wise",
+          "why": "Ahikar says a word of wisdom stings a wise man with a lasting sense of shame, while a beating teaches a fool nothing. The shame that a rebuke leaves is what teaches.",
+          "limit": "A maxim in a collection of proverbs ascribed to a sage within a folk tale, in the later Arabic form as rendered in English, so the wording is not the ancient Aramaic text. The saying concerns shame from deserved correction, not from mistreatment.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ahikar-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Story of Ahikar",
@@ -4824,6 +4969,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "confucius-humiliation",
+      "question": "humiliation",
+      "name": "Confucius",
+      "short": "Confucius",
+      "work": "Analects 1.1",
+      "excerpt": "Is he not a man of complete virtue, who feels no discomposure though men may take no note of him?",
+      "period": "Sayings of c. 500 BCE, compiled over the following centuries",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "circa 500 BCE, compiled later",
+      "sortYear": -500,
+      "sourceLabel": "James Legge translation (The Chinese Classics, vol. 1), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/I",
+      "locator": "Book I, chapter I, verse 3.",
+      "place": "Qufu, Shandong, China",
+      "lat": 35.6,
+      "lng": 116.99,
+      "anchorType": "Traditional association",
+      "placeNote": "The Analects is a collection of sayings attributed to Confucius, traditionally compiled by his followers and thought by many modern scholars to have been assembled over about two centuries; Qufu, in Lu, is a traditional association rather than a documented writing place.",
+      "placeSource": "https://en.wikipedia.org/wiki/Analects",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Being unrecognised",
+          "why": "Confucius calls complete virtue the state of feeling no discomposure when others take no note of one. Being slighted is presented as having a hold only if the person lets it disturb them.",
+          "limit": "The saying concerns being overlooked, which is milder than insult or degradation, and it is a collected saying with no context. The translation is James Legge’s of 1861.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -5114,6 +5294,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "job-humiliation",
+      "name": "Book of Job",
+      "short": "Job",
+      "work": "Book of Job, chapter 30",
+      "excerpt": "They abhor me, they flee far from me, and spare not to spit in my face.",
+      "period": "Usually dated between the 6th and 4th centuries BCE",
+      "dateShort": "c. 500 BCE",
+      "dateFull": "circa 500 BCE",
+      "sortYear": -500,
+      "sourceLabel": "King James Version, English Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "locator": "Job 30, verse 10.",
+      "place": "Land of Uz (placed here in Edom, southern Jordan)",
+      "lat": 30.5,
+      "lng": 35.6,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The book was composed by an anonymous author, probably in the Persian period, and is set in the land of Uz, outside Israel; the page names no place of composition, so the pin follows the setting and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Job",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Spat upon by the low",
+          "why": "Job lists the treatment of men he once outranked: they shun him and spit in his face. He counts this contempt among the harms done to him, alongside his sickness and the loss of his children.",
+          "limit": "Spoken by Job, a literary figure in a poetic dialogue that the book itself ends by rebuking in part. The passage describes humiliating treatment without defining it. King James rendering of 1611.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -6006,6 +6221,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "akkosa-sutta-humiliation",
+      "question": "humiliation",
+      "name": "Akkosa Sutta (Samyutta Nikaya)",
+      "short": "Akkosa Sutta",
+      "work": "Akkosa Sutta (SN 7.2), “Insult”",
+      "excerpt": "that with which you have insulted me, who is not insulting; that with which you have taunted me, who is not taunting; that with which you have berated me, who is not berating: that I don't accept from you.",
+      "period": "Pali canon; teaching traditionally c. 5th century BCE, written down c. 1st century BCE",
+      "dateShort": "c. 5th c. BCE",
+      "dateFull": "traditionally the fifth century BCE; written down in the first century BCE",
+      "sortYear": -450,
+      "sourceLabel": "Thanissaro Bhikkhu translation, Access to Insight",
+      "sourceUrl": "https://www.accesstoinsight.org/tipitaka/sn/sn07/sn07.002.than.html",
+      "locator": "Samyutta Nikaya 7.2, the Buddha’s reply beginning “What do you think, brahman: Do friends & colleagues”.",
+      "place": "Veluvana (Bamboo Grove), Rajagaha, Bihar, India",
+      "lat": 25.03,
+      "lng": 85.42,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The sutta opens near Rajagaha in the Bamboo Grove, the Squirrels’ Sanctuary. The canon was compiled later; the setting is the traditional place of the teaching.",
+      "placeSource": "https://www.accesstoinsight.org/tipitaka/sn/sn07/sn07.002.than.html",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Insult and consent",
+          "why": "The Buddha compares an insult to food offered to a guest: if the guest does not accept it, it stays with the host. The passage says an insult wounds only when it is taken up, so it places humiliation in the receiver’s acceptance.",
+          "limit": "A discourse in the Pali canon, written down centuries after the Buddha’s time, in a modern translation. The sutta is about not answering anger with anger, not a general theory of shame, and it assumes the listener has the training to refuse the insult.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "anana-sutta-happiness",
       "question": "happiness",
       "name": "The Anana Sutta (Anguttara Nikaya)",
@@ -6038,6 +6288,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "book-of-psalms-humiliation",
+      "name": "Book of Psalms",
+      "short": "Psalms",
+      "work": "Psalm 123",
+      "excerpt": "Our soul is exceedingly filled with the scorning of those that are at ease, and with the contempt of the proud.",
+      "period": "Persian period, roughly 5th century BCE",
+      "dateShort": "c. 450 BCE",
+      "dateFull": "circa 450 BCE",
+      "sortYear": -450,
+      "sourceLabel": "King James Version, English Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "locator": "Psalm 123, verse 4.",
+      "place": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.22,
+      "anchorType": "Traditional association",
+      "placeNote": "The Songs of Ascents are traditionally linked to pilgrimage to Jerusalem; the linked text gives no place of composition, so the pin follows that tradition and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Psalms",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Contempt of the proud",
+          "why": "The psalmist describes being scorned and despised as something that fills the soul to excess, and begs for mercy on that account. Contempt here is a heavy burden laid on the person, which puts it among injuries.",
+          "limit": "A prayer of a community (a Song of Ascents), not a definition, in the King James rendering of 1611. It does not say what the contempt consists of, and its speaker is Israel as a body.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -6482,6 +6767,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "zeno-of-elea-humiliation",
+      "question": "humiliation",
+      "name": "Zeno of Elea (reported by Diogenes Laertius)",
+      "short": "Zeno of Elea",
+      "work": "Lives of Eminent Philosophers, Book IX (Zeno of Elea)",
+      "excerpt": "in reply to some one who blamed him for this, he said, \" If when I am abused I pretend that I am not, then neither shall I be aware of it if I am praised.\"",
+      "period": "Said c. 450 BCE; recorded c. 230 CE",
+      "dateShort": "c. 450 BCE",
+      "dateFull": "saying of about 450 BCE, recorded about 230 CE",
+      "sortYear": -450,
+      "sourceLabel": "R. D. Hicks translation (Loeb, 1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/livesofeminentph02dioguoft/livesofeminentph02dioguoft_djvu.txt",
+      "locator": "Book IX, section 28, in the life of Zeno of Elea.  The scanned text contains recognition errors.",
+      "place": "Elea, Italy",
+      "lat": 40.16,
+      "lng": 15.16,
+      "anchorType": "Traditional association",
+      "placeNote": "Zeno was a citizen of Elea in southern Italy, but the anecdote has no stated setting. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Zeno_of_Elea",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Abuse and insensibility",
+          "why": "Zeno answers a critic by saying that feigned indifference to abuse would make him equally dead to praise. Being abused is treated as a real hurt that cannot be waved away without losing the capacity to be honoured. A second, independent reading moved this placement from “a wound” to “unscored”: The words say that to feign not being abused would be to lose the sense of being praised; three readers took them three ways.",
+          "limit": "A report written some six centuries after Zeno’s life by a compiler of anecdotes, in Hicks’s 1925 translation, so it may be a legend, and some later writers tell the opposite story of a calm Zeno. The excerpt gives his answer to criticism for his anger, not a general theory.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "pindar-happiness",
       "question": "happiness",
       "name": "Pindar",
@@ -6553,6 +6873,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "aeschylus-humiliation",
+      "question": "humiliation",
+      "name": "Aeschylus",
+      "short": "Aeschylus",
+      "work": "Prometheus Bound",
+      "excerpt": "Behold what I, a God, from Gods endure! Look down upon my shame, The cruel wrong that racks my frame, The grinding anguish that shall waste my strength",
+      "period": "c. 450–430 BCE; date and authorship debated",
+      "dateShort": "c. 440 BCE",
+      "dateFull": "between about 450 and 430 BCE",
+      "sortYear": -440,
+      "sourceLabel": "Verse translation (translator not named on the page), MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Aeschylus/prometheus.html",
+      "locator": "Prometheus’s first speech, after Kratos and Hephaestus leave him bound.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Aeschylus wrote for the Athenian theatre, and the play is usually placed in Athens, though it may have been staged in Sicily. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Prometheus_Bound",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shame of public punishment",
+          "why": "Prometheus, chained to a rock by Zeus’s order, calls on earth and sky to look at his shame and names it a cruel wrong done to him. The disgrace is placed with the physical agony as a real injury inflicted by those in power.",
+          "limit": "A lament by a god in a tragedy, in an older verse translation whose translator the linked page does not name. Authorship and date of the play are debated, and the drama presents Zeus as a tyrant, so the speaker’s grievance is not the poet’s verdict.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "patacara-death",
       "question": "death",
       "name": "Paṭācārā",
@@ -6585,6 +6940,76 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "sophocles-humiliation",
+      "question": "humiliation",
+      "name": "Sophocles",
+      "short": "Sophocles",
+      "work": "Ajax",
+      "excerpt": "Who ne'er shrank in fight against foes-behold How I have spent my rage on beasts that feared no harm! Ah me, the mockery! To what shame am I brought low",
+      "period": "c. 440 BCE",
+      "dateShort": "c. 440 BCE",
+      "dateFull": "circa 440 BCE",
+      "sortYear": -440,
+      "sourceLabel": "R. C. Trevelyan translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Sophocles/ajax.html",
+      "locator": "Ajax’s lament after he wakes from his madness (the lines beginning “Behold now the bold”).",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Sophocles wrote and produced his plays in Athens; the Ajax is dated by style to the 440s or 430s BCE. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ajax_(play)",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shame beyond bearing",
+          "why": "Ajax, who has slaughtered cattle in a fit of madness, cries out that he has been made a mockery and brought low in shame. The disgrace is something done to him that he cannot live with.",
+          "limit": "A cry from a character in a tragedy, in an early twentieth-century verse translation, not a statement of the author’s view. Ajax kills himself soon after, and the play invites pity and also criticism of his pride.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "euripides-humiliation",
+      "question": "humiliation",
+      "name": "Euripides",
+      "short": "Euripides",
+      "work": "Medea",
+      "excerpt": "Dost see what thou art suffering? 'Tis not for thee to be a laughing-stock to the race of Sisyphus by reason of this wedding of Jason",
+      "period": "431 BCE (first performed)",
+      "dateShort": "431 BCE",
+      "dateFull": "431 BCE",
+      "sortYear": -431,
+      "sourceLabel": "Edward P. Coleridge translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Euripides/medea.html",
+      "locator": "Medea’s speech to herself after the scene with Aegeus.",
+      "place": "Athens, Greece",
+      "lat": 37.98,
+      "lng": 23.72,
+      "anchorType": "Setting of first performance",
+      "placeNote": "The Medea was first performed at the City Dionysia in Athens in 431 BCE, where it came third. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Medea_(play)",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Being a laughing-stock",
+          "why": "Medea tells herself that she must not become a laughingstock because Jason has married another woman. To be laughed at by her enemies is a wrong she will not accept, and she answers it with revenge.",
+          "limit": "A speech to herself by a character in a tragedy, in a nineteenth-century verse translation. The play presents her response, the killing of her children, as a horror and not as a model.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -6762,6 +7187,41 @@ window.PILOT_EVIDENCE={
           "facet": "No word from below",
           "why": "The Nurse says that people cling to life because no one knows of another one: what lies below is sealed and unrevealed, and what is said of it rests on legends. She leaves what follows death open and unknown.",
           "limit": "These are the words of a character in a tragedy, spoken to comfort the dying Phaedra, and do not state the poet's own belief. The English is Gilbert Murray's 1902 verse translation, in a scanned text with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "socrates-humiliation",
+      "question": "humiliation",
+      "name": "Socrates (as reported by Diogenes Laertius)",
+      "short": "Socrates (Laertius)",
+      "work": "Lives of Eminent Philosophers, Book II (Socrates)",
+      "excerpt": "it is a good thing for a man to offer himself cheerfully to the attacks of the comic writers; for then, if they say anything worth hearing, one will be able to mend",
+      "period": "Said c. 423–399 BCE; recorded c. 230 CE",
+      "dateShort": "c. 410 BCE",
+      "dateFull": "saying of about 423 to 399 BCE, recorded about 230 CE",
+      "sortYear": -410,
+      "sourceLabel": "C. D. Yonge translation (1853), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/7/3/4/57342/57342-0.txt",
+      "locator": "Book II, chapter 5 (life of Socrates), among his sayings after the anecdote of Antisthenes’s cloak.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate association",
+      "placeNote": "Socrates lived and talked in Athens, and the comic poets such as Aristophanes mocked him there; the anecdote itself has no stated setting. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Diogenes_La%C3%ABrtius",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Mockery as correction",
+          "why": "Socrates is reported as advising a man to welcome ridicule from comic writers: if it contains anything true he can correct himself, and if not it does not matter. Public mockery is treated as a possible teacher, never as a harm.",
+          "limit": "A saying recorded some six centuries after Socrates’s death by a compiler of anecdotes, in Yonge’s 1853 translation, so the wording is not securely his. It treats mockery as useful criticism and does not consider ridicule that is cruel or false.",
           "second": "agreed"
         }
       },
@@ -7272,6 +7732,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thucydides-humiliation",
+      "question": "humiliation",
+      "name": "Thucydides",
+      "short": "Thucydides",
+      "work": "History of the Peloponnesian War, Book II",
+      "excerpt": "The territory of Athens was being ravaged before the very eyes of the Athenians, a sight which the young men had never seen before and the old only in the Median wars; and it was naturally thought a grievous insult",
+      "period": "c. 400 BCE",
+      "dateShort": "c. 400 BCE",
+      "dateFull": "circa 400 BCE",
+      "sortYear": -400,
+      "sourceLabel": "Richard Crawley translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Thucydides/pelopwar.2.second.html",
+      "locator": "Book II, chapter 21, the Peloponnesian army at Acharnae.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Thucydides wrote the History after his exile from Athens in 424 BCE, partly abroad, and the events described are set at Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thucydides",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Insult to a city",
+          "why": "Thucydides says that watching the enemy ravage their land in plain view was felt by the Athenians as a grievous insult, and he calls that reaction natural. The injury to standing is real and provokes a demand to act.",
+          "limit": "A historian’s narration of how a crowd felt in 430 BCE, in Richard Crawley’s nineteenth-century translation, and it speaks of the dishonour of a city and not of a single person. Pericles is shown arguing against letting the feeling decide strategy.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "socrates-death",
       "question": "death",
       "name": "Socrates (in Plato’s Apology)",
@@ -7451,6 +7946,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "plato-humiliation",
+      "question": "humiliation",
+      "name": "Plato",
+      "short": "Plato",
+      "work": "Gorgias",
+      "excerpt": "never mind if some one despises you as a fool, and insults you, if he has a mind; let him strike you, by Zeus, and do you be of good cheer, and do not mind the insulting blow",
+      "period": "c. 380 BCE",
+      "dateShort": "c. 380 BCE",
+      "dateFull": "circa 380 BCE",
+      "sortYear": -380,
+      "sourceLabel": "Benjamin Jowett translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/7/1672/1672-0.txt",
+      "locator": "Near the end of the dialogue (Stephanus 527), the paragraph beginning “Follow me then”.",
+      "place": "The Academy, Athens, Greece",
+      "lat": 37.992,
+      "lng": 23.708,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Plato founded the Academy in Athens about 387 BCE, and the Gorgias is usually dated to the years just before. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Platonic_Academy",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "The insulting blow",
+          "why": "Socrates tells Callicles to let a man despise, insult and even strike him, saying that the insulting blow does no harm to one who practises virtue. The insult is made harmless by the person’s own goodness and not by any outside redress.",
+          "limit": "Socrates speaks in a dialogue, in Jowett’s nineteenth-century translation, and Callicles has just argued the opposite: that being struck on the ear is the worst of disgraces. The view is Socrates’s argument and may not be Plato’s own.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -7745,6 +8275,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "aristippus-humiliation",
+      "question": "humiliation",
+      "name": "Aristippus and the Cyrenaics (reported by Diogenes Laertius)",
+      "short": "Aristippus",
+      "work": "Lives of Eminent Philosophers, Book II (Aristippus)",
+      "excerpt": "as his adversary pursued him and said, “Why are you going away?” “Because,” said he, “you have a license for speaking ill; but I have another for declining to hear ill.”",
+      "period": "Said c. 370 BCE; recorded c. 230 CE",
+      "dateShort": "c. 370 BCE",
+      "dateFull": "saying of about 370 BCE, recorded about 230 CE",
+      "sortYear": -370,
+      "sourceLabel": "C. D. Yonge translation (1853), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/7/3/4/57342/57342-0.txt",
+      "locator": "Book II, chapter 8 (life of Aristippus), among his sayings.",
+      "place": "Syracuse, Sicily, Italy",
+      "lat": 37.07,
+      "lng": 15.28,
+      "anchorType": "Approximate association",
+      "placeNote": "Aristippus of Cyrene spent time at the court of Dionysius at Syracuse, but the anecdote has no stated setting. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Diogenes_La%C3%ABrtius",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Declining to hear abuse",
+          "why": "Aristippus answers an abuser who chases him by saying the man may speak ill but he may decline to hear it. The insult has force only when the person stays to take it, so it can be refused.",
+          "limit": "An anecdote told of Aristippus of Cyrene about six centuries after his time by a compiler of lives, in Yonge’s 1853 translation, so the wording is not securely his. It is an escape from an abuser by leaving and does not address abuse that cannot be avoided.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -8079,6 +8644,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "laozi-humiliation",
+      "question": "humiliation",
+      "name": "Laozi",
+      "short": "Laozi",
+      "work": "Tao Te Ching, ch. 28 (Legge’s verse rendering)",
+      "excerpt": "Who knows how glory shines, Yet loves disgrace, nor e'er for it is pale; Behold his presence in a spacious vale, To which men come from all beneath the sky.",
+      "period": "Compiled c. 4th century BCE",
+      "dateShort": "c. 4th c. BCE",
+      "dateFull": "compiled circa the fourth century BCE",
+      "sortYear": -350,
+      "sourceLabel": "James Legge translation (1891), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/1/216/216.txt",
+      "locator": "Chapter 28, part 1, third stanza.",
+      "place": "Hangu Pass, Lingbao, Henan, China",
+      "lat": 34.63,
+      "lng": 110.92,
+      "anchorType": "Traditional association",
+      "placeNote": "Wikipedia relates Sima Qian's account that Laozi, an official in the imperial archives, wrote the book in two parts at the request of the keeper of the Han-ku (Hangu) Pass before departing to the West. Tradition places the writing at the pass; Laozi's historicity is debated and no contemporary record exists.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Loving disgrace",
+          "why": "Laozi praises the person who knows glory yet loves disgrace and does not turn pale at it; such a person is likened to a valley to which people come. Taking the low place is presented as a source of strength.",
+          "limit": "A rhymed rendering by James Legge of 1891 of a compressed text; the Chinese speaks of keeping to disgrace as a posture and does not describe being shamed by others. The text is compiled and its authorship uncertain.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -8455,6 +9055,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "diogenes-the-cynic-humiliation",
+      "question": "humiliation",
+      "name": "Diogenes the Cynic (reported by Diogenes Laertius)",
+      "short": "Diogenes the Cynic",
+      "work": "Lives of Eminent Philosophers, Book VI (Diogenes)",
+      "excerpt": "When he was told that many people laughed at him, he made answer, \" But I am not laughed down.\"",
+      "period": "Said c. 340 BCE; recorded c. 230 CE",
+      "dateShort": "c. 340 BCE",
+      "dateFull": "saying of about 340 BCE, recorded about 230 CE",
+      "sortYear": -340,
+      "sourceLabel": "R. D. Hicks translation (Loeb, 1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/livesofeminentph02dioguoft/livesofeminentph02dioguoft_djvu.txt",
+      "locator": "Book VI, section 54, in the life of Diogenes.  The scanned text contains recognition errors.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate association",
+      "placeNote": "Diogenes lived in Athens and Corinth in the middle of the fourth century BCE, and the anecdote has no stated setting. Athens is chosen as the usual centre of the Cynic school; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Diogenes",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Being laughed at",
+          "why": "Told that many people laugh at him, Diogenes replies that he is not laughed down. Ridicule has no effect on him unless he lets it lower him, so being laughed at is not by itself a humiliation.",
+          "limit": "A saying attributed to Diogenes of Sinope by a biographer writing some five centuries later, in a 1925 translation, so the wording cannot be confirmed as his. Diogenes lived in deliberate disregard of convention, which may make the reply easier for him than for others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "aristotle-truth",
       "question": "truth",
       "name": "Aristotle",
@@ -8627,6 +9262,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "aristotle-humiliation",
+      "question": "humiliation",
+      "name": "Aristotle",
+      "short": "Aristotle",
+      "work": "Rhetoric, Book II, chapter 2",
+      "excerpt": "it consists in doing and saying things that cause shame to the victim, not in order that anything may happen to yourself, or because anything has happened to yourself, but simply for the pleasure involved",
+      "period": "c. 330 BCE",
+      "dateShort": "c. 330 BCE",
+      "dateFull": "circa 330 BCE",
+      "sortYear": -330,
+      "sourceLabel": "W. Rhys Roberts translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Aristotle/rhetoric.2.ii.html",
+      "locator": "Book II, part 2, the paragraph beginning “Insolence is also a form of slighting”.",
+      "place": "The Lyceum, Athens, Greece",
+      "lat": 37.974,
+      "lng": 23.744,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Aristotle taught at the Lyceum in Athens from 335 BCE, the usual setting for the Rhetoric. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Aristotle",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Insolence and shame",
+          "why": "Aristotle defines insolence as causing shame to another person for the pleasure of it, and counts it a kind of slighting that robs people of the honour due to them. Shaming is treated as a real wrong done to the victim, which gives rise to anger.",
+          "limit": "A handbook for speakers on how audiences feel and are moved, in W. Rhys Roberts’s early twentieth-century translation. It defines the act of shaming from the standpoint of the one who inflicts it and does not describe what the victim undergoes.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -9464,6 +10134,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mencius-humiliation",
+      "question": "humiliation",
+      "name": "Mencius",
+      "short": "Mencius",
+      "work": "Mencius, Book 6A (Gaozi I), chapter 10",
+      "excerpt": "if they are offered with an insulting voice, even a tramper will not receive them, or if you first tread upon them, even a beggar will not stoop to take them.",
+      "period": "Compiled c. 300 BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "compiled circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "James Legge translation, The Chinese Classics vol. 2, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_2/The_Works_of_Mencius/chapter11",
+      "locator": "Book VI, Part I, chapter X, the passage beginning “Here are a small basket of rice and a platter of soup”.",
+      "place": "Zoucheng, Shandong, China",
+      "lat": 35.4,
+      "lng": 116.97,
+      "anchorType": "Approximate home association",
+      "placeNote": "The Internet Encyclopedia of Philosophy states that Mencius was a native of Zou, a small state in the Shandong peninsula, and that the book was assembled by his disciples; the linked page does not place this chapter, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://iep.utm.edu/mencius/",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Food offered with an insult",
+          "why": "Mencius says that rice and soup that would save a starving man’s life will be refused if they are handed over with an insult. Being despised is made out to be something people will die rather than accept, which makes it a real injury to their standing.",
+          "limit": "The point of the passage is that all people have a sense of righteousness they do not lose, and the insult is an example. The translation is James Legge’s, from 1861, and Mencius says some people do sell this sense for salary.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "mencius-inward-or-others",
       "question": "inward-or-others",
       "name": "Mencius",
@@ -9722,6 +10427,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "song-rongzi-humiliation",
+      "question": "humiliation",
+      "name": "Song Rongzi (as reported in the Zhuangzi)",
+      "short": "Song Rongzi",
+      "work": "Zhuangzi, ch. 1, “Free and Easy Wandering”",
+      "excerpt": "且舉世而譽之，而不加勸，舉世而非之，而不加沮，定乎內外之分",
+      "translation": "Even if the whole world praised him he would not be encouraged, and if the whole world blamed him he would not be discouraged; he was settled in the distinction between inner and outer.",
+      "period": "c. 300 BCE",
+      "dateShort": "c. 300 BCE",
+      "dateFull": "circa 300 BCE",
+      "sortYear": -300,
+      "sourceLabel": "Chinese text, Wikisource (zh.wikisource.org)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90/%E9%80%8D%E9%81%99%E9%81%8A",
+      "locator": "Inner Chapters, “Xiaoyaoyou”, the passage beginning 而宋榮子猶然笑之.",
+      "place": "Jixia Academy, Linzi, Shandong, China",
+      "lat": 36.8,
+      "lng": 118.3,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Song Xing is traditionally associated with the Jixia circle of scholars at Linzi, capital of Qi; the Zhuangzi passage names no place, so the pin marks that association and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Song_Xing",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Praise and blame from the world",
+          "why": "The Zhuangzi describes Song Rongzi as a man who stays unmoved when the whole world blames him because he keeps the line between what is inside him and what is outside. Blame is treated as something outside that has no hold unless it is let in.",
+          "limit": "The words are the Zhuangzi’s portrait of Song Rongzi, who is usually identified with Song Xing, and not his own; the text goes on to say he has still not planted himself firmly. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -10303,6 +11044,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "cleanthes-humiliation",
+      "question": "humiliation",
+      "name": "Cleanthes (reported by Diogenes Laertius)",
+      "short": "Cleanthes",
+      "work": "Lives of Eminent Philosophers, Book VII (Cleanthes)",
+      "excerpt": "He did not even object to the name when he was called an ass; but only said that he was the only animal able to bear the burdens which Zeno put upon him.",
+      "period": "c. 290 BCE; recorded c. 230 CE",
+      "dateShort": "c. 290 BCE",
+      "dateFull": "about 290 BCE, recorded about 230 CE",
+      "sortYear": -290,
+      "sourceLabel": "C. D. Yonge translation (1853), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/7/3/4/57342/57342-0.txt",
+      "locator": "Book VII, chapter 5 (life of Cleanthes), section III–IV.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate association",
+      "placeNote": "Cleanthes studied under Zeno at the Painted Porch in Athens, where the nickname arose, but the anecdote has no stated setting. The place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Diogenes_La%C3%ABrtius",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Taking a mocking name",
+          "why": "Cleanthes, mocked by fellow pupils as slow, accepts the name “ass” and turns it into a boast of strength. The insult is robbed of effect because he does not take it as shame.",
+          "limit": "A report about Cleanthes of Assos written some five centuries later by a compiler of anecdotes, in Yonge’s 1853 translation, so the story may be legend. It shows one man’s reply to nicknames and does not address cruel or public degradation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "hegesias-happiness",
       "question": "happiness",
       "name": "Hegesias of Cyrene (reported by Diogenes Laertius)",
@@ -10657,6 +11433,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "dhammapada-humiliation",
+      "question": "humiliation",
+      "name": "The Dhammapada",
+      "short": "Dhammapada",
+      "work": "The Dhammapada, verse 4",
+      "excerpt": "He abused me, he beat me, he defeated me, he robbed me,\"--in those who do not harbour such thoughts hatred will cease.",
+      "period": "Compiled c. 3rd century BCE from older oral verses",
+      "dateShort": "c. 3rd c. BCE",
+      "dateFull": "compiled circa the third century BCE",
+      "sortYear": -250,
+      "sourceLabel": "F. Max Müller translation (1881), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/1/2017/2017.txt",
+      "locator": "Chapter I, “The Twin-Verses”, verses 3 and 4.",
+      "place": "Jetavana, Shravasti, India",
+      "lat": 27.51,
+      "lng": 82.05,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition places much of the Buddha’s teaching at the Jetavana monastery near Shravasti. The verse collection was compiled later and elsewhere, and the linked text names no place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/1/2017/2017.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Abuse and the harboured grudge",
+          "why": "The verse lists the wrongs done to a person, from abuse to robbery, and says the resentment lasts only in those who keep rehearsing them. The injury is placed in whether the person harbours the thought.",
+          "limit": "The verse is about ending hatred and covers beating and robbery as well as abuse, so humiliation is only one of the wrongs it names. The translation is Max Müller’s of 1881; verse 320 of the same collection, on enduring abuse like an elephant under arrows, treats the blow as real.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -11489,6 +12300,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "xunzi-humiliation",
+      "question": "humiliation",
+      "name": "Xunzi",
+      "short": "Xunzi",
+      "work": "Xunzi, “On Correct Discourse” (正論)",
+      "excerpt": "詈侮捽搏，捶笞臏腳，斬斷枯磔，藉靡后縛，是辱之由外至者也，夫是之謂埶辱。是榮辱之兩端也。\n故君子可以有埶辱，而不可以有義辱",
+      "translation": "Insults and brawls, blows with the bamboo, the cutting off of the kneecaps, execution and binding: these are disgrace that comes from outside, and are called disgrace of circumstance. These are the two kinds of honour and disgrace. So a gentleman may have disgrace of circumstance but may not have disgrace of righteousness.",
+      "period": "c. 250 BCE",
+      "dateShort": "c. 250 BCE",
+      "dateFull": "circa 250 BCE",
+      "sortYear": -250,
+      "sourceLabel": "Chinese text, Wikisource (zh.wikisource.org)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E8%8D%80%E5%AD%90/%E6%AD%A3%E8%AB%96%E7%AF%87",
+      "locator": "“Zhenglun” chapter, the passage beginning 有義榮者，有埶榮者.",
+      "place": "Lanling, Shandong, China",
+      "lat": 34.85,
+      "lng": 118.05,
+      "anchorType": "Traditional association",
+      "placeNote": "Xunzi was appointed magistrate of Lanling in 240 BCE and, after losing his post in 238 BCE, remained in Lanling in what is now southern Shandong for the rest of his life; no source dates individual chapters, so the pin marks where he spent his last decades.",
+      "placeSource": "https://en.wikipedia.org/wiki/Xun_Kuang",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Disgrace of circumstance and of conduct",
+          "why": "Xunzi divides disgrace into the kind that comes from outside, such as insult and punishment, and the kind that comes from one’s own bad conduct. A gentleman may suffer the first and must not incur the second, so the disgrace that matters is in what a person does, not in what is done to them.",
+          "limit": "The passage is part of Xunzi’s reply to Song Xing, who held that being insulted is no disgrace; Xunzi grants that outward disgrace exists and is hated, and denies only that it stains a person’s standing. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "xunzi-inward-or-others",
       "question": "inward-or-others",
       "name": "Xunzi",
@@ -12164,6 +13011,41 @@ window.PILOT_EVIDENCE={
           "facet": "Past acts as seed, exertion as soil",
           "why": "Asked whether exertion or destiny governs a life, the god Brahman answers that present acts are the soil and the sum of past acts is the seed, and that the harvest comes only from both together. A person’s lot is neither wholly given nor wholly made.",
           "limit": "The answer is given in a story told by Bhishma, and ‘destiny’ here is the result of one’s own earlier deeds, so it is not an endowment from outside the person. The English is a late nineteenth-century prose version read from a scan with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "mahabharata-humiliation",
+      "question": "humiliation",
+      "name": "The Mahabharata",
+      "short": "Mahabharata",
+      "work": "Mahabharata, Virata Parva, Draupadi to Bhima",
+      "excerpt": "dragged me to the court in the midst of an assembly of courtiers, calling me a slave",
+      "period": "Compiled between about 400 BCE and 400 CE",
+      "dateShort": "c. 200 BCE",
+      "dateFull": "circa 200 BCE (compiled)",
+      "sortYear": -200,
+      "sourceLabel": "Kisari Mohan Ganguli translation (published by P. C. Roy, 1883–96), scanned volume at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mahabharataofkri03royp/mahabharataofkri03royp_djvu.txt",
+      "locator": "Virata Parva, Draupadi’s account of her woes to Bhima after the insult by Kichaka, paragraph ending “That grief, O Bharata, consumeth me”. The scanned text contains recognition errors.",
+      "place": "Virata’s capital, Matsya (near Bairat, Rajasthan), India",
+      "lat": 27.43,
+      "lng": 76.18,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The scene is set in the court of King Virata of Matsya, traditionally identified with the area of Bairat in Rajasthan; the epic was compiled over centuries and its true place of composition is unknown, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mahabharataofkri03royp/mahabharataofkri03royp_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Draupadi dragged into the assembly",
+          "why": "Draupadi recalls being dragged before the assembly and called a slave, and says that the grief of it consumes her. The degradation is described as an outrage done to her that she cannot put behind her.",
+          "limit": "A speech by a character in an epic compiled over centuries, in a nineteenth-century prose translation from a scan with recognition errors. She is speaking to move Bhima to avenge her, and the epic’s verdict on the dishonour is not in these words.",
           "second": "agreed"
         }
       },
@@ -13189,6 +14071,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "bhagavad-gita-humiliation",
+      "question": "humiliation",
+      "name": "Bhagavad Gita",
+      "short": "Gita",
+      "work": "Bhagavad Gita, ch. XII (verses 18–19)",
+      "excerpt": "Keeping an equal heart, with equal mind Bears shame and glory; with an equal peace Takes heat and cold, pleasure and pain; abides Quit of desires, hears praise or calumny In passionless restraint, unmoved by each;",
+      "period": "Composed c. 2nd century BCE to 2nd century CE",
+      "dateShort": "c. 2nd c. BCE–2nd c. CE",
+      "dateFull": "composed between circa the second century BCE and the second century CE",
+      "sortYear": -100,
+      "sourceLabel": "Edwin Arnold translation, “The Song Celestial” (1885), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/8/2388/2388.txt",
+      "locator": "Chapter XII, “Bhakti Yoga”, the lines beginning “That man I love! Who, unto friend and foe”.",
+      "place": "Kurukshetra, Haryana, India",
+      "lat": 29.97,
+      "lng": 76.85,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The poem opens on the field of Kurukshetra, where the dialogue is set. Where the text was composed is not known.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/8/2388/2388.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Equal mind in shame and glory",
+          "why": "Krishna describes the devotee he loves as one who bears shame and glory with the same heart and hears praise or calumny unmoved. Shame is treated as an event that holds no power over a settled mind.",
+          "limit": "The verse describes an ideal of detachment in a poetic translation of 1885 and does not say what shame is or whether it wounds those who are not so trained. The same passage puts shame beside heat and cold, which makes it one weather among others.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "khemaka-lasting-self",
       "question": "lasting-self",
       "name": "Khemaka (as reported in the Samyutta Nikaya)",
@@ -13431,6 +14348,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "sima-qian-humiliation",
+      "question": "humiliation",
+      "name": "Sima Qian",
+      "short": "Sima Qian",
+      "work": "Letter to Ren An (報任安書)",
+      "excerpt": "而詬莫大於宮刑。刑餘之人，無所比數，非一世也，所從來遠矣",
+      "translation": "And no disgrace is greater than castration. A man who has suffered mutilation is counted among no one, and it has been so not in one age only; it has come from far back.",
+      "period": "c. 93 BCE",
+      "dateShort": "c. 93 BCE",
+      "dateFull": "circa 93 BCE",
+      "sortYear": -93,
+      "sourceLabel": "Chinese text, Wikisource (zh.wikisource.org)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E5%A0%B1%E4%BB%BB%E5%AE%89%E6%9B%B8",
+      "locator": "First part of the letter, the paragraph beginning 僕聞之：修身者，智之符也.",
+      "place": "Chang’an (Xi’an), Shaanxi, China",
+      "lat": 34.27,
+      "lng": 108.94,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Sima Qian served at the Han court in Chang’an and the letter is addressed to Ren An, who was imprisoned there; the linked page does not state where the letter was written, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Sima_Qian",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Castration as disgrace",
+          "why": "Sima Qian calls castration the greatest disgrace and says a mutilated man is counted among no one. The shame is described as a lasting loss of standing that others impose, not a matter of opinion.",
+          "limit": "A private letter by a man writing of his own punishment, so the voice is that of the victim, and the Wikisource text follows the version in the Han shu. The same letter says he endured it to finish his history. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -14656,6 +15609,76 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "paul-of-tarsus-humiliation",
+      "question": "humiliation",
+      "name": "Paul of Tarsus",
+      "short": "Paul",
+      "work": "1 Corinthians 4:10–13",
+      "excerpt": "ye are honourable, but we are despised. Even unto this present hour we both hunger, and thirst, and are naked, and are buffeted, and have no certain dwellingplace",
+      "period": "c. 54–55 CE",
+      "dateShort": "c. 55 CE",
+      "dateFull": "c. 55 CE",
+      "sortYear": 55,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
+      "locator": "Chapter 4, verses 10–11.",
+      "place": "Ephesus (near present-day Selçuk, Turkey)",
+      "lat": 37.94,
+      "lng": 27.34,
+      "anchorType": "Documented writing location",
+      "placeNote": "Paul writes that he will stay at Ephesus until Pentecost (1 Corinthians 16:8), which is why the letter is usually dated from there; the date is a scholarly estimate.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/1_Corinthians",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "The apostle despised",
+          "why": "Paul sets the honour of the Corinthians against the contempt that falls on the apostles, and lists the hunger, blows and homelessness that go with being despised. He describes the degradation as an actual condition inflicted on him, whatever meaning he gives it. A second, independent reading moved this placement from “a wound” to “unscored”: The words list being despised, hungry and buffeted; they do not say what the contempt is or does to a person.",
+          "limit": "The words are partly ironic, aimed at Corinthian pride, and Paul goes on to say he writes not to shame them. He takes the abasement as the lot of an apostle and does not call it wrong; the translation is the King James Version (1611).",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "seneca-humiliation",
+      "question": "humiliation",
+      "name": "Seneca",
+      "short": "Seneca",
+      "work": "On the Firmness of the Wise Man (De Constantia Sapientis)",
+      "excerpt": "this vexation affects him with a certain sense of degradation, as he effaces himself and takes a lower room ; whereas the wise man is scorned by no one, for he knows his own greatness",
+      "period": "c. 49–62 CE; the date is uncertain",
+      "dateShort": "c. 55",
+      "dateFull": "between about 49 and 62 CE",
+      "sortYear": 55,
+      "sourceLabel": "Aubrey Stewart translation (Minor Dialogues, 1900), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/lannaeussenecami00sene/lannaeussenecami00sene_djvu.txt",
+      "locator": "Chapter 10 of the essay, in the second book of the Dialogues.  The scanned text contains recognition errors.",
+      "place": "Rome, Italy",
+      "lat": 41.89,
+      "lng": 12.49,
+      "anchorType": "Traditional association",
+      "placeNote": "Seneca wrote his dialogues in Rome during the reigns of Claudius and Nero, but the essay cannot be dated or placed more closely. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/De_Constantia_Sapientis",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Insult and self-esteem",
+          "why": "Seneca says that the sense of degradation after an insult comes from the person who takes the slight to heart and lowers himself. A man who knows his own worth cannot be scorned, so the insult has no hold on him.",
+          "limit": "A Stoic essay addressed to Serenus, in a nineteenth-century translation, describing the ideal wise man. Seneca admits elsewhere in the essay that insult is felt by ordinary people, and the argument serves his claim that the sage cannot be harmed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "paul-free-will",
       "question": "free-will",
       "name": "Paul of Tarsus",
@@ -15188,6 +16211,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "epistle-to-the-hebrews-humiliation",
+      "question": "humiliation",
+      "name": "Epistle to the Hebrews",
+      "short": "Hebrews",
+      "work": "Hebrews 12:2",
+      "excerpt": "who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of God",
+      "period": "c. 60–90 CE",
+      "dateShort": "c. 75 CE",
+      "dateFull": "c. 75 CE",
+      "sortYear": 75,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Hebrews",
+      "locator": "Chapter 12, verse 2.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.5,
+      "anchorType": "Traditional association",
+      "placeNote": "The letter closes with greetings from “them of Italy” (13:24), which some readers take to place it in or near Rome; the author and place are uncertain, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Bible_(King_James)/Hebrews",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Despising shame",
+          "why": "Jesus is said to have endured crucifixion, a death of public disgrace, while despising the shame, treating the disgrace as something to be counted as nothing against the joy ahead. The shame has a hold on him only to the extent that he grants it one.",
+          "limit": "The line does not deny that crucifixion was a degrading death; it says the shame was despised, not that it was absent. It is a single clause in an exhortation to persevere, in the King James Version (1611), and the author and date of the letter are unknown.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "mara-bar-serapion-desire",
       "question": "desire",
       "name": "Mara bar Serapion",
@@ -15339,6 +16397,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "epistle-of-james-humiliation",
+      "question": "humiliation",
+      "name": "Epistle of James",
+      "short": "James",
+      "work": "James 2:3–6",
+      "excerpt": "But ye have despised the poor. Do not rich men oppress you, and draw you before the judgment seats?",
+      "period": "c. 60–100 CE",
+      "dateShort": "c. 80 CE",
+      "dateFull": "c. 80 CE",
+      "sortYear": 80,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/James",
+      "locator": "Chapter 2, verses 6–7 (the rebuke begins at verse 2).",
+      "place": "Jerusalem",
+      "lat": 31.78,
+      "lng": 35.22,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition ascribes the letter to James the brother of Jesus, leader of the Jerusalem church; many scholars doubt this authorship and place it elsewhere, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epistle_of_James",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Despising the poor",
+          "why": "The writer rebukes a congregation that seats the rich in a good place and tells the poor to stand or sit at a footstool, and he charges them with having despised the poor. Treating the poor with contempt is counted a wrong done to them, alongside oppression.",
+          "limit": "The verse belongs to an argument against partiality in the church, not a theory of what shame is, and it speaks of contempt shown to the poor by others. It is in the King James Version (1611), and the authorship and date of the letter are disputed.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -15521,6 +16614,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "gospel-of-luke-humiliation",
+      "question": "humiliation",
+      "name": "The Gospel of Luke",
+      "short": "Luke",
+      "work": "Luke 14:10–11",
+      "excerpt": "then shalt thou have worship in the presence of them that sit at meat with thee. For whosoever exalteth himself shall be abased; and he that humbleth himself shall be exalted",
+      "period": "c. 80–90 CE",
+      "dateShort": "c. 85 CE",
+      "dateFull": "c. 85 CE",
+      "sortYear": 85,
+      "sourceLabel": "King James Version, Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Bible_(King_James)/Luke",
+      "locator": "Chapter 14, verses 10–11.",
+      "place": "Antioch (present-day Antakya, Turkey)",
+      "lat": 36.2,
+      "lng": 36.16,
+      "anchorType": "Traditional association",
+      "placeNote": "Early Christian tradition, reported by Eusebius, makes Luke a native of Antioch, but where the gospel was written is not recorded and scholars propose several places; this pin is a traditional guess.",
+      "placeSource": "https://en.wikipedia.org/wiki/Gospel_of_Luke",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Being brought low",
+          "why": "Jesus tells guests to take the lowest seat, and states a rule of reversal: the self-exalting will be brought low and the self-lowering raised. Being abased is presented as the proper outcome of pride and the way to true honour.",
+          "limit": "The saying is a parable told at a meal, framed as table etiquette and as a remark about the kingdom of God, not an analysis of what shame does to a person. It is in the King James Version (1611), and the date of the gospel is a scholarly estimate.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -15777,6 +16905,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "tacitus-humiliation",
+      "question": "humiliation",
+      "name": "Tacitus",
+      "short": "Tacitus",
+      "work": "Agricola (speech of Calgacus)",
+      "excerpt": "as among domestic slaves every new comer serves for the scorn and derision of his fellows; so, in this ancient household of the world, we, as the newest and vilest, are sought out to destruction",
+      "period": "c. 98 CE",
+      "dateShort": "c. 98",
+      "dateFull": "circa 98 CE",
+      "sortYear": 98,
+      "sourceLabel": "Oxford translation (revised), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/7/5/2/7524/7524.txt",
+      "locator": "Agricola, section 31, Calgacus before the battle of Mons Graupius.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.55,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Tacitus wrote the Agricola in Rome soon after Domitian’s death in 96 CE, though the speech is set in Scotland. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Agricola_(book)",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Scorn heaped on the newest slave",
+          "why": "Tacitus has the British chief Calgacus compare conquered peoples to the newest slave in a household, who becomes the target of everyone’s scorn and derision. Scorn is shown as part of the injury of subjection and as a step toward destruction.",
+          "limit": "A speech that Tacitus composed for an enemy leader before a battle, so it gives a Roman historian’s idea of the view of the conquered, in an older Oxford translation. It describes degradation by conquerors and does not say how the shamed person should respond.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "asvaghosa-lasting-self",
       "question": "lasting-self",
       "name": "Aśvaghoṣa",
@@ -16023,6 +17186,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "laws-of-manu-humiliation",
+      "question": "humiliation",
+      "name": "Laws of Manu",
+      "short": "Manu",
+      "work": "Laws of Manu, ch. II, verse 162",
+      "excerpt": "should always fear homage as if it were poison; and constantly desire (to suffer) scorn as (he would long for) nectar.",
+      "period": "c. 100 CE (compiled)",
+      "dateShort": "c. 100 CE (compiled)",
+      "dateFull": "c. 100 CE (compiled)",
+      "sortYear": 100,
+      "sourceLabel": "G. Bühler translation (Sacred Books of the East vol. 25, 1886), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "locator": "Book II, verse 162, the sentence beginning “A Brahmana should always fear homage”. The scanned text contains recognition errors.",
+      "place": "Northern India (Brahmanical heartland)",
+      "lat": 27,
+      "lng": 80,
+      "anchorType": "Traditional association",
+      "placeNote": "The Manusmriti is a compiled Brahmanical law text with no known single place of writing; the pin marks the Gangetic plain, the region its rules describe. The place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mlbd.lawsofmanu0025unse_h6b1/mlbd.lawsofmanu0025unse_h6b1_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Scorn as nectar",
+          "why": "The text tells the Brahmin to dread honour like poison and to wish for scorn as for nectar. It treats being scorned as a good to the one who bears it, which places it with the teacher.",
+          "limit": "A Brahmanical law book compiled over centuries, in Bühler’s translation of 1886 from a scan with recognition errors; the subject of the sentence is a Brahmin only, and the next verse says the scorned man sleeps easy while the scorner perishes. The sentence is as much a rule of ascetic discipline as a view of shame.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "lotus-sutra-desire",
       "question": "desire",
       "name": "Lotus Sutra",
@@ -16085,6 +17283,41 @@ window.PILOT_EVIDENCE={
           "why": "Plutarch likens life to a game of dice: the throw is out of anyone’s power, but how the throw is used is not. Calm of mind therefore needs both what fortune allots and the skill and patience to use it. A second, independent reading moved this placement from “on both” to “on oneself”: The words put the throw of the dice outside a person’s power and place what is within it, and his duty, in how he accepts what comes; they do not say that outer goods are needed.",
           "limit": "The essay is about tranquillity, not happiness by name, and it also says that the fountain of tranquillity lies within the person. The English is the Goodwin revision of the 1684 Morals translation, from a scan with recognition errors.",
           "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "plutarch-humiliation",
+      "question": "humiliation",
+      "name": "Plutarch",
+      "short": "Plutarch",
+      "work": "How to Profit by Our Enemies (Moralia)",
+      "excerpt": "If a man should jeer you and say that you are a dunce and illiterate, upon this motive you ought to apply your mind to the taking of pains in the study of philosophy and all kinds of learning.",
+      "period": "c. 100 CE",
+      "dateShort": "c. 100 CE",
+      "dateFull": "circa 100 CE",
+      "sortYear": 100,
+      "sourceLabel": "Plutarch’s Morals, translated by several hands, revised by William W. Goodwin, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/plutarchsmoralst01plutuoft/plutarchsmoralst01plutuoft_djvu.txt",
+      "locator": "The essay “How to Profit by Our Enemies”, in the passage on turning an enemy’s abuse to use.  The scanned text contains recognition errors.",
+      "place": "Chaeronea, Boeotia, Greece",
+      "lat": 38.49,
+      "lng": 22.87,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Plutarch lived at Chaeronea in Boeotia for most of his life and wrote the Moralia there; the individual essay cannot be placed more closely. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Plutarch",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Insult as spur to improvement",
+          "why": "Plutarch advises taking an enemy’s jeer as a spur to remedy the fault named. Being called a dunce is useful if it drives the person to learn, so abuse becomes a teacher.",
+          "limit": "A moral essay for a public figure on handling enemies, in an older translation by several hands. It assumes the insult points to a real defect and does not say what to do about a slur that is simply false.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -16437,6 +17670,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "juvenal-humiliation",
+      "question": "humiliation",
+      "name": "Juvenal",
+      "short": "Juvenal",
+      "work": "Satire III",
+      "excerpt": "Of all the woes of luckless poverty none is harder to endure than this, that it exposes men to ridicule.",
+      "period": "c. 110 CE",
+      "dateShort": "c. 110 CE",
+      "dateFull": "circa 110 CE",
+      "sortYear": 110,
+      "sourceLabel": "G. G. Ramsay translation (1918), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Juvenal_and_Persius/The_Satires_of_Juvenal/Satire_3",
+      "locator": "Satire III, in the passage on the ridicule of poor men at the shows.",
+      "place": "Rome, Italy",
+      "lat": 41.9,
+      "lng": 12.48,
+      "anchorType": "Approximate writing-period location",
+      "placeNote": "Juvenal wrote his satires in Rome in the early second century CE, and Satire III is set there; the exact date is uncertain. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Juvenal",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Poverty and ridicule",
+          "why": "Juvenal says the hardest part of poverty is the ridicule it brings, as when a man’s torn and soiled clothes make him a jest. Being laughed at for one’s condition is treated as a real injury, worse than the want itself.",
+          "limit": "A satire in the voice of the character Umbricius, who is leaving Rome in disgust, so the complaint is partly comic exaggeration. The translation is G. G. Ramsay’s of 1918.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "simeon-ben-zoma-happiness",
       "question": "happiness",
       "name": "Simeon ben Zoma",
@@ -16644,6 +17912,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "epictetus-humiliation",
+      "question": "humiliation",
+      "name": "Epictetus",
+      "short": "Epictetus",
+      "work": "Enchiridion (Handbook), 20",
+      "excerpt": "not he who gives ill language or a blow insults, but the principle which represents these things as insulting. When, therefore, anyone provokes you, be assured that it is your own opinion which provokes you.",
+      "period": "c. 108–135 CE",
+      "dateShort": "c. 125 CE",
+      "dateFull": "circa 108 to 135 CE",
+      "sortYear": 125,
+      "sourceLabel": "Elizabeth Carter translation (as revised), MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Epictetus/epicench.html",
+      "locator": "Section 20.",
+      "place": "Nicopolis, Epirus, Greece",
+      "lat": 39.02,
+      "lng": 20.74,
+      "anchorType": "Documented teaching location",
+      "placeNote": "Epictetus taught at Nicopolis in Epirus after about 93 CE, and Arrian, who studied there, compiled the handbook from that teaching. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Epictetus",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Insult and opinion",
+          "why": "Epictetus holds that an insult is made by the hearer’s judgement and not by the abuse or the blow itself. What stings is the person’s own opinion of the words, so the sense of being insulted is under his control.",
+          "limit": "A short handbook compiled by his pupil Arrian from Epictetus’s teaching, in an older English translation. The passage is advice for the trained Stoic and does not deny that blows and abuse occur or that others may wrong a person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -16941,6 +18244,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "lucian-humiliation",
+      "question": "humiliation",
+      "name": "Lucian of Samosata",
+      "short": "Lucian",
+      "work": "Toxaris, or Friendship",
+      "excerpt": "I am doubly wounded: I love Mazaea, and I cannot forget the humiliation which I have suffered before so many witnesses",
+      "period": "c. 165 CE",
+      "dateShort": "c. 165",
+      "dateFull": "circa 165 CE",
+      "sortYear": 165,
+      "sourceLabel": "H. W. and F. G. Fowler translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/8/2/6829/6829-0.txt",
+      "locator": "Toxaris, the first Scythian story, Arsacomas speaking to his friends.",
+      "place": "Athens, Greece",
+      "lat": 37.975,
+      "lng": 23.725,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Lucian was active in Athens in the 160s CE and Toxaris is a dialogue between a Greek and a Scythian set in Athens. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Lucian",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Humiliation before witnesses",
+          "why": "The Scythian Arsacomas says he is wounded twice, by his love and by the humiliation of being rejected in front of many witnesses. Public shame is named as a wound separate from the loss itself.",
+          "limit": "A speech by a character in a dialogue about friendship, in H. W. and F. G. Fowler’s 1905 translation, and the tale is told to praise the friends who help him. Lucian was a satirist, and the story may be partly invented.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -17242,6 +18580,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "marcus-aurelius-humiliation",
+      "question": "humiliation",
+      "name": "Marcus Aurelius",
+      "short": "Marcus Aurelius",
+      "work": "Meditations, Book XI",
+      "excerpt": "Suppose any man shall despise me. Let him look to that himself. But I will look to this, that I be not discovered doing or saying anything deserving of contempt.",
+      "period": "c. 170–180 CE",
+      "dateShort": "c. 175",
+      "dateFull": "circa 170 to 180 CE",
+      "sortYear": 175,
+      "sourceLabel": "George Long translation, MIT Internet Classics Archive",
+      "sourceUrl": "https://classics.mit.edu/Antoninus/meditations.11.eleven.html",
+      "locator": "Book XI, paragraph beginning “Suppose any man shall despise me”.",
+      "place": "Carnuntum, Austria",
+      "lat": 48.11,
+      "lng": 16.86,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Tradition places Marcus Aurelius’s writing of the Meditations on campaign on the Danube frontier, with Carnuntum as a base; the individual book cannot be located. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Meditations",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Contempt from others",
+          "why": "Marcus Aurelius treats another man’s contempt as that man’s own concern and takes only his own conduct as his business. Being despised has no hold on him unless he has earned it by what he does.",
+          "limit": "Private notes to himself, in an older English translation, written by an emperor who was in little danger of public humiliation. The passage addresses contempt in general and does not consider degrading treatment by those with power over a person.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -18648,6 +20021,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "panchatantra-humiliation",
+      "question": "humiliation",
+      "name": "The Panchatantra",
+      "short": "Panchatantra",
+      "work": "The Panchatantra, Book II, “The Winning of Friends”",
+      "excerpt": "A beggar is a man of shame, Who bids farewell to honor’s name; From this, humiliations grow, Then melancholy’s gloomy woe; But gloom with sadness dims the sense, And sad men lack intelligence;",
+      "period": "c. 300 CE (compiled)",
+      "dateShort": "c. 300 CE",
+      "dateFull": "circa 300 CE (compiled)",
+      "sortYear": 300,
+      "sourceLabel": "Arthur W. Ryder translation (1925), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/panchatantra0000arth/panchatantra0000arth_djvu.txt",
+      "locator": "Book II, in the mouse Golden’s reflections on beggary, the verse beginning “A beggar is a man of shame”.",
+      "place": "Kashmir (traditional association)",
+      "lat": 34.08,
+      "lng": 74.8,
+      "anchorType": "Traditional association",
+      "placeNote": "The Panchatantra was compiled in Sanskrit, with Kashmir often suggested as its home, but the date and place are uncertain; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Panchatantra",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Poverty, shame and decline",
+          "why": "The verse traces a chain from the shame of begging to humiliations, then to gloom, dimmed senses and lack of intelligence. Humiliation is treated as a real harm that wears a person down.",
+          "limit": "A verse quoted by a character, a mouse, to explain why poverty is the root of evils, in Arthur Ryder’s translation of 1925 from the Sanskrit. It describes the effects of poverty on honour and not humiliation by others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "panchatantra-self-or-others-first",
       "question": "self-or-others-first",
       "name": "The Panchatantra",
@@ -18674,6 +20082,41 @@ window.PILOT_EVIDENCE={
           "facet": "Self-sacrifice for a friend",
           "why": "The verse praises those who count their own lives as nothing if they end in service to a friend. The friend’s good is put ahead of the person’s own.",
           "limit": "In the tale the fish say these words to a heron who is deceiving them in order to eat them, so the sentiment is spoken by dupes and quoted as a maxim. The book also contains many verses that counsel self-interest and caution.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "rav-zutra-bar-toviya-humiliation",
+      "name": "Rav Zutra bar Toviya (Babylonian Talmud)",
+      "short": "Rav Zutra",
+      "work": "Berakhot 43b",
+      "excerpt": "It is preferable, from an ethical perspective, for one to throw himself into a fiery furnace rather than humiliate another in public.",
+      "period": "Rav Zutra bar Toviya, 3rd–4th century CE; Talmud compiled c. 500 CE",
+      "dateShort": "c. 300",
+      "dateFull": "circa 300 CE (compiled circa 500 CE)",
+      "sortYear": 300,
+      "sourceLabel": "William Davidson Edition (English), Sefaria",
+      "sourceUrl": "https://www.sefaria.org/api/texts/Berakhot.43b.8?context=0",
+      "locator": "Berakhot 43b, the statement transmitted by Rav Zutra bar Toviya.",
+      "place": "Sura (near present-day Kufa, Iraq)",
+      "lat": 32.05,
+      "lng": 44.4,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "The chain of tradition runs through Rav, associated with the academy at Sura in Babylonia; the exact location of Sura is uncertain and the Sefaria page states no place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.sefaria.org/api/texts/Berakhot.43b.8?context=0",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Better the furnace than shaming",
+          "why": "The saying ranks public humiliation of another person beside death by fire and holds it the worse of the two. It treats the harm as grave enough to justify giving up one’s life rather than inflict it.",
+          "limit": "The chain of transmission is uncertain (“some say” other names are given), so the attribution to Rav Zutra bar Toviya is conventional. It is an ethical maxim read from the story of Tamar, in a modern English rendering.",
           "second": "agreed"
         }
       },
@@ -18822,6 +20265,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "babylonian-talmud-humiliation",
+      "name": "Babylonian Talmud",
+      "short": "Talmud",
+      "work": "Bava Metzia 58b",
+      "excerpt": "You have spoken well, as we see that after the humiliated person blushes, the red leaves his face and pallor comes in its place, which is tantamount to spilling his blood.",
+      "period": "Rav Naḥman bar Yitzḥak, 4th century CE; Talmud compiled c. 500 CE",
+      "dateShort": "c. 350",
+      "dateFull": "circa 350 CE (compiled circa 500 CE)",
+      "sortYear": 350,
+      "sourceLabel": "William Davidson Edition (English), Sefaria",
+      "sourceUrl": "https://www.sefaria.org/api/texts/Bava_Metzia.58b.12?context=0",
+      "locator": "Bava Metzia 58b, the discussion beginning with the baraita on one who humiliates another in public.",
+      "place": "Pumbedita (near present-day Fallujah, Iraq)",
+      "lat": 33.35,
+      "lng": 43.78,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Rav Naḥman bar Yitzḥak is traditionally associated with the academy at Pumbedita in Babylonia; the Sefaria page does not state this, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.sefaria.org/api/texts/Bava_Metzia.58b.12?context=0",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shaming in public",
+          "why": "Rav Naḥman bar Yitzḥak agrees that shaming someone in public is like shedding blood, and gives the proof: the blush drains from the victim’s face. Humiliation is treated as a physical injury that can be seen, so it sits with the wound.",
+          "limit": "The passage is in the William Davidson English rendering of a legal-ethical discussion, with explanatory glosses of the translators mixed into the text. It reports one sage’s reasoning and sits within a longer argument about forbidden speech.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -19302,6 +20780,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "abba-macarius-humiliation",
+      "question": "humiliation",
+      "name": "Abba Macarius the Egyptian (as reported in The Paradise of the Fathers)",
+      "short": "Macarius",
+      "work": "The Paradise of the Holy Fathers (Budge, 1907), saying 446",
+      "excerpt": "If thou wishest to “live, become dead, so that thou mayest care neither for the “ reviling of men nor for [their] praise, for the dead care for nothing; in this wise thou wilt be able to live.",
+      "period": "4th century (compiled c. 400–500 CE)",
+      "dateShort": "4th–5th c.",
+      "dateFull": "4th century, collected in the fifth century and later",
+      "sortYear": 400,
+      "sourceLabel": "E. A. Wallis Budge translation (1907), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/paradiseofholyfa0002chat/paradiseofholyfa0002chat_djvu.txt",
+      "locator": "Volume II, saying 446, in the section on humility. The scanned text contains recognition errors.",
+      "place": "Scetis (Wadi El Natrun), Egypt",
+      "lat": 30.4,
+      "lng": 30.35,
+      "anchorType": "Traditional association",
+      "placeNote": "Macarius the Egyptian lived as a monk in Scetis, in the Nitrian desert of Lower Egypt, in the fourth century; the saying is placed there by tradition, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Macarius_of_Egypt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Becoming dead to reviling",
+          "why": "Macarius sends a brother to revile and then praise the dead in a cemetery, and the dead do not answer either; he concludes that to live one must become dead to the reviling and the praise of men. Insult has no hold on a person who no longer answers to it.",
+          "limit": "This is a saying in a collection compiled long after Macarius, in Budge's 1907 English from Syriac, and the attribution is traditional. The stray quotation marks inside the excerpt come from the scan, which marks each line of a speech, and the scanned text contains other recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "kalidasa-lasting-self",
       "question": "lasting-self",
       "name": "Kālidāsa",
@@ -19668,6 +21181,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "augustine-of-hippo-humiliation",
+      "question": "humiliation",
+      "name": "Augustine of Hippo",
+      "short": "Augustine",
+      "work": "The City of God, Book XIV, chapter 13",
+      "excerpt": "it is useful for the proud to fall into an open and indisputable transgression, and so displease themselves, as already, by pleasing themselves, they had fallen",
+      "period": "c. 420 CE",
+      "dateShort": "c. 420 CE",
+      "dateFull": "c. 420 CE",
+      "sortYear": 420,
+      "sourceLabel": "Marcus Dods translation, New Advent",
+      "sourceUrl": "https://www.newadvent.org/fathers/120114.htm",
+      "locator": "Book XIV, chapter 13.",
+      "place": "Hippo Regius (present-day Annaba, Algeria)",
+      "lat": 36.86,
+      "lng": 7.74,
+      "anchorType": "Documented writing location",
+      "placeNote": "Augustine was bishop of Hippo Regius from 395 until his death in 430, and wrote the City of God there between about 413 and 426; Book XIV belongs to the later part.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_City_of_God",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Shame as a cure for pride",
+          "why": "Augustine says a visible fall can benefit the proud, because it turns their pleasure in themselves into displeasure; he cites the Psalm “Fill their faces with shame, that they may seek Your name”. Shame is presented as a means of healing the pride that preceded it.",
+          "limit": "The remark is made in an argument about the first sin of Adam and Eve and about Peter's fall, and concerns shame at one's own sin, not insult from others. The English is Marcus Dods's nineteenth-century translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "abba-joseph-solitude-or-company",
       "question": "solitude-or-company",
       "name": "Abba Joseph (as reported by John Cassian)",
@@ -19777,6 +21325,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "john-cassian-humiliation",
+      "question": "humiliation",
+      "name": "John Cassian",
+      "short": "Cassian",
+      "work": "The Conferences, Conference 7 (first conference of Abbot Serenus), chapter 25",
+      "excerpt": "The fire tries gold and silver; but man is tried in the furnace of humiliation;",
+      "period": "c. 426–428",
+      "dateShort": "c. 426–28",
+      "dateFull": "circa 426–428",
+      "sortYear": 427,
+      "sourceLabel": "Edgar C. S. Gibson translation (Nicene and Post-Nicene Fathers), Christian Classics Ethereal Library",
+      "sourceUrl": "https://ccel.org/ccel/c/cassian/conferences/cache/conferences.txt",
+      "locator": "Conference 7 (the first conference of Abbot Serenus), chapter 25.",
+      "place": "Marseille, France",
+      "lat": 43.3,
+      "lng": 5.37,
+      "anchorType": "Documented writing location",
+      "placeNote": "Cassian founded monasteries at Marseille and wrote the Conferences there in the 420s, recalling teachers he had met in Egypt; the conversations themselves are set in the Egyptian desert.",
+      "placeSource": "https://en.wikipedia.org/wiki/John_Cassian",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Tried in the furnace",
+          "why": "Cassian has the abbot cite Ecclesiasticus to say that, as fire proves gold and silver, a person is proven by humiliation. Being humbled is presented as a testing that shows and refines what a person is.",
+          "limit": "The words are a scriptural line quoted inside an abbot's argument about why God lets his servants be tried, not Cassian's own definition, and the “humiliation” in the older translation is a general word for being brought low. The English is the nineteenth-century Gibson translation hosted at CCEL.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -19988,6 +21571,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "tiruvalluvar-humiliation",
+      "question": "humiliation",
+      "name": "Tiruvalluvar",
+      "short": "Valluvar",
+      "work": "Tirukkural, ch. 97 “Honour”, couplet 964",
+      "excerpt": "Like hairs from off the head that fall to earth, When fall'n from high estate are men of noble birth.",
+      "period": "Composed in Tamil, variously dated between the 1st century BCE and the 5th century CE",
+      "dateShort": "c. 450 CE",
+      "dateFull": "circa 450 CE (dating disputed)",
+      "sortYear": 450,
+      "sourceLabel": "G. U. Pope translation (The ‘Sacred’ Kurral, 1886), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/tiruvalluvanayan00tiruuoft/tiruvalluvanayan00tiruuoft_djvu.txt",
+      "locator": "Chapter XCVII, “Honour”, couplet 964. The scanned text contains recognition errors.",
+      "place": "Mylapore, Chennai, Tamil Nadu, India",
+      "lat": 13.03,
+      "lng": 80.25,
+      "anchorType": "Traditional association",
+      "placeNote": "Little is known with certainty of Valluvar’s life; he is believed to have lived at least in Mylapore, now part of Chennai, and the Kural cannot be dated securely; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tiruvalluvar",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Fall from high estate",
+          "why": "The couplet compares men of noble birth who have fallen from their station to hairs that have fallen from the head. A person who loses their standing is made worthless, so the loss is treated as an injury to what they were.",
+          "limit": "The couplet is about losing honour through one’s own base deeds, not about being insulted by others, and the Kural cannot be firmly dated. The translation is G. U. Pope’s of 1886, from a scan with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -20418,6 +22036,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "boethius-humiliation",
+      "question": "humiliation",
+      "name": "Boethius",
+      "short": "Boethius",
+      "work": "Consolation of Philosophy, Book I",
+      "excerpt": "the most crushing of misfortune's burdens is, that as soon as a charge is fastened upon the unhappy, they are believed to have deserved their sufferings.",
+      "period": "c. 524 CE",
+      "dateShort": "c. 524 CE",
+      "dateFull": "circa 524 CE",
+      "sortYear": 524,
+      "sourceLabel": "H. R. James translation (1897), Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/3/2/14328/14328-0.txt",
+      "locator": "Book I, prose IV, Boethius’s reply to Philosophy.",
+      "place": "Pavia, Italy",
+      "lat": 45.19,
+      "lng": 9.16,
+      "anchorType": "Traditional association",
+      "placeNote": "Tradition holds that Boethius wrote the Consolation while imprisoned near Pavia before his execution in 524 or 525. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Boethius",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Disgrace and false report",
+          "why": "Boethius, disgraced and imprisoned, says the worst of misfortune is that a charge laid on the unhappy makes others believe they deserve their suffering. Loss of reputation is treated as a real wrong added to the loss itself.",
+          "limit": "Written in the voice of the author as a prisoner, in a dialogue with Philosophy who goes on to say that such losses are of fortune and can be borne. The translation is H. R. James’s of 1897.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -21924,6 +23577,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "the-quran-humiliation",
+      "name": "The Qur’an",
+      "short": "Qur’an",
+      "work": "Qur’an 49:11",
+      "excerpt": "let not men laugh men to scorn who haply may be better than themselves; neither let women laugh women to scorn who may haply be better than themselves",
+      "period": "c. 630 CE (Medinan sura)",
+      "dateShort": "c. 630",
+      "dateFull": "circa 630 CE",
+      "sortYear": 630,
+      "sourceLabel": "J. M. Rodwell translation, Project Gutenberg mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "locator": "Sura 49 (“The Apartments”), verse 11.",
+      "place": "Medina (present-day Saudi Arabia)",
+      "lat": 24.47,
+      "lng": 39.61,
+      "anchorType": "Documented writing location",
+      "placeNote": "Rodwell’s text heads Sura 49 “Medina” and gives its place in his chronological order; the pin follows that heading.",
+      "placeSource": "https://gutenberg.pglaf.org/2/8/0/2800/2800.txt",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Mockery between believers",
+          "why": "The verse forbids mocking others, on the ground that the mocked may stand higher than the mocker. It treats ridicule as a wrong done to the victim’s standing, which the community is told to refrain from.",
+          "limit": "A moral command in J. M. Rodwell’s 1861 rendering, which orders the suras differently from the traditional arrangement. It forbids mockery and gives a reason but does not describe what it does to the one mocked.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "heart-sutra-lasting-self",
       "question": "lasting-self",
       "name": "Heart Sutra",
@@ -22357,6 +24045,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "shantideva-humiliation",
+      "question": "humiliation",
+      "name": "Shantideva",
+      "short": "Shantideva",
+      "work": "Bodhicaryavatara, ch. VI, “The Perfect Long-suffering”",
+      "excerpt": "who rise against me to crush my glory and honour are in truth working to save me from falling into hell. If I seek deliverance, gains and honours are a fetter that befit me not",
+      "period": "c. 700 CE",
+      "dateShort": "c. 700 CE",
+      "dateFull": "circa 700 CE",
+      "sortYear": 700,
+      "sourceLabel": "L. D. Barnett translation, “The Path of Light” (1909), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/pathoflight00santiala/pathoflight00santiala_djvu.txt",
+      "locator": "Chapter VI (“The Perfect Long-suffering”), paragraph beginning “These praises and honours destroy my welfare”. The scanned text contains recognition errors.",
+      "place": "Nalanda, Bihar, India",
+      "lat": 25.14,
+      "lng": 85.44,
+      "anchorType": "Documented writing location",
+      "placeNote": "The Bodhicaryavatara was written about 700 CE by Shantideva, a monk of Nalanda, and the Wikipedia article states that it was composed there; the later legend of its recitation to the Nalanda monks is traditional.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bodhicaryavatara",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Enemies who strip away honour",
+          "why": "Shantideva says that those who try to destroy a person’s glory and honour are in truth saving that person from hell, since honours are a fetter. Loss of standing is presented as a benefit to the one who suffers it.",
+          "limit": "A training text for monks, in Barnett’s translation of 1909 from a scan with recognition errors, and the argument is that a disciple should not cling to honour, not that a humiliation inflicted by others is right.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -25681,6 +27404,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "su-shi-humiliation",
+      "question": "humiliation",
+      "name": "Su Shi",
+      "short": "Su Shi",
+      "work": "Liu Hou Lun (留侯論), “On the Marquis of Liu”",
+      "excerpt": "匹夫見辱，拔劍而起，挺身而鬥，此不足為勇也。天下有大勇者",
+      "translation": "When a common man is insulted he draws his sword, stands up and fights; this is not enough to be called courage. One who has great courage",
+      "period": "c. 1056–1061 CE",
+      "dateShort": "c. 1060",
+      "dateFull": "circa 1060 CE",
+      "sortYear": 1060,
+      "sourceLabel": "Chinese text, Wikisource (zh.wikisource.org)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E7%95%99%E4%BE%AF%E8%AB%96_(%E8%98%87%E8%BB%BE)",
+      "locator": "Opening paragraph of the essay.",
+      "place": "Kaifeng, Henan, China",
+      "lat": 34.8,
+      "lng": 114.35,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The essay is among the policy essays Su Shi wrote in his early twenties while preparing for the 1061 decree examination at the capital Kaifeng; the linked page does not date it, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Su_Shi",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Courage and insult",
+          "why": "Su Shi says that a man who answers an insult by drawing his sword shows no courage, and that great courage belongs to someone who is not provoked. Being insulted is shown as a test of the person’s composure, not of the injury done.",
+          "limit": "The excerpt breaks off in mid-sentence; the essay goes on to say the truly brave are not startled when suddenly confronted. It is a young man’s examination essay about the strategist Zhang Liang, not a discussion of shame. The English is the atlas’s own unreviewed translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "zhang-zai-meaning",
       "question": "meaning",
       "name": "Zhang Zai",
@@ -26406,6 +28165,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "al-ghazali-humiliation",
+      "name": "Al-Ghazali",
+      "short": "Ghazali",
+      "work": "The Alchemy of Happiness (Kimiya-yi Sa‘adat)",
+      "excerpt": "his friend was an ambitious seeker after place and honour. Ambition and pride are diseases which can only be cured in some such way.",
+      "period": "c. 1105 CE",
+      "dateShort": "c. 1105",
+      "dateFull": "circa 1105 CE",
+      "sortYear": 1105,
+      "sourceLabel": "Claud Field translation (1910), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/in.ernet.dli.2015.106793/2015.106793.Wisdom-Of-The-East-The-Alchemy-Of-Happiness_djvu.txt",
+      "locator": "Chapter on the love of God, the paragraph beginning “The reason Bayazid indicated this method of cure”. The scanned text contains recognition errors.",
+      "place": "Tus (near present-day Mashhad, Iran)",
+      "lat": 36.48,
+      "lng": 59.5,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Al-Ghazali wrote the Persian Alchemy of Happiness in the years after leaving Baghdad, when he returned to Tus; the linked scan does not give a place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Al-Ghazali",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Public shame as a cure for pride",
+          "why": "Ghazali explains why Bayazid told a friend to make himself a public laughing-stock: ambition and pride are diseases, and exposure to ridicule is the cure. Being brought low is placed as a remedy that shows a person the worth of the honour he craves.",
+          "limit": "Claud Field’s 1910 abridged translation, where the remark explains an anecdote told of Bayazid al-Bistami. The treatment is deliberate and self-chosen, so it speaks of voluntary abasement, not of humiliation inflicted by others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "al-ghazali-inward-or-others",
       "question": "inward-or-others",
       "name": "Al-Ghazali",
@@ -26740,6 +28534,77 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "peter-abelard-humiliation",
+      "question": "humiliation",
+      "name": "Peter Abelard",
+      "short": "Abelard",
+      "work": "Historia Calamitatum (The Story of My Misfortunes), chapter 7",
+      "excerpt": "In truth I felt the disgrace more than the hurt to my body, and was more afflicted with shame than with pain.",
+      "period": "c. 1132",
+      "dateShort": "c. 1132",
+      "dateFull": "c. 1132",
+      "sortYear": 1132,
+      "sourceLabel": "Henry Adams Bellows translation (1922), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/2/6/14268/14268-0.txt",
+      "locator": "Chapter 7, in the paragraph describing his state after the attack. ",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The Historia is usually dated about 1132, after Abelard left the abbey of St Gildas, and Paris is the setting of the events it describes; where it was written is not certain, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Historia_Calamitatum",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Disgrace worse than injury",
+          "why": "Abelard says that after his castration he suffered more from public disgrace than from the wound itself, and that his chief grief was his fame brought low. He treats shame as a harm distinct from, and heavier than, bodily injury.",
+          "limit": "The passage is Abelard's own retrospective account, written for a friend and shaped to show his misfortunes as a lesson. The English is Henry Adams Bellows's 1922 translation, and the shame he describes is partly bound up with his guilt over the affair that led to the attack.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bernard-of-clairvaux-humiliation",
+      "question": "humiliation",
+      "name": "Bernard of Clairvaux",
+      "short": "Bernard",
+      "work": "Sermons on the Song of Songs, sermon 37",
+      "excerpt": "sic in anima non est plane timenda quantalibet humiliatio, horrenda autem nimiumque pavenda vel minima temere praesumpta erectio",
+      "translation": "so in the soul no humiliation, however great, is plainly to be feared, but even the smallest rashly assumed self-exaltation is to be dreaded and greatly feared",
+      "period": "c. 1140s",
+      "dateShort": "c. 1140s",
+      "dateFull": "circa 1140s",
+      "sortYear": 1140,
+      "sourceLabel": "Wikisource (la), Sermones in Canticum Canticorum (Patrologia Latina text)",
+      "sourceUrl": "https://la.wikisource.org/wiki/Sermones_in_Canticum_Canticorum/Sermo_37",
+      "locator": "Sermon 37, in the passage on the low lintel of a doorway (“cuius superliminare … nimium bassum sit”).",
+      "place": "Clairvaux Abbey, Champagne, France",
+      "lat": 48.14,
+      "lng": 4.79,
+      "anchorType": "Documented teaching location",
+      "placeNote": "Bernard was abbot of Clairvaux from 1115 until his death in 1153 and preached the Song of Songs sermons to the monks there, mostly in the 1130s and 1140s; the date of this sermon is a scholarly estimate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Bernard_of_Clairvaux",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "No humiliation to fear",
+          "why": "Bernard says that however great a humiliation of the soul may be, it is not to be feared, whereas even the smallest rashly assumed self-exaltation is to be dreaded. Being brought low does the soul no harm, and pride is the only real danger.",
+          "limit": "The Latin is the Wikisource text of the sermon, and the English in the translation field is the atlas's own unreviewed rendering. Bernard is speaking of a monk's humbling of himself before God, using the image of a low doorway, not of being shamed by others.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -27438,6 +29303,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "moses-maimonides-humiliation",
+      "name": "Moses Maimonides",
+      "short": "Maimonides",
+      "work": "Mishneh Torah, Human Dispositions (De‘ot) 6:8",
+      "excerpt": "A person who embarrasses a colleague in public does not have a share in the world to come.",
+      "period": "Completed c. 1178 CE",
+      "dateShort": "c. 1178",
+      "dateFull": "circa 1178 CE",
+      "sortYear": 1178,
+      "sourceLabel": "Eliyahu Touger translation (Moznaim), Sefaria",
+      "sourceUrl": "https://www.sefaria.org/api/texts/Mishneh_Torah,_Human_Dispositions.6.8?context=0",
+      "locator": "Human Dispositions, chapter 6, halakhah 8.",
+      "place": "Fustat (Old Cairo), Egypt",
+      "lat": 30.01,
+      "lng": 31.23,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Maimonides lived in Fustat when he completed the Mishneh Torah around 1178; the linked page does not state a place, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Maimonides",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Embarrassing a colleague",
+          "why": "Maimonides cites the sages to establish that shaming a fellow person is a grave sin, serious enough to forfeit the world to come. Embarrassment is treated as a real wrong done to the other person, not as a matter of feeling.",
+          "limit": "Maimonides is quoting the sages (Pirkei Avot) in a legal code, in Eliyahu Touger’s modern translation as hosted on Sefaria. Elsewhere in the same chapter he permits public shaming of a sinner who refuses to repent.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -28763,6 +30663,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "saadi-humiliation",
+      "name": "Saadi of Shiraz",
+      "short": "Saadi",
+      "work": "The Gulistan, chapter 1",
+      "excerpt": "abused another, who took it patiently, and called him a hopeful youth. \" I am worse than you can say of me, for I know my own defects better than you can possibly discover them.\"",
+      "period": "1258 CE",
+      "dateShort": "1258",
+      "dateFull": "1258 CE",
+      "sortYear": 1258,
+      "sourceLabel": "Francis Gladwin translation (1865 edition), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/gulistanorrosega00sadi/gulistanorrosega00sadi_djvu.txt",
+      "locator": "Chapter 1, the anecdote immediately before Tale XXXV (page 162 of the edition). The scanned text contains recognition errors.",
+      "place": "Shiraz (present-day Iran)",
+      "lat": 29.61,
+      "lng": 52.54,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Saadi completed the Gulistan in 1258 and is associated with Shiraz; the linked scan states neither, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Saadi_Shirazi",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Insult and self-knowledge",
+          "why": "The abused man is not stung because he already judges himself more harshly than his insulter can. The abuse has no hold, since its force would depend on his accepting the insulter’s verdict. A second, independent reading moved this placement from “only what you make it” to “a teacher”: The words have the abused man answer that he is worse than his abuser can say, since he knows his own defects best; the insult is taken as true and to his profit.",
+          "limit": "A short anecdote in Francis Gladwin’s 1865-edition translation, told as a model of patience and not as a theory of insult. The man’s calm may come from humility or from a low opinion of himself.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "saadi-self-or-others-first",
       "question": "self-or-others-first",
       "excerpt": "when the world gives pain to one member, the others also suffer uneasiness. Thou who art indifferent to the sufferings of others deservest not to be called a man.",
@@ -28992,6 +30927,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "rumi-humiliation",
+      "name": "Jalal al-Din Rumi",
+      "short": "Rumi",
+      "work": "Masnavi",
+      "excerpt": "Quit your sect and be a subject of aversion, Cast away name and fame and seek disgrace",
+      "period": "1258–1273 CE",
+      "dateShort": "c. 1260",
+      "dateFull": "circa 1260 CE",
+      "sortYear": 1260,
+      "sourceLabel": "E. H. Whinfield translation (1898), scanned text at the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/masnaviimanavisp00jala_0/masnaviimanavisp00jala_0_djvu.txt",
+      "locator": "Passage beginning “Contemn whatever praises you”, in the abridged Masnavi, section on the counsel of the sage. The scanned text contains recognition errors.",
+      "place": "Konya (present-day Turkey)",
+      "lat": 37.87,
+      "lng": 32.49,
+      "anchorType": "Traditional association",
+      "placeNote": "Rumi composed the Masnavi in Konya in his later years; the linked scan does not give the place of each passage, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Rumi",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Seeking disgrace",
+          "why": "The verse advises the seeker to give up reputation and deliberately court disgrace. Being despised is treated as the means by which attachment to name and fame is broken.",
+          "limit": "E. H. Whinfield’s abridged prose-and-verse version of 1898, in which the lines are a voice advising the seeker. A Sufi counsel of self-effacement, not a claim that disgrace is pleasant or that others may inflict it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -29622,6 +31592,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "thomas-aquinas-humiliation",
+      "question": "humiliation",
+      "name": "Thomas Aquinas",
+      "short": "Aquinas",
+      "work": "Summa Theologiae, II-II, question 72, article 2 (Reviling)",
+      "excerpt": "this is properly and essentially to give utterance to railing or reviling: and this is a mortal sin no less than theft or robbery, since a man loves his honor no less than his possessions",
+      "period": "c. 1271–1272",
+      "dateShort": "c. 1271–72",
+      "dateFull": "circa 1271–1272",
+      "sortYear": 1272,
+      "sourceLabel": "Fathers of the English Dominican Province translation, New Advent",
+      "sourceUrl": "https://www.newadvent.org/summa/3072.htm",
+      "locator": "Second Part of the Second Part, question 72 (“Of Reviling”), article 2, reply (“I answer that”).",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Aquinas taught at Paris from 1269 to 1272, the years in which he wrote the Secunda Secundae; the place of composition of this question is an association, not a record, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Summa_Theologiae",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Reviling as dishonour",
+          "why": "Aquinas defines reviling as speech meant to dishonour another and ranks it with theft and robbery, because a person values his honour as much as his property. The loss of honour is treated as an injury done to the person, wrong in itself.",
+          "limit": "The passage is a scholastic analysis of sins of speech, and it turns on the speaker's intention: words said in jest or for correction, without intent to dishonour, are not the same sin. The English is the Fathers of the English Dominican Province translation (1920s).",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -30843,6 +32848,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "yoshida-kenko-humiliation",
+      "question": "humiliation",
+      "name": "Yoshida Kenkō",
+      "short": "Kenkō",
+      "work": "Tsurezuregusa (Essays in Idleness), section 129",
+      "excerpt": "A grown-up person pays no attention, for he knows it means nothing ; but the little heart will be pierced with horror and its simple imagination smitten with genuine shame.",
+      "period": "c. 1330–1332 CE",
+      "dateShort": "c. 1331",
+      "dateFull": "circa 1330–1332 CE",
+      "sortYear": 1331,
+      "sourceLabel": "William N. Porter translation (The Miscellany of a Japanese Priest, 1914), Internet Archive scan",
+      "sourceUrl": "https://archive.org/stream/miscellanyofjapa00yosh/miscellanyofjapa00yosh_djvu.txt",
+      "locator": "Section 129, “On Kind-heartedness”, the paragraph beginning “Again, when you deceive or threaten a little child”. The scanned text contains recognition errors.",
+      "place": "Kyoto, Japan",
+      "lat": 35.02,
+      "lng": 135.72,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Kenkō is traditionally said to have written the work as a recluse on the outskirts of Kyoto, near Narabigaoka. The scan’s passage does not name the place; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Tsurezuregusa",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Shaming a child",
+          "why": "Kenkō warns that making a child feel ashamed, even in fun, pierces the child’s heart with horror and real shame, though an adult would shrug it off. The shaming is said to injure the child, however light the shamer’s intent. A second, independent reading moved this placement from “a wound” to “unscored”: The words say that a grown person knows the taunt means nothing, while a child is pierced by it; they hold both views and settle on neither.",
+          "limit": "A short moral essay in a 1914 English translation from a scan with recognition errors. It draws on a story about a priest’s kindness and says nothing of shame among adults, whom it describes as unmoved by it.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "yoshida-kenko",
       "name": "Yoshida Kenkō",
       "short": "Kenkō",
@@ -31410,6 +33450,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "francis-of-assisi-humiliation",
+      "question": "humiliation",
+      "name": "Francis of Assisi",
+      "short": "Francis",
+      "work": "The Little Flowers of St. Francis, chapter 8",
+      "excerpt": "and thereat he shuts to the door and makes us stand without in the snow and the rain, cold and a-hungered, till night-fall; if therewithal we patiently endure such wrong and such cruelty and such rebuffs",
+      "period": "c. 1370 (about events of c. 1220)",
+      "dateShort": "c. 1370",
+      "dateFull": "c. 1370, recounting events of about 1220",
+      "sortYear": 1370,
+      "sourceLabel": "T. W. Arnold translation (1908), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/littleflowersof00fran/littleflowersof00fran_djvu.txt",
+      "locator": "Chapter 8, “How S. Francis and Brother Leo were going by the way”. The scanned text contains recognition errors.",
+      "place": "Portiuncula (Santa Maria degli Angeli), near Assisi, Italy",
+      "lat": 43.06,
+      "lng": 12.58,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The story is set on the road from Perugia to St Mary of the Angels (the Portiuncula) near Assisi; the compilation itself is dated to the Marches in the fourteenth century.",
+      "placeSource": "https://en.wikipedia.org/wiki/Fioretti",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Perfect joy",
+          "why": "Francis tells Brother Leo that being turned away and abused at the friary door, and bearing it patiently, is where perfect joy lies. Bearing rejection with humility is placed above miracles and learning as the mark of a true follower. A second, independent reading moved this placement from “a teacher” to “unscored”: The words describe being shut out in the cold and bearing it patiently; the conclusion that this is perfect joy comes after the quoted lines.",
+          "limit": "The sentence continues into the account of beatings and ends with the words “write that herein is perfect joy”. The Little Flowers was compiled in the fourteenth century from earlier stories, so the speech is reported long after Francis, and the English is T. W. Arnold's 1908 translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "hafez-suffering",
       "question": "suffering",
       "name": "Hafez of Shiraz",
@@ -31628,6 +33703,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ibn-khaldun-humiliation",
+      "name": "Ibn Khaldun",
+      "short": "Ibn Khaldun",
+      "work": "The Muqaddimah, chapter 2, section 6",
+      "excerpt": "the use of punishment against someone who cannot defend himself generates in that person a feeling of humiliation that, no doubt, must break his fortitude",
+      "period": "1377 CE",
+      "dateShort": "1377",
+      "dateFull": "1377 CE",
+      "sortYear": 1377,
+      "sourceLabel": "Franz Rosenthal translation, muslimphilosophy.com",
+      "sourceUrl": "https://www.muslimphilosophy.com/ik/Muqaddimah/Chapter2/Ch_2_06.htm",
+      "locator": "Chapter 2, section 6, “The reliance of sedentary people upon laws destroys their fortitude and power of resistance”, paragraph after the story of ‘Umar and Zuhrah.",
+      "place": "Qal‘at Ibn Salama (near Frenda, present-day Algeria)",
+      "lat": 35.06,
+      "lng": 1.05,
+      "anchorType": "Documented writing location",
+      "placeNote": "Ibn Khaldun took refuge at Qalat Ibn Salama in western Algeria and wrote the first draft of the Muqaddimah there in 1377.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ibn_Khaldun",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Punishment and broken spirit",
+          "why": "Ibn Khaldun argues that punishing someone who cannot defend himself produces a feeling of humiliation that breaks his fortitude. Humiliation is a harm that damages the spirit of the one subjected to it.",
+          "limit": "A sociological claim about subjects of harsh rule in Franz Rosenthal’s translation, not an analysis of the feeling. It concerns humiliation by punishment and political domination in particular.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ibn-khaldun-solitude-or-company",
       "question": "solitude-or-company",
       "name": "Ibn Khaldun",
@@ -31817,6 +33927,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "julian-of-norwich-humiliation",
+      "question": "humiliation",
+      "name": "Julian of Norwich",
+      "short": "Julian",
+      "work": "Revelations of Divine Love, chapter 20",
+      "excerpt": "having regard to the worthiness of the highest worshipful King and the shameful, despised, painful death. For He that is highest and worthiest was most fully made-nought and most utterly despised.",
+      "period": "c. 1393 (visions of 1373)",
+      "dateShort": "c. 1393",
+      "dateFull": "c. 1393, recording visions of 1373",
+      "sortYear": 1393,
+      "sourceLabel": "Grace Warrack translation (1901), Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/5/2/9/5/52958/52958-0.txt",
+      "locator": "Chapter 20 (“For every man's sin that shall be saved He suffered”), in the passage on the Passion.",
+      "place": "Norwich, England",
+      "lat": 52.62,
+      "lng": 1.28,
+      "anchorType": "Documented writing location",
+      "placeNote": "Julian lived as an anchoress in a cell attached to St Julian’s Church, Norwich, where the book is held to have been written; the pin marks the city.",
+      "placeSource": "https://en.wikipedia.org/wiki/Julian_of_Norwich",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Christ despised",
+          "why": "Julian reads the crucifixion as a disgrace as well as a pain: the highest and worthiest was made nothing and utterly despised, and she counts that scorn as part of what he suffered. Being despised is treated as a real injury, heavier the higher the person.",
+          "limit": "The line describes the suffering of Christ in a vision, not an ordinary person's humiliation, and elsewhere in the Revelations Julian finds that the pain is turned to joy. The English is Grace Warrack's 1901 translation of the Long Text.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "julian-of-norwich-lasting-self",
       "question": "lasting-self",
       "name": "Julian of Norwich",
@@ -32003,6 +34148,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "orchot-tzaddikim-humiliation",
+      "name": "Orchot Tzaddikim",
+      "short": "Orchot Tzaddikim",
+      "work": "Orchot Tzaddikim (The Ways of the Righteous), chapter 1, the Gate of Pride",
+      "excerpt": "he goes to the other extreme and conducts himself with the greatest humiliation, sitting below everyone or far to the rear, and wears worn and shabby clothes that disgrace their wearer",
+      "period": "Anonymous; usually dated to the 15th century",
+      "dateShort": "c. 1400",
+      "dateFull": "circa 1400 CE",
+      "sortYear": 1400,
+      "sourceLabel": "Seymour J. Cohen translation (Ktav, 1982), Sefaria",
+      "sourceUrl": "https://www.sefaria.org/api/texts/Orchot_Tzadikim.1?context=0",
+      "locator": "Chapter 1 (the Gate of Pride), the paragraph beginning “He who desires to root out haughtiness from his heart completely”.",
+      "place": "Germany (exact place unknown)",
+      "lat": 50,
+      "lng": 8.27,
+      "anchorType": "Approximate writing association",
+      "placeNote": "The author is unknown, and scholars have placed the book in Germany in the 14th–15th centuries; the pin is an approximate Rhineland point, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://www.sefaria.org/api/texts/Orchot_Tzadikim.1?context=0",
+      "question": "humiliation",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Humiliation to uproot pride",
+          "why": "The author holds that haughtiness cannot be removed by thought alone; a proud man must take on conspicuous humiliation, as a discipline. Lowering oneself in public is a cure for pride. A second, independent reading moved this placement from “a teacher” to “unscored”: The words describe a man who abases himself to an extreme; they do not say what being humiliated is or does.",
+          "limit": "A medieval ethical handbook, here in Seymour Cohen’s 1982 translation on Sefaria. The humiliation prescribed is chosen by the person for himself, and the author elsewhere warns against humbling oneself before the wicked.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -32747,6 +34927,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "thomas-a-kempis-humiliation",
+      "question": "humiliation",
+      "name": "Thomas à Kempis",
+      "short": "Kempis",
+      "work": "The Imitation of Christ, Book III, chapter 46",
+      "excerpt": "if all things could be said against thee which the utmost malice could invent, what should it hurt thee if thou wert altogether to let it go, and make no more account of it than of a mote?",
+      "period": "c. 1420s",
+      "dateShort": "c. 1420s",
+      "dateFull": "c. 1420s",
+      "sortYear": 1425,
+      "sourceLabel": "William Benham translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/5/1653/1653-0.txt",
+      "locator": "Book III, chapter 46, first and second paragraphs.",
+      "place": "Mount St Agnes, near Zwolle, Netherlands",
+      "lat": 52.53,
+      "lng": 6.12,
+      "anchorType": "Documented writing location",
+      "placeNote": "Thomas à Kempis entered the monastery of Mount St Agnes near Zwolle in 1406 and lived there until his death in 1471; tradition holds that he wrote the Imitation there, and the place is accepted as the work's setting.",
+      "placeSource": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Insult and consent",
+          "why": "Christ is made to tell the disciple that even the worst abuse malice could invent does no harm if it is let go and counted as nothing more than a speck of dust, so that the hurt lies in how much account the hearer takes of it. That places humiliation in the hearer's judgement.",
+          "limit": "This is a devotional work in the voice of Christ speaking to the disciple, in a late-nineteenth-century English translation. The same chapter says that fear of being despised makes a person unwilling to be corrected, and elsewhere the Imitation recommends welcoming contempt as a means of humility.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -34757,6 +36972,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "wang-yangming-humiliation",
+      "question": "humiliation",
+      "name": "Wang Yangming",
+      "short": "Wang Yangming",
+      "work": "Instructions for Practical Living (傳習錄), Part 3",
+      "excerpt": "人若著實用功，隨人毀謗，隨人欺慢，處處得益，處處是進德之資",
+      "translation": "If a person truly puts in effort, let others slander him and treat him with contempt: everywhere he gains, and everywhere it is material for advancing in virtue.",
+      "period": "1520s CE",
+      "dateShort": "1520s",
+      "dateFull": "the 1520s CE",
+      "sortYear": 1525,
+      "sourceLabel": "Chinese text, Chinese Wikisource (original; English by the atlas)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/傳習錄/卷下",
+      "locator": "Part 3, saying 243, the sentence beginning 又曰：「人若著實用功.",
+      "place": "Shaoxing, Zhejiang, China",
+      "lat": 30,
+      "lng": 120.58,
+      "anchorType": "Approximate teaching association",
+      "placeNote": "Wang Yangming’s home and later school were at Shaoxing, where he taught in his last years. The linked text does not place this saying; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Slander and contempt as material",
+          "why": "Wang Yangming says that someone who is working at moral practice gains from every slander and every act of contempt, since each becomes material for improving in virtue. Being treated with contempt is presented as useful to the one who bears it.",
+          "limit": "A recorded saying of a teacher to his students, with the condition that the person is truly doing the work; he adds that without it a person is only a demon and will be brought down. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "wang-yangming",
       "name": "Wang Yangming",
       "short": "Wang Yangming",
@@ -34983,6 +37234,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ignatius-of-loyola-humiliation",
+      "question": "humiliation",
+      "name": "Ignatius of Loyola",
+      "short": "Ignatius",
+      "work": "The Spiritual Exercises, meditation on the Two Standards",
+      "excerpt": "the second is to be of contumely and contempt; because from these two things humility follows. So that there are to be three steps; the first, poverty against riches; the second, contumely or contempt against worldly honor",
+      "period": "c. 1522–1548",
+      "dateShort": "c. 1522–48",
+      "dateFull": "circa 1522–1548 (first printed 1548)",
+      "sortYear": 1535,
+      "sourceLabel": "Elder Mullan translation (1914), Christian Classics Ethereal Library",
+      "sourceUrl": "https://ccel.org/ccel/i/ignatius/exercises/cache/exercises.txt",
+      "locator": "Second Week, meditation on the Two Standards, the passage describing the standard of Christ and the “three steps”.",
+      "place": "Manresa, Spain",
+      "lat": 41.73,
+      "lng": 1.83,
+      "anchorType": "Traditional association",
+      "placeNote": "Ignatius began drafting the Exercises at Manresa in 1522–23 and revised them for years afterwards; the book was first printed in 1548 in Rome, so the place is traditional, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Spiritual_Exercises_of_Ignatius_of_Loyola",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Contempt leading to humility",
+          "why": "Ignatius sets out a ladder in which poverty and then contumely or contempt, set against worldly honour, lead to humility, the opposite of pride. Being held in contempt is a step that trains the follower, and he asks Christ's standard-bearers to seek it.",
+          "limit": "The passage is a spiritual director's instruction for a retreat, about contempt that a follower chooses to accept for Christ, and not a description of unwanted shaming. The English is Elder Mullan's 1914 translation as hosted at CCEL.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "fuzuli-free-will",
       "question": "free-will",
       "name": "Fuzûlî",
@@ -35046,6 +37332,42 @@ window.PILOT_EVIDENCE={
           "facet": "Praying for love's affliction",
           "why": "The speaker prays that God never part him from love's affliction and keep sending him more of it, treating the suffering as a favour. Pain is accepted as sent and as part of a larger good.",
           "limit": "A devotional-erotic prayer in the voice of the lover, set in the Leylâ and Mecnûn story and attributed to Fuzûlî in a Wikisource text that is flagged as needing editing; the pain is that of mystic love and not suffering in general. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "bartolome-de-las-casas-humiliation",
+      "question": "humiliation",
+      "name": "Bartolomé de las Casas",
+      "short": "Las Casas",
+      "work": "Brevísima relación de la destrucción de las Indias, prologue",
+      "excerpt": "a las cuales trataton infinito peor que a las bestias, como yo mismo lo he visto, y aún con mayor vilipendio que el estiercol de las plazas",
+      "translation": "to whom they did infinitely worse than to the beasts, as I myself have seen, and with even greater contempt than the dung of the public squares",
+      "period": "1542 (published 1552)",
+      "dateShort": "1542",
+      "dateFull": "1542 (published at Seville in 1552)",
+      "sortYear": 1542,
+      "sourceLabel": "Wikisource (es), Brevísima relación de la destrucción de las Indias",
+      "sourceUrl": "https://es.wikisource.org/wiki/Brevísima_relación_de_la_destrucción_de_las_Indias",
+      "locator": "Prologue, in the paragraph beginning “De dos maneras se han conseguido estos bárbaros efectos”.",
+      "place": "Seville, Spain",
+      "lat": 37.39,
+      "lng": -5.99,
+      "anchorType": "Publication place",
+      "placeNote": "Las Casas composed the Brevísima relación in 1542 and it was printed at Seville in 1552; the place of composition is not given by the linked page, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Brevísima_relación_de_la_destrucción_de_las_Indias",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Contempt as a crime",
+          "why": "Las Casas says the Spaniards treated the Indians as worse than beasts and held them in lower contempt than the dung of the public squares. He presents this degradation, which he saw himself, as an atrocity committed against them alongside the killing.",
+          "limit": "The passage is an advocate's report to the Spanish crown, written to move the king, and it is a witness's account of what was done to the Indians, not a general account of humiliation. The Spanish text is the Wikisource edition, which keeps a misprint (“trataton”) and may modernise spelling; the English is the atlas's own unreviewed translation.",
           "second": "agreed"
         }
       },
@@ -35906,6 +38228,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "teresa-of-avila-humiliation",
+      "question": "humiliation",
+      "name": "Teresa of Ávila",
+      "short": "Teresa",
+      "work": "The Way of Perfection, chapter 13",
+      "excerpt": "Some slight annoyance, hardly worth mentioning, is offered you, and the devil instigates one of your sisters to consider it a grave insult",
+      "period": "c. 1566",
+      "dateShort": "c. 1566",
+      "dateFull": "c. 1566",
+      "sortYear": 1566,
+      "sourceLabel": "Benedictines of Stanbrook translation (1911), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/wayofperfection00tereuoft/wayofperfection00tereuoft_djvu.txt",
+      "locator": "Chapter 13, section 8, in the paragraph beginning “You may say that this is a trifling fault”. The scanned text contains recognition errors.",
+      "place": "Ávila, Spain",
+      "lat": 40.66,
+      "lng": -4.7,
+      "anchorType": "Documented writing location",
+      "placeNote": "Teresa wrote the first version of the Way of Perfection about 1566 at the convent of San José in Ávila, which she had founded in 1562.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_Way_of_Perfection",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Points of honour",
+          "why": "Teresa describes how a trivial slight becomes a “grave insult” once another person insists on seeing it as one, and she treats sensitivity about honour as a danger to the community. The injury is made by being taken as an injury.",
+          "limit": "She is warning the nuns of her reformed Carmel against fussing over honour, and she does not deny that real wrongs happen: elsewhere in the chapter she asks them to imitate Christ by suffering unjustly. The English is the 1911 Stanbrook Benedictine translation, whose scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "yi-hwang-desire",
       "question": "desire",
       "name": "Yi Hwang (Toegye)",
@@ -36307,6 +38664,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "michel-de-montaigne-humiliation",
+      "question": "humiliation",
+      "name": "Michel de Montaigne",
+      "short": "Montaigne",
+      "work": "Essays, book I, “Of Democritus and Heraclitus”",
+      "excerpt": "it expresses more contempt and condemnation than the other, and I think we can never be despised according to our full desert.",
+      "period": "1580",
+      "dateShort": "1580",
+      "dateFull": "1580",
+      "sortYear": 1580,
+      "sourceLabel": "Charles Cotton translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "locator": "Book I, chapter 50, paragraph beginning “I am clearly for the first humour”.",
+      "place": "Château de Montaigne, Dordogne, France",
+      "lat": 44.84,
+      "lng": 0.76,
+      "anchorType": "Documented writing location",
+      "placeNote": "Montaigne wrote the Essays in the tower library of his château near Saint-Michel-de-Montaigne from 1572. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/6/0/3600/3600-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Contempt as the fitting measure",
+          "why": "Montaigne prefers laughing at human folly to weeping over it, and says that people can never be despised as much as they deserve. Contempt is treated as a fair verdict on vanity, not an injury.",
+          "limit": "The remark is about the Democritean habit of laughing at mankind in general, not about contempt aimed at one person. The English is Charles Cotton’s seventeenth-century translation, on Project Gutenberg.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "michel-de-montaigne-inward-or-others",
       "question": "inward-or-others",
       "name": "Michel de Montaigne",
@@ -36482,6 +38874,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "john-of-the-cross-humiliation",
+      "question": "humiliation",
+      "name": "John of the Cross",
+      "short": "John of the Cross",
+      "work": "Ascent of Mount Carmel, Book III, chapter 9",
+      "excerpt": "a great humility and contempt of oneself and of all that pertains to oneself, firmly rooted in the soul and keenly felt by it; and likewise in being glad that others feel in this very way concerning oneself",
+      "period": "c. 1579–1585",
+      "dateShort": "c. 1579–85",
+      "dateFull": "circa 1579–1585",
+      "sortYear": 1582,
+      "sourceLabel": "E. Allison Peers translation, Christian Classics Ethereal Library",
+      "sourceUrl": "https://ccel.org/ccel/j/john_cross/ascent/cache/ascent.txt",
+      "locator": "Book III, chapter 9, section 3.",
+      "place": "Granada, Spain",
+      "lat": 37.18,
+      "lng": -3.6,
+      "anchorType": "Approximate writing association",
+      "placeNote": "John wrote the Ascent in the years after his escape from Toledo in 1578, much of it in Andalusia, including Granada, where he was prior of Los Mártires from 1582; the exact place of composition is uncertain, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Ascent_of_Mount_Carmel",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Contempt of oneself",
+          "why": "John says true virtue lies in a deep contempt of oneself and in being glad that others hold the same low view of oneself. Being despised is welcomed as the soul's own honest estimate and as a protection against self-esteem.",
+          "limit": "The words come from a treatise of guidance on contemplative prayer, and the contempt meant is the soul's own judgement of itself before God, not endorsement of cruelty by others. The English is E. Allison Peers's twentieth-century translation as hosted at CCEL, which marks footnotes in the text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "michel-de-montaigne-given-or-made",
       "question": "given-or-made",
       "name": "Michel de Montaigne",
@@ -36619,6 +39046,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "william-shakespeare-humiliation",
+      "question": "humiliation",
+      "name": "William Shakespeare",
+      "short": "Shakespeare",
+      "work": "The Merchant of Venice, act 3, scene 1",
+      "excerpt": "He hath disgraced me, and hindered me half a million; laughed at my losses, mocked at my gains, scorned my nation, thwarted my bargains, cooled my friends, heated mine enemies; and what's his reason? I am a Jew.",
+      "period": "c. 1596–1598",
+      "dateShort": "c. 1597",
+      "dateFull": "circa 1596 to 1598",
+      "sortYear": 1597,
+      "sourceLabel": "MIT Complete Works of Shakespeare",
+      "sourceUrl": "https://shakespeare.mit.edu/merchant/merchant.3.1.html",
+      "locator": "Act 3, scene 1, Shylock’s speech beginning “To bait fish withal”.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.1,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The play was written for the Lord Chamberlain’s Men in London in the later 1590s; the date range is conventional. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://shakespeare.mit.edu/merchant/merchant.3.1.html",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Scorn and revenge",
+          "why": "Shylock lists the mockery, scorn and disgrace he has suffered from Antonio and says it feeds his revenge; the reason given is only that he is a Jew. Contempt for who a person is shown as a real injury that demands an answer.",
+          "limit": "A speech by a dramatic character who goes on to justify cruelty, in a play that also mocks him; it is no statement of Shakespeare’s own view. The MIT text modernises some spelling.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -36938,6 +39400,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "hong-yingming-humiliation",
+      "question": "humiliation",
+      "name": "Hong Yingming (Hong Zicheng)",
+      "short": "Hong Yingming",
+      "work": "Caigentan (菜根譚)",
+      "excerpt": "然則原非奉我，我胡為喜？原非侮我，我胡為怒？",
+      "translation": "So it was never me they honoured, so why should I be glad? And never me they insulted, so why should I be angry?",
+      "period": "c. 1600, late Ming dynasty",
+      "dateShort": "c. 1600",
+      "dateFull": "circa 1600, late Ming dynasty",
+      "sortYear": 1600,
+      "sourceLabel": "Chinese Wikisource, Caigentan",
+      "sourceUrl": "https://zh.wikisource.org/wiki/菜根譚",
+      "locator": "Part 1 of the collection, the maxim beginning 我貴而人奉之.",
+      "place": "Nanjing, Jiangsu, China",
+      "lat": 32.06,
+      "lng": 118.78,
+      "anchorType": "Approximate association",
+      "placeNote": "Little is certain about Hong's life; the book is placed in the Jiangnan region of the late Ming, so the pin is only a guess and the place still needs an editor’s confirmation.",
+      "placeSource": "https://zh.wikisource.org/wiki/菜根譚",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Honour and insult aimed at clothes",
+          "why": "Hong argues that honour and insult are aimed at a person’s rank and clothes, the cap and sash or the cotton and straw sandals, and not at the person, so there is nothing in them to be glad or angry about. Humiliation is placed in what the person takes it to be addressed to.",
+          "limit": "A collection of aphorisms of uncertain date and arrangement, and the argument assumes the insult is aimed at status alone, not at the person’s character. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "name": "Hong Yingming (Hong Zicheng)",
       "short": "Hong Yingming",
       "work": "Caigentan (Vegetable Roots Discourse), first collection",
@@ -37147,6 +39645,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "francis-de-sales-humiliation",
+      "question": "humiliation",
+      "name": "Francis de Sales",
+      "short": "Francis de Sales",
+      "work": "Introduction to the Devout Life, Part III, chapter 6",
+      "excerpt": "the latter, together with the sore, has the scorn, the disdain, the humiliation. Now, I say, we must not only love the evil, which we may do by the virtue of patience, but we must also cherish the humiliation",
+      "period": "1608",
+      "dateShort": "1608",
+      "dateFull": "1608 (published 1609)",
+      "sortYear": 1608,
+      "sourceLabel": "Thomas Barns translation (1906), Internet Archive",
+      "sourceUrl": "https://archive.org/stream/introductiontode00fran_1/introductiontode00fran_1_djvu.txt",
+      "locator": "Part III, chapter 6 (“That humility makes us love our own humiliation”). The scanned text contains recognition errors.",
+      "place": "Annecy, Savoy (now France)",
+      "lat": 45.9,
+      "lng": 6.12,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Francis was bishop of Geneva, resident at Annecy because Geneva was Calvinist, when he wrote the Introduction to the Devout Life (published 1609) for a lay woman he guided; the place of writing is an association, not a record.",
+      "placeSource": "https://en.wikipedia.org/wiki/Introduction_to_the_Devout_Life",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Loving humiliation",
+          "why": "Francis separates the suffering itself from the scorn that comes with it, as a man with a sore on his face has the shame as well as the pain, and he urges that the humiliation be cherished, not only the pain endured. Humiliation is presented as something to be loved because it trains humility.",
+          "limit": "He admits that humiliation is a real extra burden, the “scorn” and “disdain” laid on the sufferer, and then asks the devout to welcome it; he also says some humiliation should be remedied when charity requires. The English is Thomas Barns's 1906 translation, whose scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -37909,6 +40442,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "george-herbert-humiliation",
+      "question": "humiliation",
+      "name": "George Herbert",
+      "short": "Herbert",
+      "work": "The Temple, “The Sacrifice”",
+      "excerpt": "Shame tears my soul, my bodie many a wound; Sharp nails pierce this, but sharper that confound; Reproches, which are free, while I am bound",
+      "period": "c. 1633",
+      "dateShort": "c. 1633",
+      "dateFull": "c. 1633 (published posthumously)",
+      "sortYear": 1633,
+      "sourceLabel": "Wikisource, The Temple (1633)",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Sacrifice_(Herbert)",
+      "locator": "Stanzas on the mocking and the Passion, the stanza beginning “Shame tears my soul”.",
+      "place": "Bemerton, near Salisbury, England",
+      "lat": 51.08,
+      "lng": -1.84,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Herbert was rector of Bemerton from 1630 until his death in 1633, and The Temple was handed to his friend Nicholas Ferrar shortly before he died; the poem’s composition date and place are not recorded, and the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/George_Herbert",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shame sharper than the nails",
+          "why": "Herbert gives Christ on the cross the line that shame tears the soul while the body is wounded, and that reproaches hurt more than the nails because they are free while he is bound. Shame is set beside physical injury as the worse of the two.",
+          "limit": "The speaker is Christ in a devotional poem with the refrain “Was ever grief like mine?”, so the claim is made inside a poetic meditation on the Passion, not as a general statement about humiliation. The spelling is that of the 1633 edition as given on Wikisource.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "descartes-lasting-self",
       "question": "lasting-self",
       "name": "René Descartes",
@@ -38358,6 +40926,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "jeremy-taylor-humiliation",
+      "question": "humiliation",
+      "name": "Jeremy Taylor",
+      "short": "Taylor",
+      "work": "Holy Living, chapter 2, section 4 (Of Humility)",
+      "excerpt": "be content to want praise, never being troubled when thou art slighted or undervalued; for thou canst not undervalue thyself, and if thou thinkest so meanly as there is reason, no contempt will seem unreasonable",
+      "period": "1650",
+      "dateShort": "1650",
+      "dateFull": "1650",
+      "sortYear": 1650,
+      "sourceLabel": "Christian Classics Ethereal Library (Holy Living, plain-text edition)",
+      "sourceUrl": "https://ccel.org/ccel/t/taylor/holy_living/cache/holy_living.txt",
+      "locator": "Chapter 2, section 4, rule 4, in the paragraph beginning “Love to be concealed, and little esteemed”.",
+      "place": "Golden Grove, Carmarthenshire, Wales",
+      "lat": 51.87,
+      "lng": -4,
+      "anchorType": "Documented writing location",
+      "placeNote": "Taylor wrote Holy Living (1650) while he was living at Golden Grove, the Carbery family seat in Carmarthenshire; the coordinates are approximate for the estate.",
+      "placeSource": "https://en.wikipedia.org/wiki/Jeremy_Taylor",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Contempt and self-estimate",
+          "why": "Taylor advises that a person who already judges himself as low as he truly is cannot be hurt by others' contempt, since it tells him nothing he has not accepted. The sting of being slighted is made to depend on a high opinion of oneself.",
+          "limit": "The advice belongs to a list of rules for acquiring humility in a seventeenth-century devotional manual, and it assumes the self-judgement is that of a sinner before God, not that of a person wrongly despised. The text is a modern online edition of the 1650 work.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "karacaoglan-desire",
       "question": "desire",
       "name": "Karacaoğlan",
@@ -38577,6 +41180,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "thomas-hobbes-humiliation",
+      "question": "humiliation",
+      "name": "Thomas Hobbes",
+      "short": "Hobbes",
+      "work": "Leviathan, ch. 27 (Of Crimes, Excuses, and Extenuations)",
+      "excerpt": "the true cause of such griefe to consist, not in the contumely, (which takes no hold upon men conscious of their own Vertue,) but in the Pusillanimity of him that is offended by it.",
+      "period": "1651",
+      "dateShort": "1651",
+      "dateFull": "1651",
+      "sortYear": 1651,
+      "sourceLabel": "Project Gutenberg edition of the 1651 text",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "locator": "Chapter 27, paragraph beginning “And therefore the offence men take, from contumely”.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Hobbes wrote Leviathan during his exile in Paris in the late 1640s; it was printed in London in 1651. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/2/0/3207/3207-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Contumely and the proud mind",
+          "why": "Hobbes says that insulting words or gestures take no hold on a man who is sure of his own worth, and that the grief of being reproached springs from the smallness of mind of the one who takes offence. The hurt lies in the hearer, not the insult.",
+          "limit": "Hobbes states this as the reasoning behind the old laws that ignored mere contumely; elsewhere in Leviathan he treats contempt as a real cause of quarrel and the law of nature forbids it. The spelling is that of the seventeenth-century text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "thomas-hobbes-inward-or-others",
       "question": "inward-or-others",
       "name": "Thomas Hobbes",
@@ -38722,6 +41360,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "blaise-pascal-humiliation",
+      "question": "humiliation",
+      "name": "Blaise Pascal",
+      "short": "Pascal",
+      "work": "Pensées, section II",
+      "excerpt": "when they discover only the imperfections and vices which we really have, it is plain they do us no wrong, since it is not they who cause them; they rather do us good",
+      "period": "c. 1657–58",
+      "dateShort": "c. 1657–58",
+      "dateFull": "c. 1657–58",
+      "sortYear": 1658,
+      "sourceLabel": "W. F. Trotter translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/8/2/6/18269/18269-0.txt",
+      "locator": "Section II (“The misery of man without God”), in the passage beginning “We do not like others to deceive us”.",
+      "place": "Paris, France",
+      "lat": 48.84,
+      "lng": 2.342,
+      "anchorType": "Documented writing location",
+      "placeNote": "Pascal composed the notes that make up the Pensées in Paris in his last years, from about 1657 until his death in 1662.",
+      "placeSource": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Contempt for real faults",
+          "why": "Pascal argues that when others despise a person for faults he really has, they do him no wrong and in fact help him by ending his ignorance of those faults. Being despised is made a service to the truth about oneself.",
+          "limit": "The argument is limited to contempt for faults that are real; Pascal does not address slander or contempt for what a person is not at fault for. It is a fragment from the Pensées, which he left unfinished, and the English is W. F. Trotter's translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -39387,6 +42060,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "francois-de-la-rochefoucauld-humiliation",
+      "question": "humiliation",
+      "name": "François de La Rochefoucauld",
+      "short": "La Rochefoucauld",
+      "work": "Reflections; or Sentences and Moral Maxims, maxim 446",
+      "excerpt": "What makes the grief of shame and jealousy so acute is that vanity cannot aid us in enduring them.",
+      "period": "1665–1678",
+      "dateShort": "1665–78",
+      "dateFull": "maxims published between 1665 and 1678",
+      "sortYear": 1670,
+      "sourceLabel": "J. W. Willis Bund and J. Hain Friswell translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/9/1/0/9105/9105.txt",
+      "locator": "Maxim 446.",
+      "place": "Paris, France",
+      "lat": 48.86,
+      "lng": 2.34,
+      "anchorType": "Approximate writing location",
+      "placeNote": "La Rochefoucauld composed the Maxims in the Paris salons of the 1660s and 1670s. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/9/1/0/9105/9105.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The grief of shame",
+          "why": "La Rochefoucauld says shame and jealousy hurt more than other griefs because vanity, which supports a person through most troubles, is itself what they injure. Shame is treated as a pain that strikes at self-regard.",
+          "limit": "A one-sentence maxim from a book that explains most virtues as disguised self-love; it assumes vanity is the source of the pain rather than showing it. The English is the Bund and Friswell translation of 1871.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "guru-tegh-bahadur-desire",
       "question": "desire",
       "name": "Guru Tegh Bahadur",
@@ -39806,6 +42514,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "baruch-spinoza-humiliation",
+      "question": "humiliation",
+      "name": "Baruch Spinoza",
+      "short": "Spinoza",
+      "work": "Ethics, part III, definitions of the emotions, XXXI",
+      "excerpt": "Shame is pain accompanied by the idea of some action of our own, which we believe to be blamed by others.",
+      "period": "1677",
+      "dateShort": "1677",
+      "dateFull": "1677 (posthumous)",
+      "sortYear": 1677,
+      "sourceLabel": "R. H. M. Elwes translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "locator": "Ethics, part III, Definitions of the Emotions, definition XXXI.",
+      "place": "The Hague, Netherlands",
+      "lat": 52.08,
+      "lng": 4.31,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Spinoza lived in The Hague from 1670 and finished the Ethics there before his death in 1677. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/8/0/3800/3800.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Shame as imagined blame",
+          "why": "Spinoza defines shame as pain joined to the belief that others blame something one has done. The hurt depends on what a person believes about other people’s judgement of him, not on the act or insult alone. A second, independent reading moved this placement from “only what you make it” to “unscored”: The words define shame as pain at an action of one’s own believed to be blamed by others; they do not say whether that pain is an injury, a matter of judgement, or a benefit.",
+          "limit": "A definition of shame from a geometrical treatise, not of humiliation inflicted by others, and Spinoza elsewhere says shame is good in so far as it shows a desire to live honourably. The English is R. H. M. Elwes’s 1883 translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -40352,6 +43095,42 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sor-juana-ines-de-la-cruz-humiliation",
+      "question": "humiliation",
+      "name": "Sor Juana Inés de la Cruz",
+      "short": "Sor Juana",
+      "work": "Respuesta a Sor Filotea de la Cruz",
+      "excerpt": "porque en medio de tanta honra no se desvaneciese el vencedor, y porque el lastre de estas afrentas hiciese contrapeso a las velas de tantos aplausos, para que no peligrase la nave del juicio",
+      "translation": "so that, in the midst of so much honour, the conqueror might not grow vain, and so that the ballast of these insults might balance the sails of so much applause, lest the ship of judgment be endangered.",
+      "period": "1691",
+      "dateShort": "1691",
+      "dateFull": "1691",
+      "sortYear": 1691,
+      "sourceLabel": "Respuesta a Sor Filotea de la Cruz (1691), Spanish Wikisource",
+      "sourceUrl": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "locator": "The passage on the Roman triumph, in which soldiers cry insults at the victor, in the second half of the letter.",
+      "place": "Mexico City, New Spain (now Mexico)",
+      "lat": 19.43,
+      "lng": -99.13,
+      "anchorType": "Documented writing location",
+      "placeNote": "Sor Juana wrote the Respuesta in March 1691 in her convent of San Jerónimo in Mexico City. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://es.wikisource.org/wiki/Respuesta_a_sor_Filotea_de_la_Cruz",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Insults as ballast against vanity",
+          "why": "Sor Juana notes that Roman soldiers shouted insults at a triumphing general so that the ballast of affronts would balance the sails of applause. Humiliation is presented as a useful counterweight to pride, which places the passage with the view that being brought low teaches.",
+          "limit": "Sor Juana is describing an ancient custom to defend her own position and suffering, not stating her view of insults in general. The English is the atlas’s own unreviewed translation of a seventeenth-century Spanish text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -41412,6 +44191,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "david-hume-humiliation",
+      "question": "humiliation",
+      "name": "David Hume",
+      "short": "Hume",
+      "work": "A Treatise of Human Nature, book II, part I, section XI (Of the love of fame)",
+      "excerpt": "In like measure we are principally mortifyed with the contempt of persons, upon whose judgment we set some value",
+      "period": "1739",
+      "dateShort": "1739",
+      "dateFull": "1739",
+      "sortYear": 1739,
+      "sourceLabel": "Project Gutenberg edition of the 1739 text",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/7/0/4705/4705-0.txt",
+      "locator": "Paragraph beginning “Among these phaenomena we may esteem it a very favourable one”.",
+      "place": "La Flèche, Anjou, France",
+      "lat": 47.7,
+      "lng": -0.07,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hume wrote most of the Treatise in France, chiefly at La Flèche, between 1734 and 1737; it was published in London in 1739. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/7/0/4705/4705-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Contempt weighs by the judge",
+          "why": "Hume says that contempt mortifies a person chiefly when it comes from people whose judgement that person respects, and that the opinions of the rest of mankind matter little. How far contempt hurts depends on the weight the sufferer gives its source. A second, independent reading moved this placement from “only what you make it” to “unscored”: The words say that contempt mortifies most when it comes from those whose judgement is valued; they can be read as naming an injury or as making it depend on one’s own estimate.",
+          "limit": "A psychological observation on why fame matters, offered as evidence about sympathy, not a moral claim about how humiliation should be met. The spelling and punctuation follow the eighteenth-century text.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "david-hume-inward-or-others",
       "question": "inward-or-others",
       "name": "David Hume",
@@ -41626,6 +44440,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "jonathan-edwards-humiliation",
+      "question": "humiliation",
+      "name": "Jonathan Edwards",
+      "short": "Edwards",
+      "work": "A Treatise Concerning Religious Affections, Part III",
+      "excerpt": "the essence of evangelical humiliation consists in such humility, as becomes a creature, in itself exceeding sinful, under a dispensation of grace; consisting in a mean esteem of himself, as in himself nothing, and altogether contemptible and odious",
+      "period": "1746",
+      "dateShort": "1746",
+      "dateFull": "1746",
+      "sortYear": 1746,
+      "sourceLabel": "Early nineteenth-century edition, Google Books scan on the Internet Archive",
+      "sourceUrl": "https://archive.org/stream/atreatiseconcer00edwagoog/atreatiseconcer00edwagoog_djvu.txt",
+      "locator": "Part III, sixth sign (the sign of gracious affections that is humility), in the paragraph beginning “Legal humiliation”. The scanned text contains recognition errors.",
+      "place": "Northampton, Massachusetts, United States",
+      "lat": 42.32,
+      "lng": -72.64,
+      "anchorType": "Documented writing location",
+      "placeNote": "Edwards was pastor at Northampton, Massachusetts, when he preached and published the Religious Affections (1746).",
+      "placeSource": "https://en.wikipedia.org/wiki/A_Treatise_Concerning_Religious_Affections",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Evangelical humiliation",
+          "why": "Edwards defines true humiliation as a lowly estimate of oneself, accepted under grace, in which the person sees himself as nothing and contemptible. Being brought low before God is described as the heart of genuine religion, not as an injury.",
+          "limit": "Edwards distinguishes this inward, willing humiliation from “legal humiliation”, where a person is forced down by fear, and he is speaking of self-judgement before God, not of being shamed by other people. The text is a scanned early edition and contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42209,6 +45058,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "adam-smith-humiliation",
+      "question": "humiliation",
+      "name": "Adam Smith",
+      "short": "Smith",
+      "work": "The Theory of Moral Sentiments, part I, section III, ch. 2",
+      "excerpt": "to feel that we are taken no notice of, necessarily damps the most agreeable hope, and disappoints the most ardent desire, of human nature.",
+      "period": "1759",
+      "dateShort": "1759",
+      "dateFull": "1759",
+      "sortYear": 1759,
+      "sourceLabel": "Internet Archive scan of an early edition",
+      "sourceUrl": "https://archive.org/stream/theorymoralsent00stewgoog/theorymoralsent00stewgoog_djvu.txt",
+      "locator": "Part I, section III, chapter 2, the paragraph on the poor man’s shame. The scanned text contains recognition errors.",
+      "place": "Glasgow, Scotland",
+      "lat": 55.87,
+      "lng": -4.29,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Smith held the chair of moral philosophy at the University of Glasgow when the first edition appeared in 1759. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/theorymoralsent00stewgoog/theorymoralsent00stewgoog_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Being overlooked",
+          "why": "Smith says that to feel oneself unnoticed defeats the strongest desire of human nature, the wish to be regarded. Being overlooked or looked down on is treated as a real injury to the person.",
+          "limit": "The scan is a nineteenth-century edition with line-break hyphenation; the sentences just before this one say being overlooked and being disapproved of are different things. Smith describes how the poor are treated rather than saying it is just.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -42834,6 +45718,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-21"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau-humiliation",
+      "question": "humiliation",
+      "name": "Jean-Jacques Rousseau",
+      "short": "Rousseau",
+      "work": "Confessions, book II",
+      "excerpt": "I did not fear punishment, but I dreaded shame: I dreaded it more than death, more than the crime, more than all the world.",
+      "period": "written c. 1765–1770; published 1782",
+      "dateShort": "1765–70",
+      "dateFull": "written about 1765 to 1770; published 1782",
+      "sortYear": 1767,
+      "sourceLabel": "Project Gutenberg edition of the early English translation",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/9/1/3913/3913-0.txt",
+      "locator": "Book II, the account of the stolen ribbon at the house of Madame de Vercellis.",
+      "place": "Wootton Hall, Staffordshire, England",
+      "lat": 53.03,
+      "lng": -1.84,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Rousseau began the Confessions in 1764 to 1765 and wrote much of the first part while sheltered at Wootton Hall in 1766 and 1767; the exact place and date of this book are not stated at the link. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/9/1/3913/3913-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Dread of shame",
+          "why": "Rousseau says that, accused before the household of stealing a ribbon, he feared public shame more than punishment, death or guilt itself, and blamed an innocent servant to escape it. Shame is described as a force stronger than conscience.",
+          "limit": "A self-justifying confession written decades after the event, by an author who shaped his own account; the shame described is fear of exposure, not an insult received. The translation is an early English version.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -44073,6 +46992,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "olaudah-equiano-humiliation",
+      "question": "humiliation",
+      "name": "Olaudah Equiano",
+      "short": "Equiano",
+      "work": "The Interesting Narrative of the Life of Olaudah Equiano, chapter X",
+      "excerpt": "if I should be compelled to submit to this degrading necessity, which every black freeman is under, of advertising himself like a slave, when he leaves an island, and which I thought a gross imposition upon any freeman",
+      "period": "1789",
+      "dateShort": "1789",
+      "dateFull": "1789",
+      "sortYear": 1789,
+      "sourceLabel": "Project Gutenberg edition of The Interesting Narrative (1789), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "locator": "Chapter X, the paragraph on the delay at Montserrat beginning with the captain’s demand that he be advertised before sailing.",
+      "place": "London, England",
+      "lat": 51.51,
+      "lng": -0.13,
+      "anchorType": "Documented publication location",
+      "placeNote": "The Narrative was published in London in 1789, and the dedication to Parliament is dated at Union Street, Marylebone. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/5/3/9/15399/15399-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Degrading rules for free Black men",
+          "why": "Equiano calls the rule that a free Black man must advertise himself like a slave on leaving an island a degrading necessity and a gross imposition. Humiliation here is a wrong done to a free man’s standing by law and custom, which places the passage with the wound.",
+          "limit": "An autobiography published to support abolition, with a free man’s grievance over a specific colonial regulation. The passage does not generalise about humiliation or about how it should be borne.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "olaudah-equiano-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Olaudah Equiano",
@@ -44918,6 +47872,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "immanuel-kant-humiliation",
+      "question": "humiliation",
+      "name": "Immanuel Kant",
+      "short": "Kant",
+      "work": "The Metaphysic of Ethics (Doctrine of Virtue), section 12",
+      "excerpt": "Become not the slaves of other men. Suffer not thy rights to be trampled under foot by others with impunity.",
+      "period": "1797",
+      "dateShort": "1797",
+      "dateFull": "1797",
+      "sortYear": 1797,
+      "sourceLabel": "J. W. Semple translation, Internet Archive",
+      "sourceUrl": "https://archive.org/stream/metaphysicofeth00kant/metaphysicofeth00kant_djvu.txt",
+      "locator": "Doctrine of Virtue, section 12, paragraph beginning “This duty, in respect of the dignity of our humanity”. The scanned text contains recognition errors.",
+      "place": "Königsberg, Prussia (now Kaliningrad, Russia)",
+      "lat": 54.71,
+      "lng": 20.51,
+      "anchorType": "Documented writing location",
+      "placeNote": "Kant lived and taught in Königsberg and wrote The Metaphysics of Morals there in 1796 and 1797. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/metaphysicofeth00kant/metaphysicofeth00kant_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Dignity and being trampled on",
+          "why": "Kant makes it a duty to oneself not to become another’s slave or to let one’s rights be trampled without answer, because that would violate the dignity of humanity in one’s own person. Being degraded is treated as a real wrong.",
+          "limit": "A precept on duties to oneself, not a definition; Kant also says that a man who first makes himself a worm cannot complain when trampled on, which puts part of the responsibility on the one degraded. The English is J. W. Semple’s 1836 translation, from a scan with recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "code-of-handsome-lake-desire",
       "question": "desire",
       "name": "The Code of Handsome Lake (Gaiwiio)",
@@ -45453,6 +48442,41 @@ window.PILOT_EVIDENCE={
           "facet": "Money and contentment",
           "why": "Marianne says money brings happiness only where nothing else does and, past a competence, brings none. Her sister Elinor replies that wealth has much to do with it, and the two end near a shared view that some means are needed.",
           "limit": "The words are spoken by a young character in a novel, who is gently teased by her sister in the next lines, and they are not Austen's own statement. The exchange concerns money only, among many goods.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "jane-austen-humiliation",
+      "question": "humiliation",
+      "name": "Jane Austen",
+      "short": "Austen",
+      "work": "Pride and Prejudice, ch. 36",
+      "excerpt": "How humiliating is this discovery! Yet, how just a humiliation! Had I been in love, I could not have been more wretchedly blind. But vanity, not love, has been my folly.",
+      "period": "1813 (written c. 1796–1812)",
+      "dateShort": "1813",
+      "dateFull": "1813",
+      "sortYear": 1813,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/3/4/1342/1342-0.txt",
+      "locator": "Chapter 36 (volume II, chapter 13), paragraph beginning “How despicably have I acted!”.",
+      "place": "Chawton, Hampshire, England",
+      "lat": 51.14,
+      "lng": -0.99,
+      "anchorType": "Documented writing location",
+      "placeNote": "Austen revised Pride and Prejudice for publication at Chawton Cottage, where she lived from 1809. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/3/4/1342/1342-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "A just humiliation",
+          "why": "Elizabeth Bennet calls her discovery of her own prejudice both humiliating and just, and the shock shows her that vanity, not judgement, had guided her. Being brought low is the means of self-knowledge here.",
+          "limit": "A fictional character reflecting on her own error in a novel; the humiliation is private and self-inflicted rather than done by others in public. The novel’s narrator is ironic about Elizabeth’s views.",
           "second": "agreed"
         }
       },
@@ -46560,6 +49584,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "david-walker-humiliation",
+      "question": "humiliation",
+      "name": "David Walker",
+      "short": "Walker",
+      "work": "Appeal to the Coloured Citizens of the World, Article I",
+      "excerpt": "Is it not heaping the most gross insult upon our miseries, because they have got us under their feet and we cannot help ourselves?",
+      "period": "1829",
+      "dateShort": "1829",
+      "dateFull": "1829",
+      "sortYear": 1829,
+      "sourceLabel": "Project Gutenberg edition of Appeal to the Coloured Citizens of the World (1829), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/6/5/1/16516/16516.txt",
+      "locator": "Article I, “Our Wretchedness in Consequence of Slavery”, the passage on the charge that Black people descend from monkeys, beginning “Can the whites deny this charge?”.",
+      "place": "Boston, Massachusetts, United States",
+      "lat": 42.35,
+      "lng": -71.09,
+      "anchorType": "Documented writing location",
+      "placeNote": "Walker lived and ran a used-clothing shop in Boston, where he wrote and published the Appeal in 1829. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/6/5/1/16516/16516.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Insult added to bondage",
+          "why": "Walker calls it a gross insult heaped upon the miseries of the enslaved that whites have them under their feet and mock them when they cannot help themselves. Insult is treated as a real wrong that deepens suffering, which places the passage with the wound.",
+          "limit": "A fiery pamphlet written to rouse Black readers and shame white Americans, with heightened rhetoric. The passage accuses rather than analyses, and the sentence is a rhetorical question.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "tahitian-tradition-ellis-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Tahitian and Leeward Islands tradition (recorded by William Ellis)",
@@ -46667,6 +49726,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mary-prince-humiliation",
+      "question": "humiliation",
+      "name": "Mary Prince",
+      "short": "Prince",
+      "work": "The History of Mary Prince, a West Indian Slave",
+      "excerpt": "He had an ugly fashion of stripping himself quite naked, and ordering me then to wash him in a tub of water. This was worse to me than all the licks.",
+      "period": "1831",
+      "dateShort": "1831",
+      "dateFull": "1831",
+      "sortYear": 1831,
+      "sourceLabel": "Project Gutenberg edition of The History of Mary Prince (1831), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "locator": "The account of her time with Captain I—, in Bermuda and Turk’s Island, the paragraph beginning “He wanted to treat me the same in Bermuda”.",
+      "place": "London, England",
+      "lat": 51.53,
+      "lng": -0.11,
+      "anchorType": "Documented publication location",
+      "placeNote": "Mary Prince dictated her story in London in 1830–31, and the book was published there in 1831. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/7/8/5/17851/17851.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Degradation worse than beating",
+          "why": "Mary Prince says that being made to wash her naked owner was worse to her than all the beatings. The passage treats humiliation as a real injury to a person, in some ways heavier than physical pain, which places it with the wound.",
+          "limit": "A narrative told by Prince to an amanuensis and edited by Thomas Pringle for the Anti-Slavery Society, so the wording is mediated. The passage reports her experience and does not define humiliation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "mary-prince-suffering",
       "question": "suffering",
       "name": "Mary Prince",
@@ -46769,6 +49863,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "black-hawk-humiliation",
+      "question": "humiliation",
+      "name": "Black Hawk (Ma-ka-tai-me-she-kia-kiak)",
+      "short": "Black Hawk",
+      "work": "Life of Ma-ka-tai-me-she-kia-kiak, or Black Hawk",
+      "excerpt": "I felt the humiliation of my situation; a little while before I had been leader of my braves, now I was a prisoner of war, but had surrendered myself.",
+      "period": "1833",
+      "dateShort": "1833",
+      "dateFull": "1833",
+      "sortYear": 1833,
+      "sourceLabel": "Project Gutenberg edition of Autobiography of Ma-ka-tai-me-she-kia-kiak, or Black Hawk (1833), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/7/0/9/7097/7097.txt",
+      "locator": "The account of the surrender and the journey to Jefferson Barracks, the paragraph beginning “On our arrival at Jefferson Barracks”.",
+      "place": "Rock Island, Illinois, United States",
+      "lat": 41.51,
+      "lng": -90.58,
+      "anchorType": "Documented dictation location",
+      "placeNote": "The autobiography was dictated in 1833 to the interpreter Antoine LeClaire at Rock Island, Illinois, and edited by J. B. Patterson. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/7/0/9/7097/7097.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The humiliation of captivity",
+          "why": "Black Hawk names the humiliation he felt on falling from leader of his warriors to prisoner at Jefferson Barracks. Humiliation here is the felt loss of standing that accompanies defeat and captivity, which places the passage with the wound.",
+          "limit": "Dictated through an interpreter and edited by a white newspaperman, so the wording is not purely Black Hawk’s own. It describes his own experience in captivity and does not define humiliation generally.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -47568,6 +50697,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nikolai-gogol-humiliation",
+      "question": "humiliation",
+      "name": "Nikolai Gogol",
+      "short": "Gogol",
+      "work": "The Overcoat (The Mantle)",
+      "excerpt": "he also heard others: \"Am I not your brother?\" On such occasions the young man would hide his face in his hands, and think how little humane feeling after all was to be found in men's hearts",
+      "period": "1842",
+      "dateShort": "1842",
+      "dateFull": "1842",
+      "sortYear": 1842,
+      "sourceLabel": "Claud Field translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/6/2/3/36238/36238.txt",
+      "locator": "Early in the story, the paragraph describing the young clerk who sees the figure of the poor councillor.",
+      "place": "Saint Petersburg, Russia",
+      "lat": 59.93,
+      "lng": 30.32,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The story is set in Saint Petersburg and was published there in 1842; Gogol wrote parts of it abroad, so the writing place is uncertain. The place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/6/2/3/36238/36238.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Cruelty to the humble",
+          "why": "A young clerk who has mocked the copyist Akaki Akakievitch hears his plea, “Am I not your brother?”, and is ashamed at how much coarseness there is in men’s hearts. The passage shows the jeering of a helpless man as a cruelty that cuts against shared humanity.",
+          "limit": "A fictional narrator in a short story; the words are the clerk’s later memory and the victim is silent. The English is Claud Field’s early twentieth-century translation, titled “The Mantle”.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "charles-dickens-self-or-others-first",
       "question": "self-or-others-first",
       "name": "Charles Dickens",
@@ -47635,6 +50799,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "karl-marx-humiliation",
+      "question": "humiliation",
+      "name": "Karl Marx",
+      "short": "Marx",
+      "work": "Letter to Arnold Ruge, March 1843",
+      "excerpt": "Shame is a kind of anger turned in on itself. And if a whole nation were to feel ashamed it would be like a lion recoiling in order to spring.",
+      "period": "March 1843",
+      "dateShort": "1843",
+      "dateFull": "March 1843",
+      "sortYear": 1843,
+      "sourceLabel": "Marxists Internet Archive, English translation",
+      "sourceUrl": "https://www.marxists.org/archive/marx/works/1843/letters/43_03-alt.htm",
+      "locator": "Second paragraph of the letter, beginning “This, too, is a revelation”.",
+      "place": "Netherlands (on a barge, travelling to Dresden)",
+      "lat": 51.83,
+      "lng": 5.25,
+      "anchorType": "Approximate travel location",
+      "placeNote": "The page says the letter was written “from a barge on the way to D.” in March 1843 and the text says Marx was travelling in Holland; the exact spot is not known, so the pin is a point on the Waal in the Netherlands.",
+      "placeSource": "https://www.marxists.org/archive/marx/works/1843/letters/43_03-alt.htm",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "unscored",
+          "facet": "Shame as a revolutionary force",
+          "why": "Marx says that shame is anger directed inward, and that a nation made to feel ashamed of its state would gather itself like a lion before a spring. Being brought low is treated as the beginning of change. A second, independent reading moved this placement from “a teacher” to “unscored”: The words call shame anger turned inward and liken an ashamed nation to a lion drawing back to spring; they do not say what being humiliated is.",
+          "limit": "The shame meant is national shame at Prussian despotism, not a private insult, and Marx admits it had not yet appeared in Germany. The passage is a hope in a letter, later published in the Deutsch-Französische Jahrbücher, and the English is the marxists.org translation.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -48497,6 +51696,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charlotte-bronte-humiliation",
+      "question": "humiliation",
+      "name": "Charlotte Brontë",
+      "short": "Brontë",
+      "work": "Jane Eyre, ch. 7",
+      "excerpt": "I, who had said I could not bear the shame of standing on my natural feet in the middle of the room, was now exposed to general view on a pedestal of infamy.",
+      "period": "1847",
+      "dateShort": "1847",
+      "dateFull": "1847",
+      "sortYear": 1847,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/6/1260/1260-0.txt",
+      "locator": "Chapter 7, paragraph beginning “There was I, then, mounted aloft”.",
+      "place": "Haworth, West Yorkshire, England",
+      "lat": 53.83,
+      "lng": -1.96,
+      "anchorType": "Documented writing location",
+      "placeNote": "Brontë wrote Jane Eyre in 1846 and 1847, partly at Haworth Parsonage, where her family lived. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/6/1260/1260-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The pedestal of infamy",
+          "why": "Jane, forced to stand on a stool before the whole school as a liar, says she could not bear even the shame of standing on the floor in public, and now stood on a pedestal of infamy. Public exposure is shown as a punishment that hurts in itself.",
+          "limit": "A fictional narrator recalling her childhood; in the next paragraphs a look from Helen Burns restores her, and Helen elsewhere says shame must simply be borne. The passage describes the experience rather than defining humiliation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "charlotte-bronte-relationships",
       "question": "relationships",
       "name": "Charlotte Brontë",
@@ -48705,6 +51939,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "elizabeth-cady-stanton-humiliation",
+      "question": "humiliation",
+      "name": "Elizabeth Cady Stanton",
+      "short": "Stanton",
+      "work": "Declaration of Sentiments (Seneca Falls Convention)",
+      "excerpt": "He has endeavored, in every way that he could to destroy her confidence in her own powers, to lessen her self-respect, and to make her willing to lead a dependent and abject life.",
+      "period": "1848",
+      "dateShort": "1848",
+      "dateFull": "1848",
+      "sortYear": 1848,
+      "sourceLabel": "Declaration of Sentiments (1848), English Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/Declaration_of_Sentiments",
+      "locator": "The list of grievances, the last charge before “Now, in view of this entire disfranchisement”.",
+      "place": "Seneca Falls, New York, United States",
+      "lat": 42.91,
+      "lng": -76.8,
+      "anchorType": "Documented delivery location",
+      "placeNote": "The Declaration was read at the Seneca Falls Convention in July 1848 in the Wesleyan Chapel. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/Declaration_of_Sentiments",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Lowering a woman’s self-respect",
+          "why": "The Declaration charges men with working to destroy a woman’s confidence, lessen her self-respect and make her willing to live an abject life. Degradation here is a deliberate injury to dignity, which places the passage with the wound.",
+          "limit": "A collective political document drafted mainly by Stanton on the model of the Declaration of Independence, so the grievance list is rhetorical and shared with other signers. It does not define humiliation or counsel a response.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -49027,6 +52296,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nathaniel-hawthorne-humiliation",
+      "question": "humiliation",
+      "name": "Nathaniel Hawthorne",
+      "short": "Hawthorne",
+      "work": "The Scarlet Letter, ch. 2 (The Market-Place)",
+      "excerpt": "There can be no outrage, methinks, against our common nature,—whatever be the delinquencies of the individual,—no outrage more flagrant than to forbid the culprit to hide his face for shame",
+      "period": "1850",
+      "dateShort": "1850",
+      "dateFull": "1850",
+      "sortYear": 1850,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/5/3/4/25344/25344-0.txt",
+      "locator": "Chapter 2, paragraph describing the pillory platform in the market-place.",
+      "place": "Salem, Massachusetts, USA",
+      "lat": 42.52,
+      "lng": -70.9,
+      "anchorType": "Documented writing location",
+      "placeNote": "Hawthorne wrote most of the novel in Salem in 1849 and early 1850, before moving to Lenox; the setting of the story is Boston. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/5/3/4/25344/25344-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The pillory and the face",
+          "why": "Hawthorne’s narrator calls it an outrage against common human nature to forbid a convicted person to hide the face for shame. Public exposure is treated as a wrong done even to the guilty.",
+          "limit": "A narrator’s comment on a fictional punishment in a Puritan setting; the sentence is about one form of exposure, not about humiliation in general, and Hester’s scaffold scenes later show other effects. The text is the 1850 novel.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "alvares-de-azevedo-death",
       "question": "death",
       "name": "Álvares de Azevedo",
@@ -49095,6 +52399,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "arthur-schopenhauer-humiliation",
+      "question": "humiliation",
+      "name": "Arthur Schopenhauer",
+      "short": "Schopenhauer",
+      "work": "Further Psychological Observations",
+      "excerpt": "there is no surer sign of a great mind than that it refuses to notice annoying and insulting expressions, but straightway ascribes them, as it ascribes countless other mistakes, to the defective knowledge of the speaker",
+      "period": "1851",
+      "dateShort": "1851",
+      "dateFull": "1851",
+      "sortYear": 1851,
+      "sourceLabel": "T. Bailey Saunders translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/7/3/10732/10732-0.txt",
+      "locator": "Essay “Further Psychological Observations”, paragraph beginning “In giving way to emotion of this violent kind”.",
+      "place": "Frankfurt am Main, Germany",
+      "lat": 50.11,
+      "lng": 8.68,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Schopenhauer lived in Frankfurt from 1833 until his death and wrote Parerga and Paralipomena (1851) there. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/7/3/10732/10732-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Refusing to notice insults",
+          "why": "Schopenhauer holds that a great mind does not take insults in at all: it treats them as errors of the speaker. On this view an insult wounds only a person who grants the speaker’s judgement weight.",
+          "limit": "The sentence is advice on greatness of mind, not a general account of what an insult is. In the same essay Schopenhauer treats honour and sensitivity to insult as trained, conventional feelings, which fits this position. The English is T. Bailey Saunders’s late nineteenth-century version.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -49946,6 +53285,41 @@ window.PILOT_EVIDENCE={
           "facet": "A benefit given is not lost",
           "why": "The proverb says that a benefit given to another is not lost to the giver. The giver’s own good is tied to the good of the one he helps, so that neither comes first, which places it as both.",
           "limit": "A single saying, which may be a counsel of prudent reciprocity as much as of generosity. The saying reaches readers through the missionary S. W. Koelle’s 1854 collection and then an English compiler, and the scanned text contains recognition errors.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "frederick-douglass-humiliation",
+      "question": "humiliation",
+      "name": "Frederick Douglass",
+      "short": "Douglass",
+      "work": "My Bondage and My Freedom, chapter XI",
+      "excerpt": "the intensified degradation of the spectacle. What an assemblage! Men and women, young and old, married and single; moral and intellectual beings, in open contempt of their humanity, level at a blow with horses, sheep, horned cattle and swine",
+      "period": "1855",
+      "dateShort": "1855",
+      "dateFull": "1855",
+      "sortYear": 1855,
+      "sourceLabel": "Project Gutenberg edition of My Bondage and My Freedom (1855), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/0/202/202-0.txt",
+      "locator": "Chapter on the division of the property after Captain Anthony’s death, the paragraph beginning “Then, too, there was the intensified degradation of the spectacle”.",
+      "place": "Rochester, New York, United States",
+      "lat": 43.15,
+      "lng": -77.62,
+      "anchorType": "Documented writing location",
+      "placeNote": "Douglass wrote and published the book in 1855 while living and editing his newspaper in Rochester. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/0/202/202-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The degradation of the slave auction",
+          "why": "Douglass calls the valuation of slaves beside livestock a degradation done in open contempt of their humanity. Humiliation here is an injury inflicted on persons by treating them as property, so the passage sits with the wound.",
+          "limit": "A retrospective autobiography written for an abolitionist audience, describing a public valuation he witnessed as a boy. It speaks of the degradation imposed on the enslaved and does not say how the person degraded should answer it.",
           "second": "agreed"
         }
       },
@@ -51257,6 +54631,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "charles-dickens-humiliation",
+      "question": "humiliation",
+      "name": "Charles Dickens",
+      "short": "Dickens",
+      "work": "Great Expectations, ch. 8",
+      "excerpt": "gave me the bread and meat without looking at me, as insolently as if I were a dog in disgrace. I was so humiliated, hurt, spurned, offended, angry, sorry,—I cannot hit upon the right name for the smart",
+      "period": "1860–1861",
+      "dateShort": "1861",
+      "dateFull": "serialised 1860 to 1861",
+      "sortYear": 1861,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/0/1400/1400-0.txt",
+      "locator": "Chapter 8, paragraph beginning “She came back, with some bread and meat”.",
+      "place": "Gad’s Hill Place, Kent, England",
+      "lat": 51.41,
+      "lng": 0.5,
+      "anchorType": "Documented writing location",
+      "placeNote": "Dickens wrote the novel for his weekly magazine All the Year Round while living at Gad’s Hill Place near Rochester. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/0/1400/1400-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The smart of being spurned",
+          "why": "Pip, handed food by Estella as if he were a dog in disgrace, lists humiliated, hurt, spurned, offended, angry and sorry, and says he cannot name the smart. Humiliation is rendered as a stinging mix of hurt and anger.",
+          "limit": "A fictional narrator recalling a childhood scene as an adult; the account is his own and the girl’s contempt is deliberate. The passage names the feelings rather than defining humiliation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "emily-dickinson-desire",
       "question": "desire",
       "name": "Emily Dickinson",
@@ -51354,6 +54763,41 @@ window.PILOT_EVIDENCE={
           "why": "Jacobs sets her master’s power and the law, which she cannot choose to escape, against her own determined will, and says that each has strength. She holds that real choice remains inside conditions imposed on her.",
           "limit": "Jacobs writes as the narrator “Linda Brent” of her own earlier decision, under a pseudonym, and she recounts the cost of that will elsewhere in the book, including the years in hiding. The passage speaks of the strength of resolve, not of metaphysical freedom.",
           "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "harriet-jacobs-humiliation",
+      "question": "humiliation",
+      "name": "Harriet Jacobs",
+      "short": "Jacobs",
+      "work": "Incidents in the Life of a Slave Girl, chapter V (“The Trials of Girlhood”)",
+      "excerpt": "I know that some are too much brutalized by slavery to feel the humiliation of their position; but many slaves feel it most acutely, and shrink from the memory of it.",
+      "period": "1861",
+      "dateShort": "1861",
+      "dateFull": "1861",
+      "sortYear": 1861,
+      "sourceLabel": "Project Gutenberg edition of Incidents in the Life of a Slave Girl (1861), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/1/0/3/11030/11030-0.txt",
+      "locator": "Chapter V, “The Trials of Girlhood”, the paragraph beginning “If God has bestowed beauty upon her”.",
+      "place": "Cornwall-on-Hudson, New York, United States",
+      "lat": 41.43,
+      "lng": -74.04,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Jacobs wrote the book in the 1850s while living as a nanny in the household of N. P. Willis near Cornwall-on-Hudson. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/1/0/3/11030/11030-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Humiliation of the enslaved woman",
+          "why": "Jacobs says that slavery brings a woman into a humiliating position that many of the enslaved feel acutely and cannot bear to recall. She treats humiliation as a real injury, whether or not the victim is brutalized enough not to feel it, which places the passage with the wound.",
+          "limit": "Written for a Northern, mostly white and female audience, with pseudonyms for people and places. It speaks of humiliation in the setting of sexual coercion and does not discuss how an insult might be answered inwardly.",
+          "second": "agreed"
         }
       },
       "check": {
@@ -52053,6 +55497,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "fyodor-dostoevsky-humiliation",
+      "question": "humiliation",
+      "name": "Fyodor Dostoevsky",
+      "short": "Dostoevsky",
+      "work": "Notes from Underground, part II, ch. 1",
+      "excerpt": "I could have forgiven blows, but I could not forgive his having moved me without noticing me.",
+      "period": "1864",
+      "dateShort": "1864",
+      "dateFull": "1864",
+      "sortYear": 1864,
+      "sourceLabel": "Constance Garnett translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/6/0/600/600-0.txt",
+      "locator": "Part II, chapter 1, paragraph beginning “I was standing by the billiard-table”.",
+      "place": "Saint Petersburg, Russia",
+      "lat": 59.93,
+      "lng": 30.32,
+      "anchorType": "Setting named in the text",
+      "placeNote": "Dostoevsky wrote and published the Notes in 1864, and the story is set in Saint Petersburg. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/6/0/600/600-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Being treated as nothing",
+          "why": "The underground man says the officer’s offence was being moved aside as if he were not there, and that this was harder to forgive than a beating. The injury lies in being denied recognition as a person.",
+          "limit": "A fictional narrator who is bitter, vain and self-dramatising by his own account; his reaction may be exaggerated. Constance Garnett’s translation is from 1918.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -53351,6 +56830,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "john-stuart-mill-humiliation",
+      "question": "humiliation",
+      "name": "John Stuart Mill",
+      "short": "Mill",
+      "work": "The Subjection of Women, ch. 1",
+      "excerpt": "The yoke is naturally and necessarily humiliating to all persons, except the one who is on the throne, together with, at most, the one who expects to succeed to it.",
+      "period": "1869",
+      "dateShort": "1869",
+      "dateFull": "1869",
+      "sortYear": 1869,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/7/0/8/27083/27083-0.txt",
+      "locator": "Chapter 1, paragraph beginning “So extreme an instance makes it almost superfluous to refer to any other”, on absolute monarchy.",
+      "place": "Avignon, France",
+      "lat": 43.95,
+      "lng": 4.81,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Mill drafted the essay with Harriet Taylor in 1860 and 1861 and revised it in 1869 at Avignon, where he lived for much of the year; the linked page does not state the place, so it needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/7/0/8/27083/27083-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "The yoke of subjection",
+          "why": "Mill says that living under another’s arbitrary power is humiliating to everyone but the ruler and his heir. Subjection itself, apart from any cruelty, is treated as a real lowering of the people subject to it.",
+          "limit": "The sentence is about despotic government, used as a contrast before Mill turns to the power of men over women, which he says is more lasting and less recognised. The English is Mill’s own 1869 text.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -55853,6 +59367,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "friedrich-nietzsche-humiliation",
+      "question": "humiliation",
+      "name": "Friedrich Nietzsche",
+      "short": "Nietzsche",
+      "work": "Thus Spake Zarathustra, “The Bite of the Adder”",
+      "excerpt": "When, however, ye have an enemy, then return him not good for evil: for that would abash him. But prove that he hath done something good to you. And rather be angry than abash any one!",
+      "period": "1883",
+      "dateShort": "1883",
+      "dateFull": "1883",
+      "sortYear": 1883,
+      "sourceLabel": "Thomas Common translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "locator": "Part I, section XIX “The Bite of the Adder”, after the story of the adder.",
+      "place": "Rapallo, Italy",
+      "lat": 44.35,
+      "lng": 9.23,
+      "anchorType": "Documented writing location",
+      "placeNote": "Nietzsche wrote the first part of Zarathustra in about ten days in January 1883 at Rapallo on the Ligurian coast; the pin is nudged inland. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/9/9/1998/1998-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Not shaming an enemy",
+          "why": "Zarathustra says that repaying an enemy’s wrong with kindness would shame him, and tells his disciples to be angry rather than abash anyone. Putting another person to shame is treated as a real harm to be avoided.",
+          "limit": "A speech by Zarathustra, a literary persona, and part of an inversion of Christian morality; its irony is hard to separate from advice. The 1909 Thomas Common translation uses archaic forms.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "friedrich-nietzsche-inward-or-others",
       "question": "inward-or-others",
       "name": "Friedrich Nietzsche",
@@ -56703,6 +60252,41 @@ window.PILOT_EVIDENCE={
           "facet": "Self-reliance taught or stifled",
           "why": "Ramabai says high-caste women have been cropped in their early days until energy and self-reliance are dead in them, and she asks that they be taught to become self-reliant. What a woman is able to be is something made or unmade by her upbringing.",
           "limit": "The passage is part of an appeal to American women for funds and teachers, and it presents Indian women in a deliberately stark light for that audience. It speaks of one group, high-caste Hindu women, not of persons in general.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "pandita-ramabai-humiliation",
+      "question": "humiliation",
+      "name": "Pandita Ramabai",
+      "short": "Ramabai",
+      "work": "The High-Caste Hindu Woman, “Childhood”",
+      "excerpt": "remind her that she is only a girl and that he is a boy. Subjected to such humiliation, most girls become sullen, morbid and dull.",
+      "period": "1887",
+      "dateShort": "1887",
+      "dateFull": "1887",
+      "sortYear": 1887,
+      "sourceLabel": "First edition (Philadelphia, 1887), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/highcastehinduwo00ramaiala/highcastehinduwo00ramaiala_djvu.txt",
+      "locator": "Chapter “Childhood”, the paragraph beginning “Brothers, in most cases, are, of course, very proud of their superior sex”. The scanned text contains recognition errors.",
+      "place": "Philadelphia, Pennsylvania, United States",
+      "lat": 39.96,
+      "lng": -75.2,
+      "anchorType": "Documented place of publication",
+      "placeNote": "Ramabai wrote and published the book in Philadelphia during her stay in the United States; the title page of the scan gives Philadelphia, 1887.",
+      "placeSource": "https://archive.org/stream/highcastehinduwo00ramaiala/highcastehinduwo00ramaiala_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "A girl despised by her brothers",
+          "why": "Ramabai says that a boy who tells his elder sister she is only a girl humiliates her, and that most girls so treated become sullen, morbid and dull. Contempt for girls is described as damage done to them.",
+          "limit": "A reformer’s polemic for an American audience, written in English in 1887 to win support, which generalises from Hindu high-caste households. The scanned text contains recognition errors.",
           "second": "agreed"
         }
       },
@@ -61663,6 +65247,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "oscar-wilde-humiliation",
+      "question": "humiliation",
+      "name": "Oscar Wilde",
+      "short": "Wilde",
+      "work": "De Profundis",
+      "excerpt": "For a year after that was done to me I wept every day at the same hour and for the same space of time.",
+      "period": "1897 (published 1905)",
+      "dateShort": "1897",
+      "dateFull": "1897; first published in abridged form in 1905",
+      "sortYear": 1897,
+      "sourceLabel": "Project Gutenberg edition",
+      "sourceUrl": "https://gutenberg.pglaf.org/9/2/921/921.txt",
+      "locator": "Paragraph describing his transfer on 13 November 1895 to Clapham Junction.",
+      "place": "Reading Gaol, Reading, England",
+      "lat": 51.456,
+      "lng": -0.96,
+      "anchorType": "Documented writing location",
+      "placeNote": "Wilde wrote the letter in Reading Gaol between January and March 1897. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/9/2/921/921.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Public jeering",
+          "why": "Wilde says that for a year after he was jeered at on the platform at Clapham Junction he wept every day at that hour. The mockery is shown as a lasting injury.",
+          "limit": "A prison letter written to a particular person, with its own rhetoric of suffering; the text is the posthumous 1905 version, abridged by Robert Ross. Elsewhere in the same text Wilde finds a kind of humility in his disgrace.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "oscar-wilde-suffering",
       "question": "suffering",
       "name": "Oscar Wilde",
@@ -62268,6 +65887,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "liliuokalani-humiliation",
+      "question": "humiliation",
+      "name": "Liliʻuokalani",
+      "short": "Liliʻuokalani",
+      "work": "Hawaii’s Story by Hawaii’s Queen",
+      "excerpt": "Humiliation ! What had I left ? It was the intention of the officers of the government to humiliate me by imprisoning me, but my spirit rose above that.",
+      "period": "1898",
+      "dateShort": "1898",
+      "dateFull": "1898",
+      "sortYear": 1898,
+      "sourceLabel": "Hawaii’s Story by Hawaii’s Queen (1898), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/hawaiisstorybyh00lili/hawaiisstorybyh00lili_djvu.txt",
+      "locator": "The chapter on her imprisonment and trial in 1895, the paragraph on whether she should appear in court, beginning “Mr. Paul Neumann”.",
+      "place": "Washington, D.C., United States",
+      "lat": 38.9,
+      "lng": -77.04,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Liliʻuokalani wrote the book in 1897–98 while staying in Washington, D.C. to oppose annexation of Hawaii. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/hawaiisstorybyh00lili/hawaiisstorybyh00lili_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Imprisonment meant to humiliate",
+          "why": "Liliʻuokalani says her captors meant to humiliate her by imprisonment, yet she was a martyr to her people’s cause and proud of it, so her spirit rose above the intent. The passage makes humiliation depend on whether the person accepts it, which places it with the view that it is only what one makes it.",
+          "limit": "A queen’s own account written to win American public opinion after her overthrow, so it is partly advocacy. She elsewhere records that the insults were meant and did sting, and the stance here is one of defiance after the event.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "manuel-gonzalez-prada-ultimate-reality",
       "question": "ultimate-reality",
       "name": "Manuel González Prada",
@@ -62548,6 +66202,41 @@ window.PILOT_EVIDENCE={
           "facet": "The caged bird’s song as a plea",
           "why": "Dunbar describes a caged bird whose song is not joy but a prayer and plea for freedom sent out of pain. The pain is not justified by any gain; it is something to be ended, and the song is the cry for that end.",
           "limit": "The bird is a figure for Black Americans under oppression, so the poem speaks of suffering imposed by others and not of suffering in general. The poem gives no explanation or consolation for the pain.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "raden-adjeng-kartini-humiliation",
+      "question": "humiliation",
+      "name": "Raden Adjeng Kartini",
+      "short": "Kartini",
+      "work": "Letters of a Javanese Princess, letter of 25 May 1899",
+      "excerpt": "Can you understand the misery of a proud and independent spirit so humbled? And how much strength of character it must have taken to endure that petty and annoying oppression?",
+      "period": "1899",
+      "dateShort": "1899",
+      "dateFull": "1899",
+      "sortYear": 1899,
+      "sourceLabel": "Letters of a Javanese Princess, tr. Agnes Louise Symmers (1920), Project Gutenberg, pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/6/4/34647/34647-0.txt",
+      "locator": "Letter dated Japara, 25 May 1899, in the story of the young man who addressed the Resident in Dutch.",
+      "place": "Jepara, Java (now Indonesia)",
+      "lat": -6.62,
+      "lng": 110.72,
+      "anchorType": "Documented writing location",
+      "placeNote": "The letter is dated at Japara (Jepara), where Kartini lived with her family. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/4/6/4/34647/34647-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "A proud spirit humbled",
+          "why": "Kartini asks her correspondent to grasp the misery of a proud, independent young Javanese man forced to crawl before a former dunce who now outranked him. She treats being humbled as real suffering that tests a person’s character, which places the passage with the wound.",
+          "limit": "The letter reports the history of an acquaintance, told to a Dutch correspondent, and is a young writer’s emotional appeal in an English translation of 1920. It describes humbling by colonial and caste custom and does not define it.",
           "second": "agreed"
         }
       },
@@ -62882,6 +66571,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "henri-bergson-humiliation",
+      "question": "humiliation",
+      "name": "Henri Bergson",
+      "short": "Bergson",
+      "work": "Laughter: An Essay on the Meaning of the Comic",
+      "excerpt": "Laughter is, above all, a corrective. Being intended to humiliate, it must make a painful impression on the person against whom it is directed.",
+      "period": "1900 (English 1911)",
+      "dateShort": "1900",
+      "dateFull": "1900; English translation 1911",
+      "sortYear": 1900,
+      "sourceLabel": "Cloudesley Brereton and Fred Rothwell translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/3/5/4352/4352.txt",
+      "locator": "Chapter 3, near the end, paragraph beginning “Laughter is, above all, a corrective”.",
+      "place": "Paris, France",
+      "lat": 48.85,
+      "lng": 2.34,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Bergson taught in Paris when the essays were first published in the Revue de Paris in 1900. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/3/5/4352/4352.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Laughter as correction",
+          "why": "Bergson says that laughter exists to humiliate, and that the painful impression it leaves is how society corrects eccentricity and rigidity in its members. Humiliation is a social tool that teaches by hurting.",
+          "limit": "A claim about the function of laughter at the comic, not about all humiliation; Bergson also says laughter is neither wholly just nor kind. The English is the 1911 Brereton and Rothwell translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "jose-enrique-rodo-inward-or-others",
       "question": "inward-or-others",
       "name": "José Enrique Rodó",
@@ -63072,6 +66796,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "nitobe-inazo-humiliation",
+      "question": "humiliation",
+      "name": "Nitobe Inazo",
+      "short": "Nitobe",
+      "work": "Bushido: The Soul of Japan, ch. 8 “Honor”",
+      "excerpt": "That samurai was right who refused to compromise his character by a slight humiliation in his youth; “because,” he said, “dishonor is like a scar on a tree, which time, instead of effacing, only helps to enlarge.”",
+      "period": "1900",
+      "dateShort": "1900",
+      "dateFull": "1900",
+      "sortYear": 1900,
+      "sourceLabel": "Project Gutenberg, Bushido: The Soul of Japan",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/2/0/9/12096/12096-0.txt",
+      "locator": "Chapter VIII, “Honor”, paragraph beginning “The sense of honor, implying a vivid consciousness”.",
+      "place": "Malvern, Pennsylvania, United States",
+      "lat": 40.04,
+      "lng": -75.51,
+      "anchorType": "Documented writing location",
+      "placeNote": "The preface of the book is signed “Malvern, Pa., Twelfth Month, 1899”.",
+      "placeSource": "https://gutenberg.pglaf.org/1/2/0/9/12096/12096-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Dishonour as a lasting scar",
+          "why": "Nitobe approves a samurai who refused even a slight humiliation in his youth because dishonour is like a scar on a tree that grows with time. The passage treats humiliation as a permanent injury to honour.",
+          "limit": "Nitobe describes the samurai code of honour for a Western readership in English, and he also says the fear of disgrace could turn morbid. The samurai’s remark is quoted second-hand and is not a general account of what humiliation is.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "swimmer-cherokee-death",
       "question": "death",
       "name": "Swimmer (Ayûnînî), Cherokee storyteller, recorded by James Mooney",
@@ -63210,6 +66969,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "zitkala-sa-humiliation",
+      "question": "humiliation",
+      "name": "Zitkála-Šá (Gertrude Simmons Bonnin)",
+      "short": "Zitkala-Sa",
+      "work": "American Indian Stories, “The School Days of an Indian Girl”",
+      "excerpt": "Since the day I was taken from my mother I had suffered extreme indignities. People had stared at me. I had been tossed about in the air like a wooden puppet.",
+      "period": "1900 (first published in the Atlantic Monthly)",
+      "dateShort": "1900",
+      "dateFull": "1900, first published in the Atlantic Monthly",
+      "sortYear": 1900,
+      "sourceLabel": "Project Gutenberg edition of American Indian Stories (Harper, 1921), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/0/3/7/10376/10376-0.txt",
+      "locator": "“The School Days of an Indian Girl”, section “The Cutting of My Long Hair”, the paragraph beginning “Since the day I was taken from my mother”.",
+      "place": "Boston, Massachusetts, United States",
+      "lat": 42.35,
+      "lng": -71.09,
+      "anchorType": "Approximate writing location",
+      "placeNote": "The essay appeared in the Atlantic Monthly in 1900, when the author was living and working in the Boston area. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/0/3/7/10376/10376-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Stripped of dignity at school",
+          "why": "Zitkála-Šá lists the stares, the handling and the shingling of her hair as indignities she suffered, and describes herself reduced to a puppet and a coward. Humiliation here is a real injury inflicted by others on a child, which is why the passage sits with the wound.",
+          "limit": "A memoir of childhood written in the first person and first published in 1900, some fifteen years after the events, with a literary shaping of the scene. It describes the experience without offering a general definition of humiliation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -63353,6 +67147,41 @@ window.PILOT_EVIDENCE={
           "facet": "Happiness in serving others",
           "why": "Washington recalls watching the Hampton teachers who were happy in working for others, and concludes that the happiest people are those who do most for others. Happiness is placed in what a person gives, not in what circumstances supply.",
           "limit": "The remark is an autobiographical lesson drawn from a few teachers and is stated as something he “began learning”, not as a proof. Washington’s wider writing stresses self-help and thrift, and the book was written for a mostly white reading public as well as Black readers.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "booker-t-washington-humiliation",
+      "question": "humiliation",
+      "name": "Booker T. Washington",
+      "short": "Washington",
+      "work": "Up from Slavery",
+      "excerpt": "resolved that I would permit no man, no matter what his colour might be, to narrow and degrade my soul by making me hate him.",
+      "period": "1901",
+      "dateShort": "1901",
+      "dateFull": "1901",
+      "sortYear": 1901,
+      "sourceLabel": "Project Gutenberg edition of Up from Slavery (1901), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/3/7/2376/2376-0.txt",
+      "locator": "Chapter on General Armstrong and Hampton, the paragraph on learning to refuse hatred, beginning “I learned this lesson from General Armstrong”.",
+      "place": "Tuskegee, Alabama, United States",
+      "lat": 32.43,
+      "lng": -85.71,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Washington led the Tuskegee Institute and wrote the book there in 1900–01. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/3/7/2376/2376-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Refusing to be degraded by hatred",
+          "why": "Washington resolves to allow no one to degrade his soul by provoking him to hatred, so that the harm of an injury is his to accept or refuse. The passage places the hold of degradation in the person’s own response, which puts it with the view that humiliation is only what a person makes it.",
+          "limit": "A memoir by a public figure known for conciliation, written for a mixed audience, and the claim is about hatred more than insult. It does not deny that the wrongs themselves were real, and later critics saw this stance as costly.",
           "second": "agreed"
         }
       },
@@ -64460,6 +68289,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-23"
+      }
+    },
+    {
+      "id": "w-e-b-du-bois-humiliation",
+      "question": "humiliation",
+      "name": "W. E. B. Du Bois",
+      "short": "Du Bois",
+      "work": "The Souls of Black Folk, chapter I, “Of Our Spiritual Strivings”",
+      "excerpt": "before that nameless prejudice that leaps beyond all this he stands helpless, dismayed, and well-nigh speechless; before that personal disrespect and mockery, the ridicule and systematic humiliation",
+      "period": "1903",
+      "dateShort": "1903",
+      "dateFull": "1903",
+      "sortYear": 1903,
+      "sourceLabel": "Project Gutenberg edition of The Souls of Black Folk (1903), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/4/0/408/408-0.txt",
+      "locator": "Chapter I, “Of Our Spiritual Strivings”, the sentence beginning “before that nameless prejudice that leaps beyond all this”.",
+      "place": "Atlanta, Georgia, United States",
+      "lat": 33.75,
+      "lng": -84.39,
+      "anchorType": "Documented writing location",
+      "placeNote": "Du Bois taught at Atlanta University from 1897 to 1910 and wrote The Souls of Black Folk there; the essay first appeared in the Atlantic Monthly in 1897. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/4/0/408/408-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Systematic humiliation of a race",
+          "why": "Du Bois names personal disrespect, mockery, ridicule and systematic humiliation as what leaves the American Negro helpless and speechless before prejudice. The passage treats humiliation as an organised injury to a people, which places it with the wound.",
+          "limit": "A literary essay on a whole group, with “he” standing for the American Negro generally rather than a single person. It describes how humiliation is delivered and endured and does not offer a definition.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -67063,6 +70927,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "emma-goldman-humiliation",
+      "question": "humiliation",
+      "name": "Emma Goldman",
+      "short": "Goldman",
+      "work": "Anarchism and Other Essays, “Anarchism: What It Really Stands For”",
+      "excerpt": "Religion! How it dominates man's mind, how it humiliates and degrades his soul. God is everything, man is nothing, says religion.",
+      "period": "1910",
+      "dateShort": "1910",
+      "dateFull": "1910",
+      "sortYear": 1910,
+      "sourceLabel": "Project Gutenberg edition of Anarchism and Other Essays (1910), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/2/1/6/2162/2162.txt",
+      "locator": "“Anarchism: What It Really Stands For”, the paragraph beginning “Religion! How it dominates man’s mind”.",
+      "place": "New York City, United States",
+      "lat": 40.73,
+      "lng": -73.98,
+      "anchorType": "Approximate publication location",
+      "placeNote": "The collection was published in 1910 by Goldman’s Mother Earth Publishing Association in New York City. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/2/1/6/2162/2162.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Religion humiliating the soul",
+          "why": "Goldman charges religion with humiliating and degrading the soul by teaching that God is everything and man nothing. She treats humiliation as a real injury done to human dignity by an institution, which places the passage with the wound.",
+          "limit": "A polemical lecture-essay against religion, property and government, rhetorical rather than analytical. The target is an institution, and the passage does not describe personal insult.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "kikuyu-informants-given-or-made",
       "question": "given-or-made",
       "name": "Kikuyu informants (recorded by W. S. and K. Routledge)",
@@ -67516,6 +71415,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-25"
+      }
+    },
+    {
+      "id": "charles-eastman-humiliation",
+      "question": "humiliation",
+      "name": "Charles Alexander Eastman (Ohiyesa)",
+      "short": "Eastman",
+      "work": "The Soul of the Indian, chapter IV, “Barbarism and the Moral Code”",
+      "excerpt": "If a child is inclined to be grasping, or to cling to any of his little possessions, legends are related to him, telling of the contempt and disgrace falling upon the ungenerous and mean man.",
+      "period": "1911",
+      "dateShort": "1911",
+      "dateFull": "1911",
+      "sortYear": 1911,
+      "sourceLabel": "Project Gutenberg edition of The Soul of the Indian (1911), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
+      "locator": "Chapter IV, “Barbarism and the Moral Code”, the paragraph on teaching a child generosity, the sentence beginning “If a child is inclined to be grasping”.",
+      "place": "Amesbury, Massachusetts, United States",
+      "lat": 42.85,
+      "lng": -70.94,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Eastman lived in the Amesbury, Massachusetts area in the years when The Soul of the Indian was written and published in Boston in 1911. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/3/4/340/340-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-teacher",
+          "facet": "Shame used to teach generosity",
+          "why": "Eastman reports that Sioux children inclined to grasping are told legends of the contempt and disgrace that fall on the ungenerous man. Disgrace is used deliberately as a lesson that corrects a fault, which places the passage with the view that being brought low teaches.",
+          "limit": "A Dakota-born physician’s general account of Sioux upbringing, written for a white readership in 1911 and idealising its subject. It describes a teaching method and does not say how the person disgraced experiences it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -69398,6 +73332,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "franz-kafka-humiliation",
+      "question": "humiliation",
+      "name": "Franz Kafka",
+      "short": "Kafka",
+      "work": "The Trial, ch. 10 (The End)",
+      "excerpt": "K. saw the two gentlemen cheek by cheek, close in front of his face, watching the result. \"Like a dog!\" he said, it was as if the shame of it should outlive him.",
+      "period": "1914–1915 (published 1925)",
+      "dateShort": "1914–15",
+      "dateFull": "written 1914 to 1915; published 1925",
+      "sortYear": 1915,
+      "sourceLabel": "David Wyllie translation, Project Gutenberg",
+      "sourceUrl": "https://gutenberg.pglaf.org/7/8/4/7849/7849-0.txt",
+      "locator": "Final paragraph of chapter 10.",
+      "place": "Prague, Bohemia (now Czech Republic)",
+      "lat": 50.08,
+      "lng": 14.42,
+      "anchorType": "Documented writing location",
+      "placeNote": "Kafka wrote The Trial in Prague in 1914 and 1915; he left it unfinished and unpublished, and Max Brod published it in 1925. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/7/8/4/7849/7849-0.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shame that outlives the victim",
+          "why": "K., killed in a quarry, says he dies “like a dog” and the narrator adds that the shame of it would outlive him. A degrading death is described as a shame that outlasts the person.",
+          "limit": "The closing lines of a novel, in the narrator’s voice and in David Wyllie’s English rendering; the sentence leaves open whose shame is meant, the victim’s or the killers’. The passage describes degradation in a story rather than defining it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "hawaiian-tradition-westervelt-death",
       "question": "death",
       "name": "Hawaiian tradition (recorded by W. D. Westervelt)",
@@ -69839,6 +73808,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "ashanti-proverbs-humiliation",
+      "question": "humiliation",
+      "name": "Ashanti proverbs (collected by R. S. Rattray)",
+      "short": "Ashanti proverbs",
+      "work": "Ashanti Proverbs, no. 753 (Twi: Birihiara nye yaw se aniwu)",
+      "excerpt": "There is nothing that hurts like shame. Aniwu. Deriv. ant and wu. Lit. death of eye, i. e. shame.",
+      "period": "Recorded 1916",
+      "dateShort": "Recorded 1916",
+      "dateFull": "Recorded 1916",
+      "sortYear": 1916,
+      "sourceLabel": "R. S. Rattray, Ashanti Proverbs (Oxford, 1916), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "locator": "Proverb no. 753, with the editor’s note on the word aniwu. The scanned text contains recognition errors.",
+      "place": "Kumasi, Ashanti, Ghana",
+      "lat": 6.69,
+      "lng": -1.62,
+      "anchorType": "Traditional association",
+      "placeNote": "The proverbs were collected in the Ashanti country of the Gold Coast, of which Kumasi was the capital. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/ashantiproverbst00rattuoft/ashantiproverbst00rattuoft_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Shame as the sharpest hurt",
+          "why": "The proverb says nothing hurts like shame, and the collector glosses the Twi word for shame as “death of eye”. Shame is treated as a real injury to a person, worse than other pain, which places the saying with the wound.",
+          "limit": "A traditional saying recorded in Twi and translated by a colonial official in 1916, with his gloss; the proverb’s original speakers and date are unknown. It praises no remedy and does not say who causes the shame.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "ashanti-proverbs-inward-or-others",
       "question": "inward-or-others",
       "name": "Ashanti proverbs collected by R. S. Rattray",
@@ -70186,6 +74190,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-24"
+      }
+    },
+    {
+      "id": "sol-plaatje-humiliation",
+      "question": "humiliation",
+      "name": "Sol Plaatje",
+      "short": "Plaatje",
+      "work": "Native Life in South Africa, chapter I",
+      "excerpt": "Awaking on Friday morning, June 20, 1913, the South African Native found himself, not actually a slave, but a pariah in the land of his birth.",
+      "period": "1916",
+      "dateShort": "1916",
+      "dateFull": "1916",
+      "sortYear": 1916,
+      "sourceLabel": "Project Gutenberg edition of Native Life in South Africa (1916), pglaf mirror",
+      "sourceUrl": "https://gutenberg.pglaf.org/1/4/5/1452/1452.txt",
+      "locator": "Chapter I, “The Natives’ Land Act, 1913”, the first paragraph.",
+      "place": "London, England",
+      "lat": 51.5,
+      "lng": -0.13,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Plaatje was in Britain from 1914 to 1917 campaigning against the Land Act, and the book was published in London in 1916. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://gutenberg.pglaf.org/1/4/5/1452/1452.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "A pariah in the land of one’s birth",
+          "why": "Plaatje says the Natives’ Land Act turned the South African Native into a pariah in his own birthplace, lowered in standing though not made a slave. Humiliation here is a loss of rightful place imposed by law, which places the passage with the wound.",
+          "limit": "A political tract written to persuade a British audience, with its own rhetorical aims. It speaks of status and dispossession rather than defining humiliation, and the word itself does not appear in the sentence.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -71340,6 +75379,42 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "lu-xun-humiliation",
+      "question": "humiliation",
+      "name": "Lu Xun",
+      "short": "Lu Xun",
+      "work": "The True Story of Ah Q (阿Q正傳), ch. 2",
+      "excerpt": "阿Q站了一刻，心裏想，『我總算被兒子打了，現在的世界眞不像樣……』于是也心滿意足的得勝的走了。",
+      "translation": "Ah Q stood for a moment and thought, “At least I have been beaten by my son; the world today is really going to the dogs…” And so he too walked off, satisfied that he had won.",
+      "period": "1921 CE",
+      "dateShort": "1921",
+      "dateFull": "1921",
+      "sortYear": 1921,
+      "sourceLabel": "Chinese text, Wikisource (zh.wikisource.org)",
+      "sourceUrl": "https://zh.wikisource.org/wiki/%E9%98%BF%EF%BC%B1%E6%AD%A3%E5%82%B3",
+      "locator": "Chapter 2, “A Short Account of Ah Q’s Victories”, the passage following the quarrel over his scabby head.",
+      "place": "Beijing, China",
+      "lat": 39.91,
+      "lng": 116.39,
+      "anchorType": "Approximate writing location",
+      "placeNote": "Wikipedia states that Lu Xun lived in Beijing from 1912 to 1926, working at the Ministry of Education, and the story appeared in a Beijing newspaper supplement in 1921–22; the linked page does not give the place of writing.",
+      "placeSource": "https://en.wikipedia.org/wiki/The_True_Story_of_Ah_Q",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Spiritual victory over a beating",
+          "why": "Ah Q is beaten and made to say he is a worm, and then turns the beating into a victory by telling himself it is his son who has beaten him. The passage shows a humiliation dissolved by the victim’s own reading of it, which Lu Xun presents as satire.",
+          "limit": "A satirical story whose narrator mocks Ah Q’s habit of self-deception, so the passage records what the satire criticises and not Lu Xun’s own recommendation. The English is the atlas’s own unreviewed translation.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "lu-xun-meaning",
       "question": "meaning",
       "name": "Lu Xun",
@@ -72357,6 +76432,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "marcus-garvey-humiliation",
+      "question": "humiliation",
+      "name": "Marcus Garvey",
+      "short": "Garvey",
+      "work": "Philosophy and Opinions of Marcus Garvey, Easter address",
+      "excerpt": "a resurrection from the lethargy of the past—the sleep of the past—from that feeling that made us accept the idea and opinion that God intended that we should occupy an inferior place in the world.",
+      "period": "c. 1923",
+      "dateShort": "c. 1923",
+      "dateFull": "c. 1923",
+      "sortYear": 1923,
+      "sourceLabel": "Philosophy and Opinions of Marcus Garvey (ed. Amy Jacques Garvey, 1923), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/philosophyopinio01garv/philosophyopinio01garv_djvu.txt",
+      "locator": "The Easter address that includes the subheading “No Superiority or Inferiority”. The scanned text contains recognition errors.",
+      "place": "Liberty Hall, New York City, United States",
+      "lat": 40.81,
+      "lng": -73.95,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The address names Liberty Hall, the Harlem meeting hall of the Universal Negro Improvement Association; the exact year and venue of this address are not confirmed. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/philosophyopinio01garv/philosophyopinio01garv_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "an-opinion",
+          "facet": "Accepting an inferior place",
+          "why": "Garvey says the inferior place Black people held rested on their own acceptance of an idea that God intended it, and calls for a resurrection from that feeling. The passage locates the lowering in what people accept about themselves, which places it with the view that it is only what one makes it.",
+          "limit": "A speech to a movement audience, an exhortation more than a definition, and it speaks of inferiority rather than naming humiliation. Garvey elsewhere stressed outward injustice, so the stress on inward acceptance is partial.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "marcus-garvey-meaning",
       "question": "meaning",
       "name": "Marcus Garvey",
@@ -73236,6 +77346,41 @@ window.PILOT_EVIDENCE={
       }
     },
     {
+      "id": "mohandas-k-gandhi-humiliation",
+      "question": "humiliation",
+      "name": "Mohandas K. Gandhi",
+      "short": "Gandhi",
+      "work": "An Autobiography: The Story of My Experiments with Truth, Part II, ch. IX, “More Hardships”",
+      "excerpt": "I knew it was sheer injustice and an insult, but I thought it better to pocket it.",
+      "period": "Written 1925–29; this part serialised c. 1926–27",
+      "dateShort": "1926–27",
+      "dateFull": "written in 1925–29; this part serialised around 1926–27",
+      "sortYear": 1927,
+      "sourceLabel": "Mahadev Desai translation (Navajivan, 1927–29), Wikisource",
+      "sourceUrl": "https://en.wikisource.org/wiki/The_Story_of_My_Experiments_with_Truth/Volume_1/Part_2/Chapter_9",
+      "locator": "Part II, chapter IX, the paragraph about the coach “leader” who seated Gandhi outside.",
+      "place": "Sabarmati Ashram, Ahmedabad, India",
+      "lat": 23.06,
+      "lng": 72.58,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Gandhi wrote the Autobiography in Gujarati for the weekly Navajivan during the years he lived at Sabarmati Ashram; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikisource.org/wiki/The_Story_of_My_Experiments_with_Truth/Volume_1/Part_2/Chapter_9",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Insult on a stagecoach",
+          "why": "Gandhi, made to sit outside the coach among the baggage in South Africa, calls it plainly injustice and an insult, and says he swallowed it for the sake of his journey. The degradation is described as real and wrong, even though he chose not to answer it.",
+          "limit": "A retrospective account written some thirty years after the events, in Mahadev Desai’s English translation of the Gujarati. Gandhi goes on to treat such hardships as a symptom of a wider disease of colour prejudice to be rooted out, a wider view that is not in this sentence.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
       "id": "w-b-yeats-desire",
       "question": "desire",
       "name": "W. B. Yeats",
@@ -73451,6 +77596,41 @@ window.PILOT_EVIDENCE={
       "check": {
         "status": "matched",
         "date": "2026-11-26"
+      }
+    },
+    {
+      "id": "luther-standing-bear-humiliation",
+      "question": "humiliation",
+      "name": "Luther Standing Bear (Ota K’te)",
+      "short": "Standing Bear",
+      "work": "My People the Sioux, chapter XX, “Trouble at the Agency”",
+      "excerpt": "It seemed like a positive disgrace to construct this fence around a race of people who had always been free to roam where they chose.",
+      "period": "1928",
+      "dateShort": "1928",
+      "dateFull": "1928",
+      "sortYear": 1928,
+      "sourceLabel": "My People the Sioux (1928), Internet Archive full text",
+      "sourceUrl": "https://archive.org/stream/mypeoplesioux00stan_0/mypeoplesioux00stan_0_djvu.txt",
+      "locator": "The chapter on the agency years at Pine Ridge, the paragraph about being assigned to help build a fence around the entire reservation. The scanned text contains recognition errors.",
+      "place": "Pine Ridge Reservation, South Dakota, United States",
+      "lat": 43.2,
+      "lng": -102.55,
+      "anchorType": "Setting named in the text",
+      "placeNote": "The events described took place on the Pine Ridge Reservation in the 1880s; the book was written much later in California. The linked page gives the text only; the place still needs an editor’s confirmation.",
+      "placeSource": "https://archive.org/stream/mypeoplesioux00stan_0/mypeoplesioux00stan_0_djvu.txt",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "Fenced in like animals",
+          "why": "Standing Bear calls the order that Lakota men build a fence around their own reservation a positive disgrace to a people who had been free to roam. Humiliation here is a wrong done to a people’s standing, which places the passage with the wound.",
+          "limit": "A memoir written in old age and published in 1928, recalling events of the 1880s, with the help of an editor. The passage speaks of a collective disgrace and does not define humiliation or advise how to meet it.",
+          "second": "agreed"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
       }
     },
     {
@@ -74691,6 +78871,41 @@ window.PILOT_EVIDENCE={
           "facet": "Developing capacity rather than assigning it by birth",
           "why": "Ambedkar argues that a person has capacities that must be developed to the point of competence, so that the person can choose and make a career. He takes this as the standard against which caste fails, because caste assigns tasks in advance by the parents’ social status.",
           "limit": "The sentence belongs to an undelivered presidential address of 1936 written to attack caste, and speaks of capacities as something to be trained, not of what a person is at birth. The edition read is the Government of Maharashtra’s collected writings, from a scan with recognition errors.",
+          "second": "settled"
+        }
+      },
+      "check": {
+        "status": "matched",
+        "date": "2026-11-27"
+      }
+    },
+    {
+      "id": "ambedkar-humiliation",
+      "question": "humiliation",
+      "name": "B. R. Ambedkar",
+      "short": "Ambedkar",
+      "work": "Waiting for a Visa",
+      "excerpt": "But this incident gave me a shock such as I never received before, and it made me think about untouchability which, before this incident happened, was with me a matter of course",
+      "period": "Written 1935–36",
+      "dateShort": "1935–36",
+      "dateFull": "written in 1935–36",
+      "sortYear": 1936,
+      "sourceLabel": "Dr. Babasaheb Ambedkar: Writings and Speeches, vol. 12, Internet Archive",
+      "sourceUrl": "https://archive.org/download/PARI.dr-babasaheb-ambedkar-vol-12-notes-on-law-autobiography-and-miscellaneous-writings/dr-babasaheb-ambedkar-vol-12-notes-on-law-autobiography-and-miscellaneous-writings_djvu.txt",
+      "locator": "“Waiting for a Visa”, the paragraphs after the journey to Koregaon, beginning “This incident has a very important place in my life”. The scanned text contains recognition errors.",
+      "place": "Mumbai (Bombay), Maharashtra, India",
+      "lat": 19.08,
+      "lng": 72.88,
+      "anchorType": "Approximate writing association",
+      "placeNote": "Ambedkar lived and practised law in Bombay in 1935–36, when the piece is dated; the linked page gives the text only, so the place still needs an editor’s confirmation.",
+      "placeSource": "https://en.wikipedia.org/wiki/Waiting_for_a_Visa",
+      "review": "draft",
+      "readings": {
+        "humiliation": {
+          "score": "a-wound",
+          "facet": "A child’s first shock of untouchability",
+          "why": "Ambedkar recalls that as a boy of nine he was refused a cart and left without clean water because he was a Mahar, and says it shocked him more than the daily indignities he already knew. The passage treats being treated as polluting as a real injury to the child.",
+          "limit": "A memoir written in 1935–36, a quarter of a century after the incident, and an editor’s reprint of the pamphlet in a government edition. The passage speaks of shock and of thinking about untouchability and does not itself use the word humiliation.",
           "second": "settled"
         }
       },
@@ -86304,6 +90519,126 @@ window.PILOT_EVIDENCE={
     "Zoroastrian friends of Yazd (as reported by E. G. Browne)": {
       "about": "Zoroastrians of Yazd in Iran, whose account of their beliefs E. G. Browne recorded in 1888.",
       "tradition": "Zoroastrianism",
+      "sure": true
+    },
+    "Abba Macarius the Egyptian (as reported in The Paradise of the Fathers)": {
+      "about": "Desert monk of Scetis in Egypt in the 300s, whose sayings were collected in the Paradise of the Fathers.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Akkosa Sutta (Samyutta Nikaya)": {
+      "about": "Discourse of the Pali canon in which the Buddha answers a brahmin who has come to abuse him.",
+      "tradition": "Buddhism",
+      "sure": true
+    },
+    "Bartolomé de las Casas": {
+      "about": "Spanish Dominican friar and bishop of Chiapas, who wrote in the 1540s against the cruelty of the conquest of the Americas.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Bernard of Clairvaux": {
+      "about": "French Cistercian abbot and preacher, who founded Clairvaux in 1115 and wrote on humility and the love of God.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Cleanthes (reported by Diogenes Laertius)": {
+      "about": "Second head of the Stoic school at Athens in the 3rd century BCE, whose sayings are reported by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "David Walker": {
+      "about": "Free Black abolitionist of Boston, who published his Appeal to the Coloured Citizens of the World in 1829.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Diogenes the Cynic (reported by Diogenes Laertius)": {
+      "about": "Cynic philosopher of the 4th century BCE who lived in Athens and Corinth; his sayings are reported by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Elizabeth Cady Stanton": {
+      "about": "American campaigner for women’s rights, principal author of the 1848 Declaration of Sentiments.",
+      "tradition": "Politics and reform",
+      "sure": true
+    },
+    "Epistle of James": {
+      "about": "Letter of the New Testament, written in the name of James to Jewish Christians in the later first century.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "George Herbert": {
+      "about": "English poet and country parson, whose poems were published as The Temple in 1633.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "The Gospel of Luke": {
+      "about": "Third gospel of the New Testament, written in Greek in the later first century.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Ignatius of Loyola": {
+      "about": "Basque soldier turned priest, founder of the Jesuits, who composed the Spiritual Exercises between 1522 and 1548.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Jeremy Taylor": {
+      "about": "English clergyman and devotional writer, who published Holy Living in 1650.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "John Cassian": {
+      "about": "Monk who lived among the Desert Fathers of Egypt and then founded monasteries at Marseille around 415.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Nathaniel Hawthorne": {
+      "about": "American novelist of New England, who published The Scarlet Letter in 1850.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Nikolai Gogol": {
+      "about": "Ukrainian-born Russian writer, author of The Overcoat (1842) and Dead Souls.",
+      "tradition": "Literature and poetry",
+      "sure": true
+    },
+    "Orchot Tzaddikim": {
+      "about": "The Ways of the Righteous: an anonymous Hebrew book of ethics, written in Germany in the 1400s.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Peter Abelard": {
+      "about": "French philosopher and theologian of the 12th century, who told of his own downfall in the Story of My Misfortunes.",
+      "tradition": "Christianity",
+      "sure": true
+    },
+    "Rav Zutra bar Toviya (Babylonian Talmud)": {
+      "about": "Babylonian rabbi of about the 3rd century, whose sayings are recorded in the Talmud.",
+      "tradition": "Judaism",
+      "sure": true
+    },
+    "Sima Qian": {
+      "about": "Chinese historian of the Han dynasty, who completed the Records of the Grand Historian after being punished with castration.",
+      "tradition": "Confucianism",
+      "sure": true
+    },
+    "Socrates (as reported by Diogenes Laertius)": {
+      "about": "Athenian philosopher of the 5th century BCE, as he appears in the anecdotes collected by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Song Rongzi (as reported in the Zhuangzi)": {
+      "about": "Chinese thinker of the 4th century BCE, also called Song Xing, known for the saying that to be insulted is no disgrace.",
+      "tradition": "Other",
+      "sure": true
+    },
+    "Thucydides": {
+      "about": "Athenian general and historian of the 5th century BCE, who wrote the history of the Peloponnesian War.",
+      "tradition": "Greek and Roman philosophy",
+      "sure": true
+    },
+    "Zeno of Elea (reported by Diogenes Laertius)": {
+      "about": "Greek philosopher of the 5th century BCE, pupil of Parmenides, as reported by Diogenes Laertius.",
+      "tradition": "Greek and Roman philosophy",
       "sure": true
     }
   }
