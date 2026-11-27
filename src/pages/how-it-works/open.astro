@@ -5,10 +5,15 @@ import { questions, slugify } from '../../lib/atlas.js';
 const groups = questions.map(q => ({ q, rows: q.placed.filter(c => c.second === 'differed') })).filter(g => g.rows.length);
 const total = groups.reduce((n, g) => n + g.rows.length, 0);
 ---
-<Read title={`${total} open placements: where the readers differed — Svapna`} description={`The ${total} placements in the atlas that two independent readings could not settle, listed by question, each with a way to say where it belongs.`} path="/how-it-works/open" crumbs={[{ name: 'How it works', path: '/how-it-works' }, { name: 'Open placements', path: '/how-it-works/open' }]}>
+<Read title={total ? `${total} open placements: where the readers differed — Svapna` : 'No open placements — Svapna'} description={`The ${total} placements in the atlas that two independent readings could not settle, listed by question, each with a way to say where it belongs.`} path="/how-it-works/open" crumbs={[{ name: 'How it works', path: '/how-it-works' }, { name: 'Open placements', path: '/how-it-works/open' }]}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/how-it-works">How it works</a></p>
+  {total === 0 ? <>
+    <h1>No placements <em>are open.</em></h1>
+    <p class="lede">Every placement where two independent readings differed has been read again, blind. Where the further reading confirmed the first, the placement stands; where it did not, the passage was moved to “unscored”. <a href="/how-it-works/changes">Every change is listed with its reason.</a> If a placement is wrong, each passage has a link to say so.</p>
+  </> : <>
   <h1>{total} placements <em>still open.</em></h1>
-  <p class="lede">Two independent readings placed these passages differently, and a third judged that either position is defensible. They stay where the first reader put them, marked as open. If one is wrong, say so.</p>
+    <p class="lede">Two independent readings placed these passages differently, and a third judged that either position is defensible. They stay where the first reader put them, marked as open. If one is wrong, say so.</p>
+  </>}
   <p class="keys">{groups.map(g => <span><a href={`#${g.q.id}`}><b>{g.rows.length}</b> {g.q.plain}</a></span>)}</p>
   {groups.map(g => (
     <section id={g.q.id}>

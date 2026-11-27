@@ -35,9 +35,9 @@ const sample = questions[0];
     <ul>
       <li><strong>{n('agreed')}</strong> placements: both readers placed it in the same position.</li>
       <li><strong>{n('settled')}</strong>: the readers differed and the third reading settled it.</li>
-      <li><strong>{n('differed')}</strong>: the readers differed and the passage could fairly sit either way. Treat these as open.</li>
+      {n('differed') > 0 ? <li><strong>{n('differed')}</strong>: the readers differed and the passage could fairly sit either way. Treat these as open.</li> : <li><strong>None</strong> are left open. The last 223 that two readers could not settle were read again, blind, in November 2026: 95 were confirmed where they stood, 102 were moved to “unscored” because no second reader reproduced the placement, and 26 were unscored already.</li>}
     </ul>
-    <p>Where the second reading moved a placement, the passage says so, with the reason. Both lists are public: <a href="/how-it-works/open">every placement still open</a>, and <a href="/how-it-works/changes">every placement that was changed, and why</a>.</p>
+    <p>Where the second reading moved a placement, the passage says so, with the reason. Both lists are public: <a href="/how-it-works/open">any placement still open</a>, and <a href="/how-it-works/changes">every placement that was changed, and why</a>.</p>
 
     <h2>5. What a placement does not claim</h2>
     <p>A placement describes a few quoted lines. It is not a verdict on a thinker’s whole work, and the same thinker can sit at different positions in different passages. Three positions flatten real differences; the scale is a way to find people to read, not a classification of philosophies.</p>
