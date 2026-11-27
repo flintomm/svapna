@@ -6,6 +6,10 @@ import { occasions, topics } from '../../../lib/topics.js';
 export function getStaticPaths() { return occasions.map(o => ({ params: { occasion: o.slug }, props: { o } })); }
 const { o } = Astro.props;
 const n = o.passages.length, voices = new Set(o.passages.map(c => c.name)).size;
+// Where every passage answers the same question, the reader can keep only the ones that say what they believe.
+const homes = new Set(o.passages.map(c => c.home && c.home.id));
+const one = homes.size === 1 ? o.passages[0].home : null;
+const views = one ? one.steps.filter(s => s.tone !== 'none' && o.passages.some(c => c.readings[one.id].score === s.id)) : [];
 const words = o.title.split(' '), cut = Math.max(1, words.length - 3);
 const desc = `${o.title}: ${n} short passages from ${voices} voices across four thousand years, each quoted exactly and linked to the source it was checked against.`;
 ---
@@ -14,9 +18,15 @@ const desc = `${o.title}: ${n} short passages from ${voices} voices across four 
   <h1>{words.slice(0, cut).join(' ')} <em>{words.slice(cut).join(' ')}.</em></h1>
   <p class="lede">{o.line}</p>
   <p class="def">{n} passages, chosen by hand for being short and plain. Each can be copied with its citation or saved as an image, and each links to the source it was checked against.</p>
-  <div class="rows">{o.passages.map(c => <Passage c={c} />)}</div>
+  {views.length > 1 && (
+    <div class="find"><span class="find-eras" id="o-views"><button type="button" data-v="" aria-pressed="true">All {n}</button>{views.map(s => <button type="button" data-v={s.id} aria-pressed="false">{s.plain} ({o.passages.filter(c => c.readings[one.id].score === s.id).length})</button>)}</span></div>
+  )}
+  <div class="rows" id="o-rows">{o.passages.map(c => <Passage c={c} view />)}</div>
   <section>
     <h2>More</h2>
     <p class="def">Other occasions: {occasions.filter(x => x.slug !== o.slug).map((x, i) => <>{i > 0 && ', '}<a href={`/quotes/for/${x.slug}`}>{x.short.toLowerCase()}</a></>)}. Or browse <a href="/quotes">quotes by topic</a>: {topics.slice(0, 8).map((t, i) => <>{i > 0 && ', '}<a href={`/quotes/${t.slug}`}>{t.name}</a></>)} and more.</p>
   </section>
+  <script is:inline>
+    (function () { var box = document.getElementById('o-views'); if (!box) return; box.addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); }); document.querySelectorAll('#o-rows .row').forEach(function (r) { r.hidden = !!b.dataset.v && r.dataset.v !== b.dataset.v; }); }); })();
+  </script>
 </Read>

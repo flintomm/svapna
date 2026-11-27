@@ -1,13 +1,17 @@
 ---
 // One passage, as the question pages show it: the words, who and where, and what can be done with it.
 import { slugify } from '../lib/atlas.js';
-const { c, note = true } = Astro.props;
+const { c, note = true, view = false } = Astro.props;
+// Where this passage stands on its own question, in the plain wording.
+const step = c.home && c.readings[c.home.id] ? c.home.steps.find(s => s.id === c.readings[c.home.id].score) : null;
+const says = step && step.tone !== 'none' ? step.plain : '';
 const cite = `“${c.excerpt}” — ${c.name}, ${c.work} (${c.dateShort}). ${c.readUrl}`;
 ---
-<article class="row" id={c.id} data-w={(c.translation || c.excerpt).split(/\s+/).length}>
+<article class="row" id={c.id} data-v={step ? step.id : undefined} data-w={(c.translation || c.excerpt).split(/\s+/).length}>
   <div>
     <blockquote lang={c.lang || undefined} translate={c.lang ? 'no' : undefined}>“{c.excerpt}”</blockquote>
     {c.translation && <p class="tr">{c.translation}</p>}
+    {view && says && <p class="twice says">Says: {says.charAt(0).toLowerCase() + says.slice(1)}</p>}
     {note && c.home && <p class="why">From the passages on <a href={`/questions/${c.home.id}#${c.id}`}>{c.home.plain.charAt(0).toLowerCase() + c.home.plain.slice(1)}</a></p>}
   </div>
   <div class="who">
