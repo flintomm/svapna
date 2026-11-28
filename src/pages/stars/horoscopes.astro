@@ -8,7 +8,7 @@ const faq = [
 ];
 const jsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
-<Read title="How horoscopes are made: where columns and apps get their predictions — Svapna" description="A horoscope has two parts: planetary positions from astronomical tables, and sentences written by people and matched to those positions by rule. How columns and apps do it, and what controlled tests have found." path="/stars/horoscopes" crumbs={[{ name: 'The sky', path: '/stars' }, { name: 'How horoscopes are made', path: '/stars/horoscopes' }]} jsonLd={jsonLd}>
+<Read title="How horoscopes are made: where columns and apps get their predictions — Svapna" description="A horoscope has two parts: planetary positions from astronomical tables, and sentences written by people and matched to those positions by rule. How columns and apps do it, and what controlled tests have found." path="/stars/horoscopes" image="/og/stars.jpg" crumbs={[{ name: 'The sky', path: '/stars' }, { name: 'How horoscopes are made', path: '/stars/horoscopes' }]} jsonLd={jsonLd}>
   <p class="small crumb"><a href="/">Svapna</a> · <a href="/stars">The sky</a> · How horoscopes are made</p>
   <h1>Where the predictions <em>come from.</em></h1>
   <p class="lede">A horoscope is made in two steps. The first is astronomy: working out where the sun, moon and planets are. The second is a set of rules, about two thousand years old, for turning those positions into sentences. The first step is exact. The second is written by people.</p>

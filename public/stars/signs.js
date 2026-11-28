@@ -15,7 +15,8 @@
   var MON = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function compute(y, m, d, time, tz) {
-    var J0 = S.jd(y, m, d, (time == null ? 0 : time) - tz), J1 = time == null ? J0 + 1 : J0, r = {};
+    // With no time, the whole local day is considered. With a time, twenty minutes either side, which covers the error of the arithmetic.
+    var J0 = S.jd(y, m, d, (time == null ? 0 : time) - tz), J1 = J0 + 1, r = {}; if (time != null) { J1 = J0 + 20 / 1440; J0 -= 20 / 1440; }
     var sg = function (lon) { return Math.floor(S.n360(lon) / 30); };
     r.sun = [sg(S.sunLon(J0)), sg(S.sunLon(J1))]; r.moon = [sg(S.moonLon(J0)), sg(S.moonLon(J1))];
     var ay = S.ayanamsa(J0), nk = function (lon) { return Math.floor(S.n360(lon - ay) / (360 / 27)); };
@@ -33,16 +34,16 @@
   function chinese(yr) { var s = ((yr - 4) % 10 + 10) % 10, b = ((yr - 4) % 12 + 12) % 12; return { name: PH[s >> 1] + ' ' + AN[b][0], han: STEM.charAt(s) + AN[b][1], yin: s % 2 ? 'yin' : 'yang', a: AN[b], ph: PH[s >> 1] }; }
 
   function render(y, m, d, time, tz) {
-    var r = compute(y, m, d, time, tz), h = '', timed = time != null, need = ' <a href="#s-date" class="signs-add">Add the time of birth</a> to settle it.';
+    var r = compute(y, m, d, time, tz), h = '', timed = time != null, need = timed ? ' The change came within about twenty minutes of the time given, which is closer than this page can resolve.' : ' <a href="#s-date" class="signs-add">Add the time of birth</a> to settle it.';
     // Western
     var w = W[r.sun[0]], b;
     if (r.sun[0] === r.sun[1]) b = '<p class="sign">Sun in ' + w[0] + ', ' + w[1] + '</p><p>' + w[0] + ' is a sign of ' + w[2] + ', ruled by ' + w[3] + '. Western handbooks describe people born under it as ' + w[4] + '.</p>';
-    else b = '<p class="sign">Sun in ' + w[0] + ' or ' + W[r.sun[1]][0] + '</p><p>The sun moved from ' + w[0] + ' into ' + W[r.sun[1]][0] + ' on this date, and the hour of birth decides which.' + need + '</p>';
+    else b = '<p class="sign">Sun in ' + w[0] + ' or ' + W[r.sun[1]][0] + '</p><p>The sun moved from ' + w[0] + ' into ' + W[r.sun[1]][0] + ' on this date' + (timed ? '.' : ', and the hour of birth decides which.') + need + '</p>';
     b += r.moon[0] === r.moon[1] ? '<p>The moon was in ' + W[r.moon[0]][0] + '. In a Western chart the moon’s sign is read for feeling and habit, and the sun’s for the conscious self.</p>' : '<p>The moon moved from ' + W[r.moon[0]][0] + ' into ' + W[r.moon[1]][0] + ' during this day.' + need + '</p>';
     h += row('Western', 'Zodiac measured from the spring equinox', b);
     // Indian
     var v = W[r.ssun[0]];
-    b = r.smoon[0] === r.smoon[1] ? '<p class="sign">Moon in ' + W[r.smoon[0]][5] + ' (' + W[r.smoon[0]][0] + ')</p><p>This is the <em>rashi</em>, the sign an Indian astrologer asks for first.' + (r.nak[0] === r.nak[1] ? ' The moon’s station, the birth <em>nakshatra</em>, was ' + NAK[r.nak[0]] + ', number ' + (r.nak[0] + 1) + ' of twenty-seven.' : ' The moon passed from the nakshatra ' + NAK[r.nak[0]] + ' into ' + NAK[r.nak[1]] + ' during this day.' + (timed ? '' : need)) + '</p>'
+    b = r.smoon[0] === r.smoon[1] ? '<p class="sign">Moon in ' + W[r.smoon[0]][5] + ' (' + W[r.smoon[0]][0] + ')</p><p>This is the <em>rashi</em>, the sign an Indian astrologer asks for first.' + (r.nak[0] === r.nak[1] ? ' The moon’s station, the birth <em>nakshatra</em>, was ' + NAK[r.nak[0]] + ', number ' + (r.nak[0] + 1) + ' of twenty-seven.' : ' The moon passed from the nakshatra ' + NAK[r.nak[0]] + ' into ' + NAK[r.nak[1]] + ' during this day.' + need) + '</p>'
       : '<p class="sign">Moon in ' + W[r.smoon[0]][5] + ' or ' + W[r.smoon[1]][5] + '</p><p>The moon’s sign, the <em>rashi</em>, is what an Indian astrologer asks for first. On this day the moon moved from ' + W[r.smoon[0]][5] + ' (' + W[r.smoon[0]][0] + ') into ' + W[r.smoon[1]][5] + ' (' + W[r.smoon[1]][0] + ').' + need + '</p>';
     b += r.ssun[0] === r.ssun[1] ? '<p>The sun was in ' + v[5] + ' (' + v[0] + ')' + (r.sun[0] === r.sun[1] && r.ssun[0] !== r.sun[0] ? ', one sign back from the Western ' + W[r.sun[0]][0] + ', because this zodiac is measured from the stars' : r.ssun[0] === r.sun[0] ? ', the same sign as in the Western zodiac, which is true of dates in the last week or so of each sign' : '') + '. Jyotisha uses the same rulers and much the same characters for the twelve signs as the West.</p>' : '<p>The sun moved from ' + v[5] + ' into ' + W[r.ssun[1]][5] + ' on this date.</p>';
     h += row('Indian', 'Jyotisha: zodiac measured from the stars', b);
