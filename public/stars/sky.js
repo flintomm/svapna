@@ -12,7 +12,7 @@
   function moonLon(J) { var T = (J - 2451545) / 36525, L = 218.3164477 + 481267.88123421 * T, D = 297.8501921 + 445267.1114034 * T, M = 357.5291092 + 35999.0502909 * T, Mp = 134.9633964 + 477198.8675055 * T, F = 93.272095 + 483202.0175233 * T, s = 0;
     for (var i = 0; i < MT.length; i++) { var t = MT[i]; s += t[4] * sin(t[0] * D + t[1] * M + t[2] * Mp + t[3] * F); }
     return n360(L + s / 1e6); }
-  // The Lahiri ayanamsa, the offset the Indian national calendar uses between the two zodiacs.
+  // The Lahiri ayanamsa, the offset most Indian almanacs use between the two zodiacs.
   function ayanamsa(J) { return 23.853 + (J - 2451545) / 365.25 * 50.29 / 3600; }
   // The first day of each Chinese year, 1900 to 2100, as days after 20 January, one base-36 digit a year.
   var CNY = 'buj9rf5od2lath6pe3mcvj8rg4od3lash6pf4mbuj7qg5od2l9sh7pe4nbtj8qg5od1kash7qe3mbti8rg5odvk9sh7qf3lbui8rg4nc2k9ti6pe3lbuj8rg5nc2l9sh6oe3mbuj8qf4nc2lash6pd3mcuj8qf4nd1k9sg6pe3mbui7qg4nd2k9sh6pe4lati7qg5nc1k';
